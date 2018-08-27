@@ -11,7 +11,7 @@
     <AssemblyName>Doods.Xam.MonitorMyServer.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
@@ -92,10 +92,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Config\Bootstrapper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Logger.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -143,14 +145,51 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.637273" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
+    <PackageReference Include="Autofac">
+      <Version>4.8.1</Version>
+    </PackageReference>
+    <PackageReference Include="NLog">
+      <Version>4.5.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.DeviceInfo">
+      <Version>4.0.0.13</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.7" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj">
+      <Project>{b2a65829-856a-4134-8f1f-3e18243ebf2f}</Project>
+      <Name>Doods.Framework.Mobile.Std</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj">
+      <Project>{3e255e79-4e55-45a8-b086-912a23deba7c}</Project>
+      <Name>Doods.Framework.Repository.Std</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj">
+      <Project>{59006901-8ea2-4cd1-a283-301563a9bcc9}</Project>
+      <Name>Doods.Framework.Std</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tmp\Doods.Framework.Ssh.Std.csproj">
+      <Project>{798a380d-a201-4965-b652-1c73d24eef6e}</Project>
+      <Name>Doods.Framework.Ssh.Std</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer.csproj">
       <Project>{7F73EC46-2160-4100-B4D8-229E929225A7}</Project>
       <Name>Doods.Xam.MonitorMyServer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Doods.Xam.MonitorMyServer.Android\Assets\NLog.config">
+      <Link>Assets\NLog.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Debug.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
