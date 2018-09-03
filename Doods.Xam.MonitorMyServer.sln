@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.Android", "Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer.Android\Doods.Xam.MonitorMyServer.Android.csproj", "{252F347B-DBB7-43C8-8E96-4590B1173C14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.Android", "src\Android\Doods.Xam.MonitorMyServer.Android.csproj", "{252F347B-DBB7-43C8-8E96-4590B1173C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.iOS", "Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer.iOS\Doods.Xam.MonitorMyServer.iOS.csproj", "{4CCDB501-0DDD-40BC-87E1-8DD7A54DB362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.iOS", "src\iOS\Doods.Xam.MonitorMyServer.iOS.csproj", "{4CCDB501-0DDD-40BC-87E1-8DD7A54DB362}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.UWP", "Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer.UWP\Doods.Xam.MonitorMyServer.UWP.csproj", "{B3AD7300-442D-492E-B653-7362C42EEFDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Xam.MonitorMyServer.UWP", "src\UWP\Doods.Xam.MonitorMyServer.UWP.csproj", "{B3AD7300-442D-492E-B653-7362C42EEFDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Xam.MonitorMyServer", "Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer\Doods.Xam.MonitorMyServer.csproj", "{C34D6358-CA52-41CB-BB4C-DBCA6B103B99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Xam.MonitorMyServer", "src\MonitorMyServer\Doods.Xam.MonitorMyServer.csproj", "{C34D6358-CA52-41CB-BB4C-DBCA6B103B99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{C9FE465C-71B9-4637-B434-71DB4E535935}"
 EndProject
@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Framework.Repository.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Framework.Mobile.Std", "..\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj", "{B2A65829-856A-4134-8F1F-3E18243EBF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doods.Framework.Ssh.Std", "tmp\Doods.Framework.Ssh.Std.csproj", "{798A380D-A201-4965-B652-1C73D24EEF6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Framework.Ssh.Std", "tmp\Doods.Framework.Ssh.Std.csproj", "{798A380D-A201-4965-B652-1C73D24EEF6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doods.Framework.ApiClientBase.Std", "..\Doods.Frameworks.Std\Doods.Framework.ApiClientBase.Std\Doods.Framework.ApiClientBase.Std.csproj", "{F8E5D141-294D-458D-912D-08C15275EA80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -529,6 +531,54 @@ Global
 		{798A380D-A201-4965-B652-1C73D24EEF6E}.Release|x64.Build.0 = Release|Any CPU
 		{798A380D-A201-4965-B652-1C73D24EEF6E}.Release|x86.ActiveCfg = Release|Any CPU
 		{798A380D-A201-4965-B652-1C73D24EEF6E}.Release|x86.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|ARM.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|ARM.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|x64.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|x64.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|x86.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Ad-Hoc|x86.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|Any CPU.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|ARM.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|ARM.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|x64.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|x64.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|x86.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.AppStore|x86.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|x64.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|ARM.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|iPhone.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|x64.Build.0 = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8E5D141-294D-458D-912D-08C15275EA80}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -538,6 +588,7 @@ Global
 		{3E255E79-4E55-45A8-B086-912A23DEBA7C} = {C9FE465C-71B9-4637-B434-71DB4E535935}
 		{B2A65829-856A-4134-8F1F-3E18243EBF2F} = {C9FE465C-71B9-4637-B434-71DB4E535935}
 		{798A380D-A201-4965-B652-1C73D24EEF6E} = {C9FE465C-71B9-4637-B434-71DB4E535935}
+		{F8E5D141-294D-458D-912D-08C15275EA80} = {C9FE465C-71B9-4637-B434-71DB4E535935}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97A94740-D9ED-42A0-9A12-04A2C2BD34F2}

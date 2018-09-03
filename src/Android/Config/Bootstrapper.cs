@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Doods.Framework.Std;
-using Java.Util.Logging;
+using Doods.Xam.MonitorMyServer.Droid.Services;
 
 namespace Doods.Xam.MonitorMyServer.Droid.Config
 {

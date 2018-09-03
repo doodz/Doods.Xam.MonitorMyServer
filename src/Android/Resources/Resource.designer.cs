@@ -3291,14 +3291,14 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f090061
 			public const int list_item = 2131296353;
 			
-			// aapt resource value: 0x7f0900ca
-			public const int masked = 2131296458;
+			// aapt resource value: 0x7f0900c8
+			public const int masked = 2131296456;
 			
 			// aapt resource value: 0x7f0900b9
 			public const int media_actions = 2131296441;
 			
-			// aapt resource value: 0x7f0900c8
-			public const int message = 2131296456;
+			// aapt resource value: 0x7f0900c6
+			public const int message = 2131296454;
 			
 			// aapt resource value: 0x7f090031
 			public const int middle = 2131296305;
@@ -3507,9 +3507,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f090025
 			public const int showTitle = 2131296293;
 			
-			// aapt resource value: 0x7f0900c6
-			public const int sliding_tabs = 2131296454;
-			
 			// aapt resource value: 0x7f09008b
 			public const int smallLabel = 2131296395;
 			
@@ -3588,9 +3585,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f09006f
 			public const int title_template = 2131296367;
 			
-			// aapt resource value: 0x7f0900c7
-			public const int toolbar = 2131296455;
-			
 			// aapt resource value: 0x7f09003e
 			public const int top = 2131296318;
 			
@@ -3627,8 +3621,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f0900c9
-			public const int visible = 2131296457;
+			// aapt resource value: 0x7f0900c7
+			public const int visible = 2131296455;
 			
 			// aapt resource value: 0x7f0900ab
 			public const int volume_item_container = 2131296427;
@@ -3919,13 +3913,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			public const int support_simple_spinner_dropdown_item = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int Tabbar = 2130968641;
-			
-			// aapt resource value: 0x7f040042
-			public const int Toolbar = 2130968642;
-			
-			// aapt resource value: 0x7f040043
-			public const int tooltip = 2130968643;
+			public const int tooltip = 2130968641;
 			
 			static Layout()
 			{

@@ -7,7 +7,6 @@ namespace Doods.Framework.Ssh.Std.Interfaces
 {
     public interface IClientSsh
     {
-
         SemaphoreSlim ReadLock { get; }
 
         SshClient Client { get; }

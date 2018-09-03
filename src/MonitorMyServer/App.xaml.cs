@@ -1,5 +1,6 @@
 using Autofac;
 using Doods.Framework.Std;
+using Doods.Xam.MonitorMyServer.Services;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -36,8 +37,10 @@ namespace Doods.Xam.MonitorMyServer
 		{
 			builder.RegisterModule<Doods.Framework.Mobile.Std.Config.Bootstrapper>();
 			builder.RegisterModule<Doods.Framework.Repository.Std.Config.Bootstrapper>();
+		    builder.RegisterModule<Doods.Xam.MonitorMyServer.Views.Bootstrapper>();
+            builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
 		   
-			_container = builder.Build();
+           _container = builder.Build();
 		}
 
 		public App ()
