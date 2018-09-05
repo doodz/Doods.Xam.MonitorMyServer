@@ -1,7 +1,6 @@
 ﻿using Android.Util;
 using NLog;
 using System;
-using System.Collections.Generic;
 
 namespace Doods.Xam.MonitorMyServer.Droid.Services
 {
@@ -22,11 +21,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
             Log.Debug(ProjectName, msg);
         }
 
-        public void Event(string type, Dictionary<string, string> properties = null, Dictionary<string, double> measures = null)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public void Error(Exception e)
         {
             _log?.Error(e);
@@ -39,11 +34,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
             Log.Error(ProjectName, msg);
         }
 
-        public void Error(Exception e, string type = null)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public void Info(string msg)
         {
             _log?.Info(msg);

@@ -1,6 +1,5 @@
 ﻿using NLog;
 using System;
-using System.Collections.Generic;
 using ILogger = Doods.Framework.Std.ILogger;
 
 namespace Doods.Xam.MonitorMyServer.iOS.Services
@@ -39,20 +38,8 @@ namespace Doods.Xam.MonitorMyServer.iOS.Services
             _log.Warn(e);
         }
 
-        public void Event(string type, Dictionary<string, string> properties = null, Dictionary<string, double> measures = null)
-        {
-            throw new NotImplementedException();
-            ////DOTO: Inclure des mesures /propriétés par défaut ici 
-            //if (properties == null)
-            //{
-            //    properties = new Dictionary<string, string>();
-            //}
-
-            //properties.Add("location", App.LocationChangedEvent?.Location?.ToString());
-            ////HockeyApp.MetricsManager.TrackEvent(type, properties, measures);
-        }
-
-        public void Error(Exception e, string type = null)
+       
+        public void Error(Exception e)
         {
             _log.Error(e);
         }

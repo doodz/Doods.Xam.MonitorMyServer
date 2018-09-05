@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Doods.Framework.Ssh.Std
 {
-    public class ClientSsh : IClientSsh
+    public class ClientSsh
     {
         public SemaphoreSlim ReadLock { get; private set; } = new SemaphoreSlim(1, 1);
         public SshClient Client { get; private set; }

@@ -2,6 +2,7 @@
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Services;
+using System.Threading.Tasks;
 
 namespace Doods.Xam.MonitorMyServer.Views.Base
 {
@@ -14,7 +15,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         {
         }
 
-        public IDataProvider DataProvider => _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
+        protected IDataProvider DataProvider => _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
 
 
         public RootPages CurrentRootPage
@@ -26,6 +27,14 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         public void SetCurrentPage(RootPages page)
         {
             CurrentRootPage = page;
+        }
+        protected virtual Task InternalLoadAsync(LoadingContext context)
+        {
+            return Task.FromResult(0);
+        }
+        protected override Task LoadAsync(LoadingContext context)
+        {
+            return  InternalLoadAsync(context);
         }
     }
 }

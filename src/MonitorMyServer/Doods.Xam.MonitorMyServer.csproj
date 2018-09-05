@@ -19,6 +19,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Resources\MyResourceDictionary.xaml" Link="Resx\MyResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj" />
     <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj" />
     <ProjectReference Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj" />
@@ -26,6 +32,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resx\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resx\AppStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\SystemView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

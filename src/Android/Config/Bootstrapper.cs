@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Doods.Framework.Repository.Std.Interfaces;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Services;
 
@@ -13,7 +14,8 @@ namespace Doods.Xam.MonitorMyServer.Droid.Config
 
 
             builder.RegisterType<Logger>().As<ILogger>().SingleInstance();
-
+            builder.RegisterType<SQLiteFactory>().As<ISqLiteFactory>().SingleInstance();
+            
 
             return builder;
         }

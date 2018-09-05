@@ -5,6 +5,7 @@ using Doods.Framework.Std.Utilities;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views;
 using System;
+using Doods.Xam.MonitorMyServer.Resx;
 
 namespace Doods.Xam.MonitorMyServer
 {
@@ -15,7 +16,7 @@ namespace Doods.Xam.MonitorMyServer
         public MainPage()
         {
             InitializeComponent();
-            Title = "Home";
+            Title = Resource.Home;
             var vm = App.Container.Resolve<MainPageViewModel>();
             Start(vm);
 
@@ -23,20 +24,7 @@ namespace Doods.Xam.MonitorMyServer
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-            try
-            {
-                if (!ssh.IsConnected())
-                    ssh.Init();
-
-                var toto = new toto() { };
-                toto.Handler = toto;
-                var val = await ssh.ExecuteTaskAsync<string>(toto);
-                var messs = val.Data;
-            }
-            catch (Exception ex)
-            {
-                var mess = ex.Message;
-            }
+           
         }
     }
 
