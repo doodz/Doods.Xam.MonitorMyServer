@@ -2,16 +2,15 @@
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Std.Utilities;
-using Doods.Xam.MonitorMyServer.Services;
+using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Views;
 using System;
-using Doods.Xam.MonitorMyServer.Resx;
 
 namespace Doods.Xam.MonitorMyServer
 {
     public partial class MainPage : BaseContentPage
     {
-        private SshService ssh;
+       
 
         public MainPage()
         {
@@ -20,11 +19,6 @@ namespace Doods.Xam.MonitorMyServer
             var vm = App.Container.Resolve<MainPageViewModel>();
             Start(vm);
 
-        }
-
-        private async void Button_OnClicked(object sender, EventArgs e)
-        {
-           
         }
     }
 
