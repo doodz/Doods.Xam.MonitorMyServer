@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.MainPage">
     
     <StackLayout>
-       
+        <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
         
 
         <!-- Place new controls here -->
