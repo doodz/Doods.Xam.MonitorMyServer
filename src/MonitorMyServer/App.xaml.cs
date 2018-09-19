@@ -5,63 +5,67 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace Doods.Xam.MonitorMyServer
 {
     public partial class App : Application
-	{
-		private static IContainer _container;
-		public static IContainer Container
-		{
-			get
-			{
-				if (_container == null)
-					throw new Exception("Please initialize the container first, through SetupContainer");
+    {
+        private static IContainer _container;
 
-				return _container;
-			}
-		}
-		private ILogger _logger;
-		protected ILogger Logger
-		{
-			get
-			{
-				if (_logger == null)
-					_logger = Container.Resolve<ILogger>();
+        private ILogger _logger;
 
-				return _logger;
-			}
-		}
+        public App()
+        {
+            InitializeComponent();
 
-		public static void SetupContainer(ContainerBuilder builder)
-		{
-			builder.RegisterModule<Doods.Framework.Mobile.Std.Config.Bootstrapper>();
-			builder.RegisterModule<Doods.Framework.Repository.Std.Config.Bootstrapper>();
-		    builder.RegisterModule<Doods.Xam.MonitorMyServer.Views.Bootstrapper>();
-		    builder.RegisterModule<Doods.Xam.MonitorMyServer.Services.Bootstrapper>();
-		   
-           _container = builder.Build();
-		}
+            MainPage = new MainPage();
+        }
 
-		public App ()
-		{
-			InitializeComponent();
+        public static IContainer Container
+        {
+            get
+            {
+                if (_container == null)
+                    throw new Exception("Please initialize the container first, through SetupContainer");
 
-			MainPage = new MainPage();
-		}
+                return _container;
+            }
+        }
 
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
+        protected ILogger Logger
+        {
+            get
+            {
+                if (_logger == null)
+                    _logger = Container.Resolve<ILogger>();
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
+                return _logger;
+            }
+        }
 
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+        public static void SetupContainer(ContainerBuilder builder)
+        {
+            builder.RegisterModule<Framework.Mobile.Std.Config.Bootstrapper>();
+            builder.RegisterModule<Framework.Repository.Std.Config.Bootstrapper>();
+            builder.RegisterModule<Views.Bootstrapper>();
+            builder.RegisterModule<Services.Bootstrapper>();
+
+            _container = builder.Build();
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
+
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
+
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
 }
