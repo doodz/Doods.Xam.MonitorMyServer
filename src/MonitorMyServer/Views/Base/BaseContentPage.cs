@@ -19,11 +19,12 @@ namespace Doods.Framework.Mobile.Std.Mvvm
 
     public class BaseContentPage : ContentPage
     {
-        public static readonly BindableProperty ViewModelProperty =
-            BindableProperty.Create<BaseContentPage, ViewModel>(p => p.ViewModel, null);
+        public static readonly BindableProperty ViewModelProperty = BindableProperty.Create(nameof(ViewModel),
+            typeof(ViewModel), typeof(BaseContentPage), null);
 
         public static readonly BindableProperty PageProperty =
-            BindableProperty.Create<BaseContentPage, RootPages>(p => p.Page, RootPages.None, BindingMode.TwoWay);
+            BindableProperty.Create(nameof(Page),
+                typeof(RootPages), typeof(BaseContentPage), RootPages.None);
 
         private bool _isAppearing;
 

@@ -17,7 +17,7 @@ namespace Doods.Xam.MonitorMyServer
         public App()
         {
             InitializeComponent();
-
+           
             MainPage = new MainPage();
         }
 

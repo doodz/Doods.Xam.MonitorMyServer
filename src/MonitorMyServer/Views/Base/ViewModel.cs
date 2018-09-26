@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Services;
@@ -8,6 +9,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
 {
     public class ViewModel : ViewModelBase
     {
+       
         private RootPages _currentRootPage;
         private IDataProvider _dataProvider;
 
@@ -15,7 +17,10 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         {
         }
 
-        protected IDataProvider DataProvider => _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
+        public override IColorPalette ColorPalette => _colorPalette ?? (_colorPalette = App.Container.Resolve<IColorPalette>());
+
+        protected IDataProvider DataProvider =>
+            _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
 
 
         public RootPages CurrentRootPage
@@ -28,13 +33,15 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         {
             CurrentRootPage = page;
         }
+
         protected virtual Task InternalLoadAsync(LoadingContext context)
         {
             return Task.FromResult(0);
         }
+
         protected override Task LoadAsync(LoadingContext context)
         {
-            return  InternalLoadAsync(context);
+            return InternalLoadAsync(context);
         }
     }
 }
