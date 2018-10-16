@@ -8,7 +8,6 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.Login
 {
-
     public class LoginPageViewModel : ViewModel
     {
         private ValidatableObject<string> _hostName;
@@ -17,64 +16,19 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         private ViewModelStateItem _viewModelStateItem;
 
 
+        public LoginPageViewModel()
+        {
+            HostName = new ValidatableObject<string>(true);
+            Login = new ValidatableObject<string>(true);
+            Password = new ValidatableObject<string>(true);
+            AddValidations();
+        }
+
+
         public ICommand ValidateUserNameCommand => new Command(() => ValidateUserName());
         public ICommand ValidateHostNameCommand => new Command(() => ValidateHostName());
 
         public ICommand ValidatePasswordCommand => new Command(() => ValidatePassword());
-
-
-        public LoginPageViewModel()
-        {
-          
-
-            HostName = new ValidatableObject<string>(true);
-            Login = new ValidatableObject<string>(true);
-            Password = new ValidatableObject<string>(true);
-        }
-
-
-
-        private void AddValidations()
-        {
-
-            _hostName.Validations.Add(new IsNotNullOrEmptyRule<string>
-            {
-                ValidationMessage = Resource.HostNameRequired
-            });
-
-            _longin.Validations.Add(new IsNotNullOrEmptyRule<string>
-            {
-                ValidationMessage =Resource.UsernameRequired
-            });
-
-            _password.Validations.Add(new IsNotNullOrEmptyRule<string>
-            {
-                ValidationMessage = Resource.PasswordRequired
-            });
-        }
-
-
-        private bool Validate()
-        {
-            bool isHostNameValid = ValidateHostName();
-            bool isValidUser = ValidateUserName();
-            bool isValidPassword = ValidatePassword();
-            return isHostNameValid && isValidUser && isValidPassword;
-        }
-
-        private bool ValidateHostName()
-        {
-            return _hostName.Validate();
-        }
-        private bool ValidateUserName()
-        {
-            return _longin.Validate();
-        }
-
-        private bool ValidatePassword()
-        {
-            return _password.Validate();
-        }
 
         public ViewModelStateItem ViewModelStateItem
         {
@@ -98,6 +52,49 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         {
             get => _password;
             set => SetProperty(ref _password, value);
+        }
+
+
+        private void AddValidations()
+        {
+            _hostName.Validations.Add(new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = Resource.HostNameRequired
+            });
+
+            _longin.Validations.Add(new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = Resource.UsernameRequired
+            });
+
+            _password.Validations.Add(new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = Resource.PasswordRequired
+            });
+        }
+
+
+        private bool Validate()
+        {
+            var isHostNameValid = ValidateHostName();
+            var isValidUser = ValidateUserName();
+            var isValidPassword = ValidatePassword();
+            return isHostNameValid && isValidUser && isValidPassword;
+        }
+
+        private bool ValidateHostName()
+        {
+            return _hostName.Validate();
+        }
+
+        private bool ValidateUserName()
+        {
+            return _longin.Validate();
+        }
+
+        private bool ValidatePassword()
+        {
+            return _password.Validate();
         }
 
         protected override void OnInitializeLoading(LoadingContext context)

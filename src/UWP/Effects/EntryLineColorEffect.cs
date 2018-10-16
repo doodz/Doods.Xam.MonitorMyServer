@@ -10,7 +10,7 @@ using Media = Windows.UI.Xaml.Media;
 using UI = Windows.UI;
 using Xaml = Windows.UI.Xaml;
 
-[assembly: ResolutionGroupName("DoodsMobile")]
+[assembly: ResolutionGroupName("Doods.MonitorMyServer")]
 [assembly: ExportEffect(typeof(EntryLineColorEffect), "EntryLineColorEffect")]
 namespace Doods.Xam.MonitorMyServer.UWP.Effects
 {

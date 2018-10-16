@@ -6,7 +6,7 @@ using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ResolutionGroupName("DoodsMobile")]
+[assembly: ResolutionGroupName("Doods.MonitorMyServer")]
 [assembly: ExportEffect(typeof(EntryLineColorEffect), "EntryLineColorEffect")]
 namespace Doods.Xam.MonitorMyServer.Droid.Effects
 {

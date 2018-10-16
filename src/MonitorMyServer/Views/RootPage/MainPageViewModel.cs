@@ -4,7 +4,7 @@ using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Doods.Xam.MonitorMyServer.Views.Login;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -29,7 +29,8 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private void AddHost()
         {
-            NavigationService.NavigateAsync(nameof(HostManagerPage));
+            //NavigationService.NavigateAsync(nameof(HostManagerPage));
+            NavigationService.NavigateAsync(nameof(LogInPage));
         }
 
         public ViewModelStateItem ViewModelStateItem

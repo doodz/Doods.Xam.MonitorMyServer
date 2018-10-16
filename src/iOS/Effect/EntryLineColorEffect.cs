@@ -8,7 +8,7 @@ using System.Linq;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-[assembly: ResolutionGroupName("DoodsMobile")]
+[assembly: ResolutionGroupName("Doods.MonitorMyServer")]
 [assembly: ExportEffect(typeof(EntryLineColorEffect), "EntryLineColorEffect")]
 namespace Doods.Xam.MonitorMyServer.iOS.Effect
 {
