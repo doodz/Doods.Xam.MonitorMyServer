@@ -26,6 +26,2274 @@ namespace Doods.Xam.MonitorMyServer.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Doods.Framework.Android.Resource.Animation.abc_fade_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_fade_in;
+			global::Doods.Framework.Android.Resource.Animation.abc_fade_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_fade_out;
+			global::Doods.Framework.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Doods.Framework.Android.Resource.Animation.abc_popup_enter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_popup_enter;
+			global::Doods.Framework.Android.Resource.Animation.abc_popup_exit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_popup_exit;
+			global::Doods.Framework.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Doods.Framework.Android.Resource.Animation.abc_slide_in_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Doods.Framework.Android.Resource.Animation.abc_slide_in_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_in_top;
+			global::Doods.Framework.Android.Resource.Animation.abc_slide_out_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Doods.Framework.Android.Resource.Animation.abc_slide_out_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_out_top;
+			global::Doods.Framework.Android.Resource.Animation.design_bottom_sheet_slide_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Doods.Framework.Android.Resource.Animation.design_bottom_sheet_slide_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Doods.Framework.Android.Resource.Animation.design_snackbar_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_snackbar_in;
+			global::Doods.Framework.Android.Resource.Animation.design_snackbar_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_snackbar_out;
+			global::Doods.Framework.Android.Resource.Animation.tooltip_enter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.tooltip_enter;
+			global::Doods.Framework.Android.Resource.Animation.tooltip_exit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.tooltip_exit;
+			global::Doods.Framework.Android.Resource.Animator.design_appbar_state_list_animator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarDivider;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarItemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarPopupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarSize;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarSplitStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarTabBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarTabStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarTabTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarTheme;
+			global::Doods.Framework.Android.Resource.Attribute.actionBarWidgetTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Doods.Framework.Android.Resource.Attribute.actionButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionDropDownStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionLayout;
+			global::Doods.Framework.Android.Resource.Attribute.actionMenuTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.actionMenuTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeBackground;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeCloseButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeCloseDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeCopyDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeCutDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeFindDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModePasteDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModePopupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeSelectAllDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeShareDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeSplitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionModeWebSearchDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.actionOverflowButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionOverflowMenuStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Doods.Framework.Android.Resource.Attribute.actionProviderClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionProviderClass;
+			global::Doods.Framework.Android.Resource.Attribute.actionViewClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionViewClass;
+			global::Doods.Framework.Android.Resource.Attribute.activityChooserViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Doods.Framework.Android.Resource.Attribute.alertDialogCenterButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Doods.Framework.Android.Resource.Attribute.alertDialogStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alertDialogStyle;
+			global::Doods.Framework.Android.Resource.Attribute.alertDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alertDialogTheme;
+			global::Doods.Framework.Android.Resource.Attribute.allowStacking = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.allowStacking;
+			global::Doods.Framework.Android.Resource.Attribute.alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alpha;
+			global::Doods.Framework.Android.Resource.Attribute.alphabeticModifiers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Doods.Framework.Android.Resource.Attribute.arrowHeadLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.arrowHeadLength;
+			global::Doods.Framework.Android.Resource.Attribute.arrowShaftLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.arrowShaftLength;
+			global::Doods.Framework.Android.Resource.Attribute.autoCompleteTextViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.autoSizeMaxTextSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Doods.Framework.Android.Resource.Attribute.autoSizeMinTextSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Doods.Framework.Android.Resource.Attribute.autoSizePresetSizes = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Doods.Framework.Android.Resource.Attribute.autoSizeStepGranularity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Doods.Framework.Android.Resource.Attribute.autoSizeTextType = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.autoSizeTextType;
+			global::Doods.Framework.Android.Resource.Attribute.background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.background;
+			global::Doods.Framework.Android.Resource.Attribute.backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.backgroundSplit;
+			global::Doods.Framework.Android.Resource.Attribute.backgroundStacked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.backgroundStacked;
+			global::Doods.Framework.Android.Resource.Attribute.backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.backgroundTint;
+			global::Doods.Framework.Android.Resource.Attribute.backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.backgroundTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.barLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.barLength;
+			global::Doods.Framework.Android.Resource.Attribute.behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_autoHide;
+			global::Doods.Framework.Android.Resource.Attribute.behavior_hideable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_hideable;
+			global::Doods.Framework.Android.Resource.Attribute.behavior_overlapTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Doods.Framework.Android.Resource.Attribute.behavior_peekHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Doods.Framework.Android.Resource.Attribute.behavior_skipCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Doods.Framework.Android.Resource.Attribute.borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderWidth;
+			global::Doods.Framework.Android.Resource.Attribute.borderlessButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Doods.Framework.Android.Resource.Attribute.bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonBarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonGravity;
+			global::Doods.Framework.Android.Resource.Attribute.buttonPanelSideLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Doods.Framework.Android.Resource.Attribute.buttonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.buttonStyleSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Doods.Framework.Android.Resource.Attribute.buttonTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonTint;
+			global::Doods.Framework.Android.Resource.Attribute.buttonTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.cardBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Doods.Framework.Android.Resource.Attribute.cardCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardCornerRadius;
+			global::Doods.Framework.Android.Resource.Attribute.cardElevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardElevation;
+			global::Doods.Framework.Android.Resource.Attribute.cardMaxElevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardMaxElevation;
+			global::Doods.Framework.Android.Resource.Attribute.cardPreventCornerOverlap = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Doods.Framework.Android.Resource.Attribute.cardUseCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Doods.Framework.Android.Resource.Attribute.checkboxStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkboxStyle;
+			global::Doods.Framework.Android.Resource.Attribute.checkedTextViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.closeIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIcon;
+			global::Doods.Framework.Android.Resource.Attribute.closeItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeItemLayout;
+			global::Doods.Framework.Android.Resource.Attribute.collapseContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseContentDescription;
+			global::Doods.Framework.Android.Resource.Attribute.collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseIcon;
+			global::Doods.Framework.Android.Resource.Attribute.collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Doods.Framework.Android.Resource.Attribute.collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.color;
+			global::Doods.Framework.Android.Resource.Attribute.colorAccent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorAccent;
+			global::Doods.Framework.Android.Resource.Attribute.colorBackgroundFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Doods.Framework.Android.Resource.Attribute.colorButtonNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorButtonNormal;
+			global::Doods.Framework.Android.Resource.Attribute.colorControlActivated = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorControlActivated;
+			global::Doods.Framework.Android.Resource.Attribute.colorControlHighlight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorControlHighlight;
+			global::Doods.Framework.Android.Resource.Attribute.colorControlNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorControlNormal;
+			global::Doods.Framework.Android.Resource.Attribute.colorError = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorError;
+			global::Doods.Framework.Android.Resource.Attribute.colorPrimary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorPrimary;
+			global::Doods.Framework.Android.Resource.Attribute.colorPrimaryDark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Doods.Framework.Android.Resource.Attribute.colorSwitchThumbNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Doods.Framework.Android.Resource.Attribute.commitIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.commitIcon;
+			global::Doods.Framework.Android.Resource.Attribute.contentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentDescription;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetEnd;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetEndWithActions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetLeft;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetRight;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetStart;
+			global::Doods.Framework.Android.Resource.Attribute.contentInsetStartWithNavigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Doods.Framework.Android.Resource.Attribute.contentPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPadding;
+			global::Doods.Framework.Android.Resource.Attribute.contentPaddingBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Doods.Framework.Android.Resource.Attribute.contentPaddingLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Doods.Framework.Android.Resource.Attribute.contentPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPaddingRight;
+			global::Doods.Framework.Android.Resource.Attribute.contentPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPaddingTop;
+			global::Doods.Framework.Android.Resource.Attribute.contentScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentScrim;
+			global::Doods.Framework.Android.Resource.Attribute.controlBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.controlBackground;
+			global::Doods.Framework.Android.Resource.Attribute.counterEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.counterMaxLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterMaxLength;
+			global::Doods.Framework.Android.Resource.Attribute.counterOverflowTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.counterTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.customNavigationLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.customNavigationLayout;
+			global::Doods.Framework.Android.Resource.Attribute.defaultQueryHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.defaultQueryHint;
+			global::Doods.Framework.Android.Resource.Attribute.dialogPreferredPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Doods.Framework.Android.Resource.Attribute.dialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dialogTheme;
+			global::Doods.Framework.Android.Resource.Attribute.displayOptions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.displayOptions;
+			global::Doods.Framework.Android.Resource.Attribute.divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.divider;
+			global::Doods.Framework.Android.Resource.Attribute.dividerHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dividerHorizontal;
+			global::Doods.Framework.Android.Resource.Attribute.dividerPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dividerPadding;
+			global::Doods.Framework.Android.Resource.Attribute.dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dividerVertical;
+			global::Doods.Framework.Android.Resource.Attribute.drawableSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawableSize;
+			global::Doods.Framework.Android.Resource.Attribute.drawerArrowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Doods.Framework.Android.Resource.Attribute.dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Attribute.editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextBackground;
+			global::Doods.Framework.Android.Resource.Attribute.editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextStyle;
+			global::Doods.Framework.Android.Resource.Attribute.elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.elevation;
+			global::Doods.Framework.Android.Resource.Attribute.errorEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.errorEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.errorTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.errorTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expanded;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Doods.Framework.Android.Resource.Attribute.expandedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.externalRouteEnabledDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.fabSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabSize;
+			global::Doods.Framework.Android.Resource.Attribute.fastScrollEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.font;
+			global::Doods.Framework.Android.Resource.Attribute.fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontFamily;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderCerts = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderCerts;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderFetchStrategy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderFetchTimeout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderPackage;
+			global::Doods.Framework.Android.Resource.Attribute.fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderQuery;
+			global::Doods.Framework.Android.Resource.Attribute.fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontStyle;
+			global::Doods.Framework.Android.Resource.Attribute.fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontWeight;
+			global::Doods.Framework.Android.Resource.Attribute.foregroundInsidePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Doods.Framework.Android.Resource.Attribute.gapBetweenBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.gapBetweenBars;
+			global::Doods.Framework.Android.Resource.Attribute.goIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.goIcon;
+			global::Doods.Framework.Android.Resource.Attribute.headerLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.headerLayout;
+			global::Doods.Framework.Android.Resource.Attribute.height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.height;
+			global::Doods.Framework.Android.Resource.Attribute.hideOnContentScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Doods.Framework.Android.Resource.Attribute.hintAnimationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.hintEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.hintTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.homeAsUpIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Doods.Framework.Android.Resource.Attribute.homeLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.homeLayout;
+			global::Doods.Framework.Android.Resource.Attribute.icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.icon;
+			global::Doods.Framework.Android.Resource.Attribute.iconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTint;
+			global::Doods.Framework.Android.Resource.Attribute.iconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Doods.Framework.Android.Resource.Attribute.imageButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.imageButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.indeterminateProgressStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Doods.Framework.Android.Resource.Attribute.initialActivityCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.initialActivityCount;
+			global::Doods.Framework.Android.Resource.Attribute.insetForeground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.insetForeground;
+			global::Doods.Framework.Android.Resource.Attribute.isLightTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.isLightTheme;
+			global::Doods.Framework.Android.Resource.Attribute.itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemBackground;
+			global::Doods.Framework.Android.Resource.Attribute.itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemIconTint;
+			global::Doods.Framework.Android.Resource.Attribute.itemPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemPadding;
+			global::Doods.Framework.Android.Resource.Attribute.itemTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.keylines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.keylines;
+			global::Doods.Framework.Android.Resource.Attribute.layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout;
+			global::Doods.Framework.Android.Resource.Attribute.layoutManager = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layoutManager;
+			global::Doods.Framework.Android.Resource.Attribute.layout_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_anchor;
+			global::Doods.Framework.Android.Resource.Attribute.layout_anchorGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Doods.Framework.Android.Resource.Attribute.layout_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_behavior;
+			global::Doods.Framework.Android.Resource.Attribute.layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_collapseMode;
+			global::Doods.Framework.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Doods.Framework.Android.Resource.Attribute.layout_dodgeInsetEdges = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Doods.Framework.Android.Resource.Attribute.layout_insetEdge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_insetEdge;
+			global::Doods.Framework.Android.Resource.Attribute.layout_keyline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_keyline;
+			global::Doods.Framework.Android.Resource.Attribute.layout_scrollFlags = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Doods.Framework.Android.Resource.Attribute.layout_scrollInterpolator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Doods.Framework.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Doods.Framework.Android.Resource.Attribute.listDividerAlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Doods.Framework.Android.Resource.Attribute.listItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listItemLayout;
+			global::Doods.Framework.Android.Resource.Attribute.listLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listLayout;
+			global::Doods.Framework.Android.Resource.Attribute.listMenuViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.listPopupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Doods.Framework.Android.Resource.Attribute.listPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Attribute.listPreferredItemHeightLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Doods.Framework.Android.Resource.Attribute.listPreferredItemHeightSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Doods.Framework.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Doods.Framework.Android.Resource.Attribute.listPreferredItemPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Doods.Framework.Android.Resource.Attribute.logo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.logo;
+			global::Doods.Framework.Android.Resource.Attribute.logoDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.logoDescription;
+			global::Doods.Framework.Android.Resource.Attribute.maxActionInlineWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Doods.Framework.Android.Resource.Attribute.maxButtonHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.maxButtonHeight;
+			global::Doods.Framework.Android.Resource.Attribute.measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteButtonTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteButtonTint;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteCloseDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRoutePauseDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRoutePlayDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteStopDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Doods.Framework.Android.Resource.Attribute.mediaRouteTvIconDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.menu;
+			global::Doods.Framework.Android.Resource.Attribute.multiChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Doods.Framework.Android.Resource.Attribute.navigationContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationContentDescription;
+			global::Doods.Framework.Android.Resource.Attribute.navigationIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationIcon;
+			global::Doods.Framework.Android.Resource.Attribute.navigationMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationMode;
+			global::Doods.Framework.Android.Resource.Attribute.numericModifiers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.numericModifiers;
+			global::Doods.Framework.Android.Resource.Attribute.overlapAnchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.overlapAnchor;
+			global::Doods.Framework.Android.Resource.Attribute.paddingBottomNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Doods.Framework.Android.Resource.Attribute.paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.paddingEnd;
+			global::Doods.Framework.Android.Resource.Attribute.paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.paddingStart;
+			global::Doods.Framework.Android.Resource.Attribute.paddingTopNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Doods.Framework.Android.Resource.Attribute.panelBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.panelBackground;
+			global::Doods.Framework.Android.Resource.Attribute.panelMenuListTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Doods.Framework.Android.Resource.Attribute.panelMenuListWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Doods.Framework.Android.Resource.Attribute.passwordToggleContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Doods.Framework.Android.Resource.Attribute.passwordToggleDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Doods.Framework.Android.Resource.Attribute.passwordToggleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.passwordToggleTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.passwordToggleTint;
+			global::Doods.Framework.Android.Resource.Attribute.passwordToggleTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.popupMenuStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.popupMenuStyle;
+			global::Doods.Framework.Android.Resource.Attribute.popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.popupTheme;
+			global::Doods.Framework.Android.Resource.Attribute.popupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.popupWindowStyle;
+			global::Doods.Framework.Android.Resource.Attribute.preserveIconSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Doods.Framework.Android.Resource.Attribute.pressedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Doods.Framework.Android.Resource.Attribute.progressBarPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.progressBarPadding;
+			global::Doods.Framework.Android.Resource.Attribute.progressBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.progressBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.queryBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.queryBackground;
+			global::Doods.Framework.Android.Resource.Attribute.queryHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.queryHint;
+			global::Doods.Framework.Android.Resource.Attribute.radioButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.radioButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.ratingBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.ratingBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.ratingBarStyleIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Doods.Framework.Android.Resource.Attribute.ratingBarStyleSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Doods.Framework.Android.Resource.Attribute.reverseLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.reverseLayout;
+			global::Doods.Framework.Android.Resource.Attribute.rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.rippleColor;
+			global::Doods.Framework.Android.Resource.Attribute.scrimAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Doods.Framework.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Doods.Framework.Android.Resource.Attribute.searchHintIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.searchHintIcon;
+			global::Doods.Framework.Android.Resource.Attribute.searchIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.searchIcon;
+			global::Doods.Framework.Android.Resource.Attribute.searchViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.searchViewStyle;
+			global::Doods.Framework.Android.Resource.Attribute.seekBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.seekBarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.selectableItemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.selectableItemBackground;
+			global::Doods.Framework.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Doods.Framework.Android.Resource.Attribute.showAsAction = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showAsAction;
+			global::Doods.Framework.Android.Resource.Attribute.showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showDividers;
+			global::Doods.Framework.Android.Resource.Attribute.showText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showText;
+			global::Doods.Framework.Android.Resource.Attribute.showTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showTitle;
+			global::Doods.Framework.Android.Resource.Attribute.singleChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Doods.Framework.Android.Resource.Attribute.spanCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spanCount;
+			global::Doods.Framework.Android.Resource.Attribute.spinBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spinBars;
+			global::Doods.Framework.Android.Resource.Attribute.spinnerDropDownItemStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Doods.Framework.Android.Resource.Attribute.spinnerStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spinnerStyle;
+			global::Doods.Framework.Android.Resource.Attribute.splitTrack = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.splitTrack;
+			global::Doods.Framework.Android.Resource.Attribute.srcCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.srcCompat;
+			global::Doods.Framework.Android.Resource.Attribute.stackFromEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.stackFromEnd;
+			global::Doods.Framework.Android.Resource.Attribute.state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_above_anchor;
+			global::Doods.Framework.Android.Resource.Attribute.state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_collapsed;
+			global::Doods.Framework.Android.Resource.Attribute.state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_collapsible;
+			global::Doods.Framework.Android.Resource.Attribute.statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.statusBarBackground;
+			global::Doods.Framework.Android.Resource.Attribute.statusBarScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.statusBarScrim;
+			global::Doods.Framework.Android.Resource.Attribute.subMenuArrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subMenuArrow;
+			global::Doods.Framework.Android.Resource.Attribute.submitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.submitBackground;
+			global::Doods.Framework.Android.Resource.Attribute.subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subtitle;
+			global::Doods.Framework.Android.Resource.Attribute.subtitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.subtitleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subtitleTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.subtitleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Doods.Framework.Android.Resource.Attribute.suggestionRowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Doods.Framework.Android.Resource.Attribute.switchMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.switchMinWidth;
+			global::Doods.Framework.Android.Resource.Attribute.switchPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.switchPadding;
+			global::Doods.Framework.Android.Resource.Attribute.switchStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.switchStyle;
+			global::Doods.Framework.Android.Resource.Attribute.switchTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.switchTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.tabBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabBackground;
+			global::Doods.Framework.Android.Resource.Attribute.tabContentStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabContentStart;
+			global::Doods.Framework.Android.Resource.Attribute.tabGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabGravity;
+			global::Doods.Framework.Android.Resource.Attribute.tabIndicatorColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Doods.Framework.Android.Resource.Attribute.tabIndicatorHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Doods.Framework.Android.Resource.Attribute.tabMaxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMaxWidth;
+			global::Doods.Framework.Android.Resource.Attribute.tabMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMinWidth;
+			global::Doods.Framework.Android.Resource.Attribute.tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMode;
+			global::Doods.Framework.Android.Resource.Attribute.tabPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPadding;
+			global::Doods.Framework.Android.Resource.Attribute.tabPaddingBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Doods.Framework.Android.Resource.Attribute.tabPaddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Doods.Framework.Android.Resource.Attribute.tabPaddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingStart;
+			global::Doods.Framework.Android.Resource.Attribute.tabPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingTop;
+			global::Doods.Framework.Android.Resource.Attribute.tabSelectedTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.tabTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.tabTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.textAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAllCaps;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceListItemSecondary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceListItemSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Doods.Framework.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Doods.Framework.Android.Resource.Attribute.textColorAlertDialogListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Doods.Framework.Android.Resource.Attribute.textColorError = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textColorError;
+			global::Doods.Framework.Android.Resource.Attribute.textColorSearchUrl = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Doods.Framework.Android.Resource.Attribute.theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.theme;
+			global::Doods.Framework.Android.Resource.Attribute.thickness = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thickness;
+			global::Doods.Framework.Android.Resource.Attribute.thumbTextPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thumbTextPadding;
+			global::Doods.Framework.Android.Resource.Attribute.thumbTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thumbTint;
+			global::Doods.Framework.Android.Resource.Attribute.thumbTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thumbTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.tickMark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tickMark;
+			global::Doods.Framework.Android.Resource.Attribute.tickMarkTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tickMarkTint;
+			global::Doods.Framework.Android.Resource.Attribute.tickMarkTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.tint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tint;
+			global::Doods.Framework.Android.Resource.Attribute.tintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tintMode;
+			global::Doods.Framework.Android.Resource.Attribute.title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.title;
+			global::Doods.Framework.Android.Resource.Attribute.titleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleEnabled;
+			global::Doods.Framework.Android.Resource.Attribute.titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargin;
+			global::Doods.Framework.Android.Resource.Attribute.titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginBottom;
+			global::Doods.Framework.Android.Resource.Attribute.titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginEnd;
+			global::Doods.Framework.Android.Resource.Attribute.titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginStart;
+			global::Doods.Framework.Android.Resource.Attribute.titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginTop;
+			global::Doods.Framework.Android.Resource.Attribute.titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargins;
+			global::Doods.Framework.Android.Resource.Attribute.titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextColor;
+			global::Doods.Framework.Android.Resource.Attribute.titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextStyle;
+			global::Doods.Framework.Android.Resource.Attribute.toolbarId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.toolbarId;
+			global::Doods.Framework.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.toolbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.toolbarStyle;
+			global::Doods.Framework.Android.Resource.Attribute.tooltipForegroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Doods.Framework.Android.Resource.Attribute.tooltipFrameBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Doods.Framework.Android.Resource.Attribute.tooltipText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tooltipText;
+			global::Doods.Framework.Android.Resource.Attribute.track = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.track;
+			global::Doods.Framework.Android.Resource.Attribute.trackTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.trackTint;
+			global::Doods.Framework.Android.Resource.Attribute.trackTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.trackTintMode;
+			global::Doods.Framework.Android.Resource.Attribute.useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.useCompatPadding;
+			global::Doods.Framework.Android.Resource.Attribute.voiceIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.voiceIcon;
+			global::Doods.Framework.Android.Resource.Attribute.windowActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowActionBar;
+			global::Doods.Framework.Android.Resource.Attribute.windowActionBarOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Doods.Framework.Android.Resource.Attribute.windowActionModeOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Doods.Framework.Android.Resource.Attribute.windowFixedHeightMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Doods.Framework.Android.Resource.Attribute.windowFixedHeightMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Doods.Framework.Android.Resource.Attribute.windowFixedWidthMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Doods.Framework.Android.Resource.Attribute.windowFixedWidthMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Doods.Framework.Android.Resource.Attribute.windowMinWidthMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Doods.Framework.Android.Resource.Attribute.windowMinWidthMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Doods.Framework.Android.Resource.Attribute.windowNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowNoTitle;
+			global::Doods.Framework.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Doods.Framework.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Doods.Framework.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Doods.Framework.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Doods.Framework.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Doods.Framework.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Doods.Framework.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Doods.Framework.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Doods.Framework.Android.Resource.Color.abc_btn_colored_text_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Doods.Framework.Android.Resource.Color.abc_color_highlight_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_color_highlight_material;
+			global::Doods.Framework.Android.Resource.Color.abc_hint_foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Doods.Framework.Android.Resource.Color.abc_hint_foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Doods.Framework.Android.Resource.Color.abc_input_method_navigation_guard = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Doods.Framework.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Doods.Framework.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Doods.Framework.Android.Resource.Color.abc_primary_text_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Doods.Framework.Android.Resource.Color.abc_primary_text_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Doods.Framework.Android.Resource.Color.abc_search_url_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_search_url_text;
+			global::Doods.Framework.Android.Resource.Color.abc_search_url_text_normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Doods.Framework.Android.Resource.Color.abc_search_url_text_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Doods.Framework.Android.Resource.Color.abc_search_url_text_selected = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Doods.Framework.Android.Resource.Color.abc_secondary_text_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Doods.Framework.Android.Resource.Color.abc_secondary_text_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_btn_checkable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_default = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_default;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_edittext = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_edittext;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_seek_thumb = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_spinner;
+			global::Doods.Framework.Android.Resource.Color.abc_tint_switch_track = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_tint_switch_track;
+			global::Doods.Framework.Android.Resource.Color.accent_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.accent_material_dark;
+			global::Doods.Framework.Android.Resource.Color.accent_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.accent_material_light;
+			global::Doods.Framework.Android.Resource.Color.background_floating_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.background_floating_material_dark;
+			global::Doods.Framework.Android.Resource.Color.background_floating_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.background_floating_material_light;
+			global::Doods.Framework.Android.Resource.Color.background_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.background_material_dark;
+			global::Doods.Framework.Android.Resource.Color.background_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.background_material_light;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_disabled_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_inverse_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_inverse_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Doods.Framework.Android.Resource.Color.bright_foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_material_light;
+			global::Doods.Framework.Android.Resource.Color.button_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.button_material_dark;
+			global::Doods.Framework.Android.Resource.Color.button_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.button_material_light;
+			global::Doods.Framework.Android.Resource.Color.cardview_dark_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_dark_background;
+			global::Doods.Framework.Android.Resource.Color.cardview_light_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_light_background;
+			global::Doods.Framework.Android.Resource.Color.cardview_shadow_end_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Doods.Framework.Android.Resource.Color.cardview_shadow_start_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Doods.Framework.Android.Resource.Color.design_bottom_navigation_shadow_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Doods.Framework.Android.Resource.Color.design_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_error;
+			global::Doods.Framework.Android.Resource.Color.design_fab_shadow_end_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_shadow_mid_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_shadow_start_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_stroke_end_inner_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_stroke_end_outer_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_stroke_top_inner_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Doods.Framework.Android.Resource.Color.design_fab_stroke_top_outer_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Doods.Framework.Android.Resource.Color.design_snackbar_background_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_snackbar_background_color;
+			global::Doods.Framework.Android.Resource.Color.design_tint_password_toggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_tint_password_toggle;
+			global::Doods.Framework.Android.Resource.Color.dim_foreground_disabled_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Doods.Framework.Android.Resource.Color.dim_foreground_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Doods.Framework.Android.Resource.Color.dim_foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Doods.Framework.Android.Resource.Color.dim_foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_material_light;
+			global::Doods.Framework.Android.Resource.Color.error_color_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.error_color_material;
+			global::Doods.Framework.Android.Resource.Color.foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.foreground_material_dark;
+			global::Doods.Framework.Android.Resource.Color.foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.foreground_material_light;
+			global::Doods.Framework.Android.Resource.Color.highlighted_text_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Doods.Framework.Android.Resource.Color.highlighted_text_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.highlighted_text_material_light;
+			global::Doods.Framework.Android.Resource.Color.material_blue_grey_800 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_blue_grey_800;
+			global::Doods.Framework.Android.Resource.Color.material_blue_grey_900 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_blue_grey_900;
+			global::Doods.Framework.Android.Resource.Color.material_blue_grey_950 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_blue_grey_950;
+			global::Doods.Framework.Android.Resource.Color.material_deep_teal_200 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_deep_teal_200;
+			global::Doods.Framework.Android.Resource.Color.material_deep_teal_500 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_deep_teal_500;
+			global::Doods.Framework.Android.Resource.Color.material_grey_100 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_100;
+			global::Doods.Framework.Android.Resource.Color.material_grey_300 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_300;
+			global::Doods.Framework.Android.Resource.Color.material_grey_50 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_50;
+			global::Doods.Framework.Android.Resource.Color.material_grey_600 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_600;
+			global::Doods.Framework.Android.Resource.Color.material_grey_800 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_800;
+			global::Doods.Framework.Android.Resource.Color.material_grey_850 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_850;
+			global::Doods.Framework.Android.Resource.Color.material_grey_900 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_900;
+			global::Doods.Framework.Android.Resource.Color.notification_action_color_filter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_action_color_filter;
+			global::Doods.Framework.Android.Resource.Color.notification_icon_bg_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_icon_bg_color;
+			global::Doods.Framework.Android.Resource.Color.notification_material_background_media_default_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Doods.Framework.Android.Resource.Color.primary_dark_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_dark_material_dark;
+			global::Doods.Framework.Android.Resource.Color.primary_dark_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_dark_material_light;
+			global::Doods.Framework.Android.Resource.Color.primary_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_material_dark;
+			global::Doods.Framework.Android.Resource.Color.primary_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_material_light;
+			global::Doods.Framework.Android.Resource.Color.primary_text_default_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Doods.Framework.Android.Resource.Color.primary_text_default_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_text_default_material_light;
+			global::Doods.Framework.Android.Resource.Color.primary_text_disabled_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Doods.Framework.Android.Resource.Color.primary_text_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Doods.Framework.Android.Resource.Color.ripple_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.ripple_material_dark;
+			global::Doods.Framework.Android.Resource.Color.ripple_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.ripple_material_light;
+			global::Doods.Framework.Android.Resource.Color.secondary_text_default_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Doods.Framework.Android.Resource.Color.secondary_text_default_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Doods.Framework.Android.Resource.Color.secondary_text_disabled_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Doods.Framework.Android.Resource.Color.secondary_text_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_disabled_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_material_light;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_normal_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Doods.Framework.Android.Resource.Color.switch_thumb_normal_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Doods.Framework.Android.Resource.Color.tooltip_background_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.tooltip_background_dark;
+			global::Doods.Framework.Android.Resource.Color.tooltip_background_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.tooltip_background_light;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_default_height_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_elevation_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_button_min_height_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_button_min_width_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Doods.Framework.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_button_inset_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_button_padding_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Doods.Framework.Android.Resource.Dimension.abc_config_prefDialogWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Doods.Framework.Android.Resource.Dimension.abc_control_corner_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_control_inset_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_control_padding_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_min_width_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_min_width_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_padding_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_padding_top_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dialog_title_divider_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Doods.Framework.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Doods.Framework.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Doods.Framework.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_floating_window_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Doods.Framework.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_panel_menu_list_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Doods.Framework.Android.Resource.Dimension.abc_progress_bar_height_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_search_view_preferred_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Doods.Framework.Android.Resource.Dimension.abc_search_view_preferred_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Doods.Framework.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_switch_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_switch_padding;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_body_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_body_2_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_button_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_caption_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_display_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_display_2_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_display_3_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_display_4_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_headline_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_large_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_medium_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_menu_header_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_menu_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_small_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_subhead_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Doods.Framework.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Doods.Framework.Android.Resource.Dimension.cardview_compat_inset_shadow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Doods.Framework.Android.Resource.Dimension.cardview_default_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.cardview_default_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_default_radius;
+			global::Doods.Framework.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.compat_button_inset_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Doods.Framework.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Doods.Framework.Android.Resource.Dimension.compat_button_padding_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Doods.Framework.Android.Resource.Dimension.compat_control_corner_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Doods.Framework.Android.Resource.Dimension.design_appbar_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_navigation_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_border_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_border_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_image_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_image_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_size_mini = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_size_normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Doods.Framework.Android.Resource.Dimension.design_fab_translation_z_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_padding_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Doods.Framework.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_padding_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Doods.Framework.Android.Resource.Dimension.design_snackbar_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_tab_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_max_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_tab_scrollable_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Doods.Framework.Android.Resource.Dimension.design_tab_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_text_size;
+			global::Doods.Framework.Android.Resource.Dimension.design_tab_text_size_2line = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Doods.Framework.Android.Resource.Dimension.disabled_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Doods.Framework.Android.Resource.Dimension.disabled_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Doods.Framework.Android.Resource.Dimension.fastscroll_default_thickness = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Doods.Framework.Android.Resource.Dimension.fastscroll_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.fastscroll_margin;
+			global::Doods.Framework.Android.Resource.Dimension.fastscroll_minimum_range = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Doods.Framework.Android.Resource.Dimension.highlight_alpha_material_colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Doods.Framework.Android.Resource.Dimension.highlight_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Doods.Framework.Android.Resource.Dimension.highlight_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Doods.Framework.Android.Resource.Dimension.hint_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Doods.Framework.Android.Resource.Dimension.hint_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Doods.Framework.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Doods.Framework.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Doods.Framework.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Doods.Framework.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Doods.Framework.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Doods.Framework.Android.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Doods.Framework.Android.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Doods.Framework.Android.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Doods.Framework.Android.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Doods.Framework.Android.Resource.Dimension.mr_dialog_fixed_width_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Doods.Framework.Android.Resource.Dimension.mr_dialog_fixed_width_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Doods.Framework.Android.Resource.Dimension.notification_action_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Doods.Framework.Android.Resource.Dimension.notification_action_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_action_text_size;
+			global::Doods.Framework.Android.Resource.Dimension.notification_big_circle_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Doods.Framework.Android.Resource.Dimension.notification_content_margin_start = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Doods.Framework.Android.Resource.Dimension.notification_large_icon_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Doods.Framework.Android.Resource.Dimension.notification_large_icon_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Doods.Framework.Android.Resource.Dimension.notification_main_column_padding_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Doods.Framework.Android.Resource.Dimension.notification_media_narrow_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Doods.Framework.Android.Resource.Dimension.notification_right_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Doods.Framework.Android.Resource.Dimension.notification_right_side_padding_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Doods.Framework.Android.Resource.Dimension.notification_small_icon_background_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Doods.Framework.Android.Resource.Dimension.notification_small_icon_size_as_large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Doods.Framework.Android.Resource.Dimension.notification_subtext_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_subtext_size;
+			global::Doods.Framework.Android.Resource.Dimension.notification_top_pad = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_top_pad;
+			global::Doods.Framework.Android.Resource.Dimension.notification_top_pad_large_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_horizontal_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_margin;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_vertical_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Doods.Framework.Android.Resource.Dimension.tooltip_y_offset_touch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_action_bar_item_background_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_borderless_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_check_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_colored_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_radio_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Doods.Framework.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Doods.Framework.Android.Resource.Drawable.abc_cab_background_internal_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Doods.Framework.Android.Resource.Drawable.abc_cab_background_top_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_control_background_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_control_background_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_dialog_material_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Doods.Framework.Android.Resource.Drawable.abc_edit_text_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_ab_back_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_clear_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_go_search_api_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_search_api_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_black_16dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_black_36dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_black_48dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_item_background_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_item_background_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_focused_holo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_longpressed_holo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_pressed_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_list_selector_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Doods.Framework.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ratingbar_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_ratingbar_small_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Doods.Framework.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Doods.Framework.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_seekbar_thumb_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_seekbar_track_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_switch_thumb_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_tab_indicator_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_cursor_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Doods.Framework.Android.Resource.Drawable.abc_vector_test = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_vector_test;
+			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password;
+			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Doods.Framework.Android.Resource.Drawable.avd_show_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password;
+			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_1;
+			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_2;
+			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_3;
+			global::Doods.Framework.Android.Resource.Drawable.design_bottom_navigation_item_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Doods.Framework.Android.Resource.Drawable.design_fab_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_fab_background;
+			global::Doods.Framework.Android.Resource.Drawable.design_ic_visibility = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_ic_visibility;
+			global::Doods.Framework.Android.Resource.Drawable.design_ic_visibility_off = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Doods.Framework.Android.Resource.Drawable.design_password_eye = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_password_eye;
+			global::Doods.Framework.Android.Resource.Drawable.design_snackbar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_snackbar_background;
+			global::Doods.Framework.Android.Resource.Drawable.error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.error;
+			global::Doods.Framework.Android.Resource.Drawable.ic_audiotrack_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_audiotrack_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_dialog_close_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_dialog_close_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_00 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_01 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_02 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_03 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_04 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_05 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_06 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_07 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_08 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_09 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_10 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_11 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_12 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_13 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_14 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_collapse_15 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_00 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_01 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_02 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_03 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_04 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_05 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_06 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_07 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_08 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_09 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_10 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_11 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_12 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_13 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_14 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Doods.Framework.Android.Resource.Drawable.ic_group_expand_15 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_pause_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_pause_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_play_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_play_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_play_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_stop_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_media_stop_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_media_stop_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_00_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_00_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_01_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_01_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_02_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_02_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_03_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_03_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_04_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_04_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_05_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_05_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_06_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_06_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_07_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_07_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_08_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_08_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_09_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_09_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_10_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_10_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_11_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_11_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_12_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_12_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_13_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_13_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_14_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_14_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_15_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_15_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_16_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_16_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_17_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_17_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_18_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_18_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_19_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_19_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_20_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_20_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_21_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_21_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_22_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_22_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_23_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_23_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_24_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_24_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_25_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_25_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_26_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_26_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_27_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_27_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_28_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_28_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_29_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_29_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_30_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connected_30_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_00_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_01_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_02_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_03_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_04_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_05_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_06_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_07_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_08_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_09_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_10_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_11_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_12_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_13_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_14_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_15_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_16_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_17_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_18_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_19_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_20_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_21_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_22_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_23_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_23_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_24_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_24_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_25_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_25_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_26_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_26_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_27_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_27_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_28_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_28_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_29_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_29_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_30_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_connecting_30_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_disabled_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_disabled_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_disconnected_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_disconnected_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_mr_button_grey = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_speaker_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_speaker_group_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_speaker_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_tv_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Doods.Framework.Android.Resource.Drawable.ic_vol_type_tv_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Doods.Framework.Android.Resource.Drawable.loading = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.loading;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_connected_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_connected_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_connecting_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_connecting_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_button_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_button_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_dialog_close_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_dialog_close_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_dialog_material_background_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_dialog_material_background_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_group_collapse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_group_collapse;
+			global::Doods.Framework.Android.Resource.Drawable.mr_group_expand = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_group_expand;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_pause_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_pause_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_play_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_play_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_play_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_stop_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_media_stop_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_stop_light;
+			global::Doods.Framework.Android.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Doods.Framework.Android.Resource.Drawable.mr_vol_type_audiotrack_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Doods.Framework.Android.Resource.Drawable.navigation_empty_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Doods.Framework.Android.Resource.Drawable.notification_action_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_action_background;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg_low = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg_low;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg_low_normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg_low_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg_normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg_normal;
+			global::Doods.Framework.Android.Resource.Drawable.notification_bg_normal_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Doods.Framework.Android.Resource.Drawable.notification_icon_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_icon_background;
+			global::Doods.Framework.Android.Resource.Drawable.notification_template_icon_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Doods.Framework.Android.Resource.Drawable.notification_template_icon_low_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Doods.Framework.Android.Resource.Drawable.notification_tile_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_tile_bg;
+			global::Doods.Framework.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Doods.Framework.Android.Resource.Drawable.tooltip_frame_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Doods.Framework.Android.Resource.Drawable.tooltip_frame_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Doods.Framework.Android.Resource.Id.ALT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ALT;
+			global::Doods.Framework.Android.Resource.Id.CTRL = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.CTRL;
+			global::Doods.Framework.Android.Resource.Id.FUNCTION = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.FUNCTION;
+			global::Doods.Framework.Android.Resource.Id.META = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.META;
+			global::Doods.Framework.Android.Resource.Id.SHIFT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SHIFT;
+			global::Doods.Framework.Android.Resource.Id.SYM = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SYM;
+			global::Doods.Framework.Android.Resource.Id.action0 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action0;
+			global::Doods.Framework.Android.Resource.Id.action_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar;
+			global::Doods.Framework.Android.Resource.Id.action_bar_activity_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_activity_content;
+			global::Doods.Framework.Android.Resource.Id.action_bar_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_container;
+			global::Doods.Framework.Android.Resource.Id.action_bar_root = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_root;
+			global::Doods.Framework.Android.Resource.Id.action_bar_spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_spinner;
+			global::Doods.Framework.Android.Resource.Id.action_bar_subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_subtitle;
+			global::Doods.Framework.Android.Resource.Id.action_bar_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_title;
+			global::Doods.Framework.Android.Resource.Id.action_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_container;
+			global::Doods.Framework.Android.Resource.Id.action_context_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_context_bar;
+			global::Doods.Framework.Android.Resource.Id.action_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_divider;
+			global::Doods.Framework.Android.Resource.Id.action_image = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_image;
+			global::Doods.Framework.Android.Resource.Id.action_menu_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_menu_divider;
+			global::Doods.Framework.Android.Resource.Id.action_menu_presenter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_menu_presenter;
+			global::Doods.Framework.Android.Resource.Id.action_mode_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_bar;
+			global::Doods.Framework.Android.Resource.Id.action_mode_bar_stub = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_bar_stub;
+			global::Doods.Framework.Android.Resource.Id.action_mode_close_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_close_button;
+			global::Doods.Framework.Android.Resource.Id.action_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_text;
+			global::Doods.Framework.Android.Resource.Id.actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.actions;
+			global::Doods.Framework.Android.Resource.Id.activity_chooser_view_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.activity_chooser_view_content;
+			global::Doods.Framework.Android.Resource.Id.add = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.add;
+			global::Doods.Framework.Android.Resource.Id.alertTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.alertTitle;
+			global::Doods.Framework.Android.Resource.Id.all = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.all;
+			global::Doods.Framework.Android.Resource.Id.always = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.always;
+			global::Doods.Framework.Android.Resource.Id.async = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.async;
+			global::Doods.Framework.Android.Resource.Id.auto = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.auto;
+			global::Doods.Framework.Android.Resource.Id.beginning = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.beginning;
+			global::Doods.Framework.Android.Resource.Id.blocking = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.blocking;
+			global::Doods.Framework.Android.Resource.Id.bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottom;
+			global::Doods.Framework.Android.Resource.Id.buttonPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.buttonPanel;
+			global::Doods.Framework.Android.Resource.Id.cancel_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.cancel_action;
+			global::Doods.Framework.Android.Resource.Id.center = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.center;
+			global::Doods.Framework.Android.Resource.Id.center_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.center_horizontal;
+			global::Doods.Framework.Android.Resource.Id.center_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.center_vertical;
+			global::Doods.Framework.Android.Resource.Id.checkbox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.checkbox;
+			global::Doods.Framework.Android.Resource.Id.chronometer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.chronometer;
+			global::Doods.Framework.Android.Resource.Id.clip_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.clip_horizontal;
+			global::Doods.Framework.Android.Resource.Id.clip_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.clip_vertical;
+			global::Doods.Framework.Android.Resource.Id.collapseActionView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.collapseActionView;
+			global::Doods.Framework.Android.Resource.Id.container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.container;
+			global::Doods.Framework.Android.Resource.Id.contentPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.contentPanel;
+			global::Doods.Framework.Android.Resource.Id.coordinator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.coordinator;
+			global::Doods.Framework.Android.Resource.Id.custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.custom;
+			global::Doods.Framework.Android.Resource.Id.customPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.customPanel;
+			global::Doods.Framework.Android.Resource.Id.decor_content_parent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.decor_content_parent;
+			global::Doods.Framework.Android.Resource.Id.default_activity_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.default_activity_button;
+			global::Doods.Framework.Android.Resource.Id.design_bottom_sheet = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.design_bottom_sheet;
+			global::Doods.Framework.Android.Resource.Id.design_menu_item_action_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.design_menu_item_action_area;
+			global::Doods.Framework.Android.Resource.Id.design_menu_item_action_area_stub = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Doods.Framework.Android.Resource.Id.design_menu_item_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.design_menu_item_text;
+			global::Doods.Framework.Android.Resource.Id.design_navigation_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.design_navigation_view;
+			global::Doods.Framework.Android.Resource.Id.disableHome = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.disableHome;
+			global::Doods.Framework.Android.Resource.Id.edit_query = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.edit_query;
+			global::Doods.Framework.Android.Resource.Id.end = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.end;
+			global::Doods.Framework.Android.Resource.Id.end_padder = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.end_padder;
+			global::Doods.Framework.Android.Resource.Id.enterAlways = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlways;
+			global::Doods.Framework.Android.Resource.Id.enterAlwaysCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Doods.Framework.Android.Resource.Id.exitUntilCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.exitUntilCollapsed;
+			global::Doods.Framework.Android.Resource.Id.expand_activities_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expand_activities_button;
+			global::Doods.Framework.Android.Resource.Id.expanded_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expanded_menu;
+			global::Doods.Framework.Android.Resource.Id.fill = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill;
+			global::Doods.Framework.Android.Resource.Id.fill_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_horizontal;
+			global::Doods.Framework.Android.Resource.Id.fill_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_vertical;
+			global::Doods.Framework.Android.Resource.Id.@fixed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.@fixed;
+			global::Doods.Framework.Android.Resource.Id.forever = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.forever;
+			global::Doods.Framework.Android.Resource.Id.ghost_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ghost_view;
+			global::Doods.Framework.Android.Resource.Id.home = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.home;
+			global::Doods.Framework.Android.Resource.Id.homeAsUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.homeAsUp;
+			global::Doods.Framework.Android.Resource.Id.icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.icon;
+			global::Doods.Framework.Android.Resource.Id.icon_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.icon_group;
+			global::Doods.Framework.Android.Resource.Id.ifRoom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ifRoom;
+			global::Doods.Framework.Android.Resource.Id.image = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.image;
+			global::Doods.Framework.Android.Resource.Id.info = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.info;
+			global::Doods.Framework.Android.Resource.Id.italic = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.italic;
+			global::Doods.Framework.Android.Resource.Id.item_touch_helper_previous_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Doods.Framework.Android.Resource.Id.largeLabel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.largeLabel;
+			global::Doods.Framework.Android.Resource.Id.left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.left;
+			global::Doods.Framework.Android.Resource.Id.line1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.line1;
+			global::Doods.Framework.Android.Resource.Id.line3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.line3;
+			global::Doods.Framework.Android.Resource.Id.listMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.listMode;
+			global::Doods.Framework.Android.Resource.Id.list_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.list_item;
+			global::Doods.Framework.Android.Resource.Id.masked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.masked;
+			global::Doods.Framework.Android.Resource.Id.media_actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.media_actions;
+			global::Doods.Framework.Android.Resource.Id.message = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.message;
+			global::Doods.Framework.Android.Resource.Id.middle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.middle;
+			global::Doods.Framework.Android.Resource.Id.mini = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mini;
+			global::Doods.Framework.Android.Resource.Id.mr_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_art;
+			global::Doods.Framework.Android.Resource.Id.mr_chooser_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_list;
+			global::Doods.Framework.Android.Resource.Id.mr_chooser_route_desc = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Doods.Framework.Android.Resource.Id.mr_chooser_route_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Doods.Framework.Android.Resource.Id.mr_chooser_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_route_name;
+			global::Doods.Framework.Android.Resource.Id.mr_chooser_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_title;
+			global::Doods.Framework.Android.Resource.Id.mr_close = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_close;
+			global::Doods.Framework.Android.Resource.Id.mr_control_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_control_divider;
+			global::Doods.Framework.Android.Resource.Id.mr_control_playback_ctrl = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::Doods.Framework.Android.Resource.Id.mr_control_subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_control_subtitle;
+			global::Doods.Framework.Android.Resource.Id.mr_control_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_control_title;
+			global::Doods.Framework.Android.Resource.Id.mr_control_title_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_control_title_container;
+			global::Doods.Framework.Android.Resource.Id.mr_custom_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_custom_control;
+			global::Doods.Framework.Android.Resource.Id.mr_default_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_default_control;
+			global::Doods.Framework.Android.Resource.Id.mr_dialog_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_dialog_area;
+			global::Doods.Framework.Android.Resource.Id.mr_expandable_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_expandable_area;
+			global::Doods.Framework.Android.Resource.Id.mr_group_expand_collapse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Doods.Framework.Android.Resource.Id.mr_media_main_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_media_main_control;
+			global::Doods.Framework.Android.Resource.Id.mr_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_name;
+			global::Doods.Framework.Android.Resource.Id.mr_playback_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_playback_control;
+			global::Doods.Framework.Android.Resource.Id.mr_title_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_title_bar;
+			global::Doods.Framework.Android.Resource.Id.mr_volume_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_control;
+			global::Doods.Framework.Android.Resource.Id.mr_volume_group_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_group_list;
+			global::Doods.Framework.Android.Resource.Id.mr_volume_item_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_item_icon;
+			global::Doods.Framework.Android.Resource.Id.mr_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_slider;
+			global::Doods.Framework.Android.Resource.Id.multiply = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.multiply;
+			global::Doods.Framework.Android.Resource.Id.navigation_header_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.navigation_header_container;
+			global::Doods.Framework.Android.Resource.Id.never = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.never;
+			global::Doods.Framework.Android.Resource.Id.none = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.none;
+			global::Doods.Framework.Android.Resource.Id.normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.normal;
+			global::Doods.Framework.Android.Resource.Id.notification_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_background;
+			global::Doods.Framework.Android.Resource.Id.notification_main_column = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_main_column;
+			global::Doods.Framework.Android.Resource.Id.notification_main_column_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_main_column_container;
+			global::Doods.Framework.Android.Resource.Id.parallax = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parallax;
+			global::Doods.Framework.Android.Resource.Id.parentPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parentPanel;
+			global::Doods.Framework.Android.Resource.Id.parent_matrix = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parent_matrix;
+			global::Doods.Framework.Android.Resource.Id.pin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.pin;
+			global::Doods.Framework.Android.Resource.Id.progress_circular = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.progress_circular;
+			global::Doods.Framework.Android.Resource.Id.progress_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.progress_horizontal;
+			global::Doods.Framework.Android.Resource.Id.radio = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.radio;
+			global::Doods.Framework.Android.Resource.Id.right = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.right;
+			global::Doods.Framework.Android.Resource.Id.right_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.right_icon;
+			global::Doods.Framework.Android.Resource.Id.right_side = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.right_side;
+			global::Doods.Framework.Android.Resource.Id.save_image_matrix = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.save_image_matrix;
+			global::Doods.Framework.Android.Resource.Id.save_non_transition_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.save_non_transition_alpha;
+			global::Doods.Framework.Android.Resource.Id.save_scale_type = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.save_scale_type;
+			global::Doods.Framework.Android.Resource.Id.screen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.screen;
+			global::Doods.Framework.Android.Resource.Id.scroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scroll;
+			global::Doods.Framework.Android.Resource.Id.scrollIndicatorDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorDown;
+			global::Doods.Framework.Android.Resource.Id.scrollIndicatorUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorUp;
+			global::Doods.Framework.Android.Resource.Id.scrollView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollView;
+			global::Doods.Framework.Android.Resource.Id.scrollable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollable;
+			global::Doods.Framework.Android.Resource.Id.search_badge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_badge;
+			global::Doods.Framework.Android.Resource.Id.search_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_bar;
+			global::Doods.Framework.Android.Resource.Id.search_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_button;
+			global::Doods.Framework.Android.Resource.Id.search_close_btn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_close_btn;
+			global::Doods.Framework.Android.Resource.Id.search_edit_frame = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_edit_frame;
+			global::Doods.Framework.Android.Resource.Id.search_go_btn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_go_btn;
+			global::Doods.Framework.Android.Resource.Id.search_mag_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_mag_icon;
+			global::Doods.Framework.Android.Resource.Id.search_plate = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_plate;
+			global::Doods.Framework.Android.Resource.Id.search_src_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_src_text;
+			global::Doods.Framework.Android.Resource.Id.search_voice_btn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_voice_btn;
+			global::Doods.Framework.Android.Resource.Id.select_dialog_listview = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.select_dialog_listview;
+			global::Doods.Framework.Android.Resource.Id.shortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shortcut;
+			global::Doods.Framework.Android.Resource.Id.showCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showCustom;
+			global::Doods.Framework.Android.Resource.Id.showHome = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showHome;
+			global::Doods.Framework.Android.Resource.Id.showTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showTitle;
+			global::Doods.Framework.Android.Resource.Id.smallLabel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.smallLabel;
+			global::Doods.Framework.Android.Resource.Id.snackbar_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snackbar_action;
+			global::Doods.Framework.Android.Resource.Id.snackbar_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snackbar_text;
+			global::Doods.Framework.Android.Resource.Id.snap = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snap;
+			global::Doods.Framework.Android.Resource.Id.spacer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.spacer;
+			global::Doods.Framework.Android.Resource.Id.split_action_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.split_action_bar;
+			global::Doods.Framework.Android.Resource.Id.src_atop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.src_atop;
+			global::Doods.Framework.Android.Resource.Id.src_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.src_in;
+			global::Doods.Framework.Android.Resource.Id.src_over = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.src_over;
+			global::Doods.Framework.Android.Resource.Id.start = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.start;
+			global::Doods.Framework.Android.Resource.Id.status_bar_latest_event_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Doods.Framework.Android.Resource.Id.submenuarrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submenuarrow;
+			global::Doods.Framework.Android.Resource.Id.submit_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submit_area;
+			global::Doods.Framework.Android.Resource.Id.tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tabMode;
+			global::Doods.Framework.Android.Resource.Id.tag_transition_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_transition_group;
+			global::Doods.Framework.Android.Resource.Id.text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text;
+			global::Doods.Framework.Android.Resource.Id.text2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text2;
+			global::Doods.Framework.Android.Resource.Id.textSpacerNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoButtons;
+			global::Doods.Framework.Android.Resource.Id.textSpacerNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoTitle;
+			global::Doods.Framework.Android.Resource.Id.text_input_password_toggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text_input_password_toggle;
+			global::Doods.Framework.Android.Resource.Id.textinput_counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_counter;
+			global::Doods.Framework.Android.Resource.Id.textinput_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_error;
+			global::Doods.Framework.Android.Resource.Id.time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.time;
+			global::Doods.Framework.Android.Resource.Id.title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.title;
+			global::Doods.Framework.Android.Resource.Id.titleDividerNoCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.titleDividerNoCustom;
+			global::Doods.Framework.Android.Resource.Id.title_template = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.title_template;
+			global::Doods.Framework.Android.Resource.Id.top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.top;
+			global::Doods.Framework.Android.Resource.Id.topPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.topPanel;
+			global::Doods.Framework.Android.Resource.Id.touch_outside = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.touch_outside;
+			global::Doods.Framework.Android.Resource.Id.transition_current_scene = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_current_scene;
+			global::Doods.Framework.Android.Resource.Id.transition_layout_save = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_layout_save;
+			global::Doods.Framework.Android.Resource.Id.transition_position = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_position;
+			global::Doods.Framework.Android.Resource.Id.transition_scene_layoutid_cache = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Doods.Framework.Android.Resource.Id.transition_transform = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_transform;
+			global::Doods.Framework.Android.Resource.Id.uniform = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.uniform;
+			global::Doods.Framework.Android.Resource.Id.up = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.up;
+			global::Doods.Framework.Android.Resource.Id.useLogo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.useLogo;
+			global::Doods.Framework.Android.Resource.Id.view_offset_helper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.view_offset_helper;
+			global::Doods.Framework.Android.Resource.Id.visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.visible;
+			global::Doods.Framework.Android.Resource.Id.volume_item_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.volume_item_container;
+			global::Doods.Framework.Android.Resource.Id.withText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.withText;
+			global::Doods.Framework.Android.Resource.Id.wrap_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.wrap_content;
+			global::Doods.Framework.Android.Resource.Integer.abc_config_activityDefaultDur = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Doods.Framework.Android.Resource.Integer.abc_config_activityShortDur = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Doods.Framework.Android.Resource.Integer.app_bar_elevation_anim_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Doods.Framework.Android.Resource.Integer.bottom_sheet_slide_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Doods.Framework.Android.Resource.Integer.cancel_button_image_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Doods.Framework.Android.Resource.Integer.config_tooltipAnimTime = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Doods.Framework.Android.Resource.Integer.design_snackbar_text_max_lines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Doods.Framework.Android.Resource.Integer.hide_password_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.hide_password_duration;
+			global::Doods.Framework.Android.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Doods.Framework.Android.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Doods.Framework.Android.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Doods.Framework.Android.Resource.Integer.show_password_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.show_password_duration;
+			global::Doods.Framework.Android.Resource.Integer.status_bar_notification_info_maxnum = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Doods.Framework.Android.Resource.Interpolator.mr_fast_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Doods.Framework.Android.Resource.Interpolator.mr_linear_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_bar_title_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_bar_up_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_menu_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_menu_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_mode_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Doods.Framework.Android.Resource.Layout.abc_action_mode_close_item_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Doods.Framework.Android.Resource.Layout.abc_activity_chooser_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Doods.Framework.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Doods.Framework.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Doods.Framework.Android.Resource.Layout.abc_alert_dialog_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Doods.Framework.Android.Resource.Layout.abc_alert_dialog_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Doods.Framework.Android.Resource.Layout.abc_dialog_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Doods.Framework.Android.Resource.Layout.abc_expanded_menu_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_list_menu_item_checkbox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Doods.Framework.Android.Resource.Layout.abc_list_menu_item_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Doods.Framework.Android.Resource.Layout.abc_list_menu_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_list_menu_item_radio = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Doods.Framework.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_popup_menu_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Doods.Framework.Android.Resource.Layout.abc_screen_content_include = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_screen_content_include;
+			global::Doods.Framework.Android.Resource.Layout.abc_screen_simple = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_screen_simple;
+			global::Doods.Framework.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Doods.Framework.Android.Resource.Layout.abc_screen_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Doods.Framework.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Doods.Framework.Android.Resource.Layout.abc_search_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_search_view;
+			global::Doods.Framework.Android.Resource.Layout.abc_select_dialog_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Doods.Framework.Android.Resource.Layout.design_bottom_navigation_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Doods.Framework.Android.Resource.Layout.design_bottom_sheet_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Doods.Framework.Android.Resource.Layout.design_layout_snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_layout_snackbar;
+			global::Doods.Framework.Android.Resource.Layout.design_layout_snackbar_include = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Doods.Framework.Android.Resource.Layout.design_layout_tab_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Doods.Framework.Android.Resource.Layout.design_layout_tab_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_layout_tab_text;
+			global::Doods.Framework.Android.Resource.Layout.design_menu_item_action_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_item;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_item_header = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_item_header;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_item_separator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_item_subheader = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_menu;
+			global::Doods.Framework.Android.Resource.Layout.design_navigation_menu_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Doods.Framework.Android.Resource.Layout.design_text_input_password_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Doods.Framework.Android.Resource.Layout.mr_chooser_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Doods.Framework.Android.Resource.Layout.mr_chooser_list_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Doods.Framework.Android.Resource.Layout.mr_controller_material_dialog_b = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Doods.Framework.Android.Resource.Layout.mr_controller_volume_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Doods.Framework.Android.Resource.Layout.mr_playback_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_playback_control;
+			global::Doods.Framework.Android.Resource.Layout.mr_volume_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_volume_control;
+			global::Doods.Framework.Android.Resource.Layout.notification_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_action;
+			global::Doods.Framework.Android.Resource.Layout.notification_action_tombstone = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_action_tombstone;
+			global::Doods.Framework.Android.Resource.Layout.notification_media_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_media_action;
+			global::Doods.Framework.Android.Resource.Layout.notification_media_cancel_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_big_media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_big_media;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_big_media_custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_big_media_narrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_custom_big = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_custom_big;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_icon_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_icon_group;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_lines_media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_lines_media;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_media;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_media_custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_media_custom;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_part_chronometer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Doods.Framework.Android.Resource.Layout.notification_template_part_time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_part_time;
+			global::Doods.Framework.Android.Resource.Layout.select_dialog_item_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_item_material;
+			global::Doods.Framework.Android.Resource.Layout.select_dialog_multichoice_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Doods.Framework.Android.Resource.Layout.select_dialog_singlechoice_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Doods.Framework.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Doods.Framework.Android.Resource.Layout.tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.tooltip;
+			global::Doods.Framework.Android.Resource.String.abc_action_bar_home_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_bar_home_description;
+			global::Doods.Framework.Android.Resource.String.abc_action_bar_up_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_bar_up_description;
+			global::Doods.Framework.Android.Resource.String.abc_action_menu_overflow_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Doods.Framework.Android.Resource.String.abc_action_mode_done = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_mode_done;
+			global::Doods.Framework.Android.Resource.String.abc_activity_chooser_view_see_all = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Doods.Framework.Android.Resource.String.abc_activitychooserview_choose_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Doods.Framework.Android.Resource.String.abc_capital_off = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_off;
+			global::Doods.Framework.Android.Resource.String.abc_capital_on = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_on;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_body_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_body_2_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_button_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_button_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_caption_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_caption_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_display_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_display_2_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_display_3_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_display_4_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_headline_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_headline_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_menu_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_menu_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_subhead_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Doods.Framework.Android.Resource.String.abc_font_family_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_title_material;
+			global::Doods.Framework.Android.Resource.String.abc_search_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_search_hint;
+			global::Doods.Framework.Android.Resource.String.abc_searchview_description_clear = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_clear;
+			global::Doods.Framework.Android.Resource.String.abc_searchview_description_query = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_query;
+			global::Doods.Framework.Android.Resource.String.abc_searchview_description_search = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_search;
+			global::Doods.Framework.Android.Resource.String.abc_searchview_description_submit = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_submit;
+			global::Doods.Framework.Android.Resource.String.abc_searchview_description_voice = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_voice;
+			global::Doods.Framework.Android.Resource.String.abc_shareactionprovider_share_with = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Doods.Framework.Android.Resource.String.abc_shareactionprovider_share_with_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Doods.Framework.Android.Resource.String.abc_toolbar_collapse_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Doods.Framework.Android.Resource.String.app_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.app_name;
+			global::Doods.Framework.Android.Resource.String.appbar_scrolling_view_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Doods.Framework.Android.Resource.String.bottom_sheet_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.bottom_sheet_behavior;
+			global::Doods.Framework.Android.Resource.String.character_counter_pattern = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.character_counter_pattern;
+			global::Doods.Framework.Android.Resource.String.hello = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.hello;
+			global::Doods.Framework.Android.Resource.String.mr_button_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_button_content_description;
+			global::Doods.Framework.Android.Resource.String.mr_cast_button_connected = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_connected;
+			global::Doods.Framework.Android.Resource.String.mr_cast_button_connecting = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_connecting;
+			global::Doods.Framework.Android.Resource.String.mr_cast_button_disconnected = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Doods.Framework.Android.Resource.String.mr_chooser_searching = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_chooser_searching;
+			global::Doods.Framework.Android.Resource.String.mr_chooser_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_chooser_title;
+			global::Doods.Framework.Android.Resource.String.mr_controller_album_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_album_art;
+			global::Doods.Framework.Android.Resource.String.mr_controller_casting_screen = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_casting_screen;
+			global::Doods.Framework.Android.Resource.String.mr_controller_close_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_close_description;
+			global::Doods.Framework.Android.Resource.String.mr_controller_collapse_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_collapse_group;
+			global::Doods.Framework.Android.Resource.String.mr_controller_disconnect = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_disconnect;
+			global::Doods.Framework.Android.Resource.String.mr_controller_expand_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_expand_group;
+			global::Doods.Framework.Android.Resource.String.mr_controller_no_info_available = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_no_info_available;
+			global::Doods.Framework.Android.Resource.String.mr_controller_no_media_selected = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Doods.Framework.Android.Resource.String.mr_controller_pause = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_pause;
+			global::Doods.Framework.Android.Resource.String.mr_controller_play = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_play;
+			global::Doods.Framework.Android.Resource.String.mr_controller_stop = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_stop;
+			global::Doods.Framework.Android.Resource.String.mr_controller_stop_casting = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_stop_casting;
+			global::Doods.Framework.Android.Resource.String.mr_controller_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_volume_slider;
+			global::Doods.Framework.Android.Resource.String.mr_system_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_system_route_name;
+			global::Doods.Framework.Android.Resource.String.mr_user_route_category_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_user_route_category_name;
+			global::Doods.Framework.Android.Resource.String.password_toggle_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.password_toggle_content_description;
+			global::Doods.Framework.Android.Resource.String.path_password_eye = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_eye;
+			global::Doods.Framework.Android.Resource.String.path_password_eye_mask_strike_through = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Doods.Framework.Android.Resource.String.path_password_eye_mask_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Doods.Framework.Android.Resource.String.path_password_strike_through = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_strike_through;
+			global::Doods.Framework.Android.Resource.String.search_menu_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.search_menu_title;
+			global::Doods.Framework.Android.Resource.String.status_bar_notification_info_overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Doods.Framework.Android.Resource.Style.AlertDialog_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.AlertDialog_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Animation_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Doods.Framework.Android.Resource.Style.Animation_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Doods.Framework.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Base_AlertDialog_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Doods.Framework.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Doods.Framework.Android.Resource.Style.Base_CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_CardView;
+			global::Doods.Framework.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Doods.Framework.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Doods.Framework.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Doods.Framework.Android.Resource.Style.Base_V22_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V23_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V26_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Doods.Framework.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_Design_TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Doods.Framework.Android.Resource.Style.CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView;
+			global::Doods.Framework.Android.Resource.Style.CardView_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Dark;
+			global::Doods.Framework.Android.Resource.Style.CardView_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Doods.Framework.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_V11_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_V11_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_V14_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_V14_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_V21_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_V21_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_V25_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Platform_V25_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Doods.Framework.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Doods.Framework.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Design_Tab = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_MediaRouter_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ImageButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ListView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_RatingBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_SearchView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_SeekBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Doods.Framework.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Doods.Framework.Android.Resource.Style.Widget_Compat_NotificationActionText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_BottomNavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_NavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Doods.Framework.Android.Resource.Style.Widget_Design_TextInputLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_background;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_backgroundStacked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_displayOptions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_divider;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_height;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_homeLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_icon;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_itemPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_logo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_logo;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_navigationMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_progressBarPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_progressBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_title;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBar_titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMenuItemView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuView;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_background;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_closeItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_height;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActionMode_titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActivityChooserView;
+			global::Doods.Framework.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_listItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_listLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_showTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Doods.Framework.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_android_src = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_tint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_tintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatSeekBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorError = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.BottomNavigationView_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Doods.Framework.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Doods.Framework.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Doods.Framework.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Doods.Framework.Android.Resource.Styleable.ButtonBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Doods.Framework.Android.Resource.Styleable.CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_android_minHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardElevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardMaxElevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem;
+			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem_android_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Doods.Framework.Android.Resource.Styleable.CompoundButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton;
+			global::Doods.Framework.Android.Resource.Styleable.CompoundButton_android_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Doods.Framework.Android.Resource.Styleable.CompoundButton_buttonTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Doods.Framework.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_keylines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Doods.Framework.Android.Resource.Styleable.DesignTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme;
+			global::Doods.Framework.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Doods.Framework.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Doods.Framework.Android.Resource.Styleable.DesignTheme_textColorError = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Doods.Framework.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_fabSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_android_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow;
+			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Doods.Framework.Android.Resource.Styleable.MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton;
+			global::Doods.Framework.Android.Resource.Styleable.MediaRouteButton_android_minHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Doods.Framework.Android.Resource.Styleable.MediaRouteButton_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Doods.Framework.Android.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_enabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Doods.Framework.Android.Resource.Styleable.MenuGroup_android_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_actionLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_actionProviderClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_actionViewClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_checkable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_checked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_enabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_menuCategory = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_onClick = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_android_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_contentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_iconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_iconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_numericModifiers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_showAsAction = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Doods.Framework.Android.Resource.Styleable.MenuItem_tooltipText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_headerBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_verticalDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Doods.Framework.Android.Resource.Styleable.MenuView_subMenuArrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_headerLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.NavigationView_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_menu;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Doods.Framework.Android.Resource.Styleable.RecycleListView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView;
+			global::Doods.Framework.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Doods.Framework.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_android_orientation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_layoutManager = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_reverseLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_spanCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Doods.Framework.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Doods.Framework.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Doods.Framework.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_android_imeOptions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_android_inputType = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_closeIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_commitIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_defaultQueryHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_goIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_layout;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_queryBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_queryHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_searchHintIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_searchIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_submitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Doods.Framework.Android.Resource.Styleable.SearchView_voiceIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_entries = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_popupBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_prompt = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Doods.Framework.Android.Resource.Styleable.Spinner_popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_android_textOff = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_android_textOn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_android_thumb = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_showText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_splitTrack = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_switchPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_thumbTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_track = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_trackTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.TabItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabItem;
+			global::Doods.Framework.Android.Resource.Styleable.TabItem_android_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Doods.Framework.Android.Resource.Styleable.TabItem_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Doods.Framework.Android.Resource.Styleable.TabItem_android_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabItem_android_text;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabContentStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TabLayout_tabTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_textColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_textSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_textStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_android_typeface = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Doods.Framework.Android.Resource.Styleable.TextAppearance_textAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_android_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Doods.Framework.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_android_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_android_minHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_buttonGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_logo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_logo;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_logoDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_navigationIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_title;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Doods.Framework.Android.Resource.Styleable.View = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View;
+			global::Doods.Framework.Android.Resource.Styleable.View_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_focusable;
+			global::Doods.Framework.Android.Resource.Styleable.View_android_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_theme;
+			global::Doods.Framework.Android.Resource.Styleable.View_paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingEnd;
+			global::Doods.Framework.Android.Resource.Styleable.View_paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingStart;
+			global::Doods.Framework.Android.Resource.Styleable.View_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_theme;
+			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat;
+			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2342,26 +4610,26 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02012f
-			public const int avd_hide_password_1 = 2130837807;
-			
-			// aapt resource value: 0x7f020130
-			public const int avd_hide_password_2 = 2130837808;
-			
 			// aapt resource value: 0x7f020131
-			public const int avd_hide_password_3 = 2130837809;
+			public const int avd_hide_password_1 = 2130837809;
+			
+			// aapt resource value: 0x7f020132
+			public const int avd_hide_password_2 = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int avd_hide_password_3 = 2130837811;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020132
-			public const int avd_show_password_1 = 2130837810;
-			
-			// aapt resource value: 0x7f020133
-			public const int avd_show_password_2 = 2130837811;
-			
 			// aapt resource value: 0x7f020134
-			public const int avd_show_password_3 = 2130837812;
+			public const int avd_show_password_1 = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int avd_show_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int avd_show_password_3 = 2130837814;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2382,640 +4650,646 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			public const int design_snackbar_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_audiotrack_dark = 2130837595;
+			public const int error = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_audiotrack_light = 2130837596;
+			public const int ic_audiotrack_dark = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_dialog_close_dark = 2130837597;
+			public const int ic_audiotrack_light = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_dialog_close_light = 2130837598;
+			public const int ic_dialog_close_dark = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_group_collapse_00 = 2130837599;
+			public const int ic_dialog_close_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_group_collapse_01 = 2130837600;
+			public const int ic_group_collapse_00 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_group_collapse_02 = 2130837601;
+			public const int ic_group_collapse_01 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_group_collapse_03 = 2130837602;
+			public const int ic_group_collapse_02 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_group_collapse_04 = 2130837603;
+			public const int ic_group_collapse_03 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_05 = 2130837604;
+			public const int ic_group_collapse_04 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_06 = 2130837605;
+			public const int ic_group_collapse_05 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_07 = 2130837606;
+			public const int ic_group_collapse_06 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_08 = 2130837607;
+			public const int ic_group_collapse_07 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_09 = 2130837608;
+			public const int ic_group_collapse_08 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_10 = 2130837609;
+			public const int ic_group_collapse_09 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_11 = 2130837610;
+			public const int ic_group_collapse_10 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_12 = 2130837611;
+			public const int ic_group_collapse_11 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_13 = 2130837612;
+			public const int ic_group_collapse_12 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_14 = 2130837613;
+			public const int ic_group_collapse_13 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_15 = 2130837614;
+			public const int ic_group_collapse_14 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_expand_00 = 2130837615;
+			public const int ic_group_collapse_15 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_expand_01 = 2130837616;
+			public const int ic_group_expand_00 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_expand_02 = 2130837617;
+			public const int ic_group_expand_01 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_expand_03 = 2130837618;
+			public const int ic_group_expand_02 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_expand_04 = 2130837619;
+			public const int ic_group_expand_03 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_05 = 2130837620;
+			public const int ic_group_expand_04 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_06 = 2130837621;
+			public const int ic_group_expand_05 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_07 = 2130837622;
+			public const int ic_group_expand_06 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_08 = 2130837623;
+			public const int ic_group_expand_07 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_09 = 2130837624;
+			public const int ic_group_expand_08 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_10 = 2130837625;
+			public const int ic_group_expand_09 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_11 = 2130837626;
+			public const int ic_group_expand_10 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_12 = 2130837627;
+			public const int ic_group_expand_11 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_13 = 2130837628;
+			public const int ic_group_expand_12 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_14 = 2130837629;
+			public const int ic_group_expand_13 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_15 = 2130837630;
+			public const int ic_group_expand_14 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_media_pause_dark = 2130837631;
+			public const int ic_group_expand_15 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_media_pause_light = 2130837632;
+			public const int ic_media_pause_dark = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_play_dark = 2130837633;
+			public const int ic_media_pause_light = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_play_light = 2130837634;
+			public const int ic_media_play_dark = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_stop_dark = 2130837635;
+			public const int ic_media_play_light = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_stop_light = 2130837636;
+			public const int ic_media_stop_dark = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_mr_button_connected_00_dark = 2130837637;
+			public const int ic_media_stop_light = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_mr_button_connected_00_light = 2130837638;
+			public const int ic_mr_button_connected_00_dark = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mr_button_connected_01_dark = 2130837639;
+			public const int ic_mr_button_connected_00_light = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mr_button_connected_01_light = 2130837640;
+			public const int ic_mr_button_connected_01_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_mr_button_connected_02_dark = 2130837641;
+			public const int ic_mr_button_connected_01_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_mr_button_connected_02_light = 2130837642;
+			public const int ic_mr_button_connected_02_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_03_dark = 2130837643;
+			public const int ic_mr_button_connected_02_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_03_light = 2130837644;
+			public const int ic_mr_button_connected_03_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_04_dark = 2130837645;
+			public const int ic_mr_button_connected_03_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_04_light = 2130837646;
+			public const int ic_mr_button_connected_04_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_05_dark = 2130837647;
+			public const int ic_mr_button_connected_04_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_05_light = 2130837648;
+			public const int ic_mr_button_connected_05_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_06_dark = 2130837649;
+			public const int ic_mr_button_connected_05_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_06_light = 2130837650;
+			public const int ic_mr_button_connected_06_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_07_dark = 2130837651;
+			public const int ic_mr_button_connected_06_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_07_light = 2130837652;
+			public const int ic_mr_button_connected_07_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_08_dark = 2130837653;
+			public const int ic_mr_button_connected_07_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_08_light = 2130837654;
+			public const int ic_mr_button_connected_08_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_09_dark = 2130837655;
+			public const int ic_mr_button_connected_08_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_09_light = 2130837656;
+			public const int ic_mr_button_connected_09_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_10_dark = 2130837657;
+			public const int ic_mr_button_connected_09_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_10_light = 2130837658;
+			public const int ic_mr_button_connected_10_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_11_dark = 2130837659;
+			public const int ic_mr_button_connected_10_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_11_light = 2130837660;
+			public const int ic_mr_button_connected_11_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_12_dark = 2130837661;
+			public const int ic_mr_button_connected_11_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_12_light = 2130837662;
+			public const int ic_mr_button_connected_12_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_13_dark = 2130837663;
+			public const int ic_mr_button_connected_12_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_13_light = 2130837664;
+			public const int ic_mr_button_connected_13_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_14_dark = 2130837665;
+			public const int ic_mr_button_connected_13_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_14_light = 2130837666;
+			public const int ic_mr_button_connected_14_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_15_dark = 2130837667;
+			public const int ic_mr_button_connected_14_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_15_light = 2130837668;
+			public const int ic_mr_button_connected_15_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_16_dark = 2130837669;
+			public const int ic_mr_button_connected_15_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_16_light = 2130837670;
+			public const int ic_mr_button_connected_16_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_17_dark = 2130837671;
+			public const int ic_mr_button_connected_16_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_17_light = 2130837672;
+			public const int ic_mr_button_connected_17_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_18_dark = 2130837673;
+			public const int ic_mr_button_connected_17_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_18_light = 2130837674;
+			public const int ic_mr_button_connected_18_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_19_dark = 2130837675;
+			public const int ic_mr_button_connected_18_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_19_light = 2130837676;
+			public const int ic_mr_button_connected_19_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_20_dark = 2130837677;
+			public const int ic_mr_button_connected_19_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_20_light = 2130837678;
+			public const int ic_mr_button_connected_20_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_21_dark = 2130837679;
+			public const int ic_mr_button_connected_20_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_21_light = 2130837680;
+			public const int ic_mr_button_connected_21_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_22_dark = 2130837681;
+			public const int ic_mr_button_connected_21_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_22_light = 2130837682;
+			public const int ic_mr_button_connected_22_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_23_dark = 2130837683;
+			public const int ic_mr_button_connected_22_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_23_light = 2130837684;
+			public const int ic_mr_button_connected_23_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_24_dark = 2130837685;
+			public const int ic_mr_button_connected_23_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_24_light = 2130837686;
+			public const int ic_mr_button_connected_24_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_25_dark = 2130837687;
+			public const int ic_mr_button_connected_24_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_25_light = 2130837688;
+			public const int ic_mr_button_connected_25_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_26_dark = 2130837689;
+			public const int ic_mr_button_connected_25_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_26_light = 2130837690;
+			public const int ic_mr_button_connected_26_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_27_dark = 2130837691;
+			public const int ic_mr_button_connected_26_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_27_light = 2130837692;
+			public const int ic_mr_button_connected_27_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_28_dark = 2130837693;
+			public const int ic_mr_button_connected_27_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_28_light = 2130837694;
+			public const int ic_mr_button_connected_28_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_29_dark = 2130837695;
+			public const int ic_mr_button_connected_28_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_29_light = 2130837696;
+			public const int ic_mr_button_connected_29_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_30_dark = 2130837697;
+			public const int ic_mr_button_connected_29_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_30_light = 2130837698;
+			public const int ic_mr_button_connected_30_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connecting_00_dark = 2130837699;
+			public const int ic_mr_button_connected_30_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_00_light = 2130837700;
+			public const int ic_mr_button_connecting_00_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_01_dark = 2130837701;
+			public const int ic_mr_button_connecting_00_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_01_light = 2130837702;
+			public const int ic_mr_button_connecting_01_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_02_dark = 2130837703;
+			public const int ic_mr_button_connecting_01_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_02_light = 2130837704;
+			public const int ic_mr_button_connecting_02_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_03_dark = 2130837705;
+			public const int ic_mr_button_connecting_02_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_03_light = 2130837706;
+			public const int ic_mr_button_connecting_03_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_04_dark = 2130837707;
+			public const int ic_mr_button_connecting_03_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_04_light = 2130837708;
+			public const int ic_mr_button_connecting_04_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_05_dark = 2130837709;
+			public const int ic_mr_button_connecting_04_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_05_light = 2130837710;
+			public const int ic_mr_button_connecting_05_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_06_dark = 2130837711;
+			public const int ic_mr_button_connecting_05_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_06_light = 2130837712;
+			public const int ic_mr_button_connecting_06_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_07_dark = 2130837713;
+			public const int ic_mr_button_connecting_06_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_07_light = 2130837714;
+			public const int ic_mr_button_connecting_07_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_08_dark = 2130837715;
+			public const int ic_mr_button_connecting_07_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_08_light = 2130837716;
+			public const int ic_mr_button_connecting_08_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_09_dark = 2130837717;
+			public const int ic_mr_button_connecting_08_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_09_light = 2130837718;
+			public const int ic_mr_button_connecting_09_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_10_dark = 2130837719;
+			public const int ic_mr_button_connecting_09_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_10_light = 2130837720;
+			public const int ic_mr_button_connecting_10_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_11_dark = 2130837721;
+			public const int ic_mr_button_connecting_10_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_11_light = 2130837722;
+			public const int ic_mr_button_connecting_11_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_12_dark = 2130837723;
+			public const int ic_mr_button_connecting_11_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_12_light = 2130837724;
+			public const int ic_mr_button_connecting_12_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_13_dark = 2130837725;
+			public const int ic_mr_button_connecting_12_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_13_light = 2130837726;
+			public const int ic_mr_button_connecting_13_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_14_dark = 2130837727;
+			public const int ic_mr_button_connecting_13_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_14_light = 2130837728;
+			public const int ic_mr_button_connecting_14_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_15_dark = 2130837729;
+			public const int ic_mr_button_connecting_14_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_15_light = 2130837730;
+			public const int ic_mr_button_connecting_15_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_16_dark = 2130837731;
+			public const int ic_mr_button_connecting_15_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_16_light = 2130837732;
+			public const int ic_mr_button_connecting_16_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_17_dark = 2130837733;
+			public const int ic_mr_button_connecting_16_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_17_light = 2130837734;
+			public const int ic_mr_button_connecting_17_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_18_dark = 2130837735;
+			public const int ic_mr_button_connecting_17_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_18_light = 2130837736;
+			public const int ic_mr_button_connecting_18_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_19_dark = 2130837737;
+			public const int ic_mr_button_connecting_18_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_19_light = 2130837738;
+			public const int ic_mr_button_connecting_19_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_20_dark = 2130837739;
+			public const int ic_mr_button_connecting_19_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_20_light = 2130837740;
+			public const int ic_mr_button_connecting_20_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_21_dark = 2130837741;
+			public const int ic_mr_button_connecting_20_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_21_light = 2130837742;
+			public const int ic_mr_button_connecting_21_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_22_dark = 2130837743;
+			public const int ic_mr_button_connecting_21_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_22_light = 2130837744;
+			public const int ic_mr_button_connecting_22_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_23_dark = 2130837745;
+			public const int ic_mr_button_connecting_22_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_23_light = 2130837746;
+			public const int ic_mr_button_connecting_23_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_24_dark = 2130837747;
+			public const int ic_mr_button_connecting_23_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_24_light = 2130837748;
+			public const int ic_mr_button_connecting_24_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_25_dark = 2130837749;
+			public const int ic_mr_button_connecting_24_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_25_light = 2130837750;
+			public const int ic_mr_button_connecting_25_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_26_dark = 2130837751;
+			public const int ic_mr_button_connecting_25_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_26_light = 2130837752;
+			public const int ic_mr_button_connecting_26_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_27_dark = 2130837753;
+			public const int ic_mr_button_connecting_26_light = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_27_light = 2130837754;
+			public const int ic_mr_button_connecting_27_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_28_dark = 2130837755;
+			public const int ic_mr_button_connecting_27_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_28_light = 2130837756;
+			public const int ic_mr_button_connecting_28_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_29_dark = 2130837757;
+			public const int ic_mr_button_connecting_28_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_29_light = 2130837758;
+			public const int ic_mr_button_connecting_29_dark = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_30_dark = 2130837759;
+			public const int ic_mr_button_connecting_29_light = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_30_light = 2130837760;
+			public const int ic_mr_button_connecting_30_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_disabled_dark = 2130837761;
+			public const int ic_mr_button_connecting_30_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_disabled_light = 2130837762;
+			public const int ic_mr_button_disabled_dark = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_disconnected_dark = 2130837763;
+			public const int ic_mr_button_disabled_light = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_disconnected_light = 2130837764;
+			public const int ic_mr_button_disconnected_dark = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_grey = 2130837765;
+			public const int ic_mr_button_disconnected_light = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_vol_type_speaker_dark = 2130837766;
+			public const int ic_mr_button_grey = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_vol_type_speaker_group_dark = 2130837767;
+			public const int ic_vol_type_speaker_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_vol_type_speaker_group_light = 2130837768;
+			public const int ic_vol_type_speaker_group_dark = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_vol_type_speaker_light = 2130837769;
+			public const int ic_vol_type_speaker_group_light = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_vol_type_tv_dark = 2130837770;
+			public const int ic_vol_type_speaker_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_vol_type_tv_light = 2130837771;
+			public const int ic_vol_type_tv_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int mr_button_connected_dark = 2130837772;
+			public const int ic_vol_type_tv_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int mr_button_connected_light = 2130837773;
+			public const int loading = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int mr_button_connecting_dark = 2130837774;
+			public const int mr_button_connected_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int mr_button_connecting_light = 2130837775;
+			public const int mr_button_connected_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int mr_button_dark = 2130837776;
+			public const int mr_button_connecting_dark = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int mr_button_light = 2130837777;
+			public const int mr_button_connecting_light = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int mr_dialog_close_dark = 2130837778;
+			public const int mr_button_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int mr_dialog_close_light = 2130837779;
+			public const int mr_button_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int mr_dialog_material_background_dark = 2130837780;
+			public const int mr_dialog_close_dark = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int mr_dialog_material_background_light = 2130837781;
+			public const int mr_dialog_close_light = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int mr_group_collapse = 2130837782;
+			public const int mr_dialog_material_background_dark = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int mr_group_expand = 2130837783;
+			public const int mr_dialog_material_background_light = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int mr_media_pause_dark = 2130837784;
+			public const int mr_group_collapse = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int mr_media_pause_light = 2130837785;
+			public const int mr_group_expand = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int mr_media_play_dark = 2130837786;
+			public const int mr_media_pause_dark = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int mr_media_play_light = 2130837787;
+			public const int mr_media_pause_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int mr_media_stop_dark = 2130837788;
+			public const int mr_media_play_dark = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int mr_media_stop_light = 2130837789;
+			public const int mr_media_play_light = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int mr_vol_type_audiotrack_dark = 2130837790;
+			public const int mr_media_stop_dark = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int mr_vol_type_audiotrack_light = 2130837791;
+			public const int mr_media_stop_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int navigation_empty_icon = 2130837792;
+			public const int mr_vol_type_audiotrack_dark = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int notification_action_background = 2130837793;
+			public const int mr_vol_type_audiotrack_light = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int notification_bg = 2130837794;
+			public const int navigation_empty_icon = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int notification_bg_low = 2130837795;
+			public const int notification_action_background = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int notification_bg_low_normal = 2130837796;
+			public const int notification_bg = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int notification_bg_low_pressed = 2130837797;
+			public const int notification_bg_low = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int notification_bg_normal = 2130837798;
+			public const int notification_bg_low_normal = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int notification_bg_normal_pressed = 2130837799;
+			public const int notification_bg_low_pressed = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int notification_icon_background = 2130837800;
-			
-			// aapt resource value: 0x7f02012d
-			public const int notification_template_icon_bg = 2130837805;
-			
-			// aapt resource value: 0x7f02012e
-			public const int notification_template_icon_low_bg = 2130837806;
+			public const int notification_bg_normal = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int notification_tile_bg = 2130837801;
+			public const int notification_bg_normal_pressed = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int notify_panel_notification_icon_bg = 2130837802;
+			public const int notification_icon_background = 2130837802;
+			
+			// aapt resource value: 0x7f02012f
+			public const int notification_template_icon_bg = 2130837807;
+			
+			// aapt resource value: 0x7f020130
+			public const int notification_template_icon_low_bg = 2130837808;
 			
 			// aapt resource value: 0x7f02012b
-			public const int tooltip_frame_dark = 2130837803;
+			public const int notification_tile_bg = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int tooltip_frame_light = 2130837804;
+			public const int notify_panel_notification_icon_bg = 2130837804;
+			
+			// aapt resource value: 0x7f02012d
+			public const int tooltip_frame_dark = 2130837805;
+			
+			// aapt resource value: 0x7f02012e
+			public const int tooltip_frame_light = 2130837806;
 			
 			static Drawable()
 			{
@@ -4055,6 +6329,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			// aapt resource value: 0x7f0a0025
 			public const int abc_toolbar_collapse_description = 2131361829;
 			
+			// aapt resource value: 0x7f0a003d
+			public const int app_name = 2131361853;
+			
 			// aapt resource value: 0x7f0a0033
 			public const int appbar_scrolling_view_behavior = 2131361843;
 			
@@ -4063,6 +6340,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			
 			// aapt resource value: 0x7f0a0035
 			public const int character_counter_pattern = 2131361845;
+			
+			// aapt resource value: 0x7f0a003c
+			public const int hello = 2131361852;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int mr_button_content_description = 2131361792;

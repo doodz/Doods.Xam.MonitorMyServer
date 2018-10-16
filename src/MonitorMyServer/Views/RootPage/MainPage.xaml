@@ -5,7 +5,11 @@
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.MainPage">
-    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
     <StackLayout>
         <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
         

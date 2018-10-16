@@ -12,8 +12,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            //TabLayoutResource = Resource.Layout.Tabbar;
-            //ToolbarResource = Resource.Layout.Toolbar;
+            TabLayoutResource = Resource.Layout.Tabbar;
+            ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);

@@ -1,5 +1,9 @@
 using Autofac;
+using Doods.Framework.Mobile.Std.Interfaces;
+using Doods.Framework.Mobile.Std.Servicies;
 using Doods.Framework.Std;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,8 +21,13 @@ namespace Doods.Xam.MonitorMyServer
         public App()
         {
             InitializeComponent();
-           
-            MainPage = new MainPage();
+
+            var navigationService = Container.Resolve<INavigationService>();
+            navigationService.Configure(nameof(MonitorMyServer.MainPage), typeof(MainPage));
+            navigationService.Configure(nameof(LogInPage), typeof(LogInPage));
+            navigationService.Configure(nameof(HostManagerPage), typeof(HostManagerPage));
+            var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MainPage));
+            MainPage = mainPage;
         }
 
         public static IContainer Container

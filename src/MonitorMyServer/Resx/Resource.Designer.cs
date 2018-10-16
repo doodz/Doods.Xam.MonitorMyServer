@@ -68,5 +68,50 @@ namespace Doods.Xam.MonitorMyServer.Resx {
                 return ResourceManager.GetString("Home", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A host name is required..
+        /// </summary>
+        internal static string HostNameRequired {
+            get {
+                return ResourceManager.GetString("HostNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Hosts.
+        /// </summary>
+        internal static string Hosts {
+            get {
+                return ResourceManager.GetString("Hosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à New host.
+        /// </summary>
+        internal static string NewHost {
+            get {
+                return ResourceManager.GetString("NewHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A password is required..
+        /// </summary>
+        internal static string PasswordRequired {
+            get {
+                return ResourceManager.GetString("PasswordRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A username is required..
+        /// </summary>
+        internal static string UsernameRequired {
+            get {
+                return ResourceManager.GetString("UsernameRequired", resourceCulture);
+            }
+        }
     }
 }

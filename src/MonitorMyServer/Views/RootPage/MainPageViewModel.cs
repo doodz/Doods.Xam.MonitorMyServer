@@ -4,13 +4,17 @@ using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views
 {
     public class MainPageViewModel : ViewModel
     {
+
+        private readonly ICommand _addHostCmd;
         private readonly ISshService _sshService;
         private ViewModelStateItem _viewModelStateItem;
 
@@ -18,6 +22,14 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Title = Resource.Home;
             _sshService = sshService;
+            CmdState = RefreshCmd;
+            _addHostCmd = new Command(
+                AddHost);
+        }
+
+        private void AddHost()
+        {
+            NavigationService.NavigateAsync(nameof(HostManagerPage));
         }
 
         public ViewModelStateItem ViewModelStateItem
@@ -25,9 +37,6 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _viewModelStateItem;
             private set => SetProperty(ref _viewModelStateItem, value);
         }
-
-
-      
 
         protected override void OnInitializeLoading(LoadingContext context)
         {
@@ -62,8 +71,9 @@ namespace Doods.Xam.MonitorMyServer.Views
             var viewModelStateItem = new ViewModelStateItem(this);
             viewModelStateItem.Title = "Error : no hosts detected";
             viewModelStateItem.Description = "Click to add host";
-
+            
             viewModelStateItem.IsRunning = true;
+            viewModelStateItem.ShowCurrentCmd = _addHostCmd;
             viewModelStateItem.Color = Color.Red;
             ViewModelStateItem = viewModelStateItem;
         }

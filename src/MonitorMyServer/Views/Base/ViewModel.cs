@@ -12,7 +12,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
        
         private RootPages _currentRootPage;
         private IDataProvider _dataProvider;
-
+        private INavigationService _navigationService;
         protected ViewModel() : base(App.Container.Resolve<ILogger>(), App.Container.Resolve<ITelemetryService>())
         {
         }
@@ -21,7 +21,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
 
         protected IDataProvider DataProvider =>
             _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
-
+        public INavigationService NavigationService => _navigationService ?? (_navigationService = App.Container.Resolve<INavigationService>());
 
         public RootPages CurrentRootPage
         {

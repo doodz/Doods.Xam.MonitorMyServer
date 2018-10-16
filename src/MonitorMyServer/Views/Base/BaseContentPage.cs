@@ -115,6 +115,7 @@ namespace Doods.Framework.Mobile.Std.Mvvm
             }
             catch (Exception e)
             {
+                
                 //TODO:Logg
                 var msg = e.Message;
             }

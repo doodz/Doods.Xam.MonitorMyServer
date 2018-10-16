@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+
+             x:Class="Doods.Xam.MonitorMyServer.Views.Login.LogInPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
+            <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
+
+
+            <Entry Text="{Binding UserName.Value, Mode=TwoWay}">
+                <Entry.Style>
+                    <OnPlatform x:TypeArguments="Style">
+                        <On Platform="iOS, Android" Value="{StaticResource EntryValidatableStyle}" />
+                        <On Platform="UWP" Value="{StaticResource UwpEntryValidatableStyle}" />
+                    </OnPlatform>
+                </Entry.Style>
+                <Entry.Behaviors>
+                    <behaviors:EventToCommandBehavior  
+                        EventName="TextChanged"  
+                        Command="{Binding ValidateUserNameCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</mvvm:BaseContentPage>
