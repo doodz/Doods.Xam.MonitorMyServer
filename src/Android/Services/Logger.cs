@@ -12,7 +12,8 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
 
         public Logger()
         {
-            _log = LogManager.GetCurrentClassLogger();
+           
+           _log = LogManager.GetCurrentClassLogger();
         }
 
         public void Debug(string msg)

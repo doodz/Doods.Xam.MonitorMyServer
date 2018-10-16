@@ -17,8 +17,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 
             base.OnCreate(bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
-
-            var config = new FFImageLoading.Config.Configuration()
+           
+           var config = new FFImageLoading.Config.Configuration()
             {
                 VerboseLogging = true,
                 VerbosePerformanceLogging = true,
@@ -27,7 +27,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 Logger = new CustomLogger(),
             };
             ImageService.Instance.Initialize(config);
-
+            
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
