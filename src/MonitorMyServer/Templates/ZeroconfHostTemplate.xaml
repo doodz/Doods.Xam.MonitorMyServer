@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+             xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
+             x:Class="Doods.Xam.MonitorMyServer.Views.Templates.ZeroconfHostTemplate">
+
+  <Grid>
+    <Grid.Resources>
+      <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+          <ResourceDictionary>
+            <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
+          </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+
+      </ResourceDictionary>
+    </Grid.Resources>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <forms:SvgCachedImage
+                
+        Grid.Row="0"
+        Grid.Column="0"
+        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Computer}}" />
+    
+    <Label Grid.Row="0" Grid.Column="1" Text="{Binding DisplayName,Mode=OneTime}" />
+    <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="StartAndExpand" Text="{Binding IPAddress,Mode=OneTime,StringFormat='( {0} )'}" />
+    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"   Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
+    <forms:SvgCachedImage
+                VerticalOptions="CenterAndExpand"
+        Grid.Row="0"
+        Grid.RowSpan="2"
+        Grid.Column="3"
+        
+        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" >
+      <forms:SvgCachedImage.GestureRecognizers>
+        <TapGestureRecognizer Command="{Binding GoToLoginCmd,Mode=OneTime}" />
+      </forms:SvgCachedImage.GestureRecognizers>
+    </forms:SvgCachedImage>
+  </Grid>
+
+
+</ViewCell>

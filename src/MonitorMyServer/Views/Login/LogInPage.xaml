@@ -4,26 +4,7 @@
 			 xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
 			 xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
 			 xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
-			 xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
-
 			 x:Class="Doods.Xam.MonitorMyServer.Views.Login.LogInPage">
-
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
-			<Style x:Key="HeaderLabelStyle"
-				   TargetType="{x:Type Label}">
-				<!--<Setter Property="FontFamily"
-						Value="{StaticResource MontserratRegular}" />-->
-				<Setter Property="FontSize"
-						Value="{StaticResource LittleSize}" />
-				<Setter Property="TextColor"
-						Value="{StaticResource GreenColor}" />
-				<Setter Property="HorizontalOptions"
-						Value="Start" />
-			</Style>
-		</ResourceDictionary>
-	</ContentPage.Resources>
 	<NavigationPage.TitleView>
 		<StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
 			<Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
@@ -31,65 +12,14 @@
 	</NavigationPage.TitleView>
 	<ContentPage.Content>
 		<StackLayout>
-			<controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
-
-
-			<Label
-				  Text="User name or email"
-				  Style="{StaticResource HeaderLabelStyle}" />
-			<Entry Text="{Binding Login.Value, Mode=TwoWay}">
-				<Entry.Style>
-					<OnPlatform x:TypeArguments="Style">
-						<On Platform="iOS, Android" Value="{StaticResource EntryValidatableStyle}" />
-						<On Platform="UWP, WinRT, WinPhone" Value="{StaticResource UwpEntryValidatableStyle}" />
-					</OnPlatform>
-				</Entry.Style>
-				<Entry.Behaviors>
-					<behaviors:EventToCommandBehavior
-							EventName="TextChanged"
-							Command="{Binding ValidateUserNameCommand}" />
-				</Entry.Behaviors>
-				<Entry.Triggers>
-					<DataTrigger 
-							TargetType="Entry"
-							Binding="{Binding Login.IsValid}"
-							Value="False">
-						<Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource ErrorColor}" />
-					</DataTrigger>
-				</Entry.Triggers>
-			</Entry>
-			<Label 
-					Text="{Binding Login.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
-					Style="{StaticResource ValidationErrorLabelStyle}" />
-			<Label
-				  Text="Password"
-				  Style="{StaticResource HeaderLabelStyle}"/>
-			<Entry
-				  IsPassword="True"
-				  Text="{Binding Password.Value, Mode=TwoWay}">
-				<Entry.Style>
-					<OnPlatform x:TypeArguments="Style">
-						<On Platform="iOS, Android" Value="{StaticResource EntryValidatableStyle}" />
-						<On Platform="UWP, WinRT, WinPhone" Value="{StaticResource UwpEntryValidatableStyle}" />
-					</OnPlatform>
-				</Entry.Style>
-				<Entry.Behaviors>
-					<behaviors:EventToCommandBehavior
-							EventName="TextChanged"
-							Command="{Binding ValidatePasswordCommand}" />
-				</Entry.Behaviors>
-				<Entry.Triggers>
-					<DataTrigger 
-							TargetType="Entry"
-							Binding="{Binding Password.IsValid}"
-							Value="False">
-						<Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource ErrorColor}" />
-					</DataTrigger>
-				</Entry.Triggers>
-			</Entry>
-			<Label 
-					Text="{Binding Password.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
-					Style="{StaticResource ValidationErrorLabelStyle}" />
+			
+			<controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+			<controls:ValidatableObjectControl BindingContext="{Binding DisplayName,Mode=TwoWay}"/>
+			<controls:ValidatableObjectControl BindingContext="{Binding HostName,Mode=TwoWay}"/>
+			<controls:ValidatableObjectControl BindingContext="{Binding Port,Mode=TwoWay}"/>
+			<controls:ValidatableObjectControl BindingContext="{Binding Login,Mode=TwoWay}"/>
+			<controls:ValidatableObjectControl BindingContext="{Binding Password,Mode=TwoWay}"/>
+			<Button Text="Test me !" Command="{Binding TestMe,Mode=OneWay}"/>
 		</StackLayout>
 	</ContentPage.Content>
 </mvvm:BaseContentPage>

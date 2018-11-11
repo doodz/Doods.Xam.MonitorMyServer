@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.App">
     <Application.Resources>
         <ResourceDictionary>
            
         <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="Resx/AppStyle.xaml" />
-        </ResourceDictionary.MergedDictionaries>
+           
+            </ResourceDictionary.MergedDictionaries>
+            <converters:ItemsToHeightConverter x:Key="ItemsToHeightConverter" />
+           
         </ResourceDictionary>
     </Application.Resources>
 </Application>

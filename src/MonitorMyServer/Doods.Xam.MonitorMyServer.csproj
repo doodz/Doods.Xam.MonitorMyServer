@@ -13,10 +13,12 @@
   <ItemGroup>
     <PackageReference Include="AppCenter.Analytics.Metrics" Version="1.1.0" />
     <PackageReference Include="Autofac" Version="4.8.1" />
-    <PackageReference Include="Microsoft.AppCenter" Version="1.9.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.9.0" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.9.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.871581" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AppCenter" Version="1.10.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.10.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.10.0" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Zeroconf" Version="3.0.30" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +50,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\EnumerateAllServicesFromAllHosts\EnumerateAllServicesFromAllHostsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\HostManager\HostManagerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -55,6 +60,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SystemView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Templates\ZeroconfHostTemplate.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

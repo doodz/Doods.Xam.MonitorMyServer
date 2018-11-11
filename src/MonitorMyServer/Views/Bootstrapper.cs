@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
 
@@ -11,6 +12,8 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<MainPageViewModel>().AsSelf();
             builder.RegisterType<LoginPageViewModel>().AsSelf();
             builder.RegisterType<HostManagerPageViewModel>().AsSelf();
+            builder.RegisterType<EnumerateAllServicesFromAllHostsViewModel>().AsSelf();
+            
         }
     }
 }

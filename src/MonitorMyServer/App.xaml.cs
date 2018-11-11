@@ -5,6 +5,7 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
+using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -26,6 +27,8 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(MonitorMyServer.MainPage), typeof(MainPage));
             navigationService.Configure(nameof(LogInPage), typeof(LogInPage));
             navigationService.Configure(nameof(HostManagerPage), typeof(HostManagerPage));
+            navigationService.Configure(nameof(EnumerateAllServicesFromAllHostsPage), typeof(EnumerateAllServicesFromAllHostsPage));
+            
             var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MainPage));
             MainPage = mainPage;
         }
@@ -58,6 +61,8 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Framework.Repository.Std.Config.Bootstrapper>();
             builder.RegisterModule<Views.Bootstrapper>();
             builder.RegisterModule<Services.Bootstrapper>();
+            builder.RegisterModule<Services.AutoMapperConfig>();
+            
 
             _container = builder.Build();
         }

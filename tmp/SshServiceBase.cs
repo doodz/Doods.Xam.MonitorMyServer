@@ -5,8 +5,11 @@ using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Std;
 using Renci.SshNet;
 using System;
+using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
+using Doods.Framework.ApiClientBase.Std.Exceptions;
+using Renci.SshNet.Common;
 
 namespace Doods.Framework.Ssh.Std
 {
@@ -177,6 +180,76 @@ namespace Doods.Framework.Ssh.Std
                 new PasswordConnectionInfo(Connection.Host, Connection.Port, Connection.Credentials.Login,
                     Connection.Credentials.Password) {Timeout = TimeSpan.FromSeconds(10)};
             return _client ?? (_client = new SshClient(test));
+        }
+
+        /// <summary>
+        /// Try to connect to client
+        /// </summary>
+        /// <param name="connection"></param>
+        /// <param name="throwException"></param>
+        /// <returns>true if connection succeeded</returns>
+        /// <exception cref="T:Exception"></exception>
+        /// <exception cref="T:DoodsApiConnectionExceptionn">SSH session could not be established.</exception>
+        /// <exception cref="T:DoodsApiAuthenticationException">Authentication of SSH session failed.</exception>
+        public bool TestConnection(IConnection connection,bool throwException)
+        {
+
+            var testConnectionResult = false;
+            SshClient client = null;
+            try
+            {
+                var test =
+                    new PasswordConnectionInfo(connection.Host, connection.Port, connection.Credentials.Login,
+                            connection.Credentials.Password)
+                        {Timeout = TimeSpan.FromSeconds(10)};
+                client = new SshClient(test);
+
+                //client.HostKeyReceived += (sender, e) =>
+                //{
+                //    if (true)
+                //    {
+                //        e.CanTrust = false;
+                //    }
+                    
+                //};
+
+                client.Connect();
+
+                // InvalidOperationException
+                // ObjectDisposedException
+                // SocketException
+                // SshConnectionException
+                // SshAuthenticationException
+                // ProxyException
+                testConnectionResult = client.IsConnected;
+            }
+            catch (SshConnectionException ex)
+            {
+                if (throwException)
+                    throw new DoodsApiConnectionException(ex.Message);
+            }
+            catch (SshAuthenticationException ex)
+            {
+                if (throwException)
+                    throw new DoodsApiAuthenticationException(ex.Message);
+            }
+            catch (Exception e)
+            {
+
+
+                Console.WriteLine(e);
+                if (throwException)
+                    throw;
+            }
+            finally
+            {
+                client?.Dispose();
+            }
+
+          
+            return testConnectionResult;
+
+
         }
 
         public SshRequestAsyncHandle ExecuteAsync<T>(ISshRequest request,

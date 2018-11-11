@@ -1,31 +1,77 @@
-﻿using Doods.Framework.Mobile.Std.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading.Tasks;
+using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Framework.Mobile.Std.Validation;
 using Doods.Framework.Std.Validation;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using System.Windows.Input;
+using Autofac;
+using Doods.Framework.ApiClientBase.Std.Exceptions;
+using Doods.Framework.ApiClientBase.Std.Helpers;
+using Doods.Framework.ApiClientBase.Std.Models;
+using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Services;
 using Xamarin.Forms;
+using Zeroconf;
 
 namespace Doods.Xam.MonitorMyServer.Views.Login
 {
     public class LoginPageViewModel : ViewModel
     {
-        private ValidatableObject<string> _hostName;
-        private ValidatableObject<string> _longin;
-        private ValidatableObject<string> _password;
+        private ValidatableObjectView<string> _displayName;
+        private ValidatableObjectView<string> _hostName;
+        private ValidatableObjectView<string> _login;
+        private ValidatableObjectView<string> _password;
         private ViewModelStateItem _viewModelStateItem;
 
-
+        private ValidatableObjectView<string> _port;
         public LoginPageViewModel()
         {
-            HostName = new ValidatableObject<string>(true);
-            Login = new ValidatableObject<string>(true);
-            Password = new ValidatableObject<string>(true);
+            DisplayName = new ValidatableObjectView<string>(Resource.NameToDisplay, true);
+            Port = new ValidatableObjectView<string>(Resource.Port, true, Keyboard.Numeric);
+            HostName = new ValidatableObjectView<string>(Resource.HostNameOrIp,true);
+            Login = new ValidatableObjectView<string>(Resource.UserNameOrEmail, true);
+            Password = new ValidatableObjectView<string>(Resource.Password,true);
+
+            CmdState = new Command(async c => await ValidateConfig());
+
+            ViewModelStateItem = new ViewModelStateItem(this);
+            ViewModelStateItem.Title = Resource.ConnectionTest;
+            ViewModelStateItem.Description = string.Empty;
+            ViewModelStateItem.IsRunning = true;
+            ViewModelStateItem.Color = Color.Transparent;
             AddValidations();
         }
 
 
+        public void SetHost(ZeroconfHost zeroconfHost)
+        {
+            SetHost(zeroconfHost as DataHost);
+            //"_ssh._tcp.local.","_https._tcp.local.", "_http._tcp.local."
+            if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out IService srv))
+            {
+
+                _port.Value = srv.Port.ToString();
+            }
+        }
+
+        public void SetHost(DataHost dataHost)
+        {
+            _displayName.Value = dataHost.DisplayName;
+            _hostName.Value = dataHost.IPAddress;
+
+        }
+
         public ICommand ValidateUserNameCommand => new Command(() => ValidateUserName());
+
+        public ICommand TestMe => new Command(async() => await ValidateConfig());
+        
         public ICommand ValidateHostNameCommand => new Command(() => ValidateHostName());
 
         public ICommand ValidatePasswordCommand => new Command(() => ValidatePassword());
@@ -36,19 +82,30 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             private set => SetProperty(ref _viewModelStateItem, value);
         }
 
-        public ValidatableObject<string> HostName
+        public ValidatableObjectView<string> DisplayName
+        {
+            get => _displayName;
+            set => SetProperty(ref _displayName, value);
+        }
+
+        public ValidatableObjectView<string> Port
+        {
+            get => _port;
+            set => SetProperty(ref _port, value);
+        }
+        public ValidatableObjectView<string> HostName
         {
             get => _hostName;
             set => SetProperty(ref _hostName, value);
         }
 
-        public ValidatableObject<string> Login
+        public ValidatableObjectView<string> Login
         {
-            get => _longin;
-            set => SetProperty(ref _longin, value);
+            get => _login;
+            set => SetProperty(ref _login, value);
         }
 
-        public ValidatableObject<string> Password
+        public ValidatableObjectView<string> Password
         {
             get => _password;
             set => SetProperty(ref _password, value);
@@ -57,12 +114,21 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
         private void AddValidations()
         {
+            _displayName.Validations.Add(new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = Resource.NameToDisplayRequired
+            });
+
             _hostName.Validations.Add(new IsNotNullOrEmptyRule<string>
             {
                 ValidationMessage = Resource.HostNameRequired
             });
+            _hostName.Validations.Add(new IsBadFormetedUrlRule<string>(false)
+            {
+                ValidationMessage = Resource.PleaseNoHttp
+            });
 
-            _longin.Validations.Add(new IsNotNullOrEmptyRule<string>
+            _login.Validations.Add(new IsNotNullOrEmptyRule<string>
             {
                 ValidationMessage = Resource.UsernameRequired
             });
@@ -71,6 +137,77 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             {
                 ValidationMessage = Resource.PasswordRequired
             });
+
+            _port.Validations.Add(new IsNotNullOrEmptyRule<string>
+            {
+                ValidationMessage = Resource.PortRequired
+            });
+            _port.Validations.Add(new IsNumericRule<string>(false)
+            {
+                ValidationMessage = Resource.MustBeInt
+            });
+
+        }
+
+       
+        private async Task ValidateConfig()
+        {
+            try
+            {
+
+
+                //var test = await Dns.GetHostEntryAsync("192.168.1.47");
+                //var test2 = await Dns.GetHostEntryAsync("192.168.1.48");
+                //var test3 = await Dns.GetHostAddressesAsync("192.168.1.48");
+                //var test4 = await Dns.GetHostAddressesAsync("192.168.1.47");
+
+
+                //var test5 = Dns.GetHostName();
+                //var test6 = await Dns.GetHostAddressesAsync("http://openmediavault4/");
+                //var test7 = await Dns.GetHostEntryAsync("192.168.1.12");
+                //var test8 = await Dns.GetHostEntryAsync("http://192.168.1.12");
+                //var test9 = await Dns.GetHostEntryAsync("https://192.168.1.12");
+                //var test10 = await Dns.GetHostEntryAsync("http://openmediavault4");
+                //var test11 = await Dns.GetHostEntryAsync("https://openmediavault4");
+
+                if (Validate())
+                {
+                    ViewModelStateItem.Title = Resource.ConnectionTest;
+                    ViewModelStateItem.Description = string.Empty;
+
+                    var sshService = App.Container.Resolve<ISshService>();
+
+                    IConnection connection = new SshConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
+                        _password.Value);
+                    sshService.TestConnection(connection, true);
+
+
+                }
+            }
+            catch (DoodsApiConnectionException ex)
+            {
+                ViewModelStateItem.Title = Resource.Error;
+                ViewModelStateItem.Description = ex.Message;
+            }
+            catch (DoodsApiAuthenticationException ex)
+            {
+                ViewModelStateItem.Title = Resource.Error;
+                ViewModelStateItem.Description = ex.Message;
+            }
+            catch (SocketException ex)
+            {
+                if (ex.SocketErrorCode == SocketError.HostNotFound)
+                {
+                    var mes = ex.Message;
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewModelStateItem.Title = Resource.Error;
+                ViewModelStateItem.Description = ex.Message;
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
 
@@ -79,17 +216,27 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             var isHostNameValid = ValidateHostName();
             var isValidUser = ValidateUserName();
             var isValidPassword = ValidatePassword();
-            return isHostNameValid && isValidUser && isValidPassword;
+            var isValidDisplayName = ValidateDisplayName();
+            var isValidPort = ValidatePort();
+            return isHostNameValid && isValidUser && isValidPassword && isValidDisplayName && isValidPort;
         }
-
+        private bool ValidatePort()
+        {
+            return _port.Validate();
+        }
         private bool ValidateHostName()
         {
             return _hostName.Validate();
         }
 
+        private bool ValidateDisplayName()
+        {
+            return _displayName.Validate();
+        }
+
         private bool ValidateUserName()
         {
-            return _longin.Validate();
+            return _login.Validate();
         }
 
         private bool ValidatePassword()

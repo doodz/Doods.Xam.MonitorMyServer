@@ -7,6 +7,7 @@ using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -30,7 +31,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         private void AddHost()
         {
             //NavigationService.NavigateAsync(nameof(HostManagerPage));
-            NavigationService.NavigateAsync(nameof(LogInPage));
+            NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage));
         }
 
         public ViewModelStateItem ViewModelStateItem
@@ -41,10 +42,11 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected override void OnInitializeLoading(LoadingContext context)
         {
-            //var viewModelStateItem = new ViewModelStateItem(this);
-            //viewModelStateItem.IsRunning = false;
-            //viewModelStateItem.Color =Color.Blue;
-            //ViewModelStateItem = viewModelStateItem;
+            var viewModelStateItem = new ViewModelStateItem(this);
+            viewModelStateItem.IsRunning = false;
+            viewModelStateItem.ShowCurrentCmd = _addHostCmd;
+            viewModelStateItem.Color = Color.Blue;
+            ViewModelStateItem = viewModelStateItem;
 
         }
 
@@ -62,16 +64,20 @@ namespace Doods.Xam.MonitorMyServer.Views
             //var viewModelStateItem = new ViewModelStateItem(this);
             //ViewModelStateItem.Title = "";
             //ViewModelStateItem.Description = "";
-            ViewModelStateItem.IsRunning = false;
-            ViewModelStateItem.Color = Color.Green;
-           // ViewModelStateItem = viewModelStateItem;
+            if (ViewModelStateItem != null)
+            {
+                ViewModelStateItem.IsRunning = false;
+                ViewModelStateItem.Color = Color.Green;
+            }
+
+            // ViewModelStateItem = viewModelStateItem;
         }
 
         private void ShowErrorHostState()
         {
             var viewModelStateItem = new ViewModelStateItem(this);
-            viewModelStateItem.Title = "Error : no hosts detected";
-            viewModelStateItem.Description = "Click to add host";
+            viewModelStateItem.Title = Resource.ErrorNoHostsDetected;
+            viewModelStateItem.Description = Resource.ClickAddHost;
             
             viewModelStateItem.IsRunning = true;
             viewModelStateItem.ShowCurrentCmd = _addHostCmd;

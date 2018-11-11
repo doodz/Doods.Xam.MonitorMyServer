@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:templates="clr-namespace:Doods.Xam.MonitorMyServer.Views.Templates;assembly=Doods.Xam.MonitorMyServer"
+             x:Class="Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts.EnumerateAllServicesFromAllHostsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+            <ListView ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}" 
+                      VerticalOptions="FillAndExpand" 
+                      CachingStrategy="RecycleElement"
+                      SeparatorVisibility="Default"
+                      SeparatorColor="{StaticResource ColorPrimary}"
+                      HeightRequest="{Binding ZeroconfHosts.Count, Converter={StaticResource ItemsToHeightConverter}}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                            <templates:ZeroconfHostTemplate />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</mvvm:BaseContentPage>

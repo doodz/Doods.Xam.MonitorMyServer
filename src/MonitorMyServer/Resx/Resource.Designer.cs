@@ -61,11 +61,74 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Click to add host.
+        /// </summary>
+        internal static string ClickAddHost {
+            get {
+                return ResourceManager.GetString("ClickAddHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Click for searching.
+        /// </summary>
+        internal static string ClickForSearching {
+            get {
+                return ResourceManager.GetString("ClickForSearching", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Connection test.
+        /// </summary>
+        internal static string ConnectionTest {
+            get {
+                return ResourceManager.GetString("ConnectionTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Enumerate all services..
+        /// </summary>
+        internal static string EnumerateAllServices {
+            get {
+                return ResourceManager.GetString("EnumerateAllServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Error.
+        /// </summary>
+        internal static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Error : no hosts detected.
+        /// </summary>
+        internal static string ErrorNoHostsDetected {
+            get {
+                return ResourceManager.GetString("ErrorNoHostsDetected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Home.
         /// </summary>
         internal static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à HostName or IP.
+        /// </summary>
+        internal static string HostNameOrIp {
+            get {
+                return ResourceManager.GetString("HostNameOrIp", resourceCulture);
             }
         }
         
@@ -88,6 +151,33 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à This field must be numeric integer..
+        /// </summary>
+        internal static string MustBeInt {
+            get {
+                return ResourceManager.GetString("MustBeInt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Name to display.
+        /// </summary>
+        internal static string NameToDisplay {
+            get {
+                return ResourceManager.GetString("NameToDisplay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Name to display is required..
+        /// </summary>
+        internal static string NameToDisplayRequired {
+            get {
+                return ResourceManager.GetString("NameToDisplayRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à New host.
         /// </summary>
         internal static string NewHost {
@@ -97,11 +187,65 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Password.
+        /// </summary>
+        internal static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à A password is required..
         /// </summary>
         internal static string PasswordRequired {
             get {
                 return ResourceManager.GetString("PasswordRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please set the URL without http(s)//.
+        /// </summary>
+        internal static string PleaseNoHttp {
+            get {
+                return ResourceManager.GetString("PleaseNoHttp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Port.
+        /// </summary>
+        internal static string Port {
+            get {
+                return ResourceManager.GetString("Port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à A port is required..
+        /// </summary>
+        internal static string PortRequired {
+            get {
+                return ResourceManager.GetString("PortRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Searching hosts.
+        /// </summary>
+        internal static string SearchingHosts {
+            get {
+                return ResourceManager.GetString("SearchingHosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à User name or email.
+        /// </summary>
+        internal static string UserNameOrEmail {
+            get {
+                return ResourceManager.GetString("UserNameOrEmail", resourceCulture);
             }
         }
         

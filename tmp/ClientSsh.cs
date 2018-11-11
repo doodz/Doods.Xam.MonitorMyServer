@@ -1,21 +1,23 @@
-﻿using Doods.Framework.Ssh.Std.Interfaces;
-using Doods.Framework.Std;
-using Renci.SshNet;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Doods.Framework.Std;
+using Renci.SshNet;
 
 namespace Doods.Framework.Ssh.Std
 {
     public class ClientSsh
     {
-        public SemaphoreSlim ReadLock { get; private set; } = new SemaphoreSlim(1, 1);
-        public SshClient Client { get; private set; }
-
-        public ILogger Logger { get; }
         public ClientSsh(ILogger logger)
         {
             Logger = logger;
         }
+
+        public SemaphoreSlim ReadLock { get; } = new SemaphoreSlim(1, 1);
+        public SshClient Client { get; private set; }
+
+        public ILogger Logger { get; }
+
         public bool Connect()
         {
             Client = new SshClient("192.168.1.73", "pi", "raspberry");
@@ -25,13 +27,11 @@ namespace Doods.Framework.Ssh.Std
 
         public string GetServeurVersion()
         {
-
             using (var client = new SshClient("192.168.1.73", "pi", "raspberry"))
             {
                 client.Connect();
 
                 return client.ConnectionInfo.ServerVersion;
-
             }
         }
 
@@ -44,7 +44,6 @@ namespace Doods.Framework.Ssh.Std
         public bool IsConnected()
         {
             return IsAuthenticated();
-
         }
 
         public bool CanConnect()
@@ -59,17 +58,17 @@ namespace Doods.Framework.Ssh.Std
 
         public Task<string> RunCommandAsync(SshCommand cmd, CancellationToken token)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public ShellStream CreateShell()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public Task<bool> ConnectAsync()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

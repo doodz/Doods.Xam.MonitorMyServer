@@ -4,6 +4,8 @@ using Android.Content.PM;
 using Android.OS;
 using FFImageLoading;
 using System;
+using Android.Content;
+using Android.Net.Wifi;
 
 namespace Doods.Xam.MonitorMyServer.Droid
 {
@@ -29,8 +31,27 @@ namespace Doods.Xam.MonitorMyServer.Droid
             ImageService.Instance.Initialize(config);
             
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+
+            wifi = (WifiManager)ApplicationContext.GetSystemService(Context.WifiService);
+            mlock = wifi.CreateMulticastLock("Zeroconf lock");
+            mlock.Acquire();
             LoadApplication(new App());
         }
+
+
+        WifiManager wifi;
+        WifiManager.MulticastLock mlock;
+        protected override void OnDestroy()
+        {
+            if (mlock != null)
+            {
+                mlock.Release();
+                mlock = null;
+            }
+            base.OnDestroy();
+        }
+
 
         public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
         {

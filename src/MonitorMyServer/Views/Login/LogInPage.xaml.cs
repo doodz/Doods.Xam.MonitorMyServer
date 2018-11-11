@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Xamarin.Forms.Xaml;
 
@@ -8,6 +9,15 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LogInPage : BaseContentPage
     {
+        public LogInPage(ZeroconfHost zeroconfHost)
+        {
+            InitializeComponent();
+            Title = Resource.Home;
+            var vm = App.Container.Resolve<LoginPageViewModel>();
+            vm.SetHost(zeroconfHost);
+            Start(vm);
+        }
+
         public LogInPage()
         {
             InitializeComponent();
