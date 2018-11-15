@@ -15,6 +15,8 @@ using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.ApiClientBase.Std.Helpers;
 using Doods.Framework.ApiClientBase.Std.Models;
+using Doods.Framework.Mobile.Std.Servicies;
+using Doods.Framework.Repository.Std.Tables;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
 using Xamarin.Forms;
@@ -31,13 +33,14 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         private ViewModelStateItem _viewModelStateItem;
 
         private ValidatableObjectView<string> _port;
+
         public LoginPageViewModel()
         {
             DisplayName = new ValidatableObjectView<string>(Resource.NameToDisplay, true);
             Port = new ValidatableObjectView<string>(Resource.Port, true, Keyboard.Numeric);
-            HostName = new ValidatableObjectView<string>(Resource.HostNameOrIp,true);
+            HostName = new ValidatableObjectView<string>(Resource.HostNameOrIp, true);
             Login = new ValidatableObjectView<string>(Resource.UserNameOrEmail, true);
-            Password = new ValidatableObjectView<string>(Resource.Password,true);
+            Password = new ValidatableObjectView<string>(Resource.Password, true);
 
             CmdState = new Command(async c => await ValidateConfig());
 
@@ -54,24 +57,19 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         {
             SetHost(zeroconfHost as DataHost);
             //"_ssh._tcp.local.","_https._tcp.local.", "_http._tcp.local."
-            if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out IService srv))
-            {
-
-                _port.Value = srv.Port.ToString();
-            }
+            if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
         }
 
         public void SetHost(DataHost dataHost)
         {
             _displayName.Value = dataHost.DisplayName;
             _hostName.Value = dataHost.IPAddress;
-
         }
 
         public ICommand ValidateUserNameCommand => new Command(() => ValidateUserName());
 
-        public ICommand TestMe => new Command(async() => await ValidateConfig());
-        
+        public ICommand TestMe => new Command(async () => await ValidateConfig());
+
         public ICommand ValidateHostNameCommand => new Command(() => ValidateHostName());
 
         public ICommand ValidatePasswordCommand => new Command(() => ValidatePassword());
@@ -93,6 +91,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             get => _port;
             set => SetProperty(ref _port, value);
         }
+
         public ValidatableObjectView<string> HostName
         {
             get => _hostName;
@@ -146,16 +145,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             {
                 ValidationMessage = Resource.MustBeInt
             });
-
         }
 
-       
+
         private async Task ValidateConfig()
         {
             try
             {
-
-
                 //var test = await Dns.GetHostEntryAsync("192.168.1.47");
                 //var test2 = await Dns.GetHostEntryAsync("192.168.1.48");
                 //var test3 = await Dns.GetHostAddressesAsync("192.168.1.48");
@@ -179,9 +175,12 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
                     IConnection connection = new SshConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
                         _password.Value);
-                    sshService.TestConnection(connection, true);
-
-
+                    if (sshService.TestConnection(connection, true))
+                    {
+                        await Save();
+                        var mainPage = ((ViewNavigationService)NavigationService).SetRootPage(nameof(MainPage));
+                        App.Current.MainPage = mainPage;
+                    }
                 }
             }
             catch (DoodsApiConnectionException ex)
@@ -196,18 +195,35 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             }
             catch (SocketException ex)
             {
-                if (ex.SocketErrorCode == SocketError.HostNotFound)
-                {
-                    var mes = ex.Message;
-                }
+                ViewModelStateItem.Title = Resource.Error;
+                ViewModelStateItem.Description = ex.Message;
+                //if (ex.SocketErrorCode == SocketError.HostNotFound)
+                //{
+                //    var mes = ex.Message;
+
+                //}
             }
             catch (Exception ex)
             {
                 ViewModelStateItem.Title = Resource.Error;
                 ViewModelStateItem.Description = ex.Message;
-                Console.WriteLine(ex.Message);
+                Logger.Error(ex.Message);
             }
+        }
 
+        private async Task Save()
+        {
+            var count = await DataProvider.CountHostAsync().ConfigureAwait(false);
+            var host = new Host
+            {
+                HostName = _displayName.Value,
+                IsSsh = true,
+                Url = _hostName.Value,
+                Port = int.Parse(_port.Value),
+                UserName = _login.Value,
+                Password = _password.Value
+            };
+            await DataProvider.InsertHostAsync(host).ConfigureAwait(false);
         }
 
 
@@ -220,10 +236,12 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             var isValidPort = ValidatePort();
             return isHostNameValid && isValidUser && isValidPassword && isValidDisplayName && isValidPort;
         }
+
         private bool ValidatePort()
         {
             return _port.Validate();
         }
+
         private bool ValidateHostName()
         {
             return _hostName.Validate();

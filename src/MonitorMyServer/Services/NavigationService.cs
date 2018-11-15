@@ -1,7 +1,6 @@
 ﻿namespace Doods.Xam.MonitorMyServer.Services
 {
-    public class NavigationService
-    { }
+   
 
 
     public enum RootPages

@@ -1,4 +1,6 @@
-﻿using Doods.Framework.ApiClientBase.Std.Models;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
@@ -7,6 +9,8 @@ using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Doods.Framework.Repository.Std.Tables;
+using Doods.Framework.Ssh.Std.Queries;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Xamarin.Forms;
 
@@ -52,11 +56,14 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
-            var count = await DataProvider.CountHostAsync();
 
-            if (count <= 0) ShowErrorHostState();
+            
 
-            await Login(count);
+            var hosts = await DataProvider.GetHostsAsync();
+
+            if (!hosts.Any()) ShowErrorHostState();
+
+            await Login(hosts);
         }
 
         protected override void OnFinishLoading(LoadingContext context)
@@ -85,16 +92,20 @@ namespace Doods.Xam.MonitorMyServer.Views
             ViewModelStateItem = viewModelStateItem;
         }
 
-        private async Task Login(int count)
+        private async Task Login(IEnumerable<Host> hosts)
         {
 
-            await Task.Delay(1000);
-            var con = new SshConnection("192.168.1.73", "pi", "raspberry");
+            var host = hosts.First();
+            Title = host.HostName;
+            var con = new SshConnection(host.Url, host.Port,host.UserName, host.Password);
             _sshService.Init(con, true);
-            var toto = new toto();
-            toto.Handler = toto;
+            var toto = new CpuInfoRequest();
+           
             var val = await _sshService.ExecuteTaskAsync<string>(toto);
-            var total = $"{count} -- {val.Data}";
+            var total = $"{host.HostName} -- {val.Data}";
+
+            var val2 = await _sshService.ExecuteTaskAsync<CpuInfoBean>(toto);
+            total = $"{host.HostName} -- {val.Data}";
         }
     }
 }
