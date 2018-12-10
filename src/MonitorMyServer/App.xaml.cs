@@ -5,6 +5,9 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
+using System.Linq;
+using System.Reflection;
+using AutoMapper;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -61,8 +64,26 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Framework.Repository.Std.Config.Bootstrapper>();
             builder.RegisterModule<Views.Bootstrapper>();
             builder.RegisterModule<Services.Bootstrapper>();
-            builder.RegisterModule<Services.AutoMapperConfig>();
-            
+            //builder.RegisterModule<Services.AutoMapperConfig>();
+            //builder.RegisterModule<Framework.Mobile.Ssh.Std.Services.AutoMapperConfig>();
+
+
+
+            var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();
+            var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
+
+            var profiles =
+                allTypes
+                    .Where(t => typeof(Profile).GetTypeInfo().IsAssignableFrom(t.GetTypeInfo()))
+                    .Where(t => !t.GetTypeInfo().IsAbstract);
+
+            Mapper.Initialize(cfg =>
+            {
+                foreach (var profile in profiles)
+                {
+                    cfg.AddProfile(profile);
+                }
+            });
 
             _container = builder.Build();
         }

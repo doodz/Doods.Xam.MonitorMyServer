@@ -4,22 +4,30 @@
              xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
              x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
             <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
         </StackLayout>
     </NavigationPage.TitleView>
-    <StackLayout>
-        <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
-        
+    <ScrollView>
+        <StackLayout>
 
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-       
-    </StackLayout>
+            <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
+            <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}"/>
 
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding UpgradablesCount ,StringFormat='There are {0} items can be updated'}"></Label>
+                    <Button Text="Update"/>
+                </StackLayout>
+            </Frame>
+
+            <views:UcDiskUsage BindingContext="{Binding DisksUsage,Mode=OneWay}"/>
+
+        </StackLayout>
+    </ScrollView>
 </mvvm:BaseContentPage>
 

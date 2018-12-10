@@ -17,7 +17,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             //builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
             //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
 
-
+            
             Mapper.Initialize(cfg =>
                 //cfg.CreateMap<IZeroconfHost, ZeroconfHost>()
                 cfg.AddProfile<ZeroconfHostProfile>()

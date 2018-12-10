@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Doods.Framework.Mobile.Ssh.Std.Views.UcCpuInfo"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std">
+
+    <ContentView.Resources>
+
+        <ResourceDictionary>
+            <DataTemplate x:Key="CpuInfoDataTemplate">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=ModelName}"/>
+        <Label Grid.Column="1" Grid.Row="0" Text="{Binding ModelName,Mode=OneWay}"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Text="{resources:Translate Text=Architecture}"/>
+        <Label Grid.Column="1" Grid.Row="1" Text="{Binding Architecture,Mode=OneWay}"/>
+
+        <Label Grid.Column="0" Grid.Row="2" Text="{resources:Translate Text=Cpu}"/>
+        <Label Grid.Column="1" Grid.Row="2" Text="{Binding Cpu,Mode=OneWay}"/>
+        <!--<ContentPresenter ... />-->
+       
+
+    </Grid>
+            </DataTemplate>
+
+            <ControlTemplate x:Key="CpuInfoTemplate">
+                <Grid
+                    >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=ModelName}"/>
+                    <Label Grid.Column="1" Grid.Row="0" Text="{Binding ModelName,Mode=OneWay}"/>
+
+                    <Label Grid.Column="0" Grid.Row="1" Text="{resources:Translate Text=Architecture}"/>
+                    <Label Grid.Column="1" Grid.Row="1" Text="{Binding Architecture,Mode=OneWay}"/>
+
+                    <Label Grid.Column="0" Grid.Row="2" Text="{resources:Translate Text=Cpu}"/>
+                    <Label Grid.Column="1" Grid.Row="2" Text="{Binding Cpu,Mode=OneWay}"/>
+                    <!--<ContentPresenter ... />-->
+</Grid>
+
+</ControlTemplate>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=ModelName}"/>
+        <Label Grid.Column="1" Grid.Row="0" Text="{Binding ModelName,Mode=OneWay}"/>
+
+        <Label Grid.Column="0" Grid.Row="1" Text="{resources:Translate Text=Architecture}"/>
+        <Label Grid.Column="1" Grid.Row="1" Text="{Binding Architecture,Mode=OneWay}"/>
+
+        <Label Grid.Column="0" Grid.Row="2" Text="{resources:Translate Text=Cpu}"/>
+        <Label Grid.Column="1" Grid.Row="2" Text="{Binding Cpu,Mode=OneWay}"/>
+        <!--<ContentPresenter ... />-->
+
+
+    </Grid>
+</ContentView>

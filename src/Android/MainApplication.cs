@@ -8,6 +8,9 @@ using System;
 using System.Xml;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
+[assembly: UsesPermission(Manifest.Permission.Camera)]
+[assembly: UsesPermission(Manifest.Permission.ReadExternalStorage)]
+[assembly: UsesPermission(Manifest.Permission.WriteExternalStorage)]
 [assembly: UsesPermission(Manifest.Permission.WakeLock)]
 [assembly: UsesPermission(Manifest.Permission.ReceiveBootCompleted)]
 [assembly: UsesPermission(Manifest.Permission.ChangeWifiMulticastState)]
