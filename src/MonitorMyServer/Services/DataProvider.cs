@@ -15,6 +15,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task UpdateHostAsync(Host host);
         Task<IEnumerable<Host>> GetHostsAsync();
         Task<int> CountHostAsync();
+        Task DeleteHostAsync(Host host);
     }
     public class DataProvider: NotifyPropertyChangedBase, IDataProvider
     {
@@ -56,5 +57,11 @@ namespace Doods.Xam.MonitorMyServer.Services
             await Repository.UpdateAsync(_timer, host);
 
         }
+
+        public async Task DeleteHostAsync(Host host)
+        {
+            await Repository.DeleteAsync(_timer, host);
+        }
+        
     }
 }

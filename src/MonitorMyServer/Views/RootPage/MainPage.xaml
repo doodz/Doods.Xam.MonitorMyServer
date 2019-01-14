@@ -5,11 +5,15 @@
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
-             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
+            
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <NavigationPage.TitleView>
         <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
             <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
+            <Button  Text="{resources:Translate Text=ManageHosts}" HorizontalOptions="EndAndExpand"
+                     Command="{Binding ManageHostsCmd,Mode=OneWay }"
+                     Margin="5"/>
         </StackLayout>
     </NavigationPage.TitleView>
     <ScrollView>
@@ -20,7 +24,7 @@
 
             <Frame>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="{Binding UpgradablesCount ,StringFormat='There are {0} items can be updated'}"></Label>
+                    <!--<Label Text="{Binding UpgradablesCount ,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"/>-->
                     <Button Text="Update"/>
                 </StackLayout>
             </Frame>

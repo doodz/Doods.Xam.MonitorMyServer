@@ -6,48 +6,46 @@
              xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
              x:Class="Doods.Xam.MonitorMyServer.Views.Templates.ZeroconfHostTemplate">
 
-  <Grid>
-    <Grid.Resources>
-      <ResourceDictionary>
-        <ResourceDictionary.MergedDictionaries>
-          <ResourceDictionary>
-            <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
-          </ResourceDictionary>
-        </ResourceDictionary.MergedDictionaries>
+    <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary>
+                        <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
+                    </ResourceDictionary>
+                </ResourceDictionary.MergedDictionaries>
 
-      </ResourceDictionary>
-    </Grid.Resources>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="Auto"/>
-        <ColumnDefinition Width="Auto"/>
-      <ColumnDefinition Width="*"/>
-      <ColumnDefinition Width="Auto"/>
-    </Grid.ColumnDefinitions>
-    <Grid.RowDefinitions>
-      <RowDefinition/>
-      <RowDefinition/>
-    </Grid.RowDefinitions>
-    <forms:SvgCachedImage
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <forms:SvgCachedImage
                 
         Grid.Row="0"
         Grid.Column="0"
         Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Computer}}" />
-    
-    <Label Grid.Row="0" Grid.Column="1" Text="{Binding DisplayName,Mode=OneTime}" />
-    <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="StartAndExpand" Text="{Binding IPAddress,Mode=OneTime,StringFormat='( {0} )'}" />
-    <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"   Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
-    <forms:SvgCachedImage
+
+        <Label Grid.Row="0" Grid.Column="1" Text="{Binding DisplayName,Mode=OneTime}" />
+        <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="StartAndExpand" Text="{Binding IPAddress,Mode=OneTime,StringFormat='( {0} )'}" />
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"   Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
+        <forms:SvgCachedImage
                 VerticalOptions="CenterAndExpand"
         Grid.Row="0"
         Grid.RowSpan="2"
         Grid.Column="3"
         
         Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" >
-      <forms:SvgCachedImage.GestureRecognizers>
-        <TapGestureRecognizer Command="{Binding GoToLoginCmd,Mode=OneTime}" />
-      </forms:SvgCachedImage.GestureRecognizers>
-    </forms:SvgCachedImage>
-  </Grid>
-
-
+            <forms:SvgCachedImage.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding GoToLoginCmd,Mode=OneTime}" />
+            </forms:SvgCachedImage.GestureRecognizers>
+        </forms:SvgCachedImage>
+    </Grid>
 </ViewCell>

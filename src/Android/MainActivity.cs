@@ -19,6 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 
             base.OnCreate(bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+
            
            var config = new FFImageLoading.Config.Configuration()
             {
@@ -29,7 +30,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 Logger = new CustomLogger(),
             };
             ImageService.Instance.Initialize(config);
-            
+            Rg.Plugins.Popup.Popup.Init(this, bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
 

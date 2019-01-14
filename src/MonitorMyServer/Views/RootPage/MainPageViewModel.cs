@@ -13,6 +13,7 @@ using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -20,6 +21,10 @@ namespace Doods.Xam.MonitorMyServer.Views
     public class MainPageViewModel : ViewModelWhithState
     {
         private readonly ICommand _addHostCmd;
+
+        
+
+        public  ICommand ManageHostsCmd { get; }
         private readonly ISshService _sshService;
         private CpuInfo _cpuInfo;
 
@@ -45,6 +50,8 @@ namespace Doods.Xam.MonitorMyServer.Views
             _addHostCmd = new Command(
                 AddHost);
             SetCommandForStateView(_addHostCmd);
+
+            ManageHostsCmd = new Command(ManageHosts);
         }
 
         public CpuInfo CpuInfo
@@ -63,6 +70,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             get => _upgradables;
             set => SetProperty(ref _upgradables, value);
+        }
+
+        private void ManageHosts()
+        {
+            NavigationService.NavigateAsync(nameof(HostManagerPage));
+
         }
 
         private void AddHost()

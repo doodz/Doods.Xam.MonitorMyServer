@@ -187,6 +187,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à No hosts detected :(.
+        /// </summary>
+        internal static string NoHostsDetected {
+            get {
+                return ResourceManager.GetString("NoHostsDetected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Password.
         /// </summary>
         internal static string Password {
