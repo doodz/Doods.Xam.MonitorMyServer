@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+             xmlns:models="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Models;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             x:Class="Doods.Xam.MonitorMyServer.Views.AptUpdates.AptUpdatesPage">
+    <ScrollView>
+        <StackLayout>
+
+           <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
+
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="{resources:Translate Text=UpdatesAll}" Command="{Binding UpdatesCmd,Mode=OneWay}"/>
+                    <Button Text="{resources:Translate Text=UpdateSelectedItems}" Command="{Binding UpdateSelectedItemsCmd,Mode=OneWay}"/>
+                </StackLayout>
+            </Frame>
+
+            <views:UcUpgradable VerticalOptions="FillAndExpand" BindingContext="{Binding Upgradables}"/>
+          
+         
+        </StackLayout>
+       
+           
+        
+    </ScrollView>
+
+   
+</mvvm:BaseContentPage>

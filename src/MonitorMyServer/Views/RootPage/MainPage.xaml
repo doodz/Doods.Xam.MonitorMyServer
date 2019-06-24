@@ -5,33 +5,57 @@
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
-            
+                Title=""
              xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <NavigationPage.TitleView>
-        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="10">
-            <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
-            <Button  Text="{resources:Translate Text=ManageHosts}" HorizontalOptions="EndAndExpand"
-                     Command="{Binding ManageHostsCmd,Mode=OneWay }"
-                     Margin="5"/>
-        </StackLayout>
-    </NavigationPage.TitleView>
-    <ScrollView>
-        <StackLayout>
 
+        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="{Binding Title}" FontSize="16" TextColor="Black"/>
+            <!--<Picker  ItemsSource="{Binding Hosts,Mode=OneWay}" ItemDisplayBinding="{Binding HostName}" SelectedItem="{}"/>-->
+            <Button Grid.Column="1"  Text="{resources:Translate Text=ChangeHost}" 
+                     Command="{Binding ChangeHostCmd,Mode=OneWay }"
+                     Margin="5,5,0,5"/>
+            <Button Grid.Column="2"  Text="{resources:Translate Text=ManageHosts}"
+                     Command="{Binding ManageHostsCmd,Mode=OneWay }"
+                     Margin="0,5,5,5"/>
+        </Grid>
+
+
+
+      
+         
+        
+    </NavigationPage.TitleView>
+    
+        <StackLayout>
+           
             <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
-            <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}"/>
+            <ScrollView>
+                <StackLayout>
+                <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}"/>
 
             <Frame>
                 <StackLayout Orientation="Horizontal">
-                    <!--<Label Text="{Binding UpgradablesCount ,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"/>-->
-                    <Button Text="Update"/>
+                    <Label Text="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"/>
+                    <!--<Label Text="{Binding UpgradablesCount,FallbackValue=0,TargetNullValue=0 ,StringFormat='There are {0} items can be updated'}"/>-->
+                   
+                    <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"/>
                 </StackLayout>
             </Frame>
 
             <views:UcDiskUsage BindingContext="{Binding DisksUsage,Mode=OneWay}"/>
-
-        </StackLayout>
-    </ScrollView>
+                </StackLayout>
+               
+        </ScrollView>
+            <controls1:MTAdView PersonalizedAds="true"/>
+    </StackLayout>
+    
 </mvvm:BaseContentPage>
 

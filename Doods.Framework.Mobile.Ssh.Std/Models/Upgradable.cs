@@ -9,7 +9,7 @@ namespace Doods.Framework.Mobile.Ssh.Std.Models
         private string _holdHold;
         private string _fromRepo;
         private string _platform;
-
+        private bool _isSelected = true;
         public string Name
         {
             get => _name;
@@ -21,20 +21,31 @@ namespace Doods.Framework.Mobile.Ssh.Std.Models
             get => _newVersion;
             internal set => SetProperty(ref _newVersion, value);
         }
+
         public string HoldHold
         {
             get => _holdHold;
             internal set => SetProperty(ref _holdHold, value);
         }
+
         public string FromRepo
         {
             get => _fromRepo;
             internal set => SetProperty(ref _fromRepo, value);
         }
+
         public string Platform
         {
             get => _platform;
             internal set => SetProperty(ref _platform, value);
         }
+
+        public bool IsSelected
+        {
+            get => _isSelected;
+            internal set => SetProperty(ref _isSelected, value);
+        }
+
+        public string ShowFormatedInfo => $"{_name} ({_holdHold} => {_name})";
     }
 }

@@ -8,7 +8,9 @@ using System;
 using System.Linq;
 using System.Reflection;
 using AutoMapper;
+using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
+using MarcTron.Plugin;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -31,6 +33,7 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(LogInPage), typeof(LogInPage));
             navigationService.Configure(nameof(HostManagerPage), typeof(HostManagerPage));
             navigationService.Configure(nameof(EnumerateAllServicesFromAllHostsPage), typeof(EnumerateAllServicesFromAllHostsPage));
+            navigationService.Configure(nameof(AptUpdatesPage), typeof(AptUpdatesPage));
             
             var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MainPage));
             MainPage = mainPage;
@@ -57,7 +60,7 @@ namespace Doods.Xam.MonitorMyServer
                 return _logger;
             }
         }
-
+       
         public static void SetupContainer(ContainerBuilder builder)
         {
             builder.RegisterModule<Framework.Mobile.Std.Config.Bootstrapper>();
@@ -67,7 +70,10 @@ namespace Doods.Xam.MonitorMyServer
             //builder.RegisterModule<Services.AutoMapperConfig>();
             //builder.RegisterModule<Framework.Mobile.Ssh.Std.Services.AutoMapperConfig>();
 
-
+            //https://github.com/marcojak/TestMTAdmob
+           
+            //You can add here the id of your test devices!
+            //CrossMTAdmob.Current.TestDevices = new List<string>() {  };
 
             var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();
             var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
@@ -86,10 +92,15 @@ namespace Doods.Xam.MonitorMyServer
             });
 
             _container = builder.Build();
+
+          
+           
         }
 
         protected override void OnStart()
         {
+            var config = _container.Resolve<IConfiguration>();
+            CrossMTAdmob.Current.AdsId = config.AdsKey;
             // Handle when your app starts
         }
 

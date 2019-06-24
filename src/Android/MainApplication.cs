@@ -6,6 +6,7 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Config;
 using System;
 using System.Xml;
+using Android.Support.V4.App;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
@@ -30,6 +31,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
         public override void OnCreate()
         {
             base.OnCreate();
+
+            Xamarin.Essentials.Platform.Init(this);
+
 
             AndroidEnvironment.UnhandledExceptionRaiser += HandleAndroidException;
             //SecureStorageImplementation.StoragePassword = FormatPassword();
@@ -61,6 +65,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             LoadDoodsConfiguration();
         }
+
+       
 
         private void LoadDoodsConfiguration()
         {

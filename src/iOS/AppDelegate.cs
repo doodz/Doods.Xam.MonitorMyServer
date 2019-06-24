@@ -4,6 +4,7 @@ using Doods.Xam.MonitorMyServer.iOS.Config;
 using Foundation;
 using System.IO;
 using System.Xml;
+using Google.MobileAds;
 using UIKit;
 
 namespace Doods.Xam.MonitorMyServer.iOS
@@ -35,6 +36,7 @@ namespace Doods.Xam.MonitorMyServer.iOS
             //TODO : SecureStorage Propriétés n'existent pas du côté iOS
             //SecureStorageImplementation.Password = FormatPassword();
             App.SetupContainer(Bootstrapper.CreateContainer());
+            MobileAds.Configure("ca-app-pub-4922361220283829~3348751403");
             LoadConfiguration();
             LoadSettings();
         }

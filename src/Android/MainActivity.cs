@@ -5,7 +5,9 @@ using Android.OS;
 using FFImageLoading;
 using System;
 using Android.Content;
+using Android.Gms.Ads;
 using Android.Net.Wifi;
+using Android.Runtime;
 
 namespace Doods.Xam.MonitorMyServer.Droid
 {
@@ -18,10 +20,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
 
-           
-           var config = new FFImageLoading.Config.Configuration()
+            MobileAds.Initialize(ApplicationContext, "ca-app-pub-4922361220283829~3348751403");
+            var config = new FFImageLoading.Config.Configuration()
             {
                 VerboseLogging = true,
                 VerbosePerformanceLogging = true,
@@ -40,6 +42,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
             LoadApplication(new App());
         }
 
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
 
         WifiManager wifi;
         WifiManager.MulticastLock mlock;

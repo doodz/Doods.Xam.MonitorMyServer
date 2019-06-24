@@ -1,19 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using AutoMapper;
 using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Ssh.Std.Models;
+using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
-using Doods.Framework.Ssh.Std.Beans;
-using Doods.Framework.Ssh.Std.Queries;
+using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
+using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -21,37 +23,43 @@ namespace Doods.Xam.MonitorMyServer.Views
     public class MainPageViewModel : ViewModelWhithState
     {
         private readonly ICommand _addHostCmd;
+        private readonly IMessageBoxService _messageBoxService;
 
-        
-
-        public  ICommand ManageHostsCmd { get; }
         private readonly ISshService _sshService;
         private CpuInfo _cpuInfo;
 
         private IEnumerable<DiskUsage> _disksUsage;
 
+        private IEnumerable<Upgradable> _upgradables;
+
         private int _upgradablesCount;
 
 
-        public int UpgradablesCount
-        {
-            get => _upgradablesCount;
-            set => SetProperty(ref _upgradablesCount, value);
-        }
-
-        private IEnumerable<Upgradable> _upgradables;
-
-
-        public MainPageViewModel(ISshService sshService)
+        public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {
             Title = Resource.Home;
             _sshService = sshService;
+            _messageBoxService = messageBoxService;
             CmdState = RefreshCmd;
             _addHostCmd = new Command(
                 AddHost);
             SetCommandForStateView(_addHostCmd);
 
             ManageHostsCmd = new Command(ManageHosts);
+            ChangeHostCmd = new Command(ChangeHost);
+            UpdatesCmd = new Command(Updates);
+        }
+
+        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
+        public ICommand ManageHostsCmd { get; }
+        public ICommand UpdatesCmd { get; }
+
+        public ICommand ChangeHostCmd { get; }
+
+        public int UpgradablesCount
+        {
+            get => _upgradablesCount;
+            set => SetProperty(ref _upgradablesCount, value);
         }
 
         public CpuInfo CpuInfo
@@ -72,10 +80,56 @@ namespace Doods.Xam.MonitorMyServer.Views
             set => SetProperty(ref _upgradables, value);
         }
 
+
+        private void Updates()
+        {
+            NavigationService.NavigateAsync(nameof(AptUpdatesPage));
+        }
+
+       
+        
+        private async void ChangeHost()
+        {
+            var action = await _messageBoxService.ShowActionSheet(Resource.SelectHost, Resource.Cancel, null,
+                Hosts.Select(h => $"{h.Id} - {h.HostName}").ToArray());
+
+            if (action != Resource.Cancel)
+            {
+                var split = action.Split('-');
+                var id = long.Parse(split[0]);
+                await TryToConnect(Hosts.First(h => h.Id == id));
+
+
+
+              
+            }
+            //var page = new PopupListViewPage();
+
+            //await PopupNavigation.Instance.PushAsync(page);
+
+            //var hosts = await DataProvider.GetHostsAsync();
+            //var vm = new PopupPageItemActionViewModel<Host>(hosts);
+            //var page = new PopupPageItemAction(vm);
+
+            //await PopupNavigation.Instance.PushAsync(page);
+            //var selected = vm.SelectedItems;
+            //if (selected != null)
+            //{
+            //    await Login(selected);
+            //}
+          
+        }
+
+        private void Clear()
+        {
+            Upgradables = null;
+            CpuInfo = null;
+            DisksUsage = null;
+        }
+
         private void ManageHosts()
         {
             NavigationService.NavigateAsync(nameof(HostManagerPage));
-
         }
 
         private void AddHost()
@@ -94,8 +148,42 @@ namespace Doods.Xam.MonitorMyServer.Views
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
             var hosts = await DataProvider.GetHostsAsync();
-            if (!hosts.Any()) ShowErrorHostState();
-            await Login(hosts);
+            if (!hosts.Any())
+            {
+                ShowErrorHostState();
+            }
+            else
+            {
+               
+                Hosts.ReplaceRange(hosts);
+                var l = Preferences.Get("Selected_host_id", 0L);
+                if (l > 0)
+                {
+                    TryToConnect(Hosts.First(h=> h.Id.Value == l));
+                }
+                else
+                {
+                    TryToConnect(Hosts.First());
+                }
+            }
+        }
+
+
+        private async Task TryToConnect(Host host)
+        {
+            SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
+            ViewModelStateItem.IsRunning = true;
+            
+            try
+            {
+                await Login(host);
+            }
+            catch (Exception ex)
+            {
+                SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
+                Clear();
+            }
+            ViewModelStateItem.IsRunning = false;
         }
 
         protected override void OnFinishLoading(LoadingContext context)
@@ -110,51 +198,56 @@ namespace Doods.Xam.MonitorMyServer.Views
         private void ShowErrorHostState()
         {
             SetLabelsStateItem(Resource.ErrorNoHostsDetected, Resource.ClickAddHost);
-
-
             //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
             //viewModelStateItem.Color = Color.Red;
         }
-
-        private async Task Login(IEnumerable<Host> hosts)
+        private void SetSelectedIdHost(Host host)
         {
-            var host = hosts.First();
+            Preferences.Set("Selected_host_id", host.Id.GetValueOrDefault());
+        }
+
+        private async Task Login(Host host)
+        {
+            SetSelectedIdHost(host);
+
             Title = host.HostName;
             var con = new SshConnection(host.Url, host.Port, host.UserName, host.Password);
-            _sshService.Init(con, true);
+            await _sshService.InitAsync(con, true).ConfigureAwait(false);
 
             SetLabelsStateItem(host.HostName, host.Url);
 
-
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
-            var taskCpuInfo = GetCpuInfo();
-            var taskDisk = GetDisksUsage();
-            var taskUpgradables= GetUpgradables();
 
-            await Task.WhenAll(taskCpuInfo, taskDisk, taskUpgradables);
+            await Task.WhenAll(GetCpuInfo(), GetDisksUsage(), GetUpgradables());
         }
 
         private async Task GetUpgradables()
         {
-            var upgradableRequest = new UpgradableRequest();
-            var upgradableBean = await _sshService.ExecuteTaskAsync<IEnumerable<UpgradableBean>>(upgradableRequest);
-            Upgradables = Mapper.Map<IEnumerable<UpgradableBean>, IEnumerable<Upgradable>>(upgradableBean.Data);
+            Upgradables = await _sshService.GetUpgradables();
             UpgradablesCount = _upgradables.Count();
+
+            if (UpgradablesCount <= 0)//maybe we will need an update
+            {
+                var updated = await _sshService.UpdateAptList();
+                if (updated)
+                {
+                    Upgradables = await _sshService.GetUpgradables();
+                    UpgradablesCount = _upgradables.Count();
+                }
+            }
+
         }
 
         private async Task GetCpuInfo()
         {
-            var cpuInfoRequest = new CpuInfoRequest();
-            var cpuInfoBean = await _sshService.ExecuteTaskAsync<CpuInfoBean>(cpuInfoRequest);
-            CpuInfo = Mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
+            CpuInfo = await _sshService.GetCpuInfo();
+          
         }
 
 
         private async Task GetDisksUsage()
         {
-            var diskUsageRequest = new DiskUsageRequest();
-            var diskUsageBean = await _sshService.ExecuteTaskAsync<IEnumerable<DiskUsageBean>>(diskUsageRequest);
-            DisksUsage = Mapper.Map<IEnumerable<DiskUsageBean>, IEnumerable<DiskUsage>>(diskUsageBean.Data);
+            DisksUsage = await _sshService.GetDisksUsage();
         }
     }
 }

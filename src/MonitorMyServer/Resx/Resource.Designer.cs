@@ -19,7 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Resx {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resource {
@@ -61,6 +61,33 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Apt.
+        /// </summary>
+        internal static string Apt {
+            get {
+                return ResourceManager.GetString("Apt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à cancel.
+        /// </summary>
+        internal static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Can&apos;t connect.
+        /// </summary>
+        internal static string CanTConnect {
+            get {
+                return ResourceManager.GetString("CanTConnect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Click to add host.
         /// </summary>
         internal static string ClickAddHost {
@@ -84,6 +111,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         internal static string ConnectionTest {
             get {
                 return ResourceManager.GetString("ConnectionTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Done.
+        /// </summary>
+        internal static string Done {
+            get {
+                return ResourceManager.GetString("Done", resourceCulture);
             }
         }
         
@@ -151,6 +187,24 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Installing packages.
+        /// </summary>
+        internal static string InstallingPackages {
+            get {
+                return ResourceManager.GetString("InstallingPackages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Install in progress.
+        /// </summary>
+        internal static string InstallInProgress {
+            get {
+                return ResourceManager.GetString("InstallInProgress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à This field must be numeric integer..
         /// </summary>
         internal static string MustBeInt {
@@ -196,6 +250,33 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à not finished.
+        /// </summary>
+        internal static string NotFinished {
+            get {
+                return ResourceManager.GetString("NotFinished", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Oups.
+        /// </summary>
+        internal static string Oups {
+            get {
+                return ResourceManager.GetString("Oups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Packet reading.
+        /// </summary>
+        internal static string PacketReading {
+            get {
+                return ResourceManager.GetString("PacketReading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Password.
         /// </summary>
         internal static string Password {
@@ -223,6 +304,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please wait.
+        /// </summary>
+        internal static string PleaseWait {
+            get {
+                return ResourceManager.GetString("PleaseWait", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Port.
         /// </summary>
         internal static string Port {
@@ -246,6 +336,60 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         internal static string SearchingHosts {
             get {
                 return ResourceManager.GetString("SearchingHosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Select host.
+        /// </summary>
+        internal static string SelectHost {
+            get {
+                return ResourceManager.GetString("SelectHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à there are {0} packages that can be updated.
+        /// </summary>
+        internal static string ThereAre_0_ItemsCanBeUpdated {
+            get {
+                return ResourceManager.GetString("ThereAre_0_ItemsCanBeUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à There are {0} of selected..
+        /// </summary>
+        internal static string ThereAre_0_OfSelected {
+            get {
+                return ResourceManager.GetString("ThereAre_0_OfSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à try to connect.
+        /// </summary>
+        internal static string TryToConnect {
+            get {
+                return ResourceManager.GetString("TryToConnect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Updates.
+        /// </summary>
+        internal static string Updates {
+            get {
+                return ResourceManager.GetString("Updates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Updates all.
+        /// </summary>
+        internal static string UpdatesAll {
+            get {
+                return ResourceManager.GetString("UpdatesAll", resourceCulture);
             }
         }
         

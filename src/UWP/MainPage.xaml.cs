@@ -4,9 +4,9 @@
     {
         public MainPage()
         {
-            this.InitializeComponent();
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
-            LoadApplication(new Doods.Xam.MonitorMyServer.App());
+            InitializeComponent();
+            
+            LoadApplication(new MonitorMyServer.App());
         }
     }
 }

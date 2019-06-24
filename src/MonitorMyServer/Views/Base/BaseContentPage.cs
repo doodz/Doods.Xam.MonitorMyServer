@@ -9,6 +9,7 @@ using Xamarin.Forms;
 
 namespace Doods.Framework.Mobile.Std.Mvvm
 {
+
     public class BaseContentPage<T> : BaseContentPage where T : ViewModel
     {
         protected override ViewModel InitializeViewModelInternal()
