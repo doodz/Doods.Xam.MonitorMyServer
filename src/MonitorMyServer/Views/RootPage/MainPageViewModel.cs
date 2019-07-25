@@ -9,6 +9,7 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
+using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
@@ -27,13 +28,12 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private readonly ISshService _sshService;
         private CpuInfo _cpuInfo;
-
         private IEnumerable<DiskUsage> _disksUsage;
-
+        private MemoryUsage _memoryUsage;
         private IEnumerable<Upgradable> _upgradables;
 
         private int _upgradablesCount;
-
+        private TimeSpan _uptime;
 
         public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {
@@ -62,6 +62,12 @@ namespace Doods.Xam.MonitorMyServer.Views
             set => SetProperty(ref _upgradablesCount, value);
         }
 
+        public TimeSpan Uptime
+        {
+            get => _uptime;
+            set => SetProperty(ref _uptime, value);
+        }
+
         public CpuInfo CpuInfo
         {
             get => _cpuInfo;
@@ -74,20 +80,23 @@ namespace Doods.Xam.MonitorMyServer.Views
             set => SetProperty(ref _disksUsage, value);
         }
 
+        public MemoryUsage MemoryUsage
+        {
+            get => _memoryUsage;
+            set => SetProperty(ref _memoryUsage, value);
+        }
+
         public IEnumerable<Upgradable> Upgradables
         {
             get => _upgradables;
             set => SetProperty(ref _upgradables, value);
         }
 
-
         private void Updates()
         {
             NavigationService.NavigateAsync(nameof(AptUpdatesPage));
         }
 
-       
-        
         private async void ChangeHost()
         {
             var action = await _messageBoxService.ShowActionSheet(Resource.SelectHost, Resource.Cancel, null,
@@ -98,10 +107,6 @@ namespace Doods.Xam.MonitorMyServer.Views
                 var split = action.Split('-');
                 var id = long.Parse(split[0]);
                 await TryToConnect(Hosts.First(h => h.Id == id));
-
-
-
-              
             }
             //var page = new PopupListViewPage();
 
@@ -117,7 +122,6 @@ namespace Doods.Xam.MonitorMyServer.Views
             //{
             //    await Login(selected);
             //}
-          
         }
 
         private void Clear()
@@ -138,14 +142,18 @@ namespace Doods.Xam.MonitorMyServer.Views
             NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage));
         }
 
-
         protected override void OnInitializeLoading(LoadingContext context)
         {
             //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
             //viewModelStateItem.Color = Color.Blue;
         }
 
-        protected override async Task InternalLoadAsync(LoadingContext context)
+        protected override async Task OnInternalAppearingAsync()
+        {
+            await InitHostAsync().ConfigureAwait(false);
+        }
+
+        private async Task InitHostAsync()
         {
             var hosts = await DataProvider.GetHostsAsync();
             if (!hosts.Any())
@@ -154,26 +162,34 @@ namespace Doods.Xam.MonitorMyServer.Views
             }
             else
             {
-               
                 Hosts.ReplaceRange(hosts);
-                var l = Preferences.Get("Selected_host_id", 0L);
+                var l = Preferences.Get(PreferencesKeys.SelectedHostIdKey, 0L);
                 if (l > 0)
                 {
-                    TryToConnect(Hosts.First(h=> h.Id.Value == l));
+                    var findHost = Hosts.FirstOrDefault(h => h.Id.Value == l);
+
+                    if (findHost != null)
+                        await TryToConnect(findHost);
+                    else
+                        await TryToConnect(Hosts.First());
                 }
                 else
                 {
-                    TryToConnect(Hosts.First());
+                    await TryToConnect(Hosts.First());
                 }
             }
         }
 
+        protected override async Task InternalLoadAsync(LoadingContext context)
+        {
+            await InitHostAsync().ConfigureAwait(false);
+        }
 
         private async Task TryToConnect(Host host)
         {
             SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
             ViewModelStateItem.IsRunning = true;
-            
+
             try
             {
                 await Login(host);
@@ -183,6 +199,7 @@ namespace Doods.Xam.MonitorMyServer.Views
                 SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
                 Clear();
             }
+
             ViewModelStateItem.IsRunning = false;
         }
 
@@ -201,9 +218,10 @@ namespace Doods.Xam.MonitorMyServer.Views
             //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
             //viewModelStateItem.Color = Color.Red;
         }
+
         private void SetSelectedIdHost(Host host)
         {
-            Preferences.Set("Selected_host_id", host.Id.GetValueOrDefault());
+            Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
 
         private async Task Login(Host host)
@@ -212,13 +230,13 @@ namespace Doods.Xam.MonitorMyServer.Views
 
             Title = host.HostName;
             var con = new SshConnection(host.Url, host.Port, host.UserName, host.Password);
-            await _sshService.InitAsync(con, true).ConfigureAwait(false);
+            await _sshService.InitAsync(con).ConfigureAwait(false);
 
             SetLabelsStateItem(host.HostName, host.Url);
 
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
 
-            await Task.WhenAll(GetCpuInfo(), GetDisksUsage(), GetUpgradables());
+            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetUpgradables());
         }
 
         private async Task GetUpgradables()
@@ -226,7 +244,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             Upgradables = await _sshService.GetUpgradables();
             UpgradablesCount = _upgradables.Count();
 
-            if (UpgradablesCount <= 0)//maybe we will need an update
+            if (UpgradablesCount <= 0) //maybe we will need an update
             {
                 var updated = await _sshService.UpdateAptList();
                 if (updated)
@@ -235,19 +253,26 @@ namespace Doods.Xam.MonitorMyServer.Views
                     UpgradablesCount = _upgradables.Count();
                 }
             }
-
         }
 
         private async Task GetCpuInfo()
         {
             CpuInfo = await _sshService.GetCpuInfo();
-          
         }
 
+        private async Task GetUptime()
+        {
+            Uptime = await _sshService.GetUptime();
+        }
 
         private async Task GetDisksUsage()
         {
             DisksUsage = await _sshService.GetDisksUsage();
+        }
+
+        private async Task CheckMemoryUsage()
+        {
+            MemoryUsage = await _sshService.CheckMemoryUsage();
         }
     }
 }

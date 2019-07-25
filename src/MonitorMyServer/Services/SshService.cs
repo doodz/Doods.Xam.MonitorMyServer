@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Ssh.Std.Models;
+using Doods.Framework.Mobile.Std.Converters;
 using Doods.Framework.Ssh.Std;
 using Doods.Framework.Ssh.Std.Beans;
 using Doods.Framework.Ssh.Std.Enums;
@@ -28,6 +30,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<int> InstallPackage(IEnumerable<string> packagesName);
         Task<int> InstallAllPackage();
         Task<bool> IsRunning(int pid);
+        Task<double> GetUptimeDouble();
+        Task<TimeSpan> GetUptime();
+        Task<string> GetUptimeString();
+        Task<MemoryUsage> CheckMemoryUsage();
     }
     public class SshService : SshServiceBase, ISshService
     {
@@ -92,6 +98,13 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         }
 
+        public async Task<MemoryUsage> CheckMemoryUsage()
+        {
+            var memoryUsageRequest = new MemoryUsageRequest();
+            var osMemoryBean = await ExecuteTaskAsync<OsMemoryBean>(memoryUsageRequest).ConfigureAwait(false);
+            var memoryUsage = Mapper.Map<OsMemoryBean, MemoryUsage>(osMemoryBean.Data);
+            return memoryUsage;
+        }
         public async Task<int> NoUpCommand(string cmd)
         {
             var noUpRequest = new NoHupRequest(cmd);
@@ -108,6 +121,29 @@ namespace Doods.Xam.MonitorMyServer.Services
             return CpuInfo;
         }
 
+        public async Task<double> GetUptimeDouble()
+        {
+            var uptimeRequest = new UptimeRequest();
+            var uptimeBean = await ExecuteTaskAsync<double>(uptimeRequest).ConfigureAwait(false);
+           
+            return uptimeBean.Data;
+        }
+
+        public async Task<TimeSpan> GetUptime()
+        {
+            var uptimeRequest = new UptimeRequest();
+            var uptimeBean = await ExecuteTaskAsync<TimeSpan>(uptimeRequest).ConfigureAwait(false);
+            return uptimeBean.Data;
+
+        }
+        public async Task<string> GetUptimeString()
+        {
+            var uptimeRequest = new UptimeRequest();
+            var uptimeBean = await ExecuteTaskAsync<double>(uptimeRequest).ConfigureAwait(false);
+            var converter = new DoubleToDateStringConverter();
+            return (string)converter.Convert(uptimeBean.Data, null, string.Empty, CultureInfo.CurrentCulture);
+
+        }
 
         public async Task<IEnumerable<DiskUsage>> GetDisksUsage()
         {

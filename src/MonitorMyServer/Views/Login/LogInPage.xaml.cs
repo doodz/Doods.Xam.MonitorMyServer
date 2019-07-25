@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Framework.Repository.Std.Tables;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Xamarin.Forms.Xaml;
@@ -23,6 +24,15 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             InitializeComponent();
             Title = Resource.Home;
             var vm = App.Container.Resolve<LoginPageViewModel>();
+            Start(vm);
+        }
+
+        public LogInPage(Host host)
+        {
+            InitializeComponent();
+            Title = Resource.Home;
+            var vm = App.Container.Resolve<LoginPageViewModel>();
+            vm.SetHost(host);
             Start(vm);
         }
     }

@@ -8,7 +8,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 {
     public interface IDataProvider
     {
-        IRepository Repository { get; }
+        //IRepository Repository { get; }
         Task<int> InsertHostAsync(Host host);
         Task<Host> FindHostAsync(Host host);
         Task<Host> FindHostAsync(long hostId);
@@ -19,22 +19,22 @@ namespace Doods.Xam.MonitorMyServer.Services
     }
     public class DataProvider: NotifyPropertyChangedBase, IDataProvider
     {
-        public IRepository Repository { get; }
+        private IRepository _repository;
         private readonly ITimeWatcher _timer;
         public DataProvider(IRepository repository)
         {
             _timer = new TimeWatcher();
-            Repository = repository;
+            _repository = repository;
         }
 
         public async Task<IEnumerable<Host>> GetHostsAsync()
         {
-            return await Repository.GetAllAsync<Host>(_timer);
+            return await _repository.GetAllAsync<Host>(_timer);
         }
 
         public async Task<int> InsertHostAsync(Host host)
         {
-            return await Repository.InsertAsync(_timer, host);
+            return await _repository.InsertAsync(_timer, host);
 
         }
 
@@ -45,22 +45,22 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<Host> FindHostAsync(long hostId)
         {
-            return await Repository.FindAsync<Host>(_timer, hostId);
+            return await _repository.FindAsync<Host>(_timer, hostId);
         }
 
         public Task<int> CountHostAsync()
         {
-            return Repository.CountAsync<Host>(_timer);
+            return _repository.CountAsync<Host>(_timer);
         }
         public async Task UpdateHostAsync(Host host)
         {
-            await Repository.UpdateAsync(_timer, host);
+            await _repository.UpdateAsync(_timer, host);
 
         }
 
         public async Task DeleteHostAsync(Host host)
         {
-            await Repository.DeleteAsync(_timer, host);
+            await _repository.DeleteAsync(_timer, host);
         }
         
     }

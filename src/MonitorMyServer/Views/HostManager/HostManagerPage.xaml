@@ -14,13 +14,10 @@
             <Label Text="{Binding Title}" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
         </StackLayout>
     </NavigationPage.TitleView>
-
     <ContentPage.Content>
-
         <ScrollView Padding="10" VerticalOptions="FillAndExpand">
             <ScrollView.Resources>
                 <ResourceDictionary>
-
                     <Style x:Key="NewSubTitleStyle" TargetType="Label">
                         <Setter Property="FontAttributes" Value="None" />
                         <Setter Property="TextColor" Value="BlueViolet" />
@@ -28,14 +25,15 @@
                 </ResourceDictionary>
             </ScrollView.Resources>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
-                <BindableLayout.ItemTemplate>
+                <BindableLayout.ItemTemplate >
                     <DataTemplate>
                         <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
                                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="20*" />
-                                    <ColumnDefinition Width="65*" />
+                                    <ColumnDefinition Width="50*" />
+                                    <ColumnDefinition Width="15*" />
                                     <ColumnDefinition Width="15*" />
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0" Text="{Binding Platform}" />
@@ -44,10 +42,21 @@
                                 <forms:SvgCachedImage
                                     Grid.Column="2"
                                     Grid.Row="0"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </forms:SvgCachedImage.GestureRecognizers>
+                                </forms:SvgCachedImage>
+                                <forms:SvgCachedImage
+                                    Grid.Column="3"
+                                    Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
                                     WidthRequest="40"
                                     HeightRequest="40"
-           
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
                                     <forms:SvgCachedImage.GestureRecognizers>

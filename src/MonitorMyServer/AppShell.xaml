@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:about="clr-namespace:Doods.Xam.MonitorMyServer.Views.About;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:settings="clr-namespace:Doods.Xam.MonitorMyServer.Views.Settings;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:comtrols="clr-namespace:Doods.Xam.MonitorMyServer.Comtrols;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
+       x:Class="Doods.Xam.MonitorMyServer.AppShell">
+    <Shell.FlyoutHeader>
+        <comtrols:FlyoutHeader />
+    </Shell.FlyoutHeader>
+  <ShellItem>
+      <ShellSection>
+            <ShellContent Title="Home"
+                    Icon="elephant.png"
+                    ContentTemplate="{DataTemplate local:MainPage}"/>
+      </ShellSection>
+    </ShellItem>
+    <FlyoutItem Title="Animals"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <!--<Tab Title="Domestic"
+             Icon="paw.png">
+            <ShellContent Title="Cats"
+                          Icon="cat.png">
+                <views:CatsPage />
+            </ShellContent>
+            <ShellContent Title="Dogs"
+                          Icon="dog.png">
+                <views:DogsPage />
+            </ShellContent>
+        </Tab>-->
+        <ShellSection>
+            <ShellContent Title="Settings"
+                          Icon="elephant.png"
+                          ContentTemplate="{DataTemplate settings:SettingsPage}"/>
+            <ShellContent Title="About"
+                          Icon="bear.png"
+                          ContentTemplate="{DataTemplate about:AboutPage}"/>
+          
+        </ShellSection>
+       
+    </FlyoutItem>
+   
+</Shell>

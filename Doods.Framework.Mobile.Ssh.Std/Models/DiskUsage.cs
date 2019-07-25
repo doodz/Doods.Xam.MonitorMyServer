@@ -1,4 +1,5 @@
-﻿using Doods.Framework.Std;
+﻿using System;
+using Doods.Framework.Std;
 
 namespace Doods.Framework.Mobile.Ssh.Std.Models
 {
@@ -51,6 +52,9 @@ namespace Doods.Framework.Mobile.Ssh.Std.Models
 
         public string UseSize => $"{_used} / {_size}";
         public string AvailableUsedPercent => $"{_available} ( {_usedPercent} )";
+
+        public float UsedPercentNoUnit =>float.Parse( _usedPercent.Replace('%', ' '));
+
         //public DiskUsage(string fileSystem, string size, string used,
         //    string available, string usedPercent, string mountedOn)
         //{

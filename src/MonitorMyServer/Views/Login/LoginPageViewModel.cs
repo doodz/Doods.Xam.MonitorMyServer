@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
-using Doods.Framework.Mobile.Std.Models;
-using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Framework.Mobile.Std.Validation;
-using Doods.Framework.Std.Validation;
-using Doods.Xam.MonitorMyServer.Resx;
-using Doods.Xam.MonitorMyServer.Views.Base;
 using System.Windows.Input;
 using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
-using Doods.Framework.ApiClientBase.Std.Helpers;
 using Doods.Framework.ApiClientBase.Std.Models;
+using Doods.Framework.Mobile.Std.Models;
+using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Mobile.Std.Servicies;
+using Doods.Framework.Mobile.Std.Validation;
 using Doods.Framework.Repository.Std.Tables;
+using Doods.Framework.Std.Validation;
 using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
+using Doods.Xam.MonitorMyServer.Views.Base;
+using Xamarin.Essentials;
 using Xamarin.Forms;
-using Zeroconf;
 
 namespace Doods.Xam.MonitorMyServer.Views.Login
 {
@@ -30,9 +26,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         private ValidatableObjectView<string> _hostName;
         private ValidatableObjectView<string> _login;
         private ValidatableObjectView<string> _password;
-        private ViewModelStateItem _viewModelStateItem;
 
         private ValidatableObjectView<string> _port;
+        private ViewModelStateItem _viewModelStateItem;
 
         public LoginPageViewModel()
         {
@@ -50,20 +46,6 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             ViewModelStateItem.IsRunning = true;
             ViewModelStateItem.Color = Color.Transparent;
             AddValidations();
-        }
-
-
-        public void SetHost(ZeroconfHost zeroconfHost)
-        {
-            SetHost(zeroconfHost as DataHost);
-            //"_ssh._tcp.local.","_https._tcp.local.", "_http._tcp.local."
-            if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
-        }
-
-        public void SetHost(DataHost dataHost)
-        {
-            _displayName.Value = dataHost.DisplayName;
-            _hostName.Value = dataHost.IPAddress;
         }
 
         public ICommand ValidateUserNameCommand => new Command(() => ValidateUserName());
@@ -108,6 +90,30 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         {
             get => _password;
             set => SetProperty(ref _password, value);
+        }
+
+        private long _hostId;
+        public void SetHost(Host host)
+        {
+            _displayName.Value = host.HostName;
+            _hostName.Value = host.Url;
+            _port.Value = host.Port.ToString();
+            _login.Value = host.UserName;
+            _password.Value = host.Password;
+            _hostId = host.Id.GetValueOrDefault();
+        }
+
+        public void SetHost(ZeroconfHost zeroconfHost)
+        {
+            SetHost(zeroconfHost as DataHost);
+            //"_ssh._tcp.local.","_https._tcp.local.", "_http._tcp.local."
+            if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
+        }
+     
+        public void SetHost(DataHost dataHost)
+        {
+            _displayName.Value = dataHost.DisplayName;
+            _hostName.Value = dataHost.IPAddress;
         }
 
 
@@ -173,13 +179,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
                     var sshService = App.Container.Resolve<ISshService>();
 
-                    IConnection connection = new SshConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
+                    var connection = new SshConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
                         _password.Value);
                     if (sshService.TestConnection(connection, true))
                     {
                         await Save();
-                        var mainPage = ((ViewNavigationService)NavigationService).SetRootPage(nameof(MainPage));
-                        App.Current.MainPage = mainPage;
+                        var mainPage = ((ViewNavigationService) NavigationService).SetRootPage(nameof(MainPage));
+                        Application.Current.MainPage = mainPage;
                     }
                 }
             }
@@ -223,7 +229,19 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                 UserName = _login.Value,
                 Password = _password.Value
             };
-            await DataProvider.InsertHostAsync(host).ConfigureAwait(false);
+
+            if (_hostId > 0)//TODO set ViewModel state or other flag 
+            {
+                host.Id = _hostId;
+                await DataProvider.UpdateHostAsync(host);
+            }
+            else
+            {
+
+
+                var id = await DataProvider.InsertHostAsync(host).ConfigureAwait(false);
+                Preferences.Set(PreferencesKeys.SelectedHostIdKey, id);
+            }
         }
 
 

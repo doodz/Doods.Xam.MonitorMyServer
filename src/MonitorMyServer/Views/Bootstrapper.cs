@@ -15,9 +15,9 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<HostManagerPageViewModel>().AsSelf();
             builder.RegisterType<EnumerateAllServicesFromAllHostsViewModel>().AsSelf();
             builder.RegisterType<AptUpdatesPageViewModel>().AsSelf();
+            builder.RegisterType<AppShellViewModel>().AsSelf();
+
             
-
-
         }
     }
 }

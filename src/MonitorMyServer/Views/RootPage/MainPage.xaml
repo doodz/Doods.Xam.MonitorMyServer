@@ -1,61 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer"
-             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
-                Title=""
-             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
-             xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
-             x:Class="Doods.Xam.MonitorMyServer.MainPage">
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
+                      Title=""
+                      xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <NavigationPage.TitleView>
 
         <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Text="{Binding Title}" FontSize="16" TextColor="Black"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="{Binding Title}" FontSize="16" TextColor="Black" />
             <!--<Picker  ItemsSource="{Binding Hosts,Mode=OneWay}" ItemDisplayBinding="{Binding HostName}" SelectedItem="{}"/>-->
-            <Button Grid.Column="1"  Text="{resources:Translate Text=ChangeHost}" 
-                     Command="{Binding ChangeHostCmd,Mode=OneWay }"
-                     Margin="5,5,0,5"/>
-            <Button Grid.Column="2"  Text="{resources:Translate Text=ManageHosts}"
-                     Command="{Binding ManageHostsCmd,Mode=OneWay }"
-                     Margin="0,5,5,5"/>
+            <Button Grid.Column="1" Text="{resources:Translate Text=ChangeHost}"
+                    Command="{Binding ChangeHostCmd,Mode=OneWay }"
+                    Margin="5,5,0,5" />
+            <Button Grid.Column="2" Text="{resources:Translate Text=ManageHosts}"
+                    Command="{Binding ManageHostsCmd,Mode=OneWay }"
+                    Margin="0,5,5,5" />
         </Grid>
-
-
-
-      
-         
-        
     </NavigationPage.TitleView>
-    
-        <StackLayout>
-           
-            <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
-            <ScrollView>
-                <StackLayout>
-                <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}"/>
 
-            <Frame>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"/>
-                    <!--<Label Text="{Binding UpgradablesCount,FallbackValue=0,TargetNullValue=0 ,StringFormat='There are {0} items can be updated'}"/>-->
-                   
-                    <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"/>
-                </StackLayout>
-            </Frame>
+    <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary>
+                        <converters:TimeSpanToDateHumanConverter x:Key="TimeSpanToDateHumanConverter" />
+                    </ResourceDictionary>
+                </ResourceDictionary.MergedDictionaries>
 
-            <views:UcDiskUsage BindingContext="{Binding DisksUsage,Mode=OneWay}"/>
-                </StackLayout>
-               
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView>
+            <StackLayout Padding="8">
+
+
+                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=Uptime}"
+                                           SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
+                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                    <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}" />
+                </controls2:TitledFrameView>
+                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}"
+                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                    <views:UcMemoryUsage BindingContext="{Binding MemoryUsage,Mode=OneWay}" />
+                </controls2:TitledFrameView>
+                <controls2:TitledFrameView Padding="8"
+                                           Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"
+
+                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                    <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
+                            HorizontalOptions="End" />
+                </controls2:TitledFrameView>
+                <views:UcDiskUsage BindingContext="{Binding DisksUsage,Mode=OneWay}" Padding="8" />
+            </StackLayout>
+
         </ScrollView>
-            <controls1:MTAdView PersonalizedAds="true"/>
+        <controls1:MTAdView PersonalizedAds="true" />
     </StackLayout>
-    
-</mvvm:BaseContentPage>
 
+</mvvm:BaseContentPage>

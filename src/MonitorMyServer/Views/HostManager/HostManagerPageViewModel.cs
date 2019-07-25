@@ -2,8 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
+using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
@@ -27,10 +29,12 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             AddHostCmd = new Command(() => NavigationService.NavigateAsync(nameof(LogInPage)));
 
             DeleteItemCommand = new Command(DeleteItem);
+            EditItemCommand = new Command(EditItem);
         }
 
         public ICommand AddHostCmd { get; }
         public ICommand DeleteItemCommand { get; }
+        public ICommand EditItemCommand { get; }
         public ObservableRangeCollection<Host> Items { get; }
 
         public Host SelectedHost
@@ -39,18 +43,28 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             set => SetProperty(ref _selectedHost, value);
         }
 
+        private void EditItem(object obj)
+        {
+            if (obj == null) return;
+            if (obj is Host h)
+            {
+               
+                    NavigationService.NavigateAsync(nameof(LogInPage), obj);
+            }
+        }
+
         private void DeleteItem(object obj)
         {
             if (obj == null) return;
 
             if (obj is Host h)
             {
-            var i = Items.IndexOf(h);
-            if (i < 0) return;
-            Items.RemoveAt(i);
-            DataProvider.DeleteHostAsync(h);
+                var i = Items.IndexOf(h);
+                if (i < 0) return;
+                Items.RemoveAt(i);
+                DataProvider.DeleteHostAsync(h);
+            }
         }
-    }
 
 
         protected override void OnInitializeLoading(LoadingContext context)

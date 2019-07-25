@@ -43,7 +43,7 @@ namespace Doods.Framework.Mobile.Ssh.Std.Models
         public bool IsSelected
         {
             get => _isSelected;
-            internal set => SetProperty(ref _isSelected, value);
+            set => SetProperty(ref _isSelected, value);
         }
 
         public string ShowFormatedInfo => $"{_name} ({_holdHold} => {_name})";

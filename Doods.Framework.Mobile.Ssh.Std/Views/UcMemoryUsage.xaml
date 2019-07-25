@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+             mc:Ignorable="d"
+             x:Class="Doods.Framework.Mobile.Ssh.Std.Views.UcMemoryUsage">
+  <ContentView.Content>
+      
+      <Grid>
+            <Grid.Resources>
+              <ResourceDictionary>
+                  <ResourceDictionary.MergedDictionaries>
+                      <ResourceDictionary>
+                            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter" />
+                      </ResourceDictionary>
+                  </ResourceDictionary.MergedDictionaries>
+
+              </ResourceDictionary>
+          </Grid.Resources>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+              <RowDefinition/>
+              <RowDefinition/>
+          </Grid.RowDefinitions>
+
+
+            <controls:Gauge Valeur="{Binding PercentageUsed,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+            <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=Total}"/>
+            <Label Grid.Column="1" Grid.Row="1" Text="{Binding TotalMemory.Bytes,Mode=OneWay,ConverterParameter={StaticResource ByteCountToHumanReadableConverter}}"/>
+
+            <Label Grid.Column="2" Grid.Row="0" Text="{resources:Translate Text=TotalFree}"/>
+            <Label Grid.Column="2" Grid.Row="1" Text="{Binding TotalFree.Bytes,Mode=OneWay,ConverterParameter={StaticResource ByteCountToHumanReadableConverter}}" />
+
+         
+      </Grid>
+    </ContentView.Content>
+</ContentView>

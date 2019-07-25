@@ -10,24 +10,20 @@
              x:Class="Doods.Xam.MonitorMyServer.Views.AptUpdates.AptUpdatesPage">
     <ScrollView>
         <StackLayout>
-
            <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
 
             <Frame>
+                <StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Button Text="{resources:Translate Text=UpdatesAll}" Command="{Binding UpdatesCmd,Mode=OneWay}"/>
                     <Button Text="{resources:Translate Text=UpdateSelectedItems}" Command="{Binding UpdateSelectedItemsCmd,Mode=OneWay}"/>
+                   
+                </StackLayout>
+                    <Button Text="{resources:Translate Text=SelectUnselectAllItems}" Command="{Binding SelectUnselectAllItemsCmd,Mode=OneWay}"/>
                 </StackLayout>
             </Frame>
 
             <views:UcUpgradable VerticalOptions="FillAndExpand" BindingContext="{Binding Upgradables}"/>
-          
-         
         </StackLayout>
-       
-           
-        
     </ScrollView>
-
-   
 </mvvm:BaseContentPage>

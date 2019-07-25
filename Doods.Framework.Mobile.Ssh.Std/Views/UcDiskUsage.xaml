@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Doods.Framework.Mobile.Ssh.Std.Views.UcDiskUsage"
              xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
-             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std">
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std">
 
     <ContentView.Resources>
 
@@ -44,24 +46,25 @@
             </DataTemplate>
 
             <ResourceDictionary>
-
-                <Style x:Key="NewSubTitleStyle" TargetType="Label">
+                <Style x:Key="TitledFrameView.NewSubTitleStyle" TargetType="Label">
                     <Setter Property="FontAttributes" Value="None" />
                     <Setter Property="TextColor" Value="BlueViolet" />
                 </Style>
+             
             </ResourceDictionary>
 
         </ResourceDictionary>
     </ContentView.Resources>
     <ContentView.Content>
         <!--<ListView ItemsSource="{Binding .,Mode=OneWay}" ItemTemplate="{StaticResource DiskUsageDataTemplate}"/>-->
-        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding .}">
+        <StackLayout BindableLayout.ItemsSource="{Binding .}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
                     <controls:TitledFrameView Title="{Binding FileSystem}" SubTitle="{Binding MountedOn}"
-                                               SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                                               SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
                       <Grid>
                           <Grid.ColumnDefinitions>
+                              <ColumnDefinition/>
                               <ColumnDefinition/>
                               <ColumnDefinition/>
                           </Grid.ColumnDefinitions>
@@ -69,16 +72,17 @@
                               <RowDefinition/>
                               <RowDefinition/>
                           </Grid.RowDefinitions>
-                          <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=UseSize}"/>
-                          <Label Grid.Column="0" Grid.Row="1" Text="{Binding UseSize,Mode=OneWay}"/>
 
-                          <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=AvailableUsedPercent}"/>
-                          <Label Grid.Column="1" Grid.Row="1" Text="{Binding AvailableUsedPercent,Mode=OneWay}"/>
+                        <!--<controls1:AngleArc  SweepAngle="{Binding UsedPercentNoUnit,Mode=OneWay}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>-->
+                        
+                        <controls1:Gauge Valeur="{Binding UsedPercentNoUnit,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                        <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=UseSize}"/>
+                          <Label Grid.Column="1" Grid.Row="1" Text="{Binding UseSize,Mode=OneWay}"/>
 
+                          <Label Grid.Column="2" Grid.Row="0" Text="{resources:Translate Text=AvailableUsedPercent}"/>
+                          <Label Grid.Column="2" Grid.Row="1" Text="{Binding AvailableUsedPercent,Mode=OneWay}"/>
 
                           <!--<ContentPresenter ... />-->
-
-
                       </Grid>
 
                     </controls:TitledFrameView>

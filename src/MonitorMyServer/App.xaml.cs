@@ -34,8 +34,9 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(HostManagerPage), typeof(HostManagerPage));
             navigationService.Configure(nameof(EnumerateAllServicesFromAllHostsPage), typeof(EnumerateAllServicesFromAllHostsPage));
             navigationService.Configure(nameof(AptUpdatesPage), typeof(AptUpdatesPage));
-            
-            var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MainPage));
+            navigationService.Configure(nameof(AppShell), typeof(AppShell));
+            var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
+
             MainPage = mainPage;
         }
 
