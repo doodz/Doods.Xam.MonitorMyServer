@@ -11,7 +11,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
         public HostManagerPage()
         {
             InitializeComponent();
-            Title = Resource.Home;
+            Title = Resource.Hosts;
             var vm = App.Container.Resolve<HostManagerPageViewModel>();
             Start(vm);
         }

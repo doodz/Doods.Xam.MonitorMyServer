@@ -11,7 +11,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
         public AptUpdatesPage()
         {
             InitializeComponent();
-            Title = Resource.Home;
+            Title = Resource.Updates;
             var vm = App.Container.Resolve<AptUpdatesPageViewModel>();
             Start(vm);
         }

@@ -5,12 +5,16 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
+using Microsoft.AppCenter;
 using System.Linq;
 using System.Reflection;
 using AutoMapper;
+using Doods.Framework.Mobile.Std.Config;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using MarcTron.Plugin;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,18 +32,21 @@ namespace Doods.Xam.MonitorMyServer
         {
             InitializeComponent();
 
-            var navigationService = Container.Resolve<INavigationService>();
+            //var navigationService = Container.Resolve<INavigationService>();
+            var navigationService = Container.ResolveKeyed<INavigationService>(NavigationServiceType);
             navigationService.Configure(nameof(MonitorMyServer.MainPage), typeof(MainPage));
             navigationService.Configure(nameof(LogInPage), typeof(LogInPage));
             navigationService.Configure(nameof(HostManagerPage), typeof(HostManagerPage));
             navigationService.Configure(nameof(EnumerateAllServicesFromAllHostsPage), typeof(EnumerateAllServicesFromAllHostsPage));
             navigationService.Configure(nameof(AptUpdatesPage), typeof(AptUpdatesPage));
             navigationService.Configure(nameof(AppShell), typeof(AppShell));
-            var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
-
-            MainPage = mainPage;
+            //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
+            //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
+            //MainPage = mainPage;
+            MainPage = new AppShell();
         }
 
+        public static NavigationServiceType NavigationServiceType = NavigationServiceType.ShellNavigation;
         public static IContainer Container
         {
             get
@@ -94,8 +101,8 @@ namespace Doods.Xam.MonitorMyServer
 
             _container = builder.Build();
 
-          
-           
+            
+
         }
 
         protected override void OnStart()
@@ -103,6 +110,12 @@ namespace Doods.Xam.MonitorMyServer
             var config = _container.Resolve<IConfiguration>();
             CrossMTAdmob.Current.AdsId = config.AdsKey;
             // Handle when your app starts
+            var key = Container.Resolve<IConfiguration>().MobileCenterKey;
+            if (!string.IsNullOrEmpty(key))
+            {
+                Microsoft.AppCenter.AppCenter.Start(key, typeof(Analytics), typeof(Crashes));
+
+            }
         }
 
         protected override void OnSleep()

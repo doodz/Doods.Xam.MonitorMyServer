@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Input;
 using Autofac;
+using Doods.Framework.Mobile.Std.Config;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using Xamarin.Forms;
@@ -24,7 +25,8 @@ namespace Doods.Xam.MonitorMyServer.Data
 
         private void GoToLogin()
         {
-            var navigationService = App.Container.Resolve<INavigationService>();
+            //var navigationService = App.Container.Resolve<INavigationService>();
+            var navigationService = App.Container.ResolveKeyed<INavigationService>(App.NavigationServiceType);
             navigationService.NavigateAsync(nameof(LogInPage), this);
         }
     }

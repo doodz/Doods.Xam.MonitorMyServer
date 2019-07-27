@@ -73,7 +73,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
 
         public INavigationService NavigationService =>
-            _navigationService ?? (_navigationService = App.Container.Resolve<INavigationService>());
+            _navigationService ?? (_navigationService = App.Container.ResolveKeyed<INavigationService>(App.NavigationServiceType));
 
         public RootPages CurrentRootPage
         {
