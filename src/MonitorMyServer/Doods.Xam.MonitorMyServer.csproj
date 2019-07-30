@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resx\ThirdPartyLicenseOverview_doods.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AppCenter.Analytics.Metrics" Version="1.1.0" />
     <PackageReference Include="Autofac" Version="4.9.3" />
     <PackageReference Include="AutoMapper" Version="8.1.1" />
@@ -30,6 +34,7 @@
     <EmbeddedResource Include="..\..\..\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Resources\MyResourceDictionary.xaml" Link="Resx\MyResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resx\ThirdPartyLicenseOverview_doods.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -90,4 +95,8 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="powershell.exe -ExecutionPolicy Bypass -File $(ProjectDir)\Resx\Tools\PreBuildScript.ps1  $(ProjectDir) $(SolutionDir) $(TargetDir) $(SolutionPath)" />
+  </Target>
 </Project>

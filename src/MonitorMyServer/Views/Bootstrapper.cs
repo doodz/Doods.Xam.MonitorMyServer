@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
@@ -16,8 +17,8 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<EnumerateAllServicesFromAllHostsViewModel>().AsSelf();
             builder.RegisterType<AptUpdatesPageViewModel>().AsSelf();
             builder.RegisterType<AppShellViewModel>().AsSelf();
+            builder.RegisterType<AboutPageViewModel>().AsSelf();
 
-            
         }
     }
 }
