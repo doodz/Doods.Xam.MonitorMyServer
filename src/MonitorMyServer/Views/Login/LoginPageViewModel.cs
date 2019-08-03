@@ -20,12 +20,12 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.Login
 {
-    [QueryProperty("DisplayNameQuery", "DisplayNameQuery")]
-    [QueryProperty("IPAddressQuery", "IPAddressQuery")]
-    [QueryProperty("PortQuery", "PortQuery")]
-    [QueryProperty("UserNameQuery", "UserNameQuery")]
-    [QueryProperty("PasswordQuery", "PasswordQuery")]
-    [QueryProperty("IdQuery", "IdQuery")]
+    [QueryProperty(nameof(DisplayNameQuery), nameof(DisplayNameQuery))]
+    [QueryProperty(nameof(IPAddressQuery), nameof(IPAddressQuery))]
+    [QueryProperty(nameof(PortQuery), nameof(PortQuery))]
+    [QueryProperty(nameof(UserNameQuery), nameof(UserNameQuery))]
+    [QueryProperty(nameof(PasswordQuery), nameof(PasswordQuery))]
+    [QueryProperty(nameof(IdQuery), nameof(IdQuery))]
     
     public class LoginPageViewModel : ViewModel
     {
