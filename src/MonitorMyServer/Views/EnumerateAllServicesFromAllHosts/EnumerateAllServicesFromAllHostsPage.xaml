@@ -4,11 +4,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:templates="clr-namespace:Doods.Xam.MonitorMyServer.Views.Templates;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts.EnumerateAllServicesFromAllHostsPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand" >
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
+                    <Style x:Key="NewSubTitleStyle" TargetType="Label">
+                        <Setter Property="FontAttributes" Value="None" />
+                        <Setter Property="TextColor" Value="BlueViolet" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+
+
             <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-            <ListView ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}" 
+
+            <StackLayout VerticalOptions="FillAndExpand" Padding="4"  BindableLayout.ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}">
+                <BindableLayout.ItemTemplate >
+                    <DataTemplate>
+                        <controls1:TitledFrameView Title="{Binding DisplayName,Mode=OneWay}" SubTitle="{Binding IPAddress,Mode=OneWay}"
+                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                            <controls1:TitledFrameView.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GoToLoginCmd,Mode=OneTime}" />
+                            </controls1:TitledFrameView.GestureRecognizers>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                   
+                                </Grid.RowDefinitions>
+                                <forms:SvgCachedImage
+                
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Computer}}" />
+
+                                <Label  Grid.Row="0"
+                                        Grid.Column="1" Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
+                                <forms:SvgCachedImage
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" />
+
+                            </Grid>
+                        </controls1:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate >
+            </StackLayout>
+            <!--<ListView ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}" 
                       VerticalOptions="FillAndExpand" 
                       CachingStrategy="RecycleElement"
                       SeparatorVisibility="Default"
@@ -16,10 +68,53 @@
                       HeightRequest="{Binding ZeroconfHosts.Count, Converter={StaticResource ItemsToHeightConverter}}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                            <templates:ZeroconfHostTemplate />
+                        <controls1:TitledFrameView Title="{Binding DisplayName,Mode=OneWay}" SubTitle="{Binding IPAddress,Mode=OneWay}"
+                                                  SubTitleStyle="{StaticResource NewSubTitleStyle}">
+
+
+                            --><!--<Grid>
+                            <Grid.Resources>
+                                <ResourceDictionary>
+                                    <ResourceDictionary.MergedDictionaries>
+                                        <ResourceDictionary>
+                                            <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
+                                        </ResourceDictionary>
+                                    </ResourceDictionary.MergedDictionaries>
+
+                                </ResourceDictionary>
+                            </Grid.Resources>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                               
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <forms:SvgCachedImage
+                
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Computer}}" />
+
+                            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"   Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
+                            <forms:SvgCachedImage
+                                VerticalOptions="CenterAndExpand"
+                                Grid.Row="0"
+                                Grid.Column="3"
+        
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" >
+                                <forms:SvgCachedImage.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding GoToLoginCmd,Mode=OneTime}" />
+                                </forms:SvgCachedImage.GestureRecognizers>
+                            </forms:SvgCachedImage>
+                        </Grid>--><!--
+                        </controls1:TitledFrameView>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView>-->
         </StackLayout>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

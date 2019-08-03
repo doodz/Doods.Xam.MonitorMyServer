@@ -20,9 +20,18 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.Login
 {
+    [QueryProperty("DisplayNameQuery", "DisplayNameQuery")]
+    [QueryProperty("IPAddressQuery", "IPAddressQuery")]
+    [QueryProperty("PortQuery", "PortQuery")]
+    [QueryProperty("UserNameQuery", "UserNameQuery")]
+    [QueryProperty("PasswordQuery", "PasswordQuery")]
+    [QueryProperty("IdQuery", "IdQuery")]
+    
     public class LoginPageViewModel : ViewModel
     {
         private ValidatableObjectView<string> _displayName;
+
+        private long _hostId;
         private ValidatableObjectView<string> _hostName;
         private ValidatableObjectView<string> _login;
         private ValidatableObjectView<string> _password;
@@ -46,6 +55,35 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             ViewModelStateItem.IsRunning = true;
             ViewModelStateItem.Color = Color.Transparent;
             AddValidations();
+        }
+        
+        public string IdQuery
+        {
+            set => _hostId = Int64.Parse(value);
+        }
+        public string UserNameQuery
+        {
+            set => _login.Value = Uri.UnescapeDataString(value);
+        }
+
+        public string PasswordQuery
+        {
+            set => _password.Value = Uri.UnescapeDataString(value);
+        }
+
+        public string DisplayNameQuery
+        {
+            set => _displayName.Value = Uri.UnescapeDataString(value);
+        }
+
+        public string IPAddressQuery
+        {
+            set => _hostName.Value = Uri.UnescapeDataString(value);
+        }
+
+        public string PortQuery
+        {
+            set => _port.Value = Uri.UnescapeDataString(value);
         }
 
         public ICommand ValidateUserNameCommand => new Command(() => ValidateUserName());
@@ -92,7 +130,6 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             set => SetProperty(ref _password, value);
         }
 
-        private long _hostId;
         public void SetHost(Host host)
         {
             _displayName.Value = host.HostName;
@@ -109,7 +146,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             //"_ssh._tcp.local.","_https._tcp.local.", "_http._tcp.local."
             if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
         }
-     
+
         public void SetHost(DataHost dataHost)
         {
             _displayName.Value = dataHost.DisplayName;
@@ -230,15 +267,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                 Password = _password.Value
             };
 
-            if (_hostId > 0)//TODO set ViewModel state or other flag 
+            if (_hostId > 0) //TODO set ViewModel state or other flag 
             {
                 host.Id = _hostId;
                 await DataProvider.UpdateHostAsync(host);
             }
             else
             {
-
-
                 var id = await DataProvider.InsertHostAsync(host).ConfigureAwait(false);
                 Preferences.Set(PreferencesKeys.SelectedHostIdKey, id);
             }

@@ -9,6 +9,7 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
+using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.Login;
@@ -49,7 +50,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             if (obj is Host h)
             {
                
-                    NavigationService.NavigateAsync(nameof(LogInPage), obj);
+                    NavigationService.NavigateAsync(nameof(LogInPage), new DataHostWrapper(h));
             }
         }
 

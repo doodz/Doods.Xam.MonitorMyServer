@@ -5,6 +5,9 @@
        xmlns:about="clr-namespace:Doods.Xam.MonitorMyServer.Views.About;assembly=Doods.Xam.MonitorMyServer"
        xmlns:settings="clr-namespace:Doods.Xam.MonitorMyServer.Views.Settings;assembly=Doods.Xam.MonitorMyServer"
        xmlns:comtrols="clr-namespace:Doods.Xam.MonitorMyServer.Comtrols;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:CustomCommandList="clr-namespace:Doods.Xam.MonitorMyServer.Views.CustomCommandList;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:AddCustomCommand="clr-namespace:Doods.Xam.MonitorMyServer.Views.AddCustomCommand;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
        xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
        x:Class="Doods.Xam.MonitorMyServer.AppShell">
     <Shell.Resources>
@@ -57,7 +60,8 @@
     <Shell.FlyoutHeader>
         <comtrols:FlyoutHeader />
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="Home">
+  
+    <FlyoutItem Title="{resources:Translate Text=Home}">
         <ShellSection>
             <ShellContent Title="Home"
                           Style="{StaticResource DomesticShell}"
@@ -66,15 +70,37 @@
 
         </ShellSection>
     </FlyoutItem>
-    <FlyoutItem Title="Settings"
+    <FlyoutItem Title="{resources:Translate Text=Commands}">
+
+       
+           
+                <Tab Title="{resources:Translate Text=Commands}">
+                    <ShellContent ContentTemplate="{DataTemplate CustomCommandList:CustomCommandListPage}"/>
+                </Tab>
+                <Tab Title="{resources:Translate Text=Add_Commands}">
+                    <ShellContent ContentTemplate="{DataTemplate AddCustomCommand:AddCustomCommandPage}"/>
+                </Tab>
+           
+
+       
+        <!--<Tab Title="{resources:Translate Text=Commands}">
+                <ShellContent ContentTemplate="{DataTemplate CustomCommandList:CustomCommandListPage}"/>
+            </Tab>
+            <Tab Title="{resources:Translate Text=Add_Commands}">
+            <ShellContent ContentTemplate="{DataTemplate AddCustomCommand:AddCustomCommandPage}"/>
+            </Tab>-->
+
+
+
+        
+    </FlyoutItem>
+    <FlyoutItem Title="{resources:Translate Text=Settings}"
                >
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate settings:SettingsPage}"/>
-            
-           
-        </Tab>
+            </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="About"
+    <FlyoutItem Title="{resources:Translate Text=About}"
                >
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate about:AboutPage}"/>

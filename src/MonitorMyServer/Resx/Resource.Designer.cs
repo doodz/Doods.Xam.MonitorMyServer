@@ -61,6 +61,24 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à About.
+        /// </summary>
+        internal static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Add commands.
+        /// </summary>
+        internal static string Add_Commands {
+            get {
+                return ResourceManager.GetString("Add_Commands", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Apt.
         /// </summary>
         internal static string Apt {
@@ -102,6 +120,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         internal static string ClickForSearching {
             get {
                 return ResourceManager.GetString("ClickForSearching", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Commands.
+        /// </summary>
+        internal static string Commands {
+            get {
+                return ResourceManager.GetString("Commands", resourceCulture);
             }
         }
         
@@ -345,6 +372,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         internal static string SelectHost {
             get {
                 return ResourceManager.GetString("SelectHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Settings.
+        /// </summary>
+        internal static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
         

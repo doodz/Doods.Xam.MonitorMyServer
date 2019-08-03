@@ -10,7 +10,9 @@ using System.Linq;
 using System.Reflection;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Config;
+using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
+using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
@@ -40,6 +42,8 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(EnumerateAllServicesFromAllHostsPage), typeof(EnumerateAllServicesFromAllHostsPage));
             navigationService.Configure(nameof(AptUpdatesPage), typeof(AptUpdatesPage));
             navigationService.Configure(nameof(AppShell), typeof(AppShell));
+            navigationService.Configure(nameof(AddCustomCommandPage), typeof(AddCustomCommandPage));
+            navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;
