@@ -58,8 +58,6 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             }
         }
 
-       
-
         protected override async Task OnInternalAppearingAsync()
         {
             await RefreshData();

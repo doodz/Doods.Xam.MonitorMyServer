@@ -38,22 +38,42 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
             SaveCommand =new Command(Save);
         }
 
+        private bool Validate()
+        {
+            var isNameValid = ValidateName();
+            var isValidCommandString = ValidateCommandString();
+          
+            return isNameValid && isValidCommandString;
+        }
+
+        private bool ValidateName()
+        {
+            return _name.Validate();
+        }
+
+        private bool ValidateCommandString()
+        {
+            return _commandString.Validate();
+        }
         private async void Save(object obj)
         {
-            var command = new CustomCommandSsh()
+            if (Validate())
             {
-                CommandString = _commandString.Value,
-                Name = _name.Value
-            };
-            if (_hostId > 0) //TODO set ViewModel state or other flag 
-            {
-                command.Id = _hostId;
-                await DataProvider.UpdateCustomCommandAsync(command).ConfigureAwait(false);
-            }
-            else
-            {
-                var id = await DataProvider.InsertCustomCommandAsync(command).ConfigureAwait(false);
-               
+                var command = new CustomCommandSsh()
+                {
+                    CommandString = _commandString.Value,
+                    Name = _name.Value
+                };
+                if (_hostId > 0) //TODO set ViewModel state or other flag 
+                {
+                    command.Id = _hostId;
+                    await DataProvider.UpdateCustomCommandAsync(command).ConfigureAwait(false);
+                }
+                else
+                {
+                    var id = await DataProvider.InsertCustomCommandAsync(command).ConfigureAwait(false);
+
+                }
             }
         }
 
