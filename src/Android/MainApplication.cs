@@ -33,7 +33,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             base.OnCreate();
 
             Xamarin.Essentials.Platform.Init(this);
-
+            Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
 
             AndroidEnvironment.UnhandledExceptionRaiser += HandleAndroidException;
             //SecureStorageImplementation.StoragePassword = FormatPassword();

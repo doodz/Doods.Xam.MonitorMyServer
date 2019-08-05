@@ -19,7 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         {
             InitializeComponent();
             Title = Resource.Commands;
-            var vm = App.Container.Resolve<AboutPageViewModel>();
+            var vm = App.Container.Resolve<CustomCommandListPageViewModel>();
             Start(vm);
         }
     }

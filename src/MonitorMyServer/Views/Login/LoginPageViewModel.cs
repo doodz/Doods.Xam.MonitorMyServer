@@ -267,7 +267,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                 Password = _password.Value
             };
 
-            if (_hostId > 0) //TODO set ViewModel state or other flag 
+            if (_hostId > 0)
             {
                 host.Id = _hostId;
                 await DataProvider.UpdateHostAsync(host);

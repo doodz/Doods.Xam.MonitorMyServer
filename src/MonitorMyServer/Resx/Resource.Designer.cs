@@ -124,6 +124,33 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Command.
+        /// </summary>
+        internal static string Command {
+            get {
+                return ResourceManager.GetString("Command", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Command name.
+        /// </summary>
+        internal static string CommandName {
+            get {
+                return ResourceManager.GetString("CommandName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Command is required..
+        /// </summary>
+        internal static string CommandRequired {
+            get {
+                return ResourceManager.GetString("CommandRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Commands.
         /// </summary>
         internal static string Commands {

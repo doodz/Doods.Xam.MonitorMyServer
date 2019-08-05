@@ -13,6 +13,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<Host> FindHostAsync(Host host);
         Task<Host> FindHostAsync(long hostId);
         Task UpdateHostAsync(Host host);
+        Task UpdateCustomCommandAsync(CustomCommandSsh customCommandSsh);
+        Task<int> InsertCustomCommandAsync(CustomCommandSsh customCommandSsh);
         Task<IEnumerable<Host>> GetHostsAsync();
         Task<int> CountHostAsync();
         Task DeleteHostAsync(Host host);
@@ -43,6 +45,10 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         }
 
+        public async Task<int> InsertCustomCommandAsync(CustomCommandSsh customCommandSsh)
+        {
+            return await _repository.InsertAsync(_timer, customCommandSsh);
+        }
         public async Task<Host> FindHostAsync(Host host)
         {
             return await FindHostAsync(host.Id.Value);
@@ -60,6 +66,12 @@ namespace Doods.Xam.MonitorMyServer.Services
         public async Task UpdateHostAsync(Host host)
         {
             await _repository.UpdateAsync(_timer, host);
+
+        }
+
+        public async Task UpdateCustomCommandAsync(CustomCommandSsh customCommandSsh)
+        {
+            await _repository.UpdateAsync(_timer, customCommandSsh);
 
         }
 

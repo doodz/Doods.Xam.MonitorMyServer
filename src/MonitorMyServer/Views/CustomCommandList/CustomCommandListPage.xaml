@@ -4,13 +4,27 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              mc:Ignorable="d"
+             x:Name="Page"
              x:Class="Doods.Xam.MonitorMyServer.Views.CustomCommandList.CustomCommandListPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Padding="10" VerticalOptions="FillAndExpand">
+            <ScrollView.Resources>
+               
+            </ScrollView.Resources>
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+                <BindableLayout.ItemTemplate >
+                    <DataTemplate>
+                        <controls:TitledFrameView Title="{Binding Name,Mode=OneTime}" >
+                            <Label Text="{Binding CommandString,Mode=OneTime}"/>
+
+                        </controls:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

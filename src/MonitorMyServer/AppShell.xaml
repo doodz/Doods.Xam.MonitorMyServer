@@ -9,6 +9,7 @@
        xmlns:AddCustomCommand="clr-namespace:Doods.Xam.MonitorMyServer.Views.AddCustomCommand;assembly=Doods.Xam.MonitorMyServer"
        xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
        xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
        x:Class="Doods.Xam.MonitorMyServer.AppShell">
     <Shell.Resources>
         <Style x:Key="BaseStyle" 
@@ -65,34 +66,26 @@
         <ShellSection>
             <ShellContent Title="Home"
                           Style="{StaticResource DomesticShell}"
-                          Icon="elephant.png"
+                          Icon="{Binding ImageSource2,Source={ x:Static enum:SvgIconTarget.Computer}}"
+                          
                           ContentTemplate="{DataTemplate local:MainPage}"/>
 
         </ShellSection>
     </FlyoutItem>
     <FlyoutItem Title="{resources:Translate Text=Commands}">
-
-       
-           
                 <Tab Title="{resources:Translate Text=Commands}">
+                    
                     <ShellContent ContentTemplate="{DataTemplate CustomCommandList:CustomCommandListPage}"/>
                 </Tab>
-                <Tab Title="{resources:Translate Text=Add_Commands}">
+                <!--<Tab Title="{resources:Translate Text=Add_Commands}">
                     <ShellContent ContentTemplate="{DataTemplate AddCustomCommand:AddCustomCommandPage}"/>
-                </Tab>
-           
-
-       
+                </Tab>-->
         <!--<Tab Title="{resources:Translate Text=Commands}">
                 <ShellContent ContentTemplate="{DataTemplate CustomCommandList:CustomCommandListPage}"/>
             </Tab>
             <Tab Title="{resources:Translate Text=Add_Commands}">
             <ShellContent ContentTemplate="{DataTemplate AddCustomCommand:AddCustomCommandPage}"/>
             </Tab>-->
-
-
-
-        
     </FlyoutItem>
     <FlyoutItem Title="{resources:Translate Text=Settings}"
                >

@@ -13,7 +13,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
         {
             InitializeComponent();
             Title = Resource.Add_Commands;
-            var vm = App.Container.Resolve<AboutPageViewModel>();
+            var vm = App.Container.Resolve<AddCustomCommandPageViewModel>();
             Start(vm);
         }
     }
