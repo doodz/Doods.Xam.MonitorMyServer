@@ -16,6 +16,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<IEnumerable<Host>> GetHostsAsync();
         Task<int> CountHostAsync();
         Task DeleteHostAsync(Host host);
+        Task<IEnumerable<T>> GetItemsAsync<T>() where T : TableBase, new();
+        Task DeleteItemAsync(TableBase item);
     }
     public class DataProvider: NotifyPropertyChangedBase, IDataProvider
     {
@@ -31,7 +33,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             return await _repository.GetAllAsync<Host>(_timer);
         }
-
+        public async Task<IEnumerable<T>> GetItemsAsync<T>() where T: TableBase,new()
+        {
+            return await _repository.GetAllAsync<T>(_timer);
+        }
         public async Task<int> InsertHostAsync(Host host)
         {
             return await _repository.InsertAsync(_timer, host);
@@ -62,6 +67,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             await _repository.DeleteAsync(_timer, host);
         }
-        
+
+        public async Task DeleteItemAsync(TableBase item)
+        {
+            await _repository.DeleteAsync(_timer, item);
+        }
     }
 }
