@@ -34,6 +34,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<TimeSpan> GetUptime();
         Task<string> GetUptimeString();
         Task<MemoryUsage> CheckMemoryUsage();
+        Task<string> RunCommand(string cmd);
     }
     public class SshService : SshServiceBase, ISshService
     {
@@ -109,6 +110,14 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var noUpRequest = new NoHupRequest(cmd);
             var noUpBean = await ExecuteTaskAsync<int>(noUpRequest).ConfigureAwait(false);
+            return noUpBean.Data;
+
+        }
+
+        public async Task<string> RunCommand(string cmd)
+        {
+            var noUpRequest = new CustomRequest(cmd);
+            var noUpBean = await ExecuteTaskAsync<string>(noUpRequest).ConfigureAwait(false);
             return noUpBean.Data;
 
         }
