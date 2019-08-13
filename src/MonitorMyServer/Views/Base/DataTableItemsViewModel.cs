@@ -6,6 +6,7 @@ using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
+using Doods.Xam.MonitorMyServer.Services;
 using FFImageLoading.Svg.Forms;
 using Xamarin.Forms;
 
@@ -25,6 +26,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             AddItemCommand = new Command(AddItem);
             DeleteItemCommand = new Command(DeleteItem);
             EditItemCommand = new Command(EditItem);
+
+            MessagingCenter.Subscribe<DataProvider, T>(
+                this, MessengerKeys.ItemChanged, async (sender, arg) => { await RefreshData(); });
         }
 
         public ICommand AddItemCommand { get; }

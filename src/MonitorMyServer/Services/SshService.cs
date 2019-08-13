@@ -24,6 +24,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<CpuInfo> GetCpuInfo();
         Task<IEnumerable<Upgradable>> GetUpgradables();
         Task<IEnumerable<DiskUsage>> GetDisksUsage();
+        Task<IEnumerable<Process>> GetProcesses();
         Task<IEnumerable<string>> GetInterfaces();
         Task<bool> UpdateAptList();
         Task<int> NoUpCommand(string cmd);
@@ -35,6 +36,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<string> GetUptimeString();
         Task<MemoryUsage> CheckMemoryUsage();
         Task<string> RunCommand(string cmd);
+        Task Rebout();
+        Task Halt();
     }
     public class SshService : SshServiceBase, ISshService
     {
@@ -98,7 +101,13 @@ namespace Doods.Xam.MonitorMyServer.Services
             return upgradables;
 
         }
-
+        public async Task<IEnumerable<Process>> GetProcesses()
+        {
+            var processesRequest = new ProcessesRequest();
+            var processBeans = await ExecuteTaskAsync<IEnumerable<ProcessBean>>(processesRequest).ConfigureAwait(false);
+            var processs = Mapper.Map<IEnumerable<ProcessBean>, IEnumerable<Process>>(processBeans.Data);
+            return processs;
+        }
         public async Task<MemoryUsage> CheckMemoryUsage()
         {
             var memoryUsageRequest = new MemoryUsageRequest();
@@ -122,14 +131,33 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         }
 
+        public async Task Rebout()
+        {
+           var reboutRequest = new RebootRequest(true);
+           var result =await ExecuteTaskAsync<string>(reboutRequest).ConfigureAwait(false);
+        }
+
+        public async Task Halt()
+        {
+           var haltRequest = new HaltSignalRequest(true);
+           var result = await ExecuteTaskAsync<string>(haltRequest).ConfigureAwait(false);
+        }
+
         public async Task<CpuInfo> GetCpuInfo()
         {
             var cpuInfoRequest = new CpuInfoRequest();
             var cpuInfoBean = await ExecuteTaskAsync<CpuInfoBean>(cpuInfoRequest).ConfigureAwait(false);
-            var CpuInfo = Mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
-            return CpuInfo;
+            var cpuInfo = Mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
+            return cpuInfo;
         }
-
+        public async Task<IEnumerable<Lastlogin>> GetLastLogins()
+        {
+            var lastLoginsRequest = new LastLoginsRequest();
+            var cpuInfoBean = await ExecuteTaskAsync<IEnumerable<LastloginBean>>(lastLoginsRequest).ConfigureAwait(false);
+            var lastLogins = Mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
+            return lastLogins;
+        }
+        
         public async Task<double> GetUptimeDouble()
         {
             var uptimeRequest = new UptimeRequest();

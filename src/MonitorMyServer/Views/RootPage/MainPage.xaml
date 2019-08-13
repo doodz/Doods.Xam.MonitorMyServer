@@ -7,10 +7,15 @@
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
                       Title=""
+                      x:Name="Page"
                       xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls3="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+                      xmlns:resources1="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
                       x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <Shell.TitleView>
 
@@ -47,24 +52,29 @@
             <StackLayout Padding="8">
 
 
-                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=Uptime}"
+                <controls2:TitledFrameView Padding="8" 
+                                           Title="{resources:Translate Text=Uptime}"
                                            SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
-                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                                           SubTitleStyle="{StaticResource NewSubTitleStyle}">
                     <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}" />
                 </controls2:TitledFrameView>
-                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}"
-                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}">
                     <views:UcMemoryUsage BindingContext="{Binding MemoryUsage,Mode=OneWay}" />
                 </controls2:TitledFrameView>
                 <controls2:TitledFrameView Padding="8"
-                                           Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}"
-
-                                           SubTitleStyle="{StaticResource TitledFrameView.NewSubTitleStyle}">
+                                           Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                     <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
-                <views:UcDiskUsage BindingContext="{Binding DisksUsage,Mode=OneWay}" Padding="8" />
-            </StackLayout>
+
+                <controls2:TitledFrameView Padding="8"
+                                           Title="{Binding ProcessesCount,StringFormat={resources:Translate Text=ThereAre_0_Processes}}">
+                    <Button Margin="5" Text="{resources:Translate Text=ShowProcesses}" Command="{Binding ShowProcessesCmd,Mode=OneWay}"
+                            HorizontalOptions="End" />
+                </controls2:TitledFrameView>
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}" BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}"/>
+                
+                </StackLayout>
 
         </ScrollView>
         <controls1:MTAdView PersonalizedAds="true" />

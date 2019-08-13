@@ -24,6 +24,8 @@ namespace Doods.Framework.Mobile.Ssh.Std.Services
             CreateMap<DiskUsageBean, DiskUsage>();
             CreateMap<UpgradableBean, Upgradable>();
             CreateMap<OsMemoryBean, MemoryUsage>();
+            CreateMap<ProcessBean, Process>();
+            CreateMap<LastloginBean, Lastlogin>();
         }
 
         public override string ProfileName => GetType().ToString();

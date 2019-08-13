@@ -6,6 +6,7 @@ using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
+using Doods.Xam.MonitorMyServer.Views.Processes2;
 
 namespace Doods.Xam.MonitorMyServer.Views
 {
@@ -22,6 +23,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<AboutPageViewModel>().AsSelf();
             builder.RegisterType<AddCustomCommandPageViewModel>().AsSelf();
             builder.RegisterType<CustomCommandListPageViewModel>().AsSelf();
+            builder.RegisterType<ProcessesPageViewModel>().AsSelf();
         }
     }
 }

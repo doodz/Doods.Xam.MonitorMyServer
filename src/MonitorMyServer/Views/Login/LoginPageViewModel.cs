@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.ApiClientBase.Std.Models;
+using Doods.Framework.Mobile.Std.Config;
 using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Mobile.Std.Servicies;
@@ -15,6 +16,7 @@ using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -221,8 +223,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                     if (sshService.TestConnection(connection, true))
                     {
                         await Save();
-                        var mainPage = ((ViewNavigationService) NavigationService).SetRootPage(nameof(MainPage));
-                        Application.Current.MainPage = mainPage;
+                        if (App.NavigationServiceType == NavigationServiceType.ViewNavigation)
+                        {
+                            var mainPage = ((ViewNavigationService) NavigationService).SetRootPage(nameof(MainPage));
+                            Application.Current.MainPage = mainPage;
+                        }
+                        else
+                            await NavigationService.GoBack();
                     }
                 }
             }

@@ -14,6 +14,7 @@ using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
+using Doods.Xam.MonitorMyServer.Views.Processes2;
 using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
@@ -44,6 +45,7 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(AppShell), typeof(AppShell));
             navigationService.Configure(nameof(AddCustomCommandPage), typeof(AddCustomCommandPage));
             navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
+            navigationService.Configure(nameof(ProcessesPage), typeof(ProcessesPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;

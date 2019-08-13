@@ -385,6 +385,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Processes.
+        /// </summary>
+        internal static string Processes {
+            get {
+                return ResourceManager.GetString("Processes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Searching hosts.
         /// </summary>
         internal static string SearchingHosts {
@@ -426,6 +435,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         internal static string ThereAre_0_OfSelected {
             get {
                 return ResourceManager.GetString("ThereAre_0_OfSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à there are {0} processes..
+        /// </summary>
+        internal static string ThereAre_0_Processes {
+            get {
+                return ResourceManager.GetString("ThereAre_0_Processes", resourceCulture);
             }
         }
         

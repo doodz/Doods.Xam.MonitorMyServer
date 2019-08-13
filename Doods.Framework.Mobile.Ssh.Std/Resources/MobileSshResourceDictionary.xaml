@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std">
+
+    <Style x:Key="NewSubTitleStyle" TargetType="Label">
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="TextColor" Value="BlueViolet" />
+    </Style>
+    <Style x:Key="NewTitleStyle" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+    </Style>
+
+    <DataTemplate x:Key="ProcessesTitledFrameView">
+        <controls:TitledFrameView
+                                    Title="{Binding Command}"
+                                    SubTitle="{Binding Pid}"
+                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="1" Text="{Binding Command,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="1"  Text="{Binding Pid,Mode=OneWay}"/>
+                        <Label Grid.Column="0" Text="{Binding Tty,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Text="{Binding CpuTime,Mode=OneWay}"/>
+                        <forms:SvgCachedImage
+                                            Grid.Column="2"
+                                            Grid.Row="0"
+                                            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                                            WidthRequest="40"
+                                            HeightRequest="40"
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center" >
+                    <!--Error with source PAge Xamarin.Forms.Xaml.XamlParseException
+                      Message=Position 53:55. Can not find the object referenced by `Page`
+                      Source=Xamarin.Forms.Xaml
+                      Arborescence des appels de procédure :
+                      at Xamarin.Forms.Xaml.ReferenceExtension.ProvideValue (System.IServiceProvider serviceProvider) [0x000bf] in D:\a\1\s\Xamarin.Forms.Xaml\MarkupExtensions\ReferenceExtension.cs:42 
+                      at __XamlGeneratedCode__.__Typec958559c83864f588142d4c6a4b528b1+<InitializeComponent>_anonXamlCDataTemplate_7.LoadDataTemplate () [0x005f4] in <027c3fec50d54017bf7165d7747d2051>:0 
+                      at Xamarin.Forms.ElementTemplate.CreateContent () [0x00026] in D:\a\1\s\Xamarin.Forms.Core\ElementTemplate.cs:82 
+                      at Xamarin.Forms.BindableLayoutController.CreateItemView (System.Object item, Xamarin.Forms.DataTemplate dataTemplate) [0x00003] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:191 
+                      at Xamarin.Forms.BindableLayoutController.CreateItemView (System.Object item, Xamarin.Forms.Layout`1[T] layout) [0x00000] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:184 
+                      at Xamarin.Forms.BindableLayoutController.CreateChildren () [0x00039] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:178 
+                      at Xamarin.Forms.BindableLayoutController.SetItemsSource (System.Collections.IEnumerable itemsSource) [0x00051] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:132 
+                      at Xamarin.Forms.BindableLayoutController.set_ItemsSource (System.Collections.IEnumerable value) [0x00000] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:95 
+                      at Xamarin.Forms.BindableLayout+<>c.<.cctor>b__13_0 (Xamarin.Forms.BindableObject b, System.Object o, System.Object n) [0x00000] in D:\a\1\s\Xamarin.Forms.Core\BindableLayout.cs:12 
+                      at Xamarin.Forms.BindableObject.SetValueActual (Xamarin.Forms.BindableProperty property, Xamarin.Forms.BindableObject+BindablePropertyContext context, System.Object value, System.Boolean currentlyApplying, Xamarin.Forms.Internals.SetValueFlags attributes, System.Boolean silent) [0x00120] in D:\a\1\s\Xamarin.Forms.Core\BindableObject.cs:445 
+                      at Xamarin.Forms.BindableObject.SetValueCore (Xamarin.Forms.BindableProperty property, System.Object value, Xamarin.Forms.Internals.SetValueFlags attributes, Xamarin.Forms.BindableObject+SetValuePrivateFlags privateAttributes) [0x00173] in D:\a\1\s\Xamarin.Forms.Core\BindableObject.cs:379 
+                      at Xamarin.Forms.BindingExpression.ApplyCore (System.Object sourceObject, Xamarin.Forms.BindableObject target, Xamarin.Forms.BindableProperty property, System.Boolean fromTarget) [0x00220] in D:\a\1\s\Xamarin.Forms.Core\BindingExpression.cs:167 
+                      at Xamarin.Forms.BindingExpression.Apply (System.Boolean fromTarget) [0x0003e] in D:\a\1\s\Xamarin.Forms.Core\BindingExpression.cs:57 
+                      at Xamarin.Forms.BindingExpression+BindingExpressionPart.<PropertyChanged>b__49_0 () [0x00000] in D:\a\1\s\Xamarin.Forms.Core\BindingExpression.cs:618 
+                      at Java.Lang.Thread+RunnableImplementor.Run () [0x00008] in <a2f1be6565a84d5393d8f9efa19f479b>:0 
+                      at Java.Lang.IRunnableInvoker.n_Run (System.IntPtr jnienv, System.IntPtr native__this) [0x00009] in <a2f1be6565a84d5393d8f9efa19f479b>:0 
+                      at (wrapper dynamic-method) Android.Runtime.DynamicMethodNameCounter.45(intptr,intptr)
+                    -->
+                            <!--<forms:SvgCachedImage.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.StopProcessCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                            </forms:SvgCachedImage.GestureRecognizers>-->
+                        </forms:SvgCachedImage>
+                    </Grid>
+                </controls:TitledFrameView>
+            </DataTemplate>
+ 
+    <DataTemplate x:Key="UpgradableTitledFrameView">
+        <controls:TitledFrameView Title="{Binding Name,Mode=OneWay}" SubTitle="{Binding FromRepo,Mode=OneWay}"
+                                  TitleStyle="{StaticResource NewTitleStyle}" SubTitleStyle="{StaticResource NewSubTitleStyle}" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="65*" />
+                    <ColumnDefinition Width="15*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="{Binding Platform,Mode=OneWay}" />
+                <Label Grid.Column="1" Text="{Binding NewVersion,Mode=OneWay}" />
+                <Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />
+            </Grid>
+
+        </controls:TitledFrameView>
+    </DataTemplate>
+    <DataTemplate x:Key="DiskUsageTitledFrameView">
+        <controls:TitledFrameView Title="{Binding FileSystem,Mode=OneWay}" SubTitle="{Binding MountedOn,Mode=OneWay}"
+                                  SubTitleStyle="{StaticResource NewSubTitleStyle}"          >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!--<controls1:AngleArc  SweepAngle="{Binding UsedPercentNoUnit,Mode=OneWay}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>-->
+
+                <controls1:Gauge Valeur="{Binding UsedPercentNoUnit,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=UseSize}"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="{Binding UseSize,Mode=OneWay}"/>
+
+                <Label Grid.Column="2" Grid.Row="0" Text="{resources:Translate Text=AvailableUsedPercent}"/>
+                <Label Grid.Column="2" Grid.Row="1" Text="{Binding AvailableUsedPercent,Mode=OneWay}"/>
+
+                <!--<ContentPresenter ... />-->
+            </Grid>
+
+        </controls:TitledFrameView>
+    </DataTemplate>
+</ResourceDictionary>

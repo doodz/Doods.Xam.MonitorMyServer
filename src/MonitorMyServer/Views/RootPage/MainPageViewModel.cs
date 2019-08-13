@@ -16,6 +16,7 @@ using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -24,6 +25,7 @@ namespace Doods.Xam.MonitorMyServer.Views
     public class MainPageViewModel : ViewModelWhithState
     {
         private readonly ICommand _addHostCmd;
+       
         private readonly IMessageBoxService _messageBoxService;
 
         private readonly ISshService _sshService;
@@ -31,8 +33,9 @@ namespace Doods.Xam.MonitorMyServer.Views
         private IEnumerable<DiskUsage> _disksUsage;
         private MemoryUsage _memoryUsage;
         private IEnumerable<Upgradable> _upgradables;
-
+        private IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> _processes;
         private int _upgradablesCount;
+        private int _processesCount;
         private TimeSpan _uptime;
 
         public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
@@ -48,10 +51,25 @@ namespace Doods.Xam.MonitorMyServer.Views
             ManageHostsCmd = new Command(ManageHosts);
             ChangeHostCmd = new Command(ChangeHost);
             UpdatesCmd = new Command(Updates);
+            ShowProcessesCmd = new Command(ShowProcesses);
+            MessagingCenter.Subscribe<DataProvider, Host>(
+                this, MessengerKeys.ItemChanged, async (sender, arg) => { await InitHostAsync(); });
+        }
+
+        private void ShowProcesses(object obj)
+        {
+            NavigationService.NavigateAsync(nameof(ProcessesPage));
+            //if (obj == null) return;
+
+            //if (obj is Process p)
+            //{
+            //    _sshService.RunCommand($"kill {p.Pid}");
+            //}
         }
 
         public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
         public ICommand ManageHostsCmd { get; }
+        public  ICommand ShowProcessesCmd { get; }
         public ICommand UpdatesCmd { get; }
 
         public ICommand ChangeHostCmd { get; }
@@ -61,7 +79,11 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _upgradablesCount;
             set => SetProperty(ref _upgradablesCount, value);
         }
-
+        public int ProcessesCount
+        {
+            get => _processesCount;
+            set => SetProperty(ref _processesCount, value);
+        }
         public TimeSpan Uptime
         {
             get => _uptime;
@@ -84,6 +106,11 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             get => _memoryUsage;
             set => SetProperty(ref _memoryUsage, value);
+        }
+        public IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> Processes
+        {
+            get => _processes;
+            set => SetProperty(ref _processes, value);
         }
 
         public IEnumerable<Upgradable> Upgradables
@@ -128,7 +155,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Upgradables = null;
             CpuInfo = null;
+          
             DisksUsage = null;
+            UpgradablesCount = 0;
+            ProcessesCount = 0;
+            Processes = null;
+            Upgradables = null;
         }
 
         private void ManageHosts()
@@ -148,11 +180,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             //viewModelStateItem.Color = Color.Blue;
         }
 
-        protected override async Task OnInternalAppearingAsync()
-        {
-            await InitHostAsync().ConfigureAwait(false);
-        }
-
+       
         private async Task InitHostAsync()
         {
             var hosts = await DataProvider.GetHostsAsync();
@@ -184,6 +212,10 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             await InitHostAsync().ConfigureAwait(false);
         }
+        //protected override async Task OnInternalAppearingAsync()
+        //{
+        //    await InitHostAsync().ConfigureAwait(false);
+        //}
 
         private async Task TryToConnect(Host host)
         {
@@ -236,7 +268,8 @@ namespace Doods.Xam.MonitorMyServer.Views
 
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
 
-            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetUpgradables());
+            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(), GetUpgradables());
+            
         }
 
         private async Task GetUpgradables()
@@ -254,7 +287,22 @@ namespace Doods.Xam.MonitorMyServer.Views
                 }
             }
         }
+        private async Task GetProcesses()
+        {
+            Processes = await _sshService.GetProcesses();
+            ProcessesCount = _processes.Count();
 
+           
+        }
+        private async Task Reboot()
+        {
+            await _sshService.Rebout();
+        }
+
+        private async Task Halt()
+        {
+            await _sshService.Halt();
+        }
         private async Task GetCpuInfo()
         {
             CpuInfo = await _sshService.GetCpuInfo();
