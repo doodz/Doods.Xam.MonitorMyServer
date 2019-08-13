@@ -10,7 +10,8 @@ namespace Doods.Framework.Mobile.Ssh.Std.Services
     {
         protected override void Load(ContainerBuilder builder)
         {
-            Mapper.Initialize(cfg => cfg.CreateMap<CpuInfoBean, CpuInfo>());
+            
+            //Mapper.Initialize(cfg => cfg.CreateMap<CpuInfoBean, CpuInfo>());
         }
     }
 

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Config;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
@@ -82,7 +83,7 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Views.Bootstrapper>();
             builder.RegisterModule<Services.Bootstrapper>();
             //builder.RegisterModule<Services.AutoMapperConfig>();
-            //builder.RegisterModule<Framework.Mobile.Ssh.Std.Services.AutoMapperConfig>();
+            builder.RegisterModule<AutoMapperConfig>();
 
             //https://github.com/marcojak/TestMTAdmob
            
@@ -90,20 +91,24 @@ namespace Doods.Xam.MonitorMyServer
             //CrossMTAdmob.Current.TestDevices = new List<string>() {  };
 
             var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();
-            var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
+            //var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
 
-            var profiles =
-                allTypes
-                    .Where(t => typeof(Profile).GetTypeInfo().IsAssignableFrom(t.GetTypeInfo()))
-                    .Where(t => !t.GetTypeInfo().IsAbstract);
+            //var profiles =
+            //    allTypes
+            //        .Where(t => typeof(Profile).GetTypeInfo().IsAssignableFrom(t.GetTypeInfo()))
+            //        .Where(t => !t.GetTypeInfo().IsAbstract);
 
-            Mapper.Initialize(cfg =>
-            {
-                foreach (var profile in profiles)
-                {
-                    cfg.AddProfile(profile);
-                }
-            });
+
+            var configuration = new MapperConfiguration(cfg => cfg.AddMaps(assembliesToScane));
+            configuration.CompileMappings();
+            //Mapper.Initialize(cfg =>
+            //{
+            //    foreach (var profile in profiles)
+            //    {
+            //        cfg.AddProfile(profile);
+            //    }
+            //});
+            var mapper = configuration.CreateMapper();
 
             _container = builder.Build();
 

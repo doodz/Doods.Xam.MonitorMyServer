@@ -1,4 +1,5 @@
-﻿using Autofac;
+﻿using System;
+using Autofac;
 using AutoMapper;
 using Doods.Xam.MonitorMyServer.Data;
 using Zeroconf;
@@ -16,12 +17,22 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             //builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
             //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
-
             
-            Mapper.Initialize(cfg =>
-                //cfg.CreateMap<IZeroconfHost, ZeroconfHost>()
-                cfg.AddProfile<ZeroconfHostProfile>()
-            );
+            var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();//AutoMapperMobileSshProfile;ZeroconfHostProfile
+            var configuration = new MapperConfiguration(cfg =>
+            {
+                cfg.AddMaps(assembliesToScane);
+                cfg.AddProfile<ZeroconfHostProfile>();
+            });
+            
+            configuration.CompileMappings();
+            var mapper = configuration.CreateMapper();
+
+            builder.RegisterInstance(mapper).As<IMapper>();
+            //Mapper.Initialize(cfg =>
+            //    //cfg.CreateMap<IZeroconfHost, ZeroconfHost>()
+            //    cfg.AddProfile<ZeroconfHostProfile>()
+            //);
 
             //builder.Register(c => new MapperConfiguration(cfg => {
             //    foreach (var profile in c.Resolve<IEnumerable<Profile>>())

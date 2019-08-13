@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
@@ -36,9 +38,9 @@ namespace Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts
             //var responses1 = await ZeroconfResolver.ResolveAsync(domains.Select(g => g.Key), TimeSpan.FromSeconds(5));
             var responses = await ZeroconfResolver.ResolveAsync(new[]
                 {"_ssh._tcp.local.", "_https._tcp.local.", "_http._tcp.local."});
-            //var mapper = App.Container.Resolve<IMapper>();
+            var mapper = App.Container.Resolve<IMapper>();
 
-            var toto = Mapper.Map<IReadOnlyList<IZeroconfHost>, List<ZeroconfHost>>(responses);
+            var toto = mapper.Map<IReadOnlyList<IZeroconfHost>, List<ZeroconfHost>>(responses);
             //var toto = mapper.Map<IEnumerable<IZeroconfHost>, IEnumerable<ZeroconfHost>>(responses);
             ZeroconfHosts.AddRange(toto);
         }

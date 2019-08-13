@@ -41,10 +41,10 @@ namespace Doods.Xam.MonitorMyServer.Services
     }
     public class SshService : SshServiceBase, ISshService
     {
-
-        public SshService(ILogger logger):base(logger)
+        private IMapper _mapper;
+        public SshService(ILogger logger,IMapper mapper):base(logger)
         {
-            
+            _mapper = mapper;
         }
 
         public void Init(IConnection connection,bool andConnect = true)
@@ -97,7 +97,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var upgradableRequest = new UpgradableRequest();
             var upgradableBean = await ExecuteTaskAsync<IEnumerable<UpgradableBean>>(upgradableRequest).ConfigureAwait(false);
-            var upgradables = Mapper.Map<IEnumerable<UpgradableBean>, IEnumerable<Upgradable>>(upgradableBean.Data);
+            var upgradables = _mapper.Map<IEnumerable<UpgradableBean>, IEnumerable<Upgradable>>(upgradableBean.Data);
             return upgradables;
 
         }
@@ -105,14 +105,14 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var processesRequest = new ProcessesRequest();
             var processBeans = await ExecuteTaskAsync<IEnumerable<ProcessBean>>(processesRequest).ConfigureAwait(false);
-            var processs = Mapper.Map<IEnumerable<ProcessBean>, IEnumerable<Process>>(processBeans.Data);
+            var processs = _mapper.Map<IEnumerable<ProcessBean>, IEnumerable<Process>>(processBeans.Data);
             return processs;
         }
         public async Task<MemoryUsage> CheckMemoryUsage()
         {
             var memoryUsageRequest = new MemoryUsageRequest();
             var osMemoryBean = await ExecuteTaskAsync<OsMemoryBean>(memoryUsageRequest).ConfigureAwait(false);
-            var memoryUsage = Mapper.Map<OsMemoryBean, MemoryUsage>(osMemoryBean.Data);
+            var memoryUsage = _mapper.Map<OsMemoryBean, MemoryUsage>(osMemoryBean.Data);
             return memoryUsage;
         }
         public async Task<int> NoUpCommand(string cmd)
@@ -147,14 +147,14 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var cpuInfoRequest = new CpuInfoRequest();
             var cpuInfoBean = await ExecuteTaskAsync<CpuInfoBean>(cpuInfoRequest).ConfigureAwait(false);
-            var cpuInfo = Mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
+            var cpuInfo = _mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
             return cpuInfo;
         }
         public async Task<IEnumerable<Lastlogin>> GetLastLogins()
         {
             var lastLoginsRequest = new LastLoginsRequest();
             var cpuInfoBean = await ExecuteTaskAsync<IEnumerable<LastloginBean>>(lastLoginsRequest).ConfigureAwait(false);
-            var lastLogins = Mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
+            var lastLogins = _mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
             return lastLogins;
         }
         
@@ -186,7 +186,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var diskUsageRequest = new DiskUsageRequest();
             var diskUsageBean = await ExecuteTaskAsync<IEnumerable<DiskUsageBean>>(diskUsageRequest).ConfigureAwait(false);
-            var DisksUsage = Mapper.Map<IEnumerable<DiskUsageBean>, IEnumerable<DiskUsage>>(diskUsageBean.Data);
+            var DisksUsage = _mapper.Map<IEnumerable<DiskUsageBean>, IEnumerable<DiskUsage>>(diskUsageBean.Data);
             return DisksUsage;
         }
 
