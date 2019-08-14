@@ -5,6 +5,7 @@ using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Validation;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
@@ -71,9 +72,11 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
                 }
                 else
                 {
-                    var id = await DataProvider.InsertCustomCommandAsync(command).ConfigureAwait(false);
+                    await DataProvider.InsertCustomCommandAsync(command).ConfigureAwait(false);
 
                 }
+                MainThread.BeginInvokeOnMainThread( () => {  NavigationService.GoBack(); });
+               
             }
         }
 

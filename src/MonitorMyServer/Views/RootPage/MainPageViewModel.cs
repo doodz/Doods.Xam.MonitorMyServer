@@ -52,8 +52,25 @@ namespace Doods.Xam.MonitorMyServer.Views
             ChangeHostCmd = new Command(ChangeHost);
             UpdatesCmd = new Command(Updates);
             ShowProcessesCmd = new Command(ShowProcesses);
-            MessagingCenter.Subscribe<DataProvider, Host>(
-                this, MessengerKeys.ItemChanged, async (sender, arg) => { await InitHostAsync(); });
+           
+        }
+
+
+        protected override Task OnInternalAppearingAsync()
+        {
+            MessagingCenter.Subscribe<DataProvider, TableBase>(
+                this, MessengerKeys.ItemChanged, async (sender, arg) =>
+                {
+                    if (arg is Host)
+                        await InitHostAsync();
+                });
+            return base.OnInternalAppearingAsync();
+        }
+
+        protected override Task OnInternalDisappearingAsync()
+        {
+            MessagingCenter.Unsubscribe<DataProvider, TableBase>(this, MessengerKeys.ItemChanged);
+            return base.OnInternalDisappearingAsync();
         }
 
         private void ShowProcesses(object obj)

@@ -45,17 +45,17 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<IEnumerable<Host>> GetHostsAsync()
         {
-            return await _repository.GetAllAsync<Host>(_timer);
+            return await _repository.GetAllAsync<Host>(_timer).ConfigureAwait(false);
         }
         public async Task<IEnumerable<T>> GetItemsAsync<T>() where T: TableBase,new()
         {
-            return await _repository.GetAllAsync<T>(_timer);
+            return await _repository.GetAllAsync<T>(_timer).ConfigureAwait(false);
         }
         public async Task<long> InsertHostAsync(Host host)
         {
             var result = await _repository.InsertAsync(_timer, host).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.AddItem, host);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, host);
+            MessagingCenter.Send(this, MessengerKeys.AddItem, (TableBase)host);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)host);
             return result;
 
         }

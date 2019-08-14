@@ -25,7 +25,6 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         protected override void AddItem(object obj)
         {
             NavigationService.NavigateAsync(nameof(AddCustomCommandPage));
-           
         }
 
         private async void Run(object obj)

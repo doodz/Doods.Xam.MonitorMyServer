@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
-using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Services;
 using FFImageLoading.Svg.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.Base
@@ -26,10 +26,8 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             AddItemCommand = new Command(AddItem);
             DeleteItemCommand = new Command(DeleteItem);
             EditItemCommand = new Command(EditItem);
-
-            MessagingCenter.Subscribe<DataProvider, T>(
-                this, MessengerKeys.ItemChanged, async (sender, arg) => { await RefreshData(); });
         }
+
 
         public ICommand AddItemCommand { get; }
         public ICommand DeleteItemCommand { get; }
@@ -43,6 +41,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             set => SetProperty(ref _selectedItem, value);
         }
 
+
+        protected override Task OnInternalDisappearingAsync()
+        {
+            MessagingCenter.Unsubscribe<DataProvider, TableBase>(this, MessengerKeys.ItemChanged);
+            return base.OnInternalDisappearingAsync();
+        }
+
         protected abstract void AddItem(object obj);
 
 
@@ -52,7 +57,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         private void DeleteItem(object obj)
         {
             if (obj == null) return;
-
+            
             if (obj is T h)
             {
                 var i = Items.IndexOf(h);
@@ -65,12 +70,19 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         protected override async Task OnInternalAppearingAsync()
         {
             await RefreshData();
+            MessagingCenter.Subscribe<DataProvider, TableBase>(
+                this, MessengerKeys.ItemChanged, async (sender, arg) =>
+                {
+                   
+                        await RefreshData(false);
+                });
+            await base.OnInternalAppearingAsync();
         }
 
-        protected async Task RefreshData()
+        protected async Task RefreshData(bool b = true)
         {
             var items = await DataProvider.GetItemsAsync<T>();
-            Items.ReplaceRange(items);
+            Items.ReplaceRange(items); 
         }
 
         public override IEnumerable<CommandItem> GetToolBarItemDescriptions()
