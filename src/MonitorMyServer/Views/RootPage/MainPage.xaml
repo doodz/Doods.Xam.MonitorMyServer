@@ -52,7 +52,7 @@
             <StackLayout Padding="8">
 
 
-                <controls2:TitledFrameView Padding="8" 
+                <controls2:TitledFrameView Padding="8"
                                            Title="{resources:Translate Text=Uptime}"
                                            SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
                                            SubTitleStyle="{StaticResource NewSubTitleStyle}">
@@ -69,12 +69,14 @@
 
                 <controls2:TitledFrameView Padding="8"
                                            Title="{Binding ProcessesCount,StringFormat={resources:Translate Text=ThereAre_0_Processes}}">
-                    <Button Margin="5" Text="{resources:Translate Text=ShowProcesses}" Command="{Binding ShowProcessesCmd,Mode=OneWay}"
+                    <Button Margin="5" Text="{resources:Translate Text=ShowProcesses}"
+                            Command="{Binding ShowProcessesCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
-                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}" BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}"/>
-                
-                </StackLayout>
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
+                             BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}" />
+
+            </StackLayout>
 
         </ScrollView>
         <controls1:MTAdView PersonalizedAds="true" />

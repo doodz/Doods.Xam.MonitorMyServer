@@ -174,7 +174,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
         {
             SetLabelsStateItem(Resource.PleaseWait, Resource.PacketReading);
             ViewModelStateItem.IsRunning = true;
-            //await _sshService.UpdateAptList().ConfigureAwait(false);
+            //await _sshService.UpdateAptListRequest().ConfigureAwait(false);
             await GetUpgradables();
             ViewModelStateItem.IsRunning = false;
             SetLabelsStateItem(Resource.PleaseWait,

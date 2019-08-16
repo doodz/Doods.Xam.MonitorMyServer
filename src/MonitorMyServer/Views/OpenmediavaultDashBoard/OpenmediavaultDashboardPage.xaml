@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
+                      xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      xmlns:models="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly= Doods.Openmedivault.Ssh.Std"
+                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      mc:Ignorable="d"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard.OpenmediavaultDashboardPage">
+    <StackLayout>
+      <StackLayout.Resources>
+            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
+            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
+        </StackLayout.Resources>
+        <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView>
+            <StackLayout Padding="8">
+                <controls:TitledFrameView Title="{resources1:Translate Text=SystemInfomation}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" >
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding SystemInformation,Mode=OneWay}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate  x:DataType="models:SystemInformation">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name,Mode=OneWay}"/>
+                                <Label Text="{Binding Value.SimpleStringValue,Mode=OneWay}"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+
+
+                </controls:TitledFrameView>
+            <controls:TitledFrameView Title="{resources1:Translate Text=Services}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" >
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding ServicesStatus,Mode=OneWay}">
+                        <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="models:ServicesStatus">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Title,Mode=OneWay}"/>
+                                    <Label Text="Running"/>
+                                   
+                                    <forms:SvgCachedImage
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        Source="{Binding Running,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />
+                                    <Label Text="Enabled"/>
+                                <forms:SvgCachedImage
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        Source="{Binding Enabled,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />
+                            </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+
+
+                </controls:TitledFrameView>
+                <controls:TitledFrameView Padding="8"
+                                           Title="{Binding Count,Source={Binding Upgradeds,Mode=OneWay},StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
+                   <StackLayout Orientation="Horizontal">
+                    <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
+                            HorizontalOptions="End" />
+                    <Button Text="{resources:Translate Text=Check}" Command="{Binding CheckCmd,Mode=OneWay}"
+                            HorizontalOptions="End" />
+                   </StackLayout>
+                </controls:TitledFrameView>
+
+            <controls:TitledFrameView Title="{resources1:Translate Text=Filesystems}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" >
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
+                        <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="models:Filesystems">
+                                <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Devicefile,Mode=OneWay}"/>
+                                <Label Text="{Binding Percentage,Mode=OneWay}"/>
+                                <Label Text="{Binding Available,Mode=OneWay,Converter={StaticResource ByteCountToHumanReadableConverter}}"/>
+                                <Label Text="{Binding Size,Mode=OneWay,Converter={StaticResource ByteCountToHumanReadableConverter},ConverterParameter=False}"/>
+                            </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+
+
+                </controls:TitledFrameView>
+            <controls:TitledFrameView Title="{resources1:Translate Text=NetworkInterfaces}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" >
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Devices,Mode=OneWay}">
+                        <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="models:Devices">
+                                <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Devicename,Mode=OneWay}"/>
+                                <Label Text="{Binding Address,Mode=OneWay}"/>
+                                <Label Text="{Binding Type,Mode=OneWay}"/>
+                            </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+
+
+                </controls:TitledFrameView>
+          
+            </StackLayout>
+        </ScrollView>
+        <controls1:MTAdView PersonalizedAds="true" />
+    </StackLayout>
+</mvvm:BaseContentPage>

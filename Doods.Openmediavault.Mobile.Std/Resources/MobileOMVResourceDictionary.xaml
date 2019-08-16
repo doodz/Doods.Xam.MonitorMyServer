@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std">
+
+    <Style x:Key="NewSubTitleStyle2" TargetType="Label">
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="TextColor" Value="BlueViolet" />
+    </Style>
+    <Style x:Key="NewTitleStyle2" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+    </Style>
+
+
+
+  <ControlTemplate x:Key="SystemInfomationTitledFrameView">
+        <controls:TitledFrameView Title="{resources:Translate Text=SystemInfomation}"
+                                  TitleStyle="{StaticResource NewTitleStyle2}" >
+            <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding .,Mode=OneWay}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding Name,Mode=OneWay}"/>
+                    <Label Text="{Binding Value,Mode=OneWay}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+                        
+
+        </controls:TitledFrameView>
+    </ControlTemplate>
+  
+</ResourceDictionary>

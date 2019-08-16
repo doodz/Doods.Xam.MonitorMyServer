@@ -10,6 +10,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
     {
         public ProcessesPage()
         {
+            InitializeComponent();
             Title = Resource.Processes;
             var vm = App.Container.Resolve<ProcessesPageViewModel>();
             Start(vm);

@@ -7,6 +7,7 @@
        xmlns:comtrols="clr-namespace:Doods.Xam.MonitorMyServer.Comtrols;assembly=Doods.Xam.MonitorMyServer"
        xmlns:CustomCommandList="clr-namespace:Doods.Xam.MonitorMyServer.Views.CustomCommandList;assembly=Doods.Xam.MonitorMyServer"
        xmlns:AddCustomCommand="clr-namespace:Doods.Xam.MonitorMyServer.Views.AddCustomCommand;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:OpenmediavaultDashBoard="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;assembly=Doods.Xam.MonitorMyServer"
        xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
        xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
        xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
@@ -85,6 +86,11 @@
             <Tab Title="{resources:Translate Text=Add_Commands}">
             <ShellContent ContentTemplate="{DataTemplate AddCustomCommand:AddCustomCommandPage}"/>
             </Tab>-->
+    </FlyoutItem>
+    <FlyoutItem Title="OMV">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate OpenmediavaultDashBoard:OpenmediavaultDashboardPage}"/>
+        </Tab>
     </FlyoutItem>
     <FlyoutItem Title="{resources:Translate Text=Settings}"
                >

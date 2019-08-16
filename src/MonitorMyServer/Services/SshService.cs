@@ -39,6 +39,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task Rebout();
         Task Halt();
     }
+
+
     public class SshService : SshServiceBase, ISshService
     {
         private IMapper _mapper;

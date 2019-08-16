@@ -73,13 +73,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             MessagingCenter.Subscribe<DataProvider, TableBase>(
                 this, MessengerKeys.ItemChanged, async (sender, arg) =>
                 {
+                    MainThread.BeginInvokeOnMainThread(() => { RefreshData(); });
                    
-                        await RefreshData(false);
                 });
             await base.OnInternalAppearingAsync();
         }
 
-        protected async Task RefreshData(bool b = true)
+        protected async Task RefreshData()
         {
             var items = await DataProvider.GetItemsAsync<T>();
             Items.ReplaceRange(items); 

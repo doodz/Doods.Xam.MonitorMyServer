@@ -7,9 +7,9 @@ namespace Doods.Xam.MonitorMyServer.Services
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
-            builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
-            
-            
+            //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
+            builder.RegisterType<OMVSshService>().As<ISshService>().As<IOMVSshService>().SingleInstance();
+
         }
     }
 }

@@ -39,13 +39,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
         }
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
-            //SetLabelsStateItem(Resource.PleaseWait, Resource.PacketReading);
-            //ViewModelStateItem.IsRunning = true;
-            ////await _sshService.UpdateAptList().ConfigureAwait(false);
-            //await GetProcesses();
-            //ViewModelStateItem.IsRunning = false;
-            //SetLabelsStateItem(Resource.PleaseWait,
-            //    string.Format(Resource.ThereAre_0_Processes, ProcessesCount));
+            SetLabelsStateItem(Resource.PleaseWait, Resource.PacketReading);
+            ViewModelStateItem.IsRunning = true;
+            //await _sshService.UpdateAptListRequest().ConfigureAwait(false);
+            await GetProcesses();
+            ViewModelStateItem.IsRunning = false;
+            SetLabelsStateItem(Resource.PleaseWait,
+                string.Format(Resource.ThereAre_0_Processes, ProcessesCount));
         }
         public int ProcessesCount
         {

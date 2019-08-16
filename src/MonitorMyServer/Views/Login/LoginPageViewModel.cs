@@ -229,7 +229,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                             Application.Current.MainPage = mainPage;
                         }
                         else
-                            await NavigationService.GoBack();
+                            MainThread.BeginInvokeOnMainThread(() => { NavigationService.GoBack(); });
                     }
                 }
             }

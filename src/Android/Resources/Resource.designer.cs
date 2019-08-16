@@ -2186,6 +2186,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Doods.Framework.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Doods.Xam.MonitorMyServer.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_background;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundSplit;

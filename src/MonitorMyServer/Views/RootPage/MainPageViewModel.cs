@@ -9,6 +9,8 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
+using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
@@ -286,7 +288,12 @@ namespace Doods.Xam.MonitorMyServer.Views
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
 
             await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(), GetUpgradables());
-            
+            if (host.Url.Contains(".144"))
+            {
+                var toto = new OMVSshService(this.Logger, null);
+                await toto.InitAsync(con).ConfigureAwait(false);
+                var result = await toto.RunCmd<IEnumerable<SystemInformation>>(new SystemInformationRequest());
+            }
         }
 
         private async Task GetUpgradables()
