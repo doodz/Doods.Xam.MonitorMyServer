@@ -10,7 +10,6 @@ using Newtonsoft.Json.Converters;
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {
 
-
     public class OmvSerializerException : Exception
     {
         public OmvSerializerException(string message,Exception exception) :base(message,exception)
@@ -49,6 +48,20 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
             _serializer.Converters.Add(new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal });
         }
 
+        public T DeserializeError<T>(ISshResponse response)
+        {
+            //  var obj = deserializer.Deserialize <ResponseError<OMVError>>(response.ErrorMessage);
+            try
+            {
+                return Deserialize<T>(response.ErrorMessage);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw new OmvSerializerException(response.ErrorMessage, e);
+            }
+
+        }
 
         public T Deserialize<T>(ISshResponse response)
         {
@@ -63,8 +76,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
             }
            
         }
-
-
+       
         public T Deserialize<T>(string json)
         {
             using (var stringReader = new StringReader(json))
@@ -77,7 +89,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Couldn't deserialize json: {json}. Error: {ex}");
+                        Console.WriteLine($"Couldn't deserialize json: {json} to {typeof(T)}. Error: {ex}");
                         //Logger.Error($"Couldn't deserialize json: {json}. Error: {ex}");
                         throw;
                     }

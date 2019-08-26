@@ -1,4 +1,6 @@
-﻿namespace Doods.Openmedivault.Ssh.Std.Requests
+﻿using System;
+
+namespace Doods.Openmedivault.Ssh.Std.Requests
 {
     public class UpdateAptListRequest : OmvRequestBase
     {

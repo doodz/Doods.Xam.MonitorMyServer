@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using Doods.Framework.Ssh.Std.Requests;
-using Newtonsoft.Json;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {

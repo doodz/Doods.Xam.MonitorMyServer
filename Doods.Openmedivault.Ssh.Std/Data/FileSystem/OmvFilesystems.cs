@@ -5,12 +5,9 @@ using Newtonsoft.Json;
 
 namespace Doods.Openmedivault.Ssh.Std.Data
 {
-
-
-    public class Filesystems : IOmvObject
+    public class OmvFilesystems : BaseOmvFilesystems
     {
-        [JsonProperty("devicefile")]
-        public string Devicefile { get; set; }
+      
 
         [JsonProperty("parentdevicefile")]
         public string Parentdevicefile { get; set; }
@@ -18,11 +15,9 @@ namespace Doods.Openmedivault.Ssh.Std.Data
         [JsonProperty("uuid")]
         public Guid Uuid { get; set; }
 
-        [JsonProperty("label")]
-        public string Label { get; set; }
+       
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+      
 
         [JsonProperty("blocks")]
         [JsonConverter(typeof(ParseStringConverter))]

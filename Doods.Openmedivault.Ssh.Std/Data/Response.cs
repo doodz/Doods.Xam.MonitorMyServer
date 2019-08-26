@@ -4,6 +4,14 @@ using Newtonsoft.Json;
 
 namespace Doods.Openmedivault.Ssh.Std.Data
 {
+
+    public class ResponseError<T> where T : IOmvObject
+    {
+        [JsonProperty("response")] public string Response { get; set; }
+
+        [JsonProperty("error")] public T Error { get; set; }
+    }
+
     public class ResultList<T> where  T : IOmvObject
     {
         [JsonProperty("response")] public T[] Response { get; set; }
