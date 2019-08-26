@@ -10,6 +10,7 @@
     name="MainTheme.Base"
     parent="Theme.AppCompat.Light.DarkActionBar">
 
+
     <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
     <item
       name="windowNoTitle">true</item>
@@ -48,15 +49,11 @@
       name="colorAccent">@color/colorAccent</item>
   </style>
 
-  <!--<style
-    name="MainTheme.Splash"
-    parent="MainTheme">
-
-    <item
-      name="android:windowBackground">@drawable/splash_screen</item>
-    <item
-      name="android:windowNoTitle">true</item>
-    <item
-      name="android:windowFullscreen">true</item>
-  </style>-->
+  <style name="splashscreen" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
 </resources>
