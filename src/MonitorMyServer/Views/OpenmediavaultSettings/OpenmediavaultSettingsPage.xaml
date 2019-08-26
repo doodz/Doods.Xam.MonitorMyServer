@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:Enums="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmedivault.Ssh.Std"
+                      mc:Ignorable="d"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings.OpenmediavaultSettingsPage">
+    <StackLayout>
+        <StackLayout.Resources>
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+        </StackLayout.Resources>
+        <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView>
+            <StackLayout Padding="8">
+                <controls1:TitledFrameView Title="{resources1:Translate Text=PowerManagement}"
+                                           TitleStyle="{StaticResource NewTitleStyle}">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Monitoring" />
+                        <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Cpufreq,Mode=TwoWay}" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="Power button" />
+                        <controls1:EnumBindablePicker
+                            x:TypeArguments="Enums:PowerbtnAction"
+                            SelectedItem="{Binding SelectedPowerbtnAction, Mode=TwoWay}"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+                        <!--<controls1:EnumBindableDescriptionLocalizablePicker x:TypeArguments="Enums:PowerbtnAction"
+                                                                            SelectedItem="{Binding SelectedPowerbtnAction, Mode=TwoWay}"
+                                                                            Grid.Row="2"
+                                                                            Grid.Column="1"
+                                                                            Translate="{Binding TranslateService,Mode=OneWay}" />-->
+
+                        <Button Text="{resources1:Translate Text=Save}" Grid.Row="2" Grid.Column="0"
+                                Command="{Binding SavePowerManagementSettingCmd,Mode=OneWay}" />
+                        <Button Text="{resources1:Translate Text=Reset}" Grid.Row="2" Grid.Column="1"
+                                Command="{Binding ResetPowerManagementSettingCmd,Mode=OneWay}" />
+                    </Grid>
+
+                </controls1:TitledFrameView>
+                <controls1:TitledFrameView Title="{resources1:Translate Text=WebAdministration}"
+                                           TitleStyle="{StaticResource NewTitleStyle}" />
+
+                <controls1:TitledFrameView Title="{resources1:Translate Text=InstallUpdatesFrom}"
+                                           TitleStyle="{StaticResource NewTitleStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="{resources1:Translate Text=PreReleaseUpdates}" />
+                        <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Proposed,Mode=TwoWay}" />
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="{resources1:Translate Text=CommunityMaintainedUpdates}" />
+                        <Switch Grid.Row="1" Grid.Column="1" IsToggled="{Binding Partner,Mode=TwoWay}" />
+                        <Button Text="{resources1:Translate Text=Save}" Grid.Row="2" Grid.Column="0"
+                                Command="{Binding SaveAptSettingsCmd,Mode=OneWay}" />
+                        <Button Text="{resources1:Translate Text=Reset}" Grid.Row="2" Grid.Column="1"
+                                Command="{Binding ResetAptSettingsCmd,Mode=OneWay}" />
+
+                    </Grid>
+                </controls1:TitledFrameView>
+
+                <controls1:TitledFrameView Title="{resources1:Translate Text=DateAndTime}"
+                                           TitleStyle="{StaticResource NewTitleStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Current Time" />
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Hostname , Mode=TwoWay}" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="Time zone" />
+                        <Picker Grid.Row="1" Grid.Column="1" ItemsSource="{Binding TimeZoneList,Mode=OneWay}"
+                                SelectedItem="{Binding SelectedTimeZone,Mode=TwoWay}" />
+                        <Label Grid.Row="2" Grid.Column="0" Text="Use NTP server" />
+                        <Switch x:Name="SwitchNtpenable" Grid.Row="2" Grid.Column="1"
+                                IsToggled="{Binding Ntpenable,Mode=TwoWay}" />
+                        <Label Grid.Row="3" Grid.Column="0" Text="Time server" />
+                        <Entry IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable}}" Grid.Row="3"
+                               Grid.Column="1" Text="{Binding Ntptimeservers,Mode=TwoWay}" />
+
+                        <DatePicker IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
+                                    Grid.Row="4" Grid.Column="1" Date="{Binding SelectedDate,Mode=TwoWay}" />
+                        <TimePicker IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
+                                    Grid.Row="5" Grid.Column="1" Time="{Binding SelectedTime,Mode=TwoWay}" />
+                        <Button Text="{resources1:Translate Text=Save}" Grid.Row="6" Grid.Column="0"
+                                Command="{Binding SaveDateAndTimeSettingCmd,Mode=OneWay}" />
+                        <Button Text="{resources1:Translate Text=Reset}" Grid.Row="6" Grid.Column="1"
+                                Command="{Binding ResetDateAndTimeSettingCmd,Mode=OneWay}" />
+                    </Grid>
+                </controls1:TitledFrameView>
+                <controls1:TitledFrameView Title="{resources1:Translate Text=Network}"
+                                           TitleStyle="{StaticResource NewTitleStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Hostname" />
+                        <Entry Grid.Row="0" Grid.Column="1" Text="{Binding Hostname , Mode=TwoWay}" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="Domain name" />
+                        <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Domainname, Mode=TwoWay}" />
+
+                        <Button Text="{resources1:Translate Text=Save}" Grid.Row="2" Grid.Column="0"
+                                Command="{Binding SaveNetworkSettingCmd,Mode=OneWay}" />
+                        <Button Text="{resources1:Translate Text=Reset}" Grid.Row="2" Grid.Column="1"
+                                Command="{Binding ResetNetworkSettingCmd,Mode=OneWay}" />
+                    </Grid>
+                </controls1:TitledFrameView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</mvvm:BaseContentPage>

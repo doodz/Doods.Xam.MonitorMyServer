@@ -178,6 +178,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Dowloading.
+        /// </summary>
+        internal static string Dowloading {
+            get {
+                return ResourceManager.GetString("Dowloading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Enumerate all services..
         /// </summary>
         internal static string EnumerateAllServices {

@@ -16,6 +16,9 @@ using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
@@ -49,7 +52,10 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
             navigationService.Configure(nameof(OpenmediavaultDashboardPage), typeof(OpenmediavaultDashboardPage));
             navigationService.Configure(nameof(ProcessesPage), typeof(ProcessesPage));
-           
+            navigationService.Configure(nameof(OpenmediavaultSettingsPage), typeof(OpenmediavaultSettingsPage));
+            navigationService.Configure(nameof(OpenmediavaultFileSystemsPage), typeof(OpenmediavaultFileSystemsPage));
+            navigationService.Configure(nameof(OpenmediavaultAddFileSystemsPage), typeof(OpenmediavaultAddFileSystemsPage));
+
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;

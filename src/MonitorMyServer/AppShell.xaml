@@ -8,6 +8,10 @@
        xmlns:CustomCommandList="clr-namespace:Doods.Xam.MonitorMyServer.Views.CustomCommandList;assembly=Doods.Xam.MonitorMyServer"
        xmlns:AddCustomCommand="clr-namespace:Doods.Xam.MonitorMyServer.Views.AddCustomCommand;assembly=Doods.Xam.MonitorMyServer"
        xmlns:OpenmediavaultDashBoard="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:OpenmediavaultStatistics="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
+
+       xmlns:OpenmediavaultFileSystems="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;assembly=Doods.Xam.MonitorMyServer"
+      
        xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
        xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
        xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
@@ -88,8 +92,17 @@
             </Tab>-->
     </FlyoutItem>
     <FlyoutItem Title="OMV">
-        <Tab>
+        <Tab Title="OMV">
             <ShellContent ContentTemplate="{DataTemplate OpenmediavaultDashBoard:OpenmediavaultDashboardPage}"/>
+        </Tab>
+        <Tab Title="Statistics">
+            <ShellContent ContentTemplate="{DataTemplate OpenmediavaultStatistics:OpenmediavaultStatisticsPage}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="File Systems"
+    >
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate OpenmediavaultFileSystems:OpenmediavaultFileSystemsPage}"/>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="{resources:Translate Text=Settings}"

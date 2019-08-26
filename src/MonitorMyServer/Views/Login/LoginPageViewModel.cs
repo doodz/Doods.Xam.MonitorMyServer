@@ -277,7 +277,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             if (_hostId > 0)
             {
                 host.Id = _hostId;
-                await DataProvider.UpdateHostAsync(host);
+                await DataProvider.UpdateHostAsync(host).ConfigureAwait(false);
             }
             else
             {

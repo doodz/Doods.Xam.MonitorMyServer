@@ -8,7 +8,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
             //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
-            builder.RegisterType<OMVSshService>().As<ISshService>().As<IOMVSshService>().SingleInstance();
+            builder.RegisterType<OMVSshService>().As<ISshService>().As<IOMVSshService>().As<IOMVSshBackgroundService>().SingleInstance();
 
         }
     }

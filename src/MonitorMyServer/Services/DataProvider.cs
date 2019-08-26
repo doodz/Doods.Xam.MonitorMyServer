@@ -102,23 +102,23 @@ namespace Doods.Xam.MonitorMyServer.Services
         public async Task<int> InsertItemAsync(TableBase item)
         {
             var result =await _repository.InsertAsync(_timer, item).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.AddItem, item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
+            MessagingCenter.Send(this, MessengerKeys.AddItem, (TableBase)item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
             return result;
         }
 
         public async Task UpdateItemAsync(TableBase item)
         {
             await _repository.UpdateAsync(_timer, item);
-            MessagingCenter.Send(this, MessengerKeys.UpdateItem, item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
+            MessagingCenter.Send(this, MessengerKeys.UpdateItem, (TableBase)item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
         }
 
         public async Task DeleteItemAsync(TableBase item)
         {
             await _repository.DeleteAsync(_timer, item).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.RemoveItem, item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
+            MessagingCenter.Send(this, MessengerKeys.RemoveItem, (TableBase)item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
         }
     }
 }

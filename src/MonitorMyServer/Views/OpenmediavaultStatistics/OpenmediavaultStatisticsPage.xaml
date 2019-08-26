@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+                      mc:Ignorable="d"
+                      xmlns:models="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics.OpenmediavaultStatisticsPage">
+    <StackLayout>
+        <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView Padding="10" VerticalOptions="FillAndExpand">
+        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate >
+                    <controls:TitledFrameView Title="{Binding FileName}"
+                                              SubTitleStyle="{StaticResource NewSubTitleStyle}">
+
+                        <Grid >
+                            <forms:CachedImage Source="{Binding ImageSource,Mode=OneWay}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                           LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+                                           Aspect="Fill"/>
+                        </Grid>
+
+
+                    </controls:TitledFrameView>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
+        </StackLayout>
+
+            <!--<ListView CachingStrategy="RecycleElement" HasUnevenRows="false"
+                  RowHeight="180"  ItemsSource="{Binding Items,Mode=OneWay}">
+
+            <ListView.Behaviors>
+                --><!--<xamvvm:BaseEventToCommandBehavior EventName="ItemSelected" Command="{Binding ItemSelectedCommand}"/>--><!--
+            </ListView.Behaviors>
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate x:DataType="models:RrdImageSource">
+                    <ViewCell >
+                    <ViewCell.View>
+                            <controls:TitledFrameView Title="{Binding FileName}"
+                                                  SubTitleStyle="{StaticResource NewSubTitleStyle}">
+
+
+                                <forms:CachedImage MinimumWidthRequest="100" MinimumHeightRequest="100" Source="{Binding ImageSource,Mode=OneWay}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"
+                                                        LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+                                                        Aspect="AspectFill"/>
+
+                              
+                                </controls:TitledFrameView>
+                    </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </ContentPage.Content>-->
+</mvvm:BaseContentPage>

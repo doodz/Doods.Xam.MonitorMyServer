@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.ApiClientBase.Std.Models;
@@ -54,7 +55,15 @@ namespace Doods.Xam.MonitorMyServer.Views
             ChangeHostCmd = new Command(ChangeHost);
             UpdatesCmd = new Command(Updates);
             ShowProcessesCmd = new Command(ShowProcesses);
-           
+        }
+
+
+        private class toto: IAsyncResult
+        {
+            public object AsyncState { get; }
+            public WaitHandle AsyncWaitHandle { get; }
+            public bool CompletedSynchronously { get; }
+            public bool IsCompleted { get; }
         }
 
 
@@ -288,12 +297,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
 
             await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(), GetUpgradables());
-            if (host.Url.Contains(".144"))
-            {
-                var toto = new OMVSshService(this.Logger, null);
-                await toto.InitAsync(con).ConfigureAwait(false);
-                var result = await toto.RunCmd<IEnumerable<SystemInformation>>(new SystemInformationRequest());
-            }
+           
         }
 
         private async Task GetUpgradables()
