@@ -16,7 +16,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
         private readonly IOMVSshBackgroundService _backgroundService;
-
+        public ICommand MountFileSystemCmd { get; }
+        public ICommand UmountFileSystemCmd { get; }
+        public ICommand DeleteFileSystemCmd { get; }
         private readonly IOMVSshService _sshService;
 
         public OpenmediavaultFileSystemsViewModel(IOMVSshService sshService, IOMVSshBackgroundService backgroundService)
@@ -24,6 +26,82 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
             _sshService = sshService;
             _backgroundService = backgroundService;
             AddItemCommand = new Command(AddItem);
+            MountFileSystemCmd = new Command(MountFileSystem, o =>
+            {
+                if (o is OmvFilesystems filesystem)
+                {
+                    return filesystem.CanMount;
+                }
+
+                return false;
+            });
+            UmountFileSystemCmd = new Command(UmountFileSystem, o =>
+            {
+                if (o is OmvFilesystems filesystem)
+                {
+                    return filesystem.CanUmount;
+                }
+
+                return false;
+            });
+            DeleteFileSystemCmd = new Command(DeleteFileSystem, o =>
+            {
+                if (o is OmvFilesystems filesystem)
+                {
+                    return filesystem.CanDelete;
+                }
+
+                return false;
+            });
+        }
+        private async void UmountFileSystem(object o)
+        {
+            if (o is OmvFilesystems filesystem)
+            {
+              
+                await ViewModelStateItem.RunActionAsync(async () =>
+                    {
+                        await _sshService.UmountFileSystem(filesystem);
+                        var fileneame = await _sshService.ApplyChanges();
+                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await RefreshData();
+                    },
+                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+            }
+           
+        }
+        private async void DeleteFileSystem(object o)
+        {
+            if (o is OmvFilesystems filesystem)
+            {
+               
+                await ViewModelStateItem.RunActionAsync(async () =>
+                    {
+                        await _sshService.DeleteFileSystem(filesystem);
+                        var fileneame = await _sshService.ApplyChanges();
+                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await RefreshData();
+                    },
+                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+            }
+        }
+        private async void MountFileSystem(object o)
+        {
+            if (o is OmvFilesystems filesystem)
+            {
+               
+                await ViewModelStateItem.RunActionAsync(async () =>
+                    {
+                        await _sshService.MountFileSystem(filesystem);
+                        var fileneame = await _sshService.ApplyChanges();
+                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await RefreshData();
+                    },
+                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+            }
         }
 
         public ObservableRangeCollection<OmvFilesystems> Filesystems { get; } =

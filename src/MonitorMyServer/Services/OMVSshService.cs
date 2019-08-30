@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using AutoMapper;
+using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Ssh.Std.Enums;
 using Doods.Framework.Ssh.Std.Interfaces;
+using Doods.Framework.Ssh.Std.Queries;
 using Doods.Framework.Std;
+using Doods.Openmediavault.Mobile.Std.Models;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 using Renci.SshNet;
@@ -17,6 +21,8 @@ namespace Doods.Xam.MonitorMyServer.Services
     {
         Task<bool> CheckRunningAsync(string filename);
         Task<Output<T>> GetOutputAsync<T>(string filename);
+        Task<Output<string>> GetOutputAsync(string filename);
+      
     }
 
 
@@ -36,15 +42,20 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<string> UpgradeAptList(IEnumerable<string> lst);
         Task<Output<T>> GetOutput<T>(string filename, long pos);
         ScpClient GetScpClient();
-
+        Task<IEnumerable<PluginInfo>> GetPlugins();
         Task<string> GenerateRdd();
         Task<string> GetDisksBackground();
         Task<string> GetListCandidatesFileSystemBackground();
         Task<string> CreateFileSystemBackground(BaseOmvFilesystems newFilesystems);
         Task<string> GetListFileSystemBackground();
-
+        Task<bool> UmountFileSystem(OmvFilesystems filesystem);
+        Task<bool> DeleteFileSystem(OmvFilesystems filesystem);
+        Task<bool> MountFileSystem(OmvFilesystems filesystem);
         Task<IEnumerable<string>> ListRdd();
+        Task<string> ApplyChanges();
         //Task<string> RunCommand(string cmd);
+        Task<string> InstallPlugins(IEnumerable<string> lst);
+        Task<string> RemovePlugins(IEnumerable<string> lst);
     }
 
     public interface IOMVSettingsService
@@ -111,7 +122,13 @@ namespace Doods.Xam.MonitorMyServer.Services
             return result.Running;
         }
 
-     
+
+        public async  Task<IEnumerable<PluginInfo>> GetPlugins()
+        {
+            var result =  await RunCmd<IEnumerable<OmvPlugins>>(new EnumeratePluginsRequest());
+            return _mapper.Map<IEnumerable<OmvPlugins>, IEnumerable<PluginInfo>>(result);
+
+        }
 
         public Task<string> GenerateRdd()
         {
@@ -138,11 +155,29 @@ namespace Doods.Xam.MonitorMyServer.Services
             return RunCmd<string>(new GetListFileSystemBackgroundRequest());
         }
 
+        public async Task<bool> UmountFileSystem(OmvFilesystems filesystem)
+        {
+            var obj = await RunCmd<object>(new UmountFileSystemBackgroundRequest(filesystem));
+            return obj != null;
+        }
+
+        public async Task<bool> DeleteFileSystem(OmvFilesystems filesystem)
+        {
+            var obj = await RunCmd<object>(new DeleteFileSystemBackgroundRequest(filesystem));
+            return obj != null;
+        }
+
+        public async Task<bool> MountFileSystem(OmvFilesystems filesystem)
+        {
+            var obj = await RunCmd<object>(new MountFileSystemBackgroundRequest(filesystem));
+            return obj != null;
+        }
+
         public async Task<IEnumerable<string>> ListRdd()
         {
             //var result = await RunCmd<string>(new ListRddRequest());
             var result = await RunCommand("ls  /var/lib/openmediavault/rrd");
-            return result.Split(new[] {" ", "\r\n", "\n"}, StringSplitOptions.RemoveEmptyEntries);
+            return result.Split(new[] { "\r\n", "\n"}, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public Task<PowerManagementSetting> GetPowerManagementSetting()
@@ -228,6 +263,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<bool> CheckRunningAsync(string filename)
         {
+            if (string.IsNullOrEmpty(filename)) return false;
             if (!await IsRunning(filename)) return false;
 
             await Task.Delay(TimeSpan.FromSeconds(3));
@@ -254,6 +290,43 @@ namespace Doods.Xam.MonitorMyServer.Services
             toto.Content = serializer.Deserialize<T>(result.Content);
 
             return toto;
+        }
+
+        public async Task<Output<string>> GetOutputAsync(string filename)
+        {
+            var result = await GetOutput<string>(filename, 0);
+            if (result.Running)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(3));
+                return await GetOutputAsync(filename);
+            }
+
+            result.Content = result.Content.Replace(@"\\\", string.Empty);
+            result.Content = result.Content.Replace(@"\""", "\"");
+            var toto = new Output<string>();
+
+            toto.Filename = result.Filename;
+            toto.Pos = result.Pos;
+            toto.Running = result.Running;
+            var serializer = new OmvSerializer();
+            toto.Content = result.Content;
+
+            return toto;
+        }
+
+        public Task<string> ApplyChanges()
+        {
+            return RunCmd<string>(new ApplyChangesBgRequest());
+        }
+
+        public Task<string> InstallPlugins(IEnumerable<string> lst)
+        {
+            return RunCmd<string>(new InstallPlugin(lst));
+        }
+
+        public Task<string> RemovePlugins(IEnumerable<string> lst)
+        {
+            return RunCmd<string>(new RemovePlugin(lst));
         }
 
         public Task<Output<T>> GetOutput<T>(string filename, long pos)

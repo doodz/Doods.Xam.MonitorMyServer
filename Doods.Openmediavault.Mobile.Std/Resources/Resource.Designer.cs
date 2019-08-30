@@ -79,6 +79,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Delete.
+        /// </summary>
+        internal static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à File systems.
         /// </summary>
         internal static string Filesystems {
@@ -102,6 +111,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         internal static string Monitoring {
             get {
                 return ResourceManager.GetString("Monitoring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Mount.
+        /// </summary>
+        internal static string Mount {
+            get {
+                return ResourceManager.GetString("Mount", resourceCulture);
             }
         }
         
@@ -210,6 +228,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         internal static string SystemInfomation {
             get {
                 return ResourceManager.GetString("SystemInfomation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Umount.
+        /// </summary>
+        internal static string Umount {
+            get {
+                return ResourceManager.GetString("Umount", resourceCulture);
             }
         }
         

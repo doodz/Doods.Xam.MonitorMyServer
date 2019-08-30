@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace Doods.Openmedivault.Ssh.Std.Data
 {
-    public class Upgraded : IOmvObject
+    public class OmvPlugins : IOmvObject
     {
         [JsonProperty("abstract")]
         public string Abstract { get; set; }
@@ -34,7 +33,10 @@ namespace Doods.Openmedivault.Ssh.Std.Data
         public string Filename { get; set; }
 
         [JsonProperty("homepage")]
-        public string Homepage { get; set; }
+        public Uri Homepage { get; set; }
+
+        [JsonProperty("installed")]
+        public bool Installed { get; set; }
 
         [JsonProperty("installedsize")]
         public long Installedsize { get; set; }
@@ -51,11 +53,11 @@ namespace Doods.Openmedivault.Ssh.Std.Data
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("oldversion")]
-        public string Oldversion { get; set; }
-
         [JsonProperty("package")]
         public string Package { get; set; }
+
+        [JsonProperty("pluginsection")]
+        public string Pluginsection { get; set; }
 
         [JsonProperty("predepends")]
         public string Predepends { get; set; }
@@ -78,23 +80,11 @@ namespace Doods.Openmedivault.Ssh.Std.Data
         [JsonProperty("size")]
         public long Size { get; set; }
 
-        [JsonProperty("source")]
-        public string Source { get; set; }
-
-        [JsonProperty("sourceversion")]
-        public string Sourceversion { get; set; }
-
         [JsonProperty("suggests")]
         public string Suggests { get; set; }
 
         [JsonProperty("summary")]
         public string Summary { get; set; }
-
-        [JsonProperty("uri")]
-        public Uri Uri { get; set; }
-
-        [JsonProperty("uris")]
-        public List<Uri> Uris { get; set; }
 
         [JsonProperty("version")]
         public string Version { get; set; }

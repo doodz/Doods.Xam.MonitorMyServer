@@ -11,6 +11,7 @@
        xmlns:OpenmediavaultStatistics="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
 
        xmlns:OpenmediavaultFileSystems="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;assembly=Doods.Xam.MonitorMyServer"
+       xmlns:OpenmediavaultPlugins="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;assembly=Doods.Xam.MonitorMyServer"
       
        xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
        xmlns:local="clr-namespace:Doods.Xam.MonitorMyServer;assembly=Doods.Xam.MonitorMyServer"
@@ -99,10 +100,14 @@
             <ShellContent ContentTemplate="{DataTemplate OpenmediavaultStatistics:OpenmediavaultStatisticsPage}"/>
         </Tab>
     </FlyoutItem>
-    <FlyoutItem Title="File Systems"
-    >
+    <FlyoutItem Title="File Systems">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate OpenmediavaultFileSystems:OpenmediavaultFileSystemsPage}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Plugins">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate OpenmediavaultPlugins:OpenmediavaultPluginsPage}"/>
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="{resources:Translate Text=Settings}"

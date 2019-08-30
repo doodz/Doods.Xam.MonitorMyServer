@@ -3,7 +3,7 @@
     public class ApplyChangesBgRequest : OmvRequestBase
     {
 
-        public ApplyChangesBgRequest() : base($"omv-rpc Config ApplyChangesBg")
+        public ApplyChangesBgRequest() : base($"omv-rpc Config applyChangesBg " + @"""{\""modules\"":[],\""force\"":false}""")
         {
 
 

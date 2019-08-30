@@ -9,6 +9,7 @@ using Doods.Xam.MonitorMyServer.Views.Login;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
@@ -34,6 +35,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<OpenmediavaultSettingsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultFileSystemsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultAddFileSystemViewModel>().AsSelf();
+            builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
         }
     }
 }

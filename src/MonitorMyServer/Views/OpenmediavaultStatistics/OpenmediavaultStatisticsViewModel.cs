@@ -9,6 +9,7 @@ using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Renci.SshNet;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -41,16 +42,18 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
         {
             SetLabelsStateItem(Resource.Dowloading, Resource.PleaseWait);
             ViewModelStateItem.IsRunning = true;
-            var list = new List<RrdImageSource>();
+            //var list = new List<RrdImageSource>();
+            Items.Clear();
             var result = await _sshService.ListRdd();
             var client = _sshService.GetScpClient();
             if (!client.IsConnected) client.Connect();
-
+            client.RemotePathTransformation = RemotePathTransformation.ShellQuote;
             foreach (var file in result)
             {
                 using (var ms = new MemoryStream())
                 {
-                    client.Download("/var/lib/openmediavault/rrd/" + file, ms);
+                   
+                    client.Download("/var/lib/openmediavault/rrd/" + file.Trim(), ms);
                     var img = new StreamImageSource();
 
                     var byteArray = ms.ToArray();
@@ -59,11 +62,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
                     var item = new RrdImageSource();
                     item.FileName = file;
                     item.ImageSource = img;
-                    list.Add(item);
+                    Items.Add(item);
                 }
             }
 
-            Items.ReplaceRange(list);
+            //Items.ReplaceRange(list);
             ViewModelStateItem.IsRunning = false;
         }
 

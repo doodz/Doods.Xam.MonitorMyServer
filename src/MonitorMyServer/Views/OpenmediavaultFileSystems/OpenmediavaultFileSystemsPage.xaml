@@ -1,38 +1,63 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
-             mc:Ignorable="d"
-             xmlns:models="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly= Doods.Openmedivault.Ssh.Std"
-             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-             x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
+﻿<?xml version="1.0" encoding="utf-8"?>
 
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      mc:Ignorable="d"
+                      xmlns:models="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly= Doods.Openmedivault.Ssh.Std"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      x:Name="Page"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
+    <StackLayout>
+
+        <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
-            <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-            <BindableLayout.ItemTemplate >
+            <StackLayout.Resources>
+                <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+            </StackLayout.Resources>
+            <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="models:OmvFilesystems">
                     <controls:TitledFrameView Title="{Binding Devicefile}" SubTitle="{Binding Type}"
-                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                                              SubTitleStyle="{StaticResource NewSubTitleStyle}">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="20*" />
-                                <ColumnDefinition Width="50*" />
-                                <ColumnDefinition Width="15*" />
-                                <ColumnDefinition Width="15*" />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="{Binding Used}" />
-                            <Label Grid.Column="1" Text="{Binding Percentage}" />
-                           
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <controls2:Gauge Valeur="{Binding Percentage,Mode=OneWay}"
+                                             HorizontalOptions="StartAndExpand"
+                                             VerticalOptions="FillAndExpand"
+                                             Grid.Column="0" Grid.Row="0" />
+
+                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Mountpoint,Mode=OneWay}" />
+
+                            <Button Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text=Mount}"
+                                    IsEnabled="{Binding CanMount,Mode=OneWay}" 
+                                    Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
+                            <Button Grid.Column="1" Grid.Row="1" Text="{resources1:Translate Text=Umount}"
+                                    IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}" 
+                                    Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
+                            <Button Grid.Column="2" Grid.Row="1" Text="{resources1:Translate Text=Delete}"
+                                    IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
+                                    Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
                         </Grid>
 
                     </controls:TitledFrameView>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </StackLayout>
-
+    </StackLayout>
 </mvvm:BaseContentPage>

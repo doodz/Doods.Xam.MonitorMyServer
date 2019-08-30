@@ -80,7 +80,7 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected override Task OnInternalDisappearingAsync()
         {
-            MessagingCenter.Unsubscribe<DataProvider, TableBase>(this, MessengerKeys.ItemChanged);
+            //MessagingCenter.Unsubscribe<DataProvider, TableBase>(this, MessengerKeys.ItemChanged);
             return base.OnInternalDisappearingAsync();
         }
 

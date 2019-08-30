@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+             xmlns:models="clr-namespace:Doods.Openmediavault.Mobile.Std.Models;assembly=Doods.Openmediavault.Mobile.Std"
+             xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+             xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Name="Page"
+             x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins.OpenmediavaultPluginsPage">
+    <StackLayout>
+        <StackLayout.Resources>
+            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
+            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
+        </StackLayout.Resources>
+        <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <Button Text="Install/Remove" Command="{Binding InstallRemoveCmd, Mode=OneWay}"/>
+        <ScrollView>
+        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Plugins,Mode=OneWay}">
+            <StackLayout.Resources>
+                <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+            </StackLayout.Resources>
+            <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:PluginInfo">
+                    <controls1:TitledFrameView Title="{Binding Abstract}" SubTitle="{Binding Summary}"
+                                              SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Description ,Mode=OneTime}" />
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding Version ,Mode=OneTime}"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Maintainer ,Mode=OneTime}"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="{Binding Repository ,Mode=OneTime}"/>
+                            <forms:SvgCachedImage
+                                Grid.Row="0" Grid.Column="3"
+                                Source="{Binding Installed,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />
+                                <CheckBox Grid.Row="1" Grid.Column="3"  IsChecked="{Binding IsSelected,Mode=TwoWay}">
+                                <CheckBox.Behaviors>
+                                    <behaviors:EventToCommandBehavior
+                                        Command="{Binding BindingContext.OmvPluginsChangedCmd, Source={x:Reference Page}}"
+                                        CommandParameter="{Binding .}"
+                                        EventName="CheckedChanged" />
+                                </CheckBox.Behaviors>
+                                </CheckBox>
+                        </Grid>
+
+                    </controls1:TitledFrameView>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</mvvm:BaseContentPage>

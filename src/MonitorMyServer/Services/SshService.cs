@@ -43,7 +43,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
     public class SshService : SshServiceBase, ISshService
     {
-        private IMapper _mapper;
+        protected IMapper _mapper;
         public SshService(ILogger logger,IMapper mapper):base(logger)
         {
             _mapper = mapper;
