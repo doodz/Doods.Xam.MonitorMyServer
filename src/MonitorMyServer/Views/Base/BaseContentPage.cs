@@ -164,6 +164,7 @@ namespace Doods.Framework.Mobile.Std.Mvvm
 
         protected override async void OnDisappearing()
         {
+
             base.OnDisappearing();
             await ViewModel.OnDisappearingAsync();
             _isAppearing = false;

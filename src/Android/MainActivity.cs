@@ -8,6 +8,7 @@ using Android.Content;
 using Android.Gms.Ads;
 using Android.Net.Wifi;
 using Android.Runtime;
+using Plugin.Fingerprint;
 
 namespace Doods.Xam.MonitorMyServer.Droid
 {
@@ -21,7 +22,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             base.SetTheme(Resource.Style.MainTheme);
             base.OnCreate(bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
-
+            CrossFingerprint.SetCurrentActivityResolver(() => this);
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-4922361220283829~5150956035");
             var config = new FFImageLoading.Config.Configuration()
             {

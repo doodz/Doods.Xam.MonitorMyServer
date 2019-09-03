@@ -15,6 +15,7 @@ using Android.Support.V4.App;
 [assembly: UsesPermission(Manifest.Permission.WakeLock)]
 [assembly: UsesPermission(Manifest.Permission.ReceiveBootCompleted)]
 [assembly: UsesPermission(Manifest.Permission.ChangeWifiMulticastState)]
+
 namespace Doods.Xam.MonitorMyServer.Droid
 {
 #if DEBUG

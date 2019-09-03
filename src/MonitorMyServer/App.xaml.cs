@@ -8,6 +8,7 @@ using System;
 using Microsoft.AppCenter;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Config;
 using Doods.Xam.MonitorMyServer.Services;
@@ -24,6 +25,7 @@ using Doods.Xam.MonitorMyServer.Views.Processes2;
 using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Plugin.Fingerprint;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -127,8 +129,9 @@ namespace Doods.Xam.MonitorMyServer
 
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
+            await ProveYouHaveFingers();
             var config = _container.Resolve<IConfiguration>();
             CrossMTAdmob.Current.AdsId = config.AdsKey;
             // Handle when your app starts
@@ -140,14 +143,29 @@ namespace Doods.Xam.MonitorMyServer
             }
         }
 
-        protected override void OnSleep()
+        protected override async void OnSleep()
         {
             // Handle when your app sleeps
         }
 
-        protected override void OnResume()
+        protected override async void OnResume()
         {
-            // Handle when your app resumes
+            await ProveYouHaveFingers();
+        }
+
+        private async Task ProveYouHaveFingers()
+        {
+            //CrossFingerprint.Current.
+
+            //var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
+            //if (result.Authenticated)
+            //{
+            //    // do secret stuff :)
+            //}
+            //else
+            //{
+            //    await ProveYouHaveFingers();
+            //}
         }
     }
 }
