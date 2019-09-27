@@ -133,7 +133,8 @@ namespace Doods.Xam.MonitorMyServer
         {
             await ProveYouHaveFingers();
             var config = _container.Resolve<IConfiguration>();
-            CrossMTAdmob.Current.AdsId = config.AdsKey;
+            if(CrossMTAdmob.IsSupported)
+                CrossMTAdmob.Current.AdsId = config.AdsKey;
             // Handle when your app starts
             var key = Container.Resolve<IConfiguration>().MobileCenterKey;
             if (!string.IsNullOrEmpty(key))
@@ -146,6 +147,7 @@ namespace Doods.Xam.MonitorMyServer
         protected override async void OnSleep()
         {
             // Handle when your app sleeps
+           await Task.FromResult(0);
         }
 
         protected override async void OnResume()
@@ -166,6 +168,7 @@ namespace Doods.Xam.MonitorMyServer
             //{
             //    await ProveYouHaveFingers();
             //}
+            await Task.FromResult(0);
         }
     }
 }

@@ -157,7 +157,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             var action = await _messageBoxService.ShowActionSheet(Resource.SelectHost, Resource.Cancel, null,
                 Hosts.Select(h => $"{h.Id} - {h.HostName}").ToArray());
 
-            if (action != Resource.Cancel)
+            if (action != Resource.Cancel && action != null)
             {
                 var split = action.Split('-');
                 var id = long.Parse(split[0]);
@@ -254,7 +254,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             {
                 await Login(host);
             }
-            catch (Exception ex)
+            catch 
             {
                 SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
                 Clear();

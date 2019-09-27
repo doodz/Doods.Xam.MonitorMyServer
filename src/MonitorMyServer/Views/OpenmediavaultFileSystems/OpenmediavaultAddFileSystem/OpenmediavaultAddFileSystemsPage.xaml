@@ -6,6 +6,7 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem.OpenmediavaultAddFileSystemsPage">
   
         <ScrollView>
@@ -22,13 +23,13 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
-          
-            <Label Grid.Row="1" Grid.Column="0" Text="Device" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Device'}" />
             <Picker Grid.Row="1" Grid.Column="1" SelectedItem="{Binding SelectedCandidate,Mode=TwoWay}"
                     ItemsSource="{Binding LstCandidateFileSystem,Mode=OneWay}" />
-            <Label Grid.Row="2" Grid.Column="0" Text="Label" />
+                <Label Grid.Row="2" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Label'}"  />
             <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Label,Mode=OneWayToSource}" />
-            <Label Grid.Row="3" Grid.Column="0" Text="File System" />
+                <Label Grid.Row="3" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::FileSystem'}"  />
             <Picker Grid.Row="3" Grid.Column="1" SelectedItem="{Binding SelectedFileSystem,Mode=TwoWay}"
                     ItemsSource="{Binding LstFileSystem,Mode=OneWay}" />
             <Button Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="0" Text="Save"

@@ -22,7 +22,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
+    public class Resource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Doods.Openmediavault.Mobile.Std.Resources.Resource", typeof(Resource).Assembly);
@@ -51,7 +51,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Community-maintained updates..
         /// </summary>
-        internal static string CommunityMaintainedUpdates {
+        public static string CommunityMaintainedUpdates {
             get {
                 return ResourceManager.GetString("CommunityMaintainedUpdates", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Date and Time.
         /// </summary>
-        internal static string DateAndTime {
+        public static string DateAndTime {
             get {
                 return ResourceManager.GetString("DateAndTime", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Delete.
         /// </summary>
-        internal static string Delete {
+        public static string Delete {
             get {
                 return ResourceManager.GetString("Delete", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à File systems.
         /// </summary>
-        internal static string Filesystems {
+        public static string Filesystems {
             get {
                 return ResourceManager.GetString("Filesystems", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Install updates from.
         /// </summary>
-        internal static string InstallUpdatesFrom {
+        public static string InstallUpdatesFrom {
             get {
                 return ResourceManager.GetString("InstallUpdatesFrom", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Monitoring.
         /// </summary>
-        internal static string Monitoring {
+        public static string Monitoring {
             get {
                 return ResourceManager.GetString("Monitoring", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Mount.
         /// </summary>
-        internal static string Mount {
+        public static string Mount {
             get {
                 return ResourceManager.GetString("Mount", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Network.
         /// </summary>
-        internal static string Network {
+        public static string Network {
             get {
                 return ResourceManager.GetString("Network", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Network Interfaces.
         /// </summary>
-        internal static string NetworkInterfaces {
+        public static string NetworkInterfaces {
             get {
                 return ResourceManager.GetString("NetworkInterfaces", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Nothing.
         /// </summary>
-        internal static string PowerbtnAction_Nothing {
+        public static string PowerbtnAction_Nothing {
             get {
                 return ResourceManager.GetString("PowerbtnAction_Nothing", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Shutdown.
         /// </summary>
-        internal static string PowerbtnAction_Shutdown {
+        public static string PowerbtnAction_Shutdown {
             get {
                 return ResourceManager.GetString("PowerbtnAction_Shutdown", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Standby.
         /// </summary>
-        internal static string PowerbtnAction_Standby {
+        public static string PowerbtnAction_Standby {
             get {
                 return ResourceManager.GetString("PowerbtnAction_Standby", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Power button.
         /// </summary>
-        internal static string PowerButton {
+        public static string PowerButton {
             get {
                 return ResourceManager.GetString("PowerButton", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Power Management.
         /// </summary>
-        internal static string PowerManagement {
+        public static string PowerManagement {
             get {
                 return ResourceManager.GetString("PowerManagement", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Pre-release updates..
         /// </summary>
-        internal static string PreReleaseUpdates {
+        public static string PreReleaseUpdates {
             get {
                 return ResourceManager.GetString("PreReleaseUpdates", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Reset.
         /// </summary>
-        internal static string Reset {
+        public static string Reset {
             get {
                 return ResourceManager.GetString("Reset", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Save.
         /// </summary>
-        internal static string Save {
+        public static string Save {
             get {
                 return ResourceManager.GetString("Save", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Services.
         /// </summary>
-        internal static string Services {
+        public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à System Information.
         /// </summary>
-        internal static string SystemInfomation {
+        public static string SystemInfomation {
             get {
                 return ResourceManager.GetString("SystemInfomation", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Umount.
         /// </summary>
-        internal static string Umount {
+        public static string Umount {
             get {
                 return ResourceManager.GetString("Umount", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Web Administration.
         /// </summary>
-        internal static string WebAdministration {
+        public static string WebAdministration {
             get {
                 return ResourceManager.GetString("WebAdministration", resourceCulture);
             }

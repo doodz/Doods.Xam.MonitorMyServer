@@ -53,7 +53,7 @@ namespace Doods.Xam.MonitorMyServer.UWP
                 Rg.Plugins.Popup.Popup.Init();
                 FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
                 Xamarin.Forms.Forms.Init(e, Rg.Plugins.Popup.Popup.GetExtraAssemblies());
-
+                
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application

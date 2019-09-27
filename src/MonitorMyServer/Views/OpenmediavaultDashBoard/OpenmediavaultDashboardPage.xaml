@@ -25,7 +25,7 @@
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <ScrollView>
             <StackLayout Padding="8">
-                <controls:TitledFrameView Title="{resources1:Translate Text=SystemInfomation}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding SystemInformation,Mode=OneWay}">
                     <BindableLayout.ItemTemplate>
@@ -40,7 +40,7 @@
 
 
                 </controls:TitledFrameView>
-            <controls:TitledFrameView Title="{resources1:Translate Text=Services}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::Services'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding ServicesStatus,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
@@ -68,14 +68,14 @@
                 <controls:TitledFrameView Padding="8"
                                            Title="{Binding Count,Source={Binding Upgradeds,Mode=OneWay},StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                    <StackLayout Orientation="Horizontal">
-                    <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
+                        <Button Text="{resources1:Translate Text='openmediavault::UpdateNow'}" Command="{Binding UpdatesCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
-                    <Button Text="{resources:Translate Text=Check}" Command="{Binding CheckCmd,Mode=OneWay}"
+                        <Button Text="{resources1:Translate Text='openmediavault::Check'}" Command="{Binding CheckCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                    </StackLayout>
                 </controls:TitledFrameView>
 
-            <controls:TitledFrameView Title="{resources1:Translate Text=Filesystems}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::FileSystems'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
@@ -92,7 +92,7 @@
 
 
                 </controls:TitledFrameView>
-            <controls:TitledFrameView Title="{resources1:Translate Text=NetworkInterfaces}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::NetworkInterfaces'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Devices,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>

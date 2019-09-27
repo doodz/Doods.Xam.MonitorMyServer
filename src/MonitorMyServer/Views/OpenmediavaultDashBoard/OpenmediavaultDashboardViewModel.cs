@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -41,6 +42,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             _sshService = sshService;
             UpdatesCmd = new Command(Updates);
             CheckCmd = new Command(Check);
+            
+           
         }
 
         private async void Check(object obj)
