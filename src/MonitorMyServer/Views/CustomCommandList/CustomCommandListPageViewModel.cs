@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Windows.Input;
+using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
@@ -17,9 +18,11 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
     {
         public ICommand RunCommand { get; }
         private readonly ISshService _sshService;
-        public CustomCommandListPageViewModel(ISshService sshService)
+        private readonly IMessageBoxService _messageBoxService;
+        public CustomCommandListPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {
             _sshService = sshService;
+            _messageBoxService = messageBoxService;
             RunCommand = new Command(Run);
         }
         protected override void AddItem(object obj)
@@ -33,6 +36,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             if (obj is CustomCommandSsh item)
             {
                 var resutl = await _sshService.RunCommand(item.CommandString);
+                _messageBoxService.ShowAlert("Alert", resutl);
             }
         }
 

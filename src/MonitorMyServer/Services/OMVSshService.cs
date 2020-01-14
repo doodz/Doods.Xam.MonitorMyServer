@@ -8,9 +8,12 @@ using Doods.Framework.Ssh.Std.Enums;
 using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Ssh.Std.Queries;
 using Doods.Framework.Std;
+using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Mobile.Std.Models;
 using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmedivault.Ssh.Std.Data.V5;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Newtonsoft.Json.Linq;
 using Renci.SshNet;
 using Renci.SshNet.Security.Cryptography;
 using Xamarin.Forms;
@@ -34,8 +37,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<IEnumerable<ServicesStatus>> GetServicesStatus();
 
         Task<IEnumerable<Upgraded>> GetUpgraded();
-        Task<IEnumerable<SystemInformation>> GetSystemInformation();
-
+      
+        Task<OMVInformations> GetSystemInformations();
         Task<bool> IsRunning(string filename);
         Task<T> RunCmd<T>(ISshRequest request);
         Task<string> UpdateAptList();
@@ -66,17 +69,49 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<IEnumerable<string>> GetTimeZoneList();
         Task<AptSetting> GetAptSettings();
 
+        Task<WebGuiSetting> GetWebGuiSettings();
+
         Task<bool> SetPowerManagementSetting(PowerManagementSetting powerManagementSetting);
         Task<bool> SetNetworkSetting(NetworkSetting networkSetting);
         Task<bool> SetDateAndTimeSetting(TimeSetting timeSetting);
 
         Task<bool> SetAptSettings(AptSetting aptSetting);
+        Task<bool> SetWebGuiSettings(WebGuiSetting webGuiSetting);
     }
 
     public class OMVSshService : SshService, IOMVSshService
     {
         public OMVSshService(ILogger logger, IMapper mapper) : base(logger, mapper)
         {
+        }
+
+
+        private OMVVersion _OMVVersions;
+
+
+        public void SetOMVVersion(OMVVersion version)
+        {
+            _OMVVersions = version;
+        }
+
+        public OMVVersion GetRPCVersion()
+        {
+            if (_OMVVersions == null)
+            {
+               CheckRpcVersion();
+            }
+
+            return _OMVVersions;
+        }
+
+
+        private async Task CheckRpcVersion()
+        {
+           
+
+
+            var result = await RunCmd<Object>(new SystemInformationRequest());
+            _OMVVersions = OMVVersions.GetVersionFromString(result.ToString());
         }
 
         public async Task<IEnumerable<Devices>> GetDevices()
@@ -111,9 +146,76 @@ namespace Doods.Xam.MonitorMyServer.Services
             return RunCmd<string>(new UpgradeAptList(lst));
         }
 
+        /// <summary>
+        /// For OMV V4 else see <see cref="GetSystemInformations"/>
+        /// </summary>
+        /// <returns></returns>
         public Task<IEnumerable<SystemInformation>> GetSystemInformation()
         {
             return RunCmd<IEnumerable<SystemInformation>>(new SystemInformationRequest());
+        }
+
+        public async Task<OMVInformations> GetSystemInformations()
+        {
+            await CheckRpcVersion();
+            if (GetRPCVersion().Name == OMVVersions.Arrakis)
+            {
+                var lst = await GetSystemInformation();
+                var obj = new OMVInformations() {LegacyMode = true};
+
+                foreach (var information in lst)
+                {
+                    switch (information.Name)
+                    {
+                        case "ts":
+                            obj.Ts = long.Parse(information.Value.SimpleStringValue);
+                            break;
+                        case "System time":
+                            obj.Time = information.Value.SimpleStringValue;
+                            break;
+                        case "Hostname":
+                            obj.Hostname = information.Value.SimpleStringValue;
+                            break;
+                        case "Version":
+                            obj.Version = information.Value.SimpleStringValue;
+                            break;
+                        case "Processor":
+                            obj.CpuModelName = information.Value.SimpleStringValue;
+                            break;
+                        case "CPU usage":
+                            obj.CpuUsage = information.Value.ValueClass.Value;
+                            break;
+                        case "MemTotal":
+                            obj.MemTotal = long.Parse(information.Value.SimpleStringValue);
+                            break;
+                        case "Memory usage":
+                            obj.MemUsed = long.Parse( information.Value.ValueClass.Value.ToString());
+                            break;
+                        case "Kernel":
+                            obj.Kernel = information.Value.SimpleStringValue;
+                            break;
+                        case "Uptime":
+                            obj.Uptime = information.Value.SimpleStringValue;
+                            break;
+                        case "Load average":
+                            obj.LoadAverage = information.Value.SimpleStringValue;
+                            break;
+                        case "configDirty":
+                            obj.ConfigDirty = bool.Parse(information.Value.SimpleStringValue);
+                            break;
+                        case "rebootRequired":
+                            obj.RebootRequired = bool.Parse(information.Value.SimpleStringValue);
+                            break;
+                        case "pkgUpdatesAvailable":
+                            obj.PkgUpdatesAvailable = bool.Parse(information.Value.SimpleStringValue);
+                            break;
+                    }
+                }
+
+                return obj;
+            }
+               
+            return await RunCmd<OMVInformations>(new SystemInformationRequest());
         }
 
         public async Task<bool> IsRunning(string filename)
@@ -190,6 +292,10 @@ namespace Doods.Xam.MonitorMyServer.Services
             return RunCmd<NetworkSetting>(new GetNetworkSettingRequest());
         }
 
+        public Task<WebGuiSetting> GetWebGuiSettings()
+        {
+            return RunCmd<WebGuiSetting>(new GetWebGuiSettingRequest());
+        }
         public Task<TimeSetting> GetDateAndTimeSetting()
         {
             return RunCmd<TimeSetting>(new GetDateAndTimeSettingRequest());
@@ -229,6 +335,11 @@ namespace Doods.Xam.MonitorMyServer.Services
             return obj != null;
         }
 
+        public async Task<bool> SetWebGuiSettings(WebGuiSetting webGuiSetting)
+        {
+            var obj = await RunCmd<object>(new SetWebGuiSetting(webGuiSetting));
+            return obj != null;
+        }
 
         public async Task<T> RunCmd<T>(ISshRequest request)
         {

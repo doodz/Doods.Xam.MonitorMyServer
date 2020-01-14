@@ -399,9 +399,6 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>アップロードとダウンロードの中断時のレジュームをクライアントに許可</value>
   </data>
-  <data name="AllowThisServerToTryAndBecomeALocalMasterBrowser" xml:space="preserve">
-    <value>サーバーがローカルマスターブラウザになることを試行することを許可</value>
-  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>アメリカ領サモア</value>
   </data>
@@ -422,6 +419,9 @@
   </data>
   <data name="AnonymousFTP" xml:space="preserve">
     <value>Anonymous FTP</value>
+  </data>
+  <data name="AnotherUserIsAlreadyAuthenticated." xml:space="preserve">
+    <value>別のユーザーですでに認証されています。</value>
   </data>
   <data name="Antarctica" xml:space="preserve">
     <value>南極大陸</value>
@@ -933,8 +933,8 @@
   <data name="Disabled" xml:space="preserve">
     <value>無効</value>
   </data>
-  <data name="DisallowTheUserToModifyHisAccount." xml:space="preserve">
-    <value>自分のアカウントの変更をユーザーに許可しない。</value>
+  <data name="DisallowTheUserToModifyTheirAccount." xml:space="preserve">
+    <value>ユーザーによるアカウントの変更を許可しません。</value>
   </data>
   <data name="DiskUsage" xml:space="preserve">
     <value>ディスク使用量</value>
@@ -1080,9 +1080,6 @@
   <data name="EditScheduledTest" xml:space="preserve">
     <value>スケジュールされたテストの編集</value>
   </data>
-  <data name="EditService" xml:space="preserve">
-    <value>サービスの編集</value>
-  </data>
   <data name="EditShare" xml:space="preserve">
     <value>共有の編集</value>
   </data>
@@ -1118,6 +1115,9 @@
   </data>
   <data name="EnableSSL/TLSConnections" xml:space="preserve">
     <value>SSL/TLS接続を有効化</value>
+  </data>
+  <data name="EnableTimeMachineSupportForThisShare." xml:space="preserve">
+    <value>この共有でTime Machineサポートを有効にします。</value>
   </data>
   <data name="EnableWINSServer" xml:space="preserve">
     <value>WINSサーバーを有効化</value>
@@ -1181,6 +1181,9 @@
   </data>
   <data name="Enabled" xml:space="preserve">
     <value>有効</value>
+  </data>
+  <data name="EncryptionMode" xml:space="preserve">
+    <value>暗号化モード</value>
   </data>
   <data name="EnterYourPassword" xml:space="preserve">
     <value>パスワードを入力してください</value>
@@ -1608,8 +1611,14 @@
   <data name="Interfaces" xml:space="preserve">
     <value>インタフェース</value>
   </data>
+  <data name="InvalidIPAddress." xml:space="preserve">
+    <value>不正なIPアドレスです。</value>
+  </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
     <value>無効なSSH公開鍵 (RFC 4716)</value>
+  </data>
+  <data name="InvalidUser-Agent." xml:space="preserve">
+    <value>不正なUser-Agentです。</value>
   </data>
   <data name="InvalidDomainName" xml:space="preserve">
     <value>無効なドメイン名</value>
@@ -1628,6 +1637,9 @@
   </data>
   <data name="InvalidUserName" xml:space="preserve">
     <value>ユーザー名が不正です</value>
+  </data>
+  <data name="InvalidUser." xml:space="preserve">
+    <value>不正なユーザーです。</value>
   </data>
   <data name="Iran" xml:space="preserve">
     <value>イラン</value>
@@ -1763,9 +1775,6 @@
   </data>
   <data name="Local" xml:space="preserve">
     <value>ローカル</value>
-  </data>
-  <data name="LocalMasterBrowser" xml:space="preserve">
-    <value>ローカルマスタブラウザ</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>ロケーション</value>
@@ -2130,9 +2139,6 @@
   <data name="Num" xml:space="preserve">
     <value>番号</value>
   </data>
-  <data name="NumberOfServers" xml:space="preserve">
-    <value>サービス番号</value>
-  </data>
   <data name="OK" xml:space="preserve">
     <value>はい</value>
   </data>
@@ -2235,11 +2241,11 @@
   <data name="PasswordsDon'tMatch" xml:space="preserve">
     <value>パスワード不一致</value>
   </data>
-  <data name="PasteARSACertificateInX.509PEMFormatHere." xml:space="preserve">
-    <value>ここにX.509 PEM形式のRSA証明書を貼り付けます。</value>
+  <data name="PasteARSAOrECCCertificateInX.509PEMFormatHere." xml:space="preserve">
+    <value>ここにX.509 PEM形式のRSAまたはECC証明書を貼り付けます</value>
   </data>
-  <data name="PasteAnPrivateRSAKeyInX.509PEMFormatHere." xml:space="preserve">
-    <value>ここにX.509 PEM形式のRSA秘密鍵を貼り付けます。</value>
+  <data name="PasteARSAOrECCPrivateKeyInX.509PEMFormatHere." xml:space="preserve">
+    <value>ここにX.509 PEM形式のRSAまたはECCプライベートキーを貼り付けます。</value>
   </data>
   <data name="Path" xml:space="preserve">
     <value>パス</value>
@@ -2331,8 +2337,14 @@
   <data name="PreserveExtendedAttributes" xml:space="preserve">
     <value>拡張属性を保存</value>
   </data>
+  <data name="PreserveGroup" xml:space="preserve">
+    <value>グループを維持</value>
+  </data>
   <data name="PreserveModificationTimes" xml:space="preserve">
     <value>修正時刻を保存</value>
+  </data>
+  <data name="PreserveOwner" xml:space="preserve">
+    <value>オーナーを維持</value>
   </data>
   <data name="PreservePermissions" xml:space="preserve">
     <value>パーミッションを保存</value>
@@ -2616,6 +2628,9 @@
   <data name="SSL/TLS" xml:space="preserve">
     <value>SSL/TLS</value>
   </data>
+  <data name="STARTTLS" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
   <data name="SaintHelena" xml:space="preserve">
     <value>セント·ヘレナ島</value>
   </data>
@@ -2778,9 +2793,6 @@
   <data name="Service" xml:space="preserve">
     <value>サービス</value>
   </data>
-  <data name="ServiceDiscovery" xml:space="preserve">
-    <value>サービスディスカバリ</value>
-  </data>
   <data name="ServiceDisabled" xml:space="preserve">
     <value>サービス無効化</value>
   </data>
@@ -2918,9 +2930,6 @@
   </data>
   <data name="SpecialActionFlag" xml:space="preserve">
     <value>特殊なアクションフラグ</value>
-  </data>
-  <data name="SpecifiesHowManyServerThreadsToCreate." xml:space="preserve">
-    <value>いくつのサーバースレッドを生成するか指定します。</value>
   </data>
   <data name="SpecifiesOneOfTheBondingPolicies." xml:space="preserve">
     <value>ボンディングポリシーの一つを指定します。</value>
@@ -3132,23 +3141,17 @@
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
     <value>要求されたページはありません。</value>
   </data>
-  <data name="TheSessionIPAddressHasBeenChanged." xml:space="preserve">
-    <value>セッションのIPアドレスが変更されました。</value>
-  </data>
-  <data name="TheSessionUserNoLongerExists." xml:space="preserve">
-    <value>セッションのユーザーは存在しません。</value>
-  </data>
   <data name="TheSourceSharedFolder." xml:space="preserve">
     <value>ソース共有フォルダ。</value>
   </data>
   <data name="TheSpecifiedQuotaExceedsTheMax.PossibleValueOf4Tib." xml:space="preserve">
     <value>指定されたクォータは最大値を超えています。4TiBまでの値を設定。</value>
   </data>
+  <data name="TheSystemMustBeRebooted." xml:space="preserve">
+    <value>システムを再起動する必要があります。</value>
+  </data>
   <data name="TheSystemWillRebootNow.ThisMayTakeSomeTime..." xml:space="preserve">
     <value>システムが再起動されます。これにはしばらく時間がかかることがあります...</value>
-  </data>
-  <data name="TheTestEmailHasBeenSentSuccessfully.PleaseCheckYourMailbox." xml:space="preserve">
-    <value>テストメールが正常に送信されました。あなたのメールボックスを確認してください。</value>
   </data>
   <data name="TheVolumeLabelForTheFileSystem." xml:space="preserve">
     <value>ファイルシステムのボリュームラベル。</value>
@@ -3231,6 +3234,9 @@
   <data name="ThisWillCreateARecycleBinOnTheShare." xml:space="preserve">
     <value>これは共有上にごみ箱が作成されます。</value>
   </data>
+  <data name="Threshold" xml:space="preserve">
+    <value>閾値</value>
+  </data>
   <data name="Thursday" xml:space="preserve">
     <value>木曜</value>
   </data>
@@ -3239,6 +3245,9 @@
   </data>
   <data name="Time" xml:space="preserve">
     <value>時刻</value>
+  </data>
+  <data name="TimeMachineSupport" xml:space="preserve">
+    <value>Time Machineサポート</value>
   </data>
   <data name="TimeInterval" xml:space="preserve">
     <value>タイムインターバル</value>
@@ -3257,9 +3266,6 @@
   </data>
   <data name="Timeout" xml:space="preserve">
     <value>タイムアウト</value>
-  </data>
-  <data name="Times" xml:space="preserve">
-    <value>時刻</value>
   </data>
   <data name="Togo" xml:space="preserve">
     <value>トーゴ</value>
@@ -3281,9 +3287,6 @@
   </data>
   <data name="TransferType" xml:space="preserve">
     <value>転送タイプ</value>
-  </data>
-  <data name="Treshold" xml:space="preserve">
-    <value>しきい値</value>
   </data>
   <data name="TrialRun" xml:space="preserve">
     <value>テスト実行</value>
@@ -3387,11 +3390,11 @@
   <data name="Updates" xml:space="preserve">
     <value>アップデート</value>
   </data>
+  <data name="UpdatesAvailable" xml:space="preserve">
+    <value>アップデートが利用可能です</value>
+  </data>
   <data name="UpdatingACLSettings" xml:space="preserve">
     <value>ACL設定のアップデート</value>
-  </data>
-  <data name="Upgrade" xml:space="preserve">
-    <value>アップグレード</value>
   </data>
   <data name="Upload" xml:space="preserve">
     <value>アップロード</value>
@@ -3416,9 +3419,6 @@
   </data>
   <data name="UseNTPServer" xml:space="preserve">
     <value>NTPサーバを使用する</value>
-  </data>
-  <data name="UseSSL/TLSSecureConnection" xml:space="preserve">
-    <value>SSL/TLSセキュアコネクションを使用する</value>
   </data>
   <data name="UseChroot" xml:space="preserve">
     <value>Chrootを利用する</value>

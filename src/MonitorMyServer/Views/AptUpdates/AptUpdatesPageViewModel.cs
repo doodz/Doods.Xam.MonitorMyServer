@@ -8,10 +8,12 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Extensions;
+using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using MarcTron.Plugin;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -21,16 +23,16 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
     {
         private readonly IMessageBoxService _messageBoxService;
         private readonly ISshService _sshService;
-
+        private readonly IRewardService _rewardService;
         private PidStatusChecker _pidStatusChecker;
         private IEnumerable<Upgradable> _upgradables;
 
         private int _upgradablesCount;
-        private string _rewardedVideoKey;
-        private bool _isrewarded;
-        private Action currentAction;
+       
+      
+       
         public AptUpdatesPageViewModel(ISshService sshService, IMessageBoxService messageBoxService,
-            IConfiguration configuration)
+            IRewardService rewardService)
         {
             Title = Resource.Apt;
             _sshService = sshService;
@@ -38,42 +40,47 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
             UpdatesCmd = new Command(Updates);
             UpdateSelectedItemsCmd = new Command(UpdateSelectedItems);
             SelectUnselectAllItemsCmd = new Command(SelectUnselectAllItems);
-            CrossMTAdmob.Current.LoadRewardedVideo(configuration.RewardedVideoKey);
-            _rewardedVideoKey = configuration.RewardedVideoKey;
-            CrossMTAdmob.Current.OnRewarded += Current_OnRewarded; ;//When the user gets a reward
-            CrossMTAdmob.Current.OnRewardedVideoAdClosed += Current_OnRewardedVideoAdClosed; ;//When the ads is closed
-            CrossMTAdmob.Current.OnRewardedVideoAdFailedToLoad += Current_OnRewardedVideoAdFailedToLoad; ;      //When the ads fails to load
-            CrossMTAdmob.Current.OnRewardedVideoAdLeftApplication += Current_OnRewardedVideoAdLeftApplication; ; //When the users leaves the application
+
+            _rewardService = rewardService;
+            _rewardService.OnRewarded += Current_OnRewarded;
+            _rewardService.OnRewardedVideoAdClosed += Current_OnRewardedVideoAdClosed;
+            _rewardService.OnRewardedVideoAdLeftApplication += Current_OnRewardedVideoAdLeftApplication;
 
         }
 
-        private void Current_OnRewarded(object sender, MTEventArgs e)
+        //protected override async Task OnInternalAppearingAsync()
+        //{
+        //    Updates();
+        //}
+
+        protected override Task OnInternalDisappearingAsync()
+        {
+            _rewardService.OnRewarded -= Current_OnRewarded;
+            _rewardService.OnRewardedVideoAdClosed -= Current_OnRewardedVideoAdClosed;
+            _rewardService.OnRewardedVideoAdLeftApplication -= Current_OnRewardedVideoAdLeftApplication;
+            return base.OnInternalDisappearingAsync();
+        }
+
+
+        private void Current_OnRewarded(object sender, EventArgs e)
         {
             SetLabelsStateItem("let's go", "Update running!");
-            _isrewarded = true;
+            
         }
 
         private void Current_OnRewardedVideoAdLeftApplication(object sender, System.EventArgs e)
         {
             SetLabelsStateItem("Warning", "you need to wath all video");
-            CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
-        }
-
-        private void Current_OnRewardedVideoAdFailedToLoad(object sender, MTEventArgs e)
-        {
            
         }
 
+      
+
         private void Current_OnRewardedVideoAdClosed(object sender, System.EventArgs e)
         {
-            if(!_isrewarded)
+            if (!(_rewardService.IsRewarded))
                 SetLabelsStateItem("Warning", "you need to wath all video");
-            else
-            {
-                //currentAction.Invoke();
-            }
-
-            CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+            
         }
 
         public ICommand UpdatesCmd { get; }
@@ -99,18 +106,14 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
             _upgradables.ForEach(u => u.IsSelected = select);
         }
 
-
-
-
         private async void UpdateSelectedItems()
         {
-            if (!_isrewarded)
+            if (!(_rewardService.IsRewarded))
             {
-                CrossMTAdmob.Current.ShowRewardedVideo();
-                currentAction =UpdateSelectedItems;
+                _rewardService.ShowRewardedVideo(UpdateSelectedItems);
                 return;
             }
-
+            
             ViewModelStateItem.IsRunning = true;
             var lst = _upgradables?.Where(u => u.IsSelected).Select(u => u.Name).ToList();
             if (lst == null || lst.IsEmpty()) return;
@@ -120,13 +123,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
             _pidStatusChecker = new PidStatusChecker(pId, OnResult, Token);
         }
-        protected override async Task OnInternalAppearingAsync()
-        {
-            if (_isrewarded)
-            {
-                currentAction?.Invoke();
-            }
-        }
+     
 
         //protected override Task in()
         //{
@@ -154,15 +151,14 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
         private async void Updates()
         {
-            if (!_isrewarded)
+            if (!(_rewardService.IsRewarded))
             {
-                CrossMTAdmob.Current.ShowRewardedVideo();
-                currentAction = Updates;
+                _rewardService.ShowRewardedVideo(Updates);
                 return;
             }
             ViewModelStateItem.IsRunning = true;
             var pId = await _sshService.InstallAllPackage();
-            SetLabelsStateItem(Resource.InstallingPackages, string.Format(Resource.ThereAre_0_OfSelected, 12));
+            SetLabelsStateItem(Resource.InstallingPackages, Resource.UpdatesAll);
             _pidStatusChecker = new PidStatusChecker(pId, OnResult, Token);
         }
 

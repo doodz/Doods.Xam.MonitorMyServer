@@ -26,6 +26,7 @@ namespace Doods.Xam.MonitorMyServer.UWP
         /// </summary>
         public App()
         {
+            Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
             InitializeComponent();
             Suspending += OnSuspending;
             MonitorMyServer.App.SetupContainer(Bootstrapper.CreateContainer());

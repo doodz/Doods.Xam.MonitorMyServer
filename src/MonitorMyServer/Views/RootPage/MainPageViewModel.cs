@@ -9,9 +9,8 @@ using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
+using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
-using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
@@ -20,6 +19,7 @@ using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
+using Doods.Xam.MonitorMyServer.Views.Tests;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -28,20 +28,19 @@ namespace Doods.Xam.MonitorMyServer.Views
     public class MainPageViewModel : ViewModelWhithState
     {
         private readonly ICommand _addHostCmd;
-       
         private readonly IMessageBoxService _messageBoxService;
-
         private readonly ISshService _sshService;
         private CpuInfo _cpuInfo;
         private IEnumerable<DiskUsage> _disksUsage;
         private MemoryUsage _memoryUsage;
-        private IEnumerable<Upgradable> _upgradables;
-        private IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> _processes;
-        private int _upgradablesCount;
+        private IEnumerable<Process> _processes;
         private int _processesCount;
+        private IEnumerable<Upgradable> _upgradables;
+        private int _upgradablesCount;
         private TimeSpan _uptime;
 
-        public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
+        public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService,
+            IConfiguration configuration)
         {
             Title = Resource.Home;
             _sshService = sshService;
@@ -55,15 +54,66 @@ namespace Doods.Xam.MonitorMyServer.Views
             ChangeHostCmd = new Command(ChangeHost);
             UpdatesCmd = new Command(Updates);
             ShowProcessesCmd = new Command(ShowProcesses);
+            ShowTestsPageCmd = new Command(() => NavigationService.NavigateAsync(nameof(TestPage)));
+            BannerId = configuration.AdsKey;
         }
 
+        public ICommand ShowTestsPageCmd { get; }
+        public string BannerId { get; }
 
-        private class toto: IAsyncResult
+        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
+        public ICommand ManageHostsCmd { get; }
+        public ICommand ShowProcessesCmd { get; }
+        public ICommand UpdatesCmd { get; }
+
+        public ICommand ChangeHostCmd { get; }
+
+        public int UpgradablesCount
         {
-            public object AsyncState { get; }
-            public WaitHandle AsyncWaitHandle { get; }
-            public bool CompletedSynchronously { get; }
-            public bool IsCompleted { get; }
+            get => _upgradablesCount;
+            set => SetProperty(ref _upgradablesCount, value);
+        }
+
+        public int ProcessesCount
+        {
+            get => _processesCount;
+            set => SetProperty(ref _processesCount, value);
+        }
+
+        public TimeSpan Uptime
+        {
+            get => _uptime;
+            set => SetProperty(ref _uptime, value);
+        }
+
+        public CpuInfo CpuInfo
+        {
+            get => _cpuInfo;
+            set => SetProperty(ref _cpuInfo, value);
+        }
+
+        public IEnumerable<DiskUsage> DisksUsage
+        {
+            get => _disksUsage;
+            set => SetProperty(ref _disksUsage, value);
+        }
+
+        public MemoryUsage MemoryUsage
+        {
+            get => _memoryUsage;
+            set => SetProperty(ref _memoryUsage, value);
+        }
+
+        public IEnumerable<Process> Processes
+        {
+            get => _processes;
+            set => SetProperty(ref _processes, value);
+        }
+
+        public IEnumerable<Upgradable> Upgradables
+        {
+            get => _upgradables;
+            set => SetProperty(ref _upgradables, value);
         }
 
 
@@ -93,58 +143,6 @@ namespace Doods.Xam.MonitorMyServer.Views
             //{
             //    _sshService.RunCommand($"kill {p.Pid}");
             //}
-        }
-
-        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
-        public ICommand ManageHostsCmd { get; }
-        public  ICommand ShowProcessesCmd { get; }
-        public ICommand UpdatesCmd { get; }
-
-        public ICommand ChangeHostCmd { get; }
-
-        public int UpgradablesCount
-        {
-            get => _upgradablesCount;
-            set => SetProperty(ref _upgradablesCount, value);
-        }
-        public int ProcessesCount
-        {
-            get => _processesCount;
-            set => SetProperty(ref _processesCount, value);
-        }
-        public TimeSpan Uptime
-        {
-            get => _uptime;
-            set => SetProperty(ref _uptime, value);
-        }
-
-        public CpuInfo CpuInfo
-        {
-            get => _cpuInfo;
-            set => SetProperty(ref _cpuInfo, value);
-        }
-
-        public IEnumerable<DiskUsage> DisksUsage
-        {
-            get => _disksUsage;
-            set => SetProperty(ref _disksUsage, value);
-        }
-
-        public MemoryUsage MemoryUsage
-        {
-            get => _memoryUsage;
-            set => SetProperty(ref _memoryUsage, value);
-        }
-        public IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> Processes
-        {
-            get => _processes;
-            set => SetProperty(ref _processes, value);
-        }
-
-        public IEnumerable<Upgradable> Upgradables
-        {
-            get => _upgradables;
-            set => SetProperty(ref _upgradables, value);
         }
 
         private void Updates()
@@ -183,7 +181,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Upgradables = null;
             CpuInfo = null;
-          
+
             DisksUsage = null;
             UpgradablesCount = 0;
             ProcessesCount = 0;
@@ -208,7 +206,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             //viewModelStateItem.Color = Color.Blue;
         }
 
-       
+
         private async Task InitHostAsync()
         {
             var hosts = await DataProvider.GetHostsAsync();
@@ -254,7 +252,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             {
                 await Login(host);
             }
-            catch 
+            catch
             {
                 SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
                 Clear();
@@ -296,8 +294,8 @@ namespace Doods.Xam.MonitorMyServer.Views
 
             //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
 
-            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(), GetUpgradables());
-           
+            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+                GetUpgradables());
         }
 
         private async Task GetUpgradables()
@@ -315,13 +313,13 @@ namespace Doods.Xam.MonitorMyServer.Views
                 }
             }
         }
+
         private async Task GetProcesses()
         {
             Processes = await _sshService.GetProcesses();
             ProcessesCount = _processes.Count();
-
-           
         }
+
         private async Task Reboot()
         {
             await _sshService.Rebout();
@@ -331,6 +329,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             await _sshService.Halt();
         }
+
         private async Task GetCpuInfo()
         {
             CpuInfo = await _sshService.GetCpuInfo();
@@ -349,6 +348,15 @@ namespace Doods.Xam.MonitorMyServer.Views
         private async Task CheckMemoryUsage()
         {
             MemoryUsage = await _sshService.CheckMemoryUsage();
+        }
+
+
+        private class toto : IAsyncResult
+        {
+            public object AsyncState { get; }
+            public WaitHandle AsyncWaitHandle { get; }
+            public bool CompletedSynchronously { get; }
+            public bool IsCompleted { get; }
         }
     }
 }

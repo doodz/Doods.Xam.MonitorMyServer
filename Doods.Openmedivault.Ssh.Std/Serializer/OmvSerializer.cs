@@ -40,6 +40,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                 NullValueHandling = NullValueHandling.Ignore,
                 DefaultValueHandling = DefaultValueHandling.Include,
                 DateParseHandling = DateParseHandling.None,
+                StringEscapeHandling =StringEscapeHandling.EscapeNonAscii
 
             };
             _serializer.Converters.Add(ValueUnionConverter.Singleton);
@@ -77,6 +78,9 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
            
         }
        
+
+      
+
         public T Deserialize<T>(string json)
         {
             using (var stringReader = new StringReader(json))
@@ -85,6 +89,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                 {
                     try
                     {
+                       
                         return _serializer.Deserialize<T>(jsonTextReader);
                     }
                     catch (Exception ex)

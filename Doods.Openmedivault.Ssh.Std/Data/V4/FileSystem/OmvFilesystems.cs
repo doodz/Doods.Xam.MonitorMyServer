@@ -7,7 +7,7 @@ namespace Doods.Openmedivault.Ssh.Std.Data
     public class OmvFilesystems : BaseOmvFilesystems
     {
         [JsonProperty("parentdevicefile")] public string Parentdevicefile { get; set; }
-        [JsonProperty("uuid")] public Guid Uuid { get; set; }
+        [JsonProperty("uuid")] public string Uuid { get; set; }
 
         [JsonProperty("blocks")]
         [JsonConverter(typeof(ParseStringConverter))]

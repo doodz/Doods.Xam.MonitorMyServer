@@ -6,6 +6,10 @@ using Doods.Framework.Ssh.Std.Serializers;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {
+  
+
+
+ 
     public class SystemInformationRequest : OmvRequestBase
     {
 

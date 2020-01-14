@@ -120,8 +120,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Attribute.behavior_overlapTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_overlapTop;
 			global::Doods.Framework.Android.Resource.Attribute.behavior_peekHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_peekHeight;
 			global::Doods.Framework.Android.Resource.Attribute.behavior_skipCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Doods.Framework.Android.Resource.Attribute.borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderWidth;
 			global::Doods.Framework.Android.Resource.Attribute.borderlessButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Doods.Framework.Android.Resource.Attribute.borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderWidth;
 			global::Doods.Framework.Android.Resource.Attribute.bottomAppBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomAppBarStyle;
 			global::Doods.Framework.Android.Resource.Attribute.bottomNavigationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomNavigationStyle;
 			global::Doods.Framework.Android.Resource.Attribute.bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomSheetDialogTheme;
@@ -187,9 +187,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Attribute.closeIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconVisible;
 			global::Doods.Framework.Android.Resource.Attribute.closeItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeItemLayout;
 			global::Doods.Framework.Android.Resource.Attribute.collapseContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseContentDescription;
-			global::Doods.Framework.Android.Resource.Attribute.collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseIcon;
 			global::Doods.Framework.Android.Resource.Attribute.collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Doods.Framework.Android.Resource.Attribute.collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Attribute.collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseIcon;
 			global::Doods.Framework.Android.Resource.Attribute.color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.color;
 			global::Doods.Framework.Android.Resource.Attribute.colorAccent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorAccent;
 			global::Doods.Framework.Android.Resource.Attribute.colorBackgroundFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -235,8 +235,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Attribute.dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dividerVertical;
 			global::Doods.Framework.Android.Resource.Attribute.drawableSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawableSize;
 			global::Doods.Framework.Android.Resource.Attribute.drawerArrowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Doods.Framework.Android.Resource.Attribute.dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Doods.Framework.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Attribute.dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Doods.Framework.Android.Resource.Attribute.editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextBackground;
 			global::Doods.Framework.Android.Resource.Attribute.editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextColor;
 			global::Doods.Framework.Android.Resource.Attribute.editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextStyle;
@@ -299,12 +299,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Attribute.icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.icon;
 			global::Doods.Framework.Android.Resource.Attribute.iconEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconEndPadding;
 			global::Doods.Framework.Android.Resource.Attribute.iconGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconGravity;
+			global::Doods.Framework.Android.Resource.Attribute.iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Doods.Framework.Android.Resource.Attribute.iconPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconPadding;
 			global::Doods.Framework.Android.Resource.Attribute.iconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconSize;
 			global::Doods.Framework.Android.Resource.Attribute.iconStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconStartPadding;
 			global::Doods.Framework.Android.Resource.Attribute.iconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTint;
 			global::Doods.Framework.Android.Resource.Attribute.iconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTintMode;
-			global::Doods.Framework.Android.Resource.Attribute.iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Doods.Framework.Android.Resource.Attribute.imageButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.imageButtonStyle;
 			global::Doods.Framework.Android.Resource.Attribute.indeterminateProgressStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.indeterminateProgressStyle;
 			global::Doods.Framework.Android.Resource.Attribute.initialActivityCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.initialActivityCount;
@@ -521,9 +521,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Attribute.titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargin;
 			global::Doods.Framework.Android.Resource.Attribute.titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginBottom;
 			global::Doods.Framework.Android.Resource.Attribute.titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginEnd;
+			global::Doods.Framework.Android.Resource.Attribute.titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargins;
 			global::Doods.Framework.Android.Resource.Attribute.titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginStart;
 			global::Doods.Framework.Android.Resource.Attribute.titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginTop;
-			global::Doods.Framework.Android.Resource.Attribute.titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargins;
 			global::Doods.Framework.Android.Resource.Attribute.titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextAppearance;
 			global::Doods.Framework.Android.Resource.Attribute.titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextColor;
 			global::Doods.Framework.Android.Resource.Attribute.titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextStyle;
@@ -656,11 +656,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
 			global::Doods.Framework.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
 			global::Doods.Framework.Android.Resource.Color.mtrl_tabs_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_ripple_color;
-			global::Doods.Framework.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Doods.Framework.Android.Resource.Color.mtrl_textinput_default_box_stroke_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
 			global::Doods.Framework.Android.Resource.Color.mtrl_textinput_disabled_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_disabled_color;
 			global::Doods.Framework.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
 			global::Doods.Framework.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Doods.Framework.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Doods.Framework.Android.Resource.Color.notification_action_color_filter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_action_color_filter;
 			global::Doods.Framework.Android.Resource.Color.notification_icon_bg_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_icon_bg_color;
 			global::Doods.Framework.Android.Resource.Color.notification_material_background_media_default_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_material_background_media_default_color;
@@ -984,6 +984,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::Doods.Framework.Android.Resource.Drawable.abc_tab_indicator_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_material;
 			global::Doods.Framework.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_cursor_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_cursor_material;
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
@@ -991,20 +996,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::Doods.Framework.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Doods.Framework.Android.Resource.Drawable.abc_textfield_search_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Doods.Framework.Android.Resource.Drawable.abc_vector_test = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_vector_test;
 			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password;
-			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_1;
-			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_2;
-			global::Doods.Framework.Android.Resource.Drawable.avd_hide_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_3;
 			global::Doods.Framework.Android.Resource.Drawable.avd_show_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password;
-			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_1;
-			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_2;
-			global::Doods.Framework.Android.Resource.Drawable.avd_show_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_3;
 			global::Doods.Framework.Android.Resource.Drawable.design_bottom_navigation_item_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Doods.Framework.Android.Resource.Drawable.design_fab_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_fab_background;
 			global::Doods.Framework.Android.Resource.Drawable.design_ic_visibility = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_ic_visibility;
@@ -1230,13 +1224,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Doods.Framework.Android.Resource.Drawable.tooltip_frame_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Doods.Framework.Android.Resource.Drawable.tooltip_frame_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Doods.Framework.Android.Resource.Id.ALT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ALT;
-			global::Doods.Framework.Android.Resource.Id.CTRL = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.CTRL;
-			global::Doods.Framework.Android.Resource.Id.FUNCTION = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.FUNCTION;
-			global::Doods.Framework.Android.Resource.Id.META = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.META;
-			global::Doods.Framework.Android.Resource.Id.SHIFT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SHIFT;
-			global::Doods.Framework.Android.Resource.Id.SYM = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SYM;
 			global::Doods.Framework.Android.Resource.Id.action0 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action0;
+			global::Doods.Framework.Android.Resource.Id.actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.actions;
 			global::Doods.Framework.Android.Resource.Id.action_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar;
 			global::Doods.Framework.Android.Resource.Id.action_bar_activity_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_activity_content;
 			global::Doods.Framework.Android.Resource.Id.action_bar_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_container;
@@ -1254,11 +1243,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.action_mode_bar_stub = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_bar_stub;
 			global::Doods.Framework.Android.Resource.Id.action_mode_close_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_close_button;
 			global::Doods.Framework.Android.Resource.Id.action_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_text;
-			global::Doods.Framework.Android.Resource.Id.actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.actions;
 			global::Doods.Framework.Android.Resource.Id.activity_chooser_view_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.activity_chooser_view_content;
 			global::Doods.Framework.Android.Resource.Id.add = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.add;
 			global::Doods.Framework.Android.Resource.Id.alertTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.alertTitle;
 			global::Doods.Framework.Android.Resource.Id.all = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.all;
+			global::Doods.Framework.Android.Resource.Id.ALT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ALT;
 			global::Doods.Framework.Android.Resource.Id.always = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.always;
 			global::Doods.Framework.Android.Resource.Id.async = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.async;
 			global::Doods.Framework.Android.Resource.Id.auto = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.auto;
@@ -1268,9 +1257,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.bottomtab_navarea = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottomtab_navarea;
 			global::Doods.Framework.Android.Resource.Id.bottomtab_tabbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottomtab_tabbar;
 			global::Doods.Framework.Android.Resource.Id.browser_actions_header_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_header_text;
+			global::Doods.Framework.Android.Resource.Id.browser_actions_menu_items = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_items;
 			global::Doods.Framework.Android.Resource.Id.browser_actions_menu_item_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Doods.Framework.Android.Resource.Id.browser_actions_menu_item_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::Doods.Framework.Android.Resource.Id.browser_actions_menu_items = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_items;
 			global::Doods.Framework.Android.Resource.Id.browser_actions_menu_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_view;
 			global::Doods.Framework.Android.Resource.Id.buttonPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.buttonPanel;
 			global::Doods.Framework.Android.Resource.Id.cancel_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.cancel_action;
@@ -1286,6 +1275,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.content;
 			global::Doods.Framework.Android.Resource.Id.contentPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.contentPanel;
 			global::Doods.Framework.Android.Resource.Id.coordinator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.coordinator;
+			global::Doods.Framework.Android.Resource.Id.CTRL = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.CTRL;
 			global::Doods.Framework.Android.Resource.Id.custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.custom;
 			global::Doods.Framework.Android.Resource.Id.customPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.customPanel;
 			global::Doods.Framework.Android.Resource.Id.decor_content_parent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.decor_content_parent;
@@ -1302,16 +1292,17 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.enterAlways = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlways;
 			global::Doods.Framework.Android.Resource.Id.enterAlwaysCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlwaysCollapsed;
 			global::Doods.Framework.Android.Resource.Id.exitUntilCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.exitUntilCollapsed;
-			global::Doods.Framework.Android.Resource.Id.expand_activities_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expand_activities_button;
 			global::Doods.Framework.Android.Resource.Id.expanded_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expanded_menu;
+			global::Doods.Framework.Android.Resource.Id.expand_activities_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expand_activities_button;
 			global::Doods.Framework.Android.Resource.Id.fill = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill;
+			global::Doods.Framework.Android.Resource.Id.filled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.filled;
 			global::Doods.Framework.Android.Resource.Id.fill_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_horizontal;
 			global::Doods.Framework.Android.Resource.Id.fill_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_vertical;
-			global::Doods.Framework.Android.Resource.Id.filled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.filled;
 			global::Doods.Framework.Android.Resource.Id.@fixed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.@fixed;
 			global::Doods.Framework.Android.Resource.Id.flyoutcontent_appbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.flyoutcontent_appbar;
 			global::Doods.Framework.Android.Resource.Id.flyoutcontent_recycler = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Doods.Framework.Android.Resource.Id.forever = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.forever;
+			global::Doods.Framework.Android.Resource.Id.FUNCTION = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.FUNCTION;
 			global::Doods.Framework.Android.Resource.Id.ghost_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ghost_view;
 			global::Doods.Framework.Android.Resource.Id.group_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.group_divider;
 			global::Doods.Framework.Android.Resource.Id.home = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.home;
@@ -1337,6 +1328,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.masked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.masked;
 			global::Doods.Framework.Android.Resource.Id.media_actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.media_actions;
 			global::Doods.Framework.Android.Resource.Id.message = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.message;
+			global::Doods.Framework.Android.Resource.Id.META = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.META;
 			global::Doods.Framework.Android.Resource.Id.middle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.middle;
 			global::Doods.Framework.Android.Resource.Id.mini = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mini;
 			global::Doods.Framework.Android.Resource.Id.mr_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_art;
@@ -1411,10 +1403,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.save_scale_type = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.save_scale_type;
 			global::Doods.Framework.Android.Resource.Id.screen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.screen;
 			global::Doods.Framework.Android.Resource.Id.scroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scroll;
+			global::Doods.Framework.Android.Resource.Id.scrollable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollable;
 			global::Doods.Framework.Android.Resource.Id.scrollIndicatorDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorDown;
 			global::Doods.Framework.Android.Resource.Id.scrollIndicatorUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorUp;
 			global::Doods.Framework.Android.Resource.Id.scrollView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollView;
-			global::Doods.Framework.Android.Resource.Id.scrollable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollable;
 			global::Doods.Framework.Android.Resource.Id.search_badge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_badge;
 			global::Doods.Framework.Android.Resource.Id.search_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_bar;
 			global::Doods.Framework.Android.Resource.Id.search_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_button;
@@ -1425,10 +1417,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.search_plate = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_plate;
 			global::Doods.Framework.Android.Resource.Id.search_src_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_src_text;
 			global::Doods.Framework.Android.Resource.Id.search_voice_btn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_voice_btn;
-			global::Doods.Framework.Android.Resource.Id.select_dialog_listview = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.select_dialog_listview;
 			global::Doods.Framework.Android.Resource.Id.selected = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.selected;
+			global::Doods.Framework.Android.Resource.Id.select_dialog_listview = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.select_dialog_listview;
 			global::Doods.Framework.Android.Resource.Id.shellcontent_appbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shellcontent_appbar;
 			global::Doods.Framework.Android.Resource.Id.shellcontent_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shellcontent_toolbar;
+			global::Doods.Framework.Android.Resource.Id.SHIFT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SHIFT;
 			global::Doods.Framework.Android.Resource.Id.shortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shortcut;
 			global::Doods.Framework.Android.Resource.Id.showCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showCustom;
 			global::Doods.Framework.Android.Resource.Id.showHome = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showHome;
@@ -1448,19 +1441,20 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Id.stretch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.stretch;
 			global::Doods.Framework.Android.Resource.Id.submenuarrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submenuarrow;
 			global::Doods.Framework.Android.Resource.Id.submit_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submit_area;
+			global::Doods.Framework.Android.Resource.Id.SYM = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SYM;
 			global::Doods.Framework.Android.Resource.Id.tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tabMode;
 			global::Doods.Framework.Android.Resource.Id.tag_transition_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_transition_group;
 			global::Doods.Framework.Android.Resource.Id.tag_unhandled_key_event_manager = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Doods.Framework.Android.Resource.Id.tag_unhandled_key_listeners = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::Doods.Framework.Android.Resource.Id.text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text;
 			global::Doods.Framework.Android.Resource.Id.text2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text2;
+			global::Doods.Framework.Android.Resource.Id.textinput_counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_counter;
+			global::Doods.Framework.Android.Resource.Id.textinput_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_error;
+			global::Doods.Framework.Android.Resource.Id.textinput_helper_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_helper_text;
 			global::Doods.Framework.Android.Resource.Id.textSpacerNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoButtons;
 			global::Doods.Framework.Android.Resource.Id.textSpacerNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoTitle;
 			global::Doods.Framework.Android.Resource.Id.textStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textStart;
 			global::Doods.Framework.Android.Resource.Id.text_input_password_toggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text_input_password_toggle;
-			global::Doods.Framework.Android.Resource.Id.textinput_counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_counter;
-			global::Doods.Framework.Android.Resource.Id.textinput_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_error;
-			global::Doods.Framework.Android.Resource.Id.textinput_helper_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_helper_text;
 			global::Doods.Framework.Android.Resource.Id.time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.time;
 			global::Doods.Framework.Android.Resource.Id.title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.title;
 			global::Doods.Framework.Android.Resource.Id.titleDividerNoCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.titleDividerNoCustom;
@@ -1595,8 +1589,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.String.abc_action_bar_up_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_bar_up_description;
 			global::Doods.Framework.Android.Resource.String.abc_action_menu_overflow_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::Doods.Framework.Android.Resource.String.abc_action_mode_done = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_mode_done;
-			global::Doods.Framework.Android.Resource.String.abc_activity_chooser_view_see_all = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Doods.Framework.Android.Resource.String.abc_activitychooserview_choose_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Doods.Framework.Android.Resource.String.abc_activity_chooser_view_see_all = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Doods.Framework.Android.Resource.String.abc_capital_off = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_off;
 			global::Doods.Framework.Android.Resource.String.abc_capital_on = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_on;
 			global::Doods.Framework.Android.Resource.String.abc_font_family_body_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_body_1_material;
@@ -1621,17 +1615,17 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.String.abc_menu_space_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_space_shortcut_label;
 			global::Doods.Framework.Android.Resource.String.abc_menu_sym_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_sym_shortcut_label;
 			global::Doods.Framework.Android.Resource.String.abc_prepend_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_prepend_shortcut_label;
-			global::Doods.Framework.Android.Resource.String.abc_search_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_search_hint;
 			global::Doods.Framework.Android.Resource.String.abc_searchview_description_clear = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_clear;
 			global::Doods.Framework.Android.Resource.String.abc_searchview_description_query = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_query;
 			global::Doods.Framework.Android.Resource.String.abc_searchview_description_search = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_search;
 			global::Doods.Framework.Android.Resource.String.abc_searchview_description_submit = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_submit;
 			global::Doods.Framework.Android.Resource.String.abc_searchview_description_voice = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_voice;
+			global::Doods.Framework.Android.Resource.String.abc_search_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_search_hint;
 			global::Doods.Framework.Android.Resource.String.abc_shareactionprovider_share_with = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::Doods.Framework.Android.Resource.String.abc_shareactionprovider_share_with_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::Doods.Framework.Android.Resource.String.abc_toolbar_collapse_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Doods.Framework.Android.Resource.String.app_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.app_name;
 			global::Doods.Framework.Android.Resource.String.appbar_scrolling_view_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Doods.Framework.Android.Resource.String.app_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.app_name;
 			global::Doods.Framework.Android.Resource.String.bottom_sheet_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.bottom_sheet_behavior;
 			global::Doods.Framework.Android.Resource.String.character_counter_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.character_counter_content_description;
 			global::Doods.Framework.Android.Resource.String.character_counter_pattern = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.character_counter_pattern;
@@ -1685,8 +1679,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::Doods.Framework.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::Doods.Framework.Android.Resource.Style.Base_CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_CardView;
-			global::Doods.Framework.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
@@ -1735,37 +1729,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Doods.Framework.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
@@ -1775,6 +1738,39 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Doods.Framework.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
@@ -1782,13 +1778,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
 			global::Doods.Framework.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Doods.Framework.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V22_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Doods.Framework.Android.Resource.Style.Base_V23_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -1798,11 +1792,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
 			global::Doods.Framework.Android.Resource.Style.Base_V28_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V28_Theme_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
 			global::Doods.Framework.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
@@ -1818,13 +1812,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
 			global::Doods.Framework.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
@@ -1870,6 +1864,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView;
 			global::Doods.Framework.Android.Resource.Style.CardView_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Dark;
 			global::Doods.Framework.Android.Resource.Style.CardView_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Light;
+			global::Doods.Framework.Android.Resource.Style.collectionViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.collectionViewStyle;
+			global::Doods.Framework.Android.Resource.Style.NestedScrollBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Doods.Framework.Android.Resource.Style.Platform_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.Platform_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::Doods.Framework.Android.Resource.Style.Platform_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents;
@@ -1893,12 +1889,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
 			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Doods.Framework.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Doods.Framework.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Doods.Framework.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
 			global::Doods.Framework.Android.Resource.Style.TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat;
@@ -1988,59 +1984,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Doods.Framework.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_Design_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_IAPTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_IAPTheme;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
-			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
-			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter;
-			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
-			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat;
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
@@ -2062,6 +2005,59 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
 			global::Doods.Framework.Android.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_Design_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_IAPTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_IAPTheme;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Doods.Framework.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Doods.Framework.Android.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -2074,13 +2070,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
@@ -2162,11 +2158,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Chip_Action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_NavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
 			global::Doods.Framework.Android.Resource.Style.Widget_MaterialComponents_Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
@@ -2185,9 +2181,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
 			global::Doods.Framework.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Doods.Framework.Android.Resource.Style.collectionViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.collectionViewStyle;
-			global::Doods.Framework.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Doods.Xam.MonitorMyServer.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout;
+			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_background;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_backgroundStacked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
@@ -2217,8 +2213,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_title;
 			global::Doods.Framework.Android.Resource.Styleable.ActionBar_titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout;
-			global::Doods.Framework.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Doods.Framework.Android.Resource.Styleable.ActionMenuItemView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView;
 			global::Doods.Framework.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
 			global::Doods.Framework.Android.Resource.Styleable.ActionMenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuView;
@@ -2261,20 +2255,20 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
 			global::Doods.Framework.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_liftable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayoutStates_state_lifted = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_expanded;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
 			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Doods.Framework.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_android_src = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_android_src;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
@@ -2370,8 +2364,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
 			global::Doods.Framework.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
@@ -2467,6 +2461,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::Doods.Framework.Android.Resource.Styleable.CardView_contentPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingTop;
 			global::Doods.Framework.Android.Resource.Styleable.Chip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_checkedChip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_singleLine = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_singleSelection = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Doods.Framework.Android.Resource.Styleable.Chip_android_checkable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_checkable;
 			global::Doods.Framework.Android.Resource.Styleable.Chip_android_ellipsize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_ellipsize;
 			global::Doods.Framework.Android.Resource.Styleable.Chip_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_maxWidth;
@@ -2501,13 +2502,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.Chip_showMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_showMotionSpec;
 			global::Doods.Framework.Android.Resource.Styleable.Chip_textEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_textEndPadding;
 			global::Doods.Framework.Android.Resource.Styleable.Chip_textStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_checkedChip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_checkedChip;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacing;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_singleLine = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleLine;
-			global::Doods.Framework.Android.Resource.Styleable.ChipGroup_singleSelection = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -2519,15 +2513,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Doods.Framework.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem;
 			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Doods.Framework.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -2538,7 +2532,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_keylines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -2547,6 +2540,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Doods.Framework.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Doods.Framework.Android.Resource.Styleable.DesignTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme;
 			global::Doods.Framework.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Doods.Framework.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
@@ -2562,6 +2556,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_elevation;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_fabCustomSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
@@ -2573,18 +2569,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_showMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
 			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Doods.Framework.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Doods.Framework.Android.Resource.Styleable.FlowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout;
 			global::Doods.Framework.Android.Resource.Styleable.FlowLayout_itemSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout_itemSpacing;
 			global::Doods.Framework.Android.Resource.Styleable.FlowLayout_lineSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout_lineSpacing;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_android_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -2596,11 +2584,20 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Doods.Framework.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Doods.Framework.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Doods.Framework.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor;
+			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem;
+			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem_android_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem_android_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_centerColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_centerX = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_centerY = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -2613,9 +2610,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_startY = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_tileMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Doods.Framework.Android.Resource.Styleable.GradientColor_android_type = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem;
-			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem_android_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Doods.Framework.Android.Resource.Styleable.GradientColorItem_android_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -2624,13 +2618,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
 			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Doods.Framework.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow;
 			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::Doods.Framework.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
@@ -2747,11 +2741,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.NavigationView_itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::Doods.Framework.Android.Resource.Styleable.NavigationView_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_menu;
 			global::Doods.Framework.Android.Resource.Styleable.PopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::Doods.Framework.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Doods.Framework.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Doods.Framework.Android.Resource.Styleable.RecycleListView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView;
 			global::Doods.Framework.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Doods.Framework.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -2790,12 +2784,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::Doods.Framework.Android.Resource.Styleable.SearchView_voiceIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_voiceIcon;
 			global::Doods.Framework.Android.Resource.Styleable.Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar;
-			global::Doods.Framework.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
-			global::Doods.Framework.Android.Resource.Styleable.Snackbar_snackbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout;
 			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::Doods.Framework.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Doods.Framework.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Doods.Framework.Android.Resource.Styleable.Snackbar_snackbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Doods.Framework.Android.Resource.Styleable.Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner;
 			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_entries = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_entries;
@@ -2803,14 +2797,14 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.Spinner_android_prompt = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_prompt;
 			global::Doods.Framework.Android.Resource.Styleable.Spinner_popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_popupTheme;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable;
+			global::Doods.Framework.Android.Resource.Styleable.StateListDrawableItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Doods.Framework.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_dither = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_dither;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
 			global::Doods.Framework.Android.Resource.Styleable.StateListDrawable_android_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_visible;
-			global::Doods.Framework.Android.Resource.Styleable.StateListDrawableItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem;
-			global::Doods.Framework.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat;
 			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_android_textOff = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
 			global::Doods.Framework.Android.Resource.Styleable.SwitchCompat_android_textOn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
@@ -2928,17 +2922,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargin;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::Doods.Framework.Android.Resource.Styleable.Toolbar_titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextColor;
 			global::Doods.Framework.Android.Resource.Styleable.View = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View;
-			global::Doods.Framework.Android.Resource.Styleable.View_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_focusable;
-			global::Doods.Framework.Android.Resource.Styleable.View_android_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_theme;
-			global::Doods.Framework.Android.Resource.Styleable.View_paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingEnd;
-			global::Doods.Framework.Android.Resource.Styleable.View_paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingStart;
-			global::Doods.Framework.Android.Resource.Styleable.View_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_theme;
 			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
 			global::Doods.Framework.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
@@ -2947,6 +2936,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Doods.Framework.Android.Resource.Styleable.ViewStubCompat_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Doods.Framework.Android.Resource.Styleable.View_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_focusable;
+			global::Doods.Framework.Android.Resource.Styleable.View_android_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_theme;
+			global::Doods.Framework.Android.Resource.Styleable.View_paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingEnd;
+			global::Doods.Framework.Android.Resource.Styleable.View_paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingStart;
+			global::Doods.Framework.Android.Resource.Styleable.View_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_theme;
+			global::Doods.Framework.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Doods.Xam.MonitorMyServer.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Plugin.Fingerprint.Resource.Drawable.fingerprint_white = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.fingerprint_white;
 			global::Plugin.Fingerprint.Resource.Id.fingerprint_btnCancel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fingerprint_btnCancel;
 			global::Plugin.Fingerprint.Resource.Id.fingerprint_btnFallback = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fingerprint_btnFallback;
@@ -2964,11 +2959,26 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Animation.abc_slide_in_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_in_top;
 			global::MarcTron.Plugin.Resource.Animation.abc_slide_out_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_out_bottom;
 			global::MarcTron.Plugin.Resource.Animation.abc_slide_out_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_slide_out_top;
+			global::MarcTron.Plugin.Resource.Animation.abc_tooltip_enter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_tooltip_enter;
+			global::MarcTron.Plugin.Resource.Animation.abc_tooltip_exit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_tooltip_exit;
 			global::MarcTron.Plugin.Resource.Animation.design_bottom_sheet_slide_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::MarcTron.Plugin.Resource.Animation.design_bottom_sheet_slide_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::MarcTron.Plugin.Resource.Animation.design_snackbar_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_snackbar_in;
 			global::MarcTron.Plugin.Resource.Animation.design_snackbar_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.design_snackbar_out;
+			global::MarcTron.Plugin.Resource.Animation.EnterFromLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.EnterFromLeft;
+			global::MarcTron.Plugin.Resource.Animation.EnterFromRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.EnterFromRight;
+			global::MarcTron.Plugin.Resource.Animation.ExitToLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.ExitToLeft;
+			global::MarcTron.Plugin.Resource.Animation.ExitToRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.ExitToRight;
 			global::MarcTron.Plugin.Resource.Animator.design_appbar_state_list_animator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::MarcTron.Plugin.Resource.Animator.design_fab_hide_motion_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::MarcTron.Plugin.Resource.Animator.design_fab_show_motion_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_btn_state_list_anim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_chip_state_list_anim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_fab_hide_motion_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_fab_show_motion_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::MarcTron.Plugin.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
 			global::MarcTron.Plugin.Resource.Attribute.actionBarDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarDivider;
 			global::MarcTron.Plugin.Resource.Attribute.actionBarItemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarItemBackground;
 			global::MarcTron.Plugin.Resource.Attribute.actionBarPopupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.actionBarPopupTheme;
@@ -3028,20 +3038,33 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.backgroundTintMode;
 			global::MarcTron.Plugin.Resource.Attribute.barLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.barLength;
 			global::MarcTron.Plugin.Resource.Attribute.behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_autoHide;
+			global::MarcTron.Plugin.Resource.Attribute.behavior_fitToContents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_fitToContents;
 			global::MarcTron.Plugin.Resource.Attribute.behavior_hideable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_hideable;
 			global::MarcTron.Plugin.Resource.Attribute.behavior_overlapTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_overlapTop;
 			global::MarcTron.Plugin.Resource.Attribute.behavior_peekHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_peekHeight;
 			global::MarcTron.Plugin.Resource.Attribute.behavior_skipCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::MarcTron.Plugin.Resource.Attribute.borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderWidth;
 			global::MarcTron.Plugin.Resource.Attribute.borderlessButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::MarcTron.Plugin.Resource.Attribute.borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.borderWidth;
+			global::MarcTron.Plugin.Resource.Attribute.bottomAppBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::MarcTron.Plugin.Resource.Attribute.bottomNavigationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomNavigationStyle;
 			global::MarcTron.Plugin.Resource.Attribute.bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomSheetDialogTheme;
 			global::MarcTron.Plugin.Resource.Attribute.bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.bottomSheetStyle;
+			global::MarcTron.Plugin.Resource.Attribute.boxBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxBackgroundColor;
+			global::MarcTron.Plugin.Resource.Attribute.boxBackgroundMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxBackgroundMode;
+			global::MarcTron.Plugin.Resource.Attribute.boxCollapsedPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::MarcTron.Plugin.Resource.Attribute.boxCornerRadiusBottomEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::MarcTron.Plugin.Resource.Attribute.boxCornerRadiusBottomStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::MarcTron.Plugin.Resource.Attribute.boxCornerRadiusTopEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::MarcTron.Plugin.Resource.Attribute.boxCornerRadiusTopStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::MarcTron.Plugin.Resource.Attribute.boxStrokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxStrokeColor;
+			global::MarcTron.Plugin.Resource.Attribute.boxStrokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.boxStrokeWidth;
 			global::MarcTron.Plugin.Resource.Attribute.buttonBarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonBarNegativeButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonBarNeutralButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonBarPositiveButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonBarStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonGravity;
+			global::MarcTron.Plugin.Resource.Attribute.buttonIconDimen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonIconDimen;
 			global::MarcTron.Plugin.Resource.Attribute.buttonPanelSideLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonPanelSideLayout;
 			global::MarcTron.Plugin.Resource.Attribute.buttonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.buttonStyleSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.buttonStyleSmall;
@@ -3053,14 +3076,43 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.cardMaxElevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardMaxElevation;
 			global::MarcTron.Plugin.Resource.Attribute.cardPreventCornerOverlap = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardPreventCornerOverlap;
 			global::MarcTron.Plugin.Resource.Attribute.cardUseCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::MarcTron.Plugin.Resource.Attribute.cardViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cardViewStyle;
 			global::MarcTron.Plugin.Resource.Attribute.checkboxStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkboxStyle;
+			global::MarcTron.Plugin.Resource.Attribute.checkedChip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedChip;
+			global::MarcTron.Plugin.Resource.Attribute.checkedIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedIcon;
+			global::MarcTron.Plugin.Resource.Attribute.checkedIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedIconEnabled;
+			global::MarcTron.Plugin.Resource.Attribute.checkedIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedIconVisible;
 			global::MarcTron.Plugin.Resource.Attribute.checkedTextViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::MarcTron.Plugin.Resource.Attribute.chipBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipBackgroundColor;
+			global::MarcTron.Plugin.Resource.Attribute.chipCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipCornerRadius;
+			global::MarcTron.Plugin.Resource.Attribute.chipEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipEndPadding;
+			global::MarcTron.Plugin.Resource.Attribute.chipGroupStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipGroupStyle;
+			global::MarcTron.Plugin.Resource.Attribute.chipIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipIcon;
+			global::MarcTron.Plugin.Resource.Attribute.chipIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipIconEnabled;
+			global::MarcTron.Plugin.Resource.Attribute.chipIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipIconSize;
+			global::MarcTron.Plugin.Resource.Attribute.chipIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipIconTint;
+			global::MarcTron.Plugin.Resource.Attribute.chipIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipIconVisible;
+			global::MarcTron.Plugin.Resource.Attribute.chipMinHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipMinHeight;
+			global::MarcTron.Plugin.Resource.Attribute.chipSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipSpacing;
+			global::MarcTron.Plugin.Resource.Attribute.chipSpacingHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::MarcTron.Plugin.Resource.Attribute.chipSpacingVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipSpacingVertical;
+			global::MarcTron.Plugin.Resource.Attribute.chipStandaloneStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::MarcTron.Plugin.Resource.Attribute.chipStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipStartPadding;
+			global::MarcTron.Plugin.Resource.Attribute.chipStrokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipStrokeColor;
+			global::MarcTron.Plugin.Resource.Attribute.chipStrokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipStrokeWidth;
+			global::MarcTron.Plugin.Resource.Attribute.chipStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.chipStyle;
 			global::MarcTron.Plugin.Resource.Attribute.closeIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIcon;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconEnabled;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconEndPadding;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconSize;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconStartPadding;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconTint;
+			global::MarcTron.Plugin.Resource.Attribute.closeIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeIconVisible;
 			global::MarcTron.Plugin.Resource.Attribute.closeItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.closeItemLayout;
 			global::MarcTron.Plugin.Resource.Attribute.collapseContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseContentDescription;
-			global::MarcTron.Plugin.Resource.Attribute.collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseIcon;
 			global::MarcTron.Plugin.Resource.Attribute.collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::MarcTron.Plugin.Resource.Attribute.collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::MarcTron.Plugin.Resource.Attribute.collapseIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.collapseIcon;
 			global::MarcTron.Plugin.Resource.Attribute.color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.color;
 			global::MarcTron.Plugin.Resource.Attribute.colorAccent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorAccent;
 			global::MarcTron.Plugin.Resource.Attribute.colorBackgroundFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -3071,6 +3123,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.colorError = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorError;
 			global::MarcTron.Plugin.Resource.Attribute.colorPrimary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorPrimary;
 			global::MarcTron.Plugin.Resource.Attribute.colorPrimaryDark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorPrimaryDark;
+			global::MarcTron.Plugin.Resource.Attribute.colorSecondary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorSecondary;
 			global::MarcTron.Plugin.Resource.Attribute.colorSwitchThumbNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.colorSwitchThumbNormal;
 			global::MarcTron.Plugin.Resource.Attribute.commitIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.commitIcon;
 			global::MarcTron.Plugin.Resource.Attribute.contentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentDescription;
@@ -3087,12 +3140,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.contentPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentPaddingTop;
 			global::MarcTron.Plugin.Resource.Attribute.contentScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.contentScrim;
 			global::MarcTron.Plugin.Resource.Attribute.controlBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.controlBackground;
+			global::MarcTron.Plugin.Resource.Attribute.coordinatorLayoutStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::MarcTron.Plugin.Resource.Attribute.cornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.cornerRadius;
 			global::MarcTron.Plugin.Resource.Attribute.counterEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterEnabled;
 			global::MarcTron.Plugin.Resource.Attribute.counterMaxLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterMaxLength;
 			global::MarcTron.Plugin.Resource.Attribute.counterOverflowTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterOverflowTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.counterTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.counterTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.customNavigationLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.customNavigationLayout;
 			global::MarcTron.Plugin.Resource.Attribute.defaultQueryHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.defaultQueryHint;
+			global::MarcTron.Plugin.Resource.Attribute.dialogCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dialogCornerRadius;
 			global::MarcTron.Plugin.Resource.Attribute.dialogPreferredPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dialogPreferredPadding;
 			global::MarcTron.Plugin.Resource.Attribute.dialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dialogTheme;
 			global::MarcTron.Plugin.Resource.Attribute.displayOptions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.displayOptions;
@@ -3102,12 +3158,14 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dividerVertical;
 			global::MarcTron.Plugin.Resource.Attribute.drawableSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawableSize;
 			global::MarcTron.Plugin.Resource.Attribute.drawerArrowStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.drawerArrowStyle;
-			global::MarcTron.Plugin.Resource.Attribute.dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::MarcTron.Plugin.Resource.Attribute.dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::MarcTron.Plugin.Resource.Attribute.dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::MarcTron.Plugin.Resource.Attribute.editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextBackground;
 			global::MarcTron.Plugin.Resource.Attribute.editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextColor;
 			global::MarcTron.Plugin.Resource.Attribute.editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.editTextStyle;
 			global::MarcTron.Plugin.Resource.Attribute.elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.elevation;
+			global::MarcTron.Plugin.Resource.Attribute.enforceMaterialTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::MarcTron.Plugin.Resource.Attribute.enforceTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.enforceTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.errorEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.errorEnabled;
 			global::MarcTron.Plugin.Resource.Attribute.errorTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.errorTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
@@ -3120,12 +3178,19 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.expandedTitleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleMarginTop;
 			global::MarcTron.Plugin.Resource.Attribute.expandedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.expandedTitleTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.externalRouteEnabledDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::MarcTron.Plugin.Resource.Attribute.fabAlignmentMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabAlignmentMode;
+			global::MarcTron.Plugin.Resource.Attribute.fabCradleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabCradleMargin;
+			global::MarcTron.Plugin.Resource.Attribute.fabCradleRoundedCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::MarcTron.Plugin.Resource.Attribute.fabCradleVerticalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::MarcTron.Plugin.Resource.Attribute.fabCustomSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabCustomSize;
 			global::MarcTron.Plugin.Resource.Attribute.fabSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fabSize;
 			global::MarcTron.Plugin.Resource.Attribute.fastScrollEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollEnabled;
 			global::MarcTron.Plugin.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
 			global::MarcTron.Plugin.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
 			global::MarcTron.Plugin.Resource.Attribute.fastScrollVerticalThumbDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
 			global::MarcTron.Plugin.Resource.Attribute.fastScrollVerticalTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::MarcTron.Plugin.Resource.Attribute.firstBaselineToTopHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::MarcTron.Plugin.Resource.Attribute.floatingActionButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.floatingActionButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.font;
 			global::MarcTron.Plugin.Resource.Attribute.fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontFamily;
 			global::MarcTron.Plugin.Resource.Attribute.fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderAuthority;
@@ -3135,33 +3200,54 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderPackage;
 			global::MarcTron.Plugin.Resource.Attribute.fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontProviderQuery;
 			global::MarcTron.Plugin.Resource.Attribute.fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontStyle;
+			global::MarcTron.Plugin.Resource.Attribute.fontVariationSettings = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontVariationSettings;
 			global::MarcTron.Plugin.Resource.Attribute.fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.fontWeight;
 			global::MarcTron.Plugin.Resource.Attribute.foregroundInsidePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.foregroundInsidePadding;
 			global::MarcTron.Plugin.Resource.Attribute.gapBetweenBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.gapBetweenBars;
 			global::MarcTron.Plugin.Resource.Attribute.goIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.goIcon;
 			global::MarcTron.Plugin.Resource.Attribute.headerLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.headerLayout;
 			global::MarcTron.Plugin.Resource.Attribute.height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.height;
+			global::MarcTron.Plugin.Resource.Attribute.helperText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.helperText;
+			global::MarcTron.Plugin.Resource.Attribute.helperTextEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.helperTextEnabled;
+			global::MarcTron.Plugin.Resource.Attribute.helperTextTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::MarcTron.Plugin.Resource.Attribute.hideMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hideMotionSpec;
 			global::MarcTron.Plugin.Resource.Attribute.hideOnContentScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hideOnContentScroll;
+			global::MarcTron.Plugin.Resource.Attribute.hideOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hideOnScroll;
 			global::MarcTron.Plugin.Resource.Attribute.hintAnimationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintAnimationEnabled;
 			global::MarcTron.Plugin.Resource.Attribute.hintEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintEnabled;
 			global::MarcTron.Plugin.Resource.Attribute.hintTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hintTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.homeAsUpIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.homeAsUpIndicator;
 			global::MarcTron.Plugin.Resource.Attribute.homeLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.homeLayout;
+			global::MarcTron.Plugin.Resource.Attribute.hoveredFocusedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
 			global::MarcTron.Plugin.Resource.Attribute.icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.icon;
+			global::MarcTron.Plugin.Resource.Attribute.iconEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconEndPadding;
+			global::MarcTron.Plugin.Resource.Attribute.iconGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconGravity;
+			global::MarcTron.Plugin.Resource.Attribute.iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconifiedByDefault;
+			global::MarcTron.Plugin.Resource.Attribute.iconPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconPadding;
+			global::MarcTron.Plugin.Resource.Attribute.iconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconSize;
+			global::MarcTron.Plugin.Resource.Attribute.iconStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconStartPadding;
 			global::MarcTron.Plugin.Resource.Attribute.iconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTint;
 			global::MarcTron.Plugin.Resource.Attribute.iconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconTintMode;
-			global::MarcTron.Plugin.Resource.Attribute.iconifiedByDefault = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.iconifiedByDefault;
 			global::MarcTron.Plugin.Resource.Attribute.imageButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.imageButtonStyle;
 			global::MarcTron.Plugin.Resource.Attribute.indeterminateProgressStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.indeterminateProgressStyle;
 			global::MarcTron.Plugin.Resource.Attribute.initialActivityCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.initialActivityCount;
 			global::MarcTron.Plugin.Resource.Attribute.insetForeground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.insetForeground;
 			global::MarcTron.Plugin.Resource.Attribute.isLightTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.isLightTheme;
 			global::MarcTron.Plugin.Resource.Attribute.itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemBackground;
+			global::MarcTron.Plugin.Resource.Attribute.itemHorizontalPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::MarcTron.Plugin.Resource.Attribute.itemHorizontalTranslationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::MarcTron.Plugin.Resource.Attribute.itemIconPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemIconPadding;
+			global::MarcTron.Plugin.Resource.Attribute.itemIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemIconSize;
 			global::MarcTron.Plugin.Resource.Attribute.itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemIconTint;
 			global::MarcTron.Plugin.Resource.Attribute.itemPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemPadding;
+			global::MarcTron.Plugin.Resource.Attribute.itemSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemSpacing;
 			global::MarcTron.Plugin.Resource.Attribute.itemTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextAppearance;
+			global::MarcTron.Plugin.Resource.Attribute.itemTextAppearanceActive = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::MarcTron.Plugin.Resource.Attribute.itemTextAppearanceInactive = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextAppearanceInactive;
 			global::MarcTron.Plugin.Resource.Attribute.itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.itemTextColor;
 			global::MarcTron.Plugin.Resource.Attribute.keylines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.keylines;
+			global::MarcTron.Plugin.Resource.Attribute.labelVisibilityMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.labelVisibilityMode;
+			global::MarcTron.Plugin.Resource.Attribute.lastBaselineToBottomHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.lastBaselineToBottomHeight;
 			global::MarcTron.Plugin.Resource.Attribute.layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout;
 			global::MarcTron.Plugin.Resource.Attribute.layoutManager = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layoutManager;
 			global::MarcTron.Plugin.Resource.Attribute.layout_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_anchor;
@@ -3174,6 +3260,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.layout_keyline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_keyline;
 			global::MarcTron.Plugin.Resource.Attribute.layout_scrollFlags = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_scrollFlags;
 			global::MarcTron.Plugin.Resource.Attribute.layout_scrollInterpolator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::MarcTron.Plugin.Resource.Attribute.liftOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.liftOnScroll;
+			global::MarcTron.Plugin.Resource.Attribute.lineHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.lineHeight;
+			global::MarcTron.Plugin.Resource.Attribute.lineSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.lineSpacing;
 			global::MarcTron.Plugin.Resource.Attribute.listChoiceBackgroundIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
 			global::MarcTron.Plugin.Resource.Attribute.listDividerAlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::MarcTron.Plugin.Resource.Attribute.listItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listItemLayout;
@@ -3187,8 +3276,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.listPreferredItemPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.listPreferredItemPaddingRight;
 			global::MarcTron.Plugin.Resource.Attribute.logo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.logo;
 			global::MarcTron.Plugin.Resource.Attribute.logoDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.logoDescription;
+			global::MarcTron.Plugin.Resource.Attribute.materialButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.materialButtonStyle;
+			global::MarcTron.Plugin.Resource.Attribute.materialCardViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.materialCardViewStyle;
 			global::MarcTron.Plugin.Resource.Attribute.maxActionInlineWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.maxActionInlineWidth;
 			global::MarcTron.Plugin.Resource.Attribute.maxButtonHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.maxButtonHeight;
+			global::MarcTron.Plugin.Resource.Attribute.maxImageSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.maxImageSize;
 			global::MarcTron.Plugin.Resource.Attribute.measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.measureWithLargestChild;
 			global::MarcTron.Plugin.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
 			global::MarcTron.Plugin.Resource.Attribute.mediaRouteButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.mediaRouteButtonStyle;
@@ -3208,6 +3300,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.navigationContentDescription = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationContentDescription;
 			global::MarcTron.Plugin.Resource.Attribute.navigationIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationIcon;
 			global::MarcTron.Plugin.Resource.Attribute.navigationMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationMode;
+			global::MarcTron.Plugin.Resource.Attribute.navigationViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.navigationViewStyle;
 			global::MarcTron.Plugin.Resource.Attribute.numericModifiers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.numericModifiers;
 			global::MarcTron.Plugin.Resource.Attribute.overlapAnchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.overlapAnchor;
 			global::MarcTron.Plugin.Resource.Attribute.paddingBottomNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.paddingBottomNoButtons;
@@ -3238,6 +3331,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.reverseLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.reverseLayout;
 			global::MarcTron.Plugin.Resource.Attribute.rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.rippleColor;
 			global::MarcTron.Plugin.Resource.Attribute.scrimAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::MarcTron.Plugin.Resource.Attribute.scrimBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.scrimBackground;
 			global::MarcTron.Plugin.Resource.Attribute.scrimVisibleHeightTrigger = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
 			global::MarcTron.Plugin.Resource.Attribute.searchHintIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.searchHintIcon;
 			global::MarcTron.Plugin.Resource.Attribute.searchIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.searchIcon;
@@ -3247,9 +3341,14 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.selectableItemBackgroundBorderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
 			global::MarcTron.Plugin.Resource.Attribute.showAsAction = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showAsAction;
 			global::MarcTron.Plugin.Resource.Attribute.showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showDividers;
+			global::MarcTron.Plugin.Resource.Attribute.showMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showMotionSpec;
 			global::MarcTron.Plugin.Resource.Attribute.showText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showText;
 			global::MarcTron.Plugin.Resource.Attribute.showTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.showTitle;
 			global::MarcTron.Plugin.Resource.Attribute.singleChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::MarcTron.Plugin.Resource.Attribute.singleLine = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.singleLine;
+			global::MarcTron.Plugin.Resource.Attribute.singleSelection = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.singleSelection;
+			global::MarcTron.Plugin.Resource.Attribute.snackbarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::MarcTron.Plugin.Resource.Attribute.snackbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.snackbarStyle;
 			global::MarcTron.Plugin.Resource.Attribute.spanCount = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spanCount;
 			global::MarcTron.Plugin.Resource.Attribute.spinBars = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spinBars;
 			global::MarcTron.Plugin.Resource.Attribute.spinnerDropDownItemStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.spinnerDropDownItemStyle;
@@ -3260,8 +3359,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_above_anchor;
 			global::MarcTron.Plugin.Resource.Attribute.state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_collapsed;
 			global::MarcTron.Plugin.Resource.Attribute.state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_collapsible;
+			global::MarcTron.Plugin.Resource.Attribute.state_liftable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_liftable;
+			global::MarcTron.Plugin.Resource.Attribute.state_lifted = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.state_lifted;
 			global::MarcTron.Plugin.Resource.Attribute.statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.statusBarBackground;
 			global::MarcTron.Plugin.Resource.Attribute.statusBarScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.statusBarScrim;
+			global::MarcTron.Plugin.Resource.Attribute.strokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.strokeColor;
+			global::MarcTron.Plugin.Resource.Attribute.strokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.strokeWidth;
 			global::MarcTron.Plugin.Resource.Attribute.subMenuArrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subMenuArrow;
 			global::MarcTron.Plugin.Resource.Attribute.submitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.submitBackground;
 			global::MarcTron.Plugin.Resource.Attribute.subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.subtitle;
@@ -3276,8 +3379,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.tabBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabBackground;
 			global::MarcTron.Plugin.Resource.Attribute.tabContentStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabContentStart;
 			global::MarcTron.Plugin.Resource.Attribute.tabGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabGravity;
+			global::MarcTron.Plugin.Resource.Attribute.tabIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIconTint;
+			global::MarcTron.Plugin.Resource.Attribute.tabIconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIconTintMode;
+			global::MarcTron.Plugin.Resource.Attribute.tabIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicator;
+			global::MarcTron.Plugin.Resource.Attribute.tabIndicatorAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
 			global::MarcTron.Plugin.Resource.Attribute.tabIndicatorColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorColor;
+			global::MarcTron.Plugin.Resource.Attribute.tabIndicatorFullWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::MarcTron.Plugin.Resource.Attribute.tabIndicatorGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorGravity;
 			global::MarcTron.Plugin.Resource.Attribute.tabIndicatorHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::MarcTron.Plugin.Resource.Attribute.tabInlineLabel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabInlineLabel;
 			global::MarcTron.Plugin.Resource.Attribute.tabMaxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMaxWidth;
 			global::MarcTron.Plugin.Resource.Attribute.tabMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMinWidth;
 			global::MarcTron.Plugin.Resource.Attribute.tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabMode;
@@ -3286,20 +3396,39 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.tabPaddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingEnd;
 			global::MarcTron.Plugin.Resource.Attribute.tabPaddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingStart;
 			global::MarcTron.Plugin.Resource.Attribute.tabPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabPaddingTop;
+			global::MarcTron.Plugin.Resource.Attribute.tabRippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabRippleColor;
 			global::MarcTron.Plugin.Resource.Attribute.tabSelectedTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::MarcTron.Plugin.Resource.Attribute.tabStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabStyle;
 			global::MarcTron.Plugin.Resource.Attribute.tabTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.tabTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabTextColor;
+			global::MarcTron.Plugin.Resource.Attribute.tabUnboundedRipple = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.tabUnboundedRipple;
 			global::MarcTron.Plugin.Resource.Attribute.textAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAllCaps;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceBody1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceBody1;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceBody2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceBody2;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceButton;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceCaption = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceCaption;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline4 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline5 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceHeadline6 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceHeadline6;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceLargePopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItem;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceListItemSecondary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItemSecondary;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceListItemSmall = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceOverline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceOverline;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearancePopupMenuHeader = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceSearchResultTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::MarcTron.Plugin.Resource.Attribute.textAppearanceSmallPopupMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceSubtitle1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::MarcTron.Plugin.Resource.Attribute.textAppearanceSubtitle2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textAppearanceSubtitle2;
 			global::MarcTron.Plugin.Resource.Attribute.textColorAlertDialogListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textColorAlertDialogListItem;
 			global::MarcTron.Plugin.Resource.Attribute.textColorSearchUrl = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textColorSearchUrl;
+			global::MarcTron.Plugin.Resource.Attribute.textEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textEndPadding;
+			global::MarcTron.Plugin.Resource.Attribute.textInputStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textInputStyle;
+			global::MarcTron.Plugin.Resource.Attribute.textStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.textStartPadding;
 			global::MarcTron.Plugin.Resource.Attribute.theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.theme;
 			global::MarcTron.Plugin.Resource.Attribute.thickness = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thickness;
 			global::MarcTron.Plugin.Resource.Attribute.thumbTextPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.thumbTextPadding;
@@ -3315,9 +3444,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargin;
 			global::MarcTron.Plugin.Resource.Attribute.titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginBottom;
 			global::MarcTron.Plugin.Resource.Attribute.titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginEnd;
+			global::MarcTron.Plugin.Resource.Attribute.titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargins;
 			global::MarcTron.Plugin.Resource.Attribute.titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginStart;
 			global::MarcTron.Plugin.Resource.Attribute.titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMarginTop;
-			global::MarcTron.Plugin.Resource.Attribute.titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleMargins;
 			global::MarcTron.Plugin.Resource.Attribute.titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextAppearance;
 			global::MarcTron.Plugin.Resource.Attribute.titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextColor;
 			global::MarcTron.Plugin.Resource.Attribute.titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.titleTextStyle;
@@ -3330,7 +3459,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Attribute.track = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.track;
 			global::MarcTron.Plugin.Resource.Attribute.trackTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.trackTint;
 			global::MarcTron.Plugin.Resource.Attribute.trackTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.trackTintMode;
+			global::MarcTron.Plugin.Resource.Attribute.ttcIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.ttcIndex;
 			global::MarcTron.Plugin.Resource.Attribute.useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.useCompatPadding;
+			global::MarcTron.Plugin.Resource.Attribute.viewInflaterClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.viewInflaterClass;
 			global::MarcTron.Plugin.Resource.Attribute.voiceIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.voiceIcon;
 			global::MarcTron.Plugin.Resource.Attribute.windowActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowActionBar;
 			global::MarcTron.Plugin.Resource.Attribute.windowActionBarOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Attribute.windowActionBarOverlay;
@@ -3345,6 +3476,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Boolean.abc_action_bar_embed_tabs = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::MarcTron.Plugin.Resource.Boolean.abc_allow_stacked_button_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::MarcTron.Plugin.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::MarcTron.Plugin.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
 			global::MarcTron.Plugin.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::MarcTron.Plugin.Resource.Color.abc_background_cache_hint_selector_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::MarcTron.Plugin.Resource.Color.abc_btn_colored_borderless_text_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -3381,6 +3513,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Color.bright_foreground_inverse_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_inverse_material_light;
 			global::MarcTron.Plugin.Resource.Color.bright_foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_material_dark;
 			global::MarcTron.Plugin.Resource.Color.bright_foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.bright_foreground_material_light;
+			global::MarcTron.Plugin.Resource.Color.browser_actions_bg_grey = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.browser_actions_bg_grey;
+			global::MarcTron.Plugin.Resource.Color.browser_actions_divider_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.browser_actions_divider_color;
+			global::MarcTron.Plugin.Resource.Color.browser_actions_text_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.browser_actions_text_color;
+			global::MarcTron.Plugin.Resource.Color.browser_actions_title_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.browser_actions_title_color;
 			global::MarcTron.Plugin.Resource.Color.button_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.button_material_dark;
 			global::MarcTron.Plugin.Resource.Color.button_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.button_material_light;
 			global::MarcTron.Plugin.Resource.Color.cardview_dark_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_dark_background;
@@ -3388,6 +3524,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Color.cardview_shadow_end_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_shadow_end_color;
 			global::MarcTron.Plugin.Resource.Color.cardview_shadow_start_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.cardview_shadow_start_color;
 			global::MarcTron.Plugin.Resource.Color.design_bottom_navigation_shadow_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::MarcTron.Plugin.Resource.Color.design_default_color_primary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_default_color_primary;
+			global::MarcTron.Plugin.Resource.Color.design_default_color_primary_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_default_color_primary_dark;
 			global::MarcTron.Plugin.Resource.Color.design_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_error;
 			global::MarcTron.Plugin.Resource.Color.design_fab_shadow_end_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_shadow_end_color;
 			global::MarcTron.Plugin.Resource.Color.design_fab_shadow_mid_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.design_fab_shadow_mid_color;
@@ -3402,6 +3540,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Color.dim_foreground_disabled_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_disabled_material_light;
 			global::MarcTron.Plugin.Resource.Color.dim_foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_material_dark;
 			global::MarcTron.Plugin.Resource.Color.dim_foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.dim_foreground_material_light;
+			global::MarcTron.Plugin.Resource.Color.error_color_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.error_color_material_dark;
+			global::MarcTron.Plugin.Resource.Color.error_color_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.error_color_material_light;
 			global::MarcTron.Plugin.Resource.Color.foreground_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.foreground_material_dark;
 			global::MarcTron.Plugin.Resource.Color.foreground_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.foreground_material_light;
 			global::MarcTron.Plugin.Resource.Color.highlighted_text_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.highlighted_text_material_dark;
@@ -3418,6 +3558,32 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Color.material_grey_800 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_800;
 			global::MarcTron.Plugin.Resource.Color.material_grey_850 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_850;
 			global::MarcTron.Plugin.Resource.Color.material_grey_900 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.material_grey_900;
+			global::MarcTron.Plugin.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::MarcTron.Plugin.Resource.Color.mtrl_bottom_nav_item_tint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_bg_color_disabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_bg_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_stroke_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_text_btn_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_text_color_disabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::MarcTron.Plugin.Resource.Color.mtrl_btn_transparent_bg_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_chip_background_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_chip_background_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_chip_close_icon_tint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::MarcTron.Plugin.Resource.Color.mtrl_chip_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_chip_text_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_chip_text_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_fab_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_scrim_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_scrim_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_tabs_colored_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_tabs_icon_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::MarcTron.Plugin.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::MarcTron.Plugin.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::MarcTron.Plugin.Resource.Color.mtrl_tabs_ripple_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_textinput_default_box_stroke_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_textinput_disabled_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::MarcTron.Plugin.Resource.Color.mtrl_text_btn_text_color_selector = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::MarcTron.Plugin.Resource.Color.notification_action_color_filter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_action_color_filter;
 			global::MarcTron.Plugin.Resource.Color.notification_icon_bg_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_icon_bg_color;
 			global::MarcTron.Plugin.Resource.Color.notification_material_background_media_default_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Color.notification_material_background_media_default_color;
@@ -3460,6 +3626,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.abc_action_button_min_width_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_button_min_width_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::MarcTron.Plugin.Resource.Dimension.abc_alert_dialog_button_dimen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
 			global::MarcTron.Plugin.Resource.Dimension.abc_button_inset_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_button_inset_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_inset_vertical_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_button_padding_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
@@ -3469,6 +3636,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.abc_control_corner_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_corner_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_control_inset_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_inset_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_control_padding_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_control_padding_material;
+			global::MarcTron.Plugin.Resource.Dimension.abc_dialog_corner_radius_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_dialog_fixed_height_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
 			global::MarcTron.Plugin.Resource.Dimension.abc_dialog_fixed_height_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
 			global::MarcTron.Plugin.Resource.Dimension.abc_dialog_fixed_width_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
@@ -3516,6 +3684,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
 			global::MarcTron.Plugin.Resource.Dimension.abc_text_size_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_title_material;
 			global::MarcTron.Plugin.Resource.Dimension.abc_text_size_title_material_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::MarcTron.Plugin.Resource.Dimension.browser_actions_context_menu_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::MarcTron.Plugin.Resource.Dimension.browser_actions_context_menu_min_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
 			global::MarcTron.Plugin.Resource.Dimension.cardview_compat_inset_shadow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_compat_inset_shadow;
 			global::MarcTron.Plugin.Resource.Dimension.cardview_default_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_default_elevation;
 			global::MarcTron.Plugin.Resource.Dimension.cardview_default_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.cardview_default_radius;
@@ -3524,11 +3694,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.compat_button_padding_horizontal_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
 			global::MarcTron.Plugin.Resource.Dimension.compat_button_padding_vertical_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_button_padding_vertical_material;
 			global::MarcTron.Plugin.Resource.Dimension.compat_control_corner_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_control_corner_material;
+			global::MarcTron.Plugin.Resource.Dimension.compat_notification_large_icon_max_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::MarcTron.Plugin.Resource.Dimension.compat_notification_large_icon_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_appbar_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_appbar_elevation;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_active_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_elevation;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_item_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_item_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_bottom_navigation_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_bottom_navigation_margin;
@@ -3541,10 +3715,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.design_fab_image_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_image_size;
 			global::MarcTron.Plugin.Resource.Dimension.design_fab_size_mini = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_size_mini;
 			global::MarcTron.Plugin.Resource.Dimension.design_fab_size_normal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_size_normal;
+			global::MarcTron.Plugin.Resource.Dimension.design_fab_translation_z_hovered_focused = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
 			global::MarcTron.Plugin.Resource.Dimension.design_fab_translation_z_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_fab_translation_z_pressed;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_elevation;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_icon_padding;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::MarcTron.Plugin.Resource.Dimension.design_navigation_item_horizontal_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::MarcTron.Plugin.Resource.Dimension.design_navigation_item_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_item_icon_padding;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_max_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_max_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_padding_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_padding_bottom;
 			global::MarcTron.Plugin.Resource.Dimension.design_navigation_separator_vertical_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
@@ -3562,6 +3739,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.design_tab_scrollable_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_scrollable_min_width;
 			global::MarcTron.Plugin.Resource.Dimension.design_tab_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_text_size;
 			global::MarcTron.Plugin.Resource.Dimension.design_tab_text_size_2line = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::MarcTron.Plugin.Resource.Dimension.design_textinput_caption_translate_y = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.design_textinput_caption_translate_y;
 			global::MarcTron.Plugin.Resource.Dimension.disabled_alpha_material_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.disabled_alpha_material_dark;
 			global::MarcTron.Plugin.Resource.Dimension.disabled_alpha_material_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.disabled_alpha_material_light;
 			global::MarcTron.Plugin.Resource.Dimension.fastscroll_default_thickness = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.fastscroll_default_thickness;
@@ -3583,6 +3761,54 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
 			global::MarcTron.Plugin.Resource.Dimension.mr_dialog_fixed_width_major = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
 			global::MarcTron.Plugin.Resource.Dimension.mr_dialog_fixed_width_minor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_bottomappbar_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_disabled_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_disabled_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_focused_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_hovered_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_inset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_letter_spacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_padding_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_padding_left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_padding_right = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_padding_top = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_pressed_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_stroke_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_btn_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_btn_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_card_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_card_spacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_chip_pressed_translation_z = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_chip_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_fab_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_fab_translation_z_pressed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_navigation_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_navigation_item_icon_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_snackbar_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_padding_end = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::MarcTron.Plugin.Resource.Dimension.mtrl_toolbar_default_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.mtrl_toolbar_default_height;
 			global::MarcTron.Plugin.Resource.Dimension.notification_action_icon_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_action_icon_size;
 			global::MarcTron.Plugin.Resource.Dimension.notification_action_text_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_action_text_size;
 			global::MarcTron.Plugin.Resource.Dimension.notification_big_circle_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_big_circle_margin;
@@ -3598,6 +3824,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Dimension.notification_subtext_size = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_subtext_size;
 			global::MarcTron.Plugin.Resource.Dimension.notification_top_pad = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_top_pad;
 			global::MarcTron.Plugin.Resource.Dimension.notification_top_pad_large_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::MarcTron.Plugin.Resource.Dimension.subtitle_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::MarcTron.Plugin.Resource.Dimension.subtitle_outline_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.subtitle_outline_width;
+			global::MarcTron.Plugin.Resource.Dimension.subtitle_shadow_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::MarcTron.Plugin.Resource.Dimension.subtitle_shadow_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.subtitle_shadow_radius;
 			global::MarcTron.Plugin.Resource.Dimension.tooltip_corner_radius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_corner_radius;
 			global::MarcTron.Plugin.Resource.Dimension.tooltip_horizontal_padding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_horizontal_padding;
 			global::MarcTron.Plugin.Resource.Dimension.tooltip_margin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Dimension.tooltip_margin;
@@ -3646,6 +3876,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.abc_ic_voice_search_api_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_item_background_holo_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_item_background_holo_dark;
 			global::MarcTron.Plugin.Resource.Drawable.abc_item_background_holo_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::MarcTron.Plugin.Resource.Drawable.abc_list_divider_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_divider_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
 			global::MarcTron.Plugin.Resource.Drawable.abc_list_focused_holo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_focused_holo;
 			global::MarcTron.Plugin.Resource.Drawable.abc_list_longpressed_holo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_list_longpressed_holo;
@@ -3676,6 +3907,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::MarcTron.Plugin.Resource.Drawable.abc_tab_indicator_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_cursor_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_cursor_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
@@ -3683,20 +3919,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::MarcTron.Plugin.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::MarcTron.Plugin.Resource.Drawable.abc_textfield_search_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::MarcTron.Plugin.Resource.Drawable.abc_vector_test = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.abc_vector_test;
 			global::MarcTron.Plugin.Resource.Drawable.avd_hide_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password;
-			global::MarcTron.Plugin.Resource.Drawable.avd_hide_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_1;
-			global::MarcTron.Plugin.Resource.Drawable.avd_hide_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_2;
-			global::MarcTron.Plugin.Resource.Drawable.avd_hide_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_hide_password_3;
 			global::MarcTron.Plugin.Resource.Drawable.avd_show_password = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password;
-			global::MarcTron.Plugin.Resource.Drawable.avd_show_password_1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_1;
-			global::MarcTron.Plugin.Resource.Drawable.avd_show_password_2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_2;
-			global::MarcTron.Plugin.Resource.Drawable.avd_show_password_3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.avd_show_password_3;
 			global::MarcTron.Plugin.Resource.Drawable.design_bottom_navigation_item_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::MarcTron.Plugin.Resource.Drawable.design_fab_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_fab_background;
 			global::MarcTron.Plugin.Resource.Drawable.design_ic_visibility = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.design_ic_visibility;
@@ -3874,6 +4099,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.ic_mr_button_disconnected_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
 			global::MarcTron.Plugin.Resource.Drawable.ic_mr_button_disconnected_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
 			global::MarcTron.Plugin.Resource.Drawable.ic_mr_button_grey = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::MarcTron.Plugin.Resource.Drawable.ic_mtrl_chip_checked_black = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::MarcTron.Plugin.Resource.Drawable.ic_mtrl_chip_checked_circle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::MarcTron.Plugin.Resource.Drawable.ic_mtrl_chip_close_circle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
 			global::MarcTron.Plugin.Resource.Drawable.ic_vol_type_speaker_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
 			global::MarcTron.Plugin.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
 			global::MarcTron.Plugin.Resource.Drawable.ic_vol_type_speaker_group_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
@@ -3900,6 +4128,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.mr_media_stop_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_media_stop_light;
 			global::MarcTron.Plugin.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
 			global::MarcTron.Plugin.Resource.Drawable.mr_vol_type_audiotrack_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::MarcTron.Plugin.Resource.Drawable.mtrl_snackbar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::MarcTron.Plugin.Resource.Drawable.mtrl_tabs_default_indicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
 			global::MarcTron.Plugin.Resource.Drawable.navigation_empty_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.navigation_empty_icon;
 			global::MarcTron.Plugin.Resource.Drawable.notification_action_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_action_background;
 			global::MarcTron.Plugin.Resource.Drawable.notification_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notification_bg;
@@ -3915,13 +4145,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Drawable.notify_panel_notification_icon_bg = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::MarcTron.Plugin.Resource.Drawable.tooltip_frame_dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::MarcTron.Plugin.Resource.Drawable.tooltip_frame_light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Drawable.tooltip_frame_light;
-			global::MarcTron.Plugin.Resource.Id.ALT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ALT;
-			global::MarcTron.Plugin.Resource.Id.CTRL = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.CTRL;
-			global::MarcTron.Plugin.Resource.Id.FUNCTION = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.FUNCTION;
-			global::MarcTron.Plugin.Resource.Id.META = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.META;
-			global::MarcTron.Plugin.Resource.Id.SHIFT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SHIFT;
-			global::MarcTron.Plugin.Resource.Id.SYM = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SYM;
 			global::MarcTron.Plugin.Resource.Id.action0 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action0;
+			global::MarcTron.Plugin.Resource.Id.actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.actions;
 			global::MarcTron.Plugin.Resource.Id.action_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar;
 			global::MarcTron.Plugin.Resource.Id.action_bar_activity_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_activity_content;
 			global::MarcTron.Plugin.Resource.Id.action_bar_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_bar_container;
@@ -3939,17 +4164,24 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.action_mode_bar_stub = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_bar_stub;
 			global::MarcTron.Plugin.Resource.Id.action_mode_close_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_mode_close_button;
 			global::MarcTron.Plugin.Resource.Id.action_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.action_text;
-			global::MarcTron.Plugin.Resource.Id.actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.actions;
 			global::MarcTron.Plugin.Resource.Id.activity_chooser_view_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.activity_chooser_view_content;
 			global::MarcTron.Plugin.Resource.Id.add = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.add;
 			global::MarcTron.Plugin.Resource.Id.alertTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.alertTitle;
 			global::MarcTron.Plugin.Resource.Id.all = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.all;
+			global::MarcTron.Plugin.Resource.Id.ALT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ALT;
 			global::MarcTron.Plugin.Resource.Id.always = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.always;
 			global::MarcTron.Plugin.Resource.Id.async = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.async;
 			global::MarcTron.Plugin.Resource.Id.auto = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.auto;
 			global::MarcTron.Plugin.Resource.Id.beginning = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.beginning;
 			global::MarcTron.Plugin.Resource.Id.blocking = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.blocking;
 			global::MarcTron.Plugin.Resource.Id.bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottom;
+			global::MarcTron.Plugin.Resource.Id.bottomtab_navarea = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottomtab_navarea;
+			global::MarcTron.Plugin.Resource.Id.bottomtab_tabbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.bottomtab_tabbar;
+			global::MarcTron.Plugin.Resource.Id.browser_actions_header_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_header_text;
+			global::MarcTron.Plugin.Resource.Id.browser_actions_menu_items = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_items;
+			global::MarcTron.Plugin.Resource.Id.browser_actions_menu_item_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::MarcTron.Plugin.Resource.Id.browser_actions_menu_item_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::MarcTron.Plugin.Resource.Id.browser_actions_menu_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.browser_actions_menu_view;
 			global::MarcTron.Plugin.Resource.Id.buttonPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.buttonPanel;
 			global::MarcTron.Plugin.Resource.Id.cancel_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.cancel_action;
 			global::MarcTron.Plugin.Resource.Id.center = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.center;
@@ -3961,8 +4193,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.clip_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.clip_vertical;
 			global::MarcTron.Plugin.Resource.Id.collapseActionView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.collapseActionView;
 			global::MarcTron.Plugin.Resource.Id.container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.container;
+			global::MarcTron.Plugin.Resource.Id.content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.content;
 			global::MarcTron.Plugin.Resource.Id.contentPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.contentPanel;
 			global::MarcTron.Plugin.Resource.Id.coordinator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.coordinator;
+			global::MarcTron.Plugin.Resource.Id.CTRL = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.CTRL;
 			global::MarcTron.Plugin.Resource.Id.custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.custom;
 			global::MarcTron.Plugin.Resource.Id.customPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.customPanel;
 			global::MarcTron.Plugin.Resource.Id.decor_content_parent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.decor_content_parent;
@@ -3979,14 +4213,19 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.enterAlways = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlways;
 			global::MarcTron.Plugin.Resource.Id.enterAlwaysCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.enterAlwaysCollapsed;
 			global::MarcTron.Plugin.Resource.Id.exitUntilCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.exitUntilCollapsed;
-			global::MarcTron.Plugin.Resource.Id.expand_activities_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expand_activities_button;
 			global::MarcTron.Plugin.Resource.Id.expanded_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expanded_menu;
+			global::MarcTron.Plugin.Resource.Id.expand_activities_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.expand_activities_button;
 			global::MarcTron.Plugin.Resource.Id.fill = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill;
+			global::MarcTron.Plugin.Resource.Id.filled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.filled;
 			global::MarcTron.Plugin.Resource.Id.fill_horizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_horizontal;
 			global::MarcTron.Plugin.Resource.Id.fill_vertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.fill_vertical;
 			global::MarcTron.Plugin.Resource.Id.@fixed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.@fixed;
+			global::MarcTron.Plugin.Resource.Id.flyoutcontent_appbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.flyoutcontent_appbar;
+			global::MarcTron.Plugin.Resource.Id.flyoutcontent_recycler = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.flyoutcontent_recycler;
 			global::MarcTron.Plugin.Resource.Id.forever = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.forever;
+			global::MarcTron.Plugin.Resource.Id.FUNCTION = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.FUNCTION;
 			global::MarcTron.Plugin.Resource.Id.ghost_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.ghost_view;
+			global::MarcTron.Plugin.Resource.Id.group_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.group_divider;
 			global::MarcTron.Plugin.Resource.Id.home = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.home;
 			global::MarcTron.Plugin.Resource.Id.homeAsUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.homeAsUp;
 			global::MarcTron.Plugin.Resource.Id.icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.icon;
@@ -3996,18 +4235,37 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.info = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.info;
 			global::MarcTron.Plugin.Resource.Id.italic = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.italic;
 			global::MarcTron.Plugin.Resource.Id.item_touch_helper_previous_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::MarcTron.Plugin.Resource.Id.labeled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.labeled;
 			global::MarcTron.Plugin.Resource.Id.largeLabel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.largeLabel;
 			global::MarcTron.Plugin.Resource.Id.left = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.left;
 			global::MarcTron.Plugin.Resource.Id.line1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.line1;
 			global::MarcTron.Plugin.Resource.Id.line3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.line3;
 			global::MarcTron.Plugin.Resource.Id.listMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.listMode;
 			global::MarcTron.Plugin.Resource.Id.list_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.list_item;
+			global::MarcTron.Plugin.Resource.Id.main_appbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.main_appbar;
+			global::MarcTron.Plugin.Resource.Id.main_tablayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.main_tablayout;
+			global::MarcTron.Plugin.Resource.Id.main_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.main_toolbar;
 			global::MarcTron.Plugin.Resource.Id.masked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.masked;
 			global::MarcTron.Plugin.Resource.Id.media_actions = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.media_actions;
 			global::MarcTron.Plugin.Resource.Id.message = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.message;
+			global::MarcTron.Plugin.Resource.Id.META = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.META;
 			global::MarcTron.Plugin.Resource.Id.middle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.middle;
 			global::MarcTron.Plugin.Resource.Id.mini = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mini;
 			global::MarcTron.Plugin.Resource.Id.mr_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_art;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_checkbox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_checkbox;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_close_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_close_button;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_group_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_group_icon;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_group_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_group_name;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_list;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_meta = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_meta;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_meta_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_meta_art;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_meta_subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_meta_subtitle;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_meta_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_meta_title;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_route_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_route_icon;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_route_name;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_stop_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_stop_button;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_volume_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_volume_layout;
+			global::MarcTron.Plugin.Resource.Id.mr_cast_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_cast_volume_slider;
 			global::MarcTron.Plugin.Resource.Id.mr_chooser_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_list;
 			global::MarcTron.Plugin.Resource.Id.mr_chooser_route_desc = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_route_desc;
 			global::MarcTron.Plugin.Resource.Id.mr_chooser_route_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_chooser_route_icon;
@@ -4022,16 +4280,25 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.mr_custom_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_custom_control;
 			global::MarcTron.Plugin.Resource.Id.mr_default_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_default_control;
 			global::MarcTron.Plugin.Resource.Id.mr_dialog_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_dialog_area;
+			global::MarcTron.Plugin.Resource.Id.mr_dialog_header_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_dialog_header_name;
 			global::MarcTron.Plugin.Resource.Id.mr_expandable_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_expandable_area;
 			global::MarcTron.Plugin.Resource.Id.mr_group_expand_collapse = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_group_expand_collapse;
+			global::MarcTron.Plugin.Resource.Id.mr_group_volume_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_group_volume_route_name;
+			global::MarcTron.Plugin.Resource.Id.mr_group_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_group_volume_slider;
 			global::MarcTron.Plugin.Resource.Id.mr_media_main_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_media_main_control;
 			global::MarcTron.Plugin.Resource.Id.mr_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_name;
+			global::MarcTron.Plugin.Resource.Id.mr_picker_close_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_picker_close_button;
+			global::MarcTron.Plugin.Resource.Id.mr_picker_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_picker_list;
+			global::MarcTron.Plugin.Resource.Id.mr_picker_route_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_picker_route_icon;
+			global::MarcTron.Plugin.Resource.Id.mr_picker_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_picker_route_name;
 			global::MarcTron.Plugin.Resource.Id.mr_playback_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_playback_control;
 			global::MarcTron.Plugin.Resource.Id.mr_title_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_title_bar;
 			global::MarcTron.Plugin.Resource.Id.mr_volume_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_control;
 			global::MarcTron.Plugin.Resource.Id.mr_volume_group_list = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_group_list;
 			global::MarcTron.Plugin.Resource.Id.mr_volume_item_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_item_icon;
 			global::MarcTron.Plugin.Resource.Id.mr_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mr_volume_slider;
+			global::MarcTron.Plugin.Resource.Id.mtrl_child_content_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mtrl_child_content_container;
+			global::MarcTron.Plugin.Resource.Id.mtrl_internal_children_alpha_tag = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
 			global::MarcTron.Plugin.Resource.Id.multiply = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.multiply;
 			global::MarcTron.Plugin.Resource.Id.navigation_header_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.navigation_header_container;
 			global::MarcTron.Plugin.Resource.Id.never = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.never;
@@ -4040,6 +4307,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.notification_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_background;
 			global::MarcTron.Plugin.Resource.Id.notification_main_column = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_main_column;
 			global::MarcTron.Plugin.Resource.Id.notification_main_column_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.notification_main_column_container;
+			global::MarcTron.Plugin.Resource.Id.outline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.outline;
 			global::MarcTron.Plugin.Resource.Id.parallax = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parallax;
 			global::MarcTron.Plugin.Resource.Id.parentPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parentPanel;
 			global::MarcTron.Plugin.Resource.Id.parent_matrix = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.parent_matrix;
@@ -4055,10 +4323,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.save_scale_type = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.save_scale_type;
 			global::MarcTron.Plugin.Resource.Id.screen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.screen;
 			global::MarcTron.Plugin.Resource.Id.scroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scroll;
+			global::MarcTron.Plugin.Resource.Id.scrollable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollable;
 			global::MarcTron.Plugin.Resource.Id.scrollIndicatorDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorDown;
 			global::MarcTron.Plugin.Resource.Id.scrollIndicatorUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollIndicatorUp;
 			global::MarcTron.Plugin.Resource.Id.scrollView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollView;
-			global::MarcTron.Plugin.Resource.Id.scrollable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.scrollable;
 			global::MarcTron.Plugin.Resource.Id.search_badge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_badge;
 			global::MarcTron.Plugin.Resource.Id.search_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_bar;
 			global::MarcTron.Plugin.Resource.Id.search_button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_button;
@@ -4069,7 +4337,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.search_plate = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_plate;
 			global::MarcTron.Plugin.Resource.Id.search_src_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_src_text;
 			global::MarcTron.Plugin.Resource.Id.search_voice_btn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.search_voice_btn;
+			global::MarcTron.Plugin.Resource.Id.selected = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.selected;
 			global::MarcTron.Plugin.Resource.Id.select_dialog_listview = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.select_dialog_listview;
+			global::MarcTron.Plugin.Resource.Id.shellcontent_appbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shellcontent_appbar;
+			global::MarcTron.Plugin.Resource.Id.shellcontent_toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shellcontent_toolbar;
+			global::MarcTron.Plugin.Resource.Id.SHIFT = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SHIFT;
 			global::MarcTron.Plugin.Resource.Id.shortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.shortcut;
 			global::MarcTron.Plugin.Resource.Id.showCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showCustom;
 			global::MarcTron.Plugin.Resource.Id.showHome = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.showHome;
@@ -4078,6 +4350,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.snackbar_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snackbar_action;
 			global::MarcTron.Plugin.Resource.Id.snackbar_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snackbar_text;
 			global::MarcTron.Plugin.Resource.Id.snap = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snap;
+			global::MarcTron.Plugin.Resource.Id.snapMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.snapMargins;
 			global::MarcTron.Plugin.Resource.Id.spacer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.spacer;
 			global::MarcTron.Plugin.Resource.Id.split_action_bar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.split_action_bar;
 			global::MarcTron.Plugin.Resource.Id.src_atop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.src_atop;
@@ -4085,17 +4358,23 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.src_over = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.src_over;
 			global::MarcTron.Plugin.Resource.Id.start = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.start;
 			global::MarcTron.Plugin.Resource.Id.status_bar_latest_event_content = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.status_bar_latest_event_content;
+			global::MarcTron.Plugin.Resource.Id.stretch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.stretch;
 			global::MarcTron.Plugin.Resource.Id.submenuarrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submenuarrow;
 			global::MarcTron.Plugin.Resource.Id.submit_area = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.submit_area;
+			global::MarcTron.Plugin.Resource.Id.SYM = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.SYM;
 			global::MarcTron.Plugin.Resource.Id.tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tabMode;
 			global::MarcTron.Plugin.Resource.Id.tag_transition_group = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_transition_group;
+			global::MarcTron.Plugin.Resource.Id.tag_unhandled_key_event_manager = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::MarcTron.Plugin.Resource.Id.tag_unhandled_key_listeners = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::MarcTron.Plugin.Resource.Id.text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text;
 			global::MarcTron.Plugin.Resource.Id.text2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text2;
-			global::MarcTron.Plugin.Resource.Id.textSpacerNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoButtons;
-			global::MarcTron.Plugin.Resource.Id.textSpacerNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoTitle;
-			global::MarcTron.Plugin.Resource.Id.text_input_password_toggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text_input_password_toggle;
 			global::MarcTron.Plugin.Resource.Id.textinput_counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_counter;
 			global::MarcTron.Plugin.Resource.Id.textinput_error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_error;
+			global::MarcTron.Plugin.Resource.Id.textinput_helper_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textinput_helper_text;
+			global::MarcTron.Plugin.Resource.Id.textSpacerNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoButtons;
+			global::MarcTron.Plugin.Resource.Id.textSpacerNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textSpacerNoTitle;
+			global::MarcTron.Plugin.Resource.Id.textStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.textStart;
+			global::MarcTron.Plugin.Resource.Id.text_input_password_toggle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.text_input_password_toggle;
 			global::MarcTron.Plugin.Resource.Id.time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.time;
 			global::MarcTron.Plugin.Resource.Id.title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.title;
 			global::MarcTron.Plugin.Resource.Id.titleDividerNoCustom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.titleDividerNoCustom;
@@ -4109,6 +4388,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Id.transition_scene_layoutid_cache = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::MarcTron.Plugin.Resource.Id.transition_transform = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.transition_transform;
 			global::MarcTron.Plugin.Resource.Id.uniform = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.uniform;
+			global::MarcTron.Plugin.Resource.Id.unlabeled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.unlabeled;
 			global::MarcTron.Plugin.Resource.Id.up = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.up;
 			global::MarcTron.Plugin.Resource.Id.useLogo = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.useLogo;
 			global::MarcTron.Plugin.Resource.Id.view_offset_helper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Id.view_offset_helper;
@@ -4123,15 +4403,25 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Integer.cancel_button_image_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.cancel_button_image_alpha;
 			global::MarcTron.Plugin.Resource.Integer.config_tooltipAnimTime = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.config_tooltipAnimTime;
 			global::MarcTron.Plugin.Resource.Integer.design_snackbar_text_max_lines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::MarcTron.Plugin.Resource.Integer.design_tab_indicator_anim_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
 			global::MarcTron.Plugin.Resource.Integer.google_play_services_version = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.google_play_services_version;
 			global::MarcTron.Plugin.Resource.Integer.hide_password_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.hide_password_duration;
 			global::MarcTron.Plugin.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
 			global::MarcTron.Plugin.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
 			global::MarcTron.Plugin.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::MarcTron.Plugin.Resource.Integer.mr_update_routes_delay_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mr_update_routes_delay_ms;
+			global::MarcTron.Plugin.Resource.Integer.mtrl_btn_anim_delay_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::MarcTron.Plugin.Resource.Integer.mtrl_btn_anim_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::MarcTron.Plugin.Resource.Integer.mtrl_chip_anim_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::MarcTron.Plugin.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::MarcTron.Plugin.Resource.Integer.show_password_duration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.show_password_duration;
 			global::MarcTron.Plugin.Resource.Integer.status_bar_notification_info_maxnum = global::Doods.Xam.MonitorMyServer.Droid.Resource.Integer.status_bar_notification_info_maxnum;
 			global::MarcTron.Plugin.Resource.Interpolator.mr_fast_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mr_fast_out_slow_in;
 			global::MarcTron.Plugin.Resource.Interpolator.mr_linear_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::MarcTron.Plugin.Resource.Interpolator.mtrl_fast_out_linear_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::MarcTron.Plugin.Resource.Interpolator.mtrl_fast_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::MarcTron.Plugin.Resource.Interpolator.mtrl_linear = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mtrl_linear;
+			global::MarcTron.Plugin.Resource.Interpolator.mtrl_linear_out_slow_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
 			global::MarcTron.Plugin.Resource.Layout.abc_action_bar_title_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_bar_title_item;
 			global::MarcTron.Plugin.Resource.Layout.abc_action_bar_up_container = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_bar_up_container;
 			global::MarcTron.Plugin.Resource.Layout.abc_action_menu_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_action_menu_item_layout;
@@ -4143,6 +4433,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Layout.abc_alert_dialog_button_bar_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
 			global::MarcTron.Plugin.Resource.Layout.abc_alert_dialog_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_material;
 			global::MarcTron.Plugin.Resource.Layout.abc_alert_dialog_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::MarcTron.Plugin.Resource.Layout.abc_cascading_menu_item_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_cascading_menu_item_layout;
 			global::MarcTron.Plugin.Resource.Layout.abc_dialog_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_dialog_title_material;
 			global::MarcTron.Plugin.Resource.Layout.abc_expanded_menu_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_expanded_menu_layout;
 			global::MarcTron.Plugin.Resource.Layout.abc_list_menu_item_checkbox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_list_menu_item_checkbox;
@@ -4158,6 +4449,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
 			global::MarcTron.Plugin.Resource.Layout.abc_search_view = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_search_view;
 			global::MarcTron.Plugin.Resource.Layout.abc_select_dialog_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_select_dialog_material;
+			global::MarcTron.Plugin.Resource.Layout.abc_tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.abc_tooltip;
+			global::MarcTron.Plugin.Resource.Layout.BottomTabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.BottomTabLayout;
+			global::MarcTron.Plugin.Resource.Layout.browser_actions_context_menu_page = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::MarcTron.Plugin.Resource.Layout.browser_actions_context_menu_row = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.browser_actions_context_menu_row;
 			global::MarcTron.Plugin.Resource.Layout.design_bottom_navigation_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::MarcTron.Plugin.Resource.Layout.design_bottom_sheet_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::MarcTron.Plugin.Resource.Layout.design_layout_snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_layout_snackbar;
@@ -4172,12 +4467,23 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Layout.design_navigation_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_menu;
 			global::MarcTron.Plugin.Resource.Layout.design_navigation_menu_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_navigation_menu_item;
 			global::MarcTron.Plugin.Resource.Layout.design_text_input_password_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.design_text_input_password_icon;
+			global::MarcTron.Plugin.Resource.Layout.FlyoutContent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.FlyoutContent;
+			global::MarcTron.Plugin.Resource.Layout.mr_cast_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_cast_dialog;
+			global::MarcTron.Plugin.Resource.Layout.mr_cast_group_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_cast_group_item;
+			global::MarcTron.Plugin.Resource.Layout.mr_cast_group_volume_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_cast_group_volume_item;
+			global::MarcTron.Plugin.Resource.Layout.mr_cast_media_metadata = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_cast_media_metadata;
+			global::MarcTron.Plugin.Resource.Layout.mr_cast_route_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_cast_route_item;
 			global::MarcTron.Plugin.Resource.Layout.mr_chooser_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_chooser_dialog;
 			global::MarcTron.Plugin.Resource.Layout.mr_chooser_list_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_chooser_list_item;
 			global::MarcTron.Plugin.Resource.Layout.mr_controller_material_dialog_b = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_controller_material_dialog_b;
 			global::MarcTron.Plugin.Resource.Layout.mr_controller_volume_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_controller_volume_item;
+			global::MarcTron.Plugin.Resource.Layout.mr_dialog_header_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_dialog_header_item;
+			global::MarcTron.Plugin.Resource.Layout.mr_picker_dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_picker_dialog;
+			global::MarcTron.Plugin.Resource.Layout.mr_picker_route_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_picker_route_item;
 			global::MarcTron.Plugin.Resource.Layout.mr_playback_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_playback_control;
 			global::MarcTron.Plugin.Resource.Layout.mr_volume_control = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mr_volume_control;
+			global::MarcTron.Plugin.Resource.Layout.mtrl_layout_snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::MarcTron.Plugin.Resource.Layout.mtrl_layout_snackbar_include = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::MarcTron.Plugin.Resource.Layout.notification_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_action;
 			global::MarcTron.Plugin.Resource.Layout.notification_action_tombstone = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_action_tombstone;
 			global::MarcTron.Plugin.Resource.Layout.notification_media_action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_media_action;
@@ -4193,16 +4499,18 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Layout.notification_template_media_custom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_media_custom;
 			global::MarcTron.Plugin.Resource.Layout.notification_template_part_chronometer = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::MarcTron.Plugin.Resource.Layout.notification_template_part_time = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.notification_template_part_time;
+			global::MarcTron.Plugin.Resource.Layout.RootLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.RootLayout;
 			global::MarcTron.Plugin.Resource.Layout.select_dialog_item_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_item_material;
 			global::MarcTron.Plugin.Resource.Layout.select_dialog_multichoice_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::MarcTron.Plugin.Resource.Layout.select_dialog_singlechoice_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::MarcTron.Plugin.Resource.Layout.ShellContent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.ShellContent;
 			global::MarcTron.Plugin.Resource.Layout.support_simple_spinner_dropdown_item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::MarcTron.Plugin.Resource.String.abc_action_bar_home_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_bar_home_description;
 			global::MarcTron.Plugin.Resource.String.abc_action_bar_up_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_bar_up_description;
 			global::MarcTron.Plugin.Resource.String.abc_action_menu_overflow_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::MarcTron.Plugin.Resource.String.abc_action_mode_done = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_action_mode_done;
-			global::MarcTron.Plugin.Resource.String.abc_activity_chooser_view_see_all = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::MarcTron.Plugin.Resource.String.abc_activitychooserview_choose_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::MarcTron.Plugin.Resource.String.abc_activity_chooser_view_see_all = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::MarcTron.Plugin.Resource.String.abc_capital_off = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_off;
 			global::MarcTron.Plugin.Resource.String.abc_capital_on = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_capital_on;
 			global::MarcTron.Plugin.Resource.String.abc_font_family_body_1_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_body_1_material;
@@ -4217,23 +4525,38 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.String.abc_font_family_menu_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_menu_material;
 			global::MarcTron.Plugin.Resource.String.abc_font_family_subhead_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_subhead_material;
 			global::MarcTron.Plugin.Resource.String.abc_font_family_title_material = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_font_family_title_material;
-			global::MarcTron.Plugin.Resource.String.abc_search_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_search_hint;
+			global::MarcTron.Plugin.Resource.String.abc_menu_alt_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_ctrl_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_delete_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_enter_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_function_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_meta_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_shift_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_space_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_menu_sym_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::MarcTron.Plugin.Resource.String.abc_prepend_shortcut_label = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_prepend_shortcut_label;
 			global::MarcTron.Plugin.Resource.String.abc_searchview_description_clear = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_clear;
 			global::MarcTron.Plugin.Resource.String.abc_searchview_description_query = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_query;
 			global::MarcTron.Plugin.Resource.String.abc_searchview_description_search = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_search;
 			global::MarcTron.Plugin.Resource.String.abc_searchview_description_submit = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_submit;
 			global::MarcTron.Plugin.Resource.String.abc_searchview_description_voice = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_searchview_description_voice;
+			global::MarcTron.Plugin.Resource.String.abc_search_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_search_hint;
 			global::MarcTron.Plugin.Resource.String.abc_shareactionprovider_share_with = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::MarcTron.Plugin.Resource.String.abc_shareactionprovider_share_with_application = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::MarcTron.Plugin.Resource.String.abc_toolbar_collapse_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.abc_toolbar_collapse_description;
 			global::MarcTron.Plugin.Resource.String.appbar_scrolling_view_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.appbar_scrolling_view_behavior;
 			global::MarcTron.Plugin.Resource.String.bottom_sheet_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.bottom_sheet_behavior;
+			global::MarcTron.Plugin.Resource.String.character_counter_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.character_counter_content_description;
 			global::MarcTron.Plugin.Resource.String.character_counter_pattern = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.character_counter_pattern;
 			global::MarcTron.Plugin.Resource.String.common_google_play_services_unknown_issue = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.common_google_play_services_unknown_issue;
+			global::MarcTron.Plugin.Resource.String.fab_transformation_scrim_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::MarcTron.Plugin.Resource.String.fab_transformation_sheet_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::MarcTron.Plugin.Resource.String.hide_bottom_view_on_scroll_behavior = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::MarcTron.Plugin.Resource.String.mr_button_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_button_content_description;
 			global::MarcTron.Plugin.Resource.String.mr_cast_button_connected = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_connected;
 			global::MarcTron.Plugin.Resource.String.mr_cast_button_connecting = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_connecting;
 			global::MarcTron.Plugin.Resource.String.mr_cast_button_disconnected = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_button_disconnected;
+			global::MarcTron.Plugin.Resource.String.mr_cast_dialog_title_view_placeholder = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_cast_dialog_title_view_placeholder;
 			global::MarcTron.Plugin.Resource.String.mr_chooser_searching = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_chooser_searching;
 			global::MarcTron.Plugin.Resource.String.mr_chooser_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_chooser_title;
 			global::MarcTron.Plugin.Resource.String.mr_controller_album_art = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_album_art;
@@ -4249,8 +4572,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.String.mr_controller_stop = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_stop;
 			global::MarcTron.Plugin.Resource.String.mr_controller_stop_casting = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_stop_casting;
 			global::MarcTron.Plugin.Resource.String.mr_controller_volume_slider = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_controller_volume_slider;
+			global::MarcTron.Plugin.Resource.String.mr_dialog_device_header = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_dialog_device_header;
+			global::MarcTron.Plugin.Resource.String.mr_dialog_route_header = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_dialog_route_header;
 			global::MarcTron.Plugin.Resource.String.mr_system_route_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_system_route_name;
 			global::MarcTron.Plugin.Resource.String.mr_user_route_category_name = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mr_user_route_category_name;
+			global::MarcTron.Plugin.Resource.String.mtrl_chip_close_icon_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.mtrl_chip_close_icon_content_description;
 			global::MarcTron.Plugin.Resource.String.password_toggle_content_description = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.password_toggle_content_description;
 			global::MarcTron.Plugin.Resource.String.path_password_eye = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_eye;
 			global::MarcTron.Plugin.Resource.String.path_password_eye_mask_strike_through = global::Doods.Xam.MonitorMyServer.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -4270,8 +4596,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::MarcTron.Plugin.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::MarcTron.Plugin.Resource.Style.Base_CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_CardView;
-			global::MarcTron.Plugin.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::MarcTron.Plugin.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
@@ -4320,20 +4646,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::MarcTron.Plugin.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
@@ -4341,11 +4653,53 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::MarcTron.Plugin.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V21_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::MarcTron.Plugin.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::MarcTron.Plugin.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V22_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::MarcTron.Plugin.Resource.Style.Base_V23_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -4353,11 +4707,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_V26_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Theme_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::MarcTron.Plugin.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::MarcTron.Plugin.Resource.Style.Base_V28_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::MarcTron.Plugin.Resource.Style.Base_V28_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::MarcTron.Plugin.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::MarcTron.Plugin.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
 			global::MarcTron.Plugin.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
@@ -4373,13 +4729,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
@@ -4419,11 +4775,18 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
 			global::MarcTron.Plugin.Resource.Style.Base_Widget_Design_TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::MarcTron.Plugin.Resource.Style.Base_Widget_MaterialComponents_Chip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::MarcTron.Plugin.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::MarcTron.Plugin.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
 			global::MarcTron.Plugin.Resource.Style.CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView;
 			global::MarcTron.Plugin.Resource.Style.CardView_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Dark;
 			global::MarcTron.Plugin.Resource.Style.CardView_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Light;
 			global::MarcTron.Plugin.Resource.Style.Platform_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Platform_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::MarcTron.Plugin.Resource.Style.Platform_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents;
+			global::MarcTron.Plugin.Resource.Style.Platform_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Platform_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::MarcTron.Plugin.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
 			global::MarcTron.Plugin.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::MarcTron.Plugin.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
@@ -4437,13 +4800,16 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
 			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::MarcTron.Plugin.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::MarcTron.Plugin.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::MarcTron.Plugin.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_AppCompat;
@@ -4508,34 +4874,71 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Counter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Counter;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Error = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_HelperText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_HelperText;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Hint;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Design_Tab = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Caption = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Chip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Overline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::MarcTron.Plugin.Resource.Style.TextAppearance_MaterialComponents_Tab = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_MediaRouter_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::MarcTron.Plugin.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_AppCompat_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_Design = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design;
@@ -4545,19 +4948,31 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Theme_Design_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_Design_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_Design_NoActionBar;
 			global::MarcTron.Plugin.Resource.Style.Theme_IAPTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_IAPTheme;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_CompactMenu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_NoActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::MarcTron.Plugin.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::MarcTron.Plugin.Resource.Style.Theme_MediaRouter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter;
 			global::MarcTron.Plugin.Resource.Style.Theme_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::MarcTron.Plugin.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
 			global::MarcTron.Plugin.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::MarcTron.Plugin.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::MarcTron.Plugin.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -4570,13 +4985,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button_Borderless = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_Button_Small = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ButtonBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
 			global::MarcTron.Plugin.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
@@ -4642,9 +5057,48 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Style.Widget_Design_Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_Snackbar;
 			global::MarcTron.Plugin.Resource.Style.Widget_Design_TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_TabLayout;
 			global::MarcTron.Plugin.Resource.Style.Widget_Design_TextInputLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Chip_Action = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_NavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TabLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::MarcTron.Plugin.Resource.Style.Widget_MaterialComponents_Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
 			global::MarcTron.Plugin.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
 			global::MarcTron.Plugin.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::MarcTron.Plugin.Resource.Style.Widget_Support_CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar;
+			global::MarcTron.Plugin.Resource.Styleable.ActionBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout;
+			global::MarcTron.Plugin.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_background;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_backgroundSplit = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_backgroundStacked = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
@@ -4674,8 +5128,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_subtitleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_title;
 			global::MarcTron.Plugin.Resource.Styleable.ActionBar_titleTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::MarcTron.Plugin.Resource.Styleable.ActionBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout;
-			global::MarcTron.Plugin.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::MarcTron.Plugin.Resource.Styleable.ActionMenuItemView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView;
 			global::MarcTron.Plugin.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
 			global::MarcTron.Plugin.Resource.Styleable.ActionMenuView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ActionMenuView;
@@ -4695,24 +5147,43 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.AdsAttrs_adUnitId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AdsAttrs_adUnitId;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_buttonIconDimen = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_listItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_listItemLayout;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_listLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_listLayout;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_showTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_showTitle;
 			global::MarcTron.Plugin.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableTransition = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::MarcTron.Plugin.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_liftable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_lifted = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_background;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_elevation;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_expanded = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::MarcTron.Plugin.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
 			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::MarcTron.Plugin.Resource.Styleable.AppBarLayout_liftOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatImageView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatImageView_android_src = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_android_src;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatImageView_srcCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
@@ -4738,7 +5209,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_lineHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTextView_textAllCaps = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
@@ -4800,12 +5274,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_controlBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dividerVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_editTextBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_editTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
@@ -4850,6 +5325,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowActionBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
@@ -4860,13 +5336,26 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
 			global::MarcTron.Plugin.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_fabCradleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::MarcTron.Plugin.Resource.Styleable.BottomAppBar_hideOnScroll = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_elevation;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
 			global::MarcTron.Plugin.Resource.Styleable.BottomNavigationView_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomNavigationView_menu;
 			global::MarcTron.Plugin.Resource.Styleable.BottomSheetBehavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::MarcTron.Plugin.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
 			global::MarcTron.Plugin.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
 			global::MarcTron.Plugin.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
 			global::MarcTron.Plugin.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
@@ -4886,6 +5375,48 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.CardView_contentPaddingLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingLeft;
 			global::MarcTron.Plugin.Resource.Styleable.CardView_contentPaddingRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::MarcTron.Plugin.Resource.Styleable.CardView_contentPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::MarcTron.Plugin.Resource.Styleable.Chip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_checkedChip = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_chipSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_chipSpacingVertical = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_singleLine = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::MarcTron.Plugin.Resource.Styleable.ChipGroup_singleSelection = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_android_checkable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_checkable;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_android_ellipsize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_android_text = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_text;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_android_textAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_checkedIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_checkedIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_checkedIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipCornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipIcon;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipMinHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipStrokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_chipStrokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIcon;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_closeIconVisible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_hideMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_iconEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_iconStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_rippleColor;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_showMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_textEndPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::MarcTron.Plugin.Resource.Styleable.Chip_textStartPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Chip_textStartPadding;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -4897,15 +5428,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_title = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::MarcTron.Plugin.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::MarcTron.Plugin.Resource.Styleable.ColorStateListItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem;
 			global::MarcTron.Plugin.Resource.Styleable.ColorStateListItem_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::MarcTron.Plugin.Resource.Styleable.ColorStateListItem_android_alpha = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -4916,7 +5447,6 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.CompoundButton_buttonTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_keylines = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -4925,6 +5455,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::MarcTron.Plugin.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::MarcTron.Plugin.Resource.Styleable.DesignTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme;
 			global::MarcTron.Plugin.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::MarcTron.Plugin.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
@@ -4940,32 +5471,60 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton;
 			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_fabSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
 			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
 			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_borderWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_fabCustomSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_fabSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_maxImageSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_showMotionSpec = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::MarcTron.Plugin.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::MarcTron.Plugin.Resource.Styleable.FlowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout;
+			global::MarcTron.Plugin.Resource.Styleable.FlowLayout_itemSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::MarcTron.Plugin.Resource.Styleable.FlowLayout_lineSpacing = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FlowLayout_lineSpacing;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_ttcIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderAuthority = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderCerts = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderPackage = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
 			global::MarcTron.Plugin.Resource.Styleable.FontFamily_fontProviderQuery = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_font;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_font = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_font;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_fontStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::MarcTron.Plugin.Resource.Styleable.FontFamilyFont_fontWeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::MarcTron.Plugin.Resource.Styleable.ForegroundLinearLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::MarcTron.Plugin.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::MarcTron.Plugin.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::MarcTron.Plugin.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColorItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColorItem_android_color = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColorItem_android_offset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_centerColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_centerX = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_centerY = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_endColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_endX = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_endY = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_gradientRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_startColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_startX = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_startY = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_tileMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::MarcTron.Plugin.Resource.Styleable.GradientColor_android_type = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.GradientColor_android_type;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -4974,16 +5533,69 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_divider = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_Layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
 			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::MarcTron.Plugin.Resource.Styleable.LinearLayoutCompat_showDividers = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::MarcTron.Plugin.Resource.Styleable.ListPopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow;
 			global::MarcTron.Plugin.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::MarcTron.Plugin.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_android_insetBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_android_insetLeft = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_android_insetRight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_android_insetTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_backgroundTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_cornerRadius = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_icon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_icon;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_iconGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_iconPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_iconSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_iconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_iconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_rippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_strokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialButton_strokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialCardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialCardView;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialCardView_strokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialCardView_strokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::MarcTron.Plugin.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
 			global::MarcTron.Plugin.Resource.Styleable.MediaRouteButton = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton;
 			global::MarcTron.Plugin.Resource.Styleable.MediaRouteButton_android_minHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
 			global::MarcTron.Plugin.Resource.Styleable.MediaRouteButton_android_minWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
@@ -5037,16 +5649,18 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_elevation;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_headerLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_headerLayout;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemHorizontalPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemIconPadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemIconPadding;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemIconTint;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_itemTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::MarcTron.Plugin.Resource.Styleable.NavigationView_menu = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.NavigationView_menu;
 			global::MarcTron.Plugin.Resource.Styleable.PopupWindow = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow;
+			global::MarcTron.Plugin.Resource.Styleable.PopupWindowBackgroundState = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::MarcTron.Plugin.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::MarcTron.Plugin.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::MarcTron.Plugin.Resource.Styleable.PopupWindow_android_popupBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::MarcTron.Plugin.Resource.Styleable.PopupWindow_overlapAnchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::MarcTron.Plugin.Resource.Styleable.PopupWindowBackgroundState = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::MarcTron.Plugin.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::MarcTron.Plugin.Resource.Styleable.RecycleListView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView;
 			global::MarcTron.Plugin.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::MarcTron.Plugin.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -5084,16 +5698,28 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.SearchView_submitBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_submitBackground;
 			global::MarcTron.Plugin.Resource.Styleable.SearchView_suggestionRowLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::MarcTron.Plugin.Resource.Styleable.SearchView_voiceIcon = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::MarcTron.Plugin.Resource.Styleable.Snackbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar;
 			global::MarcTron.Plugin.Resource.Styleable.SnackbarLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout;
 			global::MarcTron.Plugin.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::MarcTron.Plugin.Resource.Styleable.SnackbarLayout_elevation = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::MarcTron.Plugin.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::MarcTron.Plugin.Resource.Styleable.Snackbar_snackbarButtonStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::MarcTron.Plugin.Resource.Styleable.Snackbar_snackbarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner_android_dropDownWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner_android_entries = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_entries;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner_android_popupBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_popupBackground;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner_android_prompt = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_android_prompt;
 			global::MarcTron.Plugin.Resource.Styleable.Spinner_popupTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawableItem = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawableItem_android_drawable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_constantSize = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_dither = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_variablePadding = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::MarcTron.Plugin.Resource.Styleable.StateListDrawable_android_visible = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.StateListDrawable_android_visible;
 			global::MarcTron.Plugin.Resource.Styleable.SwitchCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat;
 			global::MarcTron.Plugin.Resource.Styleable.SwitchCompat_android_textOff = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
 			global::MarcTron.Plugin.Resource.Styleable.SwitchCompat_android_textOn = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
@@ -5117,8 +5743,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabBackground = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabBackground;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabContentStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabContentStart;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIconTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIconTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicator = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicatorColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicatorGravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabInlineLabel = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabMaxWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabMinWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMinWidth;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabMode;
@@ -5127,9 +5760,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabPaddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabPaddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabRippleColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabRippleColor;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::MarcTron.Plugin.Resource.Styleable.TabLayout_tabUnboundedRipple = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
 			global::MarcTron.Plugin.Resource.Styleable.TextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.TextAppearance_android_fontFamily = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
 			global::MarcTron.Plugin.Resource.Styleable.TextAppearance_android_shadowColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
@@ -5147,12 +5782,24 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_android_hint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_android_textColorHint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxStrokeColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_counterEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_counterMaxLength = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_errorEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_helperText = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_helperTextEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_hintEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
@@ -5161,6 +5808,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
 			global::MarcTron.Plugin.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::MarcTron.Plugin.Resource.Styleable.ThemeEnforcement = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ThemeEnforcement;
+			global::MarcTron.Plugin.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::MarcTron.Plugin.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::MarcTron.Plugin.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_android_gravity = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_android_gravity;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_android_minHeight = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_android_minHeight;
@@ -5186,17 +5837,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMargin = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargin;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMarginBottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMarginEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMarginStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMarginTop = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleMargins = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleTextAppearance = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::MarcTron.Plugin.Resource.Styleable.Toolbar_titleTextColor = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.Toolbar_titleTextColor;
 			global::MarcTron.Plugin.Resource.Styleable.View = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View;
-			global::MarcTron.Plugin.Resource.Styleable.View_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_focusable;
-			global::MarcTron.Plugin.Resource.Styleable.View_android_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_theme;
-			global::MarcTron.Plugin.Resource.Styleable.View_paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingEnd;
-			global::MarcTron.Plugin.Resource.Styleable.View_paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingStart;
-			global::MarcTron.Plugin.Resource.Styleable.View_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_theme;
 			global::MarcTron.Plugin.Resource.Styleable.ViewBackgroundHelper = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::MarcTron.Plugin.Resource.Styleable.ViewBackgroundHelper_android_background = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
 			global::MarcTron.Plugin.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
@@ -5205,6 +5851,11 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::MarcTron.Plugin.Resource.Styleable.ViewStubCompat_android_id = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::MarcTron.Plugin.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::MarcTron.Plugin.Resource.Styleable.ViewStubCompat_android_layout = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::MarcTron.Plugin.Resource.Styleable.View_android_focusable = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_focusable;
+			global::MarcTron.Plugin.Resource.Styleable.View_android_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_android_theme;
+			global::MarcTron.Plugin.Resource.Styleable.View_paddingEnd = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingEnd;
+			global::MarcTron.Plugin.Resource.Styleable.View_paddingStart = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_paddingStart;
+			global::MarcTron.Plugin.Resource.Styleable.View_theme = global::Doods.Xam.MonitorMyServer.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Svg.Droid.Resource.Animation.abc_fade_in = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Svg.Droid.Resource.Animation.abc_fade_out = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Svg.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Doods.Xam.MonitorMyServer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -8978,6 +9629,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.NestedScrollBarStyle = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_MaterialComponents = global::Doods.Xam.MonitorMyServer.Droid.Resource.Style.Platform_MaterialComponents;
@@ -15229,1556 +15881,1559 @@ namespace Doods.Xam.MonitorMyServer.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f0b009a
-			public const int AlertDialog_AppCompat = 2131427482;
-			
 			// aapt resource value: 0x7f0b009b
-			public const int AlertDialog_AppCompat_Light = 2131427483;
+			public const int AlertDialog_AppCompat = 2131427483;
 			
 			// aapt resource value: 0x7f0b009c
-			public const int Animation_AppCompat_Dialog = 2131427484;
+			public const int AlertDialog_AppCompat_Light = 2131427484;
 			
 			// aapt resource value: 0x7f0b009d
-			public const int Animation_AppCompat_DropDownUp = 2131427485;
+			public const int Animation_AppCompat_Dialog = 2131427485;
 			
 			// aapt resource value: 0x7f0b009e
-			public const int Animation_AppCompat_Tooltip = 2131427486;
-			
-			// aapt resource value: 0x7f0b016f
-			public const int Animation_Design_BottomSheetDialog = 2131427695;
-			
-			// aapt resource value: 0x7f0b0203
-			public const int AppCompatDialogStyle = 2131427843;
+			public const int Animation_AppCompat_DropDownUp = 2131427486;
 			
 			// aapt resource value: 0x7f0b009f
-			public const int Base_AlertDialog_AppCompat = 2131427487;
-			
-			// aapt resource value: 0x7f0b00a0
-			public const int Base_AlertDialog_AppCompat_Light = 2131427488;
-			
-			// aapt resource value: 0x7f0b00a1
-			public const int Base_Animation_AppCompat_Dialog = 2131427489;
-			
-			// aapt resource value: 0x7f0b00a2
-			public const int Base_Animation_AppCompat_DropDownUp = 2131427490;
-			
-			// aapt resource value: 0x7f0b00a3
-			public const int Base_Animation_AppCompat_Tooltip = 2131427491;
-			
-			// aapt resource value: 0x7f0b000e
-			public const int Base_CardView = 2131427342;
-			
-			// aapt resource value: 0x7f0b00a4
-			public const int Base_DialogWindowTitle_AppCompat = 2131427492;
-			
-			// aapt resource value: 0x7f0b00a5
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131427493;
-			
-			// aapt resource value: 0x7f0b002e
-			public const int Base_TextAppearance_AppCompat = 2131427374;
-			
-			// aapt resource value: 0x7f0b002f
-			public const int Base_TextAppearance_AppCompat_Body1 = 2131427375;
-			
-			// aapt resource value: 0x7f0b0030
-			public const int Base_TextAppearance_AppCompat_Body2 = 2131427376;
-			
-			// aapt resource value: 0x7f0b0031
-			public const int Base_TextAppearance_AppCompat_Button = 2131427377;
-			
-			// aapt resource value: 0x7f0b0032
-			public const int Base_TextAppearance_AppCompat_Caption = 2131427378;
-			
-			// aapt resource value: 0x7f0b0033
-			public const int Base_TextAppearance_AppCompat_Display1 = 2131427379;
-			
-			// aapt resource value: 0x7f0b0034
-			public const int Base_TextAppearance_AppCompat_Display2 = 2131427380;
-			
-			// aapt resource value: 0x7f0b0035
-			public const int Base_TextAppearance_AppCompat_Display3 = 2131427381;
-			
-			// aapt resource value: 0x7f0b0036
-			public const int Base_TextAppearance_AppCompat_Display4 = 2131427382;
-			
-			// aapt resource value: 0x7f0b0037
-			public const int Base_TextAppearance_AppCompat_Headline = 2131427383;
-			
-			// aapt resource value: 0x7f0b0038
-			public const int Base_TextAppearance_AppCompat_Inverse = 2131427384;
-			
-			// aapt resource value: 0x7f0b0039
-			public const int Base_TextAppearance_AppCompat_Large = 2131427385;
-			
-			// aapt resource value: 0x7f0b003a
-			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131427386;
-			
-			// aapt resource value: 0x7f0b003b
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427387;
-			
-			// aapt resource value: 0x7f0b003c
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427388;
-			
-			// aapt resource value: 0x7f0b003d
-			public const int Base_TextAppearance_AppCompat_Medium = 2131427389;
-			
-			// aapt resource value: 0x7f0b003e
-			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131427390;
-			
-			// aapt resource value: 0x7f0b003f
-			public const int Base_TextAppearance_AppCompat_Menu = 2131427391;
-			
-			// aapt resource value: 0x7f0b00a6
-			public const int Base_TextAppearance_AppCompat_SearchResult = 2131427494;
-			
-			// aapt resource value: 0x7f0b0040
-			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131427392;
-			
-			// aapt resource value: 0x7f0b0041
-			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131427393;
-			
-			// aapt resource value: 0x7f0b0042
-			public const int Base_TextAppearance_AppCompat_Small = 2131427394;
-			
-			// aapt resource value: 0x7f0b0043
-			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131427395;
-			
-			// aapt resource value: 0x7f0b0044
-			public const int Base_TextAppearance_AppCompat_Subhead = 2131427396;
-			
-			// aapt resource value: 0x7f0b00a7
-			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131427495;
-			
-			// aapt resource value: 0x7f0b0045
-			public const int Base_TextAppearance_AppCompat_Title = 2131427397;
-			
-			// aapt resource value: 0x7f0b00a8
-			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131427496;
-			
-			// aapt resource value: 0x7f0b00a9
-			public const int Base_TextAppearance_AppCompat_Tooltip = 2131427497;
-			
-			// aapt resource value: 0x7f0b0089
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427465;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427398;
-			
-			// aapt resource value: 0x7f0b0047
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427399;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427400;
-			
-			// aapt resource value: 0x7f0b0049
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427401;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427402;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427403;
-			
-			// aapt resource value: 0x7f0b004c
-			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131427404;
-			
-			// aapt resource value: 0x7f0b0090
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131427472;
-			
-			// aapt resource value: 0x7f0b0091
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131427473;
-			
-			// aapt resource value: 0x7f0b008a
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131427466;
-			
-			// aapt resource value: 0x7f0b00aa
-			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131427498;
-			
-			// aapt resource value: 0x7f0b004d
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131427405;
-			
-			// aapt resource value: 0x7f0b004e
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427406;
-			
-			// aapt resource value: 0x7f0b004f
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427407;
-			
-			// aapt resource value: 0x7f0b0050
-			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131427408;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427409;
-			
-			// aapt resource value: 0x7f0b00ab
-			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427499;
-			
-			// aapt resource value: 0x7f0b0052
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427410;
-			
-			// aapt resource value: 0x7f0b0053
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427411;
-			
-			// aapt resource value: 0x7f0b0054
-			public const int Base_Theme_AppCompat = 2131427412;
-			
-			// aapt resource value: 0x7f0b00ac
-			public const int Base_Theme_AppCompat_CompactMenu = 2131427500;
-			
-			// aapt resource value: 0x7f0b0055
-			public const int Base_Theme_AppCompat_Dialog = 2131427413;
-			
-			// aapt resource value: 0x7f0b00ad
-			public const int Base_Theme_AppCompat_Dialog_Alert = 2131427501;
-			
-			// aapt resource value: 0x7f0b00ae
-			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131427502;
-			
-			// aapt resource value: 0x7f0b00af
-			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131427503;
-			
-			// aapt resource value: 0x7f0b0012
-			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131427346;
-			
-			// aapt resource value: 0x7f0b0056
-			public const int Base_Theme_AppCompat_Light = 2131427414;
-			
-			// aapt resource value: 0x7f0b00b0
-			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131427504;
-			
-			// aapt resource value: 0x7f0b0057
-			public const int Base_Theme_AppCompat_Light_Dialog = 2131427415;
-			
-			// aapt resource value: 0x7f0b00b1
-			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131427505;
-			
-			// aapt resource value: 0x7f0b00b2
-			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131427506;
-			
-			// aapt resource value: 0x7f0b00b3
-			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131427507;
-			
-			// aapt resource value: 0x7f0b0013
-			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131427347;
+			public const int Animation_AppCompat_Tooltip = 2131427487;
 			
 			// aapt resource value: 0x7f0b0170
-			public const int Base_Theme_MaterialComponents = 2131427696;
+			public const int Animation_Design_BottomSheetDialog = 2131427696;
 			
-			// aapt resource value: 0x7f0b0171
-			public const int Base_Theme_MaterialComponents_Bridge = 2131427697;
+			// aapt resource value: 0x7f0b0204
+			public const int AppCompatDialogStyle = 2131427844;
 			
-			// aapt resource value: 0x7f0b0172
-			public const int Base_Theme_MaterialComponents_CompactMenu = 2131427698;
+			// aapt resource value: 0x7f0b00a0
+			public const int Base_AlertDialog_AppCompat = 2131427488;
 			
-			// aapt resource value: 0x7f0b0173
-			public const int Base_Theme_MaterialComponents_Dialog = 2131427699;
+			// aapt resource value: 0x7f0b00a1
+			public const int Base_AlertDialog_AppCompat_Light = 2131427489;
 			
-			// aapt resource value: 0x7f0b0174
-			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131427700;
+			// aapt resource value: 0x7f0b00a2
+			public const int Base_Animation_AppCompat_Dialog = 2131427490;
 			
-			// aapt resource value: 0x7f0b0175
-			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131427701;
+			// aapt resource value: 0x7f0b00a3
+			public const int Base_Animation_AppCompat_DropDownUp = 2131427491;
 			
-			// aapt resource value: 0x7f0b0176
-			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131427702;
-			
-			// aapt resource value: 0x7f0b0169
-			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131427689;
-			
-			// aapt resource value: 0x7f0b0177
-			public const int Base_Theme_MaterialComponents_Light = 2131427703;
-			
-			// aapt resource value: 0x7f0b0178
-			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131427704;
-			
-			// aapt resource value: 0x7f0b0179
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131427705;
-			
-			// aapt resource value: 0x7f0b017a
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427706;
-			
-			// aapt resource value: 0x7f0b017b
-			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131427707;
-			
-			// aapt resource value: 0x7f0b017c
-			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131427708;
-			
-			// aapt resource value: 0x7f0b017d
-			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131427709;
-			
-			// aapt resource value: 0x7f0b017e
-			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131427710;
-			
-			// aapt resource value: 0x7f0b016a
-			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131427690;
-			
-			// aapt resource value: 0x7f0b00b4
-			public const int Base_ThemeOverlay_AppCompat = 2131427508;
-			
-			// aapt resource value: 0x7f0b00b5
-			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131427509;
-			
-			// aapt resource value: 0x7f0b00b6
-			public const int Base_ThemeOverlay_AppCompat_Dark = 2131427510;
-			
-			// aapt resource value: 0x7f0b00b7
-			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131427511;
-			
-			// aapt resource value: 0x7f0b0058
-			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131427416;
-			
-			// aapt resource value: 0x7f0b00b8
-			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131427512;
-			
-			// aapt resource value: 0x7f0b00b9
-			public const int Base_ThemeOverlay_AppCompat_Light = 2131427513;
-			
-			// aapt resource value: 0x7f0b017f
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131427711;
-			
-			// aapt resource value: 0x7f0b0180
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427712;
-			
-			// aapt resource value: 0x7f0b0181
-			public const int Base_V14_Theme_MaterialComponents = 2131427713;
-			
-			// aapt resource value: 0x7f0b0182
-			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131427714;
-			
-			// aapt resource value: 0x7f0b0183
-			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131427715;
-			
-			// aapt resource value: 0x7f0b0184
-			public const int Base_V14_Theme_MaterialComponents_Light = 2131427716;
-			
-			// aapt resource value: 0x7f0b0185
-			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131427717;
-			
-			// aapt resource value: 0x7f0b0186
-			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427718;
-			
-			// aapt resource value: 0x7f0b0187
-			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131427719;
-			
-			// aapt resource value: 0x7f0b0188
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131427720;
-			
-			// aapt resource value: 0x7f0b0189
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427721;
-			
-			// aapt resource value: 0x7f0b0059
-			public const int Base_V21_Theme_AppCompat = 2131427417;
-			
-			// aapt resource value: 0x7f0b005a
-			public const int Base_V21_Theme_AppCompat_Dialog = 2131427418;
-			
-			// aapt resource value: 0x7f0b005b
-			public const int Base_V21_Theme_AppCompat_Light = 2131427419;
-			
-			// aapt resource value: 0x7f0b005c
-			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131427420;
-			
-			// aapt resource value: 0x7f0b005d
-			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131427421;
-			
-			// aapt resource value: 0x7f0b0087
-			public const int Base_V22_Theme_AppCompat = 2131427463;
-			
-			// aapt resource value: 0x7f0b0088
-			public const int Base_V22_Theme_AppCompat_Light = 2131427464;
-			
-			// aapt resource value: 0x7f0b008b
-			public const int Base_V23_Theme_AppCompat = 2131427467;
-			
-			// aapt resource value: 0x7f0b008c
-			public const int Base_V23_Theme_AppCompat_Light = 2131427468;
-			
-			// aapt resource value: 0x7f0b0094
-			public const int Base_V26_Theme_AppCompat = 2131427476;
-			
-			// aapt resource value: 0x7f0b0095
-			public const int Base_V26_Theme_AppCompat_Light = 2131427477;
-			
-			// aapt resource value: 0x7f0b0096
-			public const int Base_V26_Widget_AppCompat_Toolbar = 2131427478;
-			
-			// aapt resource value: 0x7f0b0098
-			public const int Base_V28_Theme_AppCompat = 2131427480;
-			
-			// aapt resource value: 0x7f0b0099
-			public const int Base_V28_Theme_AppCompat_Light = 2131427481;
-			
-			// aapt resource value: 0x7f0b00ba
-			public const int Base_V7_Theme_AppCompat = 2131427514;
-			
-			// aapt resource value: 0x7f0b00bb
-			public const int Base_V7_Theme_AppCompat_Dialog = 2131427515;
-			
-			// aapt resource value: 0x7f0b00bc
-			public const int Base_V7_Theme_AppCompat_Light = 2131427516;
-			
-			// aapt resource value: 0x7f0b00bd
-			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131427517;
-			
-			// aapt resource value: 0x7f0b00be
-			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131427518;
-			
-			// aapt resource value: 0x7f0b00bf
-			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131427519;
-			
-			// aapt resource value: 0x7f0b00c0
-			public const int Base_V7_Widget_AppCompat_EditText = 2131427520;
-			
-			// aapt resource value: 0x7f0b00c1
-			public const int Base_V7_Widget_AppCompat_Toolbar = 2131427521;
-			
-			// aapt resource value: 0x7f0b00c2
-			public const int Base_Widget_AppCompat_ActionBar = 2131427522;
-			
-			// aapt resource value: 0x7f0b00c3
-			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131427523;
-			
-			// aapt resource value: 0x7f0b00c4
-			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131427524;
-			
-			// aapt resource value: 0x7f0b005e
-			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131427422;
-			
-			// aapt resource value: 0x7f0b005f
-			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131427423;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int Base_Widget_AppCompat_ActionButton = 2131427424;
-			
-			// aapt resource value: 0x7f0b0061
-			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131427425;
-			
-			// aapt resource value: 0x7f0b0062
-			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131427426;
-			
-			// aapt resource value: 0x7f0b00c5
-			public const int Base_Widget_AppCompat_ActionMode = 2131427525;
-			
-			// aapt resource value: 0x7f0b00c6
-			public const int Base_Widget_AppCompat_ActivityChooserView = 2131427526;
-			
-			// aapt resource value: 0x7f0b0063
-			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131427427;
-			
-			// aapt resource value: 0x7f0b0064
-			public const int Base_Widget_AppCompat_Button = 2131427428;
-			
-			// aapt resource value: 0x7f0b0065
-			public const int Base_Widget_AppCompat_Button_Borderless = 2131427429;
-			
-			// aapt resource value: 0x7f0b0066
-			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131427430;
-			
-			// aapt resource value: 0x7f0b00c7
-			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427527;
-			
-			// aapt resource value: 0x7f0b008d
-			public const int Base_Widget_AppCompat_Button_Colored = 2131427469;
-			
-			// aapt resource value: 0x7f0b0067
-			public const int Base_Widget_AppCompat_Button_Small = 2131427431;
-			
-			// aapt resource value: 0x7f0b0068
-			public const int Base_Widget_AppCompat_ButtonBar = 2131427432;
-			
-			// aapt resource value: 0x7f0b00c8
-			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131427528;
-			
-			// aapt resource value: 0x7f0b0069
-			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131427433;
-			
-			// aapt resource value: 0x7f0b006a
-			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131427434;
-			
-			// aapt resource value: 0x7f0b00c9
-			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131427529;
-			
-			// aapt resource value: 0x7f0b0011
-			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131427345;
-			
-			// aapt resource value: 0x7f0b00ca
-			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131427530;
-			
-			// aapt resource value: 0x7f0b006b
-			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131427435;
-			
-			// aapt resource value: 0x7f0b006c
-			public const int Base_Widget_AppCompat_EditText = 2131427436;
-			
-			// aapt resource value: 0x7f0b006d
-			public const int Base_Widget_AppCompat_ImageButton = 2131427437;
-			
-			// aapt resource value: 0x7f0b00cb
-			public const int Base_Widget_AppCompat_Light_ActionBar = 2131427531;
-			
-			// aapt resource value: 0x7f0b00cc
-			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131427532;
-			
-			// aapt resource value: 0x7f0b00cd
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131427533;
-			
-			// aapt resource value: 0x7f0b006e
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131427438;
-			
-			// aapt resource value: 0x7f0b006f
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427439;
-			
-			// aapt resource value: 0x7f0b0070
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131427440;
-			
-			// aapt resource value: 0x7f0b0071
-			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131427441;
-			
-			// aapt resource value: 0x7f0b0072
-			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131427442;
-			
-			// aapt resource value: 0x7f0b00ce
-			public const int Base_Widget_AppCompat_ListMenuView = 2131427534;
-			
-			// aapt resource value: 0x7f0b0073
-			public const int Base_Widget_AppCompat_ListPopupWindow = 2131427443;
-			
-			// aapt resource value: 0x7f0b0074
-			public const int Base_Widget_AppCompat_ListView = 2131427444;
-			
-			// aapt resource value: 0x7f0b0075
-			public const int Base_Widget_AppCompat_ListView_DropDown = 2131427445;
-			
-			// aapt resource value: 0x7f0b0076
-			public const int Base_Widget_AppCompat_ListView_Menu = 2131427446;
-			
-			// aapt resource value: 0x7f0b0077
-			public const int Base_Widget_AppCompat_PopupMenu = 2131427447;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131427448;
-			
-			// aapt resource value: 0x7f0b00cf
-			public const int Base_Widget_AppCompat_PopupWindow = 2131427535;
-			
-			// aapt resource value: 0x7f0b0079
-			public const int Base_Widget_AppCompat_ProgressBar = 2131427449;
-			
-			// aapt resource value: 0x7f0b007a
-			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131427450;
-			
-			// aapt resource value: 0x7f0b007b
-			public const int Base_Widget_AppCompat_RatingBar = 2131427451;
-			
-			// aapt resource value: 0x7f0b008e
-			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131427470;
-			
-			// aapt resource value: 0x7f0b008f
-			public const int Base_Widget_AppCompat_RatingBar_Small = 2131427471;
-			
-			// aapt resource value: 0x7f0b00d0
-			public const int Base_Widget_AppCompat_SearchView = 2131427536;
-			
-			// aapt resource value: 0x7f0b00d1
-			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131427537;
-			
-			// aapt resource value: 0x7f0b007c
-			public const int Base_Widget_AppCompat_SeekBar = 2131427452;
-			
-			// aapt resource value: 0x7f0b00d2
-			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131427538;
-			
-			// aapt resource value: 0x7f0b007d
-			public const int Base_Widget_AppCompat_Spinner = 2131427453;
-			
-			// aapt resource value: 0x7f0b0014
-			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131427348;
-			
-			// aapt resource value: 0x7f0b007e
-			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131427454;
-			
-			// aapt resource value: 0x7f0b0097
-			public const int Base_Widget_AppCompat_Toolbar = 2131427479;
-			
-			// aapt resource value: 0x7f0b007f
-			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131427455;
-			
-			// aapt resource value: 0x7f0b018a
-			public const int Base_Widget_Design_TabLayout = 2131427722;
-			
-			// aapt resource value: 0x7f0b018b
-			public const int Base_Widget_MaterialComponents_Chip = 2131427723;
-			
-			// aapt resource value: 0x7f0b018c
-			public const int Base_Widget_MaterialComponents_TextInputEditText = 2131427724;
-			
-			// aapt resource value: 0x7f0b018d
-			public const int Base_Widget_MaterialComponents_TextInputLayout = 2131427725;
-			
-			// aapt resource value: 0x7f0b000d
-			public const int CardView = 2131427341;
+			// aapt resource value: 0x7f0b00a4
+			public const int Base_Animation_AppCompat_Tooltip = 2131427492;
 			
 			// aapt resource value: 0x7f0b000f
-			public const int CardView_Dark = 2131427343;
+			public const int Base_CardView = 2131427343;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int CardView_Light = 2131427344;
+			// aapt resource value: 0x7f0b00a5
+			public const int Base_DialogWindowTitle_AppCompat = 2131427493;
 			
-			// aapt resource value: 0x7f0b0201
-			public const int MainTheme = 2131427841;
+			// aapt resource value: 0x7f0b00a6
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131427494;
 			
-			// aapt resource value: 0x7f0b0202
-			public const int MainTheme_Base = 2131427842;
+			// aapt resource value: 0x7f0b002f
+			public const int Base_TextAppearance_AppCompat = 2131427375;
 			
-			// aapt resource value: 0x7f0b0080
-			public const int Platform_AppCompat = 2131427456;
+			// aapt resource value: 0x7f0b0030
+			public const int Base_TextAppearance_AppCompat_Body1 = 2131427376;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int Platform_AppCompat_Light = 2131427457;
+			// aapt resource value: 0x7f0b0031
+			public const int Base_TextAppearance_AppCompat_Body2 = 2131427377;
 			
-			// aapt resource value: 0x7f0b018e
-			public const int Platform_MaterialComponents = 2131427726;
+			// aapt resource value: 0x7f0b0032
+			public const int Base_TextAppearance_AppCompat_Button = 2131427378;
 			
-			// aapt resource value: 0x7f0b018f
-			public const int Platform_MaterialComponents_Dialog = 2131427727;
+			// aapt resource value: 0x7f0b0033
+			public const int Base_TextAppearance_AppCompat_Caption = 2131427379;
 			
-			// aapt resource value: 0x7f0b0190
-			public const int Platform_MaterialComponents_Light = 2131427728;
+			// aapt resource value: 0x7f0b0034
+			public const int Base_TextAppearance_AppCompat_Display1 = 2131427380;
 			
-			// aapt resource value: 0x7f0b0191
-			public const int Platform_MaterialComponents_Light_Dialog = 2131427729;
+			// aapt resource value: 0x7f0b0035
+			public const int Base_TextAppearance_AppCompat_Display2 = 2131427381;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int Platform_ThemeOverlay_AppCompat = 2131427458;
+			// aapt resource value: 0x7f0b0036
+			public const int Base_TextAppearance_AppCompat_Display3 = 2131427382;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131427459;
+			// aapt resource value: 0x7f0b0037
+			public const int Base_TextAppearance_AppCompat_Display4 = 2131427383;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131427460;
+			// aapt resource value: 0x7f0b0038
+			public const int Base_TextAppearance_AppCompat_Headline = 2131427384;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int Platform_V21_AppCompat = 2131427461;
+			// aapt resource value: 0x7f0b0039
+			public const int Base_TextAppearance_AppCompat_Inverse = 2131427385;
 			
-			// aapt resource value: 0x7f0b0086
-			public const int Platform_V21_AppCompat_Light = 2131427462;
+			// aapt resource value: 0x7f0b003a
+			public const int Base_TextAppearance_AppCompat_Large = 2131427386;
+			
+			// aapt resource value: 0x7f0b003b
+			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131427387;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427388;
+			
+			// aapt resource value: 0x7f0b003d
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427389;
+			
+			// aapt resource value: 0x7f0b003e
+			public const int Base_TextAppearance_AppCompat_Medium = 2131427390;
+			
+			// aapt resource value: 0x7f0b003f
+			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131427391;
+			
+			// aapt resource value: 0x7f0b0040
+			public const int Base_TextAppearance_AppCompat_Menu = 2131427392;
+			
+			// aapt resource value: 0x7f0b00a7
+			public const int Base_TextAppearance_AppCompat_SearchResult = 2131427495;
+			
+			// aapt resource value: 0x7f0b0041
+			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131427393;
+			
+			// aapt resource value: 0x7f0b0042
+			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131427394;
+			
+			// aapt resource value: 0x7f0b0043
+			public const int Base_TextAppearance_AppCompat_Small = 2131427395;
+			
+			// aapt resource value: 0x7f0b0044
+			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131427396;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int Base_TextAppearance_AppCompat_Subhead = 2131427397;
+			
+			// aapt resource value: 0x7f0b00a8
+			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131427496;
+			
+			// aapt resource value: 0x7f0b0046
+			public const int Base_TextAppearance_AppCompat_Title = 2131427398;
+			
+			// aapt resource value: 0x7f0b00a9
+			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131427497;
+			
+			// aapt resource value: 0x7f0b00aa
+			public const int Base_TextAppearance_AppCompat_Tooltip = 2131427498;
+			
+			// aapt resource value: 0x7f0b008a
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427466;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427399;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427400;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427401;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427402;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427403;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427404;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131427405;
+			
+			// aapt resource value: 0x7f0b0091
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131427473;
 			
 			// aapt resource value: 0x7f0b0092
-			public const int Platform_V25_AppCompat = 2131427474;
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131427474;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int Platform_V25_AppCompat_Light = 2131427475;
+			// aapt resource value: 0x7f0b008b
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131427467;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int Platform_Widget_AppCompat_Spinner = 2131427539;
+			// aapt resource value: 0x7f0b00ab
+			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131427499;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131427357;
+			// aapt resource value: 0x7f0b004e
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131427406;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131427358;
+			// aapt resource value: 0x7f0b004f
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427407;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131427359;
+			// aapt resource value: 0x7f0b0050
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427408;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131427360;
+			// aapt resource value: 0x7f0b0051
+			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131427409;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131427361;
+			// aapt resource value: 0x7f0b0052
+			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427410;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131427362;
+			// aapt resource value: 0x7f0b00ac
+			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427500;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131427363;
+			// aapt resource value: 0x7f0b0053
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427411;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131427364;
+			// aapt resource value: 0x7f0b0054
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427412;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131427365;
+			// aapt resource value: 0x7f0b0055
+			public const int Base_Theme_AppCompat = 2131427413;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131427366;
+			// aapt resource value: 0x7f0b00ad
+			public const int Base_Theme_AppCompat_CompactMenu = 2131427501;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131427367;
+			// aapt resource value: 0x7f0b0056
+			public const int Base_Theme_AppCompat_Dialog = 2131427414;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131427368;
+			// aapt resource value: 0x7f0b00ae
+			public const int Base_Theme_AppCompat_Dialog_Alert = 2131427502;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131427369;
+			// aapt resource value: 0x7f0b00af
+			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131427503;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131427370;
+			// aapt resource value: 0x7f0b00b0
+			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131427504;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131427371;
+			// aapt resource value: 0x7f0b0013
+			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131427347;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131427372;
+			// aapt resource value: 0x7f0b0057
+			public const int Base_Theme_AppCompat_Light = 2131427415;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131427373;
+			// aapt resource value: 0x7f0b00b1
+			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131427505;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int TextAppearance_AppCompat = 2131427540;
+			// aapt resource value: 0x7f0b0058
+			public const int Base_Theme_AppCompat_Light_Dialog = 2131427416;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int TextAppearance_AppCompat_Body1 = 2131427541;
+			// aapt resource value: 0x7f0b00b2
+			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131427506;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int TextAppearance_AppCompat_Body2 = 2131427542;
+			// aapt resource value: 0x7f0b00b3
+			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131427507;
 			
-			// aapt resource value: 0x7f0b00d7
-			public const int TextAppearance_AppCompat_Button = 2131427543;
+			// aapt resource value: 0x7f0b00b4
+			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131427508;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int TextAppearance_AppCompat_Caption = 2131427544;
+			// aapt resource value: 0x7f0b0014
+			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131427348;
 			
-			// aapt resource value: 0x7f0b00d9
-			public const int TextAppearance_AppCompat_Display1 = 2131427545;
+			// aapt resource value: 0x7f0b0171
+			public const int Base_Theme_MaterialComponents = 2131427697;
 			
-			// aapt resource value: 0x7f0b00da
-			public const int TextAppearance_AppCompat_Display2 = 2131427546;
+			// aapt resource value: 0x7f0b0172
+			public const int Base_Theme_MaterialComponents_Bridge = 2131427698;
 			
-			// aapt resource value: 0x7f0b00db
-			public const int TextAppearance_AppCompat_Display3 = 2131427547;
+			// aapt resource value: 0x7f0b0173
+			public const int Base_Theme_MaterialComponents_CompactMenu = 2131427699;
 			
-			// aapt resource value: 0x7f0b00dc
-			public const int TextAppearance_AppCompat_Display4 = 2131427548;
+			// aapt resource value: 0x7f0b0174
+			public const int Base_Theme_MaterialComponents_Dialog = 2131427700;
 			
-			// aapt resource value: 0x7f0b00dd
-			public const int TextAppearance_AppCompat_Headline = 2131427549;
+			// aapt resource value: 0x7f0b0175
+			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131427701;
 			
-			// aapt resource value: 0x7f0b00de
-			public const int TextAppearance_AppCompat_Inverse = 2131427550;
+			// aapt resource value: 0x7f0b0176
+			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131427702;
 			
-			// aapt resource value: 0x7f0b00df
-			public const int TextAppearance_AppCompat_Large = 2131427551;
+			// aapt resource value: 0x7f0b0177
+			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131427703;
 			
-			// aapt resource value: 0x7f0b00e0
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131427552;
+			// aapt resource value: 0x7f0b016a
+			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131427690;
 			
-			// aapt resource value: 0x7f0b00e1
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131427553;
+			// aapt resource value: 0x7f0b0178
+			public const int Base_Theme_MaterialComponents_Light = 2131427704;
 			
-			// aapt resource value: 0x7f0b00e2
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131427554;
+			// aapt resource value: 0x7f0b0179
+			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131427705;
 			
-			// aapt resource value: 0x7f0b00e3
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427555;
+			// aapt resource value: 0x7f0b017a
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131427706;
 			
-			// aapt resource value: 0x7f0b00e4
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427556;
+			// aapt resource value: 0x7f0b017b
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427707;
 			
-			// aapt resource value: 0x7f0b00e5
-			public const int TextAppearance_AppCompat_Medium = 2131427557;
+			// aapt resource value: 0x7f0b017c
+			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131427708;
 			
-			// aapt resource value: 0x7f0b00e6
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131427558;
+			// aapt resource value: 0x7f0b017d
+			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131427709;
 			
-			// aapt resource value: 0x7f0b00e7
-			public const int TextAppearance_AppCompat_Menu = 2131427559;
+			// aapt resource value: 0x7f0b017e
+			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131427710;
 			
-			// aapt resource value: 0x7f0b00e8
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131427560;
-			
-			// aapt resource value: 0x7f0b00e9
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131427561;
-			
-			// aapt resource value: 0x7f0b00ea
-			public const int TextAppearance_AppCompat_Small = 2131427562;
-			
-			// aapt resource value: 0x7f0b00eb
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131427563;
-			
-			// aapt resource value: 0x7f0b00ec
-			public const int TextAppearance_AppCompat_Subhead = 2131427564;
-			
-			// aapt resource value: 0x7f0b00ed
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131427565;
-			
-			// aapt resource value: 0x7f0b00ee
-			public const int TextAppearance_AppCompat_Title = 2131427566;
-			
-			// aapt resource value: 0x7f0b00ef
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131427567;
-			
-			// aapt resource value: 0x7f0b001c
-			public const int TextAppearance_AppCompat_Tooltip = 2131427356;
-			
-			// aapt resource value: 0x7f0b00f0
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427568;
-			
-			// aapt resource value: 0x7f0b00f1
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427569;
-			
-			// aapt resource value: 0x7f0b00f2
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427570;
-			
-			// aapt resource value: 0x7f0b00f3
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427571;
-			
-			// aapt resource value: 0x7f0b00f4
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427572;
-			
-			// aapt resource value: 0x7f0b00f5
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427573;
-			
-			// aapt resource value: 0x7f0b00f6
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131427574;
-			
-			// aapt resource value: 0x7f0b00f7
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427575;
-			
-			// aapt resource value: 0x7f0b00f8
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131427576;
-			
-			// aapt resource value: 0x7f0b00f9
-			public const int TextAppearance_AppCompat_Widget_Button = 2131427577;
-			
-			// aapt resource value: 0x7f0b00fa
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131427578;
-			
-			// aapt resource value: 0x7f0b00fb
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131427579;
-			
-			// aapt resource value: 0x7f0b00fc
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131427580;
-			
-			// aapt resource value: 0x7f0b00fd
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131427581;
-			
-			// aapt resource value: 0x7f0b00fe
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131427582;
-			
-			// aapt resource value: 0x7f0b00ff
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427583;
-			
-			// aapt resource value: 0x7f0b0100
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427584;
-			
-			// aapt resource value: 0x7f0b0101
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131427585;
-			
-			// aapt resource value: 0x7f0b0102
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427586;
-			
-			// aapt resource value: 0x7f0b01fa
-			public const int TextAppearance_Compat_Notification = 2131427834;
-			
-			// aapt resource value: 0x7f0b01fb
-			public const int TextAppearance_Compat_Notification_Info = 2131427835;
-			
-			// aapt resource value: 0x7f0b0163
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131427683;
-			
-			// aapt resource value: 0x7f0b0200
-			public const int TextAppearance_Compat_Notification_Line2 = 2131427840;
-			
-			// aapt resource value: 0x7f0b0167
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131427687;
-			
-			// aapt resource value: 0x7f0b0164
-			public const int TextAppearance_Compat_Notification_Media = 2131427684;
-			
-			// aapt resource value: 0x7f0b01fc
-			public const int TextAppearance_Compat_Notification_Time = 2131427836;
-			
-			// aapt resource value: 0x7f0b0165
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131427685;
-			
-			// aapt resource value: 0x7f0b01fd
-			public const int TextAppearance_Compat_Notification_Title = 2131427837;
-			
-			// aapt resource value: 0x7f0b0166
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131427686;
-			
-			// aapt resource value: 0x7f0b0192
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131427730;
-			
-			// aapt resource value: 0x7f0b0193
-			public const int TextAppearance_Design_Counter = 2131427731;
-			
-			// aapt resource value: 0x7f0b0194
-			public const int TextAppearance_Design_Counter_Overflow = 2131427732;
-			
-			// aapt resource value: 0x7f0b0195
-			public const int TextAppearance_Design_Error = 2131427733;
-			
-			// aapt resource value: 0x7f0b0196
-			public const int TextAppearance_Design_HelperText = 2131427734;
-			
-			// aapt resource value: 0x7f0b0197
-			public const int TextAppearance_Design_Hint = 2131427735;
-			
-			// aapt resource value: 0x7f0b0198
-			public const int TextAppearance_Design_Snackbar_Message = 2131427736;
-			
-			// aapt resource value: 0x7f0b0199
-			public const int TextAppearance_Design_Tab = 2131427737;
-			
-			// aapt resource value: 0x7f0b019a
-			public const int TextAppearance_MaterialComponents_Body1 = 2131427738;
-			
-			// aapt resource value: 0x7f0b019b
-			public const int TextAppearance_MaterialComponents_Body2 = 2131427739;
+			// aapt resource value: 0x7f0b017f
+			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131427711;
 			
 			// aapt resource value: 0x7f0b016b
-			public const int TextAppearance_MaterialComponents_Button = 2131427691;
+			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131427691;
 			
-			// aapt resource value: 0x7f0b019c
-			public const int TextAppearance_MaterialComponents_Caption = 2131427740;
+			// aapt resource value: 0x7f0b00b5
+			public const int Base_ThemeOverlay_AppCompat = 2131427509;
 			
-			// aapt resource value: 0x7f0b019d
-			public const int TextAppearance_MaterialComponents_Chip = 2131427741;
+			// aapt resource value: 0x7f0b00b6
+			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131427510;
 			
-			// aapt resource value: 0x7f0b019e
-			public const int TextAppearance_MaterialComponents_Headline1 = 2131427742;
+			// aapt resource value: 0x7f0b00b7
+			public const int Base_ThemeOverlay_AppCompat_Dark = 2131427511;
 			
-			// aapt resource value: 0x7f0b019f
-			public const int TextAppearance_MaterialComponents_Headline2 = 2131427743;
+			// aapt resource value: 0x7f0b00b8
+			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131427512;
 			
-			// aapt resource value: 0x7f0b01a0
-			public const int TextAppearance_MaterialComponents_Headline3 = 2131427744;
+			// aapt resource value: 0x7f0b0059
+			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131427417;
 			
-			// aapt resource value: 0x7f0b01a1
-			public const int TextAppearance_MaterialComponents_Headline4 = 2131427745;
+			// aapt resource value: 0x7f0b00b9
+			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131427513;
 			
-			// aapt resource value: 0x7f0b01a2
-			public const int TextAppearance_MaterialComponents_Headline5 = 2131427746;
+			// aapt resource value: 0x7f0b00ba
+			public const int Base_ThemeOverlay_AppCompat_Light = 2131427514;
 			
-			// aapt resource value: 0x7f0b016c
-			public const int TextAppearance_MaterialComponents_Headline6 = 2131427692;
+			// aapt resource value: 0x7f0b0180
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131427712;
 			
-			// aapt resource value: 0x7f0b016d
-			public const int TextAppearance_MaterialComponents_Overline = 2131427693;
+			// aapt resource value: 0x7f0b0181
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427713;
 			
-			// aapt resource value: 0x7f0b01a3
-			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131427747;
+			// aapt resource value: 0x7f0b0182
+			public const int Base_V14_Theme_MaterialComponents = 2131427714;
 			
-			// aapt resource value: 0x7f0b016e
-			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131427694;
+			// aapt resource value: 0x7f0b0183
+			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131427715;
 			
-			// aapt resource value: 0x7f0b01a4
-			public const int TextAppearance_MaterialComponents_Tab = 2131427748;
+			// aapt resource value: 0x7f0b0184
+			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131427716;
 			
-			// aapt resource value: 0x7f0b0002
-			public const int TextAppearance_MediaRouter_PrimaryText = 2131427330;
+			// aapt resource value: 0x7f0b0185
+			public const int Base_V14_Theme_MaterialComponents_Light = 2131427717;
 			
-			// aapt resource value: 0x7f0b0003
-			public const int TextAppearance_MediaRouter_SecondaryText = 2131427331;
+			// aapt resource value: 0x7f0b0186
+			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131427718;
 			
-			// aapt resource value: 0x7f0b0004
-			public const int TextAppearance_MediaRouter_Title = 2131427332;
+			// aapt resource value: 0x7f0b0187
+			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427719;
 			
-			// aapt resource value: 0x7f0b0103
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427587;
+			// aapt resource value: 0x7f0b0188
+			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131427720;
 			
-			// aapt resource value: 0x7f0b0104
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427588;
+			// aapt resource value: 0x7f0b0189
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131427721;
 			
-			// aapt resource value: 0x7f0b0105
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427589;
+			// aapt resource value: 0x7f0b018a
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427722;
 			
-			// aapt resource value: 0x7f0b0106
-			public const int Theme_AppCompat = 2131427590;
+			// aapt resource value: 0x7f0b005a
+			public const int Base_V21_Theme_AppCompat = 2131427418;
 			
-			// aapt resource value: 0x7f0b0107
-			public const int Theme_AppCompat_CompactMenu = 2131427591;
+			// aapt resource value: 0x7f0b005b
+			public const int Base_V21_Theme_AppCompat_Dialog = 2131427419;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int Base_V21_Theme_AppCompat_Light = 2131427420;
+			
+			// aapt resource value: 0x7f0b005d
+			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131427421;
+			
+			// aapt resource value: 0x7f0b005e
+			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131427422;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int Base_V22_Theme_AppCompat = 2131427464;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int Base_V22_Theme_AppCompat_Light = 2131427465;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int Base_V23_Theme_AppCompat = 2131427468;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int Base_V23_Theme_AppCompat_Light = 2131427469;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int Base_V26_Theme_AppCompat = 2131427477;
+			
+			// aapt resource value: 0x7f0b0096
+			public const int Base_V26_Theme_AppCompat_Light = 2131427478;
+			
+			// aapt resource value: 0x7f0b0097
+			public const int Base_V26_Widget_AppCompat_Toolbar = 2131427479;
+			
+			// aapt resource value: 0x7f0b0099
+			public const int Base_V28_Theme_AppCompat = 2131427481;
+			
+			// aapt resource value: 0x7f0b009a
+			public const int Base_V28_Theme_AppCompat_Light = 2131427482;
+			
+			// aapt resource value: 0x7f0b00bb
+			public const int Base_V7_Theme_AppCompat = 2131427515;
+			
+			// aapt resource value: 0x7f0b00bc
+			public const int Base_V7_Theme_AppCompat_Dialog = 2131427516;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int Base_V7_Theme_AppCompat_Light = 2131427517;
+			
+			// aapt resource value: 0x7f0b00be
+			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131427518;
+			
+			// aapt resource value: 0x7f0b00bf
+			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131427519;
+			
+			// aapt resource value: 0x7f0b00c0
+			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131427520;
+			
+			// aapt resource value: 0x7f0b00c1
+			public const int Base_V7_Widget_AppCompat_EditText = 2131427521;
+			
+			// aapt resource value: 0x7f0b00c2
+			public const int Base_V7_Widget_AppCompat_Toolbar = 2131427522;
+			
+			// aapt resource value: 0x7f0b00c3
+			public const int Base_Widget_AppCompat_ActionBar = 2131427523;
+			
+			// aapt resource value: 0x7f0b00c4
+			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131427524;
+			
+			// aapt resource value: 0x7f0b00c5
+			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131427525;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131427423;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131427424;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int Base_Widget_AppCompat_ActionButton = 2131427425;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131427426;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131427427;
+			
+			// aapt resource value: 0x7f0b00c6
+			public const int Base_Widget_AppCompat_ActionMode = 2131427526;
+			
+			// aapt resource value: 0x7f0b00c7
+			public const int Base_Widget_AppCompat_ActivityChooserView = 2131427527;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131427428;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int Base_Widget_AppCompat_Button = 2131427429;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int Base_Widget_AppCompat_Button_Borderless = 2131427430;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131427431;
+			
+			// aapt resource value: 0x7f0b00c8
+			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427528;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int Base_Widget_AppCompat_Button_Colored = 2131427470;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int Base_Widget_AppCompat_Button_Small = 2131427432;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int Base_Widget_AppCompat_ButtonBar = 2131427433;
+			
+			// aapt resource value: 0x7f0b00c9
+			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131427529;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131427434;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131427435;
+			
+			// aapt resource value: 0x7f0b00ca
+			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131427530;
+			
+			// aapt resource value: 0x7f0b0012
+			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131427346;
+			
+			// aapt resource value: 0x7f0b00cb
+			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131427531;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131427436;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int Base_Widget_AppCompat_EditText = 2131427437;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int Base_Widget_AppCompat_ImageButton = 2131427438;
+			
+			// aapt resource value: 0x7f0b00cc
+			public const int Base_Widget_AppCompat_Light_ActionBar = 2131427532;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131427533;
+			
+			// aapt resource value: 0x7f0b00ce
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131427534;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131427439;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427440;
+			
+			// aapt resource value: 0x7f0b0071
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131427441;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131427442;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131427443;
+			
+			// aapt resource value: 0x7f0b00cf
+			public const int Base_Widget_AppCompat_ListMenuView = 2131427535;
+			
+			// aapt resource value: 0x7f0b0074
+			public const int Base_Widget_AppCompat_ListPopupWindow = 2131427444;
+			
+			// aapt resource value: 0x7f0b0075
+			public const int Base_Widget_AppCompat_ListView = 2131427445;
+			
+			// aapt resource value: 0x7f0b0076
+			public const int Base_Widget_AppCompat_ListView_DropDown = 2131427446;
+			
+			// aapt resource value: 0x7f0b0077
+			public const int Base_Widget_AppCompat_ListView_Menu = 2131427447;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int Base_Widget_AppCompat_PopupMenu = 2131427448;
+			
+			// aapt resource value: 0x7f0b0079
+			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131427449;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int Base_Widget_AppCompat_PopupWindow = 2131427536;
+			
+			// aapt resource value: 0x7f0b007a
+			public const int Base_Widget_AppCompat_ProgressBar = 2131427450;
+			
+			// aapt resource value: 0x7f0b007b
+			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131427451;
+			
+			// aapt resource value: 0x7f0b007c
+			public const int Base_Widget_AppCompat_RatingBar = 2131427452;
+			
+			// aapt resource value: 0x7f0b008f
+			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131427471;
+			
+			// aapt resource value: 0x7f0b0090
+			public const int Base_Widget_AppCompat_RatingBar_Small = 2131427472;
+			
+			// aapt resource value: 0x7f0b00d1
+			public const int Base_Widget_AppCompat_SearchView = 2131427537;
+			
+			// aapt resource value: 0x7f0b00d2
+			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131427538;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int Base_Widget_AppCompat_SeekBar = 2131427453;
+			
+			// aapt resource value: 0x7f0b00d3
+			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131427539;
+			
+			// aapt resource value: 0x7f0b007e
+			public const int Base_Widget_AppCompat_Spinner = 2131427454;
 			
 			// aapt resource value: 0x7f0b0015
-			public const int Theme_AppCompat_DayNight = 2131427349;
+			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131427349;
 			
-			// aapt resource value: 0x7f0b0016
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131427350;
+			// aapt resource value: 0x7f0b007f
+			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131427455;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int Theme_AppCompat_DayNight_Dialog = 2131427351;
+			// aapt resource value: 0x7f0b0098
+			public const int Base_Widget_AppCompat_Toolbar = 2131427480;
 			
-			// aapt resource value: 0x7f0b0018
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131427352;
+			// aapt resource value: 0x7f0b0080
+			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131427456;
 			
-			// aapt resource value: 0x7f0b0019
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131427353;
+			// aapt resource value: 0x7f0b018b
+			public const int Base_Widget_Design_TabLayout = 2131427723;
 			
-			// aapt resource value: 0x7f0b001a
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131427354;
+			// aapt resource value: 0x7f0b018c
+			public const int Base_Widget_MaterialComponents_Chip = 2131427724;
 			
-			// aapt resource value: 0x7f0b001b
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131427355;
+			// aapt resource value: 0x7f0b018d
+			public const int Base_Widget_MaterialComponents_TextInputEditText = 2131427725;
 			
-			// aapt resource value: 0x7f0b0108
-			public const int Theme_AppCompat_Dialog = 2131427592;
+			// aapt resource value: 0x7f0b018e
+			public const int Base_Widget_MaterialComponents_TextInputLayout = 2131427726;
 			
-			// aapt resource value: 0x7f0b0109
-			public const int Theme_AppCompat_Dialog_Alert = 2131427593;
+			// aapt resource value: 0x7f0b000e
+			public const int CardView = 2131427342;
 			
-			// aapt resource value: 0x7f0b010a
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131427594;
+			// aapt resource value: 0x7f0b0010
+			public const int CardView_Dark = 2131427344;
 			
-			// aapt resource value: 0x7f0b010b
-			public const int Theme_AppCompat_DialogWhenLarge = 2131427595;
+			// aapt resource value: 0x7f0b0011
+			public const int CardView_Light = 2131427345;
 			
-			// aapt resource value: 0x7f0b010c
-			public const int Theme_AppCompat_Light = 2131427596;
+			// aapt resource value: 0x7f0b0202
+			public const int MainTheme = 2131427842;
 			
-			// aapt resource value: 0x7f0b010d
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131427597;
+			// aapt resource value: 0x7f0b0203
+			public const int MainTheme_Base = 2131427843;
 			
-			// aapt resource value: 0x7f0b010e
-			public const int Theme_AppCompat_Light_Dialog = 2131427598;
+			// aapt resource value: 0x7f0b0002
+			public const int NestedScrollBarStyle = 2131427330;
 			
-			// aapt resource value: 0x7f0b010f
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131427599;
+			// aapt resource value: 0x7f0b0081
+			public const int Platform_AppCompat = 2131427457;
 			
-			// aapt resource value: 0x7f0b0110
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131427600;
+			// aapt resource value: 0x7f0b0082
+			public const int Platform_AppCompat_Light = 2131427458;
 			
-			// aapt resource value: 0x7f0b0111
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131427601;
+			// aapt resource value: 0x7f0b018f
+			public const int Platform_MaterialComponents = 2131427727;
 			
-			// aapt resource value: 0x7f0b0112
-			public const int Theme_AppCompat_Light_NoActionBar = 2131427602;
+			// aapt resource value: 0x7f0b0190
+			public const int Platform_MaterialComponents_Dialog = 2131427728;
 			
-			// aapt resource value: 0x7f0b0113
-			public const int Theme_AppCompat_NoActionBar = 2131427603;
+			// aapt resource value: 0x7f0b0191
+			public const int Platform_MaterialComponents_Light = 2131427729;
+			
+			// aapt resource value: 0x7f0b0192
+			public const int Platform_MaterialComponents_Light_Dialog = 2131427730;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int Platform_ThemeOverlay_AppCompat = 2131427459;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131427460;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131427461;
+			
+			// aapt resource value: 0x7f0b0086
+			public const int Platform_V21_AppCompat = 2131427462;
+			
+			// aapt resource value: 0x7f0b0087
+			public const int Platform_V21_AppCompat_Light = 2131427463;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int Platform_V25_AppCompat = 2131427475;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int Platform_V25_AppCompat_Light = 2131427476;
+			
+			// aapt resource value: 0x7f0b00d4
+			public const int Platform_Widget_AppCompat_Spinner = 2131427540;
+			
+			// aapt resource value: 0x7f0b001e
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131427358;
+			
+			// aapt resource value: 0x7f0b001f
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131427359;
+			
+			// aapt resource value: 0x7f0b0020
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131427360;
+			
+			// aapt resource value: 0x7f0b0021
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131427361;
+			
+			// aapt resource value: 0x7f0b0022
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131427362;
+			
+			// aapt resource value: 0x7f0b0023
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131427363;
+			
+			// aapt resource value: 0x7f0b0024
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131427364;
+			
+			// aapt resource value: 0x7f0b0025
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131427365;
+			
+			// aapt resource value: 0x7f0b0026
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131427366;
+			
+			// aapt resource value: 0x7f0b0027
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131427367;
+			
+			// aapt resource value: 0x7f0b0028
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131427368;
+			
+			// aapt resource value: 0x7f0b0029
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131427369;
+			
+			// aapt resource value: 0x7f0b002a
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131427370;
+			
+			// aapt resource value: 0x7f0b002b
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131427371;
+			
+			// aapt resource value: 0x7f0b002c
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131427372;
+			
+			// aapt resource value: 0x7f0b002d
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131427373;
+			
+			// aapt resource value: 0x7f0b002e
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131427374;
+			
+			// aapt resource value: 0x7f0b00d5
+			public const int TextAppearance_AppCompat = 2131427541;
+			
+			// aapt resource value: 0x7f0b00d6
+			public const int TextAppearance_AppCompat_Body1 = 2131427542;
+			
+			// aapt resource value: 0x7f0b00d7
+			public const int TextAppearance_AppCompat_Body2 = 2131427543;
+			
+			// aapt resource value: 0x7f0b00d8
+			public const int TextAppearance_AppCompat_Button = 2131427544;
+			
+			// aapt resource value: 0x7f0b00d9
+			public const int TextAppearance_AppCompat_Caption = 2131427545;
+			
+			// aapt resource value: 0x7f0b00da
+			public const int TextAppearance_AppCompat_Display1 = 2131427546;
+			
+			// aapt resource value: 0x7f0b00db
+			public const int TextAppearance_AppCompat_Display2 = 2131427547;
+			
+			// aapt resource value: 0x7f0b00dc
+			public const int TextAppearance_AppCompat_Display3 = 2131427548;
+			
+			// aapt resource value: 0x7f0b00dd
+			public const int TextAppearance_AppCompat_Display4 = 2131427549;
+			
+			// aapt resource value: 0x7f0b00de
+			public const int TextAppearance_AppCompat_Headline = 2131427550;
+			
+			// aapt resource value: 0x7f0b00df
+			public const int TextAppearance_AppCompat_Inverse = 2131427551;
+			
+			// aapt resource value: 0x7f0b00e0
+			public const int TextAppearance_AppCompat_Large = 2131427552;
+			
+			// aapt resource value: 0x7f0b00e1
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131427553;
+			
+			// aapt resource value: 0x7f0b00e2
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131427554;
+			
+			// aapt resource value: 0x7f0b00e3
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131427555;
+			
+			// aapt resource value: 0x7f0b00e4
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131427556;
+			
+			// aapt resource value: 0x7f0b00e5
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131427557;
+			
+			// aapt resource value: 0x7f0b00e6
+			public const int TextAppearance_AppCompat_Medium = 2131427558;
+			
+			// aapt resource value: 0x7f0b00e7
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131427559;
+			
+			// aapt resource value: 0x7f0b00e8
+			public const int TextAppearance_AppCompat_Menu = 2131427560;
+			
+			// aapt resource value: 0x7f0b00e9
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131427561;
+			
+			// aapt resource value: 0x7f0b00ea
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131427562;
+			
+			// aapt resource value: 0x7f0b00eb
+			public const int TextAppearance_AppCompat_Small = 2131427563;
+			
+			// aapt resource value: 0x7f0b00ec
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131427564;
+			
+			// aapt resource value: 0x7f0b00ed
+			public const int TextAppearance_AppCompat_Subhead = 2131427565;
+			
+			// aapt resource value: 0x7f0b00ee
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131427566;
+			
+			// aapt resource value: 0x7f0b00ef
+			public const int TextAppearance_AppCompat_Title = 2131427567;
+			
+			// aapt resource value: 0x7f0b00f0
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131427568;
+			
+			// aapt resource value: 0x7f0b001d
+			public const int TextAppearance_AppCompat_Tooltip = 2131427357;
+			
+			// aapt resource value: 0x7f0b00f1
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131427569;
+			
+			// aapt resource value: 0x7f0b00f2
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131427570;
+			
+			// aapt resource value: 0x7f0b00f3
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131427571;
+			
+			// aapt resource value: 0x7f0b00f4
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131427572;
+			
+			// aapt resource value: 0x7f0b00f5
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131427573;
+			
+			// aapt resource value: 0x7f0b00f6
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131427574;
+			
+			// aapt resource value: 0x7f0b00f7
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131427575;
+			
+			// aapt resource value: 0x7f0b00f8
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131427576;
+			
+			// aapt resource value: 0x7f0b00f9
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131427577;
+			
+			// aapt resource value: 0x7f0b00fa
+			public const int TextAppearance_AppCompat_Widget_Button = 2131427578;
+			
+			// aapt resource value: 0x7f0b00fb
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131427579;
+			
+			// aapt resource value: 0x7f0b00fc
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131427580;
+			
+			// aapt resource value: 0x7f0b00fd
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131427581;
+			
+			// aapt resource value: 0x7f0b00fe
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131427582;
+			
+			// aapt resource value: 0x7f0b00ff
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131427583;
+			
+			// aapt resource value: 0x7f0b0100
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131427584;
+			
+			// aapt resource value: 0x7f0b0101
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131427585;
+			
+			// aapt resource value: 0x7f0b0102
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131427586;
+			
+			// aapt resource value: 0x7f0b0103
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131427587;
+			
+			// aapt resource value: 0x7f0b01fb
+			public const int TextAppearance_Compat_Notification = 2131427835;
+			
+			// aapt resource value: 0x7f0b01fc
+			public const int TextAppearance_Compat_Notification_Info = 2131427836;
+			
+			// aapt resource value: 0x7f0b0164
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131427684;
+			
+			// aapt resource value: 0x7f0b0201
+			public const int TextAppearance_Compat_Notification_Line2 = 2131427841;
+			
+			// aapt resource value: 0x7f0b0168
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131427688;
+			
+			// aapt resource value: 0x7f0b0165
+			public const int TextAppearance_Compat_Notification_Media = 2131427685;
+			
+			// aapt resource value: 0x7f0b01fd
+			public const int TextAppearance_Compat_Notification_Time = 2131427837;
+			
+			// aapt resource value: 0x7f0b0166
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131427686;
+			
+			// aapt resource value: 0x7f0b01fe
+			public const int TextAppearance_Compat_Notification_Title = 2131427838;
+			
+			// aapt resource value: 0x7f0b0167
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131427687;
+			
+			// aapt resource value: 0x7f0b0193
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131427731;
+			
+			// aapt resource value: 0x7f0b0194
+			public const int TextAppearance_Design_Counter = 2131427732;
+			
+			// aapt resource value: 0x7f0b0195
+			public const int TextAppearance_Design_Counter_Overflow = 2131427733;
+			
+			// aapt resource value: 0x7f0b0196
+			public const int TextAppearance_Design_Error = 2131427734;
+			
+			// aapt resource value: 0x7f0b0197
+			public const int TextAppearance_Design_HelperText = 2131427735;
+			
+			// aapt resource value: 0x7f0b0198
+			public const int TextAppearance_Design_Hint = 2131427736;
+			
+			// aapt resource value: 0x7f0b0199
+			public const int TextAppearance_Design_Snackbar_Message = 2131427737;
+			
+			// aapt resource value: 0x7f0b019a
+			public const int TextAppearance_Design_Tab = 2131427738;
+			
+			// aapt resource value: 0x7f0b019b
+			public const int TextAppearance_MaterialComponents_Body1 = 2131427739;
+			
+			// aapt resource value: 0x7f0b019c
+			public const int TextAppearance_MaterialComponents_Body2 = 2131427740;
+			
+			// aapt resource value: 0x7f0b016c
+			public const int TextAppearance_MaterialComponents_Button = 2131427692;
+			
+			// aapt resource value: 0x7f0b019d
+			public const int TextAppearance_MaterialComponents_Caption = 2131427741;
+			
+			// aapt resource value: 0x7f0b019e
+			public const int TextAppearance_MaterialComponents_Chip = 2131427742;
+			
+			// aapt resource value: 0x7f0b019f
+			public const int TextAppearance_MaterialComponents_Headline1 = 2131427743;
+			
+			// aapt resource value: 0x7f0b01a0
+			public const int TextAppearance_MaterialComponents_Headline2 = 2131427744;
+			
+			// aapt resource value: 0x7f0b01a1
+			public const int TextAppearance_MaterialComponents_Headline3 = 2131427745;
+			
+			// aapt resource value: 0x7f0b01a2
+			public const int TextAppearance_MaterialComponents_Headline4 = 2131427746;
+			
+			// aapt resource value: 0x7f0b01a3
+			public const int TextAppearance_MaterialComponents_Headline5 = 2131427747;
+			
+			// aapt resource value: 0x7f0b016d
+			public const int TextAppearance_MaterialComponents_Headline6 = 2131427693;
+			
+			// aapt resource value: 0x7f0b016e
+			public const int TextAppearance_MaterialComponents_Overline = 2131427694;
+			
+			// aapt resource value: 0x7f0b01a4
+			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131427748;
+			
+			// aapt resource value: 0x7f0b016f
+			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131427695;
 			
 			// aapt resource value: 0x7f0b01a5
-			public const int Theme_Design = 2131427749;
+			public const int TextAppearance_MaterialComponents_Tab = 2131427749;
+			
+			// aapt resource value: 0x7f0b0003
+			public const int TextAppearance_MediaRouter_PrimaryText = 2131427331;
+			
+			// aapt resource value: 0x7f0b0004
+			public const int TextAppearance_MediaRouter_SecondaryText = 2131427332;
+			
+			// aapt resource value: 0x7f0b0005
+			public const int TextAppearance_MediaRouter_Title = 2131427333;
+			
+			// aapt resource value: 0x7f0b0104
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131427588;
+			
+			// aapt resource value: 0x7f0b0105
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131427589;
+			
+			// aapt resource value: 0x7f0b0106
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131427590;
+			
+			// aapt resource value: 0x7f0b0107
+			public const int Theme_AppCompat = 2131427591;
+			
+			// aapt resource value: 0x7f0b0108
+			public const int Theme_AppCompat_CompactMenu = 2131427592;
+			
+			// aapt resource value: 0x7f0b0016
+			public const int Theme_AppCompat_DayNight = 2131427350;
+			
+			// aapt resource value: 0x7f0b0017
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131427351;
+			
+			// aapt resource value: 0x7f0b0018
+			public const int Theme_AppCompat_DayNight_Dialog = 2131427352;
+			
+			// aapt resource value: 0x7f0b0019
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131427353;
+			
+			// aapt resource value: 0x7f0b001a
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131427354;
+			
+			// aapt resource value: 0x7f0b001b
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131427355;
+			
+			// aapt resource value: 0x7f0b001c
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131427356;
+			
+			// aapt resource value: 0x7f0b0109
+			public const int Theme_AppCompat_Dialog = 2131427593;
+			
+			// aapt resource value: 0x7f0b010a
+			public const int Theme_AppCompat_Dialog_Alert = 2131427594;
+			
+			// aapt resource value: 0x7f0b010b
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131427595;
+			
+			// aapt resource value: 0x7f0b010c
+			public const int Theme_AppCompat_DialogWhenLarge = 2131427596;
+			
+			// aapt resource value: 0x7f0b010d
+			public const int Theme_AppCompat_Light = 2131427597;
+			
+			// aapt resource value: 0x7f0b010e
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131427598;
+			
+			// aapt resource value: 0x7f0b010f
+			public const int Theme_AppCompat_Light_Dialog = 2131427599;
+			
+			// aapt resource value: 0x7f0b0110
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131427600;
+			
+			// aapt resource value: 0x7f0b0111
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131427601;
+			
+			// aapt resource value: 0x7f0b0112
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131427602;
+			
+			// aapt resource value: 0x7f0b0113
+			public const int Theme_AppCompat_Light_NoActionBar = 2131427603;
+			
+			// aapt resource value: 0x7f0b0114
+			public const int Theme_AppCompat_NoActionBar = 2131427604;
 			
 			// aapt resource value: 0x7f0b01a6
-			public const int Theme_Design_BottomSheetDialog = 2131427750;
+			public const int Theme_Design = 2131427750;
 			
 			// aapt resource value: 0x7f0b01a7
-			public const int Theme_Design_Light = 2131427751;
+			public const int Theme_Design_BottomSheetDialog = 2131427751;
 			
 			// aapt resource value: 0x7f0b01a8
-			public const int Theme_Design_Light_BottomSheetDialog = 2131427752;
+			public const int Theme_Design_Light = 2131427752;
 			
 			// aapt resource value: 0x7f0b01a9
-			public const int Theme_Design_Light_NoActionBar = 2131427753;
+			public const int Theme_Design_Light_BottomSheetDialog = 2131427753;
 			
 			// aapt resource value: 0x7f0b01aa
-			public const int Theme_Design_NoActionBar = 2131427754;
+			public const int Theme_Design_Light_NoActionBar = 2131427754;
+			
+			// aapt resource value: 0x7f0b01ab
+			public const int Theme_Design_NoActionBar = 2131427755;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int Theme_IAPTheme = 2131427328;
 			
-			// aapt resource value: 0x7f0b01ab
-			public const int Theme_MaterialComponents = 2131427755;
-			
 			// aapt resource value: 0x7f0b01ac
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131427756;
+			public const int Theme_MaterialComponents = 2131427756;
 			
 			// aapt resource value: 0x7f0b01ad
-			public const int Theme_MaterialComponents_Bridge = 2131427757;
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131427757;
 			
 			// aapt resource value: 0x7f0b01ae
-			public const int Theme_MaterialComponents_CompactMenu = 2131427758;
+			public const int Theme_MaterialComponents_Bridge = 2131427758;
 			
 			// aapt resource value: 0x7f0b01af
-			public const int Theme_MaterialComponents_Dialog = 2131427759;
+			public const int Theme_MaterialComponents_CompactMenu = 2131427759;
 			
 			// aapt resource value: 0x7f0b01b0
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131427760;
+			public const int Theme_MaterialComponents_Dialog = 2131427760;
 			
 			// aapt resource value: 0x7f0b01b1
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131427761;
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131427761;
 			
 			// aapt resource value: 0x7f0b01b2
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131427762;
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131427762;
 			
 			// aapt resource value: 0x7f0b01b3
-			public const int Theme_MaterialComponents_Light = 2131427763;
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131427763;
 			
 			// aapt resource value: 0x7f0b01b4
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131427764;
+			public const int Theme_MaterialComponents_Light = 2131427764;
 			
 			// aapt resource value: 0x7f0b01b5
-			public const int Theme_MaterialComponents_Light_Bridge = 2131427765;
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131427765;
 			
 			// aapt resource value: 0x7f0b01b6
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131427766;
+			public const int Theme_MaterialComponents_Light_Bridge = 2131427766;
 			
 			// aapt resource value: 0x7f0b01b7
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427767;
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131427767;
 			
 			// aapt resource value: 0x7f0b01b8
-			public const int Theme_MaterialComponents_Light_Dialog = 2131427768;
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131427768;
 			
 			// aapt resource value: 0x7f0b01b9
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131427769;
+			public const int Theme_MaterialComponents_Light_Dialog = 2131427769;
 			
 			// aapt resource value: 0x7f0b01ba
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131427770;
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131427770;
 			
 			// aapt resource value: 0x7f0b01bb
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131427771;
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131427771;
 			
 			// aapt resource value: 0x7f0b01bc
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131427772;
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131427772;
 			
 			// aapt resource value: 0x7f0b01bd
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131427773;
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131427773;
 			
 			// aapt resource value: 0x7f0b01be
-			public const int Theme_MaterialComponents_NoActionBar = 2131427774;
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131427774;
 			
 			// aapt resource value: 0x7f0b01bf
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131427775;
-			
-			// aapt resource value: 0x7f0b0005
-			public const int Theme_MediaRouter = 2131427333;
-			
-			// aapt resource value: 0x7f0b0006
-			public const int Theme_MediaRouter_Light = 2131427334;
-			
-			// aapt resource value: 0x7f0b0007
-			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131427335;
-			
-			// aapt resource value: 0x7f0b0008
-			public const int Theme_MediaRouter_LightControlPanel = 2131427336;
-			
-			// aapt resource value: 0x7f0b0114
-			public const int ThemeOverlay_AppCompat = 2131427604;
-			
-			// aapt resource value: 0x7f0b0115
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131427605;
-			
-			// aapt resource value: 0x7f0b0116
-			public const int ThemeOverlay_AppCompat_Dark = 2131427606;
-			
-			// aapt resource value: 0x7f0b0117
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131427607;
-			
-			// aapt resource value: 0x7f0b0118
-			public const int ThemeOverlay_AppCompat_Dialog = 2131427608;
-			
-			// aapt resource value: 0x7f0b0119
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131427609;
-			
-			// aapt resource value: 0x7f0b011a
-			public const int ThemeOverlay_AppCompat_Light = 2131427610;
+			public const int Theme_MaterialComponents_NoActionBar = 2131427775;
 			
 			// aapt resource value: 0x7f0b01c0
-			public const int ThemeOverlay_MaterialComponents = 2131427776;
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131427776;
 			
-			// aapt resource value: 0x7f0b01c1
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131427777;
+			// aapt resource value: 0x7f0b0006
+			public const int Theme_MediaRouter = 2131427334;
 			
-			// aapt resource value: 0x7f0b01c2
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131427778;
+			// aapt resource value: 0x7f0b0007
+			public const int Theme_MediaRouter_Light = 2131427335;
 			
-			// aapt resource value: 0x7f0b01c3
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131427779;
-			
-			// aapt resource value: 0x7f0b01c4
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131427780;
-			
-			// aapt resource value: 0x7f0b01c5
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427781;
-			
-			// aapt resource value: 0x7f0b01c6
-			public const int ThemeOverlay_MaterialComponents_Light = 2131427782;
-			
-			// aapt resource value: 0x7f0b01c7
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131427783;
-			
-			// aapt resource value: 0x7f0b01c8
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131427784;
-			
-			// aapt resource value: 0x7f0b01c9
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131427785;
-			
-			// aapt resource value: 0x7f0b01ca
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131427786;
-			
-			// aapt resource value: 0x7f0b01cb
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131427787;
+			// aapt resource value: 0x7f0b0008
+			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131427336;
 			
 			// aapt resource value: 0x7f0b0009
-			public const int ThemeOverlay_MediaRouter_Dark = 2131427337;
+			public const int Theme_MediaRouter_LightControlPanel = 2131427337;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int ThemeOverlay_MediaRouter_Light = 2131427338;
+			// aapt resource value: 0x7f0b0115
+			public const int ThemeOverlay_AppCompat = 2131427605;
+			
+			// aapt resource value: 0x7f0b0116
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131427606;
+			
+			// aapt resource value: 0x7f0b0117
+			public const int ThemeOverlay_AppCompat_Dark = 2131427607;
+			
+			// aapt resource value: 0x7f0b0118
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131427608;
+			
+			// aapt resource value: 0x7f0b0119
+			public const int ThemeOverlay_AppCompat_Dialog = 2131427609;
+			
+			// aapt resource value: 0x7f0b011a
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131427610;
 			
 			// aapt resource value: 0x7f0b011b
-			public const int Widget_AppCompat_ActionBar = 2131427611;
+			public const int ThemeOverlay_AppCompat_Light = 2131427611;
 			
-			// aapt resource value: 0x7f0b011c
-			public const int Widget_AppCompat_ActionBar_Solid = 2131427612;
+			// aapt resource value: 0x7f0b01c1
+			public const int ThemeOverlay_MaterialComponents = 2131427777;
 			
-			// aapt resource value: 0x7f0b011d
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131427613;
+			// aapt resource value: 0x7f0b01c2
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131427778;
 			
-			// aapt resource value: 0x7f0b011e
-			public const int Widget_AppCompat_ActionBar_TabText = 2131427614;
+			// aapt resource value: 0x7f0b01c3
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131427779;
 			
-			// aapt resource value: 0x7f0b011f
-			public const int Widget_AppCompat_ActionBar_TabView = 2131427615;
+			// aapt resource value: 0x7f0b01c4
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131427780;
 			
-			// aapt resource value: 0x7f0b0120
-			public const int Widget_AppCompat_ActionButton = 2131427616;
+			// aapt resource value: 0x7f0b01c5
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131427781;
 			
-			// aapt resource value: 0x7f0b0121
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131427617;
+			// aapt resource value: 0x7f0b01c6
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131427782;
 			
-			// aapt resource value: 0x7f0b0122
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131427618;
+			// aapt resource value: 0x7f0b01c7
+			public const int ThemeOverlay_MaterialComponents_Light = 2131427783;
 			
-			// aapt resource value: 0x7f0b0123
-			public const int Widget_AppCompat_ActionMode = 2131427619;
+			// aapt resource value: 0x7f0b01c8
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131427784;
 			
-			// aapt resource value: 0x7f0b0124
-			public const int Widget_AppCompat_ActivityChooserView = 2131427620;
+			// aapt resource value: 0x7f0b01c9
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131427785;
 			
-			// aapt resource value: 0x7f0b0125
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131427621;
+			// aapt resource value: 0x7f0b01ca
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131427786;
 			
-			// aapt resource value: 0x7f0b0126
-			public const int Widget_AppCompat_Button = 2131427622;
-			
-			// aapt resource value: 0x7f0b0127
-			public const int Widget_AppCompat_Button_Borderless = 2131427623;
-			
-			// aapt resource value: 0x7f0b0128
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131427624;
-			
-			// aapt resource value: 0x7f0b0129
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427625;
-			
-			// aapt resource value: 0x7f0b012a
-			public const int Widget_AppCompat_Button_Colored = 2131427626;
-			
-			// aapt resource value: 0x7f0b012b
-			public const int Widget_AppCompat_Button_Small = 2131427627;
-			
-			// aapt resource value: 0x7f0b012c
-			public const int Widget_AppCompat_ButtonBar = 2131427628;
-			
-			// aapt resource value: 0x7f0b012d
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131427629;
-			
-			// aapt resource value: 0x7f0b012e
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131427630;
-			
-			// aapt resource value: 0x7f0b012f
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131427631;
-			
-			// aapt resource value: 0x7f0b0130
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131427632;
-			
-			// aapt resource value: 0x7f0b0131
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131427633;
-			
-			// aapt resource value: 0x7f0b0132
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131427634;
-			
-			// aapt resource value: 0x7f0b0133
-			public const int Widget_AppCompat_EditText = 2131427635;
-			
-			// aapt resource value: 0x7f0b0134
-			public const int Widget_AppCompat_ImageButton = 2131427636;
-			
-			// aapt resource value: 0x7f0b0135
-			public const int Widget_AppCompat_Light_ActionBar = 2131427637;
-			
-			// aapt resource value: 0x7f0b0136
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131427638;
-			
-			// aapt resource value: 0x7f0b0137
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131427639;
-			
-			// aapt resource value: 0x7f0b0138
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131427640;
-			
-			// aapt resource value: 0x7f0b0139
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131427641;
-			
-			// aapt resource value: 0x7f0b013a
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131427642;
-			
-			// aapt resource value: 0x7f0b013b
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427643;
-			
-			// aapt resource value: 0x7f0b013c
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131427644;
-			
-			// aapt resource value: 0x7f0b013d
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131427645;
-			
-			// aapt resource value: 0x7f0b013e
-			public const int Widget_AppCompat_Light_ActionButton = 2131427646;
-			
-			// aapt resource value: 0x7f0b013f
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131427647;
-			
-			// aapt resource value: 0x7f0b0140
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131427648;
-			
-			// aapt resource value: 0x7f0b0141
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131427649;
-			
-			// aapt resource value: 0x7f0b0142
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131427650;
-			
-			// aapt resource value: 0x7f0b0143
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131427651;
-			
-			// aapt resource value: 0x7f0b0144
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131427652;
-			
-			// aapt resource value: 0x7f0b0145
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131427653;
-			
-			// aapt resource value: 0x7f0b0146
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131427654;
-			
-			// aapt resource value: 0x7f0b0147
-			public const int Widget_AppCompat_Light_PopupMenu = 2131427655;
-			
-			// aapt resource value: 0x7f0b0148
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131427656;
-			
-			// aapt resource value: 0x7f0b0149
-			public const int Widget_AppCompat_Light_SearchView = 2131427657;
-			
-			// aapt resource value: 0x7f0b014a
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131427658;
-			
-			// aapt resource value: 0x7f0b014b
-			public const int Widget_AppCompat_ListMenuView = 2131427659;
-			
-			// aapt resource value: 0x7f0b014c
-			public const int Widget_AppCompat_ListPopupWindow = 2131427660;
-			
-			// aapt resource value: 0x7f0b014d
-			public const int Widget_AppCompat_ListView = 2131427661;
-			
-			// aapt resource value: 0x7f0b014e
-			public const int Widget_AppCompat_ListView_DropDown = 2131427662;
-			
-			// aapt resource value: 0x7f0b014f
-			public const int Widget_AppCompat_ListView_Menu = 2131427663;
-			
-			// aapt resource value: 0x7f0b0150
-			public const int Widget_AppCompat_PopupMenu = 2131427664;
-			
-			// aapt resource value: 0x7f0b0151
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131427665;
-			
-			// aapt resource value: 0x7f0b0152
-			public const int Widget_AppCompat_PopupWindow = 2131427666;
-			
-			// aapt resource value: 0x7f0b0153
-			public const int Widget_AppCompat_ProgressBar = 2131427667;
-			
-			// aapt resource value: 0x7f0b0154
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131427668;
-			
-			// aapt resource value: 0x7f0b0155
-			public const int Widget_AppCompat_RatingBar = 2131427669;
-			
-			// aapt resource value: 0x7f0b0156
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131427670;
-			
-			// aapt resource value: 0x7f0b0157
-			public const int Widget_AppCompat_RatingBar_Small = 2131427671;
-			
-			// aapt resource value: 0x7f0b0158
-			public const int Widget_AppCompat_SearchView = 2131427672;
-			
-			// aapt resource value: 0x7f0b0159
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131427673;
-			
-			// aapt resource value: 0x7f0b015a
-			public const int Widget_AppCompat_SeekBar = 2131427674;
-			
-			// aapt resource value: 0x7f0b015b
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131427675;
-			
-			// aapt resource value: 0x7f0b015c
-			public const int Widget_AppCompat_Spinner = 2131427676;
-			
-			// aapt resource value: 0x7f0b015d
-			public const int Widget_AppCompat_Spinner_DropDown = 2131427677;
-			
-			// aapt resource value: 0x7f0b015e
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131427678;
-			
-			// aapt resource value: 0x7f0b015f
-			public const int Widget_AppCompat_Spinner_Underlined = 2131427679;
-			
-			// aapt resource value: 0x7f0b0160
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131427680;
-			
-			// aapt resource value: 0x7f0b0161
-			public const int Widget_AppCompat_Toolbar = 2131427681;
-			
-			// aapt resource value: 0x7f0b0162
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131427682;
-			
-			// aapt resource value: 0x7f0b01fe
-			public const int Widget_Compat_NotificationActionContainer = 2131427838;
-			
-			// aapt resource value: 0x7f0b01ff
-			public const int Widget_Compat_NotificationActionText = 2131427839;
+			// aapt resource value: 0x7f0b01cb
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131427787;
 			
 			// aapt resource value: 0x7f0b01cc
-			public const int Widget_Design_AppBarLayout = 2131427788;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131427788;
 			
-			// aapt resource value: 0x7f0b01cd
-			public const int Widget_Design_BottomNavigationView = 2131427789;
-			
-			// aapt resource value: 0x7f0b01ce
-			public const int Widget_Design_BottomSheet_Modal = 2131427790;
-			
-			// aapt resource value: 0x7f0b01cf
-			public const int Widget_Design_CollapsingToolbar = 2131427791;
-			
-			// aapt resource value: 0x7f0b01d0
-			public const int Widget_Design_FloatingActionButton = 2131427792;
-			
-			// aapt resource value: 0x7f0b01d1
-			public const int Widget_Design_NavigationView = 2131427793;
-			
-			// aapt resource value: 0x7f0b01d2
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131427794;
-			
-			// aapt resource value: 0x7f0b01d3
-			public const int Widget_Design_Snackbar = 2131427795;
-			
-			// aapt resource value: 0x7f0b0168
-			public const int Widget_Design_TabLayout = 2131427688;
-			
-			// aapt resource value: 0x7f0b01d4
-			public const int Widget_Design_TextInputLayout = 2131427796;
-			
-			// aapt resource value: 0x7f0b01d5
-			public const int Widget_MaterialComponents_BottomAppBar = 2131427797;
-			
-			// aapt resource value: 0x7f0b01d6
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131427798;
-			
-			// aapt resource value: 0x7f0b01d7
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131427799;
-			
-			// aapt resource value: 0x7f0b01d8
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131427800;
-			
-			// aapt resource value: 0x7f0b01d9
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131427801;
-			
-			// aapt resource value: 0x7f0b01da
-			public const int Widget_MaterialComponents_Button = 2131427802;
-			
-			// aapt resource value: 0x7f0b01db
-			public const int Widget_MaterialComponents_Button_Icon = 2131427803;
-			
-			// aapt resource value: 0x7f0b01dc
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131427804;
-			
-			// aapt resource value: 0x7f0b01dd
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131427805;
-			
-			// aapt resource value: 0x7f0b01de
-			public const int Widget_MaterialComponents_Button_TextButton = 2131427806;
-			
-			// aapt resource value: 0x7f0b01df
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131427807;
-			
-			// aapt resource value: 0x7f0b01e0
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131427808;
-			
-			// aapt resource value: 0x7f0b01e1
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131427809;
-			
-			// aapt resource value: 0x7f0b01e2
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131427810;
-			
-			// aapt resource value: 0x7f0b01e3
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131427811;
-			
-			// aapt resource value: 0x7f0b01e4
-			public const int Widget_MaterialComponents_CardView = 2131427812;
-			
-			// aapt resource value: 0x7f0b01e5
-			public const int Widget_MaterialComponents_Chip_Action = 2131427813;
-			
-			// aapt resource value: 0x7f0b01e6
-			public const int Widget_MaterialComponents_Chip_Choice = 2131427814;
-			
-			// aapt resource value: 0x7f0b01e7
-			public const int Widget_MaterialComponents_Chip_Entry = 2131427815;
-			
-			// aapt resource value: 0x7f0b01e8
-			public const int Widget_MaterialComponents_Chip_Filter = 2131427816;
-			
-			// aapt resource value: 0x7f0b01e9
-			public const int Widget_MaterialComponents_ChipGroup = 2131427817;
-			
-			// aapt resource value: 0x7f0b01ea
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131427818;
-			
-			// aapt resource value: 0x7f0b01eb
-			public const int Widget_MaterialComponents_NavigationView = 2131427819;
-			
-			// aapt resource value: 0x7f0b01ec
-			public const int Widget_MaterialComponents_Snackbar = 2131427820;
-			
-			// aapt resource value: 0x7f0b01ed
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131427821;
-			
-			// aapt resource value: 0x7f0b01ee
-			public const int Widget_MaterialComponents_TabLayout = 2131427822;
-			
-			// aapt resource value: 0x7f0b01ef
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131427823;
-			
-			// aapt resource value: 0x7f0b01f0
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131427824;
-			
-			// aapt resource value: 0x7f0b01f1
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131427825;
-			
-			// aapt resource value: 0x7f0b01f2
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131427826;
-			
-			// aapt resource value: 0x7f0b01f3
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131427827;
-			
-			// aapt resource value: 0x7f0b01f4
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131427828;
-			
-			// aapt resource value: 0x7f0b01f5
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131427829;
-			
-			// aapt resource value: 0x7f0b01f6
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131427830;
-			
-			// aapt resource value: 0x7f0b01f7
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131427831;
-			
-			// aapt resource value: 0x7f0b01f8
-			public const int Widget_MaterialComponents_Toolbar = 2131427832;
+			// aapt resource value: 0x7f0b000a
+			public const int ThemeOverlay_MediaRouter_Dark = 2131427338;
 			
 			// aapt resource value: 0x7f0b000b
-			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131427339;
+			public const int ThemeOverlay_MediaRouter_Light = 2131427339;
 			
-			// aapt resource value: 0x7f0b000c
-			public const int Widget_MediaRouter_MediaRouteButton = 2131427340;
+			// aapt resource value: 0x7f0b011c
+			public const int Widget_AppCompat_ActionBar = 2131427612;
+			
+			// aapt resource value: 0x7f0b011d
+			public const int Widget_AppCompat_ActionBar_Solid = 2131427613;
+			
+			// aapt resource value: 0x7f0b011e
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131427614;
+			
+			// aapt resource value: 0x7f0b011f
+			public const int Widget_AppCompat_ActionBar_TabText = 2131427615;
+			
+			// aapt resource value: 0x7f0b0120
+			public const int Widget_AppCompat_ActionBar_TabView = 2131427616;
+			
+			// aapt resource value: 0x7f0b0121
+			public const int Widget_AppCompat_ActionButton = 2131427617;
+			
+			// aapt resource value: 0x7f0b0122
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131427618;
+			
+			// aapt resource value: 0x7f0b0123
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131427619;
+			
+			// aapt resource value: 0x7f0b0124
+			public const int Widget_AppCompat_ActionMode = 2131427620;
+			
+			// aapt resource value: 0x7f0b0125
+			public const int Widget_AppCompat_ActivityChooserView = 2131427621;
+			
+			// aapt resource value: 0x7f0b0126
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131427622;
+			
+			// aapt resource value: 0x7f0b0127
+			public const int Widget_AppCompat_Button = 2131427623;
+			
+			// aapt resource value: 0x7f0b0128
+			public const int Widget_AppCompat_Button_Borderless = 2131427624;
+			
+			// aapt resource value: 0x7f0b0129
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131427625;
+			
+			// aapt resource value: 0x7f0b012a
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131427626;
+			
+			// aapt resource value: 0x7f0b012b
+			public const int Widget_AppCompat_Button_Colored = 2131427627;
+			
+			// aapt resource value: 0x7f0b012c
+			public const int Widget_AppCompat_Button_Small = 2131427628;
+			
+			// aapt resource value: 0x7f0b012d
+			public const int Widget_AppCompat_ButtonBar = 2131427629;
+			
+			// aapt resource value: 0x7f0b012e
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131427630;
+			
+			// aapt resource value: 0x7f0b012f
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131427631;
+			
+			// aapt resource value: 0x7f0b0130
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131427632;
+			
+			// aapt resource value: 0x7f0b0131
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131427633;
+			
+			// aapt resource value: 0x7f0b0132
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131427634;
+			
+			// aapt resource value: 0x7f0b0133
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131427635;
+			
+			// aapt resource value: 0x7f0b0134
+			public const int Widget_AppCompat_EditText = 2131427636;
+			
+			// aapt resource value: 0x7f0b0135
+			public const int Widget_AppCompat_ImageButton = 2131427637;
+			
+			// aapt resource value: 0x7f0b0136
+			public const int Widget_AppCompat_Light_ActionBar = 2131427638;
+			
+			// aapt resource value: 0x7f0b0137
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131427639;
+			
+			// aapt resource value: 0x7f0b0138
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131427640;
+			
+			// aapt resource value: 0x7f0b0139
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131427641;
+			
+			// aapt resource value: 0x7f0b013a
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131427642;
+			
+			// aapt resource value: 0x7f0b013b
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131427643;
+			
+			// aapt resource value: 0x7f0b013c
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131427644;
+			
+			// aapt resource value: 0x7f0b013d
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131427645;
+			
+			// aapt resource value: 0x7f0b013e
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131427646;
+			
+			// aapt resource value: 0x7f0b013f
+			public const int Widget_AppCompat_Light_ActionButton = 2131427647;
+			
+			// aapt resource value: 0x7f0b0140
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131427648;
+			
+			// aapt resource value: 0x7f0b0141
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131427649;
+			
+			// aapt resource value: 0x7f0b0142
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131427650;
+			
+			// aapt resource value: 0x7f0b0143
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131427651;
+			
+			// aapt resource value: 0x7f0b0144
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131427652;
+			
+			// aapt resource value: 0x7f0b0145
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131427653;
+			
+			// aapt resource value: 0x7f0b0146
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131427654;
+			
+			// aapt resource value: 0x7f0b0147
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131427655;
+			
+			// aapt resource value: 0x7f0b0148
+			public const int Widget_AppCompat_Light_PopupMenu = 2131427656;
+			
+			// aapt resource value: 0x7f0b0149
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131427657;
+			
+			// aapt resource value: 0x7f0b014a
+			public const int Widget_AppCompat_Light_SearchView = 2131427658;
+			
+			// aapt resource value: 0x7f0b014b
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131427659;
+			
+			// aapt resource value: 0x7f0b014c
+			public const int Widget_AppCompat_ListMenuView = 2131427660;
+			
+			// aapt resource value: 0x7f0b014d
+			public const int Widget_AppCompat_ListPopupWindow = 2131427661;
+			
+			// aapt resource value: 0x7f0b014e
+			public const int Widget_AppCompat_ListView = 2131427662;
+			
+			// aapt resource value: 0x7f0b014f
+			public const int Widget_AppCompat_ListView_DropDown = 2131427663;
+			
+			// aapt resource value: 0x7f0b0150
+			public const int Widget_AppCompat_ListView_Menu = 2131427664;
+			
+			// aapt resource value: 0x7f0b0151
+			public const int Widget_AppCompat_PopupMenu = 2131427665;
+			
+			// aapt resource value: 0x7f0b0152
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131427666;
+			
+			// aapt resource value: 0x7f0b0153
+			public const int Widget_AppCompat_PopupWindow = 2131427667;
+			
+			// aapt resource value: 0x7f0b0154
+			public const int Widget_AppCompat_ProgressBar = 2131427668;
+			
+			// aapt resource value: 0x7f0b0155
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131427669;
+			
+			// aapt resource value: 0x7f0b0156
+			public const int Widget_AppCompat_RatingBar = 2131427670;
+			
+			// aapt resource value: 0x7f0b0157
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131427671;
+			
+			// aapt resource value: 0x7f0b0158
+			public const int Widget_AppCompat_RatingBar_Small = 2131427672;
+			
+			// aapt resource value: 0x7f0b0159
+			public const int Widget_AppCompat_SearchView = 2131427673;
+			
+			// aapt resource value: 0x7f0b015a
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131427674;
+			
+			// aapt resource value: 0x7f0b015b
+			public const int Widget_AppCompat_SeekBar = 2131427675;
+			
+			// aapt resource value: 0x7f0b015c
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131427676;
+			
+			// aapt resource value: 0x7f0b015d
+			public const int Widget_AppCompat_Spinner = 2131427677;
+			
+			// aapt resource value: 0x7f0b015e
+			public const int Widget_AppCompat_Spinner_DropDown = 2131427678;
+			
+			// aapt resource value: 0x7f0b015f
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131427679;
+			
+			// aapt resource value: 0x7f0b0160
+			public const int Widget_AppCompat_Spinner_Underlined = 2131427680;
+			
+			// aapt resource value: 0x7f0b0161
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131427681;
+			
+			// aapt resource value: 0x7f0b0162
+			public const int Widget_AppCompat_Toolbar = 2131427682;
+			
+			// aapt resource value: 0x7f0b0163
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131427683;
+			
+			// aapt resource value: 0x7f0b01ff
+			public const int Widget_Compat_NotificationActionContainer = 2131427839;
+			
+			// aapt resource value: 0x7f0b0200
+			public const int Widget_Compat_NotificationActionText = 2131427840;
+			
+			// aapt resource value: 0x7f0b01cd
+			public const int Widget_Design_AppBarLayout = 2131427789;
+			
+			// aapt resource value: 0x7f0b01ce
+			public const int Widget_Design_BottomNavigationView = 2131427790;
+			
+			// aapt resource value: 0x7f0b01cf
+			public const int Widget_Design_BottomSheet_Modal = 2131427791;
+			
+			// aapt resource value: 0x7f0b01d0
+			public const int Widget_Design_CollapsingToolbar = 2131427792;
+			
+			// aapt resource value: 0x7f0b01d1
+			public const int Widget_Design_FloatingActionButton = 2131427793;
+			
+			// aapt resource value: 0x7f0b01d2
+			public const int Widget_Design_NavigationView = 2131427794;
+			
+			// aapt resource value: 0x7f0b01d3
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131427795;
+			
+			// aapt resource value: 0x7f0b01d4
+			public const int Widget_Design_Snackbar = 2131427796;
+			
+			// aapt resource value: 0x7f0b0169
+			public const int Widget_Design_TabLayout = 2131427689;
+			
+			// aapt resource value: 0x7f0b01d5
+			public const int Widget_Design_TextInputLayout = 2131427797;
+			
+			// aapt resource value: 0x7f0b01d6
+			public const int Widget_MaterialComponents_BottomAppBar = 2131427798;
+			
+			// aapt resource value: 0x7f0b01d7
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131427799;
+			
+			// aapt resource value: 0x7f0b01d8
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131427800;
+			
+			// aapt resource value: 0x7f0b01d9
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131427801;
+			
+			// aapt resource value: 0x7f0b01da
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131427802;
+			
+			// aapt resource value: 0x7f0b01db
+			public const int Widget_MaterialComponents_Button = 2131427803;
+			
+			// aapt resource value: 0x7f0b01dc
+			public const int Widget_MaterialComponents_Button_Icon = 2131427804;
+			
+			// aapt resource value: 0x7f0b01dd
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131427805;
+			
+			// aapt resource value: 0x7f0b01de
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131427806;
+			
+			// aapt resource value: 0x7f0b01df
+			public const int Widget_MaterialComponents_Button_TextButton = 2131427807;
+			
+			// aapt resource value: 0x7f0b01e0
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131427808;
+			
+			// aapt resource value: 0x7f0b01e1
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131427809;
+			
+			// aapt resource value: 0x7f0b01e2
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131427810;
+			
+			// aapt resource value: 0x7f0b01e3
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131427811;
+			
+			// aapt resource value: 0x7f0b01e4
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131427812;
+			
+			// aapt resource value: 0x7f0b01e5
+			public const int Widget_MaterialComponents_CardView = 2131427813;
+			
+			// aapt resource value: 0x7f0b01e6
+			public const int Widget_MaterialComponents_Chip_Action = 2131427814;
+			
+			// aapt resource value: 0x7f0b01e7
+			public const int Widget_MaterialComponents_Chip_Choice = 2131427815;
+			
+			// aapt resource value: 0x7f0b01e8
+			public const int Widget_MaterialComponents_Chip_Entry = 2131427816;
+			
+			// aapt resource value: 0x7f0b01e9
+			public const int Widget_MaterialComponents_Chip_Filter = 2131427817;
+			
+			// aapt resource value: 0x7f0b01ea
+			public const int Widget_MaterialComponents_ChipGroup = 2131427818;
+			
+			// aapt resource value: 0x7f0b01eb
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131427819;
+			
+			// aapt resource value: 0x7f0b01ec
+			public const int Widget_MaterialComponents_NavigationView = 2131427820;
+			
+			// aapt resource value: 0x7f0b01ed
+			public const int Widget_MaterialComponents_Snackbar = 2131427821;
+			
+			// aapt resource value: 0x7f0b01ee
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131427822;
+			
+			// aapt resource value: 0x7f0b01ef
+			public const int Widget_MaterialComponents_TabLayout = 2131427823;
+			
+			// aapt resource value: 0x7f0b01f0
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131427824;
+			
+			// aapt resource value: 0x7f0b01f1
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131427825;
+			
+			// aapt resource value: 0x7f0b01f2
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131427826;
+			
+			// aapt resource value: 0x7f0b01f3
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131427827;
+			
+			// aapt resource value: 0x7f0b01f4
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131427828;
+			
+			// aapt resource value: 0x7f0b01f5
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131427829;
+			
+			// aapt resource value: 0x7f0b01f6
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131427830;
+			
+			// aapt resource value: 0x7f0b01f7
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131427831;
+			
+			// aapt resource value: 0x7f0b01f8
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131427832;
 			
 			// aapt resource value: 0x7f0b01f9
-			public const int Widget_Support_CoordinatorLayout = 2131427833;
+			public const int Widget_MaterialComponents_Toolbar = 2131427833;
+			
+			// aapt resource value: 0x7f0b000c
+			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131427340;
+			
+			// aapt resource value: 0x7f0b000d
+			public const int Widget_MediaRouter_MediaRouteButton = 2131427341;
+			
+			// aapt resource value: 0x7f0b01fa
+			public const int Widget_Support_CoordinatorLayout = 2131427834;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int collectionViewStyle = 2131427329;
 			
-			// aapt resource value: 0x7f0b0204
-			public const int splashscreen = 2131427844;
+			// aapt resource value: 0x7f0b0205
+			public const int splashscreen = 2131427845;
 			
 			static Style()
 			{

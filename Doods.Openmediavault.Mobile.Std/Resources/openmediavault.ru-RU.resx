@@ -373,7 +373,7 @@
     <value>Администратор: чтение/запись, Пользователи: чтение/запись, Другие: нет доступа</value>
   </data>
   <data name="Administrator:Read/Write,Users:Read/Write,Others:Read-Only" xml:space="preserve">
-    <value>Администратор: чтение / запись, Пользователи: чтение / запись, Другие: нет доступа</value>
+    <value>Администратор: чтение / запись, Пользователи: чтение / запись, Другие: только чтение</value>
   </data>
   <data name="AdvancedPowerManagement" xml:space="preserve">
     <value>Расширенное управление питанием</value>
@@ -399,9 +399,6 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Разрешить клиентам возобновлять прерванные закачки</value>
   </data>
-  <data name="AllowThisServerToTryAndBecomeALocalMasterBrowser" xml:space="preserve">
-    <value>Разрешить этому серверу стать локальным мастером списков</value>
-  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>Американское Самоа</value>
   </data>
@@ -422,6 +419,9 @@
   </data>
   <data name="AnonymousFTP" xml:space="preserve">
     <value>Анонимный FTP</value>
+  </data>
+  <data name="AnotherUserIsAlreadyAuthenticated." xml:space="preserve">
+    <value>Другой пользователь уже аутентифицирован.</value>
   </data>
   <data name="Antarctica" xml:space="preserve">
     <value>Антарктида</value>
@@ -933,8 +933,8 @@
   <data name="Disabled" xml:space="preserve">
     <value>Выключено</value>
   </data>
-  <data name="DisallowTheUserToModifyHisAccount." xml:space="preserve">
-    <value>Запретить пользователю изменять аккаунт.</value>
+  <data name="DisallowTheUserToModifyTheirAccount." xml:space="preserve">
+    <value>Запретить пользователю изменять учетные записи.</value>
   </data>
   <data name="DiskUsage" xml:space="preserve">
     <value>Использование диска</value>
@@ -1080,9 +1080,6 @@
   <data name="EditScheduledTest" xml:space="preserve">
     <value>Редактировать запланированный тест</value>
   </data>
-  <data name="EditService" xml:space="preserve">
-    <value>Редактировать сервис</value>
-  </data>
   <data name="EditShare" xml:space="preserve">
     <value>Редактировать общий ресурс</value>
   </data>
@@ -1118,6 +1115,9 @@
   </data>
   <data name="EnableSSL/TLSConnections" xml:space="preserve">
     <value>Включить соединения SSL/TLS</value>
+  </data>
+  <data name="EnableTimeMachineSupportForThisShare." xml:space="preserve">
+    <value>Включить поддержку Time Machine для этого общего ресурса.</value>
   </data>
   <data name="EnableWINSServer" xml:space="preserve">
     <value>Включить WINS сервер</value>
@@ -1181,6 +1181,9 @@
   </data>
   <data name="Enabled" xml:space="preserve">
     <value>Включено</value>
+  </data>
+  <data name="EncryptionMode" xml:space="preserve">
+    <value>Режим шифрования</value>
   </data>
   <data name="EnterYourPassword" xml:space="preserve">
     <value>Введите свой пароль</value>
@@ -1608,8 +1611,14 @@
   <data name="Interfaces" xml:space="preserve">
     <value>Интерфейсы</value>
   </data>
+  <data name="InvalidIPAddress." xml:space="preserve">
+    <value>Неверный IP-адрес.</value>
+  </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
     <value>Неверный открытый ключ SSH (RFC 4716)</value>
+  </data>
+  <data name="InvalidUser-Agent." xml:space="preserve">
+    <value>Неверный User-Agent.</value>
   </data>
   <data name="InvalidDomainName" xml:space="preserve">
     <value>Неверное имя домена</value>
@@ -1628,6 +1637,9 @@
   </data>
   <data name="InvalidUserName" xml:space="preserve">
     <value>Недопустимое имя пользователя</value>
+  </data>
+  <data name="InvalidUser." xml:space="preserve">
+    <value>Недействительный пользователь.</value>
   </data>
   <data name="Iran" xml:space="preserve">
     <value>Иран</value>
@@ -1763,9 +1775,6 @@
   </data>
   <data name="Local" xml:space="preserve">
     <value>Локальный</value>
-  </data>
-  <data name="LocalMasterBrowser" xml:space="preserve">
-    <value>Локальный главный браузер</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>Местоположение</value>
@@ -2130,9 +2139,6 @@
   <data name="Num" xml:space="preserve">
     <value>Номер</value>
   </data>
-  <data name="NumberOfServers" xml:space="preserve">
-    <value>Число серверов</value>
-  </data>
   <data name="OK" xml:space="preserve">
     <value>ОК</value>
   </data>
@@ -2235,11 +2241,11 @@
   <data name="PasswordsDon'tMatch" xml:space="preserve">
     <value>Пароли не совпадают</value>
   </data>
-  <data name="PasteARSACertificateInX.509PEMFormatHere." xml:space="preserve">
-    <value>Вставить сюда RSA сертификат X.509 в PEM формате.</value>
+  <data name="PasteARSAOrECCCertificateInX.509PEMFormatHere." xml:space="preserve">
+    <value>Вставить сюда сертификат RSA или ECC в формате PEM X.509.</value>
   </data>
-  <data name="PasteAnPrivateRSAKeyInX.509PEMFormatHere." xml:space="preserve">
-    <value>Вставить сюда приватный RSA ключ в формате X.509 PEM.</value>
+  <data name="PasteARSAOrECCPrivateKeyInX.509PEMFormatHere." xml:space="preserve">
+    <value>Вставить сюда закрытый ключ RSA или ECC в формате PEM X.509.</value>
   </data>
   <data name="Path" xml:space="preserve">
     <value>Путь</value>
@@ -2331,8 +2337,14 @@
   <data name="PreserveExtendedAttributes" xml:space="preserve">
     <value>Сохранить расширенные атрибуты</value>
   </data>
+  <data name="PreserveGroup" xml:space="preserve">
+    <value>Сохранить группу</value>
+  </data>
   <data name="PreserveModificationTimes" xml:space="preserve">
     <value>Сохранить время модификации</value>
+  </data>
+  <data name="PreserveOwner" xml:space="preserve">
+    <value>Сохранить владельца</value>
   </data>
   <data name="PreservePermissions" xml:space="preserve">
     <value>Сохранить права доступа</value>
@@ -2616,6 +2628,9 @@
   <data name="SSL/TLS" xml:space="preserve">
     <value>SSL/TLS</value>
   </data>
+  <data name="STARTTLS" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
   <data name="SaintHelena" xml:space="preserve">
     <value>Остров Святой Елены</value>
   </data>
@@ -2778,9 +2793,6 @@
   <data name="Service" xml:space="preserve">
     <value>Сервис</value>
   </data>
-  <data name="ServiceDiscovery" xml:space="preserve">
-    <value>Обозреватель сервисов</value>
-  </data>
   <data name="ServiceDisabled" xml:space="preserve">
     <value>Сервис отключен</value>
   </data>
@@ -2918,9 +2930,6 @@
   </data>
   <data name="SpecialActionFlag" xml:space="preserve">
     <value>Специальный флаг действия</value>
-  </data>
-  <data name="SpecifiesHowManyServerThreadsToCreate." xml:space="preserve">
-    <value>Определяет, сколько серверных потоков создавать.</value>
   </data>
   <data name="SpecifiesOneOfTheBondingPolicies." xml:space="preserve">
     <value>Определяет одну из политик связывания.</value>
@@ -3132,23 +3141,17 @@
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
     <value>Запрошенная страница не найдена.</value>
   </data>
-  <data name="TheSessionIPAddressHasBeenChanged." xml:space="preserve">
-    <value>IP-адрес сеанса был изменен.</value>
-  </data>
-  <data name="TheSessionUserNoLongerExists." xml:space="preserve">
-    <value>Пользователь сеанса больше не существует.</value>
-  </data>
   <data name="TheSourceSharedFolder." xml:space="preserve">
     <value>Исходный общий ресурс.</value>
   </data>
   <data name="TheSpecifiedQuotaExceedsTheMax.PossibleValueOf4Tib." xml:space="preserve">
     <value>Указанная квота превышает максимальное возможное значение 4 TiB.</value>
   </data>
+  <data name="TheSystemMustBeRebooted." xml:space="preserve">
+    <value>Система должна быть перезагружена.</value>
+  </data>
   <data name="TheSystemWillRebootNow.ThisMayTakeSomeTime..." xml:space="preserve">
     <value>Система будет перезагружена сейчас. Это может занять некоторое время...</value>
-  </data>
-  <data name="TheTestEmailHasBeenSentSuccessfully.PleaseCheckYourMailbox." xml:space="preserve">
-    <value>Тестовое электронное письмо было успешно отправлено. Проверьте почтовый ящик.</value>
   </data>
   <data name="TheVolumeLabelForTheFileSystem." xml:space="preserve">
     <value>Метка тома для файловой системы.</value>
@@ -3231,6 +3234,9 @@
   <data name="ThisWillCreateARecycleBinOnTheShare." xml:space="preserve">
     <value>Это создает корзину на общем ресурсе.</value>
   </data>
+  <data name="Threshold" xml:space="preserve">
+    <value>Порог</value>
+  </data>
   <data name="Thursday" xml:space="preserve">
     <value>Четверг</value>
   </data>
@@ -3239,6 +3245,9 @@
   </data>
   <data name="Time" xml:space="preserve">
     <value>Время</value>
+  </data>
+  <data name="TimeMachineSupport" xml:space="preserve">
+    <value>Поддержка Time Machine</value>
   </data>
   <data name="TimeInterval" xml:space="preserve">
     <value>Временной интервал</value>
@@ -3257,9 +3266,6 @@
   </data>
   <data name="Timeout" xml:space="preserve">
     <value>Таймаут</value>
-  </data>
-  <data name="Times" xml:space="preserve">
-    <value>Время</value>
   </data>
   <data name="Togo" xml:space="preserve">
     <value>Того</value>
@@ -3281,9 +3287,6 @@
   </data>
   <data name="TransferType" xml:space="preserve">
     <value>Тип передачи</value>
-  </data>
-  <data name="Treshold" xml:space="preserve">
-    <value>Порог</value>
   </data>
   <data name="TrialRun" xml:space="preserve">
     <value>Пробный запуск</value>
@@ -3387,11 +3390,11 @@
   <data name="Updates" xml:space="preserve">
     <value>Обновления</value>
   </data>
+  <data name="UpdatesAvailable" xml:space="preserve">
+    <value>Доступны обновления</value>
+  </data>
   <data name="UpdatingACLSettings" xml:space="preserve">
     <value>Обновление ACL настроек</value>
-  </data>
-  <data name="Upgrade" xml:space="preserve">
-    <value>Обновить</value>
   </data>
   <data name="Upload" xml:space="preserve">
     <value>Загрузить</value>
@@ -3416,9 +3419,6 @@
   </data>
   <data name="UseNTPServer" xml:space="preserve">
     <value>Использование сервера NTP</value>
-  </data>
-  <data name="UseSSL/TLSSecureConnection" xml:space="preserve">
-    <value>Использовать SSL/TLS для безопасного соединения</value>
   </data>
   <data name="UseChroot" xml:space="preserve">
     <value>Использовать chroot</value>

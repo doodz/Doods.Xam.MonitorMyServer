@@ -54,12 +54,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
         WifiManager.MulticastLock mlock;
         protected override void OnDestroy()
         {
+            //base.OnDestroy();
             if (mlock != null)
             {
                 mlock.Release();
                 mlock = null;
             }
-            base.OnDestroy();
+           
         }
 
 

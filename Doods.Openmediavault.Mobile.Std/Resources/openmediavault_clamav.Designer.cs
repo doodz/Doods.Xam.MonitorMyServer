@@ -39,7 +39,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Doods.Openmediavault.Mobile.Std.Resources.openmediavault-clamav", typeof(openmediavault_clamav).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Doods.Openmediavault.Mobile.Std.Resources.openmediavault_clamav", typeof(openmediavault_clamav).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

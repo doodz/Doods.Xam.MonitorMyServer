@@ -1,15 +1,15 @@
-﻿using Autofac;
+﻿using System;
+using System.Linq;
+using Autofac;
+using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Std.Extensions;
 using Doods.Xam.MonitorMyServer;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using System;
-using System.Linq;
 using Xamarin.Forms;
 
 namespace Doods.Framework.Mobile.Std.Mvvm
 {
-
     public class BaseContentPage<T> : BaseContentPage where T : ViewModel
     {
         protected override ViewModel InitializeViewModelInternal()
@@ -18,10 +18,52 @@ namespace Doods.Framework.Mobile.Std.Mvvm
         }
     }
 
+    public class ContentPageWithStateTemplate : ContentView
+    {
+        private readonly NotificationView _notificationView;
+
+        public ContentPageWithStateTemplate()
+        {
+            _notificationView = new NotificationView();
+            Content = new StackLayout
+            {
+                Children =
+                {
+                    _notificationView,
+                    new ScrollView
+                    {
+                        Content = new ContentPresenter()
+                    }
+                }
+            };
+
+
+            BindingContextChanged += OnBindingContextChanged;
+        }
+
+        private void OnBindingContextChanged(object sender, EventArgs e)
+        {
+            if (sender is IViewModelWhithState mv) _notificationView.BindingContext = mv.ViewModelStateItem;
+        }
+    }
+
+
+    public class BaseContentPageWithState : BaseContentPage
+    {
+        private readonly ControlTemplate _contentPageWithStateTemplate =
+            new ControlTemplate(typeof(ContentPageWithStateTemplate));
+
+        public BaseContentPageWithState()
+        {
+            ControlTemplate = _contentPageWithStateTemplate;
+        }
+    }
+
+
     public class BaseContentPage : ContentPage
     {
         public static readonly BindableProperty ViewModelProperty = BindableProperty.Create(nameof(ViewModel),
-            typeof(ViewModel), typeof(BaseContentPage), null);
+            typeof(ViewModel), typeof(BaseContentPage));
 
         public static readonly BindableProperty PageProperty =
             BindableProperty.Create(nameof(Page),
@@ -116,7 +158,6 @@ namespace Doods.Framework.Mobile.Std.Mvvm
             }
             catch (Exception e)
             {
-                
                 //TODO:Logg
                 var msg = e.Message;
             }
@@ -164,7 +205,6 @@ namespace Doods.Framework.Mobile.Std.Mvvm
 
         protected override async void OnDisappearing()
         {
-
             base.OnDisappearing();
             await ViewModel.OnDisappearingAsync();
             _isAppearing = false;

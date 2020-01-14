@@ -399,9 +399,6 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Να επιτρέπεται στους πελάτες να συνεχίζουν μεταφορές που διακόπηκαν</value>
   </data>
-  <data name="AllowThisServerToTryAndBecomeALocalMasterBrowser" xml:space="preserve">
-    <value>Να προωθείται αυτός ο διακομιστής ως κεντρικός τοπικός περιηγητής</value>
-  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>American Samoa</value>
   </data>
@@ -422,6 +419,9 @@
   </data>
   <data name="AnonymousFTP" xml:space="preserve">
     <value>Ανόνυμη πρόσβαση FTP</value>
+  </data>
+  <data name="AnotherUserIsAlreadyAuthenticated." xml:space="preserve">
+    <value>Κάποιος άλλος χρήστης είναι ήδη πιστοποιημένος.</value>
   </data>
   <data name="Antarctica" xml:space="preserve">
     <value>Antarctica</value>
@@ -933,8 +933,8 @@
   <data name="Disabled" xml:space="preserve">
     <value>Ανενεργό</value>
   </data>
-  <data name="DisallowTheUserToModifyHisAccount." xml:space="preserve">
-    <value>Δεν επιτρέπεται στον χρήστη να τροποποιήσει τον λογαριασμό του.</value>
+  <data name="DisallowTheUserToModifyTheirAccount." xml:space="preserve">
+    <value>Να μην επιτρέπεται στον χρήστη να τροποποιήσει τον λογαριασμό του.</value>
   </data>
   <data name="DiskUsage" xml:space="preserve">
     <value>Χρήση δίσκου</value>
@@ -1080,9 +1080,6 @@
   <data name="EditScheduledTest" xml:space="preserve">
     <value>Μεταβολή προγραμματισμένου ελέγχου</value>
   </data>
-  <data name="EditService" xml:space="preserve">
-    <value>Επεξεργασία υπηρεσίας</value>
-  </data>
   <data name="EditShare" xml:space="preserve">
     <value>Μεταβολή κοινόχρηστου</value>
   </data>
@@ -1118,6 +1115,9 @@
   </data>
   <data name="EnableSSL/TLSConnections" xml:space="preserve">
     <value>Ενεργοποίηση συνδέσεων SSL/TLS</value>
+  </data>
+  <data name="EnableTimeMachineSupportForThisShare." xml:space="preserve">
+    <value>Ενεργοποίηση της Χρονομηχανής για αυτό το κοινόχρηστο.</value>
   </data>
   <data name="EnableWINSServer" xml:space="preserve">
     <value>Ενεργοποίηση διακομιστή WINS</value>
@@ -1181,6 +1181,9 @@
   </data>
   <data name="Enabled" xml:space="preserve">
     <value>Ενεργό</value>
+  </data>
+  <data name="EncryptionMode" xml:space="preserve">
+    <value>Κρυπτογράφηση</value>
   </data>
   <data name="EnterYourPassword" xml:space="preserve">
     <value>Εισάγωγή κωδικού</value>
@@ -1608,8 +1611,14 @@
   <data name="Interfaces" xml:space="preserve">
     <value>Διεπαφές</value>
   </data>
+  <data name="InvalidIPAddress." xml:space="preserve">
+    <value>Άκυρη διεύθυνση ΙΡ.</value>
+  </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
     <value>Μη αποδεκτό δημόσιο κλειδί SSH (RFC 4716)</value>
+  </data>
+  <data name="InvalidUser-Agent." xml:space="preserve">
+    <value>Άκυρος Πράκτορας Χρήστη.</value>
   </data>
   <data name="InvalidDomainName" xml:space="preserve">
     <value>Άκυρο όνομα τομέα</value>
@@ -1618,7 +1627,7 @@
     <value>Άκυρη ονομασία συστήματος αρχείων</value>
   </data>
   <data name="InvalidGroupName" xml:space="preserve">
-    <value>Άκυρη ονομασία ομάδας</value>
+    <value>Άκυρο όνομα ομάδας</value>
   </data>
   <data name="InvalidHostName" xml:space="preserve">
     <value>Άκυρο όνομα συστήματος</value>
@@ -1628,6 +1637,9 @@
   </data>
   <data name="InvalidUserName" xml:space="preserve">
     <value>Άκυρο όνομα χρήστη</value>
+  </data>
+  <data name="InvalidUser." xml:space="preserve">
+    <value>Άκυρος χρήστης.</value>
   </data>
   <data name="Iran" xml:space="preserve">
     <value>Iran</value>
@@ -1763,9 +1775,6 @@
   </data>
   <data name="Local" xml:space="preserve">
     <value>Τοπικό</value>
-  </data>
-  <data name="LocalMasterBrowser" xml:space="preserve">
-    <value>Κεντρικός τοπικός περιηγητής</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>Τοποθεσία</value>
@@ -2130,9 +2139,6 @@
   <data name="Num" xml:space="preserve">
     <value>Αριθμός</value>
   </data>
-  <data name="NumberOfServers" xml:space="preserve">
-    <value>Αριθμός διακομιστών</value>
-  </data>
   <data name="OK" xml:space="preserve">
     <value>Εντάξει</value>
   </data>
@@ -2235,11 +2241,11 @@
   <data name="PasswordsDon'tMatch" xml:space="preserve">
     <value>Οι κωδικοι δεν είναι ίδιοι</value>
   </data>
-  <data name="PasteARSACertificateInX.509PEMFormatHere." xml:space="preserve">
-    <value>Επικόλληση πιστοποιητικού RSA σε μορφή X.509 PEM εδώ.</value>
+  <data name="PasteARSAOrECCCertificateInX.509PEMFormatHere." xml:space="preserve">
+    <value>Επικόλληση πιστοποιητικού RSA ή ECC σε μορφή X.509 PEM εδώ.</value>
   </data>
-  <data name="PasteAnPrivateRSAKeyInX.509PEMFormatHere." xml:space="preserve">
-    <value>Επικόλληση ιδιωτικού κλειδιού RSA σε μορφή X.509 PEM εδώ.</value>
+  <data name="PasteARSAOrECCPrivateKeyInX.509PEMFormatHere." xml:space="preserve">
+    <value>Επικόλληση ιδιωτικού κλειδιού RSA ή ECC σε μορφή X.509 PEM εδώ.</value>
   </data>
   <data name="Path" xml:space="preserve">
     <value>Διαδρομή</value>
@@ -2331,8 +2337,14 @@
   <data name="PreserveExtendedAttributes" xml:space="preserve">
     <value>Διατήρηση εκτεταμένων ιδιοτήτων</value>
   </data>
+  <data name="PreserveGroup" xml:space="preserve">
+    <value>Διατήρηση ομάδας</value>
+  </data>
   <data name="PreserveModificationTimes" xml:space="preserve">
     <value>Διατήρηση χρόνου μεταβολής</value>
+  </data>
+  <data name="PreserveOwner" xml:space="preserve">
+    <value>Διατήρηση ιδιοκτήτη</value>
   </data>
   <data name="PreservePermissions" xml:space="preserve">
     <value>Διατήρηση αδειών</value>
@@ -2616,6 +2628,9 @@
   <data name="SSL/TLS" xml:space="preserve">
     <value>SSL/TLS</value>
   </data>
+  <data name="STARTTLS" xml:space="preserve">
+    <value>STARTTLS</value>
+  </data>
   <data name="SaintHelena" xml:space="preserve">
     <value>Saint Helena</value>
   </data>
@@ -2778,9 +2793,6 @@
   <data name="Service" xml:space="preserve">
     <value>Υπηρεσία</value>
   </data>
-  <data name="ServiceDiscovery" xml:space="preserve">
-    <value>Ανακάλυψη Υπηρεσιών</value>
-  </data>
   <data name="ServiceDisabled" xml:space="preserve">
     <value>Ανενεργή υπηρεσία</value>
   </data>
@@ -2918,9 +2930,6 @@
   </data>
   <data name="SpecialActionFlag" xml:space="preserve">
     <value>Σημαία ειδικής δράσης</value>
-  </data>
-  <data name="SpecifiesHowManyServerThreadsToCreate." xml:space="preserve">
-    <value>Αριθμός νημάτων εξυπηρέτησης προς δημιουργία</value>
   </data>
   <data name="SpecifiesOneOfTheBondingPolicies." xml:space="preserve">
     <value>Ορίζει μία από τις πολιτικές συνδιασμού.</value>
@@ -3132,23 +3141,17 @@
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
     <value>Η σελίδα που ζητήθηκε δεν βρέθηκε.</value>
   </data>
-  <data name="TheSessionIPAddressHasBeenChanged." xml:space="preserve">
-    <value>Η διεύθυνση ΙΡ της συνεδρίας έχει αλλάξει.</value>
-  </data>
-  <data name="TheSessionUserNoLongerExists." xml:space="preserve">
-    <value>Ο χρήστης της συνεδρίας δεν υπάρχει πλέον.</value>
-  </data>
   <data name="TheSourceSharedFolder." xml:space="preserve">
     <value>Ο πηγαίος κοινόχρηστος φάκελος</value>
   </data>
   <data name="TheSpecifiedQuotaExceedsTheMax.PossibleValueOf4Tib." xml:space="preserve">
     <value>Το ποσοστό υπερβαίνει την μέγιστη επιτρεπτή τιμή των 4TiB.</value>
   </data>
+  <data name="TheSystemMustBeRebooted." xml:space="preserve">
+    <value>Το σύστημα πρέπει να επανεκκινηθεί.</value>
+  </data>
   <data name="TheSystemWillRebootNow.ThisMayTakeSomeTime..." xml:space="preserve">
     <value>Το σύστημα θα επανεκκινήσει τώρα. Αυτό μπορεί να πάρει λίγη ώρα ...</value>
-  </data>
-  <data name="TheTestEmailHasBeenSentSuccessfully.PleaseCheckYourMailbox." xml:space="preserve">
-    <value>Το δοκιμαστικό μήνυμα εστάλη επιτυχώς. Ελέγξτε τα εισερχόμενά σας.</value>
   </data>
   <data name="TheVolumeLabelForTheFileSystem." xml:space="preserve">
     <value>Η ετικέτα του τόμου για το σύστημα αρχείων.</value>
@@ -3231,6 +3234,9 @@
   <data name="ThisWillCreateARecycleBinOnTheShare." xml:space="preserve">
     <value>Αυτό θα δημιουργήσει έναν κάδο ανακύκλωσης στο κοινόχρηστο.</value>
   </data>
+  <data name="Threshold" xml:space="preserve">
+    <value>Όριο</value>
+  </data>
   <data name="Thursday" xml:space="preserve">
     <value>Πέμπτη</value>
   </data>
@@ -3239,6 +3245,9 @@
   </data>
   <data name="Time" xml:space="preserve">
     <value>Ώρα</value>
+  </data>
+  <data name="TimeMachineSupport" xml:space="preserve">
+    <value>Υποστήριξη Χρονομηχανής</value>
   </data>
   <data name="TimeInterval" xml:space="preserve">
     <value>Χρονικό διάστημα</value>
@@ -3257,9 +3266,6 @@
   </data>
   <data name="Timeout" xml:space="preserve">
     <value>Χρονικό όριο</value>
-  </data>
-  <data name="Times" xml:space="preserve">
-    <value>Χρόνοι</value>
   </data>
   <data name="Togo" xml:space="preserve">
     <value>Togo</value>
@@ -3281,9 +3287,6 @@
   </data>
   <data name="TransferType" xml:space="preserve">
     <value>Είδος μεταφοράς</value>
-  </data>
-  <data name="Treshold" xml:space="preserve">
-    <value>Κατώφλι</value>
   </data>
   <data name="TrialRun" xml:space="preserve">
     <value>Δοκιμαστική εκτέλεση</value>
@@ -3387,11 +3390,11 @@
   <data name="Updates" xml:space="preserve">
     <value>Ενημερώσεις</value>
   </data>
+  <data name="UpdatesAvailable" xml:space="preserve">
+    <value>Διαθέσιμες ενημερώσεις</value>
+  </data>
   <data name="UpdatingACLSettings" xml:space="preserve">
     <value>Ενημέρωση ρυθμίσεων λιστών πρόσβασης</value>
-  </data>
-  <data name="Upgrade" xml:space="preserve">
-    <value>Αναβάθμιση</value>
   </data>
   <data name="Upload" xml:space="preserve">
     <value>Αποστολή</value>
@@ -3416,9 +3419,6 @@
   </data>
   <data name="UseNTPServer" xml:space="preserve">
     <value>Χρήση διακομιστή ώρας</value>
-  </data>
-  <data name="UseSSL/TLSSecureConnection" xml:space="preserve">
-    <value>Χρήση ασφαλούς σύνδεσης SSL/TLS</value>
   </data>
   <data name="UseChroot" xml:space="preserve">
     <value>Χρήση chroot</value>

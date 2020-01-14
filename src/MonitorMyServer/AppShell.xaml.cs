@@ -17,7 +17,6 @@ namespace Doods.Xam.MonitorMyServer
         {
             InitializeComponent();
             BindingContext = App.Container.Resolve<AppShellViewModel>();
-
         }
     }
 }

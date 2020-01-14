@@ -56,6 +56,9 @@
                                            Title="{resources:Translate Text=Uptime}"
                                            SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
                                            SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                    <controls2:TitledFrameView.GestureRecognizers>
+                        <TapGestureRecognizer  Command="{Binding ShowTestsPageCmd,Mode=OneWay}"/>
+                    </controls2:TitledFrameView.GestureRecognizers>
                     <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}" />
                 </controls2:TitledFrameView>
                 <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}">
@@ -79,7 +82,7 @@
             </StackLayout>
 
         </ScrollView>
-        <controls1:MTAdView PersonalizedAds="true" />
+        <controls1:MTAdView AdsId="{Binding   BannerId }" PersonalizedAds="true" />
     </StackLayout>
 
 </mvvm:BaseContentPage>

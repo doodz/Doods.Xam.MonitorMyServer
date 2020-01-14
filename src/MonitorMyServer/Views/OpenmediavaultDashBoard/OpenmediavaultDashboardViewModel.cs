@@ -10,6 +10,7 @@ using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
 using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmedivault.Ssh.Std.Data.V5;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -25,8 +26,16 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         public ICommand UpdatesCmd { get; }
         public ICommand CheckCmd { get; }
 
-        public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
-            new ObservableRangeCollection<SystemInformation>();
+        //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
+        //    new ObservableRangeCollection<SystemInformation>();
+
+        private OMVInformations _OMVInformations;
+        public OMVInformations OMVInformations
+        {
+            get => _OMVInformations;
+            set => SetProperty(ref _OMVInformations, value);
+        }
+
 
         public ObservableRangeCollection<OmvFilesystems> Filesystems { get; } =
             new ObservableRangeCollection<OmvFilesystems>();
@@ -48,7 +57,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async void Check(object obj)
         {
-            await ViewModelStateItem.RunActionAsync(async () =>
+           
+              await ViewModelStateItem.RunActionAsync(async () =>
             {
                 var filename = await _sshService.UpdateAptList();
 
@@ -135,8 +145,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async Task GetSystemInformation()
         {
-            var result = await _sshService.GetSystemInformation();
-            SystemInformation.ReplaceRange(result);
+            var result = await _sshService.GetSystemInformations();
+            OMVInformations = result;
+            //SystemInformation.ReplaceRange(result);
         }
 
         private void GotoSetting(object o)

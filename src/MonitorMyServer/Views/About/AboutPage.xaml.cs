@@ -17,7 +17,7 @@ namespace Doods.Xam.MonitorMyServer.Views.About
         public AboutPage()
         {
             InitializeComponent();
-            Title = Resource.Updates;
+            Title = Resource.About;
             var vm = App.Container.Resolve<AboutPageViewModel>();
             Start(vm);
         }

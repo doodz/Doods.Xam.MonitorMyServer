@@ -14,12 +14,13 @@
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings.OpenmediavaultSettingsPage">
     <StackLayout>
         <StackLayout.Resources>
-            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
         </StackLayout.Resources>
         <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <ScrollView>
             <StackLayout Padding="8">
                 <controls1:TitledFrameView Title="{resources1:Translate Text=PowerManagement}"
+                                           BindingContext="{Binding PowerManagementSettings,Mode=OneWay}"
                                            TitleStyle="{StaticResource NewTitleStyle}">
 
                     <Grid>
@@ -34,9 +35,11 @@
                         </Grid.RowDefinitions>
 
 
-                        <Label Grid.Row="0" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Monitoring'}" />
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::Monitoring'}" />
                         <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Cpufreq,Mode=TwoWay}" />
-                        <Label Grid.Row="1" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::PowerButton'}" />
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::PowerButton'}" />
                         <controls1:EnumBindablePicker
                             x:TypeArguments="Enums:PowerbtnAction"
                             SelectedItem="{Binding SelectedPowerbtnAction, Mode=TwoWay}"
@@ -49,16 +52,68 @@
                                                                             Translate="{Binding TranslateService,Mode=OneWay}" />-->
 
                         <Button Text="{resources1:Translate Text='openmediavault::Save'}" Grid.Row="2" Grid.Column="0"
-                                Command="{Binding SavePowerManagementSettingCmd,Mode=OneWay}" />
+                                Command="{Binding SaveSettingsCmd,Mode=OneWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Reset'}" Grid.Row="2" Grid.Column="1"
-                                Command="{Binding ResetPowerManagementSettingCmd,Mode=OneWay}" />
+                                Command="{Binding ResetSettingsCmd,Mode=OneWay}" />
                     </Grid>
 
                 </controls1:TitledFrameView>
                 <controls1:TitledFrameView Title="{resources1:Translate Text='openmediavault::WebAdministration'}"
-                                           TitleStyle="{StaticResource NewTitleStyle}" />
+                                           BindingContext="{Binding WebGuiSettings,Mode=OneWay}"
+                                           TitleStyle="{StaticResource NewTitleStyle}">
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Port'}" />
+                        <Entry Grid.Row="0" Grid.Column="1" Text="{Binding Port , Mode=TwoWay}" Keyboard="Numeric" />
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::AutoLogout'}" />
+                        <controls1:EnumBindableDescriptionLocalizablePicker
+                            x:TypeArguments="Enums:TimePickerEnum"
+                            SelectedItem="{Binding SelectedTimeout, Mode=TwoWay}"
+                            Translate="{Binding TranslateService,Mode=OneWay}"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+                        <Label Grid.Row="2" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::EnableSSL/TLS'}" />
+                        <Switch Grid.Row="2" Grid.Column="1" IsToggled="{Binding Enablessl,Mode=TwoWay}"
+                                x:Name="Enablessl" />
+                        <Label Grid.Row="3" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::Certificate'}" />
+                        <Picker Grid.Row="3" Grid.Column="1"
+                                IsEnabled="{Binding Path=IsToggled,Source={x:Reference Enablessl},Converter={StaticResource InverseBooleanConverter}}" />
+
+                        <Label Grid.Row="4" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Port'}" />
+                        <Entry Grid.Row="4" Grid.Column="1" Text="{Binding Sslport , Mode=TwoWay}" Keyboard="Numeric"
+                               IsEnabled="{Binding Path=IsToggled,Source={x:Reference Enablessl},Converter={StaticResource InverseBooleanConverter}}" />
+
+                        <Label Grid.Row="5" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::ForceSSL/TLS'}" />
+                        <Switch Grid.Row="5" Grid.Column="1" IsToggled="{Binding Forcesslonly,Mode=TwoWay}" />
+                        <Button Text="{resources1:Translate Text='openmediavault::Save'}" Grid.Row="6" Grid.Column="0"
+                                Command="{Binding SaveSettingsCmd,Mode=OneWay}" />
+                        <Button Text="{resources1:Translate Text='openmediavault::Reset'}" Grid.Row="6" Grid.Column="1"
+                                Command="{Binding ResetSettingsCmd,Mode=OneWay}" />
+
+                    </Grid>
+
+                </controls1:TitledFrameView>
 
                 <controls1:TitledFrameView Title="{resources1:Translate Text='openmediavault::InstallUpdatesFrom'}"
+                                           BindingContext="{Binding AptSettings,Mode=OneWay}"
                                            TitleStyle="{StaticResource NewTitleStyle}">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -71,20 +126,22 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Pre-ReleaseUpdates.'}" />
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::Pre-ReleaseUpdates.'}" />
                         <Switch Grid.Row="0" Grid.Column="1" IsToggled="{Binding Proposed,Mode=TwoWay}" />
                         <Label Grid.Row="1" Grid.Column="0"
                                Text="{resources1:Translate Text='openmediavault::Community-MaintainedUpdates.'}" />
                         <Switch Grid.Row="1" Grid.Column="1" IsToggled="{Binding Partner,Mode=TwoWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Save'}" Grid.Row="2" Grid.Column="0"
-                                Command="{Binding SaveAptSettingsCmd,Mode=OneWay}" />
+                                Command="{Binding SaveSettingsCmd,Mode=OneWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Reset'}" Grid.Row="2" Grid.Column="1"
-                                Command="{Binding ResetAptSettingsCmd,Mode=OneWay}" />
+                                Command="{Binding ResetSettingsCmd,Mode=OneWay}" />
 
                     </Grid>
                 </controls1:TitledFrameView>
 
                 <controls1:TitledFrameView Title="{resources1:Translate Text='openmediavault::Date&amp;Time'}"
+                                           BindingContext="{Binding DateAndTimeSettings,Mode=OneWay}"
                                            TitleStyle="{StaticResource NewTitleStyle}">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -101,29 +158,36 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="0"  Text="{resources1:Translate Text='openmediavault::CurrentTime'}"/>
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::CurrentTime'}" />
                         <Label Grid.Row="0" Grid.Column="1" Text="{Binding Hostname , Mode=TwoWay}" />
-                        <Label Grid.Row="1" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::TimeZone'}" />
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::TimeZone'}" />
                         <Picker Grid.Row="1" Grid.Column="1" ItemsSource="{Binding TimeZoneList,Mode=OneWay}"
                                 SelectedItem="{Binding SelectedTimeZone,Mode=TwoWay}" />
-                        <Label Grid.Row="2" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::UseNTPServer'}" />
+                        <Label Grid.Row="2" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::UseNTPServer'}" />
                         <Switch x:Name="SwitchNtpenable" Grid.Row="2" Grid.Column="1"
                                 IsToggled="{Binding Ntpenable,Mode=TwoWay}" />
-                        <Label Grid.Row="3" Grid.Column="0"  Text="{resources1:Translate Text='openmediavault::TimeServer'}" />
+                        <Label Grid.Row="3" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::TimeServer'}" />
                         <Entry IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable}}" Grid.Row="3"
                                Grid.Column="1" Text="{Binding Ntptimeservers,Mode=TwoWay}" />
 
-                        <DatePicker IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
-                                    Grid.Row="4" Grid.Column="1" Date="{Binding SelectedDate,Mode=TwoWay}" />
-                        <TimePicker IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
-                                    Grid.Row="5" Grid.Column="1" Time="{Binding SelectedTime,Mode=TwoWay}" />
+                        <DatePicker
+                            IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
+                            Grid.Row="4" Grid.Column="1" Date="{Binding SelectedDate,Mode=TwoWay}" />
+                        <TimePicker
+                            IsEnabled="{Binding Path=IsToggled,Source={x:Reference SwitchNtpenable},Converter={StaticResource InverseBooleanConverter}}"
+                            Grid.Row="5" Grid.Column="1" Time="{Binding SelectedTime,Mode=TwoWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Save'}" Grid.Row="6" Grid.Column="0"
-                                Command="{Binding SaveDateAndTimeSettingCmd,Mode=OneWay}" />
+                                Command="{Binding SaveSettingsCmd,Mode=OneWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Reset'}" Grid.Row="6" Grid.Column="1"
-                                Command="{Binding ResetDateAndTimeSettingCmd,Mode=OneWay}" />
+                                Command="{Binding ResetSettingsCmd,Mode=OneWay}" />
                     </Grid>
                 </controls1:TitledFrameView>
                 <controls1:TitledFrameView Title="{resources1:Translate Text='openmediavault::Network'}"
+                                           BindingContext="{Binding NetworkSettings,Mode=OneWay}"
                                            TitleStyle="{StaticResource NewTitleStyle}">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -136,15 +200,17 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Hostname'}" />
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::Hostname'}" />
                         <Entry Grid.Row="0" Grid.Column="1" Text="{Binding Hostname , Mode=TwoWay}" />
-                        <Label Grid.Row="1" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::DomainName'}" />
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="{resources1:Translate Text='openmediavault::DomainName'}" />
                         <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Domainname, Mode=TwoWay}" />
 
                         <Button Text="{resources1:Translate Text='openmediavault::Save'}" Grid.Row="2" Grid.Column="0"
-                                Command="{Binding SaveNetworkSettingCmd,Mode=OneWay}" />
+                                Command="{Binding SaveSettingsCmd,Mode=OneWay}" />
                         <Button Text="{resources1:Translate Text='openmediavault::Reset'}" Grid.Row="2" Grid.Column="1"
-                                Command="{Binding ResetNetworkSettingCmd,Mode=OneWay}" />
+                                Command="{Binding ResetSettingsCmd,Mode=OneWay}" />
                     </Grid>
                 </controls1:TitledFrameView>
             </StackLayout>
