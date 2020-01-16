@@ -236,7 +236,8 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
-            await InitHostAsync().ConfigureAwait(false);
+            if(!_sshService.IsConnected())
+                await InitHostAsync().ConfigureAwait(false);
         }
         //protected override async Task OnInternalAppearingAsync()
         //{
@@ -279,6 +280,7 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private void SetSelectedIdHost(Host host)
         {
+            MessagingCenter.Send(this, MessengerKeys.HostChanged, host);
             Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
 

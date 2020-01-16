@@ -164,11 +164,16 @@
     <Compile Include="Services\SQLiteFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Debug.config">
-      <SubType>Designer</SubType>
-    </AndroidAsset>
-    <AndroidAsset Include="Assets\App.config" />
     <ProguardConfiguration Include="proguard.cfg" />
+    <AndroidAsset Include="..\..\..\ProjectsSettings\Doods.Xam.MonitorMyServer\Android\App.config">
+      <Link>Assets\App.config</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\ProjectsSettings\Doods.Xam.MonitorMyServer\Android\Debug.config">
+      <Link>Assets\Debug.config</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\ProjectsSettings\Doods.Xam.MonitorMyServer\Android\NLog.config">
+      <Link>Assets\NLog.config</Link>
+    </AndroidAsset>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -224,9 +229,6 @@
       <Project>{c34d6358-ca52-41cb-bb4c-dbca6b103b99}</Project>
       <Name>Doods.Xam.MonitorMyServer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidAsset Include="Assets\NLog.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\mini_fab.axml" />

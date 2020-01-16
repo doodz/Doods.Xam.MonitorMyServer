@@ -28,9 +28,27 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
     [QueryProperty(nameof(UserNameQuery), nameof(UserNameQuery))]
     [QueryProperty(nameof(PasswordQuery), nameof(PasswordQuery))]
     [QueryProperty(nameof(IdQuery), nameof(IdQuery))]
-    
-    public class LoginPageViewModel : ViewModel
+    [QueryProperty(nameof(IsOmvServerQuery), nameof(IsOmvServerQuery))]
+    [QueryProperty(nameof(IsRpiQuery), nameof(IsRpiQuery))]
+    public class LoginPageViewModel : ViewModelWhithState
     {
+
+        private bool _isOmvServer;
+        private bool _isRpi;
+
+        public bool IsOmvServer
+        {
+            get => _isOmvServer;
+            set => SetProperty(ref _isOmvServer, value);
+        }
+
+        public bool IsRpi
+        {
+            get => _isRpi;
+            set => SetProperty(ref _isRpi, value);
+        }
+
+
         private ValidatableObjectView<string> _displayName;
 
         private long _hostId;
@@ -39,8 +57,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         private ValidatableObjectView<string> _password;
 
         private ValidatableObjectView<string> _port;
-        private ViewModelStateItem _viewModelStateItem;
-
+       
         public LoginPageViewModel()
         {
             DisplayName = new ValidatableObjectView<string>(Resource.NameToDisplay, true);
@@ -51,14 +68,22 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
             CmdState = new Command(async c => await ValidateConfig());
 
-            ViewModelStateItem = new ViewModelStateItem(this);
             ViewModelStateItem.Title = Resource.ConnectionTest;
             ViewModelStateItem.Description = string.Empty;
             ViewModelStateItem.IsRunning = true;
             ViewModelStateItem.Color = Color.Transparent;
             AddValidations();
         }
-        
+
+        public string IsRpiQuery
+        {
+            set => IsRpi = Boolean.Parse(value);
+        }
+        public string IsOmvServerQuery
+        {
+            set => IsOmvServer = Boolean.Parse(value);
+        }
+
         public string IdQuery
         {
             set => _hostId = Int64.Parse(value);
@@ -96,11 +121,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
         public ICommand ValidatePasswordCommand => new Command(() => ValidatePassword());
 
-        public ViewModelStateItem ViewModelStateItem
-        {
-            get => _viewModelStateItem;
-            private set => SetProperty(ref _viewModelStateItem, value);
-        }
+       
 
         public ValidatableObjectView<string> DisplayName
         {
@@ -140,6 +161,8 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             _login.Value = host.UserName;
             _password.Value = host.Password;
             _hostId = host.Id.GetValueOrDefault();
+            _isOmvServer = host.IsOmvServer;
+            _isRpi = host.IsRpi;
         }
 
         public void SetHost(ZeroconfHost zeroconfHost)
@@ -271,7 +294,10 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                 Url = _hostName.Value,
                 Port = int.Parse(_port.Value),
                 UserName = _login.Value,
-                Password = _password.Value
+                Password = _password.Value,
+                IsRpi = _isRpi,
+                IsOmvServer = _isOmvServer
+                
             };
 
             if (_hostId > 0)

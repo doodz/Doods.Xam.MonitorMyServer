@@ -1,5 +1,6 @@
 ﻿using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
+using System;
 
 namespace Doods.Xam.MonitorMyServer.Data
 {
@@ -8,8 +9,8 @@ namespace Doods.Xam.MonitorMyServer.Data
         private string str;
         public CustomCommandSshWrapper(CustomCommandSsh command)
         {
-          
-            str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={command.CommandString}";
+           var toto = Uri.EscapeDataString(command.CommandString);
+            str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={toto}";
 
         }
 

@@ -23,15 +23,6 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task DeleteItemAsync(TableBase item);
     }
 
-    public class MessengerKeys
-    {
-        public const string AddItem = "AddItem";
-        public const string RemoveItem = "RemoveItem";
-        public const string UpdateItem = "UpdateItem";
-        public const string ItemChanged = "ItemChanged";
-
-    }
-
 
     public class DataProvider: NotifyPropertyChangedBase, IDataProvider
     {

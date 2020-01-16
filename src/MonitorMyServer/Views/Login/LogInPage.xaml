@@ -23,11 +23,19 @@
 			<controls:ValidatableObjectControl BindingContext="{Binding Port,Mode=TwoWay}"/>
 			<controls:ValidatableObjectControl BindingContext="{Binding Login,Mode=TwoWay}"/>
 			<controls:ValidatableObjectControl BindingContext="{Binding Password,Mode=TwoWay}"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Is Raspberry pi"/>
+                <Switch IsToggled="{Binding IsRpi,Mode=TwoWay}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Is Openmediavault"/>
+                <Switch IsToggled="{Binding IsOmvServer,Mode=TwoWay}"/>
+            </StackLayout>
             <Button Margin="0,10,0,0"
-                    Text="Test me !" 
-                    Command="{Binding TestMe,Mode=OneWay}"
-                    BackgroundColor="{StaticResource Primary}"
-                    TextColor="White" />
+                         Text="Test me !" 
+                         Command="{Binding TestMe,Mode=OneWay}"
+                         BackgroundColor="{StaticResource Primary}"
+                         TextColor="White" />
            
 		</StackLayout>
 	</ContentPage.Content>

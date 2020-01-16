@@ -65,7 +65,8 @@ namespace Doods.Xam.MonitorMyServer
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new MyCustomShellApp();
         }
 
         public static NavigationServiceType NavigationServiceType = NavigationServiceType.ShellNavigation;

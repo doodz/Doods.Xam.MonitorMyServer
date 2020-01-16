@@ -1,17 +1,7 @@
-﻿// ---------------------------------------------------------------------------
-//  This source file is the confidential property and copyright of WIUZ.
-//  Reproduction or transmission in whole or in part, in any form or
-//  by any means, electronic, mechanical or otherwise, is prohibited
-//  without the prior written consent of the copyright owner.
-//  <copyright file="PluginInfo.cs" company="WIUZ">
-//     Copyright (C) WIUZ.  All rights reserved. 2016 - 2019
-//  </copyright>
-//  History:
-//   2019/10/03 at 10:22:  aka therv.
-// ---------------------------------------------------------------------------
-
-using System;
+﻿using System;
+using System.Windows.Input;
 using Doods.Framework.Std;
+using Xamarin.Forms;
 
 namespace Doods.Openmediavault.Mobile.Std.Models
 {
@@ -79,5 +69,7 @@ namespace Doods.Openmediavault.Mobile.Std.Models
             get => _isSelected;
             set => SetProperty(ref _isSelected, value);
         }
+
+        public ICommand ToggleSelectedCmd => new Command(() => IsSelected = !IsSelected);
     }
 }
