@@ -7,6 +7,8 @@ For :
   * Check disk space.
   * System informations.
   * Updates.
+  * View running processes
+  * Run commands.
   ## Authors
 
 * **Thibault Herviou** - *Initial work* - [Doods](https://github.com/doodz)
