@@ -12,6 +12,7 @@ fi
 # Example: Clone a required repository
 echo "=============================================================================="
 echo "Task         : Clone a required repository"
+echo "Description  : Add other repo"
 echo "Author       : Doods"
 echo "=============================================================================="
  echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
