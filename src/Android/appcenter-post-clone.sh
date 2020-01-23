@@ -18,5 +18,9 @@ echo "==========================================================================
 echo "print working directory :"
 pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
+
+cd $APPCENTER_SOURCE_DIRECTORY
+
 echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
-git clone https://github.com/doodz/Doods.Frameworks.Std.git --prefix=$APPCENTER_SOURCE_DIRECTORY
+
+git clone https://github.com/doodz/Doods.Frameworks.Std.git --progress
