@@ -6,14 +6,10 @@ using System.Windows.Input;
 using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Framework.Std;
 using Doods.Framework.Std.Extensions;
-using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using MarcTron.Plugin;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -22,15 +18,14 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
     public class AptUpdatesPageViewModel : ViewModelWhithState
     {
         private readonly IMessageBoxService _messageBoxService;
-        private readonly ISshService _sshService;
         private readonly IRewardService _rewardService;
+        private readonly ISshService _sshService;
         private PidStatusChecker _pidStatusChecker;
         private IEnumerable<Upgradable> _upgradables;
 
         private int _upgradablesCount;
-       
-      
-       
+
+
         public AptUpdatesPageViewModel(ISshService sshService, IMessageBoxService messageBoxService,
             IRewardService rewardService)
         {
@@ -45,7 +40,22 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
             _rewardService.OnRewarded += Current_OnRewarded;
             _rewardService.OnRewardedVideoAdClosed += Current_OnRewardedVideoAdClosed;
             _rewardService.OnRewardedVideoAdLeftApplication += Current_OnRewardedVideoAdLeftApplication;
+        }
 
+        public ICommand UpdatesCmd { get; }
+        public ICommand UpdateSelectedItemsCmd { get; }
+        public ICommand SelectUnselectAllItemsCmd { get; }
+
+        public int UpgradablesCount
+        {
+            get => _upgradablesCount;
+            set => SetProperty(ref _upgradablesCount, value);
+        }
+
+        public IEnumerable<Upgradable> Upgradables
+        {
+            get => _upgradables;
+            set => SetProperty(ref _upgradables, value);
         }
 
         //protected override async Task OnInternalAppearingAsync()
@@ -65,38 +75,18 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
         private void Current_OnRewarded(object sender, EventArgs e)
         {
             SetLabelsStateItem("let's go", "Update running!");
-            
         }
 
-        private void Current_OnRewardedVideoAdLeftApplication(object sender, System.EventArgs e)
+        private void Current_OnRewardedVideoAdLeftApplication(object sender, EventArgs e)
         {
             SetLabelsStateItem("Warning", "you need to wath all video");
-           
         }
 
-      
 
-        private void Current_OnRewardedVideoAdClosed(object sender, System.EventArgs e)
+        private void Current_OnRewardedVideoAdClosed(object sender, EventArgs e)
         {
-            if (!(_rewardService.IsRewarded))
+            if (!_rewardService.IsRewarded)
                 SetLabelsStateItem("Warning", "you need to wath all video");
-            
-        }
-
-        public ICommand UpdatesCmd { get; }
-        public ICommand UpdateSelectedItemsCmd { get; }
-        public ICommand SelectUnselectAllItemsCmd { get; }
-
-        public int UpgradablesCount
-        {
-            get => _upgradablesCount;
-            set => SetProperty(ref _upgradablesCount, value);
-        }
-
-        public IEnumerable<Upgradable> Upgradables
-        {
-            get => _upgradables;
-            set => SetProperty(ref _upgradables, value);
         }
 
         private async void SelectUnselectAllItems()
@@ -108,12 +98,12 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
         private async void UpdateSelectedItems()
         {
-            if (!(_rewardService.IsRewarded))
+            if (!_rewardService.IsRewarded)
             {
                 _rewardService.ShowRewardedVideo(UpdateSelectedItems);
                 return;
             }
-            
+
             ViewModelStateItem.IsRunning = true;
             var lst = _upgradables?.Where(u => u.IsSelected).Select(u => u.Name).ToList();
             if (lst == null || lst.IsEmpty()) return;
@@ -123,7 +113,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
             _pidStatusChecker = new PidStatusChecker(pId, OnResult, Token);
         }
-     
+
 
         //protected override Task in()
         //{
@@ -135,7 +125,6 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
         //}
 
 
-
         private async Task OnResult(bool result)
         {
             ViewModelStateItem.IsRunning = false;
@@ -144,18 +133,19 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
             else
                 SetLabelsStateItem(Resource.InstallInProgress, Resource.Done);
             ViewModelStateItem.IsRunning = true;
-          
+
             await GetUpgradables();
             ViewModelStateItem.IsRunning = false;
         }
 
         private async void Updates()
         {
-            if (!(_rewardService.IsRewarded))
+            if (!_rewardService.IsRewarded)
             {
                 _rewardService.ShowRewardedVideo(Updates);
                 return;
             }
+
             ViewModelStateItem.IsRunning = true;
             var pId = await _sshService.InstallAllPackage();
             SetLabelsStateItem(Resource.InstallingPackages, Resource.UpdatesAll);

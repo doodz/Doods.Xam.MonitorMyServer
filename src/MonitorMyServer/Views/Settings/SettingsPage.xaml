@@ -5,13 +5,30 @@
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Settings.SettingsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Use fingerprint"/>
-            <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
+        <StackLayout Orientation="Vertical">
+
+            <controls:TitledFrameView Padding="8"
+                                       Title="appUnlock">
+                <StackLayout Orientation="Vertical">
+                <StackLayout>
+                    <Label Text="Is rewarded (appUnlock)"/>
+                    <Switch IsToggled="{Binding IsRewarded,Mode=OneWay}" />
+                </StackLayout>
+                <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}"/>
+                <Label Text="You can add 7 days to your end date"/>
+                <Button Text="Show video" Command="{Binding ShowRewarVideoCmd,Mode=OneWay}"/>
+                </StackLayout>
+            </controls:TitledFrameView>
+               
+            <StackLayout>
+                <Label Text="Use fingerprint"/>
+                <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
                     IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

@@ -8,9 +8,11 @@ using System;
 using Microsoft.AppCenter;
 using System.Linq;
 using System.Reflection;
+using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Config;
+using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
@@ -27,6 +29,7 @@ using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Plugin.Fingerprint;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -155,23 +158,42 @@ namespace Doods.Xam.MonitorMyServer
 
         protected override async void OnResume()
         {
+           
+           
             await ProveYouHaveFingers();
+            await Task.FromResult(0);
         }
 
+        private static int _count = 0;
         private async Task ProveYouHaveFingers()
         {
-            //CrossFingerprint.Current.
 
-            //var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
-            //if (result.Authenticated)
-            //{
-            //    // do secret stuff :)
-            //}
-            //else
-            //{
-            //    await ProveYouHaveFingers();
-            //}
-            await Task.FromResult(0);
+            var useFingerprint = Preferences.Get(PreferencesKeys.UseFingerprintKey, default(bool));
+            if (!useFingerprint)
+                return;
+
+            var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
+            if (!result.Authenticated)
+            {
+                _count++;
+                if (_count <= 5)
+                    await ProveYouHaveFingers();
+                Thread.CurrentThread.Abort();
+            }
+
+            _count = 0;
+             //CrossFingerprint.Current.
+
+             //var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
+             //if (result.Authenticated)
+             //{
+             //    // do secret stuff :)
+             //}
+             //else
+             //{
+             //    await ProveYouHaveFingers();
+             //}
+             await Task.FromResult(0);
         }
     }
 }

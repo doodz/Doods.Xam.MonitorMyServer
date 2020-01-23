@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Doods.Framework.Std;
+using Doods.Framework.Std.Extensions;
+using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Xam.MonitorMyServer.Data;
 using MarcTron.Plugin;
 using MarcTron.Plugin.CustomEventArgs;
@@ -11,103 +11,141 @@ namespace Doods.Xam.MonitorMyServer.Services
 {
     public interface IRewardService
     {
+        bool IsRewarded { get; }
         event EventHandler OnRewarded;
         event EventHandler OnRewardedVideoAdClosed;
-        event EventHandler OnRewardedVideoAdFailedToLoad;
+        event EventHandler<MTEventArgs> OnRewardedVideoAdFailedToLoad;
         event EventHandler OnRewardedVideoAdLeftApplication;
-        bool IsRewarded { get; }
         void ShowRewardedVideo();
         void ShowRewardedVideo(Action myAction);
         void SetCurrentAction(Action myAction);
         void ResetRewardDate();
-
+        DateTime EndReward { get; }
     }
+
     internal class RewardService : IRewardService
     {
-
-       public event EventHandler OnRewarded;
-       public event EventHandler OnRewardedVideoAdClosed;
-       public event EventHandler OnRewardedVideoAdFailedToLoad;
-       public event EventHandler OnRewardedVideoAdLeftApplication;
         private readonly string _rewardedVideoKey;
-        private bool _isRewarded;
         private Action _currentAction;
+        private bool _isRewarded;
+
         public RewardService(IConfiguration configuration)
         {
             CrossMTAdmob.Current.LoadRewardedVideo(configuration.RewardedVideoKey);
             _rewardedVideoKey = configuration.RewardedVideoKey;
-            
-            CrossMTAdmob.Current.OnRewarded += Current_OnRewarded; ;//When the user gets a reward
-            CrossMTAdmob.Current.OnRewardedVideoAdClosed += Current_OnRewardedVideoAdClosed; ;//When the ads is closed
-            CrossMTAdmob.Current.OnRewardedVideoAdFailedToLoad += Current_OnRewardedVideoAdFailedToLoad; ;      //When the ads fails to load
-            CrossMTAdmob.Current.OnRewardedVideoAdLeftApplication += Current_OnRewardedVideoAdLeftApplication; ; //When the users leaves the application
-            var rewardDate = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
-            _isRewarded = (rewardDate - DateTime.Today).TotalDays < 8;
+
+            CrossMTAdmob.Current.OnRewarded += Current_OnRewarded;
+            ; //When the user gets a reward
+            CrossMTAdmob.Current.OnRewardedVideoAdClosed += Current_OnRewardedVideoAdClosed;
+            ; //When the ads is closed
+            CrossMTAdmob.Current.OnRewardedVideoAdFailedToLoad += Current_OnRewardedVideoAdFailedToLoad;
+            ; //When the ads fails to load
+            CrossMTAdmob.Current.OnRewardedVideoAdLeftApplication += Current_OnRewardedVideoAdLeftApplication;
+            ; //When the users leaves the application
+            //var rewardDate = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
+            CheckIfIsRewarded();
         }
 
-      
+        public event EventHandler OnRewarded;
+        public event EventHandler OnRewardedVideoAdClosed;
+        public event EventHandler<MTEventArgs> OnRewardedVideoAdFailedToLoad;
+        public event EventHandler OnRewardedVideoAdLeftApplication;
 
-        public bool IsRewarded
+        private bool CheckIfIsRewarded()
         {
-            get
-            {
-                var rewardDate = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
-                _isRewarded = (DateTime.Today - rewardDate).TotalDays < 8;
-                return _isRewarded;
-            }
+            EndReward = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
+            _isRewarded = (EndReward - DateTime.Today).TotalDays >=0;
+            return _isRewarded;
         }
 
+        public bool IsRewarded => CheckIfIsRewarded();
+        
+        public DateTime EndReward { get; private set; }
 
         public void ResetRewardDate()
         {
-            Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, DateTime.Today.AddDays(-12));
+            EndReward = DateTime.Today.AddDays(-12);
+            Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, EndReward);
+           
             _isRewarded = false;
         }
 
+        private void AddRewardeValue()
+        {
+            if (IsRewarded)
+            {
+               
+                var expi = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
+                AddRewardeFromDate(expi);
+            }
+            else
+            {
+                AddRewardeFromDate(DateTime.Today);
+            }
+        }
+
+        private void AddRewardeFromDate(DateTime date)
+        {
+            EndReward = date.AddDays(7);
+            Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, EndReward);
+        }
 
         public void ShowRewardedVideo()
         {
-            CrossMTAdmob.Current.ShowRewardedVideo();
+           if (CrossMTAdmob.Current.IsRewardedVideoLoaded())
+                CrossMTAdmob.Current.ShowRewardedVideo();
+           else
+           {
+               CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+
+           }
         }
+
+        public bool IsRewardedVideoLoaded()
+        {
+            
+            return CrossMTAdmob.Current.IsRewardedVideoLoaded();
+        }
+
         public void ShowRewardedVideo(Action myAction)
         {
             SetCurrentAction(myAction);
             ShowRewardedVideo();
         }
+
         public void SetCurrentAction(Action myAction)
         {
             _currentAction = myAction;
         }
-       
+
         private void Current_OnRewarded(object sender, MTEventArgs e)
         {
-            
             _isRewarded = true;
-            Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, DateTime.Today);
-            OnRewarded?.Invoke(this,e);
+            AddRewardeValue();
+            CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+            OnRewarded?.Invoke(this, e);
         }
 
-        private void Current_OnRewardedVideoAdLeftApplication(object sender, System.EventArgs e)
+        private void Current_OnRewardedVideoAdLeftApplication(object sender, EventArgs e)
         {
-            
             CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
-            OnRewardedVideoAdLeftApplication?.Invoke(this,e);
+            OnRewardedVideoAdLeftApplication?.Invoke(this, e);
         }
 
         private void Current_OnRewardedVideoAdFailedToLoad(object sender, MTEventArgs e)
         {
-            _isRewarded = true;
             _currentAction?.Invoke();
-            OnRewardedVideoAdFailedToLoad?.Invoke(this,e);
+            //CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+            OnRewardedVideoAdFailedToLoad?.Invoke(this, e);
         }
 
-        private void Current_OnRewardedVideoAdClosed(object sender, System.EventArgs e)
+        private void Current_OnRewardedVideoAdClosed(object sender, EventArgs e)
         {
             if (_isRewarded)
                 _currentAction?.Invoke();
-           
+
             CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
-            OnRewardedVideoAdClosed?.Invoke(this,e);
+            OnRewardedVideoAdClosed?.Invoke(this, e);
         }
     }
 }
