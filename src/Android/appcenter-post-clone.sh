@@ -20,13 +20,14 @@ pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
 
 cd $APPCENTER_SOURCE_DIRECTORY
-mkdir Doods.Frameworks.Std
-#cd Doods.Frameworks.Std
-echo "print working directory :"
-pwd
-echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
+# mkdir Doods.Frameworks.Std
+# #cd Doods.Frameworks.Std
+# echo "print working directory :"
+# pwd
+# echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
 
-git clone https://github.com/doodz/Doods.Frameworks.Std.git --progress
+# git clone https://github.com/doodz/Doods.Frameworks.Std.git --progress
 
-echo "Directories ?"
-ls -la
+# echo "Directories ?"
+# ls -la
+# git submodule update
