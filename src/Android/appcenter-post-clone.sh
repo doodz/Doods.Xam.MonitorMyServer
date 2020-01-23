@@ -20,7 +20,11 @@ pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
 
 cd $APPCENTER_SOURCE_DIRECTORY
-
+echo "print working directory :"
+pwd
 echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
 
 git clone https://github.com/doodz/Doods.Frameworks.Std.git --progress
+
+echo "Directories ?"
+ls -la
