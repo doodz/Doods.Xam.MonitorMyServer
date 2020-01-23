@@ -20,6 +20,8 @@ pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
 
 cd $APPCENTER_SOURCE_DIRECTORY
+mkdir Doods.Frameworks.Std
+cd Doods.Frameworks.Std
 echo "print working directory :"
 pwd
 echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
