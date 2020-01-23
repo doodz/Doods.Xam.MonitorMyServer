@@ -15,5 +15,5 @@ echo "Task         : Clone a required repository"
 echo "Author       : Doods"
 echo "=============================================================================="
  echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
-echo "clone https://github.com/doodz/Doods.Frameworks.Std"
-git clone https://github.com/doodz/Doods.Frameworks.Std
+echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
+git clone https://github.com/doodz/Doods.Frameworks.Std.git
