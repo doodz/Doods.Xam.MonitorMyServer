@@ -15,9 +15,8 @@ echo "Task         : Clone a required repository"
 echo "Description  : Add other repo"
 echo "Author       : Doods"
 echo "=============================================================================="
+echo "print working directory :"
+pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
 echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
-git clone https://github.com/doodz/Doods.Frameworks.Std.git
-echo "print working directory"
-pwd
-ls -la
+git clone https://github.com/doodz/Doods.Frameworks.Std.git --prefix=$APPCENTER_SOURCE_DIRECTORY
