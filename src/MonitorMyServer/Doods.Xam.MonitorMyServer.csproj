@@ -222,8 +222,4 @@
       <Generator>MSBuild:Compile</Generator>
     </None>
   </ItemGroup>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="powershell.exe -ExecutionPolicy Bypass -File $(ProjectDir)\Resx\Tools\PreBuildScript.ps1  $(ProjectDir) $(SolutionDir) $(TargetDir) $(SolutionPath)" />
-  </Target>
 </Project>
