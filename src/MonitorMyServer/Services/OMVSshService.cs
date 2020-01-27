@@ -79,6 +79,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<bool> SetWebGuiSettings(WebGuiSetting webGuiSetting);
     }
 
+
+
+
+
     public class OMVSshService : SshService, IOMVSshService
     {
         public OMVSshService(ILogger logger, IMapper mapper) : base(logger, mapper)

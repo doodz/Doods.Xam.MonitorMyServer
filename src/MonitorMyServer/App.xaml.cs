@@ -101,38 +101,40 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Framework.Repository.Std.Config.Bootstrapper>();
             builder.RegisterModule<Views.Bootstrapper>();
             builder.RegisterModule<Services.Bootstrapper>();
+
             //builder.RegisterModule<Services.AutoMapperConfig>();
+
             builder.RegisterModule<AutoMapperConfig>();
 
-            //https://github.com/marcojak/TestMTAdmob
-           
-            //You can add here the id of your test devices!
-            //CrossMTAdmob.Current.TestDevices = new List<string>() {  };
+            ////https://github.com/marcojak/TestMTAdmob
 
-            var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();
-            //var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
+            ////You can add here the id of your test devices!
+            ////CrossMTAdmob.Current.TestDevices = new List<string>() {  };
 
-            //var profiles =
-            //    allTypes
-            //        .Where(t => typeof(Profile).GetTypeInfo().IsAssignableFrom(t.GetTypeInfo()))
-            //        .Where(t => !t.GetTypeInfo().IsAbstract);
+            //var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();
+            ////var allTypes = assembliesToScane.SelectMany(a => a.ExportedTypes).ToArray();
+
+            ////var profiles =
+            ////    allTypes
+            ////        .Where(t => typeof(Profile).GetTypeInfo().IsAssignableFrom(t.GetTypeInfo()))
+            ////        .Where(t => !t.GetTypeInfo().IsAbstract);
 
 
-            var configuration = new MapperConfiguration(cfg => cfg.AddMaps(assembliesToScane));
-            configuration.CompileMappings();
-            //Mapper.Initialize(cfg =>
-            //{
-            //    foreach (var profile in profiles)
-            //    {
-            //        cfg.AddProfile(profile);
-            //    }
-            //});
-            var mapper = configuration.CreateMapper();
+            //var configuration = new MapperConfiguration(cfg => cfg.AddMaps(assembliesToScane));
+            //configuration.CompileMappings();
+            ////Mapper.Initialize(cfg =>
+            ////{
+            ////    foreach (var profile in profiles)
+            ////    {
+            ////        cfg.AddProfile(profile);
+            ////    }
+            ////});
+            //var mapper = configuration.CreateMapper();
 
             _container = builder.Build();
 
-            
 
+           
         }
 
         protected override async void OnStart()

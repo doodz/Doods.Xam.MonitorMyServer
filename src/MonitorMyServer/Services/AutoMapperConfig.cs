@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Autofac;
 using AutoMapper;
 using Doods.Xam.MonitorMyServer.Data;
@@ -6,6 +7,18 @@ using Zeroconf;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <remarks>
+    ///https://github.com/AutoMapper/AutoMapper/issues/2505
+    /// </remarks>
+    public enum MyEnumeration
+    {
+        tricks,
+        forAutomapper,
+        seeAutomapperIssue
+    }
     class AutoMapperConfig : Module
     {
         public static void RegisterMappings()
@@ -17,11 +30,19 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             //builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
             //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
-            
+
+           
+            AutoMapper.Mappers.EnumToEnumMapper.Map<MyEnumeration, MyEnumeration>(MyEnumeration.tricks);
+
             var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();//AutoMapperMobileSshProfile;ZeroconfHostProfile
+
+            //assembliesToScane = assembliesToScane.Where(a => !a.FullName.Contains("Doods")).ToArray();
+
             var configuration = new MapperConfiguration(cfg =>
             {
                 cfg.AddMaps(assembliesToScane);
+                //cfg.AddProfile<Doods.Framework.Mobile.Ssh.Std.Services.AutoMapperMobileSshProfile>();
+                //cfg.AddProfile<Doods.Openmediavault.Mobile.Std.Services.AutoMapperMobileSshProfile>();
                 cfg.AddProfile<ZeroconfHostProfile>();
             });
             
@@ -29,6 +50,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             var mapper = configuration.CreateMapper();
 
             builder.RegisterInstance(mapper).As<IMapper>();
+         
+
+
             //Mapper.Initialize(cfg =>
             //    //cfg.CreateMap<IZeroconfHost, ZeroconfHost>()
             //    cfg.AddProfile<ZeroconfHostProfile>()

@@ -18,48 +18,70 @@
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
-    <StackLayout>
+    <ScrollView>
+        <StackLayout>
 
-        <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
-            <StackLayout.Resources>
-                <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
-            </StackLayout.Resources>
-            <BindableLayout.ItemTemplate>
-                <DataTemplate x:DataType="models:OmvFilesystems">
-                    <controls:TitledFrameView Title="{Binding Devicefile}" SubTitle="{Binding Type}"
-                                              SubTitleStyle="{StaticResource NewSubTitleStyle}">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition />
-                                <RowDefinition />
-                            </Grid.RowDefinitions>
-                            <controls2:Gauge Valeur="{Binding Percentage,Mode=OneWay}"
-                                             HorizontalOptions="StartAndExpand"
-                                             VerticalOptions="FillAndExpand"
-                                             Grid.Column="0" Grid.Row="0" />
+            <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
+                <StackLayout.Resources>
+                    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+                </StackLayout.Resources>
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:OmvFilesystems">
+                        <controls:TitledFrameView Title="{Binding Devicefile}" SubTitle="{Binding Type}"
+                                                  SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <controls2:Gauge Valeur="{Binding Percentage,Mode=OneWay}"
+                                                 HorizontalOptions="StartAndExpand"
+                                                 VerticalOptions="FillAndExpand"
+                                                 Grid.Column="0" Grid.Row="0" />
 
-                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Mountpoint,Mode=OneWay}" />
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Mountpoint,Mode=OneWay}" />
+                                <ImageButton Grid.Column="0" Grid.Row="1"
+                                             Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
+                                             IsEnabled="{Binding CanMount,Mode=OneWay}"
+                                             Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                             CommandParameter="{Binding .}" />
+                                <!--<Button Grid.Column="0" Grid.Row="1"
+                                        Text="{resources1:Translate Text='openmediavault::Mount'}"
+                                        IsEnabled="{Binding CanMount,Mode=OneWay}"
+                                        Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                        CommandParameter="{Binding .}" />-->
+                                <ImageButton Grid.Column="1" Grid.Row="1"
+                                             Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
+                                             IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
+                                             Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                             CommandParameter="{Binding .}" />
+                                <!--<Button Grid.Column="1" Grid.Row="1"
+                                        Text="{resources1:Translate Text='openmediavault::Unmount'}"
+                                        IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
+                                        Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                        CommandParameter="{Binding .}" />-->
+                                <ImageButton Grid.Column="2" Grid.Row="1"
+                                             Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
+                                             IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
+                                             Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                             CommandParameter="{Binding .}" />
+                                <!--<Button Grid.Column="2" Grid.Row="1"
+                                        Text="{resources1:Translate Text='openmediavault::Delete'}"
+                                        IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
+                                        Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                        CommandParameter="{Binding .}" />-->
+                            </Grid>
 
-                            <Button Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::Mount'}"
-                                    IsEnabled="{Binding CanMount,Mode=OneWay}" 
-                                    Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
-                            <Button Grid.Column="1" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::Unmount'}"
-                                    IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}" 
-                                    Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
-                            <Button Grid.Column="2" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::Delete'}"
-                                    IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
-                                    Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
-                        </Grid>
-
-                    </controls:TitledFrameView>
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
+                        </controls:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </mvvm:BaseContentPage>

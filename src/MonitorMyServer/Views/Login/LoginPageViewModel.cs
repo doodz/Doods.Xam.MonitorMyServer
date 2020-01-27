@@ -63,7 +63,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             DisplayName = new ValidatableObjectView<string>(Resource.NameToDisplay, true);
             Port = new ValidatableObjectView<string>(Resource.Port, true, Keyboard.Numeric);
             HostName = new ValidatableObjectView<string>(Resource.HostNameOrIp, true);
-            Login = new ValidatableObjectView<string>(Resource.UserNameOrEmail, true);
+            Login = new ValidatableObjectView<string>(Resource.UserName, true);
             Password = new ValidatableObjectView<string>(Resource.Password, true);
 
             CmdState = new Command(async c => await ValidateConfig());
