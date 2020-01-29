@@ -367,6 +367,15 @@ namespace Doods.Xam.MonitorMyServer.Resx {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Please set the URL without http(s)//.
+        /// </summary>
+        internal static string PleaseUseHttp {
+            get {
+                return ResourceManager.GetString("PleaseUseHttp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Please wait.
         /// </summary>
         internal static string PleaseWait {

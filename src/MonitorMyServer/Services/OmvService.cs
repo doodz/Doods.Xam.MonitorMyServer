@@ -11,18 +11,14 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
-using Doods.Openmediavault.Rpc.std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
     public interface IOmvService : IRpcService
     {
-
         Task<IEnumerable<PluginInfo>> GetPlugins();
     }
-
-   
 
 
     public class OmvService : SshService, IOmvService

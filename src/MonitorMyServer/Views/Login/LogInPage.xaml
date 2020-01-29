@@ -4,6 +4,7 @@
                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Login.LogInPage">
     <ContentPage.Resources>
@@ -19,8 +20,11 @@
         <ScrollView>
 
             <StackLayout>
-
                 <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Is Ssh" />
+                    <Switch IsToggled="{Binding IsSsh,Mode=TwoWay}"/>
+                </StackLayout>
                 <controls:ValidatableObjectControl BindingContext="{Binding DisplayName,Mode=TwoWay}" />
                 <controls:ValidatableObjectControl BindingContext="{Binding HostName,Mode=TwoWay}" />
                 <controls:ValidatableObjectControl BindingContext="{Binding Port,Mode=TwoWay}" />
@@ -34,6 +38,7 @@
                     <Label Text="Is Openmediavault" />
                     <Switch IsToggled="{Binding IsOmvServer,Mode=TwoWay}" />
                 </StackLayout>
+              
                 <Button Margin="0,10,0,0"
                         Text="Test me !"
                         Command="{Binding TestMe,Mode=OneWay}"
