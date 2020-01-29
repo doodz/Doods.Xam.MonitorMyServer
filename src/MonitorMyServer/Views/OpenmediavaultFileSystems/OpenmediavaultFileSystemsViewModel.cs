@@ -4,8 +4,10 @@ using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Std.Lists;
-using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Xam.MonitorMyServer.Services;
+using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.std.Interfaces;
+using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
 using FFImageLoading.Svg.Forms;
@@ -16,49 +18,45 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
         private readonly IOMVSshBackgroundService _backgroundService;
-        public ICommand MountFileSystemCmd { get; }
-        public ICommand UmountFileSystemCmd { get; }
-        public ICommand DeleteFileSystemCmd { get; }
-        private readonly IOMVSshService _sshService;
+        private readonly IRpcService _sshService;
 
-        public OpenmediavaultFileSystemsViewModel(IOMVSshService sshService, IOMVSshBackgroundService backgroundService)
+        public OpenmediavaultFileSystemsViewModel(IRpcService sshService, IOMVSshBackgroundService backgroundService)
         {
             _sshService = sshService;
             _backgroundService = backgroundService;
             AddItemCommand = new Command(AddItem);
             MountFileSystemCmd = new Command(MountFileSystem, o =>
             {
-                if (o is OmvFilesystems filesystem)
-                {
-                    return filesystem.CanMount;
-                }
+                if (o is OmvFilesystems filesystem) return filesystem.CanMount;
 
                 return false;
             });
             UmountFileSystemCmd = new Command(UmountFileSystem, o =>
             {
-                if (o is OmvFilesystems filesystem)
-                {
-                    return filesystem.CanUmount;
-                }
+                if (o is OmvFilesystems filesystem) return filesystem.CanUmount;
 
                 return false;
             });
             DeleteFileSystemCmd = new Command(DeleteFileSystem, o =>
             {
-                if (o is OmvFilesystems filesystem)
-                {
-                    return filesystem.CanDelete;
-                }
+                if (o is OmvFilesystems filesystem) return filesystem.CanDelete;
 
                 return false;
             });
         }
+
+        public ICommand MountFileSystemCmd { get; }
+        public ICommand UmountFileSystemCmd { get; }
+        public ICommand DeleteFileSystemCmd { get; }
+
+        public ObservableRangeCollection<OmvFilesystems> Filesystems { get; } =
+            new ObservableRangeCollection<OmvFilesystems>();
+
+        public ICommand AddItemCommand { get; }
+
         private async void UmountFileSystem(object o)
         {
             if (o is OmvFilesystems filesystem)
-            {
-              
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {
                         await _sshService.UmountFileSystem(filesystem);
@@ -66,16 +64,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _backgroundService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
                     () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
-            }
-           
         }
+
         private async void DeleteFileSystem(object o)
         {
             if (o is OmvFilesystems filesystem)
-            {
-               
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {
                         await _sshService.DeleteFileSystem(filesystem);
@@ -83,15 +78,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _backgroundService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
                     () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
-            }
         }
+
         private async void MountFileSystem(object o)
         {
             if (o is OmvFilesystems filesystem)
-            {
-               
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {
                         await _sshService.MountFileSystem(filesystem);
@@ -99,20 +92,14 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _backgroundService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", $"Apply changes"),
+                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
                     () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
-            }
         }
-
-        public ObservableRangeCollection<OmvFilesystems> Filesystems { get; } =
-            new ObservableRangeCollection<OmvFilesystems>();
-
-        public ICommand AddItemCommand { get; }
 
         protected override async Task OnInternalAppearingAsync()
         {
-            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); }, 
-                () => SetLabelsStateItem("FileSystemMgmt", $"Get file systems"),
+            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+                () => SetLabelsStateItem("FileSystemMgmt", "Get file systems"),
                 () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
             await base.OnInternalAppearingAsync();
         }

@@ -1,34 +1,24 @@
-﻿using System;
-using System.Resources;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Doods.Framework.Std;
-using Doods.Framework.Std.Lists;
-using Doods.Framework.Std.Services;
-using Doods.Openmediavault.Mobile.Std.Resources;
-using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Xam.MonitorMyServer.Services;
+﻿using System.Threading.Tasks;
+using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {
     public class OpenmediavaultSettingsViewModel : ViewModelWhithState
     {
-        private readonly IOMVSshService _sshService;
+        private readonly IRpcService _sshService;
 
 
-       
-
-
-        public OpenmediavaultSettingsViewModel(IOMVSshService sshService)
+        public OpenmediavaultSettingsViewModel(IRpcService sshService)
         {
             _sshService = sshService;
         }
 
-      
-
-       
+        public AptSettingViewModel AptSettings { get; } = new AptSettingViewModel();
+        public WebGuiSettingViewModel WebGuiSettings { get; } = new WebGuiSettingViewModel();
+        public PowerManagementSettingViewModel PowerManagementSettings { get; } = new PowerManagementSettingViewModel();
+        public NetworkSettingViewModel NetworkSettings { get; } = new NetworkSettingViewModel();
+        public TimeSettingViewModel DateAndTimeSettings { get; } = new TimeSettingViewModel();
 
 
         protected override async Task OnInternalAppearingAsync()
@@ -43,12 +33,5 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
                 NetworkSettings.GetSettings(),
                 DateAndTimeSettings.GetSettings(), AptSettings.GetSettings());
         }
-        public AptSettingViewModel AptSettings { get; } = new AptSettingViewModel();
-        public WebGuiSettingViewModel WebGuiSettings { get; } = new WebGuiSettingViewModel();
-        public PowerManagementSettingViewModel PowerManagementSettings { get; } = new PowerManagementSettingViewModel();
-        public NetworkSettingViewModel NetworkSettings { get; } = new NetworkSettingViewModel();
-        public TimeSettingViewModel DateAndTimeSettings { get; } = new TimeSettingViewModel();
-
-       
     }
 }

@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Asmodat.Standard.SSH.NET" Version="1.0.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991537" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
+    <ProjectReference Include="..\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
     <ProjectReference Include="..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj" />
     <ProjectReference Include="..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Ssh.Std\Doods.Framework.Mobile.Ssh.Std.csproj" />
     <ProjectReference Include="..\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />

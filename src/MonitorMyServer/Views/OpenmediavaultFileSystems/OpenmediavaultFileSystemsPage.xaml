@@ -5,18 +5,16 @@
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
-                      xmlns:models="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly= Doods.Openmedivault.Ssh.Std"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       x:Name="Page"
                       xmlns:Local="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems"
                       x:DataType="Local:OpenmediavaultFileSystemsViewModel"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
     <ScrollView>
         <StackLayout>
@@ -27,7 +25,7 @@
                     <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
                 </StackLayout.Resources>
                 <BindableLayout.ItemTemplate>
-                    <DataTemplate x:DataType="models:OmvFilesystems">
+                    <DataTemplate x:DataType="fileSystem:OmvFilesystems">
                         <controls:TitledFrameView Title="{Binding Devicefile}" SubTitle="{Binding Type}"
                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
                             <Grid>

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Input;
-using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmediavault.Rpc.std.Data.V4;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {

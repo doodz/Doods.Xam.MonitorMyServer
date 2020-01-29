@@ -10,11 +10,11 @@
                       xmlns:views="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Views;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
-                      xmlns:models="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly= Doods.Openmedivault.Ssh.Std"
                       xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
-                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.std"
+                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.std"
                       mc:Ignorable="d"
                      
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard.OpenmediavaultDashboardPage">
@@ -93,7 +93,7 @@
                                           SubTitle="{Binding  ServicesStatus.Count,Mode=OneWay}">
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding ServicesStatus,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
-                        <DataTemplate x:DataType="models:ServicesStatus">
+                        <DataTemplate x:DataType="v4:ServicesStatus">
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding Title,Mode=OneWay}" HorizontalOptions="StartAndExpand"/>
                                     <Label Text="{resources1:Translate Text='openmediavault::Running'}"/>
@@ -128,7 +128,7 @@
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
-                        <DataTemplate x:DataType="models:OmvFilesystems">
+                        <DataTemplate x:DataType="fileSystem:OmvFilesystems">
                                 <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Devicefile,Mode=OneWay}"/>
                                 <Label Text="{Binding Percentage,Mode=OneWay}"/>
@@ -145,7 +145,7 @@
                                           TitleStyle="{StaticResource NewTitleStyle}" >
                 <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Devices,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
-                        <DataTemplate x:DataType="models:Devices">
+                        <DataTemplate x:DataType="fileSystem:Devices">
                                 <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Devicename,Mode=OneWay}"/>
                                 <Label Text="{Binding Address,Mode=OneWay}"/>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
 using AutoMapper;
+using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Converters;
@@ -72,7 +73,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             return isRunningPidResult.Data;
         }
 
-        private async Task<ISshResponse<int>> RunInNoHup(ISshRequest request)
+        private async Task<ISshApiResponse<int>> RunInNoHup(ISshRequest request)
         {
             var noUpREquest = new NoHupRequest(request);
             var pid = await ExecuteTaskAsync<int>(noUpREquest).ConfigureAwait(false);

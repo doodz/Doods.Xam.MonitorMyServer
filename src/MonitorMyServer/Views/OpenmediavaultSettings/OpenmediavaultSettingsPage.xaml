@@ -7,10 +7,10 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:Enums="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmedivault.Ssh.Std"
                       mc:Ignorable="d"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:data="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmediavault.Rpc.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings.OpenmediavaultSettingsPage">
     <StackLayout>
         <StackLayout.Resources>
@@ -41,7 +41,7 @@
                         <Label Grid.Row="1" Grid.Column="0"
                                Text="{resources1:Translate Text='openmediavault::PowerButton'}" />
                         <controls1:EnumBindablePicker
-                            x:TypeArguments="Enums:PowerbtnAction"
+                            x:TypeArguments="data:PowerbtnAction"
                             SelectedItem="{Binding SelectedPowerbtnAction, Mode=TwoWay}"
                             Grid.Row="1"
                             Grid.Column="1" />
@@ -82,7 +82,7 @@
                         <Label Grid.Row="1" Grid.Column="0"
                                Text="{resources1:Translate Text='openmediavault::AutoLogout'}" />
                         <controls1:EnumBindableDescriptionLocalizablePicker
-                            x:TypeArguments="Enums:TimePickerEnum"
+                            x:TypeArguments="data:TimePickerEnum"
                             SelectedItem="{Binding SelectedTimeout, Mode=TwoWay}"
                             Translate="{Binding TranslateService,Mode=OneWay}"
                             Grid.Row="1"

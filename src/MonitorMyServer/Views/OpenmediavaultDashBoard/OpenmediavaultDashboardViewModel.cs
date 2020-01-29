@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Versioning;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
-using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
-using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Openmedivault.Ssh.Std.Data.V5;
-using Doods.Xam.MonitorMyServer.Services;
-using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
+using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using FFImageLoading.Svg.Forms;
@@ -22,14 +19,24 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 {
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
-        private IOMVSshService _sshService;
-        public ICommand UpdatesCmd { get; }
-        public ICommand CheckCmd { get; }
-
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
         //    new ObservableRangeCollection<SystemInformation>();
 
         private OMVInformations _OMVInformations;
+        private readonly IRpcService _sshService;
+
+        private string _text = string.Empty;
+
+        public OpenmediavaultDashboardViewModel(IRpcService sshService)
+        {
+            _sshService = sshService;
+            UpdatesCmd = new Command(Updates);
+            CheckCmd = new Command(Check);
+        }
+
+        public ICommand UpdatesCmd { get; }
+        public ICommand CheckCmd { get; }
+
         public OMVInformations OMVInformations
         {
             get => _OMVInformations;
@@ -46,19 +53,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         public ObservableRangeCollection<ServicesStatus> ServicesStatus { get; } =
             new ObservableRangeCollection<ServicesStatus>();
 
-        public OpenmediavaultDashboardViewModel(IOMVSshService sshService)
-        {
-            _sshService = sshService;
-            UpdatesCmd = new Command(Updates);
-            CheckCmd = new Command(Check);
-            
-           
-        }
-
         private async void Check(object obj)
         {
-           
-              await ViewModelStateItem.RunActionAsync(async () =>
+            await ViewModelStateItem.RunActionAsync(async () =>
             {
                 var filename = await _sshService.UpdateAptList();
 
@@ -88,8 +85,6 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
             return false;
         }
-
-        private string _text = string.Empty;
 
         private async void Updates(object obj)
         {

@@ -1,10 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
-using Doods.Framework.Mobile.Ssh.Std.Models;
-using Doods.Framework.Ssh.Std.Beans;
-using Doods.Framework.Ssh.Std.Queries;
 using Doods.Openmediavault.Mobile.Std.Models;
-using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmediavault.Rpc.std.Data.V4;
 
 namespace Doods.Openmediavault.Mobile.Std.Services
 {
@@ -12,7 +9,6 @@ namespace Doods.Openmediavault.Mobile.Std.Services
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
             //Mapper.Initialize(cfg => cfg.CreateMap<CpuInfoBean, CpuInfo>());
         }
     }
