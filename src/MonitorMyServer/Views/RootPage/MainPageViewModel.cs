@@ -4,14 +4,11 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Doods.Framework.ApiClientBase.Std.Models;
+using Autofac;
 using Doods.Framework.Mobile.Ssh.Std.Models;
-using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
-using Doods.Framework.Std.Lists;
-using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
@@ -20,7 +17,6 @@ using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.Tests;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -28,8 +24,8 @@ namespace Doods.Xam.MonitorMyServer.Views
     public class MainPageViewModel : ViewModelWhithState
     {
         private readonly ICommand _addHostCmd;
-        private readonly IMessageBoxService _messageBoxService;
         private readonly ISshService _sshService;
+
         private CpuInfo _cpuInfo;
         private IEnumerable<DiskUsage> _disksUsage;
         private MemoryUsage _memoryUsage;
@@ -39,12 +35,11 @@ namespace Doods.Xam.MonitorMyServer.Views
         private int _upgradablesCount;
         private TimeSpan _uptime;
 
-        public MainPageViewModel(ISshService sshService, IMessageBoxService messageBoxService,
-            IConfiguration configuration)
+        public MainPageViewModel(ISshService sshService, IConfiguration configuration)
         {
             Title = Resource.Home;
             _sshService = sshService;
-            _messageBoxService = messageBoxService;
+
             CmdState = RefreshCmd;
             _addHostCmd = new Command(
                 AddHost);
@@ -61,7 +56,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         public ICommand ShowTestsPageCmd { get; }
         public string BannerId { get; }
 
-        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
+        //public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
         public ICommand ManageHostsCmd { get; }
         public ICommand ShowProcessesCmd { get; }
         public ICommand UpdatesCmd { get; }
@@ -119,10 +114,10 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected override Task OnInternalAppearingAsync()
         {
-            MessagingCenter.Subscribe<DataProvider, TableBase>(
+            MessagingCenter.Subscribe<ConnctionService, Host>(
                 this, MessengerKeys.ItemChanged, async (sender, arg) =>
                 {
-                    if (arg is Host)
+                  
                         await InitHostAsync();
                 });
             return base.OnInternalAppearingAsync();
@@ -137,12 +132,6 @@ namespace Doods.Xam.MonitorMyServer.Views
         private void ShowProcesses(object obj)
         {
             NavigationService.NavigateAsync(nameof(ProcessesPage));
-            //if (obj == null) return;
-
-            //if (obj is Process p)
-            //{
-            //    _sshService.RunCommand($"kill {p.Pid}");
-            //}
         }
 
         private void Updates()
@@ -152,36 +141,14 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private async void ChangeHost()
         {
-            var action = await _messageBoxService.ShowActionSheet(Resource.SelectHost, Resource.Cancel, null,
-                Hosts.Select(h => $"{h.Id} - {h.HostName}").ToArray());
-
-            if (action != Resource.Cancel && action != null)
-            {
-                var split = action.Split('-');
-                var id = long.Parse(split[0]);
-                await TryToConnect(Hosts.First(h => h.Id == id));
-            }
-            //var page = new PopupListViewPage();
-
-            //await PopupNavigation.Instance.PushAsync(page);
-
-            //var hosts = await DataProvider.GetHostsAsync();
-            //var vm = new PopupPageItemActionViewModel<Host>(hosts);
-            //var page = new PopupPageItemAction(vm);
-
-            //await PopupNavigation.Instance.PushAsync(page);
-            //var selected = vm.SelectedItems;
-            //if (selected != null)
-            //{
-            //    await Login(selected);
-            //}
+            var connctionService = App.Container.Resolve<ConnctionService>();
+            await connctionService.ChangeHostTask();
         }
 
         private void Clear()
         {
             Upgradables = null;
             CpuInfo = null;
-
             DisksUsage = null;
             UpgradablesCount = 0;
             ProcessesCount = 0;
@@ -196,7 +163,6 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private void AddHost()
         {
-            //NavigationService.NavigateAsync(nameof(HostManagerPage));
             NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage));
         }
 
@@ -209,58 +175,36 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private async Task InitHostAsync()
         {
-            var hosts = await DataProvider.GetHostsAsync();
-            if (!hosts.Any())
-            {
-                ShowErrorHostState();
-            }
-            else
-            {
-                Hosts.ReplaceRange(hosts);
-                var l = Preferences.Get(PreferencesKeys.SelectedHostIdKey, 0L);
-                if (l > 0)
-                {
-                    var findHost = Hosts.FirstOrDefault(h => h.Id.Value == l);
+            SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
+            ViewModelStateItem.IsRunning = true;
+            var connctionService = App.Container.Resolve<ConnctionService>();
 
-                    if (findHost != null)
-                        await TryToConnect(findHost);
-                    else
-                        await TryToConnect(Hosts.First());
-                }
-                else
+            //Can't load host onstartup app :/.
+            if (!connctionService.Hosts.Any())
+                await connctionService.Init();
+
+            if (!connctionService.Hosts.Any())
+                ShowErrorHostState();
+            else
+                try
                 {
-                    await TryToConnect(Hosts.First());
+                    await Login(connctionService.CurrentHost);
                 }
-            }
+                catch
+                {
+                    SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
+                    Clear();
+                }
+
+            ViewModelStateItem.IsRunning = false;
         }
 
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
-            if(!_sshService.IsConnected())
-                await InitHostAsync().ConfigureAwait(false);
+            if (!_sshService.IsConnected())
+                await InitHostAsync();
         }
-        //protected override async Task OnInternalAppearingAsync()
-        //{
-        //    await InitHostAsync().ConfigureAwait(false);
-        //}
 
-        private async Task TryToConnect(Host host)
-        {
-            SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
-            ViewModelStateItem.IsRunning = true;
-
-            try
-            {
-                await Login(host);
-            }
-            catch
-            {
-                SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
-                Clear();
-            }
-
-            ViewModelStateItem.IsRunning = false;
-        }
 
         protected override void OnFinishLoading(LoadingContext context)
         {
@@ -274,28 +218,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         private void ShowErrorHostState()
         {
             SetLabelsStateItem(Resource.ErrorNoHostsDetected, Resource.ClickAddHost);
-            //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
-            //viewModelStateItem.Color = Color.Red;
-        }
-
-        private void SetSelectedIdHost(Host host)
-        {
-            MessagingCenter.Send(this, MessengerKeys.HostChanged, host);
-            Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
 
         private async Task Login(Host host)
         {
-            SetSelectedIdHost(host);
-
             Title = host.HostName;
-            var con = new SshConnection(host.Url, host.Port, host.UserName, host.Password);
-            await _sshService.InitAsync(con).ConfigureAwait(false);
-
             SetLabelsStateItem(host.HostName, host.Url);
-
-            //var result1 = await _sshService.ExecuteTaskAsync<DiskUsageBeanWhapper>(diskUsageRequest);
-
             await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
                 GetUpgradables());
         }

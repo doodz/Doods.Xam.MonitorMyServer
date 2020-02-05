@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.Ssh.Std.Enums;
@@ -18,6 +19,8 @@ namespace Doods.Xam.MonitorMyServer.Services
     public interface IOmvService : IRpcService
     {
         Task<IEnumerable<PluginInfo>> GetPlugins();
+
+        Task<bool> Connect(string username, string password);
     }
 
 
@@ -133,6 +136,12 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var result = await RunCmd<IEnumerable<OmvPlugins>>(new EnumeratePluginsRequest());
             return _mapper.Map<IEnumerable<OmvPlugins>, IEnumerable<PluginInfo>>(result);
+        }
+
+        public Task<bool> Connect(string username, string password)
+        {
+           var b = Connect();
+           return Task.FromResult(b);
         }
 
         public Task<string> GenerateRdd()
@@ -320,7 +329,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             return RunCmd<string>(new RemovePlugin(lst));
         }
 
-        public Task<Output<T>> GetOutput<T>(string filename, long pos)
+        public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
             return RunCmd<Output<T>>(new GetOutputRequest(filename, pos));
         }

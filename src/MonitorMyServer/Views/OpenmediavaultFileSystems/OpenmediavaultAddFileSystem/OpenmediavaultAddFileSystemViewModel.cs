@@ -4,6 +4,7 @@ using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
 
@@ -12,7 +13,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
     public class OpenmediavaultAddFileSystemViewModel : ViewModelWhithState
     {
         private readonly IOMVSshBackgroundService _backgroundService;
-        private readonly IRpcService _sshService;
+        private readonly IOmvService _sshService;
 
         private string _label;
 
@@ -20,7 +21,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
         private CandidateFileSystem _selectedCandidate;
         private string _selectedFileSystem;
 
-        public OpenmediavaultAddFileSystemViewModel(IRpcService sshService,
+        public OpenmediavaultAddFileSystemViewModel(IOmvService sshService,
             IOMVSshBackgroundService backgroundService)
         {
             _sshService = sshService;

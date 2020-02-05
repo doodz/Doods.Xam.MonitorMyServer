@@ -15,6 +15,7 @@
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
+                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
     <ScrollView>
         <StackLayout>
@@ -44,31 +45,69 @@
                                                  Grid.Column="0" Grid.Row="0" />
 
                                 <Label Grid.Column="1" Grid.Row="0" Text="{Binding Mountpoint,Mode=OneWay}" />
-                                <ImageButton Grid.Column="0" Grid.Row="1"
+
+                                <forms:SvgCachedImage
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </forms:SvgCachedImage.GestureRecognizers>
+                                </forms:SvgCachedImage>
+
+                                <!--<ImageButton Grid.Column="0" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
                                              IsEnabled="{Binding CanMount,Mode=OneWay}"
                                              Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
-                                             CommandParameter="{Binding .}" />
+                                             CommandParameter="{Binding .}" />-->
                                 <!--<Button Grid.Column="0" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Mount'}"
                                         IsEnabled="{Binding CanMount,Mode=OneWay}"
                                         Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
-                                <ImageButton Grid.Column="1" Grid.Row="1"
+                                <forms:SvgCachedImage
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </forms:SvgCachedImage.GestureRecognizers>
+                                </forms:SvgCachedImage>
+                                <!--<ImageButton Grid.Column="1" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
                                              IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                              Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
-                                             CommandParameter="{Binding .}" />
+                                             CommandParameter="{Binding .}" />-->
                                 <!--<Button Grid.Column="1" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Unmount'}"
                                         IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                         Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
-                                <ImageButton Grid.Column="2" Grid.Row="1"
+                                <forms:SvgCachedImage
+                                    Grid.Column="2"
+                                    Grid.Row="1"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </forms:SvgCachedImage.GestureRecognizers>
+                                </forms:SvgCachedImage>
+                                <!--<ImageButton Grid.Column="2" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
                                              IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                              Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
-                                             CommandParameter="{Binding .}" />
+                                             CommandParameter="{Binding .}" />-->
                                 <!--<Button Grid.Column="2" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Delete'}"
                                         IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"

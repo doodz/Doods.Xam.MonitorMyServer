@@ -8,6 +8,7 @@ using Doods.Framework.Std.Services;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
 
@@ -16,7 +17,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
     public abstract class BaseSettingsViewModel<T> : ViewModel,IOmvSettingsViewModel<T> where T : OmvObject
     {
 
-        protected readonly IRpcService SshService = App.Container.Resolve<IRpcService>();
+        protected readonly IOmvService SshService = App.Container.Resolve<IOmvService>();
 
         public ITranslateService TranslateService { get; } =
             new TranslateService(new ResourceManager("Doods.Openmediavault.Mobile.Std.Resources.openmediavault",

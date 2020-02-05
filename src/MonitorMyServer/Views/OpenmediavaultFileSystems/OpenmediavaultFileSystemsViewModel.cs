@@ -8,6 +8,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
 using FFImageLoading.Svg.Forms;
@@ -17,13 +18,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 {
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
-        private readonly IOMVSshBackgroundService _backgroundService;
-        private readonly IRpcService _sshService;
+       
+        private readonly IOmvService _sshService;
 
-        public OpenmediavaultFileSystemsViewModel(IRpcService sshService, IOMVSshBackgroundService backgroundService)
+        public OpenmediavaultFileSystemsViewModel(IOmvService sshService)
         {
             _sshService = sshService;
-            _backgroundService = backgroundService;
+           
             AddItemCommand = new Command(AddItem);
             MountFileSystemCmd = new Command(MountFileSystem, o =>
             {
@@ -61,7 +62,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                     {
                         await _sshService.UmountFileSystem(filesystem);
                         var fileneame = await _sshService.ApplyChanges();
-                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
                     () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
@@ -75,7 +76,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                     {
                         await _sshService.DeleteFileSystem(filesystem);
                         var fileneame = await _sshService.ApplyChanges();
-                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
                     () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
@@ -89,7 +90,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                     {
                         await _sshService.MountFileSystem(filesystem);
                         var fileneame = await _sshService.ApplyChanges();
-                        await _backgroundService.CheckRunningAsync(fileneame);
+                        await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
                     () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
@@ -117,7 +118,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
         private async Task GetListFileSystem()
         {
             var filename = await _sshService.GetListFileSystemBackground();
-            var result = await _backgroundService.GetOutputAsync<ResponseArray<OmvFilesystems>>(filename);
+            var result = await _sshService.GetOutputAsync<ResponseArray<OmvFilesystems>>(filename);
             Filesystems.ReplaceRange(result.Content.Data);
         }
 
@@ -139,10 +140,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
             var image3 = new FileImageSource();
             image3.File = image1;
-
-            yield return new CommandItem(CommandId.AnalyseThematique)
+           
+           yield return new CommandItem(CommandId.AnalyseThematique)
             {
-                Text = "Add",
+                Text = Openmediavault.Mobile.Std.Resources.openmediavault.Create,
                 IsPrimary = true,
                 Command = AddItemCommand,
                 Icon = image3

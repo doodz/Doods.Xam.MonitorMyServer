@@ -38,28 +38,24 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         private readonly OmvWebGuiClient _omvWebGuiClient;
         private readonly OmvServicesClient _omvServicesClient;
-
+        private readonly IRpcClient _client;
         public OmvRpcService(IRpcClient client, ILogger logger, IMapper mapper)
         {
             _logger = logger;
             _mapper = mapper;
-            var client1 = client;
-            _omvSystemClient = new OmvSystemClient(client1);
-            _omvPluginClient = new OmvPluginClient(client1);
-            _omvAptClient = new OmvAptClient(client1);
-            _omvConfigClient = new OmvConfigClient(client1);
-
-            _omvDiskMgmtClient = new OmvDiskMgmtClient(client1);
-            _omvExecClient = new OmvExecClient(client1);
-            _omvServicesClient = new OmvServicesClient(client1);
-            _omvFileSystemMgmtClient = new OmvFileSystemMgmtClient(client1);
-            _omvNetworkClient = new OmvNetworkClient(client1);
-
-            _omvPowerMgmtClient = new OmvPowerMgmtClient(client1);
-            _omvRrdClient = new OmvRrdClient(client1);
-
-
-            _omvWebGuiClient = new OmvWebGuiClient(client1);
+            _client = client;
+            _omvSystemClient = new OmvSystemClient(_client);
+            _omvPluginClient = new OmvPluginClient(_client);
+            _omvAptClient = new OmvAptClient(_client);
+            _omvConfigClient = new OmvConfigClient(_client);
+            _omvDiskMgmtClient = new OmvDiskMgmtClient(_client);
+            _omvExecClient = new OmvExecClient(_client);
+            _omvServicesClient = new OmvServicesClient(_client);
+            _omvFileSystemMgmtClient = new OmvFileSystemMgmtClient(_client);
+            _omvNetworkClient = new OmvNetworkClient(_client);
+            _omvPowerMgmtClient = new OmvPowerMgmtClient(_client);
+            _omvRrdClient = new OmvRrdClient(_client);
+            _omvWebGuiClient = new OmvWebGuiClient(_client);
         }
 
 
@@ -73,9 +69,10 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _omvSystemClient.GetRpcVersion();
         }
 
-        public Task<IEnumerable<Devices>> GetDevices()
+        public async Task<IEnumerable<Devices>> GetDevices()
         {
-            return _omvNetworkClient.GetDevices();
+            var result = await _omvNetworkClient.GetDevices();
+            return result.Data;
         }
 
         public Task<IEnumerable<OmvFilesystems>> GetFilesystems()
@@ -119,7 +116,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _omvAptClient.UpgradeAptList(lst);
         }
 
-        public Task<Output<T>> GetOutput<T>(string filename, long pos)
+        public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
             return _omvExecClient.GetOutput<T>(filename, pos);
         }
@@ -195,6 +192,11 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _mapper.Map<IEnumerable<OmvPlugins>, IEnumerable<PluginInfo>>(result);
         }
 
+        public async Task<bool> Connect(string username,string password)
+        {
+           return  await _client.LoginAsync(username, password);
+        }
+
         public Task<PowerManagementSetting> GetPowerManagementSetting()
         {
             return _omvPowerMgmtClient.GetSettings();
@@ -260,14 +262,49 @@ namespace Doods.Xam.MonitorMyServer.Services
             throw new NotImplementedException();
         }
 
-        public Task<Output<T>> GetOutputAsync<T>(string filename)
+        public async Task<Output<T>> GetOutputAsync<T>(string filename)
         {
-            throw new NotImplementedException();
+
+            var result =await _omvExecClient.GetOutput<string>(filename, 0);
+            if (result.Running)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(3));
+                return await GetOutputAsync<T>(filename);
+            }
+
+            result.Content = result.Content.Replace(@"\\\", string.Empty);
+            result.Content = result.Content.Replace(@"\""", "\"");
+            var toto = new Output<T>();
+
+            toto.Filename = result.Filename;
+            toto.Pos = result.Pos;
+            toto.Running = result.Running;
+            var serializer = new OmvSerializer();
+            toto.Content = serializer.Deserialize<T>(result.Content);
+
+            return toto;
         }
 
-        public Task<Output<string>> GetOutputAsync(string filename)
+        public async  Task<Output<string>> GetOutputAsync(string filename)
         {
-            throw new NotImplementedException();
+            var result = await _omvExecClient.GetOutput<string>(filename, 0);
+            if (result.Running)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(3));
+                return await GetOutputAsync(filename);
+            }
+
+            result.Content = result.Content.Replace(@"\\\", string.Empty);
+            result.Content = result.Content.Replace(@"\""", "\"");
+            var toto = new Output<string>();
+
+            toto.Filename = result.Filename;
+            toto.Pos = result.Pos;
+            toto.Running = result.Running;
+            var serializer = new OmvSerializer();
+            toto.Content = result.Content;
+
+            return toto;
         }
     }
 }

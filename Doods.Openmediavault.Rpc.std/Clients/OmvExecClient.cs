@@ -11,7 +11,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             ServiceName = "Exec";
         }
 
-        public Task<Output<T>> GetOutput<T>(string filename, long pos)
+        public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
 
             var request = NewRequest("getOutput");

@@ -9,14 +9,6 @@ using Newtonsoft.Json.Converters;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {
-
-    public class OmvSerializerException : Exception
-    {
-        public OmvSerializerException(string message,Exception exception) :base(message,exception)
-        {
-            
-        }
-    }
     public class OmvSerializer : IDeserializer
     {
         private readonly JsonSerializer _serializer;
@@ -74,7 +66,9 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                throw new OmvSerializerException(apiResponse.Content,e);
+
+                throw new OmvSerializerException($"OmvSerialiser :{Environment.NewLine}" +
+                                                 $"{apiResponse.Content}",e);
             }
            
         }
@@ -95,7 +89,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"Couldn't deserialize json: {json} to {typeof(T)}. Error: {ex}");
+                        Console.WriteLine($"OmvSerialiser :{Environment.NewLine} Couldn't deserialize json: {json} to {typeof(T)}. Error: {ex}");
                         //Logger.Error($"Couldn't deserialize json: {json}. Error: {ex}");
                         throw;
                     }

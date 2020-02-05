@@ -19,10 +19,10 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
     {
         private readonly IMessageBoxService _messageBoxService;
         private readonly IRewardService _rewardService;
-        private readonly ISshService _sshService;
+       
         private PidStatusChecker _pidStatusChecker;
         private IEnumerable<Upgradable> _upgradables;
-
+        private readonly ISshService _sshService;
         private int _upgradablesCount;
 
 

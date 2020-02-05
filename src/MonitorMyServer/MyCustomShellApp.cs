@@ -4,6 +4,8 @@ using System.Linq;
 using Autofac;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Extensions;
+using Doods.Openmediavault.Mobile.Std.Resources;
+using Doods.Xam.MonitorMyServer.Comtrols;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views;
 using Doods.Xam.MonitorMyServer.Views.About;
@@ -37,114 +39,119 @@ namespace Doods.Xam.MonitorMyServer
         //    base.OnAppearing();
         //}
 
-        private IEnumerable<FlyoutItem> OmvPages;
-        private void InitList(Host host)
-        {
-
-            var home = Items.First();
-            Items.Clear();
-            Items.Add(home);
-           
-
-          
-
-            if (host.IsOmvServer)
-            {
-               
-                    Items.AddRange(OmvPages);
-                
-               
-            }
-
-            var commandsItem = CreateFlyoutItem("Commands", typeof(CustomCommandListPage));
-            var settingsItem = CreateFlyoutItem("Settings", typeof(SettingsPage));
-            var aboutItem = CreateFlyoutItem("About", typeof(AboutPage));
-
-
-            Items.AddRange(commandsItem, settingsItem, aboutItem);
-            CurrentItem = home;
-        }
+       
 
         public MyCustomShellApp()
         {
+            MessagingCenter.Subscribe<ConnctionService, Host>(
+                this, MessengerKeys.HostChanged,
+                async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
-            MessagingCenter.Subscribe<MainPageViewModel, Host>(
-                this, MessengerKeys.HostChanged, async (sender, arg) =>
-                {
-                    MainThread.BeginInvokeOnMainThread(() => { InitList(arg); });
-
-                });
-
-            FlyoutHeader = new Comtrols.FlyoutHeader();
-            var homeItem = new FlyoutItem()
+            FlyoutHeader = new FlyoutHeader();
+            var homeItem = new FlyoutItem
             {
-                Title = Title = "Home",
+                Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
                 Items =
                 {
-                    new ShellSection()
+                    new ShellSection
                     {
                         Items =
                         {
-                            new ShellContent()
+                            new ShellContent
                             {
-                                Title = "Home",
+                                Title =   Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
                                 ContentTemplate = new DataTemplate(typeof(MainPage))
                             }
                         }
                     }
                 }
             };
-
+          
             Items.AddRange(homeItem);
-            var omvHomeItem = new FlyoutItem()
+          
+
+
+            //var commandsItem = CreateFlyoutItem(openmediavault.ExecuteCommand,
+            //    typeof(CustomCommandListPage));
+            var settingsItem = CreateFlyoutItem(openmediavault.Settings,
+                typeof(SettingsPage));
+            var aboutItem = CreateFlyoutItem(openmediavault.About,
+                typeof(AboutPage));
+
+
+            //Items.AddRange(commandsItem, settingsItem, aboutItem);
+            Items.AddRange(settingsItem, aboutItem);
+            BindingContext = App.Container.Resolve<AppShellViewModel>();
+        }
+
+        private IEnumerable<FlyoutItem> GetOmvPages()
+        {
+           yield return  new FlyoutItem
             {
                 Title = "OMV",
                 Items =
                 {
-                    CreateTabItem("OMV",typeof(OpenmediavaultDashboardPage)),
-                    CreateTabItem("Statistics",typeof(OpenmediavaultStatisticsPage))
+                    CreateTabItem("OMV", typeof(OpenmediavaultDashboardPage)),
+                    CreateTabItem(openmediavault.PerformanceStatistics,
+                        typeof(OpenmediavaultStatisticsPage))
                 }
             };
-            var fileSystemItem = CreateFlyoutItem("File Systems", typeof(OpenmediavaultFileSystemsPage));
-            var pluginItem = CreateFlyoutItem("Plugins", typeof(OpenmediavaultPluginsPage));
-
-            OmvPages =new List<FlyoutItem>(){ omvHomeItem, fileSystemItem, pluginItem };
-
-            Items.AddRange(OmvPages);
 
 
-            var commandsItem = CreateFlyoutItem("Commands", typeof(CustomCommandListPage));
-            var settingsItem = CreateFlyoutItem("Settings", typeof(SettingsPage));
-            var aboutItem = CreateFlyoutItem("About", typeof(AboutPage));
+           yield return CreateFlyoutItem(openmediavault.FileSystems,
+                typeof(OpenmediavaultFileSystemsPage));
+           yield return CreateFlyoutItem(openmediavault.Plugins,
+                typeof(OpenmediavaultPluginsPage));
+
+        }
+
+        private void InitList(Host host)
+        {
+            var home = Items.First();
+            Items.Clear();
+            Items.Add(home);
            
+             
+            if (host.IsOmvServer) Items.AddRange(GetOmvPages());
 
-            Items.AddRange(commandsItem,settingsItem, aboutItem);
-            BindingContext = App.Container.Resolve<AppShellViewModel>();
+            if (host.IsSsh)
+            {
+                var commandsItem = CreateFlyoutItem(openmediavault.ExecuteCommand,
+                    typeof(CustomCommandListPage));
+                Items.Add(commandsItem);
+            }
 
-            
+            var settingsItem = CreateFlyoutItem(openmediavault.Settings,
+                typeof(SettingsPage));
+            var aboutItem = CreateFlyoutItem(openmediavault.About,
+                typeof(AboutPage));
+
+
+            Items.AddRange(settingsItem, aboutItem);
+            CurrentItem = home;
         }
 
 
         private static FlyoutItem CreateFlyoutItem(string title, Type page)
         {
-            return new FlyoutItem()
+            return new FlyoutItem
             {
-                Title  = title,
+                Title = title,
                 Items =
                 {
-                    CreateTabItem(title,page)
+                    CreateTabItem(title, page)
                 }
             };
         }
 
         private static Tab CreateTabItem(string title, Type page)
         {
-            return new Tab()
+            return new Tab
             {
                 Title = title,
                 Items =
                 {
-                    new ShellContent()
+                    new ShellContent
                     {
                         Title = title,
                         ContentTemplate = new DataTemplate(page)
@@ -152,6 +159,5 @@ namespace Doods.Xam.MonitorMyServer
                 }
             };
         }
-
     }
 }

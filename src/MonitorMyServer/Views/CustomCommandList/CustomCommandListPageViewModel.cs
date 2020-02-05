@@ -16,8 +16,9 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
 
     public class CustomCommandListPageViewModel: DataTableItemsViewModel<CustomCommandSsh>
     {
-        public ICommand RunCommand { get; }
         private readonly ISshService _sshService;
+        public ICommand RunCommand { get; }
+       
         private readonly IMessageBoxService _messageBoxService;
         public CustomCommandListPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {

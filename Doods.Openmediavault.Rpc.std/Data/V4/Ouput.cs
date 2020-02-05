@@ -8,7 +8,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         public string Filename { get; set; }
 
         [JsonProperty("pos")]
-        public long Pos { get; set; }
+        public int Pos { get; set; }
 
       
 

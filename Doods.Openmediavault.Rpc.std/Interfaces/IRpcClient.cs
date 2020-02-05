@@ -6,5 +6,6 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
     public interface IRpcClient
     {
         Task<T> ExecuteTaskAsync<T>(IRpcRequest request);
+        Task<bool> LoginAsync(string username, string password);
     }
 }

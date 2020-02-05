@@ -15,19 +15,15 @@ namespace Doods.Openmediavault.Rpc.Std
         Options Options { get; set; }
     }
 
-    public  class RpcRequest : IRpcRequest
+    public class RpcRequest : IRpcRequest
     {
-        [JsonProperty("service")]
-        public string Service { get; set; }
+        [JsonProperty("service")] public string Service { get; set; }
 
-        [JsonProperty("method")]
-        public string Method { get; set; }
+        [JsonProperty("method")] public string Method { get; set; }
 
-        [JsonProperty("params")]
-        public object Params { get; set; }
+        [JsonProperty("params")] public object Params { get; set; }
 
-        [JsonProperty("options")]
-        public Options Options { get; set; }
+        [JsonProperty("options")] public Options Options { get; set; }
     }
 
 
@@ -39,8 +35,8 @@ namespace Doods.Openmediavault.Rpc.Std
 
         public ParamsListFilter()
         {
-            
         }
+
         public ParamsListFilter(int start, int limit)
         {
             Start = start;
@@ -48,16 +44,16 @@ namespace Doods.Openmediavault.Rpc.Std
         }
     }
 
-    public  class Options
+    public class Options
     {
-        [JsonProperty("updatelastaccess")]
-        public bool Updatelastaccess { get; set; }
+        [JsonProperty("updatelastaccess")] public bool Updatelastaccess { get; set; }
     }
 
-  
+
     public class Requestbuilder
     {
         private static string Ssh = "omv-rpc";
+
         private static string Http = "rpc.php";
         //public T Build<T>(RpcRequest request,RequestType type)
         //{
@@ -74,22 +70,28 @@ namespace Doods.Openmediavault.Rpc.Std
 
         //    return default;
         //}
+        OmvSerializer serializer = new OmvSerializer();
+
+
+        public static string ToJson(object obj) => JsonConvert.SerializeObject(obj, OmvSerializer.Settings);
+
         public RestRequest ToHttp(IRpcRequest request)
         {
-
-            var toto = new LocalRestRequest(Http,Method.POST);
+            var toto = new LocalRestRequest(Http, Method.POST);
             toto.AddJsonBody(request);
-          
-            return toto;
 
+            return toto;
         }
 
         public ISshRequest ToSsh(IRpcRequest request)
         {
-            return new DefaultSshRequest($"{Ssh} {request.Service} {request.Method} {request.Params}");
-        }
+            if (request.Params != null)
+                return new DefaultSshRequest($"{Ssh} {request.Service} {request.Method} \"{ToJson(request.Params).Replace("\"","\\\"")}\"");
 
+            return new DefaultSshRequest($"{Ssh} {request.Service} {request.Method}");
+        }
     }
+
     /// <summary>
     /// todo HttpRequest  Doods.Framework.Http.Std
     /// </summary>
@@ -97,14 +99,14 @@ namespace Doods.Openmediavault.Rpc.Std
     {
         public LocalRestRequest(string resource, Method method) : base(resource, method, DataFormat.Json)
         {
-            JsonSerializer = new NewtonsoftJsonSerializer( LocalJsonConverter.Singleton);
+            JsonSerializer = new NewtonsoftJsonSerializer(LocalJsonConverter.Singleton);
         }
     }
+
     internal class DefaultSshRequest : OmvRequestBase
     {
         public DefaultSshRequest(string requestString) : base(requestString)
         {
-            
         }
     }
 }

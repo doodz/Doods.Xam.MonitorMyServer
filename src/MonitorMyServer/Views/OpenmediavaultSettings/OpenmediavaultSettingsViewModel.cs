@@ -1,15 +1,16 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {
     public class OpenmediavaultSettingsViewModel : ViewModelWhithState
     {
-        private readonly IRpcService _sshService;
+        private readonly IOmvService _sshService;
 
 
-        public OpenmediavaultSettingsViewModel(IRpcService sshService)
+        public OpenmediavaultSettingsViewModel(IOmvService sshService)
         {
             _sshService = sshService;
         }

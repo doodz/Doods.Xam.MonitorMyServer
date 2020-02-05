@@ -17,9 +17,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
 {
     public class OpenmediavaultStatisticsViewModel : ViewModelWhithState
     {
-        private IRpcService _sshService;
+        private IOmvService _sshService;
 
-        public OpenmediavaultStatisticsViewModel(IRpcService sshService)
+        public OpenmediavaultStatisticsViewModel(IOmvService sshService)
         {
             _sshService = sshService;
         }

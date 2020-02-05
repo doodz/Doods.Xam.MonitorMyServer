@@ -12,9 +12,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
 {
     public class ProcessesPageViewModel : ViewModelWhithState
     {
-        private readonly ISshService _sshService;
-        private IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> _processes;
        
+        private IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> _processes;
+        private readonly ISshService _sshService;
         private int _processesCount;
         public ProcessesPageViewModel(ISshService sshService)
         {

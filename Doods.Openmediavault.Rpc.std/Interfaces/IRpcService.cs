@@ -23,7 +23,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<T> RunCmd<T>(ISshRequest request);
         Task<string> UpdateAptList();
         Task<string> UpgradeAptList(IEnumerable<string> lst);
-        Task<Output<T>> GetOutput<T>(string filename, long pos);
+        Task<Output<T>> GetOutput<T>(string filename, int pos);
         ScpClient GetScpClient();
         //Task<IEnumerable<PluginInfo>> GetPlugins();
         Task<string> GenerateRdd();

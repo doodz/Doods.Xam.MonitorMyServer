@@ -10,6 +10,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V5;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using FFImageLoading.Svg.Forms;
@@ -23,11 +24,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         //    new ObservableRangeCollection<SystemInformation>();
 
         private OMVInformations _OMVInformations;
-        private readonly IRpcService _sshService;
+        private readonly IOmvService _sshService;
 
         private string _text = string.Empty;
 
-        public OpenmediavaultDashboardViewModel(IRpcService sshService)
+        public OpenmediavaultDashboardViewModel(IOmvService sshService)
         {
             _sshService = sshService;
             UpdatesCmd = new Command(Updates);
@@ -73,7 +74,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             return await CheckRunningAsync(filename);
         }
 
-        private async Task<bool> GetOutputAsync(string filename, long pos)
+        private async Task<bool> GetOutputAsync(string filename, int pos)
         {
             var result = await _sshService.GetOutput<string>(filename, pos);
             if (result.Running)
@@ -169,10 +170,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
             var image3 = new FileImageSource();
             image3.File = image1;
-
-            yield return new CommandItem(CommandId.AnalyseThematique)
+           
+             yield return new CommandItem(CommandId.AnalyseThematique)
             {
-                Text = "Settings",
+                Text = Openmediavault.Mobile.Std.Resources.openmediavault.Settings,
                 IsPrimary = true,
                 Command = new Command(GotoSetting),
                 Icon = image3
