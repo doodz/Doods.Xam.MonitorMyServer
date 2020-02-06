@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autofac;
+﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
-using Xamarin.Forms;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Xamarin.Forms.Xaml;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
@@ -17,7 +11,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
         public OpenmediavaultStatisticsPage()
         {
             InitializeComponent();
-            Title = "OMV";
+            Title = openmediavault.PerformanceStatistics;
             var vm = App.Container.Resolve<OpenmediavaultStatisticsViewModel>();
             Start(vm);
         }

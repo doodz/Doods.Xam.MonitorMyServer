@@ -75,8 +75,6 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
            var result = await  _sshService.GenerateRdd();
           
         }
-
-
     }
 
     public class RrdImageSource

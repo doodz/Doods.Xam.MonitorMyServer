@@ -9,8 +9,8 @@ namespace Doods.Xam.MonitorMyServer.Data
         private string str;
         public CustomCommandSshWrapper(CustomCommandSsh command)
         {
-           var toto = Uri.EscapeDataString(command.CommandString);
-            str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={toto}";
+           var commandStringEscaped = Uri.EscapeDataString(command.CommandString);
+            str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={commandStringEscaped}";
 
         }
 

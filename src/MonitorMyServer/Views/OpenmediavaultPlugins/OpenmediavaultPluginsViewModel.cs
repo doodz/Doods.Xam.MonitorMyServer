@@ -56,9 +56,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins
 
         protected override async Task OnInternalAppearingAsync()
         {
-            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-                () => SetLabelsStateItem("OMV", "Get Plugins"),
-                () => { SetLabelsStateItem("OMV", "done!"); });
+
+            
+             await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+                () => SetLabelsStateItem("OMV", Openmediavault.Mobile.Std.Resources.openmediavault.CheckingForNewPlugins___),
+                () => { SetLabelsStateItem("OMV", Openmediavault.Mobile.Std.Resources.openmediavault.Done___); });
             await base.OnInternalAppearingAsync();
         }
 

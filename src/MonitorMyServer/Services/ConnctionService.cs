@@ -71,7 +71,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             if (l > 0)
             {
                 var findHost = Hosts.FirstOrDefault(h => h.Id != null && h.Id.Value == l);
-                LoginFromOnStart(findHost);
+                Login(findHost);
             }
         }
 

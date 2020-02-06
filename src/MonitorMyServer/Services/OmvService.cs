@@ -23,7 +23,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<bool> Connect(string username, string password);
     }
 
-
+    [Obsolete("use OmvRpcService")]
     public class OmvService : SshService, IOmvService
     {
         private OMVVersion _OMVVersions;

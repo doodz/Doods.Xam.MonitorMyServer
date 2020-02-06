@@ -4,10 +4,9 @@ using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Std.Lists;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
-using Doods.Openmediavault.Rpc.std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
@@ -18,13 +17,12 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 {
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
-       
         private readonly IOmvService _sshService;
 
         public OpenmediavaultFileSystemsViewModel(IOmvService sshService)
         {
             _sshService = sshService;
-           
+
             AddItemCommand = new Command(AddItem);
             MountFileSystemCmd = new Command(MountFileSystem, o =>
             {
@@ -65,8 +63,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
-                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+                    () => SetLabelsStateItem("FileSystemMgmt",
+                        openmediavault.ApplyConfigurationChanges),
+                    () =>
+                    {
+                        SetLabelsStateItem("FileSystemMgmt",
+                            openmediavault.Done___);
+                    });
         }
 
         private async void DeleteFileSystem(object o)
@@ -79,8 +82,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
-                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+                    () => SetLabelsStateItem("FileSystemMgmt",
+                        openmediavault.ApplyConfigurationChanges),
+                    () =>
+                    {
+                        SetLabelsStateItem("FileSystemMgmt",
+                            openmediavault.Done___);
+                    });
         }
 
         private async void MountFileSystem(object o)
@@ -93,15 +101,20 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
                         await _sshService.CheckRunningAsync(fileneame);
                         await RefreshData();
                     },
-                    () => SetLabelsStateItem("FileSystemMgmt", "Apply changes"),
-                    () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+                    () => SetLabelsStateItem("FileSystemMgmt",
+                        openmediavault.ApplyConfigurationChanges),
+                    () =>
+                    {
+                        SetLabelsStateItem("FileSystemMgmt",
+                            openmediavault.Done___);
+                    });
         }
 
         protected override async Task OnInternalAppearingAsync()
         {
             await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
                 () => SetLabelsStateItem("FileSystemMgmt", "Get file systems"),
-                () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
+                () => { SetLabelsStateItem("FileSystemMgmt", openmediavault.Done___); });
             await base.OnInternalAppearingAsync();
         }
 
@@ -140,10 +153,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
             var image3 = new FileImageSource();
             image3.File = image1;
-           
-           yield return new CommandItem(CommandId.AnalyseThematique)
+
+            yield return new CommandItem(CommandId.AnalyseThematique)
             {
-                Text = Openmediavault.Mobile.Std.Resources.openmediavault.Create,
+                Text = openmediavault.Create,
                 IsPrimary = true,
                 Command = AddItemCommand,
                 Icon = image3
