@@ -96,9 +96,10 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _omvSystemClient.GetSystemInformations();
         }
 
-        public Task<bool> IsRunning(string filename)
+        public async Task<bool> IsRunning(string filename)
         {
-            throw new NotImplementedException();
+            var result =await  _omvExecClient.IsRunning(filename);
+            return result.Running;
         }
 
         public Task<T> RunCmd<T>(ISshRequest request)
@@ -257,9 +258,13 @@ namespace Doods.Xam.MonitorMyServer.Services
             return result != null;
         }
 
-        public Task<bool> CheckRunningAsync(string filename)
+        public async Task<bool> CheckRunningAsync(string filename)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(filename)) return false;
+            if (!await IsRunning(filename)) return false;
+
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            return await CheckRunningAsync(filename);
         }
 
         public async Task<Output<T>> GetOutputAsync<T>(string filename)

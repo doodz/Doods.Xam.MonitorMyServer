@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
+using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
@@ -18,11 +19,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
         private readonly IOmvService _sshService;
-
-        public OpenmediavaultFileSystemsViewModel(IOmvService sshService)
+        private readonly IMessageBoxService _messageBoxService;
+        public OpenmediavaultFileSystemsViewModel(IOmvService sshService, IMessageBoxService messageBoxService)
         {
             _sshService = sshService;
-
+            _messageBoxService = messageBoxService;
             AddItemCommand = new Command(AddItem);
             MountFileSystemCmd = new Command(MountFileSystem, o =>
             {
@@ -74,6 +75,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
         private async void DeleteFileSystem(object o)
         {
+            if(!await _messageBoxService.ShowAction(openmediavault.DeleteFileSystem, openmediavault.DoYouReallyWantToDeleteTheFileSystem_AllDataWillBeLost_,null))
+                return;
+
             if (o is OmvFilesystems filesystem)
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {

@@ -11,6 +11,15 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             ServiceName = "Exec";
         }
 
+
+        public Task<IsRunning> IsRunning(string filename)
+        {
+            var request = NewRequest("isRunning");
+            request.Params = new { filename= filename };
+            var result = RunCmd<IsRunning>(request);
+            return result;
+        }
+
         public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
 

@@ -49,10 +49,10 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4.FileSystem
 
         [JsonProperty("_used")] public bool Used { get; set; }
 
-        [JsonIgnore] public bool CanMount => !Mounted && !Readonly;
+        [JsonIgnore] public bool CanMount => !Mounted && !Readonly && Propfstab;
 
-        [JsonIgnore] public bool CanUmount => Mounted && !Readonly;
+        [JsonIgnore] public bool CanUmount => Mounted && !Readonly && Propfstab;
 
-        [JsonIgnore] public bool CanDelete => !Used && !Readonly;
+        [JsonIgnore] public bool CanDelete => !Used && !Readonly && Propfstab;
     }
 }

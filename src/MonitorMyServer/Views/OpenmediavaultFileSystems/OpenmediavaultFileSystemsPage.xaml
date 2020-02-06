@@ -46,7 +46,15 @@
 
                                 <Label Grid.Column="1" Grid.Row="0" Text="{Binding Mountpoint,Mode=OneWay}" />
 
+                                <StackLayout Orientation="Horizontal"
+                                             HorizontalOptions="EndAndExpand"
+                                             Grid.Column="0"
+                                             Grid.ColumnSpan="3"
+                                             Grid.Row="1">
+
                                 <forms:SvgCachedImage
+                                    Margin="5,0"
+                                    IsVisible="{Binding CanMount,Mode=OneWay}"
                                     Grid.Column="0"
                                     Grid.Row="1"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
@@ -70,6 +78,9 @@
                                         Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
                                 <forms:SvgCachedImage
+                                    Margin="5,0"
+                                  
+                                    IsVisible="{Binding CanUmount,Mode=OneWay}"
                                     Grid.Column="1"
                                     Grid.Row="1"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
@@ -92,6 +103,8 @@
                                         Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
                                 <forms:SvgCachedImage
+                                    Margin="5,0"
+                                    IsVisible="{Binding CanDelete,Mode=OneWay}"
                                     Grid.Column="2"
                                     Grid.Row="1"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
@@ -113,6 +126,7 @@
                                         IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                         Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
+                                </StackLayout>
                             </Grid>
 
                         </controls:TitledFrameView>

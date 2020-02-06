@@ -6,6 +6,7 @@ using System.Windows.Input;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Std.Lists;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V5;
@@ -104,7 +105,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         protected override async Task OnInternalAppearingAsync()
         {
-            ViewModelStateItem.RunAction(async () => { await RefreshData(); });
+            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+            () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
+            () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
             await base.OnInternalAppearingAsync();
         }
 
