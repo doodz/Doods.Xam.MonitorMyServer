@@ -17,6 +17,25 @@
                       mc:Ignorable="d"
                      
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard.OpenmediavaultDashboardPage">
+    <Shell.TitleView>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="{Binding Title}" FontSize="16" TextColor="Black" />
+            <!--<Picker  ItemsSource="{Binding Hosts,Mode=OneWay}" ItemDisplayBinding="{Binding HostName}" SelectedItem="{}"/>-->
+            <Button Grid.Column="1" Text="{resources:Translate Text=ChangeHost}"
+                    Command="{Binding ChangeHostCmd,Mode=OneWay }"
+                    Margin="5,5,0,5" />
+            <Button Grid.Column="2" Text="{resources:Translate Text=ManageHosts}"
+                    Command="{Binding ManageHostsCmd,Mode=OneWay }"
+                    Margin="0,5,5,5" />
+        </Grid>
+    </Shell.TitleView>
+
     <StackLayout>
       <StackLayout.Resources>
             <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>

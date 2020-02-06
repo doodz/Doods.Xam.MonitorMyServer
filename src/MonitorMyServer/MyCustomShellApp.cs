@@ -109,8 +109,10 @@ namespace Doods.Xam.MonitorMyServer
         {
             var home = Items.First();
             Items.Clear();
-            Items.Add(home);
-           
+            if (host.IsSsh)
+            {
+                Items.Add(home);
+           }
              
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
 
@@ -128,7 +130,7 @@ namespace Doods.Xam.MonitorMyServer
 
 
             Items.AddRange(settingsItem, aboutItem);
-            CurrentItem = home;
+            CurrentItem = Items.First();
         }
 
 

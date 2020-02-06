@@ -56,6 +56,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
         private async void UmountFileSystem(object o)
         {
+            
             if (o is OmvFilesystems filesystem)
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {

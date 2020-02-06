@@ -1,8 +1,21 @@
-﻿using System;
+﻿// ---------------------------------------------------------------------------
+//  This source file is the confidential property and copyright of WIUZ.
+//  Reproduction or transmission in whole or in part, in any form or
+//  by any means, electronic, mechanical or otherwise, is prohibited
+//  without the prior written consent of the copyright owner.
+//  <copyright file="OpenmediavaultDashboardViewModel.cs" company="WIUZ">
+//     Copyright (C) WIUZ.  All rights reserved. 2016 - 2020
+//  </copyright>
+//  History:
+//   2020/02/06 at 14:38: Thibault HERVIOU aka ThibaultHERVIOU.
+// ---------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Std.Lists;
@@ -10,9 +23,9 @@ using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V5;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using FFImageLoading.Svg.Forms;
 using Xamarin.Forms;
@@ -21,12 +34,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 {
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
+        private readonly IOmvService _sshService;
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
         //    new ObservableRangeCollection<SystemInformation>();
 
         private OMVInformations _OMVInformations;
-        private readonly IOmvService _sshService;
-
         private string _text = string.Empty;
 
         public OpenmediavaultDashboardViewModel(IOmvService sshService)
@@ -34,7 +46,12 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             _sshService = sshService;
             UpdatesCmd = new Command(Updates);
             CheckCmd = new Command(Check);
+            ManageHostsCmd = new Command(ManageHosts);
+            ChangeHostCmd = new Command(ChangeHost);
         }
+
+        public ICommand ManageHostsCmd { get; }
+        public ICommand ChangeHostCmd { get; }
 
         public ICommand UpdatesCmd { get; }
         public ICommand CheckCmd { get; }
@@ -54,6 +71,17 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         public ObservableRangeCollection<ServicesStatus> ServicesStatus { get; } =
             new ObservableRangeCollection<ServicesStatus>();
+
+        private async void ChangeHost()
+        {
+            var connctionService = App.Container.Resolve<ConnctionService>();
+            await connctionService.ChangeHostTask();
+        }
+
+        private void ManageHosts()
+        {
+            NavigationService.NavigateAsync(nameof(HostManagerPage));
+        }
 
         private async void Check(object obj)
         {
@@ -106,8 +134,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         protected override async Task OnInternalAppearingAsync()
         {
             await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-            () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
-            () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+                () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
+                () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
             await base.OnInternalAppearingAsync();
         }
 
@@ -173,10 +201,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
             var image3 = new FileImageSource();
             image3.File = image1;
-           
-             yield return new CommandItem(CommandId.AnalyseThematique)
+
+            yield return new CommandItem(CommandId.AnalyseThematique)
             {
-                Text = Openmediavault.Mobile.Std.Resources.openmediavault.Settings,
+                Text = openmediavault.Settings,
                 IsPrimary = true,
                 Command = new Command(GotoSetting),
                 Icon = image3
