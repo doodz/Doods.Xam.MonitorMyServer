@@ -12,6 +12,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAd
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.Settings;
 using Doods.Xam.MonitorMyServer.Views.Tests;
@@ -40,6 +41,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
             builder.RegisterType<TestPageViewModel>().AsSelf();
             builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
+            builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
         }
     }
 }
