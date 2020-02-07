@@ -74,13 +74,14 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async void Check(object obj)
         {
+            
             await ViewModelStateItem.RunActionAsync(async () =>
             {
                 var filename = await _sshService.UpdateAptList();
-
+               
                 await Task.Delay(TimeSpan.FromSeconds(3));
                 await CheckRunningAsync(filename);
-            }, () => SetLabelsStateItem("verif", "Check update"), () => SetLabelsStateItem("verif", "done!"));
+            }, () => SetLabelsStateItem(openmediavault.Updates, openmediavault.CheckingForNewUpdates___), () => SetLabelsStateItem(openmediavault.Updates, openmediavault.Done___));
         }
 
 
@@ -115,8 +116,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                     await Task.Delay(TimeSpan.FromSeconds(3));
                     await GetOutputAsync(filename, 0);
                     await GetUpgraded();
-                }, () => SetLabelsStateItem("Apt", $"Upgrading {Upgradeds.Count} pakages"),
-                () => { SetLabelsStateItem("Apt", "done!"); });
+                }, () => SetLabelsStateItem(openmediavault.Updates, $"Upgrading {Upgradeds.Count} pakages"),
+                () => { SetLabelsStateItem(openmediavault.Updates, openmediavault.Done___); });
         }
 
 
