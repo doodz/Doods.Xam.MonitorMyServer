@@ -35,9 +35,9 @@ github_set_status_fail() {
 github_set_release(){
 	curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/releases -d \
         "{
-            \"tag_name\": \"$APPCENTER_BUILD_ID\", 
+            \"tag_name\": \"$BUILD_REPOSITORY_NAME_$APPCENTER_BUILD_ID\", 
             \"target_commitish\": \"$APPCENTER_BRANCH\",
-            \"name\": \"$APPCENTER_BUILD_ID\",
+            \"name\": \"$BUILD_REPOSITORY_NAME_$APPCENTER_BUILD_ID\",
             \"body\": \"Description of the release\",
             \"draft\": false,
             \"prerelease\": false
