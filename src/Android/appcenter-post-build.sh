@@ -5,6 +5,9 @@ echo "Description  : Add other repo"
 echo "Author       : Doods"
 echo "=============================================================================="
 
+echo "list apk"
+ls -la $APPCENTER_OUTPUT_DIRECTORY/*.apk
+
 source github.sh
 
 if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
