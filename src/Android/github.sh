@@ -11,6 +11,11 @@ github_set_status() {
     local status job_status
     local "${@}"
 
+echo "state: $status"
+echo "target_url :  $build_url"
+echo "description :  The build status is: $job_status!"
+echo "context :  continuous-integration/appcenter"
+
     curl -X POST https://api.github.com/repos/$USER/$BUILD_REPOSITORY_NAME/statuses/$BUILD_SOURCEVERSION -d \
         "{
             \"state\": \"$status\", 
