@@ -6,14 +6,6 @@ echo "Author       : Doods"
 echo "=============================================================================="
 
 source github.sh
-echo "debug ==>"
-
-echo "USER $USER"
-echo "APPCENTER_BRANCH $APPCENTER_BRANCH"
-echo "APPCENTER_BUILD_ID $APPCENTER_BUILD_ID"
-echo "GITHUB_TOKEN $GITHUB_TOKEN"
-
-echo "<== debug"
 
 if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
     github_set_status_fail
