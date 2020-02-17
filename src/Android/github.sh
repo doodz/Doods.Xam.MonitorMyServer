@@ -39,3 +39,16 @@ github_set_status_fail() {
     github_set_status status="failure" job_status="$AGENT_JOBSTATUS"
 }
 
+github_set_release(){
+	curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/releases -d \
+        "{
+            \"tag_name\": \"$APPCENTER_BUILD_ID\", 
+            \"target_commitish\": \"$APPCENTER_BRANCH\",
+            \"name\": \"$APPCENTER_BUILD_ID\",
+            \"body\": \"Description of the release\",
+			\"body\":false,
+			\"prerelease\":false
+        }" \
+        -H "Authorization: token $GITHUB_TOKEN" \
+        -H "Accept: application/vnd.github.v3.raw+json"
+}
