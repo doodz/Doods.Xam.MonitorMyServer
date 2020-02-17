@@ -19,4 +19,5 @@ if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
     github_set_status_fail
 else
     github_set_status_success
+    github_set_release
 fi
