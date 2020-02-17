@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
-#
-# Report build status next to github commit.
-#
-# Adjust settings in github.sh file
-#
-# Contributed by: Mirosław Zawisza
-# https://zeyomir.github.io
+echo "=============================================================================="
+echo "Task         : Report build status next to github commit."
+echo "Description  : use github.sh"
+echo "Author       : Doods"
+echo "=============================================================================="
 
 source github.sh
 
