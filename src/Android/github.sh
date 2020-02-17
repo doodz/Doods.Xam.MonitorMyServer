@@ -5,16 +5,9 @@ APP=Monitor-my-server-android
 build_url=https://appcenter.ms/users/$APPCENTER_USER/apps/$APP/build/branches/$APPCENTER_BRANCH/builds/$APPCENTER_BUILD_ID
 curl_url=https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/statuses/$BUILD_SOURCEVERSION
 
-echo "build_url $build_url"
-echo "curl_url $curl_url"
 github_set_status() {
     local status job_status
     local "${@}"
-
-echo "state: $status"
-echo "target_url :  $build_url"
-echo "description :  The build status is: $job_status!"
-echo "context :  continuous-integration/appcenter"
 
     curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/statuses/$BUILD_SOURCEVERSION -d \
         "{
