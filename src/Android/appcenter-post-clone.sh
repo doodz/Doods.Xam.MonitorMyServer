@@ -18,8 +18,10 @@ echo "==========================================================================
 echo "print working directory :"
 pwd
 echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
-
 cd $APPCENTER_SOURCE_DIRECTORY
+# [command]/bin/bash /Users/runner/runners/2.164.8/scripts/android-xamarin-postprocess.sh /Users/runner/runners/2.164.8/work/1/a/build/*.apk
+echo "APPCENTER_OUTPUT_DIRECTORY is $APPCENTER_OUTPUT_DIRECTORY"
+
 # mkdir Doods.Frameworks.Std
 # #cd Doods.Frameworks.Std
 # echo "print working directory :"
