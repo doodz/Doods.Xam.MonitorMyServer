@@ -39,7 +39,7 @@ github_set_release(){
             \"target_commitish\": \"$APPCENTER_BRANCH\",
             \"name\": \"$APPCENTER_BUILD_ID\",
             \"body\": \"Description of the release\",
-            \"body\": false,
+            \"draft\": false,
             \"prerelease\": false
         }" \
         -H "Authorization: token $GITHUB_TOKEN" \
