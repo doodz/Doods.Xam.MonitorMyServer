@@ -1,16 +1,10 @@
-# Report build status next to github commit.
-# 
-# - Fill in USER and APP with your user and appname in appcenter
-# - Also provide GITHUB_TOKEN env variable in build config
-#   (create token in GitHub Settings / Developer Settings / Personal access tokens, with 'repo:status' scope)
-#
-# Contributed by: Mirosław Zawisza
-# https://zeyomir.github.io
 
-USER=
-APP=
+echo "APPCENTER_BUILD_ID $APPCENTER_BUILD_ID"
+echo "access token =$GITHUB_TOKEN"
+APPCENTER_USER=thibaultherviou
+APP=Monitor-my-server-android
 
-build_url=https://appcenter.ms/users/$USER/apps/$APP/build/branches/$APPCENTER_BRANCH/builds/$APPCENTER_BUILD_ID
+build_url=https://appcenter.ms/users/$APPCENTER_USER/apps/$APP/build/branches/$APPCENTER_BRANCH/builds/$APPCENTER_BUILD_ID
 
 github_set_status() {
     local status job_status
@@ -38,3 +32,4 @@ github_set_status_success() {
 github_set_status_fail() {
     github_set_status status="failure" job_status="$AGENT_JOBSTATUS"
 }
+
