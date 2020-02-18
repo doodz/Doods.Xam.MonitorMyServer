@@ -56,14 +56,23 @@ github_upload_release_asset()
     local buildUrl="${uploadUrl}?name=${filename}"
     echo "My build url for asset $buildUrl"
     echo "My file path to upload $filePath"
+    echo "Move to $(pwd)"
+    #cp "$filePath" 
+
     curl -X POST $buildUrl \
         -H "Authorization: token $GITHUB_TOKEN" \
         -H "Content-Type: application/octet-stream" \
-        --upload-file "$filePath"
+        --data-binary "$filePath"
 }
 
 
 github_find_asset_url()
 {
     cat $RELEASE_RESULT_FILE  | grep "assets_url" | awk -F "\"assets_url\":" '{print $2}' | sed 's/",//'|  sed 's/"//'
+}
+
+github_find_upload_url()
+{
+    cat $RELEASE_RESULT_FILE  |  | grep "upload_url" | awk -F "\"upload_url\":" '{print $2}' | sed 's/{?name,label}",//'|  sed 's/"//'
+
 }
