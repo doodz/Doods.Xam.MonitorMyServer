@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 echo "=============================================================================="
 echo "Task         : Report build status next to github commit."
-echo "Description  : Add other repo"
+echo "Description  : Use github.sd"
 echo "Author       : Doods"
 echo "=============================================================================="
 
-echo "list apk"
-ls -la $APPCENTER_OUTPUT_DIRECTORY/*.apk
 
+find_first_Apk()
+{
+    ls $APPCENTER_OUTPUT_DIRECTORY/.apk| sort -n | head -1
+
+}
 source github.sh
 
 if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
@@ -15,4 +18,7 @@ if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
 else
     github_set_status_success
     github_set_release
+    url = github_find_asset_url
+    apkFile = find_first_Apk
+    github_upload_release_asset uploadUrl=url filePath=apkFile
 fi
