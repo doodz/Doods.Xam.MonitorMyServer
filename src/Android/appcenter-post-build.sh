@@ -16,9 +16,17 @@ set_github_processes()
 {
     github_set_status_success
     github_set_release
+    echo "Looking for the url to send a release"
     local url=github_find_asset_url
+    echo "found $url"
+
+    echo "Looking for the apk to send"
     local apkFile=find_first_Apk
+    echo "found $apkFile"
+
+    echo "Upload release asset"
     github_upload_release_asset uploadUrl=url filePath=apkFile
+    echo "done!"
 }
 
 source github.sh
