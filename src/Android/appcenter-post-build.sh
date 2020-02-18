@@ -8,7 +8,7 @@ echo "==========================================================================
 
 find_first_Apk()
 {
-    return ls $APPCENTER_OUTPUT_DIRECTORY/*.apk| sort -n | head -1
+    ls $APPCENTER_OUTPUT_DIRECTORY/*.apk| sort -n | head -1
 }
 
 set_github_processes()
