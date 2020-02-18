@@ -45,7 +45,7 @@ github_set_release(){
         }" \
         -H "Authorization: token $GITHUB_TOKEN" \
         -H "Accept: application/vnd.github.v3.raw+json"
-        >> $RELEASE_RESULT_FILE 
+        > $RELEASE_RESULT_FILE 
 }
 
 github_upload_release_asset()
