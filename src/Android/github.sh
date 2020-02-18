@@ -36,7 +36,7 @@ github_set_status_fail() {
 github_set_release(){
 	curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/releases -d \
         "{
-            \"tag_name\": \"${BUILD_REPOSITORY_NAME}\_${APPCENTER_BUILD_ID}\", 
+            \"tag_name\": \"${BUILD_REPOSITORY_NAME}_${APPCENTER_BUILD_ID}\", 
             \"target_commitish\": \"$APPCENTER_BRANCH\",
             \"name\": \"${BUILD_REPOSITORY_NAME}_${APPCENTER_BUILD_ID}\",
             \"body\": \"Description of the release\",
@@ -52,7 +52,7 @@ github_upload_release_asset()
 {
     local uploadUrl filePath
 
-    buildUrl = "$uploadUrl?name=$(basename $filePath)"
+    local buildUrl = "$uploadUrl?name=$(basename $filePath)"
     echo "My build url for asset $buildUrl"
     curl -X POST $buildUrl
         -H "Authorization: token $GITHUB_TOKEN" \
