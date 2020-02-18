@@ -64,5 +64,5 @@ github_upload_release_asset()
 
 github_find_asset_url()
 {
-    cat $RELEASE_RESULT_FILE  | grep "assets_url" | awk -F "\"assets_url\":" '{print $2}' | sed 's/",//'|  sed 's/"//'
+    return cat $RELEASE_RESULT_FILE  | grep "assets_url" | awk -F "\"assets_url\":" '{print $2}' | sed 's/",//'|  sed 's/"//'
 }
