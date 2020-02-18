@@ -44,7 +44,7 @@ github_set_release(){
             \"prerelease\": false
         }" \
         -H "Authorization: token $GITHUB_TOKEN" \
-        -H "Accept: application/vnd.github.v3.raw+json"
+        -H "Accept: application/vnd.github.v3.raw+json" \
         > $RELEASE_RESULT_FILE 
 }
 
