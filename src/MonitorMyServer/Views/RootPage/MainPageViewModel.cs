@@ -191,7 +191,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             await base.OnInternalAppearingAsync();
         }
 
-        protected Task RefreshData(bool b = true)
+        protected Task RefreshData()
         {
             return  Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
                 GetUpgradables());
@@ -305,12 +305,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         }
 
 
-        private class toto : IAsyncResult
-        {
-            public object AsyncState { get; }
-            public WaitHandle AsyncWaitHandle { get; }
-            public bool CompletedSynchronously { get; }
-            public bool IsCompleted { get; }
-        }
+        //private class toto : IAsyncResult
+        //{
+        //    public object AsyncState { get; }
+        //    public WaitHandle AsyncWaitHandle { get; }
+        //    public bool CompletedSynchronously { get; }
+        //    public bool IsCompleted { get; }
+        //}
     }
 }
