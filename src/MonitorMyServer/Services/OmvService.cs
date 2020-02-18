@@ -281,11 +281,8 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             result.Content = result.Content.Replace(@"\\\", string.Empty);
             result.Content = result.Content.Replace(@"\""", "\"");
-            var toto = new Output<T>();
+            var toto = new Output<T> {Filename = result.Filename, Pos = result.Pos, Running = result.Running};
 
-            toto.Filename = result.Filename;
-            toto.Pos = result.Pos;
-            toto.Running = result.Running;
             var serializer = new OmvSerializer();
             toto.Content = serializer.Deserialize<T>(result.Content);
 
@@ -303,12 +300,9 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             result.Content = result.Content.Replace(@"\\\", string.Empty);
             result.Content = result.Content.Replace(@"\""", "\"");
-            var toto = new Output<string>();
+            var toto = new Output<string> {Filename = result.Filename, Pos = result.Pos, Running = result.Running};
 
-            toto.Filename = result.Filename;
-            toto.Pos = result.Pos;
-            toto.Running = result.Running;
-            var serializer = new OmvSerializer();
+            //var serializer = new OmvSerializer();
             toto.Content = result.Content;
 
             return toto;

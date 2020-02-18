@@ -4,7 +4,6 @@ using System.Globalization;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
-using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Converters;
 using Doods.Framework.Ssh.Std;
@@ -18,7 +17,7 @@ using Doods.Framework.Std;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface ISshService:IClientSsh
+    public interface ISshService : IClientSsh
     {
         void Init(IConnection connection, bool andConnect);
         Task InitAsync(IConnection connection, bool andConnect = true);
@@ -45,12 +44,13 @@ namespace Doods.Xam.MonitorMyServer.Services
     public class SshService : SshServiceBase, ISshService
     {
         protected IMapper _mapper;
-        public SshService(ILogger logger,IMapper mapper):base(logger)
+
+        public SshService(ILogger logger, IMapper mapper) : base(logger)
         {
             _mapper = mapper;
         }
 
-        public void Init(IConnection connection,bool andConnect = true)
+        public void Init(IConnection connection, bool andConnect = true)
         {
             Connection = connection;
             if (andConnect)
@@ -73,19 +73,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             return isRunningPidResult.Data;
         }
 
-        private async Task<ISshApiResponse<int>> RunInNoHup(ISshRequest request)
-        {
-            var noUpREquest = new NoHupRequest(request);
-            var pid = await ExecuteTaskAsync<int>(noUpREquest).ConfigureAwait(false);
-            return pid;
-        }
-
         public async Task<int> InstallPackage(IEnumerable<string> packagesName)
         {
             if (packagesName == null) throw new NullReferenceException(nameof(packagesName));
             var request = new InstallPackagesRequest(packagesName);
             var result = await RunInNoHup(request);
-    
+
             return result.Data;
         }
 
@@ -99,11 +92,12 @@ namespace Doods.Xam.MonitorMyServer.Services
         public async Task<IEnumerable<Upgradable>> GetUpgradables()
         {
             var upgradableRequest = new UpgradableRequest();
-            var upgradableBean = await ExecuteTaskAsync<IEnumerable<UpgradableBean>>(upgradableRequest).ConfigureAwait(false);
+            var upgradableBean =
+                await ExecuteTaskAsync<IEnumerable<UpgradableBean>>(upgradableRequest).ConfigureAwait(false);
             var upgradables = _mapper.Map<IEnumerable<UpgradableBean>, IEnumerable<Upgradable>>(upgradableBean.Data);
             return upgradables;
-
         }
+
         public async Task<IEnumerable<Process>> GetProcesses()
         {
             var processesRequest = new ProcessesRequest();
@@ -111,6 +105,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             var processs = _mapper.Map<IEnumerable<ProcessBean>, IEnumerable<Process>>(processBeans.Data);
             return processs;
         }
+
         public async Task<MemoryUsage> CheckMemoryUsage()
         {
             var memoryUsageRequest = new MemoryUsageRequest();
@@ -118,12 +113,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             var memoryUsage = _mapper.Map<OsMemoryBean, MemoryUsage>(osMemoryBean.Data);
             return memoryUsage;
         }
+
         public async Task<int> NoUpCommand(string cmd)
         {
             var noUpRequest = new NoHupRequest(cmd);
             var noUpBean = await ExecuteTaskAsync<int>(noUpRequest).ConfigureAwait(false);
             return noUpBean.Data;
-
         }
 
         public async Task<string> RunCommand(string cmd)
@@ -131,19 +126,18 @@ namespace Doods.Xam.MonitorMyServer.Services
             var noUpRequest = new CustomRequest(cmd);
             var noUpBean = await ExecuteTaskAsync<string>(noUpRequest).ConfigureAwait(false);
             return noUpBean.Data;
-
         }
 
         public async Task Rebout()
         {
-           var reboutRequest = new RebootRequest(true);
-           var result =await ExecuteTaskAsync<string>(reboutRequest).ConfigureAwait(false);
+            var reboutRequest = new RebootRequest(true);
+            var result = await ExecuteTaskAsync<string>(reboutRequest).ConfigureAwait(false);
         }
 
         public async Task Halt()
         {
-           var haltRequest = new HaltSignalRequest(true);
-           var result = await ExecuteTaskAsync<string>(haltRequest).ConfigureAwait(false);
+            var haltRequest = new HaltSignalRequest(true);
+            var result = await ExecuteTaskAsync<string>(haltRequest).ConfigureAwait(false);
         }
 
         public async Task<CpuInfo> GetCpuInfo()
@@ -153,19 +147,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             var cpuInfo = _mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
             return cpuInfo;
         }
-        public async Task<IEnumerable<Lastlogin>> GetLastLogins()
-        {
-            var lastLoginsRequest = new LastLoginsRequest();
-            var cpuInfoBean = await ExecuteTaskAsync<IEnumerable<LastloginBean>>(lastLoginsRequest).ConfigureAwait(false);
-            var lastLogins = _mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
-            return lastLogins;
-        }
-        
+
         public async Task<double> GetUptimeDouble()
         {
             var uptimeRequest = new UptimeRequest();
             var uptimeBean = await ExecuteTaskAsync<double>(uptimeRequest).ConfigureAwait(false);
-           
+
             return uptimeBean.Data;
         }
 
@@ -174,21 +161,21 @@ namespace Doods.Xam.MonitorMyServer.Services
             var uptimeRequest = new UptimeRequest();
             var uptimeBean = await ExecuteTaskAsync<TimeSpan>(uptimeRequest).ConfigureAwait(false);
             return uptimeBean.Data;
-
         }
+
         public async Task<string> GetUptimeString()
         {
             var uptimeRequest = new UptimeRequest();
             var uptimeBean = await ExecuteTaskAsync<double>(uptimeRequest).ConfigureAwait(false);
             var converter = new DoubleToDateStringConverter();
-            return (string)converter.Convert(uptimeBean.Data, null, string.Empty, CultureInfo.CurrentCulture);
-
+            return (string) converter.Convert(uptimeBean.Data, null, string.Empty, CultureInfo.CurrentCulture);
         }
 
         public async Task<IEnumerable<DiskUsage>> GetDisksUsage()
         {
             var diskUsageRequest = new DiskUsageRequest();
-            var diskUsageBean = await ExecuteTaskAsync<IEnumerable<DiskUsageBean>>(diskUsageRequest).ConfigureAwait(false);
+            var diskUsageBean =
+                await ExecuteTaskAsync<IEnumerable<DiskUsageBean>>(diskUsageRequest).ConfigureAwait(false);
             var DisksUsage = _mapper.Map<IEnumerable<DiskUsageBean>, IEnumerable<DiskUsage>>(diskUsageBean.Data);
             return DisksUsage;
         }
@@ -208,12 +195,25 @@ namespace Doods.Xam.MonitorMyServer.Services
             var result = await ExecuteTaskAsync<string>(aptUpdateRequest).ConfigureAwait(false);
 
             if (result.ResponseStatus == ResponseStatus.Error)
-            {
                 throw new SshExitCodeCommandException(result.ErrorMessage, result.StatusCode);
-            }
 
             return result.ResponseStatus == ResponseStatus.Completed;
-           
+        }
+
+        private async Task<ISshApiResponse<int>> RunInNoHup(ISshRequest request)
+        {
+            var noUpREquest = new NoHupRequest(request);
+            var pid = await ExecuteTaskAsync<int>(noUpREquest).ConfigureAwait(false);
+            return pid;
+        }
+
+        public async Task<IEnumerable<Lastlogin>> GetLastLogins()
+        {
+            var lastLoginsRequest = new LastLoginsRequest();
+            var cpuInfoBean =
+                await ExecuteTaskAsync<IEnumerable<LastloginBean>>(lastLoginsRequest).ConfigureAwait(false);
+            var lastLogins = _mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
+            return lastLogins;
         }
     }
 }

@@ -9,7 +9,7 @@ using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
-using Doods.Xam.MonitorMyServer.Resx;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -18,6 +18,7 @@ using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using Xamarin.Forms;
+using Resource = Doods.Xam.MonitorMyServer.Resx.Resource;
 
 namespace Doods.Xam.MonitorMyServer.Views
 {
@@ -112,16 +113,16 @@ namespace Doods.Xam.MonitorMyServer.Views
         }
 
 
-        protected override Task OnInternalAppearingAsync()
-        {
-            MessagingCenter.Subscribe<ConnctionService, Host>(
-                this, MessengerKeys.ItemChanged, async (sender, arg) =>
-                {
+        //protected override Task OnInternalAppearingAsync()
+        //{
+        //    MessagingCenter.Subscribe<ConnctionService, Host>(
+        //        this, MessengerKeys.ItemChanged, async (sender, arg) =>
+        //        {
                   
-                        await InitHostAsync();
-                });
-            return base.OnInternalAppearingAsync();
-        }
+        //                await InitHostAsync();
+        //        });
+        //    return base.OnInternalAppearingAsync();
+        //}
 
         protected override Task OnInternalDisappearingAsync()
         {
@@ -166,44 +167,67 @@ namespace Doods.Xam.MonitorMyServer.Views
             NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage));
         }
 
-        protected override void OnInitializeLoading(LoadingContext context)
+        //protected override void OnInitializeLoading(LoadingContext context)
+        //{
+        //    //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
+        //    //viewModelStateItem.Color = Color.Blue;
+        //}
+
+
+
+        protected override async Task OnInternalAppearingAsync()
         {
-            //viewModelStateItem.ShowCurrentCmd = _addHostCmd;
-            //viewModelStateItem.Color = Color.Blue;
+            try
+            {
+                await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+                    () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
+                    () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+            }
+            catch (Exception e)
+            {
+                SetLabelsStateItem("Error", e.Message);
+            }
+
+            await base.OnInternalAppearingAsync();
         }
 
-
-        private async Task InitHostAsync()
+        protected Task RefreshData()
         {
-            SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
-            ViewModelStateItem.IsRunning = true;
-            var connctionService = App.Container.Resolve<ConnctionService>();
-
-            //Can't load host onstartup app :/.
-            if (!connctionService.Hosts.Any())
-                await connctionService.Init();
-
-            if (!connctionService.Hosts.Any())
-                ShowErrorHostState();
-            else
-                try
-                {
-                    await Login(connctionService.CurrentHost);
-                }
-                catch
-                {
-                    SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
-                    Clear();
-                }
-
-            ViewModelStateItem.IsRunning = false;
+            return  Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+                GetUpgradables());
         }
 
-        protected override async Task InternalLoadAsync(LoadingContext context)
-        {
-            if (!_sshService.IsConnected())
-                await InitHostAsync();
-        }
+        //private async Task InitHostAsync()
+        //{
+        //    SetLabelsStateItem(Resource.PleaseWait, Resource.TryToConnect);
+        //    ViewModelStateItem.IsRunning = true;
+        //    var connctionService = App.Container.Resolve<ConnctionService>();
+
+        //    //Can't load host onstartup app :/.
+        //    if (!connctionService.Hosts.Any())
+        //        await connctionService.Init();
+
+        //    if (!connctionService.Hosts.Any())
+        //        ShowErrorHostState();
+        //    else
+        //        try
+        //        {
+        //            await Login(connctionService.CurrentHost);
+        //        }
+        //        catch
+        //        {
+        //            SetLabelsStateItem(Resource.Oups, Resource.CanTConnect);
+        //            Clear();
+        //        }
+
+        //    ViewModelStateItem.IsRunning = false;
+        //}
+
+        //protected override async Task InternalLoadAsync(LoadingContext context)
+        //{
+        //    if (!_sshService.IsConnected())
+        //        await InitHostAsync();
+        //}
 
 
         protected override void OnFinishLoading(LoadingContext context)
@@ -220,13 +244,13 @@ namespace Doods.Xam.MonitorMyServer.Views
             SetLabelsStateItem(Resource.ErrorNoHostsDetected, Resource.ClickAddHost);
         }
 
-        private async Task Login(Host host)
-        {
-            Title = host.HostName;
-            SetLabelsStateItem(host.HostName, host.Url);
-            await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
-                GetUpgradables());
-        }
+        //private async Task Login(Host host)
+        //{
+        //    Title = host.HostName;
+        //    SetLabelsStateItem(host.HostName, host.Url);
+        //    await Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+        //        GetUpgradables());
+        //}
 
         private async Task GetUpgradables()
         {
@@ -281,12 +305,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         }
 
 
-        private class toto : IAsyncResult
-        {
-            public object AsyncState { get; }
-            public WaitHandle AsyncWaitHandle { get; }
-            public bool CompletedSynchronously { get; }
-            public bool IsCompleted { get; }
-        }
+        //private class toto : IAsyncResult
+        //{
+        //    public object AsyncState { get; }
+        //    public WaitHandle AsyncWaitHandle { get; }
+        //    public bool CompletedSynchronously { get; }
+        //    public bool IsCompleted { get; }
+        //}
     }
 }

@@ -51,7 +51,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             if (value == Value) return;
 
-            var oldValue = Value;
+           // var oldValue = Value;
             Value = value;
             // oldValue.Dispose();
         }
@@ -79,7 +79,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             if (value == Value) return;
 
-            var oldValue = Value;
+            //var oldValue = Value;
             Value = value;
             // oldValue.Dispose();
         }

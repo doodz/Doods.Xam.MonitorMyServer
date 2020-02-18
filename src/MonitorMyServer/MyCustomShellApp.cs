@@ -107,12 +107,31 @@ namespace Doods.Xam.MonitorMyServer
 
         private void InitList(Host host)
         {
-            var home = Items.First();
+            
             Items.Clear();
-            if (host.IsSsh)
+            if (host.IsSsh && !host.IsOmvServer)
             {
-                Items.Add(home);
-           }
+                var homeItem = new FlyoutItem
+                {
+                    Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                    Items =
+                    {
+                        new ShellSection
+                        {
+                            Items =
+                            {
+                                new ShellContent
+                                {
+                                    Title =   Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                                    ContentTemplate = new DataTemplate(typeof(MainPage))
+                                }
+                            }
+                        }
+                    }
+                };
+
+                Items.AddRange(homeItem);
+            }
              
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
 

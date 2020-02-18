@@ -139,7 +139,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             await base.OnInternalAppearingAsync();
         }
 
-        protected Task RefreshData(bool b = true)
+        protected Task RefreshData()
         {
             return Task.WhenAll(GetSystemInformation(), GetServicesStatus(), GetUpgraded(), GetFilesystems(),
                 GetDevices());
@@ -186,21 +186,20 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         public override IEnumerable<CommandItem> GetToolBarItemDescriptions()
         {
             var image1 = SvgIconTarget.AddBox.ResourceFile;
-            var image2 = new SvgCachedImage
-            {
-                Source = SvgIconTarget.AddBox.ResourceFile,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                HeightRequest = 100,
-                DownsampleToViewSize = true,
-                Aspect = Aspect.AspectFill,
-                TransformPlaceholders = false,
-                LoadingPlaceholder = "loading.png",
-                ErrorPlaceholder = "error.png"
-            };
+            //var image2 = new SvgCachedImage
+            //{
+            //    Source = SvgIconTarget.AddBox.ResourceFile,
+            //    HorizontalOptions = LayoutOptions.FillAndExpand,
+            //    HeightRequest = 100,
+            //    DownsampleToViewSize = true,
+            //    Aspect = Aspect.AspectFill,
+            //    TransformPlaceholders = false,
+            //    LoadingPlaceholder = "loading.png",
+            //    ErrorPlaceholder = "error.png"
+            //};
 
 
-            var image3 = new FileImageSource();
-            image3.File = image1;
+            var image3 = new FileImageSource {File = image1};
 
             yield return new CommandItem(CommandId.AnalyseThematique)
             {
