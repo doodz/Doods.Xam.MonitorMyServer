@@ -133,9 +133,6 @@ namespace Doods.Xam.MonitorMyServer
             //var mapper = configuration.CreateMapper();
 
             _container = builder.Build();
-
-
-           
         }
 
         protected override async void OnStart()
