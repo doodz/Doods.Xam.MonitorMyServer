@@ -8,6 +8,15 @@ For :
   * Updates.
   * View running processes
   * Run commands.
+  
+  ## Support
+  
+  If you like the quality and code you can support me 
+
+- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square)](https://www.paypal.me/Doodsdev)  
+
+Thanks!
+  
   ## Authors
 
 * **Thibault Herviou** - *Initial work* - [Doods](https://github.com/doodz)
