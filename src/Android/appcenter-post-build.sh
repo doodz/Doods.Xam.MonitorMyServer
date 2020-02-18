@@ -18,7 +18,7 @@ if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
 else
     github_set_status_success
     github_set_release
-    url = github_find_asset_url
-    apkFile = find_first_Apk
+    local url = github_find_asset_url
+    local apkFile = find_first_Apk
     github_upload_release_asset uploadUrl=url filePath=apkFile
 fi
