@@ -16,7 +16,7 @@ set_github_processes()
     github_set_status_success
     github_set_release
     echo "Looking for the url to send a release"
-    local url=$(github_find_asset_url)
+    local url=$(github_find_upload_url)
     echo "found $url"
 
     echo "Looking for the apk to send"
@@ -27,6 +27,11 @@ set_github_processes()
     github_upload_release_asset "$url" "$apkFile"
     echo "done!"
 }
+
+# Install jq if needed
+if ! brew list jq > /dev/null; then
+  brew install jq
+fi
 
 source github.sh
 
