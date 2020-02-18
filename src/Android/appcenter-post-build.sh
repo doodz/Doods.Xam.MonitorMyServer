@@ -16,8 +16,8 @@ set_github_processes()
 {
     github_set_status_success
     github_set_release
-    local url = github_find_asset_url
-    local apkFile = find_first_Apk
+    local url=github_find_asset_url
+    local apkFile=find_first_Apk
     github_upload_release_asset uploadUrl=url filePath=apkFile
 }
 
