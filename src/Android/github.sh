@@ -56,7 +56,7 @@ github_upload_release_asset()
     local buildUrl="${uploadUrl}?name=${filename}"
     echo "My build url for asset $buildUrl"
     echo "My file path to upload $filePath"
-    curl -X POST $buildUrl
+    curl -X POST $buildUrl \
         -H "Authorization: token $GITHUB_TOKEN" \
         -H "Content-Type: application/octet-stream" \
         --data-binary @"$filePath"
