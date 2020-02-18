@@ -62,7 +62,7 @@ github_upload_release_asset()
     curl -X POST $buildUrl \
         -H "Authorization: token $GITHUB_TOKEN" \
         -H "Content-Type: application/octet-stream" \
-        --data-binary "$filePath"
+        --data-binary "@$filePath"
 }
 
 
