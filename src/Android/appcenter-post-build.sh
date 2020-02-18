@@ -24,7 +24,7 @@ set_github_processes()
     echo "found $apkFile"
 
     echo "Upload release asset"
-    github_upload_release_asset uploadUrl=url filePath=apkFile
+    github_upload_release_asset "$url" "$apkFile"
     echo "done!"
 }
 
