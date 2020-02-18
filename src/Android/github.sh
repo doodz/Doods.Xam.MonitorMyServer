@@ -73,6 +73,6 @@ github_find_asset_url()
 
 github_find_upload_url()
 {
-    cat $RELEASE_RESULT_FILE  |  | grep "upload_url" | awk -F "\"upload_url\":" '{print $2}' | sed 's/{?name,label}",//'|  sed 's/"//'
+    cat $RELEASE_RESULT_FILE  | grep "upload_url" | awk -F "\"upload_url\":" '{print $2}' | sed 's/{?name,label}",//'|  sed 's/"//'
 
 }
