@@ -51,8 +51,8 @@ github_set_release(){
 github_upload_release_asset()
 {
     local uploadUrl filePath
-
-    local buildUrl = "$uploadUrl?name=$(basename $filePath)"
+    local filename = basename $filePath
+    local buildUrl = "${uploadUrl}?name=${filename}"
     echo "My build url for asset $buildUrl"
     curl -X POST $buildUrl
         -H "Authorization: token $GITHUB_TOKEN" \
