@@ -7,6 +7,7 @@ using System.Windows.Input;
 using Autofac;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
+using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Openmediavault.Rpc.std.Data.V4;
@@ -26,17 +27,18 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         private readonly IOmvService _sshService;
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
         //    new ObservableRangeCollection<SystemInformation>();
-
+        public string BannerId { get; }
         private OMVInformations _OMVInformations;
         private string _text = string.Empty;
 
-        public OpenmediavaultDashboardViewModel(IOmvService sshService)
+        public OpenmediavaultDashboardViewModel(IOmvService sshService, IConfiguration configuration)
         {
             _sshService = sshService;
             UpdatesCmd = new Command(Updates);
             CheckCmd = new Command(Check);
             ManageHostsCmd = new Command(ManageHosts);
             ChangeHostCmd = new Command(ChangeHost);
+            BannerId = configuration.AdsKey;
         }
 
         public ICommand ManageHostsCmd { get; }
@@ -123,9 +125,17 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         protected override async Task OnInternalAppearingAsync()
         {
-            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-                () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
-                () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+            try
+            {
+                await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+                    () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
+                    () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+            }
+            catch (Exception e)
+            {
+               SetLabelsStateItem("Error",e.Message);
+            }
+          
             await base.OnInternalAppearingAsync();
         }
 

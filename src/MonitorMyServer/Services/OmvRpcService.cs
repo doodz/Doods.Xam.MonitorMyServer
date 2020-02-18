@@ -23,7 +23,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         private readonly ILogger _logger;
         private readonly OmvAptClient _omvAptClient;
         private readonly OmvConfigClient _omvConfigClient;
-
+        private readonly OmvLogFileClient _omvLogFileClient;
         private readonly OmvDiskMgmtClient _omvDiskMgmtClient;
         private readonly OmvExecClient _omvExecClient;
 
@@ -56,8 +56,14 @@ namespace Doods.Xam.MonitorMyServer.Services
             _omvPowerMgmtClient = new OmvPowerMgmtClient(_client);
             _omvRrdClient = new OmvRrdClient(_client);
             _omvWebGuiClient = new OmvWebGuiClient(_client);
+            _omvLogFileClient = new OmvLogFileClient(client);
         }
 
+        public async  Task<IEnumerable<LogLine>> Getlogs(string logfile)
+        {
+            var result =await _omvLogFileClient.GetList(logfile);
+            return result.Data;
+        }
 
         public void SetOMVVersion(OMVVersion version)
         {

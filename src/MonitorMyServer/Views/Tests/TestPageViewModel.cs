@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -11,11 +8,8 @@ namespace Doods.Xam.MonitorMyServer.Views.Tests
 {
     public class TestPageViewModel : ViewModelWhithState
     {
-        public string BannerId { get; }
-        public string RewardedVideoId { get; }
-        public ICommand ShowRewardCmd { get; }
-        public ICommand ResetRewardCmd { get; }
         private readonly IRewardService _rewardService;
+
         public TestPageViewModel(IRewardService rewardService, IConfiguration configuration)
         {
             ShowRewardCmd = new Command(ExecuteRewardCmd);
@@ -25,20 +19,22 @@ namespace Doods.Xam.MonitorMyServer.Views.Tests
             RewardedVideoId = configuration.RewardedVideoKey;
         }
 
+        public string BannerId { get; }
+        public string RewardedVideoId { get; }
+        public ICommand ShowRewardCmd { get; }
+        public ICommand ResetRewardCmd { get; }
+
         public bool Isrewarded => _rewardService.IsRewarded;
 
         private void ExecuteResetReward()
         {
             _rewardService.ResetRewardDate();
-            this.OnPropertyChanged(nameof(Isrewarded));
-
+            OnPropertyChanged(nameof(Isrewarded));
         }
 
         private void ExecuteRewardCmd()
         {
-            _rewardService.ShowRewardedVideo(() => this.OnPropertyChanged(nameof(Isrewarded)));
+            _rewardService.ShowRewardedVideo(() => OnPropertyChanged(nameof(Isrewarded)));
         }
-
-
     }
 }

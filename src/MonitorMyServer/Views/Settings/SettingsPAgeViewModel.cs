@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Mobile.Std.Interfaces;
@@ -9,6 +7,7 @@ using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using MarcTron.Plugin.CustomEventArgs;
 using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -16,18 +15,29 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
 {
     public class SettingsPAgeViewModel : ViewModel
     {
-        public ICommand ShowRewarVideoCmd => new Command(ShowRewardVideo);
-        private bool _useFingerprint;
+        private readonly IRewardService _rewardService;
         private bool _canUseFingerprint;
-
+        private DateTime _endReward;
         private bool _isRewarded;
+        private readonly IMessageBoxService _messageBoxService;
+        private bool _useFingerprint;
+
+        public SettingsPAgeViewModel(IRewardService rewardService, IMessageBoxService messageBoxService)
+        {
+            _rewardService = rewardService;
+            _rewardService.OnRewarded += Current_OnRewarded;
+            _rewardService.OnRewardedVideoAdFailedToLoad += RewardServiceOnOnRewardedVideoAdFailedToLoad;
+            _messageBoxService = messageBoxService;
+        }
+
+        public ICommand ShowRewarVideoCmd => new Command(ShowRewardVideo);
+
         public bool IsRewarded
         {
             get => _isRewarded;
             private set => SetProperty(ref _isRewarded, value);
         }
 
-        private DateTime _endReward;
         public DateTime EndReward
         {
             get => _endReward;
@@ -47,31 +57,25 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
             private set => SetProperty(ref _canUseFingerprint, value);
         }
 
-        private readonly IRewardService _rewardService;
-
-        public SettingsPAgeViewModel(IRewardService rewardService, IMessageBoxService messageBoxService)
-        {
-            _rewardService = rewardService;
-            _rewardService.OnRewarded += Current_OnRewarded;
-            _rewardService.OnRewardedVideoAdFailedToLoad +=RewardServiceOnOnRewardedVideoAdFailedToLoad;
-            _messageBoxService =  messageBoxService;
-        }
-
-        private IMessageBoxService _messageBoxService;
         private void RewardServiceOnOnRewardedVideoAdFailedToLoad(object sender, MTEventArgs e)
         {
-            _messageBoxService.ShowAlert("Can't load",$"{e.ToString()} - {e.ErrorCode} - {e.RewardAmount} - {e.RewardType}");
+#if DEBUG
+
+            _messageBoxService.ShowAlert("Can't load",
+                $"{e} - {e.ErrorCode} - {e.RewardAmount} - {e.RewardType}");
+#endif
         }
 
         private void Current_OnRewarded(object sender, EventArgs e)
         {
             RefreshData();
-
         }
+
         private void ShowRewardVideo()
         {
             _rewardService.ShowRewardedVideo();
         }
+
         protected override async Task OnInternalAppearingAsync()
         {
             CanUseFingerprint = await CrossFingerprint.Current.IsAvailableAsync();
@@ -92,18 +96,12 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         {
             //CrossFingerprint.Current.
 
-            var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
+            var result = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Locked", "Prove you have fingers!"));
             if (result.Authenticated)
-            {
                 Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
-            }
-            else if(retry)
-            {
-                await ProveYouHaveFingers(false);
-            }
+            else if (retry) await ProveYouHaveFingers(false);
+
             await Task.FromResult(0);
         }
     }
-
-
 }

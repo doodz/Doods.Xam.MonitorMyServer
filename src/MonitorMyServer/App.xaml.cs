@@ -29,6 +29,7 @@ using MarcTron.Plugin;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -175,9 +176,10 @@ namespace Doods.Xam.MonitorMyServer
 
             var useFingerprint = Preferences.Get(PreferencesKeys.UseFingerprintKey, default(bool));
             if (!useFingerprint)
-                return;
-
-            var result = await CrossFingerprint.Current.AuthenticateAsync("Prove you have fingers!");
+                return; 
+          
+            
+                var result = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Locked", "Prove you have fingers!"));
             if (!result.Authenticated)
             {
                 _count++;

@@ -1,7 +1,5 @@
 ﻿using System;
 using Doods.Framework.Std;
-using Doods.Framework.Std.Extensions;
-using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Xam.MonitorMyServer.Data;
 using MarcTron.Plugin;
 using MarcTron.Plugin.CustomEventArgs;
@@ -12,6 +10,7 @@ namespace Doods.Xam.MonitorMyServer.Services
     public interface IRewardService
     {
         bool IsRewarded { get; }
+        DateTime EndReward { get; }
         event EventHandler OnRewarded;
         event EventHandler OnRewardedVideoAdClosed;
         event EventHandler<MTEventArgs> OnRewardedVideoAdFailedToLoad;
@@ -20,7 +19,6 @@ namespace Doods.Xam.MonitorMyServer.Services
         void ShowRewardedVideo(Action myAction);
         void SetCurrentAction(Action myAction);
         void ResetRewardDate();
-        DateTime EndReward { get; }
     }
 
     internal class RewardService : IRewardService
@@ -28,9 +26,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         private readonly string _rewardedVideoKey;
         private Action _currentAction;
         private bool _isRewarded;
-
-        public RewardService(IConfiguration configuration)
+        private ILogger _logger;
+        public RewardService(IConfiguration configuration,ILogger logger)
         {
+            _logger = logger;
             CrossMTAdmob.Current.LoadRewardedVideo(configuration.RewardedVideoKey);
             _rewardedVideoKey = configuration.RewardedVideoKey;
 
@@ -51,30 +50,48 @@ namespace Doods.Xam.MonitorMyServer.Services
         public event EventHandler<MTEventArgs> OnRewardedVideoAdFailedToLoad;
         public event EventHandler OnRewardedVideoAdLeftApplication;
 
-        private bool CheckIfIsRewarded()
-        {
-            EndReward = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
-            _isRewarded = (EndReward - DateTime.Today).TotalDays >=0;
-            return _isRewarded;
-        }
-
         public bool IsRewarded => CheckIfIsRewarded();
-        
+
         public DateTime EndReward { get; private set; }
 
         public void ResetRewardDate()
         {
             EndReward = DateTime.Today.AddDays(-12);
             Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, EndReward);
-           
+
             _isRewarded = false;
+        }
+
+        public void ShowRewardedVideo()
+        {
+            if (CrossMTAdmob.Current.IsRewardedVideoLoaded())
+                CrossMTAdmob.Current.ShowRewardedVideo();
+            else
+                CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+        }
+
+        public void ShowRewardedVideo(Action myAction)
+        {
+            SetCurrentAction(myAction);
+            ShowRewardedVideo();
+        }
+
+        public void SetCurrentAction(Action myAction)
+        {
+            _currentAction = myAction;
+        }
+
+        private bool CheckIfIsRewarded()
+        {
+            EndReward = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
+            _isRewarded = (EndReward - DateTime.Today).TotalDays >= 0;
+            return _isRewarded;
         }
 
         private void AddRewardeValue()
         {
             if (IsRewarded)
             {
-               
                 var expi = Preferences.Get(PreferencesKeys.LastRewardForUpdateKey, default(DateTime));
                 AddRewardeFromDate(expi);
             }
@@ -90,32 +107,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             Preferences.Set(PreferencesKeys.LastRewardForUpdateKey, EndReward);
         }
 
-        public void ShowRewardedVideo()
-        {
-           if (CrossMTAdmob.Current.IsRewardedVideoLoaded())
-                CrossMTAdmob.Current.ShowRewardedVideo();
-           else
-           {
-               CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
-
-           }
-        }
-
         public bool IsRewardedVideoLoaded()
         {
-            
             return CrossMTAdmob.Current.IsRewardedVideoLoaded();
-        }
-
-        public void ShowRewardedVideo(Action myAction)
-        {
-            SetCurrentAction(myAction);
-            ShowRewardedVideo();
-        }
-
-        public void SetCurrentAction(Action myAction)
-        {
-            _currentAction = myAction;
         }
 
         private void Current_OnRewarded(object sender, MTEventArgs e)
@@ -135,8 +129,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         private void Current_OnRewardedVideoAdFailedToLoad(object sender, MTEventArgs e)
         {
             _currentAction?.Invoke();
-            //CrossMTAdmob.Current.LoadRewardedVideo(_rewardedVideoKey);
+            _logger.Info($"/!\\ OnRewardedVideoAdFailedToLoad : RewardAmount={ e.RewardAmount},ErrorCode={ e.ErrorCode},RewardType={ e.RewardType}");
+
             OnRewardedVideoAdFailedToLoad?.Invoke(this, e);
+
         }
 
         private void Current_OnRewardedVideoAdClosed(object sender, EventArgs e)

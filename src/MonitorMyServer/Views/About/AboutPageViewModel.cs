@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Doods.Xam.MonitorMyServer.Views.Tests;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -13,12 +14,13 @@ namespace Doods.Xam.MonitorMyServer.Views.About
     public class AboutPageViewModel : ViewModel
     {
         private const string Regexp = "<PackageReference Include=\"(.*)\" Version=\"(.*)\" />";
-
-        private Regex rx = new Regex(Regexp,
+        public ICommand ShowTestsPageCmd { get; }
+        private readonly Regex rx = new Regex(Regexp,
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
         public AboutPageViewModel()
         {
+            ShowTestsPageCmd = new Command(() => NavigationService.NavigateAsync(nameof(TestPage)));
             DisplaySettingsPage = new Command(AppInfo.ShowSettingsUI);
             List = new List<string>();
             var rx = new Regex(Regexp,

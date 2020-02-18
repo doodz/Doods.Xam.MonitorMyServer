@@ -1,32 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
-             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-             mc:Ignorable="d"
-             x:Class="Doods.Xam.MonitorMyServer.Views.Tests.TestPage">
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      mc:Ignorable="d"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.Tests.TestPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding BannerId,Mode=OneWay}"/>
-            <Label Text="{Binding RewardedVideoId,Mode=OneWay}"/>
+            <!--<Label Text="{Binding BannerId,Mode=OneWay}"/>
+            <Label Text="{Binding RewardedVideoId,Mode=OneWay}"/>-->
+            <controls1:TitledFrameView Padding="8"
+                                       Title="Rewards">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Switch Grid.Row="0" IsEnabled="False" IsToggled="{Binding Isrewarded,Mode=OneWay}" />
+                    <Button Grid.Row="1" Text="ShowRewardCmd" Command="{Binding ShowRewardCmd}" />
+                    <Button Grid.Row="2" Text="ResetRewardCmd" Command="{Binding ResetRewardCmd}" />
+
+
+                </Grid>
+            </controls1:TitledFrameView>
+
             <controls1:TitledFrameView Padding="8"
                                        Title="Adds">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Switch Grid.Row="0" IsEnabled="False" IsToggled="{Binding Isrewarded,Mode=OneWay}"/>
-                    <Button Grid.Row="1" Text="ShowRewardCmd" Command="{Binding ShowRewardCmd}" />
-                    <Button Grid.Row="2" Text="ResetRewardCmd" Command="{Binding ResetRewardCmd}" />
-
-                    <controls:MTAdView Grid.Row="3" AdsId="{Binding BannerId,Mode=OneWay}" PersonalizedAds="true"  />
+                    <Label Grid.Row="0" Text="PersonalizedAds true" />
+                    <controls:MTAdView Grid.Row="1" AdsId="{Binding   BannerId,Mode=OneWay }" PersonalizedAds="true" />
+                    <Label Grid.Row="2" Text="PersonalizedAds false" />
+                    <controls:MTAdView Grid.Row="3" AdsId="{Binding BannerId,Mode=OneWay}" PersonalizedAds="false" />
                 </Grid>
             </controls1:TitledFrameView>
         </StackLayout>

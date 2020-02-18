@@ -30,6 +30,9 @@
                                HeightRequest="64" />
                     </ContentView>
                 </StackLayout>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Command="{Binding ShowTestsPageCmd,Mode=OneWay}"/>
+                </StackLayout.GestureRecognizers>
             </StackLayout>
             <ScrollView Grid.Row="1">
                 <StackLayout Orientation="Vertical" 
