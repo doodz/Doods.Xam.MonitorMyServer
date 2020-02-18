@@ -52,7 +52,7 @@ github_upload_release_asset()
 {
     local uploadUrl=$1
     local filePath=$2
-    local filename=${basename "$filePath"}
+    local filename=$(basename "$filePath")
     local buildUrl="${uploadUrl}?name=${filename}"
     echo "My build url for asset $buildUrl"
     echo "My file path to upload $filePath"
