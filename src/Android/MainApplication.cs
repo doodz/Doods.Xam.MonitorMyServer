@@ -6,7 +6,6 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Config;
 using System;
 using System.Xml;
-using Android.Support.V4.App;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
