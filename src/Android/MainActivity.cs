@@ -60,7 +60,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 mlock.Release();
                 mlock = null;
             }
-           
+            base.OnDestroy();
         }
 
 
