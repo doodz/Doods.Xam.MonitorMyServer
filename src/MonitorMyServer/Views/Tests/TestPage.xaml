@@ -32,7 +32,13 @@
 
             <controls1:TitledFrameView Padding="8"
                                        Title="Adds">
-                <Grid>
+                <StackLayout>
+                    <Label Text="PersonalizedAds true" />
+                    <controls:MTAdView  AdsId="{Binding   BannerId,Mode=OneWay }" PersonalizedAds="true" />
+                    <Label  Text="PersonalizedAds false" />
+                    <controls:MTAdView  AdsId="{Binding BannerId,Mode=OneWay}" PersonalizedAds="false" />
+                </StackLayout>
+                <!--<Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
@@ -43,7 +49,7 @@
                     <controls:MTAdView Grid.Row="1" AdsId="{Binding   BannerId,Mode=OneWay }" PersonalizedAds="true" />
                     <Label Grid.Row="2" Text="PersonalizedAds false" />
                     <controls:MTAdView Grid.Row="3" AdsId="{Binding BannerId,Mode=OneWay}" PersonalizedAds="false" />
-                </Grid>
+                </Grid>-->
             </controls1:TitledFrameView>
         </StackLayout>
     </ContentPage.Content>

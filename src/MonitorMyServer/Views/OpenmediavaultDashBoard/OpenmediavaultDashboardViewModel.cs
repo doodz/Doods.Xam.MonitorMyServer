@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +16,6 @@ using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
-using FFImageLoading.Svg.Forms;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
@@ -25,9 +23,6 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
         private readonly IOmvService _sshService;
-        //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
-        //    new ObservableRangeCollection<SystemInformation>();
-        public string BannerId { get; }
         private OMVInformations _OMVInformations;
         private string _text = string.Empty;
 
@@ -40,6 +35,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             ChangeHostCmd = new Command(ChangeHost);
             BannerId = configuration.AdsKey;
         }
+
+        //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
+        //    new ObservableRangeCollection<SystemInformation>();
+        public string BannerId { get; }
 
         public ICommand ManageHostsCmd { get; }
         public ICommand ChangeHostCmd { get; }
@@ -76,14 +75,14 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async void Check(object obj)
         {
-            
             await ViewModelStateItem.RunActionAsync(async () =>
-            {
-                var filename = await _sshService.UpdateAptList();
-               
-                await Task.Delay(TimeSpan.FromSeconds(3));
-                await CheckRunningAsync(filename);
-            }, () => SetLabelsStateItem(openmediavault.Updates, openmediavault.CheckingForNewUpdates___), () => SetLabelsStateItem(openmediavault.Updates, openmediavault.Done___));
+                {
+                    var filename = await _sshService.UpdateAptList();
+
+                    await Task.Delay(TimeSpan.FromSeconds(3));
+                    await CheckRunningAsync(filename);
+                }, () => SetLabelsStateItem(openmediavault.Updates, openmediavault.CheckingForNewUpdates___),
+                () => SetLabelsStateItem(openmediavault.Updates, openmediavault.Done___));
         }
 
 
@@ -133,9 +132,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             }
             catch (Exception e)
             {
-               SetLabelsStateItem("Error",e.Message);
+                SetLabelsStateItem("Error", e.Message);
             }
-          
+
             await base.OnInternalAppearingAsync();
         }
 

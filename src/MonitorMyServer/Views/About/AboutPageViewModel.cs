@@ -13,6 +13,7 @@ namespace Doods.Xam.MonitorMyServer.Views.About
 {
     public class AboutPageViewModel : ViewModel
     {
+        //https://play.google.com/store/ereview?origin=https://play.google.com&docId=com.doods.monitormyserver
         private const string Regexp = "<PackageReference Include=\"(.*)\" Version=\"(.*)\" />";
         public ICommand ShowTestsPageCmd { get; }
         private readonly Regex rx = new Regex(Regexp,
@@ -63,6 +64,6 @@ namespace Doods.Xam.MonitorMyServer.Views.About
 
         public IList<string> List { get; }
 
-        public ICommand TapCommand => new Command<string>((url) => Device.OpenUri(new Uri(url)));
+        public ICommand TapCommand => new Command<string>((url) => Launcher.OpenAsync(new Uri(url)));
     }
 }
