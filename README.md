@@ -16,6 +16,10 @@ For :
 | App Center   | develop   | Android  | [![Build status](https://build.appcenter.ms/v0.1/apps/df1c8fb8-9914-479d-9942-8c96c5e83317/branches/Develop/badge)](https://appcenter.ms) |
 | App Center   | Release   | Android      | [![Build status](https://build.appcenter.ms/v0.1/apps/df1c8fb8-9914-479d-9942-8c96c5e83317/branches/master/badge)](https://appcenter.ms) |
 
+  ## Get App
+  
+  * [Android App](https://install.appcenter.ms/users/thibaultherviou/apps/Monitor-my-server-android) via App Center.
+  * [Android App](https://play.google.com/store/apps/details?id=com.doods.monitormyserver) via Googel Play.
   
   ## Support
   
