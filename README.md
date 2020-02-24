@@ -3,11 +3,26 @@
 Monitor my server is a project written in C# (Xamarin.Forms) for android and windows UWP.
 First step I want manage Raspberry pi and openmediavault in ssh
 For :
+
   * Check disk space.
   * System informations.
   * Updates.
   * View running processes
   * Run commands.
+  
+  ## Build Status
+  
+  | Build Server | Type         | Platform | Status                                                                                                                                                                                 |
+|--------------|--------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|                                             
+| App Center   | develop   | Android  | [![Build status](https://build.appcenter.ms/v0.1/apps/df1c8fb8-9914-479d-9942-8c96c5e83317/branches/Develop/badge)](https://appcenter.ms) |
+| App Center   | Release   | Android      | [![Build status](https://build.appcenter.ms/v0.1/apps/df1c8fb8-9914-479d-9942-8c96c5e83317/branches/master/badge)](https://appcenter.ms) |
+
+  ## Get App
+  
+  * [Android App](https://install.appcenter.ms/users/thibaultherviou/apps/Monitor-my-server-android) via App Center.
+  * [Android App](https://play.google.com/store/apps/details?id=com.doods.monitormyserver) via Googel Play.
+  * [Android App](https://github.com/doodz/Doods.Xam.MonitorMyServer/releases) via Github Releases.
+  
   
   ## Support
   
