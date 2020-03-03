@@ -14,6 +14,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.Settings;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -102,6 +103,8 @@ namespace Doods.Xam.MonitorMyServer
                 typeof(OpenmediavaultFileSystemsPage));
            yield return CreateFlyoutItem(openmediavault.Plugins,
                 typeof(OpenmediavaultPluginsPage));
+           yield return CreateFlyoutItem(openmediavault.SystemLogs,
+               typeof(OpenmediavaultSystemLogsPage));
 
         }
 

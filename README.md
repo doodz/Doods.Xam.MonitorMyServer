@@ -21,6 +21,8 @@ For :
   
   * [Android App](https://install.appcenter.ms/users/thibaultherviou/apps/Monitor-my-server-android) via App Center.
   * [Android App](https://play.google.com/store/apps/details?id=com.doods.monitormyserver) via Googel Play.
+  * [Android App](https://github.com/doodz/Doods.Xam.MonitorMyServer/releases) via Github Releases.
+
   
   ## Support
   

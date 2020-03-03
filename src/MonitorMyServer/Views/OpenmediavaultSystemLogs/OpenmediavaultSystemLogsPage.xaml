@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+                      mc:Ignorable="d"
+                      xmlns:models="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      xmlns:data="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmediavault.Rpc.Std"
+                      xmlns:forms1="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
+                      xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
+                      x:Name="Page"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs.OpenmediavaultSystemLogsPage">
+    <StackLayout>
+        <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+               Text="{resources:Translate Text='openmediavault::Logs'}" />
+            <controls:EnumBindableDescriptionPicker
+            x:TypeArguments="data:OmvLogFileEnum"
+            SelectedItem="{Binding SelectedLogFile, Mode=TwoWay}"
+            Grid.Row="1"
+            Grid.Column="0" />
+
+            <forms1:SvgCachedImage
+                IsVisible="False"
+            Grid.Column="1"
+            Grid.Row="1"
+            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+            WidthRequest="40"
+            HeightRequest="40"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="Center" >
+                <forms1:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                </forms1:SvgCachedImage.GestureRecognizers>
+            </forms1:SvgCachedImage>
+            <forms1:SvgCachedImage
+                IsVisible="False"
+            Grid.Column="2"
+            Grid.Row="1"
+            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.CloudDownload}}"
+            WidthRequest="40"
+            HeightRequest="40"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="Center" >
+                <forms1:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.DownloadItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                </forms1:SvgCachedImage.GestureRecognizers>
+            </forms1:SvgCachedImage>
+            <forms1:SvgCachedImage
+            Grid.Column="3"
+            Grid.Row="1"
+            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Sync}}"
+            WidthRequest="40"
+            HeightRequest="40"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="Center" >
+                <forms1:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.SyncItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                </forms1:SvgCachedImage.GestureRecognizers>
+            </forms1:SvgCachedImage>
+        </Grid>
+        <ScrollView>
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="v4:LogLine">
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Date,Mode=OneWay}"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Message, Mode=OneWay}"/>
+                        </Grid>
+
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</mvvm:BaseContentPage>
