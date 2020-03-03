@@ -48,15 +48,19 @@ set_github_processes()
 
 }
 
-# Install jq if needed
-if ! brew list jq > /dev/null; then
-  brew install jq
-fi
 
+echo "Install jq if needed"
+if ! brew list jq > /dev/null; then
+    echo "brew install jq"
+    brew install jq
+fi
+echo "Load source github.sh"
 source github.sh
 
 if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
+    echo "AGENT_JOBSTATUS fail"
     github_set_status_fail
 else
+    echo "AGENT_JOBSTATUS Succeeded"
     set_github_processes
 fi

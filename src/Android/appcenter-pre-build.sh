@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "=============================================================================="
 echo "Task         : For Xamarin Android or iOS, change the version name located in AndroidManifest.xml and Info.plist."
-echo "Description  : :/"
+echo "Description  : pre build scrip for updating ndroidManifest.xml and Info.plist with appcenter build_id and appcenter_branch"
 echo "Author       : Doods"
 echo "=============================================================================="
 
