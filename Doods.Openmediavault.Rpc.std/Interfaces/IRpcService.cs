@@ -5,6 +5,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V5;
 using Doods.Openmediavault.Rpc.std.Interfaces;
+using Doods.Openmedivault.Ssh.Std.Data;
 using Renci.SshNet;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
@@ -41,5 +42,6 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         //Task<string> RunCommand(string cmd);
         Task<string> InstallPlugins(IEnumerable<string> lst);
         Task<string> RemovePlugins(IEnumerable<string> lst);
+        Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile);
     }
 }

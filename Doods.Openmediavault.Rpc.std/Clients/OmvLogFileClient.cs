@@ -1,6 +1,7 @@
 ﻿
 using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
@@ -18,13 +19,26 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         //daemon
         //proftpd =>ftp
         //proftpd_xferlog => proftpd_xferlog 
-        public Task<ResponseArray<LogLine>> GetList(string logfile = "syslog")
+        //messages
+        //rsync => Rsync - Jobs
+        //rsyncd => Rsync - Server
+        //smartd =>S.M.A.R.T.
+        //smbdaudit =>SMB/CIFS - Audit
+        //syslog => Syslog
+        //apt_history => Update Management - History
+        //apt_term => Update Management - Terminal output
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="logfile">OmvLogFileEnum</param>
+        /// <returns></returns>
+        public async Task<ResponseArray<LogLine>> GetList(OmvLogFileEnum logfile = OmvLogFileEnum.syslog)
         {
 
             var request = NewRequest("getList");
-            request.Params = new {id=logfile, start=0,limit=50,sortfield="rownum",sortdir="DESC"};
+            request.Params = new {id=logfile.ToString(), start=0,limit=50,sortfield="rownum",sortdir="DESC"};
 
-            var result = RunCmd<ResponseArray<LogLine>>(request);
+            var result = await RunCmd<ResponseArray<LogLine>>(request);
             return result;
         }
 

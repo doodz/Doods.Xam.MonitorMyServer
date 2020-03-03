@@ -12,6 +12,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Xam.MonitorMyServer.Services
@@ -322,6 +323,13 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             return RunCmd<string>(new RemovePlugin(lst));
         }
+
+        public Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile)
+        {
+            throw new NotImplementedException();
+        }
+
+      
 
         public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {

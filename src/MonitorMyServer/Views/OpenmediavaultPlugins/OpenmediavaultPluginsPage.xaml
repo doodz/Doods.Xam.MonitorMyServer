@@ -43,15 +43,15 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                    <RowDefinition />
+                                    <RowDefinition  Height="Auto"/>
+                                    <RowDefinition  Height="Auto"/>
+                                    <RowDefinition  Height="Auto"/>
                                 </Grid.RowDefinitions>
                                 <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2"
                                        Text="{Binding Description ,Mode=OneTime}" />
                                 <Label Grid.Row="2" Grid.Column="0" Text="{Binding Version ,Mode=OneTime}" />
                                 <Label Grid.Row="2" Grid.Column="1" Text="{Binding Maintainer ,Mode=OneTime}" />
-                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding Repository ,Mode=OneTime}" />
+                                <!--<Label Grid.Row="2" Grid.Column="2" Text="{Binding Repository ,Mode=OneTime}" />-->
                                 <forms:SvgCachedImage
                                     Grid.Row="0" Grid.Column="3"
                                     Source="{Binding Installed,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />

@@ -11,6 +11,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 using Renci.SshNet;
 using Xamarin.Forms;
@@ -59,7 +60,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             _omvLogFileClient = new OmvLogFileClient(client);
         }
 
-        public async  Task<IEnumerable<LogLine>> Getlogs(string logfile)
+        public async  Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile)
         {
             var result =await _omvLogFileClient.GetList(logfile);
             return result.Data;
