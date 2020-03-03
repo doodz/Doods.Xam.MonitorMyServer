@@ -17,6 +17,8 @@ then
 
     echo "File content:"
     cat $ANDROID_MANIFEST_FILE
+else
+    echo "Path not found : $ANDROID_MANIFEST_FILE"
 fi
 
 
