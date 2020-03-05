@@ -10,6 +10,8 @@ For :
   * View running processes
   * Run commands.
   
+You can also use openmediavault rpc page over Http.
+
   ## Build Status
   
   | Build Server | Type         | Platform | Status                                                                                                                                                                                 |
