@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              mc:Ignorable="d"
              x:Name="Page"
@@ -30,7 +30,7 @@
                                 <Label   Grid.Column="0"
                                          Grid.Row="0" 
                                          Text="{Binding CommandString,Mode=OneTime}"/>
-                                <forms:SvgCachedImage
+                                <controls:DoodsSvgImage
                                     Grid.Column="1"
                                     Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
@@ -38,11 +38,11 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.RunCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
-                                <forms:SvgCachedImage
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                                <controls:DoodsSvgImage
                                     Grid.Column="2"
                                     Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
@@ -50,11 +50,11 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
-                                <forms:SvgCachedImage
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                                <controls:DoodsSvgImage
                                     Grid.Column="3"
                                     Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
@@ -62,10 +62,10 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
                             </Grid>
                         </controls:TitledFrameView>
                     </DataTemplate>

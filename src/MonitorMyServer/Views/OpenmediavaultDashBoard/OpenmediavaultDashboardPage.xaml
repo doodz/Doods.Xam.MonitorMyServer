@@ -9,7 +9,7 @@
                       xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
-                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
@@ -115,13 +115,13 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding Title,Mode=OneWay}" HorizontalOptions="StartAndExpand"/>
                                     <Label Text="{resources1:Translate Text='openmediavault::Running'}"/>
-                                   
-                                    <forms:SvgCachedImage
+
+                                    <controls:DoodsSvgImage
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         Source="{Binding Running,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />
                                     <Label Text="{resources1:Translate Text='openmediavault::Enabled'}"/>
-                                <forms:SvgCachedImage
+                                    <controls:DoodsSvgImage
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         Source="{Binding Enabled,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />

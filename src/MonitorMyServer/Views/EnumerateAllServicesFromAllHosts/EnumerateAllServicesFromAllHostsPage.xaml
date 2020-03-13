@@ -3,9 +3,9 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:templates="clr-namespace:Doods.Xam.MonitorMyServer.Views.Templates;assembly=Doods.Xam.MonitorMyServer"
+            
              xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts.EnumerateAllServicesFromAllHostsPage">
@@ -42,7 +42,7 @@
                                     <RowDefinition/>
                                    
                                 </Grid.RowDefinitions>
-                                <forms:SvgCachedImage
+                                <controls1:DoodsSvgImage
                 
                                 Grid.Row="0"
                                 Grid.Column="0"
@@ -50,7 +50,7 @@
 
                                 <Label  Grid.Row="0"
                                         Grid.Column="1" Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
-                                <forms:SvgCachedImage
+                                <controls1:DoodsSvgImage
                                 Grid.Row="0"
                                 Grid.Column="2"
                                 Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" />
