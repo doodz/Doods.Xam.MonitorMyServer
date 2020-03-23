@@ -12,6 +12,12 @@ For :
   
 You can also use openmediavault rpc page over Http.
 
+# Application Diagram
+
+<p align="center">
+<img src="Images/Application_Diagram.png"/>
+</p>
+
   ## Build Status
   
   | Build Server | Type         | Platform | Status                                                                                                                                                                                 |
