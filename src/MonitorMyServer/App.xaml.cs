@@ -23,6 +23,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using MarcTron.Plugin;
@@ -64,6 +65,7 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(OpenmediavaultFileSystemsPage), typeof(OpenmediavaultFileSystemsPage));
             navigationService.Configure(nameof(OpenmediavaultAddFileSystemsPage), typeof(OpenmediavaultAddFileSystemsPage));
             navigationService.Configure(nameof(OpenmediavaultPluginsPage), typeof(OpenmediavaultPluginsPage));
+            navigationService.Configure(nameof(OpenmediavaultUpdatesPage), typeof(OpenmediavaultUpdatesPage));
             navigationService.Configure(nameof(TestPage), typeof(TestPage));
 
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));

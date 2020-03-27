@@ -135,8 +135,11 @@
                 <controls:TitledFrameView Padding="8"
                                            Title="{Binding Upgradeds.Count,Mode=OneWay,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                    <StackLayout Orientation="Horizontal">
+
+                        <Button Text="{resources1:Translate Text='openmediavault::ShowDetails'}" Command="{Binding ShowDetailsCmd,Mode=OneWay}"
+                               HorizontalOptions="End" />
                         <Button Text="{resources1:Translate Text='openmediavault::UpdateNow'}" Command="{Binding UpdatesCmd,Mode=OneWay}"
-                            HorizontalOptions="End" />
+                               HorizontalOptions="End" />
                         <Button Text="{resources1:Translate Text='openmediavault::Check'}" Command="{Binding CheckCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                    </StackLayout>

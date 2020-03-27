@@ -4,10 +4,24 @@ using Newtonsoft.Json;
 
 namespace Doods.Openmediavault.Rpc.std.Data.V4
 {
-    public class OmvPlugins : IOmvObject
+    public abstract class SimpleAptInfoItem
     {
         [JsonProperty("abstract")]
         public string Abstract { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        [JsonProperty("version")]
+        public string Version { get; set; }
+        [JsonProperty("description")]
+        public string Description { get; set; }
+        [JsonProperty("summary")]
+        public string Summary { get; set; }
+    }
+
+
+    public class OmvPlugins : SimpleAptInfoItem, IOmvObject
+    {
+       
 
         [JsonProperty("architecture")]
         public string Architecture { get; set; }
@@ -21,8 +35,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         [JsonProperty("depends")]
         public string Depends { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+       
 
         [JsonProperty("descriptionmd5")]
         public string Descriptionmd5 { get; set; }
@@ -51,8 +64,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         [JsonProperty("multiarch")]
         public string Multiarch { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+       
 
         [JsonProperty("package")]
         public string Package { get; set; }
@@ -84,10 +96,8 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         [JsonProperty("suggests")]
         public string Suggests { get; set; }
 
-        [JsonProperty("summary")]
-        public string Summary { get; set; }
+     
 
-        [JsonProperty("version")]
-        public string Version { get; set; }
+      
     }
 }
