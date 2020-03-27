@@ -10,7 +10,14 @@ using Renci.SshNet;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {
-    public interface IRpcService : IOMVSettingsService, IOMVSshBackgroundService
+    public interface IRrdService
+    {
+        Task<string> GenerateRdd();
+        Task<IEnumerable<byte[]>> GetRrdFiles(IEnumerable<string> filesPaths);
+        Task<byte[]> GetRrdFile(string filePath);
+        Task<IEnumerable<string>> ListRdd();
+    }
+    public interface IRpcService : IOMVSettingsService, IOMVSshBackgroundService, IRrdService
     {
         Task<IEnumerable<Devices>> GetDevices();
         Task<IEnumerable<OmvFilesystems>> GetFilesystems();
@@ -27,7 +34,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<Output<T>> GetOutput<T>(string filename, int pos);
         ScpClient GetScpClient();
         //Task<IEnumerable<PluginInfo>> GetPlugins();
-        Task<string> GenerateRdd();
+      
         Task<string> GetDisksBackground();
         Task<string> GetListCandidatesFileSystemBackground();
         Task<string> CreateFileSystemBackground(BaseOmvFilesystems newFilesystems);
@@ -35,7 +42,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<bool> UmountFileSystem(OmvFilesystems filesystem);
         Task<bool> DeleteFileSystem(OmvFilesystems filesystem);
         Task<bool> MountFileSystem(OmvFilesystems filesystem);
-        Task<IEnumerable<string>> ListRdd();
+       
 
         Task<string> ApplyChanges();
 

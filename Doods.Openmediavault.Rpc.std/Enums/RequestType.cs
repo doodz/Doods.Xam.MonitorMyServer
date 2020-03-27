@@ -2,6 +2,7 @@
 {
     public enum RequestType
     {
+        notde,
         ssh,
         http
 

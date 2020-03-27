@@ -1,14 +1,17 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Doods.Framework.ApiClientBase.Std.Classes;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std;
+using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmedivault.Ssh.Std
 {
     public class OmvSshService : APIServiceBase, IRpcClient
     {
+        public RequestType RequestType => RequestType.ssh;
         /// <summary>
         /// </summary>
         private readonly OmvRpc _client;
@@ -28,6 +31,16 @@ namespace Doods.Openmedivault.Ssh.Std
             return Task.FromResult(b);
         }
 
+        public Task<IEnumerable<byte[]>> GetRrdFilesAsync(IEnumerable<string> filesPaths)
+        {
+            return _client.GetFilesAsync(filesPaths);
+        }
+
+        public Task<byte[]> GetRrdFileAsync(string filePath)
+        {
+           return _client.GetFileAsync(filePath);
+        }
+
         public async Task<T> ExecuteTaskAsync<T>(IRpcRequest rpcrequest)
         {
             var request = _requestbuilder.ToSsh(rpcrequest);
@@ -41,5 +54,6 @@ namespace Doods.Openmedivault.Ssh.Std
             var response = await _client.ExecuteTaskAsync<T>(request).ConfigureAwait(false);
             return response.Data;
         }
+      
     }
 }

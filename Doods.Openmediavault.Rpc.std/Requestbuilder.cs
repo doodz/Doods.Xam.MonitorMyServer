@@ -1,4 +1,5 @@
-﻿using Doods.Framework.Http.Std.Serializers;
+﻿using System;
+using Doods.Framework.Http.Std.Serializers;
 using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmedivault.Ssh.Std.Requests;
@@ -55,6 +56,7 @@ namespace Doods.Openmediavault.Rpc.Std
         private static string Ssh = "omv-rpc";
 
         private static string Http = "rpc.php";
+        private static string Rrd ="rrd.php";
         //public T Build<T>(RpcRequest request,RequestType type)
         //{
         //    switch (type)
@@ -74,6 +76,15 @@ namespace Doods.Openmediavault.Rpc.Std
 
 
         public static string ToJson(object obj) => JsonConvert.SerializeObject(obj, OmvSerializer.Settings);
+
+        public RestRequest ToGetRrd(string filename)
+        {
+            var getrrd = new LocalRestRequest(Rrd, Method.GET);
+            getrrd.AddParameter("name", Uri.EscapeDataString(filename));
+
+            return getrrd;
+        }
+
 
         public RestRequest ToHttp(IRpcRequest request)
         {

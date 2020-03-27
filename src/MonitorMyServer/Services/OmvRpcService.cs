@@ -176,7 +176,17 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public Task<IEnumerable<string>> ListRdd()
         {
-            throw new NotImplementedException();
+            return _omvRrdClient.ListRdd();
+        }
+
+        public Task<IEnumerable<byte[]>> GetRrdFiles(IEnumerable<string> fileNames)
+        {
+            return _omvRrdClient.GetRrdFiles(fileNames);
+        }
+
+        public Task<byte[]> GetRrdFile(string fileName)
+        {
+            return _omvRrdClient.GetRrdFile(fileName);
         }
 
         public Task<string> ApplyChanges()
