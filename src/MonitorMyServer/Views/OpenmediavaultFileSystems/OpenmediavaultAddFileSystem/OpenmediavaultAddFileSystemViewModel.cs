@@ -3,7 +3,6 @@ using System.Windows.Input;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
@@ -31,7 +30,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
 
         public string Label
         {
-            get { return _label; }
+            get => _label;
             set => SetProperty(ref _label, value);
         }
 
@@ -84,20 +83,19 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
 
         private async Task Save()
         {
-           
             var newFileSystem = new BaseOmvFilesystems();
-            newFileSystem.Label = this.Label;
+            newFileSystem.Label = Label;
             newFileSystem.Type = SelectedFileSystem;
-            newFileSystem.Devicefile = SelectedCandidate.Devicefile/*.Replace("/",@"\\\/");*/ ;
+            newFileSystem.Devicefile = SelectedCandidate.Devicefile /*.Replace("/",@"\\\/");*/;
 
-            await ViewModelStateItem.RunActionAsync(async () => {
+            await ViewModelStateItem.RunActionAsync(async () =>
+                {
                     var filename = await _sshService.CreateFileSystemBackground(newFileSystem);
                     var result = await _backgroundService.GetOutputAsync(filename);
                     Result = result.Content;
                 },
                 () => SetLabelsStateItem("FileSystemMgmt", "Create file system"),
                 () => { SetLabelsStateItem("FileSystemMgmt", "done!"); });
-           
         }
     }
 }

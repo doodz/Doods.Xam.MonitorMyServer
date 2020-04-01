@@ -5,7 +5,6 @@ using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using Renci.SshNet;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
