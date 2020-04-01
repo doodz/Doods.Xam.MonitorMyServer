@@ -53,10 +53,10 @@ namespace Doods.Openmediavault.Rpc.Std
 
     public class Requestbuilder
     {
-        private static string Ssh = "omv-rpc";
+        private const string Ssh = "omv-rpc";
+        private const string Http = "rpc.php";
+        private const string Rrd = "rrd.php";
 
-        private static string Http = "rpc.php";
-        private static string Rrd ="rrd.php";
         //public T Build<T>(RpcRequest request,RequestType type)
         //{
         //    switch (type)

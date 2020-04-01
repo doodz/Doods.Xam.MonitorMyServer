@@ -16,7 +16,7 @@ namespace Doods.tool.ResxFromPoFile
         private  readonly string Expression = @"msgid ""(.*)""\w*\s*msgstr ""(.*)""";
 
         private  readonly string From = @"C:\GitHub\openmediavault\";
-        private  readonly string To = @"C:\GitHub\Doods.Xam.MonitorMyServer\Doods.Openmediavault.Mobile.Std\Resources\";
+        private  readonly string To = @"C:\GitHub\Doods.Xam.MonitorMyServer\Doods.Openmedivault\Doods.Openmediavault.Mobile.Std\Resources\";
 
 
 
