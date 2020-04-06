@@ -1,5 +1,4 @@
-﻿
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using FFImageLoading;
@@ -37,9 +36,9 @@ namespace Doods.Xam.MonitorMyServer.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
 
-            wifi = (WifiManager)ApplicationContext.GetSystemService(Context.WifiService);
-            mlock = wifi.CreateMulticastLock("Zeroconf lock");
-            mlock.Acquire();
+            _wifi = (WifiManager)ApplicationContext.GetSystemService(Context.WifiService);
+            _mlock = _wifi.CreateMulticastLock("Zeroconf lock");
+            _mlock.Acquire();
             LoadApplication(new App());
         }
 
@@ -50,15 +49,15 @@ namespace Doods.Xam.MonitorMyServer.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        WifiManager wifi;
-        WifiManager.MulticastLock mlock;
+        private WifiManager _wifi;
+        private WifiManager.MulticastLock _mlock;
         protected override void OnDestroy()
         {
             //base.OnDestroy();
-            if (mlock != null)
+            if (_mlock != null)
             {
-                mlock.Release();
-                mlock = null;
+                _mlock.Release();
+                _mlock = null;
             }
             base.OnDestroy();
         }

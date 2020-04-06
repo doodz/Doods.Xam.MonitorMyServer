@@ -32,7 +32,6 @@ namespace Doods.Openmedivault.Http.Std
                 Params = new ParamsLogin {Username = username, Password = password},
                 Options = null
             };
-
             var data = await ExecuteRequestAsync<RpcResponse<LoginResult>>(loginRequest).ConfigureAwait(false);
             if (data.Error != null)
                 return false;
@@ -89,6 +88,7 @@ namespace Doods.Openmedivault.Http.Std
         public async Task<T> ExecuteRequestAsync<T>(IRpcRequest rpcrequest)
         {
             var request = _requestbuilder.ToHttp(rpcrequest);
+           
             var response = await _client.ExecuteAsync<T>(request).ConfigureAwait(false);
             return response.Data;
         }

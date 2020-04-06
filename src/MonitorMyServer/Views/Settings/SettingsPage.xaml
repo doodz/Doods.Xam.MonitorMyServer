@@ -29,6 +29,11 @@
                 <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
                     IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
             </StackLayout>
+
+            <StackLayout>
+                <Button Text="Manage hosts" Command="{Binding ManageHostsCmd,Mode=OneWay}"/>
+            </StackLayout>
+        
         </StackLayout>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

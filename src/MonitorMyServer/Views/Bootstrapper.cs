@@ -15,7 +15,9 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
+using Doods.Xam.MonitorMyServer.Views.SelectService;
 using Doods.Xam.MonitorMyServer.Views.Settings;
+using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -44,7 +46,9 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
-            
+            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
+            builder.RegisterType<SynologyInfoViewModel>().AsSelf();
+
         }
     }
 }

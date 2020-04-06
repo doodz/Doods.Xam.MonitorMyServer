@@ -50,5 +50,10 @@ namespace Doods.Synology.Webapi.Std
         {
             return _synoSystemClient.GetNetworkInfo();
         }
+
+        public Task<StorageInfo> GetStorageInfo()
+        {
+            return _synoSystemClient.GetStorageInfo();
+        }
     }
 }

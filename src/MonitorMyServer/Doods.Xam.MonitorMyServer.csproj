@@ -27,7 +27,7 @@
     <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.1.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
     <PackageReference Include="Xamarin.Forms.Svg" Version="1.0.3" />
     <PackageReference Include="Zeroconf" Version="3.3.16" />
   </ItemGroup>
@@ -50,6 +50,7 @@
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Synology\Doods.Synology.Webapi.Std\Doods.Synology.Webapi.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Http.Std\Doods.Framework.Http.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj" />
@@ -75,6 +76,12 @@
     </Compile>
     <Compile Update="Views\Processes\ProcessesPage.xaml.cs">
       <DependentUpon>ProcessesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SelectService\SelectSupportedServicie.xaml.cs">
+      <DependentUpon>SelectSupportedServicie.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SynologyInfo\SynologyInfoPage.xaml.cs">
+      <DependentUpon>SynologyInfoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -110,7 +117,7 @@
     <EmbeddedResource Update="Views\CustomCommandList\CustomCommandListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EnumerateAllServicesFromAllHosts\EnumerateAllServicesFromAllHostsPage.xaml">
+    <EmbeddedResource Update="Views\SelectService\SelectSupportedServicie.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HostManager\HostManagerPage.xaml">

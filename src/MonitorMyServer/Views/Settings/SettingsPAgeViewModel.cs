@@ -5,6 +5,7 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
 using MarcTron.Plugin.CustomEventArgs;
 using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
@@ -21,6 +22,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         private bool _isRewarded;
         private readonly IMessageBoxService _messageBoxService;
         private bool _useFingerprint;
+        public ICommand ManageHostsCmd { get; }
 
         public SettingsPAgeViewModel(IRewardService rewardService, IMessageBoxService messageBoxService)
         {
@@ -28,8 +30,12 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
             _rewardService.OnRewarded += Current_OnRewarded;
             _rewardService.OnRewardedVideoAdFailedToLoad += RewardServiceOnOnRewardedVideoAdFailedToLoad;
             _messageBoxService = messageBoxService;
+            ManageHostsCmd = new Command(ManageHosts);
         }
-
+        private void ManageHosts()
+        {
+            NavigationService.NavigateAsync(nameof(HostManagerPage));
+        }   
         public ICommand ShowRewarVideoCmd => new Command(ShowRewardVideo);
 
         public bool IsRewarded

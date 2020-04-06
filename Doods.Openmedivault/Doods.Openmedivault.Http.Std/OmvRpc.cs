@@ -8,6 +8,7 @@ namespace Doods.Openmedivault.Http.Std
     {
         public OmvRpc(IConnection connection) : base(connection)
         {
+            
             RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true;
         }
 

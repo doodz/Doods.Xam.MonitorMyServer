@@ -8,6 +8,7 @@
              
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:data="clr-namespace:Doods.Xam.MonitorMyServer.Data;assembly=Doods.Xam.MonitorMyServer"
              x:Class="Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts.EnumerateAllServicesFromAllHostsPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand" >
@@ -26,7 +27,7 @@
 
             <StackLayout VerticalOptions="FillAndExpand" Padding="4"  BindableLayout.ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
-                    <DataTemplate>
+                    <DataTemplate x:DataType="data:ZeroconfHost">
                         <controls1:TitledFrameView Title="{Binding DisplayName,Mode=OneWay}" SubTitle="{Binding IPAddress,Mode=OneWay}"
                                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
                             <controls1:TitledFrameView.GestureRecognizers>

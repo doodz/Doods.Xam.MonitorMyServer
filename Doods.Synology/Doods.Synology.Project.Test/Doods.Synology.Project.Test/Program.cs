@@ -30,7 +30,7 @@ namespace Doods.Synology.Project.Test
 
         private static IConnection GetConnection()
         {
-            return new HttpConnection("https://petitboudin:5001/webapi", 5001);
+            return new HttpConnection("https://petitboudin/webapi", 5001);
         }
     }
 }

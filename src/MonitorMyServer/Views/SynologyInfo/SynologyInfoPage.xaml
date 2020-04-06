@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
+                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
+                      mc:Ignorable="d"
+                     
+                      x:Class="Doods.Xam.MonitorMyServer.Views.SynologyInfo.SynologyInfoPage">
+    <Shell.TitleView>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="{Binding Title}" FontSize="16" TextColor="Black" />
+            <!--<Picker  ItemsSource="{Binding Hosts,Mode=OneWay}" ItemDisplayBinding="{Binding HostName}" SelectedItem="{}"/>-->
+            <Button Grid.Column="1" Text="{resources:Translate Text=ChangeHost}"
+                    Command="{Binding ChangeHostCmd,Mode=OneWay }"
+                    Margin="5,5,0,5" />
+            <Button Grid.Column="2" Text="{resources:Translate Text=ManageHosts}"
+                    Command="{Binding ManageHostsCmd,Mode=OneWay }"
+                    Margin="0,5,5,5" />
+        </Grid>
+    </Shell.TitleView>
+
+    <StackLayout>
+      <StackLayout.Resources>
+            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
+            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
+        </StackLayout.Resources>
+        <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView>
+            <StackLayout Padding="8">
+              
+          
+            </StackLayout>
+        </ScrollView>
+        <controls1:MTAdView AdsId="{Binding   BannerId }" PersonalizedAds="true" />
+    </StackLayout>
+</mvvm:BaseContentPage>

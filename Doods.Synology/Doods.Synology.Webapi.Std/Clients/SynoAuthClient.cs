@@ -32,6 +32,7 @@ namespace Doods.Synology.Webapi.Std
 
         public async Task<bool> LoginAsync(string username, string password)
         {
+            //format=cookie
             var loginRequest = new SynologyRestRequest(Resource);
             loginRequest.AddParameter("api", ServiceApiName);
             loginRequest.AddParameter("version", "3");
@@ -41,14 +42,27 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("session", "FileStation");
             loginRequest.AddParameter("format", "cookie");
 
-
-            var response = await _client.ExecuteAsync<SynologyResponse<SynoLoginInfo>>(loginRequest).ConfigureAwait(false);
-
-            if (response.Data.Success)
+            try
             {
-                _client.Sid = response.Data.Data.Sid;
-                _client.LoggedInTime = DateTime.Now;
-                return true;
+
+
+
+                var response = await _client.ExecuteAsync<SynologyResponse<SynoLoginInfo>>(loginRequest);
+                    //.ConfigureAwait(false);
+
+
+
+                if (response.Data.Success)
+                {
+                    _client.Sid = response.Data.Data.Sid;
+                    _client.LoggedInTime = DateTime.Now;
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
             }
 
             return false;
