@@ -12,6 +12,7 @@ using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Validation;
 using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Enums;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -29,6 +30,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
     [QueryProperty(nameof(IsOmvServerQuery), nameof(IsOmvServerQuery))]
     [QueryProperty(nameof(IsRpiQuery), nameof(IsRpiQuery))]
     [QueryProperty(nameof(IsSshQuery), nameof(IsSshQuery))]
+    [QueryProperty(nameof(IsSynoQuery), nameof(IsSynoQuery))]
     [QueryProperty(nameof(TypeServiceQuery), nameof(TypeServiceQuery))]
     public class LoginPageViewModel : ViewModelWhithState
     {
@@ -107,7 +109,11 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         {
             set => IsSsh = bool.Parse(value);
         }
-
+        public string IsSynoQuery
+        {
+            set => IsSynoServer = bool.Parse(value);
+        }
+        
         public string IsRpiQuery
         {
             set => IsRpi = bool.Parse(value);
@@ -409,7 +415,39 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             return _password.Validate();
         }
 
-        
+        private void OnServerTypeChanged(Enums.SupportedServicies srv)
+        {
+
+        }
+
+        protected override void OnFinishLoading(LoadingContext context)
+        {
+
+
+            switch (TypeService)
+            {
+                case SupportedServicies.Synology:
+                    _isSsh = false;
+                    _isRpi = false;
+                    _isOmvServer = false;
+                    _isSynoServer = true;
+                    break;
+                case SupportedServicies.Openmediavault:
+                    _isSsh = false;
+                    _isRpi = false;
+                    _isOmvServer = true;
+                    _isSynoServer = false;
+                    break;
+                case SupportedServicies.Unix:
+                    _isSsh = true;
+                    _isRpi = false;
+                    _isOmvServer = false;
+                    _isSynoServer = false;
+                    break;
+            }
+
+            OnConnectionTypeChanged();
+        }
 
         protected override void OnInitializeLoading(LoadingContext context)
         {

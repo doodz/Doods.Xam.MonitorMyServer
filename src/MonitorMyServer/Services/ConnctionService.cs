@@ -35,14 +35,17 @@ namespace Doods.Xam.MonitorMyServer.Services
         //internal static ConnctionService ConnectionService = new ConnctionService();
         private readonly OmvServiceProvider _omvServiceProvider;
         private readonly SshServiceProvider _sshServiceProvider;
+        private readonly SynoServiceProvider _synoServiceProvider;
         private IOmvService _omvService;
         private ISshService _sshService;
+        private ISynologyCgiService _synoService;
 
-        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider,
+        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider, SynoServiceProvider synoServiceProvider,
             IMessageBoxService messageBoxService, IDataProvider dataProvider)
         {
             _omvServiceProvider = omvServiceProvider;
             _sshServiceProvider = sshServiceProvider;
+            _synoServiceProvider = synoServiceProvider;
             _messageBoxService = messageBoxService;
             _dataProvider = dataProvider;
             MessagingCenter.Subscribe<DataProvider, TableBase>(
@@ -136,7 +139,15 @@ namespace Doods.Xam.MonitorMyServer.Services
         public void GetClient(Host host)
         {
             //ILogger logger, IConnection connection
-            if (host.IsOmvServer || host.Url.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))
+
+            if (host.IsSynoServer)
+            {
+                var connection = new HttpConnection(host.Url, host.Port);
+                var service = new SynologyCgiService(_logger, connection);
+                _synoService = service;
+                _synoServiceProvider.ChangeValue(_synoService);
+            }
+            else if (host.IsOmvServer || host.Url.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))
             {
                 IRpcClient service;
                 if (host.IsSsh)

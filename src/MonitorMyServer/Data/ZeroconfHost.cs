@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Input;
 using Autofac;
@@ -42,12 +43,12 @@ namespace Doods.Xam.MonitorMyServer.Data
             if (Services.TryGetValue("_ssh._tcp.local.", out var srv))
                 return $"DisplayNameQuery={DisplayName}&IPAddressQuery={IPAddress}&PortQuery={srv.Port}";
             
-            if(DisplayName.StartsWith("http",true,CultureInfo.CurrentCulture))
+            if(IPAddress.StartsWith("http",true,CultureInfo.CurrentCulture))
             {
-                return $"DisplayNameQuery={DisplayName}&IPAddressQuery={IPAddress}";
+                return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString(IPAddress)}";
             }
-
-            return $"DisplayNameQuery=https://{DisplayName}&IPAddressQuery={IPAddress}";
+            ;
+            return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString($"https://{IPAddress}")}";
         }
     }
 }

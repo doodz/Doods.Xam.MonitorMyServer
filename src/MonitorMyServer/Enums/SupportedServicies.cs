@@ -2,6 +2,7 @@
 {
     public enum SupportedServicies
     {
+        NotDefined = 1,
         Unix,
         Openmediavault,
         Synology

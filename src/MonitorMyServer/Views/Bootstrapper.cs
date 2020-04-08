@@ -36,17 +36,19 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<AddCustomCommandPageViewModel>().AsSelf();
             builder.RegisterType<CustomCommandListPageViewModel>().AsSelf();
             builder.RegisterType<ProcessesPageViewModel>().AsSelf();
+            builder.RegisterType<TestPageViewModel>().AsSelf();
+            builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
+            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
+
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultStatisticsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSettingsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultFileSystemsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultAddFileSystemViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
-            builder.RegisterType<TestPageViewModel>().AsSelf();
-            builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
-            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
+           
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
 
         }

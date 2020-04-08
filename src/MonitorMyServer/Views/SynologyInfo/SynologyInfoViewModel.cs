@@ -4,6 +4,8 @@ using System.Windows.Input;
 using Autofac;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Mobile.Std.Resources;
+using Doods.Synology.Webapi.Std;
+using Doods.Synology.Webapi.Std.NewFolder;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
@@ -13,15 +15,24 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
 {
     public class SynologyInfoViewModel : ViewModelWhithState
     {
-        private readonly IOmvService _sshService;
+        private readonly ISynologyCgiService _synoService;
         public string BannerId { get; }
 
         public ICommand ManageHostsCmd { get; }
         public ICommand ChangeHostCmd { get; }
 
-        public SynologyInfoViewModel(IOmvService sshService, IConfiguration configuration)
+
+        private SystemInfo _systemInfo;
+
+        public SystemInfo SystemInfo
         {
-            _sshService = sshService;
+            get => _systemInfo;
+            set => SetProperty(ref _systemInfo, value);
+        }
+
+        public SynologyInfoViewModel(ISynologyCgiService synoService, IConfiguration configuration)
+        {
+            _synoService = synoService;
             ManageHostsCmd = new Command(ManageHosts);
             ChangeHostCmd = new Command(ChangeHost);
             BannerId = configuration.AdsKey;
@@ -56,7 +67,15 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
 
         protected Task RefreshData()
         {
-           return Task.FromResult(0);
+            _synoService.GetSystemInfo();
+            return Task.WhenAll(GetSystemInfo());
         }
+
+        private async Task GetSystemInfo()
+        {
+            var result = await _synoService.GetSystemInfo();
+            SystemInfo = result;
+        }
+
     }
 }

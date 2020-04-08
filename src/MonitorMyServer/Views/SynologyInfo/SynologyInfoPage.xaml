@@ -44,8 +44,52 @@
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <ScrollView>
             <StackLayout Padding="8">
-              
-          
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" 
+                                          BindingContext="{Binding SystemInfo,Mode=OneWay}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0" Text="{resources1:Translate Text='openmediavault::Hostname'}"/>
+                        <Label Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::Version'}"/>
+                        <Label Grid.Column="0" Grid.Row="2" Text="{resources1:Translate Text='openmediavault::Processor'}"/>
+                        <Label Grid.Column="0" Grid.Row="3" Text="{resources1:Translate Text='openmediavault::Kernel'}"/>
+                        <Label Grid.Column="0" Grid.Row="4" Text="{resources1:Translate Text='openmediavault::SystemTime'}"/>
+                        <Label Grid.Column="0" Grid.Row="5" Text="{resources1:Translate Text='openmediavault::Uptime'}"/>
+                        <Label Grid.Column="0" Grid.Row="6" Text="{resources1:Translate Text='openmediavault::LoadAverage'}"/>
+                        <Label Grid.Column="0" Grid.Row="7" Text="{resources1:Translate Text='openmediavault::CPUUsage'}"/>
+                        <Label Grid.Column="0" Grid.Row="8" Text="{resources1:Translate Text='openmediavault::MemoryUsage'}"/>
+                        <Label Grid.Column="0" Grid.Row="9" Text="{resources1:Translate Text='openmediavault::UpdatesAvailable'}"/>
+
+                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding Model,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding FirmwareVer,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="2" Text="{Binding CpuSeries,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding Kernel,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="4" Text="{Binding Time,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="5" Text="{Binding Uptime,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="6" Text="{Binding LoadAverage,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="7" Text="{Binding CpuUsage,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="8" Text="{Binding RamSize,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="8" Text="{Binding UpdatesAvailable,Mode=OneWay}"/>
+                    </Grid>
+
+
+                </controls:TitledFrameView>
+
             </StackLayout>
         </ScrollView>
         <controls1:MTAdView AdsId="{Binding   BannerId }" PersonalizedAds="true" />
