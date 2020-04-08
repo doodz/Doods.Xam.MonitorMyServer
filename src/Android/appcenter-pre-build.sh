@@ -12,6 +12,7 @@ INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/src/iOS/Info.plist
 
 if [ -e "$ANDROID_MANIFEST_FILE" ]
 then
+    cat $ANDROID_MANIFEST_FILE
     echo "Updating version name to ${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID} in AndroidManifest.xml"
     sed -i '' 's/versionName=".*"/versionName="'${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID}'"/' $ANDROID_MANIFEST_FILE
 
