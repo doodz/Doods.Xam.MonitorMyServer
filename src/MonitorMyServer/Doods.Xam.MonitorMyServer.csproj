@@ -19,17 +19,17 @@
     <PackageReference Include="Autofac" Version="5.1.2" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="MarcTron.Admob" Version="1.4.5" />
-    <PackageReference Include="Microsoft.AppCenter" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.0.0" />
-    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.0.0" />
-    <PackageReference Include="Plugin.Fingerprint" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AppCenter" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.1.0" />
+    <PackageReference Include="Plugin.Fingerprint" Version="2.1.1" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.2.0.223" />
     <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.1.1" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
     <PackageReference Include="Xamarin.Forms.Svg" Version="1.0.3" />
-    <PackageReference Include="Zeroconf" Version="3.3.2" />
+    <PackageReference Include="Zeroconf" Version="3.3.16" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,22 +46,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="..\..\Doods.Openmediavault.Mobile.Std\Resources\MobileOMVResourceDictionary.xaml" Link="Resx\MobileOMVResourceDictionary.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
-    <ProjectReference Include="..\..\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Mobile.Std\Doods.Openmediavault.Mobile.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Synology\Doods.Synology.Webapi.Std\Doods.Synology.Webapi.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Http.Std\Doods.Framework.Http.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Ssh.Std\Doods.Framework.Ssh.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Ssh.Std\Doods.Framework.Mobile.Ssh.Std.csproj" />
-    <ProjectReference Include="..\..\Doods.Openmediavault.Mobile.Std\Doods.Openmediavault.Mobile.Std.csproj" />
-    <ProjectReference Include="..\..\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -82,6 +77,12 @@
     <Compile Update="Views\Processes\ProcessesPage.xaml.cs">
       <DependentUpon>ProcessesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\SelectService\SelectSupportedServicie.xaml.cs">
+      <DependentUpon>SelectSupportedServicie.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SynologyInfo\SynologyInfoPage.xaml.cs">
+      <DependentUpon>SynologyInfoPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -92,6 +93,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\AppStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\MobileOMVResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\Resource.resx">
@@ -113,7 +117,7 @@
     <EmbeddedResource Update="Views\CustomCommandList\CustomCommandListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EnumerateAllServicesFromAllHosts\EnumerateAllServicesFromAllHostsPage.xaml">
+    <EmbeddedResource Update="Views\SelectService\SelectSupportedServicie.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\HostManager\HostManagerPage.xaml">
@@ -138,6 +142,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\OpenmediavaultStatistics\OpenmediavaultStatisticsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\OpenmediavaultUpdates\OpenmediavaultUpdatesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Processes\ProcessesPage.xaml">

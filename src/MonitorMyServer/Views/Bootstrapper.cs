@@ -13,8 +13,11 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
+using Doods.Xam.MonitorMyServer.Views.SelectService;
 using Doods.Xam.MonitorMyServer.Views.Settings;
+using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 
 namespace Doods.Xam.MonitorMyServer.Views
@@ -33,15 +36,21 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<AddCustomCommandPageViewModel>().AsSelf();
             builder.RegisterType<CustomCommandListPageViewModel>().AsSelf();
             builder.RegisterType<ProcessesPageViewModel>().AsSelf();
+            builder.RegisterType<TestPageViewModel>().AsSelf();
+            builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
+            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
+
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultStatisticsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSettingsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultFileSystemsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultAddFileSystemViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
-            builder.RegisterType<TestPageViewModel>().AsSelf();
-            builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
+            builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
+           
+            builder.RegisterType<SynologyInfoViewModel>().AsSelf();
+
         }
     }
 }

@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Name="Page"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm"
-             xmlns:templates="clr-namespace:Doods.Xam.MonitorMyServer.Templates"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+            
+             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.HostManager.HostManagerPage">
@@ -34,7 +34,7 @@
                                 <Label Grid.Column="0" Text="{Binding Platform}" />
                                 <Label Grid.Column="1" Text="{Binding NewVersion}" />
                                 <!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />-->
-                                <forms:SvgCachedImage
+                                <controls:DoodsSvgImage
                                     Grid.Column="2"
                                     Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
@@ -42,11 +42,11 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
-                                <forms:SvgCachedImage
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                                <controls:DoodsSvgImage
                                     Grid.Column="3"
                                     Grid.Row="0"
                                     Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
@@ -54,10 +54,10 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
                             </Grid>
 
                         </controls:TitledFrameView>
@@ -65,54 +65,5 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
-        <!--<StackLayout>
-            <ListView ItemsSource="{Binding Items,Mode=OneWay}" 
-                      VerticalOptions="FillAndExpand" 
-                      CachingStrategy="RecycleElement"
-                      SeparatorVisibility="Default"
-                      SeparatorColor="{StaticResource ColorPrimary}"
-                      HeightRequest="{Binding Items.Count, Converter={StaticResource ItemsToHeightConverter}}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-
-
-                                <Label Grid.Column="0" 
-                                       Grid.Row="0" 
-                                       Text="{Binding HostName,Mode=OneWay}" />
-                                <Label Grid.Column="0" 
-                                       Grid.Row="1" 
-                                       Text="{Binding Description,Mode=OneWay}" />
-                                <forms:SvgCachedImage
-                                    Grid.Column="1"
-                                    Grid.RowSpan="2"
-                                    Grid.Row="0"
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
-                                    WidthRequest="40"
-                                    HeightRequest="40"
-           
-                                    HorizontalOptions="EndAndExpand"
-                                    VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
-                            </Grid>
-                            --><!--<templates:HostTemplate BindingContext="{Binding .}" CommandAction="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" />--><!--
-                    </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>-->
     </Grid>
 </mvvm:BaseContentPage>

@@ -16,6 +16,7 @@ using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
@@ -33,6 +34,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             CheckCmd = new Command(Check);
             ManageHostsCmd = new Command(ManageHosts);
             ChangeHostCmd = new Command(ChangeHost);
+            ShowDetailsCmd = new Command(ShowDetails);
             BannerId = configuration.AdsKey;
         }
 
@@ -42,7 +44,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         public ICommand ManageHostsCmd { get; }
         public ICommand ChangeHostCmd { get; }
-
+        public ICommand ShowDetailsCmd { get; }
         public ICommand UpdatesCmd { get; }
         public ICommand CheckCmd { get; }
 
@@ -105,6 +107,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             }
 
             return false;
+        }
+
+        private void ShowDetails(object obj)
+        {
+            NavigationService.NavigateAsync(nameof(OpenmediavaultUpdatesPage));
         }
 
         private async void Updates(object obj)

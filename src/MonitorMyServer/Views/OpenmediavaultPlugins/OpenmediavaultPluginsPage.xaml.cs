@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autofac;
+﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
-using Xamarin.Forms;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Xamarin.Forms.Xaml;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins
@@ -17,7 +11,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins
         public OpenmediavaultPluginsPage()
         {
             InitializeComponent();
-            Title = "OMV plugins";
+            Title = openmediavault.Plugins;
             var vm = App.Container.Resolve<OpenmediavaultPluginsViewModel>();
             Start(vm);
         }

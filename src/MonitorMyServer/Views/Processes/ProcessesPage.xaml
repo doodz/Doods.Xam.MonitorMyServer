@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:models="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Models;assembly=Doods.Framework.Mobile.Ssh.Std"
@@ -39,7 +39,7 @@
                             <Label Grid.Column="1" Grid.Row="1"  Text="{Binding Pid,Mode=OneWay}"/>
                             <Label Grid.Column="0" Text="{Binding Tty,Mode=OneWay}"/>
                             <Label Grid.Column="1" Text="{Binding CpuTime,Mode=OneWay}"/>
-                            <forms:SvgCachedImage
+                                <controls:DoodsSvgImage
                                             Grid.Column="2"
                                             Grid.Row="0"
                                             Grid.RowSpan="2"
@@ -48,11 +48,11 @@
                                             HeightRequest="40"
                                             HorizontalOptions="EndAndExpand"
                                             VerticalOptions="Center" >
-                             
-                                <forms:SvgCachedImage.GestureRecognizers>
+
+                                    <controls:DoodsSvgImage.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding BindingContext.StopProcessCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                            </forms:SvgCachedImage.GestureRecognizers>
-                            </forms:SvgCachedImage>
+                            </controls:DoodsSvgImage.GestureRecognizers>
+                            </controls:DoodsSvgImage>
                         </Grid>
                     </controls:TitledFrameView>
                 </DataTemplate>

@@ -14,7 +14,6 @@ using Doods.Openmediavault.Rpc.std.Data.V5;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 using Renci.SshNet;
-using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
@@ -176,7 +175,17 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public Task<IEnumerable<string>> ListRdd()
         {
-            throw new NotImplementedException();
+            return _omvRrdClient.ListRdd();
+        }
+
+        public Task<IEnumerable<byte[]>> GetRrdFiles(IEnumerable<string> fileNames)
+        {
+            return _omvRrdClient.GetRrdFiles(fileNames);
+        }
+
+        public Task<byte[]> GetRrdFile(string fileName)
+        {
+            return _omvRrdClient.GetRrdFile(fileName);
         }
 
         public Task<string> ApplyChanges()

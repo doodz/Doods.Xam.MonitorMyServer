@@ -13,6 +13,7 @@ using Doods.Framework.Std.Lists;
 using Doods.Openmedivault.Http.Std;
 using Doods.Openmedivault.Ssh.Std;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Synology.Webapi.Std;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
 using Renci.SshNet;
@@ -34,14 +35,17 @@ namespace Doods.Xam.MonitorMyServer.Services
         //internal static ConnctionService ConnectionService = new ConnctionService();
         private readonly OmvServiceProvider _omvServiceProvider;
         private readonly SshServiceProvider _sshServiceProvider;
+        private readonly SynoServiceProvider _synoServiceProvider;
         private IOmvService _omvService;
         private ISshService _sshService;
+        private ISynologyCgiService _synoService;
 
-        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider,
+        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider, SynoServiceProvider synoServiceProvider,
             IMessageBoxService messageBoxService, IDataProvider dataProvider)
         {
             _omvServiceProvider = omvServiceProvider;
             _sshServiceProvider = sshServiceProvider;
+            _synoServiceProvider = synoServiceProvider;
             _messageBoxService = messageBoxService;
             _dataProvider = dataProvider;
             MessagingCenter.Subscribe<DataProvider, TableBase>(
@@ -71,7 +75,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             if (l > 0)
             {
                 var findHost = Hosts.FirstOrDefault(h => h.Id != null && h.Id.Value == l);
-                Login(findHost);
+                if(findHost != null)
+                    await Login(findHost);
+                else
+                {
+                    Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
+                }
             }
         }
 
@@ -96,24 +105,35 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 var split = action.Split('-');
                 var id = long.Parse(split[0]);
-                Login(Hosts.First(h => h.Id == id));
+
+                var host = Hosts.First(h => h.Id == id);
+
+                if (host.IsSynoServer)
+                {
+                    _synoService?.LogOut();
+                }
+
+               await Login(host);
             }
         }
 
-        public void LoginFromOnStart(Host host)
+        public Task LoginFromOnStart(Host host)
         {
             CurrentHost = host;
 
             GetClient(host);
             if (CurrentHost.IsSsh && !CurrentHost.IsOmvServer)
                 _sshService?.Connect();
-            else
-                _omvService?.Connect(CurrentHost.UserName, CurrentHost.Password);
+            else if(CurrentHost.IsSynoServer && _synoService !=null)
+                return _synoService.LoginAsync(CurrentHost.UserName, CurrentHost.Password);
+            else if(_omvService !=null)
+                return _omvService.Connect(CurrentHost.UserName, CurrentHost.Password);
+           return Task.FromResult(0);
         }
 
-        public void Login(Host host)
+        public async Task Login(Host host)
         {
-            LoginFromOnStart(host);
+            await LoginFromOnStart(host);
             SetSelectedIdHost(host);
         }
 
@@ -130,7 +150,15 @@ namespace Doods.Xam.MonitorMyServer.Services
         public void GetClient(Host host)
         {
             //ILogger logger, IConnection connection
-            if (host.IsOmvServer || host.Url.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))
+
+            if (host.IsSynoServer)
+            {
+                var connection = new HttpConnection(host.Url+ "/webapi", host.Port);
+                var service = new SynologyCgiService(_logger, connection);
+                _synoService = service;
+                _synoServiceProvider.ChangeValue(_synoService);
+            }
+            else if (host.IsOmvServer || host.Url.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))
             {
                 IRpcClient service;
                 if (host.IsSsh)
@@ -165,20 +193,45 @@ namespace Doods.Xam.MonitorMyServer.Services
             return Ssh(connection, true);
         }
 
-        public bool TestHttpConnection(string hostName, int port, string login, string password)
+        public async Task<bool> TestHttpConnection(string hostName, int port, string login, string password)
         {
             var connection = new HttpConnection(hostName, port);
-            return Http(connection, login, password, true);
+            return await Http(connection, login, password, true);
         }
 
+        public Task<bool> TestSynoConnection(string hostName, int port, string login, string password)
+        {
+            var connection = new HttpConnection(hostName, port);
+            return Syno(connection, login, password, true);
+        }
 
-        private bool Http(IConnection connection, string login, string password, bool throwException)
+        private async Task<bool> Syno(IConnection connection, string login, string password, bool throwException)
+        {
+            var testConnectionResult = false;
+            try
+            {
+                var syno = new SynologyCgiService(_logger, connection);
+                testConnectionResult= await syno.LoginAsync(login, password);
+                    
+               //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                if (throwException)
+                    throw;
+            }
+
+            return testConnectionResult;
+        }
+
+        private async Task<bool> Http(IConnection connection, string login, string password, bool throwException)
         {
             var testConnectionResult = false;
             try
             {
                 var http = new OmvHttpService(_logger, connection);
-                testConnectionResult = http.LoginAsync(login, password).GetAwaiter().GetResult();
+                testConnectionResult = await http.LoginAsync(login, password);
             }
             catch (Exception e)
             {

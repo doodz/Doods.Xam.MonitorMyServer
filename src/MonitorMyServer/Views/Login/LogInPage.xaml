@@ -6,6 +6,8 @@
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:login="clr-namespace:Doods.Xam.MonitorMyServer.Views.Login;assembly=Doods.Xam.MonitorMyServer"
+                      x:DataType="login:LoginPageViewModel"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Login.LogInPage">
     <ContentPage.Resources>
         <Color x:Key="Primary">#96d1ff</Color>
@@ -38,7 +40,10 @@
                     <Label Text="Is Openmediavault" />
                     <Switch IsToggled="{Binding IsOmvServer,Mode=TwoWay}" />
                 </StackLayout>
-              
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Is Synology" />
+                    <Switch IsToggled="{Binding IsSynoServer,Mode=TwoWay}" />
+                </StackLayout>
                 <Button Margin="0,10,0,0"
                         Text="Test me !"
                         Command="{Binding TestMe,Mode=OneWay}"

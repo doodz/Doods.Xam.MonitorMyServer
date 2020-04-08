@@ -1,40 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Doods.Framework.Std.Lists;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using Renci.SshNet;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
 {
     public class OpenmediavaultStatisticsViewModel : ViewModelWhithState
     {
-        private IOmvService _sshService;
+        private readonly IOmvService _sshService;
 
         public OpenmediavaultStatisticsViewModel(IOmvService sshService)
         {
             _sshService = sshService;
         }
-        public ObservableRangeCollection<RrdImageSource> Items { get;  } = new ObservableRangeCollection<RrdImageSource>();
+
+        public ObservableRangeCollection<RrdImageSource> Items { get; } =
+            new ObservableRangeCollection<RrdImageSource>();
 
         protected override async Task OnInternalAppearingAsync()
         {
-          await RefreshData(); 
+            await RefreshData();
             await base.OnInternalAppearingAsync();
         }
 
         protected Task RefreshData(bool b = true)
         {
-           
-            
             return Task.WhenAll(ListRdd());
         }
 
@@ -45,26 +39,43 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
             //var list = new List<RrdImageSource>();
             Items.Clear();
             var result = await _sshService.ListRdd();
-            var client = _sshService.GetScpClient();
-            if (!client.IsConnected) client.Connect();
-            client.RemotePathTransformation = RemotePathTransformation.ShellQuote;
-            foreach (var file in result)
+
+            var files = await _sshService.GetRrdFiles(result);
+
+            var arrayString = result.ToArray();
+
+
+
+            int i = 0;
+            foreach (var byteArray in files)
             {
-                using (var ms = new MemoryStream())
-                {
-                   
-                    client.Download("/var/lib/openmediavault/rrd/" + file.Trim(), ms);
-                    var img = new StreamImageSource();
+                
+                var img = new StreamImageSource();
+                img.Stream = token => Task.FromResult<Stream>(new MemoryStream(byteArray));
 
-                    var byteArray = ms.ToArray();
-                    img.Stream = (token) => Task.FromResult<Stream>(new MemoryStream(byteArray));
-
-                    var item = new RrdImageSource();
-                    item.FileName = file;
-                    item.ImageSource = img;
-                    Items.Add(item);
-                }
+                var item = new RrdImageSource();
+                item.FileName =arrayString[i++];
+                item.ImageSource = img;
+                Items.Add(item);
             }
+
+            //var client = _sshService.GetScpClient();
+            //if (!client.IsConnected) client.Connect();
+            //client.RemotePathTransformation = RemotePathTransformation.ShellQuote;
+            //foreach (var file in result)
+            //    using (var ms = new MemoryStream())
+            //    {
+            //        client.Download("/var/lib/openmediavault/rrd/" + file.Trim(), ms);
+            //        var img = new StreamImageSource();
+
+            //        var byteArray = ms.ToArray();
+            //        img.Stream = token => Task.FromResult<Stream>(new MemoryStream(byteArray));
+
+            //        var item = new RrdImageSource();
+            //        item.FileName = file;
+            //        item.ImageSource = img;
+            //        Items.Add(item);
+            //    }
 
             //Items.ReplaceRange(list);
             ViewModelStateItem.IsRunning = false;
@@ -72,8 +83,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
 
         private async Task GenerateRdd()
         {
-           var result = await  _sshService.GenerateRdd();
-          
+            var result = await _sshService.GenerateRdd();
         }
     }
 

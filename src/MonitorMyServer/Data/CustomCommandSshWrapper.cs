@@ -6,17 +6,17 @@ namespace Doods.Xam.MonitorMyServer.Data
 {
     public class CustomCommandSshWrapper : IQueryShellNavigationObject
     {
-        private string str;
+        private readonly string _str;
         public CustomCommandSshWrapper(CustomCommandSsh command)
         {
            var commandStringEscaped = Uri.EscapeDataString(command.CommandString);
-            str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={commandStringEscaped}";
+            _str = $"IdQuery={command.Id}&NameQuery={command.Name}&CommandStringQuery={commandStringEscaped}";
 
         }
 
         public string ToQuery()
         {
-            return str;
+            return _str;
         }
     }
 }

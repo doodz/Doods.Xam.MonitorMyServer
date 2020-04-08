@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Xam.MonitorMyServer.Data;
@@ -13,19 +9,20 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
 {
-
-    public class CustomCommandListPageViewModel: DataTableItemsViewModel<CustomCommandSsh>
+    public class CustomCommandListPageViewModel : DataTableItemsViewModel<CustomCommandSsh>
     {
-        private readonly ISshService _sshService;
-        public ICommand RunCommand { get; }
-       
         private readonly IMessageBoxService _messageBoxService;
+        private readonly ISshService _sshService;
+
         public CustomCommandListPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {
             _sshService = sshService;
             _messageBoxService = messageBoxService;
             RunCommand = new Command(Run);
         }
+
+        public ICommand RunCommand { get; }
+
         protected override void AddItem(object obj)
         {
             NavigationService.NavigateAsync(nameof(AddCustomCommandPage));
@@ -44,9 +41,8 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         protected override void EditItem(object obj)
         {
             if (obj == null) return;
-            if (obj is CustomCommandSsh item) NavigationService.NavigateAsync(nameof(AddCustomCommandPage), new CustomCommandSshWrapper(item));
+            if (obj is CustomCommandSsh item)
+                NavigationService.NavigateAsync(nameof(AddCustomCommandPage), new CustomCommandSshWrapper(item));
         }
-
-        
     }
 }

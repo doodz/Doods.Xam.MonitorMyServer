@@ -150,6 +150,16 @@ namespace Doods.Xam.MonitorMyServer.Services
             return RunCmd<string>(new GenerateRddRequest());
         }
 
+        public Task<IEnumerable<byte[]>> GetRrdFiles(IEnumerable<string> filesPaths)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<byte[]> GetRrdFile(string filePath)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<string> GetDisksBackground()
         {
             return RunCmd<string>(new GetListDickBackgroundRequest());

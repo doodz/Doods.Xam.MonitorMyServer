@@ -15,7 +15,7 @@
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
-                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
     <ScrollView>
         <StackLayout>
@@ -52,7 +52,7 @@
                                              Grid.ColumnSpan="3"
                                              Grid.Row="1">
 
-                                <forms:SvgCachedImage
+                                    <controls:DoodsSvgImage
                                     Margin="5,0"
                                     IsVisible="{Binding CanMount,Mode=OneWay}"
                                     Grid.Column="0"
@@ -62,10 +62,10 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
 
                                 <!--<ImageButton Grid.Column="0" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
@@ -77,7 +77,7 @@
                                         IsEnabled="{Binding CanMount,Mode=OneWay}"
                                         Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
-                                <forms:SvgCachedImage
+                                    <controls:DoodsSvgImage
                                     Margin="5,0"
                                   
                                     IsVisible="{Binding CanUmount,Mode=OneWay}"
@@ -88,10 +88,10 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
                                 <!--<ImageButton Grid.Column="1" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
                                              IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
@@ -102,7 +102,7 @@
                                         IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                         Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
-                                <forms:SvgCachedImage
+                                    <controls:DoodsSvgImage
                                     Margin="5,0"
                                     IsVisible="{Binding CanDelete,Mode=OneWay}"
                                     Grid.Column="2"
@@ -112,10 +112,10 @@
                                     HeightRequest="40"
                                     HorizontalOptions="EndAndExpand"
                                     VerticalOptions="Center" >
-                                    <forms:SvgCachedImage.GestureRecognizers>
+                                        <controls:DoodsSvgImage.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </forms:SvgCachedImage.GestureRecognizers>
-                                </forms:SvgCachedImage>
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
                                 <!--<ImageButton Grid.Column="2" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
                                              IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"

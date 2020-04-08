@@ -5,20 +5,26 @@
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-                      xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+                     
                       mc:Ignorable="d"
-                      xmlns:models="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
+                     
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:data="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmediavault.Rpc.Std"
-                      xmlns:forms1="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      
                       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
+                     
                       xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
+                    
                       x:Name="Page"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs.OpenmediavaultSystemLogsPage">
     <StackLayout>
+        <!--<StackLayout.Resources>
+            <Style TargetType="forms1:SvgCachedImage" x:Key="Style">
+                <Setter Property="ReplaceStringMap" Value="{x:Static enum:SvgIconTarget.ReplaceColor}" />
+            </Style>
+        </StackLayout.Resources>-->
         <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
 
         <Grid>
@@ -42,8 +48,8 @@
             Grid.Row="1"
             Grid.Column="0" />
 
-            <forms1:SvgCachedImage
-                IsVisible="False"
+            <controls:DoodsSvgImage
+                IsVisible="false"
             Grid.Column="1"
             Grid.Row="1"
             Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
@@ -51,11 +57,12 @@
             HeightRequest="40"
             HorizontalOptions="EndAndExpand"
             VerticalOptions="Center" >
-                <forms1:SvgCachedImage.GestureRecognizers>
+
+                <controls:DoodsSvgImage.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                </forms1:SvgCachedImage.GestureRecognizers>
-            </forms1:SvgCachedImage>
-            <forms1:SvgCachedImage
+                </controls:DoodsSvgImage.GestureRecognizers>
+            </controls:DoodsSvgImage>
+            <controls:DoodsSvgImage
                 IsVisible="False"
             Grid.Column="2"
             Grid.Row="1"
@@ -64,22 +71,23 @@
             HeightRequest="40"
             HorizontalOptions="EndAndExpand"
             VerticalOptions="Center" >
-                <forms1:SvgCachedImage.GestureRecognizers>
+                <controls:DoodsSvgImage.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding BindingContext.DownloadItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                </forms1:SvgCachedImage.GestureRecognizers>
-            </forms1:SvgCachedImage>
-            <forms1:SvgCachedImage
+                </controls:DoodsSvgImage.GestureRecognizers>
+            </controls:DoodsSvgImage>
+            <controls:DoodsSvgImage
             Grid.Column="3"
             Grid.Row="1"
+           ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColor}"
             Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Sync}}"
             WidthRequest="40"
             HeightRequest="40"
             HorizontalOptions="EndAndExpand"
             VerticalOptions="Center" >
-                <forms1:SvgCachedImage.GestureRecognizers>
+                <controls:DoodsSvgImage.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding BindingContext.SyncItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                </forms1:SvgCachedImage.GestureRecognizers>
-            </forms1:SvgCachedImage>
+                </controls:DoodsSvgImage.GestureRecognizers>
+            </controls:DoodsSvgImage>
         </Grid>
         <ScrollView>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}">

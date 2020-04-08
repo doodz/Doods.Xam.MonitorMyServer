@@ -3,11 +3,12 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:templates="clr-namespace:Doods.Xam.MonitorMyServer.Views.Templates;assembly=Doods.Xam.MonitorMyServer"
+            
              xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
-             xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:data="clr-namespace:Doods.Xam.MonitorMyServer.Data;assembly=Doods.Xam.MonitorMyServer"
              x:Class="Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts.EnumerateAllServicesFromAllHostsPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand" >
@@ -26,7 +27,7 @@
 
             <StackLayout VerticalOptions="FillAndExpand" Padding="4"  BindableLayout.ItemsSource="{Binding ZeroconfHosts,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
-                    <DataTemplate>
+                    <DataTemplate x:DataType="data:ZeroconfHost">
                         <controls1:TitledFrameView Title="{Binding DisplayName,Mode=OneWay}" SubTitle="{Binding IPAddress,Mode=OneWay}"
                                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
                             <controls1:TitledFrameView.GestureRecognizers>
@@ -42,7 +43,7 @@
                                     <RowDefinition/>
                                    
                                 </Grid.RowDefinitions>
-                                <forms:SvgCachedImage
+                                <controls1:DoodsSvgImage
                 
                                 Grid.Row="0"
                                 Grid.Column="0"
@@ -50,7 +51,7 @@
 
                                 <Label  Grid.Row="0"
                                         Grid.Column="1" Text="{Binding Services,Converter={StaticResource ZeroconfServicesToStringConverter}}"/>
-                                <forms:SvgCachedImage
+                                <controls1:DoodsSvgImage
                                 Grid.Row="0"
                                 Grid.Column="2"
                                 Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}" />

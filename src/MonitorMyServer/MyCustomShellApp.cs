@@ -16,6 +16,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.Settings;
+using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -85,6 +86,15 @@ namespace Doods.Xam.MonitorMyServer
             BindingContext = App.Container.Resolve<AppShellViewModel>();
         }
 
+        
+
+        private IEnumerable<FlyoutItem> GetSynoPages()
+        {
+            yield return CreateFlyoutItem("Syno",
+                typeof(SynologyInfoPage));
+        }
+
+
         private IEnumerable<FlyoutItem> GetOmvPages()
         {
            yield return  new FlyoutItem
@@ -137,6 +147,8 @@ namespace Doods.Xam.MonitorMyServer
             }
              
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
+
+            if(host.IsSynoServer) Items.AddRange(GetSynoPages());
 
             if (host.IsSsh)
             {

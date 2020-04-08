@@ -6,29 +6,39 @@
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:settings="clr-namespace:Doods.Xam.MonitorMyServer.Views.Settings;assembly=Doods.Xam.MonitorMyServer"
                       mc:Ignorable="d"
+                      x:DataType="settings:SettingsPAgeViewModel"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Settings.SettingsPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical" Padding="8">
 
             <controls:TitledFrameView Padding="8"
-                                       Title="appUnlock">
+                                      Title="appUnlock">
                 <StackLayout Orientation="Vertical">
-                <StackLayout>
-                    <Label Text="Is rewarded (appUnlock)"/>
-                    <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" />
-                </StackLayout>
-                <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}"/>
-                <Label Text="You can add 7 days to your end date"/>
-                <Button Text="Show video" Command="{Binding ShowRewarVideoCmd,Mode=OneWay}"/>
+                    <StackLayout>
+                        <Label Text="Is rewarded (appUnlock)" />
+                        <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" />
+                    </StackLayout>
+                    <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}" />
+                    <Label Text="You can add 7 days to your end date" />
+                    <Label
+                        Text="Actually ,there are not restricted area. But you can watch reward video for say thank you!" />
+                    <Button Text="Show video" Command="{Binding ShowRewarVideoCmd,Mode=OneWay}" />
                 </StackLayout>
             </controls:TitledFrameView>
-               
+            <controls:TitledFrameView Padding="8"
+                                      Title="Security">
+                <StackLayout>
+                    <Label Text="Use fingerprint" />
+                    <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
+                            IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
+                </StackLayout>
+            </controls:TitledFrameView>
             <StackLayout>
-                <Label Text="Use fingerprint"/>
-                <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
-                    IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
+                <Button Text="Manage hosts" Command="{Binding ManageHostsCmd,Mode=OneWay}" />
             </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

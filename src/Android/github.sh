@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+echo "=============================================================================="
+echo "Task         : call github repo"
+echo "Description  : github.sh file"
+echo "Author       : Doods"
+echo "=============================================================================="
+
 APPCENTER_USER=thibaultherviou
 APP=Monitor-my-server-android
 RELEASE_RESULT_FILE=SetReleaseResult.txt
@@ -9,7 +16,7 @@ curl_url=https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/statuses/$BUI
 github_set_status() {
     local status job_status
     local "${@}"
-
+    echo "github_set_status"
     curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/statuses/$BUILD_SOURCEVERSION -d \
         "{
             \"state\": \"$status\", 
@@ -34,6 +41,8 @@ github_set_status_fail() {
 }
 
 github_set_release(){
+    echo "github_set_release"
+
 	curl -X POST https://api.github.com/repos/doodz/$BUILD_REPOSITORY_NAME/releases -d \
         "{
             \"tag_name\": \"${BUILD_REPOSITORY_NAME}_${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID}\", 
@@ -54,6 +63,7 @@ github_upload_release_asset()
     local filePath=$2
     local filename=$(basename "$filePath")
     local buildUrl="${uploadUrl}?name=${filename}"
+    echo "github_upload_release_asset"
     echo "My build url for asset $buildUrl"
     echo "My file path to upload $filePath"
     echo "Move to $(pwd)"

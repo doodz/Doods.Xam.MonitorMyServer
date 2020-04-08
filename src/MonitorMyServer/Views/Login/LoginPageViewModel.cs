@@ -4,9 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
-using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Mobile.Std.Config;
-using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Mobile.Std.Servicies;
 using Doods.Framework.Mobile.Std.Validation;
@@ -14,10 +12,10 @@ using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Validation;
 using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Enums;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
-using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -32,13 +30,27 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
     [QueryProperty(nameof(IsOmvServerQuery), nameof(IsOmvServerQuery))]
     [QueryProperty(nameof(IsRpiQuery), nameof(IsRpiQuery))]
     [QueryProperty(nameof(IsSshQuery), nameof(IsSshQuery))]
+    [QueryProperty(nameof(IsSynoQuery), nameof(IsSynoQuery))]
+    [QueryProperty(nameof(TypeServiceQuery), nameof(TypeServiceQuery))]
     public class LoginPageViewModel : ViewModelWhithState
     {
+        private Enums.SupportedServicies _typeServicie;
+
+        public Enums.SupportedServicies TypeService
+        {
+            get => _typeServicie;
+            set => SetProperty(ref _typeServicie, value);
+        }
 
         private bool _isOmvServer;
         private bool _isRpi;
         private bool _isSsh;
-        
+        private bool _isSynoServer;
+        public bool IsSynoServer
+        {
+            get => _isSynoServer;
+            set => SetProperty(ref _isSynoServer, value);
+        }
         public bool IsOmvServer
         {
             get => _isOmvServer;
@@ -54,10 +66,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         public bool IsSsh
         {
             get => _isSsh;
-            set => SetProperty(ref _isSsh, value,OnConnectionTypeChanged,null);
+            set => SetProperty(ref _isSsh, value, OnConnectionTypeChanged, null);
         }
 
-      
 
         private ValidatableObjectView<string> _displayName;
 
@@ -67,15 +78,18 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         private ValidatableObjectView<string> _password;
 
         private ValidatableObjectView<string> _port;
-       
+
         public LoginPageViewModel()
         {
-           
-            DisplayName = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Hostname, true);
-            Port = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Port, true, Keyboard.Numeric);
+            DisplayName =
+                new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Hostname, true);
+            Port = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Port, true,
+                Keyboard.Numeric);
             HostName = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Host, true);
-            Login = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Username, true);
-            Password = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Password, true);
+            Login = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Username,
+                true);
+            Password = new ValidatableObjectView<string>(Openmediavault.Mobile.Std.Resources.openmediavault.Password,
+                true);
 
             CmdState = new Command(async c => await ValidateConfig());
 
@@ -84,24 +98,37 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             ViewModelStateItem.IsRunning = true;
             ViewModelStateItem.Color = Color.Transparent;
             AddValidations();
+            
+        }
+
+        public string TypeServiceQuery
+        {
+            set => Enum.TryParse(value,out _typeServicie);
         }
         public string IsSshQuery
         {
-            set => IsSsh = Boolean.Parse(value);
+            set => IsSsh = bool.Parse(value);
         }
+        public string IsSynoQuery
+        {
+            set => IsSynoServer = bool.Parse(value);
+        }
+        
         public string IsRpiQuery
         {
-            set => IsRpi = Boolean.Parse(value);
+            set => IsRpi = bool.Parse(value);
         }
+
         public string IsOmvServerQuery
         {
-            set => IsOmvServer = Boolean.Parse(value);
+            set => IsOmvServer = bool.Parse(value);
         }
 
         public string IdQuery
         {
-            set => _hostId = Int64.Parse(value);
+            set => _hostId = long.Parse(value);
         }
+
         public string UserNameQuery
         {
             set => _login.Value = Uri.UnescapeDataString(value);
@@ -135,7 +162,6 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
 
         public ICommand ValidatePasswordCommand => new Command(() => ValidatePassword());
 
-       
 
         public ValidatableObjectView<string> DisplayName
         {
@@ -178,6 +204,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             _isOmvServer = host.IsOmvServer;
             _isRpi = host.IsRpi;
             _isSsh = host.IsSsh;
+            _isSynoServer = host.IsSynoServer;
         }
 
         public void SetHost(ZeroconfHost zeroconfHost)
@@ -197,6 +224,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
         {
             ValidationMessage = Resource.PleaseNoHttp
         };
+
         private IValidationRule<string> HttpUrlRule = new IsBadFormetedUrlRule<string>(true)
         {
             ValidationMessage = Resource.PleaseUseHttp
@@ -209,20 +237,17 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             {
                 ValidationMessage = Resource.HostNameRequired
             });
-            if(IsSsh)
+            if (IsSsh)
                 _hostName.Validations.Add(SshUrlRule);
             else
-            {
                 _hostName.Validations.Add(HttpUrlRule);
-            }
 
             _hostName.Validate();
         }
 
         private void AddValidations()
         {
-           
-           _displayName.Validations.Add(new IsNotNullOrEmptyRule<string>
+            _displayName.Validations.Add(new IsNotNullOrEmptyRule<string>
             {
                 ValidationMessage = Resource.NameToDisplayRequired
             });
@@ -266,11 +291,20 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                     var connctionService = App.Container.Resolve<ConnctionService>();
 
                     bool result;
-                    if(IsSsh)
-                        result = connctionService.TestSshConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
+                    if (IsSynoServer)
+                    {
+                        result = await connctionService.TestSynoConnection(_hostName.Value+ "/webapi", int.Parse(_port.Value),
+                            _login.Value,
+                            _password.Value);
+                    }
+                    
+                    else if (IsSsh)
+                        result = connctionService.TestSshConnection(_hostName.Value, int.Parse(_port.Value),
+                            _login.Value,
                             _password.Value);
                     else
-                        result = connctionService.TestHttpConnection(_hostName.Value, int.Parse(_port.Value), _login.Value,
+                        result = await connctionService.TestHttpConnection(_hostName.Value, int.Parse(_port.Value),
+                            _login.Value,
                             _password.Value);
 
 
@@ -283,7 +317,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                             Application.Current.MainPage = mainPage;
                         }
                         else
+                        {
                             MainThread.BeginInvokeOnMainThread(() => { NavigationService.GoBack(); });
+                        }
                     }
                 }
             }
@@ -322,13 +358,13 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             {
                 HostName = _displayName.Value,
                 IsSsh = _isSsh,
+                IsSynoServer = _isSynoServer,
                 Url = _hostName.Value,
                 Port = int.Parse(_port.Value),
                 UserName = _login.Value,
                 Password = _password.Value,
                 IsRpi = _isRpi,
                 IsOmvServer = _isOmvServer
-                
             };
 
             if (_hostId > 0)
@@ -379,9 +415,42 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             return _password.Validate();
         }
 
+        private void OnServerTypeChanged(Enums.SupportedServicies srv)
+        {
+
+        }
+
+        protected override void OnFinishLoading(LoadingContext context)
+        {
+
+
+            switch (TypeService)
+            {
+                case SupportedServicies.Synology:
+                    _isSsh = false;
+                    _isRpi = false;
+                    _isOmvServer = false;
+                    _isSynoServer = true;
+                    break;
+                case SupportedServicies.Openmediavault:
+                    _isSsh = false;
+                    _isRpi = false;
+                    _isOmvServer = true;
+                    _isSynoServer = false;
+                    break;
+                case SupportedServicies.Unix:
+                    _isSsh = true;
+                    _isRpi = false;
+                    _isOmvServer = false;
+                    _isSynoServer = false;
+                    break;
+            }
+
+            OnConnectionTypeChanged();
+        }
+
         protected override void OnInitializeLoading(LoadingContext context)
         {
-            
             Title = Openmediavault.Mobile.Std.Resources.openmediavault.Authentication;
             base.OnInitializeLoading(context);
         }

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-          xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+          
           xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+          xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
           x:Class="Doods.Xam.MonitorMyServer.Templates.HostTemplate">
     <Grid>
         <Grid.RowDefinitions>
@@ -21,7 +22,7 @@
         <Label Grid.Column="0" 
                Grid.Row="1" 
                Text="{Binding Description,Mode=OneWay}" />
-        <forms:SvgCachedImage
+        <controls:DoodsSvgImage
             Grid.Column="1"
             Grid.RowSpan="2"
             Grid.Row="0"
@@ -31,9 +32,9 @@
            
             HorizontalOptions="EndAndExpand"
             VerticalOptions="Center" >
-            <forms:SvgCachedImage.GestureRecognizers>
+            <controls:DoodsSvgImage.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding CommandAction,Mode=OneWay}" CommandParameter="{Binding .}"  />
-            </forms:SvgCachedImage.GestureRecognizers>
-        </forms:SvgCachedImage>
+            </controls:DoodsSvgImage.GestureRecognizers>
+        </controls:DoodsSvgImage>
     </Grid>
 </ViewCell>

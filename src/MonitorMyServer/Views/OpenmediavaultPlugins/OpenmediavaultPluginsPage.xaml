@@ -8,11 +8,11 @@
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
+                     
                       xmlns:models="clr-namespace:Doods.Openmediavault.Mobile.Std.Models;assembly=Doods.Openmediavault.Mobile.Std"
-                      xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      
                       xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                      
                       mc:Ignorable="d"
                       x:Name="Page"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins.OpenmediavaultPluginsPage">
@@ -52,7 +52,7 @@
                                 <Label Grid.Row="2" Grid.Column="0" Text="{Binding Version ,Mode=OneTime}" />
                                 <Label Grid.Row="2" Grid.Column="1" Text="{Binding Maintainer ,Mode=OneTime}" />
                                 <!--<Label Grid.Row="2" Grid.Column="2" Text="{Binding Repository ,Mode=OneTime}" />-->
-                                <forms:SvgCachedImage
+                                <controls1:DoodsSvgImage
                                     Grid.Row="0" Grid.Column="3"
                                     Source="{Binding Installed,Mode=OneWay,Converter={StaticResource BoolToCheckSvgResourceFileonverter}}" />
                                 <CheckBox Grid.Row="2" Grid.Column="3" IsChecked="{Binding IsSelected,Mode=TwoWay}">

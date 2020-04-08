@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:conveters="clr-namespace:Doods.Xam.MonitorMyServer.Conveters;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:selectService="clr-namespace:Doods.Xam.MonitorMyServer.Views.SelectService;assembly=Doods.Xam.MonitorMyServer"
+                      x:Name="Page"
+                      x:DataType="selectService:SelectSupportedServicieViewModel"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.SelectService.SelectSupportedServiciePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
+                    <Style x:Key="NewSubTitleStyle" TargetType="Label">
+                        <Setter Property="FontAttributes" Value="None" />
+                        <Setter Property="TextColor" Value="BlueViolet" />
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            <StackLayout VerticalOptions="FillAndExpand" Padding="4"
+                         BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="selectService:ServiceDescription">
+                        <controls1:TitledFrameView Title="{Binding Title,Mode=OneTime}">
+                            <controls1:TitledFrameView.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.GoToLoginCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                            </controls1:TitledFrameView.GestureRecognizers>
+                            <Label Text="{Binding Description,Mode=OneTime}" />
+                        </controls1:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</mvvm:BaseContentPage>

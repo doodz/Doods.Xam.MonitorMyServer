@@ -5,7 +5,6 @@ using Autofac;
 using AutoMapper;
 using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
