@@ -307,11 +307,29 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Preserve modification times..
+        ///   Recherche une chaîne localisée semblable à Preserve group.
         /// </summary>
-        public static string PreserveModificationTimes_ {
+        public static string PreserveGroup {
             get {
-                return ResourceManager.GetString("PreserveModificationTimes.", resourceCulture);
+                return ResourceManager.GetString("PreserveGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Preserve modification times.
+        /// </summary>
+        public static string PreserveModificationTimes {
+            get {
+                return ResourceManager.GetString("PreserveModificationTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Preserve owner.
+        /// </summary>
+        public static string PreserveOwner {
+            get {
+                return ResourceManager.GetString("PreserveOwner", resourceCulture);
             }
         }
         
@@ -406,6 +424,25 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Set the group of the destination file to be the same as the source file..
+        /// </summary>
+        public static string SetTheGroupOfTheDestinationFileToBeTheSameAsTheSourceFile_ {
+            get {
+                return ResourceManager.GetString("SetTheGroupOfTheDestinationFileToBeTheSameAsTheSourceFile.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Set the owner of the destination file to be the same as the source file, but only if the receiving rsync is being run as the super-user..
+        /// </summary>
+        public static string SetTheOwnerOfTheDestinationFileToBeTheSameAsTheSourceFile_ButOnlyIfTheReceivingRsyncIsBeingRunAsTheSuper_User_ {
+            get {
+                return ResourceManager.GetString("SetTheOwnerOfTheDestinationFileToBeTheSameAsTheSourceFile,ButOnlyIfTheReceivingRs" +
+                        "yncIsBeingRunAsTheSuper-User.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Shared folder.
         /// </summary>
         public static string SharedFolder {
@@ -461,11 +498,11 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Times.
+        ///   Recherche une chaîne localisée semblable à Transfer modification times along with the files and update them on the remote system..
         /// </summary>
-        public static string Times {
+        public static string TransferModificationTimesAlongWithTheFilesAndUpdateThemOnTheRemoteSystem_ {
             get {
-                return ResourceManager.GetString("Times", resourceCulture);
+                return ResourceManager.GetString("TransferModificationTimesAlongWithTheFilesAndUpdateThemOnTheRemoteSystem.", resourceCulture);
             }
         }
         

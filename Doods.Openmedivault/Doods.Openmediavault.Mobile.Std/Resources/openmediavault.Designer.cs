@@ -925,20 +925,22 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Allow this server to try and become a local master browser.
-        /// </summary>
-        public static string AllowThisServerToTryAndBecomeALocalMasterBrowser {
-            get {
-                return ResourceManager.GetString("AllowThisServerToTryAndBecomeALocalMasterBrowser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à American Samoa.
         /// </summary>
         public static string AmericanSamoa {
             get {
                 return ResourceManager.GetString("AmericanSamoa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à An attempt to send the test email has been made. Please check your mailbox. If the email does not arrive, check any spam folders and also check there are no Postfix related errors in the system log..
+        /// </summary>
+        public static string AnAttemptToSendTheTestEmailHasBeenMade_PleaseCheckYourMailbox_IfTheEmailDoesNotArrive_CheckAnySpamFoldersAndAlsoCheckThereAreNoPostfixRelatedErrorsInTheSystemLog_ {
+            get {
+                return ResourceManager.GetString("AnAttemptToSendTheTestEmailHasBeenMade.PleaseCheckYourMailbox.IfTheEmailDoesNotAr" +
+                        "rive,CheckAnySpamFoldersAndAlsoCheckThereAreNoPostfixRelatedErrorsInTheSystemLog" +
+                        ".", resourceCulture);
             }
         }
         
@@ -1012,6 +1014,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string AnonymousFTP {
             get {
                 return ResourceManager.GetString("AnonymousFTP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Another user is already authenticated..
+        /// </summary>
+        public static string AnotherUserIsAlreadyAuthenticated_ {
+            get {
+                return ResourceManager.GetString("AnotherUserIsAlreadyAuthenticated.", resourceCulture);
             }
         }
         
@@ -2593,11 +2604,11 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Disallow the user to modify his account..
+        ///   Recherche une chaîne localisée semblable à Disallow the user to modify their account..
         /// </summary>
-        public static string DisallowTheUserToModifyHisAccount_ {
+        public static string DisallowTheUserToModifyTheirAccount_ {
             get {
-                return ResourceManager.GetString("DisallowTheUserToModifyHisAccount.", resourceCulture);
+                return ResourceManager.GetString("DisallowTheUserToModifyTheirAccount.", resourceCulture);
             }
         }
         
@@ -3066,15 +3077,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Edit service.
-        /// </summary>
-        public static string EditService {
-            get {
-                return ResourceManager.GetString("EditService", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Edit share.
         /// </summary>
         public static string EditShare {
@@ -3383,6 +3385,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Enable Time Machine support for this share..
+        /// </summary>
+        public static string EnableTimeMachineSupportForThisShare_ {
+            get {
+                return ResourceManager.GetString("EnableTimeMachineSupportForThisShare.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Enable transfer log.
         /// </summary>
         public static string EnableTransferLog {
@@ -3424,6 +3435,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string EnableWrite_Cache_ {
             get {
                 return ResourceManager.GetString("EnableWrite-Cache.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Encryption mode.
+        /// </summary>
+        public static string EncryptionMode {
+            get {
+                return ResourceManager.GetString("EncryptionMode", resourceCulture);
             }
         }
         
@@ -4834,6 +4854,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Invalid IP address..
+        /// </summary>
+        public static string InvalidIPAddress_ {
+            get {
+                return ResourceManager.GetString("InvalidIPAddress.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Invalid name.
         /// </summary>
         public static string InvalidName {
@@ -4848,6 +4877,24 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string InvalidSSHPublicKey_RFC4716_ {
             get {
                 return ResourceManager.GetString("InvalidSSHPublicKey(RFC4716)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Invalid user..
+        /// </summary>
+        public static string InvalidUser_ {
+            get {
+                return ResourceManager.GetString("InvalidUser.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Invalid User-Agent..
+        /// </summary>
+        public static string InvalidUser_Agent_ {
+            get {
+                return ResourceManager.GetString("InvalidUser-Agent.", resourceCulture);
             }
         }
         
@@ -5293,20 +5340,20 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Local master browser.
-        /// </summary>
-        public static string LocalMasterBrowser {
-            get {
-                return ResourceManager.GetString("LocalMasterBrowser", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Location.
         /// </summary>
         public static string Location {
             get {
                 return ResourceManager.GetString("Location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Logging out, please wait ....
+        /// </summary>
+        public static string LoggingOut_PleaseWait___ {
+            get {
+                return ResourceManager.GetString("LoggingOut,PleaseWait...", resourceCulture);
             }
         }
         
@@ -6437,15 +6484,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Number of servers.
-        /// </summary>
-        public static string NumberOfServers {
-            get {
-                return ResourceManager.GetString("NumberOfServers", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Occurrence.
         /// </summary>
         public static string Occurrence {
@@ -6770,20 +6808,20 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste an private RSA key in X.509 PEM format here..
+        ///   Recherche une chaîne localisée semblable à Paste a RSA or ECC certificate in X.509 PEM format here..
         /// </summary>
-        public static string PasteAnPrivateRSAKeyInX_509PEMFormatHere_ {
+        public static string PasteARSAOrECCCertificateInX_509PEMFormatHere_ {
             get {
-                return ResourceManager.GetString("PasteAnPrivateRSAKeyInX.509PEMFormatHere.", resourceCulture);
+                return ResourceManager.GetString("PasteARSAOrECCCertificateInX.509PEMFormatHere.", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste a RSA certificate in X.509 PEM format here..
+        ///   Recherche une chaîne localisée semblable à Paste a RSA or ECC private key in X.509 PEM format here..
         /// </summary>
-        public static string PasteARSACertificateInX_509PEMFormatHere_ {
+        public static string PasteARSAOrECCPrivateKeyInX_509PEMFormatHere_ {
             get {
-                return ResourceManager.GetString("PasteARSACertificateInX.509PEMFormatHere.", resourceCulture);
+                return ResourceManager.GetString("PasteARSAOrECCPrivateKeyInX.509PEMFormatHere.", resourceCulture);
             }
         }
         
@@ -7085,11 +7123,29 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Preserve group.
+        /// </summary>
+        public static string PreserveGroup {
+            get {
+                return ResourceManager.GetString("PreserveGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Preserve modification times.
         /// </summary>
         public static string PreserveModificationTimes {
             get {
                 return ResourceManager.GetString("PreserveModificationTimes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Preserve owner.
+        /// </summary>
+        public static string PreserveOwner {
+            get {
+                return ResourceManager.GetString("PreserveOwner", resourceCulture);
             }
         }
         
@@ -7617,12 +7673,12 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Report if the temperature is greater or equal than N degrees Celsius. Set to 0 to disable this report..
+        ///   Recherche une chaîne localisée semblable à Report if the temperature is greater than or equal to N degrees Celsius. Set to 0 to disable this report..
         /// </summary>
-        public static string ReportIfTheTemperatureIsGreaterOrEqualThanNDegreesCelsius_SetTo0ToDisableThisReport_ {
+        public static string ReportIfTheTemperatureIsGreaterThanOrEqualToNDegreesCelsius_SetTo0ToDisableThisReport_ {
             get {
-                return ResourceManager.GetString("ReportIfTheTemperatureIsGreaterOrEqualThanNDegreesCelsius.SetTo0ToDisableThisRepo" +
-                        "rt.", resourceCulture);
+                return ResourceManager.GetString("ReportIfTheTemperatureIsGreaterThanOrEqualToNDegreesCelsius.SetTo0ToDisableThisRe" +
+                        "port.", resourceCulture);
             }
         }
         
@@ -8375,15 +8431,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Service Discovery.
-        /// </summary>
-        public static string ServiceDiscovery {
-            get {
-                return ResourceManager.GetString("ServiceDiscovery", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Servicename.
         /// </summary>
         public static string Servicename {
@@ -8453,6 +8500,25 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string SetTheDestinationPermissionsToBeTheSameAsTheSourcePermissions {
             get {
                 return ResourceManager.GetString("SetTheDestinationPermissionsToBeTheSameAsTheSourcePermissions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Set the group of the destination file to be the same as the source file..
+        /// </summary>
+        public static string SetTheGroupOfTheDestinationFileToBeTheSameAsTheSourceFile_ {
+            get {
+                return ResourceManager.GetString("SetTheGroupOfTheDestinationFileToBeTheSameAsTheSourceFile.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Set the owner of the destination file to be the same as the source file, but only if the receiving rsync is being run as the super-user..
+        /// </summary>
+        public static string SetTheOwnerOfTheDestinationFileToBeTheSameAsTheSourceFile_ButOnlyIfTheReceivingRsyncIsBeingRunAsTheSuper_User_ {
+            get {
+                return ResourceManager.GetString("SetTheOwnerOfTheDestinationFileToBeTheSameAsTheSourceFile,ButOnlyIfTheReceivingRs" +
+                        "yncIsBeingRunAsTheSuper-User.", resourceCulture);
             }
         }
         
@@ -8863,15 +8929,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Specifies how many server threads to create..
-        /// </summary>
-        public static string SpecifiesHowManyServerThreadsToCreate_ {
-            get {
-                return ResourceManager.GetString("SpecifiesHowManyServerThreadsToCreate.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Specifies one of the bonding policies..
         /// </summary>
         public static string SpecifiesOneOfTheBondingPolicies_ {
@@ -9079,6 +9136,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string Start {
             get {
                 return ResourceManager.GetString("Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à STARTTLS.
+        /// </summary>
+        public static string STARTTLS {
+            get {
+                return ResourceManager.GetString("STARTTLS", resourceCulture);
             }
         }
         
@@ -9694,24 +9760,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à The session IP address has been changed..
-        /// </summary>
-        public static string TheSessionIPAddressHasBeenChanged_ {
-            get {
-                return ResourceManager.GetString("TheSessionIPAddressHasBeenChanged.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à The session user no longer exists..
-        /// </summary>
-        public static string TheSessionUserNoLongerExists_ {
-            get {
-                return ResourceManager.GetString("TheSessionUserNoLongerExists.", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à The source remote server, e.g. [USER@]HOST:SRC, [USER@]HOST::SRC or rsync://[USER@]HOST[:PORT]/SRC..
         /// </summary>
         public static string TheSourceRemoteServer_E_G__USER__HOST_SRC__USER__HOST__SRCOrRsync____USER__HOST__PORT__SRC_ {
@@ -9758,20 +9806,20 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à The system must be rebooted..
+        /// </summary>
+        public static string TheSystemMustBeRebooted_ {
+            get {
+                return ResourceManager.GetString("TheSystemMustBeRebooted.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à The system will reboot now. This may take some time ....
         /// </summary>
         public static string TheSystemWillRebootNow_ThisMayTakeSomeTime___ {
             get {
                 return ResourceManager.GetString("TheSystemWillRebootNow.ThisMayTakeSomeTime...", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à The test email has been sent successfully. Please check your mailbox..
-        /// </summary>
-        public static string TheTestEmailHasBeenSentSuccessfully_PleaseCheckYourMailbox_ {
-            get {
-                return ResourceManager.GetString("TheTestEmailHasBeenSentSuccessfully.PleaseCheckYourMailbox.", resourceCulture);
             }
         }
         
@@ -10258,6 +10306,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Threshold.
+        /// </summary>
+        public static string Threshold {
+            get {
+                return ResourceManager.GetString("Threshold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Thursday.
         /// </summary>
         public static string Thursday {
@@ -10294,6 +10351,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Time Machine support.
+        /// </summary>
+        public static string TimeMachineSupport {
+            get {
+                return ResourceManager.GetString("TimeMachineSupport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Time of execution.
         /// </summary>
         public static string TimeOfExecution {
@@ -10308,15 +10374,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string Timeout {
             get {
                 return ResourceManager.GetString("Timeout", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Times.
-        /// </summary>
-        public static string Times {
-            get {
-                return ResourceManager.GetString("Times", resourceCulture);
             }
         }
         
@@ -10393,6 +10450,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Transfer modification times along with the files and update them on the remote system..
+        /// </summary>
+        public static string TransferModificationTimesAlongWithTheFilesAndUpdateThemOnTheRemoteSystem_ {
+            get {
+                return ResourceManager.GetString("TransferModificationTimesAlongWithTheFilesAndUpdateThemOnTheRemoteSystem.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Transfer time.
         /// </summary>
         public static string TransferTime {
@@ -10407,15 +10473,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string TransferType {
             get {
                 return ResourceManager.GetString("TransferType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Treshold.
-        /// </summary>
-        public static string Treshold {
-            get {
-                return ResourceManager.GetString("Treshold", resourceCulture);
             }
         }
         
@@ -10708,6 +10765,15 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Updates available.
+        /// </summary>
+        public static string UpdatesAvailable {
+            get {
+                return ResourceManager.GetString("UpdatesAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Update the destination ACLs to be the same as the source ACLs.
         /// </summary>
         public static string UpdateTheDestinationAclsToBeTheSameAsTheSourceAcls {
@@ -10740,15 +10806,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string UpDelay {
             get {
                 return ResourceManager.GetString("UpDelay", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Upgrade.
-        /// </summary>
-        public static string Upgrade {
-            get {
-                return ResourceManager.GetString("Upgrade", resourceCulture);
             }
         }
         
@@ -10920,15 +10977,6 @@ namespace Doods.Openmediavault.Mobile.Std.Resources {
         public static string UseSendfile {
             get {
                 return ResourceManager.GetString("UseSendfile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Use SSL/TLS secure connection.
-        /// </summary>
-        public static string UseSSL_TLSSecureConnection {
-            get {
-                return ResourceManager.GetString("UseSSL/TLSSecureConnection", resourceCulture);
             }
         }
         
