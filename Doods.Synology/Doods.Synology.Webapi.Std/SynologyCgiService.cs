@@ -11,18 +11,19 @@ namespace Doods.Synology.Webapi.Std
     {
        
         private readonly ISynoWebApi _client;
-        private readonly SynoSystemClient _synoSystemClient;
-        private readonly SynoAuthClient _synoAuthClient;
-        private readonly SynoInfoClient _synoInfoClient;
-
+        private readonly ISynoSystemClient _synoSystemClient;
+        private readonly ISynoAuthClient _synoAuthClient;
+        private readonly ISynoUpgradeClient _synoUpgradeClient;
+        private readonly ISynoInfoClient _synoInfoClient;
         public SynologyCgiService(ILogger logger, IConnection connection) : base(logger)
         {
+            Connection = connection;
             _client = new SynologyApi(connection);
 
             _synoSystemClient = new SynoSystemClient(_client);
             _synoAuthClient = new SynoAuthClient(_client);
             _synoInfoClient = new SynoInfoClient(_client);
-
+            _synoUpgradeClient = new SynoUpgradeClient(_client);
         }
 
 
@@ -40,10 +41,14 @@ namespace Doods.Synology.Webapi.Std
         {
              _synoAuthClient.LogOut();
         }
-
         public Task<SystemInfo> GetSystemInfo()
         {
             return _synoSystemClient.GetSystemInfo();
+        }
+
+        public Task<SynologyUpgradeStatus> GetUpgradeStatus()
+        {
+            return _synoUpgradeClient.GetUpgradeStatus();
         }
 
         public Task<NetworkInfo> GetNetworkInfo()

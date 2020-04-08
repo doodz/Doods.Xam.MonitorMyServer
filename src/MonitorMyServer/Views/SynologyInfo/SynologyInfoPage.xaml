@@ -12,9 +12,7 @@
                       
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
-                      xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
-                      mc:Ignorable="d"
+                       mc:Ignorable="d"
                      
                       x:Class="Doods.Xam.MonitorMyServer.Views.SynologyInfo.SynologyInfoPage">
     <Shell.TitleView>
@@ -64,6 +62,7 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
+
                         <Label Grid.Column="0" Grid.Row="0" Text="{resources1:Translate Text='openmediavault::Hostname'}"/>
                         <Label Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::Version'}"/>
                         <Label Grid.Column="0" Grid.Row="2" Text="{resources1:Translate Text='openmediavault::Processor'}"/>
@@ -76,18 +75,46 @@
                         <Label Grid.Column="0" Grid.Row="9" Text="{resources1:Translate Text='openmediavault::UpdatesAvailable'}"/>
 
                         <Label Grid.Column="1" Grid.Row="0" Text="{Binding Model,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding FirmwareVer,Mode=OneWay}"/>
                         <Label Grid.Column="1" Grid.Row="2" Text="{Binding CpuSeries,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding Kernel,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding FirmwareVer,Mode=OneWay}"/>
                         <Label Grid.Column="1" Grid.Row="4" Text="{Binding Time,Mode=OneWay}"/>
                         <Label Grid.Column="1" Grid.Row="5" Text="{Binding Uptime,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="6" Text="{Binding LoadAverage,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="7" Text="{Binding CpuUsage,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="7" Text="{Binding CpuClockSpeed,Mode=OneWay}"/>
                         <Label Grid.Column="1" Grid.Row="8" Text="{Binding RamSize,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="8" Text="{Binding UpdatesAvailable,Mode=OneWay}"/>
+                      
                     </Grid>
 
 
+                </controls:TitledFrameView>
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" 
+                                          BindingContext="{Binding UpgradeStatus,Mode=OneWay}">
+                    <StackLayout>
+                        <Label  Text="{Binding AllowUpgrade,Mode=OneWay}"/>
+                        <Label  Text="{Binding Status,Mode=OneWay}"/>
+
+                    </StackLayout>
+                </controls:TitledFrameView>
+
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" 
+                                          BindingContext="{Binding NetworkInfo,Mode=OneWay}">
+                    <StackLayout>
+                        <Label  Text="{Binding Hostname,Mode=OneWay}"/>
+                        <Label  Text="{Binding Workgroup,Mode=OneWay}"/>
+                        <Label  Text="{Binding Gateway,Mode=OneWay}"/>
+                        <Label  Text="{Binding Dns,Mode=OneWay}"/>
+                        
+                    </StackLayout>
+                </controls:TitledFrameView>
+
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" 
+                                          BindingContext="{Binding NetworkInfo,Mode=OneWay}">
+                    <StackLayout>
+                     
+
+                    </StackLayout>
                 </controls:TitledFrameView>
 
             </StackLayout>

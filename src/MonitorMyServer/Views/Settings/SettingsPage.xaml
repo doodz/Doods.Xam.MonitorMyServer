@@ -14,30 +14,31 @@
         <StackLayout Orientation="Vertical" Padding="8">
 
             <controls:TitledFrameView Padding="8"
-                                       Title="appUnlock">
+                                      Title="appUnlock">
                 <StackLayout Orientation="Vertical">
-                <StackLayout>
-                    <Label Text="Is rewarded (appUnlock)"/>
-                    <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" />
-                </StackLayout>
-                <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}"/>
-                <Label Text="You can add 7 days to your end date"/>
-                    <Label Text="Actually ,there are not restricted area. But you can watch reward video for say thank you!"/>
-                    <Button Text="Show video" Command="{Binding ShowRewarVideoCmd,Mode=OneWay}"/>
+                    <StackLayout>
+                        <Label Text="Is rewarded (appUnlock)" />
+                        <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" />
+                    </StackLayout>
+                    <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}" />
+                    <Label Text="You can add 7 days to your end date" />
+                    <Label
+                        Text="Actually ,there are not restricted area. But you can watch reward video for say thank you!" />
+                    <Button Text="Show video" Command="{Binding ShowRewarVideoCmd,Mode=OneWay}" />
                 </StackLayout>
             </controls:TitledFrameView>
             <controls:TitledFrameView Padding="8"
                                       Title="Security">
                 <StackLayout>
-                <Label Text="Use fingerprint"/>
-                <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
-                    IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
-            </StackLayout>
+                    <Label Text="Use fingerprint" />
+                    <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
+                            IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
+                </StackLayout>
             </controls:TitledFrameView>
             <StackLayout>
-                <Button Text="Manage hosts" Command="{Binding ManageHostsCmd,Mode=OneWay}"/>
+                <Button Text="Manage hosts" Command="{Binding ManageHostsCmd,Mode=OneWay}" />
             </StackLayout>
-        
+
         </StackLayout>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

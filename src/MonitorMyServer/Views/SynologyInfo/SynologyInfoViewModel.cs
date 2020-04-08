@@ -21,9 +21,27 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
         public ICommand ManageHostsCmd { get; }
         public ICommand ChangeHostCmd { get; }
 
-
+        private SynologyUpgradeStatus _upgradeStatus;
         private SystemInfo _systemInfo;
+        private NetworkInfo _networkInfo;
+        private StorageInfo _storageInfo;
+        public StorageInfo StorageInfo
+        {
+            get => _storageInfo;
+            set => SetProperty(ref _storageInfo, value);
+        }
 
+        public NetworkInfo NetworkInfo
+        {
+            get => _networkInfo;
+            set => SetProperty(ref _networkInfo, value);
+        }
+
+        public SynologyUpgradeStatus UpgradeStatus
+        {
+            get => _upgradeStatus;
+            set => SetProperty(ref _upgradeStatus, value);
+        }
         public SystemInfo SystemInfo
         {
             get => _systemInfo;
@@ -67,8 +85,8 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
 
         protected Task RefreshData()
         {
-            _synoService.GetSystemInfo();
-            return Task.WhenAll(GetSystemInfo());
+           
+            return Task.WhenAll(GetSystemInfo(), GetUpgradeStatus(), GetNetworkInfo(), GetStorageInfo());
         }
 
         private async Task GetSystemInfo()
@@ -77,5 +95,22 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
             SystemInfo = result;
         }
 
+        private async Task GetUpgradeStatus()
+        {
+            var result = await _synoService.GetUpgradeStatus();
+            UpgradeStatus = result;
+        }
+
+        private async Task GetNetworkInfo()
+        {
+            var result = await _synoService.GetNetworkInfo();
+            NetworkInfo = result;
+        }
+
+        private async Task GetStorageInfo()
+        {
+            var result = await _synoService.GetStorageInfo();
+            StorageInfo = result;
+        }
     }
 }

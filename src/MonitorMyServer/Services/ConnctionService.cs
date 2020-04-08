@@ -76,7 +76,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 var findHost = Hosts.FirstOrDefault(h => h.Id != null && h.Id.Value == l);
                 if(findHost != null)
-                    Login(findHost);
+                    await Login(findHost);
                 else
                 {
                     Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
@@ -105,24 +105,35 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 var split = action.Split('-');
                 var id = long.Parse(split[0]);
-                Login(Hosts.First(h => h.Id == id));
+
+                var host = Hosts.First(h => h.Id == id);
+
+                if (host.IsSynoServer)
+                {
+                    _synoService?.LogOut();
+                }
+
+               await Login(host);
             }
         }
 
-        public void LoginFromOnStart(Host host)
+        public Task LoginFromOnStart(Host host)
         {
             CurrentHost = host;
 
             GetClient(host);
             if (CurrentHost.IsSsh && !CurrentHost.IsOmvServer)
                 _sshService?.Connect();
-            else
-                _omvService?.Connect(CurrentHost.UserName, CurrentHost.Password);
+            else if(CurrentHost.IsSynoServer && _synoService !=null)
+                return _synoService.LoginAsync(CurrentHost.UserName, CurrentHost.Password);
+            else if(_omvService !=null)
+                return _omvService.Connect(CurrentHost.UserName, CurrentHost.Password);
+           return Task.FromResult(0);
         }
 
-        public void Login(Host host)
+        public async Task Login(Host host)
         {
-            LoginFromOnStart(host);
+            await LoginFromOnStart(host);
             SetSelectedIdHost(host);
         }
 
@@ -142,7 +153,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             if (host.IsSynoServer)
             {
-                var connection = new HttpConnection(host.Url, host.Port);
+                var connection = new HttpConnection(host.Url+ "/webapi", host.Port);
                 var service = new SynologyCgiService(_logger, connection);
                 _synoService = service;
                 _synoServiceProvider.ChangeValue(_synoService);

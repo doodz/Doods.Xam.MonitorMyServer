@@ -8,7 +8,7 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<IDictionary<string, SynologyApiServicesInfo>> GetSynologyApiServicesInfo();
     }
-    class SynoInfoClient: BaseSynoClient
+    class SynoInfoClient: BaseSynoClient,ISynoInfoClient
     {
         public SynoInfoClient(ISynoWebApi client) : base(client)
         {
@@ -32,28 +32,4 @@ namespace Doods.Synology.Webapi.Std
         }
 
     }
-
-    class SynoUpgradeClient : BaseSynoClient
-    {
-        public SynoUpgradeClient(ISynoWebApi client) : base(client)
-        {
-            Resource = "/entry.cgi";
-            ServiceApiName = "SYNO.Core.Upgrade";
-
-        }
-
-        public async Task<SynologyUpgradeStatus> GetStatus()
-        {
-            var loginRequest = new SynologyRestRequest(Resource);
-            loginRequest.AddParameter("api", ServiceApiName);
-            loginRequest.AddParameter("version", "1");
-            loginRequest.AddParameter("method", "status");
-            loginRequest.AddParameter("sid", _client.Sid);
-
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUpgradeStatus>>(loginRequest).ConfigureAwait(false);
-            return response.Data.Data;
-        }
-    }
-
-
 }
