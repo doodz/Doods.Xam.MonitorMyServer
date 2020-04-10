@@ -12,7 +12,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
            
-            builder.RegisterType<ConnctionService>().AsSelf();
+            builder.RegisterType<ConnctionService>().SingleInstance().AsSelf();
             builder.RegisterType<OmvService>().As<IRpcService>()
                 .As<IOMVSshBackgroundService>().SingleInstance();
             builder.RegisterType<RewardService>().As<IRewardService>().SingleInstance();
@@ -34,10 +34,4 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         }
     }
-
-
-  
-       
-
-    
 }

@@ -6,6 +6,8 @@ using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Doods.Framework.ApiClientBase.Std.Classes;
+using Doods.Framework.Http.Std.Ping;
 using Doods.Framework.Mobile.Std.Config;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
@@ -115,7 +117,12 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Services.Bootstrapper>();
 
             builder.RegisterType<SynchronizedCache<object>>().As<ISynchronizedCache<object>>().SingleInstance();
-
+            builder.RegisterType<AddressLookupService>().As<IAddressLookupService>().SingleInstance();
+            builder.RegisterType<IcmpPingService>().AsSelf();
+            builder.RegisterType<RdpPortPingService>().AsSelf();
+            builder.RegisterType<PingService>().As<IPingService>().SingleInstance();
+           
+           
             //builder.RegisterModule<Services.AutoMapperConfig>();
 
             builder.RegisterModule<AutoMapperConfig>();

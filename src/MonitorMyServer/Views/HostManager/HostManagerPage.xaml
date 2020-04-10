@@ -7,6 +7,8 @@
              
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:hostManager="clr-namespace:Doods.Xam.MonitorMyServer.Views.HostManager;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.HostManager.HostManagerPage">
 
     <Grid>
@@ -19,9 +21,9 @@
                     </Style>
                 </ResourceDictionary>
             </ScrollView.Resources>
-            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
-                    <DataTemplate>
+                    <DataTemplate x:DataType="hostManager:HostViewModel">
                         <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
                                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
                             <Grid>
@@ -31,8 +33,10 @@
                                     <ColumnDefinition Width="15*" />
                                     <ColumnDefinition Width="15*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding Platform}" />
-                                <Label Grid.Column="1" Text="{Binding NewVersion}" />
+                                <!--<Label Grid.Column="0" Text="{Binding MacAddress}" />-->
+                                <Label Grid.Column="0" Text="{resources:Translate Text='openmediavault::Online'}" />
+                                
+                                <Label Grid.Column="1" Text="{Binding Status}" />
                                 <!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />-->
                                 <controls:DoodsSvgImage
                                     Grid.Column="2"
