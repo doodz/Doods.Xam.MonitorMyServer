@@ -34,8 +34,8 @@ You can also use openmediavault rpc page over Http.
   
   ## Support
   
-  If you like the quality and code you can support me 
-
+  If you like the quality and code you can support me <br/>
+- <a href="https://www.buymeacoffee.com/doods" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" height="20" width="96" alt="Buy Me A Coffee" style="height: 20px !important;width: 96px !important;" ></a>
 - [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square)](https://www.paypal.me/Doodsdev)  
 
 Thanks!
