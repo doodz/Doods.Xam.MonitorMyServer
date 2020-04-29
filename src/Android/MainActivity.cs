@@ -8,6 +8,7 @@ using Android.Gms.Ads;
 using Android.Net.Wifi;
 using Android.Runtime;
 using Plugin.Fingerprint;
+using Xamarin.Forms.PancakeView.Droid;
 
 namespace Doods.Xam.MonitorMyServer.Droid
 {
@@ -34,7 +35,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             ImageService.Instance.Initialize(config);
             Rg.Plugins.Popup.Popup.Init(this, bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
+            PancakeViewRenderer.Init();
 
             _wifi = (WifiManager)ApplicationContext.GetSystemService(Context.WifiService);
             _mlock = _wifi.CreateMulticastLock("Zeroconf lock");
