@@ -7,7 +7,6 @@ using Doods.Framework.Std.Extensions;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Comtrols;
 using Doods.Xam.MonitorMyServer.Services;
-using Doods.Xam.MonitorMyServer.Views;
 using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;

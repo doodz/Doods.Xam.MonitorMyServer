@@ -7,6 +7,7 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:settings="clr-namespace:Doods.Xam.MonitorMyServer.Views.Settings;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
                       x:DataType="settings:SettingsPAgeViewModel"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Settings.SettingsPage">
@@ -18,7 +19,8 @@
                 <StackLayout Orientation="Vertical">
                     <StackLayout>
                         <Label Text="Is rewarded (appUnlock)" />
-                        <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" />
+                        <Switch IsEnabled="False" IsToggled="{Binding IsRewarded,Mode=OneWay}" OnColor="Orange"
+                                ThumbColor="Green" />
                     </StackLayout>
                     <Label Text="{Binding EndReward,Mode=OneWay,StringFormat='End reward date {0}'}" />
                     <Label Text="You can add 7 days to your end date" />
@@ -32,9 +34,30 @@
                 <StackLayout>
                     <Label Text="Use fingerprint" />
                     <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
-                            IsToggled="{Binding UseFingerprint,Mode=TwoWay}" />
+                            IsToggled="{Binding UseFingerprint,Mode=OneWay}"
+                           
+                            OnColor="Orange"
+                            ThumbColor="Green">
+                        <Switch.Behaviors>
+                            <behaviors:EventToCommandBehavior
+                                Command="{Binding OnSwitchChangingCmd}"
+                                CommandParameter="{Binding .}"
+                                EventName="PropertyChanging" />
+                        </Switch.Behaviors>
+                    </Switch>
                 </StackLayout>
             </controls:TitledFrameView>
+            <controls:TitledFrameView Padding="8"
+                                      Title="UI Theme">
+                <StackLayout>
+                    <Label Text="Theme" />
+                    <Picker
+                        ItemsSource="{Binding ThemeOptions}"
+                        SelectedIndex="{Binding SelectedTheme}"
+                        />
+                </StackLayout>
+            </controls:TitledFrameView>
+
             <StackLayout>
                 <Button Text="Manage hosts" Command="{Binding ManageHostsCmd,Mode=OneWay}" />
             </StackLayout>

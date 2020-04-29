@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Doods.Xam.MonitorMyServer.Data
+﻿namespace Doods.Xam.MonitorMyServer.Data
 {
     internal class PreferencesKeys
     {
