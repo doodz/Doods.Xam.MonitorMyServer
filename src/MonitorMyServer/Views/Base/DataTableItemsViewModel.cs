@@ -79,7 +79,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             await base.OnInternalAppearingAsync();
         }
 
-        protected async Task RefreshData()
+        protected virtual async Task RefreshData()
         {
             var items = await DataProvider.GetItemsAsync<T>();
             Items.ReplaceRange(items); 

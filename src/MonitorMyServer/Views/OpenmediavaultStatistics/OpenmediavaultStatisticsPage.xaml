@@ -10,24 +10,47 @@
                       xmlns:models="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics.OpenmediavaultStatisticsPage">
     <StackLayout>
         <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-        <ScrollView Padding="10" VerticalOptions="FillAndExpand">
-        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+        <ScrollView Padding="5,10" VerticalOptions="FillAndExpand">
+        <StackLayout Padding="0" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
             <BindableLayout.ItemTemplate>
-                <DataTemplate >
-                    <controls:TitledFrameView Title="{Binding FileName}"
+                    <DataTemplate  x:DataType="models:RrdImageSource">
+
+                        <pancakeView:PancakeView Margin="0" CornerRadius="10" >
+                            <Grid >
+                                <controls1:AspectRatioConverter AspectRatio="0.5">
+                                <forms:CachedImage Source="{Binding ImageSource,Mode=OneWay}" 
+                                                   HorizontalOptions="Fill"
+                                                   LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true" 
+                                                   Aspect="AspectFill"/>
+                                </controls1:AspectRatioConverter>
+                                <Frame
+                                    Margin="5"
+                                    Padding="10,5"
+                                   
+                                    CornerRadius="15"
+                                    HasShadow="False"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Start">
+                                    <Label Text="{Binding FileName}" />
+                                </Frame>
+                            </Grid>
+                        </pancakeView:PancakeView>
+
+                        <!--<controls:TitledFrameView Title="{Binding FileName}"
                                               SubTitleStyle="{StaticResource NewSubTitleStyle}">
 
                         <Grid >
                             <forms:CachedImage Source="{Binding ImageSource,Mode=OneWay}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                                           LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+                                           LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true" 
                                            Aspect="Fill"/>
                         </Grid>
 
 
-                    </controls:TitledFrameView>
+                    </controls:TitledFrameView>-->
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
         </StackLayout>

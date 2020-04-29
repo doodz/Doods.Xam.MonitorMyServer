@@ -9,11 +9,10 @@
                       xmlns:resources="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
-                      
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-                       mc:Ignorable="d"
-                     
+                      xmlns:newFolder="clr-namespace:Doods.Synology.Webapi.Std.NewFolder;assembly=Doods.Synology.Webapi.Std"
+                      mc:Ignorable="d"
                       x:Class="Doods.Xam.MonitorMyServer.Views.SynologyInfo.SynologyInfoPage">
     <Shell.TitleView>
 
@@ -96,7 +95,7 @@
                     </StackLayout>
                 </controls:TitledFrameView>
 
-                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::NetworkInterfaces'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" 
                                           BindingContext="{Binding NetworkInfo,Mode=OneWay}">
                     <StackLayout>
@@ -108,13 +107,24 @@
                     </StackLayout>
                 </controls:TitledFrameView>
 
-                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::FileSystems'}"
                                           TitleStyle="{StaticResource NewTitleStyle}" 
-                                          BindingContext="{Binding NetworkInfo,Mode=OneWay}">
-                    <StackLayout>
-                     
-
+                                          BindingContext="{Binding StorageInfo,Mode=OneWay}">
+                    <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding VolInfo,Mode=OneWay}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="newFolder:VolInfo">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name,Mode=OneTime}"/>
+                                    <Label Text="{Binding Desc,Mode=OneTime}"/>
+                                    <Label Text="{Binding Status,Mode=OneTime}"/>
+                                    <Label Text="{Binding Volume,Mode=OneTime}"/>
+                                    <Label Text="{Binding TotalSize,Mode=OneTime}"/>
+                                    <Label Text="{Binding UsedSize,Mode=OneTime}"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
                     </StackLayout>
+
                 </controls:TitledFrameView>
 
             </StackLayout>

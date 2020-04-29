@@ -51,6 +51,8 @@ namespace Doods.Xam.MonitorMyServer.Views
            
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
 
+
+
         }
     }
 }

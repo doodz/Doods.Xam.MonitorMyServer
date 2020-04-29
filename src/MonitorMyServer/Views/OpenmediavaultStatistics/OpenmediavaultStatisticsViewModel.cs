@@ -5,6 +5,7 @@ using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
@@ -40,6 +41,26 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
             Items.Clear();
             var result = await _sshService.ListRdd();
 
+            // //efficiently process Async operations
+            //var tasks= result.Select(r => _sshService.GetRrdFile(r)).ToList();
+
+            //while (tasks.Any() )
+            //{
+            //    var completedTask = await Task.WhenAny(tasks)
+            //        .ConfigureAwait(false);
+
+            //    tasks.Remove(completedTask);
+            //    var resultTask = await completedTask;
+            //    var img = new StreamImageSource();
+            //    img.Stream = token => Task.FromResult<Stream>(new MemoryStream(resultTask));
+
+            //    var item = new RrdImageSource();
+            //    //item.FileName = arrayString[i++];
+            //    item.FileName = "" + completedTask.Id;
+            //    item.ImageSource = img;
+            //    Items.Add(item);
+            // }
+
             var files = await _sshService.GetRrdFiles(result);
 
             var arrayString = result.ToArray();
@@ -49,12 +70,12 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
             int i = 0;
             foreach (var byteArray in files)
             {
-                
+
                 var img = new StreamImageSource();
                 img.Stream = token => Task.FromResult<Stream>(new MemoryStream(byteArray));
 
                 var item = new RrdImageSource();
-                item.FileName =arrayString[i++];
+                item.FileName = arrayString[i++];
                 item.ImageSource = img;
                 Items.Add(item);
             }
@@ -89,6 +110,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
 
     public class RrdImageSource
     {
+
+        public double MinimumWidth => DeviceDisplay.MainDisplayInfo.Width;
+        public double Minimumhey => DeviceDisplay.MainDisplayInfo.Width/2;
         public ImageSource ImageSource { get; set; }
 
         public string FileName { get; set; }

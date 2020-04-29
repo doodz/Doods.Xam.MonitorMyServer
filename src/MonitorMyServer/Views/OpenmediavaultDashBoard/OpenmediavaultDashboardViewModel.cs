@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Autofac;
+using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Std;
@@ -137,9 +138,16 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                     () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
                     () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
             }
+            catch (AuthorizationException ex)
+            {
+                
+
+                SetLabelsStateItem(openmediavault.Error, ex.Message);
+            }
             catch (Exception e)
             {
-                SetLabelsStateItem("Error", e.Message);
+                
+                SetLabelsStateItem(openmediavault.Error, e.Message);
             }
 
             await base.OnInternalAppearingAsync();

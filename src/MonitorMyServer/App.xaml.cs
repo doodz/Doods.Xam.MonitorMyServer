@@ -6,7 +6,10 @@ using Doods.Xam.MonitorMyServer.Views.Login;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Doods.Framework.ApiClientBase.Std.Classes;
+using Doods.Framework.Http.Std.Ping;
 using Doods.Framework.Mobile.Std.Config;
+using Doods.Framework.Mobile.Std.Helpers;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
@@ -115,7 +118,12 @@ namespace Doods.Xam.MonitorMyServer
             builder.RegisterModule<Services.Bootstrapper>();
 
             builder.RegisterType<SynchronizedCache<object>>().As<ISynchronizedCache<object>>().SingleInstance();
-
+            builder.RegisterType<AddressLookupService>().As<IAddressLookupService>().SingleInstance();
+            builder.RegisterType<IcmpPingService>().AsSelf();
+            builder.RegisterType<RdpPortPingService>().AsSelf();
+            builder.RegisterType<PingService>().As<IPingService>().SingleInstance();
+           
+           
             //builder.RegisterModule<Services.AutoMapperConfig>();
 
             builder.RegisterModule<AutoMapperConfig>();
@@ -151,6 +159,9 @@ namespace Doods.Xam.MonitorMyServer
         protected override async void OnStart()
         {
             await ProveYouHaveFingers();
+            base.OnStart();
+            ThemeHelper.ChangeTheme(ThemeHelper.CurrentTheme, true);
+            
             var config = _container.Resolve<IConfiguration>();
             if (CrossMTAdmob.IsSupported)
                 CrossMTAdmob.Current.AdsId = config.AdsKey;
@@ -176,6 +187,7 @@ namespace Doods.Xam.MonitorMyServer
             await ProveYouHaveFingers();
 
             base.OnResume();
+            ThemeHelper.ChangeTheme(ThemeHelper.CurrentTheme, true);
             await Task.FromResult(0);
         }
 
