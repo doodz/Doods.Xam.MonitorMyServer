@@ -7,11 +7,12 @@ using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std.Extensions;
-using Doods.Xam.MonitorMyServer.Resx;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
+using Resource = Doods.Xam.MonitorMyServer.Resx.Resource;
 
 namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 {
@@ -79,14 +80,15 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
         private void Current_OnRewardedVideoAdLeftApplication(object sender, EventArgs e)
         {
-            SetLabelsStateItem("Warning", "you need to wath all video");
+            
+            SetLabelsStateItem(openmediavault.Warning, "you need to wath all video");
         }
 
 
         private void Current_OnRewardedVideoAdClosed(object sender, EventArgs e)
         {
             if (!_rewardService.IsRewarded)
-                SetLabelsStateItem("Warning", "you need to wath all video");
+                SetLabelsStateItem(openmediavault.Warning, "you need to wath all video");
         }
 
         private async void SelectUnselectAllItems()
