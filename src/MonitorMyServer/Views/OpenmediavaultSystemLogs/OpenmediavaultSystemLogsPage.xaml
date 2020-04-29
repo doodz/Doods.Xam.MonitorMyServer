@@ -5,18 +5,19 @@
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-                     
+
                       mc:Ignorable="d"
-                     
+
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       xmlns:data="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmediavault.Rpc.Std"
-                      
+
                       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
-                     
+
                       xmlns:v4="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4;assembly=Doods.Openmediavault.Rpc.Std"
-                    
+                      xmlns:openmediavaultSystemLogs="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;assembly=Doods.Xam.MonitorMyServer"
+
                       x:Name="Page"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs.OpenmediavaultSystemLogsPage">
     <StackLayout>
@@ -30,80 +31,218 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
 
             </Grid.RowDefinitions>
 
             <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
-               Text="{resources:Translate Text='openmediavault::Logs'}" />
+                   Text="{resources:Translate Text='openmediavault::Logs'}" />
             <controls:EnumBindableDescriptionPicker
-            x:TypeArguments="data:OmvLogFileEnum"
-            SelectedItem="{Binding SelectedLogFile, Mode=TwoWay}"
-            Grid.Row="1"
-            Grid.Column="0" />
+                x:TypeArguments="data:OmvLogFileEnum"
+                SelectedItem="{Binding SelectedLogFile, Mode=TwoWay}"
+                Grid.Row="1"
+                Grid.Column="0" />
 
             <controls:DoodsSvgImage
                 IsVisible="false"
-            Grid.Column="1"
-            Grid.Row="1"
-            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
-            WidthRequest="40"
-            HeightRequest="40"
-            HorizontalOptions="EndAndExpand"
-            VerticalOptions="Center" >
+                Grid.Column="1"
+                Grid.Row="1"
+                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                WidthRequest="40"
+                HeightRequest="40"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center">
 
                 <controls:DoodsSvgImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                    <TapGestureRecognizer
+                        Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}"
+                        CommandParameter="{Binding .}" />
                 </controls:DoodsSvgImage.GestureRecognizers>
             </controls:DoodsSvgImage>
             <controls:DoodsSvgImage
                 IsVisible="False"
-            Grid.Column="2"
-            Grid.Row="1"
-            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.CloudDownload}}"
-            WidthRequest="40"
-            HeightRequest="40"
-            HorizontalOptions="EndAndExpand"
-            VerticalOptions="Center" >
+                Grid.Column="2"
+                Grid.Row="1"
+                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.CloudDownload}}"
+                WidthRequest="40"
+                HeightRequest="40"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center">
                 <controls:DoodsSvgImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding BindingContext.DownloadItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                    <TapGestureRecognizer
+                        Command="{Binding BindingContext.DownloadItemCommand,Mode=OneWay, Source={x:Reference Page}}"
+                        CommandParameter="{Binding .}" />
                 </controls:DoodsSvgImage.GestureRecognizers>
             </controls:DoodsSvgImage>
             <controls:DoodsSvgImage
-            Grid.Column="3"
-            Grid.Row="1"
-           ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColor}"
-            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Sync}}"
-            WidthRequest="40"
-            HeightRequest="40"
-            HorizontalOptions="EndAndExpand"
-            VerticalOptions="Center" >
+                Grid.Column="3"
+                Grid.Row="1"
+                ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColor}"
+                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Sync}}"
+                WidthRequest="40"
+                HeightRequest="40"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center">
                 <controls:DoodsSvgImage.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding BindingContext.SyncItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                    <TapGestureRecognizer
+                        Command="{Binding BindingContext.SyncItemCommand,Mode=OneWay, Source={x:Reference Page}}"
+                        CommandParameter="{Binding .}" />
                 </controls:DoodsSvgImage.GestureRecognizers>
             </controls:DoodsSvgImage>
         </Grid>
-        <ScrollView>
-            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}">
-                <BindableLayout.ItemTemplate>
-                    <DataTemplate x:DataType="v4:LogLine">
-                        <Grid >
+        <!--<ListView
+
+            ItemsSource="{Binding LogsLines,Mode=OneWay}"
+            RowHeight="75"
+            SeparatorVisibility="None">
+
+            <ListView.Header>
+                <StackLayout Padding="20,40,0,30">
+                    <Label  Text="Class Schedule" />
+                    <Label  Text="{Binding LasteDate}" />
+                </StackLayout>
+            </ListView.Header>
+
+            <ListView.Footer>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="64" />
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.RowSpan="2" Text="bla bla bla get image fade to White or black" />
+                  
+                    --><!--<Image Grid.RowSpan="2" Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Start"
+                           Source="YogaImage.png" />
+                    <Image Aspect="Fill" Grid.RowSpan="2" HorizontalOptions="Fill" Source="FadeToWhite.png" />--><!--
+                </Grid>
+            </ListView.Footer>
+
+            <ListView.ItemTemplate>
+                <DataTemplate  x:DataType="openmediavaultSystemLogs:LogLineModel">
+                    <ViewCell>
+                        <Grid ColumnSpacing="0" RowSpacing="0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*"/>
-
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="30"  />
+                                <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
 
-                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Date,Mode=OneWay}"/>
-                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Message, Mode=OneWay}"/>
+                            <Label HorizontalOptions="Center"
+                                   Text="{Binding Hour}" />
+
+                            <Label
+                                Grid.Column="2"
+                                Margin="20,0"
+                               
+                                Text="{Binding Title}" />
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                Margin="20,0"
+                                Text="{Binding Message}" />
+
+                            <BoxView
+                                Grid.RowSpan="2"
+                                Grid.Column="1"
+                                BackgroundColor="Orange"
+                                HorizontalOptions="Center"
+                                IsVisible="{Binding IsLast}"
+                                VerticalOptions="Fill"
+                                WidthRequest="3" />
+
+                           
+                                <controls:DoodsSvgImage
+                                    Grid.Column="1"
+                                   
+                                            VerticalOptions="Start"                              
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
+                                
+                                  HeightRequest="30"
+                                
+                                    Grid.Row="0"
+                                />
+                             
+                           
+                           
+                                
+
                         </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
 
+
+        <ScrollView>
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}" Spacing="0">
+                
+                <BindableLayout.ItemTemplate >
+                    <DataTemplate x:DataType="openmediavaultSystemLogs:LogLineModel">
+                        <Grid Margin="0" Padding="0" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="30"  />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="5" />
+                            </Grid.RowDefinitions>
+
+                            <Label HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="{Binding Hour}" />
+
+                            <Label
+                                Grid.Column="2"
+                                Margin="20,0"
+                               VerticalOptions="Center"
+                                Text="{Binding Title}" />
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                Margin="20,0"
+                                Text="{Binding Message}" />
+
+                            <BoxView
+                                Grid.RowSpan="3"
+                                Grid.Column="1"
+                                BackgroundColor="Orange"
+                                HorizontalOptions="Center"
+                                IsVisible="{Binding IsLast}"
+                                VerticalOptions="Fill"
+                                WidthRequest="3" />
+
+
+                            <controls:DoodsSvgImage
+                                    Grid.Column="1"
+                                   
+                                            VerticalOptions="Start"                              
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
+                                
+                                  HeightRequest="30"
+                                
+                                    Grid.Row="0"
+                                />
+
+
+
+
+
+                        </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </StackLayout>
