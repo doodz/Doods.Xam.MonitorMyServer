@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Newtonsoft.Json;
 
@@ -53,7 +54,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4.FileSystem
         public string Options { get; set; }
 
         [JsonProperty("slaves", NullValueHandling = NullValueHandling.Ignore)]
-        public string Slaves { get; set; }
+        public List<object> Slaves { get; set; }
 
         [JsonProperty("bondprimary", NullValueHandling = NullValueHandling.Ignore)]
         public string Bondprimary { get; set; }

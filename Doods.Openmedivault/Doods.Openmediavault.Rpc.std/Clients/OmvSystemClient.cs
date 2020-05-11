@@ -41,27 +41,9 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         {
             ServiceName = "System";
         }
-        private OMVVersion _OMVVersions;
+       
 
-        public void SetOMVVersion(OMVVersion version)
-        {
-            _OMVVersions = version;
-        }
-
-        public OMVVersion GetRpcVersion()
-        {
-            if (_OMVVersions == null) CheckRpcVersionAsync();
-
-            return _OMVVersions;
-        }
-        public async Task<OMVVersion> CheckRpcVersionAsync()
-        {
-            var request = NewRequest("getInformation");
-            request.Options = new Options {Updatelastaccess = false};
-           
-            var result = await RunCmd<object>(request);
-            return _OMVVersions =OMVVersions.GetVersionFromString(result.ToString());
-        }
+      
 
         public async Task<OMVInformations> GetSystemInformations()
         {

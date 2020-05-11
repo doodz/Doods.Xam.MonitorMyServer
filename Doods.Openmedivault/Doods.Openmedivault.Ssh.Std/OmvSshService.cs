@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Doods.Framework.ApiClientBase.Std.Classes;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
@@ -9,6 +10,12 @@ using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmedivault.Ssh.Std
 {
+    internal class DefaultSshRequest : OmvRequestBase
+    {
+        public DefaultSshRequest(string requestString) : base(requestString)
+        {
+        }
+    }
     public class OmvSshService : APIServiceBase, IRpcClient
     {
         public RequestType RequestType => RequestType.ssh;
@@ -29,6 +36,14 @@ namespace Doods.Openmedivault.Ssh.Std
         {
             var b = _client.Connect();
             return Task.FromResult(b);
+        }
+
+        public async Task<IEnumerable<string>> ListRrdFilesAsync()
+        {
+             var sshrequest = new DefaultSshRequest("ls /var/lib/openmediavault/rrd");
+             var response = await _client.ExecuteTaskAsync<string>(sshrequest).ConfigureAwait(false);
+            //var result = await RunCommand("ls  /var/lib/openmediavault/rrd");
+            return response.Content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public Task<IEnumerable<byte[]>> GetRrdFilesAsync(IEnumerable<string> filesPaths)

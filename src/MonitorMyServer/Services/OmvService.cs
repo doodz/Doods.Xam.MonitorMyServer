@@ -39,6 +39,16 @@ namespace Doods.Xam.MonitorMyServer.Services
             return result.Data;
         }
 
+        public Task<NetworkSetting> GetSettings()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<object> SetSettings(NetworkSetting settings)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<IEnumerable<OmvFilesystems>> GetFilesystems()
         {
             return RunCmd<IEnumerable<OmvFilesystems>>(new FilesystemsRequest());

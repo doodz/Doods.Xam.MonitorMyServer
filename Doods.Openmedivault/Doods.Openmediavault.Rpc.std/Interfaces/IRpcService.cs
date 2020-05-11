@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Doods.Framework.Ssh.Std.Interfaces;
+using Doods.Openmediavault.Rpc.Std.Clients;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V5;
@@ -17,9 +18,9 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<byte[]> GetRrdFile(string filePath);
         Task<IEnumerable<string>> ListRdd();
     }
-    public interface IRpcService : IOMVSettingsService, IOMVSshBackgroundService, IRrdService
+    public interface IRpcService : IOMVSettingsService, IOMVSshBackgroundService, IRrdService, IOmvNetworkClient
     {
-        Task<IEnumerable<Devices>> GetDevices();
+       
         Task<IEnumerable<OmvFilesystems>> GetFilesystems();
 
         Task<IEnumerable<ServicesStatus>> GetServicesStatus();

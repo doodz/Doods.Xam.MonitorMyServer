@@ -7,16 +7,22 @@ using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
-    public class OmvNetworkClient : OmvServiceClient
+    public interface IOmvNetworkClient
     {
-        public Task<ResponseArray<Devices>> GetDevices()
+        Task<IEnumerable<Devices>> GetDevices();
+        Task<NetworkSetting> GetSettings();
+        Task<object> SetSettings(NetworkSetting settings);
+    }
+    public class OmvNetworkClient : OmvServiceClient, IOmvNetworkClient
+    {
+        public async Task<IEnumerable<Devices>> GetDevices()
         {
             var request = NewRequest("getInterfaceList");
             request.Params = new ParamsListFilter();
           
-            var result = RunCmd<ResponseArray<Devices>>(request);
+            var result = await RunCmd<ResponseArray<Devices>>(request);
 
-            return result;
+            return result.Data;
         }
         public OmvNetworkClient(IRpcClient client) : base(client)
         {

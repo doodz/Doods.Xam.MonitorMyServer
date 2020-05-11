@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmedivault.Ssh.Std.Requests;
@@ -49,6 +50,33 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
             return result;
         }
+
+        //Form OMV 5
+        public Task<string> Install(IEnumerable<string> lst)
+        {
+            var request = NewRequest("install");
+            request.Params = new { packages = lst };
+
+            var result = RunCmd<string>(request);
+
+            return result;
+        }
+
+
+        public async Task<string> InstallPacjages(IEnumerable<string> lst)
+        {
+            await CheckRpcVersionAsync();
+            var request = NewRequest("getInformation");
+            request.Options = new Options { Updatelastaccess = false };
+
+            if (GetRpcVersion().Name == OMVVersions.Arrakis)
+            {
+                return await UpgradeAptList(lst);
+            }
+            return await Install(lst);
+        }
+
+        //For OMV 4
         public Task<string> UpgradeAptList(IEnumerable<string> lst)
         {
 
