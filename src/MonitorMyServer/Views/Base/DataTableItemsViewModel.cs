@@ -54,7 +54,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         protected abstract void EditItem(object obj);
 
 
-        private void DeleteItem(object obj)
+        protected virtual void DeleteItem(object obj)
         {
             if (obj == null) return;
             

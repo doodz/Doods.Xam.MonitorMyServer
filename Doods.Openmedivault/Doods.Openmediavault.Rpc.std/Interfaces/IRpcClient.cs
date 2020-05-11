@@ -11,6 +11,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<T> ExecuteTaskAsync<T>(IRpcRequest request);
         Task<bool> LoginAsync(string username, string password);
         Task<IEnumerable<byte[]>> GetRrdFilesAsync(IEnumerable<string> filesPaths);
+        Task<IEnumerable<string>> ListRrdFilesAsync();
         Task<byte[]> GetRrdFileAsync(string filePath);
     }
 }

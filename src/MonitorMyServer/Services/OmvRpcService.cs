@@ -75,10 +75,20 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _omvSystemClient.GetRpcVersion();
         }
 
-        public async Task<IEnumerable<Devices>> GetDevices()
+        public  Task<IEnumerable<Devices>> GetDevices()
         {
-            var result = await _omvNetworkClient.GetDevices();
-            return result.Data;
+            return  _omvNetworkClient.GetDevices();
+           
+        }
+
+        public Task<NetworkSetting> GetSettings()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<object> SetSettings(NetworkSetting settings)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<IEnumerable<OmvFilesystems>> GetFilesystems()
@@ -120,7 +130,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public Task<string> UpgradeAptList(IEnumerable<string> lst)
         {
-            return _omvAptClient.UpgradeAptList(lst);
+            return _omvAptClient.InstallPacjages(lst);
         }
 
         public Task<Output<T>> GetOutput<T>(string filename, int pos)
