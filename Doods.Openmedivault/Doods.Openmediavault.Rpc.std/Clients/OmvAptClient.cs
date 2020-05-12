@@ -69,7 +69,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             var request = NewRequest("getInformation");
             request.Options = new Options { Updatelastaccess = false };
 
-            if (GetRpcVersion().Name == OMVVersions.Arrakis)
+            if (GetRpcVersion() < OMVVersions.Version5)
             {
                 return await UpgradeAptList(lst);
             }

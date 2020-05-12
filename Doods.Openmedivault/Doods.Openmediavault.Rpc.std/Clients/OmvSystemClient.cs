@@ -50,8 +50,10 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             await CheckRpcVersionAsync();
             var request = NewRequest("getInformation");
             request.Options = new Options { Updatelastaccess = false };
+          
            
-            if (GetRpcVersion().Name == OMVVersions.Arrakis)
+
+            if (GetRpcVersion() < OMVVersions.Version5)
             {
                 var lst = await RunCmd<IEnumerable<SystemInformation>>(request);
                 var obj = new OMVInformations { LegacyMode = true };
