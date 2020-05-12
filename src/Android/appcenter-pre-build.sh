@@ -18,10 +18,10 @@ then
 
     if [ -z "$PACKAGE_NAME" ]
         then
-            echo "Changing package name to ${PACKAGE_NAME}"      
+            echo "Updating package name to ${PACKAGE_NAME}"      
             sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
         else
-            echo ""
+            echo "No PACKAGE_NAME key found"
         fi
     echo "File content:"
     cat $ANDROID_MANIFEST_FILE
