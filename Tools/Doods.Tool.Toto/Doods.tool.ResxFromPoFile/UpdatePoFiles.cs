@@ -71,7 +71,8 @@ namespace Doods.tool.ResxFromPoFile
                 var groups = match.Groups;
                 var key = ToCamelCase(groups[1].Value).Trim();
                 var lowerKey = key.ToLower();
-                if (!string.IsNullOrWhiteSpace(key) && dico.Keys.All(k => k.ToLower() != lowerKey))
+                if (!string.IsNullOrWhiteSpace(groups[1].Value) && !string.IsNullOrWhiteSpace(key)
+                                                                && dico.Keys.All(k => k.ToLower() != lowerKey))
                     dico.Add(key, groups[pos].Value);
             }
 
