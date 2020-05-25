@@ -54,8 +54,8 @@ if ! brew list jq > /dev/null; then
     echo "brew install jq"
     brew install jq
 fi
-echo "Load source github.sh"
-source github.sh
+echo "Load source appcenter-github.sh"
+source appcenter-github.sh
 
 if [ "$AGENT_JOBSTATUS" != "Succeeded" ]; then
     echo "AGENT_JOBSTATUS fail"

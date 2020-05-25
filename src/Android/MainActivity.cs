@@ -23,7 +23,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             base.OnCreate(bundle);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
             CrossFingerprint.SetCurrentActivityResolver(() => this);
-            MobileAds.Initialize(ApplicationContext, "ca-app-pub-4922361220283829~5150956035");
+           
             var config = new FFImageLoading.Config.Configuration()
             {
                 VerboseLogging = true,
