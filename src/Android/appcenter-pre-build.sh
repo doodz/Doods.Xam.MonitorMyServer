@@ -16,7 +16,7 @@ then
     echo "Updating version name to ${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID} in AndroidManifest.xml"
     sed -i '' 's/versionName=".*"/versionName="'${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID}'"/' $ANDROID_MANIFEST_FILE
 
-    if [ -z "$PACKAGE_NAME" ]
+    if [ -e "$PACKAGE_NAME" ]
         then
             echo "Updating package name to ${PACKAGE_NAME}"      
             sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
