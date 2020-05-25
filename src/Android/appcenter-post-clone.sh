@@ -17,31 +17,19 @@ echo "Author       : Doods"
 echo "=============================================================================="
 echo "print working directory :"
 pwd
-echo "Current APPCENTER_SOURCE_DIRECTORY is $APPCENTER_SOURCE_DIRECTORY"
-cd $APPCENTER_SOURCE_DIRECTORY
-# [command]/bin/bash /Users/runner/runners/2.164.8/scripts/android-xamarin-postprocess.sh /Users/runner/runners/2.164.8/work/1/a/build/*.apk
-echo "APPCENTER_OUTPUT_DIRECTORY is $APPCENTER_OUTPUT_DIRECTORY"
-
-# mkdir Doods.Frameworks.Std
-# #cd Doods.Frameworks.Std
-# echo "print working directory :"
-# pwd
-# echo "clone https://github.com/doodz/Doods.Frameworks.Std.git"
-
-# git clone https://github.com/doodz/Doods.Frameworks.Std.git --progress
-
-# echo "Directories ?"
-# ls -la
-# git submodule update
 echo "=============================================================================="
 echo "Task         : Update app.config"
 echo "Description  : inject keys"
 echo "Author       : Doods"
 echo "=============================================================================="
 MY_CONFIG=$APPCENTER_SOURCE_DIRECTORY/src/Android/Assets/App.config
+echo MobileCenterKey__
 sed -i 's/MobileCenterKey__/'$MobileCenter_Key'/' $MY_CONFIG
+echo RewardedVideoKey__
 sed -i 's/RewardedVideoKey__/'$RewardedVideo_Key'/' $MY_CONFIG
+echo AdsKey__
 sed -i 's/AdsKey__/'$Ads_Key'/' $MY_CONFIG
+echo AppAdsKey__
 sed -i 's/AppAdsKey__/'$AppAds_Key'/' $MY_CONFIG
 
 if [ -z "$ModeOmvOnly_Key" ]
