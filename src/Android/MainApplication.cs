@@ -6,6 +6,7 @@ using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Config;
 using System;
 using System.Xml;
+using Android.Gms.Ads;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
@@ -40,6 +41,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             //Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             App.SetupContainer(Bootstrapper.CreateContainer());
             LoadConfiguration();
+
             LoadSettings();
         }
 
@@ -53,6 +55,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
         private void LoadSettings()
         {
             //App.Container.Resolve<ISettings>().Initialize();
+           
         }
 
         private string FormatPassword()
@@ -82,8 +85,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 {
                     var configService = App.Container.Resolve<IConfiguration>();
                     configService.LoadConfiguration(reader);
+                    MobileAds.Initialize(ApplicationContext, configService.AppAdsKey);//
                 }
             }
+           
         }
     }
 }
