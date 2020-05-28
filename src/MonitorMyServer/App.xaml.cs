@@ -83,7 +83,8 @@ namespace Doods.Xam.MonitorMyServer
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;
             //MainPage = new AppShell();
-            MainPage = new MyCustomShellApp();
+            
+             MainPage = new MyCustomShellApp();
         }
 
         public static NavigationServiceType NavigationServiceType = NavigationServiceType.ShellNavigation;
@@ -93,7 +94,12 @@ namespace Doods.Xam.MonitorMyServer
             get
             {
                 if (_container == null)
-                    throw new Exception("Please initialize the container first, through SetupContainer");
+                {
+                    throw new Exception($"Please initialize the container first, through SetupContainer" +
+                                        $"{Environment.NewLine}{Environment.StackTrace}");
+                    
+                }
+                   
 
                 return _container;
             }

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="Page"
+             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm"
+            
+             
+             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+             xmlns:hostManager="clr-namespace:Doods.Xam.MonitorMyServer.Views.HostManager;assembly=Doods.Xam.MonitorMyServer"
+             xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+             x:Class="Doods.Xam.MonitorMyServer.Views.HostManager.HostManagerPage">
+    <ContentPage.Resources>
+       
+
+            <DataTemplate  x:Key="DefaultTemplate" x:DataType="hostManager:HostViewModel">
+                <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
+                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20*" />
+                            <ColumnDefinition Width="50*" />
+                            <ColumnDefinition Width="15*" />
+                            <ColumnDefinition Width="15*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{Binding MacAddress}" />
+                        <Label Grid.Column="0" Text="{resources:Translate Text='openmediavault::Online'}" />
+
+                        <Label Grid.Column="1" Text="{Binding Status}" />
+                        <!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />-->
+                        <controls:DoodsSvgImage
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemTeal}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                            <controls:DoodsSvgImage.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                            </controls:DoodsSvgImage.GestureRecognizers>
+                        </controls:DoodsSvgImage>
+                        <controls:DoodsSvgImage
+                                    ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColorToRed}"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemRed}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                            <controls:DoodsSvgImage.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                            </controls:DoodsSvgImage.GestureRecognizers>
+                        </controls:DoodsSvgImage>
+                    </Grid>
+
+                </controls:TitledFrameView>
+            </DataTemplate>
+        
+      
+        <DataTemplate x:Key="SshTemplate" x:DataType="hostManager:HostViewModel">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="138" />
+                    <RowDefinition Height="46" />
+                    <RowDefinition Height="46" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="White"
+                    CornerRadius="6,6,0,0" />
+                <BoxView
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="{StaticResource ColorPrimaryDark}"
+                    CornerRadius="0,0,6,6" />
+                <Label
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center"
+                    Text="SshTemplate"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="OmvTemplate" x:DataType="hostManager:HostViewModel">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="138" />
+                    <RowDefinition Height="46" />
+                    <RowDefinition Height="46" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="White"
+                    CornerRadius="6,6,0,0" />
+                <BoxView
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="{StaticResource ColorPrimaryDark}"
+                    CornerRadius="0,0,6,6" />
+                <Label
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="Center"
+                    Text="OmvTemplate"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+
+                <!--  movie information  -->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Image
+                    Margin="0,0,-55,0"
+                    Source="Fresh"
+                    TranslationX="-28" />
+
+                    <StackLayout Margin="14,0,0,0" VerticalOptions="Center">
+                        <Label Text="{Binding HostName}" />
+                        <Label  Text="{Binding Description}" />
+                    </StackLayout>
+                    <BoxView
+                    Margin="0,0,14,0"
+                    HeightRequest=".5"
+                    VerticalOptions="End"
+                     />
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Margin="14,0,0,0" VerticalOptions="Center">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="rotten_popcorn" />
+                                <Label  Text="{Binding HostName, StringFormat='{0:}%'}" />
+                            </StackLayout>
+                            <Label
+                            Margin="0,-5,0,0"
+                           
+                            Text="Audience" />
+                        </StackLayout>
+
+                        <StackLayout
+                        Grid.Column="1"
+                        Margin="14,0,0,0"
+                        VerticalOptions="Center">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="rotten_tomato" />
+                                <Label  Text="{Binding HostName, StringFormat='{0:}%'}" />
+                            </StackLayout>
+                            <Label
+                            Margin="0,-5,0,0"
+                            Text="Tomatometer" />
+                        </StackLayout>
+
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="SynoTemplate" x:DataType="hostManager:HostViewModel">
+
+            
+
+
+
+            <Frame>
+              <Grid>
+                  <Grid.RowDefinitions>
+                      <RowDefinition Height="138" />
+                      <RowDefinition />
+                        <RowDefinition Height="*" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="150" />
+                      <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+                  <BoxView
+                      Grid.Row="0"
+                      Grid.RowSpan="3"
+                      Grid.Column="0"
+                      BackgroundColor="White"
+                      CornerRadius="6,6,0,0" />
+
+                    <StackLayout   Grid.Column="1"  Grid.Row="1" Grid.RowSpan="2">
+                    <Label Text="{Binding HostName}"/>
+                    <Label  Text="{Binding Description}"/>
+                    <Label Text="Last sync"/>
+                    <Label Text="19-05-2020"/>
+                    <Label Grid.Column="0" Text="{resources:Translate Text='openmediavault::Online'}" />
+                    <Label Grid.Column="1" Text="{Binding Status}" />
+                    <controls:DoodsSvgImage
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemTeal}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                        <controls:DoodsSvgImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                        </controls:DoodsSvgImage.GestureRecognizers>
+                    </controls:DoodsSvgImage>
+                    <controls:DoodsSvgImage
+                                    ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColorToRed}"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemRed}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                        <controls:DoodsSvgImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                        </controls:DoodsSvgImage.GestureRecognizers>
+                    </controls:DoodsSvgImage>
+                    </StackLayout>
+                </Grid>
+          </Frame>
+        </DataTemplate>
+
+        <hostManager:HostDataTemplateSelector x:Key="HostDataTemplateSelector" 
+                                              DefaultTemplate="{StaticResource DefaultTemplate}"
+                                              OmvTemplate="{StaticResource OmvTemplate}"
+                                              RpiTemplate="{StaticResource DefaultTemplate}"
+                                              SshTemplate="{StaticResource SshTemplate}"
+                                              SynoTemplate="{StaticResource SynoTemplate}"/>
+    </ContentPage.Resources>
+
+    <Grid>
+        <ScrollView Padding="10" VerticalOptions="FillAndExpand">
+            <ScrollView.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="NewSubTitleStyle" TargetType="Label">
+                        <Setter Property="FontAttributes" Value="None" />
+                        <Setter Property="TextColor" Value="BlueViolet" />
+                    </Style>
+                </ResourceDictionary>
+            </ScrollView.Resources>
+            <!--<StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}" BindableLayout.ItemTemplateSelector="{StaticResource HostDataTemplateSelector}"/>-->
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}">
+                <BindableLayout.ItemTemplate >
+                    <DataTemplate x:DataType="hostManager:HostViewModel">
+                        <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
+                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20*" />
+                                    <ColumnDefinition Width="50*" />
+                                    <ColumnDefinition Width="15*" />
+                                    <ColumnDefinition Width="15*" />
+                                </Grid.ColumnDefinitions>
+                                <!--<Label Grid.Column="0" Text="{Binding MacAddress}" />-->
+                                <Label Grid.Column="0" Text="{resources:Translate Text='openmediavault::Online'}" />
+
+                                <Label Grid.Column="1" Text="{Binding Status}" />
+                                <!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />-->
+                                <controls:DoodsSvgImage
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemTeal}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <controls:DoodsSvgImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.EditItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                                <controls:DoodsSvgImage
+                                    ReplaceStringMap="{x:Static enum:SvgIconTarget.ReplaceColorToRed}"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    Color="{DynamicResource SystemRed}"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center" >
+                                    <controls:DoodsSvgImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteItemCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                            </Grid>
+
+                        </controls:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</mvvm:BaseContentPage>
