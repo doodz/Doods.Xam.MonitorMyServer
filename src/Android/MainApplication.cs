@@ -7,6 +7,7 @@ using Doods.Xam.MonitorMyServer.Droid.Config;
 using System;
 using System.Xml;
 using Android.Gms.Ads;
+using Doods.Xam.MonitorMyServer.Droid.Services;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
@@ -27,6 +28,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
     {
         public MainApplication(IntPtr javaRef, JniHandleOwnership transfert) : base(javaRef, transfert)
         {
+            AndroidEnvironment.UnhandledExceptionRaiser += HandleAndroidException;
         }
 
         public override void OnCreate()
@@ -36,7 +38,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
             Xamarin.Essentials.Platform.Init(this);
             Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
 
-            AndroidEnvironment.UnhandledExceptionRaiser += HandleAndroidException;
+           
             //SecureStorageImplementation.StoragePassword = FormatPassword();
             //Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             App.SetupContainer(Bootstrapper.CreateContainer());
@@ -48,8 +50,18 @@ namespace Doods.Xam.MonitorMyServer.Droid
         private void HandleAndroidException(object sender, RaiseThrowableEventArgs e)
         {
             e.Handled = true;
-            App.Container.Resolve<ILogger>().Error(e.Exception);
+
+            try
+            {
+                App.Container.Resolve<ILogger>().Error(e.Exception);
+            }
+            catch (Exception ex2)
+            {
+                new LocalLogger().Error(e.Exception);
+                throw ex2;
+            }
             //App.Container.Resolve<ITelemetryService>().Exception(new UnHandledException(e.Exception));
+            
         }
 
         private void LoadSettings()
