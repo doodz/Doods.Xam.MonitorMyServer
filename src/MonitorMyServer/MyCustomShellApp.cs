@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Autofac;
 using Doods.Framework.Repository.Std.Tables;
+using Doods.Framework.Std;
 using Doods.Framework.Std.Extensions;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Comtrols;
@@ -48,7 +49,20 @@ namespace Doods.Xam.MonitorMyServer
                 this, MessengerKeys.HostChanged,
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
-            FlyoutHeader = new FlyoutHeader();
+
+            var config=
+            App.Container.Resolve<IConfiguration>();
+
+            if (!config.ModeOmvOnlyKey)
+            {
+                FlyoutHeader = new FlyoutHeader("MMS_graphic.png");
+            }
+            else
+            {
+                FlyoutHeader = new FlyoutHeader("OMV_graphic.png");
+            }
+           
+           
             var homeItem = new FlyoutItem
             {
                 Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,

@@ -8,7 +8,6 @@ using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
-using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
