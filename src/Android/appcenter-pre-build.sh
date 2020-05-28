@@ -96,7 +96,7 @@ then
            
             echo "Updating package name to ${PACKAGE_ICON}"      
             #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
-            sed -i '' 's/Icon="[^"]*"/Icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
+            sed -i '' 's/Icon="[^"]*"/Icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MAINACTIVITY_FILE
     fi
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
     cat ${ANDROID_MAINACTIVITY_FILE}
