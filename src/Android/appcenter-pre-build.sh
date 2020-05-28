@@ -80,7 +80,7 @@ then
             sed -i '' 's/android:icon="[^"]*"/android:icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
     fi
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
-    cat ${ANDROID_MAINACTIVITY_FILE}
+    cat ${ANDROID_MANIFEST_FILE}
     echo "##[section][Pre-Build Action] - MainActivity.cs EOF"
 fi
 if [ -e "${ANDROID_MAINACTIVITY_FILE}" ]
