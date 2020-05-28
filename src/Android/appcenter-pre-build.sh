@@ -11,7 +11,7 @@ SCRIPT_ERROR=0
 # Define the files to manipulate
 ANDROID_MANIFEST_FILE=$APPCENTER_SOURCE_DIRECTORY/src/Android/Properties/AndroidManifest.xml
 INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/src/iOS/Info.plist
-
+ANDROID_MAINACTIVITY_FILE=${APPCENTER_SOURCE_DIRECTORY}/src/Android/MainActivity.cs
 echo "##[warning][Pre-Build Action] - Checking if all files and environment variables are available..."
 if [ -z "${APP_DISPLAY_NAME}" ]
 then
@@ -45,6 +45,7 @@ then
     exit 1 # this will kill the build
     # exit # this will exit this script, but continues building
     else
+    echo ""
 fi
 
 echo "##[warning][Pre-Build Action] - There are ${SCRIPT_ERROR} errors."
@@ -77,6 +78,25 @@ then
             echo "Updating package name to ${PACKAGE_ICON}"      
             #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
             sed -i '' 's/android:icon="[^"]*"/android:icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
+    fi
+    echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
+    cat ${ANDROID_MAINACTIVITY_FILE}
+    echo "##[section][Pre-Build Action] - MainActivity.cs EOF"
+fi
+if [ -e "${ANDROID_MAINACTIVITY_FILE}" ]
+then
+    echo "##[command][Pre-Build Action] - Changing the App display name on Android to: ${APP_DISPLAY_NAME} "
+    sed -i '' "s/Label = \"[-a-zA-Z0-9_ ]*\"/Label = \"${APP_DISPLAY_NAME}\"/" ${ANDROID_MAINACTIVITY_FILE}
+
+
+    if [ -z "$PACKAGE_ICON" ]
+        then
+         echo "No PACKAGE_ICON key found"  
+        else
+           
+            echo "Updating package name to ${PACKAGE_ICON}"      
+            #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
+            sed -i '' 's/Icon="[^"]*"/Icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
     fi
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
     cat ${ANDROID_MAINACTIVITY_FILE}
