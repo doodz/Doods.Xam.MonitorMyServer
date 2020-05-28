@@ -53,10 +53,7 @@ echo "##[warning][Pre-Build Action] - Now everything is checked, lets change the
 
 ######################## Changes on Android
 if [ -e "$ANDROID_MANIFEST_FILE" ]
-then
-    echo "##[command][Pre-Build Action] - Changing the App display name on Android to: ${APP_DISPLAY_NAME} "
-    sed -i '' "s/Label=\"[-a-zA-Z0-9_ ]*\"/Label=\"${APP_DISPLAY_NAME}\"/" ${ANDROID_MAINACTIVITY_FILE}
-
+then   
     echo "##[command][Pre-Build Action] - Changing the version name on Android to: ${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID} "    
     sed -i '' 's/versionName=".*"/versionName="'${APPCENTER_BRANCH}_${APPCENTER_BUILD_ID}'"/' $ANDROID_MANIFEST_FILE
 
@@ -77,12 +74,13 @@ then
            
             echo "Updating package name to ${PACKAGE_ICON}"      
             #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
-            sed -i '' 's/android:icon="[^"]*"/android:icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
+            sed -i '' 's/android:icon="[^"]*"/android:icon="@mipmap\/'$PACKAGE_ICON'"/' $ANDROID_MANIFEST_FILE
     fi
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
     cat ${ANDROID_MANIFEST_FILE}
     echo "##[section][Pre-Build Action] - MainActivity.cs EOF"
 fi
+
 if [ -e "${ANDROID_MAINACTIVITY_FILE}" ]
 then
     echo "##[command][Pre-Build Action] - Changing the App display name on Android to: ${APP_DISPLAY_NAME} "
@@ -96,7 +94,7 @@ then
            
             echo "Updating package name to ${PACKAGE_ICON}"      
             #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
-            sed -i '' 's/Icon="[^"]*"/Icon="@drawable\/'$PACKAGE_ICON'"/' $ANDROID_MAINACTIVITY_FILE
+            sed -i '' 's/Icon = "[^"]*"/Icon = "@mipmap\/'$PACKAGE_ICON'"/' $ANDROID_MAINACTIVITY_FILE
     fi
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
     cat ${ANDROID_MAINACTIVITY_FILE}
