@@ -66,6 +66,15 @@ then
             #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
             sed -i '' 's/package="[^"]*"/package="'$PACKAGE_NAME'"/' $ANDROID_MANIFEST_FILE
     fi
+if [ -z "$APP_DISPLAY_NAME" ]
+        then
+         echo "No APP_DISPLAY_NAME key found"  
+        else
+           
+            echo "Updating app label name to ${APP_DISPLAY_NAME}"      
+            #sed -i '' 's/package="com.doods.monitormyserver"/package="'${PACKAGE_NAME}'"/' $ANDROID_MANIFEST_FILE
+            sed -i '' 's/android:label="[^"]*"/android:label="'$APP_DISPLAY_NAME'"/' $ANDROID_MANIFEST_FILE
+    fi
 
      if [ -z "$PACKAGE_ICON" ]
         then
