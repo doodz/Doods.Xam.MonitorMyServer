@@ -37,15 +37,20 @@ namespace Doods.Xam.MonitorMyServer.Data
            //_hostName.Value = dataHost.IPAddress;
            // if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
         }
-
         public string ToQuery()
+        {
+            return ToQuery(false);
+
+        }
+
+        public string ToQuery(bool forceHttp)
         {
             if (Services.TryGetValue("_ssh._tcp.local.", out var srv))
                 return $"DisplayNameQuery={DisplayName}&IPAddressQuery={IPAddress}&PortQuery={srv.Port}";
             
             if(IPAddress.StartsWith("http",true,CultureInfo.CurrentCulture))
             {
-                return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString(IPAddress)}";
+                return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString($"http://{IPAddress}")}";
             }
             ;
             return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString($"https://{IPAddress}")}";

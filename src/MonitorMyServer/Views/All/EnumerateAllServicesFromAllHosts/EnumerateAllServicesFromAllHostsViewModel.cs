@@ -39,9 +39,9 @@ namespace Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts
                 {"_ssh._tcp.local.", "_https._tcp.local.", "_http._tcp.local."});
             var mapper = App.Container.Resolve<IMapper>();
 
-            var toto = mapper.Map<IReadOnlyList<IZeroconfHost>, List<ZeroconfHost>>(responses);
+            var zeroconflst = mapper.Map<IReadOnlyList<IZeroconfHost>, List<ZeroconfHost>>(responses);
             //var toto = mapper.Map<IEnumerable<IZeroconfHost>, IEnumerable<ZeroconfHost>>(responses);
-            ZeroconfHosts.AddRange(toto);
+            ZeroconfHosts.AddRange(zeroconflst);
         }
 
         protected override void OnInitializeLoading(LoadingContext context)

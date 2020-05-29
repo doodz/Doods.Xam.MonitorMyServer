@@ -427,22 +427,40 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
             switch (TypeService)
             {
                 case SupportedServicies.Synology:
-                    _isSsh = false;
-                    _isRpi = false;
-                    _isOmvServer = false;
-                    _isSynoServer = true;
+                    IsSsh = false;
+                    IsRpi = false;
+                    IsOmvServer = false;
+                    IsSynoServer = true;
                     break;
                 case SupportedServicies.Openmediavault:
-                    _isSsh = false;
-                    _isRpi = false;
-                    _isOmvServer = true;
-                    _isSynoServer = false;
+                   IsSsh = false;
+                   IsRpi = false;
+                   IsOmvServer = true;
+                   IsSynoServer = false;
+                    break;
+                case SupportedServicies.Openmediavault_SSH:
+                    IsSsh = true;
+                    IsRpi = false;
+                    IsOmvServer = true;
+                    IsSynoServer = false;
+                    break;
+                case SupportedServicies.Openmediavault_HTTP:
+                    IsSsh = false;
+                    IsRpi = false;
+                    IsOmvServer = true;
+                    IsSynoServer = false;
+                    break;
+                case SupportedServicies.Openmediavault_HTTPS:
+                   IsSsh = false;
+                   IsRpi = false;
+                   IsOmvServer = true;
+                   IsSynoServer = false;
                     break;
                 case SupportedServicies.Unix:
-                    _isSsh = true;
-                    _isRpi = false;
-                    _isOmvServer = false;
-                    _isSynoServer = false;
+                    IsSsh = true;
+                    IsRpi = false;
+                    IsOmvServer = false;
+                    IsSynoServer = false;
                     break;
             }
 
