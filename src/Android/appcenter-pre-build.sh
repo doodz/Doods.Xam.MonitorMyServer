@@ -12,6 +12,8 @@ SCRIPT_ERROR=0
 ANDROID_MANIFEST_FILE=$APPCENTER_SOURCE_DIRECTORY/src/Android/Properties/AndroidManifest.xml
 INFO_PLIST_FILE=$APPCENTER_SOURCE_DIRECTORY/src/iOS/Info.plist
 ANDROID_MAINACTIVITY_FILE=${APPCENTER_SOURCE_DIRECTORY}/src/Android/MainActivity.cs
+ANDROID_SPLASH_SCREEN_FILE=$APPCENTER_SOURCE_DIRECTORY/src/Android/Resources/drawable/splash_screen.xml
+
 echo "##[warning][Pre-Build Action] - Checking if all files and environment variables are available..."
 if [ -z "${APP_DISPLAY_NAME}" ]
 then
@@ -37,6 +39,13 @@ else
     let "SCRIPT_ERROR += 1"
 fi
 
+if [ -e "${ANDROID_SPLASH_SCREEN_FILE}" ]
+then
+    echo "##[warning][Pre-Build Action] -splash_screen.xml file found - oK!"
+else
+    echo "##[error][Pre-Build Action] - splash_screen.xml file not found!"
+    # let "SCRIPT_ERROR += 1"
+fi
 
 if [ ${SCRIPT_ERROR} -gt 0 ]
 then
@@ -108,6 +117,22 @@ then
     echo "##[section][Pre-Build Action] - MainActivity.cs File content:"
     cat ${ANDROID_MAINACTIVITY_FILE}
     echo "##[section][Pre-Build Action] - MainActivity.cs EOF"
+fi
+
+
+if [ -e "${ANDROID_SPLASH_SCREEN_FILE}" ]
+then
+   
+    if [ -z "$PACKAGE_ICON" ]
+        then
+            echo "No PACKAGE_ICON key found"  
+        else           
+            echo "##[command][Pre-Build Action] - Changing the splash screen icon on Android to: ${PACKAGE_ICON} "  
+           sed -i '' 's/android:src="[^"]*"/android:src="@mipmap\/'$PACKAGE_ICON'"/' $ANDROID_SPLASH_SCREEN_FILE
+    fi
+    echo "##[section][Pre-Build Action] - splash_screen.xml File content:"
+    cat ${ANDROID_SPLASH_SCREEN_FILE}
+    echo "##[section][Pre-Build Action] - splash_screen.xml EOF"
 fi
 
 ######################## Changes on iOS
