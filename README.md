@@ -31,7 +31,8 @@ You can also use openmediavault rpc page over Http.
   * [Android App](https://play.google.com/store/apps/details?id=com.doods.monitormyserver) via Googel Play.
   * [Android App](https://github.com/doodz/Doods.Xam.MonitorMyServer/releases) via Github Releases.
 
-  
+  ## Question ?
+  * [FAQ](https://github.com/doodz/Doods.Xam.MonitorMyServer/wiki/FAQ)
   ## Support
   
   If you like the quality and code you can support me 
