@@ -31,7 +31,9 @@ namespace Doods.Xam.MonitorMyServer.Services
         private readonly IDataProvider _dataProvider;
         private readonly ILogger _logger = App.Container.Resolve<ILogger>();
         private readonly IMapper _mapper = App.Container.Resolve<IMapper>();
+        private readonly IHistoryService _historyService = App.Container.Resolve<IHistoryService>();
         private readonly IMessageBoxService _messageBoxService;
+
         //internal static ConnctionService ConnectionService = new ConnctionService();
         private readonly OmvServiceProvider _omvServiceProvider;
         private readonly SshServiceProvider _sshServiceProvider;
@@ -40,7 +42,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         private ISshService _sshService;
         private ISynologyCgiService _synoService;
 
-        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider, SynoServiceProvider synoServiceProvider,
+        public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider,
+            SynoServiceProvider synoServiceProvider,
             IMessageBoxService messageBoxService, IDataProvider dataProvider)
         {
             _omvServiceProvider = omvServiceProvider;
@@ -54,14 +57,18 @@ namespace Doods.Xam.MonitorMyServer.Services
                     if (arg is Host)
                         await Init();
                 });
-
         }
 
         public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
         public Host CurrentHost { get; private set; }
 
+        /// <summary>
+        /// Set host id after login
+        /// </summary>
+        /// <param name="host"></param>
         private void SetSelectedIdHost(Host host)
         {
+            _historyService.UpdateLastLoginAsync(host.Id.GetValueOrDefault());
             MessagingCenter.Send(this, MessengerKeys.HostChanged, host);
             Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
@@ -69,18 +76,16 @@ namespace Doods.Xam.MonitorMyServer.Services
         public async Task Init()
         {
             await GetHosts().ConfigureAwait(false);
-           
+
             var l = Preferences.Get(PreferencesKeys.SelectedHostIdKey, 0L);
-           
+
             if (l > 0)
             {
                 var findHost = Hosts.FirstOrDefault(h => h.Id != null && h.Id.Value == l);
-                if(findHost != null)
+                if (findHost != null)
                     await Login(findHost);
                 else
-                {
                     Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
-                }
             }
         }
 
@@ -93,11 +98,8 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task ChangeHostTask()
         {
-            if (!Hosts.Any())
-            {
-                await GetHosts();
+            if (!Hosts.Any()) await GetHosts();
 
-            }
             var action = await _messageBoxService.ShowActionSheet(Resource.SelectHost, Resource.Cancel, null,
                 Hosts.Select(h => $"{h.Id} - {h.HostName}").ToArray());
 
@@ -107,14 +109,16 @@ namespace Doods.Xam.MonitorMyServer.Services
                 var id = long.Parse(split[0]);
 
                 var host = Hosts.First(h => h.Id == id);
-
-                if (host.IsSynoServer)
-                {
-                    _synoService?.LogOut();
-                }
-
-               await Login(host);
+                await SelectHost(host);
+               
             }
+        }
+
+        public async Task SelectHost(Host host)
+        {
+            if (host.IsSynoServer) _synoService?.LogOut();
+
+            await Login(host);
         }
 
         public Task LoginFromOnStart(Host host)
@@ -124,11 +128,11 @@ namespace Doods.Xam.MonitorMyServer.Services
             GetClient(host);
             if (CurrentHost.IsSsh && !CurrentHost.IsOmvServer)
                 _sshService?.Connect();
-            else if(CurrentHost.IsSynoServer && _synoService !=null)
+            else if (CurrentHost.IsSynoServer && _synoService != null)
                 return _synoService.LoginAsync(CurrentHost.UserName, CurrentHost.Password);
-            else if(_omvService !=null)
+            else if (_omvService != null)
                 return _omvService.Connect(CurrentHost.UserName, CurrentHost.Password);
-           return Task.FromResult(0);
+            return Task.FromResult(0);
         }
 
         public async Task Login(Host host)
@@ -153,7 +157,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             if (host.IsSynoServer)
             {
-                var connection = new HttpConnection(host.Url+ "/webapi", host.Port);
+                var connection = new HttpConnection(host.Url + "/webapi", host.Port);
                 var service = new SynologyCgiService(_logger, connection);
                 _synoService = service;
                 _synoServiceProvider.ChangeValue(_synoService);
@@ -211,9 +215,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             try
             {
                 var syno = new SynologyCgiService(_logger, connection);
-                testConnectionResult= await syno.LoginAsync(login, password);
-                    
-               //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();
+                testConnectionResult = await syno.LoginAsync(login, password);
+
+                //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();
             }
             catch (Exception e)
             {
@@ -293,6 +297,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 client?.Dispose();
             }
+
             return testConnectionResult;
         }
     }

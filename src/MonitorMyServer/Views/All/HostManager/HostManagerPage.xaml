@@ -3,15 +3,159 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Name="Page"
              xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm"
-            
-             
              xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:hostManager="clr-namespace:Doods.Xam.MonitorMyServer.Views.HostManager;assembly=Doods.Xam.MonitorMyServer"
              xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.HostManager.HostManagerPage">
     <ContentPage.Resources>
-       
+        <DataTemplate  x:Key="HistoHostTemplate" x:DataType="hostManager:HostViewModel">
+            <Frame  BackgroundColor="{DynamicResource FabBackgroundColor}">
+                <Grid BackgroundColor="{DynamicResource FabBackgroundColor}" 
+                      ColumnDefinitions="15*,35*,15*,35*"  
+                      RowDefinitions="auto,auto,auto,auto"
+                      Margin="5">
+                   
+                   
+                    <!--<Frame  Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5"/>-->
+                    <Label VerticalOptions="Center" HorizontalOptions="Start" 
+                           Grid.Column="0" Grid.Row="0"  Grid.ColumnSpan="4" Margin="5" Text="{Binding HostName,Mode=OneWay}"/>
+                    <Label VerticalOptions="Center" HorizontalOptions="Start" 
+                           Grid.Column="0" Grid.Row="1"  Grid.ColumnSpan="4" Margin="5" Text="{Binding Description,Mode=OneWay}"/>
+                    <controls:DoodsSvgImage
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        
+                        Color="{DynamicResource SystemTeal}"
+                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Input}}"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        Margin="0"
+                        
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center" />
+                    <Label VerticalOptions="Center"  HorizontalOptions="EndAndExpand" 
+                           Grid.Column="1" Grid.Row="2" Text="{Binding LastSync,Mode=OneWay,StringFormat='{0:dddd, MMMM dd}'}"/>
+                    <controls:DoodsSvgImage
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        Color="{DynamicResource SystemTeal}"
+                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Update}}"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center" />
+                    <Label VerticalOptions="Center"  HorizontalOptions="EndAndExpand" 
+                           Grid.Column="3" Grid.Row="2"  Text="{Binding LastUpdate,Mode=OneWay,StringFormat='{0:dddd, MMMM dd}'}"/>
+                    <controls:DoodsSvgImage
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Color="{DynamicResource SystemTeal}"
+                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.SystemUpdate}}"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center" />
+                    <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" 
+                           Grid.Column="1" Grid.Row="3"  Text="{Binding NombrerPackargeCanBeUpdted,Mode=OneWay}"/>
+                    <controls:DoodsSvgImage
+                        Grid.Column="2"
+                        Grid.Row="3"
+                        Color="{DynamicResource SystemRed}"
+                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.PowerOff}}"
+                        WidthRequest="30"
+                        HeightRequest="30"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center" >
+                        <!--<controls:DoodsSvgImage.Style>
+                            <Style.Triggers >
+                                <DataTrigger TargetType="controls:DoodsSvgImage"
+                                             Binding="{Binding Status,Mode=OneWay}"
+                                             Value="True">
+                                    <Setter Property="Color"
+                                            Value="Red" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </controls:DoodsSvgImage.Style>-->
+                        <controls:DoodsSvgImage.Triggers>
+                            
+                            <DataTrigger TargetType="controls:DoodsSvgImage"
+                                             Binding="{Binding Status,Mode=OneWay}"
+                                             Value="True">
+                                <Setter Property="Source"
+                                        Value="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Power}}" />
+                                <Setter Property="Color"
+                                        Value="{DynamicResource SystemGreen}" />
+                                
+
+                            </DataTrigger>
+                            <!--<DataTrigger TargetType="controls:DoodsSvgImage"
+                                         Binding="{Binding Status,Mode=OneWay}"
+                                         Value="False">
+                                <Setter Property="Color"
+                                        Value="{StaticResource SystemRed}"/>
+                                <Setter Property="Source"
+                                        Value="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.PowerOff}}" />
+                            </DataTrigger>-->
+                        </controls:DoodsSvgImage.Triggers>
+                    </controls:DoodsSvgImage>
+                    <Label VerticalOptions="Center" HorizontalOptions="EndAndExpand" 
+                           Grid.Column="3" Grid.Row="3"  Text="{Binding Status,Mode=OneWay}"/>
+                   
+                    <Frame Margin="0,0,0,5" 
+                           Grid.Column="0" Grid.Row="4" BackgroundColor="DarkRed">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=DeleteItemCommand}"
+                                                  CommandParameter="{Binding .}"  />
+                        </Frame.GestureRecognizers>
+                        <controls:DoodsSvgImage
+                          
+                            Color="{DynamicResource BlackColor}"
+                            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center" >
+
+                        </controls:DoodsSvgImage>
+                    </Frame>
+                    <Frame Margin="5,0,5,5" Grid.Column="1" Grid.Row="4" BackgroundColor="Aqua">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=EditItemCommand}"
+                                                  CommandParameter="{Binding .}"  />
+                        </Frame.GestureRecognizers>
+                        <controls:DoodsSvgImage
+                          
+                            Color="{DynamicResource BlackColor}"
+                            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ModeEdit}}"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center" >
+                            
+                         
+                        </controls:DoodsSvgImage>
+                    </Frame>
+                    <Frame Margin="0,0,0,5" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="ForestGreen">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer  Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=SelectItemCommand}"
+                                                   CommandParameter="{Binding .}"  />
+                        </Frame.GestureRecognizers>
+                        <controls:DoodsSvgImage
+                          
+                            Color="{DynamicResource BlackColor}"
+                            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center" >
+                           
+                        </controls:DoodsSvgImage>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+        </DataTemplate>
 
             <DataTemplate  x:Key="DefaultTemplate" x:DataType="hostManager:HostViewModel">
                 <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
@@ -242,7 +386,7 @@
         </DataTemplate>
 
         <hostManager:HostDataTemplateSelector x:Key="HostDataTemplateSelector" 
-                                              DefaultTemplate="{StaticResource DefaultTemplate}"
+                                              DefaultTemplate="{StaticResource HistoHostTemplate}"
                                               OmvTemplate="{StaticResource OmvTemplate}"
                                               RpiTemplate="{StaticResource DefaultTemplate}"
                                               SshTemplate="{StaticResource SshTemplate}"
@@ -259,8 +403,8 @@
                     </Style>
                 </ResourceDictionary>
             </ScrollView.Resources>
-            <!--<StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}" BindableLayout.ItemTemplateSelector="{StaticResource HostDataTemplateSelector}"/>-->
-            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}">
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}" BindableLayout.ItemTemplateSelector="{StaticResource HostDataTemplateSelector}"/>
+            <!--<StackLayout Padding="4" BindableLayout.ItemsSource="{Binding ItemsView,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
                     <DataTemplate x:DataType="hostManager:HostViewModel">
                         <controls:TitledFrameView Title="{Binding HostName}" SubTitle="{Binding Description}"
@@ -272,11 +416,11 @@
                                     <ColumnDefinition Width="15*" />
                                     <ColumnDefinition Width="15*" />
                                 </Grid.ColumnDefinitions>
-                                <!--<Label Grid.Column="0" Text="{Binding MacAddress}" />-->
+                                --><!--<Label Grid.Column="0" Text="{Binding MacAddress}" />--><!--
                                 <Label Grid.Column="0" Text="{resources:Translate Text='openmediavault::Online'}" />
 
                                 <Label Grid.Column="1" Text="{Binding Status}" />
-                                <!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />-->
+                                --><!--<Switch  Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />--><!--
                                 <controls:DoodsSvgImage
                                     Grid.Column="2"
                                     Grid.Row="0"
@@ -309,7 +453,7 @@
                         </controls:TitledFrameView>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
-            </StackLayout>
+            </StackLayout>-->
         </ScrollView>
     </Grid>
 </mvvm:BaseContentPage>

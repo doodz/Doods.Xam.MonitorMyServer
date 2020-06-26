@@ -1,22 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
-using Doods.Framework.Http.Std.Interfaces;
 using Doods.Framework.Http.Std.Serializers;
 using Doods.Xam.MonitorMyServer.Data;
 using Xamarin.Essentials;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public class HistoryService
+    public interface IHistoryService
+    {
+        History CurrentHistoryItem { get; }
+        Task SetHistoryAsync(long id, History history);
+        Task UpdateLastLoginAsync(long id);
+        Task<History> GetHistoryAsync(long id, bool b = false);
+    }
+
+    public class HistoryService : IHistoryService
     {
         private readonly NewtonsoftJsonSerializer _jsonSerializer = new NewtonsoftJsonSerializer();
-       
-        public Task SetHistoryAsync(int id,History history)
+
+        public History CurrentHistoryItem { get; private set; }
+
+        public Task SetHistoryAsync(long id, History history)
         {
-            var cacheDir = FileSystem.CacheDirectory;
+            var cacheDir = FileSystem.AppDataDirectory;
 
             var templateFileName = Path.Combine(cacheDir, id + "_history.json");
 
@@ -24,35 +31,51 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 using (var writer = new StreamWriter(stream))
                 {
-                  var jsonHistory  =_jsonSerializer.Serialize(history);
+                    var jsonHistory = _jsonSerializer.Serialize(history);
 
-                  return writer.WriteAsync(jsonHistory);
-                  
+                    return writer.WriteAsync(jsonHistory);
                 }
             }
-
-
         }
 
-        public Task<History> GetHistoryAsync(int id)
+        public async Task UpdateLastLoginAsync(long id)
         {
-            var cacheDir = FileSystem.CacheDirectory;
+            var history = await GetHistoryAsync(id, true).ConfigureAwait(false);
+            history.LastSync = DateTime.Now;
+            history.HostId = id;
+            await SetHistoryAsync(id, history).ConfigureAwait(false);
+        }
 
-            var templateFileName = Path.Combine(cacheDir, id + "_history.json");
-
-            using (var stream = File.OpenRead(templateFileName))
+        public async Task<History> GetHistoryAsync(long id, bool b = false)
+        {
+            try
             {
-                using (var reader = new StreamReader(stream))
+                var cacheDir = FileSystem.AppDataDirectory;
+
+                var templateFileName = Path.Combine(cacheDir, id + "_history.json");
+
+                if (!File.Exists(templateFileName))
+                    return new History();
+
+                using (var stream = File.OpenRead(templateFileName))
                 {
-                    var fileContents = reader.ReadToEndAsync();
+                    using (var reader = new StreamReader(stream))
+                    {
+                        var fileContents = await reader.ReadToEndAsync();
+                        var tmp = _jsonSerializer.Deserialize<History>(fileContents);
+                        if (b)
+                            CurrentHistoryItem = tmp;
 
-                    return fileContents.ContinueWith(task => _jsonSerializer.Deserialize<History>(task.Result));
-
-                  
+                        return tmp;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-
+            return new History();
         }
     }
 }

@@ -10,6 +10,8 @@ namespace Doods.Xam.MonitorMyServer.Services
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<HistoryService>().As<IHistoryService>().SingleInstance();
+
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
            
             builder.RegisterType<ConnctionService>().SingleInstance().AsSelf();
