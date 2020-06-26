@@ -31,7 +31,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
                     return SshTemplate;
                 }
 
-               
+
             }
 
             return DefaultTemplate;

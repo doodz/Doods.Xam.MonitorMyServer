@@ -2,13 +2,16 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using Doods.Framework.ApiClientBase.Std.Classes;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Framework.Mobile.Std.Servicies;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.Login;
@@ -23,24 +26,43 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             new ObservableRangeCollection<HostViewModel>();
 
         private ICommand FindItemCommand;
-
+        public ICommand SelectItemCommand { get; }
         public HostManagerPageViewModel()
         {
             Title = Resource.Hosts;
             FindItemCommand = new Command(() =>
                 NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage)));
+            SelectItemCommand = new Command(SelectItem);
         }
 
 
         protected override void AddItem(object obj)
         {
-            NavigationService.NavigateAsync(nameof(LogInPage));
+            var t = NavigationService.NavigateAsync(nameof(LogInPage));
+            if (t.IsFaulted)
+            {
+                var msg = t.Exception?.Message;
+            }
         }
 
+
+        private void SelectItem(object obj)
+        {
+            var connctionService = App.Container.Resolve<ConnctionService>();
+            if (obj is HostViewModel h)
+                connctionService.SelectHost(h.Host).ConfigureAwait(false);
+        }
         protected override void EditItem(object obj)
         {
             if (obj == null) return;
-            if (obj is HostViewModel h) NavigationService.NavigateAsync(nameof(LogInPage), new DataHostWrapper(h.Host));
+            if (obj is HostViewModel h)
+            {
+               var t =  NavigationService.NavigateAsync(nameof(LogInPage), new DataHostWrapper(h.Host));
+               if (t.IsFaulted)
+               {
+                   var msg = t.Exception?.Message;
+               }
+            }
         }
 
         protected override void DeleteItem(object obj)

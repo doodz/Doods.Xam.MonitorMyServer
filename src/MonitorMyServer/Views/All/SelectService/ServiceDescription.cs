@@ -7,7 +7,8 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
 
         public string Title { get; set; }
         public string Url { get; set; }
-
+        public int Port { get; set; }
+        
         public string Description { get; set; }
     }
 }

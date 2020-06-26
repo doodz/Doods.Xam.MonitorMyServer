@@ -4,6 +4,9 @@
     {
         NotDefined = 1,
         Unix,
+        Openmediavault_SSH,
+        Openmediavault_HTTP,
+        Openmediavault_HTTPS,
         Openmediavault,
         Synology
     }

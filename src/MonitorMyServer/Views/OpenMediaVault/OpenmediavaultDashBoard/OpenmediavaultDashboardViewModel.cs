@@ -7,6 +7,7 @@ using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
+using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Mobile.Std.Resources;
@@ -24,6 +25,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 {
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
+        
         private readonly IOmvService _sshService;
         private OMVInformations _OMVInformations;
         private string _text = string.Empty;
@@ -37,6 +39,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             ChangeHostCmd = new Command(ChangeHost);
             ShowDetailsCmd = new Command(ShowDetails);
             BannerId = configuration.AdsKey;
+           
         }
 
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
@@ -136,17 +139,19 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             {
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
                     () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
-                    () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+                    () =>
+                    {
+                        UpdateHistory();
+                        SetLabelsStateItem("OMV", openmediavault.Done___);
+
+                    });
             }
             catch (AuthorizationException ex)
             {
-                
-
                 SetLabelsStateItem(openmediavault.Error, ex.Message);
             }
             catch (Exception e)
             {
-                
                 SetLabelsStateItem(openmediavault.Error, e.Message);
             }
 
@@ -223,5 +228,18 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                 Icon = image3
             };
         }
+
+
+        private void UpdateHistory()
+        {
+            var historyService = App.Container.Resolve<IHistoryService>();
+            historyService.CurrentHistoryItem.NombrerPackargeCanBeUpdted = Upgradeds.Count();
+            historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
+            historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);
+        }
+        //protected override void OnFinishLoading(LoadingContext context)
+        //{
+          
+        //}
     }
 }

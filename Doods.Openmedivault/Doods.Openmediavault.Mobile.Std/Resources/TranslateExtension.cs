@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Doods.Openmediavault.Mobile.Std.Resources
 {
-    [ContentProperty("Text")]
+    [ContentProperty(nameof(Text))]
     public class TranslateExtension : TranslateService, IMarkupExtension
     {
         readonly CultureInfo ci = null;
