@@ -73,7 +73,11 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
             {
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
                     () => SetLabelsStateItem("Syno", openmediavault.SystemInformation),
-                    () => { SetLabelsStateItem("Syno", openmediavault.Done___); });
+                    () =>
+                    {
+                        UpdateHistory();
+                        SetLabelsStateItem("Syno", openmediavault.Done___);
+                    });
             }
             catch (Exception e)
             {
@@ -111,6 +115,13 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
         {
             var result = await _synoService.GetStorageInfo();
             StorageInfo = result;
+        }
+        private void UpdateHistory()
+        {
+            var historyService = App.Container.Resolve<IHistoryService>();
+            historyService.CurrentHistoryItem.NombrerPackargeCanBeUpdted = 0;
+            historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
+            historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);
         }
     }
 }

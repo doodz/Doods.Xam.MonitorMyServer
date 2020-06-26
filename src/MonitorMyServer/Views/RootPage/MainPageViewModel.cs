@@ -179,7 +179,11 @@ namespace Doods.Xam.MonitorMyServer.Views
             {
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
                     () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
-                    () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
+                    () =>
+                    {
+                        UpdateHistory();
+                        SetLabelsStateItem("OMV", openmediavault.Done___);
+                    });
             }
             catch (Exception e)
             {
@@ -302,7 +306,13 @@ namespace Doods.Xam.MonitorMyServer.Views
             MemoryUsage = await _sshService.CheckMemoryUsage();
         }
 
-
+        private void UpdateHistory()
+        {
+            var historyService = App.Container.Resolve<IHistoryService>();
+            historyService.CurrentHistoryItem.NombrerPackargeCanBeUpdted = UpgradablesCount;
+            historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
+            historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);
+        }
         //private class toto : IAsyncResult
         //{
         //    public object AsyncState { get; }

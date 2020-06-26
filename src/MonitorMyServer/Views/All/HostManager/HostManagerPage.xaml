@@ -324,10 +324,6 @@
         </DataTemplate>
         <DataTemplate x:Key="SynoTemplate" x:DataType="hostManager:HostViewModel">
 
-            
-
-
-
             <Frame>
               <Grid>
                   <Grid.RowDefinitions>
@@ -387,7 +383,7 @@
 
         <hostManager:HostDataTemplateSelector x:Key="HostDataTemplateSelector" 
                                               DefaultTemplate="{StaticResource HistoHostTemplate}"
-                                              OmvTemplate="{StaticResource OmvTemplate}"
+                                              OmvTemplate="{StaticResource HistoHostTemplate}"
                                               RpiTemplate="{StaticResource DefaultTemplate}"
                                               SshTemplate="{StaticResource SshTemplate}"
                                               SynoTemplate="{StaticResource SynoTemplate}"/>

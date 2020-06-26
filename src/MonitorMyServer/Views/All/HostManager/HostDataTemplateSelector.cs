@@ -12,27 +12,27 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
 
-            //if (item is HostViewModel host)
-            //{
-            //    if (host.IsOmvServer)
-            //    {
-            //        return OmvTemplate;
-            //    }
-            //    if (host.IsRpi)
-            //    {
-            //        return SshTemplate;
-            //    }
-            //    if (host.IsSynoServer)
-            //    {
-            //        return SynoTemplate;
-            //    }
-            //    if (host.IsSsh)
-            //    {
-            //        return SshTemplate;
-            //    }
+            if (item is HostViewModel host)
+            {
+                if (host.IsOmvServer)
+                {
+                    return OmvTemplate;
+                }
+                if (host.IsRpi)
+                {
+                    return SshTemplate;
+                }
+                if (host.IsSynoServer)
+                {
+                    return SynoTemplate;
+                }
+                if (host.IsSsh)
+                {
+                    return SshTemplate;
+                }
 
-               
-            //}
+
+            }
 
             return DefaultTemplate;
         }
