@@ -63,8 +63,6 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
             navigationService.Configure(nameof(ProcessesPage), typeof(ProcessesPage));
             navigationService.Configure(nameof(TestPage), typeof(TestPage));
-
-
             navigationService.Configure(nameof(OpenmediavaultDashboardPage), typeof(OpenmediavaultDashboardPage));
             navigationService.Configure(nameof(OpenmediavaultSettingsPage), typeof(OpenmediavaultSettingsPage));
             navigationService.Configure(nameof(OpenmediavaultFileSystemsPage), typeof(OpenmediavaultFileSystemsPage));
@@ -72,9 +70,6 @@ namespace Doods.Xam.MonitorMyServer
                 typeof(OpenmediavaultAddFileSystemsPage));
             navigationService.Configure(nameof(OpenmediavaultPluginsPage), typeof(OpenmediavaultPluginsPage));
             navigationService.Configure(nameof(OpenmediavaultUpdatesPage), typeof(OpenmediavaultUpdatesPage));
-           
-            
-            
             
             navigationService.Configure(nameof(SynologyInfoPage), typeof(SynologyInfoPage));
 

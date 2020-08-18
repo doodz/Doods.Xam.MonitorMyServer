@@ -83,7 +83,28 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 var findHost = Hosts.FirstOrDefault(h => h.Id != null && h.Id.Value == l);
                 if (findHost != null)
-                    await Login(findHost);
+                {
+                    var loginTask = false;
+                    try
+                    {
+                        await Login(findHost);
+                        
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                        loginTask = true;
+                    }
+                    finally
+                    {
+                        if (loginTask)
+                        {
+                            Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
+                        }
+                    }
+                  
+
+                }
                 else
                     Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
             }

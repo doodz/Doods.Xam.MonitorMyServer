@@ -60,10 +60,13 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                     _query += 
                     $"&DisplayNameQuery={Uri.EscapeDataString(zeroHost.DisplayName)}&PortQuery={item.Port}";
 
-
-                    if(item.Type == SupportedServicies.Openmediavault_HTTP)
+                    if (item.Type == SupportedServicies.Openmediavault_HTTP)
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"http://{zeroHost.IPAddress}")}";
                     else if(item.Type == SupportedServicies.Openmediavault_HTTPS)
+                        _query += $"&IPAddressQuery={Uri.EscapeDataString($"https://{zeroHost.IPAddress}")}";
+                    else if (zeroHost.Services.ContainsKey("_http._tcp.local."))
+                        _query += $"&IPAddressQuery={Uri.EscapeDataString($"http://{zeroHost.IPAddress}")}";
+                    else if (zeroHost.Services.ContainsKey("_https._tcp.local."))
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"https://{zeroHost.IPAddress}")}";
                     else
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"{zeroHost.IPAddress}")}";

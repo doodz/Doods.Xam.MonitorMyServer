@@ -7,6 +7,7 @@
              xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
              xmlns:hostManager="clr-namespace:Doods.Xam.MonitorMyServer.Views.HostManager;assembly=Doods.Xam.MonitorMyServer"
              xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+             xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
              x:Class="Doods.Xam.MonitorMyServer.Views.HostManager.HostManagerPage">
     <ContentPage.Resources>
         <DataTemplate  x:Key="HistoHostTemplate" x:DataType="hostManager:HostViewModel">
@@ -120,6 +121,10 @@
                         </controls:DoodsSvgImage>
                     </Frame>
                     <Frame Margin="5,0,5,5" Grid.Column="1" Grid.Row="4" BackgroundColor="Aqua">
+                        <!--<Frame.Behaviors>
+                            <behaviors:ViewTappedButtonBehavior AnimationType="Scale" Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=EditItemCommand}"
+                                                                CommandParameter="{Binding .}" />
+                        </Frame.Behaviors>-->
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=EditItemCommand}"
                                                   CommandParameter="{Binding .}"  />
@@ -137,6 +142,9 @@
                         </controls:DoodsSvgImage>
                     </Frame>
                     <Frame Margin="0,0,0,5" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="ForestGreen">
+                        <Frame.Behaviors>
+                            <behaviors:ViewTappedButtonBehavior AnimationType="Scale"/>
+                        </Frame.Behaviors>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer  Command="{Binding Source={RelativeSource AncestorType={x:Type hostManager:HostManagerPageViewModel}}, Path=SelectItemCommand}"
                                                    CommandParameter="{Binding .}"  />

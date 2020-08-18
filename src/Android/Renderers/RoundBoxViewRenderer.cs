@@ -25,7 +25,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Renderers
         public override void Draw(Canvas canvas)
         {
             var box = Element as RoundBoxView;
-            var rect = new Rect();
+            var rect = new Android.Graphics.Rect();
             var color = box.BorderColor != Xamarin.Forms.Color.White ? box.BorderColor.ToAndroid() : box.BackgroundColor.ToAndroid();
             var paint = new Paint
             {
@@ -40,7 +40,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Renderers
                 return;
 
             var diameter = rect.Width() - box.BorderThickness;
-            var rect1 = new Rect(box.BorderThickness, box.BorderThickness, diameter, diameter);
+            var rect1 = new Android.Graphics.Rect(box.BorderThickness, box.BorderThickness, diameter, diameter);
             var paint1 = new Paint
             {
                 Color = box.BackgroundColor.ToAndroid(),

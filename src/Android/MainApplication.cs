@@ -5,9 +5,12 @@ using Autofac;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Config;
 using System;
+using System.Threading.Tasks;
 using System.Xml;
 using Android.Gms.Ads;
 using Doods.Xam.MonitorMyServer.Droid.Services;
+using FFImageLoading;
+using Xamarin.Forms.PancakeView.Droid;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
@@ -35,10 +38,10 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             base.OnCreate();
 
-            Xamarin.Essentials.Platform.Init(this);
-            Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
-
            
+
+            
+            Task.Run( () => {  MyMethod(); });
             //SecureStorageImplementation.StoragePassword = FormatPassword();
             //Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             App.SetupContainer(Bootstrapper.CreateContainer());
@@ -47,6 +50,24 @@ namespace Doods.Xam.MonitorMyServer.Droid
             LoadSettings();
         }
 
+        private void MyMethod()
+        {
+            Xamarin.Essentials.Platform.Init(this);
+            Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
+            Rg.Plugins.Popup.Popup.Init(this, null);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
+            var config = new FFImageLoading.Config.Configuration()
+            {
+                VerboseLogging = true,
+                VerbosePerformanceLogging = true,
+                VerboseMemoryCacheLogging = true,
+                VerboseLoadingCancelledLogging = true,
+                Logger = new CustomLogger(),
+            };
+            ImageService.Instance.Initialize(config);
+            PancakeViewRenderer.Init();
+        }
+       
         private void HandleAndroidException(object sender, RaiseThrowableEventArgs e)
         {
             e.Handled = true;
@@ -80,9 +101,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             LoadDoodsConfiguration();
         }
-
        
-
         private void LoadDoodsConfiguration()
         {
             var fileName = "App.config";
@@ -101,6 +120,24 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 }
             }
            
+        }
+
+        public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
+        {
+            public void Debug(string message)
+            {
+                Console.WriteLine(message);
+            }
+
+            public void Error(string errorMessage)
+            {
+                Console.WriteLine(errorMessage);
+            }
+
+            public void Error(string errorMessage, Exception ex)
+            {
+                Error(errorMessage + System.Environment.NewLine + ex.ToString());
+            }
         }
     }
 }
