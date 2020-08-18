@@ -32,7 +32,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             //builder.RegisterType<SshService>().As<ISshService>().SingleInstance();
 
            
-            AutoMapper.Mappers.EnumToEnumMapper.Map<MyEnumeration, MyEnumeration>(MyEnumeration.tricks);
+           // AutoMapper.Mappers.EnumToEnumMapper.Map<MyEnumeration, MyEnumeration>(MyEnumeration.tricks);
 
             var assembliesToScane = AppDomain.CurrentDomain.GetAssemblies();//AutoMapperMobileSshProfile;ZeroconfHostProfile
 
