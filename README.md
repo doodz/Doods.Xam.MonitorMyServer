@@ -33,6 +33,9 @@ You can also use openmediavault rpc page over Http.
 
   ## Question ?
   * [FAQ](https://github.com/doodz/Doods.Xam.MonitorMyServer/wiki/FAQ)
+  
+  ## Reporting Bugs
+  We use [GitHub Issues](https://github.com/doodz/Doods.Xam.MonitorMyServer/issues) to track issues.
   ## Support
   
   If you like the quality and code you can support me <br/>
