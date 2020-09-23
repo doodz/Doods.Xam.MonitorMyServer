@@ -17,6 +17,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.SelectService;
 using Doods.Xam.MonitorMyServer.Views.Settings;
+using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 
@@ -50,7 +51,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
            
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
-
+            builder.RegisterType<SynoStorageViewModel>().AsSelf();
 
 
         }

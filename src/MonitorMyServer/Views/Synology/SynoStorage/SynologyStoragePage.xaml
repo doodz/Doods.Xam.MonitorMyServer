@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:datas="clr-namespace:Doods.Synology.Webapi.Std.Datas;assembly=Doods.Synology.Webapi.Std"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      mc:Ignorable="d"
+                     
+                      x:Class="Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage.SynologyStoragePage">
+   
+
+    <StackLayout>
+      <StackLayout.Resources>
+            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
+            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
+        </StackLayout.Resources>
+        <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+
+       
+            <ScrollView>
+
+
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding SynologyStorageInfo.Volumes,Mode=OneWay}">
+                <StackLayout.Resources>
+                    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+                </StackLayout.Resources>
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="datas:Volume">
+                        <controls:TitledFrameView Title="{Binding Id}" SubTitle="{Binding FsType}"
+                                                  SubTitleStyle="{StaticResource NewSubTitleStyle}">
+
+                        </controls:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+
+        </ScrollView>
+       
+    </StackLayout>
+</mvvm:BaseContentPage>
