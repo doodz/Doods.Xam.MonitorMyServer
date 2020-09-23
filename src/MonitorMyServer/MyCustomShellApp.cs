@@ -16,6 +16,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.Settings;
+using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -105,6 +106,8 @@ namespace Doods.Xam.MonitorMyServer
         {
             yield return CreateFlyoutItem("Syno",
                 typeof(SynologyInfoPage));
+            yield return CreateFlyoutItem(openmediavault.FileSystems,
+                typeof(SynologyStoragePage));
         }
 
 

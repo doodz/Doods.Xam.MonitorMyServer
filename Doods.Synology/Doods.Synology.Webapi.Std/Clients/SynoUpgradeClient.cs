@@ -29,7 +29,4 @@ namespace Doods.Synology.Webapi.Std
             return response.Data.Data;
         }
     }
-
-
-   
 }

@@ -148,7 +148,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             GetClient(host);
             if (CurrentHost.IsSsh && !CurrentHost.IsOmvServer)
-                _sshService?.Connect();
+                return _sshService?.ConnectAsync();
             else if (CurrentHost.IsSynoServer && _synoService != null)
                 return _synoService.LoginAsync(CurrentHost.UserName, CurrentHost.Password);
             else if (_omvService != null)
@@ -244,7 +244,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 Console.WriteLine(e);
                 if (throwException)
-                    throw;
+                    throw e;
             }
 
             return testConnectionResult;

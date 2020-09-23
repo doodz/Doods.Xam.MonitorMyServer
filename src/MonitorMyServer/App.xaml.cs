@@ -24,6 +24,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultUpdates;
 using Doods.Xam.MonitorMyServer.Views.Processes2;
 using Doods.Xam.MonitorMyServer.Views.SelectService;
+using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using MarcTron.Plugin;
@@ -63,6 +64,7 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
             navigationService.Configure(nameof(ProcessesPage), typeof(ProcessesPage));
             navigationService.Configure(nameof(TestPage), typeof(TestPage));
+
             navigationService.Configure(nameof(OpenmediavaultDashboardPage), typeof(OpenmediavaultDashboardPage));
             navigationService.Configure(nameof(OpenmediavaultSettingsPage), typeof(OpenmediavaultSettingsPage));
             navigationService.Configure(nameof(OpenmediavaultFileSystemsPage), typeof(OpenmediavaultFileSystemsPage));
@@ -72,14 +74,14 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(OpenmediavaultUpdatesPage), typeof(OpenmediavaultUpdatesPage));
             
             navigationService.Configure(nameof(SynologyInfoPage), typeof(SynologyInfoPage));
-
+            navigationService.Configure(nameof(SynologyStoragePage), typeof(SynologyStoragePage));
 
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(MonitorMyServer.MainPage));
             //var mainPage = ((ViewNavigationService)navigationService).SetRootPage(nameof(AppShell));
             //MainPage = mainPage;
             //MainPage = new AppShell();
-            
-             MainPage = new MyCustomShellApp();
+
+            MainPage = new MyCustomShellApp();
         }
 
         public static NavigationServiceType NavigationServiceType = NavigationServiceType.ShellNavigation;
