@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="Doods.Xam.MonitorMyServer.Views.Linux.ShellBox.ShellBoxView">
+    <ContentView.Content>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <Entry Text="{Binding Output}" />
+            </ScrollView>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Entry Text="{Binding SendText, Mode=TwoWay}"/>
+
+
+                <Button Grid.Column="1" Command="{Binding ExecuteCommand}"/>
+                
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

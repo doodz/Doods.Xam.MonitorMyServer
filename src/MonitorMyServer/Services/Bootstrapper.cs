@@ -22,7 +22,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             builder.RegisterType<SshService>().AsSelf();
             builder.RegisterType<OmvRpcService>().AsSelf();
             builder.RegisterType<OmvSshService>().AsSelf();
-            builder.RegisterType<OmvSshService>().AsSelf();
+           
 
             builder.RegisterType<OmvServiceProvider>().SingleInstance().AsSelf();
             builder.RegisterType<SshServiceProvider>().SingleInstance().AsSelf();
