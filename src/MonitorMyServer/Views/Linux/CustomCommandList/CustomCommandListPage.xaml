@@ -11,10 +11,17 @@
              x:Name="Page"
              x:Class="Doods.Xam.MonitorMyServer.Views.CustomCommandList.CustomCommandListPage">
     <ContentPage.Content>
-        <ScrollView Padding="10" VerticalOptions="FillAndExpand">
-            <ScrollView.Resources>
-               
-            </ScrollView.Resources>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0" BindingContext="{Binding ShellBox,Mode=OneWay}" BackgroundColor="Blue">
+                <Label BackgroundColor="Blue" Text="{Binding Output,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" 
+                       
+                       LineBreakMode="WordWrap"/>
+            </ScrollView>
+            <ScrollView Grid.Row="1" Padding="10" VerticalOptions="FillAndExpand">
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
                     <DataTemplate>
@@ -72,5 +79,6 @@
                 </BindableLayout.ItemTemplate>
             </StackLayout>
         </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </mvvm:BaseContentPage>

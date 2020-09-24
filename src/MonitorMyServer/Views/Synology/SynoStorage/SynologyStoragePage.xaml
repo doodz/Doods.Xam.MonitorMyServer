@@ -10,21 +10,14 @@
                       xmlns:datas="clr-namespace:Doods.Synology.Webapi.Std.Datas;assembly=Doods.Synology.Webapi.Std"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
-                     
                       x:Class="Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage.SynologyStoragePage">
-   
-
     <StackLayout>
       <StackLayout.Resources>
             <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
             <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
         </StackLayout.Resources>
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-
-       
             <ScrollView>
-
-
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding SynologyStorageInfo.Volumes,Mode=OneWay}">
                 <StackLayout.Resources>
                     <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
@@ -33,13 +26,10 @@
                     <DataTemplate x:DataType="datas:Volume">
                         <controls:TitledFrameView Title="{Binding Id}" SubTitle="{Binding FsType}"
                                                   SubTitleStyle="{StaticResource NewSubTitleStyle}">
-
                         </controls:TitledFrameView>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </StackLayout>
-
         </ScrollView>
-       
     </StackLayout>
 </mvvm:BaseContentPage>

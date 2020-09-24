@@ -191,6 +191,10 @@ namespace Doods.Xam.MonitorMyServer.Services
                     var connection = new SshConnection(host.Url, host.Port, host.UserName, host.Password);
                     service = new OmvSshService(_logger, connection);
                     //SshService 
+                    var service2 = new SshService(_logger, _mapper);
+                    service2.Init(connection, false);
+                    _sshService = service2;
+                    _sshServiceProvider.ChangeValue(_sshService);
                 }
                 else
                 {
