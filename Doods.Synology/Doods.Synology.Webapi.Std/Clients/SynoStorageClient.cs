@@ -9,7 +9,7 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<SynologyStorageInfo> GetFullStorageInfo();
     }
-    class SynoStorageClient: BaseSynoClient, ISynoStorageClient
+    public class SynoStorageClient: BaseSynoClient, ISynoStorageClient
     {
         public SynoStorageClient(ISynoWebApi client) : base(client)
         {

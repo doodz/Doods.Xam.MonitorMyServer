@@ -129,9 +129,6 @@
   <data name="%S[On%S,%S]" xml:space="preserve">
     <value>%s [-n %s, %s]</value>
   </data>
-  <data name="'All'IsNotAllowed" xml:space="preserve">
-    <value>'Összes' nem megengedett</value>
-  </data>
   <data name="0Kib/SMeansUnlimited." xml:space="preserve">
     <value>0 kB/s korlátlan.</value>
   </data>
@@ -315,6 +312,9 @@
   <data name="AddBondConnection" xml:space="preserve">
     <value>Kötegelt kapcsolat hozzáadás</value>
   </data>
+  <data name="AddBridgeConnection" xml:space="preserve">
+    <value>Hídkapcsolat hozzáadása</value>
+  </data>
   <data name="AddDevicesToRAIDDevice" xml:space="preserve">
     <value>Meghajtó hozzáadása a RAID tömbhöz</value>
   </data>
@@ -399,10 +399,13 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Megszakadt feltöltések és letöltések folytatásának engedélyezése a kliensek számára</value>
   </data>
+  <data name="AllowedClients" xml:space="preserve">
+    <value>Engedélyezett kliensek</value>
+  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>Amerikai Szamoa</value>
   </data>
-  <data name="AnErrorHasOccured" xml:space="preserve">
+  <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>Hiba történt</value>
   </data>
   <data name="Andorra" xml:space="preserve">
@@ -578,6 +581,9 @@
   </data>
   <data name="Brazil" xml:space="preserve">
     <value>Brazília</value>
+  </data>
+  <data name="Bridge" xml:space="preserve">
+    <value>Híd</value>
   </data>
   <data name="BritishAntarcticTerritory" xml:space="preserve">
     <value>Brit Antarktiszi terület</value>
@@ -1050,6 +1056,9 @@
   <data name="EditBondConnection" xml:space="preserve">
     <value>Kötegelt kapcsolat szerkesztése</value>
   </data>
+  <data name="EditBridgeConnection" xml:space="preserve">
+    <value>Hídkapcsolat szerkesztése</value>
+  </data>
   <data name="EditEthernetConnection" xml:space="preserve">
     <value>Ethernet kapcsolat szerkesztése</value>
   </data>
@@ -1302,6 +1311,9 @@
   <data name="Filename" xml:space="preserve">
     <value>Fájlnév</value>
   </data>
+  <data name="Filepath" xml:space="preserve">
+    <value>Fájlútvonal</value>
+  </data>
   <data name="Filesize" xml:space="preserve">
     <value>Fájlméret</value>
   </data>
@@ -1480,7 +1492,7 @@
     <value>Hoszt</value>
   </data>
   <data name="Hostname" xml:space="preserve">
-    <value>Hosztnév</value>
+    <value>Gépnév</value>
   </data>
   <data name="HostsAllow" xml:space="preserve">
     <value>Hosztok engedélyezése</value>
@@ -1501,7 +1513,7 @@
     <value>Azonosító</value>
   </data>
   <data name="IPAddressesOfDomainNameServersUsedToResolveHostNames." xml:space="preserve">
-    <value>IP címek a távoli névszerverek feloldásához.</value>
+    <value>Tartománynév-kiszolgálók IP-címei a gépnevek feloldásához.</value>
   </data>
   <data name="Ipv4" xml:space="preserve">
     <value>IPv4</value>
@@ -1627,7 +1639,7 @@
     <value>Érvénytelen csoportnév</value>
   </data>
   <data name="InvalidHostName" xml:space="preserve">
-    <value>Érvénytelen hosztnév</value>
+    <value>Érvénytelen gépnév</value>
   </data>
   <data name="InvalidName" xml:space="preserve">
     <value>Érvénytelen név</value>
@@ -2045,6 +2057,9 @@
   </data>
   <data name="NewZealand" xml:space="preserve">
     <value>Új-Zéland </value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Új jelszó</value>
   </data>
   <data name="NextPage" xml:space="preserve">
     <value>Következő oldal</value>
@@ -3097,10 +3112,10 @@
     <value>A fájlrendszer létrehozása sikeresen befejeződött.</value>
   </data>
   <data name="TheHostnameIsALabelThatIdentifiesTheSystemToTheNetwork." xml:space="preserve">
-    <value>A hosztnév egy címke, ami azonosítja a rendszert a hálózaton.</value>
+    <value>A gépnév egy címke, ami azonosítja a rendszert a hálózaton.</value>
   </data>
   <data name="TheHostnameOfTheRemoteSystem." xml:space="preserve">
-    <value>A rendszer távoli kiszolgálóneve.</value>
+    <value>A távoli rendszer gépneve.</value>
   </data>
   <data name="TheLocationOfTheFilesToShare." xml:space="preserve">
     <value>A megosztás fájljainak helye.</value>
@@ -3178,10 +3193,13 @@
     <value>E mezőnek egy tartománynévnek vagy egy IPv4 címnek kell lennie</value>
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIPAddress" xml:space="preserve">
-    <value>E mezőnek hosztnévnek vagy egy IP címnek kell lennie</value>
+    <value>E mezőnek gépnévnek vagy IP-címnek kell lennie</value>
+  </data>
+  <data name="ThisFieldShouldBeAHostNameOrAnIPAddressInCIDRNotation" xml:space="preserve">
+    <value>E mezőnek gépnévnek vagy IP-címnek kell lennie CIDR jelöléssel</value>
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIpv4Address" xml:space="preserve">
-    <value>E mezőnek hosztnévnek vagy egy IPv4 címnek kell lennie</value>
+    <value>E mezőnek gépnévnek vagy egy IPv4 címnek kell lennie</value>
   </data>
   <data name="ThisFieldShouldBeAListOfDomainNamesOrIPAddresses" xml:space="preserve">
     <value>E mezőnek egy tartománynév listának vagy egy IP címnek kell lennie</value>
@@ -3581,9 +3599,6 @@
   </data>
   <data name="Zimbabwe" xml:space="preserve">
     <value>Zimbabwe</value>
-  </data>
-  <data name="ControlPanel" xml:space="preserve">
-    <value>vezérlőpult</value>
   </data>
   <data name="Day" xml:space="preserve">
     <value>nap</value>

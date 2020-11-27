@@ -129,9 +129,6 @@
   <data name="%S[On%S,%S]" xml:space="preserve">
     <value>%s [le %s, %s]</value>
   </data>
-  <data name="'All'IsNotAllowed" xml:space="preserve">
-    <value>'Tous' n'est pas autorisé</value>
-  </data>
   <data name="0Kib/SMeansUnlimited." xml:space="preserve">
     <value>0 KiB/s correspond à illimité.</value>
   </data>
@@ -315,6 +312,9 @@
   <data name="AddBondConnection" xml:space="preserve">
     <value>Ajouter une interface virtuelle</value>
   </data>
+  <data name="AddBridgeConnection" xml:space="preserve">
+    <value>Ajouter une connexion de pont</value>
+  </data>
   <data name="AddDevicesToRAIDDevice" xml:space="preserve">
     <value>Ajouter des disques durs au périphérique RAID</value>
   </data>
@@ -399,11 +399,14 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Autoriser les clients à reprendre les téléchargements interrompus</value>
   </data>
+  <data name="AllowedClients" xml:space="preserve">
+    <value>Clients autorisés</value>
+  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>Îles Samoa</value>
   </data>
-  <data name="AnErrorHasOccured" xml:space="preserve">
-    <value>Une erreur est survenue</value>
+  <data name="AnErrorHasOccurred" xml:space="preserve">
+    <value>Une erreur c'est produite</value>
   </data>
   <data name="Andorra" xml:space="preserve">
     <value>Andorre</value>
@@ -578,6 +581,9 @@
   </data>
   <data name="Brazil" xml:space="preserve">
     <value>Brésil</value>
+  </data>
+  <data name="Bridge" xml:space="preserve">
+    <value>Pont</value>
   </data>
   <data name="BritishAntarcticTerritory" xml:space="preserve">
     <value>Territoire antarctique britannique</value>
@@ -1050,6 +1056,9 @@
   <data name="EditBondConnection" xml:space="preserve">
     <value>Éditer une interface virtuelle</value>
   </data>
+  <data name="EditBridgeConnection" xml:space="preserve">
+    <value>Modifier  une connexion de pont</value>
+  </data>
   <data name="EditEthernetConnection" xml:space="preserve">
     <value>Modifier la connexion ethernet</value>
   </data>
@@ -1302,6 +1311,9 @@
   <data name="Filename" xml:space="preserve">
     <value>Nom de fichier</value>
   </data>
+  <data name="Filepath" xml:space="preserve">
+    <value>Chemin du fichier</value>
+  </data>
   <data name="Filesize" xml:space="preserve">
     <value>Taille de fichier</value>
   </data>
@@ -1351,7 +1363,7 @@
     <value>Plein</value>
   </data>
   <data name="GID" xml:space="preserve">
-    <value />
+    <value>GID</value>
   </data>
   <data name="Gabon" xml:space="preserve">
     <value>Gabon</value>
@@ -1609,13 +1621,13 @@
     <value>Interfaces</value>
   </data>
   <data name="InvalidIPAddress." xml:space="preserve">
-    <value />
+    <value>Adresse IP non valide.</value>
   </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
     <value>Clé publique SSH invalide (RFC 4716)</value>
   </data>
   <data name="InvalidUser-Agent." xml:space="preserve">
-    <value />
+    <value>Agent utilisateur non valide.</value>
   </data>
   <data name="InvalidDomainName" xml:space="preserve">
     <value>Nom de domaine invalide</value>
@@ -1636,7 +1648,7 @@
     <value>Nom d'utilisateur invalide</value>
   </data>
   <data name="InvalidUser." xml:space="preserve">
-    <value />
+    <value>Utilisateur non valide.</value>
   </data>
   <data name="Iran" xml:space="preserve">
     <value>Iran</value>
@@ -1780,7 +1792,7 @@
     <value>Niveau de journal</value>
   </data>
   <data name="LoggingOut,PleaseWait..." xml:space="preserve">
-    <value />
+    <value>Déconnexion, patientez SVP…</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Connexion</value>
@@ -2046,6 +2058,9 @@
   <data name="NewZealand" xml:space="preserve">
     <value>Nouvelle-Zélande</value>
   </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nouveau mot de passe</value>
+  </data>
   <data name="NextPage" xml:space="preserve">
     <value>Page suivante</value>
   </data>
@@ -2197,7 +2212,7 @@
     <value>Informations sur le paquet</value>
   </data>
   <data name="Page" xml:space="preserve">
-    <value />
+    <value>Page</value>
   </data>
   <data name="PageNotFound" xml:space="preserve">
     <value>Page non trouvée</value>
@@ -2239,10 +2254,10 @@
     <value>Les mots de passe ne correspondent pas</value>
   </data>
   <data name="PasteARSAOrECCCertificateInX.509PEMFormatHere." xml:space="preserve">
-    <value />
+    <value>Coller un certificat RSA ou ECC au format X.509 PEM ici.</value>
   </data>
   <data name="PasteARSAOrECCPrivateKeyInX.509PEMFormatHere." xml:space="preserve">
-    <value />
+    <value>Coller une clé privée RSA ou ECC au format X.509 PEM ici.</value>
   </data>
   <data name="Path" xml:space="preserve">
     <value>Chemin d'accès</value>
@@ -2335,13 +2350,13 @@
     <value>Conserver les attributs étendus</value>
   </data>
   <data name="PreserveGroup" xml:space="preserve">
-    <value />
+    <value>Conserver le groupe</value>
   </data>
   <data name="PreserveModificationTimes" xml:space="preserve">
     <value>Conserver la date de modification</value>
   </data>
   <data name="PreserveOwner" xml:space="preserve">
-    <value />
+    <value>Conserver le propriétaire</value>
   </data>
   <data name="PreservePermissions" xml:space="preserve">
     <value>Conserver les permissions</value>
@@ -2377,7 +2392,7 @@
     <value>Protocole</value>
   </data>
   <data name="Proxy" xml:space="preserve">
-    <value />
+    <value>Proxy</value>
   </data>
   <data name="Public" xml:space="preserve">
     <value>Public</value>
@@ -2590,7 +2605,7 @@
     <value>La surveillance S.M.A.R.T. doit-être activée pour le périphérique sélectionné.</value>
   </data>
   <data name="S/N" xml:space="preserve">
-    <value />
+    <value>S/N</value>
   </data>
   <data name="SMB/CIFS" xml:space="preserve">
     <value>SMB/CIFS</value>
@@ -2626,7 +2641,7 @@
     <value>SSL/TLS</value>
   </data>
   <data name="STARTTLS" xml:space="preserve">
-    <value />
+    <value>STARTTLS</value>
   </data>
   <data name="SaintHelena" xml:space="preserve">
     <value>Sainte-Hélène</value>
@@ -3025,7 +3040,7 @@
     <value>Journaux système</value>
   </data>
   <data name="SystemAccounts" xml:space="preserve">
-    <value />
+    <value>Comptes système</value>
   </data>
   <data name="SystemTime" xml:space="preserve">
     <value>Date système</value>
@@ -3100,7 +3115,7 @@
     <value>Le nom de l'hôte est un libellé qui identifie le système sur le réseau.</value>
   </data>
   <data name="TheHostnameOfTheRemoteSystem." xml:space="preserve">
-    <value />
+    <value>Nom d'hôte du système distant.</value>
   </data>
   <data name="TheLocationOfTheFilesToShare." xml:space="preserve">
     <value>L'emplacement des fichiers à partager.</value>
@@ -3121,7 +3136,7 @@
     <value>Le mot de passe contient des caractères non valident</value>
   </data>
   <data name="ThePortOnWhichSSHIsRunningOnTheRemoteSystem." xml:space="preserve">
-    <value />
+    <value>Port SSH sur le système distant.</value>
   </data>
   <data name="ThePrivateRSAKeyInX.509PEMFormat." xml:space="preserve">
     <value>Clé privée RSA au format X.509 PEM.</value>
@@ -3130,7 +3145,7 @@
     <value>Clé publique au format RFC 4716.</value>
   </data>
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
-    <value />
+    <value>La page demandé n'a pas été trouvée.</value>
   </data>
   <data name="TheSourceSharedFolder." xml:space="preserve">
     <value>Le dossier partagé source.</value>
@@ -3139,7 +3154,7 @@
     <value>Le quota fixé dépasse la valeur maximale possible de 4To.</value>
   </data>
   <data name="TheSystemMustBeRebooted." xml:space="preserve">
-    <value />
+    <value>Le système doit être redémarrer.</value>
   </data>
   <data name="TheSystemWillRebootNow.ThisMayTakeSomeTime..." xml:space="preserve">
     <value>Le système va redémarrer maintenant. Cela peut prendre un certain temps ...</value>
@@ -3179,6 +3194,9 @@
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIPAddress" xml:space="preserve">
     <value>Ce champ doit contenir un nom d'hôte ou une adresse IP</value>
+  </data>
+  <data name="ThisFieldShouldBeAHostNameOrAnIPAddressInCIDRNotation" xml:space="preserve">
+    <value>Ce champ doit être un nom d'hôte ou une adresse IP au format CIDR</value>
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIpv4Address" xml:space="preserve">
     <value>Ce champ doit être un nom d'hôte ou une adresse réseau IPv4</value>
@@ -3226,7 +3244,7 @@
     <value>Cela créera une poubelle dans le partage.</value>
   </data>
   <data name="Threshold" xml:space="preserve">
-    <value />
+    <value>Seuil</value>
   </data>
   <data name="Thursday" xml:space="preserve">
     <value>Jeudi</value>
@@ -3238,7 +3256,7 @@
     <value>Heure</value>
   </data>
   <data name="TimeMachineSupport" xml:space="preserve">
-    <value />
+    <value>Support Time Machine</value>
   </data>
   <data name="TimeInterval" xml:space="preserve">
     <value>Intervalle de temps</value>
@@ -3313,7 +3331,7 @@
     <value>Îles vierges américaines</value>
   </data>
   <data name="UID" xml:space="preserve">
-    <value />
+    <value>UID</value>
   </data>
   <data name="UNKNOWN" xml:space="preserve">
     <value>INCONNU</value>
@@ -3382,7 +3400,7 @@
     <value>Mises à jour</value>
   </data>
   <data name="UpdatesAvailable" xml:space="preserve">
-    <value />
+    <value>Mise à jour disponible</value>
   </data>
   <data name="UpdatingACLSettings" xml:space="preserve">
     <value>Mets à jour les paramètres ACL</value>
@@ -3562,7 +3580,7 @@
     <value>Ecrire/Exécuter</value>
   </data>
   <data name="XenVirtualDiskDevice" xml:space="preserve">
-    <value />
+    <value>Périphérique disque virtuel Xen</value>
   </data>
   <data name="Yearly" xml:space="preserve">
     <value>Annuellement</value>
@@ -3581,9 +3599,6 @@
   </data>
   <data name="Zimbabwe" xml:space="preserve">
     <value>Zimbabwe</value>
-  </data>
-  <data name="ControlPanel" xml:space="preserve">
-    <value>Panneau de contrôle</value>
   </data>
   <data name="Day" xml:space="preserve">
     <value>jour</value>
@@ -3604,9 +3619,9 @@
     <value>de {0}</value>
   </data>
   <data name="Old-Age" xml:space="preserve">
-    <value />
+    <value>ancienneté</value>
   </data>
   <data name="Prefail" xml:space="preserve">
-    <value />
+    <value>pré-échec</value>
   </data>
 </root>

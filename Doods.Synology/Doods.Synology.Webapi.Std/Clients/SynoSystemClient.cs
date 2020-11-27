@@ -10,7 +10,7 @@ namespace Doods.Synology.Webapi.Std
         Task<NetworkInfo> GetNetworkInfo();
         Task<StorageInfo> GetStorageInfo();
     }
-    class SynoSystemClient: BaseSynoClient, ISynoSystemClient
+    public class SynoSystemClient: BaseSynoClient, ISynoSystemClient
     {
         public SynoSystemClient(ISynoWebApi client):base(client)
         {

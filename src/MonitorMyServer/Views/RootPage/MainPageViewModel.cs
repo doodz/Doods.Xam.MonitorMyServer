@@ -116,7 +116,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         //    MessagingCenter.Subscribe<ConnctionService, Host>(
         //        this, MessengerKeys.ItemChanged, async (sender, arg) =>
         //        {
-                  
+
         //                await InitHostAsync();
         //        });
         //    return base.OnInternalAppearingAsync();
@@ -172,7 +172,6 @@ namespace Doods.Xam.MonitorMyServer.Views
         //}
 
 
-
         protected override async Task OnInternalAppearingAsync()
         {
             try
@@ -195,7 +194,7 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected Task RefreshData()
         {
-            return  Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+            return Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
                 GetUpgradables());
         }
 
@@ -313,6 +312,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
             historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);
         }
+
         //private class toto : IAsyncResult
         //{
         //    public object AsyncState { get; }

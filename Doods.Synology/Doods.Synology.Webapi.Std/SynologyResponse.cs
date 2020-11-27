@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace Doods.Synology.Webapi.Std
 {
+
+
+
     internal class SynologyResponse<T>
     {
         [JsonProperty("data")]

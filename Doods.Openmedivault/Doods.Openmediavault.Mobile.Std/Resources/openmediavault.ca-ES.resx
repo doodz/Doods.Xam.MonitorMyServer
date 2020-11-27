@@ -129,9 +129,6 @@
   <data name="%S[On%S,%S]" xml:space="preserve">
     <value>%s [en %s, %s]</value>
   </data>
-  <data name="'All'IsNotAllowed" xml:space="preserve">
-    <value>'Tot' no és permés</value>
-  </data>
   <data name="0Kib/SMeansUnlimited." xml:space="preserve">
     <value>0 KiB/s significa ilimitat.</value>
   </data>
@@ -315,6 +312,9 @@
   <data name="AddBondConnection" xml:space="preserve">
     <value>Afegir connexió agrupada</value>
   </data>
+  <data name="AddBridgeConnection" xml:space="preserve">
+    <value>Afegir una connexió pont</value>
+  </data>
   <data name="AddDevicesToRAIDDevice" xml:space="preserve">
     <value>Afegir dispositius al RAID</value>
   </data>
@@ -399,11 +399,14 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Permetre reprendre pujades / baixades interrompudes</value>
   </data>
+  <data name="AllowedClients" xml:space="preserve">
+    <value>Clients permesos</value>
+  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>Samoa</value>
   </data>
-  <data name="AnErrorHasOccured" xml:space="preserve">
-    <value>Hi ha hagut un error</value>
+  <data name="AnErrorHasOccurred" xml:space="preserve">
+    <value>S'ha produït un error</value>
   </data>
   <data name="Andorra" xml:space="preserve">
     <value>Andorra</value>
@@ -421,7 +424,7 @@
     <value>FTP Anònim</value>
   </data>
   <data name="AnotherUserIsAlreadyAuthenticated." xml:space="preserve">
-    <value />
+    <value>Un altre usuari ja està autenticat.</value>
   </data>
   <data name="Antarctica" xml:space="preserve">
     <value>Antàrtida</value>
@@ -578,6 +581,9 @@
   </data>
   <data name="Brazil" xml:space="preserve">
     <value>Brasil</value>
+  </data>
+  <data name="Bridge" xml:space="preserve">
+    <value>Pont</value>
   </data>
   <data name="BritishAntarcticTerritory" xml:space="preserve">
     <value>Territori Britànic Antàrtic</value>
@@ -754,10 +760,10 @@
     <value>Illes Cook</value>
   </data>
   <data name="Copy" xml:space="preserve">
-    <value />
+    <value>Còpia</value>
   </data>
   <data name="CopyPublicSSHKey" xml:space="preserve">
-    <value />
+    <value>Copieu la clau pública SSH</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Copiar al porta-papers</value>
@@ -931,7 +937,7 @@
     <value>Deshabilitat</value>
   </data>
   <data name="DisallowTheUserToModifyTheirAccount." xml:space="preserve">
-    <value />
+    <value>No permeteu a l'usuari que modifiqui el seu compte.</value>
   </data>
   <data name="DiskUsage" xml:space="preserve">
     <value>Ús del disc</value>
@@ -1050,6 +1056,9 @@
   <data name="EditBondConnection" xml:space="preserve">
     <value>Editar connexions agrupades</value>
   </data>
+  <data name="EditBridgeConnection" xml:space="preserve">
+    <value>Edita la connexió pont</value>
+  </data>
   <data name="EditEthernetConnection" xml:space="preserve">
     <value>Editar connexió ethernet</value>
   </data>
@@ -1114,7 +1123,7 @@
     <value>Habilitar connexions SSL/TLS</value>
   </data>
   <data name="EnableTimeMachineSupportForThisShare." xml:space="preserve">
-    <value />
+    <value>Activa el suport de la màquina de temps per a aquest recurs.</value>
   </data>
   <data name="EnableWINSServer" xml:space="preserve">
     <value>Habilitar servidor WINS</value>
@@ -1180,7 +1189,7 @@
     <value>Habilitat</value>
   </data>
   <data name="EncryptionMode" xml:space="preserve">
-    <value />
+    <value>Mode de xifrat</value>
   </data>
   <data name="EnterYourPassword" xml:space="preserve">
     <value>Introdueix la teva contrasenya</value>
@@ -1301,6 +1310,9 @@
   </data>
   <data name="Filename" xml:space="preserve">
     <value>Nom d’arxiu</value>
+  </data>
+  <data name="Filepath" xml:space="preserve">
+    <value>Ruta del fitxer</value>
   </data>
   <data name="Filesize" xml:space="preserve">
     <value>Mida de l’arxiu</value>
@@ -1438,7 +1450,7 @@
     <value>República Cooperativa de Guyana</value>
   </data>
   <data name="HTTP404Error" xml:space="preserve">
-    <value />
+    <value>HTTP 404 error</value>
   </data>
   <data name="HTTP-Proxy" xml:space="preserve">
     <value>HTTP-Proxy</value>
@@ -1522,7 +1534,7 @@
     <value>Identificat com</value>
   </data>
   <data name="IdentifyNetworkInterfaceDevice" xml:space="preserve">
-    <value>Identificar dispositiu de ret</value>
+    <value>Identificar dispositiu de xarxa</value>
   </data>
   <data name="Idle" xml:space="preserve">
     <value>Inactivo</value>
@@ -1609,13 +1621,13 @@
     <value>Interfícies</value>
   </data>
   <data name="InvalidIPAddress." xml:space="preserve">
-    <value />
+    <value>Adreça IP no vàlida.</value>
   </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
     <value>Clau pública SSH invàlida (RFC 4716)</value>
   </data>
   <data name="InvalidUser-Agent." xml:space="preserve">
-    <value />
+    <value>Usuari-agent no vàlid.</value>
   </data>
   <data name="InvalidDomainName" xml:space="preserve">
     <value>Nom de domini invàlid</value>
@@ -1636,7 +1648,7 @@
     <value>Nom d’usuari invàlid</value>
   </data>
   <data name="InvalidUser." xml:space="preserve">
-    <value />
+    <value>Usuari no vàlid.</value>
   </data>
   <data name="Iran" xml:space="preserve">
     <value>Iran</value>
@@ -1780,7 +1792,7 @@
     <value>Nivell de Log</value>
   </data>
   <data name="LoggingOut,PleaseWait..." xml:space="preserve">
-    <value />
+    <value>Tancant la sessió, espereu ...</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
@@ -2026,13 +2038,13 @@
     <value>Antilles Holandeses</value>
   </data>
   <data name="Netmask" xml:space="preserve">
-    <value>Mascara de Ret</value>
+    <value>Mascara de Xarxa</value>
   </data>
   <data name="Network" xml:space="preserve">
-    <value>Ret</value>
+    <value>Xarxa</value>
   </data>
   <data name="NetworkInterfaces" xml:space="preserve">
-    <value>Interfícies de ret</value>
+    <value>Interfícies de xarxa</value>
   </data>
   <data name="NeutralZone" xml:space="preserve">
     <value>Zona neutral</value>
@@ -2045,6 +2057,9 @@
   </data>
   <data name="NewZealand" xml:space="preserve">
     <value>Nova Zelanda</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nova contrasenya</value>
   </data>
   <data name="NextPage" xml:space="preserve">
     <value>Pàgina següent</value>
@@ -2239,10 +2254,10 @@
     <value>Les contrasenyes no coincideixen</value>
   </data>
   <data name="PasteARSAOrECCCertificateInX.509PEMFormatHere." xml:space="preserve">
-    <value />
+    <value>Enganxeu aquí un certificat RSA o ECC en format PEM X.509.</value>
   </data>
   <data name="PasteARSAOrECCPrivateKeyInX.509PEMFormatHere." xml:space="preserve">
-    <value />
+    <value>Enganxeu una clau privada RSA o ECC en format PEM X.509 aquí.</value>
   </data>
   <data name="Path" xml:space="preserve">
     <value>Ruta</value>
@@ -2335,13 +2350,13 @@
     <value>Mantenir atributs estesos</value>
   </data>
   <data name="PreserveGroup" xml:space="preserve">
-    <value />
+    <value>Conserveu el grup</value>
   </data>
   <data name="PreserveModificationTimes" xml:space="preserve">
     <value>Mantenir l’hora de modificació</value>
   </data>
   <data name="PreserveOwner" xml:space="preserve">
-    <value />
+    <value>Conserveu el propietari</value>
   </data>
   <data name="PreservePermissions" xml:space="preserve">
     <value>Conservar permisos</value>
@@ -2626,7 +2641,7 @@
     <value>SSL/TLS</value>
   </data>
   <data name="STARTTLS" xml:space="preserve">
-    <value />
+    <value>STARTTLS</value>
   </data>
   <data name="SaintHelena" xml:space="preserve">
     <value>Santa Helena</value>
@@ -3097,10 +3112,10 @@
     <value>S’ha creat satisfactòriament el sistema d'arxius.</value>
   </data>
   <data name="TheHostnameIsALabelThatIdentifiesTheSystemToTheNetwork." xml:space="preserve">
-    <value>El nom de host es una etiqueta que identifica al sistema a la ret.</value>
+    <value>El nom de host es una etiqueta que identifica al sistema a la xarxa.</value>
   </data>
   <data name="TheHostnameOfTheRemoteSystem." xml:space="preserve">
-    <value />
+    <value>El nom d'amfitrió del sistema remot.</value>
   </data>
   <data name="TheLocationOfTheFilesToShare." xml:space="preserve">
     <value>La ubicació dels arxius a compartir.</value>
@@ -3121,7 +3136,7 @@
     <value>La contrasenya conte caràcters invàlids</value>
   </data>
   <data name="ThePortOnWhichSSHIsRunningOnTheRemoteSystem." xml:space="preserve">
-    <value />
+    <value>El port en el qual s’executa SSH al sistema remot.</value>
   </data>
   <data name="ThePrivateRSAKeyInX.509PEMFormat." xml:space="preserve">
     <value>La clau pública RSA en format X.509 PEM.</value>
@@ -3130,7 +3145,7 @@
     <value>La clau pública SSH en format RFC 4716.</value>
   </data>
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
-    <value />
+    <value>No s'ha trobat la pàgina sol·licitada.</value>
   </data>
   <data name="TheSourceSharedFolder." xml:space="preserve">
     <value>La carpeta compartida origen.</value>
@@ -3139,7 +3154,7 @@
     <value>La quota indicada excedeix el màxim possible de 4Tb.</value>
   </data>
   <data name="TheSystemMustBeRebooted." xml:space="preserve">
-    <value />
+    <value>Cal reiniciar el sistema.</value>
   </data>
   <data name="TheSystemWillRebootNow.ThisMayTakeSomeTime..." xml:space="preserve">
     <value>El sistema es reiniciarà ara. Pot tardar una mica ...</value>
@@ -3160,16 +3175,16 @@
     <value>Aquest camp ha d’estar en formato: hh:mm:ss</value>
   </data>
   <data name="ThisFieldShouldBeAIPNetworkAddressInCIDRNotation" xml:space="preserve">
-    <value>Hauria de ser una adreça de ret IPv4 en notació CIDR.</value>
+    <value>Hauria de ser una adreça de xarxa IPv4 en notació CIDR.</value>
   </data>
   <data name="ThisFieldShouldBeAIpv4NetworkAddress" xml:space="preserve">
-    <value>Aquest camp ha de ser una adreça IP vàlida</value>
+    <value>Aquest camp hauria de ser una adreça de xarxa IPv4</value>
   </data>
   <data name="ThisFieldShouldBeAIpv4NetworkAddressInCIDRNotation" xml:space="preserve">
-    <value>Ha de ser una adreça de ret IPv4 en notació CIDR.</value>
+    <value>Ha de ser una adreça de xarxa IPv4 en notació CIDR.</value>
   </data>
   <data name="ThisFieldShouldBeAIpv6NetworkAddressInCIDRNotation" xml:space="preserve">
-    <value>Ha de ser una adreça de ret IPv46 en notació CIDR.</value>
+    <value>Ha de ser una adreça de xarxa IPv46 en notació CIDR.</value>
   </data>
   <data name="ThisFieldShouldBeADomainNameOrAnIPAddress" xml:space="preserve">
     <value>El camp ha de ser un domini o una IP.</value>
@@ -3179,6 +3194,9 @@
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIPAddress" xml:space="preserve">
     <value>El camp ha de ser un nom de host o una IP</value>
+  </data>
+  <data name="ThisFieldShouldBeAHostNameOrAnIPAddressInCIDRNotation" xml:space="preserve">
+    <value>Aquest camp ha de ser un nom d'amfitrió o una adreça IP en la notació CIDR</value>
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIpv4Address" xml:space="preserve">
     <value>El camp ha de ser un nom de host o una IP tipus IPV4</value>
@@ -3205,10 +3223,10 @@
     <value>Aquest camp ha de contenir només números separats per &lt;,&gt; o &lt;;&gt;</value>
   </data>
   <data name="ThisFieldShouldOnlyContainOptionsSeparatedBy&lt;,&gt;" xml:space="preserve">
-    <value />
+    <value>Aquest camp només ha de contenir opcions separades per &lt;,&gt;</value>
   </data>
   <data name="ThisFieldShouldOnlyContainStringsSeparatedBy&lt;,&gt;" xml:space="preserve">
-    <value />
+    <value>Aquest camp només ha de contenir cadenes separades per &lt;,&gt;</value>
   </data>
   <data name="ThisFieldShouldOnlyContainStringsSeparatedBy&lt;,&gt;Or&lt;;&gt;" xml:space="preserve">
     <value>Aquest camp ha de contenir només cadenes separades per &lt;,&gt; o &lt;;&gt;</value>
@@ -3226,7 +3244,7 @@
     <value>Crearà una paperera de reciclatge en la compartició.</value>
   </data>
   <data name="Threshold" xml:space="preserve">
-    <value />
+    <value>Llindar</value>
   </data>
   <data name="Thursday" xml:space="preserve">
     <value>Dijous</value>
@@ -3238,7 +3256,7 @@
     <value>Hora</value>
   </data>
   <data name="TimeMachineSupport" xml:space="preserve">
-    <value />
+    <value>Time Machine support</value>
   </data>
   <data name="TimeInterval" xml:space="preserve">
     <value>Interval</value>
@@ -3352,7 +3370,7 @@
     <value>Illes Ultramarines d’EEUU</value>
   </data>
   <data name="UnknownNetworkInterfaceType." xml:space="preserve">
-    <value>Interfície de ret desconegut.</value>
+    <value>Interfície de xarxa desconegut.</value>
   </data>
   <data name="Unmount" xml:space="preserve">
     <value>Desmuntar</value>
@@ -3382,7 +3400,7 @@
     <value>Actualitzacions</value>
   </data>
   <data name="UpdatesAvailable" xml:space="preserve">
-    <value />
+    <value>Actualitzacions disponibles</value>
   </data>
   <data name="UpdatingACLSettings" xml:space="preserve">
     <value>Actualitzant configuració de les ACL</value>
@@ -3581,9 +3599,6 @@
   </data>
   <data name="Zimbabwe" xml:space="preserve">
     <value>Zimbabwe</value>
-  </data>
-  <data name="ControlPanel" xml:space="preserve">
-    <value>Panell de control</value>
   </data>
   <data name="Day" xml:space="preserve">
     <value>dia</value>

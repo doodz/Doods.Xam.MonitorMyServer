@@ -1,6 +1,6 @@
 ﻿namespace Doods.Synology.Webapi.Std
 {
-    class BaseSynoClient
+    public abstract class BaseSynoClient
     {
         protected readonly ISynoWebApi _client;
         protected string ServiceApiName;

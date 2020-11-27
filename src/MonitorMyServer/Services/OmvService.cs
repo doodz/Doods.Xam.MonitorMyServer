@@ -14,16 +14,10 @@ using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Data.Nas;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface IOmvService : IRpcService
-    {
-        Task<IEnumerable<PluginInfo>> GetPlugins();
-
-        Task<bool> Connect(string username, string password);
-    }
-
     [Obsolete("use OmvRpcService")]
     public class OmvService : SshService, IOmvService
     {
@@ -407,6 +401,11 @@ namespace Doods.Xam.MonitorMyServer.Services
                     Logger.Error(apiResponse.Request.CommandText + Environment.NewLine +
                                  Environment.NewLine + apiResponse.ErrorMessage);
             }
+        }
+
+        public Task<IEnumerable<SharedFolder>> GetSharedFolders()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -22,15 +22,14 @@ namespace Doods.Xam.MonitorMyServer.Services
             builder.RegisterType<SshService>().AsSelf();
             builder.RegisterType<OmvRpcService>().AsSelf();
             builder.RegisterType<OmvSshService>().AsSelf();
-           
 
-            builder.RegisterType<OmvServiceProvider>().SingleInstance().AsSelf();
             builder.RegisterType<SshServiceProvider>().SingleInstance().AsSelf();
+            builder.RegisterType<OmvServiceProvider>().SingleInstance().AsSelf();
             builder.RegisterType<SynoServiceProvider>().SingleInstance().AsSelf();
             builder.Register(c => c.Resolve<SshServiceProvider>().Value).As<ISshService>();
             builder.Register(c => c.Resolve<OmvServiceProvider>().Value).As<IOmvService>();
             builder.Register(c => c.Resolve<SynoServiceProvider>().Value).As<ISynologyCgiService>();
-            
+            builder.Register(c => c.Resolve<ConnctionService>().GetNasService()).As<INasService>();
             //builder.Register(c => c.Resolve<SshServiceProvider>().Value).ExternallyOwned().Keyed<ISshService>("1");
             //builder.Register(c => c.Resolve<OmvServiceProvider>().Value).ExternallyOwned().Keyed<IOmvService>("1");
 

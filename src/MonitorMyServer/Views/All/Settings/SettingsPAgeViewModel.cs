@@ -27,15 +27,16 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         private readonly IMessageBoxService _messageBoxService;
         private bool _useFingerprint;
         public ICommand ManageHostsCmd { get; }
-        public ICommand OnSwitchChangingCmd { get; }
+        //public ICommand OnSwitchChangingCmd { get; }
         public SettingsPAgeViewModel(IRewardService rewardService, IMessageBoxService messageBoxService)
         {
+            _useFingerprint = false;
             _rewardService = rewardService;
             _rewardService.OnRewarded += Current_OnRewarded;
             _rewardService.OnRewardedVideoAdFailedToLoad += RewardServiceOnOnRewardedVideoAdFailedToLoad;
             _messageBoxService = messageBoxService;
             ManageHostsCmd = new Command(ManageHosts);
-            OnSwitchChangingCmd = new Command(async()=> await OnSwitchChanging());
+            //OnSwitchChangingCmd = new Command(async()=> await OnSwitchChanging());
 
             ThemeOptions.Add(nameof(Theme.Light));
             ThemeOptions.Add(nameof(Theme.Dark));
@@ -69,7 +70,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         private void ManageHosts()
         {
             NavigationService.NavigateAsync(nameof(HostManagerPage));
-        }   
+        }
         public ICommand ShowRewarVideoCmd => new Command(ShowRewardVideo);
 
         public bool IsRewarded
@@ -88,7 +89,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         public bool UseFingerprint
         {
             get => _useFingerprint;
-            set => SetProperty(ref _useFingerprint, value);
+            set => SetProperty(ref _useFingerprint, value, null, (currentValue, newValue) => ProveYouHaveFingers(currentValue, newValue));
 
             //set => SetProperty(ref _useFingerprint, value, null,  (currentValue, newValue) => ProveYouHaveFingers());
             //set => SetProperty(ref _useFingerprint, value, async () => await ProveYouHaveFingers(), null);
@@ -135,41 +136,69 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
             return Task.FromResult(0);
         }
 
-        private async Task OnSwitchChanging()
-        {
-            try
-            {
-                await UseFingerprintAction(!_useFingerprint);
-            }
-            catch (Exception ex)
-            {
-                var toto = ex.Message;
-            }
-        }
-        private async Task UseFingerprintAction(bool value)
-        {
-            var result =await ProveYouHaveFingers();
-            if (result)
-            {
-                _useFingerprint = value;
-                Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
-                OnPropertyChanged(nameof(UseFingerprint));
-            }
-        }
+        //private async Task OnSwitchChanging()
+        //{
+        //    try
+        //    {
+        //        await UseFingerprintAction(!_useFingerprint);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        var toto = ex.Message;
+        //    }
+        //}
+        //private async Task UseFingerprintAction(bool value)
+        //{
+        //    if (value)
+        //    {
+        //        var result = await ProveYouHaveFingers();
+        //        if (result)
+        //        {
+        //            _useFingerprint = value;
+        //            Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
+
+        //        }
+        //        else
+        //            _useFingerprint = false;
+        //        OnPropertyChanged(nameof(UseFingerprint));
+        //    }
+        //}
         private async Task<bool> ProveYouHaveFingers(bool retry = true)
         {
             //CrossFingerprint.Current.
+
+            var task = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Locked", "Prove you have fingers!"))
+               ;
+
             
-            var task = await CrossFingerprint.Current.AuthenticateAsync(new AuthenticationRequestConfiguration("Locked", "Prove you have fingers!"));
-           
-          
+
             if (task.Authenticated)
             {
                 //Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
             }
             else if (retry) await ProveYouHaveFingers(false);
-
+           
             return task.Authenticated;
+        }
+
+
+        private bool ProveYouHaveFingers(bool currentValue, bool newValue)
+        {
+            var t = ProveYouHaveFingers();
+            t.RunSynchronously();
+
+            do
+            {
+            } while (!t.IsFaulted || !t.IsCompleted || 
+                     !t.IsCanceled || !t.IsCompletedSuccessfully);
+
+
+            if (t.Result)
+            {
+                Preferences.Set(PreferencesKeys.UseFingerprintKey, newValue);
+            }
+            return t.Result;
+
         }
     }
 }

@@ -10,6 +10,7 @@ using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Http.Std;
 using Doods.Openmedivault.Ssh.Std;
 using Doods.Openmedivault.Ssh.Std.Requests;
@@ -59,6 +60,24 @@ namespace Doods.Xam.MonitorMyServer.Services
                 });
         }
 
+        public INasService GetNasService()
+        {
+            if (CurrentHost == null) return default;
+
+            if (CurrentHost.IsSynoServer)
+            {
+                return _synoServiceProvider?.Value;
+            }
+            if (CurrentHost.IsOmvServer)
+            {
+                return _omvServiceProvider?.Value;
+            }
+
+
+            return default;
+        }
+
+
         public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
         public Host CurrentHost { get; private set; }
 
@@ -102,8 +121,6 @@ namespace Doods.Xam.MonitorMyServer.Services
                             Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
                         }
                     }
-                  
-
                 }
                 else
                     Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
@@ -179,7 +196,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             if (host.IsSynoServer)
             {
                 var connection = new HttpConnection(host.Url + "/webapi", host.Port);
-                var service = new SynologyCgiService(_logger, connection);
+                var service = new SynologyCgiService(_logger, connection, _mapper);
                 _synoService = service;
                 _synoServiceProvider.ChangeValue(_synoService);
             }
@@ -239,7 +256,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             var testConnectionResult = false;
             try
             {
-                var syno = new SynologyCgiService(_logger, connection);
+                var syno = new SynologyCgiService(_logger, connection, _mapper);
                 testConnectionResult = await syno.LoginAsync(login, password);
 
                 //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();

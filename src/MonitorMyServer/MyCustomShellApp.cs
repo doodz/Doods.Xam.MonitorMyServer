@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using Autofac;
 using Doods.Framework.Repository.Std.Tables;
@@ -10,6 +11,7 @@ using Doods.Xam.MonitorMyServer.Comtrols;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
+using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins;
@@ -42,8 +44,10 @@ namespace Doods.Xam.MonitorMyServer
         //    base.OnAppearing();
         //}
 
-       
 
+        /// <summary>
+        /// 
+        /// </summary>
         public MyCustomShellApp()
         {
             MessagingCenter.Subscribe<ConnctionService, Host>(
@@ -51,8 +55,8 @@ namespace Doods.Xam.MonitorMyServer
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
 
-            var config=
-            App.Container.Resolve<IConfiguration>();
+            var config =
+                App.Container.Resolve<IConfiguration>();
 
             if (!config.ModeOmvOnlyKey)
             {
@@ -62,8 +66,8 @@ namespace Doods.Xam.MonitorMyServer
             {
                 FlyoutHeader = new FlyoutHeader("OMV_graphic.png");
             }
-           
-           
+
+
             var homeItem = new FlyoutItem
             {
                 Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
@@ -75,16 +79,15 @@ namespace Doods.Xam.MonitorMyServer
                         {
                             new ShellContent
                             {
-                                Title =   Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                                Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
                                 ContentTemplate = new DataTemplate(typeof(MainPage))
                             }
                         }
                     }
                 }
             };
-          
+
             Items.AddRange(homeItem);
-          
 
 
             //var commandsItem = CreateFlyoutItem(openmediavault.ExecuteCommand,
@@ -98,9 +101,80 @@ namespace Doods.Xam.MonitorMyServer
             //Items.AddRange(commandsItem, settingsItem, aboutItem);
             Items.AddRange(settingsItem, aboutItem);
             BindingContext = App.Container.Resolve<AppShellViewModel>();
+            // Item => section => content
+
+            //this.PropertyChanged += OnPropertyChanged;
+            //this.CurrentItem.PropertyChanged += CurrentItemOnPropertyChanged;
         }
 
-        
+        //private void CurrentItemOnPropertyChanged(object sender, PropertyChangedEventArgs e)
+        //{
+        //    var name = e.PropertyName;
+        //}
+
+        //private void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
+        //{
+        //    //Application.Current?.MainPage as Shell;
+
+        //    //var current = Application.Current?.MainPage as Shell;
+        //    //var current2 = Application.Current?.MainPage as IShellController;
+        //    //var current3 = Application.Current?.MainPage as IPropertyPropagationController;
+            
+            
+        //    // Shell Current => Application.Current?.MainPage as Shell;
+
+        //    if (e.PropertyName == nameof(CurrentItem))
+        //    {
+        //        if (CurrentItem != null)
+        //        {
+        //            if (CurrentItem.Title == openmediavault.PerformanceStatistics || Current.Title == "OMV")
+        //            {
+        //                Shell.SetTabBarIsVisible(CurrentItem, true);
+        //                Shell.SetTabBarIsVisible(CurrentItem?.CurrentItem, true);
+        //                Shell.SetTabBarIsVisible(CurrentItem?.CurrentItem?.CurrentItem, true);
+        //            }
+        //        }
+        //    }
+        //}
+
+       
+
+        //protected override void OnNavigating(ShellNavigatingEventArgs args)
+        //{
+
+            
+        //    base.OnNavigating(args);
+        //}
+
+        //protected override void OnNavigated(ShellNavigatedEventArgs args)
+        //{
+        //    base.OnNavigated(args);
+        //}
+
+        //protected override void OnNavigating(ShellNavigatingEventArgs args)
+        //{
+        //    //if(CurrentItem != null)
+        //    //    if (args.Target.Location.OriginalString == "//OMV" || args.Target.Location.OriginalString == "//"+openmediavault.PerformanceStatistics)
+        //    //    {
+
+        //    //        Shell.SetTabBarIsVisible(CurrentItem, true);
+        //    //        Shell.SetTabBarIsVisible(CurrentItem?.CurrentItem, true);
+        //    //        //Shell.SetTabBarIsVisible(CurrentItem?.CurrentItem?.CurrentItem, true);
+        //    //    }
+        //    //    else
+        //    //    {
+        //    //        Shell.SetTabBarIsVisible(CurrentItem?.CurrentItem, false);
+
+        //    //    }
+        //    base.OnNavigating(args);
+        //}
+
+
+        private IEnumerable<FlyoutItem> GetNasPages()
+        {
+            yield return CreateFlyoutItem(openmediavault.SharedFolders,
+                typeof(SharedFoldersPage));
+        }
 
         private IEnumerable<FlyoutItem> GetSynoPages()
         {
@@ -113,7 +187,7 @@ namespace Doods.Xam.MonitorMyServer
 
         private IEnumerable<FlyoutItem> GetOmvPages()
         {
-           yield return  new FlyoutItem
+            yield return new FlyoutItem
             {
                 Title = "OMV",
                 Items =
@@ -121,22 +195,20 @@ namespace Doods.Xam.MonitorMyServer
                     CreateTabItem("OMV", typeof(OpenmediavaultDashboardPage)),
                     CreateTabItem(openmediavault.PerformanceStatistics,
                         typeof(OpenmediavaultStatisticsPage))
-                }
+                },
             };
 
 
-           yield return CreateFlyoutItem(openmediavault.FileSystems,
+            yield return CreateFlyoutItem(openmediavault.FileSystems,
                 typeof(OpenmediavaultFileSystemsPage));
-           yield return CreateFlyoutItem(openmediavault.Plugins,
+            yield return CreateFlyoutItem(openmediavault.Plugins,
                 typeof(OpenmediavaultPluginsPage));
-           yield return CreateFlyoutItem(openmediavault.SystemLogs,
-               typeof(OpenmediavaultSystemLogsPage));
-
+            yield return CreateFlyoutItem(openmediavault.SystemLogs,
+                typeof(OpenmediavaultSystemLogsPage));
         }
 
         private void InitList(Host host)
         {
-            
             Items.Clear();
             if (host.IsSsh && !host.IsOmvServer)
             {
@@ -151,7 +223,7 @@ namespace Doods.Xam.MonitorMyServer
                             {
                                 new ShellContent
                                 {
-                                    Title =   Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                                    Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
                                     ContentTemplate = new DataTemplate(typeof(MainPage))
                                 }
                             }
@@ -161,10 +233,11 @@ namespace Doods.Xam.MonitorMyServer
 
                 Items.AddRange(homeItem);
             }
-             
-            if (host.IsOmvServer) Items.AddRange(GetOmvPages());
 
-            if(host.IsSynoServer) Items.AddRange(GetSynoPages());
+            if (host.IsOmvServer) Items.AddRange(GetOmvPages());
+            if (host.IsSynoServer) Items.AddRange(GetSynoPages());
+            if (host.IsOmvServer) Items.AddRange(GetNasPages());
+            if (host.IsSynoServer) Items.AddRange(GetNasPages());
 
             if (host.IsSsh)
             {
@@ -201,10 +274,12 @@ namespace Doods.Xam.MonitorMyServer
             return new Tab
             {
                 Title = title,
+
                 Items =
                 {
                     new ShellContent
                     {
+                        Route = title,
                         Title = title,
                         ContentTemplate = new DataTemplate(page)
                     }

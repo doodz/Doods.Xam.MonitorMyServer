@@ -129,9 +129,6 @@
   <data name="%S[On%S,%S]" xml:space="preserve">
     <value>%s [på %s, %s]</value>
   </data>
-  <data name="'All'IsNotAllowed" xml:space="preserve">
-    <value>\"Alla\" är inte tillåten</value>
-  </data>
   <data name="0Kib/SMeansUnlimited." xml:space="preserve">
     <value>0 KiB/s betyder ingen begränsning.</value>
   </data>
@@ -315,6 +312,9 @@
   <data name="AddBondConnection" xml:space="preserve">
     <value>Lägg till bond-anslutning</value>
   </data>
+  <data name="AddBridgeConnection" xml:space="preserve">
+    <value>Lägg till broanslutning</value>
+  </data>
   <data name="AddDevicesToRAIDDevice" xml:space="preserve">
     <value>Lägg till enheter till RAID-enhet</value>
   </data>
@@ -334,7 +334,7 @@
     <value>Lägg till modul</value>
   </data>
   <data name="AddPublicKey" xml:space="preserve">
-    <value>Lägg till offentlig nyckel</value>
+    <value>Lägg till publik nyckel</value>
   </data>
   <data name="AddRsyncJob" xml:space="preserve">
     <value>Lägg till rsync-jobb</value>
@@ -399,10 +399,13 @@
   <data name="AllowClientsToResumeInterruptedUploadsAndDownloads" xml:space="preserve">
     <value>Låt klienter att återuppta avbrutna överföringar och hämtningar</value>
   </data>
+  <data name="AllowedClients" xml:space="preserve">
+    <value>Tillåtna klienter</value>
+  </data>
   <data name="AmericanSamoa" xml:space="preserve">
     <value>Amerikanska Samoa</value>
   </data>
-  <data name="AnErrorHasOccured" xml:space="preserve">
+  <data name="AnErrorHasOccurred" xml:space="preserve">
     <value>Ett fel har uppstått</value>
   </data>
   <data name="Andorra" xml:space="preserve">
@@ -578,6 +581,9 @@
   </data>
   <data name="Brazil" xml:space="preserve">
     <value>Brasilien</value>
+  </data>
+  <data name="Bridge" xml:space="preserve">
+    <value>Bro</value>
   </data>
   <data name="BritishAntarcticTerritory" xml:space="preserve">
     <value>Brittiska antarktis</value>
@@ -757,7 +763,7 @@
     <value>Kopiera</value>
   </data>
   <data name="CopyPublicSSHKey" xml:space="preserve">
-    <value>Kopiera offentlig SSH-nyckel</value>
+    <value>Kopiera publik SSH-nyckel</value>
   </data>
   <data name="CopyToClipboard" xml:space="preserve">
     <value>Kopiera till urklipp</value>
@@ -1050,6 +1056,9 @@
   <data name="EditBondConnection" xml:space="preserve">
     <value>Ändra bond-anslutning</value>
   </data>
+  <data name="EditBridgeConnection" xml:space="preserve">
+    <value>Redigera broanslutning</value>
+  </data>
   <data name="EditEthernetConnection" xml:space="preserve">
     <value>Redigera ethernet-anslutning</value>
   </data>
@@ -1147,7 +1156,7 @@
     <value>Aktivera behörighetsarv</value>
   </data>
   <data name="EnablePublicKeyAuthentication" xml:space="preserve">
-    <value>Aktivera offentlig nyckel autentisering</value>
+    <value>Aktivera publik nyckelautentisering</value>
   </data>
   <data name="EnableRecycleBin" xml:space="preserve">
     <value>Aktivera papperskorg</value>
@@ -1301,6 +1310,9 @@
   </data>
   <data name="Filename" xml:space="preserve">
     <value>Filnamn</value>
+  </data>
+  <data name="Filepath" xml:space="preserve">
+    <value>Sökväg</value>
   </data>
   <data name="Filesize" xml:space="preserve">
     <value>Filstorlek</value>
@@ -1612,7 +1624,7 @@
     <value>Ogiltig IP-adress.</value>
   </data>
   <data name="InvalidSSHPublicKey(RFC4716)" xml:space="preserve">
-    <value>Ogiltig SSH offentlig nyckel (RFC 4716)</value>
+    <value>Ogiltig SSH publik nyckel (RFC 4716)</value>
   </data>
   <data name="InvalidUser-Agent." xml:space="preserve">
     <value>Ogiltig användaragent.</value>
@@ -2046,6 +2058,9 @@
   <data name="NewZealand" xml:space="preserve">
     <value>Nya Zeeland</value>
   </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Nytt lösenord</value>
+  </data>
   <data name="NextPage" xml:space="preserve">
     <value>Nästa sida</value>
   </data>
@@ -2380,16 +2395,16 @@
     <value>Proxy</value>
   </data>
   <data name="Public" xml:space="preserve">
-    <value>Offentlig</value>
+    <value>Publik</value>
   </data>
   <data name="PublicKey" xml:space="preserve">
-    <value>Offentlig nyckel</value>
+    <value>Publik nyckel</value>
   </data>
   <data name="PublicKeyAuthentication" xml:space="preserve">
-    <value>Offentlig nyckel autentisering</value>
+    <value>Publik nyckelautentisering</value>
   </data>
   <data name="PublicKeys" xml:space="preserve">
-    <value>Offentliga nycklar</value>
+    <value>Publika nycklar</value>
   </data>
   <data name="PuertoRico" xml:space="preserve">
     <value>Puerto Rico</value>
@@ -2755,7 +2770,7 @@
     <value>Skicka ett testmeddelande</value>
   </data>
   <data name="SendCommandOutputViaEmail" xml:space="preserve">
-    <value>Skicka utdata från kommandon via e-post</value>
+    <value>Skicka utmatning från kommandon via e-post</value>
   </data>
   <data name="SendEmail" xml:space="preserve">
     <value>Skicka e-post</value>
@@ -3064,7 +3079,7 @@
     <value>RSA nyckellängd.</value>
   </data>
   <data name="TheRSAPublicKeyInOpensshFormat." xml:space="preserve">
-    <value>RSA offentlig nyckel i OpenSSH-format.</value>
+    <value>RSA publik nyckel i OpenSSH-format.</value>
   </data>
   <data name="TheSSHCertificateUsedForAuthentication." xml:space="preserve">
     <value>SSH-certifikatet används för autentisering.</value>
@@ -3127,7 +3142,7 @@
     <value>Den privata RSA-nyckeln i X.509 PEM-format.</value>
   </data>
   <data name="ThePublicKeyInRFC4716SSHPublicKeyFileFormat." xml:space="preserve">
-    <value>Den offentliga nyckeln i RFC 4716 SSH offentlig nyckel filformat.</value>
+    <value>Den offentliga nyckeln i RFC 4716 SSH publikt nyckelfilformat.</value>
   </data>
   <data name="TheRequestedPageWasNotFound." xml:space="preserve">
     <value>Den begärda sidan hittades inte.</value>
@@ -3179,6 +3194,9 @@
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIPAddress" xml:space="preserve">
     <value>Detta fält bör vara ett värdnamn eller en IP-adress</value>
+  </data>
+  <data name="ThisFieldShouldBeAHostNameOrAnIPAddressInCIDRNotation" xml:space="preserve">
+    <value>Detta fält ska vara ett värdnamn eller en IP-adress i CIDR-notation</value>
   </data>
   <data name="ThisFieldShouldBeAHostNameOrAnIpv4Address" xml:space="preserve">
     <value>Detta fält bör vara ett värdnamn eller en IPv4-adress</value>
@@ -3370,7 +3388,7 @@
     <value>Uppdateringshantering - Historik</value>
   </data>
   <data name="UpdateManagement-TerminalOutput" xml:space="preserve">
-    <value>Uppdateringshantering - Terminalutdata</value>
+    <value>Uppdateringshantering - Terminalutmatning</value>
   </data>
   <data name="UpdateNow" xml:space="preserve">
     <value>Uppdatera nu</value>
@@ -3581,9 +3599,6 @@
   </data>
   <data name="Zimbabwe" xml:space="preserve">
     <value>Zimbabwe</value>
-  </data>
-  <data name="ControlPanel" xml:space="preserve">
-    <value>kontrollpanel</value>
   </data>
   <data name="Day" xml:space="preserve">
     <value>dag</value>

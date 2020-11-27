@@ -1,6 +1,7 @@
 ﻿
 using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
 

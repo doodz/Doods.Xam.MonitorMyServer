@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Enums;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Interfaces
 {
     public interface IRpcClient
     {
