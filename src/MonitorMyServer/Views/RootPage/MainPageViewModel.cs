@@ -24,7 +24,7 @@ namespace Doods.Xam.MonitorMyServer.Views
     {
         private readonly ICommand _addHostCmd;
         private readonly ISshService _sshService;
-
+        private IEnumerable<string> _groups;
         private CpuInfo _cpuInfo;
         private IEnumerable<DiskUsage> _disksUsage;
         private MemoryUsage _memoryUsage;
@@ -33,7 +33,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         private IEnumerable<Upgradable> _upgradables;
         private int _upgradablesCount;
         private TimeSpan _uptime;
-
+        private bool _canSudo;
         public MainPageViewModel(ISshService sshService, IConfiguration configuration)
         {
             Title = Resource.Home;
@@ -74,6 +74,12 @@ namespace Doods.Xam.MonitorMyServer.Views
             set => SetProperty(ref _processesCount, value);
         }
 
+        public bool CanSudo
+        {
+            get => _canSudo;
+            set => SetProperty(ref _canSudo, value);
+        }
+
         public TimeSpan Uptime
         {
             get => _uptime;
@@ -85,7 +91,11 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _cpuInfo;
             set => SetProperty(ref _cpuInfo, value);
         }
-
+        public IEnumerable<string> Groups 
+        {
+            get => _groups;
+            set => SetProperty(ref _groups, value);
+        }
         public IEnumerable<DiskUsage> DisksUsage
         {
             get => _disksUsage;
@@ -177,16 +187,20 @@ namespace Doods.Xam.MonitorMyServer.Views
             try
             {
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-                    () => SetLabelsStateItem("OMV", openmediavault.SystemInformation),
+                    async () =>
+                    {
+                        SetLabelsStateItem(openmediavault.Server, openmediavault.SystemInformation);
+                        
+                    },
                     () =>
                     {
                         UpdateHistory();
-                        SetLabelsStateItem("OMV", openmediavault.Done___);
+                        SetLabelsStateItem(openmediavault.Server, openmediavault.Done___);
                     });
             }
             catch (Exception e)
             {
-                SetLabelsStateItem("Error", e.Message);
+                SetLabelsStateItem(openmediavault.Error, e.Message);
             }
 
             await base.OnInternalAppearingAsync();
@@ -194,7 +208,14 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected Task RefreshData()
         {
-            return Task.WhenAll(GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+
+            if (!_sshService.IsConnected())
+            {
+                SetLabelsStateItem(openmediavault.Info, openmediavault.NoUsersConnected);
+                return Task.FromResult(0);
+            }
+
+            return Task.WhenAll(GetGroups(),GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
                 GetUpgradables());
         }
 
@@ -285,6 +306,14 @@ namespace Doods.Xam.MonitorMyServer.Views
             await _sshService.Halt();
         }
 
+
+        private async Task GetGroups()
+        {
+
+            Groups = await _sshService.GetGroups();
+            CanSudo = Groups.Any(g => g.ToLower() == "sudo");
+        }
+
         private async Task GetCpuInfo()
         {
             CpuInfo = await _sshService.GetCpuInfo();
@@ -308,6 +337,8 @@ namespace Doods.Xam.MonitorMyServer.Views
         private void UpdateHistory()
         {
             var historyService = App.Container.Resolve<IHistoryService>();
+            if (historyService.CurrentHistoryItem == null)
+                return;
             historyService.CurrentHistoryItem.NombrerPackargeCanBeUpdted = UpgradablesCount;
             historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
             historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);

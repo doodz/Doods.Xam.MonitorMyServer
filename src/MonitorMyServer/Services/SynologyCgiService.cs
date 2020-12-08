@@ -11,7 +11,7 @@ using Doods.Xam.MonitorMyServer.Services;
 
 namespace Doods.Synology.Webapi.Std
 {
-    public class SynologyCgiService : HttpServiceBase, ISynologyCgiService, INasService
+    public class SynologyCgiService : HttpServiceBase, ISynologyCgiService
     {
         private readonly IMapper _mapper;
         private readonly ISynoWebApi _client;
@@ -21,6 +21,9 @@ namespace Doods.Synology.Webapi.Std
         private readonly ISynoInfoClient _synoInfoClient;
         private readonly ISynoStorageClient _synoStorageClient;
         private readonly ISynoShareClient _synoShareClient;
+        private readonly ISynoServiceClient _synoServiceClient;
+        private readonly ISynoPackageClient _synoPackageClient;
+        
         public SynologyCgiService(ILogger logger, IConnection connection, IMapper mapper) : base(logger)
         {
             Connection = connection;
@@ -32,8 +35,9 @@ namespace Doods.Synology.Webapi.Std
             _synoUpgradeClient = new SynoUpgradeClient(_client);
             _synoStorageClient = new SynoStorageClient(_client);
             _synoShareClient = new SynoShareClient(_client);
+            _synoServiceClient = new SynoServiceClient(_client);
+            _synoPackageClient = new SynoPackageClient(_client);
         }
-
 
         public Task<IDictionary<string, SynologyApiServicesInfo>> GetSynologyApiServicesInfo()
         {
@@ -69,6 +73,21 @@ namespace Doods.Synology.Webapi.Std
             return _synoSystemClient.GetStorageInfo();
         }
 
+        public Task<SynologyProcessInfo> GetProcessInfo()
+        {
+            return _synoSystemClient.GetProcessInfo();
+        }
+
+        public Task<SynologyUtilizationInfo> GetUtilizationInfo()
+        {
+            return _synoSystemClient.GetUtilizationInfo();
+        }
+
+        public Task<SynologyProcessGroupInfo> GetProcessGroupInfo()
+        {
+            return _synoSystemClient.GetProcessGroupInfo();
+        }
+
         public Task<SynologyStorageInfo> GetFullStorageInfo()
         {
             return _synoStorageClient.GetFullStorageInfo();
@@ -83,6 +102,15 @@ namespace Doods.Synology.Webapi.Std
         {
             var result = await GetSharedFoldersInfo();
             return _mapper.Map<IEnumerable<Share>, IEnumerable<SharedFolder>>(result.Shares);
+        }
+
+        public Task<SynologyServiceInfo> GetServicesInfo()
+        {
+            return _synoServiceClient.GetServicesInfo();
+        }
+        public Task<SynologyPackageInfo> GetPackagesInfo()
+        {
+            return _synoPackageClient.GetPackagesInfo();
         }
     }
 }

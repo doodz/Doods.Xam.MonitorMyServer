@@ -5,6 +5,7 @@ using Autofac;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Synology.Webapi.Std;
+using Doods.Synology.Webapi.Std.Datas;
 using Doods.Synology.Webapi.Std.NewFolder;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -25,6 +26,12 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
         private SystemInfo _systemInfo;
         private NetworkInfo _networkInfo;
         private StorageInfo _storageInfo;
+        private SynologyServiceInfo _servicesInfo;
+        public SynologyServiceInfo ServicesInfo
+        {
+            get => _servicesInfo;
+            set => SetProperty(ref _servicesInfo, value);
+        }
         public StorageInfo StorageInfo
         {
             get => _storageInfo;
@@ -90,7 +97,7 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
         protected Task RefreshData()
         {
            
-            return Task.WhenAll(GetSystemInfo(), GetUpgradeStatus(), GetNetworkInfo(), GetStorageInfo());
+            return Task.WhenAll(GetSystemInfo(), GetUpgradeStatus(), GetNetworkInfo(), GetStorageInfo(), GetServicesInfo());
         }
 
         private async Task GetSystemInfo()
@@ -122,6 +129,12 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
             historyService.CurrentHistoryItem.NombrerPackargeCanBeUpdted = 0;
             historyService.CurrentHistoryItem.LastUpdate = DateTime.Now;
             historyService.SetHistoryAsync(historyService.CurrentHistoryItem.HostId, historyService.CurrentHistoryItem);
+        }
+
+        private async Task GetServicesInfo()
+        {
+            var result = await _synoService.GetServicesInfo();
+            ServicesInfo = result;
         }
     }
 }

@@ -7,5 +7,6 @@ namespace Doods.Xam.MonitorMyServer.Services
     public interface INasService
     {
         Task<IEnumerable<SharedFolder>> GetSharedFolders();
+        //Task<IEnumerable<FileSystem>> GetFileSystems();
     }
 }

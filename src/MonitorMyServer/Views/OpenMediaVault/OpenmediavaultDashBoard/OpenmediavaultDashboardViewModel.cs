@@ -152,6 +152,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                         {
                             SetLabelsStateItem("OMV", openmediavault.TheSystemMustBeRebooted_);
                         }
+                        else if (OMVInformations != null && OMVInformations.ConfigDirty)
+                        {
+                            SetLabelsStateItem("OMV", openmediavault.TheConfigurationHasBeenChanged_YouMustApplyTheChangesInOrderForThemToTakeEffect_);
+                        }
                         else
                             SetLabelsStateItem("OMV", openmediavault.Done___);
                        

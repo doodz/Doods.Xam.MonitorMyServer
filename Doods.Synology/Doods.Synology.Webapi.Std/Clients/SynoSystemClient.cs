@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Doods.Synology.Webapi.Std.Datas;
 using Doods.Synology.Webapi.Std.NewFolder;
 
 namespace Doods.Synology.Webapi.Std
@@ -9,6 +10,9 @@ namespace Doods.Synology.Webapi.Std
         Task<SystemInfo> GetSystemInfo();
         Task<NetworkInfo> GetNetworkInfo();
         Task<StorageInfo> GetStorageInfo();
+        Task<SynologyProcessInfo> GetProcessInfo();
+        Task<SynologyUtilizationInfo> GetUtilizationInfo();
+        Task<SynologyProcessGroupInfo> GetProcessGroupInfo();
     }
     public class SynoSystemClient: BaseSynoClient, ISynoSystemClient
     {
@@ -58,5 +62,41 @@ namespace Doods.Synology.Webapi.Std
             return response.Data.Data;
         }
 
+        public async Task<SynologyProcessInfo> GetProcessInfo()
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName+ ".Process");
+            loginRequest.AddParameter("version", "1");
+            loginRequest.AddParameter("method", "list");
+           
+
+
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessInfo>>(loginRequest).ConfigureAwait(false);
+            return response.Data.Data;
+        }
+        public async Task<SynologyUtilizationInfo> GetUtilizationInfo()
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName + ".Utilization");
+            loginRequest.AddParameter("version", "1");
+            loginRequest.AddParameter("method", "get");
+            loginRequest.AddParameter("type", "current");
+
+
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUtilizationInfo>>(loginRequest).ConfigureAwait(false);
+            return response.Data.Data;
+        }
+        public async Task<SynologyProcessGroupInfo> GetProcessGroupInfo()
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName + ".ProcessGroup");
+            loginRequest.AddParameter("version", "1");
+            loginRequest.AddParameter("method", "status");
+
+
+
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessGroupInfo>>(loginRequest).ConfigureAwait(false);
+            return response.Data.Data;
+        }
     }
 }

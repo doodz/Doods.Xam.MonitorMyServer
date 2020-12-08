@@ -120,6 +120,9 @@
   <data name="AddBackupJob" xml:space="preserve">
     <value>Προσθήκη εργασίας αντιγράφων ασφαλείας</value>
   </data>
+  <data name="AnEmailMessageWithTheCommandOutput(IfAnyProduced)IsSendToTheAdministrator." xml:space="preserve">
+    <value>Το αποτέλεσμα της εντολής (εφόσον υπάρχει) αποστέλεται στον διαχειριστή με μήνυμα.</value>
+  </data>
   <data name="Archive" xml:space="preserve">
     <value>Αρχειοθέτηση</value>
   </data>
@@ -156,6 +159,9 @@
   <data name="EnableArchiveMode." xml:space="preserve">
     <value>Ενεργοποίηση αρχειοθέτησης.</value>
   </data>
+  <data name="EnableThisOptionToKeepPartiallyTransferredFiles,OtherwiseTheyWillBeDeletedIfTheTransferIsInterrupted." xml:space="preserve">
+    <value>Όταν είναι ενεργό, τα ημιτελή αρχεία διατηρούνται, αλλιώς διαγράφονται εφόσον έχει διακοπεί η μεταφορά τους.</value>
+  </data>
   <data name="Enabled" xml:space="preserve">
     <value>Ενεργοποιημένο</value>
   </data>
@@ -179,6 +185,12 @@
   </data>
   <data name="Mode" xml:space="preserve">
     <value>Κατάσταση</value>
+  </data>
+  <data name="PleaseCheckThe&lt;AHref='Http://Www.Samba.Org/Ftp/Rsync/Rsync.Html'Target='Blank'&gt;ManualPage&lt;/A&gt;ForMoreDetails." xml:space="preserve">
+    <value>Περισσότερες λεπτομέρειες στο &lt;a href='http://www.samba.org/ftp/rsync/rsync.html' target='_blank'&gt;εγχειρίδιο&lt;/a&gt;.</value>
+  </data>
+  <data name="PleaseNoteThatTheWebInterfaceIsBlockedUntilTheManuallyStartedBackupJobHasBeenFinished.HoweverTheBackupJobIsAutomaticallyExecutedInTheBackgroundWhenTheStorageDeviceIsConnectedToTheHost." xml:space="preserve">
+    <value>Η πρόσβαση στο περιβάλλον διαχείρισης διακόπτεται μέχρι να ολοκληρωθεί η εργασία αντιγράφων ασφαλείας που εκκινήθηκε χειροκίνητα. Όμως η εργασία εκτελείται αυτόματα στο παρασκήνιο όταν συνδεθεί στον υπολογιστή η συσκευή αποθήκευσης.</value>
   </data>
   <data name="PreserveAcls" xml:space="preserve">
     <value>Διατήρηση ACLs</value>
@@ -222,6 +234,15 @@
   <data name="SendEmail" xml:space="preserve">
     <value>Αποστολή μηνύματος</value>
   </data>
+  <data name="SetTheDestinationPermissionsToBeTheSameAsTheSourcePermissions." xml:space="preserve">
+    <value>Να τεθούν τα δικαιώματα των αρχείων στον προορισμό όπως είναι στην πηγή.</value>
+  </data>
+  <data name="SetTheGroupOfTheDestinationFileToBeTheSameAsTheSourceFile." xml:space="preserve">
+    <value>Να τεθεί η ομάδα των αρχείων στον προορισμό όπως είναι στην πηγή.</value>
+  </data>
+  <data name="SetTheOwnerOfTheDestinationFileToBeTheSameAsTheSourceFile,ButOnlyIfTheReceivingRsyncIsBeingRunAsTheSuper-User." xml:space="preserve">
+    <value>Να τεθεί ο ιδιοκτήτης των αρχείων στον προορισμό όπως είναι στην πηγή, αλλά μόνο όταν ο αποδέκτης λειτουργεί ως υπερ-χρήστης.</value>
+  </data>
   <data name="SharedFolder" xml:space="preserve">
     <value>Κοινόχρηστος φάκελος</value>
   </data>
@@ -234,11 +255,23 @@
   <data name="TheExternalStorageDevice." xml:space="preserve">
     <value>Η εξωτερική συσκευή αποθήκευσης.</value>
   </data>
+  <data name="TheSharedFolderContentIsSynchronisedFrom/ToTheRootOfTheExternalStorageDeviceIfThisOptionIsNotSet.TheNameOfTheDirectoryIsTakenFromTheSharedFolder." xml:space="preserve">
+    <value>Αν αυτή η επιλογή είναι ανενεργή, τότε τα περιεχόμενα του κοινόχρηστου φακέλου συγχρονίζονται από/προς τον βασικό κατάλογο της εξωτερικής συσκευής αποθήκευσης. Ο υποκατάλογος ονομάζεται σύμφωνα με τον κοινόχρηστο φάκελο.</value>
+  </data>
+  <data name="TheSharedFolderToSynchroniseWhenTheExternalStorageDeviceIsConnected." xml:space="preserve">
+    <value>Ο κοινόχρηστος φάκελος για συγχρονισμό όταν συνδέεται η εξωτερική συσκευή αποθήκευσης.</value>
+  </data>
+  <data name="TransferModificationTimesAlongWithTheFilesAndUpdateThemOnTheRemoteSystem." xml:space="preserve">
+    <value>Να μεταφερθούν οι χρόνοι μεταβολής μαζί με τα αρχεία και να ενημερωθούν στο απομακρυσμένο σύστημα.</value>
+  </data>
   <data name="USBBackup" xml:space="preserve">
     <value>Αντίγραφα ασφαλείας σε USB</value>
   </data>
   <data name="UpdateTheDestinationAclsToBeTheSameAsTheSourceAcls." xml:space="preserve">
     <value>Ενημέρωση των ACL του προορισμού όπως είναι τα ACL της πηγής.</value>
+  </data>
+  <data name="UpdateTheDestinationExtendedAttributesToBeTheSameAsTheLocalOnes." xml:space="preserve">
+    <value>Ενημέρωση των απομακρυσμένων εκτεταμένων ιδιοτήτων όπως τα τοπικά.</value>
   </data>
   <data name="N/A" xml:space="preserve">
     <value>n/a</value>

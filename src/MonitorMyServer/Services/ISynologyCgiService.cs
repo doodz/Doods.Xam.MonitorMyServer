@@ -2,7 +2,7 @@
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface ISynologyCgiService: INasService,ISynoInfoClient, ISynoAuthClient, ISynoSystemClient,ISynoUpgradeClient, ISynoStorageClient, ISynoShareClient
+    public interface ISynologyCgiService: INasService,ISynoInfoClient, ISynoAuthClient, ISynoSystemClient,ISynoUpgradeClient, ISynoStorageClient, ISynoShareClient, ISynoServiceClient, ISynoPackageClient
     {
          
     }
