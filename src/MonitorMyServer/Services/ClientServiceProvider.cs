@@ -34,6 +34,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             //this._value.Dispose();
         }
     }
+
+  
+
     public class SshServiceProvider : ClientServiceProvider<ISshService>
     {
 

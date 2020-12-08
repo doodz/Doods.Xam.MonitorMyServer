@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Synology.Webapi.Std;
 using Doods.Synology.Webapi.Std.Datas;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 
 namespace Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage
 {
-    public class SynoStorageViewModel : ViewModelWhithState
+    public class SynologyStorageViewmodel: ViewModelWhithState
     {
         private readonly ISynologyCgiService _synoService;
         private SynologyStorageInfo _synologyStorageInfo;
@@ -18,7 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage
             get => _synologyStorageInfo;
             set => SetProperty(ref _synologyStorageInfo, value);
         }
-        public SynoStorageViewModel(ISynologyCgiService synoService)
+        public SynologyStorageViewmodel(ISynologyCgiService synoService)
         {
             _synoService = synoService;
         }

@@ -41,7 +41,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             BannerId = configuration.AdsKey;
            
         }
-
+        
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
         //    new ObservableRangeCollection<SystemInformation>();
         public string BannerId { get; }
@@ -132,6 +132,11 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                 () => { SetLabelsStateItem(openmediavault.Updates, openmediavault.Done___); });
         }
 
+        protected override Task OnInternalDisappearingAsync()
+        {
+            Shell.SetTabBarIsVisible(Shell.Current.CurrentItem, true);
+            return base.OnInternalDisappearingAsync();
+        }
 
         protected override async Task OnInternalAppearingAsync()
         {
@@ -142,8 +147,18 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                     () =>
                     {
                         UpdateHistory();
-                        SetLabelsStateItem("OMV", openmediavault.Done___);
 
+                        if (OMVInformations != null && OMVInformations.RebootRequired)
+                        {
+                            SetLabelsStateItem("OMV", openmediavault.TheSystemMustBeRebooted_);
+                        }
+                        else if (OMVInformations != null && OMVInformations.ConfigDirty)
+                        {
+                            SetLabelsStateItem("OMV", openmediavault.TheConfigurationHasBeenChanged_YouMustApplyTheChangesInOrderForThemToTakeEffect_);
+                        }
+                        else
+                            SetLabelsStateItem("OMV", openmediavault.Done___);
+                       
                     });
             }
             catch (AuthorizationException ex)
@@ -154,7 +169,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             {
                 SetLabelsStateItem(openmediavault.Error, e.Message);
             }
-
+            Shell.SetTabBarIsVisible(Shell.Current.CurrentItem,true);
             await base.OnInternalAppearingAsync();
         }
 

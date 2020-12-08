@@ -60,6 +60,10 @@ namespace Doods.tool.ResxFromPoFile
         private  void ExtensionToResx(string filePath, ResXResourceWriter resourceWriter, int pos)
         {
             var str = File.ReadAllText(filePath);
+
+            str = str.Replace("msgid \"\"\r\n", "msgid ");
+            str = str.Replace("\"\r\n\"", " ");
+
             var regex = new Regex(Expression);
             // Find matches.
             var matches = regex.Matches(str);

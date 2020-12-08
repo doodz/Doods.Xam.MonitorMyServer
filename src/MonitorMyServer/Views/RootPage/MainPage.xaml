@@ -62,6 +62,7 @@
                 <controls2:TitledFrameView Padding="8"
                                            Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                     <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
+                            IsEnabled="{Binding CanSudo,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
 

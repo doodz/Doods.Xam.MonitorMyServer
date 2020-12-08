@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Enums;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients

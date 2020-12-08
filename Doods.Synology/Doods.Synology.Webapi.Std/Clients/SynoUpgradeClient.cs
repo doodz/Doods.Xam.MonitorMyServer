@@ -8,7 +8,7 @@ namespace Doods.Synology.Webapi.Std
         Task<SynologyUpgradeStatus> GetUpgradeStatus();
     }
 
-    class SynoUpgradeClient : BaseSynoClient, ISynoUpgradeClient
+    public class SynoUpgradeClient : BaseSynoClient, ISynoUpgradeClient
     {
         public SynoUpgradeClient(ISynoWebApi client) : base(client)
         {

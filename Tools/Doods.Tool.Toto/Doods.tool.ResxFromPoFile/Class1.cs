@@ -28,7 +28,7 @@ namespace Doods.tool.ResxFromPoFile
             //}
             using (var sw = new StreamWriter(To))
             {
-                foreach (var val in dico)
+                foreach (var val in dico.OrderBy(d=>d.Key))
                 {
                     sw.WriteLine(val.Value);
                 }

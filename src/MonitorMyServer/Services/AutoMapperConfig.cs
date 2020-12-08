@@ -44,6 +44,7 @@ namespace Doods.Xam.MonitorMyServer.Services
                 //cfg.AddProfile<Doods.Framework.Mobile.Ssh.Std.Services.AutoMapperMobileSshProfile>();
                 //cfg.AddProfile<Doods.Openmediavault.Mobile.Std.Services.AutoMapperMobileSshProfile>();
                 cfg.AddProfile<ZeroconfHostProfile>();
+                cfg.AddProfile<AutoMapperNasProfile>();
             });
             
             configuration.CompileMappings();
@@ -90,6 +91,117 @@ namespace Doods.Xam.MonitorMyServer.Services
             test.Id = source.Id;
             test.DisplayName = source.DisplayName;
             test.IPAddress = source.IPAddress;
+            return test;
+        }
+    }
+
+    public class AutoMapperNasProfile : Profile
+    {
+        public AutoMapperNasProfile()
+
+        {
+            var map =CreateMap<Doods.Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder, Data.Nas.SharedFolder>();
+            map.ConvertUsing(new OpenmediavaultShareConverteur());
+            var map2 =CreateMap<Doods.Synology.Webapi.Std.Datas.Share, Data.Nas.SharedFolder>();
+            map2.ConvertUsing(new SynologyShareConverteur());
+
+            var map3 = CreateMap<Doods.Openmediavault.Rpc.std.Data.V4.FileSystem.Disk, Data.Nas.Disk>();
+            map.ConvertUsing(new OpenmediavaultShareConverteur());
+            var map4 = CreateMap<Doods.Synology.Webapi.Std.Datas.Disk, Data.Nas.Disk>();
+            map2.ConvertUsing(new SynologyShareConverteur());
+        }
+
+        public override string ProfileName => GetType().ToString();
+    }
+    public class SynologyShareConverteur : ITypeConverter<Doods.Synology.Webapi.Std.Datas.Share, Data.Nas.SharedFolder>
+    {
+        public Data.Nas.SharedFolder Convert(Doods.Synology.Webapi.Std.Datas.Share source, Data.Nas.SharedFolder destination, ResolutionContext context)
+        {
+            var test = new Data.Nas.SharedFolder
+            {
+                Name = source.Name,
+                Description = source.Desc,
+                Volume = source.VolPath,
+                Type = "btrfs",
+                Uuid = source.Uuid
+            };
+            return test;
+        }
+    }
+
+    public class OpenmediavaultShareConverteur : ITypeConverter<Doods.Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder, Data.Nas.SharedFolder>
+    {
+        public Data.Nas.SharedFolder Convert(Doods.Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder source, Data.Nas.SharedFolder destination, ResolutionContext context)
+        {
+            var test = new Data.Nas.SharedFolder
+            {
+                Name = source.Name,
+                Description = source.Comment,
+                Volume = source.Device,
+                Type = source.Mntent?.Type,
+                Uuid = source.Uuid
+            };
+            return test;
+        }
+    }
+
+    public class SynologyDiskConverteur : ITypeConverter<Doods.Synology.Webapi.Std.Datas.Disk, Data.Nas.Disk>
+    {
+        public Data.Nas.Disk Convert(Doods.Synology.Webapi.Std.Datas.Disk source, Data.Nas.Disk destination, ResolutionContext context)
+        {
+           
+            var test = new Data.Nas.Disk
+            {
+                TotalSize = source.SizeTotal,
+                DeviceName = source.Id,
+                Vendor = source.Vendor
+            };
+            return test;
+        }
+    }
+
+    public class OpenmediavaultDiskConverteur : ITypeConverter<Doods.Openmediavault.Rpc.std.Data.V4.FileSystem.Disk, Data.Nas.Disk>
+    {
+        public Data.Nas.Disk Convert(Doods.Openmediavault.Rpc.std.Data.V4.FileSystem.Disk source, Data.Nas.Disk destination, ResolutionContext context)
+        {
+           
+            var test = new Data.Nas.Disk
+            {
+               TotalSize = source.Size,
+               DeviceName = source.Devicename,
+               Vendor = source.Vendor
+            };
+            return test;
+        }
+    }
+
+
+    public class SynologyFileSystemConverteur : ITypeConverter<Doods.Synology.Webapi.Std.Datas.Disk, Data.Nas.FileSystem>
+    {
+        public Data.Nas.FileSystem Convert(Doods.Synology.Webapi.Std.Datas.Disk source, Data.Nas.FileSystem destination, ResolutionContext context)
+        {
+
+            var test = new Data.Nas.FileSystem
+            {
+               Device=source.Device,
+               Name = source.LongName,
+               Size = source.SizeTotal
+            };
+            return test;
+        }
+    }
+
+    public class OpenmediavaultFileSystemConverteur : ITypeConverter<Doods.Openmediavault.Rpc.std.Data.V4.FileSystem.OmvFilesystems, Data.Nas.FileSystem>
+    {
+        public Data.Nas.FileSystem Convert(Doods.Openmediavault.Rpc.std.Data.V4.FileSystem.OmvFilesystems source, Data.Nas.FileSystem destination, ResolutionContext context)
+        {
+
+            var test = new Data.Nas.FileSystem
+            {
+                Device = source.Parentdevicefile,
+                Name = string.IsNullOrWhiteSpace(source.Label)?source.Parentdevicefile:source.Label,
+                Size = source.Size
+            };
             return test;
         }
     }

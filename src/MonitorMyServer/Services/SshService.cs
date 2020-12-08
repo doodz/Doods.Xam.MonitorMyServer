@@ -38,6 +38,8 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<string> RunCommand(string cmd);
         Task Rebout();
         Task Halt();
+        Task<IEnumerable<string>> GetGroups();
+        Task<IEnumerable<Lastlogin>> GetLastLogins();
     }
 
 
@@ -180,7 +182,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             return DisksUsage;
         }
 
-
+        public async Task<IEnumerable<string>> GetGroups()
+        {
+            var groupsRequest = new GroupsRequest();
+            var interfaces = await ExecuteTaskAsync<IEnumerable<string>>(groupsRequest).ConfigureAwait(false);
+            return interfaces.Data;
+        }
         public async Task<IEnumerable<string>> GetInterfaces()
         {
             var interfaceRequest = new InterfacesRequest();

@@ -11,8 +11,10 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Data;
 using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Xam.MonitorMyServer.Data.Nas;
 using Renci.SshNet;
 
 namespace Doods.Xam.MonitorMyServer.Services
@@ -38,6 +40,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         private readonly OmvWebGuiClient _omvWebGuiClient;
         private readonly OmvServicesClient _omvServicesClient;
+        private readonly OmvShareMgmtClient _omvShareMgmtClient;
         private readonly IRpcClient _client;
         public OmvRpcService(IRpcClient client, ILogger logger, IMapper mapper)
         {
@@ -57,12 +60,19 @@ namespace Doods.Xam.MonitorMyServer.Services
             _omvRrdClient = new OmvRrdClient(_client);
             _omvWebGuiClient = new OmvWebGuiClient(_client);
             _omvLogFileClient = new OmvLogFileClient(client);
+            _omvShareMgmtClient= new OmvShareMgmtClient(client);
         }
 
         public async  Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile)
         {
             var result =await _omvLogFileClient.GetList(logfile);
             return result.Data;
+        }
+
+        public async Task<IEnumerable<SharedFolder>> GetSharedFolders()
+        {
+            var result = await _omvShareMgmtClient.GetSharedFolders();
+            return _mapper.Map<IEnumerable<Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder>, IEnumerable<SharedFolder>>(result.Data);
         }
 
         public void SetOMVVersion(OMVVersion version)

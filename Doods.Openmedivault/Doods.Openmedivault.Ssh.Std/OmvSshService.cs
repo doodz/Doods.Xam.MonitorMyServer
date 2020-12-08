@@ -6,6 +6,7 @@ using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Enums;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmedivault.Ssh.Std

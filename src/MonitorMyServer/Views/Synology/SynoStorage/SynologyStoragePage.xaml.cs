@@ -12,7 +12,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage
         {
             InitializeComponent();
             Title = "Syno";
-            var vm = App.Container.Resolve<SynoStorageViewModel>();
+            var vm = App.Container.Resolve<SynologyStorageViewmodel>();
             Start(vm);
         }
     }

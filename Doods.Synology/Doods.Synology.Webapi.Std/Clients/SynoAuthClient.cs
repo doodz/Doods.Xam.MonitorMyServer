@@ -21,7 +21,7 @@ namespace Doods.Synology.Webapi.Std
         Task<bool> LoginAsync(string username, string password);
         void LogOut();
     }
-    class SynoAuthClient : BaseSynoClient, ISynoAuthClient
+    public class SynoAuthClient : BaseSynoClient, ISynoAuthClient
     {
         public SynoAuthClient(ISynoWebApi client) : base(client)
         {

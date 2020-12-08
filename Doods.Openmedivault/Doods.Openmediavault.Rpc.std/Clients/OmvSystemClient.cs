@@ -4,6 +4,7 @@ using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients

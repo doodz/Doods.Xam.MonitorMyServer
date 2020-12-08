@@ -8,7 +8,7 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<IDictionary<string, SynologyApiServicesInfo>> GetSynologyApiServicesInfo();
     }
-    class SynoInfoClient: BaseSynoClient,ISynoInfoClient
+    public class SynoInfoClient: BaseSynoClient,ISynoInfoClient
     {
         public SynoInfoClient(ISynoWebApi client) : base(client)
         {

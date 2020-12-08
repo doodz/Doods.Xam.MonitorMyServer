@@ -6,6 +6,7 @@ using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
+using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
@@ -49,9 +50,11 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
-           
+
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
-            builder.RegisterType<SynoStorageViewModel>().AsSelf();
+            builder.RegisterType<SynologyStorageViewmodel>().AsSelf();
+            
+            builder.RegisterType<SharedFoldersViewModel>().AsSelf();
 
 
         }
