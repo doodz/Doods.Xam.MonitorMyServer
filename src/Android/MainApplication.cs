@@ -54,7 +54,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             Xamarin.Essentials.Platform.Init(this);
             Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
-            Rg.Plugins.Popup.Popup.Init(this, null);
+            Rg.Plugins.Popup.Popup.Init(this);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
             var config = new FFImageLoading.Config.Configuration()
             {
