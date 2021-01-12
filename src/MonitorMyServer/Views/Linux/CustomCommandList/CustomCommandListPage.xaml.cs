@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel;
 using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
-using Doods.Xam.MonitorMyServer.Views.About;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,6 +17,12 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             Title = Resource.Commands;
             var vm = App.Container.Resolve<CustomCommandListPageViewModel>();
             Start(vm);
+        }
+
+        private void ScrollView_OnPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if(e.PropertyName == nameof(ScrollView.ContentSize))
+                MyScrollView.ScrollToAsync(this.CmdBox, ScrollToPosition.End, true);
         }
     }
 }

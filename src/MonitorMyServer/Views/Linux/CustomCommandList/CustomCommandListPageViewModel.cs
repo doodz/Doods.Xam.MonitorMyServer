@@ -17,6 +17,8 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         private readonly ISshService _sshService;
         private  ShellClient _shellClient;
         public ShellBox _shellBox;
+        public ICommand ClearCommand { get; }
+        public ICommand ExecuteCommand { get; }
         public ShellBox ShellBox
         {
             get { return _shellBox;} private set{ SetProperty(ref _shellBox, value); } }
@@ -27,6 +29,15 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
 
             _messageBoxService = messageBoxService;
             RunCommand = new Command(Run);
+            ClearCommand = new Command(Clear);
+            ExecuteCommand = new Command(o=>Execute(o));
+        }
+
+
+        private void Execute(object param)
+        {
+            if(param is string str)
+                toto(str);
         }
 
         public ICommand RunCommand { get; }
@@ -34,6 +45,12 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         protected override void AddItem(object obj)
         {
             NavigationService.NavigateAsync(nameof(AddCustomCommandPage));
+        }
+
+        private void Clear()
+        {
+            _shellBox?.Clear();
+            ShellBox?.Execute(" ");
         }
 
         private async void Run(object obj)
@@ -77,7 +94,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             ShellBox.Execute(totostr);
         }
 
-      
+        
 
 
         protected override void EditItem(object obj)

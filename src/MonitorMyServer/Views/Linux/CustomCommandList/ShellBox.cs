@@ -72,5 +72,10 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         {
             _receiver?.Dispose();
         }
+
+        public void Clear()
+        {
+            Output = string.Empty;
+        }
     }
 }

@@ -13,15 +13,25 @@
     <ContentPage.Content>
         <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="12*"/>
         </Grid.RowDefinitions>
-            <ScrollView Grid.Row="0" BindingContext="{Binding ShellBox,Mode=OneWay}" BackgroundColor="Blue">
-                <Label BackgroundColor="Blue" Text="{Binding Output,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" 
+            <ScrollView x:Name="MyScrollView"  Grid.Row="0" BindingContext="{Binding ShellBox,Mode=OneWay}" BackgroundColor="Blue" 
+                       
+                        
+                        PropertyChanged="ScrollView_OnPropertyChanged">
+                <Label x:Name="CmdBox" BackgroundColor="Blue" Text="{Binding Output,Mode=OneWay}" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" 
                        
                        LineBreakMode="WordWrap"/>
             </ScrollView>
-            <ScrollView Grid.Row="1" Padding="10" VerticalOptions="FillAndExpand">
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" >
+                <Entry x:Name="DisplayNameEntry" HorizontalOptions="FillAndExpand"/>
+                <Button Text="C" Command="{Binding ClearCommand,Mode=OneWay}"/>
+                <Button Text=">" Command="{Binding ExecuteCommand,Mode=OneWay}" CommandParameter="{Binding Source={x:Reference DisplayNameEntry}, Path=Text}"/>
+            </StackLayout>
+            <ScrollView Grid.Row="2" Padding="10" VerticalOptions="FillAndExpand">
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
                 <BindableLayout.ItemTemplate >
                     <DataTemplate>
