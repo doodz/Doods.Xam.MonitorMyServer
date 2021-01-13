@@ -184,7 +184,11 @@ namespace Doods.Xam.MonitorMyServer
                 typeof(SynologyStoragePage));
         }
 
-
+        private IEnumerable<FlyoutItem> GetLinuxPages()
+        {
+            yield return CreateFlyoutItem(openmediavault.FileSystems,
+                typeof(Views.Linux.DisksUsage.DisksUsagePage));
+        }
         private IEnumerable<FlyoutItem> GetOmvPages()
         {
             yield return new FlyoutItem
@@ -234,6 +238,11 @@ namespace Doods.Xam.MonitorMyServer
                 Items.AddRange(homeItem);
             }
 
+            if (!host.IsOmvServer && !host.IsSynoServer && host.IsSsh)
+            {
+                Items.AddRange(GetLinuxPages());
+                
+            }
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
             if (host.IsSynoServer) Items.AddRange(GetSynoPages());
             if (host.IsOmvServer) Items.AddRange(GetNasPages());

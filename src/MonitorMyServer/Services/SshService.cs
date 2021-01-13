@@ -22,6 +22,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         void Init(IConnection connection, bool andConnect);
         Task InitAsync(IConnection connection, bool andConnect = true);
         Task<CpuInfo> GetCpuInfo();
+        Task<Hostnamectl> GetHostnamectl();
         Task<IEnumerable<Upgradable>> GetUpgradables();
         Task<IEnumerable<DiskUsage>> GetDisksUsage();
         Task<IEnumerable<Process>> GetProcesses();
@@ -148,6 +149,13 @@ namespace Doods.Xam.MonitorMyServer.Services
             var cpuInfoBean = await ExecuteTaskAsync<CpuInfoBean>(cpuInfoRequest).ConfigureAwait(false);
             var cpuInfo = _mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
             return cpuInfo;
+        }
+        public async Task<Hostnamectl> GetHostnamectl()
+        {
+            var cpuInfoRequest = new HostnamectlRequest();
+            var cpuInfoBean = await ExecuteTaskAsync<HostnamectlBean>(cpuInfoRequest).ConfigureAwait(false);
+            var Hostnamectl = _mapper.Map<HostnamectlBean, Hostnamectl>(cpuInfoBean.Data);
+            return Hostnamectl;
         }
 
         public async Task<double> GetUptimeDouble()

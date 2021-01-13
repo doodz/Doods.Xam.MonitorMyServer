@@ -5,6 +5,7 @@ using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
@@ -28,6 +29,7 @@ namespace Doods.Xam.MonitorMyServer.Views
     {
         protected override void Load(ContainerBuilder builder)
         {
+            //all
             builder.RegisterType<MainPageViewModel>().AsSelf();
             builder.RegisterType<LoginPageViewModel>().AsSelf();
             builder.RegisterType<HostManagerPageViewModel>().AsSelf();
@@ -40,8 +42,9 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<ProcessesPageViewModel>().AsSelf();
             builder.RegisterType<TestPageViewModel>().AsSelf();
             builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
-            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
-
+            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf()
+            builder.RegisterType<DisksUsageViewmodel>().AsSelf();
+            //omv
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultStatisticsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSettingsViewModel>().AsSelf();
@@ -50,10 +53,10 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<OpenmediavaultPluginsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultSystemLogsViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultUpdatesViewModel>().AsSelf();
-
+            //syno
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
             builder.RegisterType<SynologyStorageViewmodel>().AsSelf();
-            
+            //nas
             builder.RegisterType<SharedFoldersViewModel>().AsSelf();
 
 

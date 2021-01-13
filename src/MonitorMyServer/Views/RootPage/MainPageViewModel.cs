@@ -26,7 +26,8 @@ namespace Doods.Xam.MonitorMyServer.Views
         private readonly ISshService _sshService;
         private IEnumerable<string> _groups;
         private CpuInfo _cpuInfo;
-        private IEnumerable<DiskUsage> _disksUsage;
+        private Hostnamectl _hostnamectl;
+       
         private MemoryUsage _memoryUsage;
         private IEnumerable<Process> _processes;
         private int _processesCount;
@@ -85,22 +86,23 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _uptime;
             set => SetProperty(ref _uptime, value);
         }
-
         public CpuInfo CpuInfo
         {
             get => _cpuInfo;
             set => SetProperty(ref _cpuInfo, value);
+        }
+
+        public Hostnamectl Hostnamectl
+        {
+            get => _hostnamectl;
+            set => SetProperty(ref _hostnamectl, value);
         }
         public IEnumerable<string> Groups 
         {
             get => _groups;
             set => SetProperty(ref _groups, value);
         }
-        public IEnumerable<DiskUsage> DisksUsage
-        {
-            get => _disksUsage;
-            set => SetProperty(ref _disksUsage, value);
-        }
+       
 
         public MemoryUsage MemoryUsage
         {
@@ -158,11 +160,12 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Upgradables = null;
             CpuInfo = null;
-            DisksUsage = null;
+           
             UpgradablesCount = 0;
             ProcessesCount = 0;
             Processes = null;
             Upgradables = null;
+            Hostnamectl = null;
         }
 
         private void ManageHosts()
@@ -215,7 +218,7 @@ namespace Doods.Xam.MonitorMyServer.Views
                 return Task.FromResult(0);
             }
 
-            return Task.WhenAll(GetGroups(),GetCpuInfo(), GetUptime(), GetDisksUsage(), CheckMemoryUsage(), GetProcesses(),
+            return Task.WhenAll(GetGroups(),GetCpuInfo(), GetHostnamectl(), GetUptime(),  CheckMemoryUsage(), GetProcesses(),
                 GetUpgradables());
         }
 
@@ -319,15 +322,18 @@ namespace Doods.Xam.MonitorMyServer.Views
             CpuInfo = await _sshService.GetCpuInfo();
         }
 
+
+        private async Task GetHostnamectl()
+        {
+            Hostnamectl = await _sshService.GetHostnamectl();
+        }
+        
         private async Task GetUptime()
         {
             Uptime = await _sshService.GetUptime();
         }
 
-        private async Task GetDisksUsage()
-        {
-            DisksUsage = await _sshService.GetDisksUsage();
-        }
+      
 
         private async Task CheckMemoryUsage()
         {
