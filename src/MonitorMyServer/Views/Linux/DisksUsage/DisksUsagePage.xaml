@@ -7,18 +7,19 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:datas="clr-namespace:Doods.Synology.Webapi.Std.Datas;assembly=Doods.Synology.Webapi.Std"
-                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
                       mc:Ignorable="d"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage.DisksUsagePage">
     <StackLayout>
-      <StackLayout.Resources>
+        <StackLayout.Resources>
             <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
             <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
         </StackLayout.Resources>
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-            <ScrollView>
-                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
+        <Label Text="{xct:Translate Filesystem}" FontSize="Title" Padding="30,10,30,10"/>
+
+        <ScrollView>
+            <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
                              BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}" />
         </ScrollView>
     </StackLayout>

@@ -32,6 +32,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task<int> InstallPackage(IEnumerable<string> packagesName);
         Task<int> InstallAllPackage();
         Task<bool> IsRunning(int pid);
+        Task<IEnumerable<Blockdevice>> GetBlockdevices();
         Task<double> GetUptimeDouble();
         Task<TimeSpan> GetUptime();
         Task<string> GetUptimeString();
@@ -188,6 +189,13 @@ namespace Doods.Xam.MonitorMyServer.Services
                 await ExecuteTaskAsync<IEnumerable<DiskUsageBean>>(diskUsageRequest).ConfigureAwait(false);
             var DisksUsage = _mapper.Map<IEnumerable<DiskUsageBean>, IEnumerable<DiskUsage>>(diskUsageBean.Data);
             return DisksUsage;
+        }
+
+        public async Task<IEnumerable<Blockdevice>> GetBlockdevices()
+        {
+            var groupsRequest = new BlockdevicesRequest();
+            var interfaces = await ExecuteTaskAsync<IEnumerable<Blockdevice>>(groupsRequest).ConfigureAwait(false);
+            return interfaces.Data;
         }
 
         public async Task<IEnumerable<string>> GetGroups()

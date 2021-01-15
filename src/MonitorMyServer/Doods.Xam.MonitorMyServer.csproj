@@ -63,6 +63,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resx\cockpit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>cockpit.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resx\Resource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -106,6 +111,10 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\AppStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\cockpit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>cockpit.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\MobileOMVResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -204,5 +213,9 @@
     <None Update="Views\SystemView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

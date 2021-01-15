@@ -8,13 +8,16 @@ using System.Text.RegularExpressions;
 
 namespace Doods.tool.ResxFromPoFile
 {
-    class UpdatePoFiles
+    class UpdatePoFiles2
     {
         //C:\GitHub\openmediavault\deb\openmediavault\usr\share\openmediavault\locale
-        private  readonly string Expression = @"msgid ""(.*)""\w*\s*msgstr ""(.*)""";
+        private readonly string Expression = @"msgid ""(.*)""\w*\s*msgstr ""(.*)""";
 
-        private  readonly string From = @"C:\GitHub\openmediavault\";
-        private  readonly string To = @"C:\GitHub\Doods.Xam.MonitorMyServer\Doods.Openmedivault\Doods.Openmediavault.Mobile.Std\Resources\";
+        private readonly string Expression2 =
+            "msgid \"(.*)\"\\w*\\s*msgid_plural \"(.*)\"\\w*\\s*msgstr\\[0\\] \"(.*)\"\\w*\\s*msgstr\\[1\\] \"(.*)\"";
+
+        private  readonly string From = @"C:\GitHub\cockpit\po\";
+        private  readonly string To = @"C:\GitHub\Doods.Xam.MonitorMyServer\src\MonitorMyServer\Resx\";
 
 
 
@@ -37,8 +40,8 @@ namespace Doods.tool.ResxFromPoFile
         private  void PotToResx(string poFilePath)
         {
             var info = new FileInfo(poFilePath);
-            var newfileName = To + info.Name.Replace(info.Extension, ".resx");
-
+            var newfileName = To + "cockpit." + info.Name.Replace(info.Extension, ".resx");
+            newfileName = newfileName.Replace(".en.resx", ".resx");
             var resourceWriter = new ResXResourceWriter(newfileName);
             ExtensionToResx(poFilePath, resourceWriter, 1);
         }
@@ -47,7 +50,7 @@ namespace Doods.tool.ResxFromPoFile
             var info = new FileInfo(poFilePath);
             var derectoriinfo = new DirectoryInfo(poFilePath);
 
-            var newfileName = To + info.Name.Replace(info.Extension, $".{derectoriinfo.Parent.Name.Replace('_', '-')}.resx");
+            var newfileName = To + "cockpit." + info.Name.Replace(info.Extension, ".resx");
 
 
             var resourceWriter =
@@ -80,14 +83,53 @@ namespace Doods.tool.ResxFromPoFile
 
             foreach (var lst in dico) resourceWriter.AddResource(lst.Key, lst.Value);
 
+            ExtensionPluralToResx(filePath,resourceWriter, pos);
             resourceWriter.Generate();
             resourceWriter.Close();
+        }
+
+
+        private void ExtensionPluralToResx(string filePath, ResXResourceWriter resourceWriter, int pos)
+        {
+            var str = File.ReadAllText(filePath);
+
+            str = str.Replace("msgid \"\"\r\n", "msgid ");
+            str = str.Replace("\"\r\n\"", " ");
+
+            var regex = new Regex(Expression2);
+            // Find matches.
+            var matches = regex.Matches(str);
+            // Report on each match.
+            var dico = new Dictionary<string, string>();
+
+            foreach (Match match in matches)
+            {
+               
+
+                var groups = match.Groups;
+                var key = ToCamelCase(groups[1].Value).Trim();
+                var lowerKey = key.ToLower();
+                if (!string.IsNullOrWhiteSpace(groups[1].Value) && !string.IsNullOrWhiteSpace(key + 1)
+                                                                && dico.Keys.All(k => k.ToLower() != lowerKey))
+                    dico.Add(key, groups[pos].Value);
+                key = ToCamelCase(groups[2].Value).Trim();
+                lowerKey = key.ToLower();
+                if (!string.IsNullOrWhiteSpace(groups[1].Value) && !string.IsNullOrWhiteSpace(key + 2)
+                                                                && dico.Keys.All(k => k.ToLower() != lowerKey))
+                    dico.Add(key, groups[pos].Value);
+            }
+
+            foreach (var lst in dico) resourceWriter.AddResource(lst.Key, lst.Value);
+
+          
         }
 
         private  string ToCamelCase(string str)
         {
             var titlecase = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
             var camelcase = titlecase.Replace("_", string.Empty).Replace(" ", string.Empty);
+            camelcase = camelcase.Replace("$", "_dol_");
+            camelcase = camelcase.Replace(",", "_comma_");
             return camelcase;
         }
 
@@ -107,7 +149,8 @@ namespace Doods.tool.ResxFromPoFile
 
         private  IEnumerable<string> GetPotFiles()
         {
-            return GetFiles("pot");
+
+            yield return From + "en.po";
         }
     }
 }

@@ -54,7 +54,7 @@ namespace Doods.Xam.MonitorMyServer
                 this, MessengerKeys.HostChanged,
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
-
+            
             var config =
                 App.Container.Resolve<IConfiguration>();
 

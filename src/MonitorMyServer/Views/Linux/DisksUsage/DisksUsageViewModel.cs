@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Doods.Framework.Mobile.Ssh.Std.Models;
+using Doods.Framework.Ssh.Std.Beans;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
@@ -17,6 +18,14 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
             get => _disksUsage;
             set => SetProperty(ref _disksUsage, value);
         }
+
+        private IEnumerable<Blockdevice> _blockdevice;
+        public IEnumerable<Blockdevice> Blockdevice
+        {
+            get => _blockdevice;
+            set => SetProperty(ref _blockdevice, value);
+        }
+
         public DisksUsageViewmodel(ISshService sshService)
         {
             _sshService = sshService;
@@ -44,12 +53,17 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
         protected Task RefreshData()
         {
 
-            return Task.WhenAll(GetDisksUsage());
+            return Task.WhenAll(GetDisksUsage(), GetBlockdevices());
         }
 
         private async Task GetDisksUsage()
         {
             DisksUsage = await _sshService.GetDisksUsage();
         }
+        private async Task GetBlockdevices()
+        {
+            Blockdevice = await _sshService.GetBlockdevices();
+        }
+      
     }
 }

@@ -33,6 +33,7 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
+using Xamarin.CommunityToolkit.Helpers;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -50,7 +51,9 @@ namespace Doods.Xam.MonitorMyServer
         public App()
         {
             InitializeComponent();
+            LocalizationResourceManager.Current.Init(Resx.cockpit.ResourceManager);
 
+            
             //var navigationService = Container.Resolve<INavigationService>();
             var navigationService = Container.ResolveKeyed<INavigationService>(NavigationServiceType);
             navigationService.Configure(nameof(MonitorMyServer.MainPage), typeof(MainPage));

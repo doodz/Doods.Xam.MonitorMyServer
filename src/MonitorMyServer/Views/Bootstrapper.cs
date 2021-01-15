@@ -42,7 +42,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<ProcessesPageViewModel>().AsSelf();
             builder.RegisterType<TestPageViewModel>().AsSelf();
             builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
-            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf()
+            builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
             builder.RegisterType<DisksUsageViewmodel>().AsSelf();
             //omv
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
