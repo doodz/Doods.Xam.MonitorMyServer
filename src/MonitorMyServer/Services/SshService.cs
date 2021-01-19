@@ -41,7 +41,9 @@ namespace Doods.Xam.MonitorMyServer.Services
         Task Rebout();
         Task Halt();
         Task<IEnumerable<string>> GetGroups();
+        Task<IEnumerable<string>> GetLogsFiles();
         Task<IEnumerable<Lastlogin>> GetLastLogins();
+        Task<IEnumerable<string>> ReadFileRequest(string filepath, int lines = 5, bool useSudo = true);
     }
 
 
@@ -211,6 +213,19 @@ namespace Doods.Xam.MonitorMyServer.Services
             return interfaces.Data;
         }
 
+        public async Task<IEnumerable<string>> GetLogsFiles()
+        {
+            var interfaceRequest = new LogsFilesRequest();
+            var interfaces = await ExecuteTaskAsync<IEnumerable<string>>(interfaceRequest).ConfigureAwait(false);
+            return interfaces.Data;
+        }
+
+        public async Task<IEnumerable<string>> ReadFileRequest(string filepath, int lines = 5, bool useSudo = true)
+        {
+            var interfaceRequest = new ReadFileRequest(filepath,lines,useSudo);
+            var interfaces = await ExecuteTaskAsync<IEnumerable<string>>(interfaceRequest).ConfigureAwait(false);
+            return interfaces.Data;
+        }
 
         public async Task<bool> UpdateAptList()
         {

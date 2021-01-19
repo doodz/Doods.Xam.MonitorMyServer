@@ -11,6 +11,7 @@ using Doods.Xam.MonitorMyServer.Comtrols;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
+using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
@@ -188,6 +189,9 @@ namespace Doods.Xam.MonitorMyServer
         {
             yield return CreateFlyoutItem(openmediavault.FileSystems,
                 typeof(Views.Linux.DisksUsage.DisksUsagePage));
+            yield return CreateFlyoutItem(openmediavault.SystemLogs,
+                typeof(LogsPage));
+            
         }
         private IEnumerable<FlyoutItem> GetOmvPages()
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Ssh.Std.Beans;
@@ -9,6 +10,8 @@ using Doods.Xam.MonitorMyServer.Views.Base;
 
 namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
 {
+    //cat /proc/mdstat
+    // mdadm --detail /dev/md0
     public class DisksUsageViewmodel : ViewModelWhithState
     {
         private readonly ISshService _sshService;
@@ -19,11 +22,25 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
             set => SetProperty(ref _disksUsage, value);
         }
 
-        private IEnumerable<Blockdevice> _blockdevice;
-        public IEnumerable<Blockdevice> Blockdevice
+        private IEnumerable<Blockdevice> _blockdevices;
+        public IEnumerable<Blockdevice> Blockdevices
         {
-            get => _blockdevice;
-            set => SetProperty(ref _blockdevice, value);
+            get => _blockdevices;
+            set => SetProperty(ref _blockdevices, value);
+        }
+
+        private IEnumerable<Blockdevice> _diskdevices;
+        public IEnumerable<Blockdevice> Diskdevices
+        {
+            get => _diskdevices;
+            set => SetProperty(ref _diskdevices, value);
+        }
+
+        private IEnumerable<Blockdevice> _raiddevices;
+        public IEnumerable<Blockdevice> Raiddevices
+        {
+            get => _raiddevices;
+            set => SetProperty(ref _raiddevices, value);
         }
 
         public DisksUsageViewmodel(ISshService sshService)
@@ -35,6 +52,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
         {
             try
             {
+                
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
                     () => SetLabelsStateItem("Bash", openmediavault.SystemInformation),
                     () =>
@@ -45,6 +63,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
             }
             catch (Exception e)
             {
+                
                 SetLabelsStateItem("Error", e.Message);
             }
 
@@ -62,7 +81,9 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage
         }
         private async Task GetBlockdevices()
         {
-            Blockdevice = await _sshService.GetBlockdevices();
+            Blockdevices = await _sshService.GetBlockdevices();
+            Diskdevices = Blockdevices?.Where(b => b.Type == Blockdevice.TypeDisk);
+            Raiddevices = Blockdevices?.Where(b => b.Type.Contains(Blockdevice.TypeRaid));
         }
       
     }

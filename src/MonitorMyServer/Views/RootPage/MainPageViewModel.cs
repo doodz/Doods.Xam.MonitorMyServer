@@ -35,6 +35,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         private int _upgradablesCount;
         private TimeSpan _uptime;
         private bool _canSudo;
+        private bool _canUpdate;
         public MainPageViewModel(ISshService sshService, IConfiguration configuration)
         {
             Title = Resource.Home;
@@ -80,7 +81,12 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _canSudo;
             set => SetProperty(ref _canSudo, value);
         }
-
+        public bool CanUpdate
+        {
+            get => _canUpdate;
+            set => SetProperty(ref _canUpdate, value);
+        }
+        
         public TimeSpan Uptime
         {
             get => _uptime;
@@ -315,6 +321,7 @@ namespace Doods.Xam.MonitorMyServer.Views
 
             Groups = await _sshService.GetGroups();
             CanSudo = Groups.Any(g => g.ToLower() == "sudo");
+            CanUpdate = Groups.Any(g => g.ToLower() == "root" || g.ToLower() == "sudo");
         }
 
         private async Task GetCpuInfo()

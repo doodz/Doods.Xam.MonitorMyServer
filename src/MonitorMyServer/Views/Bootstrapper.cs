@@ -6,6 +6,7 @@ using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage;
+using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
@@ -44,6 +45,10 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<SettingsPAgeViewModel>().AsSelf();
             builder.RegisterType<SelectSupportedServicieViewModel>().AsSelf();
             builder.RegisterType<DisksUsageViewmodel>().AsSelf();
+
+            //linux
+            builder.RegisterType<LogsViewmodel>().AsSelf();
+            
             //omv
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultStatisticsViewModel>().AsSelf();
