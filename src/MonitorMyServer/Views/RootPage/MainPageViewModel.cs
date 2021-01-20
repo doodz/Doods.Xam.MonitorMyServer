@@ -345,6 +345,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         private async Task CheckMemoryUsage()
         {
             MemoryUsage = await _sshService.CheckMemoryUsage();
+            
         }
 
         private void UpdateHistory()

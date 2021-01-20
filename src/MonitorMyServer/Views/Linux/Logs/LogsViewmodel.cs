@@ -155,7 +155,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Linux.Logs
                             SetLabelsStateItem(openmediavault.SystemLogs, openmediavault.Done___);
                         else
                         {
-                            SetLabelsStateItem(openmediavault.SystemLogs, "You need to be root adm or sudo");
+                            SetLabelsStateItem(openmediavault.SystemLogs, "You need to be root, adm or sudo");
                         }
                     });
             }
