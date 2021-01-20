@@ -5,12 +5,15 @@ First step I want manage Raspberry pi and openmediavault in ssh
 For :
 
   * Check disk space.
+  * Show Filesystems (Drives and raid)
+  * Show Logs (need to be root sudo or admin with ssh connection).
   * System informations.
-  * Updates.
+  * Updates (need to be root sudo or admin with ssh connection).
   * View running processes
-  * Run commands.
+  * Run commands (with ssh connection).
   
-You can also use openmediavault rpc page over Http.
+You can also use openmediavault rpc page over Http or Ssh.
+You can also use Synology cgi.
 
 # Application Diagram
 
