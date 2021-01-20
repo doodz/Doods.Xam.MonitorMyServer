@@ -63,6 +63,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resx\cockpit.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>cockpit.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resx\Resource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -70,6 +75,12 @@
     </Compile>
     <Compile Update="Views\Linux\CustomCommandList\AddCustomCommand\AddCustomCommandPage.xaml.cs">
       <DependentUpon>AddCustomCommandPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Linux\DisksUsage\DisksUsagePage.xaml.cs">
+      <DependentUpon>DisksUsagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Linux\Logs\LogsPage.xaml.cs">
+      <DependentUpon>LogsPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\NAS\SharedFolders\SharedFoldersPage.xaml.cs">
       <DependentUpon>SharedFoldersPage.xaml</DependentUpon>
@@ -103,6 +114,10 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\AppStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\cockpit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>cockpit.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resx\MobileOMVResourceDictionary.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -201,5 +216,9 @@
     <None Update="Views\SystemView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

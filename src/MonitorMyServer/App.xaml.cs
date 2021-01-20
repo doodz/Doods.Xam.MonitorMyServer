@@ -16,6 +16,8 @@ using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Doods.Xam.MonitorMyServer.Views.AptUpdates;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
+using Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage;
+using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem;
@@ -32,6 +34,7 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Plugin.Fingerprint;
 using Plugin.Fingerprint.Abstractions;
+using Xamarin.CommunityToolkit.Helpers;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -49,7 +52,9 @@ namespace Doods.Xam.MonitorMyServer
         public App()
         {
             InitializeComponent();
+            LocalizationResourceManager.Current.Init(Resx.cockpit.ResourceManager);
 
+            
             //var navigationService = Container.Resolve<INavigationService>();
             var navigationService = Container.ResolveKeyed<INavigationService>(NavigationServiceType);
             navigationService.Configure(nameof(MonitorMyServer.MainPage), typeof(MainPage));
@@ -64,6 +69,8 @@ namespace Doods.Xam.MonitorMyServer
             navigationService.Configure(nameof(CustomCommandListPage), typeof(CustomCommandListPage));
             navigationService.Configure(nameof(ProcessesPage), typeof(ProcessesPage));
             navigationService.Configure(nameof(TestPage), typeof(TestPage));
+            navigationService.Configure(nameof(Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage.DisksUsagePage), typeof(Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage.DisksUsagePage));
+            navigationService.Configure(nameof(LogsPage), typeof(LogsPage));
 
             navigationService.Configure(nameof(OpenmediavaultDashboardPage), typeof(OpenmediavaultDashboardPage));
             navigationService.Configure(nameof(OpenmediavaultSettingsPage), typeof(OpenmediavaultSettingsPage));

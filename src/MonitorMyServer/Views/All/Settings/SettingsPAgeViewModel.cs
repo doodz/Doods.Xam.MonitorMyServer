@@ -89,7 +89,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         public bool UseFingerprint
         {
             get => _useFingerprint;
-            set => SetProperty(ref _useFingerprint, value, null, (currentValue, newValue) => ProveYouHaveFingers(currentValue, newValue));
+            set => SetProperty(ref _useFingerprint, value/*, null,  (currentValue, newValue) =>  ProveYouHaveFingers(currentValue, newValue)*/);
 
             //set => SetProperty(ref _useFingerprint, value, null,  (currentValue, newValue) => ProveYouHaveFingers());
             //set => SetProperty(ref _useFingerprint, value, async () => await ProveYouHaveFingers(), null);
@@ -123,10 +123,21 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
         protected override async Task OnInternalAppearingAsync()
         {
             CanUseFingerprint = await CrossFingerprint.Current.IsAvailableAsync();
+            _useFingerprint = Preferences.Get(PreferencesKeys.UseFingerprintKey, default(bool));
             await RefreshData();
             await base.OnInternalAppearingAsync();
         }
 
+        protected override async Task OnInternalDisappearingAsync()
+        {
+            var tmp =Preferences.Get(PreferencesKeys.UseFingerprintKey, default(bool));
+            if(tmp != _useFingerprint)
+                if (await ProveYouHaveFingers())
+                    Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
+            await base.OnInternalDisappearingAsync();
+        }
+
+       
         protected Task RefreshData(bool b = true)
         {
             //Xamarin.Essentials.Preferences
@@ -174,31 +185,55 @@ namespace Doods.Xam.MonitorMyServer.Views.Settings
 
             if (task.Authenticated)
             {
-                //Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
+                Preferences.Set(PreferencesKeys.UseFingerprintKey, UseFingerprint);
             }
-            else if (retry) await ProveYouHaveFingers(false);
-           
+            else if (retry) return await ProveYouHaveFingers(false);
+
             return task.Authenticated;
         }
 
 
         private bool ProveYouHaveFingers(bool currentValue, bool newValue)
         {
-            var t = ProveYouHaveFingers();
-            t.RunSynchronously();
+            var result = false;
 
-            do
+            var oo = new AuthenticationRequestConfiguration("Locked", "Prove you have fingers!");
+
+            var t = CrossFingerprint.Current.AuthenticateAsync(
+                oo);
+            //t.Start();
+          
+           var toto = t.Wait(TimeSpan.FromSeconds(5));
+
+            var t2 =t.ContinueWith(t =>
             {
-            } while (!t.IsFaulted || !t.IsCompleted || 
-                     !t.IsCanceled || !t.IsCompletedSuccessfully);
+                if (t.IsCompletedSuccessfully)
+                    result= t.Result.Authenticated;
+
+                if (t.IsFaulted ||  t.IsCanceled )
+                    result = false;
+                if (!t.IsCompleted)
+                {
+                    result = false;
+                }
+                result = t.Result.Authenticated;
+            });
+            //var statut = t.Status;
 
 
-            if (t.Result)
-            {
-                Preferences.Set(PreferencesKeys.UseFingerprintKey, newValue);
-            }
-            return t.Result;
+            Task.WaitAll(t2);
+            //do
+            //{
+            //} while (!t.IsFaulted || !t.IsCompleted || 
+            //         !t.IsCanceled || !t.IsCompletedSuccessfully);
 
+
+            //if (t.Result)
+            //{
+            //    Preferences.Set(PreferencesKeys.UseFingerprintKey, newValue);
+            //}
+            //return t;
+            return result;
         }
     }
 }

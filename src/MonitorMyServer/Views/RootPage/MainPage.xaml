@@ -11,6 +11,7 @@
                       xmlns:controls1="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       x:Class="Doods.Xam.MonitorMyServer.MainPage">
     <Shell.TitleView>
 
@@ -46,9 +47,42 @@
         <ScrollView>
             <StackLayout Padding="8">
 
+                <controls2:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                                          TitleStyle="{StaticResource NewTitleStyle}" 
+                                          BindingContext="{Binding Hostnamectl,Mode=OneWay}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
 
+                        <Label Grid.Column="0" Grid.Row="0" Text="{resources1:Translate Text='openmediavault::Hostname'}"/>
+                        <Label Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::System'}"/>
+                        <Label Grid.Column="0" Grid.Row="3" Text="{resources1:Translate Text='openmediavault::Kernel'}"/>
+
+                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding StaticHostname,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding OperatingSystem,Mode=OneWay}"/>
+                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding Kernel,Mode=OneWay}"/>
+                       
+
+                    </Grid>
+
+
+                </controls2:TitledFrameView>
                 <controls2:TitledFrameView Padding="8"
-                                           Title="{resources:Translate Text=Uptime}"
+                                           Title="{resources1:Translate Text='openmediavault::Uptime'}"
                                            SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
                                            SubTitleStyle="{StaticResource NewSubTitleStyle}">
                     <controls2:TitledFrameView.GestureRecognizers>
@@ -56,13 +90,14 @@
                     </controls2:TitledFrameView.GestureRecognizers>
                     <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}" />
                 </controls2:TitledFrameView>
+
                 <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}">
                     <views:UcMemoryUsage BindingContext="{Binding MemoryUsage,Mode=OneWay}" />
                 </controls2:TitledFrameView>
                 <controls2:TitledFrameView Padding="8"
                                            Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                     <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
-                            IsEnabled="{Binding CanSudo,Mode=OneWay}"
+                            IsEnabled="{Binding CanUpdate,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
 
@@ -72,8 +107,7 @@
                             Command="{Binding ShowProcessesCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
-                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
-                             BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}" />
+               
 
             </StackLayout>
 

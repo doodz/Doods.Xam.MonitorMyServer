@@ -11,6 +11,7 @@ using Doods.Xam.MonitorMyServer.Comtrols;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
+using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
@@ -54,7 +55,7 @@ namespace Doods.Xam.MonitorMyServer
                 this, MessengerKeys.HostChanged,
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
-
+            
             var config =
                 App.Container.Resolve<IConfiguration>();
 
@@ -184,7 +185,14 @@ namespace Doods.Xam.MonitorMyServer
                 typeof(SynologyStoragePage));
         }
 
-
+        private IEnumerable<FlyoutItem> GetLinuxPages()
+        {
+            yield return CreateFlyoutItem(openmediavault.FileSystems,
+                typeof(Views.Linux.DisksUsage.DisksUsagePage));
+            yield return CreateFlyoutItem(openmediavault.SystemLogs,
+                typeof(LogsPage));
+            
+        }
         private IEnumerable<FlyoutItem> GetOmvPages()
         {
             yield return new FlyoutItem
@@ -234,6 +242,11 @@ namespace Doods.Xam.MonitorMyServer
                 Items.AddRange(homeItem);
             }
 
+            if (!host.IsOmvServer && !host.IsSynoServer && host.IsSsh)
+            {
+                Items.AddRange(GetLinuxPages());
+                
+            }
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
             if (host.IsSynoServer) Items.AddRange(GetSynoPages());
             if (host.IsOmvServer) Items.AddRange(GetNasPages());
