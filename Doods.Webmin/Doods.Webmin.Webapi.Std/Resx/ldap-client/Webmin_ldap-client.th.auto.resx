@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>ตรวจสอบการกำหนดค่า</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>คลิกที่ปุ่มนี้เพื่อให้ Webmin ตรวจสอบความถูกต้องของการกำหนดค่าเซิร์ฟเวอร์ LDAP ของคุณโดยตรวจสอบให้แน่ใจว่าสามารถติดต่อเซิร์ฟเวอร์ได้และมีผู้ใช้และกลุ่ม</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>ดัชนีโมดูล</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;คำเตือน&lt;/b&gt; - Webmin ตรวจพบไฟล์กำหนดค่า LDAP สองไฟล์แยกกันในระบบของคุณ NSS-LDAP ถูกกำหนดค่าโดยใช้ $1 ในขณะที่ PAM-LDAP ใช้ $2 สิ่งนี้อาจทำให้เกิดความไม่สอดคล้องกันระหว่างบริการทั้งสอง</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>แก้ไขโดยการเชื่อมโยงไฟล์</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>อย่าแสดงข้อความนี้</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>ลูกค้า LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>หยุด LDAP Daemon ของไคลเอ็นต์</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>ปิด daemon ไคลเอ็นต์ LDAP โลคัลซึ่งจำเป็นเพื่อเคียวรีเซิร์ฟเวอร์ LDAP รีโมต</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>เริ่ม Daemon ลูกค้า LDAP</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>สตาร์ท daemon ไคลเอ็นต์ LDAP โลคัลซึ่งจำเป็นเพื่อเคียวรีเซิร์ฟเวอร์ LDAP รีโมต จนกว่าจะเริ่มต้นขึ้นผู้ใช้และกลุ่มใน LDAP จะไม่สามารถเข้าถึงได้</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>รีสตาร์ท Daemon ไคลเอ็นต์ LDAP</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>ใช้การกำหนดค่าปัจจุบันโดยรีสตาร์ท daemon ไคลเอ็นต์ LDAP โลคัล</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>เริ่มต้นไคลเอ็นต์ LDAP เมื่อเริ่มระบบ</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>เปลี่ยนว่า daemon ไคลเอ็นต์ LDAP จะเริ่มต้นเมื่อระบบบูทหรือไม่</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>การกำหนดค่าเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>เซิร์ฟเวอร์ LDAP และตัวเลือกการเข้าสู่ระบบ</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>ชื่อโฮสต์เซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>เชื่อมต่อกับพอร์ต</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>รุ่นโปรโตคอล LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>จำกัด เวลาในการเชื่อมต่อ</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>เข้าสู่ระบบสำหรับผู้ใช้ที่ไม่ใช่ &lt;tt&gt;รูท&lt;/tt&gt;</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>รหัสผ่านสำหรับผู้ใช้ที่ไม่ใช่ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>เข้าสู่ระบบสำหรับผู้ใช้ &lt;tt&gt;รูท&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>รหัสผ่านสำหรับผู้ใช้ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>เหมือนกับ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>ไม่ระบุชื่อ</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>ใช้การเชื่อมต่อที่เข้ารหัสหรือไม่</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>ใช่ใช้ TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>ยืนยันใบรับรอง SSL SSL หรือไม่</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>ค่าเริ่มต้น (ปกติคือ $1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>ไฟล์ใบรับรอง CA</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>เซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>ชื่อโฮสต์</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>หมายเลขพอร์ต</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>มาตรการ</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>มาตรฐาน</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>ซ็อกเก็ต Unix</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>ไม่สามารถบันทึกการกำหนดค่าเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' ไม่ใช่ชื่อโฮสต์ที่ถูกต้อง</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>ไม่ได้ป้อนเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>พอร์ตเซิร์ฟเวอร์ LDAP ขาดหายไปหรือไม่ถูกต้อง</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>ไม่มีชื่อเข้าสู่ระบบสำหรับผู้ใช้ที่ไม่ใช่ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>ไม่มีรหัสผ่านสำหรับผู้ใช้ที่ไม่ใช่ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>ไม่มีชื่อล็อกอินสำหรับผู้ใช้ &lt;tt&gt;รูท&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>ไม่มีรหัสผ่านสำหรับผู้ใช้ &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>ขีด จำกัด เวลาการเชื่อมต่อที่ขาดหายไปหรือไม่ถูกต้อง</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>ไฟล์ใบรับรอง CA ที่ขาดหายไปหรือไม่ถูกต้อง</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>พอร์ตที่ขาดหายไปหรือไม่ถูกต้องสำหรับเซิร์ฟเวอร์ $1 </value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>ไม่ได้ป้อนเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>ฐานการค้นหา LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>ตำแหน่งการค้นหาไดเร็กทอรี LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>ฐานการค้นหาทั่วโลก</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>ความลึกของการค้นหา</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>ทรีย่อยทั้งหมด</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>ระดับหนึ่ง</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>ฐานเท่านั้น</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>ฐานสำหรับผู้ใช้ Unix</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>ฐานสำหรับรหัสผ่าน Unix</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>ฐานสำหรับกลุ่ม Unix</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>ฐานสำหรับชื่อโฮสต์</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>ฐานสำหรับบริการเครือข่าย</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>ฐานสำหรับชื่อเครือข่าย</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>ฐานสำหรับโปรโตคอล</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>ฐานสำหรับชื่อ netmask</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>ฐานสำหรับชื่อแทนอีเมล</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>ฐานสำหรับเน็ตกรุ๊ป</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>ความลึกของการค้นหา</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>ตัวกรองการค้นหา</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>ค้นหาเวลาที่ จำกัด</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>วินาที</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>ฐานทั่วโลก</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>ไม่สามารถบันทึกฐานการค้นหา LDAP</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>ไม่มีฐานการค้นหาทั่วโลก</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับผู้ใช้ Unix</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับรหัสผ่าน Unix</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับกลุ่ม Unix</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับชื่อโฮสต์</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับบริการเครือข่าย</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับชื่อเครือข่าย</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับโปรโตคอล</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับชื่อ netmask</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับชื่อแทนอีเมล</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>ไม่มีฐานสำหรับกลุ่มเน็ต</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>การ จำกัด เวลาการค้นหาขาดหายไปหรือไม่ถูกต้อง</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>ตัวเลือกการรับรองความถูกต้อง</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>การพิสูจน์ตัวตน PAM และการตั้งค่ารหัสผ่าน</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>ตัวกรอง LDAP เพิ่มเติม</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>แอตทริบิวต์ LDAP สำหรับชื่อผู้ใช้</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>กลุ่ม LDAP เพื่อบังคับการเป็นสมาชิกของ</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>แอตทริบิวต์ LDAP สำหรับสมาชิกกลุ่ม</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>วิธีการเก็บรหัสผ่าน</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>ข้อความที่ชัดเจน</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>การเข้ารหัส Unix</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>การเข้ารหัส MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>บริการไดเรกทอรีของ Novell</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>Active Directory</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>การเปลี่ยนรหัสผ่าน OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>ละเว้น</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>ไม่สามารถบันทึกตัวเลือกการตรวจสอบสิทธิ์</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>ไม่มีตัวกรอง LDAP เพิ่มเติม</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>แอตทริบิวต์ LDAP ที่ขาดหายไปหรือไม่ถูกต้องสำหรับชื่อผู้ใช้</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>ไม่มีกลุ่ม LDAP เพื่อบังคับให้เป็นสมาชิกของ</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>แอตทริบิวต์ LDAP ที่ขาดหายไปหรือไม่ถูกต้องสำหรับสมาชิกกลุ่ม</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>บริการที่ใช้ LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>บริการ</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>แหล่งข้อมูล</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>บริการที่ใช้ LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>ไม่ได้ติดตั้งโมดูล $1 Perl ที่จำเป็นสำหรับการพูดคุยกับเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>ไม่พบไฟล์การกำหนดค่าไคลเอ็นต์ LDAP $1 ในระบบของคุณ</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ LDAP $1 พอร์ต $2 </value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ LDAP $1 พอร์ต $2 : $3 </value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>ไม่สามารถผูกกับเซิร์ฟเวอร์ LDAP $1 เป็น $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>ไม่ระบุชื่อ</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>ไม่สามารถแยกวิเคราะห์เซิร์ฟเวอร์ LDAP URI $1 </value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>ไม่สามารถเปลี่ยนเป็นโหมด TLS : $1 </value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>เบราว์เซอร์ LDAP</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>ไม่สามารถใช้เบราว์เซอร์ LDAP : $1 </value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>การเรียกดู:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>แสดง</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>การค้นหา LDAP ล้มเหลว : $1 </value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>วัตถุลูก</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>คุณสมบัติของวัตถุ</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>เรียกดูผู้ปกครอง</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>ตกลง</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>ไฟล์</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>บริการรักษาความปลอดภัยระบบ</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>ไฟล์ฐานข้อมูล</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS &amp; ไฟล์</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>เฮเซียด</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>เครื่องพิมพ์ของผู้ใช้</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>Multicast DNS</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>Multicast DNS (ขั้นต่ำ)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>นามแฝง Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>นามแฝง Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>ที่อยู่โฮสต์</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>กลุ่ม Unix</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>ผู้ใช้ Unix</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>ที่อยู่อีเทอร์เน็ต</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>บ้านอัตโนมัติ</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>แผนที่อัตโนมัติ</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>บ้านอัตโนมัติ</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>แผนที่อัตโนมัติ</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter ท้องถิ่น</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>บ้านอัตโนมัติ</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>แผนที่อัตโนมัติ</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter ท้องถิ่น</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>แผนที่อัตโนมัติ</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>netgroups</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>netgroups</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetIDs</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>ที่อยู่เครือข่าย</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>โปรโตคอลเครือข่าย</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>โปรแกรม RPC</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>บริการเครือข่าย</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>ตัวแปร Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>กุญแจสาธารณะ</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>กุญแจสาธารณะ</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>พารามิเตอร์การบูต</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>รหัสผ่านเงา Unix</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>รหัสผ่านกลุ่ม Unix</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>netmasks</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>เครื่องพิมพ์</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>ข้อมูลผู้ใช้เพิ่มเติม</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>เครื่องพิมพ์</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>โหนด IP</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>โซนเวลา</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>ตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>แก้ไขบริการ</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>ไม่มีบริการ!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>รายละเอียดการบริการ</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>ชื่อบริการ</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>แหล่งข้อมูลแรก</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>แหล่งข้อมูลที่สอง</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>แหล่งข้อมูลที่สาม</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>แหล่งข้อมูลที่สี่</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>แหล่งข้อมูลที่ห้า</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>แหล่งข้อมูล $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>เมื่อประสบความสำเร็จ</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>หากไม่พบ</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>ถ้าไม่ว่าง</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>ปิดให้บริการชั่วคราว</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>ส่งคืนผลลัพธ์</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>ค้นหาต่อไป</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>ไม่มี</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>ไม่สามารถบันทึกบริการ</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>ไม่ได้เลือกแหล่งที่มา!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>แก้ไขการกำหนดค่าเซิร์ฟเวอร์ LDAP</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>ดัดแปลงฐานการค้นหา LDAP</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>ตัวเลือกการรับรองความถูกต้องแก้ไข</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>เปลี่ยนบริการ $1 แล้ว</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>เปิดใช้ daemon ไคลเอ็นต์ LDAP ในเวลาบูต</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>ปิดใช้งาน daemon ไคลเอ็นต์ LDAP ในเวลาบูต</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>เริ่ม daemon ไคลเอ็นต์ LDAP แล้ว</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>daemon ไคลเอ็นต์ LDAP ที่หยุดทำงาน</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>รีสตาร์ทไคลเอ็นต์ LDAP daemon</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>ตรวจสอบการกำหนดค่า LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>การค้นหาฐาน LDAP สำหรับผู้ใช้ ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. ไม่พบในการกำหนดค่าไคลเอนต์!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. พบฐาน $1 </value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>กำลังเชื่อมต่อกับเซิร์ฟเวอร์ LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. การเชื่อมต่อล้มเหลว : $1 </value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. เชื่อมต่อกับ $1 </value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>กำลังค้นหาผู้ใช้ ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. การค้นหาล้มเหลว : $1 </value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. ไม่พบผู้ใช้ภายใต้ฐาน $1 </value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>พบผู้ใช้ $1 ราย</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>ตรวจสอบบริการ &lt;b&gt;ผู้ใช้ Unix&lt;/b&gt;</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. บริการได้รับการตั้งค่าให้สืบค้น LDAP</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. บริการไม่ได้ตั้งค่าให้ใช้ LDAP</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>กำลังมองหาผู้ใช้ Unix $1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. ไม่มีผู้ใช้</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>พบผู้ใช้.. สำเร็จแล้ว</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>ระบบของคุณได้รับการกำหนดค่าเรียบร้อยแล้วเป็นไคลเอนต์ LDAP!</value>
+  </data>
+</root>

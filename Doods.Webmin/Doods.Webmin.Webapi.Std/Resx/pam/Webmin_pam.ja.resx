@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>PAM 認証</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>サービス</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>新規の PAM サービスを追加</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>サービス リスト</value>
+  </data>
+  <data name="desc_su" xml:space="preserve">
+    <value>ユーザの切替</value>
+  </data>
+  <data name="desc_su-l" xml:space="preserve">
+    <value>ユーザの切り替え (ログイン)</value>
+  </data>
+  <data name="desc_login" xml:space="preserve">
+    <value>ローカルまたはリモート ログイン</value>
+  </data>
+  <data name="desc_samba" xml:space="preserve">
+    <value>Samba Windows ファイル サーバ</value>
+  </data>
+  <data name="desc_imap" xml:space="preserve">
+    <value>IMAP メール サーバ</value>
+  </data>
+  <data name="desc_pop" xml:space="preserve">
+    <value>POP メール サーバ</value>
+  </data>
+  <data name="desc_kde" xml:space="preserve">
+    <value>KDE ログイン</value>
+  </data>
+  <data name="desc_rexec" xml:space="preserve">
+    <value>リモート exec サーバ</value>
+  </data>
+  <data name="desc_rlogin" xml:space="preserve">
+    <value>リモート ログイン サーバ</value>
+  </data>
+  <data name="desc_rsh" xml:space="preserve">
+    <value>リモート シェル サーバ</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>パスワードを変更</value>
+  </data>
+  <data name="desc_chfn" xml:space="preserve">
+    <value>finger 情報を変更</value>
+  </data>
+  <data name="desc_chsh" xml:space="preserve">
+    <value>シェルを変更</value>
+  </data>
+  <data name="desc_ftp" xml:space="preserve">
+    <value>ファイル転送サーバ</value>
+  </data>
+  <data name="desc_ftpd" xml:space="preserve">
+    <value>ファイル転送サーバ</value>
+  </data>
+  <data name="desc_wu-ftpd" xml:space="preserve">
+    <value>WuFTPd ファイル転送サーバ</value>
+  </data>
+  <data name="desc_xscreensaver" xml:space="preserve">
+    <value>スクリーン セーバー</value>
+  </data>
+  <data name="desc_other" xml:space="preserve">
+    <value>他のサービス</value>
+  </data>
+  <data name="desc_netatalk.pamd" xml:space="preserve">
+    <value>$desc_netatalk</value>
+  </data>
+  <data name="desc_netatalk" xml:space="preserve">
+    <value>Netatalk Apple ファイル サーバ</value>
+  </data>
+  <data name="desc_webmin" xml:space="preserve">
+    <value>Webmin web サーバ</value>
+  </data>
+  <data name="desc_usermin" xml:space="preserve">
+    <value>Usermin web サーバ</value>
+  </data>
+  <data name="desc_xdm" xml:space="preserve">
+    <value>ローカルまたはリモート X login</value>
+  </data>
+  <data name="desc_gdm" xml:space="preserve">
+    <value>Gnome X login</value>
+  </data>
+  <data name="desc_linuxconf" xml:space="preserve">
+    <value>LinuxConf ログイン</value>
+  </data>
+  <data name="desc_linuxconf-pair" xml:space="preserve">
+    <value>LinuxConf 追加ログイン</value>
+  </data>
+  <data name="desc_linuxconf-auth" xml:space="preserve">
+    <value>LinuxConf 認証</value>
+  </data>
+  <data name="desc_xlock" xml:space="preserve">
+    <value>スクリーン ロック</value>
+  </data>
+  <data name="desc_vlock" xml:space="preserve">
+    <value>仮想コンソール ロック</value>
+  </data>
+  <data name="desc_kbdrate" xml:space="preserve">
+    <value>キーボード レート制御</value>
+  </data>
+  <data name="desc_halt" xml:space="preserve">
+    <value>システムを中断</value>
+  </data>
+  <data name="desc_poweroff" xml:space="preserve">
+    <value>システムの電源をオフ</value>
+  </data>
+  <data name="desc_reboot" xml:space="preserve">
+    <value>システムを再起動</value>
+  </data>
+  <data name="desc_shutdown" xml:space="preserve">
+    <value>システムをシャットダウン</value>
+  </data>
+  <data name="desc_mcserv" xml:space="preserve">
+    <value>Midnight commander</value>
+  </data>
+  <data name="desc_kppp" xml:space="preserve">
+    <value>KDE PPP クライアント ツール</value>
+  </data>
+  <data name="desc_xserver" xml:space="preserve">
+    <value>X11 サーバ</value>
+  </data>
+  <data name="desc_gnorpm-auth" xml:space="preserve">
+    <value>Gnome RPM ツール</value>
+  </data>
+  <data name="desc_kpackage" xml:space="preserve">
+    <value>KDE RPM ツール</value>
+  </data>
+  <data name="desc_ppp" xml:space="preserve">
+    <value>PPP デーモン ログイン</value>
+  </data>
+  <data name="desc_rp3-config" xml:space="preserve">
+    <value>Redhat PPP クライアント ツール</value>
+  </data>
+  <data name="desc_up2date" xml:space="preserve">
+    <value>Redhat Linux アップデート エージェント</value>
+  </data>
+  <data name="desc_up2date-config" xml:space="preserve">
+    <value>Redhat Linux  アップデート設定</value>
+  </data>
+  <data name="desc_sudo" xml:space="preserve">
+    <value>root コマンドの実行制限</value>
+  </data>
+  <data name="desc_httpd" xml:space="preserve">
+    <value>Web サーバ</value>
+  </data>
+  <data name="desc_qpop" xml:space="preserve">
+    <value>POP メール サーバ</value>
+  </data>
+  <data name="desc_sshd" xml:space="preserve">
+    <value>SSH ログイン</value>
+  </data>
+  <data name="desc_squid" xml:space="preserve">
+    <value>Squid プロキシ サーバ</value>
+  </data>
+  <data name="desc_bindconf" xml:space="preserve">
+    <value>Redhat BIND 設定ツール</value>
+  </data>
+  <data name="desc_apacheconf" xml:space="preserve">
+    <value>Redhat Apache 設定ツール</value>
+  </data>
+  <data name="desc_adsl-config" xml:space="preserve">
+    <value>Redhat ADSL 設定ツール</value>
+  </data>
+  <data name="desc_internet-config" xml:space="preserve">
+    <value>Redhat インターネット設定ツール</value>
+  </data>
+  <data name="desc_isdn-config" xml:space="preserve">
+    <value>Redhat ISDN 設定ツール</value>
+  </data>
+  <data name="desc_kontrol-panel" xml:space="preserve">
+    <value>Redhat KDE コントロール パネル</value>
+  </data>
+  <data name="desc_kscreensaver" xml:space="preserve">
+    <value>KDE スクリーン セーバー</value>
+  </data>
+  <data name="desc_printconf-gui" xml:space="preserve">
+    <value>Redhat プリンタ設定ツール</value>
+  </data>
+  <data name="desc_rhn_register" xml:space="preserve">
+    <value>Redhat ネットワークの登録</value>
+  </data>
+  <data name="desc_system-auth" xml:space="preserve">
+    <value>共通認証</value>
+  </data>
+  <data name="desc_cups" xml:space="preserve">
+    <value>CUPS printing</value>
+  </data>
+  <data name="desc_cupsys" xml:space="preserve">
+    <value>$desc_cups</value>
+  </data>
+  <data name="desc_libcupsys2" xml:space="preserve">
+    <value>$desc_cups</value>
+  </data>
+  <data name="desc_ssh" xml:space="preserve">
+    <value>$desc_sshd</value>
+  </data>
+  <data name="desc_proftpd" xml:space="preserve">
+    <value>ProFTPd file transfer server</value>
+  </data>
+  <data name="desc_qpopper" xml:space="preserve">
+    <value>$desc_qpop</value>
+  </data>
+  <data name="desc_dovecot" xml:space="preserve">
+    <value>POP / IMAP mail server</value>
+  </data>
+  <data name="desc_cron" xml:space="preserve">
+    <value>Scheduled commands daemon</value>
+  </data>
+  <data name="desc_runuser" xml:space="preserve">
+    <value>Run command as user</value>
+  </data>
+  <data name="desc_runuser-l" xml:space="preserve">
+    <value>Run command as user (with login)</value>
+  </data>
+  <data name="desc_postgresql" xml:space="preserve">
+    <value>PostgreSQL database</value>
+  </data>
+  <data name="desc_crond" xml:space="preserve">
+    <value>Cron daemon</value>
+  </data>
+  <data name="desc_smtp" xml:space="preserve">
+    <value>SMTP authentication</value>
+  </data>
+  <data name="desc_smtp.postfix" xml:space="preserve">
+    <value>Postfix SMTP authentication</value>
+  </data>
+  <data name="desc_smtp.sendmail" xml:space="preserve">
+    <value>Sendmail SMTP authentication</value>
+  </data>
+  <data name="desc_config-util" xml:space="preserve">
+    <value>Configuration utilities</value>
+  </data>
+  <data name="desc_newrole" xml:space="preserve">
+    <value>SELinux new role</value>
+  </data>
+  <data name="desc_radius" xml:space="preserve">
+    <value>RADIUS dialup login</value>
+  </data>
+  <data name="desc_pptpconfig" xml:space="preserve">
+    <value>Point-to-point tunneling protocol</value>
+  </data>
+  <data name="desc_atd" xml:space="preserve">
+    <value>Scheduled commands daemon</value>
+  </data>
+  <data name="desc_kcheckpass" xml:space="preserve">
+    <value>KDE password checker</value>
+  </data>
+  <data name="desc_common-account" xml:space="preserve">
+    <value>Common account verification</value>
+  </data>
+  <data name="desc_common-auth" xml:space="preserve">
+    <value>Common authentication</value>
+  </data>
+  <data name="desc_common-password" xml:space="preserve">
+    <value>Common password change</value>
+  </data>
+  <data name="desc_common-session" xml:space="preserve">
+    <value>Common session setup</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>PAM サービスの編集</value>
+  </data>
+  <data name="edit_header" xml:space="preserve">
+    <value>PAM サービスの詳細</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>サービス名</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>設定ファイル</value>
+  </data>
+  <data name="edit_header_auth" xml:space="preserve">
+    <value>認証手順</value>
+  </data>
+  <data name="edit_header_account" xml:space="preserve">
+    <value>アカウント確認手順</value>
+  </data>
+  <data name="edit_header_session" xml:space="preserve">
+    <value>セッション セットアップ 手順</value>
+  </data>
+  <data name="edit_header_password" xml:space="preserve">
+    <value>パスワードの変更手順</value>
+  </data>
+  <data name="edit_mod" xml:space="preserve">
+    <value>PAM モジュール</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="edit_args" xml:space="preserve">
+    <value>パラメータ</value>
+  </data>
+  <data name="edit_addmod" xml:space="preserve">
+    <value>ステップを追加: </value>
+  </data>
+  <data name="edit_addinc" xml:space="preserve">
+    <value>Add included service</value>
+  </data>
+  <data name="edit_control" xml:space="preserve">
+    <value>障害レベル</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>この手順には PAM モジュールが指定されていません</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>PAM サービスを削除</value>
+  </data>
+  <data name="edit_move" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>PAM サービス</value>
+  </data>
+  <data name="edit_inc" xml:space="preserve">
+    <value>Include service $1</value>
+  </data>
+  <data name="edit_iheader" xml:space="preserve">
+    <value>Included PAM services</value>
+  </data>
+  <data name="pam_pwdb.so" xml:space="preserve">
+    <value>Unix パスワードの認証</value>
+  </data>
+  <data name="pam_securetty.so" xml:space="preserve">
+    <value>root のセキュア TTY 検査</value>
+  </data>
+  <data name="pam_nologin.so" xml:space="preserve">
+    <value>&lt;tt&gt;/etc/nologin&lt;/tt&gt; ファイル チェック</value>
+  </data>
+  <data name="pam_mail.so" xml:space="preserve">
+    <value>新規メールを通知</value>
+  </data>
+  <data name="pam_lastlog.so" xml:space="preserve">
+    <value>最後のログインを通知</value>
+  </data>
+  <data name="pam_rootok.so" xml:space="preserve">
+    <value>&lt;tt&gt;root&lt;/tt&gt; ユーザのみ検査</value>
+  </data>
+  <data name="pam_cracklib.so" xml:space="preserve">
+    <value>強力なパスワード検査</value>
+  </data>
+  <data name="pam_access.so" xml:space="preserve">
+    <value>アクセス制御ファイルの検査</value>
+  </data>
+  <data name="pam_deny.so" xml:space="preserve">
+    <value>常にアクセスを拒否</value>
+  </data>
+  <data name="pam_env.so" xml:space="preserve">
+    <value>環境変数を設定</value>
+  </data>
+  <data name="pam_ftp.so" xml:space="preserve">
+    <value>FTP 認証検査</value>
+  </data>
+  <data name="pam_time.so" xml:space="preserve">
+    <value>ログイン時間を検査</value>
+  </data>
+  <data name="pam_group.so" xml:space="preserve">
+    <value>グループ メンバーシップの設定</value>
+  </data>
+  <data name="pam_listfile.so" xml:space="preserve">
+    <value>ファイルの内容を検査</value>
+  </data>
+  <data name="pam_limits.so" xml:space="preserve">
+    <value>リソース制限を設定</value>
+  </data>
+  <data name="pam_mkhomedir.so" xml:space="preserve">
+    <value>ホーム ディレクトリを作成</value>
+  </data>
+  <data name="pam_motd.so" xml:space="preserve">
+    <value>本日のメッセージ ファイルを表示</value>
+  </data>
+  <data name="pam_permit.so" xml:space="preserve">
+    <value>常にアクセスを許可</value>
+  </data>
+  <data name="pam_radius.so" xml:space="preserve">
+    <value>RADIUS サーバの認証</value>
+  </data>
+  <data name="pam_rhosts.so" xml:space="preserve">
+    <value>　&lt;tt&gt;.rhosts&lt;/tt&gt; ファイルを検査</value>
+  </data>
+  <data name="pam_rhosts_auth.so" xml:space="preserve">
+    <value>　&lt;tt&gt;.rhosts&lt;/tt&gt; ファイルを検査</value>
+  </data>
+  <data name="pam_shells.so" xml:space="preserve">
+    <value>有効なシェルを検査</value>
+  </data>
+  <data name="pam_unix.so" xml:space="preserve">
+    <value>古い Unix パスワード認証</value>
+  </data>
+  <data name="pam_userdb.so" xml:space="preserve">
+    <value>DBM ファイルのパスワード認証</value>
+  </data>
+  <data name="pam_warn.so" xml:space="preserve">
+    <value>ログの警告</value>
+  </data>
+  <data name="pam_wheel.so" xml:space="preserve">
+    <value>&lt;tt&gt;wheel&lt;/tt&gt; グループの検査 </value>
+  </data>
+  <data name="pam_issue.so" xml:space="preserve">
+    <value>表示&lt;tt&gt;/etc/issue&lt;/tt&gt; ファイル</value>
+  </data>
+  <data name="pam_ldap.so" xml:space="preserve">
+    <value>LDAP サーバの認証</value>
+  </data>
+  <data name="pam_unix_auth.so" xml:space="preserve">
+    <value>Unix パスワードの認証</value>
+  </data>
+  <data name="pam_unix_sess.so" xml:space="preserve">
+    <value>Unix セッションのセットアップ</value>
+  </data>
+  <data name="pam_unix_session.so" xml:space="preserve">
+    <value>Unix セッションのセットアップ</value>
+  </data>
+  <data name="pam_unix_acct.so" xml:space="preserve">
+    <value>Unix アカウントを確認</value>
+  </data>
+  <data name="pam_unix_passwd.so" xml:space="preserve">
+    <value>Unix パスワードの変更</value>
+  </data>
+  <data name="pam_stress.so" xml:space="preserve">
+    <value>アプリケーション ストレス テスト</value>
+  </data>
+  <data name="pam_tally.so" xml:space="preserve">
+    <value>トラックでログインできませんでした</value>
+  </data>
+  <data name="pam_passwd+.so" xml:space="preserve">
+    <value>パスワードの強度を検査</value>
+  </data>
+  <data name="pam_filter.so" xml:space="preserve">
+    <value>入力/出力フィルタ</value>
+  </data>
+  <data name="pam_desgold.so" xml:space="preserve">
+    <value>DESGold smartcard 認証</value>
+  </data>
+  <data name="pam_console.so" xml:space="preserve">
+    <value>コンソールのみ検査</value>
+  </data>
+  <data name="pam_xauth.so" xml:space="preserve">
+    <value>X 認証</value>
+  </data>
+  <data name="pam_stack.so" xml:space="preserve">
+    <value>他の PAM サービスを呼び出し</value>
+  </data>
+  <data name="pam_foreground.so" xml:space="preserve">
+    <value>Console setup</value>
+  </data>
+  <data name="control_requisite" xml:space="preserve">
+    <value>要件</value>
+  </data>
+  <data name="control_required" xml:space="preserve">
+    <value>必須</value>
+  </data>
+  <data name="control_sufficient" xml:space="preserve">
+    <value>十分</value>
+  </data>
+  <data name="control_optional" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="control_desc_requisite" xml:space="preserve">
+    <value>障害時に即座に認証を失敗させる</value>
+  </data>
+  <data name="control_desc_required" xml:space="preserve">
+    <value>障害時に最後に認証を失敗させる</value>
+  </data>
+  <data name="control_desc_sufficient" xml:space="preserve">
+    <value>成功時に即座に認証を完了する</value>
+  </data>
+  <data name="control_desc_optional" xml:space="preserve">
+    <value>成功または失敗を無視する</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>PAM サービスの作成</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>新規の PAM サービスのオプション</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>サービス名</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="create_mods" xml:space="preserve">
+    <value>初期 PAM モジュール</value>
+  </data>
+  <data name="create_0" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="create_1" xml:space="preserve">
+    <value>Unix 認証</value>
+  </data>
+  <data name="create_2" xml:space="preserve">
+    <value>すべてのアクセスを拒否</value>
+  </data>
+  <data name="mod_edit" xml:space="preserve">
+    <value>PAM モジュールを編集</value>
+  </data>
+  <data name="mod_create" xml:space="preserve">
+    <value>PAM モジュールを追加</value>
+  </data>
+  <data name="mod_header" xml:space="preserve">
+    <value>PAM モジュール オプション</value>
+  </data>
+  <data name="mod_name" xml:space="preserve">
+    <value>サービス名</value>
+  </data>
+  <data name="mod_mod" xml:space="preserve">
+    <value>PAM モジュール</value>
+  </data>
+  <data name="mod_type" xml:space="preserve">
+    <value>サービスで使用</value>
+  </data>
+  <data name="mod_type_auth" xml:space="preserve">
+    <value>認証</value>
+  </data>
+  <data name="mod_type_account" xml:space="preserve">
+    <value>アカウントの確認</value>
+  </data>
+  <data name="mod_type_session" xml:space="preserve">
+    <value>セッション セットアップ</value>
+  </data>
+  <data name="mod_type_password" xml:space="preserve">
+    <value>パスワードの変更</value>
+  </data>
+  <data name="mod_control" xml:space="preserve">
+    <value>障害レベル</value>
+  </data>
+  <data name="mod_args" xml:space="preserve">
+    <value>モジュールの引数</value>
+  </data>
+  <data name="mod_err" xml:space="preserve">
+    <value>モジュールを保存できませんでした</value>
+  </data>
+  <data name="pwdb_shadow" xml:space="preserve">
+    <value>シャドー パスワード ファイルを使用しますか？</value>
+  </data>
+  <data name="pwdb_nullok" xml:space="preserve">
+    <value>NULL パスワードを許可しますか？</value>
+  </data>
+  <data name="pwdb_md5" xml:space="preserve">
+    <value>MD5 暗号化パスワードを使用しますか？</value>
+  </data>
+  <data name="pwdb_nodelay" xml:space="preserve">
+    <value>ログインに失敗後遅延しますか？</value>
+  </data>
+  <data name="unix_nullok_secure" xml:space="preserve">
+    <value>Accept null passwords on secure TTYs?</value>
+  </data>
+  <data name="unix_min" xml:space="preserve">
+    <value>Minimum password length</value>
+  </data>
+  <data name="unix_nomin" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="unix_max" xml:space="preserve">
+    <value>Maximum password length</value>
+  </data>
+  <data name="unix_nomax" xml:space="preserve">
+    <value>No limit</value>
+  </data>
+  <data name="unix_obscure" xml:space="preserve">
+    <value>Prevent use of easy passwords?</value>
+  </data>
+  <data name="unix_emin" xml:space="preserve">
+    <value>Missing or invalid minimum password length</value>
+  </data>
+  <data name="unix_emax" xml:space="preserve">
+    <value>Missing or invalid maximum password length</value>
+  </data>
+  <data name="listfile_item" xml:space="preserve">
+    <value>ファイルを検索</value>
+  </data>
+  <data name="listfile_item_user" xml:space="preserve">
+    <value>ユーザ名</value>
+  </data>
+  <data name="listfile_item_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="listfile_item_rhost" xml:space="preserve">
+    <value>リモート ホスト名</value>
+  </data>
+  <data name="listfile_item_ruser" xml:space="preserve">
+    <value>リモート ユーザ名</value>
+  </data>
+  <data name="listfile_item_group" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="listfile_item_shell" xml:space="preserve">
+    <value>シェル</value>
+  </data>
+  <data name="listfile_sense" xml:space="preserve">
+    <value>ファイルで見つかった場合</value>
+  </data>
+  <data name="listfile_file" xml:space="preserve">
+    <value>検索するファイル</value>
+  </data>
+  <data name="listfile_onerr" xml:space="preserve">
+    <value>ファイル エラー</value>
+  </data>
+  <data name="listfile_fail" xml:space="preserve">
+    <value>失敗</value>
+  </data>
+  <data name="listfile_succeed" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="listfile_apply" xml:space="preserve">
+    <value>検査を制限</value>
+  </data>
+  <data name="listfile_all" xml:space="preserve">
+    <value>すべてのユーザ</value>
+  </data>
+  <data name="listfile_user" xml:space="preserve">
+    <value>次のユーザのみ</value>
+  </data>
+  <data name="listfile_group" xml:space="preserve">
+    <value>グループのみ</value>
+  </data>
+  <data name="cracklib_type" xml:space="preserve">
+    <value>プロンプトのパスワードの種類</value>
+  </data>
+  <data name="cracklib_retry" xml:space="preserve">
+    <value>失敗までの最大試行数</value>
+  </data>
+  <data name="cracklib_eretry" xml:space="preserve">
+    <value>試行数がないか無効です</value>
+  </data>
+  <data name="cracklib_etype" xml:space="preserve">
+    <value>パスワードの種類がないか無効です</value>
+  </data>
+  <data name="rhosts_equiv" xml:space="preserve">
+    <value>&lt;tt&gt;/etc/hosts.equiv&lt;/tt&gt; ファイルを読み取りますか？</value>
+  </data>
+  <data name="rhosts_rhosts" xml:space="preserve">
+    <value>ユーザの&lt;tt&gt;.rhosts&lt;/tt&gt; ファイルを読み取りますか？</value>
+  </data>
+  <data name="rhosts_promiscuous" xml:space="preserve">
+    <value>&lt;tt&gt;+&lt;/tt&gt; エントリをすべてのホストに許可しますか？</value>
+  </data>
+  <data name="rhosts_suppress" xml:space="preserve">
+    <value>認証の失敗をログに記録しますか？</value>
+  </data>
+  <data name="env_var" xml:space="preserve">
+    <value>変数名</value>
+  </data>
+  <data name="env_def" xml:space="preserve">
+    <value>デフォルト値</value>
+  </data>
+  <data name="env_over" xml:space="preserve">
+    <value>上書き値</value>
+  </data>
+  <data name="env_evar" xml:space="preserve">
+    <value>変数名にスペースを入れることはできません</value>
+  </data>
+  <data name="securetty_ttys" xml:space="preserve">
+    <value>セキュア TTY</value>
+  </data>
+  <data name="shells_shells" xml:space="preserve">
+    <value>有効なユーザ シェル</value>
+  </data>
+  <data name="tally_deny" xml:space="preserve">
+    <value>アクセスを拒否するまでの試行回数</value>
+  </data>
+  <data name="tally_reset" xml:space="preserve">
+    <value>成功時に失敗数をリセット</value>
+  </data>
+  <data name="tally_edeny" xml:space="preserve">
+    <value>失敗の試行数がないか無効です</value>
+  </data>
+  <data name="tally_magic" xml:space="preserve">
+    <value>失敗数の適用&lt;tt&gt;root&lt;/tt&gt;?</value>
+  </data>
+  <data name="tally_root" xml:space="preserve">
+    <value>&lt;tt&gt;root&lt;/tt&gt; アカウントを拒否可能にしますか？</value>
+  </data>
+  <data name="time_services" xml:space="preserve">
+    <value>サービス</value>
+  </data>
+  <data name="time_ttys" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="time_users" xml:space="preserve">
+    <value>ユーザ</value>
+  </data>
+  <data name="time_times" xml:space="preserve">
+    <value>アクセス時間</value>
+  </data>
+  <data name="time_info" xml:space="preserve">
+    <value>すべてのフィールドは  | で分離した複数の値を含むことができ、値はワイルド カードとして * または否定辞として ! を使用できます。</value>
+  </data>
+  <data name="group_services" xml:space="preserve">
+    <value>サービス</value>
+  </data>
+  <data name="group_ttys" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="group_users" xml:space="preserve">
+    <value>ユーザ</value>
+  </data>
+  <data name="group_times" xml:space="preserve">
+    <value>アクセス時間</value>
+  </data>
+  <data name="group_groups" xml:space="preserve">
+    <value>グループを追加</value>
+  </data>
+  <data name="group_info" xml:space="preserve">
+    <value>すべてのフィールドは  | で分離した複数の値を含むことができ、値はワイルド カードとして * または否定辞として ! を使用できます。</value>
+  </data>
+  <data name="wheel_group" xml:space="preserve">
+    <value>グループのメンバーシップを検査</value>
+  </data>
+  <data name="wheel_group_def" xml:space="preserve">
+    <value>デフォルト(&lt;tt&gt;wheel&lt;/tt&gt; または GID 0)</value>
+  </data>
+  <data name="wheel_trust" xml:space="preserve">
+    <value>グループ メンバーが詳細認証をバイパス可能にしますか？</value>
+  </data>
+  <data name="wheel_deny" xml:space="preserve">
+    <value>グループ メンバーを許可するかわりに拒否しますか？</value>
+  </data>
+  <data name="wheel_egroup" xml:space="preserve">
+    <value>グループ名がないか無効です</value>
+  </data>
+  <data name="motd_file" xml:space="preserve">
+    <value>表示するファイル</value>
+  </data>
+  <data name="motd_file_def" xml:space="preserve">
+    <value>デフォルト(&lt;tt&gt;/etc/motd&lt;/tt&gt;)</value>
+  </data>
+  <data name="motd_efile" xml:space="preserve">
+    <value>ファイル名がないか無効です</value>
+  </data>
+  <data name="mail_nopen" xml:space="preserve">
+    <value>ログインでメールの通知を表示しますか？</value>
+  </data>
+  <data name="mail_close" xml:space="preserve">
+    <value>ログ アウトでメールの通知を表示しますか？</value>
+  </data>
+  <data name="mail_empty" xml:space="preserve">
+    <value>メール ファイルが空の場合は通知しますか？</value>
+  </data>
+  <data name="mail_noenv" xml:space="preserve">
+    <value> $MAIL 環境変数を設定しますか？</value>
+  </data>
+  <data name="mail_dir" xml:space="preserve">
+    <value>メール スプール ディレクトリ</value>
+  </data>
+  <data name="mail_edir" xml:space="preserve">
+    <value>メール スプール ディレクトリがないか無効です</value>
+  </data>
+  <data name="stack_service" xml:space="preserve">
+    <value>PAM サービスに検査を渡す</value>
+  </data>
+  <data name="log_pam_create" xml:space="preserve">
+    <value>PAM サービス $1 を作成しました</value>
+  </data>
+  <data name="log_pam_delete" xml:space="preserve">
+    <value>PAM サービス $1 を削除しました</value>
+  </data>
+  <data name="log_mod_create" xml:space="preserve">
+    <value>PAM モジュール $1 をサービス $2 に追加しました</value>
+  </data>
+  <data name="log_mod_modify" xml:space="preserve">
+    <value>サービス $2 内のPAM モジュール $1 を変更しました</value>
+  </data>
+  <data name="log_mod_delete" xml:space="preserve">
+    <value>サービス $2 内のPAM モジュール $1 を削除しました</value>
+  </data>
+  <data name="log_mod_move" xml:space="preserve">
+    <value>サービス $3 の PAM モジュールをスワップしました</value>
+  </data>
+  <data name="log_mod_move_l" xml:space="preserve">
+    <value>サービス $3内のPAM モジュール $1 と $2をスワップしました</value>
+  </data>
+  <data name="log_inc_create" xml:space="preserve">
+    <value>Added include $1 for service $2</value>
+  </data>
+  <data name="log_inc_modify" xml:space="preserve">
+    <value>Modified include $1 for service $2</value>
+  </data>
+  <data name="log_inc_delete" xml:space="preserve">
+    <value>Deleted include $1 for service $2</value>
+  </data>
+  <data name="log_incs" xml:space="preserve">
+    <value>Updated includes for service $1</value>
+  </data>
+  <data name="inc_edit" xml:space="preserve">
+    <value>Edit Included Service</value>
+  </data>
+  <data name="inc_create" xml:space="preserve">
+    <value>Create Included Service</value>
+  </data>
+  <data name="inc_header" xml:space="preserve">
+    <value>Included PAM service details</value>
+  </data>
+  <data name="inc_inc" xml:space="preserve">
+    <value>Included PAM service</value>
+  </data>
+  <data name="inc_err" xml:space="preserve">
+    <value>Failed to save included service</value>
+  </data>
+</root>

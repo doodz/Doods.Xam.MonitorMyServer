@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>Xác thực cấu hình</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>Nhấp vào nút này để Webmin xác thực cấu hình máy chủ LDAP của bạn, bằng cách đảm bảo rằng máy chủ có thể được liên hệ và có chứa người dùng và nhóm.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>chỉ số mô-đun</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;Cảnh báo&lt;/b&gt; - Webmin đã phát hiện hai tệp cấu hình LDAP riêng trên hệ thống của bạn. NSS-LDAP được cấu hình bằng $1, trong khi PAM-LDAP sử dụng $2. Điều này có thể gây ra sự thống nhất giữa hai dịch vụ.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>Khắc phục bằng cách liên kết tập tin</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>Đừng hiển thị tin nhắn này</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>Khách hàng LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Ngừng Daemon Client LDAP</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Tắt trình nền máy khách LDAP cục bộ, cần thiết để truy vấn máy chủ LDAP từ xa.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Bắt đầu LDAP Daemon Client</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Khởi động trình nền máy khách LDAP cục bộ, cần thiết để truy vấn máy chủ LDAP từ xa. Cho đến khi nó được bắt đầu, người dùng và các nhóm trong LDAP sẽ không thể truy cập được.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Khởi động lại Daemon Client LDAP</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Áp dụng cấu hình hiện tại bằng cách khởi động lại trình nền máy khách LDAP cục bộ.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Bắt đầu ứng dụng khách LDAP khi khởi động</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Thay đổi xem daemon máy khách LDAP có được khởi động khi hệ thống khởi động hay không.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>Cấu hình máy chủ LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>Tùy chọn đăng nhập và máy chủ LDAP</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>Tên máy chủ LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>Kết nối với cổng</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>Phiên bản giao thức LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>Giới hạn thời gian kết nối</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>Đăng nhập cho người dùng không &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>Mật khẩu cho người dùng không &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>Đăng nhập cho người dùng &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>Mật khẩu cho người dùng &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>Tương tự như không &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>Vô danh</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>Sử dụng kết nối được mã hóa?</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>Có, sử dụng TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>Xác minh chứng chỉ SSL LDAP?</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>Mặc định (thường là $1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>Tệp chứng chỉ CA</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>Máy chủ LDAP</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>Tên máy chủ</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>Số cổng</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>Giao thức</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>Tiêu chuẩn</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>Ổ cắm Unix</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>Không thể lưu cấu hình máy chủ LDAP</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' không phải là tên máy chủ hợp lệ</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>Không có máy chủ LDAP nào được nhập</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>Cổng máy chủ LDAP bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>Thiếu đăng nhập cho người dùng không &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>Thiếu mật khẩu cho người dùng không &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>Thiếu đăng nhập cho người dùng &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>Thiếu mật khẩu cho người dùng &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>Giới hạn thời gian kết nối bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>Tệp chứng chỉ CA bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>Cổng bị thiếu hoặc không hợp lệ cho máy chủ $1 </value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>Không có máy chủ LDAP nào được nhập</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>Căn cứ tìm kiếm LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>Vị trí tìm kiếm thư mục LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>Cơ sở tìm kiếm toàn cầu</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>Độ sâu tìm kiếm</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>Toàn bộ cây con</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>Một cấp</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>Chỉ cơ sở</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>Cơ sở cho người dùng Unix</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>Cơ sở cho mật khẩu Unix</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>Cơ sở cho các nhóm Unix</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>Cơ sở cho tên máy chủ</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>Cơ sở cho các dịch vụ mạng</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>Cơ sở cho tên mạng</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>Cơ sở cho các giao thức</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>Cơ sở cho tên netmask</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>Cơ sở cho các bí danh email</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>Cơ sở cho các nhóm net</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>Độ sâu tìm kiếm</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>Bộ lọc tìm kiếm</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>Giới hạn thời gian tìm kiếm</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>giây</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>Cơ sở toàn cầu</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>Không thể lưu cơ sở tìm kiếm LDAP</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>Thiếu cơ sở tìm kiếm toàn cầu</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>Thiếu cơ sở cho người dùng Unix</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>Thiếu cơ sở cho mật khẩu Unix</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>Thiếu cơ sở cho các nhóm Unix</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>Thiếu cơ sở cho tên máy chủ</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>Thiếu cơ sở cho các dịch vụ mạng</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>Thiếu cơ sở cho tên mạng</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>Thiếu cơ sở cho các giao thức</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>Thiếu cơ sở cho tên netmask</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>Thiếu cơ sở cho bí danh email</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>Thiếu cơ sở cho các nhóm net</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>Giới hạn thời gian tìm kiếm bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>Tùy chọn xác thực</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>Cài đặt mật khẩu và xác thực PAM</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>Bộ lọc LDAP bổ sung</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>Thuộc tính LDAP cho tên người dùng</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>Nhóm LDAP để buộc thành viên của</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>Thuộc tính LDAP cho các thành viên nhóm</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>Phương thức lưu trữ mật khẩu</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>Xóa văn bản</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>Mã hóa Unix</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>Mã hóa MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>Dịch vụ thư mục Novell</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>Thư mục hoạt động</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>Thay đổi mật khẩu OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>Mặc kệ</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>Không thể lưu tùy chọn xác thực</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>Thiếu bộ lọc LDAP bổ sung</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>Thuộc tính LDAP bị thiếu hoặc không hợp lệ cho tên người dùng</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>Thiếu nhóm LDAP để buộc thành viên của</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>Thuộc tính LDAP bị thiếu hoặc không hợp lệ cho các thành viên nhóm</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>Dịch vụ sử dụng LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>Dịch vụ</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>Nguồn dữ liệu</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>dịch vụ sử dụng LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>Mô-đun $1 Perl cần thiết để nói chuyện với máy chủ LDAP chưa được cài đặt.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>Không tìm thấy tệp cấu hình máy khách LDAP $1 trên hệ thống của bạn</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>Không thể kết nối với máy chủ LDAP $1 port $2 </value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>Không thể kết nối với máy chủ LDAP $1 cổng $2 : $3 </value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>Không thể liên kết với máy chủ LDAP $1 dưới dạng $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>vô danh</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>Không thể phân tích cú pháp máy chủ LDAP URI $1 </value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>Không thể chuyển sang chế độ TLS : $1 </value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>Trình duyệt LDAP</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>Trình duyệt LDAP không thể được sử dụng : $1 </value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>Đang duyệt:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>Chỉ</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>Tìm kiếm LDAP không thành công : $1 </value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>Đối tượng trẻ em</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>Thuộc tính đối tượng</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>Duyệt phụ huynh</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>đồng ý</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>Các tập tin</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>Dịch vụ bảo mật hệ thống</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>Tệp DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS &amp; Tệp</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Hesiod</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>Máy in người dùng</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>DNS đa tuyến</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>DNS đa tuyến (tối thiểu)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>Bí danh Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>Bí danh Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>Địa chỉ máy chủ</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>Nhóm Unix</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>Người dùng Unix</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>Địa chỉ Ethernet</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>Nhà máy</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>Bản đồ tự động</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>Nhà máy</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>Bản đồ tự động</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Máy tự động</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>Nhà máy</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>Bản đồ tự động</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Máy tự động</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>Bản đồ tự động</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>Nhóm mạng</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>Nhóm mạng</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetID</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>Địa chỉ mạng</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>Giao thức mạng</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>Các chương trình RPC</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>Dịch vụ mạng</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>Biến Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>Khóa công khai</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>Khóa công khai</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>Thông số khởi động</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>Mật khẩu bóng Unix</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>Mật khẩu nhóm Unix</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>Netmasks</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>Máy in</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>Thông tin người dùng thêm</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>Máy in</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>Các nút IP</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>Múi giờ</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>Địa phương</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>Chỉnh sửa dịch vụ</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>Dịch vụ không tồn tại!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>Chi tiết dịch vụ</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>Tên dịch vụ</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>Nguồn dữ liệu đầu tiên</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>Nguồn dữ liệu thứ hai</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>Nguồn dữ liệu thứ ba</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>Nguồn dữ liệu thứ tư</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>Nguồn dữ liệu thứ năm</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>Nguồn dữ liệu $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>Nếu không tìm thấy</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>Nếu không có sẵn</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>Tạm thời không có</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>Kết quả trả về</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>Tiếp tục tìm kiếm</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>Không thể lưu dịch vụ</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>Không có nguồn nào được chọn!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>Cấu hình máy chủ LDAP đã sửa đổi</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>Cơ sở tìm kiếm LDAP đã sửa đổi</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>Tùy chọn xác thực đã sửa đổi</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>Dịch vụ đã thay đổi $1 </value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Trình nền ứng dụng khách LDAP được bật khi khởi động</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Trình nền ứng dụng khách LDAP bị vô hiệu hóa khi khởi động</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Đã bắt đầu trình nền LDAP client</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Trình nền khách hàng LDAP đã dừng</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Trình nền khách hàng LDAP đã khởi động lại</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Xác thực cấu hình LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>Tìm kiếm cơ sở LDAP cho người dùng ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. không tìm thấy dựa trên cấu hình máy khách!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. tìm thấy cơ sở $1.</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>Kết nối với máy chủ LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. kết nối thất bại : $1 </value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. đã kết nối với $1 </value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>Tìm kiếm người dùng ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. tìm kiếm thất bại : $1 </value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. không tìm thấy người dùng nào dưới cơ sở $1.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. đã tìm thấy $1 người dùng.</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>Kiểm tra dịch vụ &lt;b&gt;người dùng Unix&lt;/b&gt; ..</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. dịch vụ được thiết lập để truy vấn LDAP.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. dịch vụ không được thiết lập để sử dụng LDAP.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>Tìm kiếm người dùng Unix $1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. người dùng không tồn tại.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>.. người dùng tìm thấy thành công.</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>Hệ thống của bạn đã được cấu hình thành công dưới dạng máy khách LDAP!</value>
+  </data>
+</root>

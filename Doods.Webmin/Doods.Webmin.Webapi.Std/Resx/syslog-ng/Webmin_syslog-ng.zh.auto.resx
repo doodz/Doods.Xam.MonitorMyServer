@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>系统日志异常</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>应用配置</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>单击此按钮激活当前的Syslog-NG配置。</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>停止Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>单击此按钮停止正在运行的Syslog-NG守护程序。一旦停止，来自其他程序的日志消息将不再写入日志文件。</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>启动Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>单击此按钮以使用当前配置启动Syslog-NG守护程序。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>模块索引</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1</value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>记录选项</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>所有日志文件的选项</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>参赛作品</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>重新打开无效连接之前需要等待的时间</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>关闭空闲连接之前需要等待的时间</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>写入前要缓冲的消息</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>等待统计消息之间的时间</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>要缓冲的消息数</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>使用链接的主机名格式？</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>保留原始主机名？</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>检查主机名是否包含有效字符？</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>错误主机名的正则表达式</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>是否需要为日志文件创建目录？</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>日志文件的默认所有者</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>日志文件的默认组</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>日志文件的默认权限</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>创建目录的默认所有者</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>创建目录的默认组</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>创建目录的默认权限</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>收到日志时间消息？</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>是否进行反向DNS查找？</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>缓存DNS查找？</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>DNS缓存大小</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>缓存DNS记录</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>缓存失败的DNS查找</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>最大日志消息大小</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>记录完整的主机名？</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>替换文件名中的控制字符？</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>保存日志选项失败</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>主机名错误的正则表达式丢失或无效</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>缺少或非数字的DNS缓存大小</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>缺少或非数字的DNS缓存时间</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>缺少或非数字的失败DNS缓存时间</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>缺少日志文件的默认所有者</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>缺少日志文件的默认组</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>缺少日志文件的默认权限</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>缺少目录的默认所有者</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>缺少目录的默认组</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>缺少目录的默认权限</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>等待死连接的时间丢失或非数字</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>等待理想连接的时间丢失或非数字时间</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>写入前缺少或无效的消息数要缓存</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>统计消息之间等待的时间丢失或非数字</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>缺少或无效的消息数要缓冲</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>缺少或非数字的最大日志消息大小</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>日志目标</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>目的地名称</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>写给</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>记录目的地</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>登录用户</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>程序输入</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix管道</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP Syslog服务器</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP Syslog服务器</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>数据报套接字</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>流插座</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>所有用户</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>仅用户 $1</value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>主机 $1</value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>视图 ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>尚未定义目标日志文件。</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>删除所选目的地</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>添加一个新的日志目标。</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>日志目标</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>其他模块的日志</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>$1的输出</value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>日志目标选项</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>创建日志目标</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>编辑日志目标</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>日志目标名称</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>登录到 ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>文件名</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>创建目录？</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>目录权限</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>每次写入后是否同步？</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>日志文件组</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>日志文件的所有者</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>日志文件的权限</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>同步之间的消息</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>列出的用户</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog服务器</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>网络协议</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>服务器地址</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>服务器端口</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>本地IP地址</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>本地端口</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix套接字</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>插座名称</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>保存目的地失败</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>具有相同名称的目的地</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>目的地不再存在！</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>文件名丢失或无效</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>缺少或无效的日志文件所有者</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>缺少或无效的日志文件组</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>缺少或非八进制日志文件权限</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>缺少或非八进制目录权限</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>同步之间缺少或无效的消息数</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>缺少要发送给的用户</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>缺少要馈送的程序</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>缺少Unix管道文件</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>端口号丢失或无效</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>本地IP地址丢失或无效</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>本地端口号缺失或无效</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>缺少或无效的Syslog服务器主机或地址</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>缺少Unix套接字名称</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>删除目的地失败</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>无法删除目标 $1，因为它由日志目标使用</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>删除源失败</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>无法删除日志源 $1，因为它由日志目标使用</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>删除过滤器失败</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>无法删除日志过滤器 $1，因为日志目标使用它</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>删除日志目标失败</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>日志过滤器</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>筛选器名称</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>尚未定义日志过滤器。</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>删除所选过滤器</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>添加一个新的日志过滤器。</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>日志过滤器</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>优先级&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>优先级&lt;tt&gt;$1&lt;/tt&gt;-&lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1个优先级</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>设施&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1设施</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>程序&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>匹配“$1”</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>来自主机名&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>来自发件人&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>创建日志过滤器</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>编辑日志过滤器</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>日志过滤器规格详细信息</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>筛选器名称</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>简单条件（所有条件都必须匹配）</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>复杂表达</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>优先</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>来自程序</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>匹配表达式</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>从设施 ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>来自主机名</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>来自IP网络</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>无法保存日志过滤器</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>过滤器名称缺失或无效</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>具有相同名称的过滤器已存在</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>没有要过滤的输入内容</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>未选择优先级</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>未选择设施</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>程序名称缺失或无效</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>缺少正则表达式</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>主机名缺失或无效</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>缺少或无效的网络IP地址</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>缺少或无效的网络掩码</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>复杂表达中的错误</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>过滤器不再存在！</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>记录目标</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>资料来源</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>筛选器</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>添加一个新的日志目标。</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>删除选定的日志目标</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>记录目标</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>创建日志目标</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>编辑日志目标</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>记录源，过滤器和目标选择</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>日志来源</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>要应用的过滤器</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>目标文件</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>不再处理目标</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>后备日志目标</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>处理所有来源</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>目标选项</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>日志目标不再存在！</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>保存日志目标失败</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>未选择来源</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>日志来源</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>尚未定义任何来源！</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>添加一个新的日志源。</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>来源名称</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>日志数据源</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>删除选定的来源</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>内部Syslog-NG消息</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>流插座</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>数据报套接字</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP服务器</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP服务器</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>内核日志文件</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>命名管道</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>太阳流</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog服务器</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>日志来源</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>创建日志源</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>编辑日志源</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>日志源选项</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>任何</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>源不再存在！</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>来源名称</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>日志来源类型</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>套接字文件所有者</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>套接字文件组</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>套接字文件的权限</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>在重新启动期间保持连接打开？</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>最大并发连接数？</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>本地IP地址</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>本地端口号</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>使用TCP保持连接？</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>日志消息的前缀</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>消息块大小</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>无法保存日志源</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>源名称缺失或无效</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>具有相同名称的日志源已存在</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>缺少或无效的套接字文件所有者</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>套接字文件组丢失或无效</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>套接字文件缺少或非八进制权限</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>最大连接数丢失或无效</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>本地IP地址丢失或无效</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>本地端口号缺失或无效</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>日志消息的前缀缺失</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>缺少或非数字的消息块大小</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>缺少或无效的Unix套接字文件名</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>缺少或无效的内核日志文件名</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>命名管道文件名缺失或无效</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>门文件名</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>缺少或无效的Sun Streams文件名</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>缺少或无效的Sun Streams Door文件名</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>网络协议</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>查看日志文件</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$2的最后 $1行</value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>日志文件为空</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>仅显示文字为 $1的行</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>应用配置失败</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>没有运行！</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>无法启动Syslog-NG服务器</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>停止Syslog-NG服务器失败</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>已创建日志目标 $1</value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>修改的日志目标 $1</value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>删除的日志目标 $1</value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>删除的 $1日志目标</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>已创建日志过滤器 $1</value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>修改日志过滤器 $1</value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>删除日志过滤器 $1</value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>已删除 $1日志过滤器</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>已创建日志源 $1</value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>修改的日志源 $1</value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>删除的日志源 $1</value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>已删除 $1日志源</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>创建的日志目标</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>修改日志目标</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>删除日志目标</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>已删除 $1个日志目标</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>应用的配置</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>启动Syslog-NG服务器</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>停止的Syslog-NG服务器</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>更改的全局选项</value>
+  </data>
+</root>

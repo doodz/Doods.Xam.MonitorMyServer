@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Príkaz správy zón $1 nebol vo vašom systéme nájdený. Pred použitím tohto modulu musí byť nainštalovaný.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin beží skôr v zóne $1 ako v &lt;tt&gt;globálnej&lt;/tt&gt; zóne. Tento modul bude fungovať, len keď bude spustený v &lt;tt&gt;globálnej&lt;/tt&gt; zóne.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne zóny.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Pridajte novú zónu.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>zoznam zón</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Existujúce zóny</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Upraviť zónu</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Všeobecná konfigurácia zóny</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Názov zóny</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Súčasný stav</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Adresár zóny</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Začať pri štarte systému?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Zdrojový fond</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Reštartovať</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Vypnúť</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Nainštalujte program Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Inovujte webmin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>Spustiť</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Nainštalujte systém</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Odinštalovať systém</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Odstrániť zónu</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Sieťové rozhrania pre zónu</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne sieťové rozhrania.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Názov rozhrania</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>maska siete</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Vysielacia adresa</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Pridajte nové sieťové rozhranie.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>neaktívne</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Zóna neexistuje!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>podrobnosti zóny</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Zdedené adresáre balíkov</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Adresár v globálnej zóne</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne adresáre balíkov.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Pridajte nový adresár balíkov.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Po nainštalovaní zóny nie je možné pridať adresáre balíkov.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Ďalšie súborové systémy</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Pripojte adresár</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Namontované z</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Surové zariadenie</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Typ súborového systému</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Namontované?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Pridať súborový systém typu:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne ďalšie súborové systémy.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Kontroly zdrojov</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Názov zdroja</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Typy privilégií</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>limity</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Akcia</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne ovládacie prvky prostriedkov.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Pridajte novú kontrolu prostriedkov.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Všeobecné atribúty zóny</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Názov atribútu</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Dátový typ</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Hodnota atribútu</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne všeobecné atribúty.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Pridajte nový všeobecný atribút.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Otvorte Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>značka</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Zónu sa nepodarilo uložiť</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Chýba alebo neplatná oblasť</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin nie je spustený v tejto zóne</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Reštartujte zónu</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Naozaj chcete reštartovať zónu $1 ? Všetky procesy, ktoré v ňom prebiehajú, sa reštartujú.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Zóna sa nepodarilo reštartovať</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Teraz sa reštartuje zóna ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. zlyhalo :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. dokončené.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Vypínacia zóna</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Naozaj chcete vypnúť zónu $1 ? Všetky procesy v ňom prebiehajúce sa zastavia.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Zóna sa nepodarilo vypnúť</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Teraz sa vypína zóna ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Bootup Zone</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Zóna na zavedenie systému zlyhala</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Teraz sa spúšťa zóna.</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Odstrániť zónu</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Naozaj chcete odstrániť zónu $1 ? Všetky súbory v rámci jeho súkromných súborových systémov budú stratené.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Zónu sa nepodarilo odstrániť</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Odstraňuje sa zóna ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Odinštalovať systém</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Naozaj chcete odinštalovať systémový softvér zo zóny $1 ? Všetky súbory v rámci jeho súkromných súborových systémov budú stratené.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Nepodarilo sa odinštalovať systémový softvér zo zóny</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Teraz odinštalujete systém zo zóny ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Nainštalujte systém</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Inštalácia systému do zóny.</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Vytvorenie sieťového rozhrania</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Upraviť sieťové rozhranie</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Podrobnosti virtuálneho rozhrania zóny</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>IP adresa rozhrania</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Skutočné sieťové rozhranie</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Maska siete pre adresu</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Aktuálna vysielacia adresa</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Nepodarilo sa uložiť sieťové rozhranie</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Neplatná maska siete</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Neplatná adresa IP</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Rozhranie už neexistuje!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>Sieťové rozhranie s rovnakou adresou IP už v tejto zóne existuje</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Pridať adresár balíkov</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Upraviť adresár balíkov</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Zdedené podrobnosti o adresári balíka</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Adresár v globálnej zóne</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Adresár už neexistuje!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Uloženie adresára balíka zlyhalo</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Neplatný alebo neexistujúci adresár</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>Adresár balíkov už v tejto zóne existuje</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Zdediť balíky z globálnej zóny</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Áno (riedka koreňová zóna)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Nie (celá koreňová zóna)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Vytvorte súborový systém</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Upraviť systém súborov</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Ďalšie podrobnosti o súborovom systéme</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Typ súborového systému</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Miesto pripojenia v zóne</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Súčasný stav</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Nie je namontovaný</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>namontovaný</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Namontované, $2 zadarmo z $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Zdroj v globálnej zóne</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Možnosti pripojenia súborového systému</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Nepodarilo sa uložiť súborový systém</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Chýba adresár bodu pripojenia</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Súborový systém bol vytvorený, ale pri jeho pripojení došlo k chybe</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Systém súborov bol odstránený, ale pri jeho pripojení sa vyskytla chyba</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Systém súborov bol aktualizovaný, ale pri jeho opätovnom pripojení sa vyskytla chyba</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Chýba súbor zdrojového zariadenia</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Neplatné možnosti pripojenia (musí to byť zoznam oddelený čiarkami, napríklad ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Súborový systém už neexistuje!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Pripojiť sa po vytvorení?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>V tejto zóne už existuje súborový systém používajúci rovnaký adresár</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Vytvorte kontrolu zdrojov</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Upraviť riadenie zdrojov</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Typ a limity kontroly zdrojov</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Typ zdroja</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Limity na uloženie</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Typ privilégia</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>limit</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Akcia pri prekročení</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>základné</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>privilegovaný</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>systém</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Žiadna akcia</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Odmietnuť žiadosť</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Poslať signál ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Nepodarilo sa uložiť kontrolu prostriedkov</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Kontrola zdrojov už neexistuje!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Nie číslo</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>V riadku $1 nebol vybraný žiadny signál</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Neboli zadané žiadne limity</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>V tejto zóne už existuje ovládací prvok pre ten istý prostriedok</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Vytvorte všeobecný atribút</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Upraviť všeobecný atribút</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Podrobnosti o atribúte všeobecnej zóny</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Názov atribútu</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Typ údajov pre hodnotu</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Hodnota atribútu</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Textový reťazec</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>celé číslo</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Kladné celé číslo</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>boolean</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Uloženie všeobecného atribútu zlyhalo</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné meno</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Hodnota nie je celé číslo</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Hodnota nie je kladné celé číslo</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Hodnota nie je „true“ alebo „false“</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Atribút už neexistuje!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>V tejto zóne už existuje atribút s rovnakým názvom</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>beh</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>zastavil</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Nie je nainštalované</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Inštaluje sa</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>pripravený</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>nadol</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Vypínať</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Názov zóny</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>Identifikačné číslo</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Adresár zóny</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>Postavenie</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Akcia</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>V zóne $1 </value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Vytvorenie zóny</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Nové podrobnosti o zóne</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Adresár súborov zóny</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Vybraný adresár</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Automaticky (pod &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Počiatočná adresa IP</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Inštalovať po vytvorení?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Nastaviť Webmin po inštalácii?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Áno (Zabraňuje pridaniu adresárov balíkov)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Vytvoriť teraz</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Zónu sa nepodarilo vytvoriť</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov zóny</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov hostiteľa</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Zóna s rovnakým názvom už existuje</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Chýba adresár zóny</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>Adresár zóny '$1' už existuje</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Chýba alebo je neplatná počiatočná adresa IP</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Vytvára sa nová zóna.</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. hotový.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. zlyhalo! Dôvod prečo je uvedený vyššie.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Pridáva sa počiatočné sieťové rozhranie.</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Inštalácia systémového softvéru ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Ďalšie adresáre balíkov</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' nie je platný adresár balíkov</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Pridávanie adresárov balíkov ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Nastavenie služby Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. zlyhalo : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Konfigurovať novú zónu?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Počiatočné meno hostiteľa</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Rovnaké ako názov zóny</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Áno, pomocou nastavení nižšie.</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Nie, manuálne konfigurovať na konzole</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Počiatočné heslo root</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Rovnaké ako globálny systém</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Počiatočné časové pásmo</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Rovnaké ako globálny systém ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Počiatočné jazykové nastavenie</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Typ terminálu pre konzolu</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Predvolené (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Služba počiatočného názvu</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>Názov domény DNS alebo NIS</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>Názvové servery DNS alebo NIS</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Nepodarilo sa nájsť lokálneho užívateľa root.</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné časové pásmo</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné miestne nastavenie jazyka</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný typ terminálu</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov domény DNS alebo NIS</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' nie je platný hostiteľ DNS servera DNS alebo NIS</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>Neboli zadané žiadne DNS alebo NIS menové servery</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Názov hostiteľa zóny sa nepodarilo vyriešiť, čo spôsobí zlyhanie automatickej konfigurácie. Pred vytvorením tejto zóny by ste ju mali pridať do DNS</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Predvolený smerovač</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Chýba alebo je neplatná predvolená adresa IP smerovača</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>odstraňujú sa zdedené adresáre balíkov. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>značka</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Branding zone</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Vytvorená zóna $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Vymazaná zóna $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Upravená konfigurácia pre zónu $1 </value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Bootovaná zóna $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Reštartovaná zóna $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Vypínacia zóna $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Inštalovaná zóna $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Neinštalovaná zóna $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Vytvorené sieťové rozhranie s adresou $1 v zóne $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Vymazané sieťové rozhranie s adresou $1 v zóne $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Upravené sieťové rozhranie s adresou $1 v zóne $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Bol vytvorený adresár balíkov $1 v zóne $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Upravený adresár balíkov $1 v zóne $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Bol odstránený adresár balíkov $1 v zóne $2 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Vytvorený súborový systém $1 v zóne $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Upravený súborový systém $1 v zóne $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Odstránený súborový systém $1 v zóne $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Vytvorená kontrola prostriedkov pre $1 v zóne $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Upravená kontrola prostriedkov pre $1 v zóne $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>Odstránená kontrola prostriedkov pre $1 v zóne $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Vytvoril sa všeobecný atribút $1 v zóne $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Upravený všeobecný atribút $1 v zóne $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>Vymazaný všeobecný atribút $1 v zóne $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl nie je nainštalovaný na $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>Adresár $1 neexistuje alebo neobsahuje Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Nainštalujte program Webmin</value>
+  </data>
+</root>

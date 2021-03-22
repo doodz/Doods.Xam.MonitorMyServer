@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-             mc:Ignorable="d"
-             x:Class="Doods.Xam.MonitorMyServer.Views.About.AboutPage">
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      mc:Ignorable="d"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.About.AboutPage">
     <ContentPage.Resources>
         <Color x:Key="Primary">#96d1ff</Color>
         <Color x:Key="LightTextColor">#999999</Color>
@@ -17,36 +18,36 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="{StaticResource Primary}" 
-                         VerticalOptions="FillAndExpand" 
+            <StackLayout BackgroundColor="{StaticResource Primary}"
+                         VerticalOptions="FillAndExpand"
                          HorizontalOptions="Fill">
-                <StackLayout Orientation="Horizontal" 
-                             HorizontalOptions="Center" 
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center"
                              VerticalOptions="Center">
-                    <ContentView Padding="0,40,0,40" 
+                    <ContentView Padding="0,40,0,40"
                                  VerticalOptions="FillAndExpand">
-                        <Image Source="ic_launcher.png" 
-                               VerticalOptions="Center" 
+                        <Image Source="ic_launcher.png"
+                               VerticalOptions="Center"
                                HeightRequest="64" />
                     </ContentView>
                 </StackLayout>
                 <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer  Command="{Binding ShowTestsPageCmd,Mode=OneWay}"/>
+                    <TapGestureRecognizer Command="{Binding ShowTestsPageCmd,Mode=OneWay}" />
                 </StackLayout.GestureRecognizers>
             </StackLayout>
             <ScrollView Grid.Row="1">
-                <StackLayout Orientation="Vertical" 
+                <StackLayout Orientation="Vertical"
                              Padding="16,40,16,40"
                              Spacing="10">
                     <Label FontSize="22">
                         <Label.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
-                                    <Span Text="{Binding AppName,Mode=OneWay}" 
-                                          FontAttributes="Bold" 
+                                    <Span Text="{Binding AppName,Mode=OneWay}"
+                                          FontAttributes="Bold"
                                           FontSize="22" />
                                     <Span Text=" " />
-                                    <Span Text="{Binding Version,Mode=OneWay}" 
+                                    <Span Text="{Binding Version,Mode=OneWay}"
                                           ForegroundColor="{StaticResource LightTextColor}" />
                                 </FormattedString.Spans>
                             </FormattedString>
@@ -57,13 +58,13 @@
                             <FormattedString>
                                 <FormattedString.Spans>
                                     <Span Text="This app is written in XAML and C# with the " />
-                                    <Span Text="Xamarin Platform" 
-                                          FontAttributes="Bold" 
-                                          TextColor="Blue" 
+                                    <Span Text="Xamarin Platform"
+                                          FontAttributes="Bold"
+                                          TextColor="Blue"
                                           TextDecorations="Underline">
                                         <Span.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding TapCommand, Mode=OneWay}"
-                                                                 CommandParameter="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/" />
+                                                                  CommandParameter="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/" />
                                         </Span.GestureRecognizers>
                                     </Span>
                                     <Span Text="." />
@@ -71,33 +72,33 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                    <Label Text="Watching video unlock app for 1 week."/>
+                    <Label Text="Watching video unlock app for 1 week." />
                     <Button Margin="0,10,0,0"
-                            Text="Learn more" 
+                            Text="Learn more"
                             Command="{Binding TapCommand}"
                             CommandParameter="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="White" />
                     <Button Margin="0,10,0,0"
-                            Text="Show app on github" 
+                            Text="Show app on github"
                             Command="{Binding TapCommand}"
                             CommandParameter="https://github.com/doodz/Doods.Xam.MonitorMyServer"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="White" />
                     <Button Margin="0,10,0,0"
-                            Text="Display settings" 
+                            Text="Display settings"
                             Command="{Binding DisplaySettingsPage,Mode=OneWay}"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="White" />
                     <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding List,Mode=OneWay}">
                         <BindableLayout.ItemTemplate>
                             <DataTemplate>
-                                <Label Text="{Binding .}"/>
+                                <Label Text="{Binding .}" />
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </StackLayout>
                 </StackLayout>
-              
+
             </ScrollView>
         </Grid>
     </ScrollView>

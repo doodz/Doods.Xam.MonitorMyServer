@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Majordomo Lijst Manager</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Uw Majordomo versie word niet ondersteund door Webmin. Alleen versies 1.94 en hoger worden ondersteund.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>De &lt;tt&gt;$1&lt;/tt&gt; variabel in uw Majordomo config file is ingesteld naar &lt;tt&gt;$2&lt;/tt&gt;, en die bestaat niet.</value>
+  </data>
+  <data name="index_esendmail3" xml:space="preserve">
+    <value>De Sendmail Webmin module die nodig is om de aliassen te beheren is niet geinstalleerd.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>Majordomo is geinstalleerd op uw systeem, maar niet goed ingesteld in de Sendmail alias file.</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>Eigenaar email adres</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Aliassen Instellen</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>U heeft geen email lijst gedefinieerd</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Toevoegen nieuwe email lijst</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>Toevoegen nieuwe samenvatting lijst.</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Bewerk Majordomo Opties</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>Bewerk globale Majordomo opties die worden toegevoegd aan alle email lijsten.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>email lijsten</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Majordomo versie $1</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>Globale Opties</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om deze globale opties te bewerken</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>Globale Majordomo opties</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>Email server hostnaam (&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Majordomo hoofd adres</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Majordomo eigenaars adres</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Sendmail opdracht pad</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>Mislukt om globale opties op te slaan</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>Ontbrekende of ongeldige email server hostnaam</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>Ontbrekende of ongeldig Majordomo adres</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>Ontbrekend of ongeldig eigenaars adres</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>De opdracht om email te versturen '$1' bestaat niet</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om een nieuwe lijst te maken</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Maak Email Lijst</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Nieuwe lijst details</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Lijst naam</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>Lijst onderhoud's adres</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>Onderhoud wachtwoord</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>Introductie bericht</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>Doorgestuurde email footer</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>Gemodereerde lijst?</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>Moderator's adres</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Zelfde als onderhoud's persoon</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Mislukt om email lijst te maken</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Ongeldige of ontbrekende lijst naam</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>Een email lijst met de naam '$1' bestaat reeds</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>Een email alias voor '$1' bestaat reeds</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>Ongeldig of ontbrekende eigenaars email adres</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>Ongeldig of ontbrekende administratie wachtwoord</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>Ongeldig of ontbrekende moderators email adres</value>
+  </data>
+  <data name="create_archive" xml:space="preserve">
+    <value>Maak een archief van email lijst?</value>
+  </data>
+  <data name="create_archiveyear" xml:space="preserve">
+    <value>In jaarlijkse file</value>
+  </data>
+  <data name="create_archivemonth" xml:space="preserve">
+    <value>In maandelijkse file</value>
+  </data>
+  <data name="create_archiveday" xml:space="preserve">
+    <value>In dagelijkse file</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om een nieuwe samenvatting lijst te maken</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>Maak Samenvatting Lijst</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>Nieuwe samenvatting lijst details</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>Lijst naam</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>Maak samenvatting van lijst</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>Lijst van beheerders adres</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>Onderhoud's wachtwoord</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>Introductie bericht</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>Samenvatting email footer</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>Verstuur samenvatting wanneer</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>Oudste bericht is $1 dagen oud</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>Berichten totaal $1 regels</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>Mislukt om de samenvatting lijst te maken</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value>Ongeldig of ontbrekend aantal dagen</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value>Ongeldig of ontbrekend aantal regels</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Bewerk Email Lijst</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om deze email lijst te bewerken</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Verwijder Lijst</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>Verwijder deze lijst, inclusief alle geassocieerde files en email aliassen.</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>email lijst</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>Voor Lijst $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om deze email lijst weg te gooien</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>Deze lijst kan niet worden verwijderd omdat het erop lijkt dat hij associaties heeft met een samenvatting lijst.</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Verwijder Lijst</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u de $1 email lijst wilt verwijderen? De volgende files zullen worden verwijdert :</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>De volgende email aliassen zullen ook verwijderd worden :</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Verwijder Lijst</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>Leden Lijst</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>Gebruik de tekst box hieronder om de email adressen lijst te bewerken die email ontvangen wat verstuurd word naar deze lijst.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>De tekst box hieronder is een lijst van alle email adressen die email ontvangen wat verstuurd word naar deze lijst</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>Adres toevoegen aan lijst</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>Verwijder adres van lijst</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>Verwijder</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Synchroniseren van Unix gebruikers met de lijst?</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>Domein naam toegevoegd aan gebruikersnamen</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>U bent niet bevoegd de leden te bewerken van deze lijst</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>U moet eerst een onderhouds wachtwoord kiezen voordat u adressen gaat toevoegen aan deze lijst</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>Het adres wat u toevoegt moet een volledige domein naam zijn, zoals &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>U moet eerst een onderhouds wachtwoord kiezen voordat u adressen gaat verwijderen van deze lijst</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>Het adres wat u verwijdert moet een volledige domein naam zijn, zoals &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>Berichten en Omschrijvingen</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>Berichten en omschrijvingen</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>Lijst omschrijving, die moet worden ingevoegd aan de &lt;tt&gt;lijsten&lt;/tt&gt; opdracht</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>Informatieve berichten die moeten worden terug gestuurd als reactie op de opdracht &lt;tt&gt;info $1&lt;/tt&gt;</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>Introductie bericht, wanneer iemand zich inschrijft bij de lijst</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>Zelfde als het informatieve bericht</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>Zoals ingevuld hieronder ..</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>Toevoegingen en Moderatie</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>Toevoeg en moderatie opties</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>Toevoeg beleid</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>Iedereen mag zichzelf toevoegen</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>Iedereen mag iedereen toevoegen</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>Goedkeuring van onderhoudspersoon is nodig</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>Verwijder beleid</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>Iedereen mag zichzelf verwijderen</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>Iedereen mag iedereen verwijderen</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>Bevestiging van toevoegen is nodig?</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>Verstuur introductie bericht?</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>Alleen een raw adres toevoegen aan de lijst?</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>Breng de onderhoudspersoon op de hoogte van toevoegingen en verwijderingen?</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>Doorsturen van Toevoeging/Verwijdering aanvragen aan onderhoudspersoon?</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>Onderhouds wachtwoord</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>Lijst modereren?</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>Moderator's adres?</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>Onderhoudspersoon</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>Moderator wachtwoord</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>Eigenaars email adres</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>Goedkeuring van email adres</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>Ontbrekende eigenaars email adres</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>Ontbrekende goedkeuring van email adres</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>Ontbrekende of ongeldig moderator adres</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>Ontbrekende of ongeldig wachtwoord</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>Email Opties</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>Uitgaande email opties</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>Antwoord-Naar: adres in opnieuw verstuurde email</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>Niets</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>Afzender: adres in email</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>Hostnaam voor opnieuw verstuurde email</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>Onderwerp: prefix voor opnieuw verstuurde email</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>Prioriteit voor opnieuw te versturen email</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>Eerste klas</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>Speciaal afleveren</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>Lijst</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>Bulk ( massa)</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>Rommel</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>Verwijder Ontvangen: headers van opnieuw verstuurde email</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>Maximum toegestane berichten grootte</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>Ontbrekende of ongeldig Antwoord-naar: adres</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>Ontbrekende of ongeldige Afzender: adres</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>Afzender: adres moet niet inclusief hostnaam zijn</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>Ontbrekende of ongeldige hostnaam</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>Ontbrekende of ongeldige maximum berichten grootte</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>Toegang Controle</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Toegang controle voor de Majordomo opdrachten</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>Iedereen</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>Ledenlijst</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>Niemand</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>Toegang tot de &lt;tt&gt;get&lt;/tt&gt; opdracht</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>Toegang tot de &lt;tt&gt;index&lt;/tt&gt; opdracht</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>Toegang tot de &lt;tt&gt;info&lt;/tt&gt; opdracht</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>Toegang tot de &lt;tt&gt;intro&lt;/tt&gt; opdracht</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>Toegang tot &lt;tt&gt;welke&lt;/tt&gt; opdrachten</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>Toegang tot &lt;tt&gt;wie&lt;/tt&gt; opdrachten</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>Inclusief deze lijst in het antwoord van de &lt;tt&gt;lijsten&lt;/tt&gt; opdracht voor ..</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>Iedereen</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>Adressen die overeenkomen met regexps ..</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>Adressen die niet overeenkomen met regexps ..</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>Wie mag er posten in de lijst?</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>Iedereen</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>Ledenlijst</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>Adressen in file</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Taboe body regexps</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Taboe header regexps</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>Let OP: alle taboe en adres regexps moeten beginnen en eindigen met &lt;tt&gt;/&lt;/tt&gt;, bijvoorbeeld &lt;tt&gt;/foobar.com/&lt;/tt&gt; or &lt;tt&gt;/onguur/&lt;/tt&gt;.</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>Headers en Footers</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>Opnieuw versturen van email headers en footers</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>Opnieuw versturen van email header</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>Opnieuw versturen van email footer</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>Extra SMTP headers voor opnieuw versturen email</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Extra Opties</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Extra lijst opties</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>Gebruik domein alleen wanneer adressen worden vergeleken?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>Debug mode?</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>Inclusief de laatste gemodificeerde datum in de informatieve berichten?</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>Inclusief de laatste gemodificeerde datum in de introductie berichten?</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>Samenvatting Opties</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>Samenvatting genereer opties</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>Samenvatting titel</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>Oudste bericht voordat word verzonden</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>dagen</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>regels</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>Maximale samenvatting grote voordat word verzonden</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>Huidig volume nummer</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>Huidig kwestie nummer</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>Ongelimiteerd</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>Ontbrekende of ongeldig aantal dagen</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>Ontbrekende of ongeldig aantal regels</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>Ontbrekende of ongeldig volume nummer</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>Ontbrekende of ongeldig kwestie nummer</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>Veranderde globale opties</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>Aangemaakte email lijst $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>Gemaakte samenvatting lijst $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>Verwijderde email lijst $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>Verwijderde samenvatting lijst $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>Toegevoegd $2 aan lijst $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>Weggehaald $2 van lijst $1</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>Ge-update leden van lijst $1</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>Ge-update synchronisatie voor lijst $1</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>Ge-update berichten en omschrijvingen voor lijst $1</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>Ge-update toevoegingen en veranderingen voor lijst $1</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>Ge-update email opties voor lijst $1</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>Ge-update toegang controle voor lijst $1</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>Geupdate headers en footers voor lijst $1</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Ge-update extra Opties voor lijst $1</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>Geupdate samenvatting opties voor lijst $1</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>Email lijsten die deze gebruiker mag beheren</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>Alle lijsten</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>Geselecteerd.</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Mag globale opties bewerken?</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Mag een nieuwe email lijst maken?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Mag de lidmaatschap lijst bewerken?</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Mislukt om aliassen in te stellen</value>
+  </data>
+  <data name="alias_eowner" xml:space="preserve">
+    <value>Ontbrekende eigenaar email adres</value>
+  </data>
+</root>

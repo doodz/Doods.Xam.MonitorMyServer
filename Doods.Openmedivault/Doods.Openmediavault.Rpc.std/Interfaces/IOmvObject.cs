@@ -1,5 +1,6 @@
-﻿
-namespace Doods.Openmedivault.Ssh.Std.Data
+﻿namespace Doods.Openmedivault.Ssh.Std.Data
 {
-    public interface IOmvObject { }
+    public interface IOmvObject
+    {
+    }
 }

@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.Globalization;
 using System.IO;
 using Doods.Framework.Ssh.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Data;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -11,7 +9,6 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
 {
     public class OmvSerializer : IDeserializer
     {
-        private readonly JsonSerializer _serializer;
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
@@ -19,9 +16,11 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
             Converters =
             {
                 ValueUnionConverter.Singleton,
-                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
-            },
+                new IsoDateTimeConverter {DateTimeStyles = DateTimeStyles.AssumeUniversal}
+            }
         };
+
+        private readonly JsonSerializer _serializer;
 
         public OmvSerializer()
         {
@@ -54,7 +53,6 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                 Console.WriteLine(e);
                 throw new OmvSerializerException(apiResponse.ErrorMessage, e);
             }
-
         }
 
         public T Deserialize<T>(IApiResponse apiResponse)
@@ -68,13 +66,10 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                 Console.WriteLine(e);
 
                 throw new OmvSerializerException($"OmvSerialiser :{Environment.NewLine}" +
-                                                 $"{apiResponse.Content}",e);
+                                                 $"{apiResponse.Content}", e);
             }
-           
         }
-       
 
-      
 
         public T Deserialize<T>(string json)
         {
@@ -84,12 +79,12 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
                 {
                     try
                     {
-                       
                         return _serializer.Deserialize<T>(jsonTextReader);
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"OmvSerialiser :{Environment.NewLine} Couldn't deserialize json: {json} to {typeof(T)}. Error: {ex}");
+                        Console.WriteLine(
+                            $"OmvSerialiser :{Environment.NewLine} Couldn't deserialize json: {json} to {typeof(T)}. Error: {ex}");
                         //Logger.Error($"Couldn't deserialize json: {json}. Error: {ex}");
                         throw;
                     }

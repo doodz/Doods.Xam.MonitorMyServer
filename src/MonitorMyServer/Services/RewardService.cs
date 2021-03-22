@@ -26,8 +26,9 @@ namespace Doods.Xam.MonitorMyServer.Services
         private readonly string _rewardedVideoKey;
         private Action _currentAction;
         private bool _isRewarded;
-        private ILogger _logger;
-        public RewardService(IConfiguration configuration,ILogger logger)
+        private readonly ILogger _logger;
+
+        public RewardService(IConfiguration configuration, ILogger logger)
         {
             _logger = logger;
             CrossMTAdmob.Current.LoadRewardedVideo(configuration.RewardedVideoKey);
@@ -129,10 +130,10 @@ namespace Doods.Xam.MonitorMyServer.Services
         private void Current_OnRewardedVideoAdFailedToLoad(object sender, MTEventArgs e)
         {
             _currentAction?.Invoke();
-            _logger.Info($"/!\\ OnRewardedVideoAdFailedToLoad : RewardAmount={ e.RewardAmount},ErrorCode={ e.ErrorCode},RewardType={ e.RewardType}");
+            _logger.Info(
+                $"/!\\ OnRewardedVideoAdFailedToLoad : RewardAmount={e.RewardAmount},ErrorCode={e.ErrorCode},RewardType={e.RewardType}");
 
             OnRewardedVideoAdFailedToLoad?.Invoke(this, e);
-
         }
 
         private void Current_OnRewardedVideoAdClosed(object sender, EventArgs e)

@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Почтовый Фильтр SpamAssassin</value>
+  </data>
+  <data name="index_ecmd2" xml:space="preserve">
+    <value>Команда SpamAssassin $1 не была найдена на Вашей системе.</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>SpamAssassin версия $1</value>
+  </data>
+  <data name="index_warn_usermin" xml:space="preserve">
+    <value>SpamAssassin не отобразился как установленный в Вашем файле конфигурации Procmail $2 или в глобальном файле $1, таким образом любые изменения в  конфигурации, сделанные с помощью этого модуля, не будут приняты, пока SpamAssassin не будет установлен глобально.</value>
+  </data>
+  <data name="index_warn_webmin" xml:space="preserve">
+    <value>SpamAssassin не отобразился как установленный в Вашем файле конфигурации Procmail $1, таким образом любые изменения в конфигурации, сделанные с помощью этого модуля, не будут приняты, пока пользователи не установят его индивидуально</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>индекс модуля</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Применить Изменения</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Нажмите эту кнопку чтобы принять текущую конфигурацию SpamAssassin, разослав HUP сигнал всем запущенным $1 процессам</value>
+  </data>
+  <data name="index_spamassassin" xml:space="preserve">
+    <value>SpamAssassin</value>
+  </data>
+  <data name="white_title" xml:space="preserve">
+    <value>Разрешённые и Запрещённые Адреса</value>
+  </data>
+  <data name="white_desc" xml:space="preserve">
+    <value>Таблицы на этой странице позволяют задавать От: и Кому: адреса из электронной почты, которые всегда или никогда не категоризируются как спам. Любой другой электронный адрес будет обработан как нормальный согласно правилам SpamAssassin. Все электронные адреса могут содержать шаблоны, такие, как *@foo.com или *.foo.com для подставления целых доменов.</value>
+  </data>
+  <data name="white_from" xml:space="preserve">
+    <value>От: адреса, которые никогда не классифицировать как спам</value>
+  </data>
+  <data name="white_gfrom" xml:space="preserve">
+    <value>Адреса в масштабе системы, которые никогда не классифицировать как спам</value>
+  </data>
+  <data name="white_unfrom" xml:space="preserve">
+    <value>Исключения для От: адреса, которые никогда не классифицировать как спам</value>
+  </data>
+  <data name="white_addr" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="white_rcvdhost" xml:space="preserve">
+    <value>исходный домен</value>
+  </data>
+  <data name="white_gunfrom" xml:space="preserve">
+    <value>Исключения в масштабе системы, которые никогда не классифицировать как спам</value>
+  </data>
+  <data name="white_black" xml:space="preserve">
+    <value>От: адреса. которые будут всегда классифицироваться как спам</value>
+  </data>
+  <data name="white_gblack" xml:space="preserve">
+    <value>Адреса в масштабе системы, которые всегда классифицировать как спам</value>
+  </data>
+  <data name="white_unblack" xml:space="preserve">
+    <value>Исключения для От: адреса, которые всегда классифицировать как спам</value>
+  </data>
+  <data name="white_gunblack" xml:space="preserve">
+    <value>Исключения в масштабе системы, которые всегда классифицировать как спам</value>
+  </data>
+  <data name="white_to" xml:space="preserve">
+    <value>Кому: или Копия: адреса, которым разрешить некоторый или весь спам</value>
+  </data>
+  <data name="white_level" xml:space="preserve">
+    <value>Разрешить</value>
+  </data>
+  <data name="white_level0" xml:space="preserve">
+    <value>Спам</value>
+  </data>
+  <data name="white_level1" xml:space="preserve">
+    <value>Ещё спам</value>
+  </data>
+  <data name="white_level2" xml:space="preserve">
+    <value>Весь спам</value>
+  </data>
+  <data name="white_err" xml:space="preserve">
+    <value>Невозможно сохранить спики разрешённых и запрещённых</value>
+  </data>
+  <data name="white_efrom" xml:space="preserve">
+    <value>'$1' не является допустимым От: адрес</value>
+  </data>
+  <data name="white_ercvd" xml:space="preserve">
+    <value>'$1' не является допустимым доменным именем</value>
+  </data>
+  <data name="white_importdesc" xml:space="preserve">
+    <value>Эта форма может быть использована для добавления адресов электронной почты (таких, как экспортируемые адресные книги Outlook или Eudora) в список разрешённых.</value>
+  </data>
+  <data name="white_import" xml:space="preserve">
+    <value>Импортировать адреса из файла</value>
+  </data>
+  <data name="white_sort" xml:space="preserve">
+    <value>Сортировать разрешённые адреса после импорта?</value>
+  </data>
+  <data name="white_importok" xml:space="preserve">
+    <value>Импортировать</value>
+  </data>
+  <data name="white_return" xml:space="preserve">
+    <value>разрешённые и запрещённые адреса</value>
+  </data>
+  <data name="score_title" xml:space="preserve">
+    <value>Классификация спама</value>
+  </data>
+  <data name="score_desc" xml:space="preserve">
+    <value>SpamAssassin присваивает отметку каждому сообщению, осоновывающуюся на его содержимом и заголовках. Настройки на этой странице определяют отметку, благодаря которой сообщение считается спамом и некоторые из методов, посредством которых эта оценка подсчитывается.</value>
+  </data>
+  <data name="score_header" xml:space="preserve">
+    <value>Настройки классификации спам сообщений</value>
+  </data>
+  <data name="score_score" xml:space="preserve">
+    <value>Оценки тестов SpamAssassin</value>
+  </data>
+  <data name="score_name" xml:space="preserve">
+    <value>Название теста</value>
+  </data>
+  <data name="score_points" xml:space="preserve">
+    <value>Точки</value>
+  </data>
+  <data name="score_hits" xml:space="preserve">
+    <value>Число попаданий, превышая которое сообщение считается спамом</value>
+  </data>
+  <data name="score_rbl" xml:space="preserve">
+    <value>Сбросить проверку открытой передачи RBL?</value>
+  </data>
+  <data name="score_mx" xml:space="preserve">
+    <value>Количество проверок От: адрес MX</value>
+  </data>
+  <data name="score_mxdelay" xml:space="preserve">
+    <value>Количество секунд между проверками MX</value>
+  </data>
+  <data name="score_langs" xml:space="preserve">
+    <value>Языки в электронной почте, которые не считаются потенциальным спамом</value>
+  </data>
+  <data name="score_langsall" xml:space="preserve">
+    <value>Все языки</value>
+  </data>
+  <data name="score_langssel" xml:space="preserve">
+    <value>Выбранные языки ..</value>
+  </data>
+  <data name="score_locales" xml:space="preserve">
+    <value>Символы, устанавливаемые в электронной почте, которые не считаются потенциальным спамом</value>
+  </data>
+  <data name="score_localesall" xml:space="preserve">
+    <value>Все установки символов</value>
+  </data>
+  <data name="score_localessel" xml:space="preserve">
+    <value>Выбранные установки символов ..</value>
+  </data>
+  <data name="score_auto" xml:space="preserve">
+    <value>Условие отметки списка разрешённых</value>
+  </data>
+  <data name="score_timeout" xml:space="preserve">
+    <value>Количество секунд для ожидания RBL запроса</value>
+  </data>
+  <data name="score_received" xml:space="preserve">
+    <value>Количество Полученных: заголовки для проверки с RBL</value>
+  </data>
+  <data name="score_describe" xml:space="preserve">
+    <value>Описания тестов для отчёта</value>
+  </data>
+  <data name="score_descr" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="score_err" xml:space="preserve">
+    <value>Невозможно сохранить оценку сообщения</value>
+  </data>
+  <data name="score_ename" xml:space="preserve">
+    <value>'$1' не является допустимым названием теста</value>
+  </data>
+  <data name="score_epoints" xml:space="preserve">
+    <value>'$1' не является допустимым количеством точек</value>
+  </data>
+  <data name="score_edesc" xml:space="preserve">
+    <value>Отсутствует описание для метки '$1'</value>
+  </data>
+  <data name="score_ehits" xml:space="preserve">
+    <value>Отсутствует или неправильное количество попаданий, при которых сообщение расценивается как спам</value>
+  </data>
+  <data name="score_eauto" xml:space="preserve">
+    <value>Отсутствует или неправильное  условие метки списка разрешённых (должно быть между 0 и 1)</value>
+  </data>
+  <data name="score_emx" xml:space="preserve">
+    <value>Отсутствует или неправильное число проверок От: адрес MX</value>
+  </data>
+  <data name="score_emxdelay" xml:space="preserve">
+    <value>Отсутствует или неправильное количество секунд между проверками MX</value>
+  </data>
+  <data name="score_etimeout" xml:space="preserve">
+    <value>Отсутствует или неправильное количество секунд для ожидания RBL запросов</value>
+  </data>
+  <data name="score_ereceived" xml:space="preserve">
+    <value>Отсутствует или неправильное число Полученных: заголовки для проверки с RBL</value>
+  </data>
+  <data name="report_title" xml:space="preserve">
+    <value>Модификация Сообщения</value>
+  </data>
+  <data name="report_desc" xml:space="preserve">
+    <value>Настройки на этой странице контролируют модификации, которые SpamAssassin применяет к заголовкам и содержимым всех сообщений, котроые анализирует, а также модификации, которые принимаются к сообщениям, классифицируемым как спам.</value>
+  </data>
+  <data name="report_header" xml:space="preserve">
+    <value>Настройки анализирования и модификаций спам- сообщений</value>
+  </data>
+  <data name="report_report" xml:space="preserve">
+    <value>Отсылать отчёт, прикреплённый к сообщениям, превосходящим предельное количество спама</value>
+  </data>
+  <data name="report_clear" xml:space="preserve">
+    <value>Использовать просто нижеуказанный текст ..</value>
+  </data>
+  <data name="report_noclear" xml:space="preserve">
+    <value>Добавить нижеуказанный текст в сообщения по умолчанию ..</value>
+  </data>
+  <data name="report_terse" xml:space="preserve">
+    <value>Отсылать отчёт, прикреплённый к спам-сообщениям в сжатом режиме</value>
+  </data>
+  <data name="report_rsubject" xml:space="preserve">
+    <value>Добавить текст в Тема: заголовок</value>
+  </data>
+  <data name="report_rfrom" xml:space="preserve">
+    <value>Добавить текст в От: заголовок</value>
+  </data>
+  <data name="report_rto" xml:space="preserve">
+    <value>Добавить текст в Кому: заголовок</value>
+  </data>
+  <data name="report_leave" xml:space="preserve">
+    <value>Оставить без изменений</value>
+  </data>
+  <data name="report_rewrite" xml:space="preserve">
+    <value>Модифицировать Тема: заголовок или спам?</value>
+  </data>
+  <data name="report_subject" xml:space="preserve">
+    <value>Текст для добавления в спам Тема: заголовок</value>
+  </data>
+  <data name="report_rheader" xml:space="preserve">
+    <value>Положить отчёт в X-Spam-Status: заголовок вместо содержимого?</value>
+  </data>
+  <data name="report_useterse" xml:space="preserve">
+    <value>Генерировать только сжатый отчёт?</value>
+  </data>
+  <data name="report_fold" xml:space="preserve">
+    <value>Разделить X-Spam-Status: заголовок над составными строками?</value>
+  </data>
+  <data name="report_safe" xml:space="preserve">
+    <value>Положить оригинальное сообщение в приложение?</value>
+  </data>
+  <data name="report_safe2" xml:space="preserve">
+    <value>Да, как простой текст</value>
+  </data>
+  <data name="report_detail" xml:space="preserve">
+    <value>Включить детали спам-конструкций?</value>
+  </data>
+  <data name="report_stars" xml:space="preserve">
+    <value>Вставить X-Spam-Level: заголовок?</value>
+  </data>
+  <data name="report_char" xml:space="preserve">
+    <value>X-Spam-Level: символ заголовка</value>
+  </data>
+  <data name="report_defang" xml:space="preserve">
+    <value>Изменить запись MIME о спаме на простой текст?</value>
+  </data>
+  <data name="report_err" xml:space="preserve">
+    <value>Невозможно сохранить настройки отчёта по спаму</value>
+  </data>
+  <data name="report_echar" xml:space="preserve">
+    <value>Единичный символ должен быть введён в X-Spam-Level: заголовок</value>
+  </data>
+  <data name="report_adds" xml:space="preserve">
+    <value>Вспомогательные заголовки для добавления</value>
+  </data>
+  <data name="report_addfor" xml:space="preserve">
+    <value>Тип сообщения</value>
+  </data>
+  <data name="report_addheader" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="report_addtext" xml:space="preserve">
+    <value>Текст для заголоков</value>
+  </data>
+  <data name="report_addspam" xml:space="preserve">
+    <value>Спам</value>
+  </data>
+  <data name="report_addham" xml:space="preserve">
+    <value>Ham</value>
+  </data>
+  <data name="report_addall" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="report_eaddheader" xml:space="preserve">
+    <value>Отсутствует или неправильный вспомогательный заголовок для добавления $1</value>
+  </data>
+  <data name="user_title" xml:space="preserve">
+    <value>Смешанные настройки пользователя</value>
+  </data>
+  <data name="user_desc" xml:space="preserve">
+    <value>Настройки на этой странице в основном связаны с путями и установками, которые SpamAssassin использует для внешних спам-идентификаторов Razor, DCC и Pyzor. Вы можете также назначить SpamAssassin-у, будет ли он в состоянии выполнить поиск по DNS или нет.</value>
+  </data>
+  <data name="user_header" xml:space="preserve">
+    <value>Смешанные настройки пользовательского уровня</value>
+  </data>
+  <data name="user_dns" xml:space="preserve">
+    <value>Может ли SpamAssassin выполнять поиск по DNS?</value>
+  </data>
+  <data name="user_dnslist" xml:space="preserve">
+    <value>Протестировать сервера</value>
+  </data>
+  <data name="user_dnstest" xml:space="preserve">
+    <value>Тест</value>
+  </data>
+  <data name="user_razor" xml:space="preserve">
+    <value>Таймаут запроса Razor в секундах</value>
+  </data>
+  <data name="user_dcc" xml:space="preserve">
+    <value>Местоположение клиентской программы DCC</value>
+  </data>
+  <data name="user_inpath" xml:space="preserve">
+    <value>В PATH</value>
+  </data>
+  <data name="user_bodymax" xml:space="preserve">
+    <value>подсчёт контрольной суммы содержимого DCC перед подставлением</value>
+  </data>
+  <data name="user_fuz1max" xml:space="preserve">
+    <value>подсчёт контрольной суммы DCC fuz1 перед подставлением</value>
+  </data>
+  <data name="user_fuz2max" xml:space="preserve">
+    <value>подсчёт контрольной суммы DCC fuz2 перед подставлением</value>
+  </data>
+  <data name="user_timeout" xml:space="preserve">
+    <value>Таймаут запроса DCC в секундах</value>
+  </data>
+  <data name="user_dheader" xml:space="preserve">
+    <value>добавить DCC заголовок в сообщения?</value>
+  </data>
+  <data name="user_pyzor" xml:space="preserve">
+    <value>Местоположение клиентской программы Pyzor</value>
+  </data>
+  <data name="user_pbodymax" xml:space="preserve">
+    <value>подсчёт контрольной суммы содержимого Pyzor перед подставлением</value>
+  </data>
+  <data name="user_ptimeout" xml:space="preserve">
+    <value>Таймаут запроса Pyzor в секундах</value>
+  </data>
+  <data name="user_pheader" xml:space="preserve">
+    <value>Добавить заголовок Pyzor в сообщения?</value>
+  </data>
+  <data name="user_err" xml:space="preserve">
+    <value>Невозможно сохранить настройки пользователя</value>
+  </data>
+  <data name="user_etimeout" xml:space="preserve">
+    <value>'$1' не является подходящим тайм-аутом</value>
+  </data>
+  <data name="user_epath" xml:space="preserve">
+    <value>'$1' не является подходящим путём к клиентской программе</value>
+  </data>
+  <data name="user_emax" xml:space="preserve">
+    <value>'$1' не является подходящей оценкой контрольной суммы</value>
+  </data>
+  <data name="header_title" xml:space="preserve">
+    <value>Тесты Заголовка и Содержимого</value>
+  </data>
+  <data name="header_desc" xml:space="preserve">
+    <value>Эта страница позволяет Вам определить дополнительные тесты, которые SpamAssassin применит к электонной почте, основанные на заголовках сообщений, их содержании, URL'ах, найденных в теле сообщения, или комбинациях других тестов. Выбор названия каждого теста- за вами, но обычно используется что-то вроде CONTAINS_FOO. Фактическая оценка, которую SpamAssassin добавляет в сообщения, соответствующие тесту, может быть установлена введением названий Ваших личных или встроенных тестов в таблицы внизу страницы.</value>
+  </data>
+  <data name="header_switch" xml:space="preserve">
+    <value>Переключить в простой режим ..</value>
+  </data>
+  <data name="header_header" xml:space="preserve">
+    <value>Дополнительные заголовки и содержимые тестов</value>
+  </data>
+  <data name="header_allow" xml:space="preserve">
+    <value>Разрешить пользователям определять тесты?</value>
+  </data>
+  <data name="header_test" xml:space="preserve">
+    <value>Тесты заголовка</value>
+  </data>
+  <data name="header_tname" xml:space="preserve">
+    <value>Название теста</value>
+  </data>
+  <data name="header_name" xml:space="preserve">
+    <value>Для заголовка</value>
+  </data>
+  <data name="header_op" xml:space="preserve">
+    <value>Проверить если</value>
+  </data>
+  <data name="header_op0" xml:space="preserve">
+    <value>Соответствует..</value>
+  </data>
+  <data name="header_op1" xml:space="preserve">
+    <value>Не соответствует..</value>
+  </data>
+  <data name="header_op2" xml:space="preserve">
+    <value>Существует</value>
+  </data>
+  <data name="header_op3" xml:space="preserve">
+    <value>Подсчитать..</value>
+  </data>
+  <data name="header_pat" xml:space="preserve">
+    <value>Регулярное выражение</value>
+  </data>
+  <data name="header_default" xml:space="preserve">
+    <value>Значение по умолчанию</value>
+  </data>
+  <data name="header_uri" xml:space="preserve">
+    <value>Отправить по электронной почте URL тестов</value>
+  </data>
+  <data name="header_body" xml:space="preserve">
+    <value>Содержимое тестов</value>
+  </data>
+  <data name="header_mode" xml:space="preserve">
+    <value>Содержимое</value>
+  </data>
+  <data name="header_mode0" xml:space="preserve">
+    <value>Обычный текст</value>
+  </data>
+  <data name="header_mode1" xml:space="preserve">
+    <value>Весь текст</value>
+  </data>
+  <data name="header_mode2" xml:space="preserve">
+    <value>Непосредственный текст</value>
+  </data>
+  <data name="header_mode3" xml:space="preserve">
+    <value>Целостное письмо</value>
+  </data>
+  <data name="header_meta" xml:space="preserve">
+    <value>Тесты, основывающиеся на других</value>
+  </data>
+  <data name="header_bool" xml:space="preserve">
+    <value>Буливо тестовое выражение</value>
+  </data>
+  <data name="header_err" xml:space="preserve">
+    <value>Невозможно сохранить тесты</value>
+  </data>
+  <data name="header_ename" xml:space="preserve">
+    <value>'$1' не является правильным названием теста</value>
+  </data>
+  <data name="header_eclash" xml:space="preserve">
+    <value>Название теста '$1' появляется более, чем один раз</value>
+  </data>
+  <data name="header_eregexp2" xml:space="preserve">
+    <value>Отсутствует выражение для теста '$1'</value>
+  </data>
+  <data name="header_eflags" xml:space="preserve">
+    <value>'$1' не являются правильными метками регулярных выражений</value>
+  </data>
+  <data name="header_eeval" xml:space="preserve">
+    <value>'$1' не является правильной оценочной функцией</value>
+  </data>
+  <data name="header_eheader" xml:space="preserve">
+    <value>'$1' не является правильным заголовком электронного письма</value>
+  </data>
+  <data name="header_eregexp" xml:space="preserve">
+    <value>'$1' не является правильным регулярным выражением (должно быть как /выражение/)</value>
+  </data>
+  <data name="header_emeta" xml:space="preserve">
+    <value>Отсутствует текстовое выражение для теста '$1'</value>
+  </data>
+  <data name="priv_title" xml:space="preserve">
+    <value>Смешанные Привилегированные Настройки</value>
+  </data>
+  <data name="priv_desc" xml:space="preserve">
+    <value>Настройки на этой странице могут быть установлены глобально, предпочтительнее, чем в индивидуальных пользовательских файлах конфигурации. Они контролируются путями к различным файлам  конфигурации и учётных имён.</value>
+  </data>
+  <data name="priv_header" xml:space="preserve">
+    <value>Смешанные настройки привилегированного уровня</value>
+  </data>
+  <data name="priv_white" xml:space="preserve">
+    <value>Путь к автоматическому списку разрешённых</value>
+  </data>
+  <data name="priv_mode" xml:space="preserve">
+    <value>Список разрешённых файлов октального вида</value>
+  </data>
+  <data name="priv_dcc" xml:space="preserve">
+    <value>Аргументы DCC команды</value>
+  </data>
+  <data name="priv_log" xml:space="preserve">
+    <value>Путь к хронологизирующим лог-файлам</value>
+  </data>
+  <data name="priv_razor" xml:space="preserve">
+    <value>Путь к конфигурационному файлу Razor</value>
+  </data>
+  <data name="priv_phrases" xml:space="preserve">
+    <value>Конструкции, идентифицирующие спам</value>
+  </data>
+  <data name="priv_phrase" xml:space="preserve">
+    <value>Конструкция из двух слов</value>
+  </data>
+  <data name="priv_score" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="priv_highest" xml:space="preserve">
+    <value>Верхняя оценка конструкций</value>
+  </data>
+  <data name="priv_err" xml:space="preserve">
+    <value>Невозможно сохранить привилегированные настройки</value>
+  </data>
+  <data name="priv_epath" xml:space="preserve">
+    <value>'$1' не является подходящим путём</value>
+  </data>
+  <data name="priv_emode" xml:space="preserve">
+    <value>'$1' не является 4-цифровым октальным видом файла</value>
+  </data>
+  <data name="priv_eargs" xml:space="preserve">
+    <value>'$1' не является подходящим списком аргументов</value>
+  </data>
+  <data name="priv_emscore" xml:space="preserve">
+    <value>'$1' не является подходящей верхней отметкой конструкций</value>
+  </data>
+  <data name="priv_ephrase" xml:space="preserve">
+    <value>'$1' не является подходящей спам-конструкцией из двух слов</value>
+  </data>
+  <data name="priv_escore" xml:space="preserve">
+    <value>Отсутствует или неправильная оценка для спам- конструкции '$1'</value>
+  </data>
+  <data name="usually" xml:space="preserve">
+    <value>Обычно $1</value>
+  </data>
+  <data name="ecannot" xml:space="preserve">
+    <value>Вам не разрешено использование этой страницы</value>
+  </data>
+  <data name="setup_title" xml:space="preserve">
+    <value>Установить Procmail для SpamAssassin</value>
+  </data>
+  <data name="setup_desc_webmin" xml:space="preserve">
+    <value>Эта форма может быть использована для того, чтобы установить Procmail в $1 с целью применения SpamAssassin для всех электронных сообщений, получаемых Вашей системой. Так или иначе, эффект будет получен только в том случае, если Ваш почтовый сервер был сконфигурирован для использования Procmail для локальной доставки, или для пользователей, чьи &lt;tt&gt;.forward&lt;/tt&gt; файлы установлены для запуска Procmail.</value>
+  </data>
+  <data name="setup_desc_usermin" xml:space="preserve">
+    <value>Эта форма может быть использована для того, чтобы установить Procmail в $1 с целью применения SpamAssassin для всех электронных сообщений, посылаемых на вашу учётную запись. Так или иначе, эффект будет получен только в том случае, если почтовый сервер был сконфигурирован для использования Procmail для локальной доставки, или если ваши &lt;tt&gt;.forward&lt;/tt&gt; файлы установлены  так, чтобы передавать всю электронную почту в Procmail.</value>
+  </data>
+  <data name="setup_head" xml:space="preserve">
+    <value>Все сообщения, обрабатываемые SpamAssassin  будут иметь &lt;tt&gt;X-Spam&lt;/tt&gt; установку заголовков- в таком виде они могут в дальнейшем фильтроваться почтовыми клиентами.</value>
+  </data>
+  <data name="setup_rel" xml:space="preserve">
+    <value>Любой неабсолютный путь к почтовому файлу или директории, введённый выше, будет относителен к домашнему каталогу пользователя, получающего почту.</value>
+  </data>
+  <data name="setup_home" xml:space="preserve">
+    <value>Переменная &lt;tt&gt;$HOME&lt;/tt&gt; может быть использована в вышеуказанных путях и будет замещена домашней директорией пользователя, получающего электронную почту.</value>
+  </data>
+  <data name="setup_to" xml:space="preserve">
+    <value>Действия, которые будут выполняться над сообщениями, классифицируемыми как спам</value>
+  </data>
+  <data name="setup_null" xml:space="preserve">
+    <value>Выбросить</value>
+  </data>
+  <data name="setup_default" xml:space="preserve">
+    <value>Доставлять нормально</value>
+  </data>
+  <data name="setup_file" xml:space="preserve">
+    <value>Добавить почтовый файл в mbox-формате ..</value>
+  </data>
+  <data name="setup_maildir" xml:space="preserve">
+    <value>Добавить  почтовую директорию в Qmail-стиле ..</value>
+  </data>
+  <data name="setup_mhdir" xml:space="preserve">
+    <value>Добавить  почтовую директорию в MH-стиле ..</value>
+  </data>
+  <data name="setup_drop" xml:space="preserve">
+    <value>Запустить SpamAssassin и записать в файл как</value>
+  </data>
+  <data name="setup_drop1" xml:space="preserve">
+    <value>Unix пользователь- получатель</value>
+  </data>
+  <data name="setup_drop0" xml:space="preserve">
+    <value>пользователь &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="setup_ok" xml:space="preserve">
+    <value>Установить Procmail для SpamAssassin</value>
+  </data>
+  <data name="setup_email" xml:space="preserve">
+    <value>Перенаправить на адреса электронной почты</value>
+  </data>
+  <data name="setup_err" xml:space="preserve">
+    <value>Невозможно установить SpamAssassin</value>
+  </data>
+  <data name="setup_efile" xml:space="preserve">
+    <value>Отсутствует или неправильный файл mbox-формата</value>
+  </data>
+  <data name="setup_emaildir" xml:space="preserve">
+    <value>Отсутствует или неправильная почтовая директория Qmail</value>
+  </data>
+  <data name="setup_emhdir" xml:space="preserve">
+    <value>Отсутствует или неправильная MH почтовая директория</value>
+  </data>
+  <data name="setup_eemail" xml:space="preserve">
+    <value>Отсутствует или неправильный адрес электронной почты</value>
+  </data>
+  <data name="log_white" xml:space="preserve">
+    <value>Модфицированы разрешённые и запрещённые адреса</value>
+  </data>
+  <data name="log_score" xml:space="preserve">
+    <value>Модфицирована классификация спама</value>
+  </data>
+  <data name="log_report" xml:space="preserve">
+    <value>Модфицированы видоизменения сообщений</value>
+  </data>
+  <data name="log_user" xml:space="preserve">
+    <value>Модфицированы смешанные настройки пользователей</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Модифицированы тесты заголовков и содержимых</value>
+  </data>
+  <data name="log_priv" xml:space="preserve">
+    <value>Модфицированы смешанные привилегированные настройки</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Установить Procmail для SpamAssassin</value>
+  </data>
+  <data name="log_procmail" xml:space="preserve">
+    <value>Изменена конфигурация Procmail</value>
+  </data>
+  <data name="log_import" xml:space="preserve">
+    <value>Импортированы $1 разрешённые адреса</value>
+  </data>
+  <data name="import_title" xml:space="preserve">
+    <value>Импортировать Адреса</value>
+  </data>
+  <data name="import_err" xml:space="preserve">
+    <value>Невозможно импортировать адреса</value>
+  </data>
+  <data name="import_efile" xml:space="preserve">
+    <value>Нет файлов для импорта среди выбранных</value>
+  </data>
+  <data name="import_enone" xml:space="preserve">
+    <value>Адресов электронной почты в файле не найдено</value>
+  </data>
+  <data name="import_ok1" xml:space="preserve">
+    <value>в файле были найдены адреса электронной почты $2 , из которых $1 были новыми и были добавлены в список допустимых адресов.</value>
+  </data>
+  <data name="import_ok2" xml:space="preserve">
+    <value>в файле были найдены адреса электронной почты $2, но все они уже были добавлены в  список допустимых адресов.</value>
+  </data>
+  <data name="mail_title" xml:space="preserve">
+    <value>Спам Почта</value>
+  </data>
+  <data name="mail_desc" xml:space="preserve">
+    <value>Эта страница ведёт список сообщений, которые были классифицированы как спам и ожидают каких-либо действий. Сообщения, которые были некорректно идентифицированы, могут быть перенесены в Ваши Входящие для того, чтобы те, которые действительно являются спамом, могли быть удалены.</value>
+  </data>
+  <data name="mail_level" xml:space="preserve">
+    <value>Счёт</value>
+  </data>
+  <data name="mail_level2" xml:space="preserve">
+    <value>Счёт спама</value>
+  </data>
+  <data name="mail_inbox" xml:space="preserve">
+    <value>Переместить во Входящие</value>
+  </data>
+  <data name="mail_whitelist2" xml:space="preserve">
+    <value>Разрешить Отправителя &amp; Входящие</value>
+  </data>
+  <data name="mail_razor" xml:space="preserve">
+    <value>Отправить отчёт как Спам &amp; Удалить</value>
+  </data>
+  <data name="mail_ham" xml:space="preserve">
+    <value>Отправить отчёт как Ham &amp; Входящие</value>
+  </data>
+  <data name="mail_delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="mail_return" xml:space="preserve">
+    <value>список спам почты</value>
+  </data>
+  <data name="mail_pos" xml:space="preserve">
+    <value>Спам сообщения $1 в $2 из $3</value>
+  </data>
+  <data name="mail_none" xml:space="preserve">
+    <value>В Вашей спам-папке нет сообщений</value>
+  </data>
+  <data name="mail_refresh" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="mail_will" xml:space="preserve">
+    <value>Автоматическая очистка через $1 минут</value>
+  </data>
+  <data name="mail_wills" xml:space="preserve">
+    <value>Автоматическая очистка через $1 секунд</value>
+  </data>
+  <data name="mail_delall" xml:space="preserve">
+    <value>Удалить весь Спам</value>
+  </data>
+  <data name="mail_search3" xml:space="preserve">
+    <value>Искать в вышеуказанном</value>
+  </data>
+  <data name="process_eclean" xml:space="preserve">
+    <value>Произошла ошибка при удалении заголовков SpamAssassin из этого электронного письма</value>
+  </data>
+  <data name="process_ereport" xml:space="preserve">
+    <value>Невозможно переправить электронную почту в SpamAssassin : $1</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Невозможно применить изменения</value>
+  </data>
+  <data name="apply_none" xml:space="preserve">
+    <value>Процессов-демонов SpamAssassin не было найдено!</value>
+  </data>
+  <data name="acl_avail" xml:space="preserve">
+    <value>Изображения, доступные пользователю</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>Редактирование конфигурационного файла SpamAssassin</value>
+  </data>
+  <data name="acl_filedef" xml:space="preserve">
+    <value>Глобальный конфигурационный файл</value>
+  </data>
+  <data name="search_escore" xml:space="preserve">
+    <value>Отсутствует или неправильная оценка спама</value>
+  </data>
+  <data name="search_results5" xml:space="preserve">
+    <value>$1 сообщения с оценкой спама $2 или больше</value>
+  </data>
+  <data name="razor_title" xml:space="preserve">
+    <value>Установить Средство Обнаружения Спама Razor</value>
+  </data>
+  <data name="razor_desc" xml:space="preserve">
+    <value>Vipul's Razor совместная система распознавания спама и составления отчётов, которая может рационализировать классификацию спама, отсылаемого на Ваш адрес. Перед тем, как будет доступна для использования- Вы должны зарегистрировать учётную запись Razor, используя нижеуказанную форму.</value>
+  </data>
+  <data name="razor_user" xml:space="preserve">
+    <value>имя пользователя Razor</value>
+  </data>
+  <data name="razor_pass" xml:space="preserve">
+    <value>пароль 	Razor</value>
+  </data>
+  <data name="razor_auto" xml:space="preserve">
+    <value>Выбрать автоматически</value>
+  </data>
+  <data name="razor_enter" xml:space="preserve">
+    <value>Вошёл</value>
+  </data>
+  <data name="razor_ok" xml:space="preserve">
+    <value>Установить Сейчас</value>
+  </data>
+  <data name="razor_ecmd" xml:space="preserve">
+    <value>Команда $1 установки Razor не была найдена на Вашей системе. что говорит о том, что Razor не установлен.</value>
+  </data>
+  <data name="razor_err" xml:space="preserve">
+    <value>невозможно установить Razor</value>
+  </data>
+  <data name="razor_euser" xml:space="preserve">
+    <value>Непроавильное имя пользователя</value>
+  </data>
+  <data name="razor_epass" xml:space="preserve">
+    <value>Неправильный пароль</value>
+  </data>
+  <data name="razor_doing" xml:space="preserve">
+    <value>Пытается зарегестрировать и установить Razor ..</value>
+  </data>
+  <data name="razor_done" xml:space="preserve">
+    <value>.. выполнено</value>
+  </data>
+  <data name="razor_failed" xml:space="preserve">
+    <value>.. ошибка! Смотри вышеуказанный вывод ошибок, чтобы определить причину.</value>
+  </data>
+  <data name="procmail_title" xml:space="preserve">
+    <value>Выдача Спама Procmail</value>
+  </data>
+  <data name="procmail_ok" xml:space="preserve">
+    <value>Изменить Выдачу Procmail</value>
+  </data>
+  <data name="procmail_desc" xml:space="preserve">
+    <value>Форма может быть использована для изменения конфигурации Procmail которая определяет, что случится с сообщением, классифицированным как спам.</value>
+  </data>
+  <data name="simple_title" xml:space="preserve">
+    <value>$header_title</value>
+  </data>
+  <data name="simple_desc" xml:space="preserve">
+    <value>Эта страница позволяет Вам определить дополнительные тесты, которые SpamAssassin применит к электронной почте, основанные на заголовках электронной почты, содержимом сообщений, URL-ах, найденных в сожержимом. Выбор имени, присваемого каждому тесту- за вами, но обычно используется что-то типа CONTAINS_FOO.</value>
+  </data>
+  <data name="simple_switch" xml:space="preserve">
+    <value>Переключить в расширенный режим ..</value>
+  </data>
+  <data name="simple_header" xml:space="preserve">
+    <value>Тесты сообщений для применения</value>
+  </data>
+  <data name="simple_name" xml:space="preserve">
+    <value>Название теста</value>
+  </data>
+  <data name="simple_for" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="simple_regexp" xml:space="preserve">
+    <value>Отождествить выражение</value>
+  </data>
+  <data name="simple_score" xml:space="preserve">
+    <value>Оценки для применения</value>
+  </data>
+  <data name="simple_describe" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="simple_err" xml:space="preserve">
+    <value>Невозможно сохранить тесты сообщений</value>
+  </data>
+</root>

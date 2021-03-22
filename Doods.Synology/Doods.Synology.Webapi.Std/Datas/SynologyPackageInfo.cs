@@ -5,8 +5,6 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class SynologyPackageInfo
     {
-        [JsonProperty("package")]
-        public List<Package> Packages { get; set; }
-
+        [JsonProperty("package")] public List<Package> Packages { get; set; }
     }
 }

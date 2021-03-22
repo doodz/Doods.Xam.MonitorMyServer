@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
@@ -21,8 +20,8 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
 
         private void ScrollView_OnPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            if(e.PropertyName == nameof(ScrollView.ContentSize))
-                MyScrollView.ScrollToAsync(this.CmdBox, ScrollToPosition.End, true);
+            if (e.PropertyName == nameof(ScrollView.ContentSize))
+                MyScrollView.ScrollToAsync(CmdBox, ScrollToPosition.End, true);
         }
     }
 }

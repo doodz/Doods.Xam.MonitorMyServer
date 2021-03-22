@@ -8,7 +8,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
     {
         public string GetLocalFilePath(string filePath)
         {
-            return Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), filePath);
+            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), filePath);
         }
 
         public string GetLocalDirectoryPath()

@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>iSCSI-klient</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>modulindex</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Börja vid start?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Ändra det här alternativet för att kontrollera om iSCSI-klienten startas vid starttid eller inte. Detta krävs för att filsystem som är monterade från iSCSI-servrar automatiskt ska monteras.</value>
+  </data>
+  <data name="check_econfig" xml:space="preserve">
+    <value>ISCSI-klientkonfigurationsfilen $1 hittades inte på ditt system.</value>
+  </data>
+  <data name="check_eiscsiadm" xml:space="preserve">
+    <value>ISCSI-klientadministrationsprogrammet $1 hittades inte på ditt system.</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>Autentiseringsalternativ</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>iSCSI-klient- och serververifiering</value>
+  </data>
+  <data name="auth_name" xml:space="preserve">
+    <value>Lokalt systeminitiativnamn</value>
+  </data>
+  <data name="auth_newname" xml:space="preserve">
+    <value>Generera ett nytt slumpmässigt namn</value>
+  </data>
+  <data name="auth_method" xml:space="preserve">
+    <value>Autentiseringsmetod</value>
+  </data>
+  <data name="auth_method_none" xml:space="preserve">
+    <value>Autentisera inte</value>
+  </data>
+  <data name="auth_userpass" xml:space="preserve">
+    <value>Logga in på servern</value>
+  </data>
+  <data name="auth_userpass_def" xml:space="preserve">
+    <value>Ingen behövs</value>
+  </data>
+  <data name="auth_userpass_user" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="auth_userpass_pass" xml:space="preserve">
+    <value>och lösenord</value>
+  </data>
+  <data name="auth_userpass_in" xml:space="preserve">
+    <value>Logga in på klienten</value>
+  </data>
+  <data name="auth_dmethod" xml:space="preserve">
+    <value>Upptäckt-autentiseringsmetod</value>
+  </data>
+  <data name="auth_duserpass" xml:space="preserve">
+    <value>Upptäck-inloggning till servern</value>
+  </data>
+  <data name="auth_duserpass_in" xml:space="preserve">
+    <value>Upptäck-inloggning till klienten</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>Det gick inte att spara autentiseringsalternativ</value>
+  </data>
+  <data name="auth_eusername" xml:space="preserve">
+    <value>Saknar användarnamn för servern</value>
+  </data>
+  <data name="auth_epassword" xml:space="preserve">
+    <value>Lösenord för server saknas</value>
+  </data>
+  <data name="auth_eusername_in" xml:space="preserve">
+    <value>Saknas användarnamn för klienten</value>
+  </data>
+  <data name="auth_epassword_in" xml:space="preserve">
+    <value>Lösenord för klient saknas</value>
+  </data>
+  <data name="auth_edusername" xml:space="preserve">
+    <value>Saknar användarnamn för upptäckten för servern</value>
+  </data>
+  <data name="auth_edpassword" xml:space="preserve">
+    <value>Saknar lösenord för upptäckt för server</value>
+  </data>
+  <data name="auth_edusername_in" xml:space="preserve">
+    <value>Saknad användarnamn för klienten</value>
+  </data>
+  <data name="auth_edpassword_in" xml:space="preserve">
+    <value>Saknar lösenord för upptäckten för klienten</value>
+  </data>
+  <data name="auth_egen" xml:space="preserve">
+    <value>Det gick inte att skapa ett nytt namn!</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>iSCSI Timeouts</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>iSCSI-klient timeoutalternativ</value>
+  </data>
+  <data name="timeout_timeout" xml:space="preserve">
+    <value>Dags att vänta innan SCSI-kommandon misslyckas</value>
+  </data>
+  <data name="timeout_immediate" xml:space="preserve">
+    <value>Misslyckas omedelbart</value>
+  </data>
+  <data name="timeout_forever" xml:space="preserve">
+    <value>Vänta för evigt</value>
+  </data>
+  <data name="timeout_wait" xml:space="preserve">
+    <value>Vänta på</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>sekunder</value>
+  </data>
+  <data name="timeout_login_timeout" xml:space="preserve">
+    <value>Dags att vänta på inloggning</value>
+  </data>
+  <data name="timeout_logout_timeout" xml:space="preserve">
+    <value>Dags att vänta på utloggning</value>
+  </data>
+  <data name="timeout_noop_out_interval" xml:space="preserve">
+    <value>Dags att vänta innan man pinglar</value>
+  </data>
+  <data name="timeout_noop_out_timeout" xml:space="preserve">
+    <value>Dags att vänta på ping innan du misslyckas</value>
+  </data>
+  <data name="timeout_abort_timeout" xml:space="preserve">
+    <value>Dags att vänta på abortsvar innan det misslyckas</value>
+  </data>
+  <data name="timeout_lu_reset_timeout" xml:space="preserve">
+    <value>Dags att vänta på logiskt enhetssvar innan det misslyckas</value>
+  </data>
+  <data name="timeout_tgt_reset_timeout" xml:space="preserve">
+    <value>Dags att vänta på målsvar innan du misslyckas</value>
+  </data>
+  <data name="timeout_err" xml:space="preserve">
+    <value>Det gick inte att spara timeouts</value>
+  </data>
+  <data name="timeout_etimeout" xml:space="preserve">
+    <value>Saknar eller icke-numerisk tid att vänta innan SCSI-kommandon misslyckas</value>
+  </data>
+  <data name="timeout_elogin_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på inloggning</value>
+  </data>
+  <data name="timeout_elogout_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på utloggning</value>
+  </data>
+  <data name="timeout_enoop_out_interval" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta innan pingning</value>
+  </data>
+  <data name="timeout_enoop_out_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på ping innan misslyckas</value>
+  </data>
+  <data name="timeout_eabort_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på abortsvar innan det misslyckas</value>
+  </data>
+  <data name="timeout_elu_reset_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid för att vänta på logiskt enhetssvar innan det misslyckas</value>
+  </data>
+  <data name="timeout_etgt_reset_timeout" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på målsvar innan du misslyckas</value>
+  </data>
+  <data name="iscsi_title" xml:space="preserve">
+    <value>iSCSI-alternativ</value>
+  </data>
+  <data name="iscsi_header" xml:space="preserve">
+    <value>Andra iSCSI-alternativ</value>
+  </data>
+  <data name="iscsi_startup" xml:space="preserve">
+    <value>Ansluta sessioner vid starttid?</value>
+  </data>
+  <data name="iscsi_retry" xml:space="preserve">
+    <value>Antal gånger att försöka logga in igen</value>
+  </data>
+  <data name="iscsi_cmds" xml:space="preserve">
+    <value>Maximala kommandon i kö per session</value>
+  </data>
+  <data name="iscsi_queue" xml:space="preserve">
+    <value>Maximala kommandon i kö per enhet</value>
+  </data>
+  <data name="iscsi_err" xml:space="preserve">
+    <value>Det gick inte att spara iSCSI-alternativ</value>
+  </data>
+  <data name="iscsi_eretry" xml:space="preserve">
+    <value>Saknas eller icke-numeriskt antal gånger för att försöka igen inloggning</value>
+  </data>
+  <data name="iscsi_ecmds" xml:space="preserve">
+    <value>Saknade eller icke-numeriska maxkommandon i kö per session</value>
+  </data>
+  <data name="iscsi_equeue" xml:space="preserve">
+    <value>Saknade eller icke-numeriska maxkommandon i kö per enhet</value>
+  </data>
+  <data name="ifaces_title" xml:space="preserve">
+    <value>iSCSI-gränssnitt</value>
+  </data>
+  <data name="ifaces_elist" xml:space="preserve">
+    <value>Det gick inte att lista gränssnitt : $1 </value>
+  </data>
+  <data name="ifaces_name" xml:space="preserve">
+    <value>Gränssnittsnamn</value>
+  </data>
+  <data name="ifaces_transport" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="ifaces_uses" xml:space="preserve">
+    <value>Använd av</value>
+  </data>
+  <data name="ifaces_none" xml:space="preserve">
+    <value>Inga iSCSI-gränssnitt är för närvarande aktiva.</value>
+  </data>
+  <data name="ifaces_return" xml:space="preserve">
+    <value>gränssnittslista</value>
+  </data>
+  <data name="ifaces_header" xml:space="preserve">
+    <value>Lägg till iSCSI-gränssnitt</value>
+  </data>
+  <data name="ifaces_delete" xml:space="preserve">
+    <value>Ta bort valda gränssnitt</value>
+  </data>
+  <data name="ifaces_on" xml:space="preserve">
+    <value>Mål $1 på $2 </value>
+  </data>
+  <data name="ifaces_nouses" xml:space="preserve">
+    <value>Inga anslutningar</value>
+  </data>
+  <data name="ifaces_ipaddress" xml:space="preserve">
+    <value>Källa IP-adress</value>
+  </data>
+  <data name="ifaces_hwaddress" xml:space="preserve">
+    <value>MAC-adress</value>
+  </data>
+  <data name="ifaces_ifacename" xml:space="preserve">
+    <value>Källgränssnitt</value>
+  </data>
+  <data name="ifaces_ipaddressdef" xml:space="preserve">
+    <value>Automatisk</value>
+  </data>
+  <data name="ifaces_notset" xml:space="preserve">
+    <value>Automatisk</value>
+  </data>
+  <data name="iadd_err" xml:space="preserve">
+    <value>Det gick inte att lägga till gränssnittet</value>
+  </data>
+  <data name="iadd_eclash" xml:space="preserve">
+    <value>Ett gränssnitt med namnet $1 finns redan</value>
+  </data>
+  <data name="iadd_eipaddress" xml:space="preserve">
+    <value>IP-adress saknas eller ogiltig</value>
+  </data>
+  <data name="iadd_ehwaddress" xml:space="preserve">
+    <value>Saknad eller ogiltig MAC-adress</value>
+  </data>
+  <data name="iadd_ename" xml:space="preserve">
+    <value>Gränssnittsnamn saknas eller innehåller ogiltiga tecken</value>
+  </data>
+  <data name="difaces_err" xml:space="preserve">
+    <value>Det gick inte att ta bort gränssnitten</value>
+  </data>
+  <data name="difaces_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="difaces_edelete" xml:space="preserve">
+    <value>Borttagning av gränssnitt $1 misslyckades : $2 </value>
+  </data>
+  <data name="difaces_title" xml:space="preserve">
+    <value>Ta bort iSCSI-gränssnitt</value>
+  </data>
+  <data name="difaces_rusure" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort de valda gränssnitten $1 ?</value>
+  </data>
+  <data name="difaces_rusure1" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort gränssnittet $1 ?</value>
+  </data>
+  <data name="difaces_confirm" xml:space="preserve">
+    <value>Ta bort gränssnitt</value>
+  </data>
+  <data name="difaces_target" xml:space="preserve">
+    <value>iSCSI-mål</value>
+  </data>
+  <data name="difaces_ip" xml:space="preserve">
+    <value>iSCSI-server</value>
+  </data>
+  <data name="difaces_users" xml:space="preserve">
+    <value>Vissa anslutningar med dessa gränssnitt är för närvarande aktiva och fungerar inte när gränssnitten tas bort :</value>
+  </data>
+  <data name="conns_title" xml:space="preserve">
+    <value>iSCSI-anslutningar</value>
+  </data>
+  <data name="conns_elist" xml:space="preserve">
+    <value>Det gick inte att lista anslutningar : $1 </value>
+  </data>
+  <data name="conns_ip" xml:space="preserve">
+    <value>Server-IP</value>
+  </data>
+  <data name="conns_sport" xml:space="preserve">
+    <value>Server Port</value>
+  </data>
+  <data name="conns_name" xml:space="preserve">
+    <value>Server namn</value>
+  </data>
+  <data name="conns_target" xml:space="preserve">
+    <value>Målnamn</value>
+  </data>
+  <data name="conns_device" xml:space="preserve">
+    <value>Lokal enhet</value>
+  </data>
+  <data name="conns_username" xml:space="preserve">
+    <value>Logga in användarnamn</value>
+  </data>
+  <data name="conns_nouser" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="conns_nodevice" xml:space="preserve">
+    <value>Ingen har kartlagt</value>
+  </data>
+  <data name="conns_delete" xml:space="preserve">
+    <value>Koppla bort vald</value>
+  </data>
+  <data name="conns_none" xml:space="preserve">
+    <value>Inga iSCSI-anslutningar är för närvarande aktiva.</value>
+  </data>
+  <data name="conns_header" xml:space="preserve">
+    <value>Lägg till iSCSI-anslutning</value>
+  </data>
+  <data name="conns_host" xml:space="preserve">
+    <value>iSCSI-serverns värdnamn eller IP</value>
+  </data>
+  <data name="conns_port" xml:space="preserve">
+    <value>iSCSI-serverport</value>
+  </data>
+  <data name="conns_start" xml:space="preserve">
+    <value>Ansluta ..</value>
+  </data>
+  <data name="conns_return" xml:space="preserve">
+    <value>lista över anslutningar</value>
+  </data>
+  <data name="conns_iface" xml:space="preserve">
+    <value>iSCSI-gränssnitt</value>
+  </data>
+  <data name="conns_ifacedef" xml:space="preserve">
+    <value>Välj automatiskt</value>
+  </data>
+  <data name="conns_ifaceerr" xml:space="preserve">
+    <value>Det gick inte att hämta gränssnitt : $1 </value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Lägg till iSCSI-anslutning</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Det gick inte att lägga till iSCSI-anslutning</value>
+  </data>
+  <data name="add_ehost" xml:space="preserve">
+    <value>Värdnamn saknas eller inte kan lösas</value>
+  </data>
+  <data name="add_eport" xml:space="preserve">
+    <value>Port som saknas eller inte är numerisk</value>
+  </data>
+  <data name="add_etargets" xml:space="preserve">
+    <value>Inga iSCSI-mål kunde hämtas från $1:$2 </value>
+  </data>
+  <data name="add_etargets2" xml:space="preserve">
+    <value>Inga iSCSI-mål hittades på $1 </value>
+  </data>
+  <data name="add_target" xml:space="preserve">
+    <value>Anslut till målet</value>
+  </data>
+  <data name="add_alltargets" xml:space="preserve">
+    <value>Alla mål</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Lägg till anslutning</value>
+  </data>
+  <data name="add_etarget" xml:space="preserve">
+    <value>Inget mål $1 hittades</value>
+  </data>
+  <data name="add_dev" xml:space="preserve">
+    <value>Ansluten som $1 </value>
+  </data>
+  <data name="add_used" xml:space="preserve">
+    <value>Redan ansluten</value>
+  </data>
+  <data name="add_on" xml:space="preserve">
+    <value>$1 på $2 </value>
+  </data>
+  <data name="add_auth" xml:space="preserve">
+    <value>Logga in på servern</value>
+  </data>
+  <data name="add_auth1" xml:space="preserve">
+    <value>Använd standardverifieringsmetod</value>
+  </data>
+  <data name="add_auth0" xml:space="preserve">
+    <value>Logga in som $2 med lösenord $3 med metod $1 </value>
+  </data>
+  <data name="dconns_err" xml:space="preserve">
+    <value>Det gick inte att koppla bort anslutningarna</value>
+  </data>
+  <data name="dconns_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="dconns_edelete" xml:space="preserve">
+    <value>Avlägsnande av mål $2 från värd $1 misslyckades : $3 </value>
+  </data>
+  <data name="dconns_title" xml:space="preserve">
+    <value>Koppla från iSCSI-anslutningar</value>
+  </data>
+  <data name="dconns_rusure" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort de valda anslutningarna $1 ?</value>
+  </data>
+  <data name="dconns_rusure1" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort anslutningen till $1 ?</value>
+  </data>
+  <data name="dconns_rusure2" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort anslutningen till $1 för enhet $2 ?</value>
+  </data>
+  <data name="dconns_users" xml:space="preserve">
+    <value>Vissa partitioner från dessa anslutningar används för närvarande och fungerar inte när anslutningarna tas bort :</value>
+  </data>
+  <data name="dconns_part" xml:space="preserve">
+    <value>Dela</value>
+  </data>
+  <data name="dconns_use" xml:space="preserve">
+    <value>Använd av</value>
+  </data>
+  <data name="dconns_size" xml:space="preserve">
+    <value>Partitionsstorlek</value>
+  </data>
+  <data name="dconns_confirm" xml:space="preserve">
+    <value>Ta bort anslutningar</value>
+  </data>
+  <data name="dconns_unused" xml:space="preserve">
+    <value>Oanvänd</value>
+  </data>
+  <data name="vconn_title" xml:space="preserve">
+    <value>iSCSI-anslutning</value>
+  </data>
+  <data name="vconn_egone" xml:space="preserve">
+    <value>Den valda anslutningen finns inte längre!</value>
+  </data>
+  <data name="vconn_header" xml:space="preserve">
+    <value>iSCSI-anslutningsinformation</value>
+  </data>
+  <data name="vconn_proto" xml:space="preserve">
+    <value>Nätverksprotokoll</value>
+  </data>
+  <data name="vconn_init" xml:space="preserve">
+    <value>Lokalt initiativnamn</value>
+  </data>
+  <data name="vconn_connection" xml:space="preserve">
+    <value>Anslutningstillstånd</value>
+  </data>
+  <data name="vconn_session" xml:space="preserve">
+    <value>Session tillstånd</value>
+  </data>
+  <data name="vconn_username" xml:space="preserve">
+    <value>Loggad in med användarnamn</value>
+  </data>
+  <data name="vconn_password" xml:space="preserve">
+    <value>Loggad in med lösenord</value>
+  </data>
+  <data name="vconn_username_in" xml:space="preserve">
+    <value>Kundens användarnamn</value>
+  </data>
+  <data name="vconn_password_in" xml:space="preserve">
+    <value>Klientlösenord</value>
+  </data>
+  <data name="vconn_none" xml:space="preserve">
+    <value>Ingen krävs</value>
+  </data>
+  <data name="vconn_device" xml:space="preserve">
+    <value>Lokal enhetsfil</value>
+  </data>
+  <data name="vconn_device2" xml:space="preserve">
+    <value>Lokalt enhetsnamn</value>
+  </data>
+  <data name="vconn_device3" xml:space="preserve">
+    <value>Konstant enhetsnamn</value>
+  </data>
+  <data name="vconn_delete" xml:space="preserve">
+    <value>Koppla bort anslutningen</value>
+  </data>
+  <data name="vconn_users" xml:space="preserve">
+    <value>Aktuella användare</value>
+  </data>
+  <data name="vconn_size" xml:space="preserve">
+    <value>Diskstorlek</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>Det gick inte att aktivera vid starttid</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>Det finns ingen startåtgärd med namnet $1 </value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>Sparade autentiseringsalternativ</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>Sparade timeoutalternativ</value>
+  </data>
+  <data name="log_iscsi" xml:space="preserve">
+    <value>Sparade iSCSI-alternativ</value>
+  </data>
+  <data name="log_add_connection" xml:space="preserve">
+    <value>Lade till anslutning till $1 för $2 </value>
+  </data>
+  <data name="log_delete_connection" xml:space="preserve">
+    <value>Borttagna anslutningen till $1 för $2 </value>
+  </data>
+  <data name="log_delete_connections" xml:space="preserve">
+    <value>Borttagna $1 -anslutningar</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Aktiverad iSCSI-klient vid starttid</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Inaktiverad iSCSI-klient vid starttid</value>
+  </data>
+  <data name="log_add_iface" xml:space="preserve">
+    <value>Lade till gränssnitt $1 </value>
+  </data>
+  <data name="log_delete_iface" xml:space="preserve">
+    <value>Borttaget gränssnitt $1 </value>
+  </data>
+  <data name="log_delete_ifaces" xml:space="preserve">
+    <value>Borttagna $1 -gränssnitt</value>
+  </data>
+</root>

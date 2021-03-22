@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>BSD-brandvägg</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>IPFW-version $1 </value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Använd konfigurering</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att aktivera brandväggskonfigurationen ovan. Alla gällande brandväggsregler spolas och ersätts</value>
+  </data>
+  <data name="index_applydesc2" xml:space="preserve">
+    <value>Klicka på den här knappen för att göra brandväggskonfigurationen som visas ovan aktiv på alla servrar i klustret. Alla gällande brandväggsregler spolas och ersätts</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>Återställ konfiguration</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att återställa konfigurationen ovan för den som för närvarande är aktiv.</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>Aktivera vid start</value>
+  </data>
+  <data name="index_bootdesc" xml:space="preserve">
+    <value>Ändra det här alternativet för att kontrollera om din brandvägg är aktiverad vid starttid eller inte.</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Ingen IPFW-brandvägg har konfigurerats ännu på ditt system. Webmin kan ställa in en för dig som ska lagras i filen $1 med de initiala inställningarna baserat på ditt val av brandväggstyp nedan ..</value>
+  </data>
+  <data name="index_rsetup" xml:space="preserve">
+    <value>IPFW-brandväggskonfigurationen på ditt system håller på att återinställas. Webmin kommer att ställa in nya standardregler som ska lagras i filen $1 med de initiala inställningarna baserade på ditt val av brandväggstyp nedan ..</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>Tillåt all trafik</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>Gör nätverksadressöversättning på externt gränssnitt:</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>Blockera alla inkommande anslutningar på externt gränssnitt:</value>
+  </data>
+  <data name="index_auto3" xml:space="preserve">
+    <value>Blockera alla utom SSH och IDENT på externt gränssnitt:</value>
+  </data>
+  <data name="index_auto4" xml:space="preserve">
+    <value>Blockera alla utom SSH, IDENT, ping och höga portar på gränssnittet:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>Setup Firewall</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Aktivera brandvägg vid starttid?</value>
+  </data>
+  <data name="index_count1" xml:space="preserve">
+    <value>paket</value>
+  </data>
+  <data name="index_count2" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Återställ brandväggen</value>
+  </data>
+  <data name="index_resetdesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att rensa alla befintliga brandväggsregler och ställa in nya regler för en grundläggande initial konfiguration.</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Cluster-servrar</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att ställa in ytterligare webmin-servrar som brandväggskonfigurationen kommer att kopieras automatiskt till.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>brandväggsregler</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>Num</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Verkan</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Tillstånd</value>
+  </data>
+  <data name="index_cmt" xml:space="preserve">
+    <value>Kommentar</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Flytta</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>Lägg till</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Lägg till en ny brandväggsregel.</value>
+  </data>
+  <data name="index_add2" xml:space="preserve">
+    <value>Lägg till brandväggsregel</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Radera valda</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webmin har upptäckt $1 IPFW-brandväggsregler som för närvarande används, och som inte registreras i filen $2. Dessa regler inställdes antagligen från ett skript, som den här modulen inte vet hur man läser och redigerar. &lt;p&gt; Om du vill använda den här modulen för att hantera din IPFW-brandvägg, klicka på knappen nedan för att konvertera de befintliga reglerna till en sparfil och inaktivera sedan ditt befintliga brandväggsskript.</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>Spara brandväggsregler</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>Befintlig brandväggskonfiguration</value>
+  </data>
+  <data name="action_skipto" xml:space="preserve">
+    <value>Hoppa över till</value>
+  </data>
+  <data name="action_check-state" xml:space="preserve">
+    <value>Kontrollera dynamisk regeluppsättning</value>
+  </data>
+  <data name="action_count" xml:space="preserve">
+    <value>Uppdatera räknare</value>
+  </data>
+  <data name="action_divert" xml:space="preserve">
+    <value>Vidarebefordra till port</value>
+  </data>
+  <data name="action_fwd" xml:space="preserve">
+    <value>Vidarebefordra till IP och port</value>
+  </data>
+  <data name="action_pipe" xml:space="preserve">
+    <value>Passera till röret</value>
+  </data>
+  <data name="action_queue" xml:space="preserve">
+    <value>Passera till kö</value>
+  </data>
+  <data name="action_tee" xml:space="preserve">
+    <value>Skicka kopia till port</value>
+  </data>
+  <data name="action_unreach" xml:space="preserve">
+    <value>Returnera ICMP</value>
+  </data>
+  <data name="laction_skipto" xml:space="preserve">
+    <value>Hoppa till regel</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Skapa regel</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Redigera regel $1 </value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>Regelåtgärd</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>Regelkommentar</value>
+  </data>
+  <data name="edit_action" xml:space="preserve">
+    <value>Åtgärd att vidta</value>
+  </data>
+  <data name="edit_num" xml:space="preserve">
+    <value>Beställningsnummer</value>
+  </data>
+  <data name="edit_log" xml:space="preserve">
+    <value>Logga matchande paket?</value>
+  </data>
+  <data name="edit_logyes" xml:space="preserve">
+    <value>Ja, högst $1 gånger (låt stå tomt utan gräns)</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>Protokoll</value>
+  </data>
+  <data name="edit_proto_not" xml:space="preserve">
+    <value>Alla protokoll utom valda</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>&amp;lt;Any&amp;gt;</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Åtgärden som valts ovan utförs endast om &lt;b&gt;alla&lt;/b&gt; villkoren nedan är uppfyllda.</value>
+  </data>
+  <data name="edit_headerfrom" xml:space="preserve">
+    <value>Paketkällförhållanden</value>
+  </data>
+  <data name="edit_headerto" xml:space="preserve">
+    <value>Villkor för paketdestination</value>
+  </data>
+  <data name="edit_from" xml:space="preserve">
+    <value>Käll adress</value>
+  </data>
+  <data name="edit_sany" xml:space="preserve">
+    <value>Varje adress</value>
+  </data>
+  <data name="edit_sme" xml:space="preserve">
+    <value>Brandväggssystemets adresser</value>
+  </data>
+  <data name="edit_saddr" xml:space="preserve">
+    <value>Adress, värd eller nätverk</value>
+  </data>
+  <data name="edit_snot" xml:space="preserve">
+    <value>Alla adresser utom de valda</value>
+  </data>
+  <data name="edit_to" xml:space="preserve">
+    <value>Destinations adress</value>
+  </data>
+  <data name="edit_portfrom" xml:space="preserve">
+    <value>Källportar</value>
+  </data>
+  <data name="edit_pany" xml:space="preserve">
+    <value>Eventuella hamnar</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>Portnummer, namn eller intervall</value>
+  </data>
+  <data name="edit_portto" xml:space="preserve">
+    <value>Destinationsportar</value>
+  </data>
+  <data name="edit_pnot" xml:space="preserve">
+    <value>Alla portar utom de som anges</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Andra regelalternativ</value>
+  </data>
+  <data name="edit_inout" xml:space="preserve">
+    <value>Paketets riktning</value>
+  </data>
+  <data name="edit_ignored" xml:space="preserve">
+    <value>ignoreras</value>
+  </data>
+  <data name="edit_inout1" xml:space="preserve">
+    <value>Inkommande</value>
+  </data>
+  <data name="edit_inout2" xml:space="preserve">
+    <value>Utgående</value>
+  </data>
+  <data name="edit_via" xml:space="preserve">
+    <value>Skickas via gränssnitt</value>
+  </data>
+  <data name="edit_recv" xml:space="preserve">
+    <value>Mottaget i gränssnittet</value>
+  </data>
+  <data name="edit_xmit" xml:space="preserve">
+    <value>Skickat på gränssnittet</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>Övrig ..</value>
+  </data>
+  <data name="edit_orblock" xml:space="preserve">
+    <value>IPFW-uttryck</value>
+  </data>
+  <data name="edit_established" xml:space="preserve">
+    <value>Matcha etablerade TCP-anslutningar?</value>
+  </data>
+  <data name="edit_keep-state" xml:space="preserve">
+    <value>Tillåt resten av anslutningen?</value>
+  </data>
+  <data name="edit_bridged" xml:space="preserve">
+    <value>Matcha överbryggade paket?</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>Matcha fragmenterade paket?</value>
+  </data>
+  <data name="edit_setup" xml:space="preserve">
+    <value>Matcha TCP-anslutningsinställningar?</value>
+  </data>
+  <data name="edit_mac1" xml:space="preserve">
+    <value>Källa MAC-adress</value>
+  </data>
+  <data name="edit_mac2" xml:space="preserve">
+    <value>Destination MAC-adress</value>
+  </data>
+  <data name="edit_macaddr" xml:space="preserve">
+    <value>Ethernet-adress</value>
+  </data>
+  <data name="edit_uid" xml:space="preserve">
+    <value>Skicka eller ta emot av användaren</value>
+  </data>
+  <data name="edit_gid" xml:space="preserve">
+    <value>Skicka eller ta emot per grupp</value>
+  </data>
+  <data name="edit_dstport" xml:space="preserve">
+    <value>Valfria destinationsportar är</value>
+  </data>
+  <data name="edit_srcport" xml:space="preserve">
+    <value>Valfria källportar är</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Unix-användare eller #UID</value>
+  </data>
+  <data name="edit_group" xml:space="preserve">
+    <value>Unix-grupp eller #GID</value>
+  </data>
+  <data name="edit_header3" xml:space="preserve">
+    <value>Regler villkor</value>
+  </data>
+  <data name="edit_icmptypes" xml:space="preserve">
+    <value>Matcha ICMP-typer</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>Matcha om TCP-flaggor är inställda</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>Inte $1 </value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>Maximala matchande anslutningar</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Obegränsat</value>
+  </data>
+  <data name="edit_src-addr" xml:space="preserve">
+    <value>Från källadress. ..</value>
+  </data>
+  <data name="edit_src-port" xml:space="preserve">
+    <value>Från källa port ..</value>
+  </data>
+  <data name="edit_dst-addr" xml:space="preserve">
+    <value>Till destinationsadress ..</value>
+  </data>
+  <data name="edit_dst-port" xml:space="preserve">
+    <value>Till destinationshamn ..</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Det gick inte att spara regeln</value>
+  </data>
+  <data name="save_enum" xml:space="preserve">
+    <value>Regelnummer saknas eller ogiltigt</value>
+  </data>
+  <data name="save_eskipto" xml:space="preserve">
+    <value>Regelnummer saknas eller ogiltigt att hoppa till</value>
+  </data>
+  <data name="save_efwdip" xml:space="preserve">
+    <value>Saknad eller ogiltig IP-adress att vidarebefordra till</value>
+  </data>
+  <data name="save_efwdport" xml:space="preserve">
+    <value>Ogiltigt portnummer att vidarebefordra till</value>
+  </data>
+  <data name="save_eteeport" xml:space="preserve">
+    <value>Portnummer saknas eller ogiltigt i handling</value>
+  </data>
+  <data name="save_efrom" xml:space="preserve">
+    <value>Saknad eller ogiltig källadress, värd eller nätverk</value>
+  </data>
+  <data name="save_eto" xml:space="preserve">
+    <value>Saknad eller ogiltig destinationsadress, värd eller nätverk</value>
+  </data>
+  <data name="save_eportsprotofrom" xml:space="preserve">
+    <value>Källportar kan endast specificeras för TCP- eller UDP-protokollen</value>
+  </data>
+  <data name="save_eportsprototo" xml:space="preserve">
+    <value>Destinationsportar kan endast anges för TCP- eller UDP-protokoll</value>
+  </data>
+  <data name="save_eportsfrom" xml:space="preserve">
+    <value>Saknad eller ogiltig källportnummer, namn, intervall eller kommaseparerad lista</value>
+  </data>
+  <data name="save_eportsto" xml:space="preserve">
+    <value>Saknar eller ogiltigt destinationsportnummer, namn, intervall eller kommaseparerad lista</value>
+  </data>
+  <data name="save_elogamount" xml:space="preserve">
+    <value>Ogiltigt maximalt antal gånger att logga in</value>
+  </data>
+  <data name="save_evia" xml:space="preserve">
+    <value>Ogiltigt skickat via gränssnittet</value>
+  </data>
+  <data name="send_erecv" xml:space="preserve">
+    <value>Ogiltigt mottaget gränssnitt</value>
+  </data>
+  <data name="send_exmit" xml:space="preserve">
+    <value>Ogiltigt överfört gränssnitt</value>
+  </data>
+  <data name="save_eorblockproto" xml:space="preserve">
+    <value>Saknas eller ogiltigt IPFW-uttryck för protokoll</value>
+  </data>
+  <data name="save_eorblockfrom" xml:space="preserve">
+    <value>Saknas eller ogiltigt IPFW-uttryck för källadress</value>
+  </data>
+  <data name="save_eorblockto" xml:space="preserve">
+    <value>Saknas eller ogiltigt IPFW-uttryck för destinationsadress</value>
+  </data>
+  <data name="save_eorblockfrom_ports" xml:space="preserve">
+    <value>Saknas eller ogiltigt IPFW-uttryck för källportar</value>
+  </data>
+  <data name="save_eorblockto_ports" xml:space="preserve">
+    <value>Saknas eller ogiltigt IPFW-uttryck för destinationsportar</value>
+  </data>
+  <data name="save_emac1" xml:space="preserve">
+    <value>Ogiltig källans MAC-adress</value>
+  </data>
+  <data name="save_emac2" xml:space="preserve">
+    <value>Ogiltig MAC-adress för destination</value>
+  </data>
+  <data name="save_euid" xml:space="preserve">
+    <value>Unix-användarnamn saknas eller ogiltigt</value>
+  </data>
+  <data name="save_egid" xml:space="preserve">
+    <value>Saknar eller ogiltigt Unix-gruppnamn</value>
+  </data>
+  <data name="save_eicmptypes" xml:space="preserve">
+    <value>ICMP-typer kan endast specificeras om protokollet är ICMP</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>TCP-flaggor kan endast specificeras om protokollet är TCP</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>Saknas eller ogiltig maximal gräns</value>
+  </data>
+  <data name="save_edstport" xml:space="preserve">
+    <value>Saknar eller ogiltig destinationsport</value>
+  </data>
+  <data name="save_esrcport" xml:space="preserve">
+    <value>Saknad eller ogiltig källport</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Det gick inte att tillämpa konfigurationen</value>
+  </data>
+  <data name="desc_if" xml:space="preserve">
+    <value>Om $1 </value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>och</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>Alltid</value>
+  </data>
+  <data name="desc_proto" xml:space="preserve">
+    <value>protokollet är $1 </value>
+  </data>
+  <data name="desc_proto_not" xml:space="preserve">
+    <value>protokollet är inte $1 </value>
+  </data>
+  <data name="desc_from" xml:space="preserve">
+    <value>källa är $1 </value>
+  </data>
+  <data name="desc_from_not" xml:space="preserve">
+    <value>källan är inte</value>
+  </data>
+  <data name="desc_to" xml:space="preserve">
+    <value>destinationen är $1 </value>
+  </data>
+  <data name="desc_to_not" xml:space="preserve">
+    <value>destinationen är inte $1 </value>
+  </data>
+  <data name="desc_me" xml:space="preserve">
+    <value>denna värd</value>
+  </data>
+  <data name="desc_from_ports" xml:space="preserve">
+    <value>källport är $1 </value>
+  </data>
+  <data name="desc_from_ports_not" xml:space="preserve">
+    <value>källporten är inte $1 </value>
+  </data>
+  <data name="desc_to_ports" xml:space="preserve">
+    <value>destinationsporten är $1 </value>
+  </data>
+  <data name="desc_to_ports_not" xml:space="preserve">
+    <value>destinationsporten är inte $1 </value>
+  </data>
+  <data name="desc_established" xml:space="preserve">
+    <value>anslutning upprättas</value>
+  </data>
+  <data name="desc_established_not" xml:space="preserve">
+    <value>anslutning är inte upprättad</value>
+  </data>
+  <data name="desc_bridged" xml:space="preserve">
+    <value>är överbryggad</value>
+  </data>
+  <data name="desc_bridged_not" xml:space="preserve">
+    <value>är inte överbryggat</value>
+  </data>
+  <data name="desc_frag" xml:space="preserve">
+    <value>är fragmenterad</value>
+  </data>
+  <data name="desc_frag_not" xml:space="preserve">
+    <value>är inte fragmenterad</value>
+  </data>
+  <data name="desc_setup" xml:space="preserve">
+    <value>är TCP-installation</value>
+  </data>
+  <data name="desc_setup_not" xml:space="preserve">
+    <value>är inte TCP-installation</value>
+  </data>
+  <data name="desc_xmit" xml:space="preserve">
+    <value>överförs på $1 </value>
+  </data>
+  <data name="desc_xmit_not" xml:space="preserve">
+    <value>inte överförs på $1 </value>
+  </data>
+  <data name="desc_recv" xml:space="preserve">
+    <value>fick på $1 </value>
+  </data>
+  <data name="desc_recv_not" xml:space="preserve">
+    <value>inte tagits emot på $1 </value>
+  </data>
+  <data name="desc_via" xml:space="preserve">
+    <value>passerat via $1 </value>
+  </data>
+  <data name="desc_via_not" xml:space="preserve">
+    <value>inte gått via $1 </value>
+  </data>
+  <data name="desc_mac" xml:space="preserve">
+    <value>destination MAC är $1 och källa MAC är $2 </value>
+  </data>
+  <data name="desc_mac1" xml:space="preserve">
+    <value>källa MAC är $1 </value>
+  </data>
+  <data name="desc_mac2" xml:space="preserve">
+    <value>destination MAC är $1 </value>
+  </data>
+  <data name="desc_uid" xml:space="preserve">
+    <value>skickas av UID $1 </value>
+  </data>
+  <data name="desc_gid" xml:space="preserve">
+    <value>skickas av GID $1 </value>
+  </data>
+  <data name="desc_dstport" xml:space="preserve">
+    <value>valfria destinationsportar är $1 </value>
+  </data>
+  <data name="desc_srcport" xml:space="preserve">
+    <value>valfria källportar är $1 </value>
+  </data>
+  <data name="desc_icmptypes" xml:space="preserve">
+    <value>ICMP-typen är $1 </value>
+  </data>
+  <data name="desc_tcpflags" xml:space="preserve">
+    <value>TCP-flaggor $1 är inställda</value>
+  </data>
+  <data name="desc_src-port" xml:space="preserve">
+    <value>källport</value>
+  </data>
+  <data name="desc_src-addr" xml:space="preserve">
+    <value>Käll adress</value>
+  </data>
+  <data name="desc_dst-port" xml:space="preserve">
+    <value>destinationsport</value>
+  </data>
+  <data name="desc_dst-addr" xml:space="preserve">
+    <value>Destinations adress</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>, med $1 gräns på $2 </value>
+  </data>
+  <data name="desc_where" xml:space="preserve">
+    <value>där $1 </value>
+  </data>
+  <data name="desc_all" xml:space="preserve">
+    <value>för alla paket</value>
+  </data>
+  <data name="desc_in" xml:space="preserve">
+    <value>paketet kommer in</value>
+  </data>
+  <data name="desc_out" xml:space="preserve">
+    <value>paketet är utgående</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>Skapad $1 -regel</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>$1 -regeln har raderats</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>Modifierad $1 -regel</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>Flyttade $1 -regeln</value>
+  </data>
+  <data name="log_create_rule_l" xml:space="preserve">
+    <value>Skapat $1 regel $2 </value>
+  </data>
+  <data name="log_delete_rule_l" xml:space="preserve">
+    <value>Raderad $1 regel $2 </value>
+  </data>
+  <data name="log_modify_rule_l" xml:space="preserve">
+    <value>Modifierad $1 regel $2 </value>
+  </data>
+  <data name="log_move_rule_l" xml:space="preserve">
+    <value>Flyttade $1 regel $2 </value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Tillämpad brandväggskonfiguration</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>Aktiverad brandvägg vid start</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>Inaktiverad brandvägg vid start</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>Konverterade aktiva brandväggsregler</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Utfört den första brandväggsinställningen</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>Återställd brandväggskonfiguration</value>
+  </data>
+  <data name="log_delsel" xml:space="preserve">
+    <value>$1 -regler har tagits bort</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Cluster Firewall-servrar</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Inga servrar har lagts till i brandväggsklustret än.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Värdnamn</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Beskrivning</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Operativ system</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Lägg till server</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Lägg till servrar i grupp</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Du måste lägga till servrar med inloggning och lösenord i Webmin Servers Index-modulen innan de kan hanteras här.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>klustrservrar</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Ta bort valda</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Lägg till servrar</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Lägger till $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Lägga till servrar i grupp $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Det gick inte att lägga till server</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Det gick inte att lägga till grupp</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Servern $1 har inte IPFW-brandväggsmodulen</value>
+  </data>
+  <data name="add_emissing" xml:space="preserve">
+    <value>Server $1 har inte IPFW-brandväggsinställningen</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Lade till $1, med $2 aktiva brandväggsregler.</value>
+  </data>
+</root>

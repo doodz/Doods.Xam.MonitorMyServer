@@ -8,6 +8,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
         private bool _partner;
 
         private bool _proposed;
+
         public bool Partner
         {
             get => _partner;
@@ -19,6 +20,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
             get => _proposed;
             set => SetProperty(ref _proposed, value);
         }
+
         public override async Task<bool> SaveSettings()
         {
             var obj = new AptSetting();

@@ -48,66 +48,68 @@
             <StackLayout Padding="8">
 
                 <controls2:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
-                                          TitleStyle="{StaticResource NewTitleStyle}" 
-                                          BindingContext="{Binding Hostnamectl,Mode=OneWay}">
+                                           TitleStyle="{StaticResource NewTitleStyle}">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
 
-                        <Label Grid.Column="0" Grid.Row="0" Text="{resources1:Translate Text='openmediavault::Hostname'}"/>
-                        <Label Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::System'}"/>
-                        <Label Grid.Column="0" Grid.Row="3" Text="{resources1:Translate Text='openmediavault::Kernel'}"/>
-
-                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding StaticHostname,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding OperatingSystem,Mode=OneWay}"/>
-                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding Kernel,Mode=OneWay}"/>
-                       
-
+                        <Label Grid.Column="0" Grid.Row="0"
+                               Text="{resources1:Translate Text='openmediavault::Hostname'}" />
+                        <Label Grid.Column="0" Grid.Row="1" Text="{resources1:Translate Text='openmediavault::System'}" />
+                        <Label Grid.Column="0" Grid.Row="2" Text="{resources1:Translate Text='openmediavault::Kernel'}" />
+                        <Label Grid.Column="0" Grid.Row="3" Text="{resources1:Translate Text='openmediavault::Uptime'}" />
+                        <Label Grid.Column="0" Grid.Row="4"
+                               Text="{resources1:Translate Text='openmediavault::Processor'}" />
+                        <Label Grid.Column="1" Grid.Row="0" Text="{Binding Hostnamectl.StaticHostname,Mode=OneWay}" />
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding Hostnamectl.OperatingSystem,Mode=OneWay}" />
+                        <Label Grid.Column="1" Grid.Row="2" Text="{Binding Hostnamectl.Kernel,Mode=OneWay}" />
+                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding Uptime,Mode=OneWay}" />
+                        <Label Grid.Column="1" Grid.Row="4" Text="{Binding CpuInfo.ModelName,Mode=OneWay}" />
                     </Grid>
 
 
                 </controls2:TitledFrameView>
-                <controls2:TitledFrameView Padding="8"
-                                           Title="{resources1:Translate Text='openmediavault::Uptime'}"
-                                           SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
-                                           SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                <controls2:TitledFrameView
+                    Title="{resources1:Translate Text='openmediavault::Uptime'}"
+                    SubTitle="{Binding Uptime,Mode=OneWay,Converter={StaticResource TimeSpanToDateHumanConverter},ConverterParameter={resources:Translate Text=UptimeToHumanString}}"
+                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
                     <controls2:TitledFrameView.GestureRecognizers>
-                        <TapGestureRecognizer  Command="{Binding ShowTestsPageCmd,Mode=OneWay}"/>
+                        <TapGestureRecognizer Command="{Binding ShowTestsPageCmd,Mode=OneWay}" />
                     </controls2:TitledFrameView.GestureRecognizers>
                     <views:UcCpuInfo BindingContext="{Binding CpuInfo,Mode=OneWay}" />
                 </controls2:TitledFrameView>
 
-                <controls2:TitledFrameView Padding="8" Title="{resources:Translate Text=MemoryUsage}">
+                <controls2:TitledFrameView Title="{resources:Translate Text=MemoryUsage}">
                     <views:UcMemoryUsage BindingContext="{Binding MemoryUsage,Mode=OneWay}" />
                 </controls2:TitledFrameView>
-                <controls2:TitledFrameView Padding="8"
-                                           Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
+                <controls2:TitledFrameView
+                    Title="{Binding UpgradablesCount,StringFormat={resources:Translate Text=ThereAre_0_ItemsCanBeUpdated}}">
                     <Button Text="{resources:Translate Text=Updates}" Command="{Binding UpdatesCmd,Mode=OneWay}"
                             IsEnabled="{Binding CanUpdate,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
 
-                <controls2:TitledFrameView Padding="8"
-                                           Title="{Binding ProcessesCount,StringFormat={resources:Translate Text=ThereAre_0_Processes}}">
+                <controls2:TitledFrameView
+                    Title="{Binding ProcessesCount,StringFormat={resources:Translate Text=ThereAre_0_Processes}}">
                     <Button Margin="5" Text="{resources:Translate Text=ShowProcesses}"
                             Command="{Binding ShowProcessesCmd,Mode=OneWay}"
                             HorizontalOptions="End" />
                 </controls2:TitledFrameView>
-               
+
 
             </StackLayout>
 

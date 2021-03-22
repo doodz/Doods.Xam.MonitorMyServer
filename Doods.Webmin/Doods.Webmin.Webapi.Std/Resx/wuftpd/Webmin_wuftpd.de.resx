@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>WU-FTPD-Server</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Änderungen anwenden</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um die aktuelle Konfiguration auf den laufenden DHCP-Server anzuwenden. Dies geschieht durch Stoppen und Neustarten aller laufenden FTP-Server-Prozesse, wodurch alle verbundenen Benutzer abgemeldet werden.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Server starten</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>Klicken Sie diesen Button um den FTP-Server mit der momentanen Konfiguration zu starten. Sie können den Server auch dahingehend konfigurieren, daß er aus Inetd oder XInetd oder vergleichbaren Programmen gestartet werden kann.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>FTP-Server-Einstellungen</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>WU-FTPd Version $1</value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>Benutzer und Klassen</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>Benutzerklassen und Benutzereinstellungen</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>Benutzerklassen</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>Klassenname</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>Benutzertypen</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>Übereinstimmende Adressen</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>Gast</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>Anonym</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>Unix-Benutzer und UIDs, die als Gäste behandelt werden sollen</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>Unix-Gruppen und GIDs, die als Gäste behandelt werden sollen</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>Unix-Benutzer und UIDs, die &lt;i&gt;nicht&lt;/i&gt; als Gäste behandelt werden sollen</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>Unix-Gruppen und GIDs, die &lt;i&gt;nicht&lt;/i&gt; als Gäste behandelt werden sollen</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>Unix-Benutzer, denen der Zugriff verweigert werden sollen (von $1)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>Unix-Benutzer und UIDs, denen der Zugriff verweigert werden soll</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>Unix-Gruppen und GIDs, denen der Zugriff verweigert werden soll</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>Unix-Benutzer und UIDs, denen der Zugriff &lt;i&gt;nicht&lt;/i&gt; verweigert werden soll</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>Unix-Gruppen und GIDs, denen der Zugriff &lt;/i&gt;nicht&lt;/i&gt; verweigert werden soll</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Benutzerklassen</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>'$1' ist kein gültiger Klassenname</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>Keine Typen ausgewählt für Klasse '$1'</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>Keine Adressen angegeben für Klasse '$1'</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>Meldungen und Banner</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>Meldungen, Banner und LIESMICH-Dateien</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>Meldungsdateien</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>Pfad</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>Wann sollen die Dateien angezeigt werden</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>Beim Anmelden</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>Betreten des Verzeichnisses</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>Betreten eines beliebigen Verzeichnisses</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>Klassen, denen die Meldung gezeigt werden soll</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>LIESMICH-Dateien</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>Wann Änderungsdatum angezeigt werden soll</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>Gruß-Level</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>Host-Name und Version</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>Host-Name</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>Keines</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>Banner vor Anmeldung</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>Keines</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>Von Datei</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>System-Host-Name</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>Host-Name für Meldungen</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>E-Mail-Adresse des Besitzers</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>Fehler beim Speichern von Meldungen und Bannern</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>'$1' ist kein gültiger Pfad</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>'$1' ist kein gültiges Verzeichnis</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>Klasse '$1' existiert nicht</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>'$1' ist keine gültige Anmelde-Banner-Datei</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>Fehlender oder ungültiger Host-Name</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>Fehlende oder ungültige E-Mail-Adresse</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Grenzwerte und Zugriffskontrolle</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>Grenzwerte und Zugriffskontrolleinstellungen</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>Verweigere Zugriff von</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>Verweigere von Adresse</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>Fehlermeldungsdatei</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>Datei- und Datentransfergrenzwerte</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>Grenzwerttyp</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>Dateien pro Sitzung</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>Bytes pro Sitzung</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>Nur Daten?</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>Richtung</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>Eingang</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>Ausgang</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>Beide</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>Anwenden auf Klasse</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Alle Klassen</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>Grenzwert gleichzeitiger Benutzer</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>Maximale Anzahl von Benutzern</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>Zu Zeiten</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>Fehlermeldungsdatei</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Unbegrenzt</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>Zu jeder Zeit</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>Grenzwert für anonyme Sitzungen</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>Grenzwert für Gastsitzungen</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>Maximale Anzahl von Anmeldefehlern</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>Kann Gruppe gewechselt werden?</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>Verweigere Zugriff auf Dateien</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>Zu verweigernde Dateien</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>Relativ zu Chroot?</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>Verweigere für Klassen</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>Gestatte Zugriff auf Dateien, selbst wenn verweigert</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>Zu erlaubende Dateien</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>Relativ zu Chroot?</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>Erlaube für Klassen</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Grenzwerte und Zugriffskontrolle</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>'$1' ist keine gültige Adresse</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>'$1' ist keine gültige Adressdatei</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>'$1' ist keine gültige Fehlermeldungsdatei</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>'$1' ist keine gültige Maximalzahl von Benutzern</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>'$1' ist kein gültiger UUCP-Stilzeitraum</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>'$1' ist keine gültige Fehlermeldungsdatei</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>'$1' ist keine gültige Anzahl von Dateien oder Bytes</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$1' ist keine gültige Zeitgrenze</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>'$1' ist keine gültige Anzahl von Anmeldefehlern</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>Netzwerk</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Netzwerkeinstellungen</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>TCP-Fenstergrößen</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>Größe</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>Für Klasse</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>Alle Klassen</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>Adressen für PASV-Verbindungen</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>IP-Adressen</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>Für Clients vom Netzwerk</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>Ports für PASV-Verbindungen</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>Anschlussbereich</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Netzwerkeinstellungen</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>'$1' ist keine gültige TCP-Fenstergröße</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>'$1' ist keine gültige IP-Adresse</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>'$1' ist keine gültige Netzwerkadresse</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>'$1' ist keine gültige Anzahl von Netzwerk-Bits</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>'$1' ist keine gültige Anschlussnummer</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>Protokollierung</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Protokollierungseinstellungen</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>Alle Befehle protokollieren für</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>Anonyme Benutzer</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>Gastbenutzer</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>Unix-Benutzer</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>Transfers protokollieren für</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>Richtung</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>Eingehend</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>Ausgehend</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>Beide</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>Sicherheitsverletzungen protokollieren für</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>Transfers protokollieren zu</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>Systemprotokoll</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>XFER-Protokolldatei</value>
+  </data>
+  <data name="log_sysxfer" xml:space="preserve">
+    <value>Beide Richtungen</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Protokollierungseinstellungen</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>Aliases und Pfade</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>Alias- und Pfadeinstellungen</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>CD-Verzeichnis-Aliases</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>Alias-Name</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>Alias zu Verzeichnis</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>CD-Verzeichnissuchpfad</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Aliases und Pfade</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>'$1' ist kein gültiger Alias-Name</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>'$1' ist kein gültiges Alias-Verzeichnis</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>'$1' ist kein gültiges CD-Suchverzeichnis</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>Anonymes FTP</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>Warnung - Ihr System hat keinen &lt;tt&gt;FTP&lt;/tt&gt;-Benutzer, daher ist anonymes FTP evtl. nicht konfiguriert.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>Einstellungen für anonymes FTP</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>Unix-Gruppen für anonyme Benutzer</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>Wechsle zu Gruppe</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>Für Klassen</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>Root-Verzeichnis für anonymes FTP</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>Verzeichnis</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>Für Klasse</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>Beliebig</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>Kennwortüberprüfung für anonymes FTP</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>Erlaube alles</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>Muss @ enthalten</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>Muss eine E-Mail-Adresse nach RFC822 sein</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>Verweigere Anmeldung</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>Nur warnen</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>Kennwörter für anonymes FTP, die verweigert werden sollen</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>Gast-Root-Verzeichnis</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>Für Unix-Benutzer</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Einstellungen für anonymes FTP</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>'$1' ist kein gültiges Verzeichnis</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>'$1' ist keine gültige Gruppe</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>Rechte</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>Einstellungen der Zugriffsrechte</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>Befehlseinschränkungen</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>Befehl</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>Erlauben?</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>Für Benutzertyp</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>Für Klassen</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>Anonym</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>Gast</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>Standardmäßig sind alle Befehle für alle Benutzer verfügbar</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>Verbotene Upload-Dateinamen</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>Benutzertypen</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>Fehlermeldungsdatei</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>Gestattete Zeichen</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>zu verweigernde reguläre Dateiausdrücke</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>Fehler beim Speichern der Zugriffsrechte</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>'$1' ist kein gültiger regulärer Ausdruck für Zeichen</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>Kein Benutzertyp gewählt</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>'$1' ist keine gültige Fehlermeldungsdatei</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Host-Zugriffskontrolle</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Verschiedene Einstellungen</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Verschiedene Einstellungen</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>Langer Listing-Befehl</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>Kurzer Listing-Befehl</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>Normaler Listing-Befehl</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>Shutdown-Benachrichtigungsdatei</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>Serviceprozess-Nicelevel</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>Nicelevel</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>Für Klassen</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>Alle Klassen</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>Standard-Umask für hochgeladene Dateien</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>Umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>Fehler beim Speichern der verschiedenen Optionen</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>Fehlender langer Listing-Befehl</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>Fehlender kurzer Listing-Befehl</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>Fehlender normaler Listing-Befehl</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>Fehlende Shutdown-Benachrichtigungsdatei</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>'$1' ist kein gültiger Nicelevel</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>'$1' ist keine gültige Umask</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>Benutzer und Klassen geändert</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>Nachrichten und Banner geändert</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Geänderte Begrenzungen und Zugriffskontrollen</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>Netzwerkoptionen geändert</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Logoptionen geändert</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>Geänderte Aliase und Pfade</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>Anonymes FTP geändert</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>Zugriffsoptionen geändert</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Verschiedene Optionen geändert</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Änderungen angewandt</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>FTP-Server gestartet</value>
+  </data>
+</root>

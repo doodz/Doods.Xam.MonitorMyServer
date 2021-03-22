@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="quota_unlimited" xml:space="preserve">
+    <value>無制限</value>
+  </data>
+  <data name="acl_fss" xml:space="preserve">
+    <value>このユーザが編集できるファイル システム</value>
+  </data>
+  <data name="acl_fall" xml:space="preserve">
+    <value>すべてのファイル システム</value>
+  </data>
+  <data name="acl_fsel" xml:space="preserve">
+    <value>選択..</value>
+  </data>
+  <data name="acl_quotaon" xml:space="preserve">
+    <value>クォータを有効/無効にできるようにしますか？</value>
+  </data>
+  <data name="acl_quotanew" xml:space="preserve">
+    <value>新規ユーザにクォータを設定可能にしますか？</value>
+  </data>
+  <data name="acl_ugrace" xml:space="preserve">
+    <value>ユーザの猶予時間を編集可能にしますか？</value>
+  </data>
+  <data name="acl_vtotal" xml:space="preserve">
+    <value>合計ディスク領域を表示可能にしますか？</value>
+  </data>
+  <data name="acl_ggrace" xml:space="preserve">
+    <value>グループの猶予時間を編集可能にしますか？</value>
+  </data>
+  <data name="acl_uquota" xml:space="preserve">
+    <value>このユーザがクォータを編集可能なユーザ</value>
+  </data>
+  <data name="acl_gquota" xml:space="preserve">
+    <value>このユーザがクォータを編集可能なグループ</value>
+  </data>
+  <data name="acl_uall" xml:space="preserve">
+    <value> すべてのユーザ</value>
+  </data>
+  <data name="acl_uonly" xml:space="preserve">
+    <value> 次のユーザのみ</value>
+  </data>
+  <data name="acl_uexcept" xml:space="preserve">
+    <value> 次のユーザ以外すべて</value>
+  </data>
+  <data name="acl_ugroup" xml:space="preserve">
+    <value> プライマリ グループのユーザ</value>
+  </data>
+  <data name="acl_gall" xml:space="preserve">
+    <value> すべてのグループ</value>
+  </data>
+  <data name="acl_gnone" xml:space="preserve">
+    <value> グループなし</value>
+  </data>
+  <data name="acl_gonly" xml:space="preserve">
+    <value> グループのみ</value>
+  </data>
+  <data name="acl_gexcept" xml:space="preserve">
+    <value> グループ以外すべて</value>
+  </data>
+  <data name="activate_eallow" xml:space="preserve">
+    <value>このファイル システムではクォータを有効/無効にできません</value>
+  </data>
+  <data name="activate_eon" xml:space="preserve">
+    <value>クォータをアクティブにできませんでした</value>
+  </data>
+  <data name="activate_eoff" xml:space="preserve">
+    <value>クォータを非アクティブにできませんでした</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>クォータの検査</value>
+  </data>
+  <data name="check_return" xml:space="preserve">
+    <value>$1 リスト</value>
+  </data>
+  <data name="check_ecannot" xml:space="preserve">
+    <value>このファイル システムではクォータを検査できません</value>
+  </data>
+  <data name="check_running" xml:space="preserve">
+    <value>&lt;tt&gt;quotacheck&lt;/tt&gt; コマンドを実行して&lt;tt&gt;$1&lt;/tt&gt;のブロックとファイル使用率を調べます。ファイル システムが非常に大きい場合はかなり時間がかかります...</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>... 完了しました。 </value>
+  </data>
+  <data name="check_rgroup" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="check_ruser" xml:space="preserve">
+    <value>ユーザ</value>
+  </data>
+  <data name="cgroup_efail" xml:space="preserve">
+    <value>クォータをコピーできませんでした</value>
+  </data>
+  <data name="cgroup_ecannot" xml:space="preserve">
+    <value>クォータをコピーできません</value>
+  </data>
+  <data name="cgroup_egallow" xml:space="preserve">
+    <value>このグループのクォータはコピーできません</value>
+  </data>
+  <data name="cgroup_enogroup" xml:space="preserve">
+    <value>コピーするグループがありません</value>
+  </data>
+  <data name="cgroup_eallowto" xml:space="preserve">
+    <value>'$1' にクォータはコピーできません</value>
+  </data>
+  <data name="cgform_title" xml:space="preserve">
+    <value>クォータのコピー</value>
+  </data>
+  <data name="cgform_return" xml:space="preserve">
+    <value>グループ クォータ</value>
+  </data>
+  <data name="cgform_ecannot" xml:space="preserve">
+    <value>クォータをコピーできません</value>
+  </data>
+  <data name="cgform_egroup" xml:space="preserve">
+    <value>このグループのクォータはコピーできません</value>
+  </data>
+  <data name="cgform_copyto" xml:space="preserve">
+    <value>すべてのファイル システムで&lt;tt&gt;$1&lt;/tt&gt; のクォータをコピー...</value>
+  </data>
+  <data name="cgform_all" xml:space="preserve">
+    <value>システムのすべてのグループ</value>
+  </data>
+  <data name="cgform_select" xml:space="preserve">
+    <value>選択されたグループ</value>
+  </data>
+  <data name="cgform_contain" xml:space="preserve">
+    <value>ユーザを含むグループ</value>
+  </data>
+  <data name="cgform_doit" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="cuser_efail" xml:space="preserve">
+    <value>クォータをコピーできませんでした</value>
+  </data>
+  <data name="cuser_ecannot" xml:space="preserve">
+    <value>クォータをコピーできません</value>
+  </data>
+  <data name="cuser_euallow" xml:space="preserve">
+    <value>このユーザのクォータをコピーできません</value>
+  </data>
+  <data name="cuser_enouser" xml:space="preserve">
+    <value>コピーするユーザがありません</value>
+  </data>
+  <data name="cuser_eallowto" xml:space="preserve">
+    <value>'$1' にクォータはコピーできません</value>
+  </data>
+  <data name="cuform_title" xml:space="preserve">
+    <value>クォータのコピー</value>
+  </data>
+  <data name="cuform_return" xml:space="preserve">
+    <value>ユーザ クォータ</value>
+  </data>
+  <data name="cuform_ecannot" xml:space="preserve">
+    <value>クォータをコピーできません</value>
+  </data>
+  <data name="cuform_euallow" xml:space="preserve">
+    <value>このユーザのクォータをコピーできません</value>
+  </data>
+  <data name="cuform_copyto" xml:space="preserve">
+    <value>すべてのファイル システムで&lt;tt&gt;$1&lt;/tt&gt; のクォータをコピー...</value>
+  </data>
+  <data name="cuform_all" xml:space="preserve">
+    <value>システムのすべてのユーザ</value>
+  </data>
+  <data name="cuform_select" xml:space="preserve">
+    <value>選択されたユーザ</value>
+  </data>
+  <data name="cuform_members" xml:space="preserve">
+    <value>選択されたグループのメンバー</value>
+  </data>
+  <data name="cuform_doit" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="egroup_title" xml:space="preserve">
+    <value>クォータの編集</value>
+  </data>
+  <data name="egroup_freturn" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="egroup_greturn" xml:space="preserve">
+    <value>グループ リスト</value>
+  </data>
+  <data name="egroup_eallowgr" xml:space="preserve">
+    <value>'$1' のクォータは編集できません</value>
+  </data>
+  <data name="egroup_eallowfs" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="egroup_quotas" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt;のクォータ(&lt;tt&gt;$2&lt;/tt&gt;)</value>
+  </data>
+  <data name="egroup_bused" xml:space="preserve">
+    <value>使用されたブロック</value>
+  </data>
+  <data name="egroup_sblimit" xml:space="preserve">
+    <value>ソフト ブロック制限</value>
+  </data>
+  <data name="egroup_hblimit" xml:space="preserve">
+    <value>ハード ブロック制限</value>
+  </data>
+  <data name="egroup_fused" xml:space="preserve">
+    <value>使用されたファイル</value>
+  </data>
+  <data name="egroup_sflimit" xml:space="preserve">
+    <value>ソフト ファイル制限</value>
+  </data>
+  <data name="egroup_hflimit" xml:space="preserve">
+    <value>ハード ファイル制限</value>
+  </data>
+  <data name="egroup_update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="egroup_listall" xml:space="preserve">
+    <value>すべてのクォータをリスト</value>
+  </data>
+  <data name="euser_title" xml:space="preserve">
+    <value>クォータの編集</value>
+  </data>
+  <data name="euser_freturn" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="euser_ureturn" xml:space="preserve">
+    <value>ユーザ リスト</value>
+  </data>
+  <data name="euser_eallowus" xml:space="preserve">
+    <value>'$1' のクォータは編集できません</value>
+  </data>
+  <data name="euser_eallowfs" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="euser_quotas" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt;のクォータ(&lt;tt&gt;$2&lt;/tt&gt;)</value>
+  </data>
+  <data name="euser_bused" xml:space="preserve">
+    <value>使用されたブロック</value>
+  </data>
+  <data name="euser_bdisk" xml:space="preserve">
+    <value>ディスクで使用可能なブロック</value>
+  </data>
+  <data name="euser_sblimit" xml:space="preserve">
+    <value>ソフト ブロック制限</value>
+  </data>
+  <data name="euser_hblimit" xml:space="preserve">
+    <value>ハード ブロック制限</value>
+  </data>
+  <data name="euser_fused" xml:space="preserve">
+    <value>使用されたファイル</value>
+  </data>
+  <data name="euser_fdisk" xml:space="preserve">
+    <value>ディスクで使用可能なファイル</value>
+  </data>
+  <data name="euser_sflimit" xml:space="preserve">
+    <value>ソフト ファイル制限</value>
+  </data>
+  <data name="euser_hflimit" xml:space="preserve">
+    <value>ハード ファイル制限</value>
+  </data>
+  <data name="euser_update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="euser_listall" xml:space="preserve">
+    <value>すべてのクォータをリスト</value>
+  </data>
+  <data name="gfilesys_title" xml:space="preserve">
+    <value>グループ クォータ</value>
+  </data>
+  <data name="gfilesys_return" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="gfilesys_ecannot" xml:space="preserve">
+    <value>'$1' のクォータは編集できません</value>
+  </data>
+  <data name="gfilesys_all" xml:space="preserve">
+    <value>すべてのクォータ</value>
+  </data>
+  <data name="gfilesys_blocks" xml:space="preserve">
+    <value>ブロック</value>
+  </data>
+  <data name="gfilesys_files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="gfilesys_fs" xml:space="preserve">
+    <value>ファイル システム</value>
+  </data>
+  <data name="gfilesys_used" xml:space="preserve">
+    <value>使用済</value>
+  </data>
+  <data name="gfilesys_soft" xml:space="preserve">
+    <value>ソフト制限</value>
+  </data>
+  <data name="gfilesys_hard" xml:space="preserve">
+    <value>ハード制限</value>
+  </data>
+  <data name="gfilesys_nogquota" xml:space="preserve">
+    <value>グループ&lt;tt&gt;$1&lt;/tt&gt; はいずれのファイル システムでもクォータがありません</value>
+  </data>
+  <data name="gfilesys_edit" xml:space="preserve">
+    <value>クォータの編集:</value>
+  </data>
+  <data name="gfilesys_copy" xml:space="preserve">
+    <value>クォータのコピー</value>
+  </data>
+  <data name="ggracef_title" xml:space="preserve">
+    <value>猶予時間</value>
+  </data>
+  <data name="ggracef_return" xml:space="preserve">
+    <value>グループ リスト</value>
+  </data>
+  <data name="ggracef_ecannot" xml:space="preserve">
+    <value>このファイル システムでは猶予期間を編集できません</value>
+  </data>
+  <data name="ggracef_info" xml:space="preserve">
+    <value>各ファイル システムにはブロックとファイル クォータの猶予時間があります。猶予時間は、それ以上ファイルを作成できないソフト制限上でグループが存続できる時間を定義します。 </value>
+  </data>
+  <data name="ggracef_graces" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; のグループ猶予時間</value>
+  </data>
+  <data name="ggracef_block" xml:space="preserve">
+    <value>ブロック クォータ</value>
+  </data>
+  <data name="ggracef_file" xml:space="preserve">
+    <value>ファイル クォータ</value>
+  </data>
+  <data name="ggracef_update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="ggraces_esave" xml:space="preserve">
+    <value>猶予時間を保存できませんでした</value>
+  </data>
+  <data name="ggraces_eedit" xml:space="preserve">
+    <value>このファイル システムでは猶予期間を編集できません</value>
+  </data>
+  <data name="ggraces_enumber" xml:space="preserve">
+    <value>'$1' は数ではありません</value>
+  </data>
+  <data name="index_quser" xml:space="preserve">
+    <value>ユーザ クォータ</value>
+  </data>
+  <data name="index_qgroup" xml:space="preserve">
+    <value>グループ クォータ</value>
+  </data>
+  <data name="index_qboth" xml:space="preserve">
+    <value>ユーザとグループ クォータ</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>アクティブ</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>クォータを無効</value>
+  </data>
+  <data name="index_inactive" xml:space="preserve">
+    <value>非アクティブ</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>クォータを有効</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>ディスク クォータ</value>
+  </data>
+  <data name="index_fs" xml:space="preserve">
+    <value>ファイル システム</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="index_mount" xml:space="preserve">
+    <value>マウント元</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>アクション</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>インデックス</value>
+  </data>
+  <data name="index_euser" xml:space="preserve">
+    <value>ユーザ クォータの編集:</value>
+  </data>
+  <data name="index_egroup" xml:space="preserve">
+    <value>グループ クォータの編集:</value>
+  </data>
+  <data name="index_nosupport" xml:space="preserve">
+    <value>ローカル ファイル システムはクォータをサポートできません</value>
+  </data>
+  <data name="lgroups_failed" xml:space="preserve">
+    <value>グループをリストできませんでした</value>
+  </data>
+  <data name="lgroups_eallow" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="lgroups_title" xml:space="preserve">
+    <value>ファイル システム クォータ</value>
+  </data>
+  <data name="lgroups_return" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="lgroups_toomany" xml:space="preserve">
+    <value>1 ページで表示するには&lt;tt&gt;$1&lt;/tt&gt; でクォータを持つグループが多すぎます</value>
+  </data>
+  <data name="lgroups_quotas" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; のすべてのグループ クォータ</value>
+  </data>
+  <data name="lgroups_blocks" xml:space="preserve">
+    <value>ブロック</value>
+  </data>
+  <data name="lgroups_files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="lgroups_group" xml:space="preserve">
+    <value>グループ</value>
+  </data>
+  <data name="lgroups_used" xml:space="preserve">
+    <value>使用済</value>
+  </data>
+  <data name="lgroups_soft" xml:space="preserve">
+    <value>ソフト制限</value>
+  </data>
+  <data name="lgroups_hard" xml:space="preserve">
+    <value>ハード制限</value>
+  </data>
+  <data name="lgroups_noquota" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; でクォータを持つグループはありません</value>
+  </data>
+  <data name="lgroups_equota" xml:space="preserve">
+    <value>クォータの編集:</value>
+  </data>
+  <data name="lgroups_grace" xml:space="preserve">
+    <value>猶予時間を編集</value>
+  </data>
+  <data name="lgroups_check" xml:space="preserve">
+    <value>クォータを検査</value>
+  </data>
+  <data name="sgroup_egroup" xml:space="preserve">
+    <value>このグループのクォータは編集できません</value>
+  </data>
+  <data name="sgroup_efs" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="ssync_ecannot" xml:space="preserve">
+    <value>このファイル システムではデフォルト クォータを設定できません</value>
+  </data>
+  <data name="suser_euser" xml:space="preserve">
+    <value>このユーザのクォータは編集できません</value>
+  </data>
+  <data name="suser_efs" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="ufilesys_title" xml:space="preserve">
+    <value>ユーザ クォータ</value>
+  </data>
+  <data name="ufilesys_return" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="ufilesys_ecannot" xml:space="preserve">
+    <value>'$1' のクォータは編集できません</value>
+  </data>
+  <data name="ufilesys_all" xml:space="preserve">
+    <value>すべてのクォータ &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ufilesys_blocks" xml:space="preserve">
+    <value>ブロック</value>
+  </data>
+  <data name="ufilesys_files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="ufilesys_fs" xml:space="preserve">
+    <value>ファイル システム</value>
+  </data>
+  <data name="ufilesys_used" xml:space="preserve">
+    <value>使用済</value>
+  </data>
+  <data name="ufilesys_soft" xml:space="preserve">
+    <value>ソフト制限</value>
+  </data>
+  <data name="ufilesys_hard" xml:space="preserve">
+    <value>ハード制限</value>
+  </data>
+  <data name="ufilesys_nouquota" xml:space="preserve">
+    <value>ユーザ&lt;tt&gt;$1&lt;/tt&gt; はいずれのファイル システムでもクォータがありません</value>
+  </data>
+  <data name="ufilesys_edit" xml:space="preserve">
+    <value>クォータの編集:</value>
+  </data>
+  <data name="ufilesys_copy" xml:space="preserve">
+    <value>クォータのコピー</value>
+  </data>
+  <data name="ugracef_title" xml:space="preserve">
+    <value>猶予時間</value>
+  </data>
+  <data name="ugracef_return" xml:space="preserve">
+    <value>ユーザ リスト</value>
+  </data>
+  <data name="ugracef_ecannot" xml:space="preserve">
+    <value>このファイル システムでは猶予期間を編集できません</value>
+  </data>
+  <data name="ugracef_info" xml:space="preserve">
+    <value>各ファイル システムにはブロックとファイル クォータの猶予時間があります。猶予時間は、それ以上ファイルを作成できないソフト制限上でユーザが存続できる時間を定義します。 </value>
+  </data>
+  <data name="ugracef_graces" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; のユーザ猶予時間</value>
+  </data>
+  <data name="ugracef_block" xml:space="preserve">
+    <value>ブロック クォータ</value>
+  </data>
+  <data name="ugracef_file" xml:space="preserve">
+    <value>ファイル クォータ</value>
+  </data>
+  <data name="ugracef_update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="ugraces_esave" xml:space="preserve">
+    <value>猶予時間を保存できませんでした</value>
+  </data>
+  <data name="ugraces_eedit" xml:space="preserve">
+    <value>このファイル システムでは猶予期間を編集できません</value>
+  </data>
+  <data name="ugraces_enumber" xml:space="preserve">
+    <value>'$1' は数ではありません</value>
+  </data>
+  <data name="lusers_failed" xml:space="preserve">
+    <value>ユーザをリストできませんでした</value>
+  </data>
+  <data name="lusers_eallow" xml:space="preserve">
+    <value>このファイル システムではクォータを編集できません</value>
+  </data>
+  <data name="lusers_title" xml:space="preserve">
+    <value>ファイル システム クォータ</value>
+  </data>
+  <data name="lusers_return" xml:space="preserve">
+    <value>ファイル システムのリスト</value>
+  </data>
+  <data name="lusers_toomany" xml:space="preserve">
+    <value>1 ページで表示するには&lt;tt&gt;$1&lt;/tt&gt;でクォータを持つユーザが多すぎます</value>
+  </data>
+  <data name="lusers_qoutas" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; のすべてのユーザ クォータ</value>
+  </data>
+  <data name="lusers_blocks" xml:space="preserve">
+    <value>ブロック</value>
+  </data>
+  <data name="lusers_files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="lusers_user" xml:space="preserve">
+    <value>ユーザ</value>
+  </data>
+  <data name="lusers_used" xml:space="preserve">
+    <value>使用済</value>
+  </data>
+  <data name="lusers_soft" xml:space="preserve">
+    <value>ソフト制限</value>
+  </data>
+  <data name="lusers_hard" xml:space="preserve">
+    <value>ハード制限</value>
+  </data>
+  <data name="lusers_noquota" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt; でクォータを持つユーザはありません</value>
+  </data>
+  <data name="lusers_equota" xml:space="preserve">
+    <value>クォータの編集:</value>
+  </data>
+  <data name="lusers_egrace" xml:space="preserve">
+    <value>猶予時間の編集</value>
+  </data>
+  <data name="lusers_check" xml:space="preserve">
+    <value>クォータの検査</value>
+  </data>
+  <data name="lusers_info" xml:space="preserve">
+    <value>新規の Unix ユーザが作成されたときにこのファイル システムに自動的にクォータを設定するように Webmin を設定できます。これは、ユーザを追加するために $1 Webmin モジュールが使用されたときにのみ動作します。</value>
+  </data>
+  <data name="lusers_useradmin" xml:space="preserve">
+    <value>ユーザとグループ</value>
+  </data>
+  <data name="lusers_newuser" xml:space="preserve">
+    <value>新規のユーザ クォータ</value>
+  </data>
+  <data name="lusers_sblimit" xml:space="preserve">
+    <value>ソフト ブロック制限</value>
+  </data>
+  <data name="lusers_hblimit" xml:space="preserve">
+    <value>ハード ブロック制限</value>
+  </data>
+  <data name="lusers_sflimit" xml:space="preserve">
+    <value>ソフト ファイル制限</value>
+  </data>
+  <data name="lusers_hflimit" xml:space="preserve">
+    <value>ハード ファイル制限</value>
+  </data>
+  <data name="lusers_apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="grace_seconds" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="grace_minutes" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="grace_hours" xml:space="preserve">
+    <value>時</value>
+  </data>
+  <data name="grace_days" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="grace_weeks" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="grace_months" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="log_activate_u" xml:space="preserve">
+    <value>$1 でユーザのクォータを有効にしました</value>
+  </data>
+  <data name="log_activate_g" xml:space="preserve">
+    <value>$1 でグループのクォータを有効にしました</value>
+  </data>
+  <data name="log_activate_ug" xml:space="preserve">
+    <value>$1 でユーザとグループのクォータを有効にしました</value>
+  </data>
+  <data name="log_deactivate_u" xml:space="preserve">
+    <value>$1 でユーザのクォータを無効にしました</value>
+  </data>
+  <data name="log_deactivate_g" xml:space="preserve">
+    <value>$1 でグループのクォータを無効にしました</value>
+  </data>
+  <data name="log_deactivate_ug" xml:space="preserve">
+    <value>$1 でユーザとグループのクォータを無効にしました</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>$2 上の$1 のクォータを変更しました</value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>$1 で新規のユーザ クォータを変更しました</value>
+  </data>
+  <data name="log_grace_u" xml:space="preserve">
+    <value>$1 でユーザ猶予時間を変更しました</value>
+  </data>
+  <data name="log_grace_g" xml:space="preserve">
+    <value>$1 でグループ猶予時間を変更しました</value>
+  </data>
+  <data name="log_check" xml:space="preserve">
+    <value>$1 でクォータを検査しました</value>
+  </data>
+  <data name="log_copy_u" xml:space="preserve">
+    <value>ユーザ $1 のクォータをコピーしました</value>
+  </data>
+  <data name="log_copy_g" xml:space="preserve">
+    <value>グループ $1 のクォータをコピーしました</value>
+  </data>
+</root>

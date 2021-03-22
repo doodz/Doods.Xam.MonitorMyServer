@@ -66,11 +66,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
             var arrayString = result.ToArray();
 
 
-
-            int i = 0;
+            var i = 0;
             foreach (var byteArray in files)
             {
-
                 var img = new StreamImageSource();
                 img.Stream = token => Task.FromResult<Stream>(new MemoryStream(byteArray));
 
@@ -110,9 +108,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics
 
     public class RrdImageSource
     {
-
         public double MinimumWidth => DeviceDisplay.MainDisplayInfo.Width;
-        public double Minimumhey => DeviceDisplay.MainDisplayInfo.Width/2;
+        public double Minimumhey => DeviceDisplay.MainDisplayInfo.Width / 2;
         public ImageSource ImageSource { get; set; }
 
         public string FileName { get; set; }

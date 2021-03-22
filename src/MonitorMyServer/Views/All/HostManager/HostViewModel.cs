@@ -140,6 +140,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
                 }
             }, TaskContinuationOptions.ExecuteSynchronously);
         }
+
         private async Task PingAndSetStatus(IPAddress adress)
         {
             var timeout = 2500;

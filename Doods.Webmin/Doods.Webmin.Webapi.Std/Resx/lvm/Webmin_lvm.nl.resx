@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logisch Volume Management</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>De LVM opdracht $1 is niet gevonden op uw systeem. Webmin heeft de LVM administratie opdrachten nodig om logische volumes op te zetten en te beheren.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>De LVM status directory $1 bestaat niet. Dit houd in dat uw kernel geen LVM ondersteunt, of dat de $2 kernel module niet is geladen.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Volume Groepen</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Fysieke volumes</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Logische Volumes</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Er zijn geen volume groepen gevonden op uw systeem.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Voeg een nieuwe groep toe</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Deze volume groep heeft&lt;br&gt; nog geen logische volumes.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Deze volume groep heeft&lt;br&gt; nog geen fysiek volume.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Voeg een Fysiek volume toe aan de groep</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Voeg een fysiek volume toe aan &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Maak een logische volume in &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Maak een snapshot in &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Maak een nieuw logisch volume.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Een nieuw snapshot aanmaken.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>volume groepen</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin ondersteund alleen LVM versies 1.0 en hoger. Het resultaat van $1 op uw systeem was : $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM versie $1</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Volume groep naam</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Totale grote</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Gebruikte blokken</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Gebruikte grote</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Er is nog geen fysiek volume toegevoegd aan een volume groep.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Er zijn nog geen logische volumes aangemaakt van een volume groep.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Fysiek volume apparaat</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>In volume groep</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Apparaat grote</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Gebruikte blokken</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Gebruikte grote</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Een volume groep is een aantal harddisken die kunnen worden toegewezen aan één of meerdere logische volumes. Meeste systemen zullen er één hebben, en er moet er minimaal één gemaakt zijn voordat er een fysiek of logisch volume kan zijn.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Een fysiek volume is een harddisk partitie of RAID apparaat die een deel is van een volume groep. Deze harddisk ruimte kan dan gebruikt worden door één of meer logische volumes.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Een logische volume is een virtuele partitie die gemaakt is van gecombineerde harddisk ruimte van een volume groep. Ieder kan een filesysteem hebben en dan gemount zijn aan opgeslagen files.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Logische volume</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Volume groep</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Grote</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Gebruikte ruimte</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Gebruikt voor</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Snapshot van $1)</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Bewerk Logisch Volume</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Bewerk Snapshot</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Maak Logische Volume</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Maak Snapshot</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>In volume groep $1</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Logische volume details</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Volume naam</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Volume grote</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absolute grote</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Percentage van VG grote</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Percentage van VG vrije ruimte</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Percentage van PV vrije ruimte</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 van $2</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Exacte grote</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Grote met eenheden</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Apparaat file</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Huidige status</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Gemount op $1 als $2</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Om te mounten op $1 als $2</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Gemount als virtueel geheugen</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Om te mounten als virtueel geheugen</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Deel van RAID apparaat $1</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Word gebruikt door Cloudmin systeem $1</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Voor gebruik met Cloudmin systeem $1</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Niet in gebruik</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Dit logische volume kan niet hernoemd of verschaalt worden omdat het in gebruik is.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Volume toegang</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Lees/schrijf</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Alleen lezen</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Toegewezen methoden</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Aangrenzend</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Niet-Aangrenzend</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Volume striping</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Uitgeschakeld (altijd toewijzen vanaf start)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Stripe tussen $1 fysieke volumes</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Fysiek volume om te stripen tussen</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Stripe grote</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Vooruit Lees Sectors</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Mislukt om logische volume op te slaan</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Ontbrekende of ongeldige volume naam</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Een logische volume met dezelfde naam bestaat reeds</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Ontbrekende of ongeldige volume grote</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Ontbrekende of ongeldige volume groep grote percentage</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Ontbrekende of ongeldige vrije volume groep-grote percentage</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Ontbrekende of ongeldige vrije fysische volume grote percentage.</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Ontbrekende of ongeldige aantal stripes</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Verwijder Logisch Volume</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u het logische volume $1 wilt verwijderen? Alle data in het filesysteem op dit logische volume word voor altijd gewist!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Weet u zeker dat u de snapshot $1 wilt verwijderen?</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Verwijder Nu</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Mislukt om logische volume te verwijderen</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Toegewezen blok grote</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Toegewezen blokken van volume groep</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 van $2</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Aangemaakt Filesysteem van het Type :</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Filesysteem aanmaken</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Selecteer een filesysteem type en klik op deze knop om een nieuw filesysteem te maken op deze logische volume. Dit zal alle data op dit volume wissen.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Klik op deze knop om het nieuwe $1 filesysteem aan te maken op dit logische volume. Dit zal alle data op het huidige volume wissen.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>De nieuwe volume grote is $1 blokken (ieder van $2), maar alleen $3 zijn er vrij in de volume groep.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Snapshot van logisch volume</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Kon het niet bepalen!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Mount LV op :</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Mount deze LV aan een nieuwe directory op uw systeem, zodat dit gebruikt kan worden om files op te slaan. Een filesysteem moet reeds gemaakt zijn.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Vrije percentage</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Vrije ruimte</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Fysiek volume toegewezen</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Snapshot gebruikt percentage</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Logisch volume bestaat niet langer!</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Aangemaakt Filesysteem</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Met dit formulier kunt u een nieuw $2 ($1) filesysteem op het logische volume $3 bouwen. Alle bestaande data zal worden gewist.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Nieuwe filesysteem opties</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Mislukt om een filesysteem aan te maken</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Uitvoeren van opdracht $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. opdracht mislukt!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. opdracht compleet.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Verschalen Logisch Volume</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Het $1 filesysteem op dit logische volume kan niet verschaalt worden. Als u het logische volume verschaalt moet u het filesysteem opnieuw maken waardoor alle data hierop gewist zal worden.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin weet niet wat voor soort filesysteem op dit logische volume staat. Als u het logische volume verschaalt moet u het filesysteem opnieuw aanmaken waardoor alle data hierop gewist zal worden.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Er is een fout opgetreden om het filesysteem $1 te verschalen op dit logische volume : $2 Als u het logische volume verschaalt moet u het filesysteem opnieuw maken waardoor alle data hierop gewist zal worden.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Verschalen Logisch Volume</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Het filesysteem op dit logische volume kan niet worden verschaalt omdat het ge-mount is.</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Het filesysteem op dit logische volume kan niet worden verkleint omdat het ge-mount is.</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Activeer LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Uitvoerende opdracht $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Bewerk Fysiek Volume</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Fysiek Volume Toevoegen</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>In volume groep $1</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Fysieke volume details</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Harddisk apparaten</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Ander apparaat..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Aanzetten voor toewijzing?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Extra volume geforceerd bijmaken?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Harddisk grote</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Toegewezen blokken</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Toegewezen grote</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Toegewezen blok grote</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Waarschuwing! Alle data op het geselecteerde apparaat word gewist.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Toevoegen aan volume groep</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Verwijderen van volume groep</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Verschaal Naar Grote Apparaat</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Mislukt om fysiek volume op te slaan</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Mislukt om fysiek volume te verwijderen</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Verschalen van fysiek volume mislukte</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Verwijder Fysiek Volume</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u het fysieke volume apparaat $1 wilt verwijderen van zijn volume groep? Dit zal resulteren dat er data word verschoven naar andere fysieke volumes binnen de groep.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Verwijder Volume</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Ontbrekende of ongeldig harddisk</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAID apparaat $1</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Toegewezen door logische volumes</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Fysiek volume bestaat niet meer!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Bewerk Volume Groep</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Maak Volume Groep</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Volume groep naam</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Volume groep details</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Totale grote</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Toegewezen blokken</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Toegewezen grote</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Toegewezen blok grote</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Aanvankelijk fysiek apparaat</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Mislukt om volume groep op te slaan</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Mislukt om volume groep te verwijderen</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Verwijder Volume Groep</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u de volume groep $1 wilt verwijderen?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Deze volume groep kan niet worden verwijdert omdat het nog steeds $1 logische volumes heeft.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Verwijder Nu</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Ontbrekende of ongeldige volume groep naam</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Ontbrekende of ongeldige toegewezen blok grote</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Volume groep bestaat niet langer!</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Aangemaakte volume groep $1</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Gemodificeerde volume groep $1</value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Gewiste volume groep $1</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Aangemaakt logische volume $1 in VG $2</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Gemodificeerd logisch volume $1 in VG $2</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Gewiste logische volume $1 in VG $2</value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>$1 filesysteem aangemaakt op $2</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Toegevoegd fysiek volume $1 aan VG $1</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Gemodificeerd fysiek volume $1 in VG $2</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Verwijderde fysieke volume $1 van VG $2</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Aangepast formaat fysiek volume $1 in VG $2</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>Blokken</value>
+  </data>
+</root>

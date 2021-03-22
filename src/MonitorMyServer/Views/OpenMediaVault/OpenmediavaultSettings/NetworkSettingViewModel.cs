@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
-using Doods.Openmedivault.Ssh.Std.Data;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {
@@ -9,12 +8,12 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
         private string _domainname;
 
         private string _hostname;
+
         public string Domainname
         {
             get => _domainname;
             set => SetProperty(ref _domainname, value);
         }
-
 
 
         public string Hostname

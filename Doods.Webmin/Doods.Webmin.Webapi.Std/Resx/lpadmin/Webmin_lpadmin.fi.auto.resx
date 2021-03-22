@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Tulostimen hallinto</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Saatavana olevat tulostimet</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>kirjoitin</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Tulosta</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>kuljettaja</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Käytössä?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Hyväksyminen?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Työpaikat</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Tähän järjestelmään ei ole asennettu tulostimia.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Lista ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Työpaikat ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 työpaikkaa ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Lisää uusi tulostin.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Lopeta aikataulu</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Napsauta tätä painiketta, kun haluat pysäyttää käynnissä olevan tulostusaikataulun. Tämä estää paikallisia tai etäkäyttäjiä tulostamasta järjestelmääsi.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Käynnistä ajoittaja</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Napsauta tätä painiketta, kun haluat aloittaa tulostusaikataulun. Tämän avulla paikalliset ja etäkäyttäjät voivat tulostaa järjestelmässäsi.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Käynnistä ajoitus</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Napsauta tätä painiketta, kun haluat käynnistää tulostusaikataulun uudelleen. Tämä pakottaa nykyisen tulostusmäärityksen käyttämään.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>tulostinluettelo</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Tulostusjärjestelmä: $1 </value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Klusteripalvelimet</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Napsauta tätä painiketta, jos haluat asettaa uusia Webmin-palvelimia, joille tulostimet luodaan, päivitetään ja poistetaan.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Poista valitut tulostimet</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Tätä tulostinta ei saa muokata</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Et voi lisätä tulostimia</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Luo tulostin</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Muokkaa tulostinta</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Tulostimen asetukset</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Nimi</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Hyväksytkö pyyntöjä?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Ei - Miksi ei</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Tulostaminen käytössä?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Kulunvalvonta</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Salli kaikkien</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Kieltää kaikki</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Salli luettelossa olevat käyttäjät ..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Estä luetellut käyttäjät ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Tulosta banneri?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Valinnainen</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Oletustulostin?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Jo oletustulostin</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Tulostustöiden enimmäiskoko</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Rajoittamaton</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Kuljettaja hyväksyy</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Teksti</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>jälkikirjoitus</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>muut</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Vaihtoehtoiset tulostimen nimet</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Tulosta kohde</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Paikallinen laite</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Paikallinen tiedosto</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Etä Unix-palvelin</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>kirjoitin</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tyyppi</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Windows-etäpalvelin</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>kirjoitin</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>käyttäjä</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Salasana</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Workgroup</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Etä HPNP-palvelin</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>portti</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Suora TCP-yhteys</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>portti</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Tulostinohjain</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Tarkista onko etäpalvelin käytössä?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>lohkot</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Tulostimen tallennus epäonnistui</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Et voi lisätä tulostimia</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Tätä tulostinta ei saa muokata</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen tulostimen nimi</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>'$1' -niminen tulostin on jo olemassa</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Ei käyttäjiä sallia pääsyä</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Ei kieltäviä käyttäjiä</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Käyttäjää '$1' ei ole</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Sinun on valittava vähintään yksi tyyppi, jonka tämä ohjain hyväksyy</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Tulostustöiden enimmäiskoko on oltava kokonaisluku</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' ei ole olemassa</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Etäisäntää '$1' ei ole olemassa</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Etäportti '$1' ei kelpaa</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen etäjonon nimi</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Ohjaimia ei voi käyttää etä Unix-tulostimien kanssa</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Suoraa isäntää '$1' ei ole olemassa</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Puuttuva tai virheellinen suoraportti</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Tulostusjärjestelmä ei salli tätä tulostinta</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Tulostin loi OK tähän järjestelmään, mutta klusterijärjestelmissä tapahtui seuraavia virheitä : $1 </value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Tulostinta nimeltä '$1' ei löytynyt</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Tulostin poisti OK tässä järjestelmässä, mutta klusterijärjestelmissä tapahtui seuraavat virheet : $1 </value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Tulostustyöt</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Tulostustyöt $1 : llä</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>Työtunnus</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Koko</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Lähettäjä</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Lähetetty klo</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Tiedoston nimi</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Napsauta työpaikan tunnusta yllä olevasta luettelosta peruuttaaksesi.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Napsauta työpaikan tunnusta yllä olevasta luettelosta peruuttaaksesi tai napsauta työn kokoa nähdäksesi sen.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Tulostimella $1 ei ole vireillä olevia töitä.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Peruuta kaikki tulostustyöt</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>tavua</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Tulosta testisivu</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Peruuta valitut työt</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Tulostimessa $1 </value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>luettelo tulostustöistä</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Et voi peruuttaa tulostustöitä</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Tulostustyön peruuttaminen epäonnistui</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Tulostustyötä $1 ei enää ole</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Et voi tarkastella tätä tulostustyötä</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Tätä tulostustyötä ei enää ole</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Sinulla ei ole oikeutta käynnistää ajoitusta</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Aikataulun käynnistäminen epäonnistui</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Et voi lopettaa aikataulua</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Aikataulun lopettaminen epäonnistui</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Aikataulua ei saa käynnistää uudelleen</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Aikataulun käynnistäminen epäonnistui</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Postscript tai tekstitulostin</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Etätulostin</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Malli</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Ohjelmoida</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin-ohjain</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint-ohjain</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>$1 : n ohjainten hakeminen epäonnistui. Ghostscriptiä käyttävät Webmin-tulostinohjaimet eivät ole käytettävissä</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Komentoa $1 ei löytynyt. Ghostscriptiä käyttävät Webmin-tulostinohjaimet eivät ole käytettävissä</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' ei ole olemassa</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Etä- tai raakatulostin</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Ohjelmoida</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS-kuljettaja</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Tulostin ja resoluutio</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Lähetä EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Paperikoko</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Tulostetaanko kaksipuolinen?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Muut GS-vaihtoehdot</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint-ohjain</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' ei ole olemassa</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Tulostinohjainta ei ole valittu</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Resoluutiota ei ole valittu</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Postscript tai tekstitulostin</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Ohjelmoida</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat kuljettaja</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Tulostin ja resoluutio</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Lähetä EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Paperikoko</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Sivuja tulostettua sivua kohti</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Muut GS-vaihtoehdot</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Oikea/vasen marginaali</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Ylä/alamarginaali</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Korjaa portaiden askelmainen teksti?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' ei ole olemassa</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Tulostinohjainta ei ole valittu</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Puuttuva tai virheellinen oikea/vasen reuna</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Puuttuva tai virheellinen ylä-/alamarginaali</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Resoluutiota ei ole valittu</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Tulostimen malli ja ohjain</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postscript tai tekstitulostin</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Ohjelmoida</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APS-suodattimen ohjain</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Tulostimen tyyppi</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Tarkkuus DPI: ssä</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Väritulostin?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Paperikoko</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Suodatusmenetelmä</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automaattinen</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Raaka</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Extra ghostscript -asetukset</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2-ohjain</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Tulostintyyppiä ei ole valittu</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Puuttuva tai virheellinen ratkaisu</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Lpd: $1  : n lopettaminen epäonnistui</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Tämän käyttäjän määrittämät tulostimet</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Voiko uusia tulostimia lisätä?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Voiko peruuttaa tulostustyöt?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Voiko pysäyttää tai käynnistää aikataulun?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Käynnistä vain uudelleen</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Vain valituilla tulostimilla ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Kaikki tulostimet</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Valitut ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Näytetäänkö konfiguroimattomat tulostimet?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Voiko testisivuja tulostaa?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Hallinnoi</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Kaikki käyttäjät</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Nykyinen Webmin-käyttäjä</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Voiko tulostimia poistaa?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Voiko tulostusklasteria hallita?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Pysäytetty tulostusaikataulu</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Aloitettu tulostusaikataulu</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Käynnistettiin tulostusaikataulu</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Peruutettu tulostustyö $2 $1 : llä</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Peruutti kaikki $1 -tulostustyöt</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Peruutettiin $2 : n tulostustyöt kohdalla $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Luotu tulostin $1 $2 : een</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Muokattu tulostin $1 $2 : ssa</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Poistettu tulostin $1 $2 : sta</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Luotu $3 tulostin $1 $2 : een</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Muokattu $3 -tulostin $1 $2 : ssa</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Poistettu $3 tulostin $1 $2 : sta</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti $1 </value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Sarjaportti $1 (COM $1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Nolla laite</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB-tulostin $1 </value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että Linux-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Ryhmähakemistoa $1 ei ole järjestelmässäsi, mikä osoittaa, että Linux-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Sarjaportti $1 (COM $1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että FreeBSD-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Kelahakemistoa $1 ei ole järjestelmässäsi, mikä osoittaa, että FreeBSD-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Sarjaportti $1 (COM $1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti $1 </value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Sarjaportti $1 </value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Nolla laite</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että UnixWare-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Rinnakkais $1 </value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Sarja $1 </value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Nolla laite</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että HPUX-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Käyttöliittymäkomentoshakemistoa $1 ei ole järjestelmässäsi, mikä osoittaa, että HPUX-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti $1 </value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Sarjaportti $1 (COM $1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Nolla laite</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että LPRng-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Kelahakemistoa $1 ei ole järjestelmässäsi, mikä osoittaa, että LPRng-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Rinnakkaisportti</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 rinnakkaisportti</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Sarjaportti $1 </value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Nolla laite</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että Solaris-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Tulosta testisivu</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Et saa tulostaa testisivuja</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Tämän lomakkeen avulla voit tulostaa testisivun tulostimelle $1. Valitse tulostettavan sivutyyppi :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Mustavalkoinen PostScript-sivu</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Väri Postscript-sivu</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Pelkkä ASCII-teksti</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Kaikki ladatut tiedostot</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Tulosta sivu</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Testisivun tulostaminen komennolla $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. komento epäonnistui!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. komento valmis.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Etä- tai raakatulostin</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Ohjelmoida</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS-ohjain</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen ohjelma</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>$1 : n vaihtoehdot</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että CUPS-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Komentoa $1 ei löydy järjestelmästäsi, mikä osoittaa, että IRIX-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Käyttöliittymäkomentoshakemistoa $1 ei ole järjestelmässäsi, mikä osoittaa, että IRIX-tulostusjärjestelmää ei ole asennettu.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Tulostinportti $1 </value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Virheellinen kuvaus - vain kirjaimet ja numerot ovat sallittuja, eikä välilyöntejä</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>AIX-tulostinpalvelinta $1 ei löytynyt. Ehkä sitä ei ole asennettu tai toinen tulostusjärjestelmä on käytössä.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Klusteritulostinpalvelimet</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Tulostimen klusteriin ei ole vielä lisätty palvelimia.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>hostname</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Käyttöjärjestelmä</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Lisää palvelin</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Lisää palvelimia ryhmään</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Sinun on lisättävä palvelimet, joilla on kirjautuminen ja salasana, Webmin Servers Index -moduuliin, ennen kuin niitä voidaan hallita täällä.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>klusteripalvelimet</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Poista valitut</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Et voi hallita klusteritulostinpalvelimia</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Lisää palvelimia</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Lisätään $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Palvelimien lisääminen ryhmään $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Palvelimen lisääminen epäonnistui</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Ryhmän lisääminen epäonnistui</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Palvelimella $1 ei ole Printer Administration -moduulia</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Palvelin $1 käyttää eri tulostusjärjestelmää ($2) tähän palvelimeen</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Palvelin $1 käyttää eri tulostinajuria ($2) tähän palvelimeen</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Lisätty $1, $2 -tulostimella.</value>
+  </data>
+</root>

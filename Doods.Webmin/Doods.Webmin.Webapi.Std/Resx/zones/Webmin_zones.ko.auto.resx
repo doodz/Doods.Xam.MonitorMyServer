@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>시스템에서 영역 관리 명령 $1 을 (를) 찾을 수 없습니다. 이 모듈을 사용하려면 먼저 설치해야합니다.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin이 &lt;tt&gt;글로벌&lt;/tt&gt; 영역이 아닌 $1 영역에서 실행 중입니다. 이 모듈은 &lt;tt&gt;글로벌&lt;/tt&gt; 영역에서 실행될 때만 작동합니다.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>아직 정의 된 영역이 없습니다.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>새 영역을 추가하십시오.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>존리스트</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>기존 구역</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>영역 편집</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>일반 영역 구성</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>구역 이름</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>현재 상태</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>존 디렉토리</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>시스템 부팅시 시작 하시겠습니까?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>리소스 풀</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>재부팅</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>일시 휴업</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Webmin 설치</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Webmin 업그레이드</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>부팅</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>시스템 설치</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>시스템 제거</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>영역 삭제</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>영역의 네트워크 인터페이스</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>아직 네트워크 인터페이스가 정의되지 않았습니다.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>인터페이스 이름</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP 주소</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>넷 마스크</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>방송 주소</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>새로운 네트워크 인터페이스를 추가하십시오.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>비활성</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>존이 존재하지 않습니다!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>영역 세부 사항</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>상속 된 패키지 디렉토리</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>전역 영역의 디렉토리</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>아직 패키지 디렉토리가 정의되지 않았습니다.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>새 패키지 디렉토리를 추가하십시오.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>영역이 설치된 후에는 패키지 디렉토리를 추가 할 수 없습니다.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>추가 파일 시스템</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>마운트 디렉토리</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>에서 마운트</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>원시 장치</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>파일 시스템 유형</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>마운트?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>유형의 파일 시스템 추가 :</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>추가 파일 시스템이 아직 정의되지 않았습니다.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>자원 관리</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>자원 이름</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>권한 유형</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>제한</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>행위</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>아직 자원 제어가 정의되지 않았습니다.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>새로운 자원 제어를 추가하십시오.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>일반 영역 속성</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>속성 이름</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>데이터 형식</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>속성 값</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>아직 일반 속성이 정의되지 않았습니다.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>새로운 일반 속성을 추가하십시오.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>오픈 Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>상표</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>영역을 저장하지 못했습니다</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>풀이 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>이 영역에서 Webmin이 실행되고 있지 않습니다</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>재부팅 영역</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>$1 영역을 재부팅 하시겠습니까? 그 안에서 실행중인 모든 프로세스가 다시 시작됩니다.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>영역을 재부팅하지 못했습니다</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>이제 재부팅 영역 ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. 실패  :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. 완료</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>셧다운 존</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>$1 영역을 종료 하시겠습니까? 그 안에서 실행중인 모든 프로세스가 중지됩니다.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>영역을 종료하지 못했습니다</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>이제 종료 영역 ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>부팅 영역</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>영역을 부팅하지 못했습니다</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>이제 부팅 영역 ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>영역 삭제</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>$1 영역을 삭제 하시겠습니까? 개인 파일 시스템 내의 모든 파일이 손실됩니다.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>영역을 삭제하지 못했습니다</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>이제 영역을 삭제하는 중입니다 ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>시스템 제거</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>영역 $1 에서 시스템 소프트웨어를 제거 하시겠습니까? 개인 파일 시스템 내의 모든 파일이 손실됩니다.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>영역에서 시스템 소프트웨어를 제거하지 못했습니다.</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>이제 영역에서 시스템을 제거합니다.</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>시스템 설치</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>이제 시스템을 영역에 설치 ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>네트워크 인터페이스 생성</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>네트워크 인터페이스 편집</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>영역 가상 인터페이스 세부 사항</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>인터페이스 IP 주소</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>실제 네트워크 인터페이스</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>주소 용 넷 마스크</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>현재 방송 주소</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>네트워크 인터페이스를 저장하지 못했습니다</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>잘못된 넷 마스크</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>잘못된 IP 주소</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>인터페이스가 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>이 영역에 동일한 IP 주소를 가진 네트워크 인터페이스가 이미 존재합니다</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>패키지 디렉토리 추가</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>패키지 디렉토리 편집</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>상속 된 패키지 디렉토리 세부 사항</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>전역 영역의 디렉토리</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>디렉토리가 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>패키지 디렉토리를 저장하지 못했습니다</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>유효하지 않거나 존재하지 않는 디렉토리</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>패키지 디렉토리가이 영역에 이미 존재합니다</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>전역 영역에서 패키지 상속</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>예 (드문 루트 영역)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>아니오 (전체 루트 영역)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>파일 시스템 생성</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>파일 시스템 편집</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>추가 파일 시스템 세부 사항</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>파일 시스템 유형</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>영역의 마운트 지점</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>현재 상태</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>미장착</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>장착</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>$1 에서 $2 을 (를) 해제하여 마운트</value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>글로벌 존의 소스</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>파일 시스템 마운트 옵션</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>파일 시스템을 저장하지 못했습니다</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>마운트 지점 디렉토리가 없습니다.</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>파일 시스템이 생성되었지만 파일을 마운트하는 중에 오류가 발생했습니다</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>파일 시스템이 제거되었지만 마운트 해제 중 오류가 발생했습니다.</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>파일 시스템이 업데이트되었지만 파일을 다시 마운트하는 중에 오류가 발생했습니다</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>소스 장치 파일이 없습니다.</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>잘못된 마운트 옵션 (ro, nosuid와 같이 쉼표로 구분 된 목록이어야 함)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>파일 시스템이 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>생성 후 마운트?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>동일한 디렉토리를 사용하는 파일 시스템이이 영역에 이미 존재합니다</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>자원 제어 작성</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>자원 제어 편집</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>자원 제어 유형 및 한계</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>자원 유형</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>부과 제한</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>권한 유형</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>한도</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>초과시 조치</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>기본</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>특권</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>체계</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>조치 없음</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>요청 거부</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>신호 보내기</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>자원 제어를 저장하지 못했습니다</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>자원 통제가 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>숫자가 아님</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>행 $1 에서 선택된 신호가 없습니다.</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>입력 한도 없음</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>이 영역에 동일한 리소스에 대한 제어가 이미 존재합니다</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>일반 속성 생성</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>일반 속성 편집</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>일반 영역 속성 세부 사항</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>속성 이름</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>가치를위한 데이터 유형</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>속성 값</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>텍스트 문자열</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>정수</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>양의 정수</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>부울</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>일반 속성을 저장하지 못했습니다</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>없거나 잘못된 이름</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>값이 정수가 아닙니다</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>값이 양의 정수가 아닙니다</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>값이 'true'또는 'false'가 아닙니다</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>속성이 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>같은 이름의 속성이이 영역에 이미 존재합니다</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>달리는</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>중단</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>미설치</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>설치 중</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>준비된</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>내려가는</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>종료</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>구역 이름</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>아이디 번호</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>존 디렉토리</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>행위</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>영역 $1 에서</value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>영역 만들기</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>새로운 구역 정보</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>영역 파일 디렉토리</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>선택된 디렉토리</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>자동 (&lt;tt&gt;$1&lt;/tt&gt; 아래)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>초기 IP 주소</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>생성 후 설치 하시겠습니까?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>설치 후 Webmin을 설정 하시겠습니까?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>예 (패키지 디렉토리 추가 방지)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>지금 작성</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>영역을 만들지 못했습니다</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>존 이름이 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>호스트 이름이 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>이름이 같은 영역이 이미 존재합니다</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>영역 디렉토리 누락</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>영역 디렉토리 '$1'이 (가) 이미 존재합니다</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>초기 IP 주소가 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>새로운 구역 만들기 ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. 완료.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. 실패했습니다! 이유는 위의 출력을 참조하십시오.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>초기 네트워크 인터페이스 추가 ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>시스템 소프트웨어 설치 ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>추가 패키지 디렉토리</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1'은 (는) 유효한 패키지 디렉토리가 아닙니다</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>패키지 디렉토리 추가 ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Webmin 설정하기 ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. 실패  : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>새 영역을 구성 하시겠습니까?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>초기 호스트 이름</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>구역 이름과 동일</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>예, 아래 설정을 사용하십시오.</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>아니요, 콘솔에서 수동으로 구성</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>초기 루트 비밀번호</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>글로벌 시스템과 동일</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>초기 시간대</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>글로벌 시스템과 동일 ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>초기 언어 로캘</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>콘솔 용 터미널 유형</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>기본 (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>초기 이름 서비스</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS 또는 NIS 도메인 이름</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>DNS 또는 NIS 이름 서버</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>로컬 루트 사용자를 찾지 못했습니다!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>시간대가 없거나 잘못되었습니다</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>언어 로캘이 없거나 잘못되었습니다</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>터미널 유형이 없거나 잘못되었습니다</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>DNS 또는 NIS 도메인 이름이 없거나 잘못되었습니다</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1'은 (는) 유효한 DNS 또는 NIS 이름 서버 호스트가 아닙니다.</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>DNS 또는 NIS 이름 서버가 입력되지 않았습니다</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>영역의 호스트 이름을 확인할 수 없어 자동 구성이 실패합니다. 이 영역을 만들기 전에 DNS에 추가해야합니다</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>기본 라우터</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>기본 라우터 IP 주소가 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>상속 된 패키지 디렉토리 제거. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>상표</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>브랜딩 영역</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>생성 된 영역 $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>삭제 된 영역 $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>영역 $1 에 대한 수정 된 구성</value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>부팅 된 영역 $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>재부팅 된 영역 $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>종료 영역 $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>설치된 영역 $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>설치되지 않은 영역 $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>영역 $2 에서 주소가 $1 인 네트워크 인터페이스를 만들었습니다.</value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>영역 $2 에서 주소가 $1 인 네트워크 인터페이스가 삭제되었습니다.</value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>영역 $2 에서 주소가 $1 인 수정 된 네트워크 인터페이스</value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>영역 $2 에 패키지 디렉토리 $1 을 (를) 생성했습니다.</value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>영역 $2 의 수정 된 패키지 디렉토리 $1 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>영역 $2 에서 삭제 된 패키지 디렉토리 $1 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>영역 $2 에 파일 시스템 $1 을 (를) 생성했습니다.</value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>영역 $2 의 수정 된 파일 시스템 $1 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>영역 $2 에서 파일 시스템 $1 을 (를) 삭제했습니다.</value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>영역 $2 에서 $1 에 대한 리소스 제어가 생성되었습니다.</value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>영역 $2 의 $1 에 대한 수정 된 리소스 제어</value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>영역 $2 에서 $1 에 대한 삭제 된 리소스 제어</value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>영역 $2 에서 일반 속성 $1 을 (를) 생성했습니다.</value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>영역 $2 의 수정 된 일반 속성 $1 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>영역 $2 에서 일반 속성 $1 을 (를) 삭제했습니다.</value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl이 $1 에 설치되지 않았습니다</value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>$1 디렉토리가 존재하지 않거나 Webmin을 포함하지 않습니다.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Webmin 설치</value>
+  </data>
+</root>

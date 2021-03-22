@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Sistemaren erregistroak NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Aplikatu konfigurazioa</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Egin klik botoi honetan uneko Syslog-NG konfigurazioa aktibatzeko.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Gelditu Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Egin klik botoi honetan Syslog-NG deabrua martxan jartzeko. Behin geldituta, beste programa batzuetako mezuak ez dira gehiago fitxategietan erregistratuko.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Hasi Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Egin klik botoi honetan Syslog-NG deabrua abiarazteko, uneko konfigurazioa erabiliz.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>moduluaren aurkibidea</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Logging Aukerak</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Log fitxategi guztientzako aukerak</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>segundutan</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>sarrerak</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Hildako konexioak berriro ireki aurretik itxaron behar da</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Konexio inaktiboak itxi aurretik itxaron behar da</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Idatzi aurretik bufferizatzeko mezuak</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Estatistiken mezuen artean itxaroteko denbora</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Memorizatzeko mezu kopurua</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Erabili ostalari izen formatua kateatuta?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Jatorrizko ostalariaren izenak mantendu?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Egiaztatu ostalariaren izenak baliozko karaktereak lortzeko?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Adierazpen erregularra ostalari txarren</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Beharrezkoa izanez gero, erregistroko fitxategien direktorioak sortu nahi dituzu?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Jabe lehenetsia erregistroko fitxategietarako</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Lehenetsitako taldea erregistro fitxategientzako</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Lehenetsitako baimenak egunkariko fitxategietarako</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Sortutako direktorioetarako jabe lehenetsia</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Sortutako direktorioetarako talde lehenetsia</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Sortutako direktorioetarako baimen lehenetsiak</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Denbora erregistratzeko mezuak jaso al dira?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>DNS bilaketa alderantzikatu al duzu?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Cache DNS bilaketa?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>DNS gordailuaren tamaina</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Cache DNS erregistroak</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Cacheak DNS bilaketaren huts egin du</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Gehieneko log mezuen tamaina</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Egin ostalari izen osoa?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Ordeztu kontroleko karaktereak fitxategi-izenetan?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Huts egin du erregistratzeko aukerak gordetzean</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Okerreko abizenen adierazpen erregular falta edo baliogabea</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Falta edo zenbakizko DNS katxe tamaina falta da</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Falta den edo ez zenbakizko DNS cache denbora</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Falta den edo ez zenbakizko DNS katxeko denbora huts egin da</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Fitxategien jabea lehenetsitako jabea falta da</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Fitxategien erregistroko talde lehenetsia falta da</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Fitxategien erregistroetarako baimen lehenetsiak falta dira</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Direktorioen jabe lehenetsia falta da</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Zuzendarien talde lehenetsia falta da</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Direktorioen baimen lehenetsiak falta dira</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Falta diren edo ez zenbakizko denbora hildako konexioen zain egoteko</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Konexio idealak itxaroteko denbora edo zenbakizko denbora falta da</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Ezabatu edo baliogabeko mezu kopurua buffer bidez idatzi aurretik</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Falta den edo ez zenbakizko denbora estatistikoen mezuen artean itxaroteko</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Buffer-eko mezu kopuru falta edo baliogabea</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Falta edo zenbakizko erregistroaren gehienezko tamainaren tamaina</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Helmugen egunkariak</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Helmuga izena</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Idatzi</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Erregistroaren helmuga</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>file</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Sartutako erabiltzaileak</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Programaren sarrera</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix hodia</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP syslog zerbitzaria</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslog zerbitzaria</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Datagram socket</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Korrontearen entxufea</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Erabiltzaile guztiak</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>$1 erabiltzaileak bakarrik</value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>$1 ostalaria</value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Ikusi ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Oraindik ez da helburuko erregistro fitxategia zehaztu</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Ezabatu hautatutako helburuak</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Gehitu egunkarien helmuga berria.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>helmugak</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Beste moduluen erregistroa</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>$1 -eko irteera</value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Erregistroaren helmuga aukerak</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Sortu egunkariaren helmuga</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Editatu egunkariaren helmuga</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Izena helmuga izena</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Hasi saioa ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Fitxategi izena</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Direktorioak sortu?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Direktorioen baimenak</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Sinkronizatu idazki bakoitzaren ondoren?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Fitxategiaren erregistroa egiteko taldea</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Fitxategiaren jabearen jabea</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Erregistroko fitxategien baimenak</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Sinkronizazioen arteko mezuak</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Zerrendatutako erabiltzaileak</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog zerbitzaria</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Sareko protokoloa</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Zerbitzariaren helbidea</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Zerbitzari portua</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Tokiko IP helbidea</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Tokiko portua</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix entxupera</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Mota</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Socket izena</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Ezin izan da helmuga gorde</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Dagoeneko izen bera duen helmuga dago</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Helmuga ez da jada existitzen!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Fitxategi-izen falta edo baliogabea</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Fitxategiko jabearen falta edo baliogabea da</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Falta da edo erregistroko fitxategi-taldea baliogabea</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Falta diren edo zortzik gabeko erregistroko fitxategi baimenak</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Falta diren edo zortzikaleko direktorio baimenak</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Sinkronizazioen arteko mezu kopurua falta edo baliogabea da</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Erabiltzaileei mezuak bidaltzeko falta da</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Falta da programara</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Unix hodi fitxategia falta da</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Ataka-zenbaki falta edo baliogabea</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Tokiko IP helbide falta edo baliogabea</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Tokiko ataka zenbakia edo falta da</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Syslog zerbitzariaren ostalari edo helbidea falta da</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Unix socket izena falta da</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Ezin izan dira helmugak ezabatu</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Ez da hautatu</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Ezin da $1 helmuga ezabatu, egunkariko xede batek erabiltzen baitu</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Ezin izan dira iturriak ezabatu</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Ez da hautatu</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Ezin da $1 erregistro-iturria ezabatu, egunkariko xede batek erabiltzen baitu</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Ezin izan da iragazkiak ezabatu</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Ez da hautatu</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Ezin da $1 erregistro iragazkia ezabatu, egunkariko xede batek erabiltzen baitu</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Ezin izan da erregistroko helburuak ezabatu</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Ez da hautatu</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Egin iragazkiak</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Iragazkiaren izena</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Baldintza</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Oraindik ez da erregistro-iragazkirik zehaztu.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Ezabatu hautatutako iragazkiak</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Gehitu egunkari iragazki berria.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>egunkariaren iragazkiak</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>lehentasuna &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>lehentasunak &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 lehentasunak</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>instalazioa &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 instalazioak</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>programa &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>bat dator "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>ostalariaren izenetik &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>igorlearen &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Sortu erregistro iragazkia</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Editatu egunkariaren iragazkia</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Eguneratu iragazkiaren zehaztapenen xehetasunak</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Iragazkiaren izena</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Baldintza sinpleak (guztiak bat etorri behar dira)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Adierazpen konplexua</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Lehentasunezko ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Programatik ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Loturaren adierazpena ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Instalaziotik ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Ostalariaren izenetik ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>IP saretik.</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Ezin izan da erregistro iragazkia gorde</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Iragazkiaren izen falta edo baliogabea</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Izen bera duen iragazki bat dagoeneko</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Ez da ezer iragaztean sartu</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Ez da lehentasunik hautatu</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Ez da instalazio hautatu</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Programaren izen falta edo baliogabea</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Adierazpen arrunta falta da</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Ostalariaren izen falta edo baliogabea</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Sareko IP helbide falta edo baliogabea</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Netmaskaren falta edo baliogabea</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Errorea adierazpen konplexuan</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Iragazkia ez da jada!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Eguneratu helburuak</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Iturriak</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>iragazkiak</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Helmugak</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Gehitu egunkariko xede berria.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Ezabatu hautatutako egunkariaren helburuak</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>erregistroko helburuak</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Bat ere ez</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Sortu egunkariaren xede</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Editatu egunkariaren xede</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Eguneratu iturria, iragazkia eta helmuga</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Erregistro iturriak</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Aplikatu beharreko iragazkiak</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Helmuga fitxategiak</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Ez prozesatu xede gehiago</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Fallback egunkariaren jomuga</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Iturri guztiak prozesatu</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Xede aukerak</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Ez da jada jaurtiketaren xede!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Ezin izan da erregistroaren helburua gordetzean</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Ez da iturririk aukeratu</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Erregistro-iturriak</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Oraindik ez da iturririk zehaztu!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Gehitu egunkariko iturri berria.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Iturriaren izena</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Eguneratu datuen iturriak</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Ezabatu hautatutako iturriak</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Syslog-NG barneko mezuak</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Korrontearen entxufea</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Datagram socket</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP zerbitzaria</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP zerbitzaria</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Nukleoaren erregistro fitxategia</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Pipa izendatua</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Eguzkia</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog zerbitzaria</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>egunkariaren iturriak</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Bat ere ez</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Sortu egunkarien iturria</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Editatu egunkariaren iturria</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Eguneratu iturriaren aukerak</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Edozein</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Bat ere ez</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Jatorria ez da existitzen!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Iturriaren izena</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Erregistro iturri motak</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Socket fitxategiaren jabea</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Socket fitxategi taldea</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Baimena socket fitxategian</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Konexioak irekita mantendu berrabiatzean?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Gehienezko konexio aldi baterakoak?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Tokiko IP helbidea</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Tokiko portuaren zenbakia</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Erabili TCP mantentze-alisioak?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Aurkezpena erregistro mezuetarako</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Mezuaren blokearen tamaina</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Ezin izan da erregistro-iturria gorde</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Iturri izen falta edo baliogabea</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Izen bera duen erregistro-iturria lehendik dago</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Socket fitxategi jabea falta edo baliogabea</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Socket fitxategi multzo falta edo baliogabea</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Socket fitxategiko baimen falta edo zortzik gabekoak</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Gehienezko konexio kopuru falta edo baliogabea</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Tokiko IP helbide falta edo baliogabea</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Tokiko ataka zenbakia edo falta da</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Aurrezte falta erregistro mezuetarako</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Falta den edo ez zenbakizko mezuen blokearen tamaina</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Falta da edo baliogabea Unix socket fitxategi izena</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Falta den edo nuklearraren erregistro fitxategiaren izena baliogabea da</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Hutsaren fitxategi izenaren falta edo baliogabea da</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Atearen fitxategi izena</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Falta da edo ez da baliozkoa Sun Streams fitxategiaren izena</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Falta da edo ez da baliozkoa Sun Streams atearen fitxategiaren izena</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Sareko protokoloa</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Ikusi Fitxategia</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Azken $1 lerroak $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Erregistroaren fitxategia hutsik dago</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Freskatu</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Erakutsi $1 testuarekin lerroak soilik</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Ezin izan da konfigurazioa aplikatu</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Korrika ez!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Huts egin du Syslog-NG zerbitzaria abiaraztean</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Ezin izan da Syslog-NG zerbitzaria gelditu</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>$1 erregistroko helmuga sortu da</value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>$1 erregistratutako helmuga aldatua</value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>$1 erregistroaren helmuga ezabatu da</value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1 erregistroko helmugak ezabatu dira</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>$1 erregistro iragazkia sortu da</value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>$1 erregistro iragazkia aldatua</value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>$1 erregistro iragazkia ezabatu da</value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>$1 erregistro iragazkiak ezabatu dira</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>$1 erregistro iturria sortu da</value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>$1 erregistro iturria aldatu da</value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>$1 erregistro iturria ezabatu da</value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>$1 erregistro iturriak ezabatu dira</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Sortu egunkariaren xede</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Eguneratutako xede-jomuga</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Eguneratutako erregistroaren xede</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1 erregistroko helburuak ezabatu dira</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Aplikatutako konfigurazioa</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Syslog-NG zerbitzaria hasi da</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Syslog-NG zerbitzaria gelditu da</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Aukera globala aldatu da</value>
+  </data>
+</root>

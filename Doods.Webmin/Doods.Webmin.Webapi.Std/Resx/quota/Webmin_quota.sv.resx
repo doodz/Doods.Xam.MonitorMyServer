@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="quota_unlimited" xml:space="preserve">
+    <value>Obegränsad</value>
+  </data>
+  <data name="acl_fss" xml:space="preserve">
+    <value>Filsystem som denna användare får ändra i</value>
+  </data>
+  <data name="acl_fall" xml:space="preserve">
+    <value>Alla filsystem</value>
+  </data>
+  <data name="acl_fsel" xml:space="preserve">
+    <value>Angivna ...</value>
+  </data>
+  <data name="acl_quotaon" xml:space="preserve">
+    <value>Kunna slå på och av quota?</value>
+  </data>
+  <data name="acl_quotanew" xml:space="preserve">
+    <value>Kunna ställa in quota för nya användare?</value>
+  </data>
+  <data name="acl_ugrace" xml:space="preserve">
+    <value>Kunna ändra tidsintervall för användare?</value>
+  </data>
+  <data name="acl_vtotal" xml:space="preserve">
+    <value>Kunna se totalt diskutrymme?</value>
+  </data>
+  <data name="acl_ggrace" xml:space="preserve">
+    <value>Kunna ändra tidsintervall för grupper?</value>
+  </data>
+  <data name="acl_uquota" xml:space="preserve">
+    <value>Användare som denna användare får ändra quota för</value>
+  </data>
+  <data name="acl_gquota" xml:space="preserve">
+    <value>Grupper som denna användare får ändra quota för</value>
+  </data>
+  <data name="acl_uall" xml:space="preserve">
+    <value> Alla användare</value>
+  </data>
+  <data name="acl_uonly" xml:space="preserve">
+    <value> Endast användarna</value>
+  </data>
+  <data name="acl_uexcept" xml:space="preserve">
+    <value> Alla användare utom</value>
+  </data>
+  <data name="acl_ugroup" xml:space="preserve">
+    <value> Användare med primär grupp</value>
+  </data>
+  <data name="acl_gall" xml:space="preserve">
+    <value> Alla grupper</value>
+  </data>
+  <data name="acl_gnone" xml:space="preserve">
+    <value> Inga grupper</value>
+  </data>
+  <data name="acl_gonly" xml:space="preserve">
+    <value> Endast grupperna</value>
+  </data>
+  <data name="acl_gexcept" xml:space="preserve">
+    <value> Alla grupper utom</value>
+  </data>
+  <data name="activate_eallow" xml:space="preserve">
+    <value>Du får inte slå på och av quota på detta filsystem</value>
+  </data>
+  <data name="activate_eon" xml:space="preserve">
+    <value>Det gick inte att slå på quota</value>
+  </data>
+  <data name="activate_eoff" xml:space="preserve">
+    <value>Det gick inte att slå av quota</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Kontrollera quota</value>
+  </data>
+  <data name="check_return" xml:space="preserve">
+    <value>Lista över $1</value>
+  </data>
+  <data name="check_ecannot" xml:space="preserve">
+    <value>Du får inte kontrollera quota på detta filsystem</value>
+  </data>
+  <data name="check_running" xml:space="preserve">
+    <value>Kommandot &lt;tt&gt;quotacheck&lt;/tt&gt; körs nu för att kontrollera block- och filanvändningen på &lt;tt&gt;$1&lt;/tt&gt;. Om det är ett stort filsystem kan detta ta en stund ...</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>... Klart.</value>
+  </data>
+  <data name="check_rgroup" xml:space="preserve">
+    <value>grupp</value>
+  </data>
+  <data name="check_ruser" xml:space="preserve">
+    <value>användare</value>
+  </data>
+  <data name="cgroup_efail" xml:space="preserve">
+    <value>Det gick inte att kopiera quota</value>
+  </data>
+  <data name="cgroup_ecannot" xml:space="preserve">
+    <value>Du får inte kopiera quota</value>
+  </data>
+  <data name="cgroup_egallow" xml:space="preserve">
+    <value>Du får inte kopiera denna grupps quota</value>
+  </data>
+  <data name="cgroup_enogroup" xml:space="preserve">
+    <value>Du har inte angivit någon grupp att kopiera till</value>
+  </data>
+  <data name="cgroup_eallowto" xml:space="preserve">
+    <value>Du får inte kopiera quota till '$1'</value>
+  </data>
+  <data name="cgform_title" xml:space="preserve">
+    <value>Kopiera quota</value>
+  </data>
+  <data name="cgform_return" xml:space="preserve">
+    <value>gruppquota</value>
+  </data>
+  <data name="cgform_ecannot" xml:space="preserve">
+    <value>Du får inte kopiera quota</value>
+  </data>
+  <data name="cgform_egroup" xml:space="preserve">
+    <value>Du får inte kopiera denna grupps quota</value>
+  </data>
+  <data name="cgform_copyto" xml:space="preserve">
+    <value>Kopiera quota för &lt;tt&gt;$1&lt;/tt&gt; på ALLA filsystem till ...</value>
+  </data>
+  <data name="cgform_all" xml:space="preserve">
+    <value>Alla grupper på ditt system</value>
+  </data>
+  <data name="cgform_select" xml:space="preserve">
+    <value>Angivna grupper</value>
+  </data>
+  <data name="cgform_contain" xml:space="preserve">
+    <value>Grupper med följande användare</value>
+  </data>
+  <data name="cgform_doit" xml:space="preserve">
+    <value>Kopiera</value>
+  </data>
+  <data name="cuser_efail" xml:space="preserve">
+    <value>Det gick inte att kopiera quota</value>
+  </data>
+  <data name="cuser_ecannot" xml:space="preserve">
+    <value>Du får inte kopiera quota</value>
+  </data>
+  <data name="cuser_euallow" xml:space="preserve">
+    <value>Du får inte kopiera denna användares quota</value>
+  </data>
+  <data name="cuser_enouser" xml:space="preserve">
+    <value>Du har inte angivit någon användare att kopiera till</value>
+  </data>
+  <data name="cuser_eallowto" xml:space="preserve">
+    <value>Du får inte kopiera quota till '$1'</value>
+  </data>
+  <data name="cuform_title" xml:space="preserve">
+    <value>Kopiera quota</value>
+  </data>
+  <data name="cuform_return" xml:space="preserve">
+    <value>användarquota</value>
+  </data>
+  <data name="cuform_ecannot" xml:space="preserve">
+    <value>Du får inte kopiera quota</value>
+  </data>
+  <data name="cuform_euallow" xml:space="preserve">
+    <value>Du får inte kopiera denna användares quota</value>
+  </data>
+  <data name="cuform_copyto" xml:space="preserve">
+    <value>Kopiera quota för &lt;tt&gt;$1&lt;/tt&gt; på ALLA filsystem till ...</value>
+  </data>
+  <data name="cuform_all" xml:space="preserve">
+    <value>Alla användare på ditt system</value>
+  </data>
+  <data name="cuform_select" xml:space="preserve">
+    <value>Angivna användare</value>
+  </data>
+  <data name="cuform_members" xml:space="preserve">
+    <value>Medlemmar i angivna grupper</value>
+  </data>
+  <data name="cuform_doit" xml:space="preserve">
+    <value>Kopiera</value>
+  </data>
+  <data name="egroup_title" xml:space="preserve">
+    <value>Ändra quota</value>
+  </data>
+  <data name="egroup_freturn" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="egroup_greturn" xml:space="preserve">
+    <value>grupplista</value>
+  </data>
+  <data name="egroup_eallowgr" xml:space="preserve">
+    <value>Du får inte ändra quota för '$1'</value>
+  </data>
+  <data name="egroup_eallowfs" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="egroup_quotas" xml:space="preserve">
+    <value>Quota för &lt;tt&gt;$1&lt;/tt&gt; på &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="egroup_bused" xml:space="preserve">
+    <value>Använda block</value>
+  </data>
+  <data name="egroup_sblimit" xml:space="preserve">
+    <value>Mjuk blockgräns</value>
+  </data>
+  <data name="egroup_hblimit" xml:space="preserve">
+    <value>Hård blockgräns</value>
+  </data>
+  <data name="egroup_fused" xml:space="preserve">
+    <value>Använda filer</value>
+  </data>
+  <data name="egroup_sflimit" xml:space="preserve">
+    <value>Mjuk filgräns</value>
+  </data>
+  <data name="egroup_hflimit" xml:space="preserve">
+    <value>Hård filgräns</value>
+  </data>
+  <data name="egroup_update" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="egroup_listall" xml:space="preserve">
+    <value>Lista alla quota</value>
+  </data>
+  <data name="euser_title" xml:space="preserve">
+    <value>Ändra quota</value>
+  </data>
+  <data name="euser_freturn" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="euser_ureturn" xml:space="preserve">
+    <value>användarlista</value>
+  </data>
+  <data name="euser_eallowus" xml:space="preserve">
+    <value>Du får inte ändra quota för '$1'</value>
+  </data>
+  <data name="euser_eallowfs" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="euser_quotas" xml:space="preserve">
+    <value>Quota för &lt;tt&gt;$1&lt;/tt&gt; på &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="euser_bused" xml:space="preserve">
+    <value>Använda block</value>
+  </data>
+  <data name="euser_sblimit" xml:space="preserve">
+    <value>Mjuk blockgräns</value>
+  </data>
+  <data name="euser_hblimit" xml:space="preserve">
+    <value>Hård blockgräns</value>
+  </data>
+  <data name="euser_fused" xml:space="preserve">
+    <value>Använda filer</value>
+  </data>
+  <data name="euser_sflimit" xml:space="preserve">
+    <value>Mjuk filgräns</value>
+  </data>
+  <data name="euser_hflimit" xml:space="preserve">
+    <value>Hård filgräns</value>
+  </data>
+  <data name="euser_update" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="euser_listall" xml:space="preserve">
+    <value>Lista alla quota</value>
+  </data>
+  <data name="gfilesys_title" xml:space="preserve">
+    <value>Gruppquota</value>
+  </data>
+  <data name="gfilesys_return" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="gfilesys_ecannot" xml:space="preserve">
+    <value>Du får inte ändra quota för '$1'</value>
+  </data>
+  <data name="gfilesys_all" xml:space="preserve">
+    <value>Alla quota för </value>
+  </data>
+  <data name="gfilesys_blocks" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="gfilesys_files" xml:space="preserve">
+    <value>Filer</value>
+  </data>
+  <data name="gfilesys_fs" xml:space="preserve">
+    <value>Filsystem</value>
+  </data>
+  <data name="gfilesys_used" xml:space="preserve">
+    <value>Använda</value>
+  </data>
+  <data name="gfilesys_soft" xml:space="preserve">
+    <value>Mjuk gräns</value>
+  </data>
+  <data name="gfilesys_hard" xml:space="preserve">
+    <value>Hård gräns</value>
+  </data>
+  <data name="gfilesys_nogquota" xml:space="preserve">
+    <value>Gruppen &lt;tt&gt;$1&lt;/tt&gt; har ingen quota på något filsystem</value>
+  </data>
+  <data name="gfilesys_edit" xml:space="preserve">
+    <value>Ändra quota på:</value>
+  </data>
+  <data name="gfilesys_copy" xml:space="preserve">
+    <value>Kopiera quota</value>
+  </data>
+  <data name="ggracef_title" xml:space="preserve">
+    <value>Tidsintervall</value>
+  </data>
+  <data name="ggracef_return" xml:space="preserve">
+    <value>grupplista</value>
+  </data>
+  <data name="ggracef_ecannot" xml:space="preserve">
+    <value>Du får inte ändra tidsintervall på detta filsystem</value>
+  </data>
+  <data name="ggracef_info" xml:space="preserve">
+    <value>Varje filsystem har ett tidsintervall för block- och filquota. Detta tidsintervall anger hur länge en grupp får överskrida sin mjuka gräns innan den hindras att skapa fler filer.</value>
+  </data>
+  <data name="ggracef_graces" xml:space="preserve">
+    <value>Grupptidsintervall för &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ggracef_block" xml:space="preserve">
+    <value>För blockquota</value>
+  </data>
+  <data name="ggracef_file" xml:space="preserve">
+    <value>För filquota</value>
+  </data>
+  <data name="ggracef_update" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="ggraces_esave" xml:space="preserve">
+    <value>Det gick inte att spara tidsintervall</value>
+  </data>
+  <data name="ggraces_eedit" xml:space="preserve">
+    <value>Du får inte ändra tidsintervall på detta filsystem</value>
+  </data>
+  <data name="ggraces_enumber" xml:space="preserve">
+    <value>'$1' är inte ett antal</value>
+  </data>
+  <data name="index_quser" xml:space="preserve">
+    <value>Användarquota</value>
+  </data>
+  <data name="index_qgroup" xml:space="preserve">
+    <value>Gruppquota</value>
+  </data>
+  <data name="index_qboth" xml:space="preserve">
+    <value>Användar- och gruppquota</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Slå av quota</value>
+  </data>
+  <data name="index_inactive" xml:space="preserve">
+    <value>Inaktiv</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Slå på quota</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>Diskquota</value>
+  </data>
+  <data name="index_fs" xml:space="preserve">
+    <value>Filsystem</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="index_mount" xml:space="preserve">
+    <value>Monterad från</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Funktion</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>index</value>
+  </data>
+  <data name="index_euser" xml:space="preserve">
+    <value>Ändra användarquota:</value>
+  </data>
+  <data name="index_egroup" xml:space="preserve">
+    <value>Ändra gruppquota:</value>
+  </data>
+  <data name="index_nosupport" xml:space="preserve">
+    <value>Inget lokalt filsystem stödjer quota</value>
+  </data>
+  <data name="lgroups_failed" xml:space="preserve">
+    <value>Det gick inte att lista grupper</value>
+  </data>
+  <data name="lgroups_eallow" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="lgroups_title" xml:space="preserve">
+    <value>Filsystemsquota</value>
+  </data>
+  <data name="lgroups_return" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="lgroups_toomany" xml:space="preserve">
+    <value>Det är för många grupper som har quota på &lt;tt&gt;$1&lt;/tt&gt; för att det ska gå att visa på en sida</value>
+  </data>
+  <data name="lgroups_quotas" xml:space="preserve">
+    <value>Alla gruppquota på &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_blocks" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="lgroups_files" xml:space="preserve">
+    <value>Filer</value>
+  </data>
+  <data name="lgroups_group" xml:space="preserve">
+    <value>Grupp</value>
+  </data>
+  <data name="lgroups_used" xml:space="preserve">
+    <value>Använd</value>
+  </data>
+  <data name="lgroups_soft" xml:space="preserve">
+    <value>Mjuk gräns</value>
+  </data>
+  <data name="lgroups_hard" xml:space="preserve">
+    <value>Hård gräns</value>
+  </data>
+  <data name="lgroups_noquota" xml:space="preserve">
+    <value>Ingen grupp har quota på &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_equota" xml:space="preserve">
+    <value>Ändra quota för:</value>
+  </data>
+  <data name="lgroups_grace" xml:space="preserve">
+    <value>Ändra tidsintervall</value>
+  </data>
+  <data name="lgroups_check" xml:space="preserve">
+    <value>Kontrollera quota</value>
+  </data>
+  <data name="sgroup_egroup" xml:space="preserve">
+    <value>Du får inte ändra quota för denna grupp</value>
+  </data>
+  <data name="sgroup_efs" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="ssync_ecannot" xml:space="preserve">
+    <value>Du får inte ställa in standardquota för detta filsystem</value>
+  </data>
+  <data name="suser_euser" xml:space="preserve">
+    <value>Du får inte ändra quota för denna användare</value>
+  </data>
+  <data name="suser_efs" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="ufilesys_title" xml:space="preserve">
+    <value>Användarquota</value>
+  </data>
+  <data name="ufilesys_return" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="ufilesys_ecannot" xml:space="preserve">
+    <value>Du får inte ändra quota för '$1'</value>
+  </data>
+  <data name="ufilesys_all" xml:space="preserve">
+    <value>All quota för &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ufilesys_blocks" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="ufilesys_files" xml:space="preserve">
+    <value>Filer</value>
+  </data>
+  <data name="ufilesys_fs" xml:space="preserve">
+    <value>Filsystem</value>
+  </data>
+  <data name="ufilesys_used" xml:space="preserve">
+    <value>Använd</value>
+  </data>
+  <data name="ufilesys_soft" xml:space="preserve">
+    <value>Mjuk gräns</value>
+  </data>
+  <data name="ufilesys_hard" xml:space="preserve">
+    <value>Hård gräns</value>
+  </data>
+  <data name="ufilesys_nouquota" xml:space="preserve">
+    <value>Användare &lt;tt&gt;$1&lt;/tt&gt; har ingen quota på något filsystem</value>
+  </data>
+  <data name="ufilesys_edit" xml:space="preserve">
+    <value>Ändra quota på:</value>
+  </data>
+  <data name="ufilesys_copy" xml:space="preserve">
+    <value>Kopiera quota</value>
+  </data>
+  <data name="ugracef_title" xml:space="preserve">
+    <value>Tidsintervall</value>
+  </data>
+  <data name="ugracef_return" xml:space="preserve">
+    <value>användarlista</value>
+  </data>
+  <data name="ugracef_ecannot" xml:space="preserve">
+    <value>Du får inte ändra tidsintervall på detta filsystem</value>
+  </data>
+  <data name="ugracef_info" xml:space="preserve">
+    <value>Varje filsystem har ett tidsintervall för block- och filquota. Detta tidsintervall anger hur länge en användare får överskrida sin mjuka gräns innan den hindras att skapa fler filer.</value>
+  </data>
+  <data name="ugracef_graces" xml:space="preserve">
+    <value>Användartidsintervall för &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ugracef_block" xml:space="preserve">
+    <value>För blockquota</value>
+  </data>
+  <data name="ugracef_file" xml:space="preserve">
+    <value>För filquota</value>
+  </data>
+  <data name="ugracef_update" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="ugraces_esave" xml:space="preserve">
+    <value>Det gick inte att spara tidsintervall</value>
+  </data>
+  <data name="ugraces_eedit" xml:space="preserve">
+    <value>Du får inte ändra tidsintervall på detta filsystem</value>
+  </data>
+  <data name="ugraces_enumber" xml:space="preserve">
+    <value>'$1' är inte ett antal</value>
+  </data>
+  <data name="lusers_failed" xml:space="preserve">
+    <value>Det gick inte att lista användare</value>
+  </data>
+  <data name="lusers_eallow" xml:space="preserve">
+    <value>Du får inte ändra quota på detta filsystem</value>
+  </data>
+  <data name="lusers_title" xml:space="preserve">
+    <value>Filsystemsquota</value>
+  </data>
+  <data name="lusers_return" xml:space="preserve">
+    <value>filsystemslista</value>
+  </data>
+  <data name="lusers_toomany" xml:space="preserve">
+    <value>Det är för många användare som har quota på &lt;tt&gt;$1&lt;/tt&gt; för att det ska gå att visa på en sida</value>
+  </data>
+  <data name="lusers_qoutas" xml:space="preserve">
+    <value>All användarquota på &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_blocks" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="lusers_files" xml:space="preserve">
+    <value>Filer</value>
+  </data>
+  <data name="lusers_user" xml:space="preserve">
+    <value>Användare</value>
+  </data>
+  <data name="lusers_used" xml:space="preserve">
+    <value>Använd</value>
+  </data>
+  <data name="lusers_soft" xml:space="preserve">
+    <value>Mjuk gräns</value>
+  </data>
+  <data name="lusers_hard" xml:space="preserve">
+    <value>Hård gräns</value>
+  </data>
+  <data name="lusers_noquota" xml:space="preserve">
+    <value>Ingen användare har quota på &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_equota" xml:space="preserve">
+    <value>Ändra quota för:</value>
+  </data>
+  <data name="lusers_egrace" xml:space="preserve">
+    <value>Ändra tidsintervall</value>
+  </data>
+  <data name="lusers_check" xml:space="preserve">
+    <value>Kontrollera quota</value>
+  </data>
+  <data name="lusers_info" xml:space="preserve">
+    <value>Webmin kan ställas in att automatiskt sätta quota på detta filsystem när en ny Unix-användare skapas. Detta fungerar endast då Webmin-modulen $1 används för att lägga till användare.</value>
+  </data>
+  <data name="lusers_useradmin" xml:space="preserve">
+    <value>Användare och grupper</value>
+  </data>
+  <data name="lusers_newuser" xml:space="preserve">
+    <value>Quota för nya användare</value>
+  </data>
+  <data name="lusers_sblimit" xml:space="preserve">
+    <value>Mjuk blockgräns</value>
+  </data>
+  <data name="lusers_hblimit" xml:space="preserve">
+    <value>Hård blockgräns</value>
+  </data>
+  <data name="lusers_sflimit" xml:space="preserve">
+    <value>Mjuk filgräns</value>
+  </data>
+  <data name="lusers_hflimit" xml:space="preserve">
+    <value>Hård filgräns</value>
+  </data>
+  <data name="lusers_apply" xml:space="preserve">
+    <value>Ta i drift</value>
+  </data>
+  <data name="grace_seconds" xml:space="preserve">
+    <value>Sekunder</value>
+  </data>
+  <data name="grace_minutes" xml:space="preserve">
+    <value>Minuter</value>
+  </data>
+  <data name="grace_hours" xml:space="preserve">
+    <value>Timmar</value>
+  </data>
+  <data name="grace_days" xml:space="preserve">
+    <value>Dagar</value>
+  </data>
+  <data name="grace_weeks" xml:space="preserve">
+    <value>Veckor</value>
+  </data>
+  <data name="grace_months" xml:space="preserve">
+    <value>Månader</value>
+  </data>
+  <data name="log_activate_u" xml:space="preserve">
+    <value>Slog på användarquota på $1</value>
+  </data>
+  <data name="log_activate_g" xml:space="preserve">
+    <value>Slog på gruppquota på $1</value>
+  </data>
+  <data name="log_activate_ug" xml:space="preserve">
+    <value>Slog på användar- och gruppquota på $1</value>
+  </data>
+  <data name="log_deactivate_u" xml:space="preserve">
+    <value>Slog av användarquota $1</value>
+  </data>
+  <data name="log_deactivate_g" xml:space="preserve">
+    <value>Slog av gruppquota på $1</value>
+  </data>
+  <data name="log_deactivate_ug" xml:space="preserve">
+    <value>Slog av användar- och gruppquota på $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Ändrade quota för $1 på $2</value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>Ändrade quota för nya användare på $1</value>
+  </data>
+  <data name="log_grace_u" xml:space="preserve">
+    <value>Ändrade tidsintervall för användare på $1</value>
+  </data>
+  <data name="log_grace_g" xml:space="preserve">
+    <value>Ändrade tidsintervall för grupper på $1</value>
+  </data>
+  <data name="log_check" xml:space="preserve">
+    <value>Kontrollerade quota på $1</value>
+  </data>
+  <data name="log_copy_u" xml:space="preserve">
+    <value>Kopierade användaren $1s quota</value>
+  </data>
+  <data name="log_copy_g" xml:space="preserve">
+    <value>Kopierade gruppen $1s quota</value>
+  </data>
+</root>

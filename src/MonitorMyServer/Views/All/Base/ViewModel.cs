@@ -1,9 +1,9 @@
-﻿using Autofac;
+﻿using System.Threading.Tasks;
+using Autofac;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Services;
-using System.Threading.Tasks;
 
 namespace Doods.Xam.MonitorMyServer.Views.Base
 {
@@ -24,7 +24,8 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             _dataProvider ?? (_dataProvider = App.Container.Resolve<IDataProvider>());
 
         public INavigationService NavigationService =>
-            _navigationService ?? (_navigationService = App.Container.ResolveKeyed<INavigationService>(App.NavigationServiceType));
+            _navigationService ?? (_navigationService =
+                App.Container.ResolveKeyed<INavigationService>(App.NavigationServiceType));
 
         public RootPages CurrentRootPage
         {

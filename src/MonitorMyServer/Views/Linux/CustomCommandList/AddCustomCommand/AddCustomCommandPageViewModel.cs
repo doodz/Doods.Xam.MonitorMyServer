@@ -12,38 +12,55 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
 {
     [QueryProperty(nameof(NameQuery), nameof(NameQuery))]
     [QueryProperty(nameof(CommandStringQuery), nameof(CommandStringQuery))]
-
     [QueryProperty(nameof(IdQuery), nameof(IdQuery))]
-    public class AddCustomCommandPageViewModel:ViewModel
+    public class AddCustomCommandPageViewModel : ViewModel
     {
+        private ValidatableObjectView<string> _commandString;
         private long _hostId;
-         private ValidatableObjectView<string> _name;
-         private ValidatableObjectView<string> _commandString;
-        public ICommand SaveCommand { get; }
-         public ValidatableObjectView<string> Name
-         {
-             get => _name;
-             set => SetProperty(ref _name, value);
-         }
+        private ValidatableObjectView<string> _name;
 
-         public ValidatableObjectView<string> CommandString
-        {
-             get => _commandString;
-             set => SetProperty(ref _commandString, value);
-         }
         public AddCustomCommandPageViewModel()
-         {
+        {
             Name = new ValidatableObjectView<string>(Resource.CommandName, true);
             CommandString = new ValidatableObjectView<string>(Resource.Command, true);
             AddValidations();
-            SaveCommand =new Command(Save);
+            SaveCommand = new Command(Save);
+        }
+
+        public ICommand SaveCommand { get; }
+
+        public ValidatableObjectView<string> Name
+        {
+            get => _name;
+            set => SetProperty(ref _name, value);
+        }
+
+        public ValidatableObjectView<string> CommandString
+        {
+            get => _commandString;
+            set => SetProperty(ref _commandString, value);
+        }
+
+        public string IdQuery
+        {
+            set => _hostId = long.Parse(value);
+        }
+
+        public string NameQuery
+        {
+            set => _name.Value = Uri.UnescapeDataString(value);
+        }
+
+        public string CommandStringQuery
+        {
+            set => _commandString.Value = Uri.UnescapeDataString(value);
         }
 
         private bool Validate()
         {
             var isNameValid = ValidateName();
             var isValidCommandString = ValidateCommandString();
-          
+
             return isNameValid && isValidCommandString;
         }
 
@@ -56,11 +73,12 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
         {
             return _commandString.Validate();
         }
+
         private async void Save(object obj)
         {
             if (Validate())
             {
-                var command = new CustomCommandSsh()
+                var command = new CustomCommandSsh
                 {
                     CommandString = _commandString.Value,
                     Name = _name.Value
@@ -73,10 +91,9 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
                 else
                 {
                     await DataProvider.InsertCustomCommandAsync(command).ConfigureAwait(false);
-
                 }
-                MainThread.BeginInvokeOnMainThread( () => {  NavigationService.GoBack(); });
-               
+
+                MainThread.BeginInvokeOnMainThread(() => { NavigationService.GoBack(); });
             }
         }
 
@@ -90,20 +107,6 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
             {
                 ValidationMessage = Resource.NameToDisplayRequired
             });
-
-        }
-        public string IdQuery
-        {
-            set => _hostId = Int64.Parse(value);
-        }
-        public string NameQuery
-        {
-            set => _name.Value = Uri.UnescapeDataString(value);
-        }
-
-        public string CommandStringQuery
-        {
-            set => _commandString.Value = Uri.UnescapeDataString(value);
         }
     }
 }

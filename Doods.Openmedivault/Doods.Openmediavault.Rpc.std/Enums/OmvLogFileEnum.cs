@@ -16,30 +16,21 @@ namespace Doods.Openmedivault.Ssh.Std.Data
 {
     public enum OmvLogFileEnum
     {
-        [Description("Authentication")]
-        auth,
-        [Description("Boot")]
-        boot,
-        [Description("Daemon")]
-        daemon,
-        [Description("Ftp")]
-        proftpd,
-        [Description("FTP - Transfer log")]
-        proftpd_xferlog,
-        [Description("Messages")]
-        messages,
-        [Description("Rsync - Jobs")]
-        rsync,
-        [Description("Rsync - Server")]
-        rsyncd,
-        [Description("S.M.A.R.T.")]
-        smartd,
-        [Description("SMB/CIFS - Audit")]
-        smbdaudit,
-        [Description("Syslog")]
-        syslog,
+        [Description("Authentication")] auth,
+        [Description("Boot")] boot,
+        [Description("Daemon")] daemon,
+        [Description("Ftp")] proftpd,
+        [Description("FTP - Transfer log")] proftpd_xferlog,
+        [Description("Messages")] messages,
+        [Description("Rsync - Jobs")] rsync,
+        [Description("Rsync - Server")] rsyncd,
+        [Description("S.M.A.R.T.")] smartd,
+        [Description("SMB/CIFS - Audit")] smbdaudit,
+        [Description("Syslog")] syslog,
+
         [Description("Update Management - History")]
         apt_history,
+
         [Description("Update Management - Terminal output")]
         apt_term
     }

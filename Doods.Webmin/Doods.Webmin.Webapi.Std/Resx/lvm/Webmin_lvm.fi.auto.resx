@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Looginen äänenvoimakkuuden hallinta</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>LVM-komentoa $1 ei löydy järjestelmästäsi. Webmin tarvitsee LVM-hallintakomennot loogisten levyjen asettamiseksi ja hallitsemiseksi.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>LVM-tilahakemistoa $1 ei ole. Tämä osoittaa, että ytimesi ei tue LVM: ää tai että $2 -ytimen moduulia ei ole ladattu.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Volyymit Ryhmät</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Fyysiset volyymit</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Loogiset määrät</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Järjestelmästäsi ei löytynyt tilavuusryhmiä.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Lisää uusi tilavuusryhmä.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Tällä levyryhmällä ei ole vielä loogisia levyjä.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Tällä volyymiryhmällä ei ole vielä fyysisiä levyjä.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Lisää fyysinen tilavuus ryhmään.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Lisää fyysinen äänenvoimakkuus kohtaan &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Luo looginen levy &lt;tt&gt;$1&lt;/tt&gt; -kansioon.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Luo tilannekuva kohtaan &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Luo ohut uima-allas hakemistoon &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Luo uusi looginen levy.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Luo uusi tilannekuva.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>tilavuusryhmät</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>fyysiset volyymit</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>loogiset määrät</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin tukee vain LVM-versioita 1.0 tai uudempaa. Tulos järjestelmästä $1 oli : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM-versio $1 </value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Levyryhmän nimi</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Kokonaiskoko</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Käytetyt lohkot</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Käytetty koko</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Fyysisiä tilavuuksia ei ole vielä lisätty mihinkään tilavuusryhmiin.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Määrästä ryhmästä ei ole vielä luotu loogisia levyjä.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Fyysinen tilavuuslaite</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>Volyymi ryhmässä</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Laitteen koko</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Käytetyt lohkot</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Käytetty koko</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Levyryhmä on joukko levyjä, jotka voidaan allokoida yhdelle tai useammalle loogiselle levylle. Useimmissa järjestelmissä on vain yksi, ja ainakin yksi on luotava, ennen kuin fyysisiä tai loogisia levyjä voidaan lisätä.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Fyysinen levy on levyosio tai RAID-laite, joka on osa levyn ryhmää. Sen levytilaa voi sitten käyttää yksi tai useampi looginen levy.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Looginen levy on virtuaalinen osio, joka on luotu asemaryhmän yhdistetystä levytilasta. Jokaisella voi olla tiedostojärjestelmä, joka asennetaan sitten tiedostojen tallentamiseen.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Looginen tilavuus</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Määrä ryhmä</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Koko</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Käytetty tila</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Käytetään</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Tilannekuva $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>LVM-ohut uima-allas $1 LV: lle</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Muokkaa loogista määrää</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Muokkaa tilannekuvaa</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Luo looginen määrä</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Luo tilannekuva</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>Tilavuusryhmässä $1 </value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Loogisen tilavuuden yksityiskohdat</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Levyn nimi</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Luo ohuena LV: nä uima-altaassa</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Ohut uima-altaassa</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Ei mitään (luo tavallinen LV)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Äänenvoimakkuus</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absoluuttinen koko</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Prosenttiosuus VG-koosta</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Prosenttiosuus VG: n vapaasta tilasta</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Prosenttiosuus PV-vapaasta tilasta</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 / $2 </value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Tarkka koko</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Koko yksiköillä</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Käytä kaikkea vapaata VG-tilaa</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Laitetiedosto</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Nykyinen tila</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Asennettu kohtaan $1 kuin $2 </value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Asennettavaksi kohtaan $1 kuin $2 </value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Asennetaan virtuaalimuistiksi</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Asennettavaksi virtuaalimuistina</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Osa RAID-laitteesta $1 </value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Käyttää Cloudmin-järjestelmä $1 </value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Cloudmin-järjestelmän $1 käytettäväksi</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI jaettu laite $1 </value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Ei käytössä</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Tätä loogista taltiota ei voi nimetä uudelleen tai muuttaa sen kokoa, koska se on tällä hetkellä käytössä.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Määrä pääsy</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Lukea kirjoittaa</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Lue ainoastaan</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Jakamismenetelmä</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>rajakkain</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Epäjatkuvaa</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Äänenvoimakkuuden poistaminen</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Poistettu käytöstä (varaa aina alusta alkaen)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Raita $1 : n fyysisestä määrästä</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Fyysiset tilavuudet raidaksi poikki</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Raidan koko</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Readahead-sektorit</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Loogisen taltion tallentaminen epäonnistui</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Puuttuva tai virheellinen taltion nimi</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Looginen levy, jolla on sama nimi, on jo olemassa</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Puuttuva tai virheellinen äänenvoimakkuus</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Puuttuva tai virheellinen tilavuusryhmän kokoprosentti</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Puuttuva tai virheellinen ilmaisen volyymin ryhmäkokoprosentti</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Puuttuva tai virheellinen fyysisen tilavuuden kokoprosentti</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Puuttuva tai kelpaa raidojen määrä</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Poista looginen tilavuus</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Palautuksen tilannekuva</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Haluatko varmasti poistaa loogisen levyn $1 ? Kaikki tämän loogisen levyn tiedostojärjestelmän tiedot poistetaan lopullisesti!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Haluatko varmasti poistaa tilannevedoksen $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Haluatko varmasti palauttaa tilannekuvan $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>VAROITUS! Tämä LV on ohut ryhmä $1 muulle ohuesti varatulle loogiselle levylle, joka myös häviää, jos se poistetaan!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Poista nyt</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Palautus nyt</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Loogisen levyn poistaminen epäonnistui</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Pikakuvan palautus epäonnistui</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Kohdennuslohkon koko</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Levyryhmästä allokoidut lohkot</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 / $2 </value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Luo tyyppinen tiedostojärjestelmä:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Luo tiedostojärjestelmä</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Valitse tiedostojärjestelmätyyppi ja napsauta tätä painiketta, jos haluat luoda uuden tiedostojärjestelmän tähän loogiseen levyyn. Tämä poistaa kaikki tällä hetkellä levyllä olevat tiedot.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Napsauta tätä painiketta, jos haluat luoda uuden $1 -tiedostojärjestelmän tähän loogiseen taltioon. Tämä poistaa kaikki tällä hetkellä levyllä olevat tiedot.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Uusi levykoko on $1 lohkoa (kustakin $2), mutta vain $3 on ilmainen tilavuusryhmässä.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Loogisen tilavuuden tilannekuva</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Ei voitu määrittää!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Asenna LV:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Asenna tämä LV uuden järjestelmän hakemistoon, jotta sitä voidaan käyttää tiedostojen tallentamiseen. Tiedostojärjestelmä on jo luotu.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Ilmainen prosenttiosuus</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Vapaa tila</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Jaetut fyysiset volyymit</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LV: t tässä ohuessa uima-altaassa</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Ohut uima-altaan käyttöprosentti</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Käytetty ohut uima-allastila</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Yksittäiskuvan käyttöprosentti</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Loogista tilavuutta ei enää ole!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Siirrä fyysinen tilavuus pois</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Siirrä lohkot fyysisestä äänenvoimakkuudesta</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Fyysiseen tilavuuteen</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Siirrä kortteja</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>looginen äänenvoimakkuus</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Luo tiedostojärjestelmä</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Tämä muoto antaa sinun rakentaa uuden $2 ($1) tiedostojärjestelmän loogiseen taltioon $3. Kaikki nykyiset tiedot poistetaan.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Uudet tiedostojärjestelmän asetukset</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Tiedostojärjestelmän luominen epäonnistui</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Suoritetaan komento $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. komento epäonnistui!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. komento valmis.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Muuta loogisen volyymin kokoa</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Tämän loogisen levyn $1 -tiedostojärjestelmän kokoa ei voi muuttaa. Jos muutat loogisen taltion kokoa, sinun on luotava tiedostojärjestelmä uudelleen, mikä poistaa kaikki siinä olevat tiedot.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin ei tiedä, millainen tiedostojärjestelmä tällä loogisella levyllä on, jos sellainen on. Jos muutat loogisen taltion kokoa, sinun on luotava tiedostojärjestelmä uudelleen, mikä poistaa kaikki siinä olevat tiedot.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>$1 -tiedostojärjestelmän koon muuttamisessa tässä loogisessa levyssä: $2 Jos muutat vain loogisen levyn kokoa, sinun on luotava tiedostojärjestelmä uudelleen, mikä poistaa kaikki siinä olevat tiedot.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Muuta loogisen volyymin kokoa</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Tämän loogisen levyn tiedostojärjestelmän kokoa ei voi muuttaa, kun se on asennettu</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Tämän loogisen levyn tiedostojärjestelmää ei voida kutistaa, kun se on asennettu</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktivoi LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Käynnissä komento $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Muokkaa fyysistä tilavuutta</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Lisää fyysinen tilavuus</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>Tilavuusryhmässä $1 </value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Fyysisen tilavuuden yksityiskohdat</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Levylaite</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Muu laite ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Otetaanko käyttöön jakamista varten?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Pakotetaanko tilavuuden lisääminen?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Levyn koko</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Jaetut lohkot</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Koko varattu</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Kohdennuslohkon koko</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Varoitus! Kaikki valitun laitteen tiedot poistetaan.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Lisää tilavuusryhmään</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Poista taltioryhmästä</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Muuta kokoa vastaamaan laitetta</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Fyysisen äänen tallennus epäonnistui</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Fyysisen äänen poistaminen epäonnistui</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Fyysisen äänen koon muuttaminen epäonnistui</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Poista fyysinen tilavuus</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Haluatko varmasti poistaa fyysisen taltiolaitteen $1 sen volyymityöstä? Tämä johtaa siihen, että kaikki tiedot siirretään ryhmän muihin fyysisiin levyihin.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Poista äänenvoimakkuus</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Puuttuva tai virheellinen levylaite</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAID-laite $1 </value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Jako loogisten volyymien mukaan</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Fyysistä tilavuutta ei enää ole!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Muokkaa tilavuusryhmää</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Luo tilavuusryhmä</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Levyryhmän nimi</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Tiedot ryhmästä</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Kokonaiskoko</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Jaetut lohkot</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Koko varattu</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Kohdennuslohkon koko</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Alkuperäinen fyysinen laite</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Tallennusryhmän tallentaminen epäonnistui</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Levyryhmä poistettu epäonnistui</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Poista äänenvoimakkuusryhmä</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Haluatko varmasti poistaa äänenvoimakkuusryhmän $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Tätä ryhmää ei voi poistaa, koska siinä on edelleen $1 looginen levy.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Poista nyt</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Puuttuva tai virheellinen volyymiryhmän nimi</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Puuttuva tai virheellinen allokointilohkon koko</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Tilaryhmää ei enää ole!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Loogisen taltion siirtäminen epäonnistui</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Siirrä looginen äänenvoimakkuus</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Loogisen äänenvoimakkuuden $1 siirtäminen $2 : sta $3. ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. siirto epäonnistui!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. siirrä loppuun</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Luo ohut allas</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Ohut uima-allas on pari LV: tä, joita voidaan käyttää luomaan lisää LV: itä, jotka voivat olla suurempia kuin käytettävissä olevat raja-arvot. Tila kulutetaan vain tarvittaessa, eikä silloin, kun uima-altaan sisällä olevat LV-alueet luodaan. VAROITUS - Kaikki valittujen LV-laitteiden tiedot menetetään!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Uudet uima-altaan yksityiskohdat</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Olemassa olevat LV tiedot</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Metatietojen olemassa oleva LV</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Muunna LV: t ohuiksi pooliksi</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>Tästä VG: stä ei löytynyt LV: tä, joita ei vielä käytetä!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Ohut altaan luominen epäonnistui</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Molemmat valitut LV: t ovat samat</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Valittu data LV on jo käytössä</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Valittu metatieto LV on jo käytössä</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Luotu ryhmä $1 </value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Muokattu tilavuusryhmä $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Poistettu ääniryhmä $1 </value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Luotu looginen tilavuus $1 VG $2 : een</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Muokattu looginen tilavuus $1 VG $2 : ssa</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Poistettu looginen tilavuus $1 VG $2 : sta</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Palautettu tilannekuva $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Luotu $1 tiedostojärjestelmä $2 : een</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Lisätty fyysinen tilavuus $1 VG $1 : een</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Muokattu fyysinen tilavuus $1 VG $2 : ssa</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Poistettu fyysinen tilavuus $1 VG $2 : sta</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Koko muutettu fyysisen tilavuuden $1 suhteessa VG $2 </value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>lohkot</value>
+  </data>
+</root>

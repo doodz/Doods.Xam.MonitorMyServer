@@ -17,9 +17,9 @@ namespace Doods.Openmedivault.Ssh.Std
         {
         }
     }
+
     public class OmvSshService : APIServiceBase, IRpcClient
     {
-        public RequestType RequestType => RequestType.ssh;
         /// <summary>
         /// </summary>
         private readonly OmvRpc _client;
@@ -32,6 +32,8 @@ namespace Doods.Openmedivault.Ssh.Std
             _client = new OmvRpc(logger, Connection);
         }
 
+        public RequestType RequestType => RequestType.ssh;
+
 
         public Task<bool> LoginAsync(string username, string password)
         {
@@ -41,10 +43,10 @@ namespace Doods.Openmedivault.Ssh.Std
 
         public async Task<IEnumerable<string>> ListRrdFilesAsync()
         {
-             var sshrequest = new DefaultSshRequest("ls /var/lib/openmediavault/rrd");
-             var response = await _client.ExecuteTaskAsync<string>(sshrequest).ConfigureAwait(false);
+            var sshrequest = new DefaultSshRequest("ls /var/lib/openmediavault/rrd");
+            var response = await _client.ExecuteTaskAsync<string>(sshrequest).ConfigureAwait(false);
             //var result = await RunCommand("ls  /var/lib/openmediavault/rrd");
-            return response.Content.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+            return response.Content.Split(new[] {"\r\n", "\n"}, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public Task<IEnumerable<byte[]>> GetRrdFilesAsync(IEnumerable<string> filesPaths)
@@ -54,7 +56,7 @@ namespace Doods.Openmedivault.Ssh.Std
 
         public Task<byte[]> GetRrdFileAsync(string filePath)
         {
-           return _client.GetFileAsync(filePath);
+            return _client.GetFileAsync(filePath);
         }
 
         public async Task<T> ExecuteTaskAsync<T>(IRpcRequest rpcrequest)
@@ -70,6 +72,5 @@ namespace Doods.Openmedivault.Ssh.Std
             var response = await _client.ExecuteTaskAsync<T>(request).ConfigureAwait(false);
             return response.Data;
         }
-      
     }
 }

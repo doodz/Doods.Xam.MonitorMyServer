@@ -17,19 +17,14 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class Cgroup
     {
-        [JsonProperty("cpuFraction")]
-        public long CpuFraction { get; set; }
+        [JsonProperty("cpuFraction")] public long CpuFraction { get; set; }
 
-        [JsonProperty("cpu_time")]
-        public long CpuTime { get; set; }
+        [JsonProperty("cpu_time")] public long CpuTime { get; set; }
 
-        [JsonProperty("memory")]
-        public long Memory { get; set; }
+        [JsonProperty("memory")] public long Memory { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("pids")]
-        public List<long> Pids { get; set; }
+        [JsonProperty("pids")] public List<long> Pids { get; set; }
     }
 }

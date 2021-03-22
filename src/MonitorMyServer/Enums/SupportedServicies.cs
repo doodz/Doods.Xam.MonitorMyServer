@@ -8,6 +8,7 @@
         Openmediavault_HTTP,
         Openmediavault_HTTPS,
         Openmediavault,
-        Synology
+        Synology,
+        Webmin
     }
 }

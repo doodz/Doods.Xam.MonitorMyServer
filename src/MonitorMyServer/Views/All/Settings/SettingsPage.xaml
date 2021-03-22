@@ -7,10 +7,81 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:settings="clr-namespace:Doods.Xam.MonitorMyServer.Views.Settings;assembly=Doods.Xam.MonitorMyServer"
-                      xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:testfont="clr-namespace:Doods.Framework.Mobile.Std.Helpers.Styles;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
+
                       mc:Ignorable="d"
                       x:DataType="settings:SettingsPAgeViewModel"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Settings.SettingsPage">
+   
+        <ContentPage.Resources>
+            <ResourceDictionary>
+
+                <Color x:Key="LightRadioButtonColor">#F3F2F1</Color>
+                <Color x:Key="DarkRadioButtonColor">#9B9A99</Color>
+
+                <ControlTemplate x:Key="ThemeRadioTemplate">
+                    <Frame
+                    Padding="0"
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+                                                      Light={StaticResource LightRadioButtonColor}}"
+                    BorderColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+                                                  Light={StaticResource LightRadioButtonColor}}"
+                    HasShadow="False"
+                    HeightRequest="80"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    WidthRequest="80">
+                        <Grid Margin="4" WidthRequest="80">
+                            <Grid
+                            HeightRequest="20"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            WidthRequest="20">
+                                <Ellipse
+                                Fill="White"
+                                HeightRequest="18"
+                                HorizontalOptions="Center"
+                                Stroke="#2E2545"
+                                StrokeThickness="1"
+                                VerticalOptions="Center"
+                                WidthRequest="18" />
+                                <Ellipse
+                                x:Name="Check"
+                                BackgroundColor="Transparent"
+                                Fill="#df6e57"
+                                HeightRequest="10"
+                                HorizontalOptions="Center"
+                                Stroke="#df6e57"
+                                StrokeThickness="0"
+                                VerticalOptions="Center"
+                                WidthRequest="10" />
+                            </Grid>
+                            <!-- This enables us to put in dynamic content -->
+                            <ContentPresenter />
+                        </Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroupList>
+                                <VisualStateGroup x:Name="CheckedStates">
+                                    <VisualState x:Name="Checked">
+                                        <VisualState.Setters>
+                                            <Setter Property="BorderColor" Value="#df6e57" />
+                                            <Setter TargetName="Check" Property="Opacity" Value="1" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Unchecked">
+                                        <VisualState.Setters>
+                                            <Setter Property="BorderColor" Value="#F3F2F1" />
+                                            <Setter TargetName="Check" Property="Opacity" Value="0" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </VisualStateManager.VisualStateGroups>
+                    </Frame>
+                </ControlTemplate>
+            </ResourceDictionary>
+        </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="8">
 
@@ -35,7 +106,7 @@
                     <Label Text="Use fingerprint" />
                     <Switch IsEnabled="{Binding CanUseFingerprint,Mode=OneWay}"
                             IsToggled="{Binding UseFingerprint,Mode=TwoWay}"
-                           
+
                             OnColor="Orange"
                             ThumbColor="Green">
                         <!--<Switch.Behaviors>
@@ -49,12 +120,128 @@
             </controls:TitledFrameView>
             <controls:TitledFrameView Padding="8"
                                       Title="UI Theme">
-                <StackLayout>
-                    <Label Text="Theme" />
-                    <Picker
-                        ItemsSource="{Binding ThemeOptions}"
-                        SelectedIndex="{Binding SelectedTheme}"
-                        />
+                <StackLayout behaviors:StateLayout.CurrentState="{Binding CurrentState,Mode=OneWay}" behaviors:StateLayout.CurrentCustomStateKey="{Binding CustomState}">
+                    <behaviors:StateLayout.StateViews>
+                        <behaviors:StateView StateKey="Custom" CustomStateKey="NoDefault">
+                            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+
+                                <RadioButton HorizontalOptions="Center" ControlTemplate="{StaticResource ThemeRadioTemplate}" Grid.Column="0"  IsChecked="{Binding Islight}">
+                                    <RadioButton.Content>
+                                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                                            <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Sun}, Color=#323130}" />
+                                            <Label FontSize="Small" Text="Light" TextColor="#323130" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                    <RadioButton.Behaviors>
+                                        <behaviors:EventToCommandBehavior
+                                            EventName="Focused"
+                                            Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                               
+                                        />
+                                    </RadioButton.Behaviors>
+                                </RadioButton>
+                                <RadioButton HorizontalOptions="Center" ControlTemplate="{StaticResource ThemeRadioTemplate}" Grid.Column="1"  IsChecked="{Binding IsDark}">
+                                    <RadioButton.Content>
+                                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                                            <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Moon}, Color=#323130}" />
+                                            <Label FontSize="Small" Text="Dark" TextColor="#323130" />
+                                        </StackLayout>
+                                    </RadioButton.Content>
+                                    <RadioButton.Behaviors>
+                                        <behaviors:EventToCommandBehavior
+                                            EventName="Focused"
+                                            Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                               
+                                        />
+                                    </RadioButton.Behaviors>
+                                </RadioButton>
+
+
+                            </Grid>
+                        </behaviors:StateView>
+                    </behaviors:StateLayout.StateViews>
+                        <Label Text="Theme" />
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10">
+                        <RadioButton  HorizontalOptions="Center" ControlTemplate="{StaticResource ThemeRadioTemplate}" Grid.Column="0" IsChecked="{Binding IsDefault}">
+                            <RadioButton.Content>
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                                    <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.UserCog}, Color=#323130}" />
+                                    <Label FontSize="Small" Text="System" TextColor="#323130" />
+                                </StackLayout>
+                            </RadioButton.Content>
+                            <RadioButton.Behaviors>
+                            <behaviors:EventToCommandBehavior
+                                EventName="Focused"
+                                Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                               
+                            />
+                            <behaviors:EventToCommandBehavior
+                                EventName="Unfocused"
+                                Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    
+                            />
+                            <behaviors:EventToCommandBehavior
+                                EventName="CheckedChanged"
+                                Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    
+                            />
+                            </RadioButton.Behaviors>
+                        </RadioButton>
+                        <RadioButton HorizontalOptions="Center" ControlTemplate="{StaticResource ThemeRadioTemplate}" Grid.Column="1"  IsChecked="{Binding Islight}">
+                            <RadioButton.Content>
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                                    <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Sun}, Color=#323130}" />
+                                    <Label FontSize="Small" Text="Light" TextColor="#323130" />
+                                </StackLayout>
+                            </RadioButton.Content>
+                            <RadioButton.Behaviors>
+                                <behaviors:EventToCommandBehavior
+                                    EventName="Focused"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    CommandParameter="Focused"
+                               
+                                />
+                                <behaviors:EventToCommandBehavior
+                                    EventName="Unfocused"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    CommandParameter="Unfocused"
+                                />
+                                <behaviors:EventToCommandBehavior
+                                    EventName="CheckedChanged"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    CommandParameter="CheckedChanged"
+                                />
+                            </RadioButton.Behaviors>
+                        </RadioButton>
+                        <RadioButton HorizontalOptions="Center" ControlTemplate="{StaticResource ThemeRadioTemplate}" Grid.Column="2"  IsChecked="{Binding IsDark}">
+                            <RadioButton.Content>
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                                    <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Moon}, Color=#323130}" />
+                                    <Label FontSize="Small" Text="Dark" TextColor="#323130" />
+                                </StackLayout>
+                            </RadioButton.Content>
+                            <RadioButton.Behaviors>
+                                <behaviors:EventToCommandBehavior
+                                    EventName="Focused"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    
+                                /> 
+                                <behaviors:EventToCommandBehavior
+                                    EventName="Unfocused"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    
+                                />
+                                <behaviors:EventToCommandBehavior
+                                    EventName="CheckedChanged"
+                                    Command="{Binding ItemTappedCommand,Mode=OneWay}"
+                                    
+                                />
+                            </RadioButton.Behaviors>
+                        </RadioButton>
+
+                        
+                    </Grid>
+                   
                 </StackLayout>
             </controls:TitledFrameView>
 

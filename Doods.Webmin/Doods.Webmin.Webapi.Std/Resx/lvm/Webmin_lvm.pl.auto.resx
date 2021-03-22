@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Zarządzanie woluminami logicznymi</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>W systemie nie znaleziono polecenia LVM $1. Webmin potrzebuje poleceń administracyjnych LVM w celu skonfigurowania woluminów logicznych i zarządzania nimi.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>Katalog statusu LVM $1 nie istnieje. Oznacza to, że twoje jądro nie obsługuje LVM lub że moduł jądra $2 nie jest załadowany.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Grupy woluminów</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Tomy fizyczne</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Woluminy logiczne</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>W systemie nie znaleziono grup woluminów.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Dodaj nową grupę woluminów.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Ta grupa woluminów nie ma jeszcze żadnych woluminów logicznych.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Ta grupa woluminów nie ma jeszcze żadnych woluminów fizycznych.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Dodaj wolumin fizyczny do grupy.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Dodaj wolumin fizyczny do &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Utwórz wolumin logiczny w &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Utwórz migawkę w &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Utwórz cienką pulę w &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Utwórz nowy wolumin logiczny.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Utwórz nową migawkę.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>grupy woluminów</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>woluminy fizyczne</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>woluminy logiczne</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin obsługuje tylko LVM w wersji 1.0 i nowszych. Dane wyjściowe z $1 w twoim systemie to : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Wersja LVM $1 </value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Nazwa grupy woluminów</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Całkowity rozmiar</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Użyte bloki</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Użyty rozmiar</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Żadne woluminy fizyczne nie zostały jeszcze dodane do żadnych grup woluminów.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Nie utworzono jeszcze woluminów logicznych z żadnych grup woluminów.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Urządzenie wielkości fizycznej</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>W grupie woluminów</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Rozmiar urządzenia</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Użyte bloki</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Użyty rozmiar</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Grupa woluminów to zestaw dysków, które można przypisać do jednego lub więcej woluminów logicznych. Większość systemów będzie miała tylko jeden i przynajmniej jeden musi zostać utworzony przed dodaniem jakichkolwiek woluminów fizycznych lub logicznych.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Wolumin fizyczny to partycja dysku lub urządzenie RAID, które jest częścią grupy woluminów. Jego miejsce na dysku może być następnie wykorzystane przez jeden lub więcej woluminów logicznych.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Wolumin logiczny to partycja wirtualna utworzona z połączonego miejsca na dysku grupy woluminów. Każdy może mieć system plików, który jest następnie montowany do przechowywania plików.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Wolumin logiczny</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Grupa woluminów</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Rozmiar</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Wykorzystane miejsce</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Używany do</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Migawka $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>Cienka pula LVM dla $1 LV</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Edytuj wolumin logiczny</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Edytuj migawkę</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Utwórz wolumin logiczny</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Utwórz migawkę</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>W grupie woluminów $1 </value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Szczegóły woluminu logicznego</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Nazwa woluminu</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Utwórz jako cienką LV w puli</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Cienkie zabezpieczone w puli</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Brak (utwórz jako zwykły LV)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Rozmiar woluminu</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Rozmiar absolutny</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Procent wielkości VG</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Procent wolnej przestrzeni VG</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Procent wolnej przestrzeni PV</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 z $2</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Dokładny rozmiar</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Rozmiar z jednostkami</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Wykorzystaj całą wolną przestrzeń VG</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Plik urządzenia</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Aktualny stan</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Zamontowany na $1 jako $2 </value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Do montażu na $1 jako $2 </value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Zamontowany jako pamięć wirtualna</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Do montażu jako pamięć wirtualna</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Część urządzenia RAID $1 </value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Używany przez system Cloudmin $1 </value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Do wykorzystania przez system Cloudmin $1 </value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>Urządzenie współdzielone iSCSI $1 </value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Nie w użyciu</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Nie można zmienić nazwy ani rozmiaru tego woluminu logicznego, ponieważ jest on aktualnie używany.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Dostęp do woluminu</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Odczyt/zapis</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Tylko czytać</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Metoda alokacji</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Przyległy</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Nieprzylegające</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Stripowanie głośności</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Wyłączone (zawsze przydzielaj od początku)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Paski na $1 woluminach fizycznych</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Objętości fizyczne do rozłożenia</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Rozmiar paska</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Readahead Sectors</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Nie udało się zapisać woluminu logicznego</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa woluminu</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Wolumin logiczny o tej samej nazwie już istnieje</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy rozmiar woluminu</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy procent wielkości grupy woluminów</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy procent wielkości wolnej grupy woluminów</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy procent wielkości woluminu fizycznego</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa liczba pasków</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Usuń wolumin logiczny</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Wycofanie migawki</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć wolumin logiczny $1 ? Wszelkie dane w systemie plików na tym woluminie logicznym zostaną usunięte na zawsze!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć migawkę $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Czy na pewno chcesz cofnąć migawkę $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>OSTRZEŻENIE! Ta LV jest cienką pulą dla $1 innych słabo wyposażonych woluminów logicznych, która również zostanie utracona, jeśli zostanie usunięta!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Usuń teraz</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Cofnij teraz</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Nie udało się usunąć woluminu logicznego</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Nie udało się przywrócić migawki</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Rozmiar bloku alokacji</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Bloki przydzielone z grupy woluminów</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 z $2 </value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Utwórz system plików typu:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Utwórz system plików</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Wybierz typ systemu plików i kliknij ten przycisk, aby utworzyć nowy system plików na tym woluminie logicznym. Spowoduje to usunięcie danych aktualnie znajdujących się w woluminie.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Kliknij ten przycisk, aby utworzyć nowy system plików $1 na tym woluminie logicznym. Spowoduje to usunięcie danych aktualnie znajdujących się w woluminie.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Nowy rozmiar woluminu to $1 bloków (po $2 każdy), ale tylko $3 jest wolny w grupie woluminów.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Migawka woluminu logicznego</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Nie można ustalić!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Zamontuj LV na:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Zamontuj ten LV w nowym katalogu w systemie, aby można go było używać do przechowywania plików. System plików musi być już utworzony.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Darmowy procent</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Wolna przestrzeń</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Przydzielone woluminy fizyczne</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LV w tym cienkim basenie</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Procent wykorzystania puli cienkiej</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Wykorzystano cienkie miejsce w basenie</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Procent użycia migawki</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Wolumin logiczny już nie istnieje!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Odejdź od fizycznej objętości</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Przenieś bloki z woluminu fizycznego</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Do objętości fizycznej</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Przenieś bloki</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>wolumin logiczny</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Utwórz system plików</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Ten formularz umożliwia zbudowanie nowego systemu plików $2 ($1) na woluminie logicznym $3. Wszystkie istniejące dane zostaną usunięte.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Nowe opcje systemu plików</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Nie udało się utworzyć systemu plików</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Wykonanie polecenia $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. polecenie nie powiodło się!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. polecenie zakończone.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Zmień rozmiar woluminu logicznego</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Nie można zmienić rozmiaru systemu plików $1 w tym woluminie logicznym. Jeśli zmienisz rozmiar woluminu logicznego, musisz ponownie utworzyć system plików, który usunie wszystkie zawarte w nim dane.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin nie wie, jaki rodzaj systemu plików znajduje się na tym woluminie logicznym, jeśli taki istnieje. Jeśli zmienisz rozmiar woluminu logicznego, musisz ponownie utworzyć system plików, który usunie wszystkie zawarte w nim dane.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Wystąpił błąd podczas zmiany rozmiaru systemu plików $1 na tym woluminie logicznym: $2 Jeśli zmienisz rozmiar tylko woluminu logicznego, musisz ponownie utworzyć system plików, który usunie wszystkie dane w nim zawarte.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Zmień rozmiar woluminu logicznego</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Nie można zmienić rozmiaru systemu plików w tym woluminie logicznym, gdy jest on podłączony</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>System plików w tym woluminie logicznym nie może zostać zmniejszony, gdy jest podłączony</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktywuj LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Uruchamianie polecenia $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Edytuj wolumin fizyczny</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Dodaj objętość fizyczną</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>W grupie woluminów $1 </value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Szczegóły woluminu fizycznego</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Urządzenie dyskowe</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Inne urządzenie ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Czy można przydzielić?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Wymusić dodanie objętości?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Rozmiar dysku</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Przydzielone bloki</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Przydzielony rozmiar</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Rozmiar bloku alokacji</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Ostrzeżenie! Wszystkie dane na wybranym urządzeniu zostaną usunięte.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Dodaj do grupy woluminów</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Usuń z grupy woluminów</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Zmień rozmiar, aby dopasować urządzenie</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Nie udało się zapisać woluminu fizycznego</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Nie udało się usunąć woluminu fizycznego</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Nie można zmienić rozmiaru woluminu fizycznego</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Usuń wolumin fizyczny</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć urządzenie woluminu fizycznego $1 z jego grupy woluminów? Spowoduje to przeniesienie danych na inne woluminy fizyczne w grupie.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Usuń wolumin</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Brakujące lub nieprawidłowe urządzenie dyskowe</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>Urządzenie RAID $1 </value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Alokacja według woluminów logicznych</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Objętość fizyczna już nie istnieje!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Edytuj grupę woluminów</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Utwórz grupę woluminów</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Nazwa grupy woluminów</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Szczegóły grupy woluminów</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Całkowity rozmiar</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Przydzielone bloki</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Przydzielony rozmiar</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Rozmiar bloku alokacji</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Początkowe urządzenie fizyczne</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Nie udało się zapisać grupy woluminów</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Nie udało się usunąć grupy woluminów</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Usuń grupę woluminów</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć grupę woluminów $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Tej grupy woluminów nie można usunąć, ponieważ nadal ma ona $1 woluminów logicznych.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Usuń teraz</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa grupy woluminów</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy rozmiar bloku alokacji</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Grupa woluminów już nie istnieje!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Nie udało się przenieść woluminu logicznego</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Przenieś wolumin logiczny</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Przenoszenie woluminu logicznego $1 z $2 do $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. ruch nie powiódł się!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. ruch zakończony</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Utwórz cienką pulę</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Cienka pula to para LV, które można wykorzystać do stworzenia dodatkowych LV, które mogą być większe niż dostępne zakresy. Miejsce jest zużywane tylko wtedy, gdy jest potrzebne, a nie podczas tworzenia LV w puli. OSTRZEŻENIE - Wszelkie dane dotyczące wybranych LV zostaną utracone!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Nowe szczegóły cienkiego basenu</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Istniejąca LV dla danych</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Istniejące LV dla metadanych</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Konwertuj LV na cienką pulę</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>W tym VG nie znaleziono żadnych LV, które nie są jeszcze w użyciu!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Nie udało się utworzyć cienkiej puli</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Oba wybrane LV są takie same</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Wybrane dane LV są już w użyciu</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Wybrane metadane LV są już w użyciu</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Utworzono grupę woluminów $1 </value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Zmodyfikowana grupa woluminów $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Usunięto grupę woluminów $1 </value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Utworzono wolumin logiczny $1 w VG $2 </value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Zmodyfikowany wolumin logiczny $1 w VG $2 </value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Usunięto wolumin logiczny $1 w VG $2 </value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Wycofana migawka $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Utworzono system plików $1 na $2 </value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Dodano objętość fizyczną $1 do VG $1 </value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Zmodyfikowana objętość fizyczna $1 w VG $2 </value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Usunięto wolumin fizyczny $1 z VG $2 </value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Zmiana rozmiaru objętości fizycznej $1 w VG $2 </value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>Bloki</value>
+  </data>
+</root>

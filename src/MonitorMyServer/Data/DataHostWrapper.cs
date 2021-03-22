@@ -1,13 +1,10 @@
 ﻿using System;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
-using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Login;
 
 namespace Doods.Xam.MonitorMyServer.Data
 {
-
-
     //public class ZeroConfHostWrapper : IQueryShellNavigationObject
     //{
     //    private readonly string _str;
@@ -50,7 +47,7 @@ namespace Doods.Xam.MonitorMyServer.Data
                 $"&{nameof(LoginPageViewModel.IsSynoQuery)}={host.IsSynoServer}";
         }
 
-       
+
         public string ToQuery()
         {
             return _str;

@@ -4,22 +4,22 @@ using RestSharp;
 
 namespace Doods.Synology.Webapi.Std
 {
-
     public interface ISynoPackageClient
     {
         Task<SynologyPackageInfo> GetPackagesInfo();
     }
+
     public class SynoPackageClient : BaseSynoClient, ISynoPackageClient
     {
         public SynoPackageClient(ISynoWebApi client) : base(client)
         {
             Resource = "/entry.cgi";
             ServiceApiName = "SYNO.Core.Package";
-
         }
+
         public async Task<SynologyPackageInfo> GetPackagesInfo()
         {
-            JsonArray array = new JsonArray();
+            var array = new JsonArray();
             array.Add("startable");
             array.Add("dependent_packages");
 
@@ -30,8 +30,9 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("additional", array);
             loginRequest.AddParameter("sid", _client.Sid);
 
-          
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyPackageInfo>>(loginRequest).ConfigureAwait(false);
+
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyPackageInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
         //public async Task<SynologyEntriesInfo> GetServicesInfo()

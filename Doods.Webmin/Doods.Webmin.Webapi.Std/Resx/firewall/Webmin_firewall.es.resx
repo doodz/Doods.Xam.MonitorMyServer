@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Firewall IPTables</value>
+  </data>
+  <data name="index_ecommand" xml:space="preserve">
+    <value>El comando $1 no se encontro en su sistema. Allconnections necesita este comando para configurar el firewall.</value>
+  </data>
+  <data name="index_ekernel" xml:space="preserve">
+    <value>Ocurrio un error al comprobar su configuracion de firewall actual: esto puede indicar que su kernel no tiene soporte de Firewall</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Configuracion de firewall para $1</value>
+  </data>
+  <data name="index_change" xml:space="preserve">
+    <value>Mostrando Firewall:</value>
+  </data>
+  <data name="index_chain_input" xml:space="preserve">
+    <value>Paquetes entrantes (INPUT)</value>
+  </data>
+  <data name="index_chain_output" xml:space="preserve">
+    <value>Paquetes salientes (OUTPUT)</value>
+  </data>
+  <data name="index_chain_forward" xml:space="preserve">
+    <value>Paquetes redirigidos (FORWARD)</value>
+  </data>
+  <data name="index_chain_prerouting" xml:space="preserve">
+    <value>Paquetes antes de rutado: (PREROUTING)</value>
+  </data>
+  <data name="index_chain_postrouting" xml:space="preserve">
+    <value>Paqutes postrutados:(POSTROUTING)</value>
+  </data>
+  <data name="index_chain" xml:space="preserve">
+    <value>Cadena $1</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Acccion</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Condicion</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Mover</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No hay reglas definidas para esta cadena.</value>
+  </data>
+  <data name="index_policy" xml:space="preserve">
+    <value>Establecer accion por defecto a:</value>
+  </data>
+  <data name="index_policy_accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="index_policy_drop" xml:space="preserve">
+    <value>Drop</value>
+  </data>
+  <data name="index_policy_queue" xml:space="preserve">
+    <value>Userspace</value>
+  </data>
+  <data name="index_policy_return" xml:space="preserve">
+    <value>Salir de cadena</value>
+  </data>
+  <data name="index_jump_return" xml:space="preserve">
+    <value>Salir de cadena</value>
+  </data>
+  <data name="index_jump_masquerade" xml:space="preserve">
+    <value>Enmascaramiento</value>
+  </data>
+  <data name="index_jump_redirect" xml:space="preserve">
+    <value>Redireccion</value>
+  </data>
+  <data name="index_jump_dnat" xml:space="preserve">
+    <value>NAT Destino</value>
+  </data>
+  <data name="index_jump_snat" xml:space="preserve">
+    <value>NAT Origen</value>
+  </data>
+  <data name="index_jump_" xml:space="preserve">
+    <value>No hacer nada</value>
+  </data>
+  <data name="index_jump" xml:space="preserve">
+    <value>Ejecutar cadena $1</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>Añadir regla</value>
+  </data>
+  <data name="index_cdelete" xml:space="preserve">
+    <value>Borrar cadena</value>
+  </data>
+  <data name="index_cclear" xml:space="preserve">
+    <value>Borrar todas las reglas</value>
+  </data>
+  <data name="index_cadd" xml:space="preserve">
+    <value>Añadir nueva cadean llamada:</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Aplicar configuracion</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Pulsar boton para activar la configuracion de firewall listada abajo. Cualquier regla de firewall que se aplica actualmente se eliminar y sera reemplazada</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>Revertir configuracion</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>Pulsar boton para resetear la configuracion de firewall listada abajo a la activada actualmente.</value>
+  </data>
+  <data name="index_table_filter" xml:space="preserve">
+    <value>Filtrador de paquetes (filter)</value>
+  </data>
+  <data name="index_table_nat" xml:space="preserve">
+    <value>Traduccion de direccion de red (nat)</value>
+  </data>
+  <data name="index_table_mangle" xml:space="preserve">
+    <value>alteracion de paquetes (mangle)</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Allconnections ha detectado $1 regla de Firewall en uso, que no ha sido salvada en el fichero $2.Estas reglas fueron probablemente establecidas desde un script, para el que este modulo no saba como leer y escribir. Si quiere utilizar este modulo para manejar su Firewall, pulse el boton de abajo para pasar las reglas existentes a un fichero, y despues deshabilite el script existente ahora.</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>Salvar Reglas de Firewall</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Habilitar firewall al arrancar?</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>Configuracion firewall existente</value>
+  </data>
+  <data name="index_bootup" xml:space="preserve">
+    <value>Activar al arrancar</value>
+  </data>
+  <data name="index_bootupdesc" xml:space="preserve">
+    <value>Cambiar esta opcion para controlar si el Firewall se activa al arrancar o no.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista de reglas</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>No hay un firewall establecido en su sistema. Allconnections puede establecer uno por usted, el cual se salvara en el fichero $1, con las reglas iniciales establecidas basandose en el tipo de firewall seleccionado abajo.</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>Permitir todo el trafico</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>Hacer traduccion de direccion de red en la interfaz externa:</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>Bloquear trafico de red en la interfaz externa:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>Configurar Firewall</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="desc_p" xml:space="preserve">
+    <value>protocolo es $1</value>
+  </data>
+  <data name="desc_p!" xml:space="preserve">
+    <value>protocol no es $1</value>
+  </data>
+  <data name="desc_s" xml:space="preserve">
+    <value>origen es $1</value>
+  </data>
+  <data name="desc_s!" xml:space="preserve">
+    <value>origen no es $1</value>
+  </data>
+  <data name="desc_d" xml:space="preserve">
+    <value>destino es $1</value>
+  </data>
+  <data name="desc_d!" xml:space="preserve">
+    <value>destino no es $1</value>
+  </data>
+  <data name="desc_i" xml:space="preserve">
+    <value>interfaz de entrada es $1</value>
+  </data>
+  <data name="desc_i!" xml:space="preserve">
+    <value>interfaz de entrada no es $1</value>
+  </data>
+  <data name="desc_o" xml:space="preserve">
+    <value>output interface is $1</value>
+  </data>
+  <data name="desc_o!" xml:space="preserve">
+    <value>output interface is not $1</value>
+  </data>
+  <data name="desc_f" xml:space="preserve">
+    <value>el paquete es un fragmento</value>
+  </data>
+  <data name="desc_f!" xml:space="preserve">
+    <value>el paquete no es un fragmento</value>
+  </data>
+  <data name="desc_sport" xml:space="preserve">
+    <value>el puerto origen es $1</value>
+  </data>
+  <data name="desc_sport!" xml:space="preserve">
+    <value>sel puerto origen NO es $1</value>
+  </data>
+  <data name="desc_dport" xml:space="preserve">
+    <value>el puerto destino es $1</value>
+  </data>
+  <data name="desc_dport!" xml:space="preserve">
+    <value>el puerto destino NO es $1</value>
+  </data>
+  <data name="desc_sports" xml:space="preserve">
+    <value>los puertos origen son</value>
+  </data>
+  <data name="desc_sports!" xml:space="preserve">
+    <value>los puertos origen NO son $1</value>
+  </data>
+  <data name="desc_dports" xml:space="preserve">
+    <value>los puertos destino son $1</value>
+  </data>
+  <data name="desc_dports!" xml:space="preserve">
+    <value>los puertos destino no son $1</value>
+  </data>
+  <data name="desc_tcp-flags" xml:space="preserve">
+    <value>los flags TCP $2 (de $1) estan establecidos</value>
+  </data>
+  <data name="desc_tcp-flags!" xml:space="preserve">
+    <value>los flags TCP $2 (de $1) NO estan establecidos</value>
+  </data>
+  <data name="desc_tcp-option" xml:space="preserve">
+    <value>el paquete utiliza la opcion TCP $1</value>
+  </data>
+  <data name="desc_tcp-option!" xml:space="preserve">
+    <value>el paquete NO utiliza la opcion TCP $1</value>
+  </data>
+  <data name="desc_icmp-type" xml:space="preserve">
+    <value>el tipo ICMP es $1</value>
+  </data>
+  <data name="desc_icmp-type!" xml:space="preserve">
+    <value>el tipo ICMP no es $1</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>el ratio es menor que $1</value>
+  </data>
+  <data name="desc_limit!" xml:space="preserve">
+    <value>el ratio es mayor que $1</value>
+  </data>
+  <data name="desc_limit-burst" xml:space="preserve">
+    <value>el ratio de trafico es menor que $1</value>
+  </data>
+  <data name="desc_limit-burst!" xml:space="preserve">
+    <value>el ratio de trafico es mayor que $1</value>
+  </data>
+  <data name="desc_ports" xml:space="preserve">
+    <value>puertos de orgien y destino son $1</value>
+  </data>
+  <data name="desc_ports!" xml:space="preserve">
+    <value>puertos de origen y destino distintos de $1</value>
+  </data>
+  <data name="desc_uid-owner" xml:space="preserve">
+    <value>emisor es el usuario $1</value>
+  </data>
+  <data name="desc_uid-owner!" xml:space="preserve">
+    <value>emisor no es usuario $1</value>
+  </data>
+  <data name="desc_gid-owner" xml:space="preserve">
+    <value>emisor es de grupo $1</value>
+  </data>
+  <data name="desc_gid-owner!" xml:space="preserve">
+    <value>emisor no es del grupo $1</value>
+  </data>
+  <data name="desc_pid-owner" xml:space="preserve">
+    <value>ID de proceso del emisor es $1</value>
+  </data>
+  <data name="desc_pid-owner!" xml:space="preserve">
+    <value>ID de p $1</value>
+  </data>
+  <data name="desc_sid-owner" xml:space="preserve">
+    <value>el grupo de sesion emisor es $1</value>
+  </data>
+  <data name="desc_sid-owner!" xml:space="preserve">
+    <value>el grupo de sesion emisor NO es $1</value>
+  </data>
+  <data name="desc_state" xml:space="preserve">
+    <value>el estado de conexion es $1</value>
+  </data>
+  <data name="desc_state!" xml:space="preserve">
+    <value>el estado de conexion NO es $1</value>
+  </data>
+  <data name="desc_tos" xml:space="preserve">
+    <value>1el campo tipo-de-serivicio es $1</value>
+  </data>
+  <data name="desc_tos!" xml:space="preserve">
+    <value>el campo tipo-de-servicio NO es $1</value>
+  </data>
+  <data name="desc_conds" xml:space="preserve">
+    <value>Si $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>y</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>Siempre</value>
+  </data>
+  <data name="redhat_eoutput" xml:space="preserve">
+    <value>Ocurrio un error al tratar de recuperar el estado del firewall con el comando $1. Esto indica que probablemente su sistema se ha configurado para utilizar un sistema ipchains en lugar de Iptables.</value>
+  </data>
+  <data name="gentoo_escript" xml:space="preserve">
+    <value>El script de firewall $1 no se encontro en su sistema.</value>
+  </data>
+  <data name="eiptables" xml:space="preserve">
+    <value>Fichero de firewall desconocido linea: $1</value>
+  </data>
+  <data name="eip6tables" xml:space="preserve">
+    <value>Fichero de firewall desconocido linea: $1</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Añadir regla</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Editar regla</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Clonar regla</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>Detalles de cadena y accion</value>
+  </data>
+  <data name="edit_chain" xml:space="preserve">
+    <value>Parte de la cadena</value>
+  </data>
+  <data name="edit_jump" xml:space="preserve">
+    <value>Accion a ejecutar</value>
+  </data>
+  <data name="edit_jump_other" xml:space="preserve">
+    <value>Ejecutar cadena</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Detalles de condicion</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>La accion seleccionada abajo solo sera llevada a cabo si &lt;b&gt;todas&lt;/b&gt; las condiciones de aqui se cumplen.</value>
+  </data>
+  <data name="edit_source" xml:space="preserve">
+    <value>direccion o red origen</value>
+  </data>
+  <data name="edit_ignore" xml:space="preserve">
+    <value>Cualquiera</value>
+  </data>
+  <data name="edit_is" xml:space="preserve">
+    <value>Igual a</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>Distinto de</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Direccion o red de Destino</value>
+  </data>
+  <data name="edit_in" xml:space="preserve">
+    <value>Interfaz entrante</value>
+  </data>
+  <data name="edit_out" xml:space="preserve">
+    <value>Interfaz saliente</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>Fragmentacion</value>
+  </data>
+  <data name="edit_fragis" xml:space="preserve">
+    <value>Esta fragmentado</value>
+  </data>
+  <data name="edit_fragnot" xml:space="preserve">
+    <value>No esta fragmentado</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>Protocolo de Red</value>
+  </data>
+  <data name="edit_sport" xml:space="preserve">
+    <value>Puerto TCP o UDP Origen</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Puerto TCP o UDP Destino</value>
+  </data>
+  <data name="edit_port0" xml:space="preserve">
+    <value>Puerto(s)</value>
+  </data>
+  <data name="edit_port1" xml:space="preserve">
+    <value>Rango de puertos de $1 a $2</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>Puerto(s) de origen y destino</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>Flags TCP establecidos</value>
+  </data>
+  <data name="edit_flags" xml:space="preserve">
+    <value>$2 fuera de&lt;br&gt; $1</value>
+  </data>
+  <data name="edit_tcpoption" xml:space="preserve">
+    <value>El numero de opcion TCP esta establecido</value>
+  </data>
+  <data name="edit_icmptype" xml:space="preserve">
+    <value>Tipo de paquete ICMP</value>
+  </data>
+  <data name="edit_mac" xml:space="preserve">
+    <value>Direccion Ethernet</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>Ratio de flujo de paquetes</value>
+  </data>
+  <data name="edit_below" xml:space="preserve">
+    <value>Abajo</value>
+  </data>
+  <data name="edit_above" xml:space="preserve">
+    <value>Arriba</value>
+  </data>
+  <data name="edit_limitburst" xml:space="preserve">
+    <value>Ratio de paquetes</value>
+  </data>
+  <data name="edit_uidowner" xml:space="preserve">
+    <value>Usuario Unix emisor</value>
+  </data>
+  <data name="edit_gidowner" xml:space="preserve">
+    <value>Grupo Unix emisor</value>
+  </data>
+  <data name="edit_pidowner" xml:space="preserve">
+    <value>ID de proceso emisor</value>
+  </data>
+  <data name="edit_sidowner" xml:space="preserve">
+    <value>Grupo de proceso emisor</value>
+  </data>
+  <data name="edit_state" xml:space="preserve">
+    <value>Estados de conexiones</value>
+  </data>
+  <data name="edit_state_new" xml:space="preserve">
+    <value>Nueva conexion</value>
+  </data>
+  <data name="edit_state_established" xml:space="preserve">
+    <value>Conexion existente</value>
+  </data>
+  <data name="edit_state_related" xml:space="preserve">
+    <value>Relacionado con existente</value>
+  </data>
+  <data name="edit_state_invalid" xml:space="preserve">
+    <value>No es parte de ninguna conexion</value>
+  </data>
+  <data name="edit_tos" xml:space="preserve">
+    <value>Tipo de servicio</value>
+  </data>
+  <data name="edit_rtoports" xml:space="preserve">
+    <value>Puertos destino para redireccion</value>
+  </data>
+  <data name="edit_prange" xml:space="preserve">
+    <value>Rango de puertos de $1 a $2</value>
+  </data>
+  <data name="edit_mtoports" xml:space="preserve">
+    <value>Source ports for masqueradingPuertos de origen para enmascaramiento</value>
+  </data>
+  <data name="edit_dnat" xml:space="preserve">
+    <value>IPs y puertos para DNAT</value>
+  </data>
+  <data name="edit_dnatip" xml:space="preserve">
+    <value>Rango de IPs de $1 a $2</value>
+  </data>
+  <data name="edit_snat" xml:space="preserve">
+    <value>Puertos e IPs para SNAT</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>Cualquiera</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>Otros...</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clonar regla</value>
+  </data>
+  <data name="edit_before" xml:space="preserve">
+    <value>Antes de regla $1</value>
+  </data>
+  <data name="edit_after" xml:space="preserve">
+    <value>Despues de regla $2</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Error al salvar regla</value>
+  </data>
+  <data name="save_echain" xml:space="preserve">
+    <value>Cadena de ejecucion no valida o no establecida</value>
+  </data>
+  <data name="save_esource" xml:space="preserve">
+    <value>Direccion o red de origen no valida o no establecida</value>
+  </data>
+  <data name="save_edest" xml:space="preserve">
+    <value>Direccion o red no valida o no establecida</value>
+  </data>
+  <data name="save_ein" xml:space="preserve">
+    <value>Interfaz entrante no valido o no establecido</value>
+  </data>
+  <data name="save_eout" xml:space="preserve">
+    <value>Interfaz saliente no valido o no establecido</value>
+  </data>
+  <data name="save_eproto" xml:space="preserve">
+    <value>No se selecciono un protocolo</value>
+  </data>
+  <data name="save_esport" xml:space="preserve">
+    <value>Puerto(s) origen no valido(s) o no establecido(s)</value>
+  </data>
+  <data name="save_esportfrom" xml:space="preserve">
+    <value>Rango de inicio no valido de puertos origen</value>
+  </data>
+  <data name="save_esportto" xml:space="preserve">
+    <value>Rango no valido de puertos destino</value>
+  </data>
+  <data name="save_esportrange" xml:space="preserve">
+    <value>Debe introducir al menos el inicio o el final del rango de puertos origen</value>
+  </data>
+  <data name="save_etcpudp" xml:space="preserve">
+    <value>Las condiciones de puertos TCP y UDP solo puede ser utilizada si el protocolo es TCP o UDP</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Puerto(s) de destino no valido(s) o no establecido(s)</value>
+  </data>
+  <data name="save_edportfrom" xml:space="preserve">
+    <value>Inicio de rango de puerto destino no valido</value>
+  </data>
+  <data name="save_edportto" xml:space="preserve">
+    <value>Fin de rango de puerto destino no valido</value>
+  </data>
+  <data name="save_edportrange" xml:space="preserve">
+    <value>Debe introducir al menos un inicio y un final en el rango de puerto de destino</value>
+  </data>
+  <data name="save_eports" xml:space="preserve">
+    <value>Puerto origen y destino no validos o no establecidos</value>
+  </data>
+  <data name="save_etcp1" xml:space="preserve">
+    <value>La condicion de flag TCP solo puede ser utilizada si el protocolo es TCP</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>Debe seleccionar al menor un flag TCP por cada fila</value>
+  </data>
+  <data name="save_etcp2" xml:space="preserve">
+    <value>La condicion de paquete TCP solo puede ser utilizada si el protocolo es TCP</value>
+  </data>
+  <data name="save_etcpoption" xml:space="preserve">
+    <value>Numero de opcion TCP no valido o no establecido</value>
+  </data>
+  <data name="save_eicmp" xml:space="preserve">
+    <value>La condicion de paquete ICMP solo puede ser utilizada si el protocolo es ICMP</value>
+  </data>
+  <data name="save_emac" xml:space="preserve">
+    <value>Direccion ethernet no valida o no establecida</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>Ratio de flujo de paquetes no valido o no establecido</value>
+  </data>
+  <data name="save_elimitburst" xml:space="preserve">
+    <value>Ratio de envio de paquetes no valido o no establecido</value>
+  </data>
+  <data name="save_euidowner" xml:space="preserve">
+    <value>Usuario Unix emisor no valido o no establecido</value>
+  </data>
+  <data name="save_egidowner" xml:space="preserve">
+    <value>Grupo emisor Unix no valido o no establecido</value>
+  </data>
+  <data name="save_epidowner" xml:space="preserve">
+    <value>ID de proceso emisor no valido o no establecido</value>
+  </data>
+  <data name="save_esidowner" xml:space="preserve">
+    <value>ID de grupo de proceso emisor no valido o no establecido</value>
+  </data>
+  <data name="save_ertoports" xml:space="preserve">
+    <value>Puerto de redireccion destino no valido o no establecido</value>
+  </data>
+  <data name="save_emtoports" xml:space="preserve">
+    <value>Puerto de origen de enmascaramiento no valido o no establecido</value>
+  </data>
+  <data name="save_edipfrom" xml:space="preserve">
+    <value>Final de direccion IP no valida para DNAT</value>
+  </data>
+  <data name="save_edipto" xml:space="preserve">
+    <value>Invalid ending IP address for DNAT</value>
+  </data>
+  <data name="save_edpfrom" xml:space="preserve">
+    <value>Puerto inicial para DNAT no valido</value>
+  </data>
+  <data name="save_edpto" xml:space="preserve">
+    <value>Puerto final de DNAT no valido o no establecido</value>
+  </data>
+  <data name="save_esipfrom" xml:space="preserve">
+    <value>Direccion IP para SNAT no valido o no establecida.</value>
+  </data>
+  <data name="save_esipto" xml:space="preserve">
+    <value>Final de direccion IP no valida para SNAT</value>
+  </data>
+  <data name="save_espfrom" xml:space="preserve">
+    <value>Puerto inicial para NAT no valido</value>
+  </data>
+  <data name="save_espto" xml:space="preserve">
+    <value>Puerto final de NAT no valido o no establecido</value>
+  </data>
+  <data name="save_estates" xml:space="preserve">
+    <value>No se selecciono estado de conexion</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Eliminar Cadena</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>¿ Esta seguro de que desea eliminar la cadena $1 ? las reglas $2 de la cadena seran tambien eliminadas.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Delete Now</value>
+  </data>
+  <data name="clear_title" xml:space="preserve">
+    <value>Limpiar cadena</value>
+  </data>
+  <data name="clear_rusure" xml:space="preserve">
+    <value>Are you sure you want to delete all $2 rules from chain $1 ?</value>
+  </data>
+  <data name="new_err" xml:space="preserve">
+    <value>No se pudo crear cadena</value>
+  </data>
+  <data name="new_ename" xml:space="preserve">
+    <value>Nombre de cadena no valido o inexistente</value>
+  </data>
+  <data name="new_etaken" xml:space="preserve">
+    <value>Ya esxite una cadena con este nombre</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>No se consigui aplicar la configuracion</value>
+  </data>
+  <data name="unapply_err" xml:space="preserve">
+    <value>No se consiguio revertir la configuracion</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>Añadida la regla en la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>Modificada la regla en la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>Eliminada la regla en la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>Movida la regla en cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_delete_chain" xml:space="preserve">
+    <value>Borrada la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_clear_chain" xml:space="preserve">
+    <value>Vaciada la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_create_chain" xml:space="preserve">
+    <value>Creada la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_modify_chain" xml:space="preserve">
+    <value>Establecida la accion por defecto para la cadena $1 en la tabla $2</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Configuracion aplicada</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>Configuracion Revertida</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Configurar Firewall</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>Convertido el Firewall existente</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>Habilitar Firewall al arrancar</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>Deshabilitar Firewall al arrancar</value>
+  </data>
+  <data name="setup_eiface" xml:space="preserve">
+    <value>Nose introdujo ningun interfaz de red externo</value>
+  </data>
+</root>

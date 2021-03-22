@@ -6,8 +6,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {
     public class PowerManagementSettingViewModel : BaseSettingsViewModel<PowerManagementSetting>
     {
-        private PowerbtnAction _selectedPowerbtnAction;
         private bool _cpufreq;
+        private PowerbtnAction _selectedPowerbtnAction;
+
         public bool Cpufreq
         {
             get => _cpufreq;
@@ -19,6 +20,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
             get => _selectedPowerbtnAction;
             set => SetProperty(ref _selectedPowerbtnAction, value);
         }
+
         public override async Task<bool> SaveSettings()
         {
             var obj = new PowerManagementSetting();

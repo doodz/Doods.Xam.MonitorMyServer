@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Postfix邮件代理</value>
+  </data>
+  <data name="internal_error" xml:space="preserve">
+    <value>内部错误</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>停止Postfix</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>启动Postfix</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>按下这个按钮以停止正在运行的Postfix邮件服务器。这将阻止从其他系统投递邮件到本地用户，也防止使用这个系统作为邮件服务器的客户也不能发信。</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>按下这个按钮将启动Postfix邮件服务器。直到启动完成前，从其他系统无法投递邮件到本地用户，客户也不能使用这个系统作为邮件服务器。</value>
+  </data>
+  <data name="opts_err" xml:space="preserve">
+    <value>保存选项失败。</value>
+  </data>
+  <data name="check_error" xml:space="preserve">
+    <value>检查当前Postfix配置时出错。请手动修复Postfix配置。</value>
+  </data>
+  <data name="address_rewriting_title" xml:space="preserve">
+    <value>地址重写和伪装</value>
+  </data>
+  <data name="address_rewriting_ecannot" xml:space="preserve">
+    <value>你没有编辑地址重写和伪装的权力。</value>
+  </data>
+  <data name="aliases_title" xml:space="preserve">
+    <value>邮件别名</value>
+  </data>
+  <data name="aliases_ecannot" xml:space="preserve">
+    <value>你没有编辑邮件别名的权力</value>
+  </data>
+  <data name="aliases_no_alias_file" xml:space="preserve">
+    <value>没有别名文件</value>
+  </data>
+  <data name="aliases_cant_write" xml:space="preserve">
+    <value>不能写入别名文件</value>
+  </data>
+  <data name="aliases_cant_read" xml:space="preserve">
+    <value>不能读入别名文件</value>
+  </data>
+  <data name="aliasopts_title" xml:space="preserve">
+    <value>别名选项</value>
+  </data>
+  <data name="aliases_internal_error" xml:space="preserve">
+    <value>别名：内部错误</value>
+  </data>
+  <data name="edit_alias_title" xml:space="preserve">
+    <value>别名属性编辑</value>
+  </data>
+  <data name="alias_save" xml:space="preserve">
+    <value>保存别名</value>
+  </data>
+  <data name="alias_save_err" xml:space="preserve">
+    <value>保存别名失败</value>
+  </data>
+  <data name="alias_delete_create" xml:space="preserve">
+    <value>是否删除正在创建的别名！？</value>
+  </data>
+  <data name="delete_alias" xml:space="preserve">
+    <value>删除别名</value>
+  </data>
+  <data name="general_title" xml:space="preserve">
+    <value>一般选项</value>
+  </data>
+  <data name="general_title_sensible" xml:space="preserve">
+    <value>最有用的一般选项</value>
+  </data>
+  <data name="general_title_others" xml:space="preserve">
+    <value>其他一般选项</value>
+  </data>
+  <data name="general_ecannot" xml:space="preserve">
+    <value>你没有编辑一般选项的权力</value>
+  </data>
+  <data name="what_is_it" xml:space="preserve">
+    <value>这是什么？</value>
+  </data>
+  <data name="opts_default" xml:space="preserve">
+    <value>缺省</value>
+  </data>
+  <data name="opts_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="opts_relayhost" xml:space="preserve">
+    <value>通过主机外发邮件</value>
+  </data>
+  <data name="opts_direct" xml:space="preserve">
+    <value>直接投递</value>
+  </data>
+  <data name="opts_myorigin" xml:space="preserve">
+    <value>外发邮件使用的域</value>
+  </data>
+  <data name="opts_myorigin_as_myhostname" xml:space="preserve">
+    <value>使用主机名</value>
+  </data>
+  <data name="opts_myorigin_as_mydomain" xml:space="preserve">
+    <value>使用域名</value>
+  </data>
+  <data name="opts_mydestination" xml:space="preserve">
+    <value>接受邮件的域</value>
+  </data>
+  <data name="opts_mydestination_default" xml:space="preserve">
+    <value>本地机器</value>
+  </data>
+  <data name="opts_mydestination_domainwide" xml:space="preserve">
+    <value>整个域</value>
+  </data>
+  <data name="opts_notify_classes" xml:space="preserve">
+    <value>需要报告PostMaster的错误</value>
+  </data>
+  <data name="opts_queue_directory" xml:space="preserve">
+    <value>邮件队列目录</value>
+  </data>
+  <data name="opts_mail_owner" xml:space="preserve">
+    <value>邮件属主</value>
+  </data>
+  <data name="opts_default_privs" xml:space="preserve">
+    <value>投递代理的缺省权限</value>
+  </data>
+  <data name="opts_inet_interfaces" xml:space="preserve">
+    <value>接受邮件的网络接口</value>
+  </data>
+  <data name="opts_all_interfaces" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="opts_local_recipient_maps" xml:space="preserve">
+    <value>拒绝未知的本地用户</value>
+  </data>
+  <data name="opts_no" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="opts_save" xml:space="preserve">
+    <value>保存并应用</value>
+  </data>
+  <data name="opts_allow_percent_hack" xml:space="preserve">
+    <value>重写 "user%domain" 成 "user@domain"</value>
+  </data>
+  <data name="opts_append_at_myorigin" xml:space="preserve">
+    <value>重写 "user" 成 "user@$mydomain"</value>
+  </data>
+  <data name="opts_append_dot_mydomain" xml:space="preserve">
+    <value>重写 "user@host" 成 "user@host.$mydomain"</value>
+  </data>
+  <data name="opts_empty_address_recipient" xml:space="preserve">
+    <value>把接受者为空的邮件发送到...</value>
+  </data>
+  <data name="opt_empty_recip_default" xml:space="preserve">
+    <value>缺省</value>
+  </data>
+  <data name="opts_swap_bangpath" xml:space="preserve">
+    <value>重写 "site!user" 成 "user@site"</value>
+  </data>
+  <data name="opts_masquerade_domains" xml:space="preserve">
+    <value>地址伪装</value>
+  </data>
+  <data name="opts_masquerade_exceptions" xml:space="preserve">
+    <value>伪装例外</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Postfix配置</value>
+  </data>
+  <data name="opts_alias_maps" xml:space="preserve">
+    <value>本地投递代理使用别名数据库</value>
+  </data>
+  <data name="opts_alias_database" xml:space="preserve">
+    <value>由by "newaliases" 命令生成的别名数据库</value>
+  </data>
+  <data name="aliases_warning" xml:space="preserve">
+    <value>警告：&lt;ul&gt;&lt;li&gt;如果第一个字段非空，将使用缺省的Postfix的aliases-generation命令来生成相应的数据库；&lt;li&gt;否则将使用Sendmail兼容命令"newaliases"，这将用到第二个字段的数据库。&lt;/ul&gt;</value>
+  </data>
+  <data name="aliases_name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="aliases_value" xml:space="preserve">
+    <value>别名为...</value>
+  </data>
+  <data name="new_alias" xml:space="preserve">
+    <value>创建新别名</value>
+  </data>
+  <data name="new_aliasmsg" xml:space="preserve">
+    <value>点击这个按钮将创建新别名</value>
+  </data>
+  <data name="local_delivery_ecannot" xml:space="preserve">
+    <value>你没有编辑本地投递选项的权力</value>
+  </data>
+  <data name="local_delivery_title" xml:space="preserve">
+    <value>本地投递</value>
+  </data>
+  <data name="opts_local_transport" xml:space="preserve">
+    <value>本地投递使用的名字</value>
+  </data>
+  <data name="opts_local_transport_local" xml:space="preserve">
+    <value>本地</value>
+  </data>
+  <data name="opts_local_command_shell" xml:space="preserve">
+    <value>投递调用外部命令使用的Shell</value>
+  </data>
+  <data name="opts_local_command_shell_direct" xml:space="preserve">
+    <value>无 (直接执行命令)</value>
+  </data>
+  <data name="opts_forward_path" xml:space="preserve">
+    <value>用于转发的搜索列表</value>
+  </data>
+  <data name="opts_allow_mail_to_commands" xml:space="preserve">
+    <value>有效的外部邮件投递命令</value>
+  </data>
+  <data name="opts_allow_mail_to_files" xml:space="preserve">
+    <value>有效的外部邮件投递文件</value>
+  </data>
+  <data name="opts_home_mailbox" xml:space="preserve">
+    <value>用户邮箱文件路径（相对于用户主目录）</value>
+  </data>
+  <data name="opts_home_mailbox_default" xml:space="preserve">
+    <value>否 (使用标准的 &lt;tt&gt;/var/something&lt;/tt&gt;)</value>
+  </data>
+  <data name="opts_luser_relay" xml:space="preserve">
+    <value>未知接受者的目标地址</value>
+  </data>
+  <data name="opts_luser_relay_none" xml:space="preserve">
+    <value>无 (退回邮件)</value>
+  </data>
+  <data name="opts_mail_spool_directory" xml:space="preserve">
+    <value>假脱机路径</value>
+  </data>
+  <data name="opts_mailbox_command" xml:space="preserve">
+    <value>代替邮箱投递的外部命令</value>
+  </data>
+  <data name="opts_mailbox_command_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="opts_mailbox_transport" xml:space="preserve">
+    <value>使用的可选邮件传输</value>
+  </data>
+  <data name="opts_mailbox_transport_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="opts_fallback_transport" xml:space="preserve">
+    <value>未知接收者的可选邮件传输</value>
+  </data>
+  <data name="opts_fallback_transport_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="opts_local_destination_concurrency_limit" xml:space="preserve">
+    <value>同一个本地收件者最大的并行投递数</value>
+  </data>
+  <data name="opts_local_destination_recipient_limit" xml:space="preserve">
+    <value>每一本地消息投递的最大接受者数</value>
+  </data>
+  <data name="opts_local_destination_recipient_limit_default" xml:space="preserve">
+    <value>缺省</value>
+  </data>
+  <data name="opts_prepend_delivered_header" xml:space="preserve">
+    <value>在以下情况下，前加 &lt;tt&gt;Delivered-To:&lt;/tt&gt;</value>
+  </data>
+  <data name="opts_prepend_delivered_header_default" xml:space="preserve">
+    <value>缺省</value>
+  </data>
+  <data name="resource_title" xml:space="preserve">
+    <value>一般的资源控制</value>
+  </data>
+  <data name="resource_ecannot" xml:space="preserve">
+    <value>你没有编辑资源控制参数的权力</value>
+  </data>
+  <data name="opts_bounce_size_limit" xml:space="preserve">
+    <value>退回消息的最大尺寸</value>
+  </data>
+  <data name="opts_command_time_limit" xml:space="preserve">
+    <value>投递到外部命令的最大次数</value>
+  </data>
+  <data name="opts_default_process_limit" xml:space="preserve">
+    <value>Postfix子进程的最大数目</value>
+  </data>
+  <data name="opts_deliver_lock_attempts" xml:space="preserve">
+    <value>获取文件锁的最大尝试次数</value>
+  </data>
+  <data name="opts_deliver_lock_delay" xml:space="preserve">
+    <value>尝试获得文件锁的时间间隔(秒)</value>
+  </data>
+  <data name="opts_duplicate_filter_limit" xml:space="preserve">
+    <value>重复过滤器记忆的最大地址数</value>
+  </data>
+  <data name="opts_fork_attempts" xml:space="preserve">
+    <value>分叉进程的最大尝试次数</value>
+  </data>
+  <data name="opts_fork_delay" xml:space="preserve">
+    <value>分叉尝试的时间间隔(秒)</value>
+  </data>
+  <data name="opts_header_size_limit" xml:space="preserve">
+    <value>处理邮件头最大使用内存</value>
+  </data>
+  <data name="opts_line_length_limit" xml:space="preserve">
+    <value>处理输入行的最大使用内存</value>
+  </data>
+  <data name="opts_message_size_limit" xml:space="preserve">
+    <value>一个消息的最大尺寸</value>
+  </data>
+  <data name="opts_qmgr_message_active_limit" xml:space="preserve">
+    <value>活动队列中的最大消息数</value>
+  </data>
+  <data name="opts_qmgr_message_recipient_limit" xml:space="preserve">
+    <value>内存中最大的接受者数</value>
+  </data>
+  <data name="opts_queue_minfree" xml:space="preserve">
+    <value>队列文件系统中的最小剩余空间</value>
+  </data>
+  <data name="opts_stale_lock_time" xml:space="preserve">
+    <value>释放过期锁之前的最大时间</value>
+  </data>
+  <data name="opts_transport_retry_time" xml:space="preserve">
+    <value>尝试连接一个断开的MDT的时间间隔</value>
+  </data>
+  <data name="opts_always_bcc" xml:space="preserve">
+    <value>接受每一条消息的 bcc的地址</value>
+  </data>
+  <data name="opts_always_bcc_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="opts_daemon_timeout" xml:space="preserve">
+    <value>处理请求的超时</value>
+  </data>
+  <data name="opts_default_database_type" xml:space="preserve">
+    <value>缺省的数据库类型</value>
+  </data>
+  <data name="opts_default_transport" xml:space="preserve">
+    <value>缺省消息投递</value>
+  </data>
+  <data name="opts_double_bounce_sender" xml:space="preserve">
+    <value>退回邮件的发送者地址</value>
+  </data>
+  <data name="opts_hash_queue_depth" xml:space="preserve">
+    <value>在队列目录中子目录的最大层数</value>
+  </data>
+  <data name="opts_hash_queue_names" xml:space="preserve">
+    <value>在队列目录中分开子目录的名字</value>
+  </data>
+  <data name="opts_hopcount_limit" xml:space="preserve">
+    <value>&lt;tt&gt;Received:&lt;/tt&gt; 头的最大数目</value>
+  </data>
+  <data name="opts_ipc_idle" xml:space="preserve">
+    <value>内部IPC客户断开连接后的闲置时间</value>
+  </data>
+  <data name="opts_ipc_timeout" xml:space="preserve">
+    <value>内部通讯信道的I/O超时</value>
+  </data>
+  <data name="opts_mail_name" xml:space="preserve">
+    <value>邮件系统名</value>
+  </data>
+  <data name="opts_mail_version" xml:space="preserve">
+    <value>正式的邮件系统版本</value>
+  </data>
+  <data name="opts_max_idle" xml:space="preserve">
+    <value>等待下一次服务请求的时间</value>
+  </data>
+  <data name="opts_max_use" xml:space="preserve">
+    <value>退出前处理的最大服务请求数</value>
+  </data>
+  <data name="opts_mydomain" xml:space="preserve">
+    <value>本地因特网域名</value>
+  </data>
+  <data name="opts_mydomain_default" xml:space="preserve">
+    <value>缺省 (系统提供)</value>
+  </data>
+  <data name="opts_myhostname" xml:space="preserve">
+    <value>此邮件系统的因特网主机名</value>
+  </data>
+  <data name="opts_myhostname_default" xml:space="preserve">
+    <value>缺省 (系统提供)</value>
+  </data>
+  <data name="opts_mynetworks" xml:space="preserve">
+    <value>本地网络</value>
+  </data>
+  <data name="opts_mynetworks_default" xml:space="preserve">
+    <value>缺省 (所有连接的网络)</value>
+  </data>
+  <data name="opts_bounce_notice_recipient" xml:space="preserve">
+    <value>在退回时发送通知给psotmaster...</value>
+  </data>
+  <data name="opts_2bounce_notice_recipient" xml:space="preserve">
+    <value>在两次退回时发送通知给psotmaster...</value>
+  </data>
+  <data name="opts_delay_notice_recipient" xml:space="preserve">
+    <value>在延迟时发送通知给psotmaster...</value>
+  </data>
+  <data name="opts_error_notice_recipient" xml:space="preserve">
+    <value>在出错时发送通知给psotmaster...</value>
+  </data>
+  <data name="opts_process_id_directory" xml:space="preserve">
+    <value>锁定相对于目录的文件目录</value>
+  </data>
+  <data name="opts_program_directory" xml:space="preserve">
+    <value>Postfix支持目录和守护程序目录</value>
+  </data>
+  <data name="opts_recipient_delimiter" xml:space="preserve">
+    <value>用户名 / 地址扩展的分隔</value>
+  </data>
+  <data name="opts_relocated_maps_default" xml:space="preserve">
+    <value>缺省(禁用)</value>
+  </data>
+  <data name="opts_sun_mailtool_compatibility" xml:space="preserve">
+    <value>禁用邮箱上的内核文件锁</value>
+  </data>
+  <data name="opts_trigger_timeout" xml:space="preserve">
+    <value>给守护程序发送触发器的最多次数</value>
+  </data>
+  <data name="opts_delay_warning_time" xml:space="preserve">
+    <value>由于无法投递而发送警告的等待时间(小时)</value>
+  </data>
+  <data name="smtpd_title" xml:space="preserve">
+    <value>SMTP服务器选项</value>
+  </data>
+  <data name="smtpd_ecannot" xml:space="preserve">
+    <value>你没有编辑SMTP服务器选项的权力</value>
+  </data>
+  <data name="opts_disable_vrfy_command" xml:space="preserve">
+    <value>禁用SMTP VRFY命令</value>
+  </data>
+  <data name="opts_smtpd_banner" xml:space="preserve">
+    <value>SMTP欢迎横幅</value>
+  </data>
+  <data name="opts_smtpd_etrn_restrictions" xml:space="preserve">
+    <value>限制ETRN命令于...</value>
+  </data>
+  <data name="opts_smtpd_recipient_limit" xml:space="preserve">
+    <value>允许投递的最大收信人数</value>
+  </data>
+  <data name="opts_smtpd_timeout" xml:space="preserve">
+    <value>SMTP事务超时(秒)</value>
+  </data>
+  <data name="opts_smtpd_error_sleep_time" xml:space="preserve">
+    <value>发送4xx/5xx错误响应前的超时</value>
+  </data>
+  <data name="opts_smtpd_soft_error_limit" xml:space="preserve">
+    <value>临时忽略一个用户的错误数目</value>
+  </data>
+  <data name="opts_smtpd_hard_error_limit" xml:space="preserve">
+    <value>关闭连接的错误数目</value>
+  </data>
+  <data name="opts_smtpd_client_restrictions" xml:space="preserve">
+    <value>限制客户的主机名和地址</value>
+  </data>
+  <data name="opts_smtpd_helo_required" xml:space="preserve">
+    <value>需要HELO</value>
+  </data>
+  <data name="opts_smtpd_helo_restrictions" xml:space="preserve">
+    <value>发送HELO命令限制</value>
+  </data>
+  <data name="opts_smtpd_sender_restrictions" xml:space="preserve">
+    <value>发信人地址限制</value>
+  </data>
+  <data name="opts_smtpd_recipient_restrictions" xml:space="preserve">
+    <value>收信人地址限制</value>
+  </data>
+  <data name="opts_allow_untrusted_routing" xml:space="preserve">
+    <value>允许不可信的路由</value>
+  </data>
+  <data name="opts_maps_rbl_domains" xml:space="preserve">
+    <value>查找黑名单的 DNS 域名</value>
+  </data>
+  <data name="opts_relay_domains" xml:space="preserve">
+    <value>限制邮件转发</value>
+  </data>
+  <data name="opts_access_map_reject_code" xml:space="preserve">
+    <value>当违犯访问图时SMTP服务器响应</value>
+  </data>
+  <data name="opts_invalid_hostname_reject_code" xml:space="preserve">
+    <value>当无效的主机名拒绝时SMTP服务器响应</value>
+  </data>
+  <data name="opts_maps_rbl_reject_code" xml:space="preserve">
+    <value>当违犯 RBL 域时SMTP服务器响应</value>
+  </data>
+  <data name="opts_reject_code" xml:space="preserve">
+    <value>客户端拒绝时SMTP服务器响应</value>
+  </data>
+  <data name="opts_relay_domains_reject_code" xml:space="preserve">
+    <value>当禁止转发时SMTP服务器响应</value>
+  </data>
+  <data name="opts_unknown_address_reject_code" xml:space="preserve">
+    <value>当未知域拒绝时SMTP服务器响应</value>
+  </data>
+  <data name="opts_unknown_client_reject_code" xml:space="preserve">
+    <value>当未知的客户拒绝时SMTP服务器响应</value>
+  </data>
+  <data name="opts_unknown_hostname_reject_code" xml:space="preserve">
+    <value>当未知的主机拒绝时SMTP服务器响应</value>
+  </data>
+  <data name="smtp_title" xml:space="preserve">
+    <value>SMTP客户选项</value>
+  </data>
+  <data name="smtp_ecannot" xml:space="preserve">
+    <value>你没有编辑SMTP客户选项的权力</value>
+  </data>
+  <data name="opts_best_mx_transport" xml:space="preserve">
+    <value>当列入最好的MX主机时的动作</value>
+  </data>
+  <data name="opts_best_mx_transport_default" xml:space="preserve">
+    <value>缺省 (退回消息)</value>
+  </data>
+  <data name="opts_fallback_relay" xml:space="preserve">
+    <value>目标无效时转递邮件的主机/域</value>
+  </data>
+  <data name="opts_ignore_mx_lookup_error" xml:space="preserve">
+    <value>忽略MX查找错误</value>
+  </data>
+  <data name="opts_smtp_skip_4xx_greeting" xml:space="preserve">
+    <value>忽略4xx欢迎</value>
+  </data>
+  <data name="opts_smtp_skip_quit_response" xml:space="preserve">
+    <value>不等待Quit命令响应</value>
+  </data>
+  <data name="opts_smtp_destination_concurrency_limit" xml:space="preserve">
+    <value>同一个目标的最大并行投递数</value>
+  </data>
+  <data name="opts_smtp_destination_recipient_limit" xml:space="preserve">
+    <value>每一次投递的最大接受者数</value>
+  </data>
+  <data name="opts_smtp_connect_timeout" xml:space="preserve">
+    <value>完成 TCP 连接超时</value>
+  </data>
+  <data name="opts_smtp_helo_timeout" xml:space="preserve">
+    <value>等待欢迎横幅超时</value>
+  </data>
+  <data name="opts_smtp_mail_timeout" xml:space="preserve">
+    <value>等待对MAIL FROM的答复超时</value>
+  </data>
+  <data name="opts_smtp_rcpt_timeout" xml:space="preserve">
+    <value>等待对RCPT TO的答复超时</value>
+  </data>
+  <data name="opts_smtp_data_init_timeout" xml:space="preserve">
+    <value>等待对DATA的答复超时</value>
+  </data>
+  <data name="opts_smtp_data_xfer_timeout" xml:space="preserve">
+    <value>等待对传输消息正文的答复超时</value>
+  </data>
+  <data name="opts_smtp_data_done_timeout" xml:space="preserve">
+    <value>等待对结束"."的答复超时</value>
+  </data>
+  <data name="opts_smtp_quit_timeout" xml:space="preserve">
+    <value>等待对QUIT的答复超时</value>
+  </data>
+  <data name="rate_title" xml:space="preserve">
+    <value>投递速度</value>
+  </data>
+  <data name="rate_ecannot" xml:space="preserve">
+    <value>你没有编辑投递速度选项的权力</value>
+  </data>
+  <data name="opts_default_destination_concurrency_limit" xml:space="preserve">
+    <value>到同一目标的最大并行投递数</value>
+  </data>
+  <data name="opts_default_destination_recipient_limit" xml:space="preserve">
+    <value>每一次消息投递的最大接受者数</value>
+  </data>
+  <data name="opts_initial_destination_concurrency" xml:space="preserve">
+    <value>投递到同一目标的初始并行级别</value>
+  </data>
+  <data name="opts_maximal_backoff_time" xml:space="preserve">
+    <value>投递延迟消息重复尝试之间的最长时间(秒)</value>
+  </data>
+  <data name="opts_maximal_queue_lifetime" xml:space="preserve">
+    <value>不可投递的消息在队列中保留的最大时间(天)</value>
+  </data>
+  <data name="opts_minimal_backoff_time" xml:space="preserve">
+    <value>投递延迟消息重复尝试之间的最短时间(秒)</value>
+  </data>
+  <data name="opts_queue_run_delay" xml:space="preserve">
+    <value>扫描延迟队列的时间间隔(秒)</value>
+  </data>
+  <data name="opts_defer_transports" xml:space="preserve">
+    <value>不应投递的传输次数</value>
+  </data>
+  <data name="debug_title" xml:space="preserve">
+    <value>调试特性</value>
+  </data>
+  <data name="debug_ecannot" xml:space="preserve">
+    <value>你没有编辑调试特性的权力</value>
+  </data>
+  <data name="opts_debug_peer_list" xml:space="preserve">
+    <value>启用了冗长日志的域/网络类型列表</value>
+  </data>
+  <data name="opts_debug_peer_level" xml:space="preserve">
+    <value>当上表匹配的冗长日志级别</value>
+  </data>
+  <data name="ldap_title" xml:space="preserve">
+    <value>LDAP查找</value>
+  </data>
+  <data name="ldap_ecannot" xml:space="preserve">
+    <value>你没有编辑LDAP查找选项的权力</value>
+  </data>
+  <data name="ldap_non_existent" xml:space="preserve">
+    <value>你的Postfix系统上不存在LDAP</value>
+  </data>
+  <data name="opts_ldap_lookup_timeout" xml:space="preserve">
+    <value>LDAP数据库查询超时</value>
+  </data>
+  <data name="opts_ldap_search_base" xml:space="preserve">
+    <value>查询的LDAP数据库</value>
+  </data>
+  <data name="opts_ldap_server_host" xml:space="preserve">
+    <value>LDAP服务器主机名</value>
+  </data>
+  <data name="canonical_title" xml:space="preserve">
+    <value>规范映射配置</value>
+  </data>
+  <data name="canonical_ecannot" xml:space="preserve">
+    <value>你没有编辑规范映射配置的权力</value>
+  </data>
+  <data name="opts_canonical_maps" xml:space="preserve">
+    <value>地址映射查找表</value>
+  </data>
+  <data name="opts_recipient_canonical_maps" xml:space="preserve">
+    <value>收信人地址表</value>
+  </data>
+  <data name="opts_sender_canonical_maps" xml:space="preserve">
+    <value>发信人地址表</value>
+  </data>
+  <data name="edit_canonical_maps" xml:space="preserve">
+    <value>编辑规范映射表</value>
+  </data>
+  <data name="edit_recipient_canonical_maps" xml:space="preserve">
+    <value>编辑收信人规范映射表</value>
+  </data>
+  <data name="edit_sender_canonical_maps" xml:space="preserve">
+    <value>编辑发信人规范映射表</value>
+  </data>
+  <data name="edit_canonical_maps_general" xml:space="preserve">
+    <value>点击任一按钮编辑规范映射表</value>
+  </data>
+  <data name="canonical_edit_title" xml:space="preserve">
+    <value>编辑规范映射表</value>
+  </data>
+  <data name="mapping_name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="mapping_value" xml:space="preserve">
+    <value>映射到...</value>
+  </data>
+  <data name="new_mapping" xml:space="preserve">
+    <value>新映射</value>
+  </data>
+  <data name="new_mappingmsg" xml:space="preserve">
+    <value>点击这个按钮创建一个新映射</value>
+  </data>
+  <data name="map_save" xml:space="preserve">
+    <value>保存映射</value>
+  </data>
+  <data name="delete_map" xml:space="preserve">
+    <value>删除映射</value>
+  </data>
+  <data name="edit_map_title" xml:space="preserve">
+    <value>编辑映射</value>
+  </data>
+  <data name="map_save_err" xml:space="preserve">
+    <value>保存映射时出错</value>
+  </data>
+  <data name="mapps_no_map_file" xml:space="preserve">
+    <value>没有定义映射文件</value>
+  </data>
+  <data name="map_delete_create" xml:space="preserve">
+    <value>不能删除正在创建的映射</value>
+  </data>
+  <data name="maps_internal_error" xml:space="preserve">
+    <value>映射：内部错误</value>
+  </data>
+  <data name="maps_cant_write" xml:space="preserve">
+    <value>不能写入</value>
+  </data>
+  <data name="help_map_format" xml:space="preserve">
+    <value>我应该使用什么格式？</value>
+  </data>
+  <data name="virtual_title" xml:space="preserve">
+    <value>虚拟域</value>
+  </data>
+  <data name="virtual_ecannot" xml:space="preserve">
+    <value>你没有编辑虚拟域映射配置的权力</value>
+  </data>
+  <data name="opts_virtual_maps" xml:space="preserve">
+    <value>域映射查找表</value>
+  </data>
+  <data name="transport_title" xml:space="preserve">
+    <value>传输映射</value>
+  </data>
+  <data name="transport_ecannot" xml:space="preserve">
+    <value>你没有编辑传输映射配置的权力</value>
+  </data>
+  <data name="opts_transport_maps" xml:space="preserve">
+    <value>传输映射查找表</value>
+  </data>
+  <data name="relocated_title" xml:space="preserve">
+    <value>重定向映射</value>
+  </data>
+  <data name="relocated_ecannot" xml:space="preserve">
+    <value>你没有编辑重定向映射配置的权力</value>
+  </data>
+  <data name="opts_relocated_maps" xml:space="preserve">
+    <value>重定向映射查找表</value>
+  </data>
+  <data name="map_click" xml:space="preserve">
+    <value>点击任何一个映射编辑其属性</value>
+  </data>
+  <data name="no_map" xml:space="preserve">
+    <value>(当前没有定义映射。首先定义一个映射，然后可以编辑它)</value>
+  </data>
+</root>

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>WU-FTPD Szerver</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Változások engedélyezése</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>Kattintson erre a gombra, hogy elfogadja az aktuális beállításokat. Ekkor leáll, majd újraindul az összes futó FTP szerver procesz, tehát minden csatlakozott felhasználót lecsatlakoztat.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Szerver indítása</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>Kattintson erre a gombra to start the FTP szerver with the current configuration. You can also configure the szerver to be started automatically when needed using inetd or some equivalent program.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>FTP szerver beállítása</value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>Felhasználók és Osztályok</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>Felhasználói osztályok és felhasználói beállítások</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>Felhasználói osztályok</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>Osztály neve</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>Felhasználó típusa</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>Megfelelő címek</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>Guest</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>Névtelen</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>Unix felhasználókat és UID-ket vendégként kezel</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>Unix felhasználókat és GID-ket vendégként kezel</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>Unix felhasználókat és UID-ket &lt;i&gt;nem&lt;i&gt; vendégként kezel</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>Unix felhasználókat és GID-ket &lt;i&gt;nem&lt;i&gt; vendégként kezel</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>Unix felhasználók tiltása ($1-ról/ről)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>Unix felhasználók és UID -k tiltása</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>Unix felhasználók és GID -k tiltása</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>Unix felhasználók és UID -k &lt;i&gt;nem&lt;i&gt; tiltása</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>Unix felhasználók és GID -k &lt;i&gt;nem&lt;i&gt; tiltása</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>Nem lehet menteni a felhasználói osztályt</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>'$1' nem valós osztálynév</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>Nincs típus kiválasztva a '$1' osztályhoz</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>Nincs cím megadva a '$1' osztályhoz</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>Üzenetek és Címfeliratok</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>Üzenetek, Címfeliratok és README file-ok</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>Üzenet file-ok</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>Útvonal</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>Mikor jelenjen meg</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>Belépéskor</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>Könyvtárba lépéskor</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>Belépés bármilyen könyvtárba</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>Megjelenő osztály</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>README file-ok</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>Amikor az utolsó módosítás dátuma megjelenik</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>Üdvözlő szöveg szint</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>Hosztnév és verzió</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>Hosztnév</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>Egyiksem</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>Elő bejelentkező címfelirat</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>Nincs</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>File-ból</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>Rendszer hosztneve</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>Hosztnév az üzenetekhez</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>tulajdonos email címe</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>Nem lehet menteni az üzeneteket és címfeliratokat</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>'$1' nem valós útvonal</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>'$1' nem valós könyvtár</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>Class '$1' does not exist</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>'$1' nem valós belépő címfelirat file</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>Hibás vagy érvénytelen hosztnév</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>Hibás vagy érvénytelen email cím</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Limit és hozzáférési szabályozás</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>Limit és hozzáférési szabályozás beállítása</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>Tiltott hozzáférés</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>Tiltás a címről</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>Hibaüzenet file</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>File- és adatmozgatási limit</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>Limit típusa</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>File-ok per munkafolyamat</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>Byte-ok per munkafolyamat</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>Csak adat?</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>Irány</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>Be</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>Ki</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>Mindkettő</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>Osztály elfogadása</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Minden osztály</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>Konkurens felhasználói limit</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>Maximális felhasználók</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>Egyidőben</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>Hibaüzenet file</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Végtelen</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>Minden időben</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>Névtelen munkafolyamat limitálása</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>Guest munkafolyamat limitálása</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>percek</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>Maximális hibás bejelentkezés</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>Csoport közötti váltás engedélyezve?</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>Hozzáférés tíltása file-okra</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>Tiltott file -ok</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>Viszonylagos a chroot-hoz?</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>Tiltás osztályokra</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>Engedve a filehozzáférés, kivéve ha tiltva</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>Engedélyezett file-ok</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>Viszonylagos a chroot-hoz?</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>Engedélyezve az osztályokhoz</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Nem lehet menteni a limit és hozzáférés szabályozást</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>'$1' nem valós cím</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>'$1' nem valós cím file</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>'$1' nem valós hibaüzenet file</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>'$1' nem valós maximális felhasználói szám</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>'$1' nem valós UUCP stílusú időszak</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>'$1' nem valós hibaüzenet file</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>'$1' nem valós száma a file-oknak vagy byte -oknak</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$1' nem valós időlimit</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>'$1' nem valós érvénytelen belépési szám</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>Hálózat</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Hálózati beállítások</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>TCP ablak mérete</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>méret</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>Osztályhoz</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>Minden osztályhoz</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>Cím a PASV csatlakozáshoz</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>IP cím</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>A felhasználóknak a hálózathoz</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>Port a PASV csatlakozáshoz</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>Port tartomány</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Nem lehet menteni a hálózati beállításokat</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>'$1' nem valós TCP ablak méret</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>'$1' nem valós IP cím</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>'$1' nem valós hálózati cím</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>'$1' nem valós háklózati bit szám</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>'$1' nem valós port number</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>Naplózás</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Naplózási beállítások</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>Naplózzon minden parancsot erről</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>Névtelen felhasználók</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>Guest felhasználók</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>Unix felhasználók</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>Naplózza az átvitelt erről</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>Befele irányuló</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>Bemenő</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>Kimenő</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>Mindkettő</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>Naplózza a biztonsági vétkeket erről</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>Naplózza az átvitelt erről</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>Rendszer naplózás</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>XFER naplózás file-ba</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Nem lehet menteni a naplózási beállításokat</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>Álnevek és útvonalak</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>Álnevek és útvonalak beállításai</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>CD könyvtár álneve</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>Álnév neve</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>A könyvtár álneve</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>CD könyvtár keresési útvonala</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Nem lehet menteni az álnevek és útvonalakat</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>'$1' nem valós álnáv név</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>'$1' nem valós álnév könyvtár</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>'$1' nem valós CD keresési könyvtár</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>Névtelen FTP</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>Figyelem  - az Ön rendszere nem rendelkezik &lt;tt&gt;ftp&lt;/tt&gt; felhasználóval, és ezért lehetséges, hogy nem lehet beállítani névtelen FTP bejelentkezést.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>Névtelen FTP beállítások</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>Unix csoport a névtelen felhasználókhoz</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>Váltson csoportot</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>Osztályhoz</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>Névtelen FTP gyökérkönyvtára</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>könyvtár</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>Osztályhoz</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>Bármelyik</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>Névtelen FTP jelszó ellenőrzés</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>Engedélyezve minden</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>Tartalmaznia kell a @ jelet</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>RFC822 kompatibilis email cím legyen</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>Tiltva a belépés</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>Csak figyelmeztessen</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>Névtelen FTP jelszó a tiltáshoz</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>Guest gyökérkönyvtár</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>A Unix felhasználóknak</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>Nem lehet menteni a névtelen FTP beállításait</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>'$1' nem valós könyvtár</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>'$1' nem valós csoport</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>Jogosultság</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>Jogosultság beállítása</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>Parancs korlátozás</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>Parancs</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>Engedélyezve?</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>Felhasználói típushoz</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>Osztályhoz</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>Minden</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>Névtelen</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>Guest</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>alapértelmezésben minden parancshoz joga van minden felhasználók</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>Nincs elfogadva a feltöltött filenevek</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>Felhasználói típus</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>Hibaüzenet file</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>Elfogadott karakterek</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>File hasonlóság tíltása</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>Nem lehet menteni a jogosultságot</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>'$1' nem valós karakter a szabályos kiterjesztésben</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>Nincs felhasználói típus kiválasztva</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>'$1' nem valós hibaüzenet file</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Hoszt hozzáférési szabályozás</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Vegyes beállítások</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Vegyes beállítások</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>Hosszú listázási parancs</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>Rövid listázási parancs</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>Sima listázási parancs</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>Leállítási értesítő file</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>Nincs</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>Szervíz processz nice szintje</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>Nice szint</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>Osztályokhoz</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>Minden osztályhoz</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>Általános umask a feltöltött file-okhoz</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>Umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>Nem lehet menteni a vegyes beállításokat</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>Hibás hosszú listázási parancs</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>Hibás rövid listázási parancs</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>Hibás sima listázási parancs</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>Hibás leállítási értesítő file</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>'$1' nem valós nice szint</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>'$1' nem valós umask</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>Módosult felhasználók és osztályok</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>Módosult üzenetek és címfelirat</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Módosult limitálási és hozzáférési vezérlés</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>Módosult hálózati beállítások</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Módosult naplózási beállítások</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>Módosult álnév és könyvtárak</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>Módosult névtelen FTP</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>Módosult hozzáférés beállítások</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Módosult egyéb beállítások</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Módosulások elfogadása</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>FTP szerver indítása</value>
+  </data>
+</root>

@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logická správa zväzkov</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>Príkaz LVM $1 nebol vo vašom systéme nájdený. Webmin potrebuje administračné príkazy LVM, aby nastavil a spravoval logické zväzky.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>Adresár stavu LVM $1 neexistuje. To naznačuje, že vaše jadro nepodporuje LVM alebo že modul jadra $2 nie je načítaný.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Skupiny zväzkov</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Fyzikálne objemy</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Logické zväzky</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Vo vašom systéme sa nenašli žiadne skupiny zväzkov.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Pridajte novú skupinu zväzkov.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Táto skupina zväzkov nemá zatiaľ žiadne logické zväzky.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Táto skupina zväzkov zatiaľ nemá žiadne fyzické zväzky.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Pridajte do skupiny fyzický zväzok.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Pridajte fyzický zväzok do &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Vytvorte logický zväzok v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Vytvorte snímku v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Vytvorte tenkú oblasť v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Vytvorte nový logický zväzok.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Vytvorte novú snímku.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>skupiny zväzkov</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>fyzické objemy</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>logické zväzky</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin podporuje iba LVM verzie 1.0 a vyššie. Výstup z aplikácie $1 vo vašom systéme bol : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM verzia $1 </value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Názov skupiny zväzkov</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Celková velkosť</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Použité bloky</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Použitá veľkosť</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Do žiadnej skupiny zväzkov zatiaľ neboli pridané žiadne fyzické zväzky.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Zo žiadnych skupín zväzkov zatiaľ neboli vytvorené žiadne logické zväzky.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Zariadenie na fyzický objem</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>V skupine objemov</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Veľkosť zariadenia</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Použité bloky</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Použitá veľkosť</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Skupina zväzkov je skupina diskov, ktoré je možné prideliť jednému alebo viacerým logickým zväzkom. Väčšina systémov bude mať iba jeden a pred pridaním fyzických alebo logických zväzkov sa musí vytvoriť aspoň jeden.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Fyzický zväzok je diskový oddiel alebo zariadenie RAID, ktoré je súčasťou skupiny zväzkov. Jeho diskový priestor potom môže využiť jeden alebo viac logických zväzkov.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Logický zväzok je virtuálny oddiel vytvorený z kombinovaného diskového priestoru skupiny zväzkov. Každý môže mať súborový systém, ktorý je potom pripojený na ukladanie súborov.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Logický zväzok</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Skupina zväzkov</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>veľkosť</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Využitý priestor</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Používa</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Snímka $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>Tenká skupina LVM pre $1 LV</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Upraviť logický zväzok</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Upraviť snímku</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Vytvorenie logického zväzku</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Vytvorenie snímky</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>V skupine objemov $1 </value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Podrobnosti o logickom zväzku</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Názov zväzku</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Vytvorte ako tenký LV v bazéne</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Tenký rezervovaný v bazéne</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Žiadne (vytvoriť ako bežné LV)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Veľkosť zväzku</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absolútna veľkosť</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Percentuálny podiel veľkosti VG</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Percento voľného priestoru VG</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Percento voľného PV priestoru</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 z $2 </value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Presná veľkosť</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Veľkosť s jednotkami</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Využite všetok voľný priestor VG</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Súbor zariadenia</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Súčasný stav</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Pripojené na $1 ako $2 </value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Na montáž na $1 ako $2 </value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Pripojené ako virtuálna pamäť</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Na montáž ako virtuálna pamäť</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Časť zariadenia RAID $1 </value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Používa systém Cloudmin $1 </value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Na použitie systémom Cloudmin $1 </value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>Zdieľané zariadenie iSCSI $1 </value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Nepoužíva sa</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Tento logický zväzok nemožno premenovať ani zmeniť jeho veľkosť, pretože sa v súčasnosti používa.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Prístup k zväzku</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Čítaj píš</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Iba na čítanie</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Metóda alokácie</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>styčný</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>nesúvislé</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Objemové prúžky</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Zakázané (prideliť vždy od začiatku)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Prúžok po $1 fyzických zväzkoch</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Fyzické objemy, ktoré sa môžu prúžiť</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Veľkosť prúžku</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Sektory readahead</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Logický zväzok sa nepodarilo uložiť</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov zväzku</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Logický zväzok s rovnakým názvom už existuje</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Chýba alebo je neplatná veľkosť zväzku</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné percento veľkosti skupiny zväzkov</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné percento veľkosti skupiny voľného zväzku</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné percento voľného fyzického objemu</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Chýba alebo je neplatný počet prúžkov</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Odstrániť logický zväzok</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Obnovenie snímky</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Naozaj chcete odstrániť logický zväzok $1 ? Všetky dáta v súborovom systéme na tomto logickom zväzku sa navždy odstránia!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Naozaj chcete odstrániť snímku $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Naozaj chcete vrátiť snímku $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>VÝSTRAHA! Tento LV je tenká oblasť pre $1 ďalšie tenké zásobovacie logické zväzky, ktoré sa tiež stratia, ak sa odstránia!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Odstrániť teraz</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Vrátiť späť</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Logický zväzok sa nepodarilo odstrániť</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Snímka sa nepodarilo vrátiť späť</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Veľkosť alokačného bloku</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Bloky pridelené zo skupiny zväzkov</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 z $2 </value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Vytvoriť systém súborov typu:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Vytvorte súborový systém</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Vyberte typ súborového systému a kliknutím na toto tlačidlo vytvorte nový logický systém na tomto logickom zväzku. Vymažú sa tým všetky údaje, ktoré sa aktuálne nachádzajú na zväzku.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo vytvoríte nový súborový systém $1 na tomto logickom zväzku. Vymažú sa tým všetky údaje, ktoré sa aktuálne nachádzajú na zväzku.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Nová veľkosť zväzku je $1 blokov (po $2), ale iba $3 je zadarmo v skupine zväzkov.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Snímka logického zväzku</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Nepodarilo sa to určiť!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Mount LV dňa:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Pripojte tento LV do nového adresára vo vašom systéme, aby ste ho mohli použiť na ukladanie súborov. Súborový systém už musí byť vytvorený.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Bezplatné percento</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Voľné miesto</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Pridelené fyzické objemy</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LV v tomto tenkom bazéne</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Percentuálny podiel použitia v tenkom bazéne</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Využíva sa tenký bazén</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Percento použitia snímky</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Logický zväzok už neexistuje!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Posunúť fyzickú hlasitosť</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Presunúť bloky z fyzického objemu</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Na fyzický objem</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Presunúť bloky</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>logický zväzok</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Vytvorte súborový systém</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Tento formulár vám umožňuje vytvoriť nový súborový systém $2 ($1) na logickom zväzku $3. Všetky existujúce údaje sa vymažú.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Nové možnosti súborového systému</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Nepodarilo sa vytvoriť súborový systém</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Vykonáva sa príkaz $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. príkaz zlyhal!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. príkaz dokončený.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Zmena veľkosti logického zväzku</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Veľkosť súborového systému $1 v tomto logickom zväzku nie je možné zmeniť. Ak zmeníte veľkosť logického zväzku, musíte znova vytvoriť systém súborov, ktorý vymaže všetky údaje v ňom.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin nevie, aký druh súborového systému je na tomto logickom zväzku, ak existuje. Ak zmeníte veľkosť logického zväzku, musíte znova vytvoriť systém súborov, ktorý vymaže všetky údaje v ňom.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Pri zmene veľkosti súborového systému $1 na tomto logickom zväzku sa vyskytla chyba: $2 Ak zmeníte veľkosť logického zväzku, musíte znova vytvoriť súborový systém, ktorý vymaže všetky údaje v ňom.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Zmena veľkosti logického zväzku</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Veľkosť súborového systému v tomto logickom zväzku nie je možné zmeniť, keď je pripojený</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Systém súborov na tomto logickom zväzku nemôže byť počas pripojenia zmenšený</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktivujte LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Spúšťa sa príkaz $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Upraviť fyzický objem</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Pridať fyzický objem</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>V skupine objemov $1 </value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Podrobnosti o fyzickom objeme</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Diskové zariadenie</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Iné zariadenie ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Povolené na pridelenie?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Vynútiť pridanie objemu?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Veľkosť disku</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Pridelené bloky</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Pridelená veľkosť</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Veľkosť alokačného bloku</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Výstraha! Všetky údaje na vybranom zariadení budú vymazané.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Pridať do skupiny zväzkov</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Odstrániť zo skupiny zväzkov</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Zmena veľkosti tak, aby zodpovedala zariadeniu</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Nepodarilo sa uložiť fyzický zväzok</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Fyzický zväzok sa nepodarilo odstrániť</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Zmena veľkosti fyzického zväzku zlyhala</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Odstráňte fyzický objem</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Naozaj chcete odstrániť zariadenie fyzického zväzku $1 zo svojej skupiny zväzkov? Výsledkom bude presunutie akýchkoľvek údajov do iných fyzických zväzkov v skupine.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Odstráňte zväzok</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Chýba alebo je neplatné diskové zariadenie</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAID zariadenie $1 </value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Prideľovanie podľa logických zväzkov</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Fyzický objem už neexistuje!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Upraviť skupinu zväzkov</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Vytvorenie skupiny zväzkov</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Názov skupiny zväzkov</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Podrobnosti o skupine zväzkov</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Celková velkosť</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Pridelené bloky</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Pridelená veľkosť</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Veľkosť alokačného bloku</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Počiatočné fyzické zariadenie</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Uloženie skupiny zväzkov zlyhalo</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Odstránenie skupiny zväzkov zlyhalo</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Odstrániť skupinu zväzkov</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Naozaj chcete odstrániť skupinu zväzkov $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Túto skupinu zväzkov nemožno odstrániť, pretože stále obsahuje $1 logické zväzky.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Odstrániť teraz</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov skupiny zväzkov</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Chýba alebo je neplatná veľkosť alokačného bloku</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Skupina zväzkov už neexistuje!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Nepodarilo sa presunúť logický zväzok</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Presunúť logický zväzok</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Presúva sa logický zväzok $1 z $2 do $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. presun zlyhal!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. pohyb dokončený</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Vytvorte tenký bazén</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Tenká oblasť je pár LV, ktoré sa dajú použiť na vytvorenie ďalších LV, ktoré môžu byť väčšie ako dostupné rozsahy. Miesto sa spotrebuje iba v prípade potreby, a nie pri vytváraní LV vo vnútri bazénu. VAROVANIE - Akékoľvek údaje o vybraných LV sa stratia!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Nové tenké podrobnosti o bazéne</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Existujúce LV pre údaje</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Existujúce LV pre metaúdaje</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Premeniť LV na tenký pool</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>V tejto VG sa nenašli žiadne LV, ktoré sa ešte nepoužívajú!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Vytvorenie tenkej oblasti zlyhalo</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Obidve vybrané LV sú rovnaké</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Vybraté údaje LV sa už používajú</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Vybraté metadáta LV sa už používajú</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Vytvorená skupina zväzkov $1 </value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Upravená skupina zväzkov $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Odstránená skupina zväzkov $1 </value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Vytvoril sa logický zväzok $1 vo VG $2 </value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Modifikovaný logický zväzok $1 vo VG $2 </value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Vymazaný logický zväzok $1 vo VG $2 </value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Snímka sa vrátila späť $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Bol vytvorený $1 systém súborov na $2 </value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Fyzický objem $1 bol pridaný k VG $1 </value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Modifikovaný fyzický objem $1 v VG $2 </value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Fyzický objem $1 bol odstránený z VG $2 </value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Fyzikálny objem $1 v VG $2 bol zmenený</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>bloky</value>
+  </data>
+</root>

@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>文件管理器</value>
+  </data>
+  <data name="index_nojava" xml:space="preserve">
+    <value>本模块需要java支持才能工作，但是您的浏缆器不支持java</value>
+  </data>
+  <data name="index_eremote" xml:space="preserve">
+    <value>没有区配 Webmin登录名 $1 的Unix用户。</value>
+  </data>
+  <data name="switch_euser" xml:space="preserve">
+    <value>Unix 用户不存在！</value>
+  </data>
+  <data name="top_ret" xml:space="preserve">
+    <value>索引</value>
+  </data>
+  <data name="top_down" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="top_edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="top_refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="top_info" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="top_eacl" xml:space="preserve">
+    <value>ACL</value>
+  </data>
+  <data name="top_attr" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="top_ext" xml:space="preserve">
+    <value>扩展</value>
+  </data>
+  <data name="top_delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="top_new" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="top_upload" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="top_rename" xml:space="preserve">
+    <value>改名</value>
+  </data>
+  <data name="top_copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="top_cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="top_paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="top_share" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="top_mount" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="top_search" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="top_config" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="right_name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="right_size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="right_user" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="right_group" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="right_date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="edit_enormal" xml:space="preserve">
+    <value>只能编辑正常文件</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>正在编辑 $1</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>正在创建文件</value>
+  </data>
+  <data name="edit_filename" xml:space="preserve">
+    <value>文件名：</value>
+  </data>
+  <data name="edit_goto" xml:space="preserve">
+    <value>转到</value>
+  </data>
+  <data name="edit_find" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="edit_gotoline" xml:space="preserve">
+    <value>转到行</value>
+  </data>
+  <data name="edit_replace" xml:space="preserve">
+    <value>替换</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>全部替换</value>
+  </data>
+  <data name="edit_searchfor" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="edit_replaceby" xml:space="preserve">
+    <value>被替换</value>
+  </data>
+  <data name="edit_eover" xml:space="preserve">
+    <value>$1 不能被覆盖</value>
+  </data>
+  <data name="edit_esave" xml:space="preserve">
+    <value>保存文件失败 ： $1</value>
+  </data>
+  <data name="edit_eaccess" xml:space="preserve">
+    <value>你未被允许保存 '$1'</value>
+  </data>
+  <data name="edit_notfound" xml:space="preserve">
+    <value>未找到文本 $1 </value>
+  </data>
+  <data name="edit_saveclose" xml:space="preserve">
+    <value>保存并关闭</value>
+  </data>
+  <data name="info_file" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="info_path" xml:space="preserve">
+    <value>路径：</value>
+  </data>
+  <data name="info_type" xml:space="preserve">
+    <value>类型：</value>
+  </data>
+  <data name="info_size" xml:space="preserve">
+    <value>大小：</value>
+  </data>
+  <data name="info_mod" xml:space="preserve">
+    <value>修改：</value>
+  </data>
+  <data name="info_link" xml:space="preserve">
+    <value>联结到：</value>
+  </data>
+  <data name="info_perms" xml:space="preserve">
+    <value>许可</value>
+  </data>
+  <data name="info_user" xml:space="preserve">
+    <value>用户：</value>
+  </data>
+  <data name="info_group" xml:space="preserve">
+    <value>组：</value>
+  </data>
+  <data name="info_other" xml:space="preserve">
+    <value>其它：</value>
+  </data>
+  <data name="info_octal" xml:space="preserve">
+    <value>八进制：</value>
+  </data>
+  <data name="info_sticky" xml:space="preserve">
+    <value>粘性：</value>
+  </data>
+  <data name="info_sticky2" xml:space="preserve">
+    <value>只有所由者才能删除文件</value>
+  </data>
+  <data name="info_own" xml:space="preserve">
+    <value>所有权</value>
+  </data>
+  <data name="info_setuid" xml:space="preserve">
+    <value>设置 uid：</value>
+  </data>
+  <data name="info_setuid2" xml:space="preserve">
+    <value>以用户执行</value>
+  </data>
+  <data name="info_setgid" xml:space="preserve">
+    <value>设置 gid：</value>
+  </data>
+  <data name="info_setgid2" xml:space="preserve">
+    <value>文件继承组</value>
+  </data>
+  <data name="info_setgid3" xml:space="preserve">
+    <value>以组执行</value>
+  </data>
+  <data name="info_apply" xml:space="preserve">
+    <value>应用更改至</value>
+  </data>
+  <data name="info_apply1" xml:space="preserve">
+    <value>仅此目录</value>
+  </data>
+  <data name="info_apply2" xml:space="preserve">
+    <value>本目录及其文件</value>
+  </data>
+  <data name="info_apply3" xml:space="preserve">
+    <value>本目录及其所有子目录</value>
+  </data>
+  <data name="info_efailed" xml:space="preserve">
+    <value>更新 $1 ：$2 失败</value>
+  </data>
+  <data name="info_read" xml:space="preserve">
+    <value>读取</value>
+  </data>
+  <data name="info_write" xml:space="preserve">
+    <value>写入</value>
+  </data>
+  <data name="info_list" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="info_exec" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="eacl_eacls" xml:space="preserve">
+    <value>读取 ACLs 失败 ： $1</value>
+  </data>
+  <data name="eacl_acltype" xml:space="preserve">
+    <value>ACL 类型</value>
+  </data>
+  <data name="eacl_aclname" xml:space="preserve">
+    <value>应用到</value>
+  </data>
+  <data name="eacl_aclperms" xml:space="preserve">
+    <value>许可</value>
+  </data>
+  <data name="eacl_add" xml:space="preserve">
+    <value>添加 类型的ACL：</value>
+  </data>
+  <data name="eacl_remove" xml:space="preserve">
+    <value>移除ACL</value>
+  </data>
+  <data name="eacl_efs" xml:space="preserve">
+    <value>文件系统 $1 不支持 ACLs</value>
+  </data>
+  <data name="eacl_create" xml:space="preserve">
+    <value>创建 ACL</value>
+  </data>
+  <data name="eacl_edit" xml:space="preserve">
+    <value>编辑 ACL</value>
+  </data>
+  <data name="eacl_user" xml:space="preserve">
+    <value>文件所有者 $1</value>
+  </data>
+  <data name="eacl_group" xml:space="preserve">
+    <value>文件组 $1</value>
+  </data>
+  <data name="eacl_eowner" xml:space="preserve">
+    <value>缺少要应用到的用户或组</value>
+  </data>
+  <data name="eacl_efailed" xml:space="preserve">
+    <value>为$1 ： $2设置ACLs失败</value>
+  </data>
+  <data name="eacl_emask" xml:space="preserve">
+    <value>最多只能有一个掩码 ACL 条目</value>
+  </data>
+  <data name="eacl_edefmask" xml:space="preserve">
+    <value>最多只能有一个默认掩码 ACL 条目</value>
+  </data>
+  <data name="eacl_title" xml:space="preserve">
+    <value>$1的ACL</value>
+  </data>
+  <data name="eacl_owner" xml:space="preserve">
+    <value>文件所有者</value>
+  </data>
+  <data name="eacl_edefaults" xml:space="preserve">
+    <value>如果一个文件有任何默认的ACL，则它必须有默认用户，组和其他的ACLs。</value>
+  </data>
+  <data name="acltype_user" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="acltype_group" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="acltype_other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="acltype_mask" xml:space="preserve">
+    <value>掩码</value>
+  </data>
+  <data name="acltype_default_user" xml:space="preserve">
+    <value>默认用户</value>
+  </data>
+  <data name="acltype_default_group" xml:space="preserve">
+    <value>默认组</value>
+  </data>
+  <data name="acltype_default_other" xml:space="preserve">
+    <value>默认其他</value>
+  </data>
+  <data name="acltype_default_mask" xml:space="preserve">
+    <value>默认掩码</value>
+  </data>
+  <data name="delete_mtitle" xml:space="preserve">
+    <value>删除多个文件</value>
+  </data>
+  <data name="delete_dtitle" xml:space="preserve">
+    <value>删除目录</value>
+  </data>
+  <data name="delete_ftitle" xml:space="preserve">
+    <value>删除文件</value>
+  </data>
+  <data name="delete_ddesc" xml:space="preserve">
+    <value>确实要永久删除目录 $1 及其内容？</value>
+  </data>
+  <data name="delete_fdesc" xml:space="preserve">
+    <value>确实要永久删除文件 $1？</value>
+  </data>
+  <data name="delete_mdesc" xml:space="preserve">
+    <value>确实要永久删除这些目录和文件？ ：</value>
+  </data>
+  <data name="delete_efailed" xml:space="preserve">
+    <value>删除 $1 ：$2 失败</value>
+  </data>
+  <data name="mkdir_title" xml:space="preserve">
+    <value>新建目录</value>
+  </data>
+  <data name="mkdir_dir" xml:space="preserve">
+    <value>新建目录：</value>
+  </data>
+  <data name="mkdir_eexists" xml:space="preserve">
+    <value>$1 已经存在</value>
+  </data>
+  <data name="mkdir_efailed" xml:space="preserve">
+    <value>创建目录 $1 失败</value>
+  </data>
+  <data name="mkdir_eaccess" xml:space="preserve">
+    <value>你无权创建 '$1'</value>
+  </data>
+  <data name="link_title" xml:space="preserve">
+    <value>创建链接</value>
+  </data>
+  <data name="link_from" xml:space="preserve">
+    <value>链接自：</value>
+  </data>
+  <data name="link_to" xml:space="preserve">
+    <value>链接到：</value>
+  </data>
+  <data name="link_eexists" xml:space="preserve">
+    <value>$1 已经存在</value>
+  </data>
+  <data name="link_efrom" xml:space="preserve">
+    <value>你无权链接自 '$1'</value>
+  </data>
+  <data name="link_efailed" xml:space="preserve">
+    <value>链接失败：$1</value>
+  </data>
+  <data name="link_efollow" xml:space="preserve">
+    <value>你无权创建符号链接</value>
+  </data>
+  <data name="rename_title" xml:space="preserve">
+    <value>重命名$1</value>
+  </data>
+  <data name="rename_old" xml:space="preserve">
+    <value>原名：</value>
+  </data>
+  <data name="rename_new" xml:space="preserve">
+    <value>新名：</value>
+  </data>
+  <data name="rename_ok" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="rename_eexists" xml:space="preserve">
+    <value>文件 $1 已存在</value>
+  </data>
+  <data name="rename_efailed" xml:space="preserve">
+    <value>重命名失败： $1</value>
+  </data>
+  <data name="rename_eold" xml:space="preserve">
+    <value>你无权重命名 '$1'</value>
+  </data>
+  <data name="rename_enew" xml:space="preserve">
+    <value>你无权重命名为 '$1'</value>
+  </data>
+  <data name="file_type0" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="file_type1" xml:space="preserve">
+    <value>文本文件</value>
+  </data>
+  <data name="file_type2" xml:space="preserve">
+    <value>映象文件</value>
+  </data>
+  <data name="file_type3" xml:space="preserve">
+    <value>二进制文件</value>
+  </data>
+  <data name="file_type4" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="file_type5" xml:space="preserve">
+    <value>符号链接</value>
+  </data>
+  <data name="file_type6" xml:space="preserve">
+    <value>设备文件</value>
+  </data>
+  <data name="file_type7" xml:space="preserve">
+    <value>管道</value>
+  </data>
+  <data name="view_enormal" xml:space="preserve">
+    <value>只能查看正常文件</value>
+  </data>
+  <data name="view_enormal2" xml:space="preserve">
+    <value>只能下载正常文件</value>
+  </data>
+  <data name="view_eaccess" xml:space="preserve">
+    <value>你无权访问 $1</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>打开 $1： $2 失败</value>
+  </data>
+  <data name="paste_ecopy" xml:space="preserve">
+    <value>在粘贴之前必须剪切或拷贝</value>
+  </data>
+  <data name="paste_egone" xml:space="preserve">
+    <value>拷贝的文件 $1 已经不存在</value>
+  </data>
+  <data name="paste_eover" xml:space="preserve">
+    <value>$1 不能覆盖</value>
+  </data>
+  <data name="paste_eself" xml:space="preserve">
+    <value>不能将文件粘贴至自身</value>
+  </data>
+  <data name="paste_emfailed" xml:space="preserve">
+    <value>移动失败：$1</value>
+  </data>
+  <data name="paste_ecfailed" xml:space="preserve">
+    <value>拷贝失败：$1</value>
+  </data>
+  <data name="over_title" xml:space="preserve">
+    <value>文件存在</value>
+  </data>
+  <data name="over_msg" xml:space="preserve">
+    <value>文件 $1 已经存在。在下面的字段中为要粘贴的文件输入一个新名。</value>
+  </data>
+  <data name="over_new" xml:space="preserve">
+    <value>新文件名：</value>
+  </data>
+  <data name="over_ok" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="upload_efailed" xml:space="preserve">
+    <value>打开上传失败：$1</value>
+  </data>
+  <data name="upload_title" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="upload_file" xml:space="preserve">
+    <value>要上传的文件</value>
+  </data>
+  <data name="upload_dir" xml:space="preserve">
+    <value>上传到目录</value>
+  </data>
+  <data name="upload_ok" xml:space="preserve">
+    <value>上传</value>
+  </data>
+  <data name="upload_conv" xml:space="preserve">
+    <value>是否转换DOS换行符号？</value>
+  </data>
+  <data name="upload_efile" xml:space="preserve">
+    <value>没有选定要上传的文件。</value>
+  </data>
+  <data name="upload_edir" xml:space="preserve">
+    <value>上传目录不存在。</value>
+  </data>
+  <data name="upload_eperm" xml:space="preserve">
+    <value>你无权创建 $1</value>
+  </data>
+  <data name="upload_ewrite" xml:space="preserve">
+    <value>写入 $1：$2 失败。</value>
+  </data>
+  <data name="upload_already" xml:space="preserve">
+    <value>文件 $1 已经存在。您确定要覆盖它吗？</value>
+  </data>
+  <data name="find_eaccess" xml:space="preserve">
+    <value>你无权访问 $1</value>
+  </data>
+  <data name="find_eexist" xml:space="preserve">
+    <value>在$2中不存在$1</value>
+  </data>
+  <data name="find_edir" xml:space="preserve">
+    <value>$1 不是 $2 中的目录</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="chmod_eaccess" xml:space="preserve">
+    <value>你无权访问 '$1'</value>
+  </data>
+  <data name="chmod_euser" xml:space="preserve">
+    <value>$1：无此用户</value>
+  </data>
+  <data name="chmod_egroup" xml:space="preserve">
+    <value>$1：无此用户组</value>
+  </data>
+  <data name="chmod_elink" xml:space="preserve">
+    <value>symlink 失败：$1</value>
+  </data>
+  <data name="chmod_echown" xml:space="preserve">
+    <value>chown 失败：$1</value>
+  </data>
+  <data name="chmod_echmod" xml:space="preserve">
+    <value>chmod 失败：$1</value>
+  </data>
+  <data name="chmod_efollow" xml:space="preserve">
+    <value>您未被允许编辑符号链接</value>
+  </data>
+  <data name="copy_efrom" xml:space="preserve">
+    <value>你无权从 '$1' 拷贝</value>
+  </data>
+  <data name="copy_eto" xml:space="preserve">
+    <value>你无权拷贝到 '$1'</value>
+  </data>
+  <data name="copy_elink" xml:space="preserve">
+    <value>symlink 失败 '$1'</value>
+  </data>
+  <data name="delete_eaccess" xml:space="preserve">
+    <value>你无权删除 '$1'</value>
+  </data>
+  <data name="list_eaccess" xml:space="preserve">
+    <value>你无权访问此目录</value>
+  </data>
+  <data name="list_edir" xml:space="preserve">
+    <value>显示列表失败 $1 ： $2</value>
+  </data>
+  <data name="move_eto" xml:space="preserve">
+    <value>你无权移动到 '$1'</value>
+  </data>
+  <data name="move_afrom" xml:space="preserve">
+    <value>你无权移动 '$1'</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>作为用户访问服务器的文件</value>
+  </data>
+  <data name="acl_user_def" xml:space="preserve">
+    <value>与Webmin登录相同</value>
+  </data>
+  <data name="acl_umask" xml:space="preserve">
+    <value>对新文件去除掩码</value>
+  </data>
+  <data name="acl_follow" xml:space="preserve">
+    <value>是否总是跟随符号链接？</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>只读模式？</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>仅允许访问目录</value>
+  </data>
+  <data name="acl_home" xml:space="preserve">
+    <value>包含Webmin用户的主目录？</value>
+  </data>
+  <data name="acl_log" xml:space="preserve">
+    <value>对所有文件的修改保存日志？</value>
+  </data>
+  <data name="acl_goto" xml:space="preserve">
+    <value>打开最先允许的目录？</value>
+  </data>
+  <data name="share_title" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="share_samba" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="share_nfs" xml:space="preserve">
+    <value>NFS</value>
+  </data>
+  <data name="share_son" xml:space="preserve">
+    <value>启用 Windows 文件共享</value>
+  </data>
+  <data name="share_soff" xml:space="preserve">
+    <value>禁用 Windows 文件共享</value>
+  </data>
+  <data name="share_writable" xml:space="preserve">
+    <value>可写入？</value>
+  </data>
+  <data name="share_available" xml:space="preserve">
+    <value>现在活动吗？</value>
+  </data>
+  <data name="share_sheader" xml:space="preserve">
+    <value>共享选项</value>
+  </data>
+  <data name="share_only" xml:space="preserve">
+    <value>仅</value>
+  </data>
+  <data name="share_guest" xml:space="preserve">
+    <value>Guest 访问？</value>
+  </data>
+  <data name="share_comment" xml:space="preserve">
+    <value>注释</value>
+  </data>
+  <data name="share_nheader" xml:space="preserve">
+    <value>NFS 导出选项</value>
+  </data>
+  <data name="share_non" xml:space="preserve">
+    <value>已启用 NFS 文件共享</value>
+  </data>
+  <data name="share_noff" xml:space="preserve">
+    <value>已禁用 NFS 文件共享</value>
+  </data>
+  <data name="share_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="share_ro" xml:space="preserve">
+    <value>只读主机</value>
+  </data>
+  <data name="share_rw" xml:space="preserve">
+    <value>读写主机</value>
+  </data>
+  <data name="share_root" xml:space="preserve">
+    <value>Root 访问主机</value>
+  </data>
+  <data name="share_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="share_all" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="share_listed" xml:space="preserve">
+    <value>已列出的…</value>
+  </data>
+  <data name="share_host" xml:space="preserve">
+    <value>主机</value>
+  </data>
+  <data name="share_opts" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="share_s0" xml:space="preserve">
+    <value>不信任任何人</value>
+  </data>
+  <data name="share_s1" xml:space="preserve">
+    <value>信任非 Root 用户</value>
+  </data>
+  <data name="share_s2" xml:space="preserve">
+    <value>信任所有人</value>
+  </data>
+  <data name="share_lro" xml:space="preserve">
+    <value>只读</value>
+  </data>
+  <data name="share_lrw" xml:space="preserve">
+    <value>读写</value>
+  </data>
+  <data name="log_create_export" xml:space="preserve">
+    <value>已创建的 NFS 导出 $1</value>
+  </data>
+  <data name="log_modify_export" xml:space="preserve">
+    <value>已修改的 NFS 导出 $1</value>
+  </data>
+  <data name="log_delete_export" xml:space="preserve">
+    <value>已删除的 NFS 导出 $1</value>
+  </data>
+  <data name="log_create_share" xml:space="preserve">
+    <value>已创建的 Samba 共享 $1</value>
+  </data>
+  <data name="log_modify_share" xml:space="preserve">
+    <value>已修改的 Samba 共享 $1</value>
+  </data>
+  <data name="log_delete_share" xml:space="preserve">
+    <value>已删除的 Samba 共享 $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>已保存文件 $1</value>
+  </data>
+  <data name="log_chmod" xml:space="preserve">
+    <value>已改变文件 $1 的权限</value>
+  </data>
+  <data name="log_mkdir" xml:space="preserve">
+    <value>已创建的目录 $1</value>
+  </data>
+  <data name="log_upload" xml:space="preserve">
+    <value>已上传的文件 $1</value>
+  </data>
+  <data name="log_link" xml:space="preserve">
+    <value>已创建的符号连接 $1 到 $2</value>
+  </data>
+  <data name="log_relink" xml:space="preserve">
+    <value>已修改的符号连接 $1 到 $2</value>
+  </data>
+  <data name="log_copy" xml:space="preserve">
+    <value>已拷贝的文件 $1 到 $2</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>已移动的文件 $1 到 $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>已删除的文件 $1</value>
+  </data>
+  <data name="log_attr" xml:space="preserve">
+    <value>设置文件 $1 的属性</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>设置文件 $1 的ACL</value>
+  </data>
+  <data name="search_eaccess" xml:space="preserve">
+    <value>您无权搜索此目录</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>找到文件</value>
+  </data>
+  <data name="search_ok" xml:space="preserve">
+    <value>现在搜索</value>
+  </data>
+  <data name="search_dir" xml:space="preserve">
+    <value>搜索目录</value>
+  </data>
+  <data name="search_match" xml:space="preserve">
+    <value>文件匹配</value>
+  </data>
+  <data name="search_user" xml:space="preserve">
+    <value>用户所有</value>
+  </data>
+  <data name="search_group" xml:space="preserve">
+    <value>组所有</value>
+  </data>
+  <data name="search_any" xml:space="preserve">
+    <value>任何</value>
+  </data>
+  <data name="search_type" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="search_types_" xml:space="preserve">
+    <value>任何</value>
+  </data>
+  <data name="search_types_f" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="search_types_d" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="search_types_l" xml:space="preserve">
+    <value>符号连接</value>
+  </data>
+  <data name="search_types_p" xml:space="preserve">
+    <value>命名管道</value>
+  </data>
+  <data name="search_size" xml:space="preserve">
+    <value>文件大小</value>
+  </data>
+  <data name="search_more" xml:space="preserve">
+    <value>多于</value>
+  </data>
+  <data name="search_less" xml:space="preserve">
+    <value>少于</value>
+  </data>
+  <data name="search_xdev" xml:space="preserve">
+    <value>搜索以前的加载？</value>
+  </data>
+  <data name="search_edir" xml:space="preserve">
+    <value>丢失或无效的搜索目录</value>
+  </data>
+  <data name="search_ematch" xml:space="preserve">
+    <value>丢失匹配的正则表达式</value>
+  </data>
+  <data name="search_euser" xml:space="preserve">
+    <value>丢失用户名</value>
+  </data>
+  <data name="search_egroup" xml:space="preserve">
+    <value>丢失组名</value>
+  </data>
+  <data name="search_esize" xml:space="preserve">
+    <value>文件大小值必须是整数</value>
+  </data>
+  <data name="search_crit" xml:space="preserve">
+    <value>搜索标准</value>
+  </data>
+  <data name="search_list" xml:space="preserve">
+    <value>搜索结果</value>
+  </data>
+  <data name="facl_eaccess" xml:space="preserve">
+    <value>你未被允许设置此文件的ACLs</value>
+  </data>
+  <data name="attr_eattrs" xml:space="preserve">
+    <value>获取属性失败：$1</value>
+  </data>
+  <data name="attr_efs" xml:space="preserve">
+    <value>文件系统 $1 不支持属性</value>
+  </data>
+  <data name="attr_add" xml:space="preserve">
+    <value>添加属性</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>属性名称</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>属性值</value>
+  </data>
+  <data name="attr_efailed" xml:space="preserve">
+    <value>为 $1 ： $2 设置属性失败</value>
+  </data>
+  <data name="attr_title" xml:space="preserve">
+    <value>$1的文件属性</value>
+  </data>
+  <data name="attr_create" xml:space="preserve">
+    <value>添加属性</value>
+  </data>
+  <data name="attr_edit" xml:space="preserve">
+    <value>编辑属性</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>缺少属性名称</value>
+  </data>
+  <data name="ext_eattrs" xml:space="preserve">
+    <value>获取扩展属性失败： $1</value>
+  </data>
+  <data name="ext_efs" xml:space="preserve">
+    <value>文件系统 $1 不支持扩展属性</value>
+  </data>
+  <data name="ext_title" xml:space="preserve">
+    <value>$1 的扩展属性</value>
+  </data>
+  <data name="ext_header" xml:space="preserve">
+    <value>扩展文件属性</value>
+  </data>
+  <data name="ext_efailed" xml:space="preserve">
+    <value>为 $1 ： $2设置属性失败</value>
+  </data>
+  <data name="eattr_A" xml:space="preserve">
+    <value>不更新访问次数</value>
+  </data>
+  <data name="eattr_a" xml:space="preserve">
+    <value>只能添加到文件末尾</value>
+  </data>
+  <data name="eattr_c" xml:space="preserve">
+    <value>压缩磁盘数据</value>
+  </data>
+  <data name="eattr_d" xml:space="preserve">
+    <value>不使用dump备份</value>
+  </data>
+  <data name="eattr_i" xml:space="preserve">
+    <value>不允许修改</value>
+  </data>
+  <data name="eattr_s" xml:space="preserve">
+    <value>删除时将块归零</value>
+  </data>
+  <data name="eattr_S" xml:space="preserve">
+    <value>写入后总是同步</value>
+  </data>
+  <data name="eattr_u" xml:space="preserve">
+    <value>为反删除保存内容</value>
+  </data>
+  <data name="mount_eaccess" xml:space="preserve">
+    <value>你未被允许加载文件系统</value>
+  </data>
+  <data name="mount_efstab" xml:space="preserve">
+    <value>此加载点上不存在文件系统</value>
+  </data>
+  <data name="mount_epoint" xml:space="preserve">
+    <value>$1 不是加载点</value>
+  </data>
+  <data name="mount_rusure1" xml:space="preserve">
+    <value>你确定要从 $2加载 $1 吗？</value>
+  </data>
+  <data name="mount_rusure2" xml:space="preserve">
+    <value>你确定要从 $2卸载 $1 吗？</value>
+  </data>
+  <data name="mount_err1" xml:space="preserve">
+    <value>加载失败 $1 ： $2</value>
+  </data>
+  <data name="mount_err2" xml:space="preserve">
+    <value>卸载失败 $1 ： $2</value>
+  </data>
+  <data name="mount_title1" xml:space="preserve">
+    <value>加载文件系统</value>
+  </data>
+  <data name="mount_title2" xml:space="preserve">
+    <value>卸载文件系统</value>
+  </data>
+</root>

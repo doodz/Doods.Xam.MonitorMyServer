@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Druckerverwaltung</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Verfügbare Drucker</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Drucker</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Drucken auf</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Treiber</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Aktiv?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>verarbeitet Aufträge?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Aufträge</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Es konnten keine installierten Drucker gefunden werden.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Liste...</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Jobs...</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 Jobs..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Einen neuen Drucker hinzufügen</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stoppe Warteschlange</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um den laufenden Verwaltungsprozess für Drucker zu stoppen. Dies wird verhindern, dass lokale oder über ein Netzwerk verbundene Benutzer auf Ihrem System drucken.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Starte Warteschlange</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um den Verwaltungsprozess für Drucker zu starten. Dies wird lokalen und über ein Netzwerk verbundenen Benutzern gestatten, auf Ihrem System zu drucken.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Warteschlange neu starten</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um den Verwaltungsprozess für Drucker neu zu starten.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Druckerliste</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Druckersystem: $1</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Cluster Server</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um zusätzliche Webmin Server einzurichten, auf denen Druckern erstellt, aktualisiert und gelöscht werden können.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Lösche ausgewählte Drucker</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, diesen Drucker zu bearbeiten</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, Drucker hinzuzufügen</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Drucker installieren</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Drucker bearbeiten</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Druckerkonfiguration</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Akzeptiert Anfragen?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Nein - Warum nicht</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Drucken aktiviert?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Zugriffskontrolle</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Erlaube jedem</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Verweigere jedem</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Erlaube den aufgelisteten Benutzern..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Verweigere den aufgelisteten Benutzern..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Drucke Banner?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Standarddrucker?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Ist bereits Standarddrucker</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maximale Größe eines Druckauftrags</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>unbegrenzt</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Treiber akzeptiert</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Postscript</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Andere</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Alternativer Druckernamen</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Druckziel</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Lokales Gerät</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Lokale Datei</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Entfernter-Unix-Server</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Drucker</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Entfernter-Windows-Server</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Drucker</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Benutzer</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Kennwort</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Arbeitsgruppe</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Remote-HPNP-Server</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Anschluss</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Direkte TCP-Verbindung</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Anschluss</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Druckertreiber</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Test, ob entfernter Server aktiv ist?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>Blocks</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Fehler beim Speichern des Druckers</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, Drucker hinzuzufügen</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, diesen Drucker zu bearbeiten</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' ist kein gültiger Druckername</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Es existiert bereits ein Drucker mit dem Namen '$1'</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Es wurden keine Benutzer eingegeben, denen der Zugriff gestattet werden soll</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Es wurden keine Benutzer eingegeben, denen der Zugriff verweigert werden soll</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Benutzer '$1' existiert nicht</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Sie müssen mindestens einen Typ auswählen, den dieser Treiber akzeptiert</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Maximale Anzahl von Druckaufträge muss eine ganze Zahl sein</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' existiert nicht</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Server '$1' existiert nicht</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Entfernte Port '$1' ist ungültig</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' ist kein gültiger Name für eine Warteschlange auf einem Server</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Treiber können nicht mit Remote-Unix-Druckern verwendet werden</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Der Host '$1' für eine direkte Verbindung existiert nicht</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Fehlender oder ungültiger Anschluss zur direkten Verbindung</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Das Drucksystem erlaubt nicht diesen Drucker</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Drucker erzeugte OK auf diesem System, aber die folgenden Fehler sind auf dem Cluster System aufgetreten : $1</value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Kein Drucker mit Name '$1' wurde gefunden</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Drucker löschte OK auf diesem System, aber die folgenden Fehler sind auf dem Cluster System aufgetreten : $1</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Druckaufträge</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Druckaufträge auf $1</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>Auftrags-ID</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Größe</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Eingereicht von</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Eingereicht um</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Dateiname</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Klicken Sie auf eine Auftrags-ID in der Liste oben, um abzubrechen</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Klicke auf eine Job ID von der Liste, um abzubrechen, oder klicke auf die Job Grösse um diese anzuzeigen.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Keine Druckaufträge auf $1</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Lösche alle Druckaufträge</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>Bytes</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Testseite drucken</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Breche ausgewählte Jobs ab</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Auf Drucker $1</value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>Liste an Druckjobs</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, Druckaufträge abzubrechen</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Fehler beim Abbrechen des Druckauftrags</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Druckauftrag $1 existiert nicht länger</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Sie können diesen Durckauftrag nicht einsehen</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Dieser Druckauftrag existiert nicht mehr</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, die Druck-Verwaltung zu starten</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Fehler beim Starten der Druck-Verwaltung</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, die Druck-Verwaltung zu stoppen</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Fehler beim Stoppen der Druck-Verwaltung</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Sie sind nicht berechtigt den Scheduler neu zu starten</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Der Scheduler konnte nicht neu gestartet werden</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Postscript oder Text Drucker</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Ferner Drucker</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Modell</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin Treiber</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint Treiber</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Fehler beim holen der Treiber von $1. Webmin Treiber, die Ghostscript benutzen, sind nicht verfügbar</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Das Kommando $1 wurde nicht gefunden. Webmin Treiber, die Ghostscript benutzen, sind nicht verfügbar</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' existiert nicht</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Ferner oder RAW Drucker</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS Treiber</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Drucker und Auflösung</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Sende EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Papier Grösse</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Drucke doppel-seitig?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Zusätzliche GS Einstellungen</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint Treiber</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' existiert nicht</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Es wurde kein Treiber gewählt</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Es wurde keine Auflösung gewählt</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Postscript- oder Textdrucker</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat-Treiber</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Drucker und Auflösung</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Sende EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Papiergröße</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Seiten pro Ausgabeseite</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Zusätzliche GS-Einstellungen</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Rechter/linker Rand</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Oberer/unterer Rand</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Glätte Treppcheneffekte von Text?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' existiert nicht</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Es wurde kein Treiber gewählt</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Fehlender oder ungültiger rechter/linker Rand</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Fehlender oder ungültiger oberer/unterer Rand</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Es wurde keine Auflösung gewählt</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Druckermodell und Treiber</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postscript oder Text Drucker</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSfilter Treiber</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Printer Typ</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Auflösung in DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Farbdrucker?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Papiergrösse</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Filtermethode</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automatisch</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Raw</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Extra Ghostscript Optionen</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2 Treiber</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Kein Drucker Typ gewählt</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Fehlende oder ungültige Auflösung</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Stoppen von lpd : $1 gescheitert</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Drucker, die dieser Benutzer konfigurieren darf</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Darf neue Drucker hinzufügen?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Darf Druckaufträge einsehen und abbrechen?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Darf Druckverwaltung starten oder stoppen?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Nur Neustart?</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Nur auf ausgewählten Druckern ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Alle Drucker</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Ausgewählte...</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Zeige nichtkonfigurierbare Drucker?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Darf Testseite drucken?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Bearbeite Druckaufträge für</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Alle Benutzer</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Derzeitiger Webmin Benutzer</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kann Drucker löschen?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Kann Drucker Cluster verwalten?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Drucker Scheduler gestoppt</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Drucker Scheduler gestartet</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Drucker Scheduler neu gestartet</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Druckjob $2 auf $1 abgebrochen</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Alle Druckjobs auf $1 abgebrochen</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Abgebrochen $2 Druckjobs auf $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Drucker $1 auf $2 angelegt</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Drucker $1 auf $2 geändert</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Drucker $1 auf $2 gelöscht</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>$3 Drucker $1 auf $2 angelegt</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>$3 Drucker $1 auf $2 geändert</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>$3 Drucker $1 auf $2 gelöscht</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle $1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle $1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Kein Gerät</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB Drucker $1</value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das  Linux-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Das Spool-Verzeichnis $1 existiert nicht auf Ihrem System, welches aufzeigt, dass das Linux-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle $1 (COM$1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das FreeBSD-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Das Spool-Verzeichnis $1 existiert nicht auf Ihrem System gefunden, welches aufzeigt, dass das FreeBSD-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle $1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle $1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle $1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Kein Gerät</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das UnixWare Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle $1</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Seriell $1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>kein Gerät</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Das Spool-Verzeichnis $1 existiert nicht auf Ihrem System gefunden, welches aufzeigt, dass das HPUX-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Das Schnittstellen Skript Verzeichnis $1 existiert nicht auf Ihrem System, welches aufzeigt, dass das HPUX-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle $1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle $1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Kein Gerät</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System, welches aufzeigt, dass das LPRng-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Das Spool-Verzeichnis $1 existiert nicht auf Ihrem System, welches aufzeigt, dass das LPRng-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Parallele Schnittstelle</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 Parallele Schnittstelle</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Serielle Schnittstelle  $1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>kein Gerät</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das Solaris Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Drucke Testseite</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Sie sind nicht berechtigt die Testseite zu drucken</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Diese Maske erlaubt Ihnen eine Testseite auf Drucker $1 zu drucken. Wählen Sie den Typ :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Postscript S/W</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Postscript Farbe</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Nur ASCII Text</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Eine geladene Datei</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Drucke Seite</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Drucke Testseite mit Kommando $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. Kommando fehlgeschlagen!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. Kommando beendet.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Keiner</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Ferner oder RAW Drucker</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Programm</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS Treiber</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' ist kein gültiges Programm</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Optionen für $1</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das CUPS-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Der Befehl $1 wurde nicht auf Ihrem System gefunden, welches aufzeigt, dass das IRIX-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Das Schnittstellen Skript Verzeichnis $1 existiert nicht auf Ihrem System, welches aufzeigt, dass das IRIX-Drucksystem nicht installiert ist.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Printer Port $1</value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Ungültige Beschreibung - nur Buchstaben und Zahlen sind erlaubt, und keine Leerzeichen</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>Der AIX-Drucker-Server $1 wurde nicht gefunden. Vielleicht ist es nicht installiert oder ein anderes Druck-System ist im Einsatz.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Cluster Drucker Server</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Keine Server an den Drucker-Cluster wurde bisher hinzugefügt.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Hostname</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Betriebssystem</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Füge Server hinzu</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Füge Server zur Gruppe hinzu</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Sie müssen Server mit einem Login und Passwort in das Webmin-Server Index-Modul hinzufügen, bevor sie hier verwaltet werden können.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>Cluster Server</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Lösche Ausgewähltes</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Es ist Ihnen nicht erlaubt den Cluster Druckserver zu verwalten</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Füge Server hinzu</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Hinzufügen $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Füge Server in Gruppe $1 hinzu ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Fehlgeschlagen Server hinzuzufügen</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Fehlgeschlagen Gruppe hinzuzufügen</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Server $1 hat nicht die Drucker-Verwaltungs-Modul</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Server $1 benutzt ein anderes Druckersystem ($2) für diesen Server</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Server $1 benutzt ein anderes Druckersystem ($2) für diesen Server</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Hinzugefügt $1, mit $2 Druckern.</value>
+  </data>
+</root>

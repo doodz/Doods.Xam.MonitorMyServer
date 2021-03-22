@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Менеджер списків розсилання Majordomo</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Ваша версія majordomo не підтримується Webmin. Підтримуються тільки версії 1.94 і вище.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>Перемінна &lt;tt&gt;$1&lt;/tt&gt; у вашому файлі настроювань majordomo встановлена в &lt;tt&gt;$2&lt;/tt&gt;, чого не існує.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>Majordomo установлений на вашій системі, але не набудований у файлі псевдонімів sendmail (aliases).</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>Власник адреси email</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Настроювання псевдонімів</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>У вас немає визначених списків розсилання</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Додати новий список розсилання</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>Додати новий файл дайджест</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Редагування настроювань Majordomo</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>Редагування загальних настроювань Majordomo, застосовуваних до всіх списків розсилання</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>списки розсилання</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Majordomo версії $1</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>Загальні параметри</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>Вам заборонено редагувати загальні параметри</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>Загальні параметри Majordomo</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>Ім'я сервера пошти (&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Головна адреса Majordomo</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Адреса власника Majordomo</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Шлях до команди sendmail</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>Помилка при збереженні загальних параметрів</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value> чиНе зазначене некоректне ім'я вузла поштового сервера</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value> чиНе зазначений некоректна адреса Majordomo</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value> чиНе зазначений некоректна адреса власника</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>Команда sendmail '$1' не існує</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>Вам заборонено створювати нові списки</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Створення списку розсилання</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Параметри нового списку</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Назва списку</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>Адреса відповідального за список</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>Пароль відповідального</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>Вступне повідомлення</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>Підпис повідомлення, що пересилається</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>Список модерований?</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>Адреса модератора</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Як у відповідального</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>помилка при створенні списку розсилання</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Назва списку чи некоректно не зазначене</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>Список розсилання з назвою '$1' вже існує</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>Поштовий псевдонім для '$1' вже існує</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>Некоректний чи не зазначений адреса власника списку</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>Некоректний чи не зазначений пароль адміністратора</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>Некоректний чи не зазначений адреса відповідального за список</value>
+  </data>
+  <data name="create_archive" xml:space="preserve">
+    <value>Архівувати список?</value>
+  </data>
+  <data name="create_archiveyear" xml:space="preserve">
+    <value>Щорічно</value>
+  </data>
+  <data name="create_archivemonth" xml:space="preserve">
+    <value>Щомісяця</value>
+  </data>
+  <data name="create_archiveday" xml:space="preserve">
+    <value>Щодня</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>Вам заборонено створювати новий дайджест</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>Створення дайджесту</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>Параметри дайджесту</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>Назва списку</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>Створити дайджест зі списку</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>Список адрес відповідальних</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>Паролі відповідальних</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>Вступне повідомлення</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>Підпис повідомлення дайджесту</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>Відправляти дайджест, якщо</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>Самому старому повідомленню $1 днів.</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>Усього в повідомленнях $1 рядків</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>Помилка при створенні дайджесту</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value> чиНекоректно не зазначена кількість днів</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value> чиНекоректно не зазначена кількість рядків</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Редагувати список розсилання</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Вам заборонено  редагувати цей список розсилання</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Видалення списку</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>Видалити цей список, включаючи всі зв'язані файли й адреси</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>список розсилання</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>Для списку $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Вам заборонено видаляти цей список розсилання</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>Цей список не може бути вилучений, тому що з ним зв'язані списки дайджестів</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Видалення списку</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Ви упевнені, що хочете видалити список розсилання $1? Будуть вилучені наступні файли :</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>Також будуть вилучені наступні псевдоніми пошти :</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Видалити список</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>Члени списку</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>Використовуйте поле нижче для редагування списку адрес, що одержують пошту, що йде на цей список розсилання.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>У текстовому полі нижче зазначені всі адреси, що одержують пошту, що йде на цей список розсилання.</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>Додати адреса на список</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>Додати</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>Видалити адреса зі списку</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Синхронізувати список користувачів Unix зі списком розсилання?</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>Ім'я домену для додавання до імен користувачів</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>Вам заборонено редагувати членів цього списку</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>Ви повинні вказати пароль відповідального перед внесенням адрес у цей список</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>Адреса повинна мати повне доменне ім'я, наприклад &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>Ви повинні вказати пароль відповідального перед видаленням адреси зі списку</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>Адреса повинна мати повне доменне ім'я, наприклад &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>Повідомлення й описи</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>Повідомлення й описи</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>Список описів, що підключаються до відповідей на команди &lt;tt&gt;списків&lt;/tt&gt;</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>Інформаційне повідомлення, що повертається у відповідь на команду &lt;tt&gt;info $1&lt;/tt&gt;</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>Вступне повідомлення, що відправляється знову підписаним на список</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>Як інформаційне повідомлення</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>Уведене нижче..</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>Підписка на списки і модерування</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>Підписка на списки і параметри модерування</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>Політики підписки</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>Любою може підписати сам себе</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>Любою може підписати хоч кого</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>Потрібно підтвердження відповідального </value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>Політики зняття відмовлення від списку</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>Любою може зняти підписку із себе</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>Любою може зняти підписку з будь-якого</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>Вимагати підтвердження про підписку?</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>Відправляти вступне повідомлення?</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>Додавати в список тільки явні адреси?</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>Повідомляти відповідального за список про всі підписки і скасування підписки?</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>Переправляти запити на підписку/скасування підписки відповідальному за список?</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>Пароль відповідального за список</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>Список модерований?</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>Адреса модератора?</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>Відповідальний</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>Пароль модератора</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>Адреса email власника</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>Адреса email підтверджень</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>Не зазначена адреса email власника</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>Не зазначена адреса email підтверджень</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value> чиНе зазначений некоректна адреса модератора</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value> чиНе зазначений некоректний пароль</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>Параметри адреси email</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>Параметри вихідної пошти</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>Відповідь: адреса пересланої пошти</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>Немає</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>Відправник: адреса пошти</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>Ім'я вузла для пересланої пошти</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>Тема: Привід для пересланої пошти</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>Пріоритет пошти, що пересилається</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>Перший клас</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>Особлива доставка</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>Потрібне</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>Сміття</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>Видаляти заголовки Recieved: з пересланої пошти</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>Максимально дозволений розмір повідомлення</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value> чиНе зазначений некоректна адреса Reply-To:</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value> чиНе зазначений некоректна адреса Sender:</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>Sender: адреса не повинна містити в собі ім'я пішла</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value> чиНе зазначене некоректне ім'я вузла</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value> чиНе зазначений некоректний максимальний розмір повідомлення</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>Керування доступом</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Керування доступом до команд majordomo</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>Любою</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>Список членів</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>Ніхто</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;get&lt;/tt&gt;</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;index&lt;/tt&gt;</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;info&lt;/tt&gt;</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;intro&lt;/tt&gt;</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;which&lt;/tt&gt;</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>Доступ до команди &lt;tt&gt;who&lt;/tt&gt;</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>Уключити цей список у відповідь на команду &lt;tt&gt;lists&lt;/tt&gt; для..</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>Усіх</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>Адрес, що відповідають регулярному вираженню..</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>Адрес, що не відповідають регулярному вираженню..</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>Хто може писати повідомлення в список?</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>Усі</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>Члени списку</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>Адреси у файлі</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Регулярні вираження тіл заборонених повідомлень</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Регулярні вираження заголовків заборонених повідомлень</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>Зауваження: усі регулярні вираження заборон і адрес повинні починатися і закінчуватися на &lt;tt&gt;/&lt;/tt&gt;, наприклад &lt;tt&gt;/foobar.com/&lt;/tt&gt; чи &lt;tt&gt;/obscene/&lt;/tt&gt;.</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>Заголовки і підписи</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>Заголовки і підписи пересланих повідомлень</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>Заголовок пересланого повідомлення</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>Підпис пересланого повідомлення</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>Додаткові заголовки SMTP для пересланих повідомлень</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Різні параметри</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Різні параметри списку</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>Використовувати тільки домен для порівняння адрес?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>Режим налагодження?</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>Включити в інформаційне повідомлення дату останньої зміни?</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>Уключити у вступне повідомлення дату останньої зміни?</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>Параметри дайджесту</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>Параметри створення дайджесту</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>Заголовок дайджесту</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>Вік самого старого повідомлення перед відправленням</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>днів</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>рядків</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>Максимальний розмір дайджесту перед відправленням</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>Номер поточного тому</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>Номер поточного випуску</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>Не обмежено</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value> чиНе зазначене некоректне число днів</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value> чиНе зазначене некоректне число рядків</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value> чиНе зазначений некоректний номер тому</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value> чиНе зазначений некоректний номер випуску</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>Змінені загальні параметри</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>Створений список розсилання $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>Створений список дайджестів $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>Вилучений список розсилання $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>Вилучений список дайджестів $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>Підписаний $2 на список $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>Відмовлено від підписки $2 зі списку $1</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>Обновлені члени списку $1</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>Обновлена синхронізація для списку $1</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>Обновлені повідомлення й описи для списку $1</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>Обновлені методи підписки і модерування для списку $1</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>Обновлені параметри адреси email для списку $1</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>Обновлене керування доступом для списку $1</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>Обновлені заголовки і підписи для списку $1</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Обновлені різні параметри для списку $1</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>Обновлені параметри дайджесту для списку $1</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>Списки розсилання, керовані цим користувачем</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>Усі списки</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>Обрані..</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Можна змінювати загальні параметри?</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Можна створювати нові списки розсилання?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Можна редагувати членство в списку?</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Помилка при настроюванні псевдонімів</value>
+  </data>
+  <data name="alias_eowner" xml:space="preserve">
+    <value>Не зазначена адреса email власника</value>
+  </data>
+</root>

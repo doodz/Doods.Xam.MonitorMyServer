@@ -69,10 +69,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
             if (string.IsNullOrEmpty(msg)) return;
 
             var lines = msg.Split('\n');
-            foreach (var line in lines)
-            {
-                log(tag ?? _tag, line);
-            }
+            foreach (var line in lines) log(tag ?? _tag, line);
         }
 
         public void Warning(Exception e)
@@ -94,6 +91,5 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
         {
             InternalLog(tag, msg, (t, m) => Log.Warn(t ?? _tag, m));
         }
-
     }
 }

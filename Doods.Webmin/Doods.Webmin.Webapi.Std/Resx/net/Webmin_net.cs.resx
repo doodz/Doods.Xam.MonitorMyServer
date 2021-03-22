@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Konfigurace sítě</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>síťová konfigurace</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Použít konfiguraci</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Kliknutím na tlačítko aktivujete současné rozhraní a routery k bootování, změna se projevý po restartu. &lt;b&gt;POZOR&lt;/b&gt; - toto může způsobit nedostupnost systému přes síť a nemožnost přístupu do Webminu.</value>
+  </data>
+  <data name="index_delete1" xml:space="preserve">
+    <value>Deaktivace vybraných rozhraní</value>
+  </data>
+  <data name="index_delete2" xml:space="preserve">
+    <value>Vymazat vybrané rozhraní</value>
+  </data>
+  <data name="index_delete3" xml:space="preserve">
+    <value>Vymazat vybrané rozhraní a použít tuto konfiguraci</value>
+  </data>
+  <data name="index_apply2" xml:space="preserve">
+    <value>Použij vybrané rozhraní</value>
+  </data>
+  <data name="ifcs_title" xml:space="preserve">
+    <value>Síťové rozhraní</value>
+  </data>
+  <data name="ifcs_now" xml:space="preserve">
+    <value>Právě aktivní rozhraní</value>
+  </data>
+  <data name="ifcs_activedesc" xml:space="preserve">
+    <value>Níže sepsaná rozhraní jsou ve vašem systému aktivní. Ve většině případů je můžete upravit v tabulce &lt;b&gt;Boot Time&lt;/b&gt;.</value>
+  </data>
+  <data name="ifcs_bootdesc" xml:space="preserve">
+    <value>Níže sepsaná rozhraní budou aktivována při bootování systému a budou aktivní i během provozu.</value>
+  </data>
+  <data name="ifcs_name" xml:space="preserve">
+    <value>Jméno</value>
+  </data>
+  <data name="ifcs_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="ifcs_ip" xml:space="preserve">
+    <value>IP Adresa</value>
+  </data>
+  <data name="ifcs_desc" xml:space="preserve">
+    <value>Popis rozhraní</value>
+  </data>
+  <data name="ifcs_mask" xml:space="preserve">
+    <value>Maska sítě</value>
+  </data>
+  <data name="ifcs_status" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="ifcs_virtual" xml:space="preserve">
+    <value>Virtuální</value>
+  </data>
+  <data name="ifcs_up" xml:space="preserve">
+    <value>Nahoru</value>
+  </data>
+  <data name="ifcs_down" xml:space="preserve">
+    <value>Dolů</value>
+  </data>
+  <data name="ifcs_add" xml:space="preserve">
+    <value>Přidat nové rozhraní</value>
+  </data>
+  <data name="ifcs_radd" xml:space="preserve">
+    <value>Přidat nový adresní rozsah</value>
+  </data>
+  <data name="ifcs_boot" xml:space="preserve">
+    <value>Rozhraní, aktivované při bootování</value>
+  </data>
+  <data name="ifcs_act" xml:space="preserve">
+    <value>Aktivovat při bootování?</value>
+  </data>
+  <data name="ifcs_bootp" xml:space="preserve">
+    <value>Z BOOTP</value>
+  </data>
+  <data name="ifcs_dhcp" xml:space="preserve">
+    <value>Z DHCP</value>
+  </data>
+  <data name="ifcs_broad" xml:space="preserve">
+    <value>Vysílat</value>
+  </data>
+  <data name="ifcs_auto" xml:space="preserve">
+    <value>Automaticky</value>
+  </data>
+  <data name="ifcs_mtu" xml:space="preserve">
+    <value>MTU</value>
+  </data>
+  <data name="ifcs_virts" xml:space="preserve">
+    <value>Virtuální rozhraní</value>
+  </data>
+  <data name="ifcs_addvirt" xml:space="preserve">
+    <value>Přidat virtuální rozhraní</value>
+  </data>
+  <data name="ifcs_return" xml:space="preserve">
+    <value>Síťová rozhraní</value>
+  </data>
+  <data name="ifcs_unknown" xml:space="preserve">
+    <value>Neznámé</value>
+  </data>
+  <data name="ifcs_all" xml:space="preserve">
+    <value>Všechny rozhraní</value>
+  </data>
+  <data name="ifcs_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění editovat síťová rozhraní</value>
+  </data>
+  <data name="ifcs_ecannot_this" xml:space="preserve">
+    <value>Nemáte oprávnění editovat toto síťové rozhraní</value>
+  </data>
+  <data name="ifcs_range" xml:space="preserve">
+    <value>Rozsah $1</value>
+  </data>
+  <data name="aifc_create" xml:space="preserve">
+    <value>Vytvořit aktivní rozhraní</value>
+  </data>
+  <data name="aifc_edit" xml:space="preserve">
+    <value>Editovat aktivní rozhraní</value>
+  </data>
+  <data name="aifc_desc1" xml:space="preserve">
+    <value>Parametry aktivního rozhraní</value>
+  </data>
+  <data name="aifc_desc2" xml:space="preserve">
+    <value>Parametry aktivního virtuálního rozhraní</value>
+  </data>
+  <data name="aifc_hard" xml:space="preserve">
+    <value>Hardwarová adresa</value>
+  </data>
+  <data name="aifc_default" xml:space="preserve">
+    <value>Výchozí</value>
+  </data>
+  <data name="aifc_err1" xml:space="preserve">
+    <value>Chyba při mazání rozhraní</value>
+  </data>
+  <data name="aifc_err2" xml:space="preserve">
+    <value>Chyba při ukládání rozhraní</value>
+  </data>
+  <data name="aifc_evirt" xml:space="preserve">
+    <value>Číslo virtuálního rozhraní je špatné nebo chybí</value>
+  </data>
+  <data name="aifc_evirtmin" xml:space="preserve">
+    <value>Číslo virtuálního rozhraní musí být nejméně $1</value>
+  </data>
+  <data name="aifc_evirtdup" xml:space="preserve">
+    <value>Virtuální rozhraní $1 již existuje</value>
+  </data>
+  <data name="aifc_edup" xml:space="preserve">
+    <value>Rozhraní $1 již existuje</value>
+  </data>
+  <data name="aifc_ename" xml:space="preserve">
+    <value>Název rozhraní je špatný nebo chybí</value>
+  </data>
+  <data name="aifc_eip" xml:space="preserve">
+    <value>'$1' není platnou IP adresou</value>
+  </data>
+  <data name="aifc_emask" xml:space="preserve">
+    <value>'$1' není platnou maskou sítě</value>
+  </data>
+  <data name="aifc_ebroad" xml:space="preserve">
+    <value>'$1' není platnou adresou</value>
+  </data>
+  <data name="aifc_emtu" xml:space="preserve">
+    <value>'$1' není platným MTU</value>
+  </data>
+  <data name="aifc_ehard" xml:space="preserve">
+    <value>'$1' není platnou hardwarovou adresou</value>
+  </data>
+  <data name="aifc_eexist" xml:space="preserve">
+    <value>Rozhraní '$1' neexistuje</value>
+  </data>
+  <data name="aifc_eclash" xml:space="preserve">
+    <value>Rozhraní $1 už má použitou tuto IP adresu</value>
+  </data>
+  <data name="bifc_create" xml:space="preserve">
+    <value>Vytvořit bootovací rozhraní</value>
+  </data>
+  <data name="bifc_edit" xml:space="preserve">
+    <value>Editovat bootovací rozhraní</value>
+  </data>
+  <data name="bifc_desc1" xml:space="preserve">
+    <value>Parametry rozhraní pro Boot Time</value>
+  </data>
+  <data name="bifc_desc2" xml:space="preserve">
+    <value>Parametry virtuálního rozhraní pro Boot Time</value>
+  </data>
+  <data name="bifc_apply" xml:space="preserve">
+    <value>Použít a uložit změny</value>
+  </data>
+  <data name="bifc_dapply" xml:space="preserve">
+    <value>Vymazat a použít</value>
+  </data>
+  <data name="bifc_err1" xml:space="preserve">
+    <value>Chyba při mazání rozhraní</value>
+  </data>
+  <data name="bifc_err2" xml:space="preserve">
+    <value>Chyba při ukladání rozhraní</value>
+  </data>
+  <data name="bifc_evirt" xml:space="preserve">
+    <value>Číslo virtuálního rozhraní je špatné nebo chybí</value>
+  </data>
+  <data name="bifc_evirtdup" xml:space="preserve">
+    <value>Virtuální rozhraní $1 již existuje</value>
+  </data>
+  <data name="bifc_edup" xml:space="preserve">
+    <value>Rozhraní $1 již existuje</value>
+  </data>
+  <data name="bifc_ename" xml:space="preserve">
+    <value>Název rozhraní je špatée nebo chybí</value>
+  </data>
+  <data name="bifc_eip" xml:space="preserve">
+    <value>'$1' není platnou IP adresou</value>
+  </data>
+  <data name="bifc_emask" xml:space="preserve">
+    <value>'$1' není platnou maskou sítě</value>
+  </data>
+  <data name="bifc_ebroad" xml:space="preserve">
+    <value>'$1' není platnou adresou</value>
+  </data>
+  <data name="bifc_emtu" xml:space="preserve">
+    <value>'$1' není platným MTU</value>
+  </data>
+  <data name="bifc_err3" xml:space="preserve">
+    <value>Chyba při aktivaci rozhraní</value>
+  </data>
+  <data name="bifc_err4" xml:space="preserve">
+    <value>Chyba při deaktivaci rozhraní</value>
+  </data>
+  <data name="bifc_capply" xml:space="preserve">
+    <value>Vytvořit a použít</value>
+  </data>
+  <data name="bifc_eapply" xml:space="preserve">
+    <value>Nemůžete aktivovat rozhraní, protože se používá DHCP nebo BOOTP</value>
+  </data>
+  <data name="bifc_edhcpmain" xml:space="preserve">
+    <value>DHCP může být aktivní pouze na primárním rozhraní.</value>
+  </data>
+  <data name="bonding_add" xml:space="preserve">
+    <value>Přidat nové propojovací rozhraní.</value>
+  </data>
+  <data name="bonding_create" xml:space="preserve">
+    <value>Vytvořit bootovací propojovací rozhraní.</value>
+  </data>
+  <data name="bonding_teamparts" xml:space="preserve">
+    <value>Teaming partner</value>
+  </data>
+  <data name="bonding_teammode" xml:space="preserve">
+    <value>Mód pro teaming</value>
+  </data>
+  <data name="bonding_miimon" xml:space="preserve">
+    <value>Interval pro Mii-monitoring</value>
+  </data>
+  <data name="bonding_updelay" xml:space="preserve">
+    <value>Prodleva při nahození</value>
+  </data>
+  <data name="bonding_downdelay" xml:space="preserve">
+    <value>Prodleva pro shození</value>
+  </data>
+  <data name="vlan_add" xml:space="preserve">
+    <value>Přidat rozhraní Vlan Tagged</value>
+  </data>
+  <data name="vlan_physical" xml:space="preserve">
+    <value>Fyzické zařízení</value>
+  </data>
+  <data name="vlan_create" xml:space="preserve">
+    <value>Vytvořit rozhraní Vlan Tagged</value>
+  </data>
+  <data name="routes_title" xml:space="preserve">
+    <value>Routery a brány</value>
+  </data>
+  <data name="routes_boot" xml:space="preserve">
+    <value>Konfigurace routerování bude je aktivováno v &lt;i&gt;boot time&lt;/i&gt;</value>
+  </data>
+  <data name="routes_now" xml:space="preserve">
+    <value>Konfigurace routerů bude nyní aktivována</value>
+  </data>
+  <data name="routes_default" xml:space="preserve">
+    <value>Výchozí router</value>
+  </data>
+  <data name="routes_default2" xml:space="preserve">
+    <value>Výchozí routery</value>
+  </data>
+  <data name="routes_none" xml:space="preserve">
+    <value>Nic</value>
+  </data>
+  <data name="routes_device" xml:space="preserve">
+    <value>Zařízení</value>
+  </data>
+  <data name="routes_gateway" xml:space="preserve">
+    <value>Brána</value>
+  </data>
+  <data name="routes_forward" xml:space="preserve">
+    <value>Pracovat jako router?</value>
+  </data>
+  <data name="routes_routed" xml:space="preserve">
+    <value>Spustit démona routerování?</value>
+  </data>
+  <data name="routes_edefault" xml:space="preserve">
+    <value>'$1' není platný výchozí router</value>
+  </data>
+  <data name="routes_edevice" xml:space="preserve">
+    <value>'$1' není platné zařízení</value>
+  </data>
+  <data name="routes_device2" xml:space="preserve">
+    <value>Výchozí zařízení routerování</value>
+  </data>
+  <data name="routes_static" xml:space="preserve">
+    <value>Statické routery</value>
+  </data>
+  <data name="routes_ifc" xml:space="preserve">
+    <value>Rozhraní</value>
+  </data>
+  <data name="routes_net" xml:space="preserve">
+    <value>Siť</value>
+  </data>
+  <data name="routes_mask" xml:space="preserve">
+    <value>Maska sítě</value>
+  </data>
+  <data name="routes_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="routes_enet" xml:space="preserve">
+    <value>'$1' není platnou sítí</value>
+  </data>
+  <data name="routes_emask" xml:space="preserve">
+    <value>'$1' není platnou maskou sítě</value>
+  </data>
+  <data name="routes_egateway" xml:space="preserve">
+    <value>'$1' není platnou bránou</value>
+  </data>
+  <data name="routes_defaults" xml:space="preserve">
+    <value>Výchozí routery</value>
+  </data>
+  <data name="routes_possible" xml:space="preserve">
+    <value>Je-li možné</value>
+  </data>
+  <data name="routes_local" xml:space="preserve">
+    <value>Lokální routery</value>
+  </data>
+  <data name="routes_err" xml:space="preserve">
+    <value>Chyba při ukládání routerování</value>
+  </data>
+  <data name="routes_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění editovat routerování a brány</value>
+  </data>
+  <data name="routes_script" xml:space="preserve">
+    <value>Přídavné příkazy routerování</value>
+  </data>
+  <data name="routes_etype" xml:space="preserve">
+    <value>'$1' není platný typ routeru</value>
+  </data>
+  <data name="routes_any" xml:space="preserve">
+    <value>Nějaký</value>
+  </data>
+  <data name="routes_edefault2" xml:space="preserve">
+    <value>Špatná adresa výchozí brány číslo $1</value>
+  </data>
+  <data name="routes_eclash" xml:space="preserve">
+    <value>Pro rozhraní může být definován pouze jeden výchozí router</value>
+  </data>
+  <data name="routes_eclash2" xml:space="preserve">
+    <value>Pro $1 může být nastaven pouze jeden výchozí router</value>
+  </data>
+  <data name="routes_none2" xml:space="preserve">
+    <value>Není</value>
+  </data>
+  <data name="routes_auto" xml:space="preserve">
+    <value>Automaticky</value>
+  </data>
+  <data name="routes_gwmetric" xml:space="preserve">
+    <value>Metrika rozhraní</value>
+  </data>
+  <data name="routes_dest" xml:space="preserve">
+    <value>Síť</value>
+  </data>
+  <data name="routes_gw" xml:space="preserve">
+    <value>Brána</value>
+  </data>
+  <data name="routes_iface" xml:space="preserve">
+    <value>Rozhraní</value>
+  </data>
+  <data name="routes_def" xml:space="preserve">
+    <value>Výchozí router</value>
+  </data>
+  <data name="routes_active" xml:space="preserve">
+    <value>Aktivní routry</value>
+  </data>
+  <data name="routes_nogw" xml:space="preserve">
+    <value>Není</value>
+  </data>
+  <data name="routes_delete" xml:space="preserve">
+    <value>Vymazat vybrané routery</value>
+  </data>
+  <data name="routes_cheader" xml:space="preserve">
+    <value>Vytvoř aktivní router</value>
+  </data>
+  <data name="routes_cdest" xml:space="preserve">
+    <value>Router sítě</value>
+  </data>
+  <data name="routes_cdef" xml:space="preserve">
+    <value>Výchozí router</value>
+  </data>
+  <data name="routes_cnetmask" xml:space="preserve">
+    <value>Maska sítě</value>
+  </data>
+  <data name="routes_cvia" xml:space="preserve">
+    <value>Cesta routeru</value>
+  </data>
+  <data name="routes_ciface" xml:space="preserve">
+    <value>Síťové rozhraní $1</value>
+  </data>
+  <data name="routes_cgw" xml:space="preserve">
+    <value>Brána $1</value>
+  </data>
+  <data name="routes_cerr" xml:space="preserve">
+    <value>Chyba při vytváření aktivního routeru</value>
+  </data>
+  <data name="routes_ecdest" xml:space="preserve">
+    <value>Chybějící nebo špatná IP adresa sítě nebo síť</value>
+  </data>
+  <data name="routes_ecnetmask" xml:space="preserve">
+    <value>Chybějící nebo špatná maska sítě</value>
+  </data>
+  <data name="routes_ecgw" xml:space="preserve">
+    <value>Chybějící nebo špatná adresa brány</value>
+  </data>
+  <data name="routes_derr" xml:space="preserve">
+    <value>Chyba při vymazání routerů</value>
+  </data>
+  <data name="routes_denone" xml:space="preserve">
+    <value>Nic není vybráno</value>
+  </data>
+  <data name="routes_ecnetmask2" xml:space="preserve">
+    <value>Maska sítě nesmí být definována u výchozího routeru</value>
+  </data>
+  <data name="routes_ggw" xml:space="preserve">
+    <value>Použít router $1 na rozhraní $2</value>
+  </data>
+  <data name="dns_title" xml:space="preserve">
+    <value>DNS klient</value>
+  </data>
+  <data name="dns_options" xml:space="preserve">
+    <value>Nastavení DNS klienta</value>
+  </data>
+  <data name="dns_hostname" xml:space="preserve">
+    <value>Hostname</value>
+  </data>
+  <data name="dns_order" xml:space="preserve">
+    <value>Pořadí rozlišení</value>
+  </data>
+  <data name="dns_servers" xml:space="preserve">
+    <value>DNS servery</value>
+  </data>
+  <data name="dns_search" xml:space="preserve">
+    <value>Hledat domény</value>
+  </data>
+  <data name="dns_none" xml:space="preserve">
+    <value>Nic</value>
+  </data>
+  <data name="dns_listed" xml:space="preserve">
+    <value>Zobrazeno ..</value>
+  </data>
+  <data name="dns_eorder" xml:space="preserve">
+    <value>Chybějící pořadí rozlišení</value>
+  </data>
+  <data name="dns_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění editovat nastavení DNS klienta</value>
+  </data>
+  <data name="dns_err" xml:space="preserve">
+    <value>Chyba při ukládání DNS konfigurace</value>
+  </data>
+  <data name="dns_ehost" xml:space="preserve">
+    <value>'$1' není platný hostname</value>
+  </data>
+  <data name="dns_ens" xml:space="preserve">
+    <value>'$1' není platná IP adresa jmenného serveru</value>
+  </data>
+  <data name="dns_edomain" xml:space="preserve">
+    <value>'$1' není platné doménové jméno</value>
+  </data>
+  <data name="dns_esearch" xml:space="preserve">
+    <value>ádné domény k nalezení</value>
+  </data>
+  <data name="dns_hoststoo" xml:space="preserve">
+    <value>Upravit hostname v adrese hosta jestliže je změněna?</value>
+  </data>
+  <data name="dns_dhcp" xml:space="preserve">
+    <value>Jméno hosta je nastaveno pomocí DHCP serveru?</value>
+  </data>
+  <data name="hosts_title" xml:space="preserve">
+    <value>Host Adresy</value>
+  </data>
+  <data name="hosts_ip" xml:space="preserve">
+    <value>IP Adresy</value>
+  </data>
+  <data name="hosts_host" xml:space="preserve">
+    <value>Hostnames</value>
+  </data>
+  <data name="hosts_add" xml:space="preserve">
+    <value>Přidat novou host adresu</value>
+  </data>
+  <data name="hosts_edit" xml:space="preserve">
+    <value>Editobvat Host adresu</value>
+  </data>
+  <data name="hosts_create" xml:space="preserve">
+    <value>Vytvořit Host Adresu</value>
+  </data>
+  <data name="hosts_detail" xml:space="preserve">
+    <value>Host a adresy</value>
+  </data>
+  <data name="hosts_return" xml:space="preserve">
+    <value>seznam host adres</value>
+  </data>
+  <data name="hosts_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění editovat host adresy</value>
+  </data>
+  <data name="hosts_delete" xml:space="preserve">
+    <value>Vymazat vybrané Adresy Hostů</value>
+  </data>
+  <data name="ipnodes_title" xml:space="preserve">
+    <value>IPv6 Adresy Hostu</value>
+  </data>
+  <data name="ipnodes_ip" xml:space="preserve">
+    <value>IPv6 adresa</value>
+  </data>
+  <data name="ipnodes_host" xml:space="preserve">
+    <value>Jméno hosta</value>
+  </data>
+  <data name="ipnodes_add" xml:space="preserve">
+    <value>Přidat novou IPv6 adresu hosta</value>
+  </data>
+  <data name="ipnodes_edit" xml:space="preserve">
+    <value>Upravit IPv6 adresu hosta</value>
+  </data>
+  <data name="ipnodes_create" xml:space="preserve">
+    <value>Vytvořit adresu hosta verze IPv6</value>
+  </data>
+  <data name="ipnodes_detail" xml:space="preserve">
+    <value>Hosté a Adresy</value>
+  </data>
+  <data name="ipnodes_return" xml:space="preserve">
+    <value>Seznam IPv6 adres hostů</value>
+  </data>
+  <data name="ipnodes_ecannot" xml:space="preserve">
+    <value>Nemáte povolení upravovat IPv6 adresy hosta</value>
+  </data>
+  <data name="log_create_host" xml:space="preserve">
+    <value>Vytvořena host adresa $1</value>
+  </data>
+  <data name="log_delete_host" xml:space="preserve">
+    <value>Smazána host adresa $1</value>
+  </data>
+  <data name="log_modify_host" xml:space="preserve">
+    <value>Modifikovánsa host adresa $1</value>
+  </data>
+  <data name="log_create_ipnode" xml:space="preserve">
+    <value>Vytvořena IPv6 adresa hosta $1</value>
+  </data>
+  <data name="log_delete_ipnode" xml:space="preserve">
+    <value>Vymazat IPv6 adresu hosta $1</value>
+  </data>
+  <data name="log_modify_ipnode" xml:space="preserve">
+    <value>Modifikována IPv6 adresa hosta $1</value>
+  </data>
+  <data name="log_dns" xml:space="preserve">
+    <value>Změněno nastavení DNS klienta</value>
+  </data>
+  <data name="log_routes" xml:space="preserve">
+    <value>Změněno nastavení routerování a bran</value>
+  </data>
+  <data name="log_create_aifc" xml:space="preserve">
+    <value>Aktivováno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_modify_aifc" xml:space="preserve">
+    <value>Reaktivováno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_delete_aifc" xml:space="preserve">
+    <value>Deaktivováno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_create_bifc" xml:space="preserve">
+    <value>Vytvořeno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_modify_bifc" xml:space="preserve">
+    <value>Modifikováno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_delete_bifc" xml:space="preserve">
+    <value>Smazáno rozhraní $1 adresy $2</value>
+  </data>
+  <data name="log_dyn" xml:space="preserve">
+    <value>dynamicky</value>
+  </data>
+  <data name="log_delete_hosts" xml:space="preserve">
+    <value>Vymazat $1 adresy hostů</value>
+  </data>
+  <data name="log_delete_afics" xml:space="preserve">
+    <value>Vymazat $1 aktivní rozhraní</value>
+  </data>
+  <data name="log_delete_bfics" xml:space="preserve">
+    <value>Vymazat $1 rozhraní během bootování</value>
+  </data>
+  <data name="log_apply_bfics" xml:space="preserve">
+    <value>Aktivováno $1 rozhraní během bootování</value>
+  </data>
+  <data name="log_create_route" xml:space="preserve">
+    <value>Vytvořen aktivní router pro $1</value>
+  </data>
+  <data name="log_create_defroute" xml:space="preserve">
+    <value>Vytvořit aktivní výchozí router</value>
+  </data>
+  <data name="log_delete_routes" xml:space="preserve">
+    <value>Vymazat $1 aktivní routery</value>
+  </data>
+  <data name="acl_ifcs" xml:space="preserve">
+    <value>Lze editovat síťové rozhraní?</value>
+  </data>
+  <data name="acl_routes" xml:space="preserve">
+    <value>Lze editovat routerování a brány?</value>
+  </data>
+  <data name="acl_dns" xml:space="preserve">
+    <value>Lze editovat nastavení DNS klienta?</value>
+  </data>
+  <data name="acl_hosts" xml:space="preserve">
+    <value>Lze editovat host adresy?</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Pouze zobrazit</value>
+  </data>
+  <data name="acl_ifcs_only" xml:space="preserve">
+    <value>Pouze rozhraní</value>
+  </data>
+  <data name="acl_ifcs_ex" xml:space="preserve">
+    <value>Vyloučená rozhraní</value>
+  </data>
+  <data name="acl_apply" xml:space="preserve">
+    <value>Mohu použít tuto konfiguraci?</value>
+  </data>
+  <data name="acl_bootonly" xml:space="preserve">
+    <value>Mohu editovat aktivní rozhraní?</value>
+  </data>
+  <data name="acl_netmask" xml:space="preserve">
+    <value>Mohu editovat masku sítě?</value>
+  </data>
+  <data name="acl_broadcast" xml:space="preserve">
+    <value>Mohu upravit broadcast?</value>
+  </data>
+  <data name="acl_mtu" xml:space="preserve">
+    <value>Mohu editovat MTU?</value>
+  </data>
+  <data name="acl_up" xml:space="preserve">
+    <value>Mohu editovat aktivní status?</value>
+  </data>
+  <data name="acl_virt" xml:space="preserve">
+    <value>Mohu přidat virtuální rozhraní?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Mohu vymazat rozhraní?</value>
+  </data>
+  <data name="acl_hide" xml:space="preserve">
+    <value>Skrýt needitovatelné rozhraní?</value>
+  </data>
+  <data name="interfaces_title1" xml:space="preserve">
+    <value>Změnit rozhraní...</value>
+  </data>
+  <data name="interfaces_all" xml:space="preserve">
+    <value>Všechna rozhraní...</value>
+  </data>
+  <data name="interfaces_sel" xml:space="preserve">
+    <value>Vybraná rozhraní</value>
+  </data>
+  <data name="interfaces_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="interfaces_cancel" xml:space="preserve">
+    <value>Storno</value>
+  </data>
+  <data name="interfaces_clear" xml:space="preserve">
+    <value>Vyčistit</value>
+  </data>
+  <data name="interfaces_title2" xml:space="preserve">
+    <value>Vybrat uživatele...</value>
+  </data>
+  <data name="apply_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění uložit aktuální konfiguraci</value>
+  </data>
+  <data name="mod_egone" xml:space="preserve">
+    <value>Rozhraní už není aktivní!</value>
+  </data>
+  <data name="mod_title" xml:space="preserve">
+    <value>Aktivní rozhraní</value>
+  </data>
+  <data name="mod_desc" xml:space="preserve">
+    <value>$1 rozhraní je použito pro $2, a nemůže být upravována pomocí tohoto modulu.</value>
+  </data>
+  <data name="mod_ppp" xml:space="preserve">
+    <value>PPP dialup připojení k $1</value>
+  </data>
+  <data name="mod_adsl" xml:space="preserve">
+    <value>připojení ADSL PPP</value>
+  </data>
+  <data name="mod_pptps" xml:space="preserve">
+    <value>PPTP připojení od klienta $1</value>
+  </data>
+  <data name="mod_pptpc" xml:space="preserve">
+    <value>PPTP připojení $1</value>
+  </data>
+  <data name="mod_zones" xml:space="preserve">
+    <value>virtuální rozhraní pro zónu &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="mod_virtualmin" xml:space="preserve">
+    <value>Virtualmin server &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="mod_reseller" xml:space="preserve">
+    <value>Virtualmin reseller &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="range_edit" xml:space="preserve">
+    <value>Upravit adresní rozsah</value>
+  </data>
+  <data name="range_create" xml:space="preserve">
+    <value>Vytvořit Adresní Rozsah</value>
+  </data>
+  <data name="range_header" xml:space="preserve">
+    <value>Možnosti pro adresní rozsah rozhraní</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Výchozí adresa</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>Koncová adresa</value>
+  </data>
+  <data name="range_num" xml:space="preserve">
+    <value>Není první virtuální rozhraní.</value>
+  </data>
+  <data name="range_iface" xml:space="preserve">
+    <value>Reálné rozhraní</value>
+  </data>
+  <data name="range_name" xml:space="preserve">
+    <value>Název rozsahu</value>
+  </data>
+  <data name="range_err" xml:space="preserve">
+    <value>Chyba při ukládání adresního rozsahu</value>
+  </data>
+  <data name="range_ename" xml:space="preserve">
+    <value>Chybějící nebo špatný název rozsahu</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Chybějící nebo špatná úvodní adresa</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Chybějící nebo špatná koncová adresa</value>
+  </data>
+  <data name="range_enum" xml:space="preserve">
+    <value>Chybějící nebo nečíselné číslo prvního virtuálního rozhraní</value>
+  </data>
+  <data name="range_eclass" xml:space="preserve">
+    <value>Začínající a koncové adresy musejí být ve stejné síti třídy C</value>
+  </data>
+  <data name="range_ebefore" xml:space="preserve">
+    <value>Koncová adresa musí být vyšší než začínající</value>
+  </data>
+  <data name="chooser_any" xml:space="preserve">
+    <value>&amp;lt;Nějaký&amp;gt;</value>
+  </data>
+  <data name="chooser_other" xml:space="preserve">
+    <value>Další...</value>
+  </data>
+  <data name="dafics_err" xml:space="preserve">
+    <value>Chyba při deaktivaci rozhraní</value>
+  </data>
+  <data name="daifcs_enone" xml:space="preserve">
+    <value>Nic není vybráno</value>
+  </data>
+  <data name="daifcs_egone" xml:space="preserve">
+    <value>Rozhraní neexistuje!</value>
+  </data>
+  <data name="dbifcs_err" xml:space="preserve">
+    <value>Chyba při vymazání rozhraní</value>
+  </data>
+  <data name="dbifcs_err2" xml:space="preserve">
+    <value>Chyba při aktivaci rozhraní</value>
+  </data>
+</root>

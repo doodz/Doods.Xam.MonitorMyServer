@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Administrador de Llistes Majordomo</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Aquesta versió del majordomo no està suportada per Webmin. Només estan suportades les versions 1.94 i posteriors.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>La variable &lt;tt&gt;$1&lt;/tt&gt; del fitxer de configuració del majordomo està establerta a &lt;tt&gt;$2&lt;/tt&gt;, que no existeix.</value>
+  </data>
+  <data name="index_esendmail3" xml:space="preserve">
+    <value>El mòdul Sendmail de Webmin necessari per gestionar àlies no està instal·lat.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>El majordomo està instal·lat al sistema, però no està degudament configurat al fitxer d'àlies del sendmail.</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>Adreça de correu del propietari</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Configura els Àlies</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No tens cap llista de correu definida</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Afegeix una nova llista de correu.</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>Afegeix una nova llista de resums.</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Edita les Opcions del Majordomo</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>Edita les opcions globals del majordomo que s'apliquen a totes les llistes de correu</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>a les llistes de correu</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Versió majordomo $1</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>Opcions Globals</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>No tens permís per editar les opcions globals</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>Opcions Globals del Majordomo</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>Nom de host del servidor de correu (&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Adreça mestra del majordomo</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Adreça del propietari del majordomo</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Camí de l'ordre sendmail</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>No s'han pogut desar les opcions globals</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>Hi falta el nom de host del servidor o bé no és vàlid</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>Hi falta l'adreça del majordomo o bé no és vàlida</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>Hi falta l'adreça del propietari o bé no és vàlida</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>No existeix l'ordre '$1' del sendmail</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>No tens permís per crear noves llistes de correu</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Creació de Llista de Correu</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Detalls de la nova llista</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Nom de la llista</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>Adreça del mantenidor de la llista</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>Contrasenya de manteniment</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>Missatge introductori</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>Peu de missatge reenviat</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>Llista moderada</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>Adreça del moderador</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>La mateixa que el mantenidor</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>No s'ha pogut crear la llista de correu</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Hi falta el nom de la llista o bé no és vàlid</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>Ja existeix una llista anomenada '$1'</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>Ja existeix un àlies de correu de '$1'</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>Hi falta l'adreça del propietari o bé no és vàlida</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>Hi la contrasenya d'administració o bé no és vàlida</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>Hi falta l'adreça del moderador o bé no és vàlida</value>
+  </data>
+  <data name="create_archive" xml:space="preserve">
+    <value>Arxiva la llista de correu</value>
+  </data>
+  <data name="create_archiveyear" xml:space="preserve">
+    <value>En un fitxer anual</value>
+  </data>
+  <data name="create_archivemonth" xml:space="preserve">
+    <value>En un fitxer mensual</value>
+  </data>
+  <data name="create_archiveday" xml:space="preserve">
+    <value>En un fitxer diari</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>No tens permís per crear noves llistes de resums</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>Creació de Llista de Resums</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>Detalls de la nova llista de resums</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>Nom de la llista</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>Resumeix la llista</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>Llista l'adreça del mantenidor</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>Contrasenya de manteniment</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>Missatge introductori</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>Peu del correu resum</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>Envia un resum quan</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>El missatge més vell sigui de fa $1 dies</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>El total de missatges faci $1 línies</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>No s'ha pogut crear la llista de resums</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value>Hi falta el nombre de dies o bé no és vàlid</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value>Hi falta el nombre de línies o bé no és vàlid</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Edició de Llista de Correu</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>No tens permís per editar aquesta llista de correu</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Suprimeix la Llista</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>Suprimeix aquesta llista, incloent-hi tots els fitxers associats i àlies de correu</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>$1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>No tens permís per suprimir aquesta llista de correu</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>Aquesta llista no es pot suprimir, ja que sembla que té una llista de resums associada</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Supressió de Llista</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Segur que vols suprimir la llista de correu $1? S'esborraran els següents fitxers:</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>S'esborraran també els següents àlies:</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Suprimeix la Llista</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>Membres de la Llista</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>Utilitza la caixa de text de sota per editar la llista de les adreces de correu que rebran el correu enviat a aquesta llista.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>La caixa de text de sota llista totes les adreces de correu que rebran el correu enviat a aquesta llista.</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>Subscriu l'adreça a la llista</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>Afegeix</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>Treu l'adreça de la llista</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>Treu</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Sincronitza els usuaris Unix amb la llista</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>Nom del domini per afegir als noms d'usuari</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>No tens permís per editar els membres d'aquesta llista</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>Has de triar una contrasenya de manteniment abans de subscriure adreces a aquesta llista</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>L'adreça subscrita ha de tenir un nom de domini complet, com ara &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>Has de triar una contrasenya de manteniment abans de treure adreces d'aquesta llista</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>L'adreça donada de baixa ha de tenir un nom de domini complet, com ara &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>Missatges i Descripció</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>Missatges i descripció</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>Descripció de la llista per incloure en la resposta a l'ordre &lt;tt&gt;lists&lt;/tt&gt;</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>Missatge informatiu per retornar en resposta a l'ordre &lt;tt&gt;info $1&lt;/tt&gt;</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>Missatge introductori per enviar quan algú se subscriu a la llista</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>El mateix que el missatge informatiu</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>Introduït a sota...</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>Subscripció i Moderació</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>Opcions de subscripció i moderació</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>Política de subscripcions</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>Tothom es pot subscriure ell/a mateix/a</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>Tothom pot subscriure tothom</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>Cal l'aprovació del mantenidor</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>Política de baixes</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>Tothom es pot donar de baixa ell/a mateix/a</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>Tothom pot donar de baixa tothom</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>Demana confirmació de la subscripció</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>Envia el missatge introductori</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>Afegeix a la llista només l'adreça pelada</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>Notifica les altes i les baixes al mantenidor</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>Reenvia les peticions d'alta/baixa al mantenidor</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>Contrasenya de manteniment</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>Llista moderada</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>Adreça del moderador</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>Mantenidor</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>Contrasenya de moderació</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>Adreça de correu del propietari</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>Adreça de correu d'aprovació</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>Hi falta l'adreça del propietari</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>Hi falta l'adreça d'aprovació</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>Hi falta l'adreça del moderador o bé no és vàlida</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>Hi falta la contrasenya o bé no és vàlida</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>Opcions de Correu</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>Opcions del correu de sortida</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>Adreça Reply-To: del missatge reenviat</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>Adreça Sender: del correu</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>Nom de host del correu reenviat</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>Prefix Subject: del correu reenviat</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>Prioritat del correu reenviat</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>Primera classe</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>Lliurament especial</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>Llista</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>Ronya</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>Treu les capçaleres Received: del correu reenviat</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>Mida màxima permesa de missatge</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>Hi falta l'adreça Reply-To: o bé no és vàlida</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>Hi falta Sender: o bé no és vàlida</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>L'adreça Sender: no pot incloure un nom de host</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>Hi falta el nom de host o bé no és vàlid</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>Hi falta la mida màxima de missatge o bé no és vàlida</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>Control Accés</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Control d'accés a les ordres del majordomo</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>Tothom</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>Membres de la llista</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>Ningú</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;get&lt;/tt&gt;</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;index&lt;/tt&gt;</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;info&lt;/tt&gt;</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;intro&lt;/tt&gt;</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;which&lt;/tt&gt;</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>Accés a l'ordre &lt;tt&gt;who&lt;/tt&gt;</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>Inclou aquesta llista en la resposta de l'ordre &lt;tt&gt;lists&lt;/tt&gt; per a...</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>Tothom</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>Les adreces que coincideixin amb les expressions...</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>Les adreces que no coincideixin amb les expressions...</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>Qui pot penjar missatges en aquesta llista?</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>Tothom</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>Els membres de la llista</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>Les adreces del fitxer</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Expressions regulars tabú del cos</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Expressions regulars tabú de les capçaleres</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>Nota: totes les expressions regulars de tabú i d'adreces han de començar i acabar amb &lt;tt&gt;/&lt;/tt&gt;, com ara &lt;tt&gt;/foobar.com/&lt;/tt&gt; o &lt;tt&gt;/obscene/&lt;/tt&gt;.</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>Capçaleres i Peus</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>Capçaleres i peus reenviats</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>Reenvia les capçaleres de correu</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>Reenvia els peus de correu</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>Capçaleres SMTP extres del correu reenviat</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Opcions Miscel.lànies</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Opcions miscel·lànies de la llista</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>Utilitza el domini només quan comparis adreces</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>Mode depuració</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>Inclou la data de darrera modificació al missatge informatiu</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>Inclou la data de darrera modificació al missatge introductori</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>Opcions de Resum</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>Opcions de generació del resum</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>Títol del resum</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>Edat del missatge més vell abans d'enviar</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>dies</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>línies</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>Mida màxima del resum abans d'enviar</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>Número de volum actual</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>Número de publicació actual</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>Il·limitada</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>Hi falta el nombre de dies o bé no és vàlid</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>Hi falta el nombre de línies o bé no és vàlid</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>Hi falta el número de volum o bé no és vàlid</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>Hi falta el número de publicació o bé no és vàlid</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>S'han canviat les opcions globals</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>S'ha creat la llista de correu $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>S'ha creat la llista de resums $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>S'ha suprimit la llista de correu $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>S'ha suprimit la llista de resums $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>S'ha subscrit $2 a la llista $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>S'ha donat de baixa $2 de la llista $1</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>S'han actualitzat els membres de la llista $1</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>S'ha actualitzat la sincronització de la llista $1</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>S'han actualitzat els missatges i la descripció de la llista $1</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>S'ha actualitzat la subscripció i la moderació de la llista $1</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>S'han actualitzat les opcions de correu de la llista $1</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>S'ha actualitzat el control d'accés de la llista $1</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>S'han actualitzat les capçaleres i els peus de la llista $1</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>S'han actualitzat les opcions miscel·lànies de la llista $1</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>S'han actualitzat les opcions de resum de la llista $1</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>Llistes de correu que aquest usuari pot gestionar</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>Totes les llistes</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>Seleccionades...</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Pot editar les opcions globals</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Pot crear noves llistes de correu</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Pot editar els membres de les llistes</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>No s'han pogut configurar els àlies</value>
+  </data>
+  <data name="alias_eowner" xml:space="preserve">
+    <value>Hi falta l'adreça de correu del propietari</value>
+  </data>
+</root>

@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Servidor de Base de Datos PostgreSQL</value>
+  </data>
+  <data name="index_notrun" xml:space="preserve">
+    <value>PostgreSQL no se está ejecutando en tu sistema - la lista de bases de datos no pudo ser recuperada.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Arrancar Servidor PostgreSQL</value>
+  </data>
+  <data name="index_nopass" xml:space="preserve">
+    <value>Webmin necesita saber tu login de administración de PostgreSQL y tu clave de acceso con el fin de gestionar tu base de datos. Por favor, digita debajo tu nombre de usuario de administración y la clave de acceso.</value>
+  </data>
+  <data name="index_ltitle" xml:space="preserve">
+    <value>Login a PostgreSQL</value>
+  </data>
+  <data name="index_login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="index_pass" xml:space="preserve">
+    <value>Clave de acceso</value>
+  </data>
+  <data name="index_clear" xml:space="preserve">
+    <value>Limpiar</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Parar Servidor PostgreSQL</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Haz click en este botón para parar el servidor de base de datos PostgreSQL de tu sistema. Esto prevendrá que cualquier usuario o programa acceda a la base de datos, incluyendo a este módulo de Webmin.</value>
+  </data>
+  <data name="index_dbs" xml:space="preserve">
+    <value>Bases de Datos PostgreSQL</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Crear una nueva base de datos</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>Opciones de Usuario</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista de base de datos</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>La base de datos PostgreSQL de tu sistema es de la versión $1, pero Webmin sólamente soporta las versiones $2 y superiores.</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Versión $1 de POostgreSQL</value>
+  </data>
+  <data name="login_err" xml:space="preserve">
+    <value>Falló el login</value>
+  </data>
+  <data name="login_ecannot" xml:space="preserve">
+    <value>No estás autorizado a configurar el login a la base de datos</value>
+  </data>
+  <data name="login_elogin" xml:space="preserve">
+    <value>Login de administración sin poner</value>
+  </data>
+  <data name="login_epass" xml:space="preserve">
+    <value>Nombre de usuario o clave de acceso de administración incorrectos</value>
+  </data>
+  <data name="dbase_title" xml:space="preserve">
+    <value>Editar Base de Datos</value>
+  </data>
+  <data name="dbase_noconn" xml:space="preserve">
+    <value>Esta base de datos no está aceptando conexiones en este momento. Por ello, no se pueden realizar acciones en ella.</value>
+  </data>
+  <data name="dbase_tables" xml:space="preserve">
+    <value>Tablas de Base de Datos</value>
+  </data>
+  <data name="dbase_add" xml:space="preserve">
+    <value>Crear una nueva tabla</value>
+  </data>
+  <data name="dbase_drop" xml:space="preserve">
+    <value>Eliminar Base de Datos</value>
+  </data>
+  <data name="dbase_exec" xml:space="preserve">
+    <value>Ejecutar SQL</value>
+  </data>
+  <data name="dbase_none" xml:space="preserve">
+    <value>Esta base de datos no tiene tablas.</value>
+  </data>
+  <data name="dbase_fields" xml:space="preserve">
+    <value>Campos:</value>
+  </data>
+  <data name="dbase_return" xml:space="preserve">
+    <value>lista de tablas</value>
+  </data>
+  <data name="dbase_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar esta base de datos</value>
+  </data>
+  <data name="table_title" xml:space="preserve">
+    <value>Editar Tabla</value>
+  </data>
+  <data name="table_title2" xml:space="preserve">
+    <value>Crear Tabla</value>
+  </data>
+  <data name="table_opts" xml:space="preserve">
+    <value>Opciones de campo</value>
+  </data>
+  <data name="table_header" xml:space="preserve">
+    <value>Tabla $1 en base de datos $2</value>
+  </data>
+  <data name="table_field" xml:space="preserve">
+    <value>Nombre de campo</value>
+  </data>
+  <data name="table_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="table_null" xml:space="preserve">
+    <value>¿Permitir nulos?</value>
+  </data>
+  <data name="table_arr" xml:space="preserve">
+    <value>¿Arreglo?</value>
+  </data>
+  <data name="table_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="table_add" xml:space="preserve">
+    <value>Añadir tipo de campo:</value>
+  </data>
+  <data name="table_return" xml:space="preserve">
+    <value>lista de campos</value>
+  </data>
+  <data name="table_data" xml:space="preserve">
+    <value>Ver Datos</value>
+  </data>
+  <data name="table_drop" xml:space="preserve">
+    <value>Eliminar Tabla</value>
+  </data>
+  <data name="table_name" xml:space="preserve">
+    <value>Nombre de Tabla</value>
+  </data>
+  <data name="table_initial" xml:space="preserve">
+    <value>Campos iniciales</value>
+  </data>
+  <data name="table_header2" xml:space="preserve">
+    <value>Opciones de nueva tabla</value>
+  </data>
+  <data name="table_err" xml:space="preserve">
+    <value>No pude crear tabla</value>
+  </data>
+  <data name="table_ename" xml:space="preserve">
+    <value>Nombre de tabla inválido o sin poner</value>
+  </data>
+  <data name="table_efield" xml:space="preserve">
+    <value>'$1' no es un nombre de campo válido</value>
+  </data>
+  <data name="table_etype" xml:space="preserve">
+    <value>Tipo sin poner para campo $1</value>
+  </data>
+  <data name="table_esize" xml:space="preserve">
+    <value>Medida de tipo sin poner para campo $1</value>
+  </data>
+  <data name="table_enone" xml:space="preserve">
+    <value>No se han digitado campos iniciales</value>
+  </data>
+  <data name="table_fielddrop" xml:space="preserve">
+    <value>Borrar Campo</value>
+  </data>
+  <data name="field_title1" xml:space="preserve">
+    <value>Añadir Campo</value>
+  </data>
+  <data name="field_title2" xml:space="preserve">
+    <value>Modificar Campo</value>
+  </data>
+  <data name="field_in" xml:space="preserve">
+    <value>En tabla $1 en base de datos $2</value>
+  </data>
+  <data name="field_header" xml:space="preserve">
+    <value>Parámetros de Campo</value>
+  </data>
+  <data name="field_name" xml:space="preserve">
+    <value>Nombre de campo</value>
+  </data>
+  <data name="field_type" xml:space="preserve">
+    <value>Tipo de datos</value>
+  </data>
+  <data name="field_size" xml:space="preserve">
+    <value>Ancho de tipo</value>
+  </data>
+  <data name="field_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="field_null" xml:space="preserve">
+    <value>¿Permito nulos?</value>
+  </data>
+  <data name="field_arr" xml:space="preserve">
+    <value>¿Campo de arreglo?</value>
+  </data>
+  <data name="field_key" xml:space="preserve">
+    <value>¿Clave primaria?</value>
+  </data>
+  <data name="field_uniq" xml:space="preserve">
+    <value>¿Única?</value>
+  </data>
+  <data name="field_esize" xml:space="preserve">
+    <value>'$1' no es una medida válida de campo</value>
+  </data>
+  <data name="field_eenum" xml:space="preserve">
+    <value>No se han digitado valores enumerados</value>
+  </data>
+  <data name="field_efield" xml:space="preserve">
+    <value>'$1' no es un nombre válido de campo</value>
+  </data>
+  <data name="field_ekey" xml:space="preserve">
+    <value>Los campos que permiten nulos no pueden formar parte de la clave primaria</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Ejecutar SQL</value>
+  </data>
+  <data name="exec_header" xml:space="preserve">
+    <value>Digita comando SQL a ejecutar en base de datos $1...</value>
+  </data>
+  <data name="exec_exec" xml:space="preserve">
+    <value>Ejecutar</value>
+  </data>
+  <data name="exec_err" xml:space="preserve">
+    <value>No pude ejecutar SQL</value>
+  </data>
+  <data name="exec_out" xml:space="preserve">
+    <value>Salida del comando SQL $1...</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>No se ha devuelto dato alguno</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>No pude para el servidor de base de datos</value>
+  </data>
+  <data name="stop_epidfile" xml:space="preserve">
+    <value>No pude abrir el archivo PID $1</value>
+  </data>
+  <data name="stop_ekill" xml:space="preserve">
+    <value>No pude matar el proceso $1: $2</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>No estás autorizado a para el servidor de base de datos</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>No pude arrancar el servidor de base de datos</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>No estás autorizado a arrancar el servidor de base de datos</value>
+  </data>
+  <data name="ddrop_err" xml:space="preserve">
+    <value>No pude eliminar la base de datos</value>
+  </data>
+  <data name="ddrop_title" xml:space="preserve">
+    <value>Eliminar Base de Datos</value>
+  </data>
+  <data name="ddrop_rusure" xml:space="preserve">
+    <value>¿Estás seguro de querer eliminar la base de datos $1?. $2 tablas conteniendo $3 filas de datos serán borradas.</value>
+  </data>
+  <data name="ddrop_mysql" xml:space="preserve">
+    <value>A causa de que ésta es la base de datos maestra, ¡eliminarla haría probáblemente que tu servidor PostgreSQL quedara inservible!</value>
+  </data>
+  <data name="ddrop_ok" xml:space="preserve">
+    <value>Eliminar Base de Datos</value>
+  </data>
+  <data name="tdrop_err" xml:space="preserve">
+    <value>No pude eliminar tabla</value>
+  </data>
+  <data name="tdrop_title" xml:space="preserve">
+    <value>Eliminar Tabla</value>
+  </data>
+  <data name="tdrop_rusure" xml:space="preserve">
+    <value>¿Estás seguro de querer eliminar la tabla $1 en la base de datos $2?. $3 filas de datos serán borradas.</value>
+  </data>
+  <data name="tdrop_ok" xml:space="preserve">
+    <value>Eliminar Tabla</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Datos de Tabla</value>
+  </data>
+  <data name="view_pos" xml:space="preserve">
+    <value>Filas $1 a $2 de $3</value>
+  </data>
+  <data name="view_none" xml:space="preserve">
+    <value>Esta tabla no contiene dato alguno</value>
+  </data>
+  <data name="view_edit" xml:space="preserve">
+    <value>Editar filas seleccionadas</value>
+  </data>
+  <data name="view_new" xml:space="preserve">
+    <value>Añadir fila</value>
+  </data>
+  <data name="view_delete" xml:space="preserve">
+    <value>Borrar filas seleccionadas</value>
+  </data>
+  <data name="view_nokey" xml:space="preserve">
+    <value>Los datos de esta tabla no pueden ser editados ya que no tiene clave primaria.</value>
+  </data>
+  <data name="view_all" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="view_invert" xml:space="preserve">
+    <value>Invertir selección</value>
+  </data>
+  <data name="newdb_title" xml:space="preserve">
+    <value>Crear Base de Datos</value>
+  </data>
+  <data name="newdb_header" xml:space="preserve">
+    <value>Nuevas opciones de Base de Datos</value>
+  </data>
+  <data name="newdb_db" xml:space="preserve">
+    <value>Nombre de base de datos</value>
+  </data>
+  <data name="newdb_path" xml:space="preserve">
+    <value>Trayectoria de archivo de base de datos</value>
+  </data>
+  <data name="newdb_err" xml:space="preserve">
+    <value>No pude crear base de datos</value>
+  </data>
+  <data name="newdb_edb" xml:space="preserve">
+    <value>Nombre de base de datos inválido o sin poner</value>
+  </data>
+  <data name="newdb_ecannot" xml:space="preserve">
+    <value>No estás autorizado a crear bases de datos</value>
+  </data>
+  <data name="newdb_epath" xml:space="preserve">
+    <value>Trayectoria de base de datos sin poner</value>
+  </data>
+  <data name="user_title" xml:space="preserve">
+    <value>Usuarios de PostgreSQL</value>
+  </data>
+  <data name="user_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar usuarios</value>
+  </data>
+  <data name="user_name" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="user_db" xml:space="preserve">
+    <value>¿Puedo crear bases de datos?</value>
+  </data>
+  <data name="user_other" xml:space="preserve">
+    <value>¿Puedo crear usuarios?</value>
+  </data>
+  <data name="user_until" xml:space="preserve">
+    <value>Válido hasta</value>
+  </data>
+  <data name="user_add" xml:space="preserve">
+    <value>Crear un nuevo usuario</value>
+  </data>
+  <data name="user_forever" xml:space="preserve">
+    <value>Para siempre</value>
+  </data>
+  <data name="user_pass" xml:space="preserve">
+    <value>¿Requiere clave de acceso?</value>
+  </data>
+  <data name="user_edit" xml:space="preserve">
+    <value>Editar Usuario</value>
+  </data>
+  <data name="user_create" xml:space="preserve">
+    <value>Crear Usuario</value>
+  </data>
+  <data name="user_return" xml:space="preserve">
+    <value>lista de usuarios</value>
+  </data>
+  <data name="user_header" xml:space="preserve">
+    <value>Detalles de usuario de PostgreSQL</value>
+  </data>
+  <data name="user_passwd" xml:space="preserve">
+    <value>Clave de acceso</value>
+  </data>
+  <data name="user_none" xml:space="preserve">
+    <value>Ninguna</value>
+  </data>
+  <data name="user_err" xml:space="preserve">
+    <value>No pude salvar usuario</value>
+  </data>
+  <data name="user_epass" xml:space="preserve">
+    <value>Clave de acceso inválida o sin poner</value>
+  </data>
+  <data name="user_ename" xml:space="preserve">
+    <value>Nombre de usuario inválido o sin poner</value>
+  </data>
+  <data name="host_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar máquinas autorizadas</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Máquinas Autorizadas</value>
+  </data>
+  <data name="host_desc" xml:space="preserve">
+    <value>Cuando un cliente se conecta a la base de datos, las máquinas listadas debajo son procesadas en orden hasta que una coincide y el cliente es autorizado o denegado.</value>
+  </data>
+  <data name="host_local" xml:space="preserve">
+    <value>Conexión local</value>
+  </data>
+  <data name="host_address" xml:space="preserve">
+    <value>Dirección de máquina</value>
+  </data>
+  <data name="host_db" xml:space="preserve">
+    <value>Base de datos</value>
+  </data>
+  <data name="host_auth" xml:space="preserve">
+    <value>Modo de autenticación</value>
+  </data>
+  <data name="host_any" xml:space="preserve">
+    <value>Cualquier máquina de red</value>
+  </data>
+  <data name="host_all" xml:space="preserve">
+    <value>Todas las bases de datos</value>
+  </data>
+  <data name="host_same" xml:space="preserve">
+    <value>Igual al nombre de usuario</value>
+  </data>
+  <data name="host_add" xml:space="preserve">
+    <value>Crear una nueva máquina autorizada</value>
+  </data>
+  <data name="host_ident" xml:space="preserve">
+    <value>Revisar servidor de &lt;tt&gt;identificación&lt;/tt&gt; en máquina</value>
+  </data>
+  <data name="host_trust" xml:space="preserve">
+    <value>No se requiere autenticación</value>
+  </data>
+  <data name="host_reject" xml:space="preserve">
+    <value>Rechazar conexión</value>
+  </data>
+  <data name="host_password" xml:space="preserve">
+    <value>Clave de acceso de texto</value>
+  </data>
+  <data name="host_crypt" xml:space="preserve">
+    <value>Clave de acceso encriptada</value>
+  </data>
+  <data name="host_krb4" xml:space="preserve">
+    <value>Kerberos V4</value>
+  </data>
+  <data name="host_krb5" xml:space="preserve">
+    <value>Kerberos V5</value>
+  </data>
+  <data name="host_passwordarg" xml:space="preserve">
+    <value>Usar archivo de clave de acceso</value>
+  </data>
+  <data name="host_create" xml:space="preserve">
+    <value>Crear Máquina Autorizada</value>
+  </data>
+  <data name="host_edit" xml:space="preserve">
+    <value>Editar Máquina Autorizada</value>
+  </data>
+  <data name="host_single" xml:space="preserve">
+    <value>Máquina única</value>
+  </data>
+  <data name="host_network" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="host_netmask" xml:space="preserve">
+    <value>Máscara de red</value>
+  </data>
+  <data name="host_return" xml:space="preserve">
+    <value>lista de acceso a máquina</value>
+  </data>
+  <data name="host_err" xml:space="preserve">
+    <value>No pude salvar máquina autorizada</value>
+  </data>
+  <data name="host_eident" xml:space="preserve">
+    <value>Mapa de usuario inválido o sin poner</value>
+  </data>
+  <data name="host_epassword" xml:space="preserve">
+    <value>Archivo de claves de acceso inválido o sin poner</value>
+  </data>
+  <data name="host_enetmask" xml:space="preserve">
+    <value>Máscara de red inválida o sin poner</value>
+  </data>
+  <data name="host_enetwork" xml:space="preserve">
+    <value>Red inválida o sin poner</value>
+  </data>
+  <data name="host_ehost" xml:space="preserve">
+    <value>Dirección IP de máquina inválida o sin poner</value>
+  </data>
+  <data name="host_move" xml:space="preserve">
+    <value>Mover</value>
+  </data>
+  <data name="grant_title" xml:space="preserve">
+    <value>Privilegios garantizados</value>
+  </data>
+  <data name="grant_tvi" xml:space="preserve">
+    <value>Objeto</value>
+  </data>
+  <data name="grant_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="grant_db" xml:space="preserve">
+    <value>Base de Datos</value>
+  </data>
+  <data name="grant_public" xml:space="preserve">
+    <value>Todo el mundo</value>
+  </data>
+  <data name="grant_group" xml:space="preserve">
+    <value>Grupo $1</value>
+  </data>
+  <data name="grant_add" xml:space="preserve">
+    <value>Añadir garantía en base de datos:</value>
+  </data>
+  <data name="grant_return" xml:space="preserve">
+    <value>lista de privilegios</value>
+  </data>
+  <data name="grant_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar privilegios</value>
+  </data>
+  <data name="grant_create" xml:space="preserve">
+    <value>Crear Garantía</value>
+  </data>
+  <data name="grant_edit" xml:space="preserve">
+    <value>Editar Garantía</value>
+  </data>
+  <data name="grant_header" xml:space="preserve">
+    <value>Privilegios garantizados a usuarios</value>
+  </data>
+  <data name="grant_to" xml:space="preserve">
+    <value>Garantizar privilegios sobre</value>
+  </data>
+  <data name="grant_table" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="grant_view" xml:space="preserve">
+    <value>Vista o índice</value>
+  </data>
+  <data name="grant_users" xml:space="preserve">
+    <value>Garantizar privilegios a</value>
+  </data>
+  <data name="grant_user" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="grant_what" xml:space="preserve">
+    <value>Privilegios</value>
+  </data>
+  <data name="grant_r" xml:space="preserve">
+    <value>Tabla</value>
+  </data>
+  <data name="grant_v" xml:space="preserve">
+    <value>Vista</value>
+  </data>
+  <data name="grant_i" xml:space="preserve">
+    <value>Índice</value>
+  </data>
+  <data name="grant_S" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="grant_none" xml:space="preserve">
+    <value>No existen tablas, vistas, secuencias o índices a los que garantizarles privilegios.</value>
+  </data>
+  <data name="group_title" xml:space="preserve">
+    <value>Grupos de PostgreSQL</value>
+  </data>
+  <data name="group_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar grupos</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Nombre de grupo</value>
+  </data>
+  <data name="group_id" xml:space="preserve">
+    <value>ID de Grupo</value>
+  </data>
+  <data name="group_mems" xml:space="preserve">
+    <value>Miembros</value>
+  </data>
+  <data name="group_add" xml:space="preserve">
+    <value>Crear un nuevo grupo</value>
+  </data>
+  <data name="group_edit" xml:space="preserve">
+    <value>Editar Grupo</value>
+  </data>
+  <data name="group_create" xml:space="preserve">
+    <value>Crear Grupo</value>
+  </data>
+  <data name="group_header" xml:space="preserve">
+    <value>Detalles de grupo de PostgreSQL</value>
+  </data>
+  <data name="group_return" xml:space="preserve">
+    <value>lista de grupos</value>
+  </data>
+  <data name="group_err" xml:space="preserve">
+    <value>No pude salvar grupo</value>
+  </data>
+  <data name="group_ename" xml:space="preserve">
+    <value>Nombre de grupo inválido o sin poner</value>
+  </data>
+  <data name="group_egid" xml:space="preserve">
+    <value>ID de grupo inválida o sin poner</value>
+  </data>
+  <data name="group_etaken" xml:space="preserve">
+    <value>El nombre de grupo ya está en uso</value>
+  </data>
+  <data name="group_none" xml:space="preserve">
+    <value>No existen actuálmente grupos de PostgreSQL</value>
+  </data>
+  <data name="esql" xml:space="preserve">
+    <value>SQL $1 falló: $2</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Arrancado servidor de PostgreSQL</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>parado servidor de PostgreSQL</value>
+  </data>
+  <data name="log_db_create" xml:space="preserve">
+    <value>Creada base de datos $1</value>
+  </data>
+  <data name="log_db_delete" xml:space="preserve">
+    <value>Eliminada base de datos $1</value>
+  </data>
+  <data name="log_table_create" xml:space="preserve">
+    <value>Creada tabla $1 en base de datos $2</value>
+  </data>
+  <data name="log_table_delete" xml:space="preserve">
+    <value>Eliminada tabla $1 de la base de datos $2</value>
+  </data>
+  <data name="log_field_create" xml:space="preserve">
+    <value>Añadido campo $1 $3 a $2 en base de datos $3</value>
+  </data>
+  <data name="log_field_modify" xml:space="preserve">
+    <value>Modificado campo $1 $4 en $2 en base de datos $3</value>
+  </data>
+  <data name="log_field_delete" xml:space="preserve">
+    <value>Borrado campo $1 de $2 en base de datos $3</value>
+  </data>
+  <data name="log_data_create" xml:space="preserve">
+    <value>Añadida fila a tabla $2 en base de datos $3</value>
+  </data>
+  <data name="log_data_modify" xml:space="preserve">
+    <value>Modificadas $1 filas en tabla $2 en base de datos $3</value>
+  </data>
+  <data name="log_data_delete" xml:space="preserve">
+    <value>Borradas $1 filas de la tabla $2 en base de datos $3</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Ejecutado SQL en base de datos $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Ejecutado comando SQL $2 en base de datos $1</value>
+  </data>
+  <data name="log_create_user" xml:space="preserve">
+    <value>Creado usuario $1</value>
+  </data>
+  <data name="log_delete_user" xml:space="preserve">
+    <value>Borrado usuario $1</value>
+  </data>
+  <data name="log_modify_user" xml:space="preserve">
+    <value>Modificado usuario $1</value>
+  </data>
+  <data name="log_create_group" xml:space="preserve">
+    <value>Creado grupo $1</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>Borrado grupo $1</value>
+  </data>
+  <data name="log_modify_group" xml:space="preserve">
+    <value>Modificado grupo $1</value>
+  </data>
+  <data name="log_create_local" xml:space="preserve">
+    <value>Creada conexión local autorizada</value>
+  </data>
+  <data name="log_modify_local" xml:space="preserve">
+    <value>Modificada conexión local autorizada</value>
+  </data>
+  <data name="log_delete_local" xml:space="preserve">
+    <value>Borrada conexión local autorizada</value>
+  </data>
+  <data name="log_move_local" xml:space="preserve">
+    <value>Movida conexión local autorizada</value>
+  </data>
+  <data name="log_create_all" xml:space="preserve">
+    <value>Creada máquina autorizada a cualquiera</value>
+  </data>
+  <data name="log_modify_all" xml:space="preserve">
+    <value>Modificada máquina autorizada a cualquiera</value>
+  </data>
+  <data name="log_delete_all" xml:space="preserve">
+    <value>Borrada máquina autorizada a cualquiera</value>
+  </data>
+  <data name="log_move_all" xml:space="preserve">
+    <value>Movida cualquier máquina autorizada</value>
+  </data>
+  <data name="log_create_hba" xml:space="preserve">
+    <value>Creada máquina autorizada $1</value>
+  </data>
+  <data name="log_modify_hba" xml:space="preserve">
+    <value>Modificada máquina autorizada $1</value>
+  </data>
+  <data name="log_delete_hba" xml:space="preserve">
+    <value>Borrada máquina autorizada $1</value>
+  </data>
+  <data name="log_move_hba" xml:space="preserve">
+    <value>Movida máquina $1 autorizada</value>
+  </data>
+  <data name="log_grant" xml:space="preserve">
+    <value>Garantizados privilegios sobre $1 en base de datos $2</value>
+  </data>
+  <data name="acl_dbs" xml:space="preserve">
+    <value>Bases de datos que este usuario puede gestionar</value>
+  </data>
+  <data name="acl_dbscannot" xml:space="preserve">
+    <value>Este control de acceso será efectivo tras arrancar el servidor de base de datos PostgreSQL.</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>Todas las bases de datos</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>Las seleccionadas...</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>¿Puede crear nuevas bases de datos?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>¿Puede eliminar bases de datos?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>¿Puede parar y arrancar el servidor PostgreSQL?</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>¿Puede editar usuarios, grupos y garantías?</value>
+  </data>
+  <data name="fdrop_err" xml:space="preserve">
+    <value>Error durante el borrado del campo</value>
+  </data>
+</root>

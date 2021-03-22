@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Processos em Execução</value>
+  </data>
+  <data name="index_display" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="index_tree" xml:space="preserve">
+    <value>PID</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>Memória</value>
+  </data>
+  <data name="index_cpu" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Busca</value>
+  </data>
+  <data name="index_zone" xml:space="preserve">
+    <value>Zona</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>Executar..</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista de processos</value>
+  </data>
+  <data name="index_mem2" xml:space="preserve">
+    <value>&lt;b&gt;Memória real:&lt;/b&gt; $1 no total / $2 livres</value>
+  </data>
+  <data name="index_swap2" xml:space="preserve">
+    <value>&lt;b&gt;Espaço de swap&lt;/b&gt; $1 no total / $2 livres</value>
+  </data>
+  <data name="index_loadname" xml:space="preserve">
+    <value>Médias de carga da CPU:</value>
+  </data>
+  <data name="index_loadnums" xml:space="preserve">
+    <value>$1 (1 minuto) , $2 (5 minutos) , $3 (15 minutos)</value>
+  </data>
+  <data name="index_cpuname" xml:space="preserve">
+    <value>Tipo de CPU:</value>
+  </data>
+  <data name="index_inzone" xml:space="preserve">
+    <value>Na zona $1</value>
+  </data>
+  <data name="pid" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="owner" xml:space="preserve">
+    <value>Proprietário</value>
+  </data>
+  <data name="command" xml:space="preserve">
+    <value>Comando</value>
+  </data>
+  <data name="cpu" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="parent" xml:space="preserve">
+    <value>Processo pai</value>
+  </data>
+  <data name="runtime" xml:space="preserve">
+    <value>Tempo de execução</value>
+  </data>
+  <data name="nice" xml:space="preserve">
+    <value>Nível de NICE</value>
+  </data>
+  <data name="stime" xml:space="preserve">
+    <value>Iniciado</value>
+  </data>
+  <data name="sclass" xml:space="preserve">
+    <value>Classe de agendamento de IO</value>
+  </data>
+  <data name="sprio" xml:space="preserve">
+    <value>Prioridade de IO</value>
+  </data>
+  <data name="search_user" xml:space="preserve">
+    <value>Proprietário</value>
+  </data>
+  <data name="search_match" xml:space="preserve">
+    <value>Com o termo de busca</value>
+  </data>
+  <data name="search_cpupc" xml:space="preserve">
+    <value>Usando mais de $1% da CPU</value>
+  </data>
+  <data name="search_cpupc2" xml:space="preserve">
+    <value>Usando mais CPU que</value>
+  </data>
+  <data name="search_fs" xml:space="preserve">
+    <value>Usando sistema de arquivos</value>
+  </data>
+  <data name="search_files" xml:space="preserve">
+    <value>Usando o arquivo</value>
+  </data>
+  <data name="search_submit" xml:space="preserve">
+    <value>Busca</value>
+  </data>
+  <data name="search_none" xml:space="preserve">
+    <value>Nenhum processo com o termo de busca inserido foi encontrado.</value>
+  </data>
+  <data name="search_kill" xml:space="preserve">
+    <value>Enviar Sinal</value>
+  </data>
+  <data name="search_ignore" xml:space="preserve">
+    <value>Ignorar processos de busca no resultado</value>
+  </data>
+  <data name="search_return" xml:space="preserve">
+    <value>formulário de busca</value>
+  </data>
+  <data name="search_sigterm" xml:space="preserve">
+    <value>Interromper Processo</value>
+  </data>
+  <data name="search_sigkill" xml:space="preserve">
+    <value>Matar processo</value>
+  </data>
+  <data name="search_port" xml:space="preserve">
+    <value>Usando a porta</value>
+  </data>
+  <data name="search_protocol" xml:space="preserve">
+    <value>protocolo</value>
+  </data>
+  <data name="search_ip" xml:space="preserve">
+    <value>Usando o endereço IP</value>
+  </data>
+  <data name="run_command" xml:space="preserve">
+    <value>Comando para executar</value>
+  </data>
+  <data name="run_submit" xml:space="preserve">
+    <value>Executar</value>
+  </data>
+  <data name="run_mode" xml:space="preserve">
+    <value>Modo de execução</value>
+  </data>
+  <data name="run_bg" xml:space="preserve">
+    <value>Executar em plano de fundo</value>
+  </data>
+  <data name="run_fg" xml:space="preserve">
+    <value>Aguardar até estar completo</value>
+  </data>
+  <data name="run_input" xml:space="preserve">
+    <value>Entrada para comando</value>
+  </data>
+  <data name="run_title" xml:space="preserve">
+    <value>Saída do Comando</value>
+  </data>
+  <data name="run_output" xml:space="preserve">
+    <value>Saída de $1 ..</value>
+  </data>
+  <data name="run_none" xml:space="preserve">
+    <value>Nenhuma saída gerada</value>
+  </data>
+  <data name="run_ecannot" xml:space="preserve">
+    <value>Você não tem permissão para executar comandos</value>
+  </data>
+  <data name="run_as" xml:space="preserve">
+    <value>Executar como usuário</value>
+  </data>
+  <data name="run_euser" xml:space="preserve">
+    <value>Nome de usuário inválido ou não preenchido</value>
+  </data>
+  <data name="run_euser2" xml:space="preserve">
+    <value>Você não tem permissão para executar comandos como o usuário selecionado</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Informação de Processos</value>
+  </data>
+  <data name="edit_gone" xml:space="preserve">
+    <value>Este processo está inativo</value>
+  </data>
+  <data name="edit_sub" xml:space="preserve">
+    <value>Subprocessos</value>
+  </data>
+  <data name="edit_subid" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="edit_subcmd" xml:space="preserve">
+    <value>Comando de subprocesso</value>
+  </data>
+  <data name="edit_kill" xml:space="preserve">
+    <value>Enviar Sinal</value>
+  </data>
+  <data name="edit_change" xml:space="preserve">
+    <value>Mudar</value>
+  </data>
+  <data name="edit_prilow" xml:space="preserve">
+    <value>Baixa prioridade</value>
+  </data>
+  <data name="edit_prihigh" xml:space="preserve">
+    <value>Alta prioridade</value>
+  </data>
+  <data name="edit_pridef" xml:space="preserve">
+    <value>Padrão</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Você não tem permissão para editar processos</value>
+  </data>
+  <data name="edit_sigterm" xml:space="preserve">
+    <value>Interromper</value>
+  </data>
+  <data name="edit_sigkill" xml:space="preserve">
+    <value>Matar</value>
+  </data>
+  <data name="edit_sigstop" xml:space="preserve">
+    <value>Suspender</value>
+  </data>
+  <data name="edit_sigcont" xml:space="preserve">
+    <value>Continuar</value>
+  </data>
+  <data name="edit_open" xml:space="preserve">
+    <value>Arquivos e Conexões</value>
+  </data>
+  <data name="edit_trace" xml:space="preserve">
+    <value>Rastrear Processo</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>detalhes do processo</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>erro ao enviar o sinal $1 para o processo $2</value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Enviar Sinal</value>
+  </data>
+  <data name="kill_sent" xml:space="preserve">
+    <value>enviado</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Você não tem permissão para matar processos</value>
+  </data>
+  <data name="renice_err" xml:space="preserve">
+    <value>Erro ao usar a função ?renice? no processo $1</value>
+  </data>
+  <data name="renice_ecannot" xml:space="preserve">
+    <value>Você não tem permissão para usar o comando ?renice? em processos</value>
+  </data>
+  <data name="linux_pri" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+  <data name="linux_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="linux_status" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="linux_wchan" xml:space="preserve">
+    <value>Esperando Em</value>
+  </data>
+  <data name="linux_mem" xml:space="preserve">
+    <value>Memória</value>
+  </data>
+  <data name="linux_group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="linux_ruser" xml:space="preserve">
+    <value>Usuário real</value>
+  </data>
+  <data name="linux_rgroup" xml:space="preserve">
+    <value>Grupo real</value>
+  </data>
+  <data name="linux_pgid" xml:space="preserve">
+    <value>ID do processo de grupo</value>
+  </data>
+  <data name="linux_stime" xml:space="preserve">
+    <value>$stime</value>
+  </data>
+  <data name="linuxstat_R" xml:space="preserve">
+    <value>Em execução</value>
+  </data>
+  <data name="linuxstat_S" xml:space="preserve">
+    <value>Dormindo</value>
+  </data>
+  <data name="linuxstat_D" xml:space="preserve">
+    <value>Sono profundo</value>
+  </data>
+  <data name="linuxstat_T" xml:space="preserve">
+    <value>Parado</value>
+  </data>
+  <data name="linuxstat_Z" xml:space="preserve">
+    <value>Zumbi</value>
+  </data>
+  <data name="linux_real" xml:space="preserve">
+    <value>Tempo real</value>
+  </data>
+  <data name="linux_be" xml:space="preserve">
+    <value>Melhor esforço</value>
+  </data>
+  <data name="linux_idle" xml:space="preserve">
+    <value>Ocioso</value>
+  </data>
+  <data name="freebsd_ruser" xml:space="preserve">
+    <value>Usuário real</value>
+  </data>
+  <data name="freebsd_rgroup" xml:space="preserve">
+    <value>Grupo real</value>
+  </data>
+  <data name="freebsd_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="freebsd_pgid" xml:space="preserve">
+    <value>Grupo do processo</value>
+  </data>
+  <data name="freebsd_stime" xml:space="preserve">
+    <value>$stime</value>
+  </data>
+  <data name="freebsd_lim" xml:space="preserve">
+    <value>Limite de memória</value>
+  </data>
+  <data name="hpux_pri" xml:space="preserve">
+    <value>Prioridade</value>
+  </data>
+  <data name="hpux_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="hpux_status" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="hpux_wchan" xml:space="preserve">
+    <value>Esperando por</value>
+  </data>
+  <data name="hpux_stime" xml:space="preserve">
+    <value>$stime</value>
+  </data>
+  <data name="hpuxstat_0" xml:space="preserve">
+    <value>Inexistente</value>
+  </data>
+  <data name="hpuxstat_S" xml:space="preserve">
+    <value>Dormindo</value>
+  </data>
+  <data name="hpuxstat_W" xml:space="preserve">
+    <value>Esperando</value>
+  </data>
+  <data name="hpuxstat_R" xml:space="preserve">
+    <value>Em execução</value>
+  </data>
+  <data name="hpuxstat_I" xml:space="preserve">
+    <value>Intermediário</value>
+  </data>
+  <data name="hpuxstat_Z" xml:space="preserve">
+    <value>Zumbi</value>
+  </data>
+  <data name="hpuxstat_T" xml:space="preserve">
+    <value>Parado</value>
+  </data>
+  <data name="hpuxstat_G" xml:space="preserve">
+    <value>Crescendo</value>
+  </data>
+  <data name="macos_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="sysv_group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="sysv_ruser" xml:space="preserve">
+    <value>Usuário real</value>
+  </data>
+  <data name="sysv_rgroup" xml:space="preserve">
+    <value>Grupo real</value>
+  </data>
+  <data name="sysv_pgid" xml:space="preserve">
+    <value>ID do processo de grupo</value>
+  </data>
+  <data name="sysv_tty" xml:space="preserve">
+    <value>TTY</value>
+  </data>
+  <data name="sysv_stime" xml:space="preserve">
+    <value>$stime</value>
+  </data>
+  <data name="sysv_task" xml:space="preserve">
+    <value>ID da tarefa</value>
+  </data>
+  <data name="sysv_zone" xml:space="preserve">
+    <value>Nome da zona</value>
+  </data>
+  <data name="log_run" xml:space="preserve">
+    <value>O comando '$1' foi executado</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>O sinal $1 foi enviado para o processo $2</value>
+  </data>
+  <data name="log_kills" xml:space="preserve">
+    <value>Enviar o sinal $1 para o processo $2</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>O sinal $1 foi enviado para o processo $2</value>
+  </data>
+  <data name="log_kills_l" xml:space="preserve">
+    <value>O sinal $1 foi enviado para os processos&lt;br&gt;$2</value>
+  </data>
+  <data name="log_renice" xml:space="preserve">
+    <value>A prioridade do processo $2 foi alterada para $1</value>
+  </data>
+  <data name="acl_manage" xml:space="preserve">
+    <value>Gerenciar processos como usuário</value>
+  </data>
+  <data name="acl_manage_def" xml:space="preserve">
+    <value>Usuário Webmin atual</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Pode matar e usar o comando ?renive? em processos?</value>
+  </data>
+  <data name="acl_run" xml:space="preserve">
+    <value>Pode executar comandos?</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Só pode ver seus próprios processos?</value>
+  </data>
+  <data name="acl_who" xml:space="preserve">
+    <value>Pode gerenciar processos para usuários</value>
+  </data>
+  <data name="acl_who0" xml:space="preserve">
+    <value>Todos os usuários</value>
+  </data>
+  <data name="acl_who1" xml:space="preserve">
+    <value>Usuário Webmin atual</value>
+  </data>
+  <data name="acl_who2" xml:space="preserve">
+    <value>Usuários listados ..</value>
+  </data>
+  <data name="kill_kill" xml:space="preserve">
+    <value>Matar Processo</value>
+  </data>
+  <data name="kill_term" xml:space="preserve">
+    <value> Interromper  </value>
+  </data>
+  <data name="kill_hup" xml:space="preserve">
+    <value>  Reiniciar   </value>
+  </data>
+  <data name="kill_stop" xml:space="preserve">
+    <value>    Parar    </value>
+  </data>
+  <data name="kill_cont" xml:space="preserve">
+    <value>  Continuar  </value>
+  </data>
+  <data name="open_title" xml:space="preserve">
+    <value>Abrir Arquivos e Conexões</value>
+  </data>
+  <data name="open_proc" xml:space="preserve">
+    <value>Para o processo $1 (PID $2)</value>
+  </data>
+  <data name="open_header1" xml:space="preserve">
+    <value>Abrir arquivos</value>
+  </data>
+  <data name="open_header2" xml:space="preserve">
+    <value>Abrir conexões de rede</value>
+  </data>
+  <data name="open_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="open_proto" xml:space="preserve">
+    <value>protocolo</value>
+  </data>
+  <data name="open_desc" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="open_fd" xml:space="preserve">
+    <value>Descritor de Arquivo</value>
+  </data>
+  <data name="open_listen1" xml:space="preserve">
+    <value>Monitorando porta $1</value>
+  </data>
+  <data name="open_listen2" xml:space="preserve">
+    <value>Monitorando endereço $1 na porta $2</value>
+  </data>
+  <data name="open_recv" xml:space="preserve">
+    <value>Recebendo em $1:$2</value>
+  </data>
+  <data name="open_conn" xml:space="preserve">
+    <value>Conectado de $1 a $2 no estado $3</value>
+  </data>
+  <data name="open_cwd" xml:space="preserve">
+    <value>Diretório atual</value>
+  </data>
+  <data name="open_rtd" xml:space="preserve">
+    <value>Diretório raiz</value>
+  </data>
+  <data name="open_txt" xml:space="preserve">
+    <value>Código do programa</value>
+  </data>
+  <data name="open_mem" xml:space="preserve">
+    <value>Biblioteca compartilhada</value>
+  </data>
+  <data name="open_dir" xml:space="preserve">
+    <value>Diretório</value>
+  </data>
+  <data name="open_reg" xml:space="preserve">
+    <value>Arquivo comum</value>
+  </data>
+  <data name="open_chr" xml:space="preserve">
+    <value>Especial de caractere</value>
+  </data>
+  <data name="open_blk" xml:space="preserve">
+    <value>Especial de bloco</value>
+  </data>
+  <data name="open_size" xml:space="preserve">
+    <value>Tamanho do arquivo</value>
+  </data>
+  <data name="open_inode" xml:space="preserve">
+    <value>Nó</value>
+  </data>
+  <data name="open_file" xml:space="preserve">
+    <value>Caminho</value>
+  </data>
+  <data name="trace_title" xml:space="preserve">
+    <value>Rastrear Processo</value>
+  </data>
+  <data name="trace_start" xml:space="preserve">
+    <value>Iniciar acompanhamento do sistema para $1 ..</value>
+  </data>
+  <data name="trace_doing" xml:space="preserve">
+    <value>Acompanhamento do sistema para $1:</value>
+  </data>
+  <data name="trace_done" xml:space="preserve">
+    <value>.. processo interrompido.</value>
+  </data>
+  <data name="trace_failed" xml:space="preserve">
+    <value>.. falha no acompanhamento!</value>
+  </data>
+  <data name="trace_sorry" xml:space="preserve">
+    <value>Esta página requer suporte Java no seu navegador. Para usar um acompanhamento de processo somente-texto, ajuste a configuração do módulo.</value>
+  </data>
+  <data name="trace_syscalls" xml:space="preserve">
+    <value>Acompanhar chamadas do sistema:</value>
+  </data>
+  <data name="trace_all" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="trace_sel" xml:space="preserve">
+    <value>Listadas..</value>
+  </data>
+  <data name="trace_change" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
+  <data name="windows_threads" xml:space="preserve">
+    <value>Linhas de execução no processo</value>
+  </data>
+  <data name="syslog_dmesg" xml:space="preserve">
+    <value>Mensagens de kernel</value>
+  </data>
+</root>

@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Filesystem Backup</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Add a new backup of directory:</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No filesystem backups configurations have been created yet.</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>No filesystem backups configurations that you have access to exist.</value>
+  </data>
+  <data name="index_restore" xml:space="preserve">
+    <value>Restore backup of filesystem type:</value>
+  </data>
+  <data name="index_restoremsg" xml:space="preserve">
+    <value>Select the filesystem type and click this button to begin the process of selecting a filesystem backup to restore.</value>
+  </data>
+  <data name="index_restore2" xml:space="preserve">
+    <value>Restore backup of filesystem</value>
+  </data>
+  <data name="index_restoremsg2" xml:space="preserve">
+    <value>Click this button to begin the process of selecting a filesystem backup to restore.</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>None of the filesystem backup commands (such as $1) needed by this module were found on your system. Maybe they are not currently installed.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>backups list</value>
+  </data>
+  <data name="index_running" xml:space="preserve">
+    <value>Running Backup Jobs</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Scheduled Backups</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Started at</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Current status</value>
+  </data>
+  <data name="index_status_running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="index_status_tape" xml:space="preserve">
+    <value>Waiting for tape</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="index_kill" xml:space="preserve">
+    <value>Terminate</value>
+  </data>
+  <data name="index_newtape" xml:space="preserve">
+    <value>Tape loaded</value>
+  </data>
+  <data name="index_noact" xml:space="preserve">
+    <value>None available</value>
+  </data>
+  <data name="index_now" xml:space="preserve">
+    <value>Backup..</value>
+  </data>
+  <data name="index_follow" xml:space="preserve">
+    <value>After $1</value>
+  </data>
+  <data name="index_forcetar" xml:space="preserve">
+    <value>In TAR format</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Delete Selected Backups</value>
+  </data>
+  <data name="index_nostrftime" xml:space="preserve">
+    <value>Warning - some backup jobs use % in their filenames, but strftime substitution is not enabled on the Module Config page.</value>
+  </data>
+  <data name="dump_dir" xml:space="preserve">
+    <value>Directory to backup</value>
+  </data>
+  <data name="dump_dirs" xml:space="preserve">
+    <value>Directories to backup</value>
+  </data>
+  <data name="dump_fs" xml:space="preserve">
+    <value>Filesystem</value>
+  </data>
+  <data name="dump_sched" xml:space="preserve">
+    <value>Scheduled?</value>
+  </data>
+  <data name="dump_when" xml:space="preserve">
+    <value>At times</value>
+  </data>
+  <data name="dump_dest" xml:space="preserve">
+    <value>Backup to</value>
+  </data>
+  <data name="dump_file" xml:space="preserve">
+    <value>File or tape device</value>
+  </data>
+  <data name="dump_host" xml:space="preserve">
+    <value>Host $1 as user $2 in file or device $3</value>
+  </data>
+  <data name="dump_level" xml:space="preserve">
+    <value>Dump level</value>
+  </data>
+  <data name="dump_level_0" xml:space="preserve">
+    <value>0 (Full backup)</value>
+  </data>
+  <data name="dump_label" xml:space="preserve">
+    <value>Backup label</value>
+  </data>
+  <data name="dump_multi" xml:space="preserve">
+    <value>Split across multiple files?</value>
+  </data>
+  <data name="dump_update" xml:space="preserve">
+    <value>Update &lt;tt&gt;/etc/dumpdates&lt;/tt&gt; file?</value>
+  </data>
+  <data name="dump_exclude" xml:space="preserve">
+    <value>Files and directories to skip</value>
+  </data>
+  <data name="dump_edir" xml:space="preserve">
+    <value>Missing or invalid directory to backup</value>
+  </data>
+  <data name="dump_efile" xml:space="preserve">
+    <value>Missing file or device to backup to</value>
+  </data>
+  <data name="dump_ehost" xml:space="preserve">
+    <value>Missing or invalid host to backup to</value>
+  </data>
+  <data name="dump_ehuser" xml:space="preserve">
+    <value>Invalid username on host to backup to</value>
+  </data>
+  <data name="dump_ehuser2" xml:space="preserve">
+    <value>Username cannot contain the @ character</value>
+  </data>
+  <data name="dump_ehfile" xml:space="preserve">
+    <value>Missing or invalid file or device on host to backup to</value>
+  </data>
+  <data name="dump_elabel" xml:space="preserve">
+    <value>Invalid backup label (can be at most 15 characters)</value>
+  </data>
+  <data name="dump_elabel2" xml:space="preserve">
+    <value>Invalid backup label (can be at most 255 characters)</value>
+  </data>
+  <data name="dump_eblocks" xml:space="preserve">
+    <value>Missing or invalid tape size</value>
+  </data>
+  <data name="dump_ebsize" xml:space="preserve">
+    <value>Missing or invalid dump record block size</value>
+  </data>
+  <data name="dump_max" xml:space="preserve">
+    <value>Maximum file size to include</value>
+  </data>
+  <data name="dump_unlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="dump_attribs" xml:space="preserve">
+    <value>Include file attributes?</value>
+  </data>
+  <data name="dump_over" xml:space="preserve">
+    <value>Ask before overwriting tape?</value>
+  </data>
+  <data name="dump_overwrite" xml:space="preserve">
+    <value>Always overwrite backup?</value>
+  </data>
+  <data name="dump_invent" xml:space="preserve">
+    <value>Record backup in inventory?</value>
+  </data>
+  <data name="dump_emax" xml:space="preserve">
+    <value>Missing or invalid maximum file size</value>
+  </data>
+  <data name="dump_emp" xml:space="preserve">
+    <value>Directory to backup must be a filesystem mount point</value>
+  </data>
+  <data name="dump_erase" xml:space="preserve">
+    <value>Delete file / erase tape before backup?</value>
+  </data>
+  <data name="dump_verify" xml:space="preserve">
+    <value>Verify data after backup?</value>
+  </data>
+  <data name="dump_offline" xml:space="preserve">
+    <value>Eject tape after backup?</value>
+  </data>
+  <data name="dump_blocks" xml:space="preserve">
+    <value>Tape size</value>
+  </data>
+  <data name="dump_bsize" xml:space="preserve">
+    <value>Dump record block size</value>
+  </data>
+  <data name="dump_auto" xml:space="preserve">
+    <value>Work out automatically</value>
+  </data>
+  <data name="dump_honour" xml:space="preserve">
+    <value>Always exclude marked files?</value>
+  </data>
+  <data name="dump_comp" xml:space="preserve">
+    <value>Compress data?</value>
+  </data>
+  <data name="dump_complvl" xml:space="preserve">
+    <value>Yes, with level</value>
+  </data>
+  <data name="dump_ecomp" xml:space="preserve">
+    <value>Missing or invalid compression level</value>
+  </data>
+  <data name="dump_before" xml:space="preserve">
+    <value>Command to run before backup</value>
+  </data>
+  <data name="dump_after" xml:space="preserve">
+    <value>Command to run after backup</value>
+  </data>
+  <data name="dump_fok" xml:space="preserve">
+    <value>Halt if command fails</value>
+  </data>
+  <data name="dump_fok2" xml:space="preserve">
+    <value>Report failure if command fails</value>
+  </data>
+  <data name="dump_aok" xml:space="preserve">
+    <value>Skip command even if backup fails</value>
+  </data>
+  <data name="dump_extra" xml:space="preserve">
+    <value>Extra command-line parameters</value>
+  </data>
+  <data name="dump_rsh" xml:space="preserve">
+    <value>Remote backup command</value>
+  </data>
+  <data name="dump_rsh0" xml:space="preserve">
+    <value>Default (RSH)</value>
+  </data>
+  <data name="dump_rsh1" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="dump_rsh3" xml:space="preserve">
+    <value>FTP</value>
+  </data>
+  <data name="dump_rsh2" xml:space="preserve">
+    <value>Other command ..</value>
+  </data>
+  <data name="dump_pass" xml:space="preserve">
+    <value>Password for SSH login</value>
+  </data>
+  <data name="dump_pass2" xml:space="preserve">
+    <value>Password for SSH/FTP login</value>
+  </data>
+  <data name="dump_ersh" xml:space="preserve">
+    <value>Missing or invalid remote backup command</value>
+  </data>
+  <data name="dump_essh" xml:space="preserve">
+    <value>SSH cannot be used for remote backups unless the &lt;tt&gt;ssh&lt;/tt&gt; command is installed on your system</value>
+  </data>
+  <data name="dump_ecannot1" xml:space="preserve">
+    <value>You are not allowed to create backups</value>
+  </data>
+  <data name="dump_ecannot2" xml:space="preserve">
+    <value>You are not allowed to edit this backup</value>
+  </data>
+  <data name="dump_ecannot3" xml:space="preserve">
+    <value>You are not allowed to backup this directory</value>
+  </data>
+  <data name="dump_format" xml:space="preserve">
+    <value>Backup format</value>
+  </data>
+  <data name="dump_tar" xml:space="preserve">
+    <value>Unix TAR</value>
+  </data>
+  <data name="dump_dumpfs" xml:space="preserve">
+    <value>$1 filesystem dump</value>
+  </data>
+  <data name="dump_gzip" xml:space="preserve">
+    <value>Compress archive?</value>
+  </data>
+  <data name="dump_gzip1" xml:space="preserve">
+    <value>Yes, with gzip</value>
+  </data>
+  <data name="dump_gzip2" xml:space="preserve">
+    <value>Yes, with bzip2</value>
+  </data>
+  <data name="dump_gzip3" xml:space="preserve">
+    <value>Yes, with XZ</value>
+  </data>
+  <data name="dump_bcomp" xml:space="preserve">
+    <value>Buffer compressed data into blocks?</value>
+  </data>
+  <data name="dump_xdev" xml:space="preserve">
+    <value>Limit backup to one filesystem?</value>
+  </data>
+  <data name="dump_update2" xml:space="preserve">
+    <value>Just add new files to archive?</value>
+  </data>
+  <data name="dump_ignoreread" xml:space="preserve">
+    <value>Ignore read errors on files?</value>
+  </data>
+  <data name="dump_notape" xml:space="preserve">
+    <value>Prompt for new tape if needed?</value>
+  </data>
+  <data name="dump_rmt" xml:space="preserve">
+    <value>Path to &lt;tt&gt;rmt&lt;/tt&gt; on remote system</value>
+  </data>
+  <data name="dump_links" xml:space="preserve">
+    <value>Follow symbolic links?</value>
+  </data>
+  <data name="dump_egzip" xml:space="preserve">
+    <value>The gzip compression option is incompatible with the tape size option</value>
+  </data>
+  <data name="dump_egzip2" xml:space="preserve">
+    <value>The gzip compression option is incompatible with the multi-file backup option</value>
+  </data>
+  <data name="dump_egzip3" xml:space="preserve">
+    <value>The gzip compression option is incompatible with the option to just add new files to the archive</value>
+  </data>
+  <data name="dump_emulti" xml:space="preserve">
+    <value>Multi-file backups cannot be done to a tape device</value>
+  </data>
+  <data name="dump_emulti2" xml:space="preserve">
+    <value>Multi-file backups cannot be done to a remote server</value>
+  </data>
+  <data name="dump_ermt" xml:space="preserve">
+    <value>Missing or invalid path to &lt;tt&gt;rmt&lt;/tt&gt; program</value>
+  </data>
+  <data name="dump_reverify" xml:space="preserve">
+    <value>Attempt test restore after backup to verify?</value>
+  </data>
+  <data name="dump_remount" xml:space="preserve">
+    <value>Remount with &lt;tt&gt;noatime&lt;/tt&gt; option during backup?</value>
+  </data>
+  <data name="dump_eftpupdate" xml:space="preserve">
+    <value>Adding files to an existing archive is not possible when using FTP.</value>
+  </data>
+  <data name="dump_eleveldir" xml:space="preserve">
+    <value>Only level 0 backups are allowed for directories that are not filesystem mount points</value>
+  </data>
+  <data name="dump_eupdatedir" xml:space="preserve">
+    <value>The &lt;tt&gt;/etc/dumpdates&lt;/tt&gt; file can only be updated for directories that are filesystem mount points</value>
+  </data>
+  <data name="edit_err" xml:space="preserve">
+    <value>Failed to create backup</value>
+  </data>
+  <data name="edit_edir" xml:space="preserve">
+    <value>Missing backup directory</value>
+  </data>
+  <data name="edit_efs" xml:space="preserve">
+    <value>Filesystems of type $1 cannot be backed up by this module</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Add New Backup</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Edit Backup</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Clone Backup</value>
+  </data>
+  <data name="edit_header" xml:space="preserve">
+    <value>$1 filesystem backup details</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Backup schedule</value>
+  </data>
+  <data name="edit_header3" xml:space="preserve">
+    <value>Backup options</value>
+  </data>
+  <data name="edit_enabled" xml:space="preserve">
+    <value>Scheduled backup enabled?</value>
+  </data>
+  <data name="edit_enabled_no" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="edit_enabled_yes" xml:space="preserve">
+    <value>Enabled, at times chosen below..</value>
+  </data>
+  <data name="edit_enabled_af" xml:space="preserve">
+    <value>Enabled, after:</value>
+  </data>
+  <data name="edit_savenow" xml:space="preserve">
+    <value>Save and Backup Now</value>
+  </data>
+  <data name="edit_createnow" xml:space="preserve">
+    <value>Create and Backup Now</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>backup</value>
+  </data>
+  <data name="edit_email" xml:space="preserve">
+    <value>Email scheduled output to</value>
+  </data>
+  <data name="edit_subject" xml:space="preserve">
+    <value>Email message subject</value>
+  </data>
+  <data name="edit_restore" xml:space="preserve">
+    <value>Restore ..</value>
+  </data>
+  <data name="edit_to" xml:space="preserve">
+    <value>$1 to $2</value>
+  </data>
+  <data name="edit_tolevel" xml:space="preserve">
+    <value>$1 to $2 (level $3)</value>
+  </data>
+  <data name="edit_special" xml:space="preserve">
+    <value>Backup schedule</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>When to backup</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Failed to save backup</value>
+  </data>
+  <data name="save_edir" xml:space="preserve">
+    <value>Missing or invalid backup directory</value>
+  </data>
+  <data name="save_efs" xml:space="preserve">
+    <value>Backup directory cannot change to a different filesystem</value>
+  </data>
+  <data name="backup_title" xml:space="preserve">
+    <value>Backup Now</value>
+  </data>
+  <data name="backup_desc" xml:space="preserve">
+    <value>Performing backup of $1 to $2 ..</value>
+  </data>
+  <data name="backup_reverify" xml:space="preserve">
+    <value>.. complete. Now verifying backup ..</value>
+  </data>
+  <data name="backup_beforefailed" xml:space="preserve">
+    <value>.. before backup command failed!</value>
+  </data>
+  <data name="backup_afterfailed" xml:space="preserve">
+    <value>.. after backup command failed!</value>
+  </data>
+  <data name="backup_done" xml:space="preserve">
+    <value>.. backup complete.</value>
+  </data>
+  <data name="backup_failed" xml:space="preserve">
+    <value>.. backup failed!</value>
+  </data>
+  <data name="backup_noverify" xml:space="preserve">
+    <value>.. verification failed!</value>
+  </data>
+  <data name="backup_notape" xml:space="preserve">
+    <value>.. backup exceeded the capacity of a single tape. Tape changing is only supported when backups are run as background processes.</value>
+  </data>
+  <data name="backup_egone" xml:space="preserve">
+    <value>Backup does not exist!</value>
+  </data>
+  <data name="backup_bg" xml:space="preserve">
+    <value>Starting background backup process. You can monitor its progress in the &lt;b&gt;Running Backup Jobs&lt;/b&gt; section on the module's main page, and will be notified of its final status via email.</value>
+  </data>
+  <data name="backup_ecannot" xml:space="preserve">
+    <value>You are not allowed to backup this directory</value>
+  </data>
+  <data name="restore_title" xml:space="preserve">
+    <value>Restore Backup</value>
+  </data>
+  <data name="restore_err" xml:space="preserve">
+    <value>Failed to restore backup</value>
+  </data>
+  <data name="restore_ecommand" xml:space="preserve">
+    <value>The command $1 needed to restore $2 filesystem backups was not found on your system. Maybe it is not currently installed.</value>
+  </data>
+  <data name="restore_theader" xml:space="preserve">
+    <value>Restore backup from Unix TAR file</value>
+  </data>
+  <data name="restore_header" xml:space="preserve">
+    <value>Restore backup of $1 filesystem</value>
+  </data>
+  <data name="restore_src" xml:space="preserve">
+    <value>Restore from file or device</value>
+  </data>
+  <data name="restore_dir" xml:space="preserve">
+    <value>Restore to directory</value>
+  </data>
+  <data name="restore_ok" xml:space="preserve">
+    <value>Restore Backup Now</value>
+  </data>
+  <data name="restore_over" xml:space="preserve">
+    <value>Overwrite existing files?</value>
+  </data>
+  <data name="restore_over0" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="restore_over1" xml:space="preserve">
+    <value>Unless newer than backup</value>
+  </data>
+  <data name="restore_over2" xml:space="preserve">
+    <value>Never</value>
+  </data>
+  <data name="restore_noattribs" xml:space="preserve">
+    <value>Restore file attributes?</value>
+  </data>
+  <data name="restore_label" xml:space="preserve">
+    <value>Only restore backup with label</value>
+  </data>
+  <data name="restore_files" xml:space="preserve">
+    <value>Files to restore</value>
+  </data>
+  <data name="restore_all" xml:space="preserve">
+    <value>Everything in backup</value>
+  </data>
+  <data name="restore_sel" xml:space="preserve">
+    <value>Listed files ..</value>
+  </data>
+  <data name="restore_multi" xml:space="preserve">
+    <value>Backup is split across multiple files?</value>
+  </data>
+  <data name="restore_efile" xml:space="preserve">
+    <value>Missing file or device to restore from</value>
+  </data>
+  <data name="restore_ehost" xml:space="preserve">
+    <value>Missing or invalid host to restore from</value>
+  </data>
+  <data name="restore_ehuser" xml:space="preserve">
+    <value>Invalid username on host to restore from</value>
+  </data>
+  <data name="restore_ehfile" xml:space="preserve">
+    <value>Missing or invalid file or device on host to restore from</value>
+  </data>
+  <data name="restore_now" xml:space="preserve">
+    <value>Restoring backup with command $1 ..</value>
+  </data>
+  <data name="restore_desc" xml:space="preserve">
+    <value>This page allows you to restore a previous filesystem backup. Be careful when restoring, as files modified since the backup may be overwritten!</value>
+  </data>
+  <data name="restore_efiles" xml:space="preserve">
+    <value>Missing files to restore</value>
+  </data>
+  <data name="restore_evolume" xml:space="preserve">
+    <value>Multi-volume restores are not supported.</value>
+  </data>
+  <data name="restore_equestion" xml:space="preserve">
+    <value>Unknown question from restore : $1</value>
+  </data>
+  <data name="restore_edir" xml:space="preserve">
+    <value>Missing or invalid directory to restore to</value>
+  </data>
+  <data name="restore_failed" xml:space="preserve">
+    <value>Restore failed : $1</value>
+  </data>
+  <data name="restore_failed2" xml:space="preserve">
+    <value>Restore failed! See output above.</value>
+  </data>
+  <data name="restore_complete" xml:space="preserve">
+    <value>Restore completed successfully.</value>
+  </data>
+  <data name="restore_test" xml:space="preserve">
+    <value>Only show files in backup?</value>
+  </data>
+  <data name="restore_nothing" xml:space="preserve">
+    <value>Just test backup?</value>
+  </data>
+  <data name="restore_extra" xml:space="preserve">
+    <value>Extra command-line options</value>
+  </data>
+  <data name="restore_rsh" xml:space="preserve">
+    <value>Remote restore command</value>
+  </data>
+  <data name="restore_ersh" xml:space="preserve">
+    <value>Missing or invalid remote restore command</value>
+  </data>
+  <data name="restore_essh" xml:space="preserve">
+    <value>SSH cannot be used for remote restores unless the &lt;tt&gt;ssh&lt;/tt&gt; command is installed on your system</value>
+  </data>
+  <data name="restore_ecannot" xml:space="preserve">
+    <value>You are not allowed to restore backups</value>
+  </data>
+  <data name="restore_perms" xml:space="preserve">
+    <value>Restore file permissions?</value>
+  </data>
+  <data name="restore_gzip" xml:space="preserve">
+    <value>Uncompress archive?</value>
+  </data>
+  <data name="restore_keep" xml:space="preserve">
+    <value>Don't overwrite files?</value>
+  </data>
+  <data name="restore_emulti" xml:space="preserve">
+    <value>Multi-file restores cannot be done from a tape device</value>
+  </data>
+  <data name="restore_emulti2" xml:space="preserve">
+    <value>Multi-file restores cannot be done from a remote server</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Created backup config for $1</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Modified backup config for $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Deleted backup config for $1</value>
+  </data>
+  <data name="log_backup" xml:space="preserve">
+    <value>Backed up $1 to $2</value>
+  </data>
+  <data name="log_bgbackup" xml:space="preserve">
+    <value>Started backup of $1 to $2</value>
+  </data>
+  <data name="log_restore" xml:space="preserve">
+    <value>Restored backup from $1</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Terminated backup for $1</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Failed to terminate backup</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>No longer running!</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>You are not allowed to terminate this backup</value>
+  </data>
+  <data name="newtape_err" xml:space="preserve">
+    <value>Failed to signal new tape</value>
+  </data>
+  <data name="newtape_egone" xml:space="preserve">
+    <value>Backup is no longer running!</value>
+  </data>
+  <data name="newtape_estatus" xml:space="preserve">
+    <value>Backup is no longer waiting for a new tape</value>
+  </data>
+  <data name="newtape_ecannot" xml:space="preserve">
+    <value>You are not allowed to manage this backup</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Can create and edit backups?</value>
+  </data>
+  <data name="acl_restore" xml:space="preserve">
+    <value>Can restore backups?</value>
+  </data>
+  <data name="acl_cmds" xml:space="preserve">
+    <value>Can edit before and after commands?</value>
+  </data>
+  <data name="acl_extra" xml:space="preserve">
+    <value>Can edit extra command-line parameters?</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>Allowed directories for backups</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>All directories</value>
+  </data>
+  <data name="acl_list" xml:space="preserve">
+    <value>Only listed ..</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Failed to delete backups</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>None selected</value>
+  </data>
+  <data name="email_already" xml:space="preserve">
+    <value>Backup is already running with PID $1.</value>
+  </data>
+  <data name="email_ebefore" xml:space="preserve">
+    <value>Before-backup command failed!</value>
+  </data>
+  <data name="email_verify" xml:space="preserve">
+    <value>Verifying backup ..</value>
+  </data>
+  <data name="email_eafter" xml:space="preserve">
+    <value>After-backup command failed!</value>
+  </data>
+  <data name="email_subject" xml:space="preserve">
+    <value>Backup of $1 on $2</value>
+  </data>
+  <data name="email_ok" xml:space="preserve">
+    <value>Backup succeeded</value>
+  </data>
+  <data name="email_failed" xml:space="preserve">
+    <value>Backup failed!</value>
+  </data>
+  <data name="newtape_subject" xml:space="preserve">
+    <value>Tape change $1 for backup of $2 on $3</value>
+  </data>
+  <data name="newtape_body" xml:space="preserve">
+    <value>The backup of $2 on $3 has reached the maximum amount of data allowed on tape $1. You will need to load a new tape and hit the 'Tape Loaded' link in Webmin's Filesystem Backup module for the backup to continue.</value>
+  </data>
+  <data name="__norefs" xml:space="preserve">
+    <value>1</value>
+  </data>
+</root>

@@ -4,7 +4,6 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class Drbd
     {
-        [JsonProperty("resize")]
-        public Resize Resize { get; set; }
+        [JsonProperty("resize")] public Resize Resize { get; set; }
     }
 }

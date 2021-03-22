@@ -21,13 +21,13 @@ namespace Doods.Synology.Webapi.Std
         Task<bool> LoginAsync(string username, string password);
         void LogOut();
     }
+
     public class SynoAuthClient : BaseSynoClient, ISynoAuthClient
     {
         public SynoAuthClient(ISynoWebApi client) : base(client)
         {
             Resource = "/auth.cgi";
             ServiceApiName = "SYNO.API.Auth";
-
         }
 
         public async Task<bool> LoginAsync(string username, string password)
@@ -44,12 +44,8 @@ namespace Doods.Synology.Webapi.Std
 
             try
             {
-
-
-
                 var response = await _client.ExecuteAsync<SynologyResponse<SynoLoginInfo>>(loginRequest);
-                    //.ConfigureAwait(false);
-
+                //.ConfigureAwait(false);
 
 
                 if (response.Data.Success)
@@ -67,10 +63,9 @@ namespace Doods.Synology.Webapi.Std
 
             return false;
         }
-       
+
         public void LogOut()
         {
-
             var request = new SynologyRestRequest(Resource);
             request.AddParameter("api", ServiceApiName);
             request.AddParameter("version", "1");

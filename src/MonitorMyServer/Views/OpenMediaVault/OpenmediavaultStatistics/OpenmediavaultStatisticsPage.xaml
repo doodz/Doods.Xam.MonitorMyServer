@@ -8,29 +8,29 @@
                       xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
                       mc:Ignorable="d"
                       xmlns:models="clr-namespace:Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics;assembly=Doods.Xam.MonitorMyServer"
-                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultStatistics.OpenmediavaultStatisticsPage">
     <StackLayout>
         <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <ScrollView Padding="5,10" VerticalOptions="FillAndExpand">
-        <StackLayout Padding="0" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
-            <BindableLayout.ItemTemplate>
-                    <DataTemplate  x:DataType="models:RrdImageSource">
+            <StackLayout Padding="0" BindableLayout.ItemsSource="{Binding Items,Mode=OneWay}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:RrdImageSource">
 
-                        <pancakeView:PancakeView Margin="0" CornerRadius="10" >
-                            <Grid >
+                        <pancakeView:PancakeView Margin="0" CornerRadius="10">
+                            <Grid>
                                 <controls1:AspectRatioConverter AspectRatio="0.5">
-                                <forms:CachedImage Source="{Binding ImageSource,Mode=OneWay}" 
-                                                   HorizontalOptions="Fill"
-                                                   LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true" 
-                                                   Aspect="AspectFill"/>
+                                    <forms:CachedImage Source="{Binding ImageSource,Mode=OneWay}"
+                                                       HorizontalOptions="Fill"
+                                                       LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png"
+                                                       DownsampleToViewSize="true"
+                                                       Aspect="AspectFill" />
                                 </controls1:AspectRatioConverter>
                                 <Frame
                                     Margin="5"
                                     Padding="10,5"
-                                   
+
                                     CornerRadius="15"
                                     HasShadow="False"
                                     HorizontalOptions="Start"
@@ -51,13 +51,13 @@
 
 
                     </controls:TitledFrameView>-->
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
-        </StackLayout>
-    </ScrollView>
-        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 
-            <!--<ListView CachingStrategy="RecycleElement" HasUnevenRows="false"
+    <!--<ListView CachingStrategy="RecycleElement" HasUnevenRows="false"
                   RowHeight="180"  ItemsSource="{Binding Items,Mode=OneWay}">
 
             <ListView.Behaviors>

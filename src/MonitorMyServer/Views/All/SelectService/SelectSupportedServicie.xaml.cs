@@ -5,16 +5,16 @@ using Xamarin.Forms.Xaml;
 
 namespace Doods.Xam.MonitorMyServer.Views.SelectService
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SelectSupportedServiciePage : BaseContentPage
-	{
-		public SelectSupportedServiciePage()
-		{
-			InitializeComponent();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class SelectSupportedServiciePage : BaseContentPage
+    {
+        public SelectSupportedServiciePage()
+        {
+            InitializeComponent();
             Title = openmediavault.Services;
 
-			var vm = App.Container.Resolve<SelectSupportedServicieViewModel>();
-			Start(vm);
-		}
-	}
+            var vm = App.Container.Resolve<SelectSupportedServicieViewModel>();
+            Start(vm);
+        }
+    }
 }

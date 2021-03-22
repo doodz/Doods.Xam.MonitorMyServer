@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_install" xml:space="preserve">
+    <value>Webmin可以自動為您下載並安裝最新版本的Usermin。但是，如果程序已經安裝並且正在使用其他配置目錄，則不應執行此操作。</value>
+  </data>
+  <data name="index_rpm" xml:space="preserve">
+    <value>安裝Usermin RPM軟件包</value>
+  </data>
+  <data name="index_tgz" xml:space="preserve">
+    <value>安裝Usermin tar.gz軟件包</value>
+  </data>
+  <data name="index_deb" xml:space="preserve">
+    <value>安裝Usermin Debian軟件包</value>
+  </data>
+  <data name="index_eroot" xml:space="preserve">
+    <value>Usermin配置目錄 $1存在，但它引用的程序根目錄 $2不存在！您應該手動下載並重新安裝Usermin。</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>重新啟動Usermin</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>單擊此按鈕以重新啟動Usermin服務器進程。如果您最近升級了Perl，則可能有必要。</value>
+  </data>
+  <data name="bind_desc2" xml:space="preserve">
+    <value>該表格可用於更改Usermin偵聽的端口號，或僅在系統上的單個IP地址上偵聽此端口號。您還可以將其配置為接受多個端口上的連接，或偵聽多個IP地址。注意-更改端口或綁定地址後，您的Web瀏覽器可能會提示您重新登錄。</value>
+  </data>
+  <data name="bind_erestart" xml:space="preserve">
+    <value>使用新的地址和端口設置啟動Usermin時發生錯誤： $1</value>
+  </data>
+  <data name="umods_title" xml:space="preserve">
+    <value>Usermin模塊</value>
+  </data>
+  <data name="mods_desc2" xml:space="preserve">
+    <value>如果您希望具有不同配置的同一模塊有多個副本，則可以使用右側的表格來克隆任何現有模塊。該克隆將具有一個新名稱，一個新的模塊配置，並且可以提供給不同的用戶。</value>
+  </data>
+  <data name="mods_clone" xml:space="preserve">
+    <value>克隆模塊</value>
+  </data>
+  <data name="mods_cname" xml:space="preserve">
+    <value>克隆模塊</value>
+  </data>
+  <data name="mods_cnew" xml:space="preserve">
+    <value>克隆的模塊名稱</value>
+  </data>
+  <data name="mods_ccat" xml:space="preserve">
+    <value>分配給類別</value>
+  </data>
+  <data name="mods_csame" xml:space="preserve">
+    <value>與原版相同</value>
+  </data>
+  <data name="mods_cloneok" xml:space="preserve">
+    <value>克隆模塊</value>
+  </data>
+  <data name="mods_desc4" xml:space="preserve">
+    <value>可以使用以下表格將已安裝的模塊導出為wbm.gz文件。然後可以將模塊文件安裝到運行Usermin的另一個系統上。</value>
+  </data>
+  <data name="os_desc3" xml:space="preserve">
+    <value>此頁面顯示Usermin在安裝時檢測到的操作系統以及當前檢測到的系統。如果它們不同，則可以選擇更新Usermin的OS信息，如果您最近進行了升級，則可能有必要。</value>
+  </data>
+  <data name="os_usermin" xml:space="preserve">
+    <value>根據Usermin的操作系統</value>
+  </data>
+  <data name="os_iusermin" xml:space="preserve">
+    <value>Usermin使用的內部操作系統代碼</value>
+  </data>
+  <data name="os_update" xml:space="preserve">
+    <value>更新Usermin以使用檢測到的操作系統</value>
+  </data>
+  <data name="session_realname" xml:space="preserve">
+    <value>顯示真實的主機名而不是URL的名稱？</value>
+  </data>
+  <data name="session_authmode" xml:space="preserve">
+    <value>身份驗證方法</value>
+  </data>
+  <data name="session_authmode0" xml:space="preserve">
+    <value>使用PAM進行身份驗證（如果可用）</value>
+  </data>
+  <data name="session_authmode1" xml:space="preserve">
+    <value>使用密碼文件 $1列 $2和 $3進行身份驗證</value>
+  </data>
+  <data name="session_authmode2" xml:space="preserve">
+    <value>使用外部魷魚式身份驗證程序</value>
+  </data>
+  <data name="session_eauthmode1" xml:space="preserve">
+    <value>如果選擇了該選項，則必須輸入密碼文件</value>
+  </data>
+  <data name="session_eauthmode2" xml:space="preserve">
+    <value>如果選擇了外部身份驗證程序，則必須輸入該程序</value>
+  </data>
+  <data name="session_domain" xml:space="preserve">
+    <value>自動嘗試將域名添加到用戶名嗎？</value>
+  </data>
+  <data name="session_strip" xml:space="preserve">
+    <value>自動嘗試從用戶名中剝離域？</value>
+  </data>
+  <data name="session_usermap" xml:space="preserve">
+    <value>使用用戶名映射文件</value>
+  </data>
+  <data name="session_userfmt" xml:space="preserve">
+    <value>文件格式</value>
+  </data>
+  <data name="session_userfmt0" xml:space="preserve">
+    <value>泛型（名稱至地址）</value>
+  </data>
+  <data name="session_userfmt1" xml:space="preserve">
+    <value>Virtusertable（地址到名稱）</value>
+  </data>
+  <data name="session_eusermap" xml:space="preserve">
+    <value>用戶名映射文件缺失或不存在</value>
+  </data>
+  <data name="session_blank" xml:space="preserve">
+    <value>提示用戶使用空密碼首次登錄時選擇一個？</value>
+  </data>
+  <data name="session_homedir" xml:space="preserve">
+    <value>登錄後創建丟失的主目錄？</value>
+  </data>
+  <data name="session_homedir_perms" xml:space="preserve">
+    <value>新目錄的權限</value>
+  </data>
+  <data name="session_ehomedir_perms" xml:space="preserve">
+    <value>八進制主目錄權限丟失或無效</value>
+  </data>
+  <data name="themes_desc4" xml:space="preserve">
+    <value>可以使用以下表單將已安裝的主題導出為wbt.gz文件。然後可以將主題文件安裝到另一個運行Usermin的系統上。</value>
+  </data>
+  <data name="configs_ecannot" xml:space="preserve">
+    <value>您無權配置此模塊</value>
+  </data>
+  <data name="configs_header" xml:space="preserve">
+    <value>可配置模塊</value>
+  </data>
+  <data name="configs_title2" xml:space="preserve">
+    <value>配置模塊</value>
+  </data>
+  <data name="configs_desc" xml:space="preserve">
+    <value>從下面的列表中選擇要配置的模塊。</value>
+  </data>
+  <data name="configs_return" xml:space="preserve">
+    <value>Usermin模塊配置</value>
+  </data>
+  <data name="configs_prefs" xml:space="preserve">
+    <value>用戶可以編輯首選項嗎？</value>
+  </data>
+  <data name="configs_sels" xml:space="preserve">
+    <value>僅選擇 ..</value>
+  </data>
+  <data name="configs_global" xml:space="preserve">
+    <value>全局模塊配置</value>
+  </data>
+  <data name="configs_globaldesc" xml:space="preserve">
+    <value>此表格中的設置適用於模塊的所有用戶，通常設置與模塊使用的程序和文件相關的選項。</value>
+  </data>
+  <data name="configs_user" xml:space="preserve">
+    <value>默認用戶首選項</value>
+  </data>
+  <data name="configs_userdesc" xml:space="preserve">
+    <value>此表單中的設置定義了該模塊的用戶可編輯首選項的默認值。除非您另外指定，否則它們可以被單個用戶覆蓋。</value>
+  </data>
+  <data name="ssl_desc2" xml:space="preserve">
+    <value>警告-僅在具有支持SSL的瀏覽器且沒有防火牆阻止瀏覽器與Usermin主機之間的&lt;tt&gt;https&lt;/tt&gt;請求時，才打開SSL支持。</value>
+  </data>
+  <data name="ssl_newkey" xml:space="preserve">
+    <value>此表單可用於為Usermin服務器創建新的SSL密鑰。</value>
+  </data>
+  <data name="ssl_hole" xml:space="preserve">
+    <value>因為您當前正在使用每個人都可以訪問的默認Usermin SSL密鑰，所以您應該立即生成一個新密鑰。否則您的SSL連接不安全！</value>
+  </data>
+  <data name="ssl_savekey" xml:space="preserve">
+    <value>該表格允許您上載現有的PEM格式SSL私鑰和證書，以供Usermin服務器使用。</value>
+  </data>
+  <data name="ssl_copycert" xml:space="preserve">
+    <value>從Webmin複製證書</value>
+  </data>
+  <data name="ssl_copycertdesc" xml:space="preserve">
+    <value>複製Webmin正在使用的SSL證書，私鑰，CA證書和其他設置。</value>
+  </data>
+  <data name="ca_email" xml:space="preserve">
+    <value>電子郵件地址</value>
+  </data>
+  <data name="ca_ou" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="ca_o" xml:space="preserve">
+    <value>組織</value>
+  </data>
+  <data name="ca_sp" xml:space="preserve">
+    <value>州</value>
+  </data>
+  <data name="ca_c" xml:space="preserve">
+    <value>國家代碼</value>
+  </data>
+  <data name="newkey_ok" xml:space="preserve">
+    <value>已為Usermin成功生成以下SSL密鑰。</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>您不允許停止Usermin</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>您不允許啟動Usermin</value>
+  </data>
+  <data name="users_desc2" xml:space="preserve">
+    <value>要匹配一系列UID，請在列表中輸入&lt;tt&gt;start-end&lt;/tt&gt;，&lt;tt&gt;start-&lt;/tt&gt;或&lt;tt&gt;-end&lt;/tt&gt;。</value>
+  </data>
+  <data name="users_shells" xml:space="preserve">
+    <value>拒絕其外殼不在文件中的用戶</value>
+  </data>
+  <data name="users_eshells" xml:space="preserve">
+    <value>缺少或不存在的shell文件</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>未選擇模塊</value>
+  </data>
+  <data name="ui_sysinfo4" xml:space="preserve">
+    <value>代替瀏覽器標題</value>
+  </data>
+  <data name="ui_feedbackmode" xml:space="preserve">
+    <value>允許發送反饋？</value>
+  </data>
+  <data name="ui_feednocc" xml:space="preserve">
+    <value>僅針對以上地址</value>
+  </data>
+  <data name="ui_gotoone" xml:space="preserve">
+    <value>如果用戶只有一個，直接進入模塊&lt;br&gt;？</value>
+  </data>
+  <data name="ui_gotonone" xml:space="preserve">
+    <value>&amp;lt;無&amp;gt;</value>
+  </data>
+  <data name="ui_gotomodule" xml:space="preserve">
+    <value>登錄後，始終進入模塊</value>
+  </data>
+  <data name="ui_nohost" xml:space="preserve">
+    <value>在主菜單上顯示版本，主機名和操作系統？</value>
+  </data>
+  <data name="ui_feedbackyes" xml:space="preserve">
+    <value>是的，解決</value>
+  </data>
+  <data name="ui_feedbackmail" xml:space="preserve">
+    <value>通過發送反饋</value>
+  </data>
+  <data name="ui_feedbackmail1" xml:space="preserve">
+    <value>本地sendmail程序</value>
+  </data>
+  <data name="ui_feedbackmail0" xml:space="preserve">
+    <value>SMTP服務器</value>
+  </data>
+  <data name="ui_efeedback" xml:space="preserve">
+    <value>缺少反饋電子郵件地址</value>
+  </data>
+  <data name="ui_efeedbackmail" xml:space="preserve">
+    <value>缺少或無效的SMTP服務器</value>
+  </data>
+  <data name="ui_feedbackhost" xml:space="preserve">
+    <value>反饋中的主機名來自：地址</value>
+  </data>
+  <data name="ui_feedbackthis" xml:space="preserve">
+    <value>系統的主機名</value>
+  </data>
+  <data name="ui_hostnamemode" xml:space="preserve">
+    <value>在Usermin中顯示的主機名</value>
+  </data>
+  <data name="ui_hnm0" xml:space="preserve">
+    <value>真實主機名</value>
+  </data>
+  <data name="ui_hnm1" xml:space="preserve">
+    <value>網址中的主機名</value>
+  </data>
+  <data name="ui_hnm2" xml:space="preserve">
+    <value>網址中的域名</value>
+  </data>
+  <data name="ui_hnm3" xml:space="preserve">
+    <value>其他名字 ..</value>
+  </data>
+  <data name="ui_tabs" xml:space="preserve">
+    <value>分類模塊？</value>
+  </data>
+  <data name="upgrade_title2" xml:space="preserve">
+    <value>安裝Usermin</value>
+  </data>
+  <data name="upgrade_url" xml:space="preserve">
+    <value>從ftp或http URL</value>
+  </data>
+  <data name="upgrade_err5" xml:space="preserve">
+    <value>無法從URL $1升級</value>
+  </data>
+  <data name="upgrade_eurl" xml:space="preserve">
+    <value>網址缺失或無效</value>
+  </data>
+  <data name="upgrade_setup2" xml:space="preserve">
+    <value>使用命令 $1..安裝Usermin</value>
+  </data>
+  <data name="upgrade_eupdates" xml:space="preserve">
+    <value>無法下載更新列表： $1</value>
+  </data>
+  <data name="update_header1" xml:space="preserve">
+    <value>立即更新模塊</value>
+  </data>
+  <data name="update_header2" xml:space="preserve">
+    <value>按計劃更新模塊</value>
+  </data>
+  <data name="update_webmin" xml:space="preserve">
+    <value>從www.usermin.com更新</value>
+  </data>
+  <data name="update_other" xml:space="preserve">
+    <value>從其他來源更新</value>
+  </data>
+  <data name="update_show" xml:space="preserve">
+    <value>只顯示要更新的模塊</value>
+  </data>
+  <data name="update_missing" xml:space="preserve">
+    <value>安裝當前未安裝的模塊</value>
+  </data>
+  <data name="update_quiet" xml:space="preserve">
+    <value>僅報告更新</value>
+  </data>
+  <data name="update_ok" xml:space="preserve">
+    <value>更新模塊</value>
+  </data>
+  <data name="update_email" xml:space="preserve">
+    <value>通過電子郵件將更新報告發送到</value>
+  </data>
+  <data name="update_enabled" xml:space="preserve">
+    <value>當前啟用計劃更新</value>
+  </data>
+  <data name="update_apply" xml:space="preserve">
+    <value>保存併申請</value>
+  </data>
+  <data name="update_sched" xml:space="preserve">
+    <value>每 $2天在 $1：00更新一次模塊</value>
+  </data>
+  <data name="update_none" xml:space="preserve">
+    <value>此版本沒有Usermin更新。</value>
+  </data>
+  <data name="update_failed" xml:space="preserve">
+    <value>無法安裝模塊： $1</value>
+  </data>
+  <data name="categories_code" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="categories_name" xml:space="preserve">
+    <value>顯示的描述</value>
+  </data>
+  <data name="log_uinstall" xml:space="preserve">
+    <value>已安裝Usermin版本 $1</value>
+  </data>
+  <data name="log_copycert" xml:space="preserve">
+    <value>從Webmin複製的SSL設置</value>
+  </data>
+  <data name="log_newkey" xml:space="preserve">
+    <value>創建了新的SSL密鑰</value>
+  </data>
+  <data name="log_restrict_create" xml:space="preserve">
+    <value>已為 $1創建限制</value>
+  </data>
+  <data name="log_restrict_modify" xml:space="preserve">
+    <value>修改了 $1的限制</value>
+  </data>
+  <data name="log_restrict_delete" xml:space="preserve">
+    <value>已刪除 $1的限制</value>
+  </data>
+  <data name="log_restrict_move" xml:space="preserve">
+    <value>$1的限制已移動</value>
+  </data>
+  <data name="log_all" xml:space="preserve">
+    <value>所有用戶</value>
+  </data>
+  <data name="log_group" xml:space="preserve">
+    <value>組 $1</value>
+  </data>
+  <data name="log_switch" xml:space="preserve">
+    <value>切換到Usermin用戶 $1</value>
+  </data>
+  <data name="log_logout" xml:space="preserve">
+    <value>更改自動註銷時間</value>
+  </data>
+  <data name="log_dav" xml:space="preserve">
+    <value>更改了DAV服務器設置</value>
+  </data>
+  <data name="log_advanced" xml:space="preserve">
+    <value>更改了高級選項</value>
+  </data>
+  <data name="log_mobile" xml:space="preserve">
+    <value>更改了移動設備選項</value>
+  </data>
+  <data name="update_err" xml:space="preserve">
+    <value>無法更新模塊</value>
+  </data>
+  <data name="update_eurl" xml:space="preserve">
+    <value>缺少或無效的更新URL</value>
+  </data>
+  <data name="update_title" xml:space="preserve">
+    <value>更新模塊</value>
+  </data>
+  <data name="update_info" xml:space="preserve">
+    <value>更新Usermin模塊 ..</value>
+  </data>
+  <data name="update_mmissing" xml:space="preserve">
+    <value>該系統上未安裝模塊 $1。</value>
+  </data>
+  <data name="update_malready" xml:space="preserve">
+    <value>模塊 $1已更新。</value>
+  </data>
+  <data name="update_mshow" xml:space="preserve">
+    <value>模塊 $1需要更新到版本 $2。</value>
+  </data>
+  <data name="update_mok" xml:space="preserve">
+    <value>將模塊 $1升級到版本 $2。</value>
+  </data>
+  <data name="update_fixes" xml:space="preserve">
+    <value>解決問題</value>
+  </data>
+  <data name="update_mdesc" xml:space="preserve">
+    <value>已安裝的模塊 $1（$2 Kb）</value>
+  </data>
+  <data name="update_mos" xml:space="preserve">
+    <value>模塊 $1的更新與此操作系統無關。</value>
+  </data>
+  <data name="update_efile" xml:space="preserve">
+    <value>無效的模塊更新源文件</value>
+  </data>
+  <data name="update_ehour" xml:space="preserve">
+    <value>缺少或無效的時間來更新</value>
+  </data>
+  <data name="update_edays" xml:space="preserve">
+    <value>缺少天數或無效天數</value>
+  </data>
+  <data name="update_rv" xml:space="preserve">
+    <value>從 $1檢查更新的Usermin模塊</value>
+  </data>
+  <data name="update_eemail" xml:space="preserve">
+    <value>如果僅顯示要更新的內容，則必須輸入電子郵件地址。</value>
+  </data>
+  <data name="update_subject" xml:space="preserve">
+    <value>Usermin模塊更新報告</value>
+  </data>
+  <data name="update_version" xml:space="preserve">
+    <value>現在可以下載新版本的Usermin（版本 $1）。將來的更新將僅針對最新版本發布。</value>
+  </data>
+  <data name="restrict_title" xml:space="preserve">
+    <value>模塊限制</value>
+  </data>
+  <data name="restrict_who" xml:space="preserve">
+    <value>Usermin用戶</value>
+  </data>
+  <data name="restrict_what" xml:space="preserve">
+    <value>可用模塊</value>
+  </data>
+  <data name="restrict_all" xml:space="preserve">
+    <value>所有用戶</value>
+  </data>
+  <data name="restrict_group" xml:space="preserve">
+    <value>組 $1</value>
+  </data>
+  <data name="restrict_file" xml:space="preserve">
+    <value>文件 $1中的用戶</value>
+  </data>
+  <data name="restrict_plus" xml:space="preserve">
+    <value>&lt;b&gt;全加&lt;/b&gt; $1</value>
+  </data>
+  <data name="restrict_minus" xml:space="preserve">
+    <value>&lt;b&gt;所有除外&lt;/b&gt; $1</value>
+  </data>
+  <data name="restrict_set" xml:space="preserve">
+    <value>&lt;b&gt;僅&lt;/b&gt; $1</value>
+  </data>
+  <data name="restrict_nomods" xml:space="preserve">
+    <value>&lt;b&gt;沒有模塊&lt;/b&gt;</value>
+  </data>
+  <data name="restrict_add" xml:space="preserve">
+    <value>添加新的用戶或組限制</value>
+  </data>
+  <data name="restrict_edit" xml:space="preserve">
+    <value>編輯限制</value>
+  </data>
+  <data name="restrict_create" xml:space="preserve">
+    <value>創建限制</value>
+  </data>
+  <data name="restrict_header" xml:space="preserve">
+    <value>Usermin模塊限制詳細信息</value>
+  </data>
+  <data name="restrict_who2" xml:space="preserve">
+    <value>適用於</value>
+  </data>
+  <data name="restrict_umode0" xml:space="preserve">
+    <value>Unix用戶</value>
+  </data>
+  <data name="restrict_umode1" xml:space="preserve">
+    <value>組成員</value>
+  </data>
+  <data name="restrict_umode2" xml:space="preserve">
+    <value>所有用戶</value>
+  </data>
+  <data name="restrict_umode3" xml:space="preserve">
+    <value>文件中的用戶和組</value>
+  </data>
+  <data name="restrict_mods" xml:space="preserve">
+    <value>模組</value>
+  </data>
+  <data name="restrict_mmode0" xml:space="preserve">
+    <value>僅選擇 ..</value>
+  </data>
+  <data name="restrict_mmode1" xml:space="preserve">
+    <value>添加選擇的 ..</value>
+  </data>
+  <data name="restrict_mmode2" xml:space="preserve">
+    <value>刪除選定 ..</value>
+  </data>
+  <data name="restrict_return" xml:space="preserve">
+    <value>限制清單</value>
+  </data>
+  <data name="restrict_err" xml:space="preserve">
+    <value>無法保存限制</value>
+  </data>
+  <data name="restrict_euser" xml:space="preserve">
+    <value>用戶名缺失或無效</value>
+  </data>
+  <data name="restrict_egroup" xml:space="preserve">
+    <value>群組名稱缺失或無效</value>
+  </data>
+  <data name="restrict_efile" xml:space="preserve">
+    <value>缺少，不存在或非絕對的用戶和組文件</value>
+  </data>
+  <data name="restrict_move" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="bootup_ecannot" xml:space="preserve">
+    <value>您無權配置啟動</value>
+  </data>
+  <data name="acl_icons" xml:space="preserve">
+    <value>允許的配置頁面</value>
+  </data>
+  <data name="acl_mods" xml:space="preserve">
+    <value>可以配置模塊</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>所有模塊</value>
+  </data>
+  <data name="acl_sel" xml:space="preserve">
+    <value>在下面選擇 ..</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>可以停止並啟動Usermin嗎？</value>
+  </data>
+  <data name="acl_bootup" xml:space="preserve">
+    <value>可以在啟動時配置啟動嗎？</value>
+  </data>
+  <data name="acl_ecannot" xml:space="preserve">
+    <value>您無權使用此頁面</value>
+  </data>
+  <data name="clone_err" xml:space="preserve">
+    <value>克隆模塊失敗</value>
+  </data>
+  <data name="clone_elink" xml:space="preserve">
+    <value>符號鏈接失敗： $1</value>
+  </data>
+  <data name="clone_ecopy" xml:space="preserve">
+    <value>無法複製配置： $1</value>
+  </data>
+  <data name="clone_desc" xml:space="preserve">
+    <value>$1的克隆</value>
+  </data>
+  <data name="sessions_title" xml:space="preserve">
+    <value>當前登錄會話</value>
+  </data>
+  <data name="sessions_desc" xml:space="preserve">
+    <value>下面列出了當前的Usermin會話登錄。要取消現有會話並強制用戶再次登錄，請單擊其會話ID。</value>
+  </data>
+  <data name="sessions_id" xml:space="preserve">
+    <value>會話ID</value>
+  </data>
+  <data name="sessions_user" xml:space="preserve">
+    <value>Unix用戶</value>
+  </data>
+  <data name="sessions_host" xml:space="preserve">
+    <value>IP地址</value>
+  </data>
+  <data name="sessions_login" xml:space="preserve">
+    <value>登錄於</value>
+  </data>
+  <data name="sessions_none" xml:space="preserve">
+    <value>當前沒有用戶登錄到Usermin。</value>
+  </data>
+  <data name="sessions_switch" xml:space="preserve">
+    <value>切換到Usermin用戶：</value>
+  </data>
+  <data name="sessions_ok" xml:space="preserve">
+    <value>開關</value>
+  </data>
+  <data name="referers_title" xml:space="preserve">
+    <value>值得信賴的推薦人</value>
+  </data>
+  <data name="referers_desc" xml:space="preserve">
+    <value>該頁面允許您配置Usermin的引薦來源網址檢查支持，該支持用於防止來自其他網站的惡意鏈接欺騙您的用戶的瀏覽器使用Usermin做危險的事情。但是，如果您不想從自己的網站鏈接到Usermin，則應將這些網站添加到下面的列表中。</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>匿名模塊訪問</value>
+  </data>
+  <data name="anon_desc" xml:space="preserve">
+    <value>該頁面允許您授予對選定的Usermin模塊和路徑的訪問權限，而無需客戶端登錄。對於在下面輸入的每個模塊路徑（例如/ commands或/ changepass），還必須輸入Unix用戶的名稱，該用戶的權限將用於訪問該模塊。</value>
+  </data>
+  <data name="anon_user" xml:space="preserve">
+    <value>Unix用戶</value>
+  </data>
+  <data name="anon_euser" xml:space="preserve">
+    <value>URL路徑“$1”的Unix用戶丟失或無效</value>
+  </data>
+  <data name="logout_title" xml:space="preserve">
+    <value>自動登出時間</value>
+  </data>
+  <data name="logout_desc" xml:space="preserve">
+    <value>此頁面可用於為不同的Usermin用戶配置不同的不活動註銷時間。必須以分鐘為單位輸入超時，並且超時為零意味著匹配用戶的會話將永遠不會自動註銷。</value>
+  </data>
+  <data name="logout_type" xml:space="preserve">
+    <value>類型</value>
+  </data>
+  <data name="logout_who" xml:space="preserve">
+    <value>用戶，組或文件</value>
+  </data>
+  <data name="logout_time" xml:space="preserve">
+    <value>暫停</value>
+  </data>
+  <data name="logout_user" xml:space="preserve">
+    <value>用戶 ..</value>
+  </data>
+  <data name="logout_group" xml:space="preserve">
+    <value>小組成員 ..</value>
+  </data>
+  <data name="logout_file" xml:space="preserve">
+    <value>文件中的用戶 ..</value>
+  </data>
+  <data name="logout_err" xml:space="preserve">
+    <value>無法保存註銷時間</value>
+  </data>
+  <data name="logout_euser" xml:space="preserve">
+    <value>第 $1行中缺少用戶或用戶無效</value>
+  </data>
+  <data name="logout_egroup" xml:space="preserve">
+    <value>第 $1行中的組缺失或無效</value>
+  </data>
+  <data name="logout_efile" xml:space="preserve">
+    <value>第 $1行中缺少文件或文件不存在</value>
+  </data>
+  <data name="logout_etime" xml:space="preserve">
+    <value>第 $1行中缺少超時或無效超時</value>
+  </data>
+  <data name="logout_ecannot" xml:space="preserve">
+    <value>您無權配置註銷時間</value>
+  </data>
+  <data name="dav_title" xml:space="preserve">
+    <value>DAV服務器</value>
+  </data>
+  <data name="dav_header" xml:space="preserve">
+    <value>DAV服務器選項</value>
+  </data>
+  <data name="dav_path" xml:space="preserve">
+    <value>是否啟用DAV？</value>
+  </data>
+  <data name="dav_disabled" xml:space="preserve">
+    <value>殘障人士</value>
+  </data>
+  <data name="dav_enabled" xml:space="preserve">
+    <value>已啟用，在URL路徑 $1下</value>
+  </data>
+  <data name="dav_root" xml:space="preserve">
+    <value>允許訪問目錄</value>
+  </data>
+  <data name="dav_root0" xml:space="preserve">
+    <value>整個文件系統</value>
+  </data>
+  <data name="dav_root1" xml:space="preserve">
+    <value>用戶的主目錄</value>
+  </data>
+  <data name="dav_root2" xml:space="preserve">
+    <value>目錄 $1</value>
+  </data>
+  <data name="dav_ecannot" xml:space="preserve">
+    <value>您無權配置DAV服務器</value>
+  </data>
+  <data name="dav_emodule" xml:space="preserve">
+    <value>未安裝啟用DAV所需的Perl模塊 $1。</value>
+  </data>
+  <data name="dav_desc" xml:space="preserve">
+    <value>Usermin的DAV支持允許支持DAV協議的客戶端連接到此Usermin服務器並讀寫文件。所有文件訪問均以登錄用戶的Unix特權完成，並且將被限制在指定的目錄中。</value>
+  </data>
+  <data name="dav_err" xml:space="preserve">
+    <value>無法保存DAV服務器選項</value>
+  </data>
+  <data name="dav_epath" xml:space="preserve">
+    <value>URL路徑缺失或無效</value>
+  </data>
+  <data name="dav_eroot" xml:space="preserve">
+    <value>根目錄丟失或無效</value>
+  </data>
+  <data name="dav_users" xml:space="preserve">
+    <value>可以使用DAV的用戶</value>
+  </data>
+  <data name="dav_users1" xml:space="preserve">
+    <value>所有用戶</value>
+  </data>
+  <data name="dav_users0" xml:space="preserve">
+    <value>下面列出的用戶和組。</value>
+  </data>
+  <data name="dav_eusers" xml:space="preserve">
+    <value>沒有用戶輸入</value>
+  </data>
+  <data name="syslog_errorlog" xml:space="preserve">
+    <value>Usermin錯誤日誌</value>
+  </data>
+  <data name="descs_title" xml:space="preserve">
+    <value>模塊標題</value>
+  </data>
+  <data name="descs_info" xml:space="preserve">
+    <value>該頁面允許您為Usermin模塊指定備用標題，以覆蓋其標准說明。</value>
+  </data>
+  <data name="advanced_title" xml:space="preserve">
+    <value>高級選項</value>
+  </data>
+  <data name="blocked_title" xml:space="preserve">
+    <value>被阻止的主機和用戶</value>
+  </data>
+  <data name="blocked_none" xml:space="preserve">
+    <value>當前沒有主機或用戶被Usermin阻止。</value>
+  </data>
+  <data name="blocked_user" xml:space="preserve">
+    <value>Usermin用戶</value>
+  </data>
+  <data name="blocked_cleardesc" xml:space="preserve">
+    <value>單擊此按鈕，通過重新啟動Usermin服務器進程來清除所有當前主機和用戶塊。</value>
+  </data>
+  <data name="mobile_title" xml:space="preserve">
+    <value>移動設備選項</value>
+  </data>
+  <data name="copycert_err" xml:space="preserve">
+    <value>無法從Webmin複製SSL設置</value>
+  </data>
+  <data name="copycert_essl" xml:space="preserve">
+    <value>未啟用SSL</value>
+  </data>
+  <data name="copycert_ekeyfile" xml:space="preserve">
+    <value>Webmin中未設置私鑰文件</value>
+  </data>
+</root>

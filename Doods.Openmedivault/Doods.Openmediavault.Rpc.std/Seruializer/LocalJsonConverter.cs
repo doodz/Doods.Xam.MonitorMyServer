@@ -5,8 +5,10 @@ using Newtonsoft.Json.Converters;
 
 namespace Doods.Openmedivault.Ssh.Std.Requests
 {
-    public sealed class LocalJsonConverter: JsonSerializer
+    public sealed class LocalJsonConverter : JsonSerializer
     {
+        public static readonly JsonSerializer Singleton = new LocalJsonConverter();
+
         public LocalJsonConverter()
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore;
@@ -19,9 +21,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
             Converters.Add(ValueUnionConverter.Singleton);
             Converters.Add(ParseStringConverter.Singleton);
             Converters.Add(PrefixConverter.Singleton);
-            Converters.Add(new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal });
+            Converters.Add(new IsoDateTimeConverter {DateTimeStyles = DateTimeStyles.AssumeUniversal});
         }
-        public static readonly JsonSerializer Singleton = new LocalJsonConverter();
-        
     }
 }

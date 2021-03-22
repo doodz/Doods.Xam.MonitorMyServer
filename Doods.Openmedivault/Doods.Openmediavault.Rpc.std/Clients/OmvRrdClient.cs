@@ -9,8 +9,8 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 {
     public class OmvRrdClient : OmvServiceClient, IRrdService
     {
-       
-        private IRpcClient _getclient;
+        private readonly IRpcClient _getclient;
+
         public OmvRrdClient(IRpcClient client) : base(client)
         {
             ServiceName = "Rrd";
@@ -19,7 +19,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
         public Task<IEnumerable<string>> ListRdd()
         {
-               return _getclient.ListRrdFilesAsync();
+            return _getclient.ListRrdFilesAsync();
         }
 
 
@@ -29,13 +29,13 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             {
                 var toto = "rrd.php?name=";
                 return _getclient.GetRrdFilesAsync(fileNames);
-
             }
-            else if (RequestType == RequestType.ssh)
+
+            if (RequestType == RequestType.ssh)
 
             {
                 var tutu = "/var/lib/openmediavault/rrd/";
-                return _getclient.GetRrdFilesAsync(fileNames.Select(f=> tutu+f));
+                return _getclient.GetRrdFilesAsync(fileNames.Select(f => tutu + f));
             }
 
             return Task.FromResult(default(IEnumerable<byte[]>));
@@ -45,15 +45,15 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         {
             if (RequestType == RequestType.http)
             {
-                var toto="rrd.php?name=";
+                var toto = "rrd.php?name=";
                 return _getclient.GetRrdFileAsync(fileName);
-
             }
-            else if (RequestType == RequestType.ssh)
+
+            if (RequestType == RequestType.ssh)
 
             {
-                var tutu="/var/lib/openmediavault/rrd/";
-                return _getclient.GetRrdFileAsync(tutu+fileName);
+                var tutu = "/var/lib/openmediavault/rrd/";
+                return _getclient.GetRrdFileAsync(tutu + fileName);
             }
 
             return Task.FromResult(default(byte[]));

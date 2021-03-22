@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Менеджер файлів</value>
+  </data>
+  <data name="index_nojava" xml:space="preserve">
+    <value>Для функціонування цього модуля потрібно java, однак ваш браузер java не підтримує</value>
+  </data>
+  <data name="index_eremote" xml:space="preserve">
+    <value>Немає користувача Unix відповідного користувачу Webmin $1.</value>
+  </data>
+  <data name="switch_euser" xml:space="preserve">
+    <value>Користувач Unix не існує!</value>
+  </data>
+  <data name="top_ret" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="top_down" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="top_edit" xml:space="preserve">
+    <value>Змінити</value>
+  </data>
+  <data name="top_refresh" xml:space="preserve">
+    <value>Обновити</value>
+  </data>
+  <data name="top_info" xml:space="preserve">
+    <value>Властивості</value>
+  </data>
+  <data name="top_eacl" xml:space="preserve">
+    <value>ACL</value>
+  </data>
+  <data name="top_attr" xml:space="preserve">
+    <value>Атрибути</value>
+  </data>
+  <data name="top_ext" xml:space="preserve">
+    <value>EXT</value>
+  </data>
+  <data name="top_delete" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="top_new" xml:space="preserve">
+    <value>Посилання</value>
+  </data>
+  <data name="top_upload" xml:space="preserve">
+    <value>Завантажити</value>
+  </data>
+  <data name="top_rename" xml:space="preserve">
+    <value>Перейменувати</value>
+  </data>
+  <data name="top_copy" xml:space="preserve">
+    <value>Копіювати</value>
+  </data>
+  <data name="top_cut" xml:space="preserve">
+    <value>Вирізувати</value>
+  </data>
+  <data name="top_paste" xml:space="preserve">
+    <value>Уставити</value>
+  </data>
+  <data name="top_share" xml:space="preserve">
+    <value>Мережа</value>
+  </data>
+  <data name="top_search" xml:space="preserve">
+    <value>Знайти</value>
+  </data>
+  <data name="right_name" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="right_size" xml:space="preserve">
+    <value>Розмір</value>
+  </data>
+  <data name="right_user" xml:space="preserve">
+    <value>Користувач</value>
+  </data>
+  <data name="right_group" xml:space="preserve">
+    <value>Група</value>
+  </data>
+  <data name="right_date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="edit_enormal" xml:space="preserve">
+    <value>Можна редагувати тільки звичайні файли</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Редагування $1</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Створення файлу</value>
+  </data>
+  <data name="edit_filename" xml:space="preserve">
+    <value>Ім'я файлу:</value>
+  </data>
+  <data name="edit_eover" xml:space="preserve">
+    <value>$1 не може бути перезаписаний</value>
+  </data>
+  <data name="edit_esave" xml:space="preserve">
+    <value>Не удалося зберегти файл : $1</value>
+  </data>
+  <data name="edit_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для збереження '$1'</value>
+  </data>
+  <data name="info_file" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="info_path" xml:space="preserve">
+    <value>Шлях:</value>
+  </data>
+  <data name="info_type" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="info_size" xml:space="preserve">
+    <value>Розмір:</value>
+  </data>
+  <data name="info_mod" xml:space="preserve">
+    <value>Змінений:</value>
+  </data>
+  <data name="info_link" xml:space="preserve">
+    <value>Посилання на:</value>
+  </data>
+  <data name="info_perms" xml:space="preserve">
+    <value>Права</value>
+  </data>
+  <data name="info_user" xml:space="preserve">
+    <value>Користувача:</value>
+  </data>
+  <data name="info_group" xml:space="preserve">
+    <value>Групи:</value>
+  </data>
+  <data name="info_other" xml:space="preserve">
+    <value>Інших:</value>
+  </data>
+  <data name="info_octal" xml:space="preserve">
+    <value>Восьмеричний вид:</value>
+  </data>
+  <data name="info_sticky" xml:space="preserve">
+    <value>Біт sticky:</value>
+  </data>
+  <data name="info_sticky2" xml:space="preserve">
+    <value>Тільки власники можуть видаляти файли</value>
+  </data>
+  <data name="info_own" xml:space="preserve">
+    <value>Приналежність</value>
+  </data>
+  <data name="info_setuid" xml:space="preserve">
+    <value>Біт setuid:</value>
+  </data>
+  <data name="info_setuid2" xml:space="preserve">
+    <value>Виконувати від імені користувача</value>
+  </data>
+  <data name="info_setgid" xml:space="preserve">
+    <value>Біт setgid:</value>
+  </data>
+  <data name="info_setgid2" xml:space="preserve">
+    <value>Файли успадковують групу</value>
+  </data>
+  <data name="info_setgid3" xml:space="preserve">
+    <value>Виконувати від імені групи</value>
+  </data>
+  <data name="info_apply" xml:space="preserve">
+    <value>Застосувати зміни</value>
+  </data>
+  <data name="info_apply1" xml:space="preserve">
+    <value>Тільки до цього каталогу</value>
+  </data>
+  <data name="info_apply2" xml:space="preserve">
+    <value>До цього каталогу і його файлів</value>
+  </data>
+  <data name="info_apply3" xml:space="preserve">
+    <value>До Цього каталогу і всіх його підкаталогів</value>
+  </data>
+  <data name="info_efailed" xml:space="preserve">
+    <value>Не удалося обновити $1 : $2</value>
+  </data>
+  <data name="info_read" xml:space="preserve">
+    <value>Читання</value>
+  </data>
+  <data name="info_write" xml:space="preserve">
+    <value>Запис</value>
+  </data>
+  <data name="info_list" xml:space="preserve">
+    <value>Перегляд</value>
+  </data>
+  <data name="info_exec" xml:space="preserve">
+    <value>Виконання</value>
+  </data>
+  <data name="eacl_eacls" xml:space="preserve">
+    <value>Не удалося вважати ACL : $1</value>
+  </data>
+  <data name="eacl_acltype" xml:space="preserve">
+    <value>Тип ACL</value>
+  </data>
+  <data name="eacl_aclname" xml:space="preserve">
+    <value>Застосувати до</value>
+  </data>
+  <data name="eacl_aclperms" xml:space="preserve">
+    <value>Права</value>
+  </data>
+  <data name="eacl_add" xml:space="preserve">
+    <value>Додати ACL :</value>
+  </data>
+  <data name="eacl_remove" xml:space="preserve">
+    <value>Видалити ACL</value>
+  </data>
+  <data name="eacl_efs" xml:space="preserve">
+    <value>Ця файлова система $1 не підтримує ACL</value>
+  </data>
+  <data name="eacl_create" xml:space="preserve">
+    <value>Створити ACL</value>
+  </data>
+  <data name="eacl_edit" xml:space="preserve">
+    <value>Змінити ACL</value>
+  </data>
+  <data name="eacl_user" xml:space="preserve">
+    <value>Власник файлу $1</value>
+  </data>
+  <data name="eacl_group" xml:space="preserve">
+    <value>Група файлу $1</value>
+  </data>
+  <data name="eacl_eowner" xml:space="preserve">
+    <value>Не зазначений чи користувач група для який вносяться зміни</value>
+  </data>
+  <data name="eacl_efailed" xml:space="preserve">
+    <value>Не удалося установити ACL для $1 : $2</value>
+  </data>
+  <data name="eacl_emask" xml:space="preserve">
+    <value>There can be at most one mask ACL entry</value>
+  </data>
+  <data name="eacl_edefmask" xml:space="preserve">
+    <value>There can be at most one default mask ACL entry</value>
+  </data>
+  <data name="eacl_title" xml:space="preserve">
+    <value>ACL для $1</value>
+  </data>
+  <data name="eacl_owner" xml:space="preserve">
+    <value>Власник файлу</value>
+  </data>
+  <data name="eacl_edefaults" xml:space="preserve">
+    <value>If a file has any default ACL, it must have default user, group and other ACLs.</value>
+  </data>
+  <data name="acltype_user" xml:space="preserve">
+    <value>Користувач</value>
+  </data>
+  <data name="acltype_group" xml:space="preserve">
+    <value>Група</value>
+  </data>
+  <data name="acltype_other" xml:space="preserve">
+    <value>Інші</value>
+  </data>
+  <data name="acltype_mask" xml:space="preserve">
+    <value>Маска</value>
+  </data>
+  <data name="acltype_default_user" xml:space="preserve">
+    <value>Користувач за замовчуванням</value>
+  </data>
+  <data name="acltype_default_group" xml:space="preserve">
+    <value>Група за замовчуванням</value>
+  </data>
+  <data name="acltype_default_other" xml:space="preserve">
+    <value>Інші за замовчуванням</value>
+  </data>
+  <data name="acltype_default_mask" xml:space="preserve">
+    <value>Маска за замовчуванням</value>
+  </data>
+  <data name="delete_mtitle" xml:space="preserve">
+    <value>Видалення декількох файлів</value>
+  </data>
+  <data name="delete_dtitle" xml:space="preserve">
+    <value>Видалення каталогу</value>
+  </data>
+  <data name="delete_ftitle" xml:space="preserve">
+    <value>Видалення файлу</value>
+  </data>
+  <data name="delete_ddesc" xml:space="preserve">
+    <value>Назавжди видалити каталог $1 із усім його вмістом?</value>
+  </data>
+  <data name="delete_fdesc" xml:space="preserve">
+    <value>Назавжди видалити файл $1 ?</value>
+  </data>
+  <data name="delete_mdesc" xml:space="preserve">
+    <value>Назавжди видалити зазначені файли і каталоги? :</value>
+  </data>
+  <data name="delete_efailed" xml:space="preserve">
+    <value>Не удалося видалити $1 : $2</value>
+  </data>
+  <data name="mkdir_title" xml:space="preserve">
+    <value>Новий каталог</value>
+  </data>
+  <data name="mkdir_dir" xml:space="preserve">
+    <value>Новий каталог:</value>
+  </data>
+  <data name="mkdir_eexists" xml:space="preserve">
+    <value>$1 вже існує</value>
+  </data>
+  <data name="mkdir_efailed" xml:space="preserve">
+    <value>Не удалося створити каталог : $1</value>
+  </data>
+  <data name="mkdir_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для створення '$1'</value>
+  </data>
+  <data name="link_title" xml:space="preserve">
+    <value>Створення посилання</value>
+  </data>
+  <data name="link_from" xml:space="preserve">
+    <value>Джерело:</value>
+  </data>
+  <data name="link_to" xml:space="preserve">
+    <value>Місце призначення:</value>
+  </data>
+  <data name="link_eexists" xml:space="preserve">
+    <value>$1 вже існує</value>
+  </data>
+  <data name="link_efrom" xml:space="preserve">
+    <value>У вас недостатньо правий для створення посилання '$1'</value>
+  </data>
+  <data name="link_efailed" xml:space="preserve">
+    <value>Створити посилання не удалося : $1</value>
+  </data>
+  <data name="link_efollow" xml:space="preserve">
+    <value>У вас недостатньо правий для створення посилань</value>
+  </data>
+  <data name="rename_title" xml:space="preserve">
+    <value>Перейменування $1</value>
+  </data>
+  <data name="rename_old" xml:space="preserve">
+    <value>Старе ім'я:</value>
+  </data>
+  <data name="rename_new" xml:space="preserve">
+    <value>Нове ім'я:</value>
+  </data>
+  <data name="rename_ok" xml:space="preserve">
+    <value>Перейменувати</value>
+  </data>
+  <data name="rename_eexists" xml:space="preserve">
+    <value>Файл з ім'ям $1 вже існує</value>
+  </data>
+  <data name="rename_efailed" xml:space="preserve">
+    <value>Перейменувати не удалося : $1</value>
+  </data>
+  <data name="rename_eold" xml:space="preserve">
+    <value>У вас недостатньо правий для перейменування '$1'</value>
+  </data>
+  <data name="rename_enew" xml:space="preserve">
+    <value>У вас недостатньо правий для перейменування в '$1'</value>
+  </data>
+  <data name="file_type0" xml:space="preserve">
+    <value>Каталог</value>
+  </data>
+  <data name="file_type1" xml:space="preserve">
+    <value>Текстовий файл</value>
+  </data>
+  <data name="file_type2" xml:space="preserve">
+    <value>Файл зображення</value>
+  </data>
+  <data name="file_type3" xml:space="preserve">
+    <value>Бінарний файл</value>
+  </data>
+  <data name="file_type4" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="file_type5" xml:space="preserve">
+    <value>Символьне посилання</value>
+  </data>
+  <data name="file_type6" xml:space="preserve">
+    <value>Файл пристрою</value>
+  </data>
+  <data name="file_type7" xml:space="preserve">
+    <value>Канал</value>
+  </data>
+  <data name="view_enormal" xml:space="preserve">
+    <value>Можна переглядати тільки звичайні файли</value>
+  </data>
+  <data name="view_enormal2" xml:space="preserve">
+    <value>Можна завантажувати тільки звичайні файли</value>
+  </data>
+  <data name="view_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для доступу до $1</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>Не удалося відкрити $1 : $2</value>
+  </data>
+  <data name="paste_ecopy" xml:space="preserve">
+    <value>Перед вставкою необхідно чи вирізувати копіювати</value>
+  </data>
+  <data name="paste_egone" xml:space="preserve">
+    <value>Копійован файл $1 більше не існує</value>
+  </data>
+  <data name="paste_eover" xml:space="preserve">
+    <value>$1 не може бути перезаписаний</value>
+  </data>
+  <data name="paste_eself" xml:space="preserve">
+    <value>Не можна переписати файл самим собою</value>
+  </data>
+  <data name="paste_emfailed" xml:space="preserve">
+    <value>Не удалося перемістити : $1</value>
+  </data>
+  <data name="paste_ecfailed" xml:space="preserve">
+    <value>Не удалося скопіювати : $1</value>
+  </data>
+  <data name="over_title" xml:space="preserve">
+    <value>Файл існує</value>
+  </data>
+  <data name="over_msg" xml:space="preserve">
+    <value>Файл $1 вже існує. Укажіть для файлу, що вставляється, нове ім'я.</value>
+  </data>
+  <data name="over_new" xml:space="preserve">
+    <value>Нове ім'я файлу:</value>
+  </data>
+  <data name="over_ok" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="upload_efailed" xml:space="preserve">
+    <value>Не удалося почати завантаження : $1</value>
+  </data>
+  <data name="upload_title" xml:space="preserve">
+    <value>Завантаження файлу</value>
+  </data>
+  <data name="upload_file" xml:space="preserve">
+    <value>Файл для завантаження</value>
+  </data>
+  <data name="upload_dir" xml:space="preserve">
+    <value>Завантажувати в каталог</value>
+  </data>
+  <data name="upload_ok" xml:space="preserve">
+    <value>Завантажити</value>
+  </data>
+  <data name="upload_conv" xml:space="preserve">
+    <value>Перетворити переклади рядків DOS?</value>
+  </data>
+  <data name="upload_efile" xml:space="preserve">
+    <value>Не обраний файл для завантаження.</value>
+  </data>
+  <data name="upload_edir" xml:space="preserve">
+    <value>Каталог для завантаження не існує.</value>
+  </data>
+  <data name="upload_eperm" xml:space="preserve">
+    <value>У вас недостатньо правий для створення $1</value>
+  </data>
+  <data name="upload_ewrite" xml:space="preserve">
+    <value>Не удалося записати в $1 : $2.</value>
+  </data>
+  <data name="find_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для доступу до $1</value>
+  </data>
+  <data name="find_eexist" xml:space="preserve">
+    <value>$1 не існує в $2</value>
+  </data>
+  <data name="find_edir" xml:space="preserve">
+    <value>$1 не є каталогом у $2</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Скасування</value>
+  </data>
+  <data name="chmod_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для доступу до '$1'</value>
+  </data>
+  <data name="chmod_euser" xml:space="preserve">
+    <value>$1 : немає такого користувача</value>
+  </data>
+  <data name="chmod_egroup" xml:space="preserve">
+    <value>$1 : немає такої групи</value>
+  </data>
+  <data name="chmod_elink" xml:space="preserve">
+    <value>Помилка при виклику symlink : $1</value>
+  </data>
+  <data name="chmod_echown" xml:space="preserve">
+    <value>Помилка при виклику chown : $1</value>
+  </data>
+  <data name="chmod_echmod" xml:space="preserve">
+    <value>Помилка при виклику chmod : $1</value>
+  </data>
+  <data name="chmod_efollow" xml:space="preserve">
+    <value>У вас недостатньо правий для зміни символьних посилань</value>
+  </data>
+  <data name="copy_efrom" xml:space="preserve">
+    <value>У вас недостатньо правий для копіювання з '$1'</value>
+  </data>
+  <data name="copy_eto" xml:space="preserve">
+    <value>У вас недостатньо правий для копіювання в '$1'</value>
+  </data>
+  <data name="copy_elink" xml:space="preserve">
+    <value>Помилка при виклику symlink : $1</value>
+  </data>
+  <data name="delete_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для видалення '$1'</value>
+  </data>
+  <data name="list_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для доступу до цього каталогу</value>
+  </data>
+  <data name="list_edir" xml:space="preserve">
+    <value>Не удалося переглянути $1 : $2</value>
+  </data>
+  <data name="move_eto" xml:space="preserve">
+    <value>У вас недостатньо правий для переміщення в '$1'</value>
+  </data>
+  <data name="move_afrom" xml:space="preserve">
+    <value>У вас недостатньо правий для переміщення '$1'</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Звертатися до файлів на сервері під ім'ям користувача</value>
+  </data>
+  <data name="acl_user_def" xml:space="preserve">
+    <value>Користувача Webmin</value>
+  </data>
+  <data name="acl_umask" xml:space="preserve">
+    <value>Umask для нових файлів</value>
+  </data>
+  <data name="acl_follow" xml:space="preserve">
+    <value>Завжди переходити по символьних посиланнях?</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>Режим тільки для читання?</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>Дозволяти доступ тільки до каталогів</value>
+  </data>
+  <data name="acl_home" xml:space="preserve">
+    <value>Включаючи домашній каталог користувача Webmin</value>
+  </data>
+  <data name="acl_log" xml:space="preserve">
+    <value>Вести журнал усіх змін файлів?</value>
+  </data>
+  <data name="acl_goto" xml:space="preserve">
+    <value>Відкривати перший доступний каталог?</value>
+  </data>
+  <data name="share_title" xml:space="preserve">
+    <value>Доступ по мережі</value>
+  </data>
+  <data name="share_samba" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="share_nfs" xml:space="preserve">
+    <value>NFS</value>
+  </data>
+  <data name="share_son" xml:space="preserve">
+    <value>Доступ з мережі Windows дозволений</value>
+  </data>
+  <data name="share_soff" xml:space="preserve">
+    <value>Доступ з мережі Windows заборонений</value>
+  </data>
+  <data name="share_writable" xml:space="preserve">
+    <value>Запис дозволений?</value>
+  </data>
+  <data name="share_available" xml:space="preserve">
+    <value>Доступний у даний момент?</value>
+  </data>
+  <data name="share_sheader" xml:space="preserve">
+    <value>Настроювання доступу</value>
+  </data>
+  <data name="share_only" xml:space="preserve">
+    <value>Тільки</value>
+  </data>
+  <data name="share_guest" xml:space="preserve">
+    <value>Доступ без аутентифікації (Guest)?</value>
+  </data>
+  <data name="share_comment" xml:space="preserve">
+    <value>Коментар</value>
+  </data>
+  <data name="share_nheader" xml:space="preserve">
+    <value>Настроювання доступу по протоколі NFS</value>
+  </data>
+  <data name="share_non" xml:space="preserve">
+    <value>Доступ по NFS дозволений</value>
+  </data>
+  <data name="share_noff" xml:space="preserve">
+    <value>Доступ по NFS заборонений</value>
+  </data>
+  <data name="share_desc" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="share_ro" xml:space="preserve">
+    <value>Вузли, що мають доступ тільки для читання</value>
+  </data>
+  <data name="share_rw" xml:space="preserve">
+    <value>Вузли, що мають доступ для читання і запису</value>
+  </data>
+  <data name="share_root" xml:space="preserve">
+    <value>Вузли, для яких дозволений доступ із правами root</value>
+  </data>
+  <data name="share_none" xml:space="preserve">
+    <value>Немає</value>
+  </data>
+  <data name="share_all" xml:space="preserve">
+    <value>Усі</value>
+  </data>
+  <data name="share_listed" xml:space="preserve">
+    <value>Зазначені..</value>
+  </data>
+  <data name="share_host" xml:space="preserve">
+    <value>Вузли</value>
+  </data>
+  <data name="share_opts" xml:space="preserve">
+    <value>Настроювання</value>
+  </data>
+  <data name="share_s0" xml:space="preserve">
+    <value>Довіряти nobody</value>
+  </data>
+  <data name="share_s1" xml:space="preserve">
+    <value>Довіряти не-root</value>
+  </data>
+  <data name="share_s2" xml:space="preserve">
+    <value>Довіряти всім</value>
+  </data>
+  <data name="share_lro" xml:space="preserve">
+    <value>Тільки читання</value>
+  </data>
+  <data name="share_lrw" xml:space="preserve">
+    <value>Читання/запис</value>
+  </data>
+  <data name="log_create_export" xml:space="preserve">
+    <value>Створений ресурс NFS $1</value>
+  </data>
+  <data name="log_modify_export" xml:space="preserve">
+    <value>Змінений ресурс NFS $1</value>
+  </data>
+  <data name="log_delete_export" xml:space="preserve">
+    <value>Вилучений ресурс NFS $1</value>
+  </data>
+  <data name="log_create_share" xml:space="preserve">
+    <value>Створений ресурс Samba $1</value>
+  </data>
+  <data name="log_modify_share" xml:space="preserve">
+    <value>Змінений ресурс Samba $1</value>
+  </data>
+  <data name="log_delete_share" xml:space="preserve">
+    <value>Вилучений ресурс Samba $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Збережений файл $1</value>
+  </data>
+  <data name="log_chmod" xml:space="preserve">
+    <value>Змінені права на файл $1</value>
+  </data>
+  <data name="log_mkdir" xml:space="preserve">
+    <value>Створений каталог $1</value>
+  </data>
+  <data name="log_upload" xml:space="preserve">
+    <value>Завантажений файл $1</value>
+  </data>
+  <data name="log_link" xml:space="preserve">
+    <value>Створена символьне посилання $1 на $2</value>
+  </data>
+  <data name="log_relink" xml:space="preserve">
+    <value>Змінена символьне посилання $1 на $2</value>
+  </data>
+  <data name="log_copy" xml:space="preserve">
+    <value>Скопійований файл $1 у $2</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Переміщений файл $1 у $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Вилучений файл $1</value>
+  </data>
+  <data name="log_attr" xml:space="preserve">
+    <value>Змінені атрибути файлу $1</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Для файлу $1 призначений ACL</value>
+  </data>
+  <data name="search_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для пошуку в цьому каталозі</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>Пошук файлів</value>
+  </data>
+  <data name="search_ok" xml:space="preserve">
+    <value>Шукати</value>
+  </data>
+  <data name="search_dir" xml:space="preserve">
+    <value>Шукати в каталозі</value>
+  </data>
+  <data name="search_match" xml:space="preserve">
+    <value>Файли співпадаючі з</value>
+  </data>
+  <data name="search_user" xml:space="preserve">
+    <value>Приналежні користувачу</value>
+  </data>
+  <data name="search_group" xml:space="preserve">
+    <value>Приналежні групі</value>
+  </data>
+  <data name="search_any" xml:space="preserve">
+    <value>Любою</value>
+  </data>
+  <data name="search_type" xml:space="preserve">
+    <value>Тип файлу</value>
+  </data>
+  <data name="search_types_" xml:space="preserve">
+    <value>Любою</value>
+  </data>
+  <data name="search_types_f" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="search_types_d" xml:space="preserve">
+    <value>Каталог</value>
+  </data>
+  <data name="search_types_l" xml:space="preserve">
+    <value>Символьне посилання</value>
+  </data>
+  <data name="search_types_p" xml:space="preserve">
+    <value>Іменований канал</value>
+  </data>
+  <data name="search_size" xml:space="preserve">
+    <value>Розмір файлу</value>
+  </data>
+  <data name="search_more" xml:space="preserve">
+    <value>Більш</value>
+  </data>
+  <data name="search_less" xml:space="preserve">
+    <value>Менш</value>
+  </data>
+  <data name="search_xdev" xml:space="preserve">
+    <value>Шукати в підмонтованих файлових системах?</value>
+  </data>
+  <data name="search_edir" xml:space="preserve">
+    <value>Каталог для пошуку чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="search_ematch" xml:space="preserve">
+    <value>Регулярне вираження для пошуку чи не зазначене зазначено невірно</value>
+  </data>
+  <data name="search_euser" xml:space="preserve">
+    <value>Ім'я користувача чи не зазначене зазначено невірно</value>
+  </data>
+  <data name="search_egroup" xml:space="preserve">
+    <value>Ім'я групи чи не зазначене зазначено невірно</value>
+  </data>
+  <data name="search_esize" xml:space="preserve">
+    <value>Розмір файлу повинний бути цілим числом</value>
+  </data>
+  <data name="search_crit" xml:space="preserve">
+    <value>Критерій пошуку</value>
+  </data>
+  <data name="search_list" xml:space="preserve">
+    <value>Результати пошуку</value>
+  </data>
+  <data name="facl_eaccess" xml:space="preserve">
+    <value>У вас недостатньо правий для зміни ACL для цього файлу</value>
+  </data>
+  <data name="attr_eattrs" xml:space="preserve">
+    <value>Не удалося вважати атрибути : $1</value>
+  </data>
+  <data name="attr_efs" xml:space="preserve">
+    <value>Файлова система $1 не підтримує атрибути</value>
+  </data>
+  <data name="attr_add" xml:space="preserve">
+    <value>Додати атрибут</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Назва атрибута</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Значення атрибута</value>
+  </data>
+  <data name="attr_efailed" xml:space="preserve">
+    <value>Не удалося установити атрибути для $1 : $2</value>
+  </data>
+  <data name="attr_title" xml:space="preserve">
+    <value>Атрибути файлу для $1</value>
+  </data>
+  <data name="attr_create" xml:space="preserve">
+    <value>Додати атрибут</value>
+  </data>
+  <data name="attr_edit" xml:space="preserve">
+    <value>Змінити атрибут</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Не зазначена назва атрибута</value>
+  </data>
+  <data name="ext_eattrs" xml:space="preserve">
+    <value>Не удалося одержати атрибути EXT : $1</value>
+  </data>
+  <data name="ext_efs" xml:space="preserve">
+    <value>Файлова система $1 не підтримує атрибути EXT</value>
+  </data>
+  <data name="ext_title" xml:space="preserve">
+    <value>Атрибути EXT для $1</value>
+  </data>
+  <data name="ext_header" xml:space="preserve">
+    <value>Атрибути EXT файлу</value>
+  </data>
+  <data name="ext_efailed" xml:space="preserve">
+    <value>Не удалося установити атрибути EXT $1 : $2</value>
+  </data>
+  <data name="eattr_A" xml:space="preserve">
+    <value>Не обновляти час доступу</value>
+  </data>
+  <data name="eattr_a" xml:space="preserve">
+    <value>Можливо тільки додавання до файлу</value>
+  </data>
+  <data name="eattr_c" xml:space="preserve">
+    <value>Стискати дані на диску</value>
+  </data>
+  <data name="eattr_d" xml:space="preserve">
+    <value>Не здійснювати резервне копіювання за допомогою dump</value>
+  </data>
+  <data name="eattr_s" xml:space="preserve">
+    <value>Обнуляти блоки при видаленні</value>
+  </data>
+  <data name="eattr_S" xml:space="preserve">
+    <value>Завжди синхронізувати після запису</value>
+  </data>
+  <data name="eattr_u" xml:space="preserve">
+    <value>Зберігати уміст файлу для відновлення</value>
+  </data>
+</root>

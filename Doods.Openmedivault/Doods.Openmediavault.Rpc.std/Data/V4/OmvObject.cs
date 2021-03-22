@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Doods.Openmediavault.Rpc.std.Data.V4
 {
-    public abstract class OmvObject:IOmvObject
+    public abstract class OmvObject : IOmvObject
     {
         public string ToJson()
         {
@@ -14,12 +14,11 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         public string ToJson(bool escape)
         {
             return escape ? ToEscape(ToJson()) : ToJson();
-
         }
+
         internal string ToEscape(string value)
         {
             return value.Replace("\"", "\\\"");
         }
-
     }
 }

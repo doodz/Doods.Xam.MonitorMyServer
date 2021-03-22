@@ -24,18 +24,19 @@ namespace Doods.Xam.MonitorMyServer.Views
     {
         private readonly ICommand _addHostCmd;
         private readonly ISshService _sshService;
-        private IEnumerable<string> _groups;
+        private bool _canSudo;
+        private bool _canUpdate;
         private CpuInfo _cpuInfo;
+        private IEnumerable<string> _groups;
         private Hostnamectl _hostnamectl;
-       
+
         private MemoryUsage _memoryUsage;
         private IEnumerable<Process> _processes;
         private int _processesCount;
         private IEnumerable<Upgradable> _upgradables;
         private int _upgradablesCount;
         private TimeSpan _uptime;
-        private bool _canSudo;
-        private bool _canUpdate;
+
         public MainPageViewModel(ISshService sshService, IConfiguration configuration)
         {
             Title = Resource.Home;
@@ -81,17 +82,19 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _canSudo;
             set => SetProperty(ref _canSudo, value);
         }
+
         public bool CanUpdate
         {
             get => _canUpdate;
             set => SetProperty(ref _canUpdate, value);
         }
-        
+
         public TimeSpan Uptime
         {
             get => _uptime;
             set => SetProperty(ref _uptime, value);
         }
+
         public CpuInfo CpuInfo
         {
             get => _cpuInfo;
@@ -103,12 +106,13 @@ namespace Doods.Xam.MonitorMyServer.Views
             get => _hostnamectl;
             set => SetProperty(ref _hostnamectl, value);
         }
-        public IEnumerable<string> Groups 
+
+        public IEnumerable<string> Groups
         {
             get => _groups;
             set => SetProperty(ref _groups, value);
         }
-       
+
 
         public MemoryUsage MemoryUsage
         {
@@ -166,7 +170,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Upgradables = null;
             CpuInfo = null;
-           
+
             UpgradablesCount = 0;
             ProcessesCount = 0;
             Processes = null;
@@ -196,11 +200,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             try
             {
                 await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-                    async () =>
-                    {
-                        SetLabelsStateItem(openmediavault.Server, openmediavault.SystemInformation);
-                        
-                    },
+                    async () => { SetLabelsStateItem(openmediavault.Server, openmediavault.SystemInformation); },
                     () =>
                     {
                         UpdateHistory();
@@ -217,14 +217,14 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         protected Task RefreshData()
         {
-
             if (!_sshService.IsConnected())
             {
                 SetLabelsStateItem(openmediavault.Info, openmediavault.NoUsersConnected);
                 return Task.FromResult(0);
             }
 
-            return Task.WhenAll(GetGroups(),GetCpuInfo(), GetHostnamectl(), GetUptime(),  CheckMemoryUsage(), GetProcesses(),
+            return Task.WhenAll(GetGroups(), GetCpuInfo(), GetHostnamectl(), GetUptime(), CheckMemoryUsage(),
+                GetProcesses(),
                 GetUpgradables());
         }
 
@@ -318,7 +318,6 @@ namespace Doods.Xam.MonitorMyServer.Views
 
         private async Task GetGroups()
         {
-
             Groups = await _sshService.GetGroups();
             CanSudo = Groups.Any(g => g.ToLower() == "sudo");
             CanUpdate = Groups.Any(g => g.ToLower() == "root" || g.ToLower() == "sudo");
@@ -334,18 +333,16 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             Hostnamectl = await _sshService.GetHostnamectl();
         }
-        
+
         private async Task GetUptime()
         {
             Uptime = await _sshService.GetUptime();
         }
 
-      
 
         private async Task CheckMemoryUsage()
         {
             MemoryUsage = await _sshService.CheckMemoryUsage();
-            
         }
 
         private void UpdateHistory()

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Mobile.Std.Models;
+using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
@@ -12,9 +13,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins
 {
     public class OpenmediavaultPluginsViewModel : ViewModelWhithState
     {
-        private readonly IOmvService _sshService;
-
         private readonly ICollection<PluginInfo> _actionList = new List<PluginInfo>();
+        private readonly IOmvService _sshService;
 
         public OpenmediavaultPluginsViewModel(IOmvService sshService)
         {
@@ -55,11 +55,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins
 
         protected override async Task OnInternalAppearingAsync()
         {
-
-            
-             await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
-                () => SetLabelsStateItem("OMV", Openmediavault.Mobile.Std.Resources.openmediavault.CheckingForNewPlugins___),
-                () => { SetLabelsStateItem("OMV", Openmediavault.Mobile.Std.Resources.openmediavault.Done___); });
+            await ViewModelStateItem.RunActionAsync(async () => { await RefreshData(); },
+                () => SetLabelsStateItem("OMV", openmediavault.CheckingForNewPlugins___),
+                () => { SetLabelsStateItem("OMV", openmediavault.Done___); });
             await base.OnInternalAppearingAsync();
         }
 

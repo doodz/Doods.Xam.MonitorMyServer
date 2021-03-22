@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>iSCSI客戶端</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>模塊索引</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>從啟動開始？</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>更改此選項可控制是否在引導時啟動iSCSI客戶端。從iSCSI服務器掛載的文件系統要自動掛載，這是必需的。</value>
+  </data>
+  <data name="check_econfig" xml:space="preserve">
+    <value>在系統上找不到iSCSI客戶端配置文件 $1。</value>
+  </data>
+  <data name="check_eiscsiadm" xml:space="preserve">
+    <value>在系統上找不到iSCSI客戶端管理程序 $1。</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>驗證選項</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>iSCSI客戶端和服務器身份驗證</value>
+  </data>
+  <data name="auth_name" xml:space="preserve">
+    <value>本地系統啟動器名稱</value>
+  </data>
+  <data name="auth_newname" xml:space="preserve">
+    <value>產生一個新的隨機名稱</value>
+  </data>
+  <data name="auth_method" xml:space="preserve">
+    <value>身份驗證方法</value>
+  </data>
+  <data name="auth_method_none" xml:space="preserve">
+    <value>不認證</value>
+  </data>
+  <data name="auth_userpass" xml:space="preserve">
+    <value>登錄服務器</value>
+  </data>
+  <data name="auth_userpass_def" xml:space="preserve">
+    <value>不需要</value>
+  </data>
+  <data name="auth_userpass_user" xml:space="preserve">
+    <value>用戶名</value>
+  </data>
+  <data name="auth_userpass_pass" xml:space="preserve">
+    <value>和密碼</value>
+  </data>
+  <data name="auth_userpass_in" xml:space="preserve">
+    <value>登錄客戶端</value>
+  </data>
+  <data name="auth_dmethod" xml:space="preserve">
+    <value>發現認證方法</value>
+  </data>
+  <data name="auth_duserpass" xml:space="preserve">
+    <value>發現登錄到服務器</value>
+  </data>
+  <data name="auth_duserpass_in" xml:space="preserve">
+    <value>發現登錄到客戶端</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>保存身份驗證選項失敗</value>
+  </data>
+  <data name="auth_eusername" xml:space="preserve">
+    <value>服務器缺少用戶名</value>
+  </data>
+  <data name="auth_epassword" xml:space="preserve">
+    <value>服務器缺少密碼</value>
+  </data>
+  <data name="auth_eusername_in" xml:space="preserve">
+    <value>客戶端缺少用戶名</value>
+  </data>
+  <data name="auth_epassword_in" xml:space="preserve">
+    <value>客戶端密碼丟失</value>
+  </data>
+  <data name="auth_edusername" xml:space="preserve">
+    <value>服務器缺少發現用戶名</value>
+  </data>
+  <data name="auth_edpassword" xml:space="preserve">
+    <value>缺少服務器的發現密碼</value>
+  </data>
+  <data name="auth_edusername_in" xml:space="preserve">
+    <value>客戶端缺少發現用戶名</value>
+  </data>
+  <data name="auth_edpassword_in" xml:space="preserve">
+    <value>客戶端缺少發現密碼</value>
+  </data>
+  <data name="auth_egen" xml:space="preserve">
+    <value>無法生成新名稱！</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>iSCSI超時</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>iSCSI客戶端超時選項</value>
+  </data>
+  <data name="timeout_timeout" xml:space="preserve">
+    <value>SCSI命令失敗之前需要等待的時間</value>
+  </data>
+  <data name="timeout_immediate" xml:space="preserve">
+    <value>立即失敗</value>
+  </data>
+  <data name="timeout_forever" xml:space="preserve">
+    <value>永遠等</value>
+  </data>
+  <data name="timeout_wait" xml:space="preserve">
+    <value>等待</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="timeout_login_timeout" xml:space="preserve">
+    <value>等待登錄的時間</value>
+  </data>
+  <data name="timeout_logout_timeout" xml:space="preserve">
+    <value>等待註銷的時間</value>
+  </data>
+  <data name="timeout_noop_out_interval" xml:space="preserve">
+    <value>ping前要等待的時間</value>
+  </data>
+  <data name="timeout_noop_out_timeout" xml:space="preserve">
+    <value>是時候等待ping才能失敗</value>
+  </data>
+  <data name="timeout_abort_timeout" xml:space="preserve">
+    <value>在失敗之前等待中止響應的時間</value>
+  </data>
+  <data name="timeout_lu_reset_timeout" xml:space="preserve">
+    <value>在失敗之前等待邏輯單元響應的時間</value>
+  </data>
+  <data name="timeout_tgt_reset_timeout" xml:space="preserve">
+    <value>在失敗之前等待目標響應的時間</value>
+  </data>
+  <data name="timeout_err" xml:space="preserve">
+    <value>無法保存超時</value>
+  </data>
+  <data name="timeout_etimeout" xml:space="preserve">
+    <value>SCSI命令失敗之前需要等待的時間或數值不完整</value>
+  </data>
+  <data name="timeout_elogin_timeout" xml:space="preserve">
+    <value>等待登錄的時間丟失或非數字</value>
+  </data>
+  <data name="timeout_elogout_timeout" xml:space="preserve">
+    <value>等待註銷的時間丟失或為非數字時間</value>
+  </data>
+  <data name="timeout_enoop_out_interval" xml:space="preserve">
+    <value>ping前缺少等待的時間或非數字時間</value>
+  </data>
+  <data name="timeout_enoop_out_timeout" xml:space="preserve">
+    <value>失敗之前等待ping的時間不足或非數字</value>
+  </data>
+  <data name="timeout_eabort_timeout" xml:space="preserve">
+    <value>失敗之前等待中止響應的時間不足或非數字</value>
+  </data>
+  <data name="timeout_elu_reset_timeout" xml:space="preserve">
+    <value>失敗之前等待邏輯單元響應的時間丟失或非數字</value>
+  </data>
+  <data name="timeout_etgt_reset_timeout" xml:space="preserve">
+    <value>失敗之前等待目標響應的時間不足或非數字</value>
+  </data>
+  <data name="iscsi_title" xml:space="preserve">
+    <value>iSCSI選項</value>
+  </data>
+  <data name="iscsi_header" xml:space="preserve">
+    <value>其他iSCSI選項</value>
+  </data>
+  <data name="iscsi_startup" xml:space="preserve">
+    <value>在啟動時連接會話？</value>
+  </data>
+  <data name="iscsi_retry" xml:space="preserve">
+    <value>重試登錄次數</value>
+  </data>
+  <data name="iscsi_cmds" xml:space="preserve">
+    <value>每個會話排隊的最大命令數</value>
+  </data>
+  <data name="iscsi_queue" xml:space="preserve">
+    <value>每個設備排隊的最大命令</value>
+  </data>
+  <data name="iscsi_err" xml:space="preserve">
+    <value>無法保存iSCSI選項</value>
+  </data>
+  <data name="iscsi_eretry" xml:space="preserve">
+    <value>缺少或非數字的重試登錄次數</value>
+  </data>
+  <data name="iscsi_ecmds" xml:space="preserve">
+    <value>每個會話排隊的最大命令缺失或非數字</value>
+  </data>
+  <data name="iscsi_equeue" xml:space="preserve">
+    <value>每個設備排隊的最大命令缺失或非數字</value>
+  </data>
+  <data name="ifaces_title" xml:space="preserve">
+    <value>iSCSI接口</value>
+  </data>
+  <data name="ifaces_elist" xml:space="preserve">
+    <value>無法列出接口： $1</value>
+  </data>
+  <data name="ifaces_name" xml:space="preserve">
+    <value>接口名稱</value>
+  </data>
+  <data name="ifaces_transport" xml:space="preserve">
+    <value>運輸</value>
+  </data>
+  <data name="ifaces_uses" xml:space="preserve">
+    <value>使用者</value>
+  </data>
+  <data name="ifaces_none" xml:space="preserve">
+    <value>當前沒有任何iSCSI接口處於活動狀態。</value>
+  </data>
+  <data name="ifaces_return" xml:space="preserve">
+    <value>接口列表</value>
+  </data>
+  <data name="ifaces_header" xml:space="preserve">
+    <value>添加iSCSI接口</value>
+  </data>
+  <data name="ifaces_delete" xml:space="preserve">
+    <value>刪除選定的接口</value>
+  </data>
+  <data name="ifaces_on" xml:space="preserve">
+    <value>在 $2上定位 $1</value>
+  </data>
+  <data name="ifaces_nouses" xml:space="preserve">
+    <value>沒有連接</value>
+  </data>
+  <data name="ifaces_ipaddress" xml:space="preserve">
+    <value>源IP地址</value>
+  </data>
+  <data name="ifaces_hwaddress" xml:space="preserve">
+    <value>MAC地址</value>
+  </data>
+  <data name="ifaces_ifacename" xml:space="preserve">
+    <value>源接口</value>
+  </data>
+  <data name="ifaces_ipaddressdef" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="ifaces_notset" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="iadd_err" xml:space="preserve">
+    <value>添加界面失敗</value>
+  </data>
+  <data name="iadd_eclash" xml:space="preserve">
+    <value>名為 $1的接口已存在</value>
+  </data>
+  <data name="iadd_eipaddress" xml:space="preserve">
+    <value>缺少或無效的源IP地址</value>
+  </data>
+  <data name="iadd_ehwaddress" xml:space="preserve">
+    <value>MAC地址丟失或無效</value>
+  </data>
+  <data name="iadd_ename" xml:space="preserve">
+    <value>接口名稱丟失或包含無效字符</value>
+  </data>
+  <data name="difaces_err" xml:space="preserve">
+    <value>刪除接口失敗</value>
+  </data>
+  <data name="difaces_enone" xml:space="preserve">
+    <value>未選擇</value>
+  </data>
+  <data name="difaces_edelete" xml:space="preserve">
+    <value>刪除接口 $1失敗： $2</value>
+  </data>
+  <data name="difaces_title" xml:space="preserve">
+    <value>刪除iSCSI接口</value>
+  </data>
+  <data name="difaces_rusure" xml:space="preserve">
+    <value>您確定要刪除 $1個選定的接口嗎？</value>
+  </data>
+  <data name="difaces_rusure1" xml:space="preserve">
+    <value>您確定要刪除接口 $1嗎？</value>
+  </data>
+  <data name="difaces_confirm" xml:space="preserve">
+    <value>刪除接口</value>
+  </data>
+  <data name="difaces_target" xml:space="preserve">
+    <value>iSCSI目標</value>
+  </data>
+  <data name="difaces_ip" xml:space="preserve">
+    <value>iSCSI服務器</value>
+  </data>
+  <data name="difaces_users" xml:space="preserve">
+    <value>使用這些接口的某些連接當前處於活動狀態，並且在刪除接口後將無法運行：</value>
+  </data>
+  <data name="conns_title" xml:space="preserve">
+    <value>iSCSI連接</value>
+  </data>
+  <data name="conns_elist" xml:space="preserve">
+    <value>無法列出連接： $1</value>
+  </data>
+  <data name="conns_ip" xml:space="preserve">
+    <value>服務器IP</value>
+  </data>
+  <data name="conns_sport" xml:space="preserve">
+    <value>服務器端口</value>
+  </data>
+  <data name="conns_name" xml:space="preserve">
+    <value>服務器名稱</value>
+  </data>
+  <data name="conns_target" xml:space="preserve">
+    <value>目標名稱</value>
+  </data>
+  <data name="conns_device" xml:space="preserve">
+    <value>本地設備</value>
+  </data>
+  <data name="conns_username" xml:space="preserve">
+    <value>登錄用戶名</value>
+  </data>
+  <data name="conns_nouser" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="conns_nodevice" xml:space="preserve">
+    <value>沒有映射</value>
+  </data>
+  <data name="conns_delete" xml:space="preserve">
+    <value>斷開選擇</value>
+  </data>
+  <data name="conns_none" xml:space="preserve">
+    <value>當前沒有任何iSCSI連接處於活動狀態。</value>
+  </data>
+  <data name="conns_header" xml:space="preserve">
+    <value>添加iSCSI連接</value>
+  </data>
+  <data name="conns_host" xml:space="preserve">
+    <value>iSCSI服務器主機名或IP</value>
+  </data>
+  <data name="conns_port" xml:space="preserve">
+    <value>iSCSI服務器端口</value>
+  </data>
+  <data name="conns_start" xml:space="preserve">
+    <value>連接 ..</value>
+  </data>
+  <data name="conns_return" xml:space="preserve">
+    <value>連接列表</value>
+  </data>
+  <data name="conns_iface" xml:space="preserve">
+    <value>iSCSI介面</value>
+  </data>
+  <data name="conns_ifacedef" xml:space="preserve">
+    <value>自動選擇</value>
+  </data>
+  <data name="conns_ifaceerr" xml:space="preserve">
+    <value>無法獲取接口： $1</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>添加iSCSI連接</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>添加iSCSI連接失敗</value>
+  </data>
+  <data name="add_ehost" xml:space="preserve">
+    <value>主機名丟失或無法解析</value>
+  </data>
+  <data name="add_eport" xml:space="preserve">
+    <value>缺少端口或非數字端口</value>
+  </data>
+  <data name="add_etargets" xml:space="preserve">
+    <value>無法從 $1:$2檢索到iSCSI目標</value>
+  </data>
+  <data name="add_etargets2" xml:space="preserve">
+    <value>在 $1上找不到iSCSI目標</value>
+  </data>
+  <data name="add_target" xml:space="preserve">
+    <value>連接到目標</value>
+  </data>
+  <data name="add_alltargets" xml:space="preserve">
+    <value>所有目標</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>添加連接</value>
+  </data>
+  <data name="add_etarget" xml:space="preserve">
+    <value>找不到目標 $1</value>
+  </data>
+  <data name="add_dev" xml:space="preserve">
+    <value>已連接為 $1</value>
+  </data>
+  <data name="add_used" xml:space="preserve">
+    <value>已經連接</value>
+  </data>
+  <data name="add_on" xml:space="preserve">
+    <value>$2上的 $1</value>
+  </data>
+  <data name="add_auth" xml:space="preserve">
+    <value>登錄服務器</value>
+  </data>
+  <data name="add_auth1" xml:space="preserve">
+    <value>使用默認身份驗證方法</value>
+  </data>
+  <data name="add_auth0" xml:space="preserve">
+    <value>使用方法 $1以 $2的密碼登錄 $2</value>
+  </data>
+  <data name="dconns_err" xml:space="preserve">
+    <value>無法斷開連接</value>
+  </data>
+  <data name="dconns_enone" xml:space="preserve">
+    <value>未選擇</value>
+  </data>
+  <data name="dconns_edelete" xml:space="preserve">
+    <value>從主機 $1刪除目標 $2失敗： $3</value>
+  </data>
+  <data name="dconns_title" xml:space="preserve">
+    <value>斷開iSCSI連接</value>
+  </data>
+  <data name="dconns_rusure" xml:space="preserve">
+    <value>您確定要刪除 $1個選定的連接嗎？</value>
+  </data>
+  <data name="dconns_rusure1" xml:space="preserve">
+    <value>您確定要刪除與 $1的連接嗎？</value>
+  </data>
+  <data name="dconns_rusure2" xml:space="preserve">
+    <value>您確定要刪除與設備 $2的 $1的連接嗎？</value>
+  </data>
+  <data name="dconns_users" xml:space="preserve">
+    <value>這些連接中的某些分區當前正在使用中，並且在刪除連接後將無法運行：</value>
+  </data>
+  <data name="dconns_part" xml:space="preserve">
+    <value>劃分</value>
+  </data>
+  <data name="dconns_use" xml:space="preserve">
+    <value>使用者</value>
+  </data>
+  <data name="dconns_size" xml:space="preserve">
+    <value>分區大小</value>
+  </data>
+  <data name="dconns_confirm" xml:space="preserve">
+    <value>刪除連接</value>
+  </data>
+  <data name="dconns_unused" xml:space="preserve">
+    <value>沒用過</value>
+  </data>
+  <data name="vconn_title" xml:space="preserve">
+    <value>iSCSI連接</value>
+  </data>
+  <data name="vconn_egone" xml:space="preserve">
+    <value>所選的連接不再存在！</value>
+  </data>
+  <data name="vconn_header" xml:space="preserve">
+    <value>iSCSI連接詳細信息</value>
+  </data>
+  <data name="vconn_proto" xml:space="preserve">
+    <value>網絡協議</value>
+  </data>
+  <data name="vconn_init" xml:space="preserve">
+    <value>本地發起方名稱</value>
+  </data>
+  <data name="vconn_connection" xml:space="preserve">
+    <value>連接狀態</value>
+  </data>
+  <data name="vconn_session" xml:space="preserve">
+    <value>會話狀態</value>
+  </data>
+  <data name="vconn_username" xml:space="preserve">
+    <value>使用用戶名登錄</value>
+  </data>
+  <data name="vconn_password" xml:space="preserve">
+    <value>用密碼登錄</value>
+  </data>
+  <data name="vconn_username_in" xml:space="preserve">
+    <value>客戶端用戶名</value>
+  </data>
+  <data name="vconn_password_in" xml:space="preserve">
+    <value>客戶密碼</value>
+  </data>
+  <data name="vconn_none" xml:space="preserve">
+    <value>不需要</value>
+  </data>
+  <data name="vconn_device" xml:space="preserve">
+    <value>本地設備文件</value>
+  </data>
+  <data name="vconn_device2" xml:space="preserve">
+    <value>本地設備名稱</value>
+  </data>
+  <data name="vconn_device3" xml:space="preserve">
+    <value>恆定的設備名稱</value>
+  </data>
+  <data name="vconn_delete" xml:space="preserve">
+    <value>斷開連接</value>
+  </data>
+  <data name="vconn_users" xml:space="preserve">
+    <value>當前用戶</value>
+  </data>
+  <data name="vconn_size" xml:space="preserve">
+    <value>磁碟大小</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>無法在啟動時啟用</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>不存在名為 $1的引導操作</value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>保存的身份驗證選項</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>保存的超時選項</value>
+  </data>
+  <data name="log_iscsi" xml:space="preserve">
+    <value>保存的iSCSI選項</value>
+  </data>
+  <data name="log_add_connection" xml:space="preserve">
+    <value>已為 $2添加到 $1的連接</value>
+  </data>
+  <data name="log_delete_connection" xml:space="preserve">
+    <value>刪除了與 $1的 $2的連接</value>
+  </data>
+  <data name="log_delete_connections" xml:space="preserve">
+    <value>刪除了 $1個連接</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>引導時啟用的iSCSI客戶端</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>引導時禁用iSCSI客戶端</value>
+  </data>
+  <data name="log_add_iface" xml:space="preserve">
+    <value>添加了接口 $1</value>
+  </data>
+  <data name="log_delete_iface" xml:space="preserve">
+    <value>已刪除接口 $1</value>
+  </data>
+  <data name="log_delete_ifaces" xml:space="preserve">
+    <value>刪除了 $1接口</value>
+  </data>
+</root>

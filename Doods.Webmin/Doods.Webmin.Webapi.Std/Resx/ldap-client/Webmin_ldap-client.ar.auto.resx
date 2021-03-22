@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>التحقق من التكوين</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>انقر فوق هذا الزر ليقوم Webmin بالتحقق من صحة تكوين خادم LDAP ، من خلال التأكد من أنه يمكن الاتصال بالخادم وأنه يحتوي على مستخدمين ومجموعات.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>مؤشر الوحدة</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;تحذير&lt;/b&gt; - اكتشف Webmin ملفين لتكوين LDAP منفصلين على نظامك. تم تكوين NSS-LDAP باستخدام$1 ، بينما يستخدم PAM-LDAP$2. قد يتسبب هذا في تناسق بين الخدمتين.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>إصلاح عن طريق ربط الملفات</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>لا تظهر هذه الرسالة</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>عميل LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>أوقف البرنامج الخفي لبرنامج LDAP</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>قم بإيقاف البرنامج الخفي لبرنامج LDAP المحلي ، وهو أمر مطلوب للاستعلام عن خادم LDAP البعيد.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>ابدأ البرنامج الخفي لبرنامج LDAP Client</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>ابدأ تشغيل البرنامج الخفي لبرنامج LDAP المحلي المطلوب للاستعلام عن خادم LDAP البعيد. لن يتم الوصول إلى المستخدمين والمجموعات في LDAP حتى يتم تشغيله.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>إعادة تشغيل البرنامج الخفي لبرنامج LDAP</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>قم بتطبيق التكوين الحالي عن طريق إعادة تشغيل البرنامج الخفي لبرنامج LDAP المحلي.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>ابدأ تشغيل برنامج LDAP عند التمهيد</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>تغيير ما إذا كان البرنامج الخفي لعميل LDAP يبدأ عند تشغيل النظام أم لا.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>تكوين خادم LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>خادم LDAP وخيارات تسجيل الدخول</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>أسماء مضيف خادم LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>الاتصال بالمنفذ</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>إصدار بروتوكول LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>حد وقت الاتصال</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>تسجيل الدخول لغير &lt;tt&gt;root&lt;/tt&gt; المستخدمين</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>كلمة المرور للمستخدمين غير &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>قم بتسجيل الدخول لمستخدم &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>كلمة المرور لمستخدم &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>تمامًا مثل غير الجذر &lt;tt&gt;&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>مجهول</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>هل تريد استخدام الاتصال المشفر؟</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>نعم ، باستخدام TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>التحقق من شهادة LDAP SSL؟</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>افتراضي (عادةً$1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>ملف شهادة المرجع المصدق (CA)</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>خوادم LDAP</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>اسم المضيف</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>رقم المنفذ</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>بروتوكول</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>اساسي</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>مقبس يونكس</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>فشل حفظ تكوين خادم LDAP</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>إن '$1' ليس اسم مضيف صالح</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>لم يتم إدخال خوادم LDAP</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>منفذ خادم LDAP مفقود أو غير صالح</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>تسجيل الدخول مفقود للمستخدمين غير &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>كلمة مرور مفقودة للمستخدمين غير &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>تسجيل دخول مفقود لمستخدم &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>كلمة مرور مفقودة لمستخدم &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>حد وقت الاتصال مفقود أو غير صالح</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>ملف شهادة CA مفقود أو غير صالح</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>منفذ مفقود أو غير صالح للملقم$1</value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>لم يتم إدخال خوادم LDAP</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>قواعد بحث LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>مواقع بحث دليل LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>قاعدة البحث العالمية</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>عمق البحث</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>الشجرة الفرعية بالكامل</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>مستوى واحد</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>القاعدة فقط</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>قاعدة لمستخدمي يونكس</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>قاعدة لكلمات مرور يونكس</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>قاعدة لمجموعات يونكس</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>قاعدة لأسماء المضيفين</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>قاعدة لخدمات الشبكة</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>قاعدة لأسماء الشبكة</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>قاعدة للبروتوكولات</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>قاعدة لأسماء قناع الشبكة</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>قاعدة للأسماء المستعارة للبريد الإلكتروني</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>قاعدة لمجموعات الشبكة</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>عمق البحث</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>تصفية البحث</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>حد البحث الزمني</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>ثواني</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>القاعدة العالمية</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>فشل حفظ قواعد بحث LDAP</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>قاعدة البحث العالمية مفقودة</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>قاعدة مفقودة لمستخدمي Unix</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>قاعدة مفقودة لكلمات مرور Unix</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>قاعدة مفقودة لمجموعات يونكس</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>قاعدة مفقودة لأسماء المضيفين</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>قاعدة مفقودة لخدمات الشبكة</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>قاعدة مفقودة لأسماء الشبكة</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>قاعدة مفقودة للبروتوكولات</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>قاعدة مفقودة لأسماء قناع الشبكة</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>قاعدة مفقودة للأسماء المستعارة للبريد الإلكتروني</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>قاعدة مفقودة لمجموعات netgroups</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>حد وقت البحث مفقود أو غير صالح</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>خيارات المصادقة</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>مصادقة PAM وإعدادات كلمة المرور</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>مرشح LDAP إضافي</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>سمة LDAP لاسم المستخدم</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>مجموعة LDAP لفرض عضوية</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>سمة LDAP لأعضاء المجموعة</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>طريقة تخزين كلمة المرور</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>نص واضح</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>تشفير Unix</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>تشفير MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>خدمات دليل Novell</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>الدليل النشط</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>تغيير كلمة مرور OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>تجاهل</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات المصادقة</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>عامل تصفية LDAP إضافي مفقود</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>سمة LDAP مفقودة أو غير صالحة لاسم المستخدم</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>مجموعة LDAP مفقودة لفرض عضوية</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>سمة LDAP مفقودة أو غير صالحة لأعضاء المجموعة</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>الخدمات باستخدام LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>الخدمات</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>مصادر البيانات</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>الخدمات باستخدام LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>لم يتم تثبيت الوحدة النمطية$1 Perl اللازمة للتحدث إلى خادم LDAP.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>لم يتم العثور على ملف تكوين عميل LDAP $1 على نظامك</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>فشل الاتصال بخادم LDAP $1 المنفذ$2</value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>فشل الاتصال بخادم LDAP $1 المنفذ $2 : $3 </value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>فشل الارتباط بخادم LDAP $1 كـ $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>مجهول</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>تعذر تحليل URI لملقم LDAP$1</value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>فشل التبديل إلى وضع TLS :$1</value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>متصفح LDAP</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>لا يمكن استخدام مستعرض LDAP :$1</value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>التصفح:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>تبين</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>فشل البحث عن LDAP :$1</value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>كائنات تابعة</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>سمات الكائن</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>تصفح الوالد</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>حسنا</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>شيكل +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>شيكل</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>الملفات</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>خدمات أمن النظام</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>ملفات DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>شيكل وملفات</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Hesiod</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>طابعات المستخدم</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>DNS الإرسال المتعدد</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>DNS الإرسال المتعدد (الحد الأدنى)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>الأسماء المستعارة لـ Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>الأسماء المستعارة لـ Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>عناوين المضيف</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>مجموعات يونكس</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>مستخدمو Unix</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>عناوين إيثرنت</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>المنزل الآلي</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>خرائط Automounter</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>المنزل الآلي</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>خرائط Automounter</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter المحلية</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>المنزل الآلي</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>خرائط Automounter</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter المحلية</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>خرائط Automounter</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetIDs</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>عناوين الشبكة</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>بروتوكولات الشبكة</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>برامج RPC</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>خدمات الشبكة</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>متغيرات Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>المفاتيح العامة</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>المفاتيح العامة</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>معلمات التمهيد</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>كلمات مرور الظل يونكس</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>كلمات مرور مجموعة يونكس</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>نتماسكس</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>طابعات</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>معلومات المستخدم الإضافية</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>طابعات</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>عقد IP</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>المناطق الزمنية</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>لغات</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>تحرير الخدمة</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>الخدمة غير موجودة!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>تفاصيل الخدمة</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>اسم الخدمة</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>مصدر البيانات الأول</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>مصدر البيانات الثاني</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>مصدر البيانات الثالث</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>مصدر البيانات الرابع</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>مصدر البيانات الخامس</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>مصدر البيانات$1</value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>على النجاح</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>إذا لم يتم العثور عليها</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>إن لم تكن متاحة</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>غير متاح مؤقتا</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>نتيجة الإرجاع</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>تابع البحث</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>فشل في حفظ الخدمة</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>لم يتم تحديد مصادر!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>تعديل تكوين خادم LDAP</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>تعديل قواعد بحث LDAP</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>خيارات المصادقة المعدلة</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>تم تغيير الخدمة$1</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>تفعيل البرنامج الخفي لعميل LDAP في وقت التمهيد</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>البرنامج الخفي لبرنامج LDAP معطل في وقت التمهيد</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>بدأ البرنامج الخفي لبرنامج LDAP</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>توقف البرنامج الخفي لبرنامج LDAP</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>البرنامج الخفي لبرنامج LDAP المعاد تشغيله</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>التحقق من تكوين LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>جارٍ البحث عن قاعدة LDAP للمستخدمين ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. لا يوجد أساس في تكوين العميل!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. عثر على القاعدة$1.</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>جارٍ الاتصال بخادم LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. فشل الاتصال :$1</value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. متصل بـ$1</value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>جاري البحث عن المستخدمين ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. فشل البحث :$1</value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. لم يتم العثور على مستخدمين تحت القاعدة$1.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. وجد$1 من المستخدمين.</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>جارٍ التحقق من خدمة &lt;b&gt;مستخدمي Unix&lt;/b&gt;.</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. تم إعداد الخدمة للاستعلام عن LDAP.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. لم يتم إعداد الخدمة لاستخدام LDAP.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>جارٍ البحث عن مستخدم Unix $1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. المستخدم غير موجود.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>تم العثور على المستخدم بنجاح.</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>تمت تهيئة نظامك بنجاح كبرنامج LDAP!</value>
+  </data>
+</root>

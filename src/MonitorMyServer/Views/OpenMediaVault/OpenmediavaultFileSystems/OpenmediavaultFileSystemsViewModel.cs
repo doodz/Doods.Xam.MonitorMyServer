@@ -18,8 +18,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 {
     internal class OpenmediavaultFileSystemsViewModel : ViewModelWhithState
     {
-        private readonly IOmvService _sshService;
         private readonly IMessageBoxService _messageBoxService;
+        private readonly IOmvService _sshService;
+
         public OpenmediavaultFileSystemsViewModel(IOmvService sshService, IMessageBoxService messageBoxService)
         {
             _sshService = sshService;
@@ -56,7 +57,6 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
         private async void UmountFileSystem(object o)
         {
-            
             if (o is OmvFilesystems filesystem)
                 await ViewModelStateItem.RunActionAsync(async () =>
                     {
@@ -76,7 +76,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems
 
         private async void DeleteFileSystem(object o)
         {
-            if(!await _messageBoxService.ShowAction(openmediavault.DeleteFileSystem, openmediavault.DoYouReallyWantToDeleteTheFileSystem_AllDataWillBeLost_,null))
+            if (!await _messageBoxService.ShowAction(openmediavault.DeleteFileSystem,
+                openmediavault.DoYouReallyWantToDeleteTheFileSystem_AllDataWillBeLost_))
                 return;
 
             if (o is OmvFilesystems filesystem)

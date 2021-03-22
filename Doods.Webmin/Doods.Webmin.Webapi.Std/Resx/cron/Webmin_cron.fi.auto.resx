@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Aikataulutetut Cron-työpaikat</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>käyttäjä</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Aktiivinen?</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Komento</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Juokse toisinaan</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Tässä järjestelmässä ei ole cron-töitä.</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Ei ole cron-töitä, joihin sinulla on pääsy.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>Sinulla ei ole vielä cron-töitä.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Luo uusi ajoitettu cron-työ.</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Luo uusi ympäristömuuttuja.</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Hallitse käyttäjän pääsyä cron-töihin.</value>
+  </data>
+  <data name="index_manual" xml:space="preserve">
+    <value>Muokkaa cron-töitä manuaalisesti.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>cron-luettelo</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Ympäristömuuttuja</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Liikkua</value>
+  </data>
+  <data name="index_next" xml:space="preserve">
+    <value>Seuraava ajo</value>
+  </data>
+  <data name="index_nunknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>Käynnissä?</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Komentoa $1 käyttäjän Cron-kokoonpanojen hallitsemiseksi ei löytynyt. Ehkä Cronia ei ole asennettu tähän järjestelmään?</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>Tiedostoa $1, joka sisältää Cron-työt, ei ole. Ehkä Cronia ei ole asennettu tähän järjestelmään?</value>
+  </data>
+  <data name="index_ecrondir" xml:space="preserve">
+    <value>Cron-töiden hakemistoa $1 ei ole. Ehkä moduulin kokoonpano on väärä tai Cronia ei ole asennettu?</value>
+  </data>
+  <data name="index_ecrondir_create" xml:space="preserve">
+    <value>Yritätkö luoda työhakemistoa $1 ?</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Poista valitut työt</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Poista valitut työt käytöstä</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Ota valitut työt käyttöön</value>
+  </data>
+  <data name="index_esearch" xml:space="preserve">
+    <value>Yksikään työ ei vastannut hakutulosta $1.</value>
+  </data>
+  <data name="index_toomany2" xml:space="preserve">
+    <value>Työpaikkoja on liian paljon näytettäväksi. Rajoita luetteloa yllä olevan hakulomakkeen avulla.</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Etsi sopivia Cron-töitä</value>
+  </data>
+  <data name="index_ok" xml:space="preserve">
+    <value>Hae</value>
+  </data>
+  <data name="index_searchres" xml:space="preserve">
+    <value>Cron-työt, jotka vastaavat $1 ..</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Nollaa haku.</value>
+  </data>
+  <data name="index_econfigcheck" xml:space="preserve">
+    <value>Cron-töitä ei voida hallita järjestelmässäsi, koska moduulin kokoonpano ei ole kelvollinen : $1 </value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Muokkaa Cron Job</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Luo Cron Job</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Et voi muokata tämän käyttäjän cron-töitä</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Työn yksityiskohdat</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Suorita cron-tehtävä as</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Aktiivinen?</value>
+  </data>
+  <data name="edit_next" xml:space="preserve">
+    <value>Seuraava ajoaika</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>komennot</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Komento</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Kuvaus</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Tulo komentoon</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Milloin suorittaa</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Suoritusajanjakso</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>Pöytäkirja</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>tuntia</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>päivää</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>Kuukaudet</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Arkisin</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Kaikki</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Valittu ..</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Juokse nyt</value>
+  </data>
+  <data name="edit_saverun" xml:space="preserve">
+    <value>Tallenna ja suorita nyt</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klooni Job</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>cron työ</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Huomaa: Ctrl-napsauttamalla (tai komento-napsauttamalla Macilla) valitaksesi ja poistaaksesi minuutit, tunnit, päivät ja kuukaudet.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Yksinkertainen aikataulu ..</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Alla valitut ajat ja päivämäärät ..</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>tunti-</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Päivittäin (keskiyöllä)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Viikoittain (sunnuntaina)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Kuukausittain (1. päivä)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Vuosittain (1. tammikuuta)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>Kun järjestelmä käynnistyy</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>tunti-</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>päivittäin (keskiyöllä)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>viikoittain (sunnuntaina)</value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>kuukausittain (1. päivä)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>vuosittain (1. tammikuuta)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>kun järjestelmä käynnistyy</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Cron-työn tallentaminen epäonnistui</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>Et ole antanut komentoa suorittaaksesi</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Sinun on valittava käyttäjä</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>Käyttäjää '$1' ei ole</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Käyttäjä '$1' ei saa käyttää cronia</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>Et voi luoda tai muokata cron-töitä kohteelle '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>Et valinnut suoritettavaksi $1 </value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>Et voi luoda cron-töitä</value>
+  </data>
+  <data name="save_eidx" xml:space="preserve">
+    <value>Cron-työ tallennettiin onnistuneesti, mutta sitä ei voi suorittaa, koska sitä ei löytynyt!</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Hallitse Cron-pääsyä</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Tämän lomakkeen avulla voit hallita, mitkä käyttäjät voivat luoda ja suorittaa cron-töitä.</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>Et voi hallita käyttäjän pääsyä croniin</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Estä kaikki käyttäjät</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Estä kaikki käyttäjät paitsi root</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Salli kaikki käyttäjät</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Salli vain luetellut käyttäjät</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Estä vain luetellut käyttäjät</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Muokkaa ympäristömuuttujaa</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Luo ympäristömuuttuja</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Muuttujan nimi</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Arvo</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>Käyttäjälle</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Aktiivinen?</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Ympäristömuuttujien yksityiskohdat</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>Ympäristömuuttujan tallentaminen epäonnistui</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>Puuttuva tai virheellinen muuttujan nimi</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Huomaa - Tämä ympäristömuuttuja-asetus koskee vain Cron-töitä vain sen jälkeen, kun se on moduulin pääsivun työluettelossa.</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Lisää ympäristömuuttuja</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Siirrä ympäristömuuttuja</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Ennen kaikkia Cron-töitä käyttäjälle</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Loppujen lopuksi Cron työpaikkoja</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Nykyinen sijainti</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Suorita Cron Job</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>Sinulla ei ole oikeutta suorittaa cron-töitä tälle käyttäjälle</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>Tulos komennosta $1 ..</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>Suoritetaan komento $1 taustaprosessina.</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Tulostusta ei generoitu</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Voi muokata cron-töitä</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Kaikki käyttäjät</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>Nykyinen webmin-käyttäjä</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Vain käyttäjät</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Kaikki paitsi käyttäjät</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Voiko hallita käyttäjän pääsyä Croniin?</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Voiko katsella ja muokata Cron-komentoja?</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Käyttäjät, joiden UID on kantaman sisällä</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Ensisijaisen ryhmän käyttäjät</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Voiko luoda Cron-työpaikkoja?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Voiko Cron-töitä poistaa?</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Voiko Cron siirtää työpaikkoja?</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Voiko lopettaa Cronin työpaikat?</value>
+  </data>
+  <data name="acl_hourly" xml:space="preserve">
+    <value>Rajoita työpaikkoja korkeintaan tunti?</value>
+  </data>
+  <data name="acl_hourlydef" xml:space="preserve">
+    <value>Kuten moduulin kokoonpanossa asetettu</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Muokattu Cron-työ $1 : lle</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Muokattu Cron-työ "$2" $1 : lle</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Luonut Cron-työn $1 : lle</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Luonut Cron-työn "$2" $1 : lle</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Poistettu Cron-työ $1 : lle</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Suoritettu Cron-tehtävä kuin $1 </value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Suorita Cron-tehtävä "$2" muodossa $1 </value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Lopettanut Cron-työn $1 : lle</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>Lopetettu Cron-työ "$2" $1 : lle</value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>Cron-käyttäjän käyttöoikeudet muuttuivat</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>Luotu ympäristömuuttuja $1 : lle</value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>Muokattu ympäristömuuttuja $1 : lle</value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>Poistettu ympäristömuuttuja kohdasta $1 </value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Siirrettiin Cron-työpaikka $1 : lle</value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>Poistettu $1 Cron työpaikat</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>Vammaiset $1 Cron -työt</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>Käytössä $1 Cron -työt</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>Uudessa Cron-kokoonpanossa havaittiin virhe: $1 $2 </value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>joka minuutti</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>joka tunti kohdalla $1 tunnin jälkeen</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>joka päivä pisteellä $2:$1 </value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>päivänä $3 joka kuukausi kohdalla $2:$1 </value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>jokainen $3 kohdasta $2:$1 </value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>cron-hetkellä $1 </value>
+  </data>
+  <data name="when_interval" xml:space="preserve">
+    <value>välein $1 sekuntia</value>
+  </data>
+  <data name="when_boot" xml:space="preserve">
+    <value>käynnistyksen yhteydessä</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Joka minuutti</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Joka tunti kohdalla $1 tunnin jälkeen</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Joka päivä pisteellä $2:$1 </value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>Päivänä $3 joka kuukausi kohdalla $2:$1 </value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Jokainen $3 kohdasta $2:$1 </value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>Cron-hetkellä $1 </value>
+  </data>
+  <data name="ucwhen_interval" xml:space="preserve">
+    <value>Jokaisen $1 sekunnin välein</value>
+  </data>
+  <data name="ucwhen_boot" xml:space="preserve">
+    <value>Käynnistyksen yhteydessä</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>Cron-työn siirtäminen epäonnistui</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Tätä työtä ei voi siirtää</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Cron-työn lopettaminen epäonnistui</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Sinulla ei ole oikeutta irtisanoa tätä työtä</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Ei enää juokse</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>Tappio epäonnistui : $1 </value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Lopeta Cron Job</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Haluatko varmasti lopettaa prosessin $1 PID $2 : lla?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Haluatko varmasti lopettaa prosessin $1 PID $2 : lla, ja kaikki sen aliprosessit?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Kyllä, lopeta se</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Suorita milloin tahansa</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Aja vain $1 : ltä</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>kohteeseen $1 </value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Puuttuva tai virheellinen aloituspäivämäärä ajoalueella</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Puuttuva tai virheellinen päättymispäivä aikavälillä</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Cron-töiden poistaminen epäonnistui</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Mitään ei ole valittu</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>Muokkaa Cron-töitä manuaalisesti</value>
+  </data>
+  <data name="manual_edit" xml:space="preserve">
+    <value>Muokattava Cron-tiedosto:</value>
+  </data>
+  <data name="manual_ok" xml:space="preserve">
+    <value>Muokata</value>
+  </data>
+  <data name="manual_editing" xml:space="preserve">
+    <value>Käytä alla olevaa tekstikenttää muokataksesi Cron-töitä $1 : ssä. Ole varovainen, koska Webmin ei tee validointia!</value>
+  </data>
+  <data name="manual_efile" xml:space="preserve">
+    <value>Valittu tiedosto ei kelpaa!</value>
+  </data>
+  <data name="manual_ecannot" xml:space="preserve">
+    <value>Et voi muokata cron-töitä manuaalisesti</value>
+  </data>
+</root>

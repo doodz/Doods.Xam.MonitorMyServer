@@ -1,10 +1,11 @@
-﻿using Android.Util;
+﻿using System;
+using Android.Util;
 using NLog;
-using System;
+using ILogger = Doods.Framework.Std.ILogger;
 
 namespace Doods.Xam.MonitorMyServer.Droid.Services
 {
-    public class Logger : Framework.Std.ILogger
+    public class Logger : ILogger
     {
         private const string ProjectName = "MonitorMyServer";
 
@@ -12,8 +13,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
 
         public Logger()
         {
-           
-           _log = LogManager.GetCurrentClassLogger();
+            _log = LogManager.GetCurrentClassLogger();
         }
 
         public void Debug(string msg)
@@ -22,7 +22,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
             Log.Debug(ProjectName, msg);
         }
 
-       
+
         public void Error(Exception e)
         {
             _log?.Error(e);
@@ -35,7 +35,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
             Log.Error(ProjectName, msg);
         }
 
-        
+
         public void Info(string msg)
         {
             _log?.Info(msg);

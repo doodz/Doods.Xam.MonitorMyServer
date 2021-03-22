@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Webmin-inställningar</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>webmin-inställningar</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>IP-åtkomstkontroll</value>
+  </data>
+  <data name="access_desc" xml:space="preserve">
+    <value>Webmin-servern kan ställas in att neka eller tillåta åtkomst från vissa IP-adresser i detta formulär. Datornamn (t ex foo.bar.com) och IP-nätverk (t ex 10.254.3.0 eller 10.254.1.0/255.255.255.128 eller 2001:DB8::A0BC:0001 eller 2001:DB8::/32) kan också anges. Tillgängligheten bör begränsas till adresser du litar på, speciellt om servern går att komma åt från Internet. Om du inte gör detta kommer vem som helst som lyckas gissa sig till ditt lösenord att komma åt hela ditt system.</value>
+  </data>
+  <data name="access_ip" xml:space="preserve">
+    <value>Tillåtna IP adresser</value>
+  </data>
+  <data name="access_local" xml:space="preserve">
+    <value>Inkludera lokalt nätverk i listan</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Åtkomstkontroll</value>
+  </data>
+  <data name="access_all" xml:space="preserve">
+    <value>Tillåt från alla adresser</value>
+  </data>
+  <data name="access_allow" xml:space="preserve">
+    <value>Tillåt endast från följande adresser</value>
+  </data>
+  <data name="access_deny" xml:space="preserve">
+    <value>Neka följande adresser</value>
+  </data>
+  <data name="access_err" xml:space="preserve">
+    <value>Det gick inte att uppdatera åtkomstlistan</value>
+  </data>
+  <data name="access_enone" xml:space="preserve">
+    <value>Du har inte angivit någon adress</value>
+  </data>
+  <data name="access_enet" xml:space="preserve">
+    <value>'$1' är inte en giltig nätverksadress</value>
+  </data>
+  <data name="access_emask" xml:space="preserve">
+    <value>'$1' är inte en giltig nätmask</value>
+  </data>
+  <data name="access_ecidr" xml:space="preserve">
+    <value>'$1' är inte ett giltigt CIDR nummer</value>
+  </data>
+  <data name="access_eip" xml:space="preserve">
+    <value>'$1' är inte en fullständig IP- eller nätverksadress</value>
+  </data>
+  <data name="access_eip6" xml:space="preserve">
+    <value>'$1' är inte en komplett IPv6 eller nätverksadress</value>
+  </data>
+  <data name="access_eself" xml:space="preserve">
+    <value>Din nuvarande IP-adress ($1) nekas med dessa inställningar</value>
+  </data>
+  <data name="bind_title" xml:space="preserve">
+    <value>Port och adress</value>
+  </data>
+  <data name="bind_header" xml:space="preserve">
+    <value>IP-adress och port</value>
+  </data>
+  <data name="bind_err" xml:space="preserve">
+    <value>Det gick inte att ändra adress</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>Loggning</value>
+  </data>
+  <data name="log_desc" xml:space="preserve">
+    <value>Webmin kan ställas in att logga webserverträffar, i standardloggformatet CLF. Om loggningen är aktiverad kan du också välja att logga IP-adresser eller datornamn och ställa in hur ofta loggfilen ska rensas. Loggarna skrivs till fil $1.</value>
+  </data>
+  <data name="log_desc2" xml:space="preserve">
+    <value>När loggningen är aktiverad kommer Webmin också att logga användarnas aktivitet mer utförligt i filen $1. Denna logg kan man sedan titta på och analysera med modulen Loggning av Webmin-aktivitet för att se exakt vad varje Webmin-användare har gjort.</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Webserverloggning</value>
+  </data>
+  <data name="log_disable" xml:space="preserve">
+    <value>Deaktivera loggning</value>
+  </data>
+  <data name="log_enable" xml:space="preserve">
+    <value>Aktivera loggning</value>
+  </data>
+  <data name="log_resolv" xml:space="preserve">
+    <value>Logga uppslagna datornamn</value>
+  </data>
+  <data name="log_uall" xml:space="preserve">
+    <value>Logga alla användares aktivitet</value>
+  </data>
+  <data name="log_users" xml:space="preserve">
+    <value>Logga endast aktivitet från ...</value>
+  </data>
+  <data name="log_mall" xml:space="preserve">
+    <value>Logga aktivitet i alla moduler</value>
+  </data>
+  <data name="log_modules" xml:space="preserve">
+    <value>Logga endast aktivitet i ...</value>
+  </data>
+  <data name="log_files" xml:space="preserve">
+    <value>Logga direkt till fil för varje aktivitet</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Det gick inte att spara logginställningarna</value>
+  </data>
+  <data name="log_ehours" xml:space="preserve">
+    <value>'$1' är inte ett giltigt timantal</value>
+  </data>
+  <data name="log_ediff" xml:space="preserve">
+    <value>Ditt system har inte kommandot $1, som behövs för att logga filändringar</value>
+  </data>
+  <data name="proxy_title" xml:space="preserve">
+    <value>Proxyservrar</value>
+  </data>
+  <data name="proxy_desc" xml:space="preserve">
+    <value>Om datorn som Webmin körs på finns bakom en brandvägg kan du behöva definiera en proxyserver så att web- och FTP-areor blir tillgängliga. Vissa moduler, t ex &lt;tt&gt;Programpaket&lt;/tt&gt;, kommer att använda dessa proxies när de hämtar filer och program.</value>
+  </data>
+  <data name="proxy_header" xml:space="preserve">
+    <value>Proxyservrar</value>
+  </data>
+  <data name="proxy_http" xml:space="preserve">
+    <value>HTTP-proxy</value>
+  </data>
+  <data name="proxy_ftp" xml:space="preserve">
+    <value>FTP-proxy</value>
+  </data>
+  <data name="proxy_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="proxy_nofor" xml:space="preserve">
+    <value>Ingen proxy för</value>
+  </data>
+  <data name="proxy_err" xml:space="preserve">
+    <value>Det gick inte att spara proxies</value>
+  </data>
+  <data name="ui_title" xml:space="preserve">
+    <value>Användarinställningar</value>
+  </data>
+  <data name="ui_desc" xml:space="preserve">
+    <value>I detta formulär kan du göra inställningar som ska gälla för alla moduler. Färger måste anges på vanlig RGB-form, där varje värde är ett hexadecimalt tal mellan 00 och ff.</value>
+  </data>
+  <data name="ui_header" xml:space="preserve">
+    <value>Användarinställningar</value>
+  </data>
+  <data name="ui_default" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="cs_page" xml:space="preserve">
+    <value>Bakgrund för sidor</value>
+  </data>
+  <data name="cs_text" xml:space="preserve">
+    <value>Normal text</value>
+  </data>
+  <data name="cs_table" xml:space="preserve">
+    <value>Bakgrund för tabeller</value>
+  </data>
+  <data name="cs_header" xml:space="preserve">
+    <value>Tabellrubrik</value>
+  </data>
+  <data name="cs_link" xml:space="preserve">
+    <value>Länktext</value>
+  </data>
+  <data name="ui_texttitles" xml:space="preserve">
+    <value>Visa rubriker som text?</value>
+  </data>
+  <data name="ui_sysinfo" xml:space="preserve">
+    <value>Visa inloggnings- och datornamn</value>
+  </data>
+  <data name="ui_sysinfo0" xml:space="preserve">
+    <value>Längst ned i webbläsaren</value>
+  </data>
+  <data name="ui_sysinfo1" xml:space="preserve">
+    <value>I läsarens titel</value>
+  </data>
+  <data name="ui_sysinfo2" xml:space="preserve">
+    <value>Ovanför sidhuvudet</value>
+  </data>
+  <data name="ui_err" xml:space="preserve">
+    <value>Det gick inte att spara färger</value>
+  </data>
+  <data name="mods_title" xml:space="preserve">
+    <value>Webmin-moduler</value>
+  </data>
+  <data name="mods_desc1" xml:space="preserve">
+    <value>Genom att använda formuläret till höger kan du lägga till Webmin-moduler efter installationen. Moduler kommer vanligen som &lt;tt&gt;.wbm&lt;/tt&gt;-filer, där en fil kan innehålla en eller flera moduler. Det går också att installera moduler från RPM-filer om detta stöds av ditt operativsystem.</value>
+  </data>
+  <data name="mods_install" xml:space="preserve">
+    <value>Installera modul</value>
+  </data>
+  <data name="mods_local" xml:space="preserve">
+    <value>Från lokal fil</value>
+  </data>
+  <data name="mods_uploaded" xml:space="preserve">
+    <value>Från nedladdad fil</value>
+  </data>
+  <data name="mods_ftp" xml:space="preserve">
+    <value>Från FTP- eller HTTP-URL</value>
+  </data>
+  <data name="mods_installok" xml:space="preserve">
+    <value>Installera modul från fil</value>
+  </data>
+  <data name="mods_desc2" xml:space="preserve">
+    <value>Om du vill ha mer än en kopia av samma modul, fast med olika inställningar, kan du använda formuläret till höger för att klona befintliga moduler. Klonen får ett nytt namn, nya modulinställningar, nya åtkomstinställningar och kan göras tillgänglig för andra användare.</value>
+  </data>
+  <data name="mods_clone" xml:space="preserve">
+    <value>Klona modul</value>
+  </data>
+  <data name="mods_cname" xml:space="preserve">
+    <value>Modul att klona</value>
+  </data>
+  <data name="mods_cnew" xml:space="preserve">
+    <value>Namn på klonen</value>
+  </data>
+  <data name="mods_cloneok" xml:space="preserve">
+    <value>Klona modul</value>
+  </data>
+  <data name="mods_desc3" xml:space="preserve">
+    <value>Genom att använda formuläret nedan kan du ta bort befintliga moduler och kloner. Om en klonad modul tas bort, kommer också alla dess kloner att raderas. Om en modul har tagits bort måste du installera om den innan den kan användas igen. En modul kan inte tas bort om andra befintliga moduler är beroende av den.</value>
+  </data>
+  <data name="mods_delete" xml:space="preserve">
+    <value>Ta bort moduler</value>
+  </data>
+  <data name="mods_deleteok" xml:space="preserve">
+    <value>Ta bort angivna moduler</value>
+  </data>
+  <data name="install_err1" xml:space="preserve">
+    <value>Det gick inte att installera modulen från $1</value>
+  </data>
+  <data name="install_efile" xml:space="preserve">
+    <value>Filen finns inte</value>
+  </data>
+  <data name="install_err2" xml:space="preserve">
+    <value>Det gick inte att installera den nedladdade modulen</value>
+  </data>
+  <data name="install_ebrowser" xml:space="preserve">
+    <value>Din browser stödjer inte filnedladdning</value>
+  </data>
+  <data name="install_err3" xml:space="preserve">
+    <value>Det gick inte att installera modulen från $1</value>
+  </data>
+  <data name="install_eurl" xml:space="preserve">
+    <value>Ogiltig URL</value>
+  </data>
+  <data name="install_etar" xml:space="preserve">
+    <value>Ogiltig modulfil: $1</value>
+  </data>
+  <data name="install_einfo" xml:space="preserve">
+    <value>Modul $1 saknar module.info-fil</value>
+  </data>
+  <data name="install_enone" xml:space="preserve">
+    <value>Filen verkar inte innehålla någon modul</value>
+  </data>
+  <data name="install_eos" xml:space="preserve">
+    <value>Modul $1 stödjer inte detta operativsystem ($2 $3)</value>
+  </data>
+  <data name="install_ever" xml:space="preserve">
+    <value>Modul $1 går endast att köra i Webmin version $2 eller högre</value>
+  </data>
+  <data name="install_edep" xml:space="preserve">
+    <value>Modul $1 behöver modul $2</value>
+  </data>
+  <data name="install_eextract" xml:space="preserve">
+    <value>Det gick inte att packa upp modulen: $1</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Installera modul</value>
+  </data>
+  <data name="install_desc" xml:space="preserve">
+    <value>Följande moduler har installerats och lagts till din åtkomstkontrollista:</value>
+  </data>
+  <data name="install_ecomp" xml:space="preserve">
+    <value>Filen är komprimerad, men kommandot $1 finns inte i systemet</value>
+  </data>
+  <data name="install_ecomp2" xml:space="preserve">
+    <value>Det gick inte att packa upp filen: $1</value>
+  </data>
+  <data name="install_egzip" xml:space="preserve">
+    <value>Filen är gzippad, men kommandot $1 finns inte i systemet</value>
+  </data>
+  <data name="install_egzip2" xml:space="preserve">
+    <value>Det gick inte att gunzippa filen: $1</value>
+  </data>
+  <data name="install_erpm" xml:space="preserve">
+    <value>Detta är inte en RPM-modul för Webmin</value>
+  </data>
+  <data name="install_eirpm" xml:space="preserve">
+    <value>RPM-installationen misslyckades :$1</value>
+  </data>
+  <data name="clone_err" xml:space="preserve">
+    <value>Det gick inte att klona modul</value>
+  </data>
+  <data name="clone_elink" xml:space="preserve">
+    <value>symbolisk länkning misslyckades: $1</value>
+  </data>
+  <data name="clone_ecopy" xml:space="preserve">
+    <value>Det gick inte att kopiera inställningar: $1</value>
+  </data>
+  <data name="clone_desc" xml:space="preserve">
+    <value>Klon av $1</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Det gick inte att ta bort moduler</value>
+  </data>
+  <data name="delete_edep" xml:space="preserve">
+    <value>Modul $1 får inte tas bort eftersom modul $2 är beroende av den</value>
+  </data>
+  <data name="delete_desc1" xml:space="preserve">
+    <value>$1 (Klon av $2)</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Ta bort moduler</value>
+  </data>
+  <data name="delete_msg" xml:space="preserve">
+    <value>Följande moduler har tagits bort från din Webmin-installation:</value>
+  </data>
+  <data name="os_title" xml:space="preserve">
+    <value>Operativsystem</value>
+  </data>
+  <data name="os_desc2" xml:space="preserve">
+    <value>Här kan du också ändra de sökvägar som Webmin ska använda sig av vid körning av program och sökvägar till den delade katalog som skickas till varje program.</value>
+  </data>
+  <data name="os_header" xml:space="preserve">
+    <value>Operativsystem</value>
+  </data>
+  <data name="os_new" xml:space="preserve">
+    <value>Nytt operativsystem</value>
+  </data>
+  <data name="os_path" xml:space="preserve">
+    <value>Programsökväg</value>
+  </data>
+  <data name="os_ld_path" xml:space="preserve">
+    <value>Katalogsökväg</value>
+  </data>
+  <data name="lang_title" xml:space="preserve">
+    <value>Språkval</value>
+  </data>
+  <data name="lang_title2" xml:space="preserve">
+    <value>Språk i Webmin</value>
+  </data>
+  <data name="lang_lang" xml:space="preserve">
+    <value>Använd språk</value>
+  </data>
+  <data name="lang_intro" xml:space="preserve">
+    <value>På denna sida kan du välja vilket språk Webmin ska använda i sina textmeddelanden</value>
+  </data>
+  <data name="lang_ok" xml:space="preserve">
+    <value>Byt språk</value>
+  </data>
+  <data name="ssl_title" xml:space="preserve">
+    <value>SSL-kryptering</value>
+  </data>
+  <data name="ssl_desc1" xml:space="preserve">
+    <value>Datorn som Webmin körs på verkar ha SSLeay Perl-modulen installerad. Med hjälp av den kan Webmin stödja SSL-krypterad kommunikation mellan din browser och servern. Om du kopplar upp dig mot Webmin-servern via Internet, bör du definitivt använda SSL för att undvika att någon annan kan få tag på ditt Webmin-lösenord.</value>
+  </data>
+  <data name="ssl_desc2" xml:space="preserve">
+    <value>Varning! Slå endast på SSL-stöd om din browser stödjer SSL (t ex Netscape eller IE) och om det inte finns någon brandvägg som spärrar &lt;b&gt;https&lt;/b&gt;-förfrågningar mellan din browser och Webmin-datorn.</value>
+  </data>
+  <data name="ssl_header" xml:space="preserve">
+    <value>SSL-stöd</value>
+  </data>
+  <data name="startpage_title" xml:space="preserve">
+    <value>Inställningar för indexsida</value>
+  </data>
+  <data name="startpage_tabs" xml:space="preserve">
+    <value>Kategorisera moduler?</value>
+  </data>
+  <data name="startpage_nocol" xml:space="preserve">
+    <value>Antal kolumner</value>
+  </data>
+  <data name="startpage_alt" xml:space="preserve">
+    <value>Använd alternativ rubrik</value>
+  </data>
+  <data name="startpage_ecols" xml:space="preserve">
+    <value>'$1' är inte ett giltigt antal kolumner</value>
+  </data>
+  <data name="startpage_gotoone" xml:space="preserve">
+    <value>Gå direkt till modul&lt;br&gt;om användaren endast har en?</value>
+  </data>
+  <data name="startpage_deftab" xml:space="preserve">
+    <value>Standardkategori</value>
+  </data>
+  <data name="upgrade_title" xml:space="preserve">
+    <value>Uppgradera Webmin</value>
+  </data>
+  <data name="upgrade_local" xml:space="preserve">
+    <value>Från lokal fil</value>
+  </data>
+  <data name="upgrade_uploaded" xml:space="preserve">
+    <value>Från uppladdad fil</value>
+  </data>
+  <data name="upgrade_ftp" xml:space="preserve">
+    <value>Senaste versionen från www.webmin.com</value>
+  </data>
+  <data name="upgrade_cup" xml:space="preserve">
+    <value>Senaste versionen från Calderas &lt;tt&gt;cupdate&lt;/tt&gt;-verktyg</value>
+  </data>
+  <data name="upgrade_ok" xml:space="preserve">
+    <value>Upgpradera Webmin</value>
+  </data>
+  <data name="upgrade_err1" xml:space="preserve">
+    <value>Det gick inte att uppgradera från $1</value>
+  </data>
+  <data name="upgrade_err2" xml:space="preserve">
+    <value>Det gick inte att uppgradera från uppladdad fil</value>
+  </data>
+  <data name="upgrade_err3" xml:space="preserve">
+    <value>Det gick inte att uppgradera från www.webmin.com</value>
+  </data>
+  <data name="upgrade_efile" xml:space="preserve">
+    <value>Filen finns inte</value>
+  </data>
+  <data name="upgrade_ebrowser" xml:space="preserve">
+    <value>Din browser stödjer inte nedladdning av filer</value>
+  </data>
+  <data name="upgrade_eversion" xml:space="preserve">
+    <value>Det går inte att nedgradera till version $1</value>
+  </data>
+  <data name="upgrade_erpm" xml:space="preserve">
+    <value>Det är inte en giltig Webmin-RPM-fil</value>
+  </data>
+  <data name="upgrade_egunzip" xml:space="preserve">
+    <value>Systemet saknar kommandot &lt;tt&gt;gunzip&lt;/tt&gt;</value>
+  </data>
+  <data name="upgrade_etar" xml:space="preserve">
+    <value>Det är inte en giltig Webmin-tar-fil</value>
+  </data>
+  <data name="upgrade_setup" xml:space="preserve">
+    <value>Kör setup.sh-script för att uppgradera Webmin ... Vänta en minut på att det ska bli färdigt innan du fortsätter.</value>
+  </data>
+  <data name="upgrade_setuprpm" xml:space="preserve">
+    <value>Kör RPM för att uppgradera Webmin ... Vänta en minut på att det ska bli färdigt innan du fortsätter.</value>
+  </data>
+  <data name="upgrade_setuppackage" xml:space="preserve">
+    <value>Kör pkgadd för att uppgradera Webmin ... Vänta en minut på att det ska bli färdigt innan du fortsätter.</value>
+  </data>
+  <data name="upgrade_esolaris" xml:space="preserve">
+    <value>Webmins uppgradering fungerar inte nu när du har installerat systemet från ett Solaris-paket. Uppgradera manuellt istället.</value>
+  </data>
+  <data name="ca_title" xml:space="preserve">
+    <value>Signerande part</value>
+  </data>
+  <data name="ca_old" xml:space="preserve">
+    <value>Befintligt certifikat</value>
+  </data>
+  <data name="ca_header1" xml:space="preserve">
+    <value>Skapa ett nytt signerat certifikat</value>
+  </data>
+  <data name="ca_header2" xml:space="preserve">
+    <value>Ändra signerat certifikat</value>
+  </data>
+  <data name="ca_newmsg1" xml:space="preserve">
+    <value>Din Webmin-server har redan satts upp som en signerande part. Detta formulär kan användas för att sätta upp den på nytt, men certifikat som redan signerats kommer då att sluta fungera.</value>
+  </data>
+  <data name="ca_newmsg2" xml:space="preserve">
+    <value>I detta formulär kan du sätta upp din Webmin-server att vara signerande part (CA) så att användare under Webmin-användare kan begära certifikat för att identifiera sig för servern utan att behöva logga in.</value>
+  </data>
+  <data name="ca_cn" xml:space="preserve">
+    <value>Namn på signerande part</value>
+  </data>
+  <data name="ca_email" xml:space="preserve">
+    <value>E-postadress</value>
+  </data>
+  <data name="ca_ou" xml:space="preserve">
+    <value>Avdelning</value>
+  </data>
+  <data name="ca_o" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="ca_sp" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="ca_c" xml:space="preserve">
+    <value>Landskod</value>
+  </data>
+  <data name="ca_create" xml:space="preserve">
+    <value>Sätt upp signerande part</value>
+  </data>
+  <data name="ca_oldmsg1" xml:space="preserve">
+    <value>Det signerade certifikat som denna server använder visas nedan. Det går att ändra genom att klistra in ett certifikat från en annan signerare, men detta medför att certifikat som redan utfärdats inte längre kommer att fungera.</value>
+  </data>
+  <data name="ca_oldmsg2" xml:space="preserve">
+    <value>Om en signerande part redan satts upp på en annan Webmin-server kan du klistra in dess certifikat nedan istället för att sätta upp en ny signerande part. Detta medför att användare på den andra servern också kommer att kunna identifieras av denna server.</value>
+  </data>
+  <data name="ca_err" xml:space="preserve">
+    <value>Det gick inte att sätta upp signerande part</value>
+  </data>
+  <data name="ca_setupok" xml:space="preserve">
+    <value>Din signerande part har satts upp utan problem. Nu kan användare gå till Webmin-modulen för att begära certifikat för sig.</value>
+  </data>
+  <data name="ca_stop" xml:space="preserve">
+    <value>Stäng av signerande part</value>
+  </data>
+  <data name="ca_stopmsg" xml:space="preserve">
+    <value>Tryck på denna knapp för att stänga av Webmins funktioner att godkänna befintliga certifikat och utfärda nya. Detta medför att användarna istället måste autentiseras med användarnamn och lösenord.</value>
+  </data>
+  <data name="ca_stopok" xml:space="preserve">
+    <value>Din signerande part har stängts av utan problem.</value>
+  </data>
+  <data name="ca_eminiserv" xml:space="preserve">
+    <value>SSL-klientcertifikat stöds endast under miniserv.</value>
+  </data>
+  <data name="ca_eversion" xml:space="preserve">
+    <value>Version av den Perl Net::SSLeay-modul som finns på detta system stödjer inte SSL-klientcertifikat.</value>
+  </data>
+  <data name="ca_essleay" xml:space="preserve">
+    <value>Kommandot $1 för att administrera SSL finns inte i systemet. Du kan behöva ändra sökvägen i inställningarna för Webmin-användarmodulen.</value>
+  </data>
+  <data name="ca_essl" xml:space="preserve">
+    <value>SSL-certifiering kan endast sättas upp då webservern körs i SSL-mod.</value>
+  </data>
+  <data name="session_title" xml:space="preserve">
+    <value>Autentisering</value>
+  </data>
+  <data name="session_desc1" xml:space="preserve">
+    <value>När detta är aktiverat kommer Webmin-servern att skyddas av tidsgränser för lösenorden mot en lösenords-crackerattack genom att det för varje misslyckat inloggningsförsök dröjer längre tid innan samma användare får försöka logga in igen.</value>
+  </data>
+  <data name="session_header" xml:space="preserve">
+    <value>Autentiserings- och sessionsinställningar</value>
+  </data>
+  <data name="session_pdisable" xml:space="preserve">
+    <value>Slå av tidsgränser för lösenord</value>
+  </data>
+  <data name="session_penable" xml:space="preserve">
+    <value>Slå på tidsgränser för lösenord</value>
+  </data>
+  <data name="session_blockhost" xml:space="preserve">
+    <value>Spärra datorer med fler än $1 misslyckade inloggningsförsök i $2 sekunder.</value>
+  </data>
+  <data name="session_disable" xml:space="preserve">
+    <value>Deaktivera sessionsautentiseringen</value>
+  </data>
+  <data name="session_enable" xml:space="preserve">
+    <value>Aktivera sessionsautentiseringen</value>
+  </data>
+  <data name="session_localoff" xml:space="preserve">
+    <value>Kräv alltid användarnamn och lösenord</value>
+  </data>
+  <data name="session_localon" xml:space="preserve">
+    <value>Tillåt inloggning utan lösenord men med matchning av användare från den lokala datorn.</value>
+  </data>
+  <data name="session_locking" xml:space="preserve">
+    <value>Aktivera låsning i Webmin</value>
+  </data>
+  <data name="session_err" xml:space="preserve">
+    <value>Det gick inte att spara autentiseringen</value>
+  </data>
+  <data name="session_elogouttime" xml:space="preserve">
+    <value>Utloggningstid saknas eller är ogiltig</value>
+  </data>
+  <data name="session_eblockhost_time" xml:space="preserve">
+    <value>Spärrtid saknas eller är ogiltig</value>
+  </data>
+  <data name="session_eblockhost_failures" xml:space="preserve">
+    <value>Antal inloggningar för spärr saknas eller är ogiltigt</value>
+  </data>
+  <data name="session_ecookie" xml:space="preserve">
+    <value>Din webbläsare stödjer inte kakor, men det behövs för sessionsautentisering.</value>
+  </data>
+  <data name="session_elsof" xml:space="preserve">
+    <value>Lokal autentisering kräver programmet &lt;tt&gt;lsof&lt;/tt&gt;</value>
+  </data>
+  <data name="assignment_title" xml:space="preserve">
+    <value>Kategorisera moduler</value>
+  </data>
+  <data name="assignment_header" xml:space="preserve">
+    <value>Ange en kategori för varje modul</value>
+  </data>
+  <data name="categories_title" xml:space="preserve">
+    <value>Ändra kategorier</value>
+  </data>
+  <data name="categories_header" xml:space="preserve">
+    <value>Kategori-ID och beskrivningar</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>Ändrade IP-åtkomstkontroll</value>
+  </data>
+  <data name="log_bind" xml:space="preserve">
+    <value>Ändrade port och adress</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Ändrade loggningsinställningarna</value>
+  </data>
+  <data name="log_proxy" xml:space="preserve">
+    <value>Ändrade proxy-servrar</value>
+  </data>
+  <data name="log_ui" xml:space="preserve">
+    <value>Ändrade inställningarna för användargränssnitt</value>
+  </data>
+  <data name="log_install" xml:space="preserve">
+    <value>Installerade modul $1</value>
+  </data>
+  <data name="log_tinstall" xml:space="preserve">
+    <value>Installerade tema $1</value>
+  </data>
+  <data name="log_clone" xml:space="preserve">
+    <value>Klonade modul $1 till $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Tog bort modul $1</value>
+  </data>
+  <data name="log_os" xml:space="preserve">
+    <value>Bytte operativsystem</value>
+  </data>
+  <data name="log_lang" xml:space="preserve">
+    <value>Bytte globalt språk</value>
+  </data>
+  <data name="log_startpage" xml:space="preserve">
+    <value>Ändrade inställningarna för indexsidan</value>
+  </data>
+  <data name="log_upgrade" xml:space="preserve">
+    <value>Upgraderade Webmin till version $1</value>
+  </data>
+  <data name="log_session" xml:space="preserve">
+    <value>Ändrade autentiseringsinställningarna</value>
+  </data>
+  <data name="log_ssl" xml:space="preserve">
+    <value>Ändrade SSL-krypteringsmod</value>
+  </data>
+  <data name="log_setupca" xml:space="preserve">
+    <value>Satte upp certifikatsignerare</value>
+  </data>
+  <data name="log_changeca" xml:space="preserve">
+    <value>Ändrade certifikatsignerare</value>
+  </data>
+  <data name="log_stopca" xml:space="preserve">
+    <value>Stängde certifikatsignerare</value>
+  </data>
+  <data name="log_assignment" xml:space="preserve">
+    <value>Ändrade modulkategorier</value>
+  </data>
+  <data name="log_categories" xml:space="preserve">
+    <value>Ändrade kategorinamn</value>
+  </data>
+  <data name="log_theme" xml:space="preserve">
+    <value>Ändrade tema till $1</value>
+  </data>
+  <data name="log_theme_def" xml:space="preserve">
+    <value>Ändrade tema till Webmin-standard</value>
+  </data>
+  <data name="log_referers" xml:space="preserve">
+    <value>Ändrade pålitliga länkar</value>
+  </data>
+  <data name="themes_title" xml:space="preserve">
+    <value>Webmin-teman</value>
+  </data>
+  <data name="themes_desc" xml:space="preserve">
+    <value>Ett tema styr hur Webmins användargränssnitt ser ut, inklusive ikoner, färger, bakgrunder och möjligen också layoutsidorna. I rutan nedan kan du välja ett av de teman som finns på ditt system.</value>
+  </data>
+  <data name="themes_sel" xml:space="preserve">
+    <value>Nuvarande tema:</value>
+  </data>
+  <data name="themes_default" xml:space="preserve">
+    <value>Webmins standardtema</value>
+  </data>
+  <data name="themes_change" xml:space="preserve">
+    <value>Ändra</value>
+  </data>
+  <data name="themes_installdesc" xml:space="preserve">
+    <value>Använd formuläret nedan för att installera ett nytt Webmin-tema på systemet. Teman distribueras vanligtvis i &lt;tt&gt;.wbt&lt;/tt&gt;-filer, men kan också installeras från RPM-filer om detta stöds av ditt operativsystem.</value>
+  </data>
+  <data name="themes_installok" xml:space="preserve">
+    <value>Installera tema</value>
+  </data>
+  <data name="themes_err1" xml:space="preserve">
+    <value>Det gick inte att installera temat från $1</value>
+  </data>
+  <data name="themes_efile" xml:space="preserve">
+    <value>Filen finns inte</value>
+  </data>
+  <data name="themes_err2" xml:space="preserve">
+    <value>Det gick inte att installera det nedladdade temat</value>
+  </data>
+  <data name="themes_ebrowser" xml:space="preserve">
+    <value>Din webbläsare stöder inte filnedladdningar</value>
+  </data>
+  <data name="themes_err3" xml:space="preserve">
+    <value>Det gick inte att installera temat från $1</value>
+  </data>
+  <data name="themes_eurl" xml:space="preserve">
+    <value>URL:en var inte giltig</value>
+  </data>
+  <data name="themes_etar" xml:space="preserve">
+    <value>Det var inte en giltig temafil: $1</value>
+  </data>
+  <data name="themes_einfo" xml:space="preserve">
+    <value>Tema $1 saknar en theme.info-fil</value>
+  </data>
+  <data name="themes_enone" xml:space="preserve">
+    <value>Filen verkar inte innehålla något tema</value>
+  </data>
+  <data name="themes_eextract" xml:space="preserve">
+    <value>Det gick inte att ta fram: $1</value>
+  </data>
+  <data name="themes_done" xml:space="preserve">
+    <value>Följande teman har installerats på systemet:</value>
+  </data>
+  <data name="themes_ecomp" xml:space="preserve">
+    <value>Filen är komprimerad, men kommandot $1 finns inte i systemet</value>
+  </data>
+  <data name="themes_ecomp2" xml:space="preserve">
+    <value>Det gick inte att packa upp filen: $1</value>
+  </data>
+  <data name="themes_egzip" xml:space="preserve">
+    <value>Filen är gzippad, men kommandot $1 finns inte i systemet</value>
+  </data>
+  <data name="themes_egzip2" xml:space="preserve">
+    <value>Det gick inte att gunzippa filen: $1</value>
+  </data>
+  <data name="themes_erpm" xml:space="preserve">
+    <value>Det är inte en Webmin-tema-RPM</value>
+  </data>
+  <data name="themes_eirpm" xml:space="preserve">
+    <value>Det gick inte att installera denna RPM: $1</value>
+  </data>
+  <data name="themes_ok" xml:space="preserve">
+    <value>Temat har ändrats ... du skickas nu till Webmins indexsida.</value>
+  </data>
+  <data name="referers_title" xml:space="preserve">
+    <value>Pålitliga webbsidor</value>
+  </data>
+  <data name="referers_desc" xml:space="preserve">
+    <value>På denna sida kan du ställa in Webmins stöd för webbsidekontroll, som används för att hindra att ondsinta länkar från andra sajter lurar din webbläsare att göra farliga saker med Webmin. Om du har länkar till Webmin från dina egna sidor och inte vill bli varnad när du använder dessa, måste du skriva in dem i listan nedan.</value>
+  </data>
+  <data name="referers_list" xml:space="preserve">
+    <value>Pålitliga sajter</value>
+  </data>
+  <data name="referers_none" xml:space="preserve">
+    <value>Lita på länkar från okända sidor</value>
+  </data>
+  <data name="referers_referer" xml:space="preserve">
+    <value>Ska webbsidekontrollen vara påslagen?</value>
+  </data>
+  <data name="advanced_header" xml:space="preserve">
+    <value>Avancerade och experimentella alternativ</value>
+  </data>
+  <data name="advanced_temp" xml:space="preserve">
+    <value>Tillfälliga filer-mapp</value>
+  </data>
+  <data name="advanced_tempdef" xml:space="preserve">
+    <value>Standard (&lt;tt&gt;/tmp/.webmin&lt;/tt&gt;)</value>
+  </data>
+  <data name="advanced_tempdelete" xml:space="preserve">
+    <value>Högsta ålder av temporära filer</value>
+  </data>
+  <data name="advanced_nodelete" xml:space="preserve">
+    <value>Obegränsad</value>
+  </data>
+  <data name="advanced_days" xml:space="preserve">
+    <value>dagar</value>
+  </data>
+  <data name="advanced_precache0" xml:space="preserve">
+    <value>Inga</value>
+  </data>
+  <data name="advanced_precache1" xml:space="preserve">
+    <value>Engelskspråkiga textfiler</value>
+  </data>
+  <data name="advanced_err" xml:space="preserve">
+    <value>Det gick inte att spara avancerade alternativ</value>
+  </data>
+  <data name="advanced_etemp" xml:space="preserve">
+    <value>Saknade eller icke-existerande temporära filer-mapp</value>
+  </data>
+  <data name="advanced_etdir" xml:space="preserve">
+    <value>Saknade eller icke-existerande temporära filer-mapp för $1</value>
+  </data>
+  <data name="advanced_tdir" xml:space="preserve">
+    <value>Katalog</value>
+  </data>
+  <data name="advanced_showstderr" xml:space="preserve">
+    <value>Visa Perl fel i webbläsare?</value>
+  </data>
+  <data name="advanced_eumask" xml:space="preserve">
+    <value>Umask måste vara ett 3-siffrigt oktalt tal</value>
+  </data>
+  <data name="advanced_etempdelete" xml:space="preserve">
+    <value>Saknad eller ogiltig maximal ålder av temporära filer</value>
+  </data>
+  <data name="advanced_nice" xml:space="preserve">
+    <value>CPU prioritet för schemalagda jobb</value>
+  </data>
+  <data name="advanced_pri" xml:space="preserve">
+    <value>Prioritetsnivå</value>
+  </data>
+  <data name="advanced_gzip0" xml:space="preserve">
+    <value>Aldrig</value>
+  </data>
+</root>

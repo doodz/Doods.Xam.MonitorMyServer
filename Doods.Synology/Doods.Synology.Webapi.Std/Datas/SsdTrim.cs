@@ -4,7 +4,6 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class SsdTrim
     {
-        [JsonProperty("support")]
-        public string Support { get; set; }
+        [JsonProperty("support")] public string Support { get; set; }
     }
 }

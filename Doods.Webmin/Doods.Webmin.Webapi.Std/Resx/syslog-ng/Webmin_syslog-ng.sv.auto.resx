@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Systemloggar NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Använd konfigurering</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att aktivera den aktuella Syslog-NG-konfigurationen.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stoppa Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att stoppa den igång Syslog-NG-demonen. När det har stannat kommer loggmeddelanden från andra program inte längre att skrivas till loggfiler.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Starta Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att starta Syslog-NG-demonen med den aktuella konfigurationen.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>modulindex</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Loggningsalternativ</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Alternativ för alla loggfiler</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekunder</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>anteckningar</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Dags att vänta innan döda anslutningar öppnas igen</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Tid att vänta innan stängning av vilolägenheter</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Meddelanden till buffert innan du skriver</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Tid att vänta mellan statistikmeddelanden</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Antal meddelanden som ska buffras</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Använd kedjat värdnamnformat?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Behålla originalnamn?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Kontrollera värdnamn för giltiga tecken?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Regelbundet uttryck för dåliga värdnamn</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Skapa kataloger för loggfiler om det behövs?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Standardägare för loggfiler</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Standardgrupp för loggfiler</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Standardbehörigheter för loggfiler</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Standardägare för skapade kataloger</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Standardgrupp för skapade kataloger</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Standardbehörigheter för skapade kataloger</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Loggtidmeddelanden mottogs?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Gör omvänd DNS-uppslag?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>DNS-sökningar i cache?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Storleken på DNS-cache</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Cache DNS-poster för</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Cache misslyckades med DNS-sökningar efter</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Maximal loggmeddelandestorlek</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Logga in hela värdnamn?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Byt ut kontrolltecken i filnamn?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Det gick inte att spara loggningsalternativ</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Vanligt eller ogiltigt regelbundet uttryck för dåliga värdnamn</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Saknad eller icke-numerisk DNS-cachestorlek</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Saknad eller icke-numerisk DNS-cachetid</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>DNS-cachetid saknas eller saknas inte</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Saknar standardägaren för loggfiler</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Standardgrupp saknas för loggfiler</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Saknar standardbehörigheter för loggfiler</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Saknar standardägare för kataloger</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Standardgrupp saknas för kataloger</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Saknar standardbehörigheter för kataloger</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta på döda anslutningar</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid för att vänta på idealiska anslutningar</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Det saknas eller ogiltigt antal meddelanden som ska buffras innan du skriver</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Saknas eller inte-numerisk tid att vänta mellan statistikmeddelanden</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Det saknas eller ogiltigt antal meddelanden till bufferten</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Saknad eller icke-numerisk maximal loggmeddelandestorlek</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Logga destinationer</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Destinationsnamn</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Skriva till</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Logga destination</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Fil</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Inloggade användare</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Programinmatning</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix-röret</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP-syslog-server</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslog-server</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Datagramuttag</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Strömuttag</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Alla användare</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Endast användare $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Värd $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Se ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Inga destinationsloggfiler har definierats än.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Radera valda destinationer</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Lägg till en ny loggdestination.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>logga destinationer</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Övrig moduls logg</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Utgång från $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Logga destinationsalternativ</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Skapa loggdestination</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Redigera loggdestination</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Logga destinationsnamn</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Logga in ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Filnamn</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Skapa kataloger?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Behörigheter för kataloger</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Synkronisera efter varje skrivning?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Grupp för loggfil</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Ägare för loggfil</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Behörigheter för loggfil</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Meddelanden mellan synkroniserar</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Listade användare</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog-server</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Nätverksprotokoll</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Server adress</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Server Port</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Lokal IP-adress</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Lokal hamn</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix-uttag</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Socket-namn</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Det gick inte att spara destination</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>En destination med samma namn finns redan</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Destinationen finns inte längre!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Filnamn saknas eller ogiltigt</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Saknad eller ogiltig ägare av loggfiler</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Saknad eller ogiltig loggfilgrupp</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Saknade eller icke-oktala loggfilbehörigheter</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Saknade eller icke-oktala katalogbehörigheter</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Det saknas eller ogiltigt antal meddelanden mellan synkroniseringen</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Saknade användare att skicka till</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Program saknas att matas till</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Saknas Unix-rörfil</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Portnummer saknas eller ogiltigt</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Lokal IP-adress saknas eller ogiltig</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Lokalt portnummer saknas eller ogiltigt</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Saknad eller ogiltig Syslog-servervärd eller adress</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Saknar Unix-socket-namn</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Det gick inte att ta bort destinationer</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Destinationen $1 kan inte raderas, eftersom den används av ett loggmål</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Det gick inte att ta bort källor</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Loggkällan $1 kan inte raderas, eftersom den används av ett loggmål</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Det gick inte att ta bort filter</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Loggfiltret $1 kan inte raderas, eftersom det används av ett loggmål</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Det gick inte att ta bort loggmål</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Ingen vald</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Loggfilter</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Filternamn</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Betingelser</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Inga loggfilter har definierats än.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Radera valda filter</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Lägg till ett nytt loggfilter.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>loggfilter</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>prioritet &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>prioriteringar &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 prioriteringar</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>anläggning &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 anläggningar</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>program &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>matchar "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>från värdnamn &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>från avsändaren &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Skapa logfilter</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Redigera loggfilter</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Specifikationer för loggfilter</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Filternamn</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Enkla förhållanden (alla måste matcha)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Komplex uttryck</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Vid prioritering ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Från programmet ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Match uttryck ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Från anläggningen ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Från värdnamn ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Från IP-nätverk ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Det gick inte att spara loggfilter</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Filternamn saknas eller ogiltigt</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Ett filter med samma namn finns redan</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Ingenting att filtrera på angett</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Inga prioriteringar har valts</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Inga faciliteter valda</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Programnamn saknas eller ogiltigt</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Reglerande uttryck saknas</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Saknat eller ogiltigt värdnamn</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Saknad eller ogiltig nätverks IP-adress</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Netmask saknas eller ogiltig</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Fel i komplexa uttryck</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filter finns inte längre!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Loggmål</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>källor</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>destinationer</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Lägg till ett nytt loggmål.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Radera valda loggmål</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>logga mål</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Skapa loggmål</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Redigera loggmål</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Logga källa, filter och destinationsval</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Logga källor</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filter att applicera</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Destinationsfiler</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Behandla inte fler mål</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Fallback-loggmål</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Behandla alla källor</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Målalternativ</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Loggmålet finns inte längre!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Det gick inte att spara loggmålet</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Inga källor valda</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Logga källor</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Inga källor har definierats än!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Lägg till en ny loggkälla.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Källnamn</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Logga datakällor</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Radera valda källor</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Interna Syslog-NG-meddelanden</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Strömuttag</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Datagramuttag</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP-server</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP-server</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Kärnloggfil</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Namnet rör</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Solström</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog-server</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>logga källor</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Skapa loggkälla</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Redigera loggkälla</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Loggkällalternativ</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Några</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Källan finns inte längre!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Källnamn</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Logga källtyper</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Ägare till sockelfil</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Socket-filgrupp</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Behörigheter för socket-fil</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Hålla anslutningarna öppna under omstart?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maximal samtidiga anslutningar?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Lokal IP-adress</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Lokalt portnummer</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Använd TCP keep-alives?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Prefix för loggmeddelanden</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Storlek på meddelandeblock</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Det gick inte att spara loggkällan</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Saknas eller ogiltigt källnamn</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>En loggkälla med samma namn finns redan</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Saknad eller ogiltig socketfilägare</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Saknad eller ogiltig socket-filgrupp</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Saknade eller icke-oktala behörigheter för socket-fil</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Det saknas eller ogiltigt antal maximala anslutningar</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Lokal IP-adress saknas eller ogiltig</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Lokalt portnummer saknas eller ogiltigt</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Prefix för loggmeddelanden saknas</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Storlek på meddelandeblock saknas eller ej</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Saknat eller ogiltigt Unix-socket-filnamn</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Saknas eller ogiltigt kärnloggfilnamn</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Saknade eller ogiltiga namngivna rörfilnamn</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Dörrfilnamn</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Saknad eller ogiltig filnamn på Sun streams</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Saknad eller ogiltig Sun strömmar dörrfilnamn</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Nätverksprotokoll</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Visa Logfile</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Sista $1 rader av $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Loggfilen är tom</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Visa bara rader med text $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Det gick inte att tillämpa konfigurationen</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Springer inte!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Det gick inte att starta Syslog-NG-servern</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Det gick inte att stoppa Syslog-NG-servern</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Skapad logdestination $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Ändrad logdestination $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Raderad logdestination $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1 loggdestinationer raderade</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Skapad logfilter $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Modifierat logfilter $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Raderat logfilter $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Raderade $1 loggfilter</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Skapad loggkälla $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Modifierad loggkälla $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Raderad loggkälla $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>$1 loggkällor raderade</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Skapad loggmål</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Ändrat loggmål</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Raderat loggmål</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1 loggmål har tagits bort</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Tillämpad konfiguration</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Startade Syslog-NG-server</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Stoppad Syslog-NG-server</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Ändrade globala alternativ</value>
+  </data>
+</root>

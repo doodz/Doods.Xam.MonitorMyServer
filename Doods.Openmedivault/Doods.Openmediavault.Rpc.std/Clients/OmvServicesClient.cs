@@ -1,13 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
     public class OmvServicesClient : OmvServiceClient
     {
-       
         public OmvServicesClient(IRpcClient client) : base(client)
         {
             ServiceName = "Services";
@@ -17,7 +15,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         {
             var request = NewRequest("getStatus");
             request.Params = new ParamsListFilter();
-           
+
             var result = RunCmd<ResponseArray<ServicesStatus>>(request);
 
             return result;

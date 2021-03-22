@@ -1,9 +1,7 @@
-﻿
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
@@ -29,19 +27,17 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         //apt_history => Update Management - History
         //apt_term => Update Management - Terminal output
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="logfile">OmvLogFileEnum</param>
         /// <returns></returns>
         public async Task<ResponseArray<LogLine>> GetList(OmvLogFileEnum logfile = OmvLogFileEnum.syslog)
         {
-
             var request = NewRequest("getList");
-            request.Params = new {id=logfile.ToString(), start=0,limit=50,sortfield="rownum",sortdir="DESC"};
+            request.Params = new
+                {id = logfile.ToString(), start = 0, limit = 50, sortfield = "rownum", sortdir = "DESC"};
 
             var result = await RunCmd<ResponseArray<LogLine>>(request);
             return result;
         }
-
     }
 }

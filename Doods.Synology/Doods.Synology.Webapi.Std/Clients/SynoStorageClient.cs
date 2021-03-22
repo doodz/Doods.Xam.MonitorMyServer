@@ -1,7 +1,5 @@
-﻿
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Doods.Synology.Webapi.Std.Datas;
-using Doods.Synology.Webapi.Std.NewFolder;
 
 namespace Doods.Synology.Webapi.Std
 {
@@ -9,13 +7,13 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<SynologyStorageInfo> GetFullStorageInfo();
     }
-    public class SynoStorageClient: BaseSynoClient, ISynoStorageClient
+
+    public class SynoStorageClient : BaseSynoClient, ISynoStorageClient
     {
         public SynoStorageClient(ISynoWebApi client) : base(client)
         {
             Resource = "/entry.cgi";
             ServiceApiName = "SYNO.Storage.CGI.Storage";
-
         }
 
         public async Task<SynologyStorageInfo> GetFullStorageInfo()
@@ -26,7 +24,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("method", "load_info");
             loginRequest.AddParameter("sid", _client.Sid);
 
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyStorageInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyStorageInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
     }

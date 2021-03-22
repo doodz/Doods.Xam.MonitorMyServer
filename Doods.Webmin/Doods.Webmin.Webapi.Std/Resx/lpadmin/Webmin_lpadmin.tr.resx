@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Yazıcı Yönetimi</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Erişilebilir yazıcılar</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Yazıcı</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Yaz</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Sürücü</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Aktif mi?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Kabul ediyor mu?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Kuyruk</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Bu sistemde yazıcı kurulmamış</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>listele..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>iş..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 iş..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Yeni yazıcı ekle</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Listeleyiciyi durdur</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Bu butonu tıklayarak çalışan yazım listeleme işlemini durdurabilirsiniz.Bu sisteminizde yazdırma yapan yerel ya da uzak kullancıların yazım işlerini kesecektir</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Listelemeyi Başlat</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Bu butonu tıklayarak yazım listeleme işlemini başlatabilirsiniz.Yerel ya da uzak kullanıcıların sisteminizde yazım işlemi yapmasına izin verilecektir</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Zamanlandırıcıyı Yeniden Başlat</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Bu butonu tıklayarak yazıcı zamanlandırıcısını yeniden başlatabilirsiniz. Bu, mevcut yazıcı yapılandırmasının uygulanmasını sağlayacaktır.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>yazıcı listesi</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>$1 Kullanılıyor</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Bu yazıcıyı düzenlemek için izininiz yoktur</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Yazıcı eklemeye izininiz yoktur</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Yazıcı Oluştur</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Yazıcı Düzenle</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Yazıcı Ayarları</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>İstekler kabul edilsin?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Hayır - Why not</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Yazdırma yapılabilsin mi?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>İzin kontrol</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Herbirine izin ver</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Herkesi reddet</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Listlenmiş kullanıcıları kabul et..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Listelenmiş kullanıcıları reddet..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Başlık yaz?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Seçime Bağlı</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Öntanımlı Yazıcı?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Her zaman öntanımlı yazıcı</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maksimum yazdırma işi boyutu</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Limitsiz</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Sürücü kabulleri</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Yazı</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Postscript</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Diğer</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Diğer yazıcı isimleri</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Yazdırma Hedefi</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Yerel Aygıt</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Yerel Dosya</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Uzak Unix sunucusu</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Yazıcı</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Uzak Windows sunucusu</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Yazıcı</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Workgroup</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Uzak HPNP sunucusu</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Doğrudan TCP bağlantısı</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Yazıcı Sürücüsü</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Uzak yazıcının çalışıp çalışmadığı kontrol edilsin mi?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blok</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Yazıcının kaydedilmesinde hata oluştu</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Yazıcı eklemenize izin verilmedi</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Yazıcı silmenize izin verilmedi</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' geçerli bir yazıcı ismi değil</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>'$1' yazıcısı her zaman mevcut</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Girişe izin verilecek kullanıcı yok</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Girişi reddedilecek kullanıcı yok</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>'$1' kullanıcısı mevcut değil</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>İzin verilecek sürücü için en az bir tip seçmelisiniz</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>En çok yazma işi sayısı tamsayı olarak verilmelidir</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' mevcut değil</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Uzak makine '$1' mevcut değil</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Uzak port '$1' geçerli değil</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' geçerli bir uzak kuyruk ismi değil</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Sürücüler uzak Unix yazıcıları ile kullanılamazlar</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Makine '$1' mevcut değil</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Kayıp ya da yanlış doğrudan port</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Yazma İşleri</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>$1'deki Yazma İşleri</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>İş numarası</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Gönderildi</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Gönderildi</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Dosya İsmi</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Listeden iptal etmek için  iş numarası seçiniz</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Listeden iptal etmek için iş numarasını ya da görüntülemek için iş boyutunu seçiniz</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>$1'de yazma işi bulunamadı</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Bütün yazma işlemleri iptal et</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>byte</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Deneme Sayfası Yazdır</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Yazma işlerini durdurmaya izininiz yoktur</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Yazma işinin durdurulmasında hata oluştu</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Yazma işi $1 varolandan daha büyük</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Bu yazma işini görüntülemeye izininiz yoktur</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Yazma işi varolandan daha büyük</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Zamanlayıcıyı başlatmak için izininiz yoktur</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Zamanlayıcının başlatılmasında hata oluştu</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Zamanlayıcıyı durdurmak için izininiz yoktur</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Zamanlayıcının durdurulmasında hata oluştu</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Zamanlayıcıyı yeniden başlatmak için izininiz yoktur</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Zamanlayıcının yeniden başlatılmasında hata oluştu</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Postscript ya da yazı yazıcısı</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Uzak yazıcı</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin sürücüsü</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint sürücüsü</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>$1'den sürücülerin alınmasında hata oluştu.Webmin yazıcı sürücülerinin kullandığı postscript kullanılabilir değildir</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>$1 komutu bulunamadı.Webmin yazıcı sürücülerinin kullandığı postscript kullanılabilir değildir</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' mevcut değil</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Uzak ya da standart yazıcı</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS sürücüsü</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Yazıcı ve çözünürlük</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Dosya Sonu gönder?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Kağıt boyu</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Yazım çift taraflı?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Eklenebilir GS seçenekleri</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint sürücüsü</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' mevcut değil</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Yazıcı sürücüsü seçilmedi</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Çözünürlük seçilmedi</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Postscript ya da yazı yazıcısı</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat sürücüsü</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Yazıcı ve çözünürlük</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Dosya Sonu gönder?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Kağıt boyutu</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Çıktı başına sayfa</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Eklenebilir GS seçenekleri</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Sağ/sol boşluk</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Üst/alt boşluk</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Basamak adımlı yazıları doldur</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' mevcut değil</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Yazıcı sürücüsü seçilmedi</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Eksik ya da yanlış sağ/sol boşluk</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Kayıp ya da yanlış üst/alt boşluk</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Çözünürlük seçilmedi</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Yazıcı model ve sürücüsü</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postscript ya da düz metin yazıcısı</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSFilter sürücüsü</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Yazıcı tipi</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>DPI olarak çözünürlük</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Renkli yazıcı mı?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Kağıt boyutu</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Filtreleme yöntemi</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Otomatik</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Raw</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Ekstra ghostscript seçenekleri</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2 sürücüsü</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Bir yazıcı tipi seçilmedi</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Eksik ya da geçersiz çözünürlük</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>lpd'nin durdurulmasında hata oluştu: $1</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Bu kullanıcı yazıcıları ayarlayabilir</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Yeni yazıcılar ekleyebilir?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Yazım işlerini görüntüleyebilir ya da durdurabilir?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Listelemeyi başlatıp durdurabilir?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Sadece yeniden başlat</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Sadece seçili yazıcılarda ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Bütün yazıcılar</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Seçililer..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Yapılandırılamayan yazıcılar gösterilsin mi?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Test sayfaları yazdırabilir mi?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Hangi kullanıcıların yazıcı işleri yönetilsin</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Bütün kullanıcılar</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Mevcut Webmin kullanıcısı</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Yazıcı planlayıcısı durduruldu</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Yazıcı planlayıcısı çalıştırıldı</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Yazıcı zamanlayıcısı yeniden başlatıldı</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>$1'deki yazım işi $2 iptal edildi</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>$1'deki bütün yazım işleri iptal edildi</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>$2'de $1 yazıcısı oluşturuldu</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$2'de $1 yazıcısı değiştirildi</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$2'de $1 yazıcısı silindi</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>$2'de $1 yazıcısı $3 oluşturuldu</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>$2'de $1 yazıcısı $3 değiştirildi</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>$2'de $1 yazıcısı $3 silindi</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Paralel Port $1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Seri Port $1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Boş Aygıt</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB yazıcı $1</value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu Linux yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Kuyruk dizini $1 sisteminizde bulunamadı. Bu Linux yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Paralel Port</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Seri Port $1 (COM$1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu FreeBSD yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>$1 kuyruk dizini sisteminizde bulunamadı. Bu CUPS yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Paralel Port</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Seri Port $1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Paralel Port $1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Seri Port $1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Boş Aygıt</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu UnixWare yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Paralel $1</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Seri $1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Boş Aygıt</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu HPUX yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Arayüz script dizini $1 sisteminizde bulunamadı. Bu HPUX yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Paralel Port $1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Seri Port $1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Boş Aygıt</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu LPRng yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Kuyruk dizini $1 sisteminizde bulunamadı. Bu LPRng yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Paralel Port</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 Paralel Port</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Seri Port $1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Boş Aygıt</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu Solaris yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Deneme Sayfası Yazdır</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Deneme sayfası yazdırmak için izininiz yoktur</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Bu sayfa $1 yazıcısından deneme sayfası yazdırmanızı sağlar. Yazdırmak istediğiniz sayfa tipini seçiniz :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Siyah beyaz Postscript sayfası</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Renkli Postscript sayfası</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>ASCII metin</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Yüklenilecek dosya</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Sayfayı yazdır</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Deneme sayfası $1 komutu ile yazdırılıyor ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. komutta hata oluştu!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. komut tamamlandı.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Uzak ya da raw yazıcı</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS sürücüsü</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' geçerli bir program değildir</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>$1 seçenekleri</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu CUPS yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Bu IRIX yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Arayüz script dizini $1 sisteminizde bulunamadı. Bu IRIX yazıcı sisteminin kurulmamış olduğunu gösterir.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Yazıcı portu $1</value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Geçersiz açıklama - sadece harfler ve rakamlar izin verilmiştir, boşluk kabul edilmemektedir.</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>AIX yazıcı sunucusu $1 bulunamadı. Kurulmamış ya da başka bir yazıcı sistemi kullanılıyor olabilir.</value>
+  </data>
+</root>

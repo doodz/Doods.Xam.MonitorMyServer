@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>파티션 관리자</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>디스크를 나열하지 못했습니다</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>디스크</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>파티션</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>실린더</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>모델</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>RAID 수준</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>컨트롤러</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>파티션이 없습니다</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>번호</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>익스텐트</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>시작</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>끝</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>주 파티션 추가</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>논리 파티션 추가</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>확장 파티션 추가</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>IDE 매개 변수 편집</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>사용한 공간</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>빈 공간</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>디스크 목록</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>확장</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>기본값</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1'은(는) 유효한 $2이(가) 아닙니다 </value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>$1 명령이 없습니다</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>$1 장치 $2</value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>$1 장치 $2 파티션 $3</value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>플로피 디스크 $1</value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>Mylex RAID $1 드라이브 $2</value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>Mylex RAID $1 드라이브 $2 파티션 $3</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>파티션 편집</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>파티션 작성</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>이 디스크를 편집할 수 없습니다</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>시스템에 &lt;tt&gt;hdparm&lt;/tt&gt; 실행 파일이 없습니다</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>파티션 세부 정보</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>장치 파일</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>익스텐트</value>
+  </data>
+  <data name="edit_of" xml:space="preserve">
+    <value>의</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>1개의 파티션이 있습니다</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>$1개의 파티션이 있습니다</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>$1개의 파티션이 있습니다</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>$2(으)로 $1에 마운트됨</value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>$2(으)로 $1에 마운트하는 경우</value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>가상 메모리로서 마운트됨</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>가상 메모리로서 마운트하는 경우</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>RAID 장치 $1의 부분</value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>아직 작성되지 않음</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>사용되고 있지 않음</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>크기</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>파티션 라벨</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 블록</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>이 파티션은 현재 사용 중이거나 사용하도록 구성되어 있으므로 변경할 수 없습니다</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>새 파일 시스템 작성</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>이 파티션에 $1 파일 시스템을 작성, 기존 파일을 영구적으로 삭제 함. 이 작업은 새 파티션을 작성하거나 기존 파티션을 변경한 후에 수행해야 합니다.</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>파일 시스템 복구</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>파일 시스템을 마운트할 수 있도록 파일 시스템을 복구하는 $1 프로그램을 호출합니다. 이 작업은 시스템이 올바르게 종료되지 않았을 경우 필요할 수도 있습니다.</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>파일 시스템 조정</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>기존 파일 시스템의 여러 매개 변수를 수정할 수 있습니다.</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>새 파일 시스템</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>이 디스크에서 새 파일 시스템을 작성할 수 없습니다.</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>이 양식의 맨 아래에 있는 단추를 누르면 새 $1 파일 시스템이 장치 $2에 작성됩니다. 이 파티션의 모든 데이터는 영구적으로 삭제됩니다.</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>이 파티션이 $2(으)로 $1에 마운트되었습니다. 새 파일 시스템을 작성하면 이 디렉토리 아래에서 접근할 수 있었던 모든 파일이 삭제됩니다.</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>파일 시스템 옵션</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>파일 시스템 작성</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>파일 시스템을 작성하지 못했습니다</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>$1 명령 실행 중..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. 명령을 실행하지 못했습니다!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. 명령을 완료했습니다.</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>파일 시스템 복구</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>이 디스크에 fsck을 실행할 수 없습니다</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>&lt;tt&gt;파일 시스템 복구&lt;/tt&gt; 단추를 누르면 $3에 마운트할 수 있도록 $2의 손상된 $1 파일 시스템이(가) 복구됩니다.</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>파일 시스템 복구는 발생한 문제를 자동으로 해결하는 명령 $1을(를) 통해 수행됩니다. 파일 시스템 복구를 보다 정확하게 제어하려면 Unix 프롬프트의 대화식 모드에서 수동으로 $2 명령을 사용하십시오.</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>파일 시스템 복구</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>$1 명령 실행 중..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>오류가 없습니다</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>오류가 발견되었지만 정정되었습니다</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>오류가 발견되었지만 정정되었습니다. 다시 부팅해야 합니다</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>오류가 발견되었지만 정정되지 않았습니다</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>명령행 오류</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>알 수 없는 반환 코드 $1</value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>파일 시스템 조정</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>이 파일 시스템을 조정할 수 없습니다</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>이 양식으로 $3에 마운트할 수 있도록 $2에 있는 $1 파일 시스템의 여러 매개 변수를 조정할 수 있습니다. 이 파일 시스템의 기존 파일은 영향을 받지 않습니다.</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>매개 변수 조정</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>파일 시스템 조정</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>검사 간격</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>오류 발생 시 동작</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>계속</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>읽기 전용으로 마운트</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>패닉</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>예약된 사용자</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>예약된 그룹</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>예약된 블록</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>검사 간격</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>파일 시스템을 조정하지 못했습니다</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>$1 명령 실행 중..</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>.. 명령을 실행하지 못했습니다!</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>.. 명령을 완료했습니다.</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>다시 부팅</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>지금 다시 부팅 중..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>지금 다시 부팅</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>$1의 파티션 테이블을 변경했습니다. 이 변경 내용을 올바르게 적용하려면 시스템을 다시 부팅해야 합니다.</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>파티션을 저장하지 못했습니다</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>이 디스크를 편집할 수 없습니다</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1'은(는) 유효한 실린더 시작점이 아닙니다 </value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1'은(는) 유효한 실린더 끝점이 아닙니다 </value>
+  </data>
+  <data name="save_emin" xml:space="preserve">
+    <value>실린더 시작점은 $1보다 크거나 같아야 합니다</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>실린더 끝점은 $1보다 작거나 같아야 합니다</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>시작 실린더 시작점은 끝점보다 작아야 합니다</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>파티션 $1에서 겹치는 부분이 감지되었습니다($2 부터 $3)</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>블록 크기</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>조각 크기</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>inode 당 바이트</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>예약된 블록</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>그룹 당 블록</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>불량 블록이 있는지 검사합니까?</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>FAT 크기</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>볼륨 ID</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>볼륨 이름</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>root 항목</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>클러스터 크기</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>불량 블록이 있는지 검사합니까?</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>파일 이름 길이</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>inode 수</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>블록 수</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>불량 블록이 있는지 검사합니까?</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>파일 시스템 강제 작성</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>해시 기능</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>이 사용자가 파티션을 나누고 포맷할 수 있는 디스크</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>모든 디스크</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>선택한 디스크..</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>IDE 매개 변수 편집</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>해제</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>IDE 드라이블 설정</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>전송 모드</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>기본 모드</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>IORDY 사용 불능</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>DMA 사용</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>섹터 카운트</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>미리 읽기</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>쓰기 캐싱</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>인터럽트 마스크 해제 </value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>재설정 시 설정 유지</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>재설정 시 기능 유지</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>읽기 전용</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>최상의 PIO 다시 프로그램밍</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>대기 시간 초과</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>32비트 I/O 지원</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>다중 섹터 I/O의 섹터 카운트</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>사용 불능</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>사용 가능</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>특수 동기화 시퀀스에서 사용 가능</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>드라이브에 적용</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>테스트 속도</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>수행</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>버퍼 캐시:</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>버퍼됨:</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>속도 테스트 결과</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$1 수정됨</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>$1 작성됨</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$1 삭제됨</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>$2에 $1 파일 시스템 작성됨</value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>$2의 $1 파일 시스템 조정됨</value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>$2에 $1 파일 시스템 복구됨</value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>$1의 IDE 매개 변수 수정됨</value>
+  </data>
+</root>

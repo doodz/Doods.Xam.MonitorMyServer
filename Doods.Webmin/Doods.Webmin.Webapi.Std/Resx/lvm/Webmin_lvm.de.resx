@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logical Volume Management</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>Die LVM-Befehl $1 wurde nicht auf Ihrem System gefunden. Webmin benötigt die LVM Administratonsbefehle zur Einrichtung und Verwaltung von logischen Volumes.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>Das LVM-Status Verzeichnis $1 existiert nicht. Dies deutet darauf hin, dass Ihr Kernel nicht LVM unterstützt oder dass das $2-Kernel-Modul ist nicht geladen wurde.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Volumegruppen</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Physisches Volume</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Logische Volumes</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Keine Volume-Gruppen wurden auf Ihrem System gefunden.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Füge eine neue Volumegruppe hinzu.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Diese Volumen-Gruppe hat&lt;br&gt;keine logische Volumes.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Diese Volumen-Gruppe hat&lt;br&gt;keine physischen Volumes.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Einen physischen Datenträger der Gruppe hinzufügen.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Ein physisches Volumen auf &lt;tt&gt;$1&lt;/tt&gt; hinzufügen.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Erstelle ein logisches Volume in &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Erstelle ein Snapshot in &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Erstelle einen Thin-Pool in &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Erstelle ein neues logisches Volume.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Erstelle einen neuen Snapshot.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Volumegruppen</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>physical volumes</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>logical volumes</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin unterstützt nur LVM-Versionen 1.0 und höher. Die Ausgabe von $1 auf Ihrem System war: $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM Version $1</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Volumegruppenname</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Gesamtgröße</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Blöcke benutzt</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Größe benutzt</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Keine physischen Datenträger wurden bisher Volume-Gruppen hinzugefügt.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Keine logische Volumen wurden bisher von irgendeiner Volume-Gruppen erstellt.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Physisches Volume-Gerät</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>In Volumegruppe</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Geräte Größe</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Benutzte Blöcke</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Größe benutzt</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Eine Volume Group ist eine Gruppe von Festplatten, die einen oder mehrere logische Volumes zugeordnet werden kann. Die meisten Systeme haben nur eine und mindestens eine muss angelegt werden, bevor irgendwelche physikalischen oder logischen Datenträger hinzugefügt werden können.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Ein physisches Volumen ist eine Partition auf der Festplatte oder RAID-Gerät, das Teil einer Volume-Gruppe ist. Die Festplatte kann dann durch eine oder mehrere logische Datenträger verwendet werden.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Ein logisches Volume ist eine virtuelle Partition aus dem kombinierten Speicherplatz einer Volume-Gruppe erstellt. Jedes kann ein Dateisystem, das dann montiert ist, um Dateien zu speichern.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Logisches Volume</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Volume Gruppe</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Größe</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Speicher benutzt</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Benutzt für</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Snapshot von $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>LVM Thin-Pool für $1 LVs</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Editiere logisches Volume</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Editiere Snapshot</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Erstelle logisches Volume</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Erstelle Snapshot</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>In Volumegruppe $1</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Logisches Volume Details</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Volumename</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Erstellen Sie als Thin LV im Pool</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Thin provisioned in pool</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Keine (als reguläres LV erstellen)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Volumegröße</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absolute Größe</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>% der VG Größe</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>% der freien VG Größe</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>% der freien PV Größe</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 von $2</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Exakte Größe</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Größe mit Einheiten</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Benutze gesamten freien VG Speicher</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Gerätedatei</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Aktueller Status</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Montiert auf $1 als $2</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Fürs Mounten auf $1 als $2</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Montiert als virtuellen Speicher</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Fürs Mounten als virtueller Speicher</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Teil des RAID Gerätes $1</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Benutzt von Cloudmin System $1</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Für den Einsatz von Cloudmin System $1</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI shared device $1</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Nicht in Benutzung</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Dieses logische Volume kann nicht umbenannt oder verändert werden, da es derzeit in Benutzung ist.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Volume Zugriff</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>lesen/schreiben</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Nur lesen</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Zuweisungsmethode</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>aneinander grenzend</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Nicht zusammenhängend</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Volume striping</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Deaktiviert (immer vom Beginn zuordnen)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Stripes über $1 physische Datenträger</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Physikalische Volumes zu Stripes</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Stripe-Größe</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Readahead Sektoren</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Fehlgeschlagen logisches Volume zu speichern</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Fehlender oder ungültiger Volumename</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Ein logisches Laufwerk mit dem gleichen Namen existiert bereits</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Fehlende oder ungültige Volume Größe</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Fehlende oder ungültige Volumegruppe Größe (in %)</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Fehlende oder ungültige freie prozentualen Volumen Gruppengröße</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Fehlende oder ungültige freie prozentualen physische Volumengröße</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Fehlende oder ungültige Anzahl an Stripes</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Lösche logisches Volume</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Snapshot zurücksetzen</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie das logische Volume $1 löschen möchten? Alle Daten auf dem Dateisystem auf diesem logischen Volume werden für immer gelöscht!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie den Snapshot $1 löschen möchten?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Sind Sie sicher,  dass Sie den Snapshot $1 zurücksetzen möchten ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>WARNING! This LV is a thin pool for $1 other thinly provisioned logical volumes, which will also be lost if it is deleted!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Lösche jetzt</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Jetzt zurücksetzen</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Fehlgeschlagen logisches Volume zu löschen</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Fehlgeschlagen Snapshot zurückzusetzen</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Allokation Blockgröße</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Die Blöcke aus Volume-Gruppe zugeordnet</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 von $2</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Erstelle Dateisystem des Typs:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Erstelle Dateisystem</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Wählen Sie ein Dateisystem aus und klicken Sie auf diese Schaltfläche um ein neues Dateisystem auf diesem logischen Volume zu erstellen. Dadurch werden alle Daten, die sich derzeit auf dem Datenträger befinden, gelöscht.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um ein neues $1-Dateisystem auf diesem logischen Volume zu erstellen. Dadurch werden alle Daten, die sich derzeit auf dem Datenträger befinden, gelöscht.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Die neue Laufwerksgröße ist $1 Blöcke (jeder $2), aber nur $3 sind frei in der Volume-Gruppe.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Snapshot des logischen Volume</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Konnte nicht ermittelt werden!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Mounte LV auf:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Mountet diese LV auf ein neues Verzeichnis auf Ihrem System, so dass es auch Dateien speichern kann. Ein Dateisystem ist bereits angelegt.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Frei (in %)</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Freier Speicher</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Physisches Volumes zugeordnet</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LVs in diesem Thin-Pool</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Prozentuale Auslastung des Thin-Pools</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Thin-Pool Speicher verwendet</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Snapshot benutzt (in %)</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Logisches Volume existiert nicht länger!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Verschiebe physisches Volume</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Verschiebe Blöcke vom physischen Datenträger</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Auf physikalischem Volume</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Verschiebe Blöcke</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>logisches Volumen</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Erstelle Dateisystem</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Mit diesem Formular können Sie ein neues $2 ($1)-Dateisystem auf dem logischen Volume $3 erstellen. Alle vorhandenen Daten werden gelöscht.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Optionen des neues Dateisystems</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Fehlgeschlagen Dateisystem zu erstellen</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Führe Befehl $1 aus ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>...Befehl fehlgeschlagen!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. Befehl komplett.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Logisches Volume anpassen</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Die $1 Dateisystem auf diesem logischen Volumes kann nicht verändert werden. Wenn Sie nur den logischen Datenträger ändern, müssen Sie das Dateisystem neu erstellen, das alle Daten löscht.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin weiß nicht, welche Art von Dateisystem auf diesem Logical Volume ist, falls vorhanden. Wenn Sie das logische Volume ändern möchten, müssen Sie das Dateisystem neu erstellen, welche alle Daten darauf löscht.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Es gab einen Fehler bei der Größenänderung des $1 Dateisystems auf diesem logischem Volume:  $2 Wenn Sie nur den logischen Datenträger ändern, müssen Sie das Dateisystem neu erstellen, das alle Daten löscht.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Logisches Volume anpassen</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Das Dateisystem auf diesem logischen Volume kann nicht verändert werden, während es gemountet ist</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Das Dateisystem auf diesem logischen Volume kann nicht geschrumpft werden, während es montiert wurde</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktiviere LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Laufender Befehl $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Editiere physisches Volume</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Physisches Volume hinzufügen</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>In Volumegruppe $1</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Physisches Volume Details</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Disk Gerät</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Anderes Gerät..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Aktiviert für Allokation?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Erzwinge Zugabe von Volume?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Festplattengröße</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Blöcke allokiert</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Größe allokiert</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Allokierte Blockgröße</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Warnung! Alle Daten auf dem ausgewählten Gerät werden gelöscht.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Füge zur Volumegruppe hinzu</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Entferne von Volume Gruppe</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Ändere Größe, um Gerät zu entsprechen</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Fehlgeschlagen physisches Volume zu speichern</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Fehlgeschlagen physisches Volume zu entfernen</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Fehlgeschlagen physisches Volume zu ändern</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Entferne physisches Volume</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Sind Sie sicher, das Sie das physische Volume-Gerät $1 aus seiner Volume-Gruppe entfernen möchten? Dies wird Auswirkungen auf alle Daten, die auf andere physische Datenträger in der Gruppe verschoben wurden, führen.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Entferne Volume</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Fehlendes oder ungültige Disk Gerät</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAID Gerät $1</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Aufteilung nach logischen Volumes</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Physisches Volume existiert nicht länger!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Editiere Volumegruppe</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Erstelle Volumegruppe</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Volumegruppenname</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Volumegruppendetails</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Gesamtgröße</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Blöcke zugeordnet</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Größe zugeordnet</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Zugeordnete Blockgröße</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Initiales physischen Gerät</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Fehlgeschlagen Volumegruppe zu speichern</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Fehlgeschlagen Volumegruppe zu löschen</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Lösche Volumegruppe</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Sind Sie sich sicher, dass Sie die Volumegruppe $1 löschen möchten?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Diese Volumegruppe kann nicht gelöscht werden, da es noch $1 logische Volumes hat.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Lösche jetzt</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Fehlender oder ungültiger Volumegruppenname</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Fehlende oder ungültige Zuweisungs-Blockgröße</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Volumegruppe existiert nicht länger!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Fehlgeschlagen logisches Volume zu verschieben</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Verschiebe logisches Volume</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Verschiebe logisches Volume $1 von $2 nach $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. verschieben fehlgeschlagen!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. verschieben komplett</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Erstelle Thin-Pool</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>A thin pool is a pair of LVs that can be used to create additional LVs that can be larger than the available extents. Space is only consumed when needed, rather than when the LVs inside the pool are created. WARNING - Any data on the selected LVs will be lost!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Neuer Thin-Pool Details</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Vorhandenes LV für Daten</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Vorhandenes LV für Metadaten</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Konvertiere LVs in Thin-Pool</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>In dieser VG wurden keine LVs gefunden, die noch nicht benutzt werden!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Fehler beim Erstellen eines Thin-Pools</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Beide ausgewählten LVs sind gleich</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Die ausgewählten Daten LV werden bereits verwendet</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Die ausgewählten Metadaten LV werden bereits verwendet</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Volumegruppe $1 erstellt</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Volumegruppe $1 modifiziert</value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Volumegruppe $1 gelöscht</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Logisches Volume $1 in VG $2 erstellt</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Logisches Volume $1 in VG $2 modifiziert</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Logisches Volume $1 in VG $2 gelöscht</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Snapshot zurückgesetzt $1</value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>$1-Dateisystem auf $2 erstellt</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Physisches Volume $1 nach VG $2 hinzugefügt</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Physikalisches Volume $1 in VG $2 modifiziert</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Physisches Volume $1 von VG $2 entfernt</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Physisches Volume $1 in VG $2 geändert</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>Blöcke</value>
+  </data>
+</root>

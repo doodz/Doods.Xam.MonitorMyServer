@@ -8,13 +8,13 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<IDictionary<string, SynologyApiServicesInfo>> GetSynologyApiServicesInfo();
     }
-    public class SynoInfoClient: BaseSynoClient,ISynoInfoClient
+
+    public class SynoInfoClient : BaseSynoClient, ISynoInfoClient
     {
         public SynoInfoClient(ISynoWebApi client) : base(client)
         {
             Resource = "/query.cgi";
             ServiceApiName = "SYNO.API.Info";
-
         }
 
         public async Task<IDictionary<string, SynologyApiServicesInfo>> GetSynologyApiServicesInfo()
@@ -27,9 +27,10 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("sid", _client.Sid);
 
 
-            var response = await _client.ExecuteAsync<SynologyResponse<Dictionary<string, SynologyApiServicesInfo>>>(loginRequest).ConfigureAwait(false);
+            var response = await _client
+                .ExecuteAsync<SynologyResponse<Dictionary<string, SynologyApiServicesInfo>>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
-
     }
 }

@@ -4,7 +4,6 @@ using System.Windows.Input;
 using Autofac;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Mobile.Std.Resources;
-using Doods.Synology.Webapi.Std;
 using Doods.Synology.Webapi.Std.Datas;
 using Doods.Synology.Webapi.Std.NewFolder;
 using Doods.Xam.MonitorMyServer.Services;
@@ -17,21 +16,32 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
     public class SynologyInfoViewModel : ViewModelWhithState
     {
         private readonly ISynologyCgiService _synoService;
+        private NetworkInfo _networkInfo;
+        private SynologyServiceInfo _servicesInfo;
+        private StorageInfo _storageInfo;
+        private SystemInfo _systemInfo;
+
+        private SynologyUpgradeStatus _upgradeStatus;
+
+        public SynologyInfoViewModel(ISynologyCgiService synoService, IConfiguration configuration)
+        {
+            _synoService = synoService;
+            ManageHostsCmd = new Command(ManageHosts);
+            ChangeHostCmd = new Command(ChangeHost);
+            BannerId = configuration.AdsKey;
+        }
+
         public string BannerId { get; }
 
         public ICommand ManageHostsCmd { get; }
         public ICommand ChangeHostCmd { get; }
 
-        private SynologyUpgradeStatus _upgradeStatus;
-        private SystemInfo _systemInfo;
-        private NetworkInfo _networkInfo;
-        private StorageInfo _storageInfo;
-        private SynologyServiceInfo _servicesInfo;
         public SynologyServiceInfo ServicesInfo
         {
             get => _servicesInfo;
             set => SetProperty(ref _servicesInfo, value);
         }
+
         public StorageInfo StorageInfo
         {
             get => _storageInfo;
@@ -49,18 +59,11 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
             get => _upgradeStatus;
             set => SetProperty(ref _upgradeStatus, value);
         }
+
         public SystemInfo SystemInfo
         {
             get => _systemInfo;
             set => SetProperty(ref _systemInfo, value);
-        }
-
-        public SynologyInfoViewModel(ISynologyCgiService synoService, IConfiguration configuration)
-        {
-            _synoService = synoService;
-            ManageHostsCmd = new Command(ManageHosts);
-            ChangeHostCmd = new Command(ChangeHost);
-            BannerId = configuration.AdsKey;
         }
 
         private async void ChangeHost()
@@ -96,8 +99,8 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
 
         protected Task RefreshData()
         {
-           
-            return Task.WhenAll(GetSystemInfo(), GetUpgradeStatus(), GetNetworkInfo(), GetStorageInfo(), GetServicesInfo());
+            return Task.WhenAll(GetSystemInfo(), GetUpgradeStatus(), GetNetworkInfo(), GetStorageInfo(),
+                GetServicesInfo());
         }
 
         private async Task GetSystemInfo()
@@ -123,6 +126,7 @@ namespace Doods.Xam.MonitorMyServer.Views.SynologyInfo
             var result = await _synoService.GetStorageInfo();
             StorageInfo = result;
         }
+
         private void UpdateHistory()
         {
             var historyService = App.Container.Resolve<IHistoryService>();

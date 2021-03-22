@@ -8,7 +8,6 @@ using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmedivault.Http.Std
 {
@@ -18,7 +17,11 @@ namespace Doods.Openmedivault.Http.Std
         /// </summary>
         private readonly IHttpClient _client;
 
+        private readonly string _extension = "png";
+
         private readonly Requestbuilder _requestbuilder = new Requestbuilder();
+        private readonly string[] _typeDate = new string[5] {"hour", "day", "week", "month", "year"};
+        private readonly string[] _typeInfo = new string[4] {"df-root", "memory", "load", "cpu-0"};
 
         public OmvHttpService(ILogger logger, IConnection connection) : base(logger)
         {
@@ -49,18 +52,6 @@ namespace Doods.Openmedivault.Http.Std
             return response.Data.Response;
         }
 
-        public void SetHandlers(NewtonsoftJsonSerializer serializer)
-        {
-            var tmp = (OmvRpc) _client;
-            tmp.ClearHandlers();
-            tmp.AddHandler("application/json", () => serializer);
-            tmp.AddHandler("text/json", () => serializer);
-            tmp.AddHandler("text/plain", () => serializer);
-            tmp.AddHandler("text/x-json", () => serializer);
-            tmp.AddHandler("text/javascript", () => serializer);
-            tmp.AddHandler("*+json", () => serializer);
-        }
-
         public async Task<IEnumerable<byte[]>> GetRrdFilesAsync(IEnumerable<string> filesPaths)
         {
             var lst = new List<byte[]>();
@@ -73,9 +64,6 @@ namespace Doods.Openmedivault.Http.Std
 
             return lst;
         }
-        private readonly string _extension = "png";
-        private readonly string[] _typeDate = new string[5] { "hour", "day", "week", "month", "year" };
-        private readonly string[] _typeInfo = new string[4] { "df-root", "memory", "load", "cpu-0" };
 
         //df-srv-dev-disk-by-label-OpenMediaVault-hour
         //df-srv-dev-disk-by-id-wwn-0x6001405d8…8fcd44afd863fdf-part1-hour
@@ -107,7 +95,6 @@ namespace Doods.Openmedivault.Http.Std
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns></returns>
@@ -119,10 +106,22 @@ namespace Doods.Openmedivault.Http.Std
             return response.RawBytes;
         }
 
+        public void SetHandlers(NewtonsoftJsonSerializer serializer)
+        {
+            var tmp = (OmvRpc) _client;
+            tmp.ClearHandlers();
+            tmp.AddHandler("application/json", () => serializer);
+            tmp.AddHandler("text/json", () => serializer);
+            tmp.AddHandler("text/plain", () => serializer);
+            tmp.AddHandler("text/x-json", () => serializer);
+            tmp.AddHandler("text/javascript", () => serializer);
+            tmp.AddHandler("*+json", () => serializer);
+        }
+
         public async Task<T> ExecuteRequestAsync<T>(IRpcRequest rpcrequest)
         {
             var request = _requestbuilder.ToHttp(rpcrequest);
-           
+
             var response = await _client.ExecuteAsync<T>(request).ConfigureAwait(false);
             return response.Data;
         }

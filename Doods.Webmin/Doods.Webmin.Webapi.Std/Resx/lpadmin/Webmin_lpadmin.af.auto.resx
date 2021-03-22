@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Drukkeradministrasie</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Beskikbare drukkers</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>drukker</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>beskrywing</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Druk na</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>bestuurder</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>In staat gestel?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Aanvaar?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Geen drukkers is op hierdie stelsel geïnstalleer nie.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Lys ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Jobs ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 poste ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Voeg 'n nuwe drukker by.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stop skeduleer</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Klik op hierdie knoppie om die lopende drukskeduleringsproses te stop. Dit sal voorkom dat plaaslike of afgeleë gebruikers op u stelsel druk.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Begin skeduleerder</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Klik op hierdie knoppie om die drukskeduleringsproses te begin. Dit sal plaaslike en afgeleë gebruikers op hul stelsel laat druk.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Herbeplanner weer</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Klik op hierdie knoppie om die drukskeduleringsproses weer te begin. Dit sal dwing om die huidige drukkonfigurasie toe te pas.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>drukker lys</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Drukstelsel: $1 </value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Cluster Servers</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Klik op hierdie knoppie om addisionele Webmin-bedieners op te stel waarop drukkers geskep, opgedateer en geskrap sal word.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Vee geselekteerde drukkers uit</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>Unix Ware</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>U mag nie hierdie drukker redigeer nie</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>U mag nie drukkers byvoeg nie</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Skep drukker</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Redigeer drukker</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Drukker konfigurasie</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>naam</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Aanvaar u versoeke?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Nee - waarom nie</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>beskrywing</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Druk geaktiveer?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Toegangsbeheer</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Laat almal toe</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Weier almal</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Laat genoteerde gebruikers toe ..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Weier gelys gebruikers ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Druk banier?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>opsioneel</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Verstek drukker?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Die standaarddrukker is reeds</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maksimum afdruktaakgrootte</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Bestuurder aanvaar</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>teks</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Naskrif</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>ander</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Alternatiewe drukkername</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Drukbestemming</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Plaaslike toestel</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Plaaslike lêer</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Remote Unix-bediener</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>drukker</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>tipe</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Windows-bediener op afstand</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>drukker</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>gebruiker</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>wagwoord</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>werkgroep</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>HPNP-bediener op afstand</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Direkte TCP-verbinding</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Drukker drywer</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Kontroleer of die afstandbediener op is?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blokke</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Kon nie drukker stoor nie</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>U mag nie drukkers byvoeg nie</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>U mag nie hierdie drukker redigeer nie</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' is nie 'n geldige drukkernaam nie</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Daar bestaan reeds 'n drukker met die naam '$1'</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Geen gebruikers om toegang toe te laat nie</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Geen gebruikers om in te voer nie</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Gebruiker '$1' bestaan nie</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>U moet ten minste een tipe kies vir hierdie drywer om te aanvaar</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Die maksimum afdruktaakgrootte moet 'n heelgetal wees</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' bestaan nie</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Die eksterne gasheer '$1' bestaan nie</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Afstandpoort '$1' is nie geldig nie</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' is nie 'n geldige naam vir afgeleë toue nie</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Bestuurders kan nie met eksterne Unix-drukkers gebruik word nie</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Direkte gasheer '$1' bestaan nie</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Direkte poort ontbreek of ongeldig</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Die drukker het hierdie drukker nie toegelaat nie</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Drukker het OK op hierdie stelsel geskep, maar die volgende foute het op groepstelsels voorgekom : $1 </value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Geen drukker met die naam '$1' is gevind nie</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Drukker het OK op hierdie stelsel uitgevee, maar die volgende foute het op groepstelsels voorgekom : $1 </value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Drukwerk</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Drukwerk op $1 </value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>Pos-ID</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>grootte</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Voorgelê deur</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Ingedien om</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Lêernaam</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Klik op 'n pos-ID uit die lys hierbo om te kanselleer.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Klik op 'n pos-ID uit die lys hierbo om te kanselleer, of klik op die taakgrootte om dit te sien.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Die drukker $1 het geen hangende take nie.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Kanselleer alle drukwerk</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>grepe</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Druk toets bladsy</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Kanselleer geselekteerde poste</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Op drukker $1 </value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>lys van afdruktaak</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>U mag nie afdruktaak kanselleer nie</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Kon nie die afdruktaak kanselleer nie</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Druktaak $1 bestaan nie meer nie</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>U kan nie hierdie afdruktaak bekyk nie</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Hierdie afdruktaak bestaan nie meer nie</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>U mag nie die skeduleerder begin nie</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Kon nie die skeduleerder begin nie</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>U mag nie die skeduleerder stop nie</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Kon nie die skeduleerder stop nie</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>U mag nie die skeduleerder herbegin nie</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Kon nie die skeduleerder herbegin nie</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Afskrif of teksdrukker</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Afstandsdrukker</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>model</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>program</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin-bestuurder</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint drywer</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Kon nie bestuurders van $1 kry nie. Webmin-drukkerbestuurders wat ghostscript gebruik, is nie beskikbaar nie</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Die opdrag $1 is nie gevind nie. Webmin-drukkerbestuurders wat ghostscript gebruik, is nie beskikbaar nie</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' bestaan nie</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Afstandsbediening of rou drukker</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>program</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS bestuurder</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Drukker en resolusie</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Stuur EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Papiergrootte</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Druk dubbelzijdig?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Bykomende GS-opsies</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint drywer</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' bestaan nie</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Geen drukker drywer gekies nie</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Geen resolusie gekies nie</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Afskrif of teksdrukker</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>program</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat bestuurder</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Drukker en resolusie</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Stuur EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Papiergrootte</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Bladsye per uitsetbladsy</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Bykomende GS-opsies</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Regter/linker kantlyn</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Boonste/onderste kantlyn</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Los traptrap-teks op?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' bestaan nie</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Geen drukker drywer gekies nie</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Ontbrekende of ongeldige regter-/linkermarge</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Boonste/onderste kantlyn ontbreek of ongeldig</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Geen resolusie gekies nie</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Drukmodel en drywer</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Afskrif of teksdrukker</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>program</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSfilter drywer</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Drukker tipe</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Besluit in DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Kleur drukker?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Papiergrootte</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Filtermetode</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>outomatiese</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>rou</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Ekstra ghostscript-opsies</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2 bestuurder</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Geen druktipe is gekies nie</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Ontbrekende of ongeldige resolusie</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Kon nie lpd stop : $1 </value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Drukkers wat hierdie gebruiker kan instel</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Kan nuwe drukkers bygevoeg word?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Kan afdruktaak gekanselleer word?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Kan die beplanner stop of begin?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Herbegin slegs</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Slegs op geselekteerde drukkers ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Alle drukkers</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Gekies ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Wys nie-instelbare drukkers?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Kan toetsbladsye gedruk word?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Bestuur druktake wat deur</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Alle gebruikers</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Huidige Webmin-gebruiker</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kan drukkers uitgevee word?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Kan u drukklus bestuur?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Gestopte drukkerbeplanner</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Drukbeplanner begin</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Herbegin afdrukbeplanner</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Gekanselleerde afdruktaak $2 op $1 </value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Alle drukwerk op $1 gekanselleer</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Kanselleer $2 drukwerk op $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Skep drukker $1 op $2 </value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Gewysigde drukker $1 op $2 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Drukker $1 op $2 is uitgevee</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Skep $3 drukker $1 op $2 </value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Gewysig $3 drukker $1 op $2 </value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>$3 drukker $1 op $2 is uitgevee</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Parallelle hawe $1 </value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Seriële poort $1 (COM $1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Nul toestel</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB drukker $1 </value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat daarop dui dat die Linux-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Die spoelgids $1 bestaan nie op u stelsel nie, wat daarop dui dat die Linux-druksisteem nie geïnstalleer is nie.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Parallelle hawe</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Seriële poort $1 (COM $1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat aandui dat die FreeBSD-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Die spoelgids $1 bestaan nie op u stelsel nie, wat aandui dat die FreeBSD-drukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Parallelle hawe</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Seriële poort $1 (COM $1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Parallelle hawe $1 </value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Reekspoort $1 </value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Nul toestel</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat daarop dui dat die UnixWare-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Parallel $1 </value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Reeks $1 </value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Nul toestel</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat aandui dat die HPUX-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Die koppelvlak-skriptsgids $1 bestaan nie op u stelsel nie, wat daarop dui dat die HPUX-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Parallelle hawe $1 </value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Seriële poort $1 (COM $1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Nul toestel</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat daarop dui dat die LPRng-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Die spoelgids $1 bestaan nie op u stelsel nie, wat aandui dat die LPRng-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Parallelle hawe</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 parallelle hawe</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Reekspoort $1 </value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Nul toestel</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat aandui dat die Solaris-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Druk toets bladsy</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>U mag nie toetsbladsye druk nie</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Met hierdie vorm kan u 'n toetsblad vir drukker $1 druk. Kies die tipe bladsy wat u wil afdruk :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Swart-en-witskrif-bladsy</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Kleur Postscript bladsy</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Gewone ASCII-teks</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Enige opgelaaide lêer</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Druk bladsy</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Druk die toetsbladsy met opdrag $1 af.</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. opdrag misluk!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. opdrag voltooi.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Afstandsbediening of rou drukker</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>program</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS bestuurder</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' is nie 'n geldige program nie</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Opsies vir $1 </value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat aandui dat die CUPS-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Die opdrag $1 is nie op u stelsel gevind nie, wat daarop dui dat die IRIX-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Die koppelvlak-skripgids $1 bestaan nie op u stelsel nie, wat daarop dui dat die IRIX-afdrukstelsel nie geïnstalleer is nie.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Drukkerpoort $1 </value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Ongeldige beskrywing - slegs letters en syfers word toegelaat, en geen spasies nie</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>Die AIX-drukkerbediener $1 is nie gevind nie. Miskien is dit nie geïnstalleer nie, of is daar 'n ander afdrukstelsel in gebruik.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Klusterdrukkerbedieners</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Nog geen bedieners is bygevoeg tot die drukklus nie.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>gasheernaam</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>beskrywing</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Bedryfstelsel</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Voeg bediener by</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Voeg bedieners in groep by</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>U moet bedieners met 'n aanmelding en wagwoord in die Webmin Servers Index-module voeg voordat dit hier bestuur kan word.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>groep bedieners</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Verwyder geselekteerde</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>U mag nie groepdrukkerbedieners bedien nie</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Voeg bedieners by</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Voeg $1 by.</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Voeg bedieners in groep $1 by.</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Kon nie bediener byvoeg nie</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Kon nie groep byvoeg nie</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Bediener $1 het nie die drukkeradministrasie-module nie</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Bediener $1 gebruik 'n ander drukstelsel ($2) as hierdie bediener</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Bediener $1 gebruik 'n ander drukbestuurder ($2) as hierdie bediener</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>$1 en $2 drukkers bygevoeg.</value>
+  </data>
+</root>

@@ -16,15 +16,15 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
     {
         private ViewModelStateItem _viewModelStateItem;
 
+        public ViewModelWhithState()
+        {
+            _viewModelStateItem = new ViewModelStateItem(this);
+        }
+
         public ViewModelStateItem ViewModelStateItem
         {
             get => _viewModelStateItem;
             private set => SetProperty(ref _viewModelStateItem, value);
-        }
-
-        public ViewModelWhithState()
-        {
-            _viewModelStateItem = new ViewModelStateItem(this);
         }
 
         protected void SetCommandForStateView(ICommand command)
@@ -32,7 +32,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
             ViewModelStateItem.ShowCurrentCmd = command;
         }
 
-        protected void SetLabelsStateItem(string title,string description)
+        protected void SetLabelsStateItem(string title, string description)
         {
             ViewModelStateItem.Title = title;
             ViewModelStateItem.Description = description;
@@ -49,8 +49,8 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         {
             _viewModelStateItem.IsRunning = true;
             base.OnInitializeLoading(context);
-
         }
+
         protected override Task OnInternalDisappearingAsync()
         {
             _viewModelStateItem.IsRunning = true;

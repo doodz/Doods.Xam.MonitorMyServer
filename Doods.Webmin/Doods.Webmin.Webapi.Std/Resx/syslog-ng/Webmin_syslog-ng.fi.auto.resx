@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Järjestelmälokit NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Käytä määritystä</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Napsauta tätä painiketta aktivoidaksesi nykyisen Syslog-NG-kokoonpanon.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Lopeta Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Napsauta tätä painiketta, kun haluat pysäyttää käynnissä olevan Syslog-NG-daemonin. Lopetettuinaan muiden ohjelmien lokisanomia ei enää kirjoiteta lokitiedostoihin.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Käynnistä Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Napsauta tätä painiketta, jos haluat käynnistää Syslog-NG-demonin nykyisen kokoonpanon avulla.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>moduulihakemisto</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Kirjausasetukset</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Kaikkien lokitiedostojen asetukset</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekuntia</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>merkinnät</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Aika odottaa ennen kuolleiden yhteyksien avaamista uudelleen</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Aika odottaa ennen tyhjäkäyntien kytkemistä</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Puskuriviestit ennen kirjoittamista</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Aika odottaa tilastoviestien välillä</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Puskuroitavien viestien lukumäärä</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Käytäkö ketjutettua isäntänimiä?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Pidätkö alkuperäiset isäntänimet?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Tarkistetaanko isäntänimissä kelvolliset merkit?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Säännöllinen lauseke huonoille isäntänimille</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Luodaanko tarvittaessa lokitiedostojen hakemistoja?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Lokitiedostojen oletusomistaja</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Lokitiedostojen oletusryhmä</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Lokitiedostojen oletusoikeudet</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Luotujen hakemistojen oletusomistaja</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Luotujen hakemistojen oletusryhmä</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Luotujen hakemistojen oletusoikeudet</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Lokiaikaviestit vastaanotettiin?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Onko käänteisiä DNS-hakuja?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Välimuistin DNS-haku?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>DNS-välimuistin koko</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Välimuistin DNS-tietueet</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Välimuistissa epäonnistui DNS-haku</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Lokisanoman enimmäiskoko</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Kirjataanko täydet isäntänimet?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Korvataanko ohjausmerkit tiedostonimissä?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Lokivaihtoehtojen tallentaminen epäonnistui</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Puuttuva tai virheellinen säännöllinen lauseke huonoille isäntänimille</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen DNS-välimuistin koko</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen DNS-välimuistiaika</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen epäonnistunut DNS-välimuistiaika</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Lokitiedostojen oletusomistaja puuttuu</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Puuttuu lokitiedostojen oletusryhmä</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Puuttuvat lokitiedostojen oletusoikeudet</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Puuttuu hakemistojen oletusomistaja</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Puuttuu oletusryhmä hakemistoille</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Puuttuvat hakemistojen oletusoikeudet</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen aika odottaa kuolleita yhteyksiä</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen aika odottaa ihanteellisia yhteyksiä</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Puuttuva tai virheellinen puskurointiin tarkoitettujen viestien lukumäärä ennen kirjoittamista</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen aika odottaa tilastoviestien välillä</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Puuttuva tai virheellinen puskuriviestien lukumäärä</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen lokilähetyskoko</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Lokikohteet</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Kohteen nimi</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Kirjoittaa</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Lokikohde</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>tiedosto</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Sisäänkirjautuneet käyttäjät</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Ohjelman syöttö</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix-putki</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP syslog -palvelin</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslog -palvelin</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Datagrammi-liitäntä</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Suoratoisto</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Kaikki käyttäjät</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Vain käyttäjät $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Isäntä $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>View ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Kohdelokitiedostoja ei ole vielä määritetty.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Poista valitut kohteet</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Lisää uusi lokikohde.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>lokikohteet</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Muu moduulin loki</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Tulos $1 : stä</value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Lokikohteen asetukset</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Luo lokikohde</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Muokkaa lokin määränpäätä</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Lokikohteen nimi</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Kirjaudu sisään ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Tiedoston nimi</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Luodaan hakemistoja?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Hakemistojen käyttöoikeudet</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Synkronoidaan jokaisen kirjoituksen jälkeen?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Ryhmä lokitiedostoon</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Lokitiedoston omistaja</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Lokitiedoston oikeudet</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Synkronointien väliset viestit</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Listatut käyttäjät</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog-palvelin</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Verkkoprotokolla</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Palvelimen osoite</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Palvelimen portti</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Paikallinen IP-osoite</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Paikallinen satama</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix-pistorasia</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Tyyppi</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Pistorasian nimi</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Kohteen tallentaminen epäonnistui</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Kohde, jolla on sama nimi, on jo olemassa</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Kohtetta ei enää ole!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Puuttuva tai virheellinen tiedostonimi</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Puuttuva tai virheellinen lokitiedoston omistaja</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Puuttuva tai virheellinen lokitiedostoryhmä</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Puuttuvat tai ei-oktaaliset lokitiedostot oikeudet</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Puuttuvat tai ei-oktaaliset hakemistojen käyttöoikeudet</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Puuttuva tai virheellinen viestien määrä synkronointien välillä</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Puuttuvat käyttäjät lähetettäväksi</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Puuttuva ohjelma, johon syöttää</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Puuttuu Unix-pipe-tiedosto</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Puuttuva tai virheellinen porttinumero</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Puuttuva tai virheellinen paikallinen IP-osoite</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Puuttuva tai virheellinen paikallinen porttinumero</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Puuttuva tai virheellinen Syslog-palvelimen isäntä tai osoite</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Puuttuu Unix-pistorasian nimi</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Kohteiden poistaminen epäonnistui</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Mitään ei ole valittu</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Kohtetta $1 ei voi poistaa, koska lokikohde käyttää sitä</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Lähteiden poistaminen epäonnistui</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Mitään ei ole valittu</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Lokilähdettä $1 ei voi poistaa, koska lokikokoelma käyttää sitä</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Suodattimien poistaminen epäonnistui</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Mitään ei ole valittu</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Lokisuodatinta $1 ei voi poistaa, koska loki-kohde käyttää sitä</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Lokikohteiden poistaminen epäonnistui</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Mitään ei ole valittu</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Lokisuodattimet</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Suodattimen nimi</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>olosuhteet</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Lokisuodattimia ei ole vielä määritetty.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Poista valitut suodattimet</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Lisää uusi lokisuodatin.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>lokisuodattimet</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>prioriteetti &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>prioriteetit &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 painopisteet</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>laitos &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 tilat</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>ohjelma &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>vastaa "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>isäntänimestä &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>lähettäjältä &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Luo lokisuodatin</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Muokkaa lokisuodatinta</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Lokisuodatinmääritystiedot</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Suodattimen nimi</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Yksinkertaiset ehdot (kaikkien on vastattava)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Monimutkainen lauseke</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Ensisijaisesti ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Ohjelmasta ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Vastaa ilmaisua ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Laitoksesta ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Isäntänimestä ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>IP-verkosta ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Lokisuodattimen tallentaminen epäonnistui</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Puuttuva tai virheellinen suodattimen nimi</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Saman nimen suodatin on jo olemassa</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Mitään suodatettavaa syötetyssä</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Ei prioriteetteja</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Ei palveluita valittu</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Puuttuva tai virheellinen ohjelman nimi</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Puuttuva säännöllinen lauseke</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Puuttuva tai virheellinen isäntänimi</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Puuttuva tai virheellinen verkko-IP-osoite</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Puuttuva tai virheellinen verkkomaski</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Virhe monimutkaisessa lausekkeessa</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Suodatinta ei enää ole!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Lokikohteet</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Lähteet</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Suodattimet</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>matkakohteet</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Lisää uusi lokikohde.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Poista valitut lokikohteet</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>lokikohteet</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Luo lokikohde</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Muokkaa lokitavoitetta</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Lokilähteen, suodattimen ja määränpään valinnat</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Lokilähteet</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Käytettävät suodattimet</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Kohdetiedostot</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Älä käsittele enää kohteita</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Varmuuslokin tavoite</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Käsittele kaikki lähteet</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Kohdevaihtoehdot</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Lokikohteita ei enää ole!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Lokikohteen tallentaminen epäonnistui</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Lähteitä ei ole valittu</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Lokilähteet</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Lähteitä ei ole vielä määritelty!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Lisää uusi lokilähde.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Lähteen nimi</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Lokitietolähteet</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Poista valitut lähteet</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Sisäiset Syslog-NG-viestit</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Suoratoisto</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Datagrammi-liitäntä</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP-palvelin</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP-palvelin</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Ytimen lokitiedosto</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Nimetty putki</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Aurinkovirta</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog-palvelin</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>lokilähteet</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Luo lokilähde</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Muokkaa lokilähdettä</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Lokilähteen asetukset</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Minkä tahansa</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Lähdettä ei enää ole!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Lähteen nimi</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Lokilähdetyypit</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Socket-tiedoston omistaja</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Socket-tiedostoryhmä</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Socket-tiedoston käyttöoikeudet</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Pidätkö yhteydet auki uudelleenkäynnistyksen aikana?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maksimi samanaikaiset yhteydet?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Paikallinen IP-osoite</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Paikallinen porttinumero</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Käytätkö TCP-jatkoaliveja?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Lokisanomien etuliite</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Viestilohkon koko</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Lokilähteen tallentaminen epäonnistui</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Puuttuva tai virheellinen lähteen nimi</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Saman nimen lokilähde on jo olemassa</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Puuttuva tai virheellinen socket-tiedoston omistaja</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Puuttuva tai virheellinen socket-tiedostoryhmä</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Puuttuvat tai ei-oktaaliset käyttöoikeudet socket-tiedostossa</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Puuttuva tai virheellinen enimmäisyhteyksien lukumäärä</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Puuttuva tai virheellinen paikallinen IP-osoite</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Puuttuva tai virheellinen paikallinen porttinumero</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Lokiviestien etuliite puuttuu</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Puuttuva tai ei-numeerinen viestilohkon koko</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Puuttuva tai virheellinen Unix-kansiotiedoston nimi</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Puuttuva tai virheellinen ytimen lokitiedoston nimi</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Puuttuva tai virheellinen nimetty putketiedoston nimi</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Oven tiedostonimi</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Puuttuva tai virheellinen Sun-stream-tiedostonimi</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Puuttuva tai virheellinen Sun-suoratoisto-ovetiedoston nimi</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Verkkoprotokolla</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Näytä lokitiedosto</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$2 : n viimeiset rivit $1 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Lokitiedosto on tyhjä</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>virkistää</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Näytä vain rivit, joissa on teksti $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Asetusten määrittäminen epäonnistui</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Ei käynnissä!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Syslog-NG-palvelimen käynnistäminen epäonnistui</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Syslog-NG-palvelimen pysäyttäminen epäonnistui</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Luotu lokikohde $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Muokattu lokikohde $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Poistettu lokikohde $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Poistettu $1 lokikohteet</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Luotu lokisuodatin $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Muokattu lokisuodatin $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Poistettu lokisuodatin $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Poistettu $1 lokisuodattimet</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Luotu lokilähde $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Muokattu lokilähde $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Poistettu lokilähde $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Poistettu $1 lokilähde</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Luotu lokikohde</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Muokattu lokikohde</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Poistettu lokikohde</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Poistettu $1 lokikohteet</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Sovellettu kokoonpano</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Käynnistettiin Syslog-NG-palvelin</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Pysäytetty Syslog-NG-palvelin</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Vaihdetut globaalit vaihtoehdot</value>
+  </data>
+</root>

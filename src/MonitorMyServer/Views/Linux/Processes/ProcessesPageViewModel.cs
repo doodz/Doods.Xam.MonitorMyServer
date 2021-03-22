@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Doods.Framework.Mobile.Ssh.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
@@ -12,10 +13,11 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
 {
     public class ProcessesPageViewModel : ViewModelWhithState
     {
-       
-        private IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> _processes;
         private readonly ISshService _sshService;
+
+        private IEnumerable<Process> _processes;
         private int _processesCount;
+
         public ProcessesPageViewModel(ISshService sshService)
         {
             Title = Resource.Processes;
@@ -25,18 +27,26 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
 
         public ICommand StopProcessCommand { get; }
 
+        public IEnumerable<Process> Processes
+        {
+            get => _processes;
+            set => SetProperty(ref _processes, value);
+        }
+
+        public int ProcessesCount
+        {
+            get => _processesCount;
+            set => SetProperty(ref _processesCount, value);
+        }
+
 
         private async Task StopProcess(object obj)
         {
             if (obj == null) return;
 
-            if (obj is Framework.Mobile.Ssh.Std.Models.Process p) await _sshService.RunCommand($"kill {p.Pid}");
+            if (obj is Process p) await _sshService.RunCommand($"kill {p.Pid}");
         }
-        public IEnumerable<Framework.Mobile.Ssh.Std.Models.Process> Processes
-        {
-            get => _processes;
-            set => SetProperty(ref _processes, value);
-        }
+
         protected override async Task InternalLoadAsync(LoadingContext context)
         {
             SetLabelsStateItem(Resource.PleaseWait, Resource.PacketReading);
@@ -47,11 +57,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Processes2
             SetLabelsStateItem(Resource.PleaseWait,
                 string.Format(Resource.ThereAre_0_Processes, ProcessesCount));
         }
-        public int ProcessesCount
-        {
-            get => _processesCount;
-            set => SetProperty(ref _processesCount, value);
-        }
+
         private async Task GetProcesses()
         {
             Processes = await _sshService.GetProcesses();

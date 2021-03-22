@@ -7,7 +7,6 @@ namespace Doods.Synology.Webapi.Std.Datas
         [JsonProperty("allow_control", NullValueHandling = NullValueHandling.Ignore)]
         public bool? AllowControl { get; set; }
 
-        [JsonProperty("status")]
-        public FluffyStatus Status { get; set; }
+        [JsonProperty("status")] public FluffyStatus Status { get; set; }
     }
 }

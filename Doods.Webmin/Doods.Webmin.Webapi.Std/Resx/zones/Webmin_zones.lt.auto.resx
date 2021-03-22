@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Jūsų sistemoje nerasta zonų administravimo komandos $1. Prieš pradedant naudoti šį modulį, jis turi būti įdiegtas.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>„Webmin“ veikia $1 zonoje, o ne &lt;tt&gt;globalioje&lt;/tt&gt; zonoje. Šis modulis veiks tik tada, kai bus paleistas &lt;tt&gt;globalioje&lt;/tt&gt; zonoje.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Dar nebuvo apibrėžtos zonos.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Pridėkite naują zoną.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>zonų sąrašas</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Esamos zonos</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Redaguoti zoną</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Bendroji zonų konfigūracija</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Zonos pavadinimas</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Dabartinis statusas</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Zonos katalogas</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Pradėti nuo sistemos įkrovos?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Išteklių telkinys</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Perkraukite</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Išjungti</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Įdiekite „Webmin“</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Atnaujinkite „Webmin“</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>Paleidimas</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Įdiekite sistemą</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Pašalinti sistemą</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Ištrinti zoną</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Tinklo sąsajos zonai</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Dar nėra apibrėžtos tinklo sąsajos.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Sąsajos pavadinimas</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP adresas</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>„Netmask“</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Transliacijos adresas</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Pridėkite naują tinklo sąsają.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>Neaktyvus</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Zona neegzistuoja!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>zonos detalės</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Paveldimi paketų katalogai</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Katalogas globalioje zonoje</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Dar nėra apibrėžti paketų katalogai.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Pridėkite naują paketų katalogą.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Įdiegus zoną, paketų katalogų pridėti negalima.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Papildomos failų sistemos</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Mount katalogas</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Montuojamas nuo</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Neapdorotas įrenginys</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Failo sistemos tipas</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Pakabinta?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Pridėti tipo failų sistemą:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Dar nebuvo apibrėžtos jokios papildomos failų sistemos.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Išteklių valdymas</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Šaltinio pavadinimas</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Privilegijų rūšys</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>Ribos</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Veiksmai</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Išteklių kontrolė dar nėra apibrėžta.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Pridėkite naują išteklių valdiklį.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Bendrieji zonų atributai</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Atributo vardas</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Duomenų tipas</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Atributo vertė</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Dar nebuvo apibrėžta jokių bendrų požymių.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Pridėkite naują bendrąjį atributą.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Atidarykite „Webmin“</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Prekės ženklas</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Atšaukti</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti zonos</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Trūksta arba netinkamas fondas</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>„Webmin“ šioje zonoje neveikia</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Perkrovimo zona</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Ar tikrai norite perkrauti zoną $1 ? Visi joje vykstantys procesai bus paleisti iš naujo.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Nepavyko iš naujo paleisti zonos</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Dabar perkrovimo zona ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. nepavyko :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. baigta.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Išjungimo zona</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Ar tikrai norite uždaryti $1 zoną? Visi jame vykstantys procesai bus sustabdyti.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Nepavyko išjungti zonos</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Dabar uždaroma zona ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Paleidimo zona</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Nepavyko įkelti įkrovos zonos</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Dabar įkeliama zona ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Ištrinti zoną</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Ar tikrai norite ištrinti zoną $1 ? Bus prarasti visi jos privačiose failų sistemose esantys failai.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Nepavyko ištrinti zonos</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Dabar naikinama zona ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Pašalinti sistemą</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Ar tikrai norite išinstaliuoti sistemos programinę įrangą iš $1 zonos? Bus prarasti visi jos privačiose failų sistemose esantys failai.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Nepavyko išinstaliuoti sistemos programinės įrangos iš zonos</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Dabar išdiegti sistemą iš zonos ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Įdiekite sistemą</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Dabar diegiame sistemą į zoną ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Sukurti tinklo sąsają</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Redaguoti tinklo sąsają</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Informacija apie zonos virtualią sąsają</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>Sąsajos IP adresas</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Tikroji tinklo sąsaja</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Netmask for address</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Dabartinis transliacijos adresas</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti tinklo sąsajos</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Netinkamas tinklo maskavimas</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Neteisingas IP adresas</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Sąsaja nebeegzistuoja!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>Šioje zonoje jau yra tinklo sąsaja su tuo pačiu IP adresu</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Pridėti paketų katalogą</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Redaguoti paketų katalogą</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Paveldimos pakuotės katalogo informacija</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Katalogas globalioje zonoje</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Katalogo nebeegzistuoja!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti paketo katalogo</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Netinkamas arba jo nėra</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>Pakuotės katalogas jau yra šioje zonoje</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Paveldėkite paketus iš globalios zonos</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Taip (negausios šaknies zona)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Ne (visa šaknies zona)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Sukurkite failų sistemą</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Redaguoti failų sistemą</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Papildoma failų sistemos informacija</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Failo sistemos tipas</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Montavimo taškas zonoje</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Dabartinis statusas</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Neįrengta</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>Pakabinta</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Sumontuota, kai $2 nėra iš $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Šaltinis globalioje zonoje</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Failo sistemos prijungimo parinktys</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti failų sistemos</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Trūksta prijungimo taško katalogo</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Failo sistema buvo sukurta, tačiau ją prijungiant įvyko klaida</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Failų sistema buvo pašalinta, tačiau ją įdėjus įvyko klaida</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Failo sistema buvo atnaujinta, bet įvyko klaida iš naujo ją įdiegiant</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Trūksta šaltinio įrenginio failo</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Netinkamos prijungimo parinktys (turi būti kableliais atskirtas sąrašas, pavyzdžiui, ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Failo sistema nebeegzistuoja!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Sumontuoti sukūrus?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>Šioje zonoje jau yra failų sistema, naudojanti tą patį katalogą</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Sukurti išteklių valdymą</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Redaguoti išteklių valdymą</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Išteklių valdymo rūšis ir apribojimai</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Šaltinio tipas</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Nustatomos ribos</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Privilegijos rūšis</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>Riboti</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Veiksmas, kai viršijama</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>Pagrindinis</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Privilegijuotas</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Jokių veiksmų</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Atmesti prašymą</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Siųsti signalą ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti išteklių valdymo</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Išteklių kontrolė nebeegzistuoja!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Ne skaičius</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>$1 eilutėje nepasirinktas joks signalas</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Neįvestos ribos</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>Toje pačioje medžiagoje valdiklis jau yra šioje zonoje</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Sukurkite bendrąjį atributą</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Redaguoti bendrąjį atributą</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Informacija apie bendrąją zonos atributą</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Atributo vardas</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Duomenų tipas vertei</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Atributo vertė</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Teksto eilutė</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>Sveikasis skaičius</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Teigiamas sveikasis skaičius</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Nepavyko išsaugoti bendrojo atributo</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Trūksta arba netinkamas vardas</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Vertė nėra sveikas skaičius</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Vertė nėra teigiamas sveikasis skaičius</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Vertė nėra „teisinga“ ar „klaidinga“</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Atributas nebeegzistuoja!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>Šioje zonoje jau yra atributas tuo pačiu pavadinimu</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Bėgimas</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>Sustabdyta</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Neįdiegta</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Įdiegta</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>Parengta</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Žemyn</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Išsijungia</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Zonos pavadinimas</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>ID Nr.</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Zonos katalogas</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>Statusas</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Veiksmai</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>$1 zonoje</value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>Nė vienas</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Sukurti zoną</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Nauja zona</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Zonos failų katalogas</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Pasirinktas katalogas</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Automatinis (žemiau &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Pradinis IP adresas</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>Nė vienas</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Įdiegti sukūrus?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Įdiegti „Webmin“ įdiegus?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Taip (neleidžia pridėti paketų katalogų)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Sukurti dabar</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Nepavyko sukurti zonos</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Trūksta arba netinkamas zonos pavadinimas</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Trūksta arba netinkamas pagrindinio kompiuterio vardas</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Zona tuo pačiu pavadinimu jau egzistuoja</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Trūksta zonos katalogo</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>Zonų katalogas „$1“ jau yra</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Trūksta arba netinkamas pradinis IP adresas</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Kuriama nauja zona ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. padaryta.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. nepavyko! Norėdami sužinoti priežastį, skaitykite aukščiau pateiktą išvestį.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Pridedama pradinė tinklo sąsaja ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Diegiama sistemos programinė įranga ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Papildomi paketų katalogai</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' nėra galiojantis paketų katalogas</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Pridedami paketų katalogai ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Webmin nustatymas ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. nepavyko : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Konfigūruoti naują zoną?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Pradinis pagrindinio kompiuterio vardas</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Tas pats, kaip zonos pavadinimas</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Taip, naudojant žemiau esančius nustatymus ..</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Ne, nekonfigūruokite rankiniu būdu konsolėje</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Pradinis šakninis slaptažodis</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Tas pats, kaip pasaulinė sistema</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Pradinė laiko juosta</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Tokia pati kaip pasaulinė sistema ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Pradinė kalbos lokalė</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Konsolių gnybtų tipas</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Numatytasis (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Pradinio vardo tarnyba</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>Nė vienas</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS arba NIS domeno vardas</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>DNS arba NIS vardų serveriai</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Nepavyko rasti vietinio šakninio vartotojo!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Trūksta arba netinkama laiko juosta</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Trūksta arba netinkama kalbos lokalė</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Trūksta arba netinkamas terminalo tipas</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Trūksta arba netinkamas DNS arba NIS domeno vardas</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>„$1“ nėra tinkamas DNS arba NIS vardų serverio pagrindinis kompiuteris</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>Neįvestas nei DNS, nei NIS vardų serveris</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Nepavyko išspręsti zonos pagrindinio kompiuterio vardo, dėl kurio automatinė konfigūracija nepavyks. Prieš sukurdami šią zoną, turėtumėte įtraukti ją į DNS</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Numatytasis maršrutizatorius</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Trūksta arba netinkamas numatytasis maršrutizatoriaus IP adresas</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>pašalinami paveldimi paketų katalogai. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Prekės ženklas</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Prekės ženklo zona</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Sukurta zona $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Ištrinta zona $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Modifikuota $1 zonos konfigūracija</value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Paleista zona $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Iš naujo paleista zona $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Uždarymo zona $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Įdiegta zona $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Neįdiegta zona $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Sukurta tinklo sąsaja su adresu $1 zonoje $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Ištrinta tinklo sąsaja su adresu $1 zonoje $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Modifikuota tinklo sąsaja su adresu $1 zonoje $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Sukurtas paketų katalogas $1 zonoje $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Pakeistas paketo katalogas $1 zonoje $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Ištrintas paketo katalogas $1 zonoje $2 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Sukurta failų sistema $1 zonoje $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Modifikuota failų sistema $1 zonoje $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Ištrinta failų sistema $1 zonoje $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Sukurtas išteklių valdymas $1 zonoje $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Modifikuota išteklių kontrolė $1 zonoje $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>Ištrinta išteklių kontrolė $1 zonoje $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Sukurtas bendras atributas $1 zonoje $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Modifikuotas bendrasis atributas $1 zonoje $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>Ištrintas bendrasis atributas $1 zonoje $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>„Perl“ nėra įdiegtas $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>Katalogas $1 neegzistuoja arba jame nėra „Webmin“.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Įdiekite „Webmin“</value>
+  </data>
+</root>

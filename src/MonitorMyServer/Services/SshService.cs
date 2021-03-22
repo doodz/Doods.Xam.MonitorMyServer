@@ -10,14 +10,14 @@ using Doods.Framework.Ssh.Std;
 using Doods.Framework.Ssh.Std.Beans;
 using Doods.Framework.Ssh.Std.Enums;
 using Doods.Framework.Ssh.Std.Interfaces;
-using Doods.Framework.Ssh.Std.Queries;
 using Doods.Framework.Ssh.Std.Requests;
 using Doods.Framework.Ssh.Std.Requests.YetRequest;
 using Doods.Framework.Std;
+using Doods.Xam.MonitorMyServer.Data.Nas;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface ISshService : IClientSsh
+    public interface ISshService : IClientSsh, IPackageUpdates
     {
         void Init(IConnection connection, bool andConnect);
         Task InitAsync(IConnection connection, bool andConnect = true);
@@ -94,7 +94,11 @@ namespace Doods.Xam.MonitorMyServer.Services
             var result = await RunInNoHup(request);
             return result.Data;
         }
-
+        public async Task<IEnumerable<Package>> GetPackages()
+        {
+            var result = await GetUpgradables();
+            return _mapper.Map<IEnumerable<Upgradable>, IEnumerable<Package>>(result);
+        }
         public async Task<IEnumerable<Upgradable>> GetUpgradables()
         {
             var upgradableRequest = new UpgradableRequest();
@@ -153,6 +157,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             var cpuInfo = _mapper.Map<CpuInfoBean, CpuInfo>(cpuInfoBean.Data);
             return cpuInfo;
         }
+
         public async Task<Hostnamectl> GetHostnamectl()
         {
             var cpuInfoRequest = new HostnamectlRequest();
@@ -206,6 +211,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             var interfaces = await ExecuteTaskAsync<IEnumerable<string>>(groupsRequest).ConfigureAwait(false);
             return interfaces.Data;
         }
+
         public async Task<IEnumerable<string>> GetInterfaces()
         {
             var interfaceRequest = new InterfacesRequest();
@@ -222,7 +228,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<IEnumerable<string>> ReadFileRequest(string filepath, int lines = 5, bool useSudo = true)
         {
-            var interfaceRequest = new ReadFileRequest(filepath,lines,useSudo);
+            var interfaceRequest = new ReadFileRequest(filepath, lines, useSudo);
             var interfaces = await ExecuteTaskAsync<IEnumerable<string>>(interfaceRequest).ConfigureAwait(false);
             return interfaces.Data;
         }
@@ -238,13 +244,6 @@ namespace Doods.Xam.MonitorMyServer.Services
             return result.ResponseStatus == ResponseStatus.Completed;
         }
 
-        private async Task<ISshApiResponse<int>> RunInNoHup(ISshRequest request)
-        {
-            var noUpREquest = new NoHupRequest(request);
-            var pid = await ExecuteTaskAsync<int>(noUpREquest).ConfigureAwait(false);
-            return pid;
-        }
-
         public async Task<IEnumerable<Lastlogin>> GetLastLogins()
         {
             var lastLoginsRequest = new LastLoginsRequest();
@@ -252,6 +251,13 @@ namespace Doods.Xam.MonitorMyServer.Services
                 await ExecuteTaskAsync<IEnumerable<LastloginBean>>(lastLoginsRequest).ConfigureAwait(false);
             var lastLogins = _mapper.Map<IEnumerable<LastloginBean>, IEnumerable<Lastlogin>>(cpuInfoBean.Data);
             return lastLogins;
+        }
+
+        private async Task<ISshApiResponse<int>> RunInNoHup(ISshRequest request)
+        {
+            var noUpREquest = new NoHupRequest(request);
+            var pid = await ExecuteTaskAsync<int>(noUpREquest).ConfigureAwait(false);
+            return pid;
         }
     }
 }

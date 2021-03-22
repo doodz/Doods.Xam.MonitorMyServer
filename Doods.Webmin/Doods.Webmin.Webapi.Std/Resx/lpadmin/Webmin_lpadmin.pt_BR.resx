@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Administração de Impressoras</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Impressoras disponíveis</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Impressora</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Imprimir para</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Habilitado?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Aceitando?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Trabalhos</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Não há impressoras instaladas neste sistema.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Lista..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Trabalhos..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 trabalhos..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Adiciona nova impressora.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Parar Agendador</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Clique neste botão para parar o processo em curso do agendador da impressora. Isto prevenirá que qualquer usuário local ou remoto imprima no seu sistema.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Iniciar Agendador</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Clique neste botão para iniciar o processo do agendador da impressora. Isto permitirá que qualquer usuário local ou remoto imprima no seu sistema.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Reiniciar Agendador</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Clique neste botão para reiniciar o processo do agendador de impressão. Isto irá forçar a configuração de impressão atual a ser aplicada.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista de impressoras</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Sistema de impressão: $1</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Servidores de Cluster</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Clique neste botão para definir servidores adicionais do Webmin na qual as impressoras serão criadas, atualizadas e apagadas.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Apagar Impressoras Selecionadas</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>LPR Linux</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>LPR FreeBSD</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Você não está autorizado a editar esta impressora</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Você não está autorizado a adicionar impressoras</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Criar Impressora</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Editar Impressora</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Configuração da Impressora</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Aceitar requerimentos?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Não - Porque não</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Impressão ativada?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Controle de acesso</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Permitir a todos</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Negar a todos</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Permitir a usuários listados..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Negar a usuários listados..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Imprimir página de cabeçalho?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Opcional</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Impressora padrão?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Já é a impressora padrão</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Tamanho máximo dos trabalhos de impressão</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Ilimitado</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>O driver aceita</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Postscript</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Outros</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Nomes alternativos da impressora</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Destino da impressão</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Dispositivo local</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Arquivo local</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Servidor Unix remoto</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Impressora</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Servidor Windows remoto</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Impressora</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Grupo de Trabalho</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Servidor HPNP remoto</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Porta</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Conexão direta TCP</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Porta</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Driver da impressora</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Verificar se o servidor remoto está no ar?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blocos</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Erro ao salvar impressora</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Você não está autorizado a adicionar impressoras</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Você não está autorizado a editar esta impressora</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' não um nome de impressora válido</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Uma impressora chamada '$1' já existe</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Não foram informados usuários para autorizar</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Não foram informados usuários para negar</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>O usuário '$1' não existe</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Você deve inserir ao menos um tipo para este driver ser aceito</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>O tamanho máximo do trabalho de impressão deve ser um inteiro</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' não existe</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>O host remoto '$1' não existe</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>A porta remota '$'' não é válida</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' não é um nome de fila de trabalho remota válida</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Os driver não podem ser usados um impressoras Unix remotas</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>O host direto '$1' não existe</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Porta direta inválida ou faltando</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>O sistema de impressão não autorizou esta impressão</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Impressora criada com sucesso no sistema, mas os seguintes erros ocorreram no sistema de cluster : $1</value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Nenhuma impressora '$1' foi encontrada</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Impressora apagada com sucesso no sistema, mas os seguintes erros ocorreram no sistema cluster : $1</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Trabalhos de Impressão</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Trabalhos de impressão em $1</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>ID do trabalho</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Tamanho</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Enviado por</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Enviados às</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Nome do Arquivo</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Clique num ID do trabalho da lista acima para cancelar.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Clique em um ID de trabalho na lista acima para cancelar, ou clique no tamanho do trabalho para vê-lo.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Não há trabalhos de impressão em $1</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Cancelar todos os trabalhos de impressão</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>bytes</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Imprimir Página de Teste</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Cancelar Trabalhos Selecionados</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Na impressora $1</value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>lista de trabalhos de impressão</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a cancelar trabalhos de impressão</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Erro ao cancelar a trabalho de impressão</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>O trabalho de impressão $1 não existe mais</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Você não pode visualizar teste trabalho de impressão</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Este trabalho de impressão não existe mais</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a iniciar o agendador</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Erro ao iniciar o agendador</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a parar o agendador</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Erro ao parar o agendador</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a reiniciar o agendador</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Falhou ao reiniciar o agendador</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Impressora postscript ou de texto</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Impressora remota</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Driver do Webmin</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Driver Uniprint</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Erro ao obter drivers de $1. Os drivers de impressão do Webmin que utilizem ghostscript não estarão disponíveis</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>O comando $1 não foi encontrado. Os drivers de impressão do Webmin que utilizarem ghostscript não estarão disponíveis</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' não existe</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Impressora remota ou sem buffer</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>Controlador COAS</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Impressora e resolução</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Enviar fim-de-arquivo (EOF)?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Dimensões do papel</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Imprimir nos dois lados?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Opções GS adicionais</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Driver de uni-impressão</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' não existe</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Nenhuma driver de impressora selecionado</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Não selecionada nenhuma resolução</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Impressora postscript ou de texto</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Driver da Redhat</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Impressora e resolução</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Enviar fim-de-arquivo (EOF)?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Dimensões do papel</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Páginas por página de saída</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Opções GS adicionais</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Margem direita/esquerda</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Margem superior/inferior</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Corrigir o texto em modo avanço-escalonado (stair-stepping)?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' não existe</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Não foi selecionado nenhum driver de impressão</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Margem direita/esquerda inválida ou faltando</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Margem superior/inferior inválida ou faltando</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Nenhuma resolução selecionada</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Modelo de impressora e driver</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postscript ou impressão de texto</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>Driver APSfilter</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Tipo de impressora</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Resolução em DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Cores da impressora?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Tamanho do papel</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Método de filtragem</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Bruto</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Opções extras do ghostscript</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>Driver YAST2</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Nenhum tipo de impressora selecionado</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Resolução inválida ou faltando</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Falhou ao parar lpd : $1</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Impressoras que este utilizador pode configurar</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Pode adicionar novas impressoras?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Pode cancelar tarefas de impressão?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Pode para ou iniciar o catalogador?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Somente reiniciar</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Somente impressoras selecionadas ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Todas as impressoras</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Selecionadas..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Exibir impressoras não-configuráveis?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Pode imprimir páginas de teste?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Gerenciar trabalhos de impressão de</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Todos os usuários</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Usuário atual do Webmin</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Pode apagar impressoras?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Pode gerenciar impressoras em cluster?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Agendador de impressão parado</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Agendador de impressão iniciado</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Agendador de impressão reiniciado</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Cancelados $2 trabalhos de impressão em $1</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Todos os trabalhos de impressão cancelados em $1</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Cancelados $2 trabalhos de impressão em $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Impressora $1 criada em $2</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Impressora $1 em $2 modificada</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Impressora $1 em $2 apagada</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>$3 impressoras $1 criadas em $2</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>$3 impressoras $1 modificadas em $2</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>$3 impressoras $1 apagadas em $2</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Porta Paralela $1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Porta Serial $1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Dispositivo Vazio</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>Impressora USB $1</value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão do Linux não está instalado.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>O diretório de spool $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão do Linux não está instalado.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Porta Paralela</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Porta Serial $1 (COM$1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão do FreeBSD não está instalado.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>O diretório de spool $1 não existe no seu sistemam, o que indica que o sistema de impressão do FreeBSD não está instalado.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Porta Paralela</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Porta Serial $1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Porta Paralela $1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Porta Serial $1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão UnixWare não está instalado.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Paralela $1</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Serial $1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Dispositivo Vazio</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão HPUX não está instalado.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>O diretório de scripts de interface $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão HPUX não está instalado.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Porta Paralela $1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Porta Serial $1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Dispositivo Vazio</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão LPRng não está instalado.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>O diretório de spoll $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão LPRng não está instalado.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Porta Paralela</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Porta Paralela Ultra 5/10</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Porta Serial $1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Dispositivo Vazio</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão do Solaris não está instalado.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Imprimir Página de Teste</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a imprimir páginas de teste</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Este formulário permite imprimir uma página de teste para a impressora $1. Selecione o tipo de página que você deseja imprimir :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Página Postscript Branco e Preto</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Página Postscript Colorida</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Texto ASCII puro</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Qualquer arquivo enviado</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Imprimir página</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Imprimindo página de teste com o comando $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. comando falhou!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. comando completo.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Remoto ou impressora bruta</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>Driver do CUPS</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' não é um programa válido</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Opções para $1</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão CUPS não está instalado.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>O comando $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão IRIX não está instalado.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>O diretório de scripts de interface $1 não foi encontrado no seu sistema, o que indica que o sistema de impressão IRIX não está instalado.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Porta da impressora $1</value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Descrição inválida - somente letras e números são permitidos, e sem espaços</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>O servidor de impressão AIX $1 não foi encontrado. Talvez ele não esteja instalado, ou outro sistema de impressão está em uso.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Servidores de Impressão em Cluster</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Nenhum servidor foi adicionado ao cluster de impressão ainda.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Nome do computador</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Sistema operacional</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Adicionar servidor</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Adicionar servidores no grupo</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Você deve adicionar servidores com um nome de usuário e senha no Índice de Servidores do Webmin antes deles poderem serem gerenciador por aqui.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>servidores de cluster</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Remover Selecionado</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Você não está autorizado a gerenciar o cluster de servidores de impressão</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Adicionar Servidores</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Adicionando $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Adicionando servidores no grupo $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Falhou ao adicionar servidor</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Falhou ao adicionar grupo</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>O servidor $1 não possui o módulo de Administração de Impressoras</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>O servidor $1 está usando um sistema de impressão diferente ($2) para este servidor</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>O servidor $1 está usando um driver de impressão diferente ($2) para este servidor</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Adicionados $1, com $2 impressoras.</value>
+  </data>
+</root>

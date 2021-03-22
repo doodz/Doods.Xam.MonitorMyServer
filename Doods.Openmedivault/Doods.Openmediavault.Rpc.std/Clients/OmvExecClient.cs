@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
@@ -16,16 +15,15 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         public Task<IsRunning> IsRunning(string filename)
         {
             var request = NewRequest("isRunning");
-            request.Params = new { filename= filename };
+            request.Params = new {filename};
             var result = RunCmd<IsRunning>(request);
             return result;
         }
 
         public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
-
             var request = NewRequest("getOutput");
-            request.Params = new { filename,pos };
+            request.Params = new {filename, pos};
             var result = RunCmd<Output<T>>(request);
             return result;
         }

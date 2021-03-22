@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="quota_unlimited" xml:space="preserve">
+    <value>Ilimitado</value>
+  </data>
+  <data name="acl_fss" xml:space="preserve">
+    <value>Sistemas de arquivo que o usuário pode editar</value>
+  </data>
+  <data name="acl_fall" xml:space="preserve">
+    <value>Todos os Sistemas de arquivos</value>
+  </data>
+  <data name="acl_fsel" xml:space="preserve">
+    <value>Selecionado..</value>
+  </data>
+  <data name="acl_quotaon" xml:space="preserve">
+    <value>Pode habilitar ou desabilitar quotas?</value>
+  </data>
+  <data name="acl_quotanew" xml:space="preserve">
+    <value>Pode configurar cotas para novos usuários?</value>
+  </data>
+  <data name="acl_ugrace" xml:space="preserve">
+    <value>Pode editar grace times dos usuários?</value>
+  </data>
+  <data name="acl_vtotal" xml:space="preserve">
+    <value>Pode ver o total de espaço em disco?</value>
+  </data>
+  <data name="acl_ggrace" xml:space="preserve">
+    <value>Pode editar tempo de tolerância dos grupos?</value>
+  </data>
+  <data name="acl_uquota" xml:space="preserve">
+    <value>Usuários para os quais esse usuário pode editar cotas</value>
+  </data>
+  <data name="acl_gquota" xml:space="preserve">
+    <value>Grupos para os quais esse usuário pode editar cotas</value>
+  </data>
+  <data name="acl_uall" xml:space="preserve">
+    <value> Todos usuários</value>
+  </data>
+  <data name="acl_uonly" xml:space="preserve">
+    <value> Somente usuários</value>
+  </data>
+  <data name="acl_uexcept" xml:space="preserve">
+    <value> Todos usuários exceto</value>
+  </data>
+  <data name="acl_ugroup" xml:space="preserve">
+    <value> Usuários com grupo primário</value>
+  </data>
+  <data name="acl_gall" xml:space="preserve">
+    <value> Todos os grupos</value>
+  </data>
+  <data name="acl_gnone" xml:space="preserve">
+    <value> Nenhum grupo</value>
+  </data>
+  <data name="acl_gonly" xml:space="preserve">
+    <value> Somente grupos</value>
+  </data>
+  <data name="acl_gexcept" xml:space="preserve">
+    <value> Todos exceto grupos</value>
+  </data>
+  <data name="acl_uuid" xml:space="preserve">
+    <value>Usuários com UID na faixa</value>
+  </data>
+  <data name="acl_maxblocks" xml:space="preserve">
+    <value>Limite máxima de cota de blocos</value>
+  </data>
+  <data name="acl_maxfiles" xml:space="preserve">
+    <value>Limite máximo de cota de arquivos</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Ilimitado</value>
+  </data>
+  <data name="activate_eallow" xml:space="preserve">
+    <value>Você não tem permissão para habilitar ou disabilitar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="activate_eon" xml:space="preserve">
+    <value>Falhou ao iniciar cotas</value>
+  </data>
+  <data name="activate_eoff" xml:space="preserve">
+    <value>Falhou ao desabilitar cotas</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Verificar Cotas</value>
+  </data>
+  <data name="check_return" xml:space="preserve">
+    <value>$1 lista</value>
+  </data>
+  <data name="check_ecannot" xml:space="preserve">
+    <value>Você não pode verificar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="check_running" xml:space="preserve">
+    <value>O comando &lt;tt&gt;quotacheck&lt;/tt&gt; está verificando a utilização de blocos e arquivos em &lt;tt&gt;$1&lt;/tt&gt;. Isso deve gastar bastante tempo para um sistema de arquivos grande...</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>... Concluído. </value>
+  </data>
+  <data name="check_rgroup" xml:space="preserve">
+    <value>grupo</value>
+  </data>
+  <data name="check_ruser" xml:space="preserve">
+    <value>usuário</value>
+  </data>
+  <data name="cgroup_efail" xml:space="preserve">
+    <value>Falha ao copiar cotas</value>
+  </data>
+  <data name="cgroup_ecannot" xml:space="preserve">
+    <value>Você não pode copiar cotas</value>
+  </data>
+  <data name="cgroup_egallow" xml:space="preserve">
+    <value>Você não tem permissão de copiar cotas desse grupo</value>
+  </data>
+  <data name="cgroup_enogroup" xml:space="preserve">
+    <value>Nenhum grupo destino para copiar</value>
+  </data>
+  <data name="cgroup_eallowto" xml:space="preserve">
+    <value>Você não tem permissão de copiar cotas para '$1'</value>
+  </data>
+  <data name="cgform_title" xml:space="preserve">
+    <value>Copiar Cotas</value>
+  </data>
+  <data name="cgform_return" xml:space="preserve">
+    <value>cota de grupo</value>
+  </data>
+  <data name="cgform_ecannot" xml:space="preserve">
+    <value>Você não pode copiar cotas</value>
+  </data>
+  <data name="cgform_egroup" xml:space="preserve">
+    <value>Você não tem permissão de copiar cotas desse grupo</value>
+  </data>
+  <data name="cgform_copyto" xml:space="preserve">
+    <value>Copiar cotas de &lt;tt&gt;$1&lt;/tt&gt; em TODOS os sistemas de arquivos para ...</value>
+  </data>
+  <data name="cgform_all" xml:space="preserve">
+    <value>Todos os grupos em seu sistema</value>
+  </data>
+  <data name="cgform_select" xml:space="preserve">
+    <value>Grupos selecionados</value>
+  </data>
+  <data name="cgform_contain" xml:space="preserve">
+    <value>Grupos contendo usuários</value>
+  </data>
+  <data name="cgform_doit" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="cuser_efail" xml:space="preserve">
+    <value>Falhou ao copiar cotas</value>
+  </data>
+  <data name="cuser_ecannot" xml:space="preserve">
+    <value>Você não pode copiar cotas</value>
+  </data>
+  <data name="cuser_euallow" xml:space="preserve">
+    <value>Você não tem permissão de copiar cotas desse usuário</value>
+  </data>
+  <data name="cuser_enouser" xml:space="preserve">
+    <value>Nenhum usuário destino para copiar</value>
+  </data>
+  <data name="cuser_eallowto" xml:space="preserve">
+    <value>Você não tem permissão para copiar cotas para '$1'</value>
+  </data>
+  <data name="cuform_title" xml:space="preserve">
+    <value>Copiar Cotas</value>
+  </data>
+  <data name="cuform_return" xml:space="preserve">
+    <value>Cota de usuário</value>
+  </data>
+  <data name="cuform_ecannot" xml:space="preserve">
+    <value>Você não pode copiar cotas</value>
+  </data>
+  <data name="cuform_euallow" xml:space="preserve">
+    <value>Você não tem permissão para copiar as cotas desse usuário</value>
+  </data>
+  <data name="cuform_copyto" xml:space="preserve">
+    <value>Copiar cotas de &lt;tt&gt;$1&lt;/tt&gt; em TODOS os sistemas de arquivos para ...</value>
+  </data>
+  <data name="cuform_all" xml:space="preserve">
+    <value>Todos os usuários do sistema</value>
+  </data>
+  <data name="cuform_select" xml:space="preserve">
+    <value>Usuários selecionados</value>
+  </data>
+  <data name="cuform_members" xml:space="preserve">
+    <value>Membros dos Grupos selecionados</value>
+  </data>
+  <data name="cuform_doit" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="egroup_title" xml:space="preserve">
+    <value>Editar Cota</value>
+  </data>
+  <data name="egroup_freturn" xml:space="preserve">
+    <value>lista de sistema de arquivo</value>
+  </data>
+  <data name="egroup_greturn" xml:space="preserve">
+    <value>lista de grupo</value>
+  </data>
+  <data name="egroup_eallowgr" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas para '$1'</value>
+  </data>
+  <data name="egroup_eallowfs" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="egroup_quotas" xml:space="preserve">
+    <value>Cota para &lt;tt&gt;$1&lt;/tt&gt; em &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="egroup_bused" xml:space="preserve">
+    <value>Blocos usados</value>
+  </data>
+  <data name="egroup_sblimit" xml:space="preserve">
+    <value>Limite flexível de blocos</value>
+  </data>
+  <data name="egroup_hblimit" xml:space="preserve">
+    <value>Limite rígido de blocos</value>
+  </data>
+  <data name="egroup_fused" xml:space="preserve">
+    <value>Arquivos usados</value>
+  </data>
+  <data name="egroup_sflimit" xml:space="preserve">
+    <value>Limite flexível de arquivos</value>
+  </data>
+  <data name="egroup_hflimit" xml:space="preserve">
+    <value>Limite rígido de arquivos</value>
+  </data>
+  <data name="egroup_update" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="egroup_listall" xml:space="preserve">
+    <value>Lista todas as Cotas</value>
+  </data>
+  <data name="euser_title" xml:space="preserve">
+    <value>Editar Cota</value>
+  </data>
+  <data name="euser_freturn" xml:space="preserve">
+    <value>Lista de sistemas de arquivo</value>
+  </data>
+  <data name="euser_ureturn" xml:space="preserve">
+    <value>lista de usuários</value>
+  </data>
+  <data name="euser_eallowus" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas para '$1'</value>
+  </data>
+  <data name="euser_eallowfs" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="euser_quotas" xml:space="preserve">
+    <value>Cota para &lt;tt&gt;$1&lt;/tt&gt; em &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="euser_bused" xml:space="preserve">
+    <value>Blocos Usados</value>
+  </data>
+  <data name="euser_bdisk" xml:space="preserve">
+    <value>Blocos disponíveis no Disco</value>
+  </data>
+  <data name="euser_sblimit" xml:space="preserve">
+    <value>Limite flexível de blocos</value>
+  </data>
+  <data name="euser_hblimit" xml:space="preserve">
+    <value>Limite rígido de blocos</value>
+  </data>
+  <data name="euser_fused" xml:space="preserve">
+    <value>Arquivos usados</value>
+  </data>
+  <data name="euser_fdisk" xml:space="preserve">
+    <value>Arquivos disponíveis no Disco</value>
+  </data>
+  <data name="euser_sflimit" xml:space="preserve">
+    <value>Limite flexível de arquivos</value>
+  </data>
+  <data name="euser_hflimit" xml:space="preserve">
+    <value>Limite flexível de arquivos</value>
+  </data>
+  <data name="euser_update" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="euser_listall" xml:space="preserve">
+    <value>Lista todas as Cotas</value>
+  </data>
+  <data name="gfilesys_title" xml:space="preserve">
+    <value>Cotas de Grupo</value>
+  </data>
+  <data name="gfilesys_return" xml:space="preserve">
+    <value>lista de sistemas de arquivo</value>
+  </data>
+  <data name="gfilesys_ecannot" xml:space="preserve">
+    <value>Você não pode editar cotas para '$1'</value>
+  </data>
+  <data name="gfilesys_all" xml:space="preserve">
+    <value>Todas as Cotas de $1</value>
+  </data>
+  <data name="gfilesys_blocks" xml:space="preserve">
+    <value>Blocos</value>
+  </data>
+  <data name="gfilesys_files" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="gfilesys_fs" xml:space="preserve">
+    <value>Sistema de Arquivo</value>
+  </data>
+  <data name="gfilesys_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="gfilesys_soft" xml:space="preserve">
+    <value>Limite flexível</value>
+  </data>
+  <data name="gfilesys_hard" xml:space="preserve">
+    <value>Limite rígido</value>
+  </data>
+  <data name="gfilesys_nogquota" xml:space="preserve">
+    <value>Grupo &lt;tt&gt;$1&lt;/tt&gt; não tem cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="gfilesys_edit" xml:space="preserve">
+    <value>Editar Cota em:</value>
+  </data>
+  <data name="gfilesys_copy" xml:space="preserve">
+    <value>Copiar Cotas</value>
+  </data>
+  <data name="ggracef_title" xml:space="preserve">
+    <value>Tempo de tolerância</value>
+  </data>
+  <data name="ggracef_return" xml:space="preserve">
+    <value>lista de grupos</value>
+  </data>
+  <data name="ggracef_ecannot" xml:space="preserve">
+    <value>Você não pode editar o tempo de tolerância nesse sistema de arquivos</value>
+  </data>
+  <data name="ggracef_info" xml:space="preserve">
+    <value>Cada sistema de arquivos tem um tempo de tolerância para cotas de bloco ou arquivo. O tempo de tolerância determina quanto tempo um grupo pode ficar acima do limite flexível de cota antes que não seja permitido criar novos arquivos. </value>
+  </data>
+  <data name="ggracef_graces" xml:space="preserve">
+    <value>Tempo de tolerância para o grupo em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ggracef_block" xml:space="preserve">
+    <value>Para cota de bloco</value>
+  </data>
+  <data name="ggracef_file" xml:space="preserve">
+    <value>Para cota de arquivo</value>
+  </data>
+  <data name="ggracef_update" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="ggraces_esave" xml:space="preserve">
+    <value>Falha ao salvar tempo de tolerância</value>
+  </data>
+  <data name="ggraces_eedit" xml:space="preserve">
+    <value>Você não pode editar o tempo de tolerância nesse sistema de arquivos</value>
+  </data>
+  <data name="ggraces_enumber" xml:space="preserve">
+    <value>'$1' não é um número</value>
+  </data>
+  <data name="index_quser" xml:space="preserve">
+    <value>Cotas de Usuários</value>
+  </data>
+  <data name="index_qgroup" xml:space="preserve">
+    <value>Cotas de Grupos</value>
+  </data>
+  <data name="index_qboth" xml:space="preserve">
+    <value>Cotas de Usuários e Grupos</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Desabilitar Cotas</value>
+  </data>
+  <data name="index_inactive" xml:space="preserve">
+    <value>Inativo</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Habilitar Cotas</value>
+  </data>
+  <data name="index_mountonly" xml:space="preserve">
+    <value>Só pode habilitar ao montar</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>Cotas de Disco</value>
+  </data>
+  <data name="index_fs" xml:space="preserve">
+    <value>Sistema de Arquivo</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="index_mount" xml:space="preserve">
+    <value>Montado a partir de</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>índice</value>
+  </data>
+  <data name="index_euser" xml:space="preserve">
+    <value>Editar Cotas do Usuário:</value>
+  </data>
+  <data name="index_egroup" xml:space="preserve">
+    <value>Edita Cotas do Grupo:</value>
+  </data>
+  <data name="index_nosupport" xml:space="preserve">
+    <value>Nenhum sistema de arquivos local que suporte cotas</value>
+  </data>
+  <data name="lgroups_failed" xml:space="preserve">
+    <value>Falha ao listar grupos</value>
+  </data>
+  <data name="lgroups_eallow" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="lgroups_title" xml:space="preserve">
+    <value>Cotas Sistemas de Arquivos</value>
+  </data>
+  <data name="lgroups_return" xml:space="preserve">
+    <value>lista de sistema de arquivos</value>
+  </data>
+  <data name="lgroups_toomany" xml:space="preserve">
+    <value>Existem muitos grupos que possuem cotas em &lt;tt&gt;$1&lt;/tt&gt; para serem mostrados em uma página</value>
+  </data>
+  <data name="lgroups_quotas" xml:space="preserve">
+    <value>Cotas de todos os grupos em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_blocks" xml:space="preserve">
+    <value>Blocos</value>
+  </data>
+  <data name="lgroups_files" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="lgroups_group" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="lgroups_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="lgroups_soft" xml:space="preserve">
+    <value>Limite flexível</value>
+  </data>
+  <data name="lgroups_hard" xml:space="preserve">
+    <value>Limite rígido</value>
+  </data>
+  <data name="lgroups_noquota" xml:space="preserve">
+    <value>Nenhum grupo tem cota em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_equota" xml:space="preserve">
+    <value>Edita Cota para:</value>
+  </data>
+  <data name="lgroups_grace" xml:space="preserve">
+    <value>Editar Tempo de tolerância</value>
+  </data>
+  <data name="lgroups_check" xml:space="preserve">
+    <value>Verifica Cotas</value>
+  </data>
+  <data name="sgroup_egroup" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas para esse grupo</value>
+  </data>
+  <data name="sgroup_efs" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="ssync_ecannot" xml:space="preserve">
+    <value>Você não pode modificar a cota padrão para esse sistema de arquivos</value>
+  </data>
+  <data name="suser_euser" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas para esse usuário</value>
+  </data>
+  <data name="suser_efs" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="suser_emaxblocks" xml:space="preserve">
+    <value>Você não tem permissão de modificar o limite de blocos acima $1</value>
+  </data>
+  <data name="suser_emaxfiles" xml:space="preserve">
+    <value>Você não tem permissão de modificar o limite de arquivos acima $1</value>
+  </data>
+  <data name="ufilesys_title" xml:space="preserve">
+    <value>Cotas de Usuários</value>
+  </data>
+  <data name="ufilesys_return" xml:space="preserve">
+    <value>lista de sistema de arquivos</value>
+  </data>
+  <data name="ufilesys_ecannot" xml:space="preserve">
+    <value>Você não pode editar cotas para '$1'</value>
+  </data>
+  <data name="ufilesys_all" xml:space="preserve">
+    <value>Todas as Cotas de &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ufilesys_blocks" xml:space="preserve">
+    <value>Blocos</value>
+  </data>
+  <data name="ufilesys_files" xml:space="preserve">
+    <value>Arquivo</value>
+  </data>
+  <data name="ufilesys_fs" xml:space="preserve">
+    <value>Sistema de Arquivo</value>
+  </data>
+  <data name="ufilesys_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="ufilesys_soft" xml:space="preserve">
+    <value>Limite flexível</value>
+  </data>
+  <data name="ufilesys_hard" xml:space="preserve">
+    <value>Limite rígido</value>
+  </data>
+  <data name="ufilesys_nouquota" xml:space="preserve">
+    <value>O usuário &lt;tt&gt;$1&lt;/tt&gt; não possui cotas em nenhum sistema de arquivos.</value>
+  </data>
+  <data name="ufilesys_edit" xml:space="preserve">
+    <value>Editar Cota em:</value>
+  </data>
+  <data name="ufilesys_copy" xml:space="preserve">
+    <value>Copiar Cotas</value>
+  </data>
+  <data name="ugracef_title" xml:space="preserve">
+    <value>Tempo de tolerância</value>
+  </data>
+  <data name="ugracef_return" xml:space="preserve">
+    <value>lista de usuário</value>
+  </data>
+  <data name="ugracef_ecannot" xml:space="preserve">
+    <value>Você não pode editar o tempo de tolerância nesse sistema de arquivos</value>
+  </data>
+  <data name="ugracef_info" xml:space="preserve">
+    <value>Cada sistema de arquivos tem um tempo de tolerância para cotas de bloco ou arquivo. O tempo de tolerância determina quanto tempo um grupo pode ficar acima do limite flexível de cota antes que não seja permitido criar novos arquivos. </value>
+  </data>
+  <data name="ugracef_graces" xml:space="preserve">
+    <value>Tempo de tolerância para o usuário em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ugracef_block" xml:space="preserve">
+    <value>Cota de bloco</value>
+  </data>
+  <data name="ugracef_file" xml:space="preserve">
+    <value>Cota de arquivo</value>
+  </data>
+  <data name="ugracef_update" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="ugraces_esave" xml:space="preserve">
+    <value>Falha ao salvar tempo de tolerância</value>
+  </data>
+  <data name="ugraces_eedit" xml:space="preserve">
+    <value>Você não pode editar o tempo de tolerância nesse sistema de arquivos</value>
+  </data>
+  <data name="ugraces_enumber" xml:space="preserve">
+    <value>'$1' não é um número</value>
+  </data>
+  <data name="lusers_failed" xml:space="preserve">
+    <value>Falha ao listar usuários</value>
+  </data>
+  <data name="lusers_eallow" xml:space="preserve">
+    <value>Você não tem permissão para editar cotas nesse sistema de arquivos</value>
+  </data>
+  <data name="lusers_title" xml:space="preserve">
+    <value>Cotas Sistema de Arquivo</value>
+  </data>
+  <data name="lusers_return" xml:space="preserve">
+    <value>lista de Sistema de Arquivo</value>
+  </data>
+  <data name="lusers_toomany" xml:space="preserve">
+    <value>Existem muitos grupos que possuem cotas em &lt;tt&gt;$1&lt;/tt&gt; para serem mostrados em uma página</value>
+  </data>
+  <data name="lusers_qoutas" xml:space="preserve">
+    <value>Todas as Cotas de Usuário em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_blocks" xml:space="preserve">
+    <value>Blocos</value>
+  </data>
+  <data name="lusers_files" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="lusers_user" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="lusers_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="lusers_soft" xml:space="preserve">
+    <value>Limite flexível</value>
+  </data>
+  <data name="lusers_hard" xml:space="preserve">
+    <value>Limite rígido</value>
+  </data>
+  <data name="lusers_noquota" xml:space="preserve">
+    <value>Nenhum usuário tem cota em &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_equota" xml:space="preserve">
+    <value>Editar Cota para:</value>
+  </data>
+  <data name="lusers_egrace" xml:space="preserve">
+    <value>Editar tempo de tolerância</value>
+  </data>
+  <data name="lusers_check" xml:space="preserve">
+    <value>Verificar cotas</value>
+  </data>
+  <data name="lusers_info" xml:space="preserve">
+    <value>O Webmin pode ser configurado para atribuir as cotas automaticamente para esse sistema de arquivos quando um novo usuário é criado. Isso só funcionará se o módulo $1 for utilizado para adicionar usuários.</value>
+  </data>
+  <data name="lusers_useradmin" xml:space="preserve">
+    <value>Usuários e grupos</value>
+  </data>
+  <data name="lusers_newuser" xml:space="preserve">
+    <value>Cotas para novos usuários</value>
+  </data>
+  <data name="lusers_sblimit" xml:space="preserve">
+    <value>Limite flexível de blocos</value>
+  </data>
+  <data name="lusers_hblimit" xml:space="preserve">
+    <value>Limite rígido de blocos</value>
+  </data>
+  <data name="lusers_sflimit" xml:space="preserve">
+    <value>Limite flexível de arquivos</value>
+  </data>
+  <data name="lusers_hflimit" xml:space="preserve">
+    <value>Limite rígido de arquivos</value>
+  </data>
+  <data name="lusers_apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="grace_seconds" xml:space="preserve">
+    <value>Segundos</value>
+  </data>
+  <data name="grace_minutes" xml:space="preserve">
+    <value>Minutos</value>
+  </data>
+  <data name="grace_hours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="grace_days" xml:space="preserve">
+    <value>Dias</value>
+  </data>
+  <data name="grace_weeks" xml:space="preserve">
+    <value>Semanas</value>
+  </data>
+  <data name="grace_months" xml:space="preserve">
+    <value>Meses</value>
+  </data>
+  <data name="log_activate_u" xml:space="preserve">
+    <value>Habilitar cotas para novos usuários em $1</value>
+  </data>
+  <data name="log_activate_g" xml:space="preserve">
+    <value>Habilitar cotas para grupos em $1</value>
+  </data>
+  <data name="log_activate_ug" xml:space="preserve">
+    <value>Habilitar cotas para usuários e grupos em $1</value>
+  </data>
+  <data name="log_deactivate_u" xml:space="preserve">
+    <value>Desabilitar cotas de usuário em $1</value>
+  </data>
+  <data name="log_deactivate_g" xml:space="preserve">
+    <value>Desabilitar cotas de grupo em $1</value>
+  </data>
+  <data name="log_deactivate_ug" xml:space="preserve">
+    <value>Desabilitar cotas de grupo e usuário em $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Cotas para $1 em $2 modificadas</value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>Cotas para novos usuários modificadas em $1</value>
+  </data>
+  <data name="log_grace_u" xml:space="preserve">
+    <value>Tempo de tolerância de usuário modificado em $1</value>
+  </data>
+  <data name="log_grace_g" xml:space="preserve">
+    <value>Tempo de tolerância de grupo modificado em$1</value>
+  </data>
+  <data name="log_check" xml:space="preserve">
+    <value>Cotas verificadas em $1</value>
+  </data>
+  <data name="log_copy_u" xml:space="preserve">
+    <value>Cotas do usuário $1 copiadas</value>
+  </data>
+  <data name="log_copy_g" xml:space="preserve">
+    <value>Cotas do grupo $1 copiadas</value>
+  </data>
+</root>

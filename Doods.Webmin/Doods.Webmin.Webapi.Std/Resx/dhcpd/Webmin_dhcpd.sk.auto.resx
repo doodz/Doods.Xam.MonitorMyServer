@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_key" xml:space="preserve">
+    <value>Úprava kľúčov TSIG (používa sa na autentifikáciu aktualizácií serverov DNS)</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>index</value>
+  </data>
+  <data name="index_dhcpdver2" xml:space="preserve">
+    <value>Server DHCP &lt;tt&gt;$1&lt;/tt&gt; sa nezdá byť správnou verziou. Webmin podporuje iba verzie ISC DHCPD $2 až $3.</value>
+  </data>
+  <data name="index_subtitle" xml:space="preserve">
+    <value>Podsiete a zdieľané siete</value>
+  </data>
+  <data name="index_nosubdef" xml:space="preserve">
+    <value>Neboli definované žiadne podsiete ani zdieľané siete.</value>
+  </data>
+  <data name="index_nomemb" xml:space="preserve">
+    <value>Žiadni členovia</value>
+  </data>
+  <data name="index_1memb" xml:space="preserve">
+    <value>1 člen</value>
+  </data>
+  <data name="index_234memb" xml:space="preserve">
+    <value>$1 členov</value>
+  </data>
+  <data name="index_memb" xml:space="preserve">
+    <value>$1 členov</value>
+  </data>
+  <data name="index_hst" xml:space="preserve">
+    <value>Hostitelia a skupiny hostiteľov</value>
+  </data>
+  <data name="index_nohst" xml:space="preserve">
+    <value>Neboli definovaní žiadni hostitelia ani skupiny.</value>
+  </data>
+  <data name="index_hostgroup" xml:space="preserve">
+    <value>Host/Group</value>
+  </data>
+  <data name="index_parent" xml:space="preserve">
+    <value>rodič</value>
+  </data>
+  <data name="index_nameip" xml:space="preserve">
+    <value>Názov hostiteľa alebo IP</value>
+  </data>
+  <data name="index_buttego" xml:space="preserve">
+    <value>Upravte možnosti klienta</value>
+  </data>
+  <data name="index_ego" xml:space="preserve">
+    <value>Upravte možnosti klienta DHCP, ktoré sa vzťahujú na všetky podsiete, zdieľané siete, hostiteľov a skupiny</value>
+  </data>
+  <data name="index_buttlal" xml:space="preserve">
+    <value>Zoznam aktívnych nájmov</value>
+  </data>
+  <data name="index_lal" xml:space="preserve">
+    <value>Zoznam lízingov, ktoré tento server DHCP v súčasnosti vydáva pre dynamicky pridelené adresy IP.</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo sa aktuálna konfigurácia použije na bežiaci server DHCP jeho zastavením a reštartovaním.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo spustíte server DHCP vo vašom systéme pomocou aktuálnej konfigurácie.</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo zastavíte bežiaci server DHCP vo vašom systéme. Po zastavení klienti DHCP nebudú môcť požadovať adresy IP.</value>
+  </data>
+  <data name="index_hdisplay" xml:space="preserve">
+    <value>Zobraziť hostiteľov a skupiny podľa:</value>
+  </data>
+  <data name="index_horder0" xml:space="preserve">
+    <value>prideľovanie</value>
+  </data>
+  <data name="index_horder1" xml:space="preserve">
+    <value>Štruktúra súboru</value>
+  </data>
+  <data name="index_ndisplay" xml:space="preserve">
+    <value>Zobraziť siete a podsiete podľa:</value>
+  </data>
+  <data name="index_norder0" xml:space="preserve">
+    <value>prideľovanie</value>
+  </data>
+  <data name="index_norder1" xml:space="preserve">
+    <value>Štruktúra súboru</value>
+  </data>
+  <data name="index_norder2" xml:space="preserve">
+    <value>Meno/IP adresa</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>ISC DHCPd verzia $1 </value>
+  </data>
+  <data name="index_buttiface" xml:space="preserve">
+    <value>Upraviť sieťové rozhranie</value>
+  </data>
+  <data name="index_iface" xml:space="preserve">
+    <value>Nastavte sieťové rozhrania, na ktorých server DHCP pri spustení počúva.</value>
+  </data>
+  <data name="index_subtoomany" xml:space="preserve">
+    <value>Existuje príliš veľa podsietí na zobrazenie.</value>
+  </data>
+  <data name="index_shatoomany" xml:space="preserve">
+    <value>Existuje príliš veľa zdieľaných sietí na zobrazenie.</value>
+  </data>
+  <data name="index_sublook2" xml:space="preserve">
+    <value>Upravte podsiete pomocou adresy:</value>
+  </data>
+  <data name="index_shalook2" xml:space="preserve">
+    <value>Upraviť zdieľanú sieť:</value>
+  </data>
+  <data name="index_hsttoomany" xml:space="preserve">
+    <value>Existuje príliš veľa hostiteľov na zobrazenie.</value>
+  </data>
+  <data name="index_grptoomany" xml:space="preserve">
+    <value>Existuje príliš veľa skupín na zobrazenie.</value>
+  </data>
+  <data name="index_hstlook2" xml:space="preserve">
+    <value>Upravte meno hostiteľa:</value>
+  </data>
+  <data name="index_grplook2" xml:space="preserve">
+    <value>Upravte skupinu s názvom:</value>
+  </data>
+  <data name="index_gdom" xml:space="preserve">
+    <value>Skupina pre $1 </value>
+  </data>
+  <data name="index_match0" xml:space="preserve">
+    <value>rovní</value>
+  </data>
+  <data name="index_match2" xml:space="preserve">
+    <value>zápasy</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Zmaž označené</value>
+  </data>
+  <data name="butt_eco" xml:space="preserve">
+    <value>Upravte možnosti klienta</value>
+  </data>
+  <data name="butt_vco" xml:space="preserve">
+    <value>Zobraziť možnosti klienta</value>
+  </data>
+  <data name="esub_tabhdr" xml:space="preserve">
+    <value>Podrobnosti podsiete</value>
+  </data>
+  <data name="esub_arange" xml:space="preserve">
+    <value>Rozsahy adries</value>
+  </data>
+  <data name="esub_dbooptpq" xml:space="preserve">
+    <value>Dynamický BOOTP?</value>
+  </data>
+  <data name="esub_hosts" xml:space="preserve">
+    <value>Hostitelia priamo v tejto podsiete</value>
+  </data>
+  <data name="esub_groups" xml:space="preserve">
+    <value>Zoskupuje sa priamo do tejto podsiete</value>
+  </data>
+  <data name="esub_pools" xml:space="preserve">
+    <value>Bazény adries pre podsiete</value>
+  </data>
+  <data name="esub_pool" xml:space="preserve">
+    <value>Pool $1 </value>
+  </data>
+  <data name="esub_poolnone" xml:space="preserve">
+    <value>Nie sú definované žiadne skupiny adries</value>
+  </data>
+  <data name="esub_pooladd" xml:space="preserve">
+    <value>Pridajte oblasť adries.</value>
+  </data>
+  <data name="esub_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="esub_fopeer" xml:space="preserve">
+    <value>Failover Peer</value>
+  </data>
+  <data name="esh_hosts" xml:space="preserve">
+    <value>Hostitelia priamo v tejto zdieľanej sieti</value>
+  </data>
+  <data name="esh_groups" xml:space="preserve">
+    <value>Skupiny priamo v tejto zdieľanej sieti</value>
+  </data>
+  <data name="esh_subn" xml:space="preserve">
+    <value>Podsiete v tejto zdieľanej sieti</value>
+  </data>
+  <data name="esh_pools" xml:space="preserve">
+    <value>Adresné fondy pre zdieľanú sieť</value>
+  </data>
+  <data name="ehost_nojavascr" xml:space="preserve">
+    <value>Zdá sa, že váš prehliadač nepodporuje javascript. Teraz musíte vybrať správnu pozíciu z nižšie uvedeného zoznamu.</value>
+  </data>
+  <data name="ehost_assign" xml:space="preserve">
+    <value>Hostiteľ priradený k</value>
+  </data>
+  <data name="ehost_toplevel" xml:space="preserve">
+    <value>toplevel</value>
+  </data>
+  <data name="ehost_subnet" xml:space="preserve">
+    <value>V podsieti $1 / $2 </value>
+  </data>
+  <data name="ehost_shared" xml:space="preserve">
+    <value>V zdieľanej sieti $1 </value>
+  </data>
+  <data name="egroup_crheader" xml:space="preserve">
+    <value>Vytvorte skupinu hostiteľov</value>
+  </data>
+  <data name="egroup_eheader" xml:space="preserve">
+    <value>Upraviť skupinu hostiteľov</value>
+  </data>
+  <data name="egroup_assign" xml:space="preserve">
+    <value>Skupina pridelená</value>
+  </data>
+  <data name="egroup_hosts" xml:space="preserve">
+    <value>Hostitelia v tejto skupine</value>
+  </data>
+  <data name="egroup_nchoice" xml:space="preserve">
+    <value>Použiť meno ako názov hostiteľa klienta?</value>
+  </data>
+  <data name="secs" xml:space="preserve">
+    <value>secs</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="listl_network" xml:space="preserve">
+    <value>V sieti $1 / $2 </value>
+  </data>
+  <data name="listl_lfnotexist" xml:space="preserve">
+    <value>Nájomný súbor DHCPd &lt;tt&gt;$1&lt;/tt&gt; neexistuje.</value>
+  </data>
+  <data name="listl_lfnotcont" xml:space="preserve">
+    <value>Nájomný súbor DHCPd &lt;tt&gt;$1&lt;/tt&gt; neobsahuje žiadne nájmy.</value>
+  </data>
+  <data name="listl_lfnotcont2" xml:space="preserve">
+    <value>Nájomný súbor DHCPd &lt;tt&gt;$1&lt;/tt&gt; neobsahuje žiadne nájmy, ktoré sú aktívne v aktuálnom čase.</value>
+  </data>
+  <data name="listl_active" xml:space="preserve">
+    <value>aktívny</value>
+  </data>
+  <data name="listl_start" xml:space="preserve">
+    <value>Dátum začiatku</value>
+  </data>
+  <data name="listl_end" xml:space="preserve">
+    <value>Dátum ukončenia</value>
+  </data>
+  <data name="listl_return" xml:space="preserve">
+    <value>zoznam sietí a hostiteľov</value>
+  </data>
+  <data name="listl_all" xml:space="preserve">
+    <value>Zoznam všetkých aktívnych a vypršaných lízingov</value>
+  </data>
+  <data name="listl_delete" xml:space="preserve">
+    <value>Odstrániť vybrané nájmy</value>
+  </data>
+  <data name="listl_unknown" xml:space="preserve">
+    <value>nevedno</value>
+  </data>
+  <data name="listl_allocs" xml:space="preserve">
+    <value>Dostupné adresy IP: $1, pridelené $2 ($3 %)</value>
+  </data>
+  <data name="listl_mode" xml:space="preserve">
+    <value>Režim zobrazenia  :</value>
+  </data>
+  <data name="listl_mode_0" xml:space="preserve">
+    <value>Prenájom DHCP</value>
+  </data>
+  <data name="listl_mode_1" xml:space="preserve">
+    <value>Podsieť a použitie</value>
+  </data>
+  <data name="listl_size" xml:space="preserve">
+    <value>Celkový počet IP</value>
+  </data>
+  <data name="listl_used" xml:space="preserve">
+    <value>pridelené</value>
+  </data>
+  <data name="listl_pc" xml:space="preserve">
+    <value>percento</value>
+  </data>
+  <data name="listl_err" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť nájmy</value>
+  </data>
+  <data name="listl_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="listl_refresh" xml:space="preserve">
+    <value>Obnoviť zoznam</value>
+  </data>
+  <data name="restart_errmsg1" xml:space="preserve">
+    <value>Nepodarilo sa reštartovať program dhcpd</value>
+  </data>
+  <data name="restart_errmsg2" xml:space="preserve">
+    <value>Nepodarilo sa signalizovať proces</value>
+  </data>
+  <data name="restart_conftext" xml:space="preserve">
+    <value>Riadky okolo $1 v $2  :</value>
+  </data>
+  <data name="sgroup_faildel" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť skupinu</value>
+  </data>
+  <data name="sgroup_failsave" xml:space="preserve">
+    <value>Uloženie skupiny zlyhalo</value>
+  </data>
+  <data name="sgroup_invassign" xml:space="preserve">
+    <value>skupina priradená k nesprávnej časti</value>
+  </data>
+  <data name="sgroup_echanged" xml:space="preserve">
+    <value>Obsah konfiguračného súboru sa zmenil. Skúste to znova.</value>
+  </data>
+  <data name="shost_faildel" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť hostiteľa</value>
+  </data>
+  <data name="shost_failsave" xml:space="preserve">
+    <value>Uloženie hostiteľa zlyhalo</value>
+  </data>
+  <data name="shost_invalidhn" xml:space="preserve">
+    <value>nie je platné meno hostiteľa</value>
+  </data>
+  <data name="shost_invalidhwa" xml:space="preserve">
+    <value>'$1' nie je platná adresa $2 </value>
+  </data>
+  <data name="shost_invalidaddr" xml:space="preserve">
+    <value>$1 obsahuje neplatný názov hostiteľa alebo IP adresu</value>
+  </data>
+  <data name="shost_invassign" xml:space="preserve">
+    <value>hostiteľ priradený k nesprávnej sekcii</value>
+  </data>
+  <data name="sopt_failsave" xml:space="preserve">
+    <value>Nepodarilo sa uložiť možnosti klienta</value>
+  </data>
+  <data name="sopt_invalidip" xml:space="preserve">
+    <value>nie je platná adresa IP</value>
+  </data>
+  <data name="sopt_invalidint" xml:space="preserve">
+    <value>nie je celé číslo</value>
+  </data>
+  <data name="sopt_invalidipp" xml:space="preserve">
+    <value>nie je platný pár adries IP (napríklad 1.2.3.4,5.6.7.8)</value>
+  </data>
+  <data name="sopt_edname" xml:space="preserve">
+    <value>$1 nie je platný názov voľby</value>
+  </data>
+  <data name="sopt_ednum" xml:space="preserve">
+    <value>'$1' nie je platné číslo voľby</value>
+  </data>
+  <data name="sopt_edtype" xml:space="preserve">
+    <value>$1 nie je platný typ voľby</value>
+  </data>
+  <data name="sopt_ecval" xml:space="preserve">
+    <value>Chýba hodnota pre vlastnú možnosť „$1“</value>
+  </data>
+  <data name="sopt_ecip" xml:space="preserve">
+    <value>Hodnota pre vlastnú možnosť „$1“ musí byť adresa IP</value>
+  </data>
+  <data name="sshared_faildel" xml:space="preserve">
+    <value>Zdieľanú sieť sa nepodarilo odstrániť</value>
+  </data>
+  <data name="sshared_failsave" xml:space="preserve">
+    <value>Uloženie zdieľanej siete zlyhalo</value>
+  </data>
+  <data name="sshared_invalidsname" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov zdieľanej siete.</value>
+  </data>
+  <data name="sshared_nosubnet" xml:space="preserve">
+    <value>Zdieľaná sieť '$1' neobsahuje žiadnu podsieť.</value>
+  </data>
+  <data name="plib_deflt" xml:space="preserve">
+    <value>Predvolený čas prenájmu</value>
+  </data>
+  <data name="plib_bfname" xml:space="preserve">
+    <value>Boot filename</value>
+  </data>
+  <data name="plib_maxlt" xml:space="preserve">
+    <value>Maximálna doba prenájmu</value>
+  </data>
+  <data name="plib_bfserv" xml:space="preserve">
+    <value>Spúšťací súborový server</value>
+  </data>
+  <data name="plib_servname" xml:space="preserve">
+    <value>Názov servera</value>
+  </data>
+  <data name="plib_llbc" xml:space="preserve">
+    <value>Dĺžka prenájmu pre klientov BOOTP</value>
+  </data>
+  <data name="plib_forever" xml:space="preserve">
+    <value>navždy</value>
+  </data>
+  <data name="plib_lebc" xml:space="preserve">
+    <value>Nájomné miesto pre klientov BOOTP</value>
+  </data>
+  <data name="plib_never" xml:space="preserve">
+    <value>nikdy</value>
+  </data>
+  <data name="plib_invalidlt" xml:space="preserve">
+    <value>nie je platný čas nájmu</value>
+  </data>
+  <data name="plib_invalidsn" xml:space="preserve">
+    <value>nie je platný názov servera</value>
+  </data>
+  <data name="plib_invaliddom" xml:space="preserve">
+    <value>$1 nie je platný názov domény</value>
+  </data>
+  <data name="plib_leformat" xml:space="preserve">
+    <value>Dátum ukončenia nájmu musí byť vo formáte W RRRR/MM/DD HH: MM: SS</value>
+  </data>
+  <data name="plib_copt" xml:space="preserve">
+    <value>Možnosti klienta</value>
+  </data>
+  <data name="plib_chname" xml:space="preserve">
+    <value>Názov hostiteľa klienta</value>
+  </data>
+  <data name="plib_defrouters" xml:space="preserve">
+    <value>Predvolené smerovače</value>
+  </data>
+  <data name="plib_snmask" xml:space="preserve">
+    <value>Masku podsiete</value>
+  </data>
+  <data name="plib_babbr" xml:space="preserve">
+    <value>Vysielacia adresa</value>
+  </data>
+  <data name="plib_rdpath" xml:space="preserve">
+    <value>Cesta koreňového disku</value>
+  </data>
+  <data name="plib_statrouters" xml:space="preserve">
+    <value>Statické trasy</value>
+  </data>
+  <data name="plib_nbns" xml:space="preserve">
+    <value>Názvové servery NetBIOS</value>
+  </data>
+  <data name="plib_nbscope" xml:space="preserve">
+    <value>Rozsah NetBIOS</value>
+  </data>
+  <data name="plib_nbntype" xml:space="preserve">
+    <value>Typ uzla NetBIOS</value>
+  </data>
+  <data name="plib_toffset" xml:space="preserve">
+    <value>Časový posun</value>
+  </data>
+  <data name="plib_serverid" xml:space="preserve">
+    <value>Identifikátor servera DHCP</value>
+  </data>
+  <data name="plib_ddnsdom" xml:space="preserve">
+    <value>Dynamický názov domény DNS</value>
+  </data>
+  <data name="plib_ddnsrevdom" xml:space="preserve">
+    <value>Dynamická reverzná doména DNS</value>
+  </data>
+  <data name="plib_ddnsup" xml:space="preserve">
+    <value>Dynamický DNS povolený?</value>
+  </data>
+  <data name="plib_ddnshost" xml:space="preserve">
+    <value>Dynamický názov hostiteľa DNS</value>
+  </data>
+  <data name="plib_ddnshost_def" xml:space="preserve">
+    <value>Od klienta</value>
+  </data>
+  <data name="plib_ddnsupstyle" xml:space="preserve">
+    <value>Dynamický štýl aktualizácie DNS</value>
+  </data>
+  <data name="plib_adhoc" xml:space="preserve">
+    <value>Ad-hoc</value>
+  </data>
+  <data name="plib_interim" xml:space="preserve">
+    <value>dočasnej</value>
+  </data>
+  <data name="plib_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="plib_unclients" xml:space="preserve">
+    <value>Povoliť neznámych klientov?</value>
+  </data>
+  <data name="plib_allow" xml:space="preserve">
+    <value>dovoliť</value>
+  </data>
+  <data name="plib_deny" xml:space="preserve">
+    <value>poprieť</value>
+  </data>
+  <data name="plib_ignore" xml:space="preserve">
+    <value>Ignorovať</value>
+  </data>
+  <data name="plib_eexpr" xml:space="preserve">
+    <value>Táto časť konfigurácie DHCP obsahuje direktívu výrazov $1, ktorú nemôže webmin bezpečne editovať.</value>
+  </data>
+  <data name="plib_auth_subnet" xml:space="preserve">
+    <value>Server je pre túto podsieť autoritatívny?</value>
+  </data>
+  <data name="plib_auth_shared-network" xml:space="preserve">
+    <value>Je server autorizovaný pre túto zdieľanú sieť?</value>
+  </data>
+  <data name="plib_auth_global" xml:space="preserve">
+    <value>Server je autoritatívny pre všetky podsiete?</value>
+  </data>
+  <data name="eopt_header" xml:space="preserve">
+    <value>Možnosti klienta</value>
+  </data>
+  <data name="eopt_subtitle" xml:space="preserve">
+    <value>Pre podsiete $1 </value>
+  </data>
+  <data name="eopt_snettitle" xml:space="preserve">
+    <value>Pre zdieľanú sieť $1 </value>
+  </data>
+  <data name="eopt_hosttitle" xml:space="preserve">
+    <value>Pre hostiteľa $1 </value>
+  </data>
+  <data name="eopt_grouptitle" xml:space="preserve">
+    <value>Pre $1 členskú skupinu</value>
+  </data>
+  <data name="eopt_alltitle" xml:space="preserve">
+    <value>Pre všetky siete, hostiteľov a skupiny</value>
+  </data>
+  <data name="eopt_returnindex" xml:space="preserve">
+    <value>zoznam sietí a hostiteľov</value>
+  </data>
+  <data name="eopt_tabhdr" xml:space="preserve">
+    <value>Možnosti klienta</value>
+  </data>
+  <data name="eopt_domsearch" xml:space="preserve">
+    <value>Domény DNS na vyhľadávanie</value>
+  </data>
+  <data name="eopt_rdpath" xml:space="preserve">
+    <value>Cesta koreňového disku</value>
+  </data>
+  <data name="eopt_statrouters" xml:space="preserve">
+    <value>Statické trasy</value>
+  </data>
+  <data name="eopt_nbns" xml:space="preserve">
+    <value>Názvové servery NetBIOS</value>
+  </data>
+  <data name="eopt_nbs" xml:space="preserve">
+    <value>Rozsah NetBIOS</value>
+  </data>
+  <data name="eopt_nbntype" xml:space="preserve">
+    <value>Typ uzla NetBIOS</value>
+  </data>
+  <data name="eopt_toffset" xml:space="preserve">
+    <value>Časový posun</value>
+  </data>
+  <data name="eopt_custom" xml:space="preserve">
+    <value>Vlastná možnosť</value>
+  </data>
+  <data name="eopt_cname" xml:space="preserve">
+    <value>názov</value>
+  </data>
+  <data name="eopt_def" xml:space="preserve">
+    <value>Definícia možnosti</value>
+  </data>
+  <data name="eopt_dname" xml:space="preserve">
+    <value>Názov možnosti</value>
+  </data>
+  <data name="eopt_slpa" xml:space="preserve">
+    <value>Adresy IP agentov SLP</value>
+  </data>
+  <data name="eopt_slpaips" xml:space="preserve">
+    <value>Iba tieto adresy IP?</value>
+  </data>
+  <data name="eopt_slps" xml:space="preserve">
+    <value>Rozsah služieb SLP</value>
+  </data>
+  <data name="eopt_slpsonly" xml:space="preserve">
+    <value>Iba tento rozsah?</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Použité zmeny</value>
+  </data>
+  <data name="log_create_subnet" xml:space="preserve">
+    <value>Vytvorená podsiete $1 </value>
+  </data>
+  <data name="log_delete_subnet" xml:space="preserve">
+    <value>Vymazaná podsiete $1 </value>
+  </data>
+  <data name="log_modify_subnet" xml:space="preserve">
+    <value>Upravená podsiete $1 </value>
+  </data>
+  <data name="log_options_subnet" xml:space="preserve">
+    <value>Upravené možnosti pre podsiete $1 </value>
+  </data>
+  <data name="log_create_shared" xml:space="preserve">
+    <value>Vytvorená zdieľaná sieť $1 </value>
+  </data>
+  <data name="log_delete_shared" xml:space="preserve">
+    <value>Odstránená zdieľaná sieť $1 </value>
+  </data>
+  <data name="log_modify_shared" xml:space="preserve">
+    <value>Upravená zdieľaná sieť $1 </value>
+  </data>
+  <data name="log_options_shared" xml:space="preserve">
+    <value>Upravené možnosti zdieľanej siete $1 </value>
+  </data>
+  <data name="log_create_host" xml:space="preserve">
+    <value>Vytvorený hostiteľ $1 </value>
+  </data>
+  <data name="log_delete_host" xml:space="preserve">
+    <value>Vymazaný hostiteľ $1 </value>
+  </data>
+  <data name="log_modify_host" xml:space="preserve">
+    <value>Upravený hostiteľ $1 </value>
+  </data>
+  <data name="log_options_host" xml:space="preserve">
+    <value>Upravené možnosti pre hostiteľa $1 </value>
+  </data>
+  <data name="log_create_group" xml:space="preserve">
+    <value>Vytvorená skupina hostiteľov $1 </value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>Odstránená skupina hostiteľov $1 </value>
+  </data>
+  <data name="log_modify_group" xml:space="preserve">
+    <value>Upravená skupina hostiteľov $1 </value>
+  </data>
+  <data name="log_options_group" xml:space="preserve">
+    <value>Upravené možnosti pre skupinu hostiteľov $1 </value>
+  </data>
+  <data name="log_delete_lease" xml:space="preserve">
+    <value>Odstránený nájom za $1 </value>
+  </data>
+  <data name="log_delete_subnets" xml:space="preserve">
+    <value>Odstránené $1 podsiete a zdieľané siete</value>
+  </data>
+  <data name="log_delete_hosts" xml:space="preserve">
+    <value>Odstránili sa $1 hostitelia a skupiny hostiteľov</value>
+  </data>
+  <data name="keys_title" xml:space="preserve">
+    <value>Kľúče DNS</value>
+  </data>
+  <data name="keys_secret" xml:space="preserve">
+    <value>Tajný reťazec</value>
+  </data>
+  <data name="keys_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnenie upravovať kľúče DNS</value>
+  </data>
+  <data name="keys_err" xml:space="preserve">
+    <value>Uloženie kľúčov DNS zlyhalo</value>
+  </data>
+  <data name="keys_ekey" xml:space="preserve">
+    <value>$1 nie je platné ID kľúča</value>
+  </data>
+  <data name="keys_esecret" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný tajný kód pre kód $1 s kódom base-64</value>
+  </data>
+  <data name="pool_edit" xml:space="preserve">
+    <value>Upraviť fond adries</value>
+  </data>
+  <data name="pool_create" xml:space="preserve">
+    <value>Vytvorený fond adries</value>
+  </data>
+  <data name="pool_header" xml:space="preserve">
+    <value>Možnosti oblasti adries</value>
+  </data>
+  <data name="pool_allow" xml:space="preserve">
+    <value>Klienti to môžu povoliť</value>
+  </data>
+  <data name="pool_deny" xml:space="preserve">
+    <value>Klienti poprieť</value>
+  </data>
+  <data name="cdel_txt" xml:space="preserve">
+    <value>Odstránením $1 „$2“ sa odstráni aj jeho obsah:</value>
+  </data>
+  <data name="cdel_confirm" xml:space="preserve">
+    <value>Naozaj chcete odstrániť toto $1 ?</value>
+  </data>
+  <data name="cdel_return" xml:space="preserve">
+    <value>zoznam hostiteľov a sietí</value>
+  </data>
+  <data name="eacl_aviol" xml:space="preserve">
+    <value>Porušenie kontroly prístupu</value>
+  </data>
+  <data name="eacl_uniqh" xml:space="preserve">
+    <value>vytvárať hostiteľov s duplicitnými hardvérovými adresami</value>
+  </data>
+  <data name="eacl_uniqi" xml:space="preserve">
+    <value>vytvárať hostiteľov s duplikátnymi IP adresami</value>
+  </data>
+  <data name="acl_zones" xml:space="preserve">
+    <value>Môžete upravovať dynamické zóny DNS?</value>
+  </data>
+  <data name="acl_uniq_hst" xml:space="preserve">
+    <value>Unikátne názvy hostiteľov?</value>
+  </data>
+  <data name="acl_uniq_sub" xml:space="preserve">
+    <value>IP adresy podsiete Uniq?</value>
+  </data>
+  <data name="acl_uniq_sha" xml:space="preserve">
+    <value>Názvy zdieľaných sietí Uniq?</value>
+  </data>
+  <data name="acl_seclevel" xml:space="preserve">
+    <value>Použiť úroveň zabezpečenia:</value>
+  </data>
+  <data name="acl_per_hst_acls" xml:space="preserve">
+    <value>Povoliť zoznamy prístupových práv podľa hostiteľa?</value>
+  </data>
+  <data name="acl_per_grp_acls" xml:space="preserve">
+    <value>Povoliť ACL pre skupinu?</value>
+  </data>
+  <data name="acl_per_sub_acls" xml:space="preserve">
+    <value>Povoliť zoznamy prístupových práv podľa podsiete?</value>
+  </data>
+  <data name="acl_per_sha_acls" xml:space="preserve">
+    <value>Povoliť ACL na zdieľanú sieť?</value>
+  </data>
+  <data name="acl_per_obj_acls" xml:space="preserve">
+    <value>Zoznamy prístupových práv pre jednotlivé objekty. ..</value>
+  </data>
+  <data name="acl_ernow" xml:space="preserve">
+    <value>Ak chcete povoliť prístup na zápis v globálnych zoznamoch prístupových práv pre určitý typ objektu, musíte tiež povoliť prístup na čítanie pre tento typ objektu.</value>
+  </data>
+  <data name="iface_desc" xml:space="preserve">
+    <value>Server DHCP môže prideľovať adresy IP iba v sieťach pripojených k jednému z nižšie uvedených rozhraní. Musí sa zahrnúť sieťové rozhranie pre všetky definované podsiete. Ak nie je vybraté, server DHCP sa pokúsi server nájsť.</value>
+  </data>
+  <data name="lookup_ehost" xml:space="preserve">
+    <value>Neexistuje žiadny hostiteľ s menom, IP adresou alebo MAC adresou $1 </value>
+  </data>
+  <data name="lookup_ehostname" xml:space="preserve">
+    <value>Nie je zadaný názov hostiteľa, adresa IP ani adresa MAC</value>
+  </data>
+  <data name="lookup_egroup" xml:space="preserve">
+    <value>Neexistuje žiadna skupina s názvom alebo názvom domény $1 </value>
+  </data>
+  <data name="lookup_egroupname" xml:space="preserve">
+    <value>Nebol zadaný žiadny názov skupiny ani názov domény</value>
+  </data>
+  <data name="lookup_esubnet" xml:space="preserve">
+    <value>Neexistuje žiadna podsiete s adresou alebo adresou/sieťovou maskou $1 </value>
+  </data>
+  <data name="lookup_esubnetname" xml:space="preserve">
+    <value>Nebola zadaná žiadna adresa podsiete alebo adresa/maska siete</value>
+  </data>
+  <data name="lookup_eshared" xml:space="preserve">
+    <value>Neexistuje zdieľaná sieť s názvom $1 </value>
+  </data>
+  <data name="lookup_esharedname" xml:space="preserve">
+    <value>Nezadal sa žiadny zdieľaný názov siete</value>
+  </data>
+  <data name="index_nozones" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne zóny DNS.</value>
+  </data>
+  <data name="zone_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnenie upravovať zóny DNS</value>
+  </data>
+  <data name="plib_clientupdates" xml:space="preserve">
+    <value>Môžu klienti aktualizovať svoje vlastné záznamy?</value>
+  </data>
+  <data name="index_buttetext" xml:space="preserve">
+    <value>Ručné úpravy konfigurácie</value>
+  </data>
+  <data name="index_text" xml:space="preserve">
+    <value>Ručné úpravy konfiguračného súboru</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Odstránenie podsiete a zdieľaných sietí zlyhalo</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="sdelete_title" xml:space="preserve">
+    <value>Odstráňte podsiete a zdieľané siete</value>
+  </data>
+  <data name="sdelete_rusure1" xml:space="preserve">
+    <value>Naozaj chcete odstrániť vybrané podsiete $1 a zdieľané siete $2 ? Stratia sa aj všetky ďalšie podsiete alebo iné objekty v rámci sietí.</value>
+  </data>
+  <data name="sdelete_rusure2" xml:space="preserve">
+    <value>Naozaj chcete odstrániť vybrané podsiete $1 ? Stratia sa aj všetky ostatné objekty v rámci podsiete.</value>
+  </data>
+  <data name="sdelete_rusure3" xml:space="preserve">
+    <value>Naozaj chcete odstrániť zdieľané siete $2 ? Stratia sa aj všetky podsiete alebo iné objekty v rámci sietí.</value>
+  </data>
+  <data name="sdelete_ok" xml:space="preserve">
+    <value>Odstrániť teraz</value>
+  </data>
+  <data name="hdelete_err" xml:space="preserve">
+    <value>Nepodarilo sa odstrániť hostiteľov a skupiny</value>
+  </data>
+  <data name="hdelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="hdelete_title" xml:space="preserve">
+    <value>Odstrániť hostiteľov a skupiny</value>
+  </data>
+  <data name="hdelete_rusure1" xml:space="preserve">
+    <value>Naozaj chcete odstrániť $1 vybraných hostiteľov a $2 skupiny? Stratia sa aj ostatní hostitelia v rámci skupín.</value>
+  </data>
+  <data name="hdelete_rusure2" xml:space="preserve">
+    <value>Naozaj chcete odstrániť vybratých hostiteľov $1 ?</value>
+  </data>
+  <data name="hdelete_rusure3" xml:space="preserve">
+    <value>Naozaj chcete odstrániť $2 vybrané skupiny? Stratia sa aj hostitelia v rámci skupín.</value>
+  </data>
+  <data name="hdelete_ok" xml:space="preserve">
+    <value>Odstrániť teraz</value>
+  </data>
+</root>

@@ -17,7 +17,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         {
             _shellClient = shellClient;
             ExecuteCommand = new Command(Execute);
-            _receiver =_shellClient.SubscribeTextReceived(this);
+            _receiver = _shellClient.SubscribeTextReceived(this);
         }
 
         public ICommand ExecuteCommand { get; }
@@ -63,11 +63,13 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         {
             Output += text;
         }
+
         public void Subscribe()
         {
             Output = string.Empty;
             _receiver = _shellClient.SubscribeTextReceived(this);
         }
+
         public void Unsubscribe()
         {
             _receiver?.Dispose();

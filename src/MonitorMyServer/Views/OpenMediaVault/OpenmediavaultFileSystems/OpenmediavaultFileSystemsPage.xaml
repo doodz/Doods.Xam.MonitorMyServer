@@ -5,7 +5,7 @@
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-                       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       x:Name="Page"
@@ -15,7 +15,7 @@
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Controls;assembly=Doods.Framework.Mobile.Ssh.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:fileSystem="clr-namespace:Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;assembly=Doods.Openmediavault.Rpc.Std"
-                      
+
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultFileSystemsPage">
     <ScrollView>
         <StackLayout>
@@ -23,7 +23,6 @@
             <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Filesystems,Mode=OneWay}">
                 <StackLayout.Resources>
-                    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
                 </StackLayout.Resources>
                 <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="fileSystem:OmvFilesystems">
@@ -39,14 +38,15 @@
                                     <RowDefinition Height="40" />
                                     <RowDefinition Height="40" />
                                 </Grid.RowDefinitions>
-                                <controls2:Gauge 
-                                    
-                                    Valeur="{Binding Percentage,Mode=OneWay}"
-                                                 HorizontalOptions="Fill"
-                                                 VerticalOptions="FillAndExpand"
-                                                 Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"  />
+                                <controls2:Gauge
 
-                                <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding Mountpoint,Mode=OneWay}" />
+                                    Valeur="{Binding Percentage,Mode=OneWay}"
+                                    HorizontalOptions="Fill"
+                                    VerticalOptions="FillAndExpand"
+                                    Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" />
+
+                                <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"
+                                       Text="{Binding Mountpoint,Mode=OneWay}" />
 
                                 <StackLayout Orientation="Horizontal"
                                              HorizontalOptions="EndAndExpand"
@@ -55,75 +55,75 @@
                                              Grid.Row="1">
 
                                     <controls:DoodsSvgImage
-                                    Margin="5,0"
-                                    IsVisible="{Binding CanMount,Mode=OneWay}"
-                                    Grid.Column="0"
-                                    Grid.Row="1"
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
-                                    WidthRequest="40"
-                                    HeightRequest="40"
-                                    HorizontalOptions="EndAndExpand"
-                                    VerticalOptions="Center" >
+                                        Margin="5,0"
+                                        IsVisible="{Binding CanMount,Mode=OneWay}"
+                                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
+                                        WidthRequest="40"
+                                        HeightRequest="40"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center">
                                         <controls:DoodsSvgImage.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </controls:DoodsSvgImage.GestureRecognizers>
-                                </controls:DoodsSvgImage>
+                                            <TapGestureRecognizer
+                                                Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                                CommandParameter="{Binding .}" />
+                                        </controls:DoodsSvgImage.GestureRecognizers>
+                                    </controls:DoodsSvgImage>
 
-                                <!--<ImageButton Grid.Column="0" Grid.Row="1"
+                                    <!--<ImageButton Grid.Column="0" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.ChevronRight}}"
                                              IsEnabled="{Binding CanMount,Mode=OneWay}"
                                              Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                              CommandParameter="{Binding .}" />-->
-                                <!--<Button Grid.Column="0" Grid.Row="1"
+                                    <!--<Button Grid.Column="0" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Mount'}"
                                         IsEnabled="{Binding CanMount,Mode=OneWay}"
                                         Command="{Binding BindingContext.MountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
                                     <controls:DoodsSvgImage
-                                    Margin="5,0"
-                                  
-                                    IsVisible="{Binding CanUmount,Mode=OneWay}"
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
-                                    WidthRequest="40"
-                                    HeightRequest="40"
-                                    HorizontalOptions="EndAndExpand"
-                                    VerticalOptions="Center" >
+                                        Margin="5,0"
+
+                                        IsVisible="{Binding CanUmount,Mode=OneWay}"
+                                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
+                                        WidthRequest="40"
+                                        HeightRequest="40"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center">
                                         <controls:DoodsSvgImage.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </controls:DoodsSvgImage.GestureRecognizers>
-                                </controls:DoodsSvgImage>
-                                <!--<ImageButton Grid.Column="1" Grid.Row="1"
+                                            <TapGestureRecognizer
+                                                Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                                CommandParameter="{Binding .}" />
+                                        </controls:DoodsSvgImage.GestureRecognizers>
+                                    </controls:DoodsSvgImage>
+                                    <!--<ImageButton Grid.Column="1" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Eject}}"
                                              IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                              Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                              CommandParameter="{Binding .}" />-->
-                                <!--<Button Grid.Column="1" Grid.Row="1"
+                                    <!--<Button Grid.Column="1" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Unmount'}"
                                         IsEnabled="{Binding CanUmount,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                         Command="{Binding BindingContext.UmountFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                         CommandParameter="{Binding .}" />-->
                                     <controls:DoodsSvgImage
-                                    Margin="5,0"
-                                    IsVisible="{Binding CanDelete,Mode=OneWay}"
-                                    Grid.Column="2"
-                                    Grid.Row="1"
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
-                                    WidthRequest="40"
-                                    HeightRequest="40"
-                                    HorizontalOptions="EndAndExpand"
-                                    VerticalOptions="Center" >
+                                        Margin="5,0"
+                                        IsVisible="{Binding CanDelete,Mode=OneWay}"
+                                        Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
+                                        WidthRequest="40"
+                                        HeightRequest="40"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center">
                                         <controls:DoodsSvgImage.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                                    </controls:DoodsSvgImage.GestureRecognizers>
-                                </controls:DoodsSvgImage>
-                                <!--<ImageButton Grid.Column="2" Grid.Row="1"
+                                            <TapGestureRecognizer
+                                                Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
+                                                CommandParameter="{Binding .}" />
+                                        </controls:DoodsSvgImage.GestureRecognizers>
+                                    </controls:DoodsSvgImage>
+                                    <!--<ImageButton Grid.Column="2" Grid.Row="1"
                                              Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.DeleteForever}}"
                                              IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                              Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"
                                              CommandParameter="{Binding .}" />-->
-                                <!--<Button Grid.Column="2" Grid.Row="1"
+                                    <!--<Button Grid.Column="2" Grid.Row="1"
                                         Text="{resources1:Translate Text='openmediavault::Delete'}"
                                         IsEnabled="{Binding CanDelete,Mode=OneWay,Converter={StaticResource InverseBooleanConverter}}"
                                         Command="{Binding BindingContext.DeleteFileSystemCmd,Mode=OneWay, Source={x:Reference Page}}"

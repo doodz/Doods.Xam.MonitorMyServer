@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aliases_delete" xml:space="preserve">
+    <value>Elimina alias selezionati</value>
+  </data>
+  <data name="adelete_err" xml:space="preserve">
+    <value>Impossibile eliminare gli alias</value>
+  </data>
+  <data name="adelete_enone" xml:space="preserve">
+    <value>Nessuno selezionato</value>
+  </data>
+  <data name="routes_delete" xml:space="preserve">
+    <value>Elimina percorsi di dominio selezionati</value>
+  </data>
+  <data name="rdelete_err" xml:space="preserve">
+    <value>Impossibile eliminare le route di dominio</value>
+  </data>
+  <data name="virts_delete" xml:space="preserve">
+    <value>Elimina mappature virtuali selezionate</value>
+  </data>
+  <data name="vdelete_err" xml:space="preserve">
+    <value>Impossibile eliminare i mapping virtuali</value>
+  </data>
+  <data name="log_delete_aliases" xml:space="preserve">
+    <value>Alias $1 eliminati</value>
+  </data>
+  <data name="log_delete_virts" xml:space="preserve">
+    <value>Mapping virtuali $1 eliminati</value>
+  </data>
+  <data name="log_delete_routes" xml:space="preserve">
+    <value>$1 percorsi eliminati</value>
+  </data>
+  <data name="log_delete_assigns" xml:space="preserve">
+    <value>$1 utenti di posta eliminati</value>
+  </data>
+  <data name="log_delmail" xml:space="preserve">
+    <value>Eliminati $1 messaggi da $2 </value>
+  </data>
+  <data name="log_movemail" xml:space="preserve">
+    <value>Spostato $1 messaggi da $2 a $3 </value>
+  </data>
+  <data name="log_send" xml:space="preserve">
+    <value>Posta inviata a $1 </value>
+  </data>
+  <data name="rfile_desc2" xml:space="preserve">
+    <value>Puoi anche impostare intestazioni di posta che aggiungono o sostituiscono i valori predefiniti utilizzati nell'autoreply inserendo righe come: &lt;br&gt;&lt;tt&gt; Da: foo@bar.com &lt;/tt&gt;&lt;br&gt; &lt;tt&gt;Oggetto: In vacanza&lt;/tt&gt; &lt;br&gt; nella parte superiore del messaggio, separato dal corpo da un'unica riga vuota.</value>
+  </data>
+  <data name="rfile_replies" xml:space="preserve">
+    <value>Tieni traccia delle risposte per evitare loop di posta?</value>
+  </data>
+  <data name="rfile_none" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="rfile_file" xml:space="preserve">
+    <value>Sì, utilizzando il file di registro</value>
+  </data>
+  <data name="rfile_period" xml:space="preserve">
+    <value>Intervallo minimo tra le risposte</value>
+  </data>
+  <data name="rfile_default" xml:space="preserve">
+    <value>Predefinito (1 ora)</value>
+  </data>
+  <data name="rfile_secs" xml:space="preserve">
+    <value>secondi</value>
+  </data>
+  <data name="rfile_ereplies" xml:space="preserve">
+    <value>File di registro di tracciamento delle risposte mancante</value>
+  </data>
+  <data name="rfile_eperiod" xml:space="preserve">
+    <value>Numero di secondi mancante o non valido tra le risposte</value>
+  </data>
+  <data name="rfile_no_autoreply" xml:space="preserve">
+    <value>Non inviare autoreplies a</value>
+  </data>
+  <data name="rfile_from" xml:space="preserve">
+    <value>Da: indirizzo per la risposta</value>
+  </data>
+  <data name="rfile_auto" xml:space="preserve">
+    <value>Automatico (basato sull'indirizzo del destinatario)</value>
+  </data>
+  <data name="rfile_efrom" xml:space="preserve">
+    <value>Mancante da: indirizzo</value>
+  </data>
+  <data name="rfile_fromdesc" xml:space="preserve">
+    <value>Un indirizzo Da: deve essere sempre specificato ove possibile, poiché il metodo automatico potrebbe non essere affidabile.</value>
+  </data>
+  <data name="queue_count" xml:space="preserve">
+    <value>$1 messaggi</value>
+  </data>
+  <data name="queue_delete" xml:space="preserve">
+    <value>Elimina i messaggi selezionati</value>
+  </data>
+  <data name="queue_all" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="queue_invert" xml:space="preserve">
+    <value>Inverti selezione</value>
+  </data>
+  <data name="queue_refresh" xml:space="preserve">
+    <value>Aggiorna coda di posta</value>
+  </data>
+  <data name="queue_refreshdesc" xml:space="preserve">
+    <value>Ricarica questa pagina per mostrare lo stato corrente della coda di posta.</value>
+  </data>
+  <data name="qview_title" xml:space="preserve">
+    <value>Messaggio in coda</value>
+  </data>
+  <data name="qview_desc" xml:space="preserve">
+    <value>Dal file $1 </value>
+  </data>
+  <data name="qview_headers" xml:space="preserve">
+    <value>Intestazioni di posta</value>
+  </data>
+  <data name="qview_attach" xml:space="preserve">
+    <value>allegati</value>
+  </data>
+  <data name="assigns_delete" xml:space="preserve">
+    <value>Elimina gli utenti di posta selezionati</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Impossibile eliminare gli utenti di posta</value>
+  </data>
+  <data name="delete_ebogus" xml:space="preserve">
+    <value>Nome file coda non valido</value>
+  </data>
+  <data name="boxes_user" xml:space="preserve">
+    <value>Utente</value>
+  </data>
+  <data name="boxes_size" xml:space="preserve">
+    <value>Dimensione della cassetta postale</value>
+  </data>
+  <data name="boxes_none" xml:space="preserve">
+    <value>Nessuna posta</value>
+  </data>
+  <data name="boxes_return" xml:space="preserve">
+    <value>caselle di posta</value>
+  </data>
+  <data name="boxes_sent" xml:space="preserve">
+    <value>Posta inviata</value>
+  </data>
+  <data name="boxes_ecannot" xml:space="preserve">
+    <value>Non ti è permesso leggere l'email</value>
+  </data>
+  <data name="boxes_toomany" xml:space="preserve">
+    <value>Esistono troppi utenti sul sistema per elencare tutte le loro cassette postali.</value>
+  </data>
+  <data name="boxes_go" xml:space="preserve">
+    <value>Visualizza la posta per l'utente:</value>
+  </data>
+  <data name="mail_title" xml:space="preserve">
+    <value>Email dell'utente</value>
+  </data>
+  <data name="mail_from" xml:space="preserve">
+    <value>A partire dal</value>
+  </data>
+  <data name="mail_date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="mail_subject" xml:space="preserve">
+    <value>Soggetto</value>
+  </data>
+  <data name="mail_to" xml:space="preserve">
+    <value>Per</value>
+  </data>
+  <data name="mail_cc" xml:space="preserve">
+    <value>cc</value>
+  </data>
+  <data name="mail_bcc" xml:space="preserve">
+    <value>bcc</value>
+  </data>
+  <data name="mail_pri" xml:space="preserve">
+    <value>Priorità</value>
+  </data>
+  <data name="mail_highest" xml:space="preserve">
+    <value>Più alta</value>
+  </data>
+  <data name="mail_high" xml:space="preserve">
+    <value>alto</value>
+  </data>
+  <data name="mail_normal" xml:space="preserve">
+    <value>Normale</value>
+  </data>
+  <data name="mail_low" xml:space="preserve">
+    <value>Basso</value>
+  </data>
+  <data name="mail_lowest" xml:space="preserve">
+    <value>minore</value>
+  </data>
+  <data name="mail_for" xml:space="preserve">
+    <value>In 1</value>
+  </data>
+  <data name="mail_for2" xml:space="preserve">
+    <value>Per l'utente $1 </value>
+  </data>
+  <data name="mail_sent" xml:space="preserve">
+    <value>Nella lista di posta inviata</value>
+  </data>
+  <data name="mail_size" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="mail_delete" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="mail_compose" xml:space="preserve">
+    <value>Comporre</value>
+  </data>
+  <data name="mail_return" xml:space="preserve">
+    <value>cassetta postale dell'utente</value>
+  </data>
+  <data name="mail_pos" xml:space="preserve">
+    <value>Messaggi da $1 a $2 di $3 </value>
+  </data>
+  <data name="mail_none" xml:space="preserve">
+    <value>Questa cassetta postale non ha messaggi</value>
+  </data>
+  <data name="mail_ecannot" xml:space="preserve">
+    <value>Non ti è consentito leggere l'email di questo utente</value>
+  </data>
+  <data name="mail_all" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="mail_invert" xml:space="preserve">
+    <value>Inverti selezione</value>
+  </data>
+  <data name="mail_search" xml:space="preserve">
+    <value>Trova messaggi dove</value>
+  </data>
+  <data name="mail_body" xml:space="preserve">
+    <value>Corpo</value>
+  </data>
+  <data name="mail_match" xml:space="preserve">
+    <value>fiammiferi</value>
+  </data>
+  <data name="mail_ok" xml:space="preserve">
+    <value>Ricerca</value>
+  </data>
+  <data name="mail_nonefrom" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="mail_mark" xml:space="preserve">
+    <value>Segna come:</value>
+  </data>
+  <data name="mail_mark0" xml:space="preserve">
+    <value>Non letto</value>
+  </data>
+  <data name="mail_mark1" xml:space="preserve">
+    <value>Leggere</value>
+  </data>
+  <data name="mail_mark2" xml:space="preserve">
+    <value>Speciale</value>
+  </data>
+  <data name="mail_forward" xml:space="preserve">
+    <value>Inoltrare</value>
+  </data>
+  <data name="mail_rfc" xml:space="preserve">
+    <value>Dalla linea</value>
+  </data>
+  <data name="mail_move" xml:space="preserve">
+    <value>Sposta in:</value>
+  </data>
+  <data name="mail_eexists" xml:space="preserve">
+    <value>Il messaggio non esiste più!</value>
+  </data>
+  <data name="view_desc2" xml:space="preserve">
+    <value>Messaggio $1 per l'utente $2 </value>
+  </data>
+  <data name="view_desc3" xml:space="preserve">
+    <value>Messaggio $1 </value>
+  </data>
+  <data name="view_sent" xml:space="preserve">
+    <value>Messaggio $1 nella lista di posta inviata</value>
+  </data>
+  <data name="view_qdesc" xml:space="preserve">
+    <value>Messaggio in coda $1 </value>
+  </data>
+  <data name="view_allheaders" xml:space="preserve">
+    <value>Visualizza tutte le intestazioni</value>
+  </data>
+  <data name="view_noheaders" xml:space="preserve">
+    <value>Visualizza le intestazioni di base</value>
+  </data>
+  <data name="view_reply" xml:space="preserve">
+    <value>rispondere</value>
+  </data>
+  <data name="view_reply2" xml:space="preserve">
+    <value>Rispondi a tutti</value>
+  </data>
+  <data name="view_enew" xml:space="preserve">
+    <value>Modifica come nuovo</value>
+  </data>
+  <data name="view_forward" xml:space="preserve">
+    <value>Inoltrare</value>
+  </data>
+  <data name="view_delete" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="view_strip" xml:space="preserve">
+    <value>Rimuovi allegati</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Non ti è consentito leggere l'email di questo utente</value>
+  </data>
+  <data name="view_mark" xml:space="preserve">
+    <value>Segna il messaggio come:</value>
+  </data>
+  <data name="view_mark0" xml:space="preserve">
+    <value>Non letto</value>
+  </data>
+  <data name="view_mark1" xml:space="preserve">
+    <value>Leggere</value>
+  </data>
+  <data name="view_mark2" xml:space="preserve">
+    <value>Speciale</value>
+  </data>
+  <data name="view_return" xml:space="preserve">
+    <value>email originale</value>
+  </data>
+  <data name="view_sub" xml:space="preserve">
+    <value>Email allegata</value>
+  </data>
+  <data name="compose_title" xml:space="preserve">
+    <value>Componi email</value>
+  </data>
+  <data name="reply_title" xml:space="preserve">
+    <value>Rispondi a e-mail</value>
+  </data>
+  <data name="forward_title" xml:space="preserve">
+    <value>Inoltra email</value>
+  </data>
+  <data name="enew_title" xml:space="preserve">
+    <value>Modifica email</value>
+  </data>
+  <data name="reply_headers" xml:space="preserve">
+    <value>Intestazioni di posta</value>
+  </data>
+  <data name="reply_attach" xml:space="preserve">
+    <value>Allegati inoltrati</value>
+  </data>
+  <data name="reply_mailforward" xml:space="preserve">
+    <value>Messaggi inoltrati</value>
+  </data>
+  <data name="reply_attach2" xml:space="preserve">
+    <value>Allegati lato client e server</value>
+  </data>
+  <data name="reply_send" xml:space="preserve">
+    <value>Inviare una mail</value>
+  </data>
+  <data name="reply_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a inviare posta come questo utente</value>
+  </data>
+  <data name="send_err" xml:space="preserve">
+    <value>Impossibile inviare la posta</value>
+  </data>
+  <data name="send_eto" xml:space="preserve">
+    <value>Indirizzo mancante</value>
+  </data>
+  <data name="send_efrom" xml:space="preserve">
+    <value>Indirizzo mancante</value>
+  </data>
+  <data name="send_title" xml:space="preserve">
+    <value>Posta inviata</value>
+  </data>
+  <data name="send_ok" xml:space="preserve">
+    <value>Posta inviata correttamente a $1 </value>
+  </data>
+  <data name="send_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a inviare posta come questo utente</value>
+  </data>
+  <data name="send_esmtp" xml:space="preserve">
+    <value>Comando SMTP $1 non riuscito : $2 </value>
+  </data>
+  <data name="send_efile" xml:space="preserve">
+    <value>Il file allegato $1 non esiste</value>
+  </data>
+  <data name="send_eattach" xml:space="preserve">
+    <value>Gli allegati non possono avere dimensioni superiori a $1 kB.</value>
+  </data>
+  <data name="send_eperms" xml:space="preserve">
+    <value>L'utente $1 non può leggere $2 </value>
+  </data>
+  <data name="send_eperms2" xml:space="preserve">
+    <value>Non puoi inviare il file $1 </value>
+  </data>
+  <data name="send_epath" xml:space="preserve">
+    <value>L'eseguibile di Sendmail $1 non esiste.</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Elimina posta</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare i messaggi $1 selezionati da $2 ? Questo potrebbe richiedere del tempo per un file di posta di grandi dimensioni. Fino al termine dell'eliminazione, non è necessario eseguire altre azioni.</value>
+  </data>
+  <data name="delete_rusure2" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare questo messaggio da $1 ? Questo potrebbe richiedere del tempo per un file di posta di grandi dimensioni. Fino al termine dell'eliminazione, non è necessario eseguire altre azioni.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Cancella ora</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Ora sei autorizzato a eliminare la posta da questo utente</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Nessuna posta selezionata per l'eliminazione</value>
+  </data>
+  <data name="delete_emnone" xml:space="preserve">
+    <value>Nessuna posta selezionata per contrassegnare</value>
+  </data>
+  <data name="delete_nobutton" xml:space="preserve">
+    <value>Nessun pulsante selezionato</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>risultati di ricerca</value>
+  </data>
+  <data name="search_ecannot" xml:space="preserve">
+    <value>Non è consentito eseguire ricerche nell'email di questo utente</value>
+  </data>
+  <data name="search_ematch" xml:space="preserve">
+    <value>Devi inserire il testo da abbinare.</value>
+  </data>
+  <data name="search_efield" xml:space="preserve">
+    <value>Devi selezionare un tipo di ricerca.</value>
+  </data>
+  <data name="search_none" xml:space="preserve">
+    <value>Nessun messaggio trovato.</value>
+  </data>
+  <data name="search_results2" xml:space="preserve">
+    <value>$1 messaggi di posta corrispondenti a $2 ..</value>
+  </data>
+  <data name="search_results3" xml:space="preserve">
+    <value>$1 messaggi di posta non corrispondenti a $2 ..</value>
+  </data>
+  <data name="match_from" xml:space="preserve">
+    <value>Da: partite</value>
+  </data>
+  <data name="match_subject" xml:space="preserve">
+    <value>Oggetto: partite</value>
+  </data>
+  <data name="match_to" xml:space="preserve">
+    <value>A: partite</value>
+  </data>
+  <data name="match_cc" xml:space="preserve">
+    <value>Cc: partite</value>
+  </data>
+  <data name="match_date" xml:space="preserve">
+    <value>Data: partite</value>
+  </data>
+  <data name="match_body" xml:space="preserve">
+    <value>Corrispondenze del corpo</value>
+  </data>
+  <data name="match_size" xml:space="preserve">
+    <value>La dimensione è maggiore di</value>
+  </data>
+  <data name="match_headers" xml:space="preserve">
+    <value>Le intestazioni corrispondono</value>
+  </data>
+  <data name="match_" xml:space="preserve">
+    <value>-----------------</value>
+  </data>
+  <data name="match_!from" xml:space="preserve">
+    <value>Da: non corrisponde</value>
+  </data>
+  <data name="match_!subject" xml:space="preserve">
+    <value>Oggetto: non corrisponde</value>
+  </data>
+  <data name="match_!to" xml:space="preserve">
+    <value>A: non corrisponde</value>
+  </data>
+  <data name="match_!cc" xml:space="preserve">
+    <value>Cc: non corrisponde</value>
+  </data>
+  <data name="match_!date" xml:space="preserve">
+    <value>Data: non corrisponde</value>
+  </data>
+  <data name="match_!body" xml:space="preserve">
+    <value>Il corpo non corrisponde</value>
+  </data>
+  <data name="match_!size" xml:space="preserve">
+    <value>La dimensione è inferiore a</value>
+  </data>
+  <data name="match_!headers" xml:space="preserve">
+    <value>Le intestazioni non corrispondono</value>
+  </data>
+  <data name="delq_titles" xml:space="preserve">
+    <value>Eliminazione di messaggi</value>
+  </data>
+  <data name="delq_rusure" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare i $1 messaggi in coda selezionati?</value>
+  </data>
+  <data name="delq_confirm" xml:space="preserve">
+    <value>Elimina messaggi</value>
+  </data>
+</root>

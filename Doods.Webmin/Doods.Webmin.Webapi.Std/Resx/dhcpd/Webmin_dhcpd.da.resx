@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_key" xml:space="preserve">
+    <value>Rediger TSIG-nøgler (brugt til at godkende opdateringer til DNS servere)</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indeks</value>
+  </data>
+  <data name="index_dhcpdver2" xml:space="preserve">
+    <value>DHCP serveren &lt;tt&gt;$1&lt;/tt&gt; ser ikke ud til at være den rette version. Webmin understøtter kun ISC DHCPD version $2 eller $3.</value>
+  </data>
+  <data name="index_nosubdef" xml:space="preserve">
+    <value>Ingen subnets eller delte netværk er blevet definerede.</value>
+  </data>
+  <data name="index_addsub" xml:space="preserve">
+    <value>Tilføj et nyt subnet.</value>
+  </data>
+  <data name="index_addnet" xml:space="preserve">
+    <value>Tilføj et ny delt netværk.</value>
+  </data>
+  <data name="index_nomemb" xml:space="preserve">
+    <value>Ingen medlemmer</value>
+  </data>
+  <data name="index_1memb" xml:space="preserve">
+    <value>1 medlem</value>
+  </data>
+  <data name="index_234memb" xml:space="preserve">
+    <value>$1 medlemmer</value>
+  </data>
+  <data name="index_memb" xml:space="preserve">
+    <value>$1 medlemmer</value>
+  </data>
+  <data name="index_hst" xml:space="preserve">
+    <value>Host og hostgrupper</value>
+  </data>
+  <data name="index_nohst" xml:space="preserve">
+    <value>Ingen hosts eller grupper er blevet definerede.</value>
+  </data>
+  <data name="index_hostgroup" xml:space="preserve">
+    <value>Host/Gruppe</value>
+  </data>
+  <data name="index_hardware" xml:space="preserve">
+    <value>Hardware adresse</value>
+  </data>
+  <data name="index_group" xml:space="preserve">
+    <value>Gruppe:</value>
+  </data>
+  <data name="index_nameip" xml:space="preserve">
+    <value>Hostnavn eller IP</value>
+  </data>
+  <data name="index_net" xml:space="preserve">
+    <value>Netværk</value>
+  </data>
+  <data name="index_netmask" xml:space="preserve">
+    <value>Netmaske</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="index_addhst" xml:space="preserve">
+    <value>Tilføj en ny host.</value>
+  </data>
+  <data name="index_addhstg" xml:space="preserve">
+    <value>Tilføj en ny gruppe.</value>
+  </data>
+  <data name="index_buttego" xml:space="preserve">
+    <value>Rediger klientindstillinger</value>
+  </data>
+  <data name="index_buttekey" xml:space="preserve">
+    <value>Rediger TSIG-nøgle</value>
+  </data>
+  <data name="index_ego" xml:space="preserve">
+    <value>Rediger DHCP klientindstillinger der gælder for alle subnet, deltenetværk, hsots og grupper</value>
+  </data>
+  <data name="index_buttlal" xml:space="preserve">
+    <value>List aktive leases</value>
+  </data>
+  <data name="index_lal" xml:space="preserve">
+    <value>List leases der pt er tildelt af denne DHCP server for dynamisk tildelte IP adresser.</value>
+  </data>
+  <data name="index_buttapply" xml:space="preserve">
+    <value>Anvend ændringer</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Klik på denne knap for at anvende den nuværende konfiguration, ved at starte og stoppe DHCP serveren.</value>
+  </data>
+  <data name="index_buttstart" xml:space="preserve">
+    <value>Start server</value>
+  </data>
+  <data name="index_hdisplay" xml:space="preserve">
+    <value>Vis hosts og grupper ved:</value>
+  </data>
+  <data name="index_horder0" xml:space="preserve">
+    <value>Tildeling</value>
+  </data>
+  <data name="index_horder1" xml:space="preserve">
+    <value>Filstruktur</value>
+  </data>
+  <data name="index_horder2" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="index_horder3" xml:space="preserve">
+    <value>Hardware adresse</value>
+  </data>
+  <data name="index_horder4" xml:space="preserve">
+    <value>IP adresse</value>
+  </data>
+  <data name="index_ndisplay" xml:space="preserve">
+    <value>Vis net og subnet ved:</value>
+  </data>
+  <data name="index_norder0" xml:space="preserve">
+    <value>Tildeling</value>
+  </data>
+  <data name="index_norder1" xml:space="preserve">
+    <value>Filstruktur</value>
+  </data>
+  <data name="index_norder2" xml:space="preserve">
+    <value>Navn/IP adresse</value>
+  </data>
+  <data name="index_buttiface" xml:space="preserve">
+    <value>Rediger netværksinterface</value>
+  </data>
+  <data name="index_iface" xml:space="preserve">
+    <value>Sæt netværksinterfaces som DHCP serveren lytter på når den er startet.</value>
+  </data>
+  <data name="index_shatoomany" xml:space="preserve">
+    <value>Der er for mange delte netværk til at vise</value>
+  </data>
+  <data name="index_shalook2" xml:space="preserve">
+    <value>Rediger det delte hvis netværk</value>
+  </data>
+  <data name="index_hsttoomany" xml:space="preserve">
+    <value>Der er for mange hosts til at vise</value>
+  </data>
+  <data name="index_grptoomany" xml:space="preserve">
+    <value>Der er for mange grupper til at vise</value>
+  </data>
+  <data name="index_hstlook2" xml:space="preserve">
+    <value>Rediger hosten hvis navn</value>
+  </data>
+  <data name="index_grplook2" xml:space="preserve">
+    <value>Rediger gruppen hvis navn</value>
+  </data>
+  <data name="index_gdom" xml:space="preserve">
+    <value>Gruppe for $1</value>
+  </data>
+  <data name="index_match1" xml:space="preserve">
+    <value>indeholder</value>
+  </data>
+  <data name="index_match2" xml:space="preserve">
+    <value>matcher</value>
+  </data>
+  <data name="index_dhcpd" xml:space="preserve">
+    <value>ISC DHCPd</value>
+  </data>
+  <data name="butt_save" xml:space="preserve">
+    <value>Gem</value>
+  </data>
+  <data name="butt_eco" xml:space="preserve">
+    <value>Rediger klientindstillinger</value>
+  </data>
+  <data name="butt_vco" xml:space="preserve">
+    <value>Se klientindstillinger</value>
+  </data>
+  <data name="butt_del" xml:space="preserve">
+    <value>Slet</value>
+  </data>
+  <data name="butt_create" xml:space="preserve">
+    <value>Opret</value>
+  </data>
+  <data name="butt_leases" xml:space="preserve">
+    <value>List leases</value>
+  </data>
+  <data name="esub_crheader" xml:space="preserve">
+    <value>Opret subnet</value>
+  </data>
+  <data name="esub_edheader" xml:space="preserve">
+    <value>Rediger subnet</value>
+  </data>
+  <data name="esub_tabhdr" xml:space="preserve">
+    <value>Subnet detaljer</value>
+  </data>
+  <data name="esub_naddr" xml:space="preserve">
+    <value>Netværksadresse</value>
+  </data>
+  <data name="esub_nmask" xml:space="preserve">
+    <value>Netmaske</value>
+  </data>
+  <data name="esub_arange" xml:space="preserve">
+    <value>Adresseområde</value>
+  </data>
+  <data name="esub_dbooptpq" xml:space="preserve">
+    <value>Dynamisk BOOTP ?</value>
+  </data>
+  <data name="esub_shnet" xml:space="preserve">
+    <value>Delt netværk</value>
+  </data>
+  <data name="esub_hosts" xml:space="preserve">
+    <value>Host' direkte i dette subnet</value>
+  </data>
+  <data name="esub_groups" xml:space="preserve">
+    <value>Grupper direkte i dette subnet</value>
+  </data>
+  <data name="esub_pools" xml:space="preserve">
+    <value>Adressepools for subnet</value>
+  </data>
+  <data name="esub_pool" xml:space="preserve">
+    <value>Pool $1</value>
+  </data>
+  <data name="esub_poolnone" xml:space="preserve">
+    <value>Ikke defineret nogen adressepools</value>
+  </data>
+  <data name="esub_pooladd" xml:space="preserve">
+    <value>Tilføj en adressepool.</value>
+  </data>
+  <data name="esub_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="esub_return" xml:space="preserve">
+    <value>subnet liste</value>
+  </data>
+  <data name="esub_retshar" xml:space="preserve">
+    <value>delt netværk</value>
+  </data>
+  <data name="esub_desc" xml:space="preserve">
+    <value>Subnet beskrivelse</value>
+  </data>
+  <data name="esh_crheader" xml:space="preserve">
+    <value>Opret delt netværk</value>
+  </data>
+  <data name="esh_eheader" xml:space="preserve">
+    <value>Rediger delt netværk</value>
+  </data>
+  <data name="esh_tabhdr" xml:space="preserve">
+    <value>Detaljer for delt netværk</value>
+  </data>
+  <data name="esh_netname" xml:space="preserve">
+    <value>Netværksnavn</value>
+  </data>
+  <data name="esh_hosts" xml:space="preserve">
+    <value>Host' direkte i dette delte netværk</value>
+  </data>
+  <data name="esh_groups" xml:space="preserve">
+    <value>Grupper direkte i dette delte netværk</value>
+  </data>
+  <data name="esh_subn" xml:space="preserve">
+    <value>Subnet i dette delte netværk</value>
+  </data>
+  <data name="esh_return" xml:space="preserve">
+    <value>subnet liste</value>
+  </data>
+  <data name="esh_pools" xml:space="preserve">
+    <value>Adressepools for delt netværk</value>
+  </data>
+  <data name="esh_desc" xml:space="preserve">
+    <value>Beskrivelse for delt netværk</value>
+  </data>
+  <data name="ehost_crheader" xml:space="preserve">
+    <value>Opret host</value>
+  </data>
+  <data name="ehost_eheader" xml:space="preserve">
+    <value>Rediger host</value>
+  </data>
+  <data name="ehost_tabhdr" xml:space="preserve">
+    <value>Host detaljer</value>
+  </data>
+  <data name="ehost_hname" xml:space="preserve">
+    <value>Host navn</value>
+  </data>
+  <data name="ehost_nojavascr" xml:space="preserve">
+    <value>Din browser ser ikke ud til at understøtte javascript. Nu skal du vælge den rette placering på listen nedenunder.</value>
+  </data>
+  <data name="ehost_assign" xml:space="preserve">
+    <value>Host knyttet til</value>
+  </data>
+  <data name="ehost_toplevel" xml:space="preserve">
+    <value>Topniveau</value>
+  </data>
+  <data name="ehost_inshared" xml:space="preserve">
+    <value>Delt netværk</value>
+  </data>
+  <data name="ehost_insubnet" xml:space="preserve">
+    <value>Subnet</value>
+  </data>
+  <data name="ehost_ingroup" xml:space="preserve">
+    <value>Gruppe</value>
+  </data>
+  <data name="ehost_hwaddr" xml:space="preserve">
+    <value>Hardware adresse</value>
+  </data>
+  <data name="ehost_fixedip" xml:space="preserve">
+    <value>Fast IP adresse</value>
+  </data>
+  <data name="ehost_subnet" xml:space="preserve">
+    <value>I subnet $1/$2</value>
+  </data>
+  <data name="ehost_shared" xml:space="preserve">
+    <value>I delt netværk $1</value>
+  </data>
+  <data name="ehost_in" xml:space="preserve">
+    <value>i</value>
+  </data>
+  <data name="ehost_return" xml:space="preserve">
+    <value>host liste</value>
+  </data>
+  <data name="ehost_retgroup" xml:space="preserve">
+    <value>gruppe</value>
+  </data>
+  <data name="ehost_retsubn" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="ehost_retshar" xml:space="preserve">
+    <value>delt netværk</value>
+  </data>
+  <data name="ehost_desc" xml:space="preserve">
+    <value>Host beskrivelse</value>
+  </data>
+  <data name="egroup_crheader" xml:space="preserve">
+    <value>Opret host gruppe</value>
+  </data>
+  <data name="egroup_eheader" xml:space="preserve">
+    <value>Rediger hostgruppe</value>
+  </data>
+  <data name="egroup_tblhdr" xml:space="preserve">
+    <value>Gruppedetaljer</value>
+  </data>
+  <data name="egroup_assign" xml:space="preserve">
+    <value>Gruppe knyttet til</value>
+  </data>
+  <data name="egroup_hosts" xml:space="preserve">
+    <value>Host' i denne gruppe</value>
+  </data>
+  <data name="egroup_nchoice" xml:space="preserve">
+    <value>Brug navn som klient hostnavn?</value>
+  </data>
+  <data name="egroup_return" xml:space="preserve">
+    <value>host liste</value>
+  </data>
+  <data name="egroup_retsubn" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="egroup_retshar" xml:space="preserve">
+    <value>Delt netværk</value>
+  </data>
+  <data name="egroup_desc" xml:space="preserve">
+    <value>Gruppebeskrivelse</value>
+  </data>
+  <data name="default" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="eopt_header" xml:space="preserve">
+    <value>Klientindstillinger</value>
+  </data>
+  <data name="eopt_subtitle" xml:space="preserve">
+    <value>For subnet $1</value>
+  </data>
+  <data name="eopt_returnsub" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="eopt_returnshsub" xml:space="preserve">
+    <value>delt netværk</value>
+  </data>
+  <data name="eopt_snettitle" xml:space="preserve">
+    <value>For delt netværk $1</value>
+  </data>
+  <data name="eopt_hosttitle" xml:space="preserve">
+    <value>For host $1</value>
+  </data>
+  <data name="eopt_returnhost" xml:space="preserve">
+    <value>host</value>
+  </data>
+  <data name="eopt_returngroup" xml:space="preserve">
+    <value>host gruppe</value>
+  </data>
+  <data name="eopt_grouptitle" xml:space="preserve">
+    <value>For $1 medlemsgruppe</value>
+  </data>
+  <data name="eopt_alltitle" xml:space="preserve">
+    <value>For alle netværk, host' og grupper</value>
+  </data>
+  <data name="eopt_returnindex" xml:space="preserve">
+    <value>netværk og host liste</value>
+  </data>
+  <data name="eopt_tabhdr" xml:space="preserve">
+    <value>Klientindstillinger</value>
+  </data>
+  <data name="eopt_chost" xml:space="preserve">
+    <value>Klient hostnavn</value>
+  </data>
+  <data name="eopt_defrouters" xml:space="preserve">
+    <value>Standard routere</value>
+  </data>
+  <data name="eopt_smask" xml:space="preserve">
+    <value>Subnet maske</value>
+  </data>
+  <data name="eopt_baddr" xml:space="preserve">
+    <value>Broadcast adresse</value>
+  </data>
+  <data name="eopt_domname" xml:space="preserve">
+    <value>Domænenavn</value>
+  </data>
+  <data name="eopt_dnsserv" xml:space="preserve">
+    <value>DNS servere</value>
+  </data>
+  <data name="eopt_timeserv" xml:space="preserve">
+    <value>Tidsservere</value>
+  </data>
+  <data name="eopt_logserv" xml:space="preserve">
+    <value>Log servere</value>
+  </data>
+  <data name="eopt_swapserv" xml:space="preserve">
+    <value>Swap server</value>
+  </data>
+  <data name="eopt_rdpath" xml:space="preserve">
+    <value>Rod disksti</value>
+  </data>
+  <data name="eopt_nisdom" xml:space="preserve">
+    <value>NIS domæne</value>
+  </data>
+  <data name="eopt_nisserv" xml:space="preserve">
+    <value>NIS servere</value>
+  </data>
+  <data name="eopt_fontserv" xml:space="preserve">
+    <value>Fontservere</value>
+  </data>
+  <data name="eopt_xdmserv" xml:space="preserve">
+    <value>XDM servere</value>
+  </data>
+  <data name="eopt_statrouters" xml:space="preserve">
+    <value>Statiske router</value>
+  </data>
+  <data name="eopt_ntpserv" xml:space="preserve">
+    <value>NTP servere</value>
+  </data>
+  <data name="eopt_nbns" xml:space="preserve">
+    <value>NetBIOS navneservere</value>
+  </data>
+  <data name="eopt_nbs" xml:space="preserve">
+    <value>NetBIOS scope</value>
+  </data>
+  <data name="eopt_nbntype" xml:space="preserve">
+    <value>NetBIOS node type</value>
+  </data>
+  <data name="eopt_toffset" xml:space="preserve">
+    <value>Tidsoffset</value>
+  </data>
+  <data name="eopt_custom" xml:space="preserve">
+    <value>Brugerdefineret indstilling</value>
+  </data>
+  <data name="eopt_cnum" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="eopt_cval" xml:space="preserve">
+    <value>Værdi</value>
+  </data>
+  <data name="eopt_def" xml:space="preserve">
+    <value>Indstillingsdefinition</value>
+  </data>
+  <data name="eopt_dname" xml:space="preserve">
+    <value>Indstillingsnavn</value>
+  </data>
+  <data name="eopt_dnum" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="eopt_dtype" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="eopt_slpaips" xml:space="preserve">
+    <value>Kun disse IP'er?</value>
+  </data>
+  <data name="eopt_slps" xml:space="preserve">
+    <value>SLP service scope</value>
+  </data>
+  <data name="eopt_slpsonly" xml:space="preserve">
+    <value>Kun dette scope?</value>
+  </data>
+  <data name="cdel_header" xml:space="preserve">
+    <value>Advarsel</value>
+  </data>
+  <data name="cdel_shared1" xml:space="preserve">
+    <value>delt netværk</value>
+  </data>
+  <data name="cdel_shared2" xml:space="preserve">
+    <value>delt netværk</value>
+  </data>
+  <data name="cdel_subnet1" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="cdel_subnet2" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="cdel_subnet" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="cdel_subnets" xml:space="preserve">
+    <value>subnet</value>
+  </data>
+  <data name="cdel_group1" xml:space="preserve">
+    <value>gruppe</value>
+  </data>
+  <data name="cdel_group2" xml:space="preserve">
+    <value>gruppe</value>
+  </data>
+  <data name="cdel_group" xml:space="preserve">
+    <value>gruppe</value>
+  </data>
+  <data name="cdel_groups" xml:space="preserve">
+    <value>grupper</value>
+  </data>
+  <data name="cdel_host" xml:space="preserve">
+    <value>host</value>
+  </data>
+  <data name="cdel_hosts" xml:space="preserve">
+    <value>host</value>
+  </data>
+  <data name="cdel_txt" xml:space="preserve">
+    <value>Sletter $1 '$2' sletter også dets indhold:</value>
+  </data>
+  <data name="cdel_confirm" xml:space="preserve">
+    <value>Vil du virkelig gerne slette denne $1 ?</value>
+  </data>
+  <data name="cdel_eunknown" xml:space="preserve">
+    <value>Ukendt fejl</value>
+  </data>
+  <data name="cdel_return" xml:space="preserve">
+    <value>host og netværksliste</value>
+  </data>
+  <data name="eacl_aviol" xml:space="preserve">
+    <value>Brud på adgangskontrol</value>
+  </data>
+  <data name="eacl_np" xml:space="preserve">
+    <value>Du har ikke tilladelse til</value>
+  </data>
+  <data name="eacl_pdh" xml:space="preserve">
+    <value>slet host</value>
+  </data>
+  <data name="eacl_pih" xml:space="preserve">
+    <value>tilføj nye host</value>
+  </data>
+  <data name="eacl_puh" xml:space="preserve">
+    <value>Rediger host</value>
+  </data>
+  <data name="eacl_psh" xml:space="preserve">
+    <value>vælg host</value>
+  </data>
+  <data name="eacl_pdg" xml:space="preserve">
+    <value>slet gruppe</value>
+  </data>
+  <data name="eacl_pig" xml:space="preserve">
+    <value>tilføj nye grupper</value>
+  </data>
+  <data name="eacl_pug" xml:space="preserve">
+    <value>Rediger gruppe</value>
+  </data>
+  <data name="eacl_psg" xml:space="preserve">
+    <value>vælg gruppe</value>
+  </data>
+  <data name="eacl_pds" xml:space="preserve">
+    <value>slet subnet</value>
+  </data>
+  <data name="eacl_pis" xml:space="preserve">
+    <value>tilføj nye subnet</value>
+  </data>
+  <data name="eacl_pus" xml:space="preserve">
+    <value>Rediger subnet</value>
+  </data>
+  <data name="eacl_pss" xml:space="preserve">
+    <value>Vælg subnet</value>
+  </data>
+  <data name="eacl_pdn" xml:space="preserve">
+    <value>slet delt netværk</value>
+  </data>
+  <data name="eacl_pin" xml:space="preserve">
+    <value>tilføj nye delte netværk</value>
+  </data>
+  <data name="eacl_pun" xml:space="preserve">
+    <value>Rediger delt netværk</value>
+  </data>
+  <data name="eacl_psn" xml:space="preserve">
+    <value>Vælg delt netværk</value>
+  </data>
+  <data name="eacl_uniq" xml:space="preserve">
+    <value>Opret duplikater</value>
+  </data>
+  <data name="eacl_pdl" xml:space="preserve">
+    <value>Slet leases</value>
+  </data>
+  <data name="eacl_psl" xml:space="preserve">
+    <value>Vis leases</value>
+  </data>
+  <data name="eacl_pglob" xml:space="preserve">
+    <value>rediger globale indstillinger</value>
+  </data>
+  <data name="eacl_papply" xml:space="preserve">
+    <value>genstart denne service</value>
+  </data>
+  <data name="acl_apply" xml:space="preserve">
+    <value>Kan anvende ændringer?</value>
+  </data>
+  <data name="acl_r_leases" xml:space="preserve">
+    <value>Kan se leases?</value>
+  </data>
+  <data name="acl_w_leases" xml:space="preserve">
+    <value>Kan fjerne leases?</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Kan redigere globale indstillinger?</value>
+  </data>
+  <data name="acl_uniq_hst" xml:space="preserve">
+    <value>Unikke hostnavne?</value>
+  </data>
+  <data name="acl_uniq_sub" xml:space="preserve">
+    <value>Unikke subnet IP adresser?</value>
+  </data>
+  <data name="acl_uniq_sha" xml:space="preserve">
+    <value>Unikke delte-net navne?</value>
+  </data>
+  <data name="acl_seclevel" xml:space="preserve">
+    <value>Bruge sikkerhedsniveau:</value>
+  </data>
+  <data name="acl_hide" xml:space="preserve">
+    <value>Gem utilgængelige objekter?</value>
+  </data>
+  <data name="acl_ahst" xml:space="preserve">
+    <value>Tilgå hosts:</value>
+  </data>
+  <data name="acl_agrp" xml:space="preserve">
+    <value>Tilgå grupper:</value>
+  </data>
+  <data name="acl_asub" xml:space="preserve">
+    <value>Tilgå subnet:</value>
+  </data>
+  <data name="acl_asha" xml:space="preserve">
+    <value>Tilgå delte net</value>
+  </data>
+  <data name="acl_per_hst_acls" xml:space="preserve">
+    <value>Aktiver pr-host ACL'er?</value>
+  </data>
+  <data name="acl_per_grp_acls" xml:space="preserve">
+    <value>Aktiver pr-gruppe ACL'er?</value>
+  </data>
+  <data name="acl_per_sub_acls" xml:space="preserve">
+    <value>Aktiver pr-subnet ACL'er?</value>
+  </data>
+  <data name="acl_per_sha_acls" xml:space="preserve">
+    <value>Aktiver pr-delt-net ACL'er?</value>
+  </data>
+  <data name="acl_per_obj_acls" xml:space="preserve">
+    <value>Pr-objekt ACL'er..</value>
+  </data>
+  <data name="acl_na" xml:space="preserve">
+    <value>ikke tilladt</value>
+  </data>
+  <data name="acl_r1" xml:space="preserve">
+    <value>læs kun</value>
+  </data>
+  <data name="acl_rw" xml:space="preserve">
+    <value>læs/skriv</value>
+  </data>
+  <data name="acl_c" xml:space="preserve">
+    <value>opret</value>
+  </data>
+  <data name="acl_r" xml:space="preserve">
+    <value>læs</value>
+  </data>
+  <data name="acl_w" xml:space="preserve">
+    <value>skriv</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Fejl ved gmening af ACL liste</value>
+  </data>
+  <data name="acl_ernow" xml:space="preserve">
+    <value>Hvis du vil aktivere skriveadgang i globale ACL'er for nogle objekttyper skal du også aktivere læseadgang for denne objekttype.</value>
+  </data>
+  <data name="acl_normal" xml:space="preserve">
+    <value>normal</value>
+  </data>
+  <data name="acl_paranoic" xml:space="preserve">
+    <value>paranoid</value>
+  </data>
+  <data name="iface_title" xml:space="preserve">
+    <value>Netværksinterface</value>
+  </data>
+  <data name="iface_desc" xml:space="preserve">
+    <value>DHCP serveren kan kun tildele IP adresser på netværk der er tilsluttet til et af interfacene valgt nedenfor. Netværksinterfacet for alle definerede subnet skal være inkluderet. Hvis intet er valgt, vil DHCP serveren forsøge at finde et automatisk.</value>
+  </data>
+  <data name="iface_listen" xml:space="preserve">
+    <value>Lyt på interface</value>
+  </data>
+  <data name="index_addzone" xml:space="preserve">
+    <value>Tilføj en ny DNS zone.</value>
+  </data>
+  <data name="index_nozones" xml:space="preserve">
+    <value>Ingen DNS zoner er endnu definerede.</value>
+  </data>
+  <data name="index_buttetext" xml:space="preserve">
+    <value>Configgil</value>
+  </data>
+</root>

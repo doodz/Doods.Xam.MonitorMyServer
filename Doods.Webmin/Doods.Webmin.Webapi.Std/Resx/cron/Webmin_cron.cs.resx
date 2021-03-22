@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Plánované úlohy Cronu</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Uživatel</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Aktivní?</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Příkaz</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Spustit v časech</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Na tomto systému nejsou žádné úlohy Cronu</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Neexistují žádné úlohy Cronu, ke kterým máte povolený přístup.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>Doposud nejsou vytvořeny žádné úlohy Cronu.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Vytvořit novou plánovanou úlohu Cronu</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Vytvořit novou proměnnou prostředí.</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Nastavit uživatelský přístup k úlohám Cronu</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>výpis Cronu</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Proměnná prostředí</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Přesunout</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>Běží?</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Příkaz $1 pro správu uživatelské konfigurace Cronu není nalezen. Je možné, že Cron není ve vašem systému nainstalován.</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>Soubor $1 ze seznamu úloh Cronu neexistuje. Je možné, že Cron není ve vašem systému nainstalován.</value>
+  </data>
+  <data name="index_ecrondir" xml:space="preserve">
+    <value>Adresář úloh Cronu $1 neexistuje. Možná je špatná konfigurace modulu, nebo není Cron nainstalován??</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Smazat vybrané úlohy</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Vypnout vybrané úlohy</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Zapnout vybrané úlohy</value>
+  </data>
+  <data name="index_esearch" xml:space="preserve">
+    <value>Žádné úlohy neodpovídají vyhledávací podmínce $1.</value>
+  </data>
+  <data name="index_toomany2" xml:space="preserve">
+    <value>Příliš mnoho úloh k zobrazení. Použijte formulář vyhledávání k omezení jejich počtu.</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Najít úlohy Cronu odpovídající podmínce</value>
+  </data>
+  <data name="index_ok" xml:space="preserve">
+    <value>Hledat</value>
+  </data>
+  <data name="index_searchres" xml:space="preserve">
+    <value>Úlohy Cronu vyhovující $1 ..</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Resetovat hledání.</value>
+  </data>
+  <data name="index_econfigcheck" xml:space="preserve">
+    <value>Úlohy Cronu nelze na Vašem systému spravovat, dokud nebude konfigurace modulu v pořádku: $1</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Editovat úlohu Cronu</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Vytvořit úlohu Cronu</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění editovat úlohy Cronu pro tohoto uživatele</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Detaily úlohy</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Spustit úlohu Cronu jako</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Aktivní?</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>Příkazy</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Příkaz</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Vstup zaslaný rourou příkazu</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Čas spouštění</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Období pro spuštění</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>Minuty</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>Hodiny</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>Dny</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>Měsíce</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Dny v týdnu</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Všechny</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Vybrané ..</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Spustit</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klonovat úlohu</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>úloha Cronu</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Poznámka: Ctrl-click umožňuje výběr či zrušení výběru minut, hodin, dnů a měsíců.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Jednoduchý plánovač</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Časy a data vybrané níže ..</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>Každou hodinu</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Denně (o půlnoci)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Týdně (v neděli)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Měsíčně (vždy prvního)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Ročně (vždy prvního ledna)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>Při startu systému</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>každou hodinu</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>denně (o půlnoci)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>týdně (v neděli)</value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>měsíčně (vždy prvního)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>ročně (vždy prvního ledna)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>Když systém startuje</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Chyba při ukládání úlohy</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>Nezadal jste příkaz ke spouštění</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Musíte vybrat uživatele</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>Uživatel '$1' neexistuje</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Uživatel '$1' nemá povolen přístup ke cronu</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění vytvořit úlohu Cronu pro '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>Nevybral jste žádné $1 ke spuštění</value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>Nemáte oprávnění vytvářet úlohy Cronu</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Nastavení přístupu ke Cronu</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Tento formulář umožňuje nastavit který uživatel může vytvářet a spouštět úlohy Cronu</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>Nemůžete nastavit uživatelský přístup k úlohám Cronu</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Zakázat všechny uživatele</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Zakázat všechny uživatele mimo roota</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Povolit všechny uživatele</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Povolit pouze vybrané uživatele</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Zakázat pouze vybrané uživatele</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Upravit proměnnou prostředí</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Vytvořit proměnnou prostředí</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Jméno proměnné</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>Pro uživatele</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Aktivní?</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Detaily proměnné prostředí</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>Chyba při ukládání proměnné prostředí</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>'$1' není platné jméno proměnné</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Poznámka - Toto nastavení proměnné prostředí může být použito pro úlohy Cronu až v momentě, kdy je v seznamu úloh na hlavní stránce modulu.</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Přidat proměnnou prostředí</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Přesunout proměnnou prostředí</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Před všemi úlohami Cronu uživatele</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Po všech úlohách Cronu</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Momentální pozice</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Spustit úlohu Cronu</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění spouštět úlohu Cronu tohoto uživatele</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>Výstup příkazu $1 ..</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>Běžící příkaz $1 jako proces v pozadí.</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Nebyl generován žádný výstup</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Může editovat úlohy Cronu pro</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Všechny uživatele</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>Aktuálního webmin uživatele</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Pouze uživatele</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Všechny uživatele mimo</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Může nastavit uživatelský přístup ke Cronu?</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Může zobrazit a upravit příkazy Cronu?</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Uživatele s UID v rozsahu</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Uživatele v primární skupině</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Může vytvořit úlohy Cronu?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Může smazat úlohy Cronu?</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Může přesunout úlohy Cronu?</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Může přerušit úlohy Cronu?</value>
+  </data>
+  <data name="acl_hourly" xml:space="preserve">
+    <value>Omezit úlohy na nejméně hodinový interval?</value>
+  </data>
+  <data name="acl_hourlydef" xml:space="preserve">
+    <value>Převzít konfiguraci modulu</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Modifikována úloha Cronu pro $1</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Modifikována úloha Cronu "$2" pro $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Vytvořena úloha Cronu pro $1</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Vytvořena úloha Cronu "$2" pro $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Smazána úloha Cronu for $1</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Spuštěna úloha Cronu jako $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Spuštěna úloha Cronu "$2" jako $1</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Přerušena úloha Cronu pro $1</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>Přerušena úloha Cronu "$2" pro $1</value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>Změněn uživatelský přístup k úloze Cronu</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>Vytvořena proměnná prostředí pro $1</value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>Změněna proměnná prostředí pro $1</value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>Smazána proměnná prostředí pro $1</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Přesunuta úloha Cronu pro $1</value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>Smazáno $1 úloh Cronu</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>Vypnuto $1 úloh Cronu</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>Zapnuto $1 úloh Cronu</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>V nové konfiguraci Cronu byla detekována chyba : $1 $2</value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>každou minutu</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>každou hodinu v $1 po hodině</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>každý den v $2:$1</value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>dne $3 každý měsíc v $2:$1</value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>vždy $3 v $2:$1</value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>v čase úlohy $1</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Každou minutu</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Každou hodinu v $1 po hodině</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Každý den v $2:$1</value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>Dne $3 každý měsíc v $2:$1</value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Vždy $3 v $2:$1</value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>V čase úlohy $1</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>Chyba při přesunu úlohy Cronu</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Tato úloha nemůže být přesunut</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Chyba při přerušení úlohy Cronu</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnění přerušit tuto úlohu</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Již neběží</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>Chyba při zabití : $1</value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Přerušit úlohu Cronu</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Určitě chcete přerušit proces $1 s PID $2?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Určitě chcete přerušit proces $1 s PID $2 a všechny jeho pod-procesy?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Ano, přerušit</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Spustit ve kterýkoliv den</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Běžet pouze od $1</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>do $1</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Chybějící nebo neplatný počáteční den v rozsahu spuštění</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Chybějící nebo neplatný koncový den v rozsahu spuštění</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Chyba při mazání úloh Cronu</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Nic není vybráno</value>
+  </data>
+</root>

@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Agente de Correo Postfix</value>
+  </data>
+  <data name="internal_error" xml:space="preserve">
+    <value>Error Interno</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Parar Postfix</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Arrancar Postfix</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Haz click en este botón para parar el servidor de correo Postfix en curso. Esto hará que no se entregue correo a usuarios locales desde otros sistemas y prevendrá que los clientes, que usen este sistema como servidor de correo, envíen correo.</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Haz click en este botón para arrancar el servidor de correo Postfix. Hasta que esto se haya realizado, el correo no será entregado a los usuarios locales desde otros sistemas y los clientes no podrán utilizar este sistema como servidor de correo.</value>
+  </data>
+  <data name="opts_err" xml:space="preserve">
+    <value>No pude salvar las opciones</value>
+  </data>
+  <data name="check_error" xml:space="preserve">
+    <value>Error al revisar la configuración de Postfix en curso. Por favor, arregla manuálmente la configuración de Postfix.</value>
+  </data>
+  <data name="address_rewriting_title" xml:space="preserve">
+    <value>Reescritura de Dirección y Enmascaramiento</value>
+  </data>
+  <data name="address_rewriting_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar la reescritura de dirección y enmascaramiento</value>
+  </data>
+  <data name="aliases_title" xml:space="preserve">
+    <value>Aliases de Correo</value>
+  </data>
+  <data name="aliases_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar aliases</value>
+  </data>
+  <data name="aliases_no_alias_file" xml:space="preserve">
+    <value>No hay archivo de alias</value>
+  </data>
+  <data name="aliases_failed_delete" xml:space="preserve">
+    <value>No pude borrar alias: $1</value>
+  </data>
+  <data name="aliases_cant_write" xml:space="preserve">
+    <value>No puedo escribir en el archivo de alias</value>
+  </data>
+  <data name="aliases_cant_read" xml:space="preserve">
+    <value>No puedo leer del archivo de alias</value>
+  </data>
+  <data name="aliasopts_title" xml:space="preserve">
+    <value>Opciones de Alias</value>
+  </data>
+  <data name="aliases_internal_error" xml:space="preserve">
+    <value>Aliases: error interno</value>
+  </data>
+  <data name="edit_alias_title" xml:space="preserve">
+    <value>Edición de Propiedades de Alias</value>
+  </data>
+  <data name="alias_save" xml:space="preserve">
+    <value>Salvar Alias</value>
+  </data>
+  <data name="alias_save_err" xml:space="preserve">
+    <value>No pude salvar alias</value>
+  </data>
+  <data name="alias_delete_create" xml:space="preserve">
+    <value>¿¡Deseas borrar un alias que estás creando ahora!?</value>
+  </data>
+  <data name="delete_alias" xml:space="preserve">
+    <value>Borrar Alias</value>
+  </data>
+  <data name="aliases_click" xml:space="preserve">
+    <value>Haz click en cualquier alias para editar sus propiedades</value>
+  </data>
+  <data name="general_title" xml:space="preserve">
+    <value>Opciones Generales</value>
+  </data>
+  <data name="general_title_sensible" xml:space="preserve">
+    <value>Opciones Generales más Útiles</value>
+  </data>
+  <data name="general_title_others" xml:space="preserve">
+    <value>Otras Opciones Generales</value>
+  </data>
+  <data name="general_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar Opciones Generales</value>
+  </data>
+  <data name="what_is_it" xml:space="preserve">
+    <value>¿Qué es esto?</value>
+  </data>
+  <data name="opts_default" xml:space="preserve">
+    <value>Por defecto</value>
+  </data>
+  <data name="opts_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="opts_relayhost" xml:space="preserve">
+    <value>Enviar correo saliente a través de máquina</value>
+  </data>
+  <data name="opts_direct" xml:space="preserve">
+    <value>Entregar diréctamente</value>
+  </data>
+  <data name="opts_myorigin" xml:space="preserve">
+    <value>Qué dominio usar en correo saliente</value>
+  </data>
+  <data name="opts_myorigin_as_myhostname" xml:space="preserve">
+    <value>Usar nombre de máquina</value>
+  </data>
+  <data name="opts_myorigin_as_mydomain" xml:space="preserve">
+    <value>Usar nombre de dominio</value>
+  </data>
+  <data name="opts_mydestination" xml:space="preserve">
+    <value>Para qué dominios recibir correo</value>
+  </data>
+  <data name="opts_mydestination_default" xml:space="preserve">
+    <value>Máquina local</value>
+  </data>
+  <data name="opts_mydestination_domainwide" xml:space="preserve">
+    <value>Todo el dominio</value>
+  </data>
+  <data name="opts_notify_classes" xml:space="preserve">
+    <value>De qué problema informar al administrador de correo</value>
+  </data>
+  <data name="opts_queue_directory" xml:space="preserve">
+    <value>Directorio de cola de correo</value>
+  </data>
+  <data name="opts_mail_owner" xml:space="preserve">
+    <value>Propietario de correo</value>
+  </data>
+  <data name="opts_default_privs" xml:space="preserve">
+    <value>Derechos por defecto del agente de entrega</value>
+  </data>
+  <data name="opts_inet_interfaces" xml:space="preserve">
+    <value>Interfaces de red para recibir correo</value>
+  </data>
+  <data name="opts_all_interfaces" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="opts_local_recipient_maps" xml:space="preserve">
+    <value>Rechazar usuarios locales desconocidos</value>
+  </data>
+  <data name="opts_no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="opts_save" xml:space="preserve">
+    <value>Salvar y Aplicar</value>
+  </data>
+  <data name="opts_allow_percent_hack" xml:space="preserve">
+    <value>Reescribir "usuario%dominio" por "usuario@dominio"</value>
+  </data>
+  <data name="opts_append_at_myorigin" xml:space="preserve">
+    <value>Reescribir "usuario" por "usuario@$midominio"</value>
+  </data>
+  <data name="opts_append_dot_mydomain" xml:space="preserve">
+    <value>Reescribir "usuario@máquina" por "usuario@máquina.$midominio"</value>
+  </data>
+  <data name="opts_empty_address_recipient" xml:space="preserve">
+    <value>Enviar correo sin destinatario a...</value>
+  </data>
+  <data name="opt_empty_recip_default" xml:space="preserve">
+    <value>Por defecto</value>
+  </data>
+  <data name="opts_swap_bangpath" xml:space="preserve">
+    <value>Reescribir "sitio!usuario" por "usuario@sitio"</value>
+  </data>
+  <data name="opts_masquerade_domains" xml:space="preserve">
+    <value>Enmascaramiento de dirección</value>
+  </data>
+  <data name="opts_masquerade_exceptions" xml:space="preserve">
+    <value>Excepciones de enmascaramiento</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Configuración de Postfix</value>
+  </data>
+  <data name="opts_alias_maps" xml:space="preserve">
+    <value>Bases de datos de alias usadas por agente de entrega local</value>
+  </data>
+  <data name="opts_alias_database" xml:space="preserve">
+    <value>Bases de datos de alias construídas mediante el comando "newaliases"</value>
+  </data>
+  <data name="aliases_warning" xml:space="preserve">
+    <value>Aviso: &lt;ul&gt;&lt;li&gt;cuando el primer campo no está vacío, el comando de generación de alias por defecto de Postfix es usado para construir las bases de datos correspondientes; &lt;li&gt;en caso contrario el comando de compatibilidad con Sendmail "newaliases" es usado, esto usará el segundo campo de base de datos.&lt;/ul&gt;</value>
+  </data>
+  <data name="aliases_name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="aliases_value" xml:space="preserve">
+    <value>Alias de...</value>
+  </data>
+  <data name="new_alias" xml:space="preserve">
+    <value>Crear nuevo alias</value>
+  </data>
+  <data name="new_aliasmsg" xml:space="preserve">
+    <value>Haz click en este botón para crear un nuevo alias</value>
+  </data>
+  <data name="local_delivery_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar opciones de entrega local</value>
+  </data>
+  <data name="local_delivery_title" xml:space="preserve">
+    <value>Entrega local</value>
+  </data>
+  <data name="opts_local_transport" xml:space="preserve">
+    <value>Nombre del transporte para entregas locales</value>
+  </data>
+  <data name="opts_local_transport_local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="opts_local_command_shell" xml:space="preserve">
+    <value>Shell a utilizar para entrega a comando externo</value>
+  </data>
+  <data name="opts_local_command_shell_direct" xml:space="preserve">
+    <value>Ninguno (ejecución directar de comandos)</value>
+  </data>
+  <data name="opts_forward_path" xml:space="preserve">
+    <value>Buscar lista de enviar</value>
+  </data>
+  <data name="opts_allow_mail_to_commands" xml:space="preserve">
+    <value>Entrega válida de correo a comandos externos</value>
+  </data>
+  <data name="opts_allow_mail_to_files" xml:space="preserve">
+    <value>Entrega válida de correo a archivos externos</value>
+  </data>
+  <data name="opts_home_mailbox" xml:space="preserve">
+    <value>Trayectoria en relación al directorio inicial del archivo de buzón de usuario</value>
+  </data>
+  <data name="opts_home_mailbox_default" xml:space="preserve">
+    <value>Ninguna (usar la estándar &lt;tt&gt;/var/algo&lt;/tt&gt;)</value>
+  </data>
+  <data name="opts_luser_relay" xml:space="preserve">
+    <value>Dirección de destino para destinatarios desconocidos</value>
+  </data>
+  <data name="opts_luser_relay_none" xml:space="preserve">
+    <value>Ninguna (enviar el correo)</value>
+  </data>
+  <data name="opts_mail_spool_directory" xml:space="preserve">
+    <value>Directorio de spool</value>
+  </data>
+  <data name="opts_mailbox_command" xml:space="preserve">
+    <value>Comando externo a usar en vez de la entrega a buzón</value>
+  </data>
+  <data name="opts_mailbox_command_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="opts_mailbox_transport" xml:space="preserve">
+    <value>Transporte opcional actual a usar</value>
+  </data>
+  <data name="opts_mailbox_transport_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="opts_fallback_transport" xml:space="preserve">
+    <value>Transporte opcional para destinatarios desconocidos</value>
+  </data>
+  <data name="opts_fallback_transport_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="opts_local_destination_concurrency_limit" xml:space="preserve">
+    <value>Número máximo de entregas paralelas para el mismo destinatario local</value>
+  </data>
+  <data name="opts_local_destination_recipient_limit" xml:space="preserve">
+    <value>Número máximo de destinatarios por entrega local de mensaje</value>
+  </data>
+  <data name="opts_local_destination_recipient_limit_default" xml:space="preserve">
+    <value>Por defecto</value>
+  </data>
+  <data name="opts_prepend_delivered_header" xml:space="preserve">
+    <value>Poner un &lt;tt&gt;Delivered-To: (Entregado-A:)&lt;/tt&gt; cuando...</value>
+  </data>
+  <data name="opts_prepend_delivered_header_default" xml:space="preserve">
+    <value>Por defecto</value>
+  </data>
+  <data name="resource_title" xml:space="preserve">
+    <value>Control general de recursos</value>
+  </data>
+  <data name="resource_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar los parámetros de control de recursos</value>
+  </data>
+  <data name="opts_bounce_size_limit" xml:space="preserve">
+    <value>Medida máxima de mensaje enviado</value>
+  </data>
+  <data name="opts_command_time_limit" xml:space="preserve">
+    <value>Tiempo máximo para entrega a comandos externos</value>
+  </data>
+  <data name="opts_default_process_limit" xml:space="preserve">
+    <value>Número máximo de procesos hijos de Postfix</value>
+  </data>
+  <data name="opts_deliver_lock_attempts" xml:space="preserve">
+    <value>Intentos máximos de adquirir bloqueos de archivo</value>
+  </data>
+  <data name="opts_deliver_lock_delay" xml:space="preserve">
+    <value>Tiempo en segundos entre intentos de bloqueo de archivo</value>
+  </data>
+  <data name="opts_duplicate_filter_limit" xml:space="preserve">
+    <value>Número máximo de direcciones recordadas por el filtro duplicado</value>
+  </data>
+  <data name="opts_fork_attempts" xml:space="preserve">
+    <value>Intentos máximos de hacer fork en un proceso</value>
+  </data>
+  <data name="opts_fork_delay" xml:space="preserve">
+    <value>Tiempo en segundos entre intentos de fork</value>
+  </data>
+  <data name="opts_header_size_limit" xml:space="preserve">
+    <value>Memoria máxima usada para procesar las cabeceras</value>
+  </data>
+  <data name="opts_line_length_limit" xml:space="preserve">
+    <value>Memoria máxima usada para manejar líneas de entrada</value>
+  </data>
+  <data name="opts_message_size_limit" xml:space="preserve">
+    <value>Medida máxima de un mensaje</value>
+  </data>
+  <data name="opts_qmgr_message_active_limit" xml:space="preserve">
+    <value>Número máximo de mensajes en la cola activa</value>
+  </data>
+  <data name="opts_qmgr_message_recipient_limit" xml:space="preserve">
+    <value>Número máximo de destinatarios en memoria</value>
+  </data>
+  <data name="opts_queue_minfree" xml:space="preserve">
+    <value>Espacio mínimo libre en el sistema de archivos de la cola</value>
+  </data>
+  <data name="opts_stale_lock_time" xml:space="preserve">
+    <value>Tiempo máximo tras el cual se libera el bloqueo caducado</value>
+  </data>
+  <data name="opts_transport_retry_time" xml:space="preserve">
+    <value>Tiempo en segundos entre intentos de contactar una MDT rota</value>
+  </data>
+  <data name="opts_always_bcc" xml:space="preserve">
+    <value>Dirección que recibe bcc de cada mensaje</value>
+  </data>
+  <data name="opts_always_bcc_none" xml:space="preserve">
+    <value>Ninguna</value>
+  </data>
+  <data name="opts_daemon_timeout" xml:space="preserve">
+    <value>Tiempo máximo para manejar requerimientos</value>
+  </data>
+  <data name="opts_default_database_type" xml:space="preserve">
+    <value>Tipo de base de datos por defecto</value>
+  </data>
+  <data name="opts_default_transport" xml:space="preserve">
+    <value>Transporte de entrega de mensajes por defecto</value>
+  </data>
+  <data name="opts_double_bounce_sender" xml:space="preserve">
+    <value>Dirección de remitente para enviar correo</value>
+  </data>
+  <data name="opts_hash_queue_depth" xml:space="preserve">
+    <value>Número de niveles de subdirectorio por debajo del directorio de cola</value>
+  </data>
+  <data name="opts_hash_queue_names" xml:space="preserve">
+    <value>Nombre de directorios de cola divididos en subdirectorios</value>
+  </data>
+  <data name="opts_hopcount_limit" xml:space="preserve">
+    <value>Número máximo de cabeceras &lt;tt&gt;Received: (Recibido:)&lt;/tt&gt;</value>
+  </data>
+  <data name="opts_ipc_idle" xml:space="preserve">
+    <value>Tiempo sin hacer nada tras el cual el cliente IPC interno se desconecta</value>
+  </data>
+  <data name="opts_ipc_timeout" xml:space="preserve">
+    <value>Tiempo de E/S en canales de comunicación internos</value>
+  </data>
+  <data name="opts_mail_name" xml:space="preserve">
+    <value>Nombre de sistema de correo</value>
+  </data>
+  <data name="opts_mail_version" xml:space="preserve">
+    <value>Versión oficial de sistema de correo</value>
+  </data>
+  <data name="opts_max_idle" xml:space="preserve">
+    <value>Tiempo a esperar por el siguiente requerimiento de servicio</value>
+  </data>
+  <data name="opts_max_use" xml:space="preserve">
+    <value>Requerimientos máximos de servicios manejados antes de salir</value>
+  </data>
+  <data name="opts_mydomain" xml:space="preserve">
+    <value>Nombre de dominio local de internet</value>
+  </data>
+  <data name="opts_mydomain_default" xml:space="preserve">
+    <value>Por defecto (suministrado por sistema)</value>
+  </data>
+  <data name="opts_myhostname" xml:space="preserve">
+    <value>Nombre de máquina de internet de este sistema de correo</value>
+  </data>
+  <data name="opts_myhostname_default" xml:space="preserve">
+    <value>Por defecto (suministrada por sistema)</value>
+  </data>
+  <data name="opts_mynetworks" xml:space="preserve">
+    <value>Redes locales</value>
+  </data>
+  <data name="opts_mynetworks_default" xml:space="preserve">
+    <value>Por defecto (todas las redes conectadas)</value>
+  </data>
+  <data name="opts_bounce_notice_recipient" xml:space="preserve">
+    <value>Enviar aviso a jefe de estafeta al enviar a...</value>
+  </data>
+  <data name="opts_2bounce_notice_recipient" xml:space="preserve">
+    <value>Enviar aviso al jefe de estafeta al reenviar a...</value>
+  </data>
+  <data name="opts_delay_notice_recipient" xml:space="preserve">
+    <value>Enviar aviso al jefe de estafeta al producirse retraso a...</value>
+  </data>
+  <data name="opts_error_notice_recipient" xml:space="preserve">
+    <value>Enviar aviso al jefe de estafeta al ocurrir error a...</value>
+  </data>
+  <data name="opts_process_id_directory" xml:space="preserve">
+    <value>Directorio de archivo de bloqueo, relativo a directorio de cola</value>
+  </data>
+  <data name="opts_program_directory" xml:space="preserve">
+    <value>Programas de soporte de Postfix y directorio de demonios</value>
+  </data>
+  <data name="opts_recipient_delimiter" xml:space="preserve">
+    <value>Nombres de usuario separadores / extensiones de dirección</value>
+  </data>
+  <data name="opts_relocated_maps_default" xml:space="preserve">
+    <value>Por defecto (desactivados)</value>
+  </data>
+  <data name="opts_sun_mailtool_compatibility" xml:space="preserve">
+    <value>Desactivar bloque de archivos de kernel en buzones</value>
+  </data>
+  <data name="opts_trigger_timeout" xml:space="preserve">
+    <value>Tiempo máximo para enviar un disparador a un demonio</value>
+  </data>
+  <data name="opts_delay_warning_time" xml:space="preserve">
+    <value>Tiempo en horas antes de enviar un aviso de no entrega</value>
+  </data>
+  <data name="smtpd_title" xml:space="preserve">
+    <value>Opciones de servidor SMTP</value>
+  </data>
+  <data name="smtpd_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar las opciones de servidor SMTP</value>
+  </data>
+  <data name="opts_disable_vrfy_command" xml:space="preserve">
+    <value>Desactivar comando SMTP VRFY</value>
+  </data>
+  <data name="opts_smtpd_banner" xml:space="preserve">
+    <value>Bandera de saludo SMTP</value>
+  </data>
+  <data name="opts_smtpd_etrn_restrictions" xml:space="preserve">
+    <value>Restringir comando ETRN cuando...</value>
+  </data>
+  <data name="opts_smtpd_recipient_limit" xml:space="preserve">
+    <value>Número máximo de destinatarios aceptados para entrega</value>
+  </data>
+  <data name="opts_smtpd_timeout" xml:space="preserve">
+    <value>Tiempo máximo en segundos para transacciones SMTP</value>
+  </data>
+  <data name="opts_smtpd_error_sleep_time" xml:space="preserve">
+    <value>Tiempo máximo antes de enviar respuesta de error 4xx/5xx</value>
+  </data>
+  <data name="opts_smtpd_soft_error_limit" xml:space="preserve">
+    <value>Contador de error para temporálmente ignorar a un cliente</value>
+  </data>
+  <data name="opts_smtpd_hard_error_limit" xml:space="preserve">
+    <value>Contador de error para cerrar conexión</value>
+  </data>
+  <data name="opts_smtpd_client_restrictions" xml:space="preserve">
+    <value>Restricciones en direcciones/nombres de máquina de cliente</value>
+  </data>
+  <data name="opts_smtpd_helo_required" xml:space="preserve">
+    <value>HELO es obligado</value>
+  </data>
+  <data name="opts_smtpd_helo_restrictions" xml:space="preserve">
+    <value>Restricciones en envíos de comandos HELO</value>
+  </data>
+  <data name="opts_smtpd_sender_restrictions" xml:space="preserve">
+    <value>Restricciones en direcciones de remitente</value>
+  </data>
+  <data name="opts_smtpd_recipient_restrictions" xml:space="preserve">
+    <value>Restricciones en direcciones de destinatario</value>
+  </data>
+  <data name="opts_allow_untrusted_routing" xml:space="preserve">
+    <value>Permitir enturamiento no fiable</value>
+  </data>
+  <data name="opts_maps_rbl_domains" xml:space="preserve">
+    <value>Dominios DNS para búsquedas en listas negras</value>
+  </data>
+  <data name="opts_relay_domains" xml:space="preserve">
+    <value>Restringir relé de correo</value>
+  </data>
+  <data name="opts_access_map_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en violación de mapa de acceso</value>
+  </data>
+  <data name="opts_invalid_hostname_reject_code" xml:space="preserve">
+    <value>Respuesta del servidor SMTP en rechazo por nombre de máquina inválido</value>
+  </data>
+  <data name="opts_maps_rbl_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en violación de dominios RBL</value>
+  </data>
+  <data name="opts_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en rechazo de cliente</value>
+  </data>
+  <data name="opts_relay_domains_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en relé prohibido</value>
+  </data>
+  <data name="opts_unknown_address_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en rechazo de dominio desconocido</value>
+  </data>
+  <data name="opts_unknown_client_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en rechazo de cliente desconocido</value>
+  </data>
+  <data name="opts_unknown_hostname_reject_code" xml:space="preserve">
+    <value>Respuesta de servidor SMTP en rechazo de nombre de máquina desconocido</value>
+  </data>
+  <data name="smtp_title" xml:space="preserve">
+    <value>Opciones de cliente SMTP</value>
+  </data>
+  <data name="smtp_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar las opciones de cliente SMTP</value>
+  </data>
+  <data name="opts_best_mx_transport" xml:space="preserve">
+    <value>Acción al ser listado como mejor máquina MX</value>
+  </data>
+  <data name="opts_best_mx_transport_default" xml:space="preserve">
+    <value>Por defecto (enviar mensaje)</value>
+  </data>
+  <data name="opts_fallback_relay" xml:space="preserve">
+    <value>Máquinas/dominios a quitar correo al ser destinos inválidos</value>
+  </data>
+  <data name="opts_ignore_mx_lookup_error" xml:space="preserve">
+    <value>Ignorar error de búsqueda MX</value>
+  </data>
+  <data name="opts_smtp_skip_4xx_greeting" xml:space="preserve">
+    <value>Saltar saludo 4xx</value>
+  </data>
+  <data name="opts_smtp_skip_quit_response" xml:space="preserve">
+    <value>Saltar comando de esperar por QUIT</value>
+  </data>
+  <data name="opts_smtp_destination_concurrency_limit" xml:space="preserve">
+    <value>Máximo número de entregas paralelas al mismo destino</value>
+  </data>
+  <data name="opts_smtp_destination_recipient_limit" xml:space="preserve">
+    <value>Máximo número de destinatarios por entrega</value>
+  </data>
+  <data name="opts_smtp_connect_timeout" xml:space="preserve">
+    <value>Tiempo máximo para completar conexiones TCP</value>
+  </data>
+  <data name="opts_smtp_helo_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por la bandera de saludo</value>
+  </data>
+  <data name="opts_smtp_mail_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a MAIL FROM</value>
+  </data>
+  <data name="opts_smtp_rcpt_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a RCPT TO</value>
+  </data>
+  <data name="opts_smtp_data_init_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a DATA</value>
+  </data>
+  <data name="opts_smtp_data_xfer_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a transmisión de contenido de mensaje</value>
+  </data>
+  <data name="opts_smtp_data_done_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a "." final</value>
+  </data>
+  <data name="opts_smtp_quit_timeout" xml:space="preserve">
+    <value>Tiempo máximo de espera por respuesta a QUIT</value>
+  </data>
+  <data name="rate_title" xml:space="preserve">
+    <value>Porcentajes de entrega</value>
+  </data>
+  <data name="rate_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar las opciones de porcentaje de entrega</value>
+  </data>
+  <data name="opts_default_destination_concurrency_limit" xml:space="preserve">
+    <value>Máximo número de entregas paralelas al mismo destino</value>
+  </data>
+  <data name="opts_default_destination_recipient_limit" xml:space="preserve">
+    <value>Máximo número de destinatarios por entrega de mensaje</value>
+  </data>
+  <data name="opts_initial_destination_concurrency" xml:space="preserve">
+    <value>Nivel inicial de concurrencia para entrega al mismo destino</value>
+  </data>
+  <data name="opts_maximal_backoff_time" xml:space="preserve">
+    <value>Máximo tiempo (segundos) entre intentos de entrega de un mensaje diferido</value>
+  </data>
+  <data name="opts_maximal_queue_lifetime" xml:space="preserve">
+    <value>Máximo tiempo (días) en cola antes de que los mensajes sean no entregables</value>
+  </data>
+  <data name="opts_minimal_backoff_time" xml:space="preserve">
+    <value>Mínimo tiempo (segundos) entre intentos de entregar un mensaje diferido</value>
+  </data>
+  <data name="opts_queue_run_delay" xml:space="preserve">
+    <value>Tiempo (segundos) entre exploración de la cola diferida</value>
+  </data>
+  <data name="opts_defer_transports" xml:space="preserve">
+    <value>Transportes que no deberían de ser entregados</value>
+  </data>
+  <data name="debug_title" xml:space="preserve">
+    <value>Características de depuración</value>
+  </data>
+  <data name="debug_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar características de depuración</value>
+  </data>
+  <data name="opts_debug_peer_list" xml:space="preserve">
+    <value>Lita de modelos de dominio/red para los que el diario detallado está activado</value>
+  </data>
+  <data name="opts_debug_peer_level" xml:space="preserve">
+    <value>Nivel de diario detallado al coincidir con la lista superior</value>
+  </data>
+  <data name="debug_version" xml:space="preserve">
+    <value>Módulo de Postfix para Webmin - Versión $1</value>
+  </data>
+  <data name="ldap_title" xml:space="preserve">
+    <value>Búsquedas LDAP</value>
+  </data>
+  <data name="ldap_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar opciones de búsqueda LDAP</value>
+  </data>
+  <data name="ldap_non_existent" xml:space="preserve">
+    <value>Parece como si LDAP no existiera en tu sistema Postfix</value>
+  </data>
+  <data name="opts_ldap_lookup_timeout" xml:space="preserve">
+    <value>Tiempo máximo para búsquedas en bases de datos LDAP</value>
+  </data>
+  <data name="opts_ldap_search_base" xml:space="preserve">
+    <value>Base de datos LDAP a buscar</value>
+  </data>
+  <data name="opts_ldap_server_host" xml:space="preserve">
+    <value>Nombre de máquina de servidor LDAP</value>
+  </data>
+  <data name="canonical_title" xml:space="preserve">
+    <value>Mapeo Canónigo</value>
+  </data>
+  <data name="canonical_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar la configuración de mapeos canónigos</value>
+  </data>
+  <data name="opts_canonical_maps" xml:space="preserve">
+    <value>Tablas de búsqueda de mapeo de direcciones</value>
+  </data>
+  <data name="opts_recipient_canonical_maps" xml:space="preserve">
+    <value>Tablas para direcciones RECIPIENT (DESTINATARIAS)</value>
+  </data>
+  <data name="opts_sender_canonical_maps" xml:space="preserve">
+    <value>Tablas para direcciones SENDER (REMITENTE)</value>
+  </data>
+  <data name="edit_canonical_maps" xml:space="preserve">
+    <value>Editar mapeos canónigos</value>
+  </data>
+  <data name="edit_recipient_canonical_maps" xml:space="preserve">
+    <value>Editar mapeos canónigos de destinatarios</value>
+  </data>
+  <data name="edit_sender_canonical_maps" xml:space="preserve">
+    <value>Editar mapeos canónigos de remitente</value>
+  </data>
+  <data name="edit_canonical_maps_general" xml:space="preserve">
+    <value>Haz click en uno de estos botones para editar los mapeos canónigos</value>
+  </data>
+  <data name="canonical_edit_title" xml:space="preserve">
+    <value>Editar Un Mapeo Canónigo</value>
+  </data>
+  <data name="mapping_name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="mapping_value" xml:space="preserve">
+    <value>Se Mapea a...</value>
+  </data>
+  <data name="new_mapping" xml:space="preserve">
+    <value>Nuevo mapeo</value>
+  </data>
+  <data name="map_save" xml:space="preserve">
+    <value>Salvar mapeo</value>
+  </data>
+  <data name="delete_map" xml:space="preserve">
+    <value>Borrar mapeo</value>
+  </data>
+  <data name="edit_map_title" xml:space="preserve">
+    <value>Editar Un Mapa</value>
+  </data>
+  <data name="map_save_err" xml:space="preserve">
+    <value>Error al salvar mapeo</value>
+  </data>
+  <data name="mapps_no_map_file" xml:space="preserve">
+    <value>No hay definido archivo de mapa</value>
+  </data>
+  <data name="map_delete_failed" xml:space="preserve">
+    <value>No pude borrar mapa: $1</value>
+  </data>
+  <data name="map_delete_create" xml:space="preserve">
+    <value>No puedo borrar un mapa que ahora estás creando</value>
+  </data>
+  <data name="maps_internal_error" xml:space="preserve">
+    <value>Mapa: error interno</value>
+  </data>
+  <data name="maps_cant_write" xml:space="preserve">
+    <value>No puedo escribir</value>
+  </data>
+  <data name="help_map_format" xml:space="preserve">
+    <value>¿Qué formato debería de usar?</value>
+  </data>
+  <data name="virtual_title" xml:space="preserve">
+    <value>Dominios Virtuales</value>
+  </data>
+  <data name="virtual_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar configuración de mapeo de dominios virtuales</value>
+  </data>
+  <data name="opts_virtual_maps" xml:space="preserve">
+    <value>Tablas de búsqueda de mapeo de dominio</value>
+  </data>
+  <data name="transport_title" xml:space="preserve">
+    <value>Mapeo de Transporte</value>
+  </data>
+  <data name="transport_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar configuración de mapeo de transporte</value>
+  </data>
+  <data name="opts_transport_maps" xml:space="preserve">
+    <value>Tablas de búsqueda de mapeo de transporte</value>
+  </data>
+  <data name="relocated_title" xml:space="preserve">
+    <value>Mapeo Relocalizado</value>
+  </data>
+  <data name="relocated_ecannot" xml:space="preserve">
+    <value>No estás autorizado a editar la configuración de mapeo relocalizado</value>
+  </data>
+  <data name="opts_relocated_maps" xml:space="preserve">
+    <value>Tablas de búsqueda de mapeo relocalizado</value>
+  </data>
+  <data name="map_click" xml:space="preserve">
+    <value>Haz click en cualquier mapeo para editar sus propiedades:</value>
+  </data>
+  <data name="no_map" xml:space="preserve">
+    <value>(No hay ahora mismo definido mapa. Define primero un mapa, luego podrás editarlo)</value>
+  </data>
+  <data name="no_map2" xml:space="preserve">
+    <value>No hay ahora mismo definido mapa. Define primero un mapa, luego podrás editarlo.</value>
+  </data>
+  <data name="stop_efailed" xml:space="preserve">
+    <value>No pude parar Postfix</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>No estás autorizado a parar Postfix</value>
+  </data>
+  <data name="reload_efailed" xml:space="preserve">
+    <value>No pude recargar Postfix.</value>
+  </data>
+  <data name="reload_ecannot" xml:space="preserve">
+    <value>No estás autorizado a recargar Postfix</value>
+  </data>
+  <data name="query_get_efailed" xml:space="preserve">
+    <value>No pude consultar comando de configuración de Postfix para obetener el valor actual del parámetro $1: &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="query_set_efailed" xml:space="preserve">
+    <value>No pude consultar comando de configuración de Postfix para poner el valor actual del parámetro $1 a $2: &lt;tt&gt;$3&lt;/tt&gt;</value>
+  </data>
+  <data name="regenerate_ecannot" xml:space="preserve">
+    <value>No estás autorizado a regenerar los Aliases</value>
+  </data>
+  <data name="regenerate_alias_efailed" xml:space="preserve">
+    <value>No pude regenerar aliases: &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="regenerate_table_efailed" xml:space="preserve">
+    <value>No pude regenerar tabla $1: &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="acl_resource" xml:space="preserve">
+    <value>¿Puede editar recursos?</value>
+  </data>
+  <data name="acl_aliases" xml:space="preserve">
+    <value>¿Puede editar aliases?</value>
+  </data>
+  <data name="acl_aliases_options" xml:space="preserve">
+    <value>¿Puede editar opciones de alias?</value>
+  </data>
+  <data name="acl_general" xml:space="preserve">
+    <value>¿Puede editar opciones generales?</value>
+  </data>
+  <data name="acl_address_rewriting" xml:space="preserve">
+    <value>¿Puede editar reescritura de dirección?</value>
+  </data>
+  <data name="acl_canonical" xml:space="preserve">
+    <value>¿Puede editar canónigos?</value>
+  </data>
+  <data name="acl_virtual" xml:space="preserve">
+    <value>¿Puede editar virtual?</value>
+  </data>
+  <data name="acl_transport" xml:space="preserve">
+    <value>¿Puede editar transporte?</value>
+  </data>
+  <data name="acl_relocated" xml:space="preserve">
+    <value>¿Puede editar relocalizados?</value>
+  </data>
+  <data name="acl_local_delivery" xml:space="preserve">
+    <value>¿Puede editar entrega local?</value>
+  </data>
+  <data name="acl_smtpd" xml:space="preserve">
+    <value>¿Puede editar smtpd?</value>
+  </data>
+  <data name="acl_smtp" xml:space="preserve">
+    <value>¿Puede editar smtp?</value>
+  </data>
+  <data name="acl_rate" xml:space="preserve">
+    <value>¿Puede editar porcentaje?</value>
+  </data>
+  <data name="acl_debug" xml:space="preserve">
+    <value>¿Puede editar depuración?</value>
+  </data>
+  <data name="acl_ldap" xml:space="preserve">
+    <value>¿Puede editar ldap?</value>
+  </data>
+  <data name="acl_startstop" xml:space="preserve">
+    <value>¿Puedo arrancar y para postfix?</value>
+  </data>
+</root>

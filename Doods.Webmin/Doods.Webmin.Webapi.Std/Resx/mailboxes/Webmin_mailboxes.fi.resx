@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Lue sähköposteja</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Ei oikeuksia lukea kenenkään käyttäjän sähköposteja tässä järjestelmässä.</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Sähköpostilaatikot</value>
+  </data>
+  <data name="index_empty" xml:space="preserve">
+    <value>Ei sähköposteja</value>
+  </data>
+  <data name="index_system2" xml:space="preserve">
+    <value>Sähköpostipalvelin: Qmail</value>
+  </data>
+  <data name="index_system1" xml:space="preserve">
+    <value>Sähköpostipalvelin: Sendmail</value>
+  </data>
+  <data name="index_system0" xml:space="preserve">
+    <value>Sähköpostipalvelin: Postfix</value>
+  </data>
+  <data name="index_contains" xml:space="preserve">
+    <value>Sisältää</value>
+  </data>
+  <data name="index_file" xml:space="preserve">
+    <value>Luo sähköposti tiedostosta:</value>
+  </data>
+  <data name="index_nousers" xml:space="preserve">
+    <value>Käyttäjiä ei löytynyt!</value>
+  </data>
+  <data name="index_nousersmail" xml:space="preserve">
+    <value>Yhtään sähköpostikäyttäjää ei löytynyt.</value>
+  </data>
+  <data name="mail_title" xml:space="preserve">
+    <value>Sähköposti</value>
+  </data>
+  <data name="mail_from" xml:space="preserve">
+    <value>Lähettäjä</value>
+  </data>
+  <data name="mail_date" xml:space="preserve">
+    <value>Päiväys</value>
+  </data>
+  <data name="mail_subject" xml:space="preserve">
+    <value>Aihe</value>
+  </data>
+  <data name="mail_to" xml:space="preserve">
+    <value>Vastaanottaja</value>
+  </data>
+  <data name="mail_pri" xml:space="preserve">
+    <value>Prioriteetti</value>
+  </data>
+  <data name="mail_highest" xml:space="preserve">
+    <value>Korkein</value>
+  </data>
+  <data name="mail_high" xml:space="preserve">
+    <value>Korkea</value>
+  </data>
+  <data name="mail_normal" xml:space="preserve">
+    <value>Normaali</value>
+  </data>
+  <data name="mail_low" xml:space="preserve">
+    <value>Matala</value>
+  </data>
+  <data name="mail_lowest" xml:space="preserve">
+    <value>Matalin</value>
+  </data>
+  <data name="mail_sent" xml:space="preserve">
+    <value>Lähetettyjen viesties listassa</value>
+  </data>
+  <data name="mail_size" xml:space="preserve">
+    <value>Koko</value>
+  </data>
+  <data name="mail_level" xml:space="preserve">
+    <value>Pistemäärä</value>
+  </data>
+  <data name="mail_delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+  <data name="mail_compose" xml:space="preserve">
+    <value>Uusi viesti</value>
+  </data>
+  <data name="mail_open" xml:space="preserve">
+    <value>Avaa</value>
+  </data>
+  <data name="mail_return" xml:space="preserve">
+    <value>Postilaatikko</value>
+  </data>
+  <data name="mail_pos" xml:space="preserve">
+    <value>Viestit $2-$1 / $3, kansiossa $4</value>
+  </data>
+  <data name="mail_none" xml:space="preserve">
+    <value>Käyttäjällä ei ole viestejä kansiossa $1</value>
+  </data>
+  <data name="mail_ecannot" xml:space="preserve">
+    <value>Sinulla ei ole oikeuksia lukea tämän käyttäjän sähköposteja</value>
+  </data>
+  <data name="mail_all" xml:space="preserve">
+    <value>Valitse kaikki.</value>
+  </data>
+  <data name="mail_invert" xml:space="preserve">
+    <value>Käännä valinta</value>
+  </data>
+  <data name="mail_search" xml:space="preserve">
+    <value>Etsi viestit, joissa</value>
+  </data>
+  <data name="mail_ok" xml:space="preserve">
+    <value>Etsi</value>
+  </data>
+  <data name="mail_nonefrom" xml:space="preserve">
+    <value>Ei mikään</value>
+  </data>
+  <data name="mail_mark" xml:space="preserve">
+    <value>Merkitse:</value>
+  </data>
+  <data name="mail_mark0" xml:space="preserve">
+    <value>Lukematon</value>
+  </data>
+  <data name="mail_mark1" xml:space="preserve">
+    <value>Luettu</value>
+  </data>
+  <data name="mail_mark2" xml:space="preserve">
+    <value>Erityinen</value>
+  </data>
+  <data name="mail_forward" xml:space="preserve">
+    <value>Edelleenlähetä</value>
+  </data>
+  <data name="mail_move" xml:space="preserve">
+    <value>Siirrä:</value>
+  </data>
+  <data name="mail_copy" xml:space="preserve">
+    <value>Kopioi:</value>
+  </data>
+  <data name="mail_rfc" xml:space="preserve">
+    <value>Lähettäjä rivi</value>
+  </data>
+  <data name="mail_eexists" xml:space="preserve">
+    <value>Viestiä ei enää ole olemassa!</value>
+  </data>
+  <data name="mail_fchange" xml:space="preserve">
+    <value>Muuta</value>
+  </data>
+  <data name="mail_indexlink" xml:space="preserve">
+    <value>Takaisin postilaatikkoon</value>
+  </data>
+  <data name="mail_deleteall" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="mail_black" xml:space="preserve">
+    <value>Kiellä lähettäjät</value>
+  </data>
+  <data name="mail_white" xml:space="preserve">
+    <value>Salli Lähettäjät</value>
+  </data>
+  <data name="mail_efile" xml:space="preserve">
+    <value>Sähköpostitiedostoa ei ole olemassa</value>
+  </data>
+  <data name="mail_fromsrch" xml:space="preserve">
+    <value>Sama lähettäjä..</value>
+  </data>
+  <data name="mail_subsrch" xml:space="preserve">
+    <value>Sama aihe..</value>
+  </data>
+  <data name="mail_tosrch" xml:space="preserve">
+    <value>Sama vastaanottaja..</value>
+  </data>
+  <data name="mail_unknown" xml:space="preserve">
+    <value>Tuntematon</value>
+  </data>
+  <data name="mail_sign" xml:space="preserve">
+    <value>Allekirjoita avaimella</value>
+  </data>
+  <data name="mail_nosign" xml:space="preserve">
+    <value>&amp;lt;Älä allekirjoita&amp;gt;</value>
+  </data>
+  <data name="mail_addresses" xml:space="preserve">
+    <value>Hallitse osoitekirjaa</value>
+  </data>
+  <data name="mail_folders" xml:space="preserve">
+    <value>Hallitse kansioita</value>
+  </data>
+  <data name="mail_loginheader2" xml:space="preserve">
+    <value>IMAP palvelin tunnus</value>
+  </data>
+  <data name="mail_loginuser" xml:space="preserve">
+    <value>Käyttäjätunnus</value>
+  </data>
+  <data name="mail_loginpass" xml:space="preserve">
+    <value>Salasana</value>
+  </data>
+  <data name="mail_loginmailbox" xml:space="preserve">
+    <value>IMAP postilaatikko</value>
+  </data>
+  <data name="mail_reset" xml:space="preserve">
+    <value>Tyhjennä</value>
+  </data>
+  <data name="mail_logout" xml:space="preserve">
+    <value>Muuta POP3 käyttäjätunnus</value>
+  </data>
+  <data name="mail_logout2" xml:space="preserve">
+    <value>Muuta IMAP tunnusta</value>
+  </data>
+  <data name="mail_sig" xml:space="preserve">
+    <value>Muuta allekirjoitusta</value>
+  </data>
+  <data name="mail_jump" xml:space="preserve">
+    <value>Hyppää sivulle :</value>
+  </data>
+  <data name="mail_replyto" xml:space="preserve">
+    <value>Vastaa</value>
+  </data>
+  <data name="mail_folder" xml:space="preserve">
+    <value>Kansio</value>
+  </data>
+  <data name="mail_delall" xml:space="preserve">
+    <value>Poista kaikki</value>
+  </data>
+  <data name="mail_deltrash" xml:space="preserve">
+    <value>Tyhjennä roskakori</value>
+  </data>
+  <data name="mail_search2" xml:space="preserve">
+    <value>Etsi:</value>
+  </data>
+  <data name="mail_search3" xml:space="preserve">
+    <value>Etsi viestit, joiden pistemäärä on yli:</value>
+  </data>
+  <data name="mail_advanced" xml:space="preserve">
+    <value>Kehittyneempi Haku</value>
+  </data>
+  <data name="mail_return2" xml:space="preserve">
+    <value>Sähköposti</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Lue sähköpostia</value>
+  </data>
+  <data name="view_desc" xml:space="preserve">
+    <value>Viesti $1 kansiossa $2</value>
+  </data>
+  <data name="view_desc2" xml:space="preserve">
+    <value>Viesti $1 käyttäjälle $2</value>
+  </data>
+  <data name="view_desc3" xml:space="preserve">
+    <value>Viesti $1</value>
+  </data>
+  <data name="view_headers" xml:space="preserve">
+    <value>Viestin otsakkeet</value>
+  </data>
+  <data name="view_body" xml:space="preserve">
+    <value>Viesti</value>
+  </data>
+  <data name="view_allheaders" xml:space="preserve">
+    <value>Näytä kaikki otsakkeet</value>
+  </data>
+  <data name="view_noheaders" xml:space="preserve">
+    <value>Näytä tavalliset otsakkeet</value>
+  </data>
+  <data name="view_attach" xml:space="preserve">
+    <value>Liitetiedostot</value>
+  </data>
+  <data name="view_reply" xml:space="preserve">
+    <value>Vastaa</value>
+  </data>
+  <data name="view_reply2" xml:space="preserve">
+    <value>Vastaa kaikille</value>
+  </data>
+  <data name="view_enew" xml:space="preserve">
+    <value>Muokkaa uutena</value>
+  </data>
+  <data name="view_forward" xml:space="preserve">
+    <value>Edelleenlähetä</value>
+  </data>
+  <data name="view_delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+  <data name="view_print" xml:space="preserve">
+    <value>Tulosta</value>
+  </data>
+  <data name="view_strip" xml:space="preserve">
+    <value>Poista liitetiedostot</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Ei oikeuksia lukea tämän käyttäjän sähköpostia</value>
+  </data>
+  <data name="view_mark" xml:space="preserve">
+    <value>Merkitse:</value>
+  </data>
+  <data name="view_mark0" xml:space="preserve">
+    <value>Lukematon</value>
+  </data>
+  <data name="view_mark1" xml:space="preserve">
+    <value>Luettu</value>
+  </data>
+  <data name="view_mark2" xml:space="preserve">
+    <value>Erityinen</value>
+  </data>
+  <data name="view_return" xml:space="preserve">
+    <value>Alkuperäinen viesti</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Tätä viestiä ei ole enää olemassa</value>
+  </data>
+  <data name="view_eugone" xml:space="preserve">
+    <value>Tätä käyttäjää ei ole olemassa</value>
+  </data>
+  <data name="view_gnupg_4" xml:space="preserve">
+    <value>Allekirjoituksen tarkistus epäonnistui : $1</value>
+  </data>
+  <data name="view_crypt" xml:space="preserve">
+    <value>GnuPG sähköpostin salauksen purku</value>
+  </data>
+  <data name="view_crypt_1" xml:space="preserve">
+    <value>Viesti on salattu mutta GnuPG tukea ei ole asennettu.</value>
+  </data>
+  <data name="view_crypt_2" xml:space="preserve">
+    <value>Viestin salauksen purku epäonnistui : $1</value>
+  </data>
+  <data name="view_crypt_3" xml:space="preserve">
+    <value>Viesti salattiin onnistuneesti.</value>
+  </data>
+  <data name="view_crypt_4" xml:space="preserve">
+    <value>Viestin salattu osa purettiin onnistuneesti.</value>
+  </data>
+  <data name="view_folder" xml:space="preserve">
+    <value>Takaisin sähköpostilaatikkoon</value>
+  </data>
+  <data name="view_detach" xml:space="preserve">
+    <value>Tallenna tiedosto:</value>
+  </data>
+  <data name="view_dall" xml:space="preserve">
+    <value>&amp;lt;Kaikki tiedostot&amp;gt;</value>
+  </data>
+  <data name="view_black" xml:space="preserve">
+    <value>Blokkaa lähettäjä</value>
+  </data>
+  <data name="view_white" xml:space="preserve">
+    <value>Salli lähettäjä</value>
+  </data>
+  <data name="view_razor" xml:space="preserve">
+    <value>Raportoi roskapostina</value>
+  </data>
+  <data name="view_ham" xml:space="preserve">
+    <value>Raportoi ei-roskapostina</value>
+  </data>
+  <data name="view_razordel" xml:space="preserve">
+    <value>Raportoi ja poista roskaposti</value>
+  </data>
+  <data name="view_diagnostic-code" xml:space="preserve">
+    <value>Virheen syy</value>
+  </data>
+  <data name="view_astext" xml:space="preserve">
+    <value>Katsele tekstinä</value>
+  </data>
+  <data name="view_ashtml" xml:space="preserve">
+    <value>Katsele HTML:nä</value>
+  </data>
+  <data name="view_raw" xml:space="preserve">
+    <value>Näytä koko viesti</value>
+  </data>
+  <data name="compose_title" xml:space="preserve">
+    <value>Uusi Viesti</value>
+  </data>
+  <data name="reply_title" xml:space="preserve">
+    <value>Vastaa viestiin</value>
+  </data>
+  <data name="forward_title" xml:space="preserve">
+    <value>Edelleenlähetä sähköposti</value>
+  </data>
+  <data name="enew_title" xml:space="preserve">
+    <value>Muokkaa sähköpostia</value>
+  </data>
+  <data name="reply_headers" xml:space="preserve">
+    <value>Viestin otsikot</value>
+  </data>
+  <data name="reply_attach" xml:space="preserve">
+    <value>Edelleenlähetetyt liitetiedostot</value>
+  </data>
+  <data name="reply_mailforward" xml:space="preserve">
+    <value>Uudelleenlähetetyt viestit</value>
+  </data>
+  <data name="reply_attach2" xml:space="preserve">
+    <value>Asiakas- ja palvelinpuolen liitetiedostot</value>
+  </data>
+  <data name="reply_attach3" xml:space="preserve">
+    <value>Ladatut liitetiedostot</value>
+  </data>
+  <data name="reply_send" xml:space="preserve">
+    <value>Lähetä</value>
+  </data>
+  <data name="reply_ecannot" xml:space="preserve">
+    <value>Ei oikeuksia lähettää viestiä tänä käyttäjänä</value>
+  </data>
+  <data name="reply_body" xml:space="preserve">
+    <value>Viestin teksti</value>
+  </data>
+  <data name="reply_errc" xml:space="preserve">
+    <value>Viestin kopioiminen epäonnistui</value>
+  </data>
+  <data name="reply_errm" xml:space="preserve">
+    <value>Viestin siirtäminen epäonnistui</value>
+  </data>
+  <data name="reply_return" xml:space="preserve">
+    <value>viestinkirjoitukseen</value>
+  </data>
+  <data name="reply_efwdnone" xml:space="preserve">
+    <value>Mitään uudelleenlähetetyistä viesteista ei ole olemassa</value>
+  </data>
+  <data name="reply_spell" xml:space="preserve">
+    <value>Tarkista kirjoitusvirheet?</value>
+  </data>
+  <data name="reply_draft" xml:space="preserve">
+    <value>Tallenna Luonnoksiin</value>
+  </data>
+  <data name="send_err" xml:space="preserve">
+    <value>Sähköpostin lähetys epäonnistui</value>
+  </data>
+  <data name="send_eto" xml:space="preserve">
+    <value>Puuttuva Vastaanottajan osoite</value>
+  </data>
+  <data name="send_esubject" xml:space="preserve">
+    <value>Puuttuva viestin aihe</value>
+  </data>
+  <data name="send_title" xml:space="preserve">
+    <value>Lähetetyt</value>
+  </data>
+  <data name="send_ok" xml:space="preserve">
+    <value>Viesti lähetetty onnistuneesti osoitteeseen $1</value>
+  </data>
+  <data name="send_sending" xml:space="preserve">
+    <value>Lähetetään viestiä osoitteeseen $1 ..</value>
+  </data>
+  <data name="send_ecannot" xml:space="preserve">
+    <value>Ei oikeuksia lähettää sähköpostia tänä käyttäjänä</value>
+  </data>
+  <data name="send_eattach" xml:space="preserve">
+    <value>Liitetiedostojen koko saa olla yhteensä vain $1 kB.</value>
+  </data>
+  <data name="send_efile" xml:space="preserve">
+    <value>Liitetiedoston $1 lukeminen epäonnistui : $2</value>
+  </data>
+  <data name="send_done" xml:space="preserve">
+    <value>.. tehty.</value>
+  </data>
+  <data name="send_esign" xml:space="preserve">
+    <value>Viestin allekirjoitus epäonnistui : $1</value>
+  </data>
+  <data name="send_ecrypt" xml:space="preserve">
+    <value>Viestin kryptaus epäonnistui : $1</value>
+  </data>
+  <data name="send_eattachsize" xml:space="preserve">
+    <value>Liitetiedosto ylitti maksimikoon $1 b.</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Poista sähköposti</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Haluatko todella poistaa valitut viestit $1 kansiosta $2? Isolle postitiedostolle tämä voi viedä hetken. Kunnes poistaminen on suoritettu ei muita toimintoja tulisi tehdä.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Poista nyt</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Ei oikeuksia poistaa sähköposteja tältä käyttäjältä</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Ei poistettavaksi valittuja viestejä</value>
+  </data>
+  <data name="delete_emnone" xml:space="preserve">
+    <value>Ei merkittäväksi valittuja viestejä</value>
+  </data>
+  <data name="delete_efnone" xml:space="preserve">
+    <value>Sähköposteja ei valittu edelleenlähetettäväksi</value>
+  </data>
+  <data name="delete_ebnone" xml:space="preserve">
+    <value>Ei valittu sähköposteja kiellettäväksi</value>
+  </data>
+  <data name="delete_ewnone" xml:space="preserve">
+    <value>Ei sallittavaksi valittuja sähköposteja</value>
+  </data>
+  <data name="delete_ernone" xml:space="preserve">
+    <value>Ei roskapostiksi ilmoitettavia viestejä</value>
+  </data>
+  <data name="delete_ehnone" xml:space="preserve">
+    <value>Oikeiksi viesteiksi raportoitavia viestejä ei valittu</value>
+  </data>
+  <data name="delete_emoveuser" xml:space="preserve">
+    <value>Käyttäjä, jolle viestit kopioidaan ei ole olemassa</value>
+  </data>
+  <data name="delete_ecopyuser" xml:space="preserve">
+    <value>Käyttäjä, jolle sähköpostit kopioidaan ei ole olemassa</value>
+  </data>
+  <data name="delete_emovecannot" xml:space="preserve">
+    <value>Ei oikeuksia siirtää sähköposteja käyttäjälle</value>
+  </data>
+  <data name="delete_ecopycannot" xml:space="preserve">
+    <value>Ei oikeuksia kopioida sähköposteja käyttäjälle</value>
+  </data>
+  <data name="delete_emovenone" xml:space="preserve">
+    <value>Ei siirrettäväksi valittuja sähköposteja</value>
+  </data>
+  <data name="delete_ecopynone" xml:space="preserve">
+    <value>Sähköposteja ei valittu kopioitavaksi</value>
+  </data>
+  <data name="delete_nobutton" xml:space="preserve">
+    <value>Nappia ei ole painettu</value>
+  </data>
+  <data name="delete_ereport" xml:space="preserve">
+    <value>Roskapostiksi raportointi epäonnistui : $1</value>
+  </data>
+  <data name="delete_errc" xml:space="preserve">
+    <value>Sähköpostin kopiointi epäonnistui</value>
+  </data>
+  <data name="delete_errm" xml:space="preserve">
+    <value>Sähköpostin siirtäminen epäonnistui</value>
+  </data>
+  <data name="confirm_title" xml:space="preserve">
+    <value>Vahvista poisto</value>
+  </data>
+  <data name="confirm_warn" xml:space="preserve">
+    <value>Haluatko todella poistaa valitut viestit $1?</value>
+  </data>
+  <data name="confirm_warn2" xml:space="preserve">
+    <value>Postilaatikkosi koon ja formaatin johdosta tämä voi kestää hetken. Kunnes poistaminen on suoritetttu ei muita toimintoja pitäisi suorittaa.</value>
+  </data>
+  <data name="confirm_warn3" xml:space="preserve">
+    <value>Haluatko todella poistaa tämän viestin?</value>
+  </data>
+  <data name="confirm_warn4" xml:space="preserve">
+    <value>Kunnes poistaminen on suoritetttu ei muita toimintoja pitäisi suorittaa.</value>
+  </data>
+  <data name="confirm_ok" xml:space="preserve">
+    <value>Poista nyt</value>
+  </data>
+  <data name="confirm_warnall" xml:space="preserve">
+    <value>Haluatko todella poistaa tämän kansion kaikki viestit?</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>Hakutulokset</value>
+  </data>
+  <data name="search_ecannot" xml:space="preserve">
+    <value>Ei oikeuksia etsiä tämän käyttäjän viestejä</value>
+  </data>
+  <data name="search_escore" xml:space="preserve">
+    <value>Puuttava tai virheellinen spam pistemäärä</value>
+  </data>
+  <data name="search_efield" xml:space="preserve">
+    <value>Täytyy valita hakutyyppi.</value>
+  </data>
+  <data name="search_enone" xml:space="preserve">
+    <value>Ei syötetty hakukriteeriä</value>
+  </data>
+  <data name="search_none" xml:space="preserve">
+    <value>Viestejä ei löytynyt.</value>
+  </data>
+  <data name="search_msg2" xml:space="preserve">
+    <value>Hakutulokset $1</value>
+  </data>
+  <data name="search_msg4" xml:space="preserve">
+    <value>Hakutulokset</value>
+  </data>
+  <data name="search_local" xml:space="preserve">
+    <value>Paikallisissa kansioissa</value>
+  </data>
+  <data name="search_all" xml:space="preserve">
+    <value>Kaikissa kansioissa</value>
+  </data>
+  <data name="search_limit" xml:space="preserve">
+    <value>(viimeisistä $1 viesteistä)</value>
+  </data>
+  <data name="search_allstatus" xml:space="preserve">
+    <value>Mikä tahansa</value>
+  </data>
+  <data name="search_latest" xml:space="preserve">
+    <value>Etsittäviä viestejä</value>
+  </data>
+  <data name="search_nolatest" xml:space="preserve">
+    <value>Kaikki kansiossa</value>
+  </data>
+  <data name="search_latestnum" xml:space="preserve">
+    <value>Vain viimeisimmät</value>
+  </data>
+  <data name="search_elatest" xml:space="preserve">
+    <value>Puuttuva tai virheellinen määrä etsittäviä viestejä</value>
+  </data>
+  <data name="folder_sent" xml:space="preserve">
+    <value>Lähetetyt</value>
+  </data>
+  <data name="folder_drafts" xml:space="preserve">
+    <value>Luonnokset</value>
+  </data>
+  <data name="folder_trash" xml:space="preserve">
+    <value>Roskakori</value>
+  </data>
+  <data name="detach_title" xml:space="preserve">
+    <value>Tallenna tiedosto</value>
+  </data>
+  <data name="sform_title" xml:space="preserve">
+    <value>Tarkempi haku</value>
+  </data>
+  <data name="sform_neg0" xml:space="preserve">
+    <value>sisältää</value>
+  </data>
+  <data name="sform_neg1" xml:space="preserve">
+    <value>ei sisällä</value>
+  </data>
+  <data name="sform_ok" xml:space="preserve">
+    <value>Etsi nyt</value>
+  </data>
+  <data name="sform_local" xml:space="preserve">
+    <value>&amp;lt;Paikallinen kansio&amp;gt;</value>
+  </data>
+  <data name="sform_where" xml:space="preserve">
+    <value>Missä</value>
+  </data>
+  <data name="sform_text" xml:space="preserve">
+    <value>teksti</value>
+  </data>
+  <data name="sform_from" xml:space="preserve">
+    <value>Lähettäjä: otsake</value>
+  </data>
+  <data name="sform_subject" xml:space="preserve">
+    <value>Aihe: otsake</value>
+  </data>
+  <data name="sform_to" xml:space="preserve">
+    <value>To: otsake</value>
+  </data>
+  <data name="sform_cc" xml:space="preserve">
+    <value>Cc: otsake</value>
+  </data>
+  <data name="sform_bcc" xml:space="preserve">
+    <value>Bcc: otsake</value>
+  </data>
+  <data name="sform_date" xml:space="preserve">
+    <value>Päiväys: otsake</value>
+  </data>
+  <data name="sform_body" xml:space="preserve">
+    <value>Viesti</value>
+  </data>
+  <data name="sform_headers" xml:space="preserve">
+    <value>mikä tahansa otsake</value>
+  </data>
+  <data name="sform_size" xml:space="preserve">
+    <value>Viestin koko</value>
+  </data>
+  <data name="find_enone" xml:space="preserve">
+    <value>Haku ei täsmännyt yhteenkään käyttäjään</value>
+  </data>
+  <data name="find_title" xml:space="preserve">
+    <value>Hakutulokset</value>
+  </data>
+  <data name="find_user" xml:space="preserve">
+    <value>Käyttäjätunnus</value>
+  </data>
+  <data name="find_real" xml:space="preserve">
+    <value>Koko nimi</value>
+  </data>
+  <data name="find_group" xml:space="preserve">
+    <value>Ryhmä</value>
+  </data>
+  <data name="find_home" xml:space="preserve">
+    <value>Kotihakemisto</value>
+  </data>
+  <data name="find_size" xml:space="preserve">
+    <value>Postin koko</value>
+  </data>
+  <data name="find_incount" xml:space="preserve">
+    <value>Sähköpostit</value>
+  </data>
+  <data name="find_sentcount" xml:space="preserve">
+    <value>Lähetetyt</value>
+  </data>
+  <data name="find_fcount" xml:space="preserve">
+    <value>Kansiot</value>
+  </data>
+  <data name="acl_none" xml:space="preserve">
+    <value>Ei mikään</value>
+  </data>
+  <data name="acl_same" xml:space="preserve">
+    <value>Samannimiset käyttäjät</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Kaikki</value>
+  </data>
+  <data name="acl_read" xml:space="preserve">
+    <value>Käyttäjät, joiden postit voidaan lukea</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Vain käyttäjät</value>
+  </data>
+  <data name="acl_userse" xml:space="preserve">
+    <value>Kaikki paitsi käyttäjät</value>
+  </data>
+  <data name="acl_usersg" xml:space="preserve">
+    <value>Ryhmien jäsenet</value>
+  </data>
+  <data name="acl_from" xml:space="preserve">
+    <value>Sallitut From osoitteet</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>Mikä tahansa osoite</value>
+  </data>
+  <data name="acl_fdoms" xml:space="preserve">
+    <value>Postilaatikko @ domainit</value>
+  </data>
+  <data name="acl_faddrs" xml:space="preserve">
+    <value>Listatut osoitteet</value>
+  </data>
+  <data name="acl_fdom" xml:space="preserve">
+    <value>Mikä tahansa osoite @ domain</value>
+  </data>
+  <data name="acl_fromname" xml:space="preserve">
+    <value>Koko nimi From osoitteeseen</value>
+  </data>
+  <data name="acl_apath" xml:space="preserve">
+    <value>Rajoita tiedostot ja ohjelma hakemistoon</value>
+  </data>
+  <data name="acl_attach" xml:space="preserve">
+    <value>KAikkien liitteiden maksimikoko</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Rajoittamaton</value>
+  </data>
+  <data name="acl_sent" xml:space="preserve">
+    <value>Tallenna lähetetyt viestit postilaatikkoon</value>
+  </data>
+  <data name="acl_canattach" xml:space="preserve">
+    <value>Voi liittää serveripuolen tiedostoja?</value>
+  </data>
+  <data name="acl_candetach" xml:space="preserve">
+    <value>Voi tallentaa tiedostoja serverille?</value>
+  </data>
+  <data name="acl_usersm" xml:space="preserve">
+    <value>Täsmäävät käyttäjät</value>
+  </data>
+  <data name="acl_asame" xml:space="preserve">
+    <value>Sama kuin käyttäjätunnus</value>
+  </data>
+  <data name="acl_usersu" xml:space="preserve">
+    <value>UID välillä</value>
+  </data>
+  <data name="acl_sec" xml:space="preserve">
+    <value>Mukaanlue secondary ryhmät</value>
+  </data>
+  <data name="acl_dir" xml:space="preserve">
+    <value>Voi lukea sähköpostitiedostoja hakemistossa</value>
+  </data>
+  <data name="acl_dirauto" xml:space="preserve">
+    <value>Päätä automaattisesti (kaikkialla, jos kaikki käyttäjät näkyvissä, ei missään muutoin)</value>
+  </data>
+  <data name="log_delmail" xml:space="preserve">
+    <value>Poistettu $1 viestiä kansiosta $2</value>
+  </data>
+  <data name="log_movemail" xml:space="preserve">
+    <value>Siirretty $1 viestiä kansiosta $2 kansioon $3</value>
+  </data>
+  <data name="log_copymail" xml:space="preserve">
+    <value>Kopioitu $1 viestiä kansiosta $2 kansioon $3</value>
+  </data>
+  <data name="log_send" xml:space="preserve">
+    <value>Viesti lähetetty osoitteeseen $1</value>
+  </data>
+  <data name="log_read" xml:space="preserve">
+    <value>Lue käyttäjän $1 sähköposteja</value>
+  </data>
+  <data name="razor_title" xml:space="preserve">
+    <value>Raportoidaan spämmiksi</value>
+  </data>
+  <data name="razor_title2" xml:space="preserve">
+    <value>Raportoidaan ei-spämmiksi</value>
+  </data>
+  <data name="razor_report" xml:space="preserve">
+    <value>Raportoidaan tämä viesti roskapostina Razorille ja muille SpamAssassin spämmiesto tietokannoille ..</value>
+  </data>
+  <data name="razor_report2" xml:space="preserve">
+    <value>Raportoidaan valitut viestit roskapostina Razorille ja muille SpamAssassin spämmiesto tietokannoille ..</value>
+  </data>
+  <data name="razor_report3" xml:space="preserve">
+    <value>Raportoidaan valitut viestit ei-roskapostina Razorille ja muille SpamAssassin spämmiesto tietokannoille ..</value>
+  </data>
+  <data name="razor_done" xml:space="preserve">
+    <value>.. tehty</value>
+  </data>
+  <data name="razor_err" xml:space="preserve">
+    <value>.. epäonnistui! Katso virheilmoitus yllä tarkistaaksesi syyn.</value>
+  </data>
+  <data name="razor_deleted" xml:space="preserve">
+    <value>.. tehty, ja poistettu viesti myös.</value>
+  </data>
+  <data name="ham_title" xml:space="preserve">
+    <value>Raportoidaan ei-spämmiksi</value>
+  </data>
+  <data name="black_title" xml:space="preserve">
+    <value>Kieltäytyvä lähettäjä</value>
+  </data>
+  <data name="black_done" xml:space="preserve">
+    <value>Lisätty sähköpostiosoite $1 SpamAssassinin kiellettyjen osoitteiden listalle.</value>
+  </data>
+  <data name="black_already" xml:space="preserve">
+    <value>Sähköpostiosoite $1 on jo SpamAssassinin kiellettyjen osoitteiden listalla.</value>
+  </data>
+  <data name="delall_title" xml:space="preserve">
+    <value>Poista kaikki viestit</value>
+  </data>
+  <data name="delall_rusure" xml:space="preserve">
+    <value>Haluatko todella poistaa kaikki viestit kansiosta $1? $2 viestiä yhteensä $3 poistetaan lopullisesti.</value>
+  </data>
+  <data name="delall_ok" xml:space="preserve">
+    <value>Poista Nyt</value>
+  </data>
+</root>

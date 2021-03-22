@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Администратор разделов</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>Не удалось получить список дисков</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>Диск</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>Разделы</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>Цилиндров</value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>Модель</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>Уровень RAID</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>Контроллер</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>Устройство</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Разделов не найдено</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>Extent</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>Конец</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>Добавить первичный раздел</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>Добавить логический раздел</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>Добавить расширенный раздел</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>Изменить параметры IDE</value>
+  </data>
+  <data name="index_hdparmdesc" xml:space="preserve">
+    <value>Измените настройки IDE диска, такие как режим DMA, переход в режим ожидания и число сектором для чтения.</value>
+  </data>
+  <data name="index_smart" xml:space="preserve">
+    <value>Показать состояние SMART</value>
+  </data>
+  <data name="index_smartdesc" xml:space="preserve">
+    <value>Отображает состояние диска, включая температуру и частоту появления ошибок.</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>Использовано</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>Свободно</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>списку дисков</value>
+  </data>
+  <data name="index_dname" xml:space="preserve">
+    <value>Имя диска</value>
+  </data>
+  <data name="index_dsize" xml:space="preserve">
+    <value>Общий размер</value>
+  </data>
+  <data name="index_dmodel" xml:space="preserve">
+    <value>Производитель и модель</value>
+  </data>
+  <data name="index_dctrl" xml:space="preserve">
+    <value>Контроллер</value>
+  </data>
+  <data name="index_dacts" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="index_dhdparm" xml:space="preserve">
+    <value>Папаметры IDO</value>
+  </data>
+  <data name="index_dsmart" xml:space="preserve">
+    <value>Состояние SMART</value>
+  </data>
+  <data name="index_dscsi" xml:space="preserve">
+    <value>SCSI устройство $1 контроллер $2</value>
+  </data>
+  <data name="index_draid" xml:space="preserve">
+    <value>Уроверь RAID $1</value>
+  </data>
+  <data name="index_dparts" xml:space="preserve">
+    <value>Разделы</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>В системе не обнаружены диски.</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>байтов</value>
+  </data>
+  <data name="megabytes" xml:space="preserve">
+    <value>мегабайтов</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>Расширенный</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1' не является корректным $2</value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>команда $1 не найдена</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>устройство $1 $2</value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>устройство $1 $2 раздел $3</value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>Флоппи-диск $1</value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>диск Mylex RAID $1 $2</value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>диск Mylex RAID $1 $2 раздел $3</value>
+  </data>
+  <data name="select_cpq" xml:space="preserve">
+    <value>диск Compaq RAID $1 $2</value>
+  </data>
+  <data name="select_cpart" xml:space="preserve">
+    <value>диск Compaq RAID $1 $2 раздел $3</value>
+  </data>
+  <data name="select_scsi" xml:space="preserve">
+    <value>контроллер SCSI $1 шина $2 устройство $3 LUN $4</value>
+  </data>
+  <data name="select_spart" xml:space="preserve">
+    <value>контроллер SCSI $1 шина $2 устройство $3 LUN $4 раздел $5</value>
+  </data>
+  <data name="select_newide" xml:space="preserve">
+    <value>контроллер IDE $1 шина $2 диск $3</value>
+  </data>
+  <data name="select_snewide" xml:space="preserve">
+    <value>контроллер IDE $1 шина $2 диск $3 раздел $5</value>
+  </data>
+  <data name="select_smart" xml:space="preserve">
+    <value>диск Compaq Smart Array $1 $2</value>
+  </data>
+  <data name="select_smartpart" xml:space="preserve">
+    <value>диск Compaq Smart Array $1 $2 раздел $3</value>
+  </data>
+  <data name="select_promise" xml:space="preserve">
+    <value>Promise RAID диск $1</value>
+  </data>
+  <data name="select_ppart" xml:space="preserve">
+    <value>Promise RAID диск $1 раздел $2</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Изменение раздела</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Создание раздела</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>У вас недостаточно прав для редактирования этого диска</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>Программа &lt;tt&gt;hdparm&lt;/tt&gt; в вашей системе не обнаружена</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Информация о разделах</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>Файл устройства</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>Extent</value>
+  </data>
+  <data name="edit_of" xml:space="preserve">
+    <value>из</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>Содержит 1 раздел</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>Содержит $1 раздела</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>Содержит $1 разделов</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>Подмонтирован к $1 как $2</value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>Для монтирования к $1 как $2</value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>Подмонтирован как виртуальная память</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>Для монтирования как виртуальной памяти</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>Часть устройства RAID $1</value>
+  </data>
+  <data name="edit_mountlvm" xml:space="preserve">
+    <value>Часть группы томов LVM $1</value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>Еще не создан</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>Не используется</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>Метка раздела</value>
+  </data>
+  <data name="edit_volid" xml:space="preserve">
+    <value>ID файловой системы</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 блоков</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>Этот раздел не может быть изменен, так как в данный момент он используется или настроен для использования</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>Создать новую файловую систему</value>
+  </data>
+  <data name="edit_mkfs2" xml:space="preserve">
+    <value>Создать файловую систему:</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>Создаст на этом разделе новую файловую систему $1. При этом все существующие файлы будут навсегда удалены. Файловую систему нужно создавать после создания нового или изменения существующего раздела.</value>
+  </data>
+  <data name="edit_mkfsmsg2" xml:space="preserve">
+    <value>Создаст на этом разделе файловую систему выбранного типа. При этом все существующие файлы будут навсегда удалены. Файловую систему нужно создавать после создания нового или изменения существующего раздела.</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>Починить файловую систему</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>Вызовет программу $1 для починки файловой системы. После починки файловая система может быть подмонтирована. Чинить файловую систему нужно после некорректного завершения работы системы.</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>Настроить файловую систему</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>Позволяет изменить различные параметры существующей файловой системы.</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="edit_newmount" xml:space="preserve">
+    <value>Монтировать Раздел На:</value>
+  </data>
+  <data name="edit_newmount2" xml:space="preserve">
+    <value>Монтировать Раздел</value>
+  </data>
+  <data name="edit_mountas" xml:space="preserve">
+    <value>как</value>
+  </data>
+  <data name="edit_mountmsg" xml:space="preserve">
+    <value>Монтируйте этот раздел в новый каталог в системе, чтобы его можно было использовать для хранения файлов. Файловая система, должно быть, была уже создана при разбивке.</value>
+  </data>
+  <data name="edit_mountmsg2" xml:space="preserve">
+    <value>Монтируйте этот раздел как виртуальную память на вашей системе, чтобы увеличить количество доступной памяти.</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Новая файловая система</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>У вас недостаточно прав для создания новой файловой системы на этом диске</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>Нажатие на кнопку внизу приведет к созданию новой файловой системы $1 на устройстве $2. Все данные на этом разделе будут навсегда удалены.</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>Этот раздел был подмонтирован в $1 как $2. Создание новой файловой системы приведет к стиранию всех файлов, ранее доступных в этом каталоге и его подкаталогах.</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>Параметры файловой системы</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>Создать файловую систему</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Не удалось создать файловую систему</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Выполнение команды $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. произошла ошибка!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. успешно завершена.</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>Починка файловой системы</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>У вас недостаточно прав для запуска fsck для этого диска</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>При нажатии кнопки &lt;tt&gt;Починить файловую систему&lt;/tt&gt; будет произведена попытка ремонта поврежденной файловой системы $1 на $2 для монтирования в $3. Если файловая система не повреждена, то никаких исправлений внесено не будет.</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>Починка файловой системы будет произведена с помощью команды $1, при выполнении которой все обнаруженные проблемы будут автоматически исправлены. Для более полного контроля над починкой файловой системы используйте команду $2 из приглашения Unix.</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>Чинить файловую систему</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>Выполнение команды $1 ..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>ошибок не обнаружено</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>ошибки обнаружены и исправлены</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>ошибки обнаружены и исправлены - требуется перезагрузка</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>ошибки обнаружены, но НЕ исправлены</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>ошибка в командной строке</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>неизвестный код возврата $1</value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>Настройка файловой системы</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>У вас недостаточно прав для настройки этой файловой системы</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>Вы можете настроить параметры файловой системы $1 на $2 для монтирования к $3. Это не повлияет на существующие на этой файловой системе файлы.</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>Настраиваемые параметры</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>Настроить файловую систему</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>Перерыв между проверками</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>Действие при обнаружении ошибки</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>Подмонтировать только для чтения</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>Паника</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>Зарезервированный пользователь</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>Зарезервированная группа</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>Зарезервирована блоков</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>Время между проверками</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>Дней</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>Недель</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>Месяцев</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>Не удалось настроить файловую систему</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>Выполнение команды $1 ..</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>.. произошла ошибка!</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>.. успешно завершена.</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Перезагрузка</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>Производится перезагрузка ..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>Перезагрузить</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>В таблицу разделов на $1 были внесены изменения. Чтобы эти изменения вступили в силу необходимо перезагрузить вашу систему.</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Не удалось сохранить раздел</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>У вас недостаточно прав для изменения этого диска</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1' не является корректным цилиндром начала раздела</value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1' не является корректным цилиндром конца раздела</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>Начальный цилиндр должен быть меньше конечного</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>Обнаружено перекрытие с разделом $1 ($2 по $3)</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>Размер блока</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>Размер фрагмента</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>Байтов на inode</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>Зарезервировано блоков</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>Блоков на группу</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>Проверять на наличие плохих блоков?</value>
+  </data>
+  <data name="ext3_j" xml:space="preserve">
+    <value>Размер файла журнала</value>
+  </data>
+  <data name="msdos_ff" xml:space="preserve">
+    <value>Количество копий FAT</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>Размер FAT</value>
+  </data>
+  <data name="msdos_F_other" xml:space="preserve">
+    <value>Другой..</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>ID тома</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>Имя тома</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>Записей в корневом каталоге</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>Размер кластера</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>Проверять на наличие плохих блоков?</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>Длина имени файла</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>Количество inode</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>Количество блоков</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>Проверять на наличие плохих блоков?</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>Принудительное создание файловой системы</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>Функция хэша</value>
+  </data>
+  <data name="xfs_force" xml:space="preserve">
+    <value>Принудительное создание файловой системы</value>
+  </data>
+  <data name="xfs_b" xml:space="preserve">
+    <value>Размер блока</value>
+  </data>
+  <data name="jfs_s" xml:space="preserve">
+    <value>Размер журнала</value>
+  </data>
+  <data name="jfs_c" xml:space="preserve">
+    <value>Проверять на наличие плохих блоков?</value>
+  </data>
+  <data name="fatx_none" xml:space="preserve">
+    <value>Нет доступных настроек для файловой системы FATX.</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>Диски, на которых этот пользователь может создавать и форматировать разделы</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>Все диски</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>Указанные..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Может просматривать диски, которые не может изменять?</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>Изменение параметров IDE</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>Вкл</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>Выкл</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>Настройка диска IDE</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>Режим передачи</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>Отключить IORDY</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>Использовать DMA</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>Количество секторов</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>Упреждающее чтение</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>Кэширование записи</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>Демаскирование прерываний</value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>Сохранять установки после сброса</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>Сохранять возможности после сброса</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>Только для чтения</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>Установить PIO</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>Время до перехода в режим ожидания</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>Поддержка 32-битного ввода/вывода</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>Количество секторов для многосекторного ввода/вывода</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>Отключить</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>Включить</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>Включить со специальной последовательностью синхронизации</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>Применить к диску</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>Проверка скорости</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>Производится</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>Буфер-кэш:</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>Буфер:</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>Результаты проверки скорости</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Изменен $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Создан $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Удален $1</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>Создана файловая система $1 на $2</value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>Настроена файловая система $1 на $2</value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>Починена файловая система $1 на $2</value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>Изменены параметры IDE для $1</value>
+  </data>
+  <data name="fs_ext2" xml:space="preserve">
+    <value>Файловая система Linux (ext2)</value>
+  </data>
+  <data name="fs_minix" xml:space="preserve">
+    <value>Minix</value>
+  </data>
+  <data name="fs_msdos" xml:space="preserve">
+    <value>MS-DOS</value>
+  </data>
+  <data name="fs_vfat" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="fs_reiserfs" xml:space="preserve">
+    <value>ReiserFS</value>
+  </data>
+  <data name="fs_ext3" xml:space="preserve">
+    <value>Новая файловая система Linux (ext3)</value>
+  </data>
+  <data name="fs_xfs" xml:space="preserve">
+    <value>SGI</value>
+  </data>
+  <data name="fs_jfs" xml:space="preserve">
+    <value>Журнальная файловая система IBM</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Удаление раздела</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Вы действительно хотите удалить $1 ( $2 ) ? Данные на этом разделе могут быть безвозвратно потеряны.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="disk_title" xml:space="preserve">
+    <value>Изменить разметку диска</value>
+  </data>
+  <data name="disk_egone" xml:space="preserve">
+    <value>Диск больше не существует!</value>
+  </data>
+  <data name="disk_no" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="disk_type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="disk_extent" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="disk_start" xml:space="preserve">
+    <value>Старт</value>
+  </data>
+  <data name="disk_end" xml:space="preserve">
+    <value>Конец</value>
+  </data>
+  <data name="disk_use" xml:space="preserve">
+    <value>Используется для</value>
+  </data>
+  <data name="disk_free" xml:space="preserve">
+    <value>Свободное место</value>
+  </data>
+  <data name="disk_vm" xml:space="preserve">
+    <value>Виртуальная память</value>
+  </data>
+  <data name="disk_none" xml:space="preserve">
+    <value>На этом диске еще нет разделов.</value>
+  </data>
+  <data name="disk_size" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="disk_dsize" xml:space="preserve">
+    <value>&lt;b&gt;Размер диска:&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_model" xml:space="preserve">
+    <value>&lt;b&gt;Производитель и модель:&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_cylinders" xml:space="preserve">
+    <value>&lt;b&gt;Цилиндры:&lt;/b&gt; $1</value>
+  </data>
+</root>

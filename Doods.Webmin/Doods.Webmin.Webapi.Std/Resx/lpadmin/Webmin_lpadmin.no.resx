@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Skriveradministrasjon</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Tilgjengelige skrivere</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Skriver</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Skriv til</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Aktivert?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Aksepterer?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Jobber</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Ingen skrivere er installert på dette systemet.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Liste..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Jobber..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 jobber..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Legg ti lny skriver.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stopp Scheduler</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Klikk denne knappen for å stoppe kjørende print scheduler. Dette vil forhindre all utskrift via systemet ditt.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Start Scheduler</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Klikk på denne knappen for å starte skriver scheduler programmet. Dette vil lokale og eksterne brukere mulighet til å skrive ut via systemet ditt.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Omstart Scheduler</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Klikk på denne knappen for å omstarte print scheduler prosessen. Dette vil medføre at gjeldende utskrift konfigurasjon blir tatt i bruk.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>skriverliste</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Utskriftssystem: $1</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Klynge tjenere</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Klikk på denne knappen for å sette opp ekstra Webmin tjenere hvor skrivere skal kunne bli opprettet, oppdatert og slettet.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Slett valgte skrivere</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Du har ikke tilgang til å redigere denne skriveren</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Du har ikke tilgang til å legge til skrivere</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Opprett skriver</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Rediger skriver</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Skriver konfigurasjon</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Navn</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Mottar forespørsler?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Nei - Hvorfor ikke</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Utskrift aktivert?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Tilgangskontroll</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Tillat alle</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Nekt alle</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Tillat angitte brukere..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Nekt listede brukere..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Skriv ut banner?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Valgfri</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Standard skriver?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Allerede standard skriver</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maks utskriftsjobb størrelse</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Ubegrenset</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Driver godtar</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Postscript</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Annen</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Alternativer skrivernavn</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Mål for utskrift</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Lokal enhet</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Lokal fil</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Ekstern Unix tjener</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Skriver</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Ekstern Windows tjener</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Skriver</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Bruker</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Passord</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Arbeidsgruppe</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Ekstern HPNP tjener</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Direkte TCP tilkobling</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Skriverdriver</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Sjekk om ekstern tjener er oppe?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blokker</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Kunne ikke lagre skriver</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Du har ikke tilgang til å legge til skrivere</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Du har ikke tilgang til å redigere denne skriveren</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$' er ikke et gyldig skrivernavn</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>En skriver med navn '$1' finnes allerede</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Ingen brukere angitt for tillating</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Ingen brukere angitt for nekting</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Bruker '$1' finnes ikke</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Du må velge minst en type som denne drivere skal akseptere</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Maks. utskriftsjobb størrelse må være et heltall</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' finnes ikke</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Ekstern vert '$1' finnes ikke</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Ekstern port '$1' er ikke gyldig</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$' er ikke et gyldig navn på ekstern kø</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Drivere kan ikke benyttes for eksterne Unix skrivere</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Direkte vert '$1' finnes ikke</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Manglende eller ugyldig direkte port</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Utskriftssystemet tillot ikke denne skriveren</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Skriveren er nå opprettet på dette systemet, men følgende feil oppstod på klynge systemer : $1</value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Ingen skriver med navn '$1' ble funnet</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Skriveren er nå slettet på dette systemet, men følgende feil oppstod på klynge systemer : $1</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Utskriftsjobber</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Utskriftsjobber på $1</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>Jobb ID</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Størrelse</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Sendt inn av</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Sendt inn</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Filnavn</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Klikk på en jobb ID i listen ovenfor for å avbryte.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Klikk på en jobb ID i listen ovenfor for å avbryte, eller klikk på jobbstørrelsen for å se på den.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Skriveren $1 har ingen ventende jobber.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Avbryt alle utskriftsjobber</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>bytes</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Skriv ut testside</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Avbryt valgte jobber</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>På skriver $1</value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>liste over utskriftsjobber</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Du har ikke tilgang til å avbryte skriverjobber</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Kunne ikke avbryte utskriftsjobb</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Utskriftsjobb $1 finnes ikke lenger</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Du kan ikke se på denne skriverjobben</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Denne utskriftsjobben finnes ikke lenger</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Du har ikke tilgang til å starte scheduler</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Kunne ikke starte scheduler</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Du har ikke tilgang til å stoppe scheduler</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Kunne ikke stoppe scheduler</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Du har ikke lov til å omstarte scheduler</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Kunne ikke omstarte scheduler</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Postscript eller tekst-skriver</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Ekstern skriver</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Modell</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin driver</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint driver</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Kunne ikke hente drivere fra  $1- Webmin skriverdrivere som bruker er ghostscript er ikke tilgjengelige</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet. Webmin skriverdrivere som bruker ghostscript er ikke tilgjengelige for bruk</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' finnes ikke</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Ekstern eller rå skriver</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS driver</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Skriver og oppløsning</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Send EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Papirstørrelse</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Skriv ut dobbeltsidig?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Ekstra GS innstillinger</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint driver</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' finnes ikke</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Ingen skriverdriver valgt</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Ingen oppløsning valgt</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Postscript eller tekst skriver</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat driver</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Skriver og oppløsning</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Send EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Sidestørrelse</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Sider per output side</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Ekstra GS innstillinger</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Høyre/venstre marg</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Topp/bunn marg</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Fiks trappetrinn tekst?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' finnes ikke</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Ingen skriverdriver valgt</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Manglende eller ugyldig høyre/venstre marg</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Manglende eller ugyldig topp/bunn marg</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Ingen oppløsning angitt</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Skrivermodell og driver</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postscript eller tekst skriver</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSfilter driver</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Skrivertype</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Oppløsning i DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Fargeskriver?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Papirstørrelse</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Filter metode</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automatisk</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Rå</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Ekstra ghostscript innstillinger</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2 driver</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Ingen skrivertype valgt</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Manglende eller ugyldig oppløsning</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Kunne ikke stoppe lpd ; $1</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Skrivere denne brukeren kan konfigurere</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Kan legge til nye skrivere?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Kan avbryte utskriftsjobber?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Kan stoppe og starte scheduler?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Kun omstart</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Bare på valgte skrivere ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Alle skrivere</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Valgte..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Vis ikke-konfigurerbare skrivere?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Kan skrive ut testsider?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Administrer utskriftsjobber eid av</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Alle brukere</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Gjeldende Webmin bruker</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kan slette skrivere?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Kan administrere skriver-klynge?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Stoppet skriver scheduler</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Startet skriver scheduler</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Omstartet skriver scheduler</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Avbrøt utskriftsjobb $2 på $1</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Avbrøt alle utskriftsjobber på $1</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Avbrøt $2 utskriftsjobber på $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Opprette skriveren $1 på $2</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Endret skriver $1 på $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Slettet skriver $1 på $2</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Opprettet $3 skriver $1 på $2</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Endret £3 skriver $1 på $2</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Slettet $3 skriver $1 på $2</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Parallellport $1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Seriell port $1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Null enhet</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB skriver $1</value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt. Dette indikerer at Linux utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Spool katalogen $1 finnes ikke på systemet ditt. Dette indikerer at Linux utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Parallellport</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Serieport $1 (COM$1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt, noe som indikerer at FreeBSD utskriftsystemet ikke er installert.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Spool-katalogen $1 ble ikke funnet på systemet ditt, noe som indikerer at FreeBSD utskriftsystemet ikke er installert.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Parallel Port</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Serieport $1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Parallell port $1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Seriell port $1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Null enhet</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt, noe som indikerer at UnixWare utskriftsystemet ikke er installert.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Parallell $1</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Seriell $1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Null enhet</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt, noe som indikerer at HPUX utskriftsystemet ikke er installert.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Katalogen for grensesnitt script, $1, finnes ikke på systemet ditt. Dette indikerer at HPUX utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Parallel Port $1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Serieport $1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Null enhet</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt. Dette indikerer at LPRng utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Spool katalogen $1 finnes ikke på systemet ditt. Dette indikerer at LPRng utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Parallell port</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 Parallel Port</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Serieport $1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Null enhet</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt. Dette indikerer at Solaris utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Skriv ut testside</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Du har ikke tilgang til å skrive ut testsider</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Dette skjemaet lar deg skrive ut en testside for skriver $1- Velg typen side du ønsker å skrive ut :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Sort/hvit Postscript side</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Farge Postscript side</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Vanlig ASCII tekst</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Enhver opplastet fil</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Skriv ut side</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Skriver ut testside med kommandoen $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. kommando feilet!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. kommando fullført.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Ekstern eller rå skriver</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS driver</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' er ikke et gyldig program</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Innstillinger for $1</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Fant ikke kommandoen $1 på systemet ditt. Dette indikerer at CUPS utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 ble ikke funnet på systemet ditt. Dette indikerer at IRIX utskriftssystemet ikke er installert.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Katalogen for grensesnitt script, $1, finnes ikke på systemet ditt. Dette indikerer at IRIX utskriftssystem ikke er installert.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Skriver-port $1</value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Ugyldig beskrivelse - bare bokstaver og tall er tillatt, og ingen mellomrom</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>AIX skriver-tjeneren $1 ble ikke funnet. Kanskje den ikke er installert, eller kanskje det benyttes et annet utskriftssystem.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Klynge skriver-tjenere</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Ingen tjenere er lagt til skriver-klyngen enda.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Vertsnavn</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Operativsystem</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Legg til tjener</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Legg til tjenere i gruppe</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Du må legge til tjenere med brukernavn og passord i modulen Webmin Tjenere før du kan administrere dem her.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>klynge tjenere</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Fjern valgte</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Dy har ikke tilgang til å administrere klynge skriver-tjenere</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Legg til tjenere</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Legger til $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Legger til tjenere i gruppen $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Kunne ikke legge til tjener</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Kunne ikke legge til gruppe</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Tjener $1 har ikke Skriver administrasjon modulen</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Tjener $1 bruker et annet utskriftssystem ($2) enn denne tjeneren</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Tjener $1 bruker en annen skriverdriver ($2) enn denne tjeneren</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Lagt til $1, med $2 skrivere.</value>
+  </data>
+</root>

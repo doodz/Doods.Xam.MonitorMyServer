@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Configuració de VPN IPsec</value>
+  </data>
+  <data name="index_out" xml:space="preserve">
+    <value>La sortida de $1 ha estat:</value>
+  </data>
+  <data name="index_nokey" xml:space="preserve">
+    <value>Sembla que no hi ha cap host llistat al fitxer $1. Cal generar-ne un per al teu sistema abans de poder definir cap connexió VPN.</value>
+  </data>
+  <data name="index_newkey" xml:space="preserve">
+    <value>Genera la clau del host:</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Encara no s'ha definit cap connexió VPN IPsec.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Afegeix una nova connexió VPN IPsec.</value>
+  </data>
+  <data name="index_adddef" xml:space="preserve">
+    <value>Afegeix valors per defecte per a totes les connexions.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Inicia el Servidor IPsec</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Fes clic sobre aquest botó per iniciar el procés servidor IPsec de FreeSWAN. Fins que no s'engegui, el sistema no podrà acceptar ni establir connexions.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Atura el Servidor IPsec</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Fes clic sobre aquest botó per tancar el procés servidor IPsec de FreeSWAN i tallar totes les connexions establertes.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Aplica la Configuració</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Fes clic sobre aquest botó per activar la configuració actual reiniciant el procés servidor IPsec de FreeSWAN. Totes les connexions establertes quedaran tallades.</value>
+  </data>
+  <data name="index_conn" xml:space="preserve">
+    <value>Connexió $1</value>
+  </data>
+  <data name="index_defconn" xml:space="preserve">
+    <value>Valors per defecte de totes les connexions</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>Inicia'l en engegar el sistema</value>
+  </data>
+  <data name="index_bootdesc" xml:space="preserve">
+    <value>Canvia aquesta opció per controlar si el servidor IPsec s'inicia en engegar el sistema o no.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>a la llista de connexions</value>
+  </data>
+  <data name="index_header1" xml:space="preserve">
+    <value>Connexions VPN existents</value>
+  </data>
+  <data name="index_header2" xml:space="preserve">
+    <value>Opcions globals i polítiques</value>
+  </data>
+  <data name="index_up" xml:space="preserve">
+    <value>Inicia Connexió:</value>
+  </data>
+  <data name="index_updesc" xml:space="preserve">
+    <value>Selecciona una connexió de la llista del costat del botó i fes-hi clic per intentar-ne l'establiment immediat.</value>
+  </data>
+  <data name="index_import" xml:space="preserve">
+    <value>Importa la connexió del fitxer.</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>No s'ha pogut aturar el servidor IPsec</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>No s'ha pogut iniciar el servidor IPsec</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>No s'ha pogut reiniciar el servidor IPsec</value>
+  </data>
+  <data name="start_elog" xml:space="preserve">
+    <value>S'han enregistrat els error següents: $1</value>
+  </data>
+  <data name="newkey_err" xml:space="preserve">
+    <value>No s'ha pogut generar la clau</value>
+  </data>
+  <data name="newkey_ehost" xml:space="preserve">
+    <value>Hi falta el nom de host o bé és invàlid</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Creació de Connexió</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Edició de Connexió</value>
+  </data>
+  <data name="edit_header" xml:space="preserve">
+    <value>Detalls de la connexió VPN IPsec</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Nom de la connexió</value>
+  </data>
+  <data name="edit_auto" xml:space="preserve">
+    <value>A l'inici d'IPsec</value>
+  </data>
+  <data name="edit_amode" xml:space="preserve">
+    <value>Valor per defecte (normalment, Ignora)</value>
+  </data>
+  <data name="edit_amodeadd" xml:space="preserve">
+    <value>Afegeix connexió</value>
+  </data>
+  <data name="edit_amodestart" xml:space="preserve">
+    <value>Inicia connexió</value>
+  </data>
+  <data name="edit_amodeignore" xml:space="preserve">
+    <value>Ignora</value>
+  </data>
+  <data name="edit_comp" xml:space="preserve">
+    <value>Comprimeix les dades</value>
+  </data>
+  <data name="edit_cmodeyes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="edit_cmodeno" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="edit_cmode" xml:space="preserve">
+    <value>Valor per defecte (normalment, No)</value>
+  </data>
+  <data name="edit_pfs" xml:space="preserve">
+    <value>Secret de reenviament perfecte</value>
+  </data>
+  <data name="edit_pmodeyes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="edit_pmodeno" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="edit_pmode" xml:space="preserve">
+    <value>Valor per defecte (normalment Sí)</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tipus de connexió</value>
+  </data>
+  <data name="edit_tmodetunnel" xml:space="preserve">
+    <value>Túnel (host o xarxa)</value>
+  </data>
+  <data name="edit_tmodetransport" xml:space="preserve">
+    <value>Transport (només de host a host)</value>
+  </data>
+  <data name="edit_tmodepassthrough" xml:space="preserve">
+    <value>Transparent (sense xifratge)</value>
+  </data>
+  <data name="edit_tmode" xml:space="preserve">
+    <value>Valor per defecte (normalment, Túnel)</value>
+  </data>
+  <data name="edit_left" xml:space="preserve">
+    <value>Valors del sistema locals o de l'esquerra</value>
+  </data>
+  <data name="edit_right" xml:space="preserve">
+    <value>Valors del sistema remots o de la dreta</value>
+  </data>
+  <data name="edit_addr" xml:space="preserve">
+    <value>Adreça IP pública</value>
+  </data>
+  <data name="edit_addr-1" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="edit_addr0" xml:space="preserve">
+    <value>De la ruta per defecte</value>
+  </data>
+  <data name="edit_addr1" xml:space="preserve">
+    <value>Automàtica</value>
+  </data>
+  <data name="edit_addr2" xml:space="preserve">
+    <value>Automàtica a partir del DNS</value>
+  </data>
+  <data name="edit_addr3" xml:space="preserve">
+    <value>Adreça o nom de host...</value>
+  </data>
+  <data name="edit_id" xml:space="preserve">
+    <value>Identificador del sistema</value>
+  </data>
+  <data name="edit_id1" xml:space="preserve">
+    <value>Adreça IP...</value>
+  </data>
+  <data name="edit_id2" xml:space="preserve">
+    <value>Nom de host...</value>
+  </data>
+  <data name="edit_subnet" xml:space="preserve">
+    <value>Subxarxa privada darrere del sistema</value>
+  </data>
+  <data name="edit_cert" xml:space="preserve">
+    <value>Nom del certificat</value>
+  </data>
+  <data name="edit_hop" xml:space="preserve">
+    <value>Salt següent a l'altre sistema</value>
+  </data>
+  <data name="edit_hopdir" xml:space="preserve">
+    <value>Automàtic</value>
+  </data>
+  <data name="edit_hopip" xml:space="preserve">
+    <value>Adreça IP</value>
+  </data>
+  <data name="edit_hoproute" xml:space="preserve">
+    <value>Ruta per defecte</value>
+  </data>
+  <data name="edit_key" xml:space="preserve">
+    <value>Clau pública del sistema</value>
+  </data>
+  <data name="edit_key0" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="edit_key1" xml:space="preserve">
+    <value>Consulta el DNS</value>
+  </data>
+  <data name="edit_key2" xml:space="preserve">
+    <value>Introduïda a sota...</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Valors per defecte de totes les connexions</value>
+  </data>
+  <data name="edit_export" xml:space="preserve">
+    <value>Exporta la Configuració</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>als detalls de la </value>
+  </data>
+  <data name="edit_authby" xml:space="preserve">
+    <value>Mètode d'autenticació</value>
+  </data>
+  <data name="edit_authbydef" xml:space="preserve">
+    <value>Valor per defecte (normalment, Clau RSA)</value>
+  </data>
+  <data name="edit_rsasig" xml:space="preserve">
+    <value>Clau RSA</value>
+  </data>
+  <data name="edit_secret" xml:space="preserve">
+    <value>Clau secreta compartida</value>
+  </data>
+  <data name="edit_rsasigsecret" xml:space="preserve">
+    <value>Clau RSA o secreta compartida</value>
+  </data>
+  <data name="edit_never" xml:space="preserve">
+    <value>No permetis mai l'autenticació</value>
+  </data>
+  <data name="edit_keying" xml:space="preserve">
+    <value>Reintents per fer la clau</value>
+  </data>
+  <data name="edit_esp" xml:space="preserve">
+    <value>Algoritme ESP</value>
+  </data>
+  <data name="edit_espdef" xml:space="preserve">
+    <value>Defecte (normalment MD5) </value>
+  </data>
+  <data name="edit_espmd5" xml:space="preserve">
+    <value>MD5</value>
+  </data>
+  <data name="edit_espsha" xml:space="preserve">
+    <value>SHA1</value>
+  </data>
+  <data name="edit_esp128" xml:space="preserve">
+    <value>AES-128bit-MD5</value>
+  </data>
+  <data name="edit_esponly" xml:space="preserve">
+    <value>Accepta només aquest algoritme ESP</value>
+  </data>
+  <data name="edit_auth" xml:space="preserve">
+    <value>Mode d'autenticació</value>
+  </data>
+  <data name="edit_authdef" xml:space="preserve">
+    <value>Defecte (normalment ESP)</value>
+  </data>
+  <data name="edit_authesp" xml:space="preserve">
+    <value>ESP</value>
+  </data>
+  <data name="edit_authah" xml:space="preserve">
+    <value>AH</value>
+  </data>
+  <data name="edit_keylife" xml:space="preserve">
+    <value>Temps de vida de la clau de connexió</value>
+  </data>
+  <data name="edit_ikelifetime" xml:space="preserve">
+    <value>Temps de vida del canal de la clau</value>
+  </data>
+  <data name="edit_unit_s" xml:space="preserve">
+    <value>segs</value>
+  </data>
+  <data name="edit_unit_m" xml:space="preserve">
+    <value>mins</value>
+  </data>
+  <data name="edit_unit_h" xml:space="preserve">
+    <value>hores</value>
+  </data>
+  <data name="edit_unit_d" xml:space="preserve">
+    <value>dies</value>
+  </data>
+  <data name="config_title" xml:space="preserve">
+    <value>Configuració del Servidor</value>
+  </data>
+  <data name="config_header" xml:space="preserve">
+    <value>Valors globals del servidor VPN</value>
+  </data>
+  <data name="config_ifaces" xml:space="preserve">
+    <value>Interfícies de xarxa d'IPsec</value>
+  </data>
+  <data name="config_ifaces0" xml:space="preserve">
+    <value>Valors per defecte</value>
+  </data>
+  <data name="config_ifaces1" xml:space="preserve">
+    <value>Cap</value>
+  </data>
+  <data name="config_ifaces2" xml:space="preserve">
+    <value>Interfície de la ruta per defecte</value>
+  </data>
+  <data name="config_ifaces3" xml:space="preserve">
+    <value>Les llistades a sota...</value>
+  </data>
+  <data name="config_riface" xml:space="preserve">
+    <value>Interfície real</value>
+  </data>
+  <data name="config_iiface" xml:space="preserve">
+    <value>Interfície IPsec</value>
+  </data>
+  <data name="config_syslog" xml:space="preserve">
+    <value>Nivell de registre syslog</value>
+  </data>
+  <data name="config_fac" xml:space="preserve">
+    <value>Enregistra sobre la utilitat</value>
+  </data>
+  <data name="config_pri" xml:space="preserve">
+    <value>amb prioritat</value>
+  </data>
+  <data name="config_fwd" xml:space="preserve">
+    <value>Activa el reenviament IP</value>
+  </data>
+  <data name="config_nat" xml:space="preserve">
+    <value>Activa la travessia NAT</value>
+  </data>
+  <data name="config_err" xml:space="preserve">
+    <value>No s'ha pogut desar la configuració del servidor</value>
+  </data>
+  <data name="config_eri" xml:space="preserve">
+    <value>La interfície real '$1' està llistada més d'un cop</value>
+  </data>
+  <data name="config_enone" xml:space="preserve">
+    <value>No s'ha especificat cap interfície de xarxa</value>
+  </data>
+  <data name="showkey_title" xml:space="preserve">
+    <value>Mostra la Clau Pública</value>
+  </data>
+  <data name="showkey_desc1" xml:space="preserve">
+    <value>Caldria copiar la clau pública RSA mostrada a sota a la configuració dels altres sistemes que es connecten amb aquest, a la secció relacionada amb aquest host.</value>
+  </data>
+  <data name="showkey_desc2" xml:space="preserve">
+    <value>Els valors mostrats a sota es poden utilitzar per crear un registre KEY de DNS per a aquest host, de manera que els altres sistemes que s'hi connecten la puguin consultar.</value>
+  </data>
+  <data name="showkey_flags" xml:space="preserve">
+    <value>Banderes</value>
+  </data>
+  <data name="showkey_proto" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="showkey_alg" xml:space="preserve">
+    <value>Algorisme</value>
+  </data>
+  <data name="showkey_key" xml:space="preserve">
+    <value>Dades de la clau</value>
+  </data>
+  <data name="policy_desc_block" xml:space="preserve">
+    <value>Xarxes Bloquejades</value>
+  </data>
+  <data name="policy_desc_clear" xml:space="preserve">
+    <value>Neteja les Xarxes de Trànsit</value>
+  </data>
+  <data name="policy_desc_private-or-clear" xml:space="preserve">
+    <value>Xarxes Xifrades o Transparents</value>
+  </data>
+  <data name="policy_desc_clear-or-private" xml:space="preserve">
+    <value>Xarxes Planeres o Xifrades</value>
+  </data>
+  <data name="policy_desc" xml:space="preserve">
+    <value>$1 Xarxes</value>
+  </data>
+  <data name="policy_longdesc_block" xml:space="preserve">
+    <value>No es permetrà mai la connexió a les xarxes seleccionades a sota.</value>
+  </data>
+  <data name="policy_longdesc_clear" xml:space="preserve">
+    <value>La comunicació amb les xarxes seleccionades a sota serà sempre transparent.</value>
+  </data>
+  <data name="policy_longdesc_clear-or-private" xml:space="preserve">
+    <value>La comunicació amb les xarxes seleccionades a sota serà transparent a menys que l'altre cap iniciï el xifratge IPsec.</value>
+  </data>
+  <data name="policy_longdesc_private" xml:space="preserve">
+    <value>La comunicació amb les xarxes seleccionades a sota sempre es xifraran amb IPsec.</value>
+  </data>
+  <data name="policy_longdesc_private-or-clear" xml:space="preserve">
+    <value>La comunicació amb les xarxes seleccionades a sota serà xifrada si és possible, altrament serà transparent. Si el host de destinació té un registre KEY de DNS, les dades s'han d'enviar xifrades.</value>
+  </data>
+  <data name="policy_longdesc" xml:space="preserve">
+    <value>Les xarxes seleccionades a sota s'empren en la política $1.</value>
+  </data>
+  <data name="policy_mode0" xml:space="preserve">
+    <value>Cap xarxa</value>
+  </data>
+  <data name="policy_mode1" xml:space="preserve">
+    <value>Totes les xarxes</value>
+  </data>
+  <data name="policy_mode2" xml:space="preserve">
+    <value>Les xarxes llistades...</value>
+  </data>
+  <data name="policy_net" xml:space="preserve">
+    <value>Adreça de la xarxa</value>
+  </data>
+  <data name="policy_mask" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="policy_err" xml:space="preserve">
+    <value>No s'han pogut desar les xarxes</value>
+  </data>
+  <data name="policy_enet" xml:space="preserve">
+    <value>Adreça IP de xarxa invàlida a la línia $1</value>
+  </data>
+  <data name="policy_emask" xml:space="preserve">
+    <value>Llargada de prefix invàlida a la fila $2</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>No s'ha pogut desar la connexió</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>Hi falta el nom de la connexió o bé és invàlid</value>
+  </data>
+  <data name="save_ekeying" xml:space="preserve">
+    <value>Hi falta el nombre de reintents de fer la clau o bé és invàlid</value>
+  </data>
+  <data name="save_eleft" xml:space="preserve">
+    <value>Hi falta el nom de host o adreça del servidor local o bé és invàlid</value>
+  </data>
+  <data name="save_eright" xml:space="preserve">
+    <value>Hi falta el nom de host o adreça del servidor remot o bé és invàlid</value>
+  </data>
+  <data name="save_eleftid1" xml:space="preserve">
+    <value>Hi falta l'adreça IP identificadora del servidor local o bé és invàlida</value>
+  </data>
+  <data name="save_erightid1" xml:space="preserve">
+    <value>Hi falta l'adreça IP identificadora del host remot o bé és invàlida</value>
+  </data>
+  <data name="save_eleftid2" xml:space="preserve">
+    <value>Hi falta el nom de host identificador del servidor local o bé és invàlid</value>
+  </data>
+  <data name="save_erightid2" xml:space="preserve">
+    <value>Hi falta el nom de host identificador del servidor remot o bé és invàlid</value>
+  </data>
+  <data name="save_eleftsubnet" xml:space="preserve">
+    <value>Hi falta la subxarxa del servidor local o bé és invàlida</value>
+  </data>
+  <data name="save_erightsubnet" xml:space="preserve">
+    <value>Hi falta la subxarxa del servidor remot o bé és invàlida</value>
+  </data>
+  <data name="save_eleftkey" xml:space="preserve">
+    <value>Hi falta la clau pública del servidor local</value>
+  </data>
+  <data name="save_erightkey" xml:space="preserve">
+    <value>Hi falta la clau pública del servidor remot</value>
+  </data>
+  <data name="save_elefthop" xml:space="preserve">
+    <value>Hi falta el portal de salt següent del servidor local o bé és invàlid</value>
+  </data>
+  <data name="save_erighthop" xml:space="preserve">
+    <value>Hi falta el portal de salt següent del servidor remot o bé és invàlid</value>
+  </data>
+  <data name="save_eleftcert" xml:space="preserve">
+    <value>Hi falta el certificat del servidor local o bé és invàlid</value>
+  </data>
+  <data name="save_erightcert" xml:space="preserve">
+    <value>Hi falta el certificat del servidor remot o bé és invàlid</value>
+  </data>
+  <data name="save_ekeylife" xml:space="preserve">
+    <value>Hi falta el temps de vida de la clau de connexió o bé és invàlid</value>
+  </data>
+  <data name="save_eikelifetime" xml:space="preserve">
+    <value>Hi falta el temps de vida del canal de la clau o bé és invàlid</value>
+  </data>
+  <data name="log_create_conn" xml:space="preserve">
+    <value>S'ha creat la connexió $1</value>
+  </data>
+  <data name="log_delete_conn" xml:space="preserve">
+    <value>S'ha suprimit la connexió $1</value>
+  </data>
+  <data name="log_modify_conn" xml:space="preserve">
+    <value>S'ha modificat la connexió $1</value>
+  </data>
+  <data name="log_import_conn" xml:space="preserve">
+    <value>S'ha importat la connexió $1</value>
+  </data>
+  <data name="log_up" xml:space="preserve">
+    <value>S'ha iniciat la connexió $1</value>
+  </data>
+  <data name="log_policy" xml:space="preserve">
+    <value>S'ha desat $1</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>S'ha iniciat el servidor IPsec</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>S'ha aturat el servidor IPsec</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>S'ha reiniciat el servidor IPsec</value>
+  </data>
+  <data name="log_boot" xml:space="preserve">
+    <value>S'ha activat IPsec en engegar el sistema</value>
+  </data>
+  <data name="log_unboot" xml:space="preserve">
+    <value>S'ha desactivat IPsec en engegar el sistema</value>
+  </data>
+  <data name="log_config" xml:space="preserve">
+    <value>S'ha desat la configuració del servidor</value>
+  </data>
+  <data name="log_create_secret" xml:space="preserve">
+    <value>S'ha creat la clau secreta de $1</value>
+  </data>
+  <data name="log_modify_secret" xml:space="preserve">
+    <value>S'ha modificat la clau secreta de $1</value>
+  </data>
+  <data name="log_delete_secret" xml:space="preserve">
+    <value>S'ha suprimit la clau secreta de $1</value>
+  </data>
+  <data name="log_create_secret_nn" xml:space="preserve">
+    <value>S'ha creat la clau secreta de qualsevol host</value>
+  </data>
+  <data name="log_modify_secret_nn" xml:space="preserve">
+    <value>S'ha modificat la clau secreta de qualsevol host</value>
+  </data>
+  <data name="log_delete_secret_nn" xml:space="preserve">
+    <value>S'ha suprimit la clau secreta de qualsevol host</value>
+  </data>
+  <data name="up_title" xml:space="preserve">
+    <value>Inici de Connexió</value>
+  </data>
+  <data name="up_cmd" xml:space="preserve">
+    <value>S'està iniciant la connexió amb l'ordre $1...</value>
+  </data>
+  <data name="export_title" xml:space="preserve">
+    <value>Exportació de la Configuració</value>
+  </data>
+  <data name="export_desc" xml:space="preserve">
+    <value>Pots utilitzar aquest formulari per exportar la secció de fitxers de configuració de la connexió $1, de manera que es pugui importar fàcilment al servidor de l'altre cap.</value>
+  </data>
+  <data name="export_print" xml:space="preserve">
+    <value>Mostra la configuració al navegador</value>
+  </data>
+  <data name="export_save" xml:space="preserve">
+    <value>Escriu la configuració al fitxer...</value>
+  </data>
+  <data name="export_ok" xml:space="preserve">
+    <value>Exporta-ho Ara</value>
+  </data>
+  <data name="export_err" xml:space="preserve">
+    <value>No s'ha pogut exportar la configuració</value>
+  </data>
+  <data name="export_efile" xml:space="preserve">
+    <value>Hi falta el nom del fitxer</value>
+  </data>
+  <data name="export_esave" xml:space="preserve">
+    <value>No s'ha pogut escriure al fitxer: $1</value>
+  </data>
+  <data name="export_done" xml:space="preserve">
+    <value>S'ha exportat la configuració de la connexió $1 a $2 ($3 bytes).</value>
+  </data>
+  <data name="import_title" xml:space="preserve">
+    <value>Importació de la Configuració</value>
+  </data>
+  <data name="import_desc" xml:space="preserve">
+    <value>Pots utilitzar aquest formulari per exportar la secció de fitxers de configuració d'una secció, com ara una creada amb la característica d'exportació d'aquest mòdul en un altre sistema.</value>
+  </data>
+  <data name="import_upload" xml:space="preserve">
+    <value>Importa del fitxer pujat...</value>
+  </data>
+  <data name="import_file" xml:space="preserve">
+    <value>Importa del fitxer del servidor...</value>
+  </data>
+  <data name="import_ok" xml:space="preserve">
+    <value>Importa-ho ara</value>
+  </data>
+  <data name="import_err" xml:space="preserve">
+    <value>No s'ha pogut importar la configuració</value>
+  </data>
+  <data name="import_eupload" xml:space="preserve">
+    <value>No has seleccionat cap fitxer per pujar</value>
+  </data>
+  <data name="import_efile" xml:space="preserve">
+    <value>No has introduït cap fitxer del servidor</value>
+  </data>
+  <data name="import_eopen" xml:space="preserve">
+    <value>El fitxer del servidor no existeix</value>
+  </data>
+  <data name="import_eformat" xml:space="preserve">
+    <value>No s'ha trobat cap connexió IPsec al fitxer - pot ser que no sigui un fitxer d'exportació vàlid</value>
+  </data>
+  <data name="import_eclash" xml:space="preserve">
+    <value>Ja existeix una connexió amb el nom $1.</value>
+  </data>
+  <data name="import_done1" xml:space="preserve">
+    <value>S'ha afegit amb èxit la nova connexió IPsec $1.</value>
+  </data>
+  <data name="import_done2" xml:space="preserve">
+    <value>S'ha actualitzat amb èxit la connexió IPsec $1.</value>
+  </data>
+  <data name="import_over" xml:space="preserve">
+    <value>Reescric la connexió existent amb amb el mateix nom?</value>
+  </data>
+  <data name="secrets_title" xml:space="preserve">
+    <value>Claus Secretes</value>
+  </data>
+  <data name="secrets_none" xml:space="preserve">
+    <value>No s'ha trobat cap clau secreta!</value>
+  </data>
+  <data name="secrets_name" xml:space="preserve">
+    <value>Clau secreta de</value>
+  </data>
+  <data name="secrets_type" xml:space="preserve">
+    <value>Tipus</value>
+  </data>
+  <data name="secrets_desc" xml:space="preserve">
+    <value>Detalls</value>
+  </data>
+  <data name="secrets_psk" xml:space="preserve">
+    <value>Clau secreta compartida</value>
+  </data>
+  <data name="secrets_rsa" xml:space="preserve">
+    <value>Clau pública RSA</value>
+  </data>
+  <data name="secrets_any" xml:space="preserve">
+    <value>Qualsevol host</value>
+  </data>
+  <data name="secrets_pass" xml:space="preserve">
+    <value>Contrasenya $1</value>
+  </data>
+  <data name="secrets_mod" xml:space="preserve">
+    <value>Mòdul $1</value>
+  </data>
+  <data name="secrets_newpsk" xml:space="preserve">
+    <value>Crea la nova clau secreta compartida.</value>
+  </data>
+  <data name="secrets_newrsa" xml:space="preserve">
+    <value>Crea la nova clau RSA.</value>
+  </data>
+  <data name="secrets_return" xml:space="preserve">
+    <value>a la llista de claus secretes</value>
+  </data>
+  <data name="secret_title1" xml:space="preserve">
+    <value>Creació de Clau Secreta</value>
+  </data>
+  <data name="secret_title2" xml:space="preserve">
+    <value>Edició de Clau Secreta</value>
+  </data>
+  <data name="secret_header" xml:space="preserve">
+    <value>Detalls de la clau secreta</value>
+  </data>
+  <data name="secret_name" xml:space="preserve">
+    <value>La clau secreta és per a</value>
+  </data>
+  <data name="secret_for" xml:space="preserve">
+    <value>Hosts</value>
+  </data>
+  <data name="secret_type" xml:space="preserve">
+    <value>Tipus de clau</value>
+  </data>
+  <data name="secret_pass" xml:space="preserve">
+    <value>Contrasenya compartida</value>
+  </data>
+  <data name="secret_rsa" xml:space="preserve">
+    <value>RSA $1</value>
+  </data>
+  <data name="secret_value" xml:space="preserve">
+    <value>Valor de la clau</value>
+  </data>
+  <data name="secret_err" xml:space="preserve">
+    <value>No s'ha pogut desar la clau secreta</value>
+  </data>
+  <data name="secret_elast" xml:space="preserve">
+    <value>No es pot suprimir la darrera clau secreta</value>
+  </data>
+  <data name="secret_ename" xml:space="preserve">
+    <value>Hi falten els hosts  per als quals es fa la clau</value>
+  </data>
+  <data name="secret_epass" xml:space="preserve">
+    <value>Hi falta la contrasenya compartida</value>
+  </data>
+  <data name="secret_ersa" xml:space="preserve">
+    <value>Hi falta el valor de la clau RSA $1</value>
+  </data>
+</root>

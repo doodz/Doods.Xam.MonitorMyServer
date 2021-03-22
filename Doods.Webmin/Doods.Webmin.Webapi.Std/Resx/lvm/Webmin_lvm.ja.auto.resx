@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>論理ボリューム管理</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>LVMコマンド $1がシステムで見つかりませんでした。 Webminでは、論理ボリュームをセットアップおよび管理するためにLVM管理コマンドが必要です。</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>LVMステータスディレクトリ $1は存在しません。これは、カーネルがLVMをサポートしていないか、 $2カーネルモジュールがロードされていないことを示しています。</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>ボリュームグループ</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>物理ボリューム</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>論理ボリューム</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>システムにボリュームグループが見つかりませんでした。</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>新しいボリュームグループを追加します。</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>このボリュームグループには論理ボリュームがまだありません。</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>このボリュームグループにはまだ物理ボリュームがありません。</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>物理ボリュームをグループに追加します。</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>物理ボリュームを&lt;tt&gt;$1&lt;/tt&gt;に追加します。</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt;に論理ボリュームを作成します。</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt;にスナップショットを作成します。</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>&lt;tt&gt;$1&lt;/tt&gt;にシンプールを作成します。</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>新しい論理ボリュームを作成します。</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>新しいスナップショットを作成します。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>ボリュームグループ</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>物理ボリューム</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>論理ボリューム</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>WebminはLVMバージョン1.0以降のみをサポートします。システムの $1からの出力は次のとおりです： $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVMバージョン $1</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>ボリュームグループ名</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>全体の大きさ</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>使用ブロック</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>使用サイズ</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>物理ボリュームはまだボリュームグループに追加されていません。</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>どのボリュームグループからも論理ボリュームはまだ作成されていません。</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>物理ボリュームデバイス</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>ボリュームグループ内</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>デバイスサイズ</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>使用ブロック</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>使用サイズ</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>ボリュームグループは、1つ以上の論理ボリュームに割り当てることができるディスクのセットです。ほとんどのシステムには1つしかなく、物理ボリュームまたは論理ボリュームを追加する前に少なくとも1つを作成する必要があります。</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>物理ボリュームは、ボリュームグループの一部であるディスクパーティションまたはRAIDデバイスです。そのディスク領域は、1つ以上の論理ボリュームで使用できます。</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>論理ボリュームは、ボリュームグループの結合ディスクスペースから作成された仮想パーティションです。それぞれがファイルシステムを持ち、ファイルシステムはファイルを保存するためにマウントされます。</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>論理ボリューム</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>ボリュームグループ</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>使用スペース</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>のために使用される</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>（$1のスナップショット）</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>$1 LVのLVMシンプール</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>論理ボリュームの編集</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>スナップショットを編集</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>論理ボリュームを作成する</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>スナップショットを作成</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>ボリュームグループ $1</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>論理ボリュームの詳細</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>ボリューム名</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>プールでシンLVとして作成</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>プールでシンプロビジョニング</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>なし（通常のLVとして作成）</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>ボリュームサイズ</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>絶対サイズ</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>VGサイズの割合</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>VGの空き領域の割合</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>PV空きスペースの割合</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$2の $1</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>正確なサイズ</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>単位のサイズ</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>すべての無料VGスペースを使用する</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>デバイスファイル</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>現在の状態</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>$1に $2としてマウント</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>$1に $2としてマウントする場合</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>仮想メモリとしてマウント</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>仮想メモリとしてマウントする場合</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>RAIDデバイス $1の一部</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Cloudminシステム $1によって使用されます</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Cloudminシステム $1で使用</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI共有デバイス $1</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>使用されていません</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>この論理ボリュームは、現在使用されているため、名前の変更やサイズ変更はできません。</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>ボリュームアクセス</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>読み書き</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>読み取り専用</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>割り当て方法</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>隣接する</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>不連続</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>ボリュームストライピング</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>無効（常に最初から割り当て）</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>$1の物理ボリューム全体にストライピング</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>ストライプする物理ボリューム</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>ストライプサイズ</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>先読みセクター</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>論理ボリュームの保存に失敗しました</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>ボリューム名が欠落しているか無効です</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>同じ名前の論理ボリュームが既に存在します</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>ボリュームサイズが見つからないか無効です</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>ボリュームグループサイズの欠落または無効な割合</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>空きボリュームグループサイズの割合がないか無効です</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>空き物理ボリュームサイズの割合がないか無効です</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>ストライプの欠落または無効な数</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>論理ボリュームの削除</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>ロールバックスナップショット</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>論理ボリューム $1を削除してもよろしいですか？この論理ボリューム上のファイルシステムのデータは永久に削除されます！</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>スナップショット $1を削除してもよろしいですか？</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>スナップショット $1をロールバックしてもよろしいですか？</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>警告！このLVは、 $1の他のシンプロビジョニングされた論理ボリュームのシンプールであり、削除された場合も失われます！</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>今すぐ削除</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>今すぐロールバック</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>論理ボリュームの削除に失敗しました</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>スナップショットのロールバックに失敗しました</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>割り当てブロックサイズ</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>ボリュームグループから割り当てられたブロック</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$2のうち $1</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>タイプのファイルシステムを作成：</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>ファイルシステムを作成する</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>ファイルシステムのタイプを選択し、このボタンをクリックして、この論理ボリュームに新しいファイルシステムを作成します。これにより、現在ボリューム上にあるデータがすべて消去されます。</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>この論理ボリューム上に新しい $1ファイルシステムを作成するには、このボタンをクリックします。これにより、現在ボリューム上にあるデータがすべて消去されます。</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>新しいボリュームサイズは（それぞれ $2の） $1ブロックですが、ボリュームグループでは $3のみが空きです。</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>論理ボリュームのスナップショット</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>判断できませんでした！</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>LVのマウント：</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>このLVをシステムの新しいディレクトリにマウントして、ファイルの保存に使用できるようにします。ファイルシステムはすでに作成されている必要があります。</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>無料の割合</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>フリースペース</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>割り当てられた物理ボリューム</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>このシンプール内のLV</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>シンプール使用率</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>使用されているシンプールスペース</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>スナップショット使用率</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>論理ボリュームはもう存在しません！</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>物理ボリュームを移動する</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>物理ボリュームからブロックを移動する</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>物理ボリュームへ</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>ブロックを移動</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>論理ボリューム</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>ファイルシステムを作成する</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>この形式を使用すると、論理ボリューム $3に新しい $2（$1）ファイルシステムを構築できます。既存のデータはすべて消去されます。</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>新しいファイルシステムオプション</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>ファイルシステムの作成に失敗しました</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>コマンド $1..を実行しています</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>..コマンドが失敗しました！</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>..コマンドが完了しました。</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>論理ボリュームのサイズ変更</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>この論理ボリューム上の $1ファイルシステムはサイズ変更できません。論理ボリュームのサイズを変更する場合、ファイルシステムを再作成する必要があります。これにより、その中のすべてのデータが消去されます。</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webminは、この論理ボリューム上にどんな種類のファイルシステムがあるのかを知りません。論理ボリュームのサイズを変更する場合、ファイルシステムを再作成する必要があります。これにより、その中のすべてのデータが消去されます。</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>この論理ボリューム上の $1ファイルシステムのサイズ変更中にエラーが発生しました： $2論理ボリュームのみのサイズを変更する場合、ファイルシステムを再作成する必要があります。</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>論理ボリュームのサイズ変更</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>この論理ボリューム上のファイルシステムは、マウントされている間はサイズ変更できません</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>この論理ボリューム上のファイルシステムは、マウントされている間は縮小できません</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>LVMをアクティブ化する</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>コマンド $1..を実行しています</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>物理ボリュームの編集</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>物理ボリュームを追加</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>ボリュームグループ $1</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>物理ボリュームの詳細</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>ディスクデバイス</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>その他のデバイス</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>割り当てが有効になっていますか？</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>ボリュームを強制的に追加しますか？</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>ディスクサイズ</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>割り当てられたブロック</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>割り当てられたサイズ</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>割り当てブロックサイズ</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>警告！選択したデバイス上のすべてのデータが消去されます。</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>ボリュームグループに追加</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>ボリュームグループから削除</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>デバイスに合わせてサイズ変更</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>物理ボリュームを保存できませんでした</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>物理ボリュームを削除できませんでした</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>物理ボリュームのサイズ変更に失敗しました</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>物理ボリュームを削除</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>ボリュームグループから物理ボリュームデバイス $1を削除してもよろしいですか？これにより、データがグループ内の他の物理ボリュームにシフトされます。</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>ボリュームを削除</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>ディスクデバイスが見つからないか無効です</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAIDデバイス $1</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>論理ボリュームによる割り当て</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>物理ボリュームはもう存在しません！</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>ボリュームグループの編集</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>ボリュームグループの作成</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>ボリュームグループ名</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>ボリュームグループの詳細</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>全体の大きさ</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>割り当てられたブロック</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>割り当てられたサイズ</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>割り当てブロックサイズ</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>初期物理デバイス</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>ボリュームグループを保存できませんでした</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>ボリュームグループを削除できませんでした</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>ボリュームグループの削除</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>ボリュームグループ $1を削除してもよろしいですか？</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>このボリュームグループには $1の論理ボリュームがまだあるため、削除できません。</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>今すぐ削除</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>ボリュームグループ名が欠落しているか無効です</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>割り当てブロックサイズがないか、無効です</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>ボリュームグループはもう存在しません！</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>論理ボリュームの移動に失敗しました</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>論理ボリュームを移動する</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>論理ボリューム $1を $2から $3に移動しています ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>..移動に失敗しました！</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>..移動完了</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>シンプールの作成</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>シンプールは、使用可能なエクステントよりも大きくなる可能性がある追加のLVを作成するために使用できるLVのペアです。スペースは、プール内のLVが作成されるときではなく、必要なときにのみ消費されます。警告-選択したLVのデータは失われます！</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>新しいシンプールの詳細</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>データ用の既存のLV</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>メタデータの既存のLV</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>LVをシンプールに変換する</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>このVGにはまだ使用されていないLVは見つかりませんでした！</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>シンプールの作成に失敗しました</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>選択した両方のLVは同じです</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>選択したデータLVはすでに使用されています</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>選択したメタデータLVはすでに使用されています</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>ボリュームグループ $1を作成しました</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>変更されたボリュームグループ $1</value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>ボリュームグループ $1を削除しました</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>VG $2に論理ボリューム $1を作成しました</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>VG $2の論理ボリューム $1を変更しました</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>VG $2の論理ボリューム $1を削除しました</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>ロールバックスナップショット $1</value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>$2に $1ファイルシステムを作成しました</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>物理ボリューム $1をVG $1に追加しました</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>VG $2の物理ボリューム $1を変更しました</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>VG $2から物理ボリューム $1を削除しました</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>VG $2の物理ボリューム $1のサイズを変更しました</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>ブロック</value>
+  </data>
+</root>

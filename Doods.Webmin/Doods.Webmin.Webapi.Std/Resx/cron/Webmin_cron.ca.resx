@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Planificació de Treballs Cron</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Usuari</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Actiu</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Ordre</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Executa a les hores</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No hi ha treballs cron al sistema.</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>No hi ha cap treball cron al qual tinguis accés.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>Encara no tens cap treball cron.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Crea una nou treball planificat amb cron.</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Crea una nova variable d'entorn.</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Controla l'accés dels usuaris als treballs cron.</value>
+  </data>
+  <data name="index_manual" xml:space="preserve">
+    <value>Edita manualment els treballs cron.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>a la llista de cron</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Variable d'entorn</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Desplaça</value>
+  </data>
+  <data name="index_next" xml:space="preserve">
+    <value>Propera execució</value>
+  </data>
+  <data name="index_nunknown" xml:space="preserve">
+    <value>Desconeguda</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>En execució</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>No s'ha trobat l'ordre $1 en gestionar les configuracions d'usuari de Cron. Pot ser que Cron no estigui instal·lat en aquest sistema?</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>El fitxer $1 que llista els treballs Cron no existeix. Pot ser que Cron no estigui instal·lat en aquest sistema?</value>
+  </data>
+  <data name="index_ecrondir" xml:space="preserve">
+    <value>El directori de treballs Cron $1 no existeix.  Pot ser que la configuració del mòdul sigui incorrecta o bé que Cron no estigui instal·lat?</value>
+  </data>
+  <data name="index_ecrondir_create" xml:space="preserve">
+    <value>Prova de crear el directori de treballs $1</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Suprimeix els Treballs Seleccionats</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Desactiva els Treballs Seleccionats</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Activa els Treballs Seleccionats</value>
+  </data>
+  <data name="index_esearch" xml:space="preserve">
+    <value>No hi ha cap treball que coincideixi amb la recerca de $1.</value>
+  </data>
+  <data name="index_toomany2" xml:space="preserve">
+    <value>Hi ha massa treballs per mostrar. Utilitza el formulari de cerca de dalt per limitar la llista.</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Busca els treballs Cron que coincideixin amb</value>
+  </data>
+  <data name="index_ok" xml:space="preserve">
+    <value>Busca</value>
+  </data>
+  <data name="index_searchres" xml:space="preserve">
+    <value>Treballs cron que coincideixen amb...</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Reinici la cerca.</value>
+  </data>
+  <data name="index_econfigcheck" xml:space="preserve">
+    <value>No es poden gestionar treballs Cron al sistema perquè la configuració del mòdul no és vàlida: $1</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Edició de Treball Cron</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Creació de Treball Cron</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>No tens permís per editar treballs cron d'aquest usuari</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Detalls del treball</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Executa el treball cron com</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Activa</value>
+  </data>
+  <data name="edit_next" xml:space="preserve">
+    <value>Hora de la ropera execució</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>Ordres</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Ordre</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Descripció</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Entrada de l'ordre</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Temps d'execució</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Interval de dates d'execució</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>Minuts</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>Hores</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>Dies</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>Mesos</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Dies de la Setmana</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Tots</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Seleccionats ...</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Executa-ho Ara</value>
+  </data>
+  <data name="edit_saverun" xml:space="preserve">
+    <value>Desa-ho i Executa-ho Ara</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clona el Treball</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>al treball cron</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Nota: Fes Ctrl-clic (o command-click al Mac) per a seleccionar i deseleccionar minuts, hores, dies i mesos.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Planificació simple...</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Hores i dates seleccionades a sota...</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>Cada hora</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Cada dia (a mitjanit)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Cada setmana (el Diumenge)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Cada mes (el dia 1)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Cada any (l'1 de Gener)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>Quan s'engegui el sistema</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>cada hora</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>cada dia (a mitjanit)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>cada setmana (el diumenge) </value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>cada mes (el dia 1)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>cada any (el dia 1 de gener)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>quan es reengega el sistema</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>No s'ha pogut desar el treball cron</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>No has introduït l'ordre a executar</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Has de seleccionar un usuari</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>L'usuari '$1' no existeix</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>L'usuari '$1' no té permís per accedir a cron</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>No tens permís per crear ni editar treballs cron de '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>No has triat cap $1 per executar</value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>No tens permís per crear treballs cron</value>
+  </data>
+  <data name="save_eidx" xml:space="preserve">
+    <value>El treball cron s'ha desat correctament, però no s'ha pogut executar per que no es troba!</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Control d'Accés a Cron</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Aquest formulari permet controlar quins usuaris poden crear i executar treballs cron.</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>No pots controlar l'accés dels usuaris a cron</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Denega'l a tots als usuaris</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Denega'l a tots als usuaris excepte root</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Permet-lo a tots els usuaris</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Permet-lo només als usuaris llistats</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Denega'l només als usuaris llistats</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Edició de Variable d'Entorn</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Creació de Variable d'Entorn</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Nom de la variable</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>De a l'usuari</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Activa</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Detalls de la variable d'entorn</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>No s'ha pogut desar la variable d'entorn</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>Hi falta el nom de la variable o bé és invàlid</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Nota - Aquesta configuració de variable d'entorn només s'aplicarà als treball cron després d'ella en la llista de treballs a la pàgina principal del mòdul.</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Afegeix variable d'entorn</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Desplaça la variable d'entorn</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Abans de tots els treballs Cron de l'usuari</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Després de tots els treballs Cron</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Posició actual</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Execució de Treball Cron</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>No tens permís per executar treballs cron d'aquest usuari</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>El resultat de l'ordre $1 ...</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>S'està executant l'ordre $1 com a procés en segon pla.</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>No s'ha generat cap sortida</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Pot editar treballs cron de</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Tots els usuaris</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>L'usuari Webmin actual</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Només els usuaris</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Tots excepte els usuaris</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Pot controlar l'accés dels usuaris a Cron</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Pot veure i editar treballs Cron</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Usuaris amb UID em el rang</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Usuaris amb grup primari</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Pot crear treballs Cron</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Pot suprimir treballs Cron</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Pot desplaçar treballs Cron</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Pot matar treballs Cron</value>
+  </data>
+  <data name="acl_hourly" xml:space="preserve">
+    <value>Limita els treballs com a màxim a cada hora</value>
+  </data>
+  <data name="acl_hourlydef" xml:space="preserve">
+    <value>Tal i com està a la Configuració del Mòdul</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>S'ha modificat el treball Cron de $1</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>S'ha modificat el treball Cron "$2" de $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>S'ha creat el treball Cron de $1</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>S'ha creat el treball Cron "$2" de $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>S'ha suprimit el treball Cron de $1</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>S'ha executat el treball Cron com $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>S'ha executat el treball Cron "$2" com a $1</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>S'ha matat el treball Cron de $1</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>S'ha matat el treball Cron "$2" de $1</value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>S'ha canviat l'accés de l'usuari a Cron</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>S'ha creat la variable d'entorn de $1</value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>S'ha modificat la variable d'entorn de $1</value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>S'ha suprimit la variable d'entorn de $1</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>S'ha desplaçat el treball Cron de $1</value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>S'han suprimit $1 treballs Cron</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>S'han desactivat $1 treballs Cron</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>S'han activat $1 treballs Cron</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>S'ha detectat un error a la nova configuració de Cron: $1 $2</value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>cada minut</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>cada hora passats $1 minuts</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>cada dia a les $2:$1</value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>el dia $3 de cada mes a les $2:$1</value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>cada $3 a les $2:$1</value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>a l'hora $1 de cron</value>
+  </data>
+  <data name="when_interval" xml:space="preserve">
+    <value>cada $1 segons</value>
+  </data>
+  <data name="when_boot" xml:space="preserve">
+    <value>en engegar</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Cada minut</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Cada hora a $1 minuts passada l'hora</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Cada dia a les $2:$1</value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>El dia $3 de cada mes a les $2:$1</value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Cada $3 a les $2:$1</value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>A l'hora $1 de cron</value>
+  </data>
+  <data name="ucwhen_interval" xml:space="preserve">
+    <value>Cada $1 segons</value>
+  </data>
+  <data name="ucwhen_boot" xml:space="preserve">
+    <value>En engegar</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>No s'ha pogut desplaçar el treball Cron</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Aquest treball cron no es pot desplaçar</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>No s'ha pogut matar el treball Cron</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>No tens permís per matar aquest treball</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Ja no està en execució</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>No s'ha pogut matar: $1</value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Mata el Treball Cron</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Segur que vols matar el procés $1 amb PID $2?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Segur que vols matar el procés $1 amb PID $2 i tots els seus subprocessos?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Sí, mata'l</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Executa'l qualsevol dia</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Executa'l només des de $1</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>fins a $1</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Hi falta la data inicial de l'interval o bé és invàlida</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Hi falta la data final de l'interval o bé és invàlida</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>No s'han pogut suprimir els treballs Cron</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>No has seleccionat res</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>Edició Manual de Treballs Cron</value>
+  </data>
+  <data name="manual_edit" xml:space="preserve">
+    <value>Fitxer cron a editar:</value>
+  </data>
+  <data name="manual_ok" xml:space="preserve">
+    <value>Edita</value>
+  </data>
+  <data name="manual_editing" xml:space="preserve">
+    <value>Utilitza la caixa de text de sota per editar el treballs Cron de $1. Ves amb compte, perquè Webmin no en farà cap validació!</value>
+  </data>
+  <data name="manual_efile" xml:space="preserve">
+    <value>El fitxer seleccionat no és vàlid!</value>
+  </data>
+  <data name="manual_ecannot" xml:space="preserve">
+    <value>No tens permís per editar manualment els treballs cron</value>
+  </data>
+</root>

@@ -180,13 +180,13 @@
 
         <ScrollView>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}" Spacing="0">
-                
-                <BindableLayout.ItemTemplate >
+
+                <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="openmediavaultSystemLogs:LogLineModel">
-                        <Grid Margin="0" Padding="0" >
+                        <Grid Margin="0" Padding="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100" />
-                                <ColumnDefinition Width="30"  />
+                                <ColumnDefinition Width="30" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
@@ -202,7 +202,7 @@
                             <Label
                                 Grid.Column="2"
                                 Margin="20,0"
-                               VerticalOptions="Center"
+                                VerticalOptions="Center"
                                 Text="{Binding Title}" />
 
                             <Label
@@ -222,18 +222,14 @@
 
 
                             <controls:DoodsSvgImage
-                                    Grid.Column="1"
-                                   
-                                            VerticalOptions="Start"                              
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
-                                
-                                  HeightRequest="30"
-                                
-                                    Grid.Row="0"
-                                />
+                                Grid.Column="1"
 
+                                VerticalOptions="Start"
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
 
+                                HeightRequest="30"
 
+                                Grid.Row="0" />
 
 
                         </Grid>

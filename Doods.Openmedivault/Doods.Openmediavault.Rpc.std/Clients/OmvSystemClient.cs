@@ -5,12 +5,16 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.std.Data.V5;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
-    public class OmvSystemClient: OmvServiceClient
+    public class OmvSystemClient : OmvServiceClient
     {
+        public OmvSystemClient(IRpcClient client) : base(client)
+        {
+            ServiceName = "System";
+        }
+
         public Task<IEnumerable<string>> GetTimeZoneList()
         {
             var request = NewRequest("getTimeZoneList");
@@ -18,9 +22,9 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             var result = RunCmd<IEnumerable<string>>(request);
             return result;
         }
+
         public Task<TimeSetting> GetDateAndTimeSetting()
         {
-
             var request = NewRequest("getTimeSettings");
 
             var result = RunCmd<TimeSetting>(request);
@@ -30,7 +34,6 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
         public Task<object> SetDateAndTimeSetting(TimeSetting settings)
         {
-
             var request = NewRequest("setTimeSettings");
             request.Params = settings;
 
@@ -38,26 +41,18 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             return result;
         }
 
-        public OmvSystemClient(IRpcClient client) : base(client)
-        {
-            ServiceName = "System";
-        }
-       
-
-      
 
         public async Task<OMVInformations> GetSystemInformations()
         {
             await CheckRpcVersionAsync();
             var request = NewRequest("getInformation");
-            request.Options = new Options { Updatelastaccess = false };
-          
-           
+            request.Options = new Options {Updatelastaccess = false};
+
 
             if (GetRpcVersion() < OMVVersions.Version5)
             {
                 var lst = await RunCmd<IEnumerable<SystemInformation>>(request);
-                var obj = new OMVInformations { LegacyMode = true };
+                var obj = new OMVInformations {LegacyMode = true};
 
                 foreach (var information in lst)
                     switch (information.Name)
@@ -113,6 +108,5 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             var sysInfo = await RunCmd<OMVInformations>(request);
             return sysInfo;
         }
-        
     }
 }

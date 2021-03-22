@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>פקודת ניהול האזורים $1 לא נמצאה במערכת שלך. עליו להתקין לפני שניתן להשתמש במודול זה.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin פועל באזור $1, ולא באזור &lt;tt&gt;הגלובלי&lt;/em&gt;. מודול זה יעבוד רק כאשר הוא מופעל באזור &lt;tt&gt;גלובלי&lt;/em&gt;.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>טרם הוגדרו אזורים.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>הוסף אזור חדש.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>רשימת אזור</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>אזורים קיימים</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>ערוך אזור</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>תצורת אזור כללית</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>שם אזור</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>מצב נוכחי</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>ספריית אזור</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>מתחילים באתחול המערכת?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>מאגר משאבים</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>אתחל מחדש</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>לכבות</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>התקן את Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>שדרג את וובמין</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>אתחול</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>התקן מערכת</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>הסר את התקנת המערכת</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>מחק אזור</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>ממשקי רשת לאזור</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>טרם הוגדרו ממשקי רשת.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>שם הממשק</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>כתובת ה - IP</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Netmask</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>כתובת שידור</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>הוסף ממשק רשת חדש.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>לא פעיל</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>אזור לא קיים!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>פרטי אזור</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>ספריות חבילות בירושה</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>מדריך באזור הגלובלי</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>טרם הוגדרו ספריות חבילות.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>הוסף ספריית חבילה חדשה.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>לא ניתן להוסיף ספריות חבילות לאחר התקנת האזור.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>מערכות קבצים נוספות</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>מדריך הר</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>רכוב מ-</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>מכשיר גולמי</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>סוג מערכת קבצים</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>רכוב?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>הוסף מערכת קבצים מסוג:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>טרם הוגדרו מערכות קבצים נוספות.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>בקרת משאבים מחדש</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>שם המשאב</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>סוגי הרשאות</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>גבולות</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>פעולות</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>טרם הוגדרו בקרות משאבים.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>הוסף בקרת משאבים חדשה.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>תכונות אזור כללי</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>שם מאפיין</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>סוג מידע</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>ערך תכונה</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>טרם הוגדרו תכונות כלליות.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>הוסף תכונה גנרית חדשה.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>פתח את Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>מותג</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>בטל</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>שמירת אזור נכשלה</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>מאגר חסר או לא חוקי</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin אינו פועל באזור זה</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>התחל מחדש את אזור</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך לאתחל את האזור $1 מחדש? כל התהליכים שרצים בתוכו יופעלו מחדש.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>נכשלה אתחול האזור מחדש</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>כעת אתחול מחדש של אזור ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. נכשל :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. שלם.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>אזור הכיבוי</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך לכבות את האזור $1 ? כל התהליכים הפועלים בתוכה יופסקו.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>כיבוי אזור נכשל</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>כעת כבה את האזור ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>אזור אתחול</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>אזור האתחול נכשל</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>כעת אתחול את אזור ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>מחק אזור</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך למחוק את האזור $1 ? כל הקבצים במערכות הקבצים הפרטיות שלה יאבדו.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>מחיקת האזור נכשלה</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>כעת מוחק אזור ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>הסר את התקנת המערכת</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>האם אתה בטוח שברצונך להסיר את התקנת תוכנת המערכת מאזור $1 ? כל הקבצים במערכות הקבצים הפרטיות שלה יאבדו.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>ביטול התקנת תוכנת המערכת מהאזור נכשל</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>כעת בטל את התקנת המערכת מאזור ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>התקן מערכת</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>עכשיו התקנת המערכת לאזור ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>צור ממשק רשת</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>ערוך ממשק רשת</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>פרטי ממשק וירטואליים באזור</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>כתובת IP ממשק</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>ממשק רשת אמיתי</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Netmask לכתובת</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>כתובת השידור הנוכחית</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>שמירת ממשק הרשת נכשלה</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>מסכת רשת לא חוקית</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>כתובת IP לא חוקית</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>הממשק כבר לא קיים!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>ממשק רשת עם אותה כתובת IP קיים כבר באזור זה</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>הוסף מדריך חבילות</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>ערוך את מדריך החבילות</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>פרטי ספריית חבילה בירושה</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>מדריך באזור הגלובלי</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>הספריה כבר לא קיימת!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>שמירת ספריית החבילה נכשלה</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>מדריך לא חוקי או שאינו קיים</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>ספריית החבילה כבר קיימת באזור זה</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>ירש חבילות מאזור גלובלי</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>כן (אזור שורש דליל)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>לא (אזור שורש שלם)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>צור מערכת קבצים</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>ערוך מערכת קבצים</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>פרטים נוספים על מערכת הקבצים</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>סוג מערכת קבצים</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>נקודת הרכבה באזור</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>מצב נוכחי</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>לא רכוב</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>רכוב</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>רכוב, עם $2 חופשי מתוך $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>המקור באזור הגלובלי</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>אפשרויות הר מערכת קבצים</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>שמירת מערכת הקבצים נכשלה</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>ספריית נקודת הרכבה חסרה</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>מערכת הקבצים נוצרה, אך אירעה שגיאה בהרכבה</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>מערכת הקבצים הוסרה, אך אירעה שגיאה בביטול הרכבה</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>מערכת הקבצים עודכנה, אך אירעה שגיאה בהרכבה מחדש</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>חסר קובץ התקן המקור</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>אפשרויות הרכבה לא חוקיות (חייבות להיות רשימה המופרדת בפסיקים כמו ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>מערכת הקבצים כבר לא קיימת!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>הר לאחר היצירה?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>מערכת קבצים המשתמשת באותה ספרייה קיימת כבר באזור זה</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>צור בקרת משאבים</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>ערוך בקרת משאבים</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>סוג בקרת משאבים ומגבלות</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>סוג המשאבים</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>גבולות לכפות</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>סוג הרשאות</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>הגבלה</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>פעולה לאחר חריגה</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>בסיסי</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>מיוחסים</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>מערכת</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>שום פעולה</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>דחה את הבקשה</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>שלח אות ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>שמירת שליטת המשאבים נכשלה</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>בקרת משאבים כבר לא קיימת!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>לא מספר</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>בשום $1 לא נבחר אות</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>לא נכנסו גבולות</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>בקרה לאותו משאב קיימת כבר באזור זה</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>צור תכונה כללית</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>ערוך תכונה גנרית</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>פרטי מאפיין אזור כללי</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>שם מאפיין</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>סוג נתונים לערך</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>ערך תכונה</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>מחרוזת טקסט</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>מספר שלם</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>מספר שלם חיובי</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>בוליאני</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>שמירת התכונה הכללית נכשלה</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>שם חסר או לא חוקי</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>ערך אינו מספר שלם</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>ערך אינו מספר שלם חיובי</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>הערך אינו 'נכון' או 'שקרי'</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>התכונה כבר לא קיימת!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>מאפיין עם אותו שם כבר קיים באזור זה</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>רץ</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>נעצר</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>לא מותקן</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>מותקן</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>מוכנים</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>מטה</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>כיבוי</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>שם אזור</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>מספר תעודת זהות</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>ספריית אזור</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>סטטוס</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>פעולות</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>באזור $1 </value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>אף אחד</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>צור אזור</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>פרטי אזור חדשים</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>ספריית קבצי אזור</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>מדריך שנבחר</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>אוטומטי (תחת &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>כתובת IP ראשונית</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>אף אחד</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>להתקין לאחר היצירה?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>הגדרת Webmin לאחר ההתקנה?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>כן (מונע הוספת ספריות חבילות)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>צור עכשיו</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>יצירת אזור לא נכשלה</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>שם אזור חסר או לא חוקי</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>שם מארח חסר או לא חוקי</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>אזור עם אותו שם כבר קיים</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>ספריית אזור חסרה</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>ספריית האזור '$1' כבר קיימת</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>כתובת IP ראשונית חסרה או לא חוקית</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>יוצר אזור חדש ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. בוצע.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. נכשל! ראה את הפלט למעלה מהסיבה שבגללה.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>הוספת ממשק רשת ראשוני ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>התקנת תוכנת מערכת ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>ספריות חבילה נוספות</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' אינו ספריית חבילה תקפה</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>הוספת ספריות חבילה ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>הגדרת Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. נכשל : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>להגדיר תצורה של אזור חדש?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>שם מארח ראשוני</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>זהה לשם האזור</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>כן, משתמש בהגדרות למטה.</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>לא, הגדר ידנית במסוף</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>סיסמת שורש ראשונית</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>זהה למערכת הגלובלית</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>אזור זמן ראשוני</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>זהה למערכת הגלובלית ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>אזור שפה ראשוני</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>סוג מסוף לקונסולה</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>ברירת מחדל (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>שירות שם ראשוני</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>אף אחד</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>שקל חדש</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>ש"ח +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>שם תחום DNS או NIS</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>שרתי DNS או NIS</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>איתור משתמש השורש המקומי נכשל!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>אזור זמן חסר או לא תקף</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>אזור שפה חסר או לא חוקי</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>סוג מסוף חסר או לא חוקי</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>שם תחום DNS או NIS חסר או לא חוקי</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' אינו מארח שרת DNS או שרת שם תקף</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>לא הוזנו שרתי DNS או NIS</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>לא ניתן היה לפתור את שם המארח של האזור, מה שיגרום להיכשל בתצורה אוטומטית. עליך להוסיף אותו ל- DNS לפני שתיצור אזור זה</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>נתב ברירת מחדל</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>כתובת IP של נתב ברירת מחדל חסרה או לא חוקית</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>מסיר ספריות חבילות בירושה. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>מותג</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>אזור מיתוג</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>נוצר אזור $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>אזור $1 נמחק</value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>תצורה שונה לאזור $1 </value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>אזור מגודל $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>התחל מחדש את האזור $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>אזור הכיבוי $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>אזור $1 מותקן</value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>אזור $1 שלא הותקן</value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>יצר ממשק רשת עם כתובת $1 באזור $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>ממשק רשת נמחק עם כתובת $1 באזור $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>ממשק רשת שונה עם כתובת $1 באזור $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>יצר את מדריך החבילות $1 באזור $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>ספריית החבילות השתנתה $1 באזור $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>ספריית החבילות $1 באזור $2 נמחקה</value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>יצרה מערכת קבצים $1 באזור $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>מערכת הקבצים השתנתה $1 באזור $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>מערכת הקבצים $1 נמחקה באזור $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>יצר בקרת משאבים עבור $1 באזור $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>בקרת משאבים שונה עבור $1 באזור $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>בקרת המשאבים נמחקה עבור $1 באזור $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>יצר תכונה גנרית $1 באזור $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>תכונה גנרית שונה $1 באזור $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>מאפיין גנרי $1 נמחק באזור $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>פרל אינו מותקן ב- $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>הספרייה $1 אינה קיימת או אינה מכילה Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>התקן את Webmin</value>
+  </data>
+</root>

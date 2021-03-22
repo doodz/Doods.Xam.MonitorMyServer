@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Bolumenen kudeaketa logikoa</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>$1 komando LVM ez da zure sisteman aurkitu. Webminak LVM administrazioaren komandoak behar ditu bolumen logikoak konfiguratu eta kudeatzeko.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>$1 LVM egoera direktorioa ez da existitzen. Horrek adierazten du zure nukleoak LVM ez duela onartzen edo $2 nukleoaren modulua ez dela kargatu.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Bolumen Taldeak</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Bolumen Fisikoak</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Bolumen Logikoak</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Ez da bolumen-taldeik aurkitu zure sisteman.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Gehitu bolumen talde berria.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Bolumen-talde honek ez dauka bolumen logikorik oraindik.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Bolumen-talde honek ez du bolumen fisikorik oraindik.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Gehitu bolumen fisikoa taldeari.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Gehitu bolumen fisikoa &lt;tt&gt;$1&lt;/tt&gt; -i.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Sortu bolumen logikoa &lt;tt&gt;$1&lt;/tt&gt; atalean.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Sortu argazki bat &lt;tt&gt;$1&lt;/tt&gt; atalean.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Sortu igerileku mehea &lt;tt&gt;$1&lt;/tt&gt; atalean.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Sortu bolumen logiko berria.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Sortu argazki berria.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>bolumen taldeak</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>bolumen fisikoak</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>bolumen logikoak</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin-ek LVM 1.0 bertsioak eta ondorengoak bakarrik onartzen ditu. Zure sisteman $1 -eko irteera hau izan da : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM $1 bertsioa</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Bolumen taldearen izena</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Tamaina osoa</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Erabilitako blokeak</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Erabilitako neurria</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Oraindik ez da bolumen fisikorik gehitu.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Oraindik ez da bolumen logikorik sortu.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Bolumen fisikorako gailua</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>Bolumen taldean</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Gailuaren tamaina</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Erabilitako blokeak</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Erabilitako neurria</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Bolumen taldea bolumen logiko bati edo gehiagori esleitu dakizkiokeen multzoen multzoa da. Sistema gehienek bakarra izango dute eta gutxienez bat sortu behar da, bolumen fisiko edo logiko batzuk gehitu aurretik.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Bolumen fisikoa disko partizio bat edo RAID gailua da, bolumen talde baten parte dena. Bere disko espazioa bolumen logiko bat edo gehiago erabil dezakete.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Bolumen logikoa bolumen talde baten disko konbinatuko espaziotik sortutako partizio birtuala da. Bakoitzak fitxategi-sistema bat izan dezake, gero fitxategiak gordetzeko.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Bolumen logikoa</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Bolumen taldea</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Tamaina</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Erabilitako espazioa</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Erabiltzen da</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>($1 argazkia)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>LVM igerileku mehea $1 LV-rako</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Editatu bolumen logikoa</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Editatu argazkia</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Sortu bolumen logikoa</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Sortu argazkia</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>$1 bolumen-taldean</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Bolumen logikoaren xehetasunak</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Bolumenaren izena</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Sortu LV mehe gisa igerilekuan</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Igerilekuan hornituta</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Bat ere ez (LV erregular gisa sortu)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Bolumenaren tamaina</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Tamaina absolutua</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>VG tamainaren ehunekoa</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>VG espazio librearen portzentajea</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>PV libreen espazioaren ehunekoa</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 $2 </value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Tamaina zehatza</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Neurria unitateekin</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Erabili doako VG espazio guztia</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Gailuaren fitxategia</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Egungo egoera</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>$1 an $2 gisa muntatu da</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>$1 gisa $2 muntatzeko</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Memoria birtual gisa muntatuta dago</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Memoria birtual gisa muntatzeko</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>$1 RAID gailuaren zati bat</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Cloudmin sistemak $1 erabiltzen du</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>$1 Cloudmin sistemak erabiltzeko</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI $1 gailu partekatua</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Ez dago erabiltzen</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Bolumen logiko hau ezin da berriz aldatu edo aldatu berriro erabiltzen ari den moduan.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Bolumen sarbidea</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Irakurri/idatzi</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Irakurtzeko soilik</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Esleitzeko metodoa</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Alboko</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Ez-Alboko</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Bolumenaren marra</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Desgaituta (beti esleitu hasieratik)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Tira $1 bolumen fisikoetan</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Bolumen fisikoak gurutzatzeko</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Marraren tamaina</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Readahead Sektoreak</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Huts egin du bolumen logikoa gordetzean</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Bolumenaren izen falta edo baliogabea</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Izen bera duen bolumen logikoa dagoeneko badago</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Bolumen tamaina falta edo baliogabea</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Falta den edo ez da baliozko bolumen-taldearen tamaina</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Falta den edo ez da baliozko bolumen-taldeen tamainaren ehunekoa</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Bolumen fisiko librearen tamaina portzentajea edo falta da</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Marra kopuru falta edo baliogabea</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Ezabatu bolumen logikoa</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Erreprodukzio-argazkia</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Ziur zaude $1 bolumen logikoa ezabatu nahi duzula? Bolumen logiko honetako fitxategi-sistema bateko datuak betiko ezabatuko dira!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Ziur zaude $1 argazkia ezabatu nahi duzula?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Ziur al zaude $1 argazkia atzera bota nahi duzula?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>KONTUZ! LV hau igerileku mehea da $1 hornitutako bolumen logiko txikietarako, eta hau ere ezabatzen bada ere galduko da!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Ezabatu orain</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Itzuli orain</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Ezin izan da bolumen logikoa ezabatu</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Ezin izan da erreprodukzio-argazkia</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Esleipen blokearen tamaina</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Bolumen-taldetik esleitutako blokeak</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 $2 tik</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Sortu motako fitxategi sistema:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Sortu fitxategi sistema</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Hautatu fitxategi-sistema mota bat eta egin klik botoi honetan fitxategi-sistema berri bat sortzeko bolumen logiko honetan. Honek bolumenari buruzko uneko datuak ezabatuko ditu.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Egin klik botoi honetan $1 fitxategi-sistema berria sortzeko bolumen logiko honetan. Honek bolumenari buruzko uneko datuak ezabatuko ditu.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Bolumen tamaina berria $1 blokea da ($2 bakoitza), baina $3 soilik libre daude bolumen taldean.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Bolumen logikoaren argazkia</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Ezin izan da zehaztu!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>LV mendian:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Muntatu LV hau zure sistemako direktorio berrietan, fitxategiak gordetzeko erabil dezan. Fitxategi-sistema sortu behar da jada.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Ehunekoa doan</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Toki librea</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Emandako bolumen fisikoak</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LVak igerileku mehe honetan</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Igerileku mehearen erabilera ehunekoa</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Erabilitako igerileku mehea</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Argazkiaren erabileraren ehunekoa</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Bolumen logikoa ez da existitzen!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Mugitu bolumen fisikoa</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Mugitu blokeak bolumen fisikotik</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Bolumen fisikoari</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Mugitu blokeak</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>bolumen logikoa</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Sortu fitxategi sistema</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Inprimaki honek $2 ($1) fitxategi sistema berria eraikitzeko aukera ematen du $3 bolumen logikoan. Dauden datu guztiak ezabatuko dira.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Fitxategi sistemaren aukera berriak</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Huts egin du fitxategi sistema sortzerakoan</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>$1 komandoa exekutatzen.</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. Komandoak huts egin du!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. agindua bukatuta.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Tamaina aldatu bolumen logikoa</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Bolumen logiko honetako $1 fitxategi sistema ezin da tamaina aldatu. Bolumen logikoa tamainaz aldatu ezkero, berriro sortu behar duzu fitxategi sistema, bertan dauden datu guztiak ezabatuko dituzu.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webminek ez daki zer fitxategi-sistema dagoen bolumen logiko horretan, halakorik badago. Bolumen logikoa tamainaz aldatu ezkero, berriro sortu behar duzu fitxategi sistema, bertan dauden datu guztiak ezabatuko dituzu.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Bolumen logiko horretan $1 fitxategi sistemaren tamaina berdintzean akats bat gertatu da: $2 Bolumen logikoa besterik ez baduzu tamaina aldatu nahi baduzu, berriro sortu beharko duzu fitxategi sistema, bertan dauden datu guztiak ezabatuko dituzu.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Tamaina aldatu bolumen logikoa</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Bolumen logiko honetako fitxategi-sistema ezin da tamaina aldatu</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Bolumen logiko honetako fitxategi sistema ezin da txikitu muntatu bitartean</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktibatu LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>$1 komandoa exekutatzen ari da.</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Editatu bolumen fisikoa</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Gehitu bolumen fisikoa</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>$1 bolumen-taldean</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Bolumen fisikoaren xehetasunak</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Disko gailua</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Beste gailu ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Esleitzeko baimenduta dago?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Bolumena gehitzea behartu?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Diskoaren tamaina</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Blokak esleitzen dira</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Neurria esleituta</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Esleipen blokearen tamaina</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Kontuz! Aukeratutako gailuko datu guztiak ezabatu egingo dira.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Gehitu bolumen-taldeari</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Kendu bolumen-taldetik</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Tamaina aldatu</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Huts egin du bolumen fisikoa gordetzean</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Huts egin du bolumen fisikoa kentzean</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Huts egin du bolumen fisikoa tamaina aldatzeko</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Kendu bolumen fisikoa</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Ziur al zaude $1 bolumen gailua fisikoki kentzea nahi duzula bolumen taldean? Horrek datuak taldeko beste bolumen fisikoetara aldatuko ditu.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Kendu Bolumena</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Disko gailua falta edo baliogabea da</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>$1 RAID gailua</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Esleipena bolumen logikoen arabera</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Bolumen fisikoa jada ez da!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Editatu Bolumen Taldea</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Sortu Bolumen Taldea</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Bolumen taldearen izena</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Bolumen taldearen xehetasunak</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Tamaina osoa</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Blokak esleitzen dira</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Neurria esleituta</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Esleipen blokearen tamaina</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Hasierako gailu fisikoa</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Huts egin du bolumen taldea gordetzean</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Ezin izan da bolumen taldea ezabatu</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Ezabatu bolumen taldea</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Ziur zaude $1 bolumen taldea ezabatu nahi duzula?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Bolumen talde hau ezin da ezabatu $1 bolumen logikoak dituelako oraindik.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Ezabatu orain</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Baliogabea edo baliogabea den talde-izena</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Esleipen blokeoaren tamaina falta edo baliogabea</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Bolumen taldea ez dago jada!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Ezin izan da bolumen logikoa mugitu</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Mugitu bolumen logikoa</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>$1 bolumen logikoa $2 tik $3 ra mugitzen da.</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. mugitu huts egin du!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. mugitu osoa</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Sortu Igerileku Mehea</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Igerileku mehea LVak osatzeko erabil daitezkeen hedadurak baino handiagoak izan daitezkeen LV osagarriak sortzeko erabil daiteke. Beharrezkoa denean soilik kontsumitzen da espazioa, igerilekuaren barruko LVak sortzen direnean baino. KONTUZ: hautatutako LVen inguruko edozein datu galduko dira!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Igerileku mehearen xehetasun berriak</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Datuak dauden LV</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Metadatuetarako badagoen LV</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>LVak Igerbide Mehean bihurtu</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>VG honetan dagoeneko erabiltzen ez ziren LVak ez dira aurkitu!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Huts egin du igerileku mehea sortzerakoan</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Aukeratutako LV biak berdinak dira</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Hautatutako LV datuak dagoeneko erabiltzen ari dira</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Hautatutako metadatuen LV dagoeneko erabiltzen ari da</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>$1 bolumen taldea sortu da</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Aldatutako bolumen taldea $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>$1 bolumen taldea ezabatu da</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>$1 bolumen logikoa sortu da VG $2 -n</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>$1 bolumen logikoa aldatua VG $2 -n</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>$1 bolumen logikoa ezabatu da VG $2 -n</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Itzulitako atzera botoia $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>$1 fitxategi sistema sortu da $2 an</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>$1 bolumen fisikoa gehitu da VG $1 -era</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Aldatutako bolumen fisikoa $1 VG $2 n</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>$1 bolumen fisikoa Kendu da VG $2 -tik</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Neurriaren tamaina fisikoa $1 VG $2 n</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>bloke</value>
+  </data>
+</root>

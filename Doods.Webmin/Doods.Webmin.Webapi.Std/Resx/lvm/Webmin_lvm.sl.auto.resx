@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logično upravljanje glasnosti</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>Ukaza LVM $1 v vašem sistemu ni bilo mogoče najti. Webmin potrebuje ukaze za upravljanje LVM, da lahko postavi in upravlja z logičnimi zvezki.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>Imenik stanja LVM $1 ne obstaja. To pomeni, da vaše jedro ne podpira LVM ali da modul jedra $2 ni naložen.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Skupine zvezkov</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Fizične količine</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Logični zvezki</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>V vašem sistemu ni bilo najdenih skupin glasnosti.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Dodajte novo skupino glasnosti.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Ta skupina glasnosti še nima logičnih zvezkov.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Ta skupina glasnosti še nima fizičnih količin.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>V skupino dodajte fizični volumen.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Fizični volumen dodajte &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Ustvari logični volumen v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Ustvari posnetek v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Ustvari tanek bazen v &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Ustvari nov logični zvezek.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Ustvari nov posnetek.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>glasnostne skupine</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>fizične količine</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>logični zvezki</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin podpira samo različice LVM 1.0 in novejše. Izhod iz $1 v vašem sistemu je bil : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Različica LVM $1 </value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Ime skupine zvezkov</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Skupna velikost</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Uporabljeni bloki</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Uporabljena velikost</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>V nobeno skupino količin še nismo dodali fizičnih količin.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Iz vseh skupin glasnosti še ni bil ustvarjen noben logični obseg.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Naprava s fizikalno prostornino</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>V količinski skupini</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Velikost naprave</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Uporabljeni bloki</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Uporabljena velikost</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Skupina nosilcev je niz diskov, ki jih je mogoče dodeliti enemu ali več logičnim zvezkom. Večina sistemov bo imela samo enega, vsaj en pa mora biti ustvarjen, preden je mogoče dodati kakršne koli fizične ali logične zvezke.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Fizični volumen je particija diska ali naprava RAID, ki je del glasnostne skupine. Njegov diskovni prostor lahko nato uporabi en ali več logičnih zvezkov.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Logični volumen je navidezna particija, ustvarjena iz kombiniranega prostora na disku skupine nosilcev. Vsak ima lahko datotečni sistem, ki je nato nameščen za shranjevanje datotek.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Logična glasnost</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Zbirka glasnosti</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Velikost</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Uporabljeni prostor</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Uporablja za</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Posnetek $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>LVM tanek bazen za $1 LV</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Uredite logično glasnost</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Urejanje posnetka</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Ustvari logični volumen</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Ustvari posnetek</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>V količinski skupini $1 </value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Podrobnosti o logični prostornini</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Ime zvezka</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Ustvarite kot tanek LV v bazenu</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Tanko v bazenu</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Noben (ustvari kot navaden LV)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Velikost glasnosti</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absolutna velikost</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Odstotek velikosti VG</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Odstotek prostega prostora VG</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Odstotek prostora brez PV</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 of $2 </value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Natančna velikost</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Velikost z enotami</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Uporabite ves prosti prostor VG</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Datoteka z napravo</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Trenutni status</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Nameščen na $1 kot $2 </value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Za pritrditev na $1 kot $2 </value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Vgrajen kot virtualni pomnilnik</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Za pritrditev kot virtualni pomnilnik</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Del naprave RAID $1 </value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Uporablja sistem Cloudmin $1 </value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Za uporabo v sistemu Cloudmin $1 </value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI naprava v skupni rabi $1 </value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Ni v uporabi</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Tega logičnega zvezka ni mogoče preimenovati ali spremeniti v velikosti, kot je trenutno v uporabi.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Dostop do glasnosti</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Brati, pisati</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Le za branje</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Metoda dodelitve</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Sočasno</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Neskončno</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Prostornina črtanja</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Onemogočeno (vedno dodelite od začetka)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Črtajte čez $1 fizični volumen</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Fizični volumni, da se prečkajo</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Velikost črte</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Sektorji za prebiranje</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Logičnega volumna ni bilo mogoče shraniti</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime zvezka</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Logična zvezka z istim imenom že obstaja</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna velikost glasnosti</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Odstotek ali neveljaven odstotek velikosti skupine</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Odstotek ali neveljaven odstotek velikosti prostega obsega</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Odstotek ali neveljaven odstotek velikosti proste fizične prostornine</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno število trakov</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Brisanje logičnega zvezka</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Povratni posnetek</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Ali ste prepričani, da želite izbrisati logični volumen $1 ? Vsi podatki v datotečnem sistemu na tem logičnem nosilcu bodo za vedno izbrisani!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Ali ste prepričani, da želite izbrisati posnetek $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Ali ste prepričani, da želite vrniti posnetek posnetka $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>OPOZORILO! Ta LV je tanek bazen za $1 drugi tanko določeni logični zvezki, ki bodo prav tako izgubljeni, če je izbrisan!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Izbriši zdaj</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Odvrnitev zdaj</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Logičnega zvezka ni bilo mogoče izbrisati</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Posnetka ni bilo mogoče vrniti</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Velikost dodelitvenih blokov</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Bloki, dodeljeni iz skupine količin</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 od $2 </value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Ustvari datotečni sistem:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Ustvari datotečni sistem</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Izberite vrsto datotečnega sistema in kliknite ta gumb, da ustvarite nov datotečni sistem na tem logičnem nosilcu. Tako se bodo izbrisali vsi podatki, ki so trenutno v obsegu.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Kliknite ta gumb, da ustvarite nov datotečni sistem $1 na tem logičnem zvezku. Tako se bodo izbrisali vsi podatki, ki so trenutno v obsegu.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Nova velikost glasnosti je $1 blok (od $2 vsaka), v skupini z obsegom pa je le $3.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Posnetek logičnega obsega</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Ni mogoče določiti!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Namestite LV na:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>To LV namestite na nov imenik v vašem sistemu, tako da se lahko uporablja za shranjevanje datotek. Datotečni sistem mora biti že ustvarjen.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Prosti odstotek</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Prosti prostor</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Dodeljeni fizični volumni</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LV-ji v tem tankem bazenu</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Odstotek uporabe tankega bazena</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Uporabljen tanek bazenski prostor</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Odstotek uporabe posnetkov</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Logičnega obsega ne obstaja več!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Izklopite fizično glasnost</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Premikanje blokov iz fizične glasnosti</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Do fizičnega obsega</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Premakni bloke</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>logični volumen</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Ustvari datotečni sistem</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Ta obrazec vam omogoča, da sestavite nov datotečni sistem $2 ($1) na logičnem volumnu $3. Vsi obstoječi podatki bodo izbrisani.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Nove možnosti datotečnega sistema</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Ustvarjanja datotečnega sistema ni uspelo</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Izvedba ukaza $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. ukaz ni uspel!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. ukaz končan.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Velikost velikosti logike</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Datotečnega sistema $1 na tem logičnem nosilcu ni mogoče spremeniti. Če spremenite velikost logičnega obsega, morate znova ustvariti datotečni sistem, ki bo izbrisal vse podatke v njem.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin ne ve, kakšen datotečni sistem je na tem logičnem nosilcu, če sploh. Če spremenite velikost logičnega obsega, morate znova ustvariti datotečni sistem, ki bo izbrisal vse podatke v njem.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Pri spreminjanju velikosti datotečnega sistema $1 na tem logičnem nosilcu je prišlo do napake: $2 Če spremenite velikost samo logičnega obsega, morate znova ustvariti datotečni sistem, ki bo izbrisal vse podatke v njem.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Velikost velikosti logike</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Med nameščanjem datotečnega sistema na tej logični glasnosti ni mogoče spremeniti</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Datotečnega sistema na tej logični glasnosti med nameščanjem ni mogoče skrčiti</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktivirajte LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Teče ukaz $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Uredi fizično glasnost</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Dodajte fizični volumen</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>V količinski skupini $1 </value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Podrobnosti fizične prostornine</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Diskovna naprava</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Druga naprava ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Ali ste omogočeni za dodelitev?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Prisilno dodajanje prostornine?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Velikost diska</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Dodeljeni bloki</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Dodeljena velikost</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Velikost dodelitvenih blokov</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Opozorilo! Vsi podatki na izbrani napravi bodo izbrisani.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Dodaj v glasnostno skupino</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Odstrani iz skupine glasnosti</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Velikost velikosti, da se ujema z napravo</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Fizične glasnosti ni bilo mogoče shraniti</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Fizične glasnosti ni bilo mogoče odstraniti</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Fizične glasnosti ni bilo mogoče spremeniti</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Odstranite fizični volumen</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Ali ste prepričani, da želite odstraniti napravo fizične glasnosti $1 iz svoje skupine glasnosti? To bo povzročilo, da se kakršni koli podatki preusmerijo v druge fizične količine znotraj skupine.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Odstranite glasnost</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna diskovna naprava</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>Naprava RAID $1 </value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Razporeditev po logičnih zvezkih</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Fizični volumen ne obstaja več!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Urejanje glasnostne skupine</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Ustvari skupino glasnosti</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Ime skupine zvezkov</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Podrobnosti o količinski skupini</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Skupna velikost</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Dodeljeni bloki</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Dodeljena velikost</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Velikost dodelitvenih blokov</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Začetna fizična naprava</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Skupine glasnosti ni bilo mogoče shraniti</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Skupine glasnosti ni bilo mogoče izbrisati</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Izbriši skupino glasnosti</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Ali ste prepričani, da želite izbrisati skupino glasnosti $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Te skupine glasnosti ni mogoče izbrisati, ker ima še vedno $1 logične zvezke.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Izbriši zdaj</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime skupine zvezkov</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna velikost bloka dodelitve</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Skupina glasnosti ne obstaja več!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Logične glasnosti ni bilo mogoče premakniti</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Premakni logični volumen</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Logični volumen $1 od $2 do $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. premik ni uspel!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. premakni se dokončano</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Ustvari tanek bazen</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Tanki bazen je par NV-jev, ki se lahko uporabijo za ustvarjanje dodatnih LV-jev, ki so lahko večji od razpoložljivih končnic. Prostor se porabi samo, kadar je to potrebno, in ne, ko se ustvarijo nižje napetosti znotraj bazena. OPOZORILO - Vsi podatki o izbranih LV bodo izgubljeni!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Nove tanke podrobnosti bazena</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Obstoječi LV za podatke</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Obstoječi LV za metapodatke</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Pretvarjanje NN v tanek bazen</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>V tem VG ni bilo najdenih nobenih LV, ki še niso v uporabi!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Ni bilo mogoče ustvariti tankega bazena</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Obe izbrani LV sta enaki</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Izbrani podatki LV so že v uporabi</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Izbrani metapodatki LV so že v uporabi</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Ustvarjena skupina količin $1 </value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Spremenjena glasnostna skupina $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Izbrisana skupina volumnov $1 </value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Ustvarjen logični volumen $1 v VG $2 </value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Spremenjen logični volumen $1 v VG $2 </value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Izbrisan logični volumen $1 v VG $2 </value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Posnetek nazaj z vrnitvijo $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Ustvaril je datotečni sistem $1 v $2 </value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Dodan je fizični volumen $1 do VG $1 </value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Spremenjen fizični volumen $1 v VG $2 </value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Fizični volumen $1 je bil odstranjen iz VG $2 </value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Velikost fizične prostornine $1 v VG $2 </value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blokov</value>
+  </data>
+</root>

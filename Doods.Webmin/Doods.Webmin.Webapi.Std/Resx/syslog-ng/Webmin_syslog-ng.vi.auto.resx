@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Nhật ký hệ thống NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Áp dụng cấu hình</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Nhấp vào nút này để kích hoạt cấu hình Syslog-NG hiện tại.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Dừng Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Nhấp vào nút này để dừng trình nền Syslog-NG đang chạy. Sau khi dừng, thông điệp tường trình từ các chương trình khác sẽ không còn được ghi vào tệp nhật ký.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Bắt đầu Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Nhấp vào nút này để khởi động trình nền Syslog-NG, sử dụng cấu hình hiện tại.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>chỉ số mô-đun</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Tùy chọn đăng nhập</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Tùy chọn cho tất cả các tệp nhật ký</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>giây</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>mục</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Thời gian chờ đợi trước khi mở lại kết nối chết</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Thời gian chờ đợi trước khi đóng kết nối nhàn rỗi</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Thông báo để đệm trước khi viết</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Thời gian chờ giữa các tin nhắn thống kê</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Số lượng tin nhắn vào bộ đệm</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Sử dụng định dạng tên máy chủ chuỗi?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Giữ tên máy chủ ban đầu?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Kiểm tra tên máy chủ cho các ký tự hợp lệ?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Biểu thức chính quy cho tên máy chủ xấu</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Tạo thư mục cho tập tin nhật ký nếu cần?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Chủ sở hữu mặc định cho các tệp nhật ký</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Nhóm mặc định cho các tệp nhật ký</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Quyền mặc định cho tệp nhật ký</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Chủ sở hữu mặc định cho các thư mục đã tạo</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Nhóm mặc định cho các thư mục đã tạo</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Quyền mặc định cho các thư mục đã tạo</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Nhật ký thời gian đã nhận được tin nhắn?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Do tra cứu DNS ngược?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Tra cứu DNS Cache?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Kích thước bộ đệm DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Bản ghi DNS bộ nhớ cache cho</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Cache thất bại khi tra cứu DNS cho</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Kích thước thông điệp tường trình tối đa</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Đăng nhập tên máy chủ đầy đủ?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Thay thế các ký tự điều khiển trong tên tệp?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Không thể lưu tùy chọn đăng nhập</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ biểu thức cho tên máy chủ xấu</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Kích thước bộ đệm DNS thiếu hoặc không số</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Thời gian bộ đệm DNS bị thiếu hoặc không phải là số</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Thiếu thời gian bộ đệm DNS bị thiếu hoặc không số</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Thiếu chủ sở hữu mặc định cho các tệp nhật ký</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Thiếu nhóm mặc định cho tệp nhật ký</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Thiếu quyền mặc định cho tệp nhật ký</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Thiếu chủ sở hữu mặc định cho các thư mục</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Thiếu nhóm mặc định cho các thư mục</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Thiếu quyền mặc định cho thư mục</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Thiếu thời gian hoặc không phải là số để chờ kết nối chết</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Thiếu thời gian hoặc không phải là số để chờ kết nối lý tưởng</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ số lượng tin nhắn vào bộ đệm trước khi viết</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Thiếu thời gian hoặc không phải là số để chờ giữa các tin nhắn thống kê</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ số lượng tin nhắn vào bộ đệm</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Kích thước thông điệp nhật ký tối đa thiếu hoặc không số</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Đăng nhập điểm đến</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Tên điểm đến</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Viết thư cho</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Đăng nhập đích</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Tập tin</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Người dùng đã đăng nhập</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Đầu vào chương trình</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Ống Unix</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>Máy chủ nhật ký hệ thống UDP</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Máy chủ syslog TCP</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Ổ cắm dữ liệu</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Ổ cắm luồng</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Tất cả người dùng</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Chỉ người dùng $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Lưu trữ $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Lượt xem ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Không có tệp nhật ký đích đã được xác định.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Xóa các điểm đến đã chọn</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Thêm một điểm đến đăng nhập mới.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>đăng nhập điểm đến</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Nhật ký mô-đun khác</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Đầu ra từ $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Đăng nhập tùy chọn đích</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Tạo điểm đến đăng nhập</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Chỉnh sửa điểm đến</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Đăng nhập tên đích</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Đăng nhập vào ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Tên tệp</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Tạo thư mục?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Quyền trên thư mục</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Đồng bộ hóa sau mỗi lần viết?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Nhóm cho tệp nhật ký</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Chủ sở hữu cho tệp nhật ký</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Quyền trên tệp nhật ký</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Tin nhắn giữa các đồng bộ</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Danh sách người dùng</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Máy chủ nhật ký hệ thống</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Giao thức mạng</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Địa chỉ máy chủ</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Cổng máy chủ</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Địa chỉ IP cục bộ</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Cổng địa phương</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Ổ cắm Unix</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Kiểu</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Tên ổ cắm</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Không thể lưu điểm đến</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Một điểm đến có cùng tên đã tồn tại</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Điểm đến không còn tồn tại!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Tên tệp bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Chủ sở hữu tệp nhật ký bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Nhóm tệp nhật ký bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Quyền truy cập tệp nhật ký bị thiếu hoặc không bát phân</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Quyền thư mục bị thiếu hoặc không bát phân</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Số lượng tin nhắn bị thiếu hoặc không hợp lệ giữa các đồng bộ hóa</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Thiếu người dùng để gửi đến</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Thiếu chương trình để nuôi</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Thiếu tập tin ống Unix</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Số cổng bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Địa chỉ IP cục bộ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Số cổng cục bộ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ máy chủ hoặc địa chỉ máy chủ Syslog</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Thiếu tên ổ cắm Unix</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Không thể xóa điểm đến</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Không được chọn</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Không thể xóa đích $1 vì mục tiêu nhật ký được sử dụng</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Không thể xóa nguồn</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Không được chọn</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Nguồn nhật ký $1 không thể bị xóa, vì nó được sử dụng bởi mục tiêu nhật ký</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Không thể xóa bộ lọc</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Không được chọn</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Bộ lọc nhật ký $1 không thể bị xóa, vì nó được sử dụng bởi mục tiêu nhật ký</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Không thể xóa mục tiêu nhật ký</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Không được chọn</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Nhật ký bộ lọc</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Tên bộ lọc</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Điều kiện</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Không có bộ lọc nhật ký đã được xác định.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Xóa các bộ lọc đã chọn</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Thêm bộ lọc nhật ký mới.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>bộ lọc nhật ký</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>mức độ ưu tiên &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>mức độ ưu tiên &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 ưu tiên</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>cơ sở &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 cơ sở</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>chương trình &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>khớp với "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>từ tên máy chủ &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>từ người gửi &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Tạo bộ lọc nhật ký</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Chỉnh sửa bộ lọc nhật ký</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Nhật ký chi tiết đặc tả bộ lọc</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Tên bộ lọc</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Điều kiện đơn giản (tất cả phải phù hợp)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Biểu thức phức tạp</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Ưu tiên ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Từ chương trình ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Biểu thức khớp ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Từ cơ sở ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Từ tên máy chủ ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Từ mạng IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Không thể lưu bộ lọc nhật ký</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Tên bộ lọc bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Một bộ lọc có cùng tên đã tồn tại</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Không có gì để lọc khi nhập</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Không có ưu tiên lựa chọn</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Không có cơ sở được lựa chọn</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Tên chương trình bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Thiếu biểu thức chính quy</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Tên máy chủ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Địa chỉ IP mạng bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Netmask bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Lỗi trong biểu thức phức tạp</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Bộ lọc không còn tồn tại!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Đăng nhập mục tiêu</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Bộ lọc</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Điểm đến</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Thêm một mục tiêu đăng nhập mới.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Xóa mục tiêu nhật ký đã chọn</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>mục tiêu đăng nhập</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Tạo mục tiêu nhật ký</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Chỉnh sửa mục tiêu nhật ký</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Đăng nhập nguồn, bộ lọc và lựa chọn đích</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Nhật ký nguồn</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Bộ lọc để áp dụng</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Tệp đích</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Đừng xử lý bất kỳ mục tiêu nào nữa</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Mục tiêu nhật ký dự phòng</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Xử lý tất cả các nguồn</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Tùy chọn mục tiêu</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Đăng nhập mục tiêu không còn tồn tại!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Không thể lưu mục tiêu nhật ký</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Không có nguồn nào được chọn</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Đăng nhập nguồn</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Chưa có nguồn nào được xác định!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Thêm một nguồn nhật ký mới.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Tên nguồn</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Đăng nhập nguồn dữ liệu</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Xóa các nguồn được chọn</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Tin nhắn Syslog-NG nội bộ</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Ổ cắm luồng</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Ổ cắm dữ liệu</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>Máy chủ TCP</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>Máy chủ UDP</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Tệp nhật ký kernel</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Đặt tên ống</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Dòng mặt trời</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Máy chủ nhật ký hệ thống</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>nguồn nhật ký</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Tạo nguồn đăng nhập</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Chỉnh sửa nguồn đăng nhập</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Đăng nhập tùy chọn nguồn</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Bất kì</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Nguồn không còn tồn tại!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Tên nguồn</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Đăng nhập các loại nguồn</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Chủ sở hữu tập tin ổ cắm</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Nhóm tập tin ổ cắm</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Quyền trên tập tin ổ cắm</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Giữ kết nối mở trong khi khởi động lại?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Kết nối đồng thời tối đa?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Địa chỉ IP cục bộ</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Số cổng địa phương</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Sử dụng TCP giữ lại?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Tiền tố cho thông điệp tường trình</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Kích thước khối tin nhắn</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Không thể lưu nguồn nhật ký</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Tên nguồn bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Một nguồn nhật ký có cùng tên đã tồn tại</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Chủ sở hữu tệp ổ cắm bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Nhóm tệp ổ cắm bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Thiếu quyền hoặc không bát phân trên tệp ổ cắm</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ số lượng kết nối tối đa</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Địa chỉ IP cục bộ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Số cổng cục bộ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Thiếu tiền tố cho thông điệp tường trình</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Kích thước khối tin nhắn bị thiếu hoặc không phải là số</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Tên tệp ổ cắm Unix bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Tên tệp nhật ký kernel bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Tên tập tin đường ống bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Tên cửa</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Tên tệp Sun stream bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Tên tập tin cửa suối bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Giao thức mạng</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Xem logfile</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$1 dòng cuối cùng của $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Tệp nhật ký trống</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Làm tươi</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Chỉ hiển thị các dòng có văn bản $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Không thể áp dụng cấu hình</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Không chạy!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Không thể khởi động máy chủ Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Không thể dừng máy chủ Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Đã tạo đích đăng nhập $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Nhật ký đã sửa đổi $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Đã xóa đích đăng nhập $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Đã xóa $1 điểm đến nhật ký</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Đã tạo bộ lọc nhật ký $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Bộ lọc nhật ký đã sửa đổi $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Đã xóa bộ lọc nhật ký $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Đã xóa $1 bộ lọc nhật ký</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Đã tạo nguồn nhật ký $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Nguồn nhật ký đã sửa đổi $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Đã xóa nguồn nhật ký $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Đã xóa $1 nguồn nhật ký</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Tạo mục tiêu nhật ký</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Mục tiêu nhật ký đã sửa đổi</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Đã xóa mục tiêu nhật ký</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Đã xóa mục tiêu nhật ký $1 </value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Cấu hình ứng dụng</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Bắt đầu máy chủ Syslog-NG</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Máy chủ Syslog-NG đã dừng</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Thay đổi tùy chọn toàn cầu</value>
+  </data>
+</root>

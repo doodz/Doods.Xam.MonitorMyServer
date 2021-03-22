@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>Validera konfiguration</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>Klicka på den här knappen för att Webmin ska validera din LDAP-serverkonfiguration genom att se till att servern kan kontaktas och att den innehåller användare och grupper.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>modulindex</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;Varning&lt;/b&gt; - Webmin har upptäckt två separata LDAP-konfigurationsfiler på ditt system. NSS-LDAP konfigureras med hjälp av $1, medan PAM-LDAP använder $2. Detta kan orsaka överensstämmelse mellan de två tjänsterna.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>Fixa genom att länka filer</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>Visa inte detta meddelande</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>LDAP-klient</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stoppa LDAP-klientdemon</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Stäng av den lokala LDAP-klientdemon, som behövs för att fråga den fjärr LDAP-servern.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Starta LDAP-klientdemon</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Starta den lokala LDAP-klientdemonen, som behövs för att fråga den fjärr LDAP-servern. Tills det har startats kommer användare och grupper i LDAP inte att vara tillgängliga.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Starta om LDAP-klientdemon</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Använd den aktuella konfigurationen genom att starta om den lokala LDAP-klientdemon.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Starta LDAP-klient vid start</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Ändrar om LDAP-klientdemonet startas när systemet startas upp eller inte.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>LDAP-serverkonfiguration</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>LDAP-server och inloggningsalternativ</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>LDAP-serverns värdsnamn</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>Anslut till port</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>LDAP-protokollversion</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>Anslutningsgräns</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>Logga in för icke-&lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>Lösenord för användare som inte är &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>Logga in för &lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>Lösenord för &lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>Samma som icke-&lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>Anonym</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>Använd krypterad anslutning?</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>Ja, med TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>Verifiera LDAP SSL-certifikat?</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>Standard (vanligtvis $1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>CA-certifikatfil</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>LDAP-servrar</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>Värdnamn</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>Portnummer</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>Protokoll</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>Unix-uttag</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>Det gick inte att spara LDAP-serverkonfiguration</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' är inte ett giltigt värdnamn</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>Inga LDAP-servrar anges</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>Saknad eller ogiltig LDAP-serverport</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>Saknar inloggning för icke-&lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>Lösenord saknas för användare som inte är &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>Saknar inloggning för &lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>Lösenord saknas för &lt;tt&gt;root&lt;/tt&gt; användare</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>Saknad eller ogiltig tidsgräns för anslutning</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>Saknad eller ogiltig CA-certifikatfil</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>Saknad eller ogiltig port för server $1 </value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>Inga LDAP-servrar anges</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>LDAP-sökbaser</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>LDAP-katalogsökplatser</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>Global sökbas</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>Sökdjup</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>Hela undertexten</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>En nivå</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>Endast bas</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>Bas för Unix-användare</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>Bas för Unix-lösenord</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>Bas för Unix-grupper</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>Bas för värdnamn</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>Bas för nätverkstjänster</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>Bas för nätverksnamn</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>Bas för protokoll</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>Bas för nätmasknamn</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>Bas för e-postalias</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>Bas för nätgrupper</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>Sökdjup</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>Sökfilter</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>Sök tidsgräns</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>sekunder</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>Global bas</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>Det gick inte att spara LDAP-sökbaser</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>Saknar global sökbas</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>Saknas bas för Unix-användare</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>Saknas bas för Unix-lösenord</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>Saknas bas för Unix-grupper</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>Saknas bas för värdnamn</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>Saknas bas för nätverkstjänster</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>Saknas bas för nätverksnamn</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>Saknas bas för protokoll</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>Saknas bas för nätmasknamn</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>Saknas bas för e-postalias</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>Saknas bas för nätgrupper</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>Saknad eller ogiltig söktid</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>Autentiseringsalternativ</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>PAM-autentisering och lösenordsinställningar</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>Ytterligare LDAP-filter</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>LDAP-attribut för användarnamn</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>LDAP-grupp att tvinga medlemskap i</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>LDAP-attribut för gruppmedlemmar</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>Lösenord lagringsmetod</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>Klar text</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>Unix-kryptering</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>MD5-kryptering</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>Novell Directory Services</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>Aktiv katalog</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>Ändra lösenord i OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>ignoreras</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>Det gick inte att spara autentiseringsalternativ</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>Saknar ytterligare LDAP-filter</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>Saknat eller ogiltigt LDAP-attribut för användarnamn</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>Saknar LDAP-grupp för att tvinga medlemskap i</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>Saknat eller ogiltigt LDAP-attribut för gruppmedlemmar</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>Tjänster med LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>Datakällor</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>tjänster som använder LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>Modulen $1 Perl som behövs för att prata med LDAP-servern är inte installerad.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>LDAP-klientkonfigurationsfilen $1 hittades inte på ditt system</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>Det gick inte att ansluta till LDAP-servern $1 port $2 </value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>Det gick inte att ansluta till LDAP-servern $1 port $2 : $3 </value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>Det gick inte att binda till LDAP-servern $1 som $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>anonym</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>Det gick inte att analysera LDAP-servern URI $1 </value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>Det gick inte att byta till TLS-läge : $1 </value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>LDAP-webbläsare</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>LDAP-webbläsaren kan inte användas : $1 </value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>Bläddring:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>LDAP-sökning misslyckades : $1 </value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>Barnobjekt</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>Objektattribut</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>Bläddra i förälder</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>filer</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>System Security Services</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>DB-filer</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS &amp; filer</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Hesiodos</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>Användarskrivare</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>Multicast DNS</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>Multicast DNS (minimal)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>Sendmail alias</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>Sendmail alias</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>Värdadresser</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>Unix-grupper</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>Unix-användare</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>Ethernet-adresser</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>Automounter hem</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>Automounter kartor</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>Automounter hem</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>Automounter kartor</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter lokalt</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>Automounter hem</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>Automounter kartor</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter lokalt</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>Automounter kartor</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>nätgrupper</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>nätgrupper</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetIDs</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>Nätverksadresser</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>Nätverksprotokoll</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>RPC-program</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>Nätverkstjänster</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>Sendmail-variabler</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>Offentliga nycklar</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>Offentliga nycklar</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>Startparametrar</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>Unix skugga lösenord</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>Unix grupplösenord</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>nätmasker</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>skrivare</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>Extra användarinformation</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>skrivare</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>IP-noder</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>Tidszoner</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>lokaler</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>Redigera tjänsten</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>Tjänsten finns inte!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>Serviceinformation</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>Service namn</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>Första datakälla</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>Andra datakällan</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>Tredje datakälla</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>Fjärde datakälla</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>Femte datakälla</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>Datakälla $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>På framgång</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>Om inte hittas</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>Om inte tillgängligt</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>Tillfälligt otillgänglig</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>Returresultat</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>Fortsätt söka</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>Det gick inte att spara tjänsten</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>Inga källor valda!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>Modifierad LDAP-serverkonfiguration</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>Modifierade LDAP-sökbaser</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>Ändrade autentiseringsalternativ</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>Ändrad tjänst $1 </value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Aktiverad LDAP-klientdemon vid starttid</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Inaktiverad LDAP-klientdemon vid starttid</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Startade LDAP-klientdemon</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Stoppad LDAP-klientdemon</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Omstartad LDAP-klientdemon</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Validera LDAP-konfiguration</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>Hitta LDAP-bas för användare ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. ingen bas finns i klientkonfiguration!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. hittade bas $1.</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>Ansluter till LDAP-server ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. anslutning misslyckades : $1 </value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. ansluten till $1 </value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>Söker efter användare ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. sökningen misslyckades : $1 </value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. inga användare hittade under bas $1.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. hittade $1 användare.</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>Kontrollerar &lt;b&gt;Unix-användare&lt;/b&gt; -tjänsten ..</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. tjänsten är inställd för att fråga LDAP.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. tjänsten är inte inställd för att använda LDAP.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>Letar du efter Unix-användare $1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. användare finns inte.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>.. användaren hittades framgångsrikt.</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>Ditt system har konfigurerats som en LDAP-klient!</value>
+  </data>
+</root>

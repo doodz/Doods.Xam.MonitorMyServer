@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>PostgreSQL数据库服务器</value>
+  </data>
+  <data name="index_notrun" xml:space="preserve">
+    <value>您的系统没有运行 PostgreSQL -不能检索数据库列表</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>启动PostgreSQL服务器</value>
+  </data>
+  <data name="index_nopass" xml:space="preserve">
+    <value>为了管理您的数据库，webmin需要知道您的PostgreSQL管理登录以及口令。请在下面输入您的管理用户名和口令。</value>
+  </data>
+  <data name="index_ltitle" xml:space="preserve">
+    <value>PostgreSQL登录</value>
+  </data>
+  <data name="index_login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="index_pass" xml:space="preserve">
+    <value>口令</value>
+  </data>
+  <data name="index_clear" xml:space="preserve">
+    <value>清除</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>停止PostgreSQL服务器</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>点击这个按钮以停止您系统上的PostgreSQL数据库服务器。这将会阻止任何用户或程序访问数据库，包括这个webmin模块。</value>
+  </data>
+  <data name="index_dbs" xml:space="preserve">
+    <value>PostgreSQL数据库</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>创建一个新的数据库</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>用户选项</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>数据库列表</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>您系统中的PostgreSQL数据库是版本$1，但是Webmin 只支持版本$2或更高版本。</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>PostgreSQL版本$1</value>
+  </data>
+  <data name="login_err" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="login_ecannot" xml:space="preserve">
+    <value>您没有配置数据库登录的权限</value>
+  </data>
+  <data name="login_elogin" xml:space="preserve">
+    <value>未输入管理登录</value>
+  </data>
+  <data name="login_epass" xml:space="preserve">
+    <value>不正确的管理用户名或口令</value>
+  </data>
+  <data name="dbase_title" xml:space="preserve">
+    <value>编辑数据库</value>
+  </data>
+  <data name="dbase_tables" xml:space="preserve">
+    <value>数据库表</value>
+  </data>
+  <data name="dbase_add" xml:space="preserve">
+    <value>创建一个新表</value>
+  </data>
+  <data name="dbase_drop" xml:space="preserve">
+    <value>删除数据库</value>
+  </data>
+  <data name="dbase_exec" xml:space="preserve">
+    <value>执行SQL</value>
+  </data>
+  <data name="dbase_none" xml:space="preserve">
+    <value>这个数据库没有表。</value>
+  </data>
+  <data name="dbase_fields" xml:space="preserve">
+    <value>字段：</value>
+  </data>
+  <data name="dbase_return" xml:space="preserve">
+    <value>数据表列表</value>
+  </data>
+  <data name="dbase_ecannot" xml:space="preserve">
+    <value>您没有编辑此数据库的权限</value>
+  </data>
+  <data name="table_title" xml:space="preserve">
+    <value>编辑表</value>
+  </data>
+  <data name="table_title2" xml:space="preserve">
+    <value>创建表</value>
+  </data>
+  <data name="table_opts" xml:space="preserve">
+    <value>字段选项</value>
+  </data>
+  <data name="table_header" xml:space="preserve">
+    <value>数据库$2中的表$1</value>
+  </data>
+  <data name="table_field" xml:space="preserve">
+    <value>字段名</value>
+  </data>
+  <data name="table_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="table_null" xml:space="preserve">
+    <value>允许为空？</value>
+  </data>
+  <data name="table_arr" xml:space="preserve">
+    <value>数组？</value>
+  </data>
+  <data name="table_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="table_add" xml:space="preserve">
+    <value>增加字段的类型：</value>
+  </data>
+  <data name="table_return" xml:space="preserve">
+    <value>字段列表</value>
+  </data>
+  <data name="table_data" xml:space="preserve">
+    <value>显示数据</value>
+  </data>
+  <data name="table_drop" xml:space="preserve">
+    <value>删除表</value>
+  </data>
+  <data name="table_name" xml:space="preserve">
+    <value>表名</value>
+  </data>
+  <data name="table_initial" xml:space="preserve">
+    <value>初始字段</value>
+  </data>
+  <data name="table_header2" xml:space="preserve">
+    <value>新表选项</value>
+  </data>
+  <data name="table_err" xml:space="preserve">
+    <value>创建表失败</value>
+  </data>
+  <data name="table_ename" xml:space="preserve">
+    <value>未输入或者无效的表名</value>
+  </data>
+  <data name="table_efield" xml:space="preserve">
+    <value>$1不是有效字段名</value>
+  </data>
+  <data name="table_etype" xml:space="preserve">
+    <value>未输入字段$1的类型</value>
+  </data>
+  <data name="table_esize" xml:space="preserve">
+    <value>未输入字段$1的类型长度</value>
+  </data>
+  <data name="table_enone" xml:space="preserve">
+    <value>没有输入初始字段</value>
+  </data>
+  <data name="field_title1" xml:space="preserve">
+    <value>增加字段</value>
+  </data>
+  <data name="field_title2" xml:space="preserve">
+    <value>修改字段</value>
+  </data>
+  <data name="field_in" xml:space="preserve">
+    <value>在数据库$2的表$1中</value>
+  </data>
+  <data name="field_header" xml:space="preserve">
+    <value>字段参数</value>
+  </data>
+  <data name="field_name" xml:space="preserve">
+    <value>字段名</value>
+  </data>
+  <data name="field_type" xml:space="preserve">
+    <value>数据类型</value>
+  </data>
+  <data name="field_size" xml:space="preserve">
+    <value>类型宽度</value>
+  </data>
+  <data name="field_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="field_null" xml:space="preserve">
+    <value>允许为空？</value>
+  </data>
+  <data name="field_arr" xml:space="preserve">
+    <value>数组字段？</value>
+  </data>
+  <data name="field_key" xml:space="preserve">
+    <value>主关键字？</value>
+  </data>
+  <data name="field_uniq" xml:space="preserve">
+    <value>独特？</value>
+  </data>
+  <data name="field_esize" xml:space="preserve">
+    <value>'$1不是有效字段大小</value>
+  </data>
+  <data name="field_eenum" xml:space="preserve">
+    <value>没有输入枚举值</value>
+  </data>
+  <data name="field_efield" xml:space="preserve">
+    <value>$1不是一个有效的字段名</value>
+  </data>
+  <data name="field_ekey" xml:space="preserve">
+    <value>主关键字不能包含允许为空的字段</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>执行SQL</value>
+  </data>
+  <data name="exec_header" xml:space="preserve">
+    <value>输入在数据库 $1上要执行的 SQL 命令..</value>
+  </data>
+  <data name="exec_exec" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="exec_err" xml:space="preserve">
+    <value>SQL 执行SQL失败</value>
+  </data>
+  <data name="exec_out" xml:space="preserve">
+    <value>SQL命令$1的输出..</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>没有数据返回</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>关闭数据库服务器失败</value>
+  </data>
+  <data name="stop_epidfile" xml:space="preserve">
+    <value>打开进程标识文件$1失败</value>
+  </data>
+  <data name="stop_ekill" xml:space="preserve">
+    <value>关闭进程$1 : $2失败</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>您没有停止数据库服务器的权限</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>启动数据库服务器失败</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>您没有启动数据库服务器的权限</value>
+  </data>
+  <data name="ddrop_err" xml:space="preserve">
+    <value>删除数据库失败</value>
+  </data>
+  <data name="ddrop_title" xml:space="preserve">
+    <value>删除数据库</value>
+  </data>
+  <data name="ddrop_rusure" xml:space="preserve">
+    <value>您确定要删除数据库 $1？包含 $3行数据的 $2 个表将被删除。</value>
+  </data>
+  <data name="ddrop_mysql" xml:space="preserve">
+    <value>因为这是一个主数据库，将其删除后，您的MySQL服务器可能无法使用。</value>
+  </data>
+  <data name="ddrop_ok" xml:space="preserve">
+    <value>删除数据库</value>
+  </data>
+  <data name="tdrop_err" xml:space="preserve">
+    <value>删除数据表失败</value>
+  </data>
+  <data name="tdrop_title" xml:space="preserve">
+    <value>删除数据表</value>
+  </data>
+  <data name="tdrop_rusure" xml:space="preserve">
+    <value>您确定要删除数据库$2中的数据表 $1吗？ $3行数据也将被删除。</value>
+  </data>
+  <data name="tdrop_ok" xml:space="preserve">
+    <value>删除数据表</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>表数据</value>
+  </data>
+  <data name="view_pos" xml:space="preserve">
+    <value>$3中的$1行至$2行</value>
+  </data>
+  <data name="view_none" xml:space="preserve">
+    <value>这个表中未包含任何数据</value>
+  </data>
+  <data name="view_edit" xml:space="preserve">
+    <value>编辑选定的行</value>
+  </data>
+  <data name="view_new" xml:space="preserve">
+    <value>增加行</value>
+  </data>
+  <data name="view_delete" xml:space="preserve">
+    <value>删除选定的行</value>
+  </data>
+  <data name="view_nokey" xml:space="preserve">
+    <value>因为没有主关键字，这个表中的数据不能被编辑。</value>
+  </data>
+  <data name="view_all" xml:space="preserve">
+    <value>全选</value>
+  </data>
+  <data name="view_invert" xml:space="preserve">
+    <value>反选</value>
+  </data>
+  <data name="newdb_title" xml:space="preserve">
+    <value>创建数据库</value>
+  </data>
+  <data name="newdb_header" xml:space="preserve">
+    <value>新数据库选项</value>
+  </data>
+  <data name="newdb_db" xml:space="preserve">
+    <value>数据库名</value>
+  </data>
+  <data name="newdb_path" xml:space="preserve">
+    <value>数据库文件路径</value>
+  </data>
+  <data name="newdb_err" xml:space="preserve">
+    <value>创建数据库失败</value>
+  </data>
+  <data name="newdb_edb" xml:space="preserve">
+    <value>未输入或者无效数据库名</value>
+  </data>
+  <data name="newdb_ecannot" xml:space="preserve">
+    <value>您没有创建数据库的权限</value>
+  </data>
+  <data name="newdb_epath" xml:space="preserve">
+    <value>未输入数据库路径</value>
+  </data>
+  <data name="user_title" xml:space="preserve">
+    <value>PostgreSQL用户</value>
+  </data>
+  <data name="user_ecannot" xml:space="preserve">
+    <value>您没有编辑用户的权限</value>
+  </data>
+  <data name="user_name" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="user_db" xml:space="preserve">
+    <value>可以创建数据库？</value>
+  </data>
+  <data name="user_other" xml:space="preserve">
+    <value>可以创建用户？</value>
+  </data>
+  <data name="user_until" xml:space="preserve">
+    <value>有效直到..</value>
+  </data>
+  <data name="user_add" xml:space="preserve">
+    <value>创建新用户</value>
+  </data>
+  <data name="user_forever" xml:space="preserve">
+    <value>永远</value>
+  </data>
+  <data name="user_pass" xml:space="preserve">
+    <value>需要口令？</value>
+  </data>
+  <data name="user_edit" xml:space="preserve">
+    <value>编辑用户</value>
+  </data>
+  <data name="user_create" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="user_return" xml:space="preserve">
+    <value>用户列表</value>
+  </data>
+  <data name="user_header" xml:space="preserve">
+    <value>PostgreSQL用户细节</value>
+  </data>
+  <data name="user_passwd" xml:space="preserve">
+    <value>口令</value>
+  </data>
+  <data name="user_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="user_err" xml:space="preserve">
+    <value>保存用户失败</value>
+  </data>
+  <data name="user_epass" xml:space="preserve">
+    <value>未输入或者无效口令</value>
+  </data>
+  <data name="user_ename" xml:space="preserve">
+    <value>未输入或者无效用户名</value>
+  </data>
+  <data name="host_ecannot" xml:space="preserve">
+    <value>您没有编辑允许的主机的权限</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>经过许可的主机</value>
+  </data>
+  <data name="host_desc" xml:space="preserve">
+    <value>当一个客户机连接至数据库时，下面列出的主机就会按顺序处理，直到找出一个匹配的主机为止，而且该客户机可以得到许可，也可以被拒绝。</value>
+  </data>
+  <data name="host_local" xml:space="preserve">
+    <value>本地连接</value>
+  </data>
+  <data name="host_address" xml:space="preserve">
+    <value>主机地址</value>
+  </data>
+  <data name="host_db" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="host_auth" xml:space="preserve">
+    <value>验证模式</value>
+  </data>
+  <data name="host_any" xml:space="preserve">
+    <value>任何网络主机</value>
+  </data>
+  <data name="host_all" xml:space="preserve">
+    <value>所有的数据库</value>
+  </data>
+  <data name="host_same" xml:space="preserve">
+    <value>和用户名一样</value>
+  </data>
+  <data name="host_add" xml:space="preserve">
+    <value>创建新的得到许可的主机</value>
+  </data>
+  <data name="host_ident" xml:space="preserve">
+    <value>检查主机上的&lt;tt&gt;标志&lt;/tt&gt;服务器</value>
+  </data>
+  <data name="host_trust" xml:space="preserve">
+    <value>没有验证需要</value>
+  </data>
+  <data name="host_reject" xml:space="preserve">
+    <value>拒绝连接</value>
+  </data>
+  <data name="host_password" xml:space="preserve">
+    <value>明文口令</value>
+  </data>
+  <data name="host_crypt" xml:space="preserve">
+    <value>加密口令</value>
+  </data>
+  <data name="host_krb4" xml:space="preserve">
+    <value>Kerberos 版本4</value>
+  </data>
+  <data name="host_krb5" xml:space="preserve">
+    <value>kerberos 版本5</value>
+  </data>
+  <data name="host_passwordarg" xml:space="preserve">
+    <value>使用口令文件</value>
+  </data>
+  <data name="host_create" xml:space="preserve">
+    <value>创建得到许可的主机</value>
+  </data>
+  <data name="host_edit" xml:space="preserve">
+    <value>编辑得到许可的主机</value>
+  </data>
+  <data name="host_single" xml:space="preserve">
+    <value>单主机</value>
+  </data>
+  <data name="host_network" xml:space="preserve">
+    <value>网络</value>
+  </data>
+  <data name="host_netmask" xml:space="preserve">
+    <value>网络掩码</value>
+  </data>
+  <data name="host_return" xml:space="preserve">
+    <value>主机访问列表</value>
+  </data>
+  <data name="host_err" xml:space="preserve">
+    <value>保存允许主机失败</value>
+  </data>
+  <data name="host_eident" xml:space="preserve">
+    <value>未输入或者无效用户映射</value>
+  </data>
+  <data name="host_epassword" xml:space="preserve">
+    <value>未输入或者无效口令文件</value>
+  </data>
+  <data name="host_enetmask" xml:space="preserve">
+    <value>未输入或者无效网络掩码</value>
+  </data>
+  <data name="host_enetwork" xml:space="preserve">
+    <value>未输入或者无效网络</value>
+  </data>
+  <data name="host_ehost" xml:space="preserve">
+    <value>未输入或者无效主机IP地址</value>
+  </data>
+  <data name="host_move" xml:space="preserve">
+    <value>移动</value>
+  </data>
+  <data name="grant_title" xml:space="preserve">
+    <value>授予特权</value>
+  </data>
+  <data name="grant_tvi" xml:space="preserve">
+    <value>对象</value>
+  </data>
+  <data name="grant_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="grant_db" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="grant_public" xml:space="preserve">
+    <value>每个人</value>
+  </data>
+  <data name="grant_group" xml:space="preserve">
+    <value>组 $1</value>
+  </data>
+  <data name="grant_add" xml:space="preserve">
+    <value>增加在数据库的授权：</value>
+  </data>
+  <data name="grant_return" xml:space="preserve">
+    <value>特权列表</value>
+  </data>
+  <data name="grant_ecannot" xml:space="preserve">
+    <value>您没有编辑特权列表的权限</value>
+  </data>
+  <data name="grant_create" xml:space="preserve">
+    <value>创建授权</value>
+  </data>
+  <data name="grant_edit" xml:space="preserve">
+    <value>编辑授权</value>
+  </data>
+  <data name="grant_header" xml:space="preserve">
+    <value>授权用户特权</value>
+  </data>
+  <data name="grant_to" xml:space="preserve">
+    <value>授特权于</value>
+  </data>
+  <data name="grant_table" xml:space="preserve">
+    <value>表</value>
+  </data>
+  <data name="grant_view" xml:space="preserve">
+    <value>视图或索引</value>
+  </data>
+  <data name="grant_users" xml:space="preserve">
+    <value>授特权予</value>
+  </data>
+  <data name="grant_user" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="grant_what" xml:space="preserve">
+    <value>特权</value>
+  </data>
+  <data name="grant_r" xml:space="preserve">
+    <value>表</value>
+  </data>
+  <data name="grant_v" xml:space="preserve">
+    <value>视图</value>
+  </data>
+  <data name="grant_i" xml:space="preserve">
+    <value>索引</value>
+  </data>
+  <data name="grant_S" xml:space="preserve">
+    <value>序列</value>
+  </data>
+  <data name="grant_none" xml:space="preserve">
+    <value>没有要授予特权的表、视图、序列或者索引存在。</value>
+  </data>
+  <data name="group_title" xml:space="preserve">
+    <value>PostgreSQ组</value>
+  </data>
+  <data name="group_ecannot" xml:space="preserve">
+    <value>您没有编辑组的权限</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>组名</value>
+  </data>
+  <data name="group_id" xml:space="preserve">
+    <value>组标识</value>
+  </data>
+  <data name="group_mems" xml:space="preserve">
+    <value>成员</value>
+  </data>
+  <data name="group_add" xml:space="preserve">
+    <value>创建新组</value>
+  </data>
+  <data name="group_edit" xml:space="preserve">
+    <value>编辑组</value>
+  </data>
+  <data name="group_create" xml:space="preserve">
+    <value>创建组</value>
+  </data>
+  <data name="group_header" xml:space="preserve">
+    <value>PostgreSQ组的细节</value>
+  </data>
+  <data name="group_return" xml:space="preserve">
+    <value>组列表</value>
+  </data>
+  <data name="group_err" xml:space="preserve">
+    <value>保存组失败</value>
+  </data>
+  <data name="group_ename" xml:space="preserve">
+    <value>未输入或者无效组名</value>
+  </data>
+  <data name="group_egid" xml:space="preserve">
+    <value>未输入或者无效组标识</value>
+  </data>
+  <data name="group_etaken" xml:space="preserve">
+    <value>组名已在使用中</value>
+  </data>
+  <data name="group_none" xml:space="preserve">
+    <value>现在没有PostgreSQ组</value>
+  </data>
+  <data name="esql" xml:space="preserve">
+    <value>SQL $1 失败:$2</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>启动PostgreSQ服务器</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>停止PostgreSQ服务器</value>
+  </data>
+  <data name="log_db_create" xml:space="preserve">
+    <value>创建数据库$1</value>
+  </data>
+  <data name="log_db_delete" xml:space="preserve">
+    <value>删除数据库$1</value>
+  </data>
+  <data name="log_table_create" xml:space="preserve">
+    <value>在数据库$2中创建表$1</value>
+  </data>
+  <data name="log_table_delete" xml:space="preserve">
+    <value>删除数据库$2中的表$1</value>
+  </data>
+  <data name="log_field_create" xml:space="preserve">
+    <value>在数据库$3的$2中增加字段$1 $4</value>
+  </data>
+  <data name="log_field_modify" xml:space="preserve">
+    <value>修改数据库$3的$2中的字段$1 $4</value>
+  </data>
+  <data name="log_field_delete" xml:space="preserve">
+    <value>删除数据库$3的$2中的字段$1</value>
+  </data>
+  <data name="log_data_create" xml:space="preserve">
+    <value>在数据库$3中向表$2中增加行</value>
+  </data>
+  <data name="log_data_modify" xml:space="preserve">
+    <value>修改在数据库$3的表$2中的$1行</value>
+  </data>
+  <data name="log_data_delete" xml:space="preserve">
+    <value>删除在数据库$3的表$2中的$1行</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>执行在数据库$1中的SQL语句</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>执行在数据库 $1中的SQL命令$2</value>
+  </data>
+  <data name="log_create_user" xml:space="preserve">
+    <value>创建用户$1</value>
+  </data>
+  <data name="log_delete_user" xml:space="preserve">
+    <value>删除用户$1</value>
+  </data>
+  <data name="log_modify_user" xml:space="preserve">
+    <value>修改用户$1</value>
+  </data>
+  <data name="log_create_group" xml:space="preserve">
+    <value>创建组$1</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>删除组 $1</value>
+  </data>
+  <data name="log_modify_group" xml:space="preserve">
+    <value>修改组$1</value>
+  </data>
+  <data name="log_create_local" xml:space="preserve">
+    <value>创建允许的本地连接</value>
+  </data>
+  <data name="log_modify_local" xml:space="preserve">
+    <value>修改得到许可的本地连接</value>
+  </data>
+  <data name="log_delete_local" xml:space="preserve">
+    <value>删除得到许可的本地连接</value>
+  </data>
+  <data name="log_move_local" xml:space="preserve">
+    <value>移动得到许可的本地连接</value>
+  </data>
+  <data name="log_create_all" xml:space="preserve">
+    <value>创建任何得到允许的主机</value>
+  </data>
+  <data name="log_modify_all" xml:space="preserve">
+    <value>修改任何得到允许的主机</value>
+  </data>
+  <data name="log_delete_all" xml:space="preserve">
+    <value>删除任何得到允许的主机</value>
+  </data>
+  <data name="log_move_all" xml:space="preserve">
+    <value>移动任何得到许可的主机</value>
+  </data>
+  <data name="log_create_hba" xml:space="preserve">
+    <value>创建得到允许的主机$1</value>
+  </data>
+  <data name="log_modify_hba" xml:space="preserve">
+    <value>修改得到允许的主机$1</value>
+  </data>
+  <data name="log_delete_hba" xml:space="preserve">
+    <value>删除得到允许的主机$1</value>
+  </data>
+  <data name="log_move_hba" xml:space="preserve">
+    <value>移动得到许可的主机$1</value>
+  </data>
+  <data name="log_grant" xml:space="preserve">
+    <value>授予对数据库$2中在$1上的特权</value>
+  </data>
+  <data name="acl_dbs" xml:space="preserve">
+    <value>这个用户可以管理的数据库</value>
+  </data>
+  <data name="acl_dbscannot" xml:space="preserve">
+    <value>在启动PostgreSQL数据库服务器之后，该访问控制将会生效。</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>所有数据库</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>选择..</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>可以创建新的数据库吗？</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>能删除数据库？</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>能关闭或者启动PostgrSQL 服务器吗？</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>能编辑用户、组及授权吗？</value>
+  </data>
+</root>

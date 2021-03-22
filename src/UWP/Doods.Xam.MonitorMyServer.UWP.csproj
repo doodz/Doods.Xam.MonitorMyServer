@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -209,19 +211,23 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.ApiClientBase.Std\Doods.Framework.ApiClientBase.Std.csproj">
+    <ProjectReference
+      Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.ApiClientBase.Std\Doods.Framework.ApiClientBase.Std.csproj">
       <Project>{f8e5d141-294d-458d-912d-08c15275ea80}</Project>
       <Name>Doods.Framework.ApiClientBase.Std</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj">
+    <ProjectReference
+      Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Std\Doods.Framework.Mobile.Std.csproj">
       <Project>{b2a65829-856a-4134-8f1f-3e18243ebf2f}</Project>
       <Name>Doods.Framework.Mobile.Std</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj">
+    <ProjectReference
+      Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Repository.Std\Doods.Framework.Repository.Std.csproj">
       <Project>{3e255e79-4e55-45a8-b086-912a23deba7c}</Project>
       <Name>Doods.Framework.Repository.Std</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Ssh.Std\Doods.Framework.Ssh.Std.csproj">
+    <ProjectReference
+      Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Ssh.Std\Doods.Framework.Ssh.Std.csproj">
       <Project>{ab5249fe-a8c7-4877-a5b6-0e70dc4703d1}</Project>
       <Name>Doods.Framework.Ssh.Std</Name>
     </ProjectReference>
@@ -229,7 +235,8 @@
       <Project>{59006901-8ea2-4cd1-a283-301563a9bcc9}</Project>
       <Name>Doods.Framework.Std</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Ssh.Std\Doods.Framework.Mobile.Ssh.Std.csproj">
+    <ProjectReference
+      Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Mobile.Ssh.Std\Doods.Framework.Mobile.Ssh.Std.csproj">
       <Project>{a2c60d12-29f5-4289-8bb2-d817f15ac75e}</Project>
       <Name>Doods.Framework.Mobile.Ssh.Std</Name>
     </ProjectReference>
@@ -254,5 +261,6 @@
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import
+    Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 </Project>

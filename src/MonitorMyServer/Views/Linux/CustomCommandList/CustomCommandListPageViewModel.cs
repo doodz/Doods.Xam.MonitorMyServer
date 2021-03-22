@@ -15,32 +15,37 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
     {
         private readonly IMessageBoxService _messageBoxService;
         private readonly ISshService _sshService;
-        private  ShellClient _shellClient;
         public ShellBox _shellBox;
-        public ICommand ClearCommand { get; }
-        public ICommand ExecuteCommand { get; }
-        public ShellBox ShellBox
-        {
-            get { return _shellBox;} private set{ SetProperty(ref _shellBox, value); } }
+        private ShellClient _shellClient;
+
         public CustomCommandListPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
         {
             _sshService = sshService;
-           
+
 
             _messageBoxService = messageBoxService;
             RunCommand = new Command(Run);
             ClearCommand = new Command(Clear);
-            ExecuteCommand = new Command(o=>Execute(o));
+            ExecuteCommand = new Command(o => Execute(o));
         }
+
+        public ICommand ClearCommand { get; }
+        public ICommand ExecuteCommand { get; }
+
+        public ShellBox ShellBox
+        {
+            get => _shellBox;
+            private set => SetProperty(ref _shellBox, value);
+        }
+
+        public ICommand RunCommand { get; }
 
 
         private void Execute(object param)
         {
-            if(param is string str)
+            if (param is string str)
                 toto(str);
         }
-
-        public ICommand RunCommand { get; }
 
         protected override void AddItem(object obj)
         {
@@ -57,22 +62,14 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         {
             if (obj == null) return;
             if (obj is CustomCommandSsh item)
-            {
                 //var resutl = await _sshService.RunCommand(item.CommandString);
                 //_messageBoxService.ShowAlert("Alert", resutl);
                 toto(item.CommandString);
-               
-            }
-
-
         }
 
         protected override Task OnInternalAppearingAsync()
         {
-            if (!_sshService.IsConnected())
-            {
-                _sshService.Connect();
-            }
+            if (!_sshService.IsConnected()) _sshService.Connect();
             _shellClient = _sshService.CreateShell();
             _shellClient.Connect();
             ShellBox = new ShellBox(_shellClient);
@@ -86,15 +83,13 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             ShellBox.Unsubscribe();
             _shellClient.Stop();
 
-            return  base.OnInternalDisappearingAsync();
+            return base.OnInternalDisappearingAsync();
         }
 
         private void toto(string totostr)
         {
             ShellBox.Execute(totostr);
         }
-
-        
 
 
         protected override void EditItem(object obj)

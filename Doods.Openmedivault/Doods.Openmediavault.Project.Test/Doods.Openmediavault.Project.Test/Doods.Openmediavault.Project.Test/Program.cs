@@ -16,7 +16,7 @@ namespace Doods.Openmediavault.Project.Test
             var con = GetConnection();
             var client = new OmvHttpService(null, con);
             client.SetHandlers(new NewtonsoftJsonSerializer(LocalJsonConverter.Singleton));
-            if (client.LoginAsync("admin", "admin").GetAwaiter().GetResult())
+            if (client.LoginAsync("admin", "openmediavault").GetAwaiter().GetResult())
             {
                 var objTest = new OmvRpcService(client);
 
@@ -29,7 +29,7 @@ namespace Doods.Openmediavault.Project.Test
 
         private static IConnection GetConnection()
         {
-            return new HttpConnection("https://192.168.1.40", 80);
+            return new HttpConnection("http://192.168.1.47", 80);
         }
     }
 }

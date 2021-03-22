@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logi systemowe NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Zastosuj konfigurację</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Kliknij ten przycisk, aby aktywować bieżącą konfigurację Syslog-NG.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Zatrzymaj Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Kliknij ten przycisk, aby zatrzymać działającego demona Syslog-NG. Po zatrzymaniu wiadomości dziennika z innych programów nie będą już zapisywane w plikach dziennika.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Uruchom Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Kliknij ten przycisk, aby uruchomić demona Syslog-NG przy użyciu bieżącej konfiguracji.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indeks modułu</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Opcje rejestrowania</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Opcje dla wszystkich plików dziennika</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekundy</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>wpisy</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Czas czekać na ponowne otwarcie martwych połączeń</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Czas czekać przed zamknięciem bezczynnych połączeń</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Wiadomości do buforowania przed napisaniem</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Czas oczekiwania między wiadomościami statystycznymi</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Liczba wiadomości do buforowania</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Używać formatu łańcuchowej nazwy hosta?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Zachować oryginalne nazwy hostów?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Sprawdź nazwy hostów pod kątem prawidłowych znaków?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Wyrażenie regularne dla złych nazw hostów</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>W razie potrzeby utworzyć katalogi dla plików dziennika?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Domyślny właściciel plików dziennika</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Domyślna grupa plików dziennika</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Domyślne uprawnienia do plików dziennika</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Domyślny właściciel utworzonych katalogów</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Domyślna grupa dla utworzonych katalogów</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Domyślne uprawnienia dla utworzonych katalogów</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Czy odebrano wiadomości o czasie logowania?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Czy odwrotne wyszukiwania DNS?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Pamięć podręczna wyszukiwania DNS?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Rozmiar pamięci podręcznej DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Buforuj rekordy DNS dla</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Nie można wyszukać pamięci podręcznej DNS dla pamięci podręcznej</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Maksymalny rozmiar wiadomości dziennika</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Zalogować pełne nazwy hostów?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Zastąpić znaki kontrolne w nazwach plików?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Nie udało się zapisać opcji rejestrowania</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Brakujące lub nieprawidłowe wyrażenie regularne dla złych nazw hostów</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny rozmiar pamięci podręcznej DNS</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas pamięci podręcznej DNS</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny błąd pamięci podręcznej DNS</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Brakuje domyślnego właściciela plików dziennika</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Brak domyślnej grupy plików dziennika</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Brakuje domyślnych uprawnień do plików dziennika</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Brak domyślnego właściciela katalogów</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Brak domyślnej grupy dla katalogów</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Brakuje domyślnych uprawnień do katalogów</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na martwe połączenia</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na idealne połączenia</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Brakująca lub niepoprawna liczba wiadomości do buforowania przed zapisaniem</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania między wiadomościami statystycznymi</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Brakująca lub niepoprawna liczba wiadomości do buforowania</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny maksymalny rozmiar dziennika</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Miejsca docelowe dziennika</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Nazwa miejsca docelowego</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Napisz do</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Miejsce docelowe dziennika</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Plik</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Zalogowani użytkownicy</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Program wejściowy</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Rura Unix</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>Serwer syslog UDP</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Serwer syslog TCP</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Gniazdo datagramowe</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Gniazdo strumieniowe</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Wszyscy użytkownicy</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Tylko użytkownicy $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Host $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Widok ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Nie zdefiniowano jeszcze docelowych plików dziennika.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Usuń wybrane miejsca docelowe</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Dodaj nowy cel dziennika.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>miejsca docelowe dziennika</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Dziennik innego modułu</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Wyjście z $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Opcje miejsca docelowego dziennika</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Utwórz miejsce docelowe dziennika</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Edytuj miejsce docelowe dziennika</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Zaloguj nazwę miejsca docelowego</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Zaloguj się do ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Nazwa pliku</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Utworzyć katalogi?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Uprawnienia do katalogów</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Synchronizować po każdym zapisie?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Grupa dla pliku dziennika</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Właściciel pliku dziennika</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Uprawnienia do pliku dziennika</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Wiadomości między synchronizacjami</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Użytkownicy z listy</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Serwer Syslog</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Protokół sieciowy</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Adres serwera</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Port serwera</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Lokalny adres IP</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Port lokalny</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Gniazdo Unix</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Rodzaj</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Nazwa gniazda</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Nie udało się zapisać miejsca docelowego</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Miejsce docelowe o tej samej nazwie już istnieje</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Miejsce docelowe już nie istnieje!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa pliku</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy właściciel pliku dziennika</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa grupa plików dziennika</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Brakujące lub nieokresowe uprawnienia do pliku dziennika</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Brakujące lub nieokreślone uprawnienia do katalogu</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Brakująca lub niepoprawna liczba wiadomości między synchronizacjami</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Brakujących użytkowników do wysłania</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Brak programu, do którego można nakarmić</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Brak pliku potoku Unix</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy numer portu</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy lokalny adres IP</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy numer portu lokalnego</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy host lub adres serwera Syslog</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Brak nazwy gniazda Unix</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Nie udało się usunąć miejsc docelowych</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Miejsce docelowe $1 nie może zostać usunięte, ponieważ jest używane przez cel dziennika</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Nie udało się usunąć źródeł</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Źródło dziennika $1 nie może zostać usunięte, ponieważ jest używane przez cel dziennika</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Nie udało się usunąć filtrów</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Filtr dziennika $1 nie może zostać usunięty, ponieważ jest używany przez cel dziennika</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Nie udało się usunąć celów dziennika</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Filtry dziennika</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Nazwa filtra</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Warunki</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Nie zdefiniowano jeszcze filtrów dziennika.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Usuń wybrane filtry</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Dodaj nowy filtr dziennika.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>filtry dziennika</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>priorytet &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>priorytety &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>Priorytety $1 </value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>obiekt &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 obiektów</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>program &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>pasuje do „$1”</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>z nazwy hosta &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>od nadawcy &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Utwórz filtr dziennika</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Edytuj filtr dziennika</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Szczegóły specyfikacji filtru dziennika</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Nazwa filtra</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Proste warunki (wszystkie muszą się zgadzać)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Złożone wyrażenie</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>W pierwszej kolejności ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Z programu ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Dopasuj wyrażenie ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Z obiektu ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Od nazwy hosta ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Z sieci IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Nie udało się zapisać filtru dziennika</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Brakująca lub niepoprawna nazwa filtra</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Filtr o tej samej nazwie już istnieje</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Wprowadzono nic do filtrowania</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Nie wybrano priorytetów</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Nie wybrano żadnych obiektów</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa programu</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Brakuje wyrażenia regularnego</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa hosta</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy adres IP sieci</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa maska sieci</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Błąd złożonego wyrażenia</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filtr już nie istnieje!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Zaloguj cele</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Źródła</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Filtry</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Miejsca docelowe</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Dodaj nowy cel dziennika.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Usuń wybrane cele dziennika</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>rejestrować cele</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Żaden</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Utwórz cel dziennika</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Edytuj cel dziennika</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Wybierz źródło dziennika, filtr i miejsce docelowe</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Źródła dziennika</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filtry do zastosowania</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Pliki docelowe</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Nie przetwarzaj więcej celów</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Cel dziennika zapasowego</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Przetwarzaj wszystkie źródła</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Opcje docelowe</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Cel dziennika już nie istnieje!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Nie udało się zapisać celu dziennika</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Nie wybrano żadnych źródeł</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Źródła dziennika</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Nie zdefiniowano jeszcze żadnych źródeł!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Dodaj nowe źródło dziennika.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Nazwa źródła</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Zaloguj źródła danych</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Usuń wybrane źródła</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Wewnętrzne komunikaty Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Gniazdo strumieniowe</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Gniazdo datagramowe</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>Serwer TCP</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>Serwer UDP</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Plik dziennika jądra</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Nazwana rura</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Strumień słoneczny</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Serwer Syslog</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>źródła dziennika</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Żaden</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Utwórz źródło dziennika</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Edytuj źródło dziennika</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Opcje źródła dziennika</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Każdy</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Żaden</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Źródło już nie istnieje!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Nazwa źródła</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Typy źródeł dziennika</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Właściciel pliku gniazda</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Grupa plików gniazd</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Uprawnienia do pliku gniazda</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Czy utrzymywać otwarte połączenia podczas restartu?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maksymalna liczba jednoczesnych połączeń?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Lokalny adres IP</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Numer portu lokalnego</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Używać utrzymywania protokołu TCP?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Prefiks komunikatów dziennika</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Rozmiar bloku wiadomości</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Nie udało się zapisać źródła dziennika</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa źródła</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Źródło dziennika o tej samej nazwie już istnieje</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy właściciel pliku gniazda</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa grupa plików gniazda</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Brakujące lub nieokreślone uprawnienia do pliku gniazda</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa liczba maksymalnych połączeń</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy lokalny adres IP</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy numer portu lokalnego</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Brak prefiksu dla komunikatów dziennika</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny rozmiar bloku wiadomości</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa pliku gniazda UNIX</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa pliku dziennika jądra</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Brak lub nieprawidłowa nazwa pliku potoku nazwanego</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Nazwa pliku drzwi</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa pliku strumieni Sun</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa pliku drzwi przesyłanych strumieniowo przez firmę Sun</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Protokół sieciowy</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Wyświetl plik dziennika</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Ostatnie $1 wierszy z $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Plik dziennika jest pusty</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Odświeżać</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Pokaż tylko wiersze z tekstem $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Nie można zastosować konfiguracji</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Nie działa!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Nie udało się uruchomić serwera Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Nie udało się zatrzymać serwera Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Utworzono miejsce docelowe dziennika $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Zmodyfikowano miejsce docelowe dziennika $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Usunięto miejsce docelowe dziennika $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Usunięto $1 dzienników docelowych</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Utworzono filtr dziennika $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Zmodyfikowany filtr dziennika $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Usunięto filtr dziennika $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Usunięto filtry dziennika $1 </value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Utworzono źródło dziennika $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Zmodyfikowane źródło dziennika $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Usunięte źródło dziennika $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Usunięte źródła dziennika $1 </value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Utworzono cel dziennika</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Zmodyfikowany cel dziennika</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Usunięto cel dziennika</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Usunięte cele dziennika $1 </value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Zastosowana konfiguracja</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Uruchomiono serwer Syslog-NG</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Zatrzymano serwer Syslog-NG</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Zmieniono opcje globalne</value>
+  </data>
+</root>

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -13,27 +12,9 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
 {
-
     public class LogLineModel
     {
-
-        public bool IsLast { get; set; } = true;
         private LogLine _logLine;
-         public long Rownum { get;  }
-
-         public long Ts { get;  }
-
-         public DateTime Date { get;}
-
-         public string Title { get; }
-         public string Hour
-         {
-             get { return Date.ToString("T"); }
-         }
-
-         public string Hostname { get;  }
-
-         public string Message { get;  }
 
 
         public LogLineModel(LogLine logline)
@@ -46,17 +27,31 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
 
             var tmp = logline.Message.Split(':');
             Title = tmp[0];
-            Message = logline.Message.Replace(Title+':',string.Empty);
-            DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(logline.Ts);
+            Message = logline.Message.Replace(Title + ':', string.Empty);
+            var dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds(logline.Ts);
             Date = dateTimeOffset.UtcDateTime;
         }
+
+        public bool IsLast { get; set; } = true;
+        public long Rownum { get; }
+
+        public long Ts { get; }
+
+        public DateTime Date { get; }
+
+        public string Title { get; }
+
+        public string Hour => Date.ToString("T");
+
+        public string Hostname { get; }
+
+        public string Message { get; }
     }
 
     public class OpenmediavaultSystemLogsViewModel : ViewModelWhithState
     {
-        private OmvLogFileEnum _selectedLogFile;
-        public ObservableRangeCollection<LogLineModel> LogsLines { get; } = new ObservableRangeCollection<LogLineModel>();
         private readonly IOmvService _sshService;
+        private OmvLogFileEnum _selectedLogFile;
 
         public OpenmediavaultSystemLogsViewModel(IOmvService sshService)
         {
@@ -66,6 +61,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
             SyncItemCommand = new Command(SyncItem);
         }
 
+        public ObservableRangeCollection<LogLineModel> LogsLines { get; } = new ObservableRangeCollection<LogLineModel>();
+
         public ICommand DeleteItemCommand { get; }
         public ICommand DownloadItemCommand { get; }
         public ICommand SyncItemCommand { get; }
@@ -73,8 +70,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
         public OmvLogFileEnum SelectedLogFile
         {
             get => _selectedLogFile;
-            set => SetProperty(ref _selectedLogFile, value, async ()=>await GetLogs(),null);
+            set => SetProperty(ref _selectedLogFile, value, async () => await GetLogs(), null);
         }
+
+        public string LasteDate { get; set; }
 
         private async void SyncItem(object o)
         {
@@ -99,7 +98,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
         {
             return Task.WhenAll(GetLogs());
         }
-        public string LasteDate { get; set; }
+
         private async Task GetLogs()
         {
             SetLabelsStateItem(Resource.Dowloading, Resource.PleaseWait);
@@ -110,18 +109,17 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs
 
                 var toto = items.Select(i => new LogLineModel(i));
 
-             
 
-              
                 if (items.Any())
                 {
-                    LasteDate = items.First().Date.ToString();
+                    LasteDate = items.First().Date;
                     toto.Last().IsLast = false;
                 }
                 else
                 {
                     LasteDate = string.Empty;
                 }
+
                 LogsLines.ReplaceRange(toto);
             }
             catch

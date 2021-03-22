@@ -4,8 +4,6 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
 {
     public abstract class OmvRequestBase : ISshRequest
     {
-
-       
         public OmvRequestBase(string commandText)
         {
             CommandText = commandText;

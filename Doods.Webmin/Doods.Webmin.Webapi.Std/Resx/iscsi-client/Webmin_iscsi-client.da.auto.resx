@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>iSCSI-klient</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>modul indeks</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Start ved opstart?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Skift denne mulighed for at kontrollere, om iSCSI-klienten startes ved starttidspunktet eller ej. Dette er nødvendigt for, at filsystemer, der er monteret fra iSCSI-servere, automatisk monteres.</value>
+  </data>
+  <data name="check_econfig" xml:space="preserve">
+    <value>ISCSI-klientkonfigurationsfilen $1 blev ikke fundet på dit system.</value>
+  </data>
+  <data name="check_eiscsiadm" xml:space="preserve">
+    <value>ISCSI-klientadministrationsprogrammet $1 blev ikke fundet på dit system.</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>Autentificeringsindstillinger</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>iSCSI klient og servergodkendelse</value>
+  </data>
+  <data name="auth_name" xml:space="preserve">
+    <value>Lokalt systeminitiatornavn</value>
+  </data>
+  <data name="auth_newname" xml:space="preserve">
+    <value>Generer et nyt tilfældigt navn</value>
+  </data>
+  <data name="auth_method" xml:space="preserve">
+    <value>Godkendelsesmetode</value>
+  </data>
+  <data name="auth_method_none" xml:space="preserve">
+    <value>Godkend ikke</value>
+  </data>
+  <data name="auth_userpass" xml:space="preserve">
+    <value>Login til server</value>
+  </data>
+  <data name="auth_userpass_def" xml:space="preserve">
+    <value>Ingen behov</value>
+  </data>
+  <data name="auth_userpass_user" xml:space="preserve">
+    <value>Brugernavn</value>
+  </data>
+  <data name="auth_userpass_pass" xml:space="preserve">
+    <value>og adgangskode</value>
+  </data>
+  <data name="auth_userpass_in" xml:space="preserve">
+    <value>Login til klient</value>
+  </data>
+  <data name="auth_dmethod" xml:space="preserve">
+    <value>Opdagelsesgodkendelsesmetode</value>
+  </data>
+  <data name="auth_duserpass" xml:space="preserve">
+    <value>Opdagelses login til server</value>
+  </data>
+  <data name="auth_duserpass_in" xml:space="preserve">
+    <value>Opdagelses login til klient</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>Kunne ikke gemme godkendelsesindstillinger</value>
+  </data>
+  <data name="auth_eusername" xml:space="preserve">
+    <value>Manglende brugernavn til serveren</value>
+  </data>
+  <data name="auth_epassword" xml:space="preserve">
+    <value>Manglende adgangskode til server</value>
+  </data>
+  <data name="auth_eusername_in" xml:space="preserve">
+    <value>Manglende brugernavn til klienten</value>
+  </data>
+  <data name="auth_epassword_in" xml:space="preserve">
+    <value>Manglende adgangskode til klienten</value>
+  </data>
+  <data name="auth_edusername" xml:space="preserve">
+    <value>Manglende brugernavn til opdagelse til server</value>
+  </data>
+  <data name="auth_edpassword" xml:space="preserve">
+    <value>Manglende opdagelsesadgangskode til server</value>
+  </data>
+  <data name="auth_edusername_in" xml:space="preserve">
+    <value>Manglende brugernavn til opdagelse for klient</value>
+  </data>
+  <data name="auth_edpassword_in" xml:space="preserve">
+    <value>Manglende opdagelsesadgangskode til klient</value>
+  </data>
+  <data name="auth_egen" xml:space="preserve">
+    <value>Kunne ikke generere et nyt navn!</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>iSCSI Timeouts</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>iSCSI klient timeout muligheder</value>
+  </data>
+  <data name="timeout_timeout" xml:space="preserve">
+    <value>Tid til at vente, før SCSI-kommandoer mislykkes</value>
+  </data>
+  <data name="timeout_immediate" xml:space="preserve">
+    <value>Fejl straks</value>
+  </data>
+  <data name="timeout_forever" xml:space="preserve">
+    <value>Vent evigt</value>
+  </data>
+  <data name="timeout_wait" xml:space="preserve">
+    <value>Vent på</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>sekunder</value>
+  </data>
+  <data name="timeout_login_timeout" xml:space="preserve">
+    <value>Tid til at vente på login</value>
+  </data>
+  <data name="timeout_logout_timeout" xml:space="preserve">
+    <value>Tid til at vente på logout</value>
+  </data>
+  <data name="timeout_noop_out_interval" xml:space="preserve">
+    <value>Tid til at vente inden pinging</value>
+  </data>
+  <data name="timeout_noop_out_timeout" xml:space="preserve">
+    <value>Tid til at vente på ping, før det mislykkes</value>
+  </data>
+  <data name="timeout_abort_timeout" xml:space="preserve">
+    <value>Tid til at vente på abort-respons, før det mislykkes</value>
+  </data>
+  <data name="timeout_lu_reset_timeout" xml:space="preserve">
+    <value>Tid til at vente på logisk enhedssvar, før det mislykkes</value>
+  </data>
+  <data name="timeout_tgt_reset_timeout" xml:space="preserve">
+    <value>Tid til at vente på målsvar, før det mislykkes</value>
+  </data>
+  <data name="timeout_err" xml:space="preserve">
+    <value>Kunne ikke gemme timeouts</value>
+  </data>
+  <data name="timeout_etimeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente, før SCSI-kommandoer mislykkes</value>
+  </data>
+  <data name="timeout_elogin_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på login</value>
+  </data>
+  <data name="timeout_elogout_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på logout</value>
+  </data>
+  <data name="timeout_enoop_out_interval" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente inden pinging</value>
+  </data>
+  <data name="timeout_enoop_out_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på ping, før det mislykkes</value>
+  </data>
+  <data name="timeout_eabort_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på abort-respons, før det mislykkes</value>
+  </data>
+  <data name="timeout_elu_reset_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på et logisk enhedssvar, før det mislykkes</value>
+  </data>
+  <data name="timeout_etgt_reset_timeout" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk tid til at vente på målsvar, før det mislykkes</value>
+  </data>
+  <data name="iscsi_title" xml:space="preserve">
+    <value>iSCSI-indstillinger</value>
+  </data>
+  <data name="iscsi_header" xml:space="preserve">
+    <value>Andre iSCSI-indstillinger</value>
+  </data>
+  <data name="iscsi_startup" xml:space="preserve">
+    <value>Forbind sessioner ved starttidspunktet?</value>
+  </data>
+  <data name="iscsi_retry" xml:space="preserve">
+    <value>Antal gange, du skal prøve login igen</value>
+  </data>
+  <data name="iscsi_cmds" xml:space="preserve">
+    <value>Maksimale kommandoer i kø pr. Session</value>
+  </data>
+  <data name="iscsi_queue" xml:space="preserve">
+    <value>Maksimale kommandoer i kø pr. Enhed</value>
+  </data>
+  <data name="iscsi_err" xml:space="preserve">
+    <value>Kunne ikke gemme iSCSI-indstillinger</value>
+  </data>
+  <data name="iscsi_eretry" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk antal gange for at prøve at logge ind igen</value>
+  </data>
+  <data name="iscsi_ecmds" xml:space="preserve">
+    <value>Manglende eller ikke-numeriske maksimale kommandoer i kø pr. Session</value>
+  </data>
+  <data name="iscsi_equeue" xml:space="preserve">
+    <value>Manglende eller ikke-numeriske maksimale kommandoer i kø pr. Enhed</value>
+  </data>
+  <data name="ifaces_title" xml:space="preserve">
+    <value>iSCSI-grænseflader</value>
+  </data>
+  <data name="ifaces_elist" xml:space="preserve">
+    <value>Kunne ikke liste grænseflader : $1 </value>
+  </data>
+  <data name="ifaces_name" xml:space="preserve">
+    <value>Grænsefladens navn</value>
+  </data>
+  <data name="ifaces_transport" xml:space="preserve">
+    <value>Transportere</value>
+  </data>
+  <data name="ifaces_uses" xml:space="preserve">
+    <value>Brugt af</value>
+  </data>
+  <data name="ifaces_none" xml:space="preserve">
+    <value>Ingen iSCSI-grænseflader er i øjeblikket aktive.</value>
+  </data>
+  <data name="ifaces_return" xml:space="preserve">
+    <value>grænseflader liste</value>
+  </data>
+  <data name="ifaces_header" xml:space="preserve">
+    <value>Tilføj iSCSI-interface</value>
+  </data>
+  <data name="ifaces_delete" xml:space="preserve">
+    <value>Fjern valgte grænseflader</value>
+  </data>
+  <data name="ifaces_on" xml:space="preserve">
+    <value>Mål $1 på $2 </value>
+  </data>
+  <data name="ifaces_nouses" xml:space="preserve">
+    <value>Ingen forbindelser</value>
+  </data>
+  <data name="ifaces_ipaddress" xml:space="preserve">
+    <value>Kilde IP-adresse</value>
+  </data>
+  <data name="ifaces_hwaddress" xml:space="preserve">
+    <value>Mac-adresse</value>
+  </data>
+  <data name="ifaces_ifacename" xml:space="preserve">
+    <value>Kilde interface</value>
+  </data>
+  <data name="ifaces_ipaddressdef" xml:space="preserve">
+    <value>Automatisk</value>
+  </data>
+  <data name="ifaces_notset" xml:space="preserve">
+    <value>Automatisk</value>
+  </data>
+  <data name="iadd_err" xml:space="preserve">
+    <value>Kunne ikke tilføje interface</value>
+  </data>
+  <data name="iadd_eclash" xml:space="preserve">
+    <value>En grænseflade navngivet $1 findes allerede</value>
+  </data>
+  <data name="iadd_eipaddress" xml:space="preserve">
+    <value>Manglende eller ugyldig IP-adresse på kilden</value>
+  </data>
+  <data name="iadd_ehwaddress" xml:space="preserve">
+    <value>Manglende eller ugyldig MAC-adresse</value>
+  </data>
+  <data name="iadd_ename" xml:space="preserve">
+    <value>Interfacenavn mangler eller indeholder ugyldige tegn</value>
+  </data>
+  <data name="difaces_err" xml:space="preserve">
+    <value>Grænseflader kunne ikke fjernes</value>
+  </data>
+  <data name="difaces_enone" xml:space="preserve">
+    <value>Ingen valgt</value>
+  </data>
+  <data name="difaces_edelete" xml:space="preserve">
+    <value>Fjernelse af interface $1 mislykkedes : $2 </value>
+  </data>
+  <data name="difaces_title" xml:space="preserve">
+    <value>Fjern iSCSI-grænseflader</value>
+  </data>
+  <data name="difaces_rusure" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne de $1 valgte grænseflader?</value>
+  </data>
+  <data name="difaces_rusure1" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne grænsefladen $1 ?</value>
+  </data>
+  <data name="difaces_confirm" xml:space="preserve">
+    <value>Fjern grænseflader</value>
+  </data>
+  <data name="difaces_target" xml:space="preserve">
+    <value>iSCSI-mål</value>
+  </data>
+  <data name="difaces_ip" xml:space="preserve">
+    <value>iSCSI-server</value>
+  </data>
+  <data name="difaces_users" xml:space="preserve">
+    <value>Nogle forbindelser ved hjælp af disse grænseflader er i øjeblikket aktive og fungerer ikke, når grænsefladerne fjernes :</value>
+  </data>
+  <data name="conns_title" xml:space="preserve">
+    <value>iSCSI-forbindelser</value>
+  </data>
+  <data name="conns_elist" xml:space="preserve">
+    <value>Kunne ikke liste forbindelser : $1 </value>
+  </data>
+  <data name="conns_ip" xml:space="preserve">
+    <value>Server IP</value>
+  </data>
+  <data name="conns_sport" xml:space="preserve">
+    <value>Serverport</value>
+  </data>
+  <data name="conns_name" xml:space="preserve">
+    <value>Server navn</value>
+  </data>
+  <data name="conns_target" xml:space="preserve">
+    <value>Målnavn</value>
+  </data>
+  <data name="conns_device" xml:space="preserve">
+    <value>Lokal enhed</value>
+  </data>
+  <data name="conns_username" xml:space="preserve">
+    <value>Login brugernavn</value>
+  </data>
+  <data name="conns_nouser" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="conns_nodevice" xml:space="preserve">
+    <value>Ingen kortlagt</value>
+  </data>
+  <data name="conns_delete" xml:space="preserve">
+    <value>Frakobl valgt</value>
+  </data>
+  <data name="conns_none" xml:space="preserve">
+    <value>Ingen iSCSI-forbindelser er i øjeblikket aktive.</value>
+  </data>
+  <data name="conns_header" xml:space="preserve">
+    <value>Tilføj iSCSI-forbindelse</value>
+  </data>
+  <data name="conns_host" xml:space="preserve">
+    <value>iSCSI-serverværtsnavn eller IP</value>
+  </data>
+  <data name="conns_port" xml:space="preserve">
+    <value>iSCSI-serverport</value>
+  </data>
+  <data name="conns_start" xml:space="preserve">
+    <value>Forbinde ..</value>
+  </data>
+  <data name="conns_return" xml:space="preserve">
+    <value>liste over forbindelser</value>
+  </data>
+  <data name="conns_iface" xml:space="preserve">
+    <value>iSCSI-interface</value>
+  </data>
+  <data name="conns_ifacedef" xml:space="preserve">
+    <value>Vælg automatisk</value>
+  </data>
+  <data name="conns_ifaceerr" xml:space="preserve">
+    <value>Kunne ikke hente grænseflader : $1 </value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Tilføj iSCSI-forbindelse</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Kunne ikke tilføje iSCSI-forbindelse</value>
+  </data>
+  <data name="add_ehost" xml:space="preserve">
+    <value>Manglende eller ikke-opløselig værtsnavn</value>
+  </data>
+  <data name="add_eport" xml:space="preserve">
+    <value>Manglende eller ikke-numerisk port</value>
+  </data>
+  <data name="add_etargets" xml:space="preserve">
+    <value>Ingen iSCSI-mål kunne hentes fra $1:$2 </value>
+  </data>
+  <data name="add_etargets2" xml:space="preserve">
+    <value>Der blev ikke fundet nogen iSCSI-mål på $1 </value>
+  </data>
+  <data name="add_target" xml:space="preserve">
+    <value>Opret forbindelse til målet</value>
+  </data>
+  <data name="add_alltargets" xml:space="preserve">
+    <value>Alle mål</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Tilføj forbindelse</value>
+  </data>
+  <data name="add_etarget" xml:space="preserve">
+    <value>Intet mål $1 fundet</value>
+  </data>
+  <data name="add_dev" xml:space="preserve">
+    <value>Tilsluttet som $1 </value>
+  </data>
+  <data name="add_used" xml:space="preserve">
+    <value>Allerede tilsluttet</value>
+  </data>
+  <data name="add_on" xml:space="preserve">
+    <value>$1 på $2 </value>
+  </data>
+  <data name="add_auth" xml:space="preserve">
+    <value>Login til server</value>
+  </data>
+  <data name="add_auth1" xml:space="preserve">
+    <value>Brug standardgodkendelsesmetode</value>
+  </data>
+  <data name="add_auth0" xml:space="preserve">
+    <value>Login som $2 med kodeord $3 ved hjælp af metode $1 </value>
+  </data>
+  <data name="dconns_err" xml:space="preserve">
+    <value>Kunne ikke afbryde forbindelserne</value>
+  </data>
+  <data name="dconns_enone" xml:space="preserve">
+    <value>Ingen valgt</value>
+  </data>
+  <data name="dconns_edelete" xml:space="preserve">
+    <value>Fjernelse af mål $2 fra vært $1 mislykkedes : $3 </value>
+  </data>
+  <data name="dconns_title" xml:space="preserve">
+    <value>Frakobl iSCSI-forbindelser</value>
+  </data>
+  <data name="dconns_rusure" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne de $1 valgte forbindelser?</value>
+  </data>
+  <data name="dconns_rusure1" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne forbindelsen til $1 ?</value>
+  </data>
+  <data name="dconns_rusure2" xml:space="preserve">
+    <value>Er du sikker på, at du vil fjerne forbindelsen til $1 for enhed $2 ?</value>
+  </data>
+  <data name="dconns_users" xml:space="preserve">
+    <value>Nogle partitioner fra disse forbindelser er i øjeblikket i brug og fungerer ikke, når forbindelserne fjernes :</value>
+  </data>
+  <data name="dconns_part" xml:space="preserve">
+    <value>Skillevæg</value>
+  </data>
+  <data name="dconns_use" xml:space="preserve">
+    <value>Brugt af</value>
+  </data>
+  <data name="dconns_size" xml:space="preserve">
+    <value>Partitionsstørrelse</value>
+  </data>
+  <data name="dconns_confirm" xml:space="preserve">
+    <value>Fjern forbindelser</value>
+  </data>
+  <data name="dconns_unused" xml:space="preserve">
+    <value>Ubrugt</value>
+  </data>
+  <data name="vconn_title" xml:space="preserve">
+    <value>iSCSI-forbindelse</value>
+  </data>
+  <data name="vconn_egone" xml:space="preserve">
+    <value>Den valgte forbindelse findes ikke længere!</value>
+  </data>
+  <data name="vconn_header" xml:space="preserve">
+    <value>iSCSI-forbindelsesdetaljer</value>
+  </data>
+  <data name="vconn_proto" xml:space="preserve">
+    <value>Netværksprotokol</value>
+  </data>
+  <data name="vconn_init" xml:space="preserve">
+    <value>Lokalt initiativnavn</value>
+  </data>
+  <data name="vconn_connection" xml:space="preserve">
+    <value>Tilslutningstilstand</value>
+  </data>
+  <data name="vconn_session" xml:space="preserve">
+    <value>Session status</value>
+  </data>
+  <data name="vconn_username" xml:space="preserve">
+    <value>Logget ind med brugernavn</value>
+  </data>
+  <data name="vconn_password" xml:space="preserve">
+    <value>Logget ind med adgangskode</value>
+  </data>
+  <data name="vconn_username_in" xml:space="preserve">
+    <value>Kundens brugernavn</value>
+  </data>
+  <data name="vconn_password_in" xml:space="preserve">
+    <value>Klientadgangskode</value>
+  </data>
+  <data name="vconn_none" xml:space="preserve">
+    <value>Ingen krævet</value>
+  </data>
+  <data name="vconn_device" xml:space="preserve">
+    <value>Lokal enhedsfil</value>
+  </data>
+  <data name="vconn_device2" xml:space="preserve">
+    <value>Lokalt enhedsnavn</value>
+  </data>
+  <data name="vconn_device3" xml:space="preserve">
+    <value>Konstant enhedsnavn</value>
+  </data>
+  <data name="vconn_delete" xml:space="preserve">
+    <value>Frakobl forbindelsen</value>
+  </data>
+  <data name="vconn_users" xml:space="preserve">
+    <value>Nuværende brugere</value>
+  </data>
+  <data name="vconn_size" xml:space="preserve">
+    <value>Diskstørrelse</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>Kunne ikke aktivere ved starttidspunktet</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>Der findes ingen boot handling med navnet $1 </value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>Gemte godkendelsesindstillinger</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>Gemte timeout-indstillinger</value>
+  </data>
+  <data name="log_iscsi" xml:space="preserve">
+    <value>Gemte iSCSI-indstillinger</value>
+  </data>
+  <data name="log_add_connection" xml:space="preserve">
+    <value>Tilføjet forbindelse til $1 for $2 </value>
+  </data>
+  <data name="log_delete_connection" xml:space="preserve">
+    <value>Forbindelsen til $1 for $2 blev fjernet</value>
+  </data>
+  <data name="log_delete_connections" xml:space="preserve">
+    <value>$1 -forbindelser blev fjernet</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Aktiveret iSCSI-klient ved starttidspunktet</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Deaktiveret iSCSI-klient ved starttidspunktet</value>
+  </data>
+  <data name="log_add_iface" xml:space="preserve">
+    <value>Tilføjet interface $1 </value>
+  </data>
+  <data name="log_delete_iface" xml:space="preserve">
+    <value>Fjernet grænseflade $1 </value>
+  </data>
+  <data name="log_delete_ifaces" xml:space="preserve">
+    <value>Fjernede $1 -grænseflader</value>
+  </data>
+</root>

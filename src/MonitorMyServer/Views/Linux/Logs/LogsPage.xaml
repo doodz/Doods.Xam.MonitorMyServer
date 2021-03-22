@@ -7,20 +7,16 @@
                       xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-                      xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
-                      xmlns:data="clr-namespace:Doods.Openmedivault.Ssh.Std.Data;assembly=Doods.Openmediavault.Rpc.Std"
+                      xmlns:data="clr-namespace:Doods.Xam.MonitorMyServer.Views.Linux.Logs;assembly=Doods.Xam.MonitorMyServer"
                       xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
                       mc:Ignorable="d"
                       x:Class="Doods.Xam.MonitorMyServer.Views.Linux.Logs.LogsPage">
     <StackLayout>
         <StackLayout.Resources>
-            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
-            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
         </StackLayout.Resources>
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -32,29 +28,25 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-
             </Grid.RowDefinitions>
 
             <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
                    Text="{resources:Translate Text='openmediavault::Logs'}" />
-            <Picker  Grid.Row="1"
-                     Grid.Column="0"
-                     ItemsSource="{Binding LogsFiles,Mode=OneWay}"  
-                     SelectedItem="{Binding SelectedLogFile,Mode=TwoWay}"/>
-
-        
-           
+            <Picker Grid.Row="1"
+                    Grid.Column="0"
+                    ItemsSource="{Binding LogsFiles,Mode=OneWay}"
+                    SelectedItem="{Binding SelectedLogFile,Mode=TwoWay}" />
         </Grid>
 
         <ScrollView>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding LogsLines,Mode=OneWay}" Spacing="0">
 
-                <BindableLayout.ItemTemplate >
-                    <DataTemplate >
-                        <Grid Margin="0" Padding="0" >
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="data:LogLineModel">
+                        <Grid Margin="0" Padding="0">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100" />
-                                <ColumnDefinition Width="30"  />
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="30" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
@@ -65,45 +57,37 @@
 
                             <Label HorizontalOptions="Center"
                                    VerticalOptions="Center"
-                                   Text="{Binding Hour}" />
+                                   Text="{Binding Hour,Mode=OneTime}" />
 
                             <Label
                                 Grid.Column="2"
                                 Margin="20,0"
-                               VerticalOptions="Center"
-                                Text="{Binding Title}" />
+                                VerticalOptions="Center"
+                                Text="{Binding Title,Mode=OneTime}" />
 
                             <Label
                                 Grid.Row="1"
                                 Grid.Column="2"
                                 Margin="20,0"
-                                Text="{Binding Message}" />
+                                Text="{Binding Message,Mode=OneTime}" />
 
                             <BoxView
                                 Grid.RowSpan="3"
                                 Grid.Column="1"
                                 BackgroundColor="Orange"
                                 HorizontalOptions="Center"
-                                IsVisible="{Binding IsNotLast}"
+                                IsVisible="{Binding IsNotLast,Mode=OneTime}"
                                 VerticalOptions="Fill"
                                 WidthRequest="3" />
 
 
                             <controls:DoodsSvgImage
-                                    Grid.Column="1"
-                                    IsVisible="{Binding IsNotIn}"
-                                            VerticalOptions="Start"                              
-                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
-                                
-                                  HeightRequest="30"
-                                
-                                    Grid.Row="0"
-                                />
-
-
-
-
-
+                                Grid.Column="1"
+                                IsVisible="{Binding IsNotIn,Mode=OneTime}"
+                                VerticalOptions="Start"
+                                Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Bullet}}"
+                                HeightRequest="30"
+                                Grid.Row="0" />
                         </Grid>
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>

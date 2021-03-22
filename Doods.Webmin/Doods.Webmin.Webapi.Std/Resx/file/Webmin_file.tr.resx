@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Dosya Yöneticisi</value>
+  </data>
+  <data name="index_nojava" xml:space="preserve">
+    <value>Bu modül java gerektirir, fakat sizin tarayıcınız java'yi desteklemiyor</value>
+  </data>
+  <data name="index_eremote" xml:space="preserve">
+    <value>Webmin kullanıcısı $1 ile eşleşen Unix kullanıcısı yok.</value>
+  </data>
+  <data name="switch_euser" xml:space="preserve">
+    <value>Unix kullanıcısı mevcut değil!</value>
+  </data>
+  <data name="top_ret" xml:space="preserve">
+    <value>İndeks</value>
+  </data>
+  <data name="top_down" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="top_edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="top_refresh" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="top_info" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="top_eacl" xml:space="preserve">
+    <value>ACL</value>
+  </data>
+  <data name="top_ext" xml:space="preserve">
+    <value>EXT</value>
+  </data>
+  <data name="top_delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="top_new" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="top_upload" xml:space="preserve">
+    <value>Yükleme</value>
+  </data>
+  <data name="top_rename" xml:space="preserve">
+    <value>Yeniden Adlandır</value>
+  </data>
+  <data name="top_copy" xml:space="preserve">
+    <value>Kopyala</value>
+  </data>
+  <data name="top_cut" xml:space="preserve">
+    <value>Kes</value>
+  </data>
+  <data name="top_paste" xml:space="preserve">
+    <value>Yapıştır</value>
+  </data>
+  <data name="top_share" xml:space="preserve">
+    <value>Paylaştırma</value>
+  </data>
+  <data name="top_mount" xml:space="preserve">
+    <value>Mount</value>
+  </data>
+  <data name="top_search" xml:space="preserve">
+    <value>Ara</value>
+  </data>
+  <data name="top_config" xml:space="preserve">
+    <value>Yapılandırma</value>
+  </data>
+  <data name="right_name" xml:space="preserve">
+    <value>İsim</value>
+  </data>
+  <data name="right_size" xml:space="preserve">
+    <value>Boyut</value>
+  </data>
+  <data name="right_user" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="right_group" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="right_date" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
+  <data name="edit_enormal" xml:space="preserve">
+    <value>Sadece normal dosyalar düzenlenebilir</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>$1 düzenleniyor</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Dosya oluşturuluyor</value>
+  </data>
+  <data name="edit_filename" xml:space="preserve">
+    <value>Dosya İsmi:</value>
+  </data>
+  <data name="edit_goto" xml:space="preserve">
+    <value>Git</value>
+  </data>
+  <data name="edit_find" xml:space="preserve">
+    <value>Bul</value>
+  </data>
+  <data name="edit_gotoline" xml:space="preserve">
+    <value>Satıra git</value>
+  </data>
+  <data name="edit_replace" xml:space="preserve">
+    <value>Değiştir</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Hepsini değiştir</value>
+  </data>
+  <data name="edit_replaceby" xml:space="preserve">
+    <value>Bununla değiştir</value>
+  </data>
+  <data name="edit_eover" xml:space="preserve">
+    <value>$1 üzerine yazılamaz</value>
+  </data>
+  <data name="edit_esave" xml:space="preserve">
+    <value>Dosyanın kaydedilmesinde hata oluştu : $1</value>
+  </data>
+  <data name="edit_eaccess" xml:space="preserve">
+    <value>'$1'e kaydedilmesine izininiz yoktur</value>
+  </data>
+  <data name="edit_efollow" xml:space="preserve">
+    <value>Sembolink link '$1'e yazmak için izininiz yoktur</value>
+  </data>
+  <data name="edit_notfound" xml:space="preserve">
+    <value>$1 metini bulunamadı</value>
+  </data>
+  <data name="edit_saveclose" xml:space="preserve">
+    <value>Kaydet &amp; Kapat</value>
+  </data>
+  <data name="info_file" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="info_path" xml:space="preserve">
+    <value>Yol:</value>
+  </data>
+  <data name="info_type" xml:space="preserve">
+    <value>Tip:</value>
+  </data>
+  <data name="info_size" xml:space="preserve">
+    <value>Boyut:</value>
+  </data>
+  <data name="info_mod" xml:space="preserve">
+    <value>Değiştirildi:</value>
+  </data>
+  <data name="info_link" xml:space="preserve">
+    <value>Link to:</value>
+  </data>
+  <data name="info_perms" xml:space="preserve">
+    <value>İzinler</value>
+  </data>
+  <data name="info_user" xml:space="preserve">
+    <value>Kullanıcı:</value>
+  </data>
+  <data name="info_group" xml:space="preserve">
+    <value>Grup:</value>
+  </data>
+  <data name="info_other" xml:space="preserve">
+    <value>Diğerleri:</value>
+  </data>
+  <data name="info_octal" xml:space="preserve">
+    <value>Sekizli:</value>
+  </data>
+  <data name="info_sticky" xml:space="preserve">
+    <value>Sticky:</value>
+  </data>
+  <data name="info_sticky2" xml:space="preserve">
+    <value>Dosyaları sadece sahipleri silebilir</value>
+  </data>
+  <data name="info_own" xml:space="preserve">
+    <value>Sahiplik</value>
+  </data>
+  <data name="info_setuid" xml:space="preserve">
+    <value>Setuid:</value>
+  </data>
+  <data name="info_setuid2" xml:space="preserve">
+    <value>Kullanıcı olarak çalıştır</value>
+  </data>
+  <data name="info_setgid" xml:space="preserve">
+    <value>Setgid:</value>
+  </data>
+  <data name="info_setgid2" xml:space="preserve">
+    <value>Dosyalar grubun olsun</value>
+  </data>
+  <data name="info_setgid3" xml:space="preserve">
+    <value>Grup olarak çalıştır</value>
+  </data>
+  <data name="info_apply" xml:space="preserve">
+    <value>Değişiklikleri uygula ...</value>
+  </data>
+  <data name="info_apply1" xml:space="preserve">
+    <value>Sadece bu dizine</value>
+  </data>
+  <data name="info_apply2" xml:space="preserve">
+    <value>Bu dizin ve dosyalarına</value>
+  </data>
+  <data name="info_apply3" xml:space="preserve">
+    <value>Bu dizin ve alt dizinlerine</value>
+  </data>
+  <data name="info_efailed" xml:space="preserve">
+    <value>Güncellemede hata oluştu $1 : $2</value>
+  </data>
+  <data name="info_read" xml:space="preserve">
+    <value>Oku</value>
+  </data>
+  <data name="info_write" xml:space="preserve">
+    <value>Yaz</value>
+  </data>
+  <data name="info_list" xml:space="preserve">
+    <value>Listele</value>
+  </data>
+  <data name="info_exec" xml:space="preserve">
+    <value>Çalıştır</value>
+  </data>
+  <data name="eacl_eacls" xml:space="preserve">
+    <value>ACL'lerin okunmasında hata oluştu : $1</value>
+  </data>
+  <data name="eacl_acltype" xml:space="preserve">
+    <value>ACL Tipi</value>
+  </data>
+  <data name="eacl_aclperms" xml:space="preserve">
+    <value>İzinler</value>
+  </data>
+  <data name="eacl_remove" xml:space="preserve">
+    <value>ACL Sil</value>
+  </data>
+  <data name="eacl_efs" xml:space="preserve">
+    <value>$1 dosya sistemi ACL'leri desteklemiyor</value>
+  </data>
+  <data name="eacl_create" xml:space="preserve">
+    <value>ACL Oluştur</value>
+  </data>
+  <data name="eacl_edit" xml:space="preserve">
+    <value>ACL Düzenle</value>
+  </data>
+  <data name="eacl_user" xml:space="preserve">
+    <value>Dosya sahibi $1</value>
+  </data>
+  <data name="eacl_group" xml:space="preserve">
+    <value>Dosya grubu $1</value>
+  </data>
+  <data name="eacl_owner" xml:space="preserve">
+    <value>Dosya sahibi</value>
+  </data>
+  <data name="eacl_edefaults" xml:space="preserve">
+    <value>Eğer bir dosyanın öntanımlı ACL'si varsa bu dosya öntanımlı kullanıcı, grup ve diğer ACL'lere de sahip olmalıdır.</value>
+  </data>
+  <data name="acltype_user" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="acltype_group" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="acltype_other" xml:space="preserve">
+    <value>Diğerleri</value>
+  </data>
+  <data name="acltype_mask" xml:space="preserve">
+    <value>Mask</value>
+  </data>
+  <data name="acltype_default_user" xml:space="preserve">
+    <value>Öntanımlı Kullanıcı</value>
+  </data>
+  <data name="acltype_default_group" xml:space="preserve">
+    <value>Öntanımlı Grup</value>
+  </data>
+  <data name="acltype_default_mask" xml:space="preserve">
+    <value>Öntanımlı Mask</value>
+  </data>
+  <data name="delete_mtitle" xml:space="preserve">
+    <value>Birden fazla dosya sil</value>
+  </data>
+  <data name="delete_dtitle" xml:space="preserve">
+    <value>Dizin Sil</value>
+  </data>
+  <data name="delete_ftitle" xml:space="preserve">
+    <value>Dosya sil</value>
+  </data>
+  <data name="delete_ddesc" xml:space="preserve">
+    <value>$1 dizinini ve içindekileri silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="delete_fdesc" xml:space="preserve">
+    <value>$1 dosyasını kalıcı olarak silmek istediğinizden emin misiniz?</value>
+  </data>
+  <data name="delete_mdesc" xml:space="preserve">
+    <value>Bu dosya ve dizinleri kalıcı olarak silmek istediğinizden emin misiniz? :</value>
+  </data>
+  <data name="delete_efailed" xml:space="preserve">
+    <value>$1'i silme işleminde hata oluştu : $2</value>
+  </data>
+  <data name="mkdir_title" xml:space="preserve">
+    <value>Yeni Dizin</value>
+  </data>
+  <data name="mkdir_dir" xml:space="preserve">
+    <value>Yeni dizin:</value>
+  </data>
+  <data name="mkdir_eexists" xml:space="preserve">
+    <value>$1 dizini mevcut</value>
+  </data>
+  <data name="mkdir_efailed" xml:space="preserve">
+    <value>Dizin oluşturmada hata oluştu : $1</value>
+  </data>
+  <data name="mkdir_eaccess" xml:space="preserve">
+    <value>'$1' dizini oluşturmaya hakkınız yok</value>
+  </data>
+  <data name="link_title" xml:space="preserve">
+    <value>Link Oluştur</value>
+  </data>
+  <data name="link_from" xml:space="preserve">
+    <value>Link buradan:</value>
+  </data>
+  <data name="link_to" xml:space="preserve">
+    <value>Buraya link oluştur:</value>
+  </data>
+  <data name="link_eexists" xml:space="preserve">
+    <value>$1 zaten mevcut</value>
+  </data>
+  <data name="link_efrom" xml:space="preserve">
+    <value>Link kaynağı tam olarak verilmelidir</value>
+  </data>
+  <data name="link_efailed" xml:space="preserve">
+    <value>Link yapılırken hata oluştu : $1</value>
+  </data>
+  <data name="link_efrom2" xml:space="preserve">
+    <value>'$1'den link yapmak için izininiz yoktur</value>
+  </data>
+  <data name="link_efollow" xml:space="preserve">
+    <value>Sembolik link oluşturmak için izininiz yoktur</value>
+  </data>
+  <data name="rename_title" xml:space="preserve">
+    <value>Yeniden Adlandır $1</value>
+  </data>
+  <data name="rename_old" xml:space="preserve">
+    <value>Eski İsim:</value>
+  </data>
+  <data name="rename_new" xml:space="preserve">
+    <value>Yeni İsim:</value>
+  </data>
+  <data name="rename_ok" xml:space="preserve">
+    <value>Yeniden Adlandır</value>
+  </data>
+  <data name="rename_eexists" xml:space="preserve">
+    <value>$1 dosyası zaten mevcut</value>
+  </data>
+  <data name="rename_efailed" xml:space="preserve">
+    <value>Yeniden adlandırmada hata oluştu : $1</value>
+  </data>
+  <data name="rename_eold" xml:space="preserve">
+    <value>'$1'i yeniden adlandırmak için izininiz yoktur</value>
+  </data>
+  <data name="rename_enew" xml:space="preserve">
+    <value>'$1' olarak yeniden adlandırmak için izininiz yoktur</value>
+  </data>
+  <data name="file_type0" xml:space="preserve">
+    <value>Dizin</value>
+  </data>
+  <data name="file_type1" xml:space="preserve">
+    <value>Metin Dosyası</value>
+  </data>
+  <data name="file_type2" xml:space="preserve">
+    <value>Resim Dosyası</value>
+  </data>
+  <data name="file_type3" xml:space="preserve">
+    <value>İkili Dosya</value>
+  </data>
+  <data name="file_type4" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="file_type5" xml:space="preserve">
+    <value>Sembolik Link</value>
+  </data>
+  <data name="file_type6" xml:space="preserve">
+    <value>Aygıt dosyası</value>
+  </data>
+  <data name="file_type7" xml:space="preserve">
+    <value>Pipe</value>
+  </data>
+  <data name="view_enormal" xml:space="preserve">
+    <value>Sadece normal dosyalar görüntülenebilir</value>
+  </data>
+  <data name="view_enormal2" xml:space="preserve">
+    <value>Sadece normal dosyalar indirilebilir</value>
+  </data>
+  <data name="view_eaccess" xml:space="preserve">
+    <value>$1'e erişim izininiz yoktur</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>$1 'in açılmasında hata oluştu : $2</value>
+  </data>
+  <data name="view_edir" xml:space="preserve">
+    <value>Bir arşiv sadece bir dizin için oluşturulabilir</value>
+  </data>
+  <data name="view_ecomp" xml:space="preserve">
+    <value>Arşiv oluşturulmasında hata oluştu : $1</value>
+  </data>
+  <data name="view_earchive" xml:space="preserve">
+    <value>Arşivleri indirmek için izininiz yoktur</value>
+  </data>
+  <data name="view_earchmax" xml:space="preserve">
+    <value>Seçili dizin arşivleme için izin verilen maksimum boyuttan ($1 byte) daha büyük</value>
+  </data>
+  <data name="paste_ecopy" xml:space="preserve">
+    <value>Yapıştırmadan önce kopyalamalı veya kesmelisiniz</value>
+  </data>
+  <data name="paste_egone" xml:space="preserve">
+    <value>Kopyalanan dosya $1 artık yok</value>
+  </data>
+  <data name="paste_eover" xml:space="preserve">
+    <value>$1 üzerine yazılamaz</value>
+  </data>
+  <data name="paste_eself" xml:space="preserve">
+    <value>Dosyayı kendi üzerine yapıştıramazsınız</value>
+  </data>
+  <data name="paste_emfailed" xml:space="preserve">
+    <value>Taşımada hata oluştu : $1</value>
+  </data>
+  <data name="paste_ecfailed" xml:space="preserve">
+    <value>Kopyalamada hata oluştu : $1</value>
+  </data>
+  <data name="over_title" xml:space="preserve">
+    <value>Dosya Mevcut</value>
+  </data>
+  <data name="over_msg" xml:space="preserve">
+    <value>$1 dosyası zaten mevcut. Yapıştırılan dosyaya yeni bir isim girmek için aşağıdaki alanı kullanınız.</value>
+  </data>
+  <data name="over_new" xml:space="preserve">
+    <value>Yeni dosya ismi:</value>
+  </data>
+  <data name="over_ok" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="upload_efailed" xml:space="preserve">
+    <value>Dosyanın yüklenmesinde hata oluştu : $1</value>
+  </data>
+  <data name="upload_title" xml:space="preserve">
+    <value>Dosyayı Yükle</value>
+  </data>
+  <data name="upload_file" xml:space="preserve">
+    <value>Yüklenecek dosya</value>
+  </data>
+  <data name="upload_dir" xml:space="preserve">
+    <value>Dizine Yükle</value>
+  </data>
+  <data name="upload_ok" xml:space="preserve">
+    <value>Yükle</value>
+  </data>
+  <data name="upload_conv" xml:space="preserve">
+    <value>DOS satırları çevirilsin mi?</value>
+  </data>
+  <data name="upload_efile" xml:space="preserve">
+    <value>Yüklenecek dosya seçilmedi.</value>
+  </data>
+  <data name="upload_edir" xml:space="preserve">
+    <value>Yükleme dizini mevcut değil</value>
+  </data>
+  <data name="upload_eperm" xml:space="preserve">
+    <value>$1 oluşturmanıza izin verilmedi</value>
+  </data>
+  <data name="upload_ewrite" xml:space="preserve">
+    <value>$1'i yazmada hata oluştu : $2.</value>
+  </data>
+  <data name="upload_already" xml:space="preserve">
+    <value>$1 dosyası zaten mevcut. Üzerine yazmak istediğinizden emin misiniz?</value>
+  </data>
+  <data name="upload_zip" xml:space="preserve">
+    <value>ZIP ya da TAR dosyası açılsın mı?</value>
+  </data>
+  <data name="find_eaccess" xml:space="preserve">
+    <value>$1'e erişim izininiz yoktur</value>
+  </data>
+  <data name="find_eexist" xml:space="preserve">
+    <value>$1, $2 içinde mevcut değil</value>
+  </data>
+  <data name="find_edir" xml:space="preserve">
+    <value>$1, $2'de bir dizin değil</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="eopen" xml:space="preserve">
+    <value>İndirmede hata : $1</value>
+  </data>
+  <data name="chmod_eaccess" xml:space="preserve">
+    <value>'$1'e erişim için izininiz yoktur</value>
+  </data>
+  <data name="chmod_euser" xml:space="preserve">
+    <value>$1 : böyle bir kullanıcı yok</value>
+  </data>
+  <data name="chmod_egroup" xml:space="preserve">
+    <value>$1 : böyle bir grup yok</value>
+  </data>
+  <data name="chmod_elink" xml:space="preserve">
+    <value>Sembolik linkte hata oluştu : $1</value>
+  </data>
+  <data name="chmod_echown" xml:space="preserve">
+    <value>chown'da hata oluştu : $1</value>
+  </data>
+  <data name="chmod_echmod" xml:space="preserve">
+    <value>chmod'da hata oluştu  : $1</value>
+  </data>
+  <data name="chmod_efollow" xml:space="preserve">
+    <value>Sembolink linkleri düzenlemek için izininiz yoktur</value>
+  </data>
+  <data name="copy_efrom" xml:space="preserve">
+    <value>'$1'den kopyalamanıza izin verilmemiştir</value>
+  </data>
+  <data name="copy_eto" xml:space="preserve">
+    <value>'$1'e kopyalamanıza izin verilmemiştir</value>
+  </data>
+  <data name="copy_elink" xml:space="preserve">
+    <value>Sembolik linkte hata oluştu : $1</value>
+  </data>
+  <data name="delete_eaccess" xml:space="preserve">
+    <value>'$1'i silmede hata oluştu</value>
+  </data>
+  <data name="list_eaccess" xml:space="preserve">
+    <value>Bu dizine erişim izininiz yoktur</value>
+  </data>
+  <data name="move_eto" xml:space="preserve">
+    <value>'$1'e taşımak için izininiz yoktur</value>
+  </data>
+  <data name="move_afrom" xml:space="preserve">
+    <value>'$1'i taşımak için izininiz yoktur</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Sunucudaki dosyalara bu kullanıcı olarak ulaş :</value>
+  </data>
+  <data name="acl_user_def" xml:space="preserve">
+    <value>Webmin kullanıcı adı ile aynı</value>
+  </data>
+  <data name="acl_umask" xml:space="preserve">
+    <value>Yeni dosyalar için umask</value>
+  </data>
+  <data name="acl_follow" xml:space="preserve">
+    <value>Sembolik linkler her zaman takip edilsin mi?</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>Sadece okunabilir mod?</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>Sadece bu dizinlere erişime izin ver</value>
+  </data>
+  <data name="acl_log" xml:space="preserve">
+    <value>Bütün dosya değişikliklerinin kayıtları tutulsun mu?</value>
+  </data>
+  <data name="acl_max" xml:space="preserve">
+    <value>Maksimum yükleme boyutu</value>
+  </data>
+  <data name="acl_unlim" xml:space="preserve">
+    <value>Limitsiz</value>
+  </data>
+  <data name="acl_b" xml:space="preserve">
+    <value>byte</value>
+  </data>
+  <data name="acl_archive" xml:space="preserve">
+    <value>Dizinlerin arşivlerini indirebilir mi?</value>
+  </data>
+  <data name="acl_archmax" xml:space="preserve">
+    <value>Evet, bundan daha küçükse</value>
+  </data>
+  <data name="acl_buttons" xml:space="preserve">
+    <value>Araç çubuğundaki erişilebilir butonlar</value>
+  </data>
+  <data name="acl_button_save" xml:space="preserve">
+    <value>Kaydet (dosya indir)</value>
+  </data>
+  <data name="acl_button_edit" xml:space="preserve">
+    <value>Düzenle (metin dosyasını düzenle)</value>
+  </data>
+  <data name="acl_button_info" xml:space="preserve">
+    <value>Bilgi (dosya izinlerini ve sahipliğini düzenle)</value>
+  </data>
+  <data name="acl_button_acl" xml:space="preserve">
+    <value>ACL (Posix ACL düzenle)</value>
+  </data>
+  <data name="acl_button_search" xml:space="preserve">
+    <value>Bul (dosya bul)</value>
+  </data>
+  <data name="acl_button_delete" xml:space="preserve">
+    <value>Sil (dosyaları sil)</value>
+  </data>
+  <data name="acl_button_new" xml:space="preserve">
+    <value>Yeni (metin dosyası oluştur)</value>
+  </data>
+  <data name="acl_button_upload" xml:space="preserve">
+    <value>Yükle (istemciden dosya yükle)</value>
+  </data>
+  <data name="acl_button_mkdir" xml:space="preserve">
+    <value>Yeni (dizin oluştur)</value>
+  </data>
+  <data name="acl_button_makelink" xml:space="preserve">
+    <value>Yeni (sembolink link oluştur)</value>
+  </data>
+  <data name="acl_button_rename" xml:space="preserve">
+    <value>Yeniden Adlandır (dosyayı yeniden adlandır)</value>
+  </data>
+  <data name="acl_button_sharing" xml:space="preserve">
+    <value>Paylaştırma (Samba ve NFS dosya paylaşımını ayarla)</value>
+  </data>
+  <data name="acl_button_mount" xml:space="preserve">
+    <value>Mount (dosya sistemini mount et ya da umount et)</value>
+  </data>
+  <data name="acl_button_copy" xml:space="preserve">
+    <value>Kopyala, Kes ve Yapıştır</value>
+  </data>
+  <data name="acl_unarchive" xml:space="preserve">
+    <value>Yüklenen arşiv dosyalarını açabilir mi?</value>
+  </data>
+  <data name="acl_unarchive1" xml:space="preserve">
+    <value>$yes</value>
+  </data>
+  <data name="acl_unarchive0" xml:space="preserve">
+    <value>$no</value>
+  </data>
+  <data name="acl_chroot" xml:space="preserve">
+    <value>Dosya yöneticisinin tamamı için chroot dizini</value>
+  </data>
+  <data name="share_title" xml:space="preserve">
+    <value>Paylaştırma</value>
+  </data>
+  <data name="share_samba" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="share_nfs" xml:space="preserve">
+    <value>NFS</value>
+  </data>
+  <data name="share_son" xml:space="preserve">
+    <value>Windows dosya paylaşımı açık</value>
+  </data>
+  <data name="share_soff" xml:space="preserve">
+    <value>Windows dosya paylaşımı kapalı</value>
+  </data>
+  <data name="share_writable" xml:space="preserve">
+    <value>Yazılabilir?</value>
+  </data>
+  <data name="share_available" xml:space="preserve">
+    <value>Aktif mi?</value>
+  </data>
+  <data name="share_sheader" xml:space="preserve">
+    <value>Paylaşım seçenekleri</value>
+  </data>
+  <data name="share_only" xml:space="preserve">
+    <value>Sadece</value>
+  </data>
+  <data name="share_guest" xml:space="preserve">
+    <value>Ziyaretçi erişimi?</value>
+  </data>
+  <data name="share_comment" xml:space="preserve">
+    <value>Yorum</value>
+  </data>
+  <data name="share_nheader" xml:space="preserve">
+    <value>NFS sunum seçenekleri</value>
+  </data>
+  <data name="share_non" xml:space="preserve">
+    <value>NFS dosya paylaşımı açık</value>
+  </data>
+  <data name="share_noff" xml:space="preserve">
+    <value>NFS dosya paylaşımı kapalı</value>
+  </data>
+  <data name="share_desc" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="share_ro" xml:space="preserve">
+    <value>Sadece okuma izinli makineler</value>
+  </data>
+  <data name="share_rw" xml:space="preserve">
+    <value>Okuma-yazma izinli makineler</value>
+  </data>
+  <data name="share_root" xml:space="preserve">
+    <value>Root girişli makineler</value>
+  </data>
+  <data name="share_none" xml:space="preserve">
+    <value>Hiçbiri</value>
+  </data>
+  <data name="share_all" xml:space="preserve">
+    <value>Hepsi</value>
+  </data>
+  <data name="share_listed" xml:space="preserve">
+    <value>Listeli...</value>
+  </data>
+  <data name="share_host" xml:space="preserve">
+    <value>Makineler</value>
+  </data>
+  <data name="share_opts" xml:space="preserve">
+    <value>Seçenekler</value>
+  </data>
+  <data name="share_s0" xml:space="preserve">
+    <value>Hiçkimseye güvenme</value>
+  </data>
+  <data name="share_s1" xml:space="preserve">
+    <value>Root olmayanlara güven</value>
+  </data>
+  <data name="share_s2" xml:space="preserve">
+    <value>Herkese güven</value>
+  </data>
+  <data name="share_lro" xml:space="preserve">
+    <value>Sadece okunur</value>
+  </data>
+  <data name="share_lrw" xml:space="preserve">
+    <value>Okunur-yazılır</value>
+  </data>
+  <data name="log_create_export" xml:space="preserve">
+    <value>NFS sunumu $1 oluşturuldu</value>
+  </data>
+  <data name="log_modify_export" xml:space="preserve">
+    <value>NFS sunumu $1 değiştirildi</value>
+  </data>
+  <data name="log_delete_export" xml:space="preserve">
+    <value>NFS sunumu $1 silindi</value>
+  </data>
+  <data name="log_create_share" xml:space="preserve">
+    <value>Samba paylaşımı $1 oluşturuldu</value>
+  </data>
+  <data name="log_modify_share" xml:space="preserve">
+    <value>Samba paylaşımı $1 değiştirildi</value>
+  </data>
+  <data name="log_delete_share" xml:space="preserve">
+    <value>Samba paylaşımı $1 silindi</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>$1 dosyası kaydedildi</value>
+  </data>
+  <data name="log_chmod" xml:space="preserve">
+    <value>$1 dosyasının hakları değiştirildi</value>
+  </data>
+  <data name="log_mkdir" xml:space="preserve">
+    <value>$1 dizini oluşturuldu</value>
+  </data>
+  <data name="log_upload" xml:space="preserve">
+    <value>$1 dosyası yüklendi</value>
+  </data>
+  <data name="log_link" xml:space="preserve">
+    <value>$2'ye sembolik link $1 oluşturuldu</value>
+  </data>
+  <data name="log_relink" xml:space="preserve">
+    <value>$2'ye sembolik link $1 değiştirildi</value>
+  </data>
+  <data name="log_copy" xml:space="preserve">
+    <value>$1 dosyası $2'ye kopyalandı</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>$1 dosyası $2'ye taşındı</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$1 dosyası silindi</value>
+  </data>
+  <data name="search_eaccess" xml:space="preserve">
+    <value>Bu dizinde arama yapmak için izininiz yoktur</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>Dosya bul</value>
+  </data>
+  <data name="search_ok" xml:space="preserve">
+    <value>Şimdi Ara</value>
+  </data>
+  <data name="search_dir" xml:space="preserve">
+    <value>Arama dizini</value>
+  </data>
+  <data name="search_type" xml:space="preserve">
+    <value>Dosya tipi</value>
+  </data>
+  <data name="search_types_" xml:space="preserve">
+    <value>Hepsi</value>
+  </data>
+  <data name="search_types_f" xml:space="preserve">
+    <value>Dosya</value>
+  </data>
+  <data name="search_types_d" xml:space="preserve">
+    <value>Dizin</value>
+  </data>
+  <data name="search_types_l" xml:space="preserve">
+    <value>Sembolink link</value>
+  </data>
+  <data name="search_size" xml:space="preserve">
+    <value>Dosya boyutu</value>
+  </data>
+  <data name="search_edir" xml:space="preserve">
+    <value>Eksik ya da geçersiz arama dizini</value>
+  </data>
+  <data name="search_euser" xml:space="preserve">
+    <value>Kullanıcı adı girilmemiş</value>
+  </data>
+  <data name="search_egroup" xml:space="preserve">
+    <value>Grup adı girilmemiş</value>
+  </data>
+  <data name="search_esize" xml:space="preserve">
+    <value>Dosya boyutu bir tamsayı olmalıdır</value>
+  </data>
+  <data name="search_crit" xml:space="preserve">
+    <value>Armama kriteri</value>
+  </data>
+  <data name="search_list" xml:space="preserve">
+    <value>Arama sonuçları</value>
+  </data>
+  <data name="facl_eaccess" xml:space="preserve">
+    <value>Bu dosyanın ACL'lerini belirlemek için izininiz yoktur</value>
+  </data>
+  <data name="eattr_A" xml:space="preserve">
+    <value>Erişim zamanlarını güncelleme</value>
+  </data>
+  <data name="eattr_a" xml:space="preserve">
+    <value>Dosyaya sadece ekleme yapılabilir</value>
+  </data>
+  <data name="eattr_c" xml:space="preserve">
+    <value>Diskteki veriyi sıkıştır</value>
+  </data>
+  <data name="eattr_d" xml:space="preserve">
+    <value>Dump ile yedekleme</value>
+  </data>
+  <data name="eattr_i" xml:space="preserve">
+    <value>Değiştirilmesine izin verme</value>
+  </data>
+  <data name="eattr_S" xml:space="preserve">
+    <value>Yazmadan sonra her zaman senkronize et</value>
+  </data>
+  <data name="mount_eaccess" xml:space="preserve">
+    <value>Dosya sistemini mount etmek için izininiz yoktur</value>
+  </data>
+  <data name="mount_efstab" xml:space="preserve">
+    <value>Bu mount noktasında bir dosya sistemi mevcut değildir</value>
+  </data>
+  <data name="mount_epoint" xml:space="preserve">
+    <value>$1 bir mount noktası değildir</value>
+  </data>
+  <data name="mount_rusure1" xml:space="preserve">
+    <value>$1 'i $2 'ye mount etmek istediğinize emin misiniz ?</value>
+  </data>
+  <data name="mount_rusure2" xml:space="preserve">
+    <value>$1 'i $2 'den umount etmek istediğinize emin misiniz ?</value>
+  </data>
+  <data name="mount_err1" xml:space="preserve">
+    <value>$1 'in mount edilmesinde hata oluştu : $2</value>
+  </data>
+  <data name="mount_err2" xml:space="preserve">
+    <value>$1 'in umount edilmesinde hata oluştu : $2</value>
+  </data>
+  <data name="mount_title1" xml:space="preserve">
+    <value>Dosya sistemi mount et</value>
+  </data>
+  <data name="mount_title2" xml:space="preserve">
+    <value>Dosya sistemi umount et</value>
+  </data>
+  <data name="zip_err" xml:space="preserve">
+    <value>Dosya açılamıyor : $1</value>
+  </data>
+  <data name="zip_ename" xml:space="preserve">
+    <value>Bir zip, tar ya da tar.gz gibi görünmüyor</value>
+  </data>
+  <data name="zip_euntar" xml:space="preserve">
+    <value>Tar dosyasının açılmasında hata oluştu : $1</value>
+  </data>
+  <data name="ddir_title" xml:space="preserve">
+    <value>İndirme Dizini</value>
+  </data>
+  <data name="ddir_rusure" xml:space="preserve">
+    <value>$1 'in içeriğini bir arşiv dosyası olarak indirmek için, aşağıdaki arşiv tipi butonlarından birini tıklayınız.</value>
+  </data>
+  <data name="ddir_zip" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="ddir_tgz" xml:space="preserve">
+    <value>TAR.GZ</value>
+  </data>
+  <data name="ddir_tar" xml:space="preserve">
+    <value>TAR</value>
+  </data>
+  <data name="ebutton" xml:space="preserve">
+    <value>Bu özellik kullanılamaz</value>
+  </data>
+</root>

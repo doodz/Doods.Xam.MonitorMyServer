@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Administración de Impresoras</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Impresora</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Imprime en</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Filtro (Controlador)</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>¿Activado?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>¿Aceptando?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Tareas</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No hay impresoras instaladas en este sistema</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>relación...</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Añadir una nueva impresora</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Parar Planificador</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Haz click en este botón para parar el proceso en curso del planificador de impresión. Esto hará prevenir que cualquier usuario local o remoto impriman en tu sistema.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Arrancar Planificador</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Haz click en este botón para arrancar el proceso del planificador de impresión. Esto permitirá que los usuarios locales y remotos impriman en tu sistema.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Rearrancar Planificador</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Haz click en este botón para rearrancar el proceso del planificador de impresión. Esto forzará la aplicación de la configuración en curso.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Lista de impresoras</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>No estás autorizado a editar esta impresora</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>No estás autorizado a añadir impresoras</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Crear Impresora</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Editar Impresora</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Configuración de Impresora</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>¿Aceptando requerimientos?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>No - Por qué no</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>¿Impresión activada?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Control de Acceso</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Permitir a todos</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Denegar a todos</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Permitir a usuarios listados...</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Denegar a usuarios listados...</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>¿Imprimo página de cabecera?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Opcional</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>¿Es la impresora por Defecto?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Ya es la impresora por defecto</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Medida máxima de tarea de impresión</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Ilimitado</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>El controlador acepta</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Postscript</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Nombres alternativos de impresora</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Destino de la impresión</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Dispositivo local</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Archivo local</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Servidor Unix remoto</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Impresora</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Servidor Windows remoto</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Impresora</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Clave de Acceso</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Grupo de Trabajo</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Servidor HPNP remoto</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Puerto</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Conexión TCP directa</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Puerto</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Controlador de Impresora</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>¿Reviso si el servidor remoto está activo?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>bloques</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Error al salvar impresora</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>No estás autorizado a añadir impresoras</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>No estás autorizado a editar esta impresora</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' no es un nombre válido de impresora</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Ya existe una impresora llamada '$1'</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>No se han digitado usuarios a autorizar</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>No se han digitado usuarios a denegar</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>El usuario '$1' no existe</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Debes de seleccionar al menos un tipo para que sea aceptado por este controlador</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>La medida máxima de tareas de impresión debe de ser un entero</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' no existe</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>La máquina remota '$1' no existe</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' no es un nombre de cola remota válido</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Los controladores no pueden ser usados con impresoras Unix remotas</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>La máquina directa '$1' no existe</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Puerto directo falta o es inválido</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Tareas de impresión</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Imprimir tareas en $1</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>ID de Tarea</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Medida</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Puesto Por</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Puesto a las</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Nombre de Archivo</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Haz click en una ID de tarea de la lista superior para cancelarla.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Haz click en una ID de tarea de la lista superior para cancelarla o haz click en la medida de la tarea para verla.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>No hay tareas de impresión en $1</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Cancelar todas las tareas de impresión</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>octetos</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Imprimir Página de Prueba</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>No estás autorizado a cancelar tareas de impresión</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Error al cancelar tarea de impresión</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>La tarea de impresión $1 ya no existe</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>No puedes ver esta tarea de impresión</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Esta tarea de impresión ya no existe</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>No estás autorizado a arrancar el planificador</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Error al arrancar planificador</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>No estás autorizado a parar el planificador</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Error al parar planificador</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>No estás autorizado a rearrancar el planificador de impresión</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>No pude rearrancar el planificador de impresión</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Impresora Postscript o de texto</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Impresora remota</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Controlador de Webmin</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Controlador Uniprint</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Error al obtener los controladores desde $1. Los controladores de impresoras de Webmin que utilicen ghostscript no estarán disponibles</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>El comando $1 no fue encontrado. Los controladores de impresora de Webmin que utilicen ghostscript no estarán disponibles</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' no existe</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Impresora remota o sin buffer</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>Controlador COAS</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Impresora y resolución</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>¿Envío Fin-de-Archivo (EOF)?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Medida del papel</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>¿Imprimo por ambas caras?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Opciones GS adicionales</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Controlador Uniprint</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' no existe</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>No se ha seleccionado controlador de impresora</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>No se ha seleccionado resolución</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Impresora postscript o de texto</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Controlador Redhat</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Impresora y resolución</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>¿Envío Fin-de-Archivo (EOF)?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Medida del papel</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Página por página de salida</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Opciones GS adicionales</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Márgen Derecho/Izquierdo</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Márgen Superior/Inferior</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>¿Fijo el texto en modo escalonando-escalera?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' no existe</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>No se ha seleccionado controlador de impresora</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Márgen derecho/izquierdo falta o es inválido</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Márgen superior/inferior falta o es inválido</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>No se ha seleccionado resolución</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Model y conductor de impresora</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Ninguna</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Impresora postscript o de texto</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>Controlador APSfilter</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Tipo de impresora</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Resolución en DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>¿Impresora a color?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Medida del papel</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Método de filtrado</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Sin búfer</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Opciones extra de ghostscript</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>Conductor de YAST2</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>No se ha selecciona tipo de impresora</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Resuloción falta o es inválida</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>No pude parar lpd: $1</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Impresoras que este usuario puede configurar</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>¿Puedo añadir impresoras nuevas?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>¿Puedo ver y cancelar tareas de impresión?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>¿Puedo parar o arrancar el planificador?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Sólo rearrancar</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Sólo en las impresoras seleccionadas...</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Todas las impresoras</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Las seleccionadas...</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>¿Mostrar impresoras no configurables?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>¿Puedo imprimir páginas de prueba?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Gestionar tareas de impresión propiedad de</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Todos los usuarios</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Usuario actual de Webmin</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Parado Gestor de impresión</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Arrancado gestor de impresión</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Rearrancado planificador de impresión</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Cancelada tarea de impresión $2 en $1</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Canceladas todas las tareas de impresión en $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Creada impresora $1 en $2</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Modificada impresora $1 en $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Borrada impresora $1 en $2</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Creada $3 impresora $1 en $2</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Modificada $3 impresora $1 en $2</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Borrada $3 impresora $1 en $2</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Puerto Paralelo $1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Puerto Serial $1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>Impresora USB $1</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Puerto Paralelo</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Puerto Serial $1 (COM$1)</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Puerto Paralelo</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Puerto Serial $1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Puerto Paralelo $1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Puerto Serial $1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Paralelo $1</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Serial $1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Puerto Paralelo $1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Puerto Serial $1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Puerto Paralelo</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Puerto Paralelo Ultra 5/10</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Puerto Serial $1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Dispositivo Nulo</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Imprimir Página de Prueba</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>No estás autorizado a imprimir páginas de prueba</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Este formulario te permite imprimir una página de prueba en la impresora $1. Selecciona el tipo de página que deseas imprimir:</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Página Postcript en blanco y negro</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Página Postscript en color</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Texto ASCII</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Cualquier fichero cargado</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Imprimir página</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Imprimiendo página de prueba con el comando $1...</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>... ¡Falló el comando!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>... comando completado.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Impresora remota o directa</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Programa</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>Controlador CUPS</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' no es un programa válido</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Opciones para $1</value>
+  </data>
+</root>
