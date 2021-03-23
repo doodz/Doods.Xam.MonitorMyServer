@@ -12,9 +12,15 @@ namespace Doods.Synology.Project.Test
 
             Console.WriteLine("Hello World!");
             var con = GetConnection();
+
+            var result = Environment.GetEnvironmentVariable(Environment.SpecialFolder.Personal);
+
+            var sp =result.Split(';');
+
             var client = new SynologyCgiService(null, con);
            // client.SetHandlers(new NewtonsoftJsonSerializer(LocalJsonConverter.Singleton));
-            if (client.LoginAsync("doods", "!57q!H#mxXas1b8").GetAwaiter().GetResult())
+
+            if (client.LoginAsync(sp[0],sp[1]).GetAwaiter().GetResult())
             {
               
 
