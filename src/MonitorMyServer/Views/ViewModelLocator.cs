@@ -1,8 +1,8 @@
-﻿using Doods.Xam.MonitorMyServer.Views.HostManager;
-using Doods.Xam.MonitorMyServer.Views.Login;
-using System;
+﻿using System;
 using System.Globalization;
 using System.Reflection;
+using Doods.Xam.MonitorMyServer.Views.HostManager;
+using Doods.Xam.MonitorMyServer.Views.Login;
 using TinyIoC;
 using Xamarin.Forms;
 
@@ -33,6 +33,7 @@ namespace Doods.Xam.MonitorMyServer.Views
         {
             return Container.Resolve<T>();
         }
+
         private static void OnAutoWireViewModelChanged(BindableObject bindable, object oldValue, object newValue)
         {
             if (!(bindable is Element view)) return;

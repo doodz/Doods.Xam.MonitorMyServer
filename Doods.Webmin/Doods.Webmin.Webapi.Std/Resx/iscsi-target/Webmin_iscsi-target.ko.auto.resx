@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="check_econfig" xml:space="preserve">
+    <value>시스템에서 iSCSI 대상 구성 파일 $1 을 (를) 찾을 수 없습니다.</value>
+  </data>
+  <data name="check_eietadm" xml:space="preserve">
+    <value>시스템에서 iSCSI 대상 관리 명령 $1 을 (를) 찾을 수 없습니다.</value>
+  </data>
+  <data name="check_einit" xml:space="preserve">
+    <value>부팅 동작 $1 이 (가) 없습니다</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>iSCSI 대상</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>iSCSI 대상 중지</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>실행중인 iSCSI 대상을 중지하려면이 버튼을 클릭하십시오. 더 이상 클라이언트가 모든 공유 장치에 액세스 할 수 없습니다.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>iSCSI 대상 시작</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>클라이언트가 공유 장치에 액세스 할 수 있도록 iSCSI 대상을 시작하려면이 버튼을 클릭하십시오.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>iSCSI 대상 재시작</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>iSCSI 대상을 다시 시작하여 현재 구성을 적용하려면이 버튼을 클릭하십시오.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>부팅 할 때 시작 하시겠습니까?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>부팅시 iSCSI 대상 시작 여부를 제어하려면이 옵션을 변경하십시오. 부팅시 현재 시작되지 않고 예를 선택하면 새로운 init 스크립트가 생성됩니다.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>대상 목록</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>내보낼 iSCSI 대상이 아직 정의되지 않았습니다.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>새 iSCSI 대상을 추가하십시오.</value>
+  </data>
+  <data name="index_target" xml:space="preserve">
+    <value>대상 이름</value>
+  </data>
+  <data name="index_lun" xml:space="preserve">
+    <value>디스크 장치</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>허용 된 사용자</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>선택된 대상 삭제</value>
+  </data>
+  <data name="index_noluns" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="index_nousers" xml:space="preserve">
+    <value>어떤</value>
+  </data>
+  <data name="index_nullio" xml:space="preserve">
+    <value>$1 섹터의 RAM 디스크</value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>총합 크기</value>
+  </data>
+  <data name="dtargets_err" xml:space="preserve">
+    <value>대상을 삭제하지 못했습니다.</value>
+  </data>
+  <data name="dtargets_enone" xml:space="preserve">
+    <value>선택하지 않았습니다!</value>
+  </data>
+  <data name="target_title1" xml:space="preserve">
+    <value>iSCSI 대상 생성</value>
+  </data>
+  <data name="target_title2" xml:space="preserve">
+    <value>iSCSI 대상 편집</value>
+  </data>
+  <data name="target_header" xml:space="preserve">
+    <value>iSCSI 공유 장치 옵션</value>
+  </data>
+  <data name="target_part" xml:space="preserve">
+    <value>로컬 디스크 파티션</value>
+  </data>
+  <data name="target_raid" xml:space="preserve">
+    <value>RAID 장치</value>
+  </data>
+  <data name="target_md" xml:space="preserve">
+    <value>RAID 장치 $1 </value>
+  </data>
+  <data name="target_lvm" xml:space="preserve">
+    <value>LVM 논리 볼륨</value>
+  </data>
+  <data name="target_lv" xml:space="preserve">
+    <value>LVM VG $1, LV $2 </value>
+  </data>
+  <data name="target_other" xml:space="preserve">
+    <value>다른 파일 또는 장치</value>
+  </data>
+  <data name="target_lun" xml:space="preserve">
+    <value>$1 을 공유 할 장치</value>
+  </data>
+  <data name="target_name" xml:space="preserve">
+    <value>대상 이름</value>
+  </data>
+  <data name="target_egone" xml:space="preserve">
+    <value>선택한 대상이 더 이상 존재하지 않습니다!</value>
+  </data>
+  <data name="target_none" xml:space="preserve">
+    <value>아무것도</value>
+  </data>
+  <data name="target_null" xml:space="preserve">
+    <value>크기의 임시 RAM 디스크</value>
+  </data>
+  <data name="target_sectors" xml:space="preserve">
+    <value>부문</value>
+  </data>
+  <data name="target_type" xml:space="preserve">
+    <value>IO 타입</value>
+  </data>
+  <data name="target_fileio" xml:space="preserve">
+    <value>파일 기반</value>
+  </data>
+  <data name="target_blockio" xml:space="preserve">
+    <value>블록 기반 (캐시 없음, 장치 전용)</value>
+  </data>
+  <data name="target_iomode" xml:space="preserve">
+    <value>IO 모드</value>
+  </data>
+  <data name="target_wt" xml:space="preserve">
+    <value>연속 기입 캐싱</value>
+  </data>
+  <data name="target_wb" xml:space="preserve">
+    <value>후기 입 캐싱</value>
+  </data>
+  <data name="target_ro" xml:space="preserve">
+    <value>읽기 전용</value>
+  </data>
+  <data name="target_iuser" xml:space="preserve">
+    <value>클라이언트에 의한 인증</value>
+  </data>
+  <data name="target_iuserall" xml:space="preserve">
+    <value>인증이 필요하지 않습니다</value>
+  </data>
+  <data name="target_iuserbelow" xml:space="preserve">
+    <value>아래 로그인 허용 ..</value>
+  </data>
+  <data name="target_uname" xml:space="preserve">
+    <value>사용자 이름</value>
+  </data>
+  <data name="target_upass" xml:space="preserve">
+    <value>암호</value>
+  </data>
+  <data name="target_ouser" xml:space="preserve">
+    <value>클라이언트 인증</value>
+  </data>
+  <data name="target_ousernone" xml:space="preserve">
+    <value>인증하지 마십시오</value>
+  </data>
+  <data name="target_ousername" xml:space="preserve">
+    <value>사용자 이름으로 로그인</value>
+  </data>
+  <data name="target_ouserpass" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
+  <data name="target_err" xml:space="preserve">
+    <value>대상을 저장하지 못했습니다</value>
+  </data>
+  <data name="target_esectors" xml:space="preserve">
+    <value>$1 장치의 섹터가 없거나 숫자가 아닙니다</value>
+  </data>
+  <data name="target_eother" xml:space="preserve">
+    <value>$1 장치에 대한 파일이 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="target_eiuser" xml:space="preserve">
+    <value>사용자 $1 의 이름이 잘못되었습니다. 공백은 허용되지 않습니다</value>
+  </data>
+  <data name="target_eipass" xml:space="preserve">
+    <value>사용자 $1 의 암호가 잘못되었습니다. 공백은 허용되지 않습니다</value>
+  </data>
+  <data name="target_eouser" xml:space="preserve">
+    <value>클라이언트 인증을위한 사용자 이름이 없거나 잘못되었습니다. 공백은 허용되지 않습니다</value>
+  </data>
+  <data name="target_eopass" xml:space="preserve">
+    <value>클라이언트 인증을위한 비밀번호가 없거나 유효하지 않습니다. 공백은 허용되지 않습니다.</value>
+  </data>
+  <data name="target_eiusernone" xml:space="preserve">
+    <value>클라이언트 사용자 이름이 입력되지 않았습니다</value>
+  </data>
+  <data name="target_alias" xml:space="preserve">
+    <value>대상의 별명</value>
+  </data>
+  <data name="target_noalias" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="target_hdigest" xml:space="preserve">
+    <value>헤더 체크섬</value>
+  </data>
+  <data name="target_ddigest" xml:space="preserve">
+    <value>데이터 체크섬</value>
+  </data>
+  <data name="target_nodigest" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>인증 설정</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>모든 대상에 대한 기본 인증 옵션</value>
+  </data>
+  <data name="auth_iuser" xml:space="preserve">
+    <value>클라이언트에 의한 인증</value>
+  </data>
+  <data name="auth_ouser" xml:space="preserve">
+    <value>클라이언트 인증</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>인증 설정을 저장하지 못했습니다</value>
+  </data>
+  <data name="conn_title" xml:space="preserve">
+    <value>연결 설정</value>
+  </data>
+  <data name="conn_header" xml:space="preserve">
+    <value>모든 대상에 대한 기본 연결 옵션</value>
+  </data>
+  <data name="conn_sessions" xml:space="preserve">
+    <value>최대 동시 세션</value>
+  </data>
+  <data name="conn_sessions1" xml:space="preserve">
+    <value>제한 없는</value>
+  </data>
+  <data name="conn_sessions0" xml:space="preserve">
+    <value>많으면</value>
+  </data>
+  <data name="conn_initial" xml:space="preserve">
+    <value>클라이언트가 명령 후에 데이터를 보내도록 허용 하시겠습니까?</value>
+  </data>
+  <data name="conn_immediate" xml:space="preserve">
+    <value>클라이언트가 명령에 데이터를 추가 할 수 있습니까?</value>
+  </data>
+  <data name="conn_maxrecv" xml:space="preserve">
+    <value>최대 수신 세그먼트 길이</value>
+  </data>
+  <data name="conn_maxxmit" xml:space="preserve">
+    <value>최대 전송 세그먼트 길이</value>
+  </data>
+  <data name="conn_maxburst" xml:space="preserve">
+    <value>최대 클라이언트 버스트 크기</value>
+  </data>
+  <data name="conn_firstburst" xml:space="preserve">
+    <value>최대 클라이언트 원치 않는 데이터 크기</value>
+  </data>
+  <data name="conn_bytes" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="conn_err" xml:space="preserve">
+    <value>연결 설정을 저장하지 못했습니다</value>
+  </data>
+  <data name="conn_esessions" xml:space="preserve">
+    <value>최대 동시 세션 수는 숫자 여야합니다</value>
+  </data>
+  <data name="conn_emaxrecv" xml:space="preserve">
+    <value>최대 수신 세그먼트 길이가 없거나 숫자가 아님</value>
+  </data>
+  <data name="conn_emaxxmit" xml:space="preserve">
+    <value>최대 전송 세그먼트 길이가 없거나 숫자가 아님</value>
+  </data>
+  <data name="conn_emaxburst" xml:space="preserve">
+    <value>최대 또는 클라이언트가 아닌 최대 클라이언트 버스트 크기</value>
+  </data>
+  <data name="conn_efirstburst" xml:space="preserve">
+    <value>최대 또는 클라이언트가 아닌 최대 클라이언트 원치 않는 데이터 크기가 없거나</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>타임 아웃 설정</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>클라이언트 타임 아웃 옵션</value>
+  </data>
+  <data name="timeout_nopi" xml:space="preserve">
+    <value>유휴 상태 일 때 핑 간격</value>
+  </data>
+  <data name="timeout_nopinone" xml:space="preserve">
+    <value>절대 핑</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>초</value>
+  </data>
+  <data name="timeout_nopt" xml:space="preserve">
+    <value>핑 응답을 기다리는 시간</value>
+  </data>
+  <data name="timeout_noptnone" xml:space="preserve">
+    <value>핑 시간과 동일</value>
+  </data>
+  <data name="addr_title" xml:space="preserve">
+    <value>서버 주소 및 포트</value>
+  </data>
+  <data name="addr_header" xml:space="preserve">
+    <value>iSCSI 서버 네트워킹 옵션</value>
+  </data>
+  <data name="addr_addr" xml:space="preserve">
+    <value>IP 주소 청취</value>
+  </data>
+  <data name="addr_any" xml:space="preserve">
+    <value>모든 주소</value>
+  </data>
+  <data name="addr_ip" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="addr_port" xml:space="preserve">
+    <value>포트에서 듣기</value>
+  </data>
+  <data name="addr_debug" xml:space="preserve">
+    <value>디버그 레벨</value>
+  </data>
+  <data name="addr_debugnone" xml:space="preserve">
+    <value>디버깅 비활성화</value>
+  </data>
+  <data name="addr_err" xml:space="preserve">
+    <value>서버 주소를 저장하지 못했습니다</value>
+  </data>
+  <data name="addr_eaddr" xml:space="preserve">
+    <value>수신 할 주소는 IP 주소 여야합니다</value>
+  </data>
+  <data name="addr_eport" xml:space="preserve">
+    <value>수신 포트는 숫자 여야합니다</value>
+  </data>
+  <data name="addr_edebug" xml:space="preserve">
+    <value>디버그 수준은 숫자 여야합니다</value>
+  </data>
+  <data name="initiators_title" xml:space="preserve">
+    <value>허용 된 클라이언트 주소</value>
+  </data>
+  <data name="initiators_none" xml:space="preserve">
+    <value>허용 된 클라이언트 주소가 아직 정의되지 않았습니다. 어떤 클라이언트도 연결할 수 없습니다.</value>
+  </data>
+  <data name="initiators_ips" xml:space="preserve">
+    <value>허용 된 고객</value>
+  </data>
+  <data name="initiators_title1" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 추가</value>
+  </data>
+  <data name="initiators_title2" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 편집</value>
+  </data>
+  <data name="initiators_header" xml:space="preserve">
+    <value>대상에 허용 된 iSCSI 클라이언트</value>
+  </data>
+  <data name="targets_title" xml:space="preserve">
+    <value>허용 된 서버 주소</value>
+  </data>
+  <data name="targets_none" xml:space="preserve">
+    <value>허용 된 서버 주소가 아직 정의되지 않았습니다. 어떤 클라이언트도 연결할 수 없습니다.</value>
+  </data>
+  <data name="targets_ips" xml:space="preserve">
+    <value>허용 된 서버 인터페이스</value>
+  </data>
+  <data name="targets_title1" xml:space="preserve">
+    <value>허용 된 서버 주소 추가</value>
+  </data>
+  <data name="targets_title2" xml:space="preserve">
+    <value>허용 된 서버 주소 편집</value>
+  </data>
+  <data name="targets_header" xml:space="preserve">
+    <value>대상에 허용되는 iSCSI 서버 인터페이스</value>
+  </data>
+  <data name="allow_target" xml:space="preserve">
+    <value>대상 이름</value>
+  </data>
+  <data name="allow_move" xml:space="preserve">
+    <value>움직임</value>
+  </data>
+  <data name="allow_delete" xml:space="preserve">
+    <value>선택된 것을 지워 라</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>모든 목표</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>모든 주소</value>
+  </data>
+  <data name="allow_add" xml:space="preserve">
+    <value>허용 할 새 대상과 주소를 추가하십시오.</value>
+  </data>
+  <data name="allow_below" xml:space="preserve">
+    <value>아래에 ..</value>
+  </data>
+  <data name="allow_return" xml:space="preserve">
+    <value>허용 된 목표 및 주소</value>
+  </data>
+  <data name="allow_err" xml:space="preserve">
+    <value>허용 된 주소를 저장하지 못했습니다</value>
+  </data>
+  <data name="allow_eaddr" xml:space="preserve">
+    <value>주소 $1 이 (가) 유효하지 않습니다. IPv4 주소, IPv4 네트워크/마스크 또는 대괄호 안에있는 IPv6 주소 여야합니다.</value>
+  </data>
+  <data name="allow_eaddrs" xml:space="preserve">
+    <value>입력 할 주소가 없습니다</value>
+  </data>
+  <data name="dallow_err" xml:space="preserve">
+    <value>허용 된 주소를 삭제하지 못했습니다.</value>
+  </data>
+  <data name="dallow_enone" xml:space="preserve">
+    <value>선택된 사항 없음</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>구성 파일 편집</value>
+  </data>
+  <data name="manual_desc" xml:space="preserve">
+    <value>아래 텍스트 상자를 사용하여 iSCSI 서버 구성 파일 $1 을 (를) 편집하십시오. 입력에 대한 유효성 검사가 수행되지 않으므로주의하십시오!</value>
+  </data>
+  <data name="manual_err" xml:space="preserve">
+    <value>구성 파일을 저장하지 못했습니다</value>
+  </data>
+  <data name="manual_edata" xml:space="preserve">
+    <value>내용이 입력되지 않았습니다!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>iSCSI 서버를 시작하지 못했습니다</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>iSCSI 서버를 중지하지 못했습니다</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>iSCSI 서버를 다시 시작하지 못했습니다</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>부팅시 활성화하지 못했습니다</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>초기화 스크립트 $1 이 (가) 없습니다</value>
+  </data>
+  <data name="log_create_target" xml:space="preserve">
+    <value>생성 된 목표 $1 </value>
+  </data>
+  <data name="log_delete_target" xml:space="preserve">
+    <value>삭제 된 대상 $1 </value>
+  </data>
+  <data name="log_modify_target" xml:space="preserve">
+    <value>수정 된 목표 $1 </value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>iSCSI 서버 시작</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>중지 된 iSCSI 서버</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>iSCSI 서버를 다시 시작했습니다</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>부팅시 활성화 된 iSCSI 서버</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>부팅시 비활성화 된 iSCSI 서버</value>
+  </data>
+  <data name="log_manual" xml:space="preserve">
+    <value>수동으로 편집 된 구성 파일</value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>변경된 글로벌 인증 설정</value>
+  </data>
+  <data name="log_conn" xml:space="preserve">
+    <value>변경된 글로벌 연결 설정</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>변경된 글로벌 시간 초과 설정</value>
+  </data>
+  <data name="log_addr" xml:space="preserve">
+    <value>변경된 서버 주소</value>
+  </data>
+  <data name="log_create_targets" xml:space="preserve">
+    <value>허용 된 서버 주소 $1 을 (를) 생성했습니다.</value>
+  </data>
+  <data name="log_delete_targets" xml:space="preserve">
+    <value>허용 된 서버 주소 $1 을 (를) 삭제했습니다.</value>
+  </data>
+  <data name="log_modify_targets" xml:space="preserve">
+    <value>허용 된 서버 주소 $1 수정</value>
+  </data>
+  <data name="log_move_targets" xml:space="preserve">
+    <value>허용 된 서버 주소 $1 을 (를) 이동했습니다.</value>
+  </data>
+  <data name="log_multidelete_targets" xml:space="preserve">
+    <value>허용 된 $1 서버 주소를 삭제했습니다</value>
+  </data>
+  <data name="log_create_initiators" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 $1 을 (를) 생성했습니다.</value>
+  </data>
+  <data name="log_delete_initiators" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 $1 을 (를) 삭제했습니다.</value>
+  </data>
+  <data name="log_modify_initiators" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 $1 수정</value>
+  </data>
+  <data name="log_move_initiators" xml:space="preserve">
+    <value>허용 된 클라이언트 주소 $1 을 (를) 이동했습니다.</value>
+  </data>
+  <data name="log_multidelete_initiators" xml:space="preserve">
+    <value>허용 된 $1 클라이언트 주소 삭제</value>
+  </data>
+</root>

@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>WU-FTPD-palvelin</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Ota muutokset käyttöön</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>Napsauta tätä painiketta, jos haluat käyttää nykyistä kokoonpanoa. Tämä pysäyttää ja käynnistää kaikki käynnissä olevat FTP-palvelinprosessit, irrottaen siten kaikki kytketyt käyttäjät.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Käynnistä palvelin</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>Napsauta tätä painiketta, jos haluat käynnistää FTP-palvelimen nykyisellä kokoonpanolla. Voit myös määrittää palvelimen käynnistyvän automaattisesti tarvittaessa käyttämällä inetd: tä tai jotain vastaavaa ohjelmaa.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>FTP-palvelimen asetukset</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>WU-FTPd-versio $1 </value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>Käyttäjät ja luokat</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>Käyttäjäluokat ja käyttäjän vaihtoehdot</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>Käyttäjäluokat</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>Luokan nimi</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>Käyttäjätyypit</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>Vastaavat osoitteet</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>unix</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>vieras</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>anonyymi</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>Unix-käyttäjät ja UID: t, joita kohdellaan vieraina</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>Unix-ryhmät ja GID: t, joita voidaan kohdella vieraina</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>Unix-käyttäjiä ja UID-tunnuksia &lt;i&gt;ei&lt;/i&gt; kohdella vieraina</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>Unix-ryhmiä ja GID: itä &lt;i&gt;ei&lt;/i&gt; käsitellä vieraina</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>Kiellettävät Unix-käyttäjät ($1)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>Unix-käyttäjät ja UID: t kieltäytyvät</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>Unix-ryhmät ja GID: t kiellä</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>Unix-käyttäjät ja UID: t &lt;i&gt;ei&lt;/i&gt; kieltää</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>Unix-ryhmät ja GID: t &lt;i&gt;ei&lt;/i&gt; kieltää</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>Käyttäjäluokkien tallentaminen epäonnistui</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen luokan nimi</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>Luokkaan '$1' ei ole valittu tyyppejä</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>Luokkaan '$1' ei ole annettu osoitteita</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>Viestit ja bannerit</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>Viestit, bannerit ja README-tiedostot</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>Viestitiedostot</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>polku</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>Milloin näytetään</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>Sisäänkirjautumisen yhteydessä</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>Sisäänkäynti</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>Minkä tahansa ohjaimen syöttäminen</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>Näytettävät luokat</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>README-tiedostot</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>Milloin viimeksi muokattu päivämäärä näytetään</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>Tervehdys taso</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>Isäntänimi ja versio</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>hostname</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>Ei kumpikaan</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>Pre-login banneri</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>Tiedostosta</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>Järjestelmän isäntänimi</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>Viestien isäntänimi</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>Omistajan sähköpostiosoite</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>Viestien ja bannerien tallentaminen epäonnistui</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen polku</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen hakemisto</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>Luokkaa '$1' ei ole olemassa</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen kirjautumispalkki-tiedosto</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>Puuttuva tai virheellinen isäntänimi</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>Puuttuva tai virheellinen sähköpostiosoite</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Rajoitukset ja kulunvalvonta</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>Rajoitukset ja kulunvalvontavaihtoehdot</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>Estä pääsy sivustolta</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>Estä osoitteesta</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>Virhesanomatiedosto</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>Tiedostojen ja tiedonsiirron rajoitukset</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>Rajatyyppi</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>Tiedostot / istunto</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>Tavua istuntoa kohti</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>Vain tiedot?</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>Suunta</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>Sisään</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>ulos</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>molemmat</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>Enimmäismäärä</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>Hakeudu luokkaan</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Kaikki luokat</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>Samanaikaiset käyttäjän rajoitukset</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>Enimmäiskäyttäjät</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>Ajoittain</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>Virhesanomatiedosto</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Rajoittamaton</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>Milloin vain</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>Anonyymi istuntoraja</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>Vierasistunnon raja</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>pöytäkirja</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>Suurimmat sisäänkirjautumisvirheet</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>Voiko ryhmiä vaihtaa?</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>Estä pääsy tiedostoihin</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>Kiellettävät tiedostot</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>Suhteessa chrootiin?</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>Kieltäytyä luokista</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>Salli pääsy tiedostoihin, vaikka ne evätään</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>Sallitut tiedostot</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>Suhteessa chrootiin?</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>Salli luokkiin</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Rajojen ja pääsynhallinnan tallentaminen epäonnistui</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen osoite</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen osoitetiedosto</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen virheviestitiedosto</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen enimmäismäärä käyttäjiä</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen UUCP-tyylinen aikajakso</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen virheviestitiedosto</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen määrä tiedostoja tai tavuja</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen aikaraja</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen määrä kirjautumisvirheitä</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>verkostoituminen</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Verkkovaihtoehdot</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>TCP-ikkunoiden koot</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>Koko</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>Oppituntia varten</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>Kaikki luokat</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>Osoitteet PASV-yhteyksille</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>IP-osoite</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>Verkosta tuleville asiakkaille</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>Portit PASV-yhteyksille</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>Satama-alue</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Verkkovaihtoehtojen tallentaminen epäonnistui</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen TCP-ikkunan koko</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen IP-osoite</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen verkko-osoite</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen määrä verkkobittejä</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen porttinumero</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>hakkuu</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Kirjausvaihtoehdot</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>Loki kaikki komennot</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>Tuntematon käyttäjä</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>Vieraskäyttäjät</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>Unix-käyttäjät</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>Lokin siirrot</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>Ohjeisiin</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>Saapuva</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>Lähtevä</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>molemmat</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>Lokitietosuojausloukkaukset</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>Lokisiirtot</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>Järjestelmäloki</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>XFER-lokitiedosto</value>
+  </data>
+  <data name="log_sysxfer" xml:space="preserve">
+    <value>Molemmat kohteet</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Kirjausasetuksien tallentaminen epäonnistui</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>Aliakset ja polut</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>Alias ja polkuvaihtoehdot</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>CD-hakemiston aliakset</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>Alias nimi</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>Alias hakemistoon</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>CD-hakemiston hakupolku</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Aliasten ja polkujen tallentaminen epäonnistui</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen aliaksen nimi</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen alias-hakemisto</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen CD-hakuhakemisto</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>Anonyymi FTP</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>Varoitus - järjestelmässäsi ei ole &lt;tt&gt;ftp&lt;/tt&gt; -käyttäjää, joten tuntematonta FTP: tä ei todennäköisesti ole määritetty.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>Anonyymi FTP-asetukset</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>Unix-ryhmät tuntemattomille käyttäjille</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>Vaihda ryhmään</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>Kursseille</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>Nimetön FTP-päähakemisto</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>hakemisto</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>Oppituntia varten</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>Minkä tahansa</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>Anonyymi FTP-salasanan tarkistus</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>Salli mikä tahansa</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>Täytyy sisältää @</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>Täytyy olla RFC822-sähköpostiosoite</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>Estä sisäänkirjautuminen</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>Vain varoitus</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>Anonyymit FTP-salasanat kielletään</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>Vierasjuurikansiot</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>Unix-käyttäjille</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>Nimettömien FTP-asetusten tallentaminen epäonnistui</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen hakemisto</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen ryhmä</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>käyttöoikeudet</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>Lupavaihtoehdot</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>Komentorajoitukset</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>Komento</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>Sallia?</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>Käyttäjätyypeille</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>Kursseille</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>Kaikki</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>anonyymi</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>vieras</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>unix</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>Oletuksena kaikki komennot ovat sallittuja kaikille käyttäjille</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>Tiedostojen nimien lataus kielletty</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>Käyttäjätyypit</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>Virhesanomatiedosto</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>Sallitut merkit</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>Tiedostojen uusintahaku hylätään</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>Käyttöoikeuksien tallentaminen epäonnistui</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen merkistöjoukko-lauseke</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>Yhtään käyttäjätyyppiä ei ole valittu</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen virheviestitiedosto</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Isäntäoikeuksien hallinta</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Sekalaiset vaihtoehdot</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Sekalaiset vaihtoehdot</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>Pitkä listauskomento</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>Lyhyt listauskomento</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>Pelkkä listauskomento</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>Sammutusilmoitustiedosto</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>Ei mitään</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>Palveluprosessi hyvällä tasolla</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>Mukava taso</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>Kursseille</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>Kaikki luokat</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>Ladattujen tiedostojen oletus umask</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>Sekalaisten asetusten tallentaminen epäonnistui</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>Puuttuuko pitkä listauskomento</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>Puuttuva listalleotto-komento</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>Puuttuva selkeä listauskomento</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>Puuttuu sammutusilmoitustiedosto</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen mukava taso</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>'$1' ei ole kelvollinen umask</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>Vaihdetut käyttäjät ja luokat</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>Vaihdetut viestit ja bannerit</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Muutetut rajoitukset ja kulunvalvonta</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>Verkkovaihtoehdot muuttuneet</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Muutokset kirjausasetuksissa</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>Muutettu aliaksia ja polkuja</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>Muutettu nimettömänä FTP</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>Muutetut käyttöoikeuksien asetukset</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Muuttuneet sekalaiset vaihtoehdot</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Sovellettu muutettu</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Käynnistettiin FTP-palvelin</value>
+  </data>
+</root>

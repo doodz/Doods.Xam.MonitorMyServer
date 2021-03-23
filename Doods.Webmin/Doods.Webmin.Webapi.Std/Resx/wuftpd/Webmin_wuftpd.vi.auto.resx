@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Máy chủ WU-FTPD</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Áp dụng các thay đổi</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>Nhấn vào nút này để áp dụng cấu hình hiện tại. Điều này sẽ dừng và khởi động lại tất cả các quy trình máy chủ FTP đang chạy, do đó ngắt kết nối tất cả người dùng được kết nối.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Khởi động máy chủ</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>Nhấp vào nút này để khởi động máy chủ FTP với cấu hình hiện tại. Bạn cũng có thể định cấu hình máy chủ để được khởi động tự động khi cần sử dụng inetd hoặc một số chương trình tương đương.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Tùy chọn máy chủ FTP</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Phiên bản WU-FTPd $1 </value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>Người dùng và lớp học</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>Các lớp người dùng và tùy chọn người dùng</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>Lớp người dùng</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>Tên lớp</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>Kiểu người dùng</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>Khớp địa chỉ</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>Khách mời</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>Vô danh</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>Người dùng Unix và UID để coi là khách</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>Các nhóm Unix và GID để coi là khách</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>Người dùng Unix và UID &lt;i&gt;không&lt;/i&gt; để coi là khách</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>Các nhóm Unix và GID &lt;i&gt;không&lt;/i&gt; để coi là khách</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>Người dùng Unix từ chối (từ $1)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>Người dùng Unix và UID từ chối</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>Các nhóm Unix và GID từ chối</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>Người dùng Unix và UID &lt;i&gt;không&lt;/i&gt; để từ chối</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>Các nhóm Unix và GID &lt;i&gt;không&lt;/i&gt; để từ chối</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>Không thể lưu các lớp người dùng</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>'$1' không phải là tên lớp hợp lệ</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>Không có loại nào được chọn cho lớp '$1'</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>Không có địa chỉ nào được nhập cho lớp '$1'</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>Tin nhắn và biểu ngữ</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>Tin nhắn, biểu ngữ và tập tin README</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>Tập tin</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>Con đường</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>Khi nào hiển thị</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>Lúc đăng nhập</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>Đang nhập thư mục</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>Nhập bất kỳ thư mục</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>Các lớp để hiển thị cho</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>Tập tin README</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>Khi nào hiển thị ngày sửa đổi lần cuối</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>Mức chào</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>Tên máy chủ và phiên bản</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>Tên máy chủ</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>Cũng không</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>Biểu ngữ đăng nhập trước</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>Từ tập tin</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>Tên máy chủ hệ thống</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>Tên máy chủ cho tin nhắn</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>Địa chỉ email của chủ sở hữu</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>Không thể lưu tin nhắn và biểu ngữ</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>'$1' không phải là đường dẫn hợp lệ</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>'$1' không phải là thư mục hợp lệ</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>Lớp '$1' không tồn tại</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>'$1' không phải là tệp biểu ngữ đăng nhập hợp lệ</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>Tên máy chủ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>Địa chỉ email bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Giới hạn và kiểm soát truy cập</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>Giới hạn và tùy chọn kiểm soát truy cập</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>Từ chối truy cập từ</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>Từ chối địa chỉ</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>Tệp thông báo lỗi</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>Giới hạn truyền tệp và dữ liệu</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>Loại giới hạn</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>Tệp mỗi phiên</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>Byte mỗi phiên</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>Chỉ thông tin?</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>Phương hướng</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>Trong</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>Ngoài</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>Cả hai</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>Tối đa</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>Đăng ký vào lớp</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Tất cả các lớp học</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>Giới hạn người dùng đồng thời</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>Người dùng tối đa</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>Có lúc</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>Tệp thông báo lỗi</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Vô hạn</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>Bất cứ lúc nào</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>Giới hạn phiên ẩn danh</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>Giới hạn phiên của khách</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>phút</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>Lỗi đăng nhập tối đa</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>Có thể chuyển nhóm?</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>Từ chối truy cập vào tập tin</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>Tập tin từ chối</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>Liên quan đến chroot?</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>Từ chối lớp học</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>Cho phép truy cập vào các tập tin ngay cả khi bị từ chối</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>Tập tin cho phép</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>Liên quan đến chroot?</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>Cho phép các lớp học</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Không thể lưu giới hạn và kiểm soát truy cập</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>'$1' không phải là địa chỉ hợp lệ</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>'$1' không phải là tệp địa chỉ hợp lệ</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>'$1' không phải là tệp thông báo lỗi hợp lệ</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>'$1' không phải là số lượng người dùng tối đa hợp lệ</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>'$1' không phải là phạm vi thời gian kiểu UUCP hợp lệ</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>'$1' không phải là tệp thông báo lỗi hợp lệ</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>'$1' không phải là số tệp hoặc byte hợp lệ</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$1' không phải là giới hạn thời gian hợp lệ</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>'$1' không phải là số lần đăng nhập thất bại hợp lệ</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>Mạng</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Tùy chọn kết nối mạng</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>Kích thước cửa sổ TCP</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>Kích thước</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>Dành cho lớp</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>Tất cả các lớp học</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>Địa chỉ cho các kết nối PASV</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>địa chỉ IP</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>Đối với khách hàng từ mạng</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>Cổng cho kết nối PASV</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>Phạm vi cổng</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Không thể lưu tùy chọn mạng</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>'$1' không phải là kích thước cửa sổ TCP hợp lệ</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>'$1' không phải là địa chỉ IP hợp lệ</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>'$1' không phải là địa chỉ mạng hợp lệ</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>'$1' không phải là số bit mạng hợp lệ</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>'$1' không phải là số cổng hợp lệ</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>Ghi nhật ký</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Tùy chọn đăng nhập</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>Đăng nhập tất cả các lệnh cho</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>Người dùng ẩn danh</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>Người dùng khách</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>Người dùng Unix</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>Nhật ký chuyển khoản cho</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>Theo hướng</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>Trong nước</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>Ra nước ngoài</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>Cả hai</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>Đăng nhập vi phạm bảo mật cho</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>Đăng nhập chuyển đến</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>Nhật ký hệ thống</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>Tệp nhật ký XFER</value>
+  </data>
+  <data name="log_sysxfer" xml:space="preserve">
+    <value>Cả hai điểm đến</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Không thể lưu tùy chọn đăng nhập</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>Bí danh và đường dẫn</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>Tùy chọn bí danh và đường dẫn</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>Bí danh thư mục CD</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>Tên bí danh</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>Bí danh vào thư mục</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>Đường dẫn tìm kiếm thư mục CD</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Không thể lưu bí danh và đường dẫn</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>'$1' không phải là tên bí danh hợp lệ</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>'$1' không phải là thư mục bí danh hợp lệ</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>'$1' không phải là thư mục tìm kiếm CD hợp lệ</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>FTP ẩn danh</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>Cảnh báo - hệ thống của bạn không có người dùng &lt;tt&gt;ftp&lt;/tt&gt; và do đó FTP ẩn danh có thể không được định cấu hình.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>Tùy chọn FTP ẩn danh</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>Nhóm Unix cho người dùng ẩn danh</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>Chuyển sang nhóm</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>Dành cho lớp học</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>Thư mục gốc FTP ẩn danh</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>Dành cho lớp</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>Bất kì</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>Kiểm tra mật khẩu FTP ẩn danh</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>Cho phép bất cứ điều gì</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>Phải chứa @</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>Phải là địa chỉ email RFC822</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>Từ chối đăng nhập</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>Chỉ cảnh báo</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>Mật khẩu FTP ẩn danh để từ chối</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>Thư mục gốc của khách</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>Dành cho người dùng Unix</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>Không thể lưu tùy chọn FTP ẩn danh</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>'$1' không phải là thư mục hợp lệ</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>'$1' không phải là nhóm hợp lệ</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>Quyền</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>Tùy chọn cho phép</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>Lệnh hạn chế</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>Chỉ huy</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>Cho phép?</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>Đối với loại người dùng</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>Dành cho lớp học</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>Vô danh</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>Khách mời</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>Theo mặc định, tất cả các lệnh được phép cho tất cả người dùng</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>Tên tệp tải lên không được phép</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>Kiểu người dùng</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>Tệp thông báo lỗi</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>Nhân vật được phép</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>Tệp regexps để từ chối</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>Không thể lưu quyền</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>'$1' không phải là một ký tự hợp lệ biểu thức chính quy</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>Không có loại người dùng nào được chọn</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>'$1' không phải là tệp thông báo lỗi hợp lệ</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Kiểm soát truy cập máy chủ</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>sự lựa chọn hỗn hợp</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Sự lựa chọn hỗn hợp</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>Lệnh liệt kê dài</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>Lệnh liệt kê ngắn</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>Lệnh liệt kê đơn giản</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>Tắt thông báo tập tin</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>Quá trình dịch vụ tốt</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>Cấp độ đẹp</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>Dành cho lớp học</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>Tất cả các lớp học</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>Ô mặc định cho các tập tin tải lên</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>Umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>Không thể lưu các tùy chọn linh tinh</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>Thiếu lệnh niêm yết dài</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>Thiếu lệnh liệt kê ngắn</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>Thiếu lệnh liệt kê đơn giản</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>Thiếu tập tin thông báo tắt máy</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>'$1' không phải là mức tốt đẹp hợp lệ</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>'$1' không phải là một ô hợp lệ</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>Người dùng và lớp đã thay đổi</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>Thay đổi tin nhắn và biểu ngữ</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Thay đổi giới hạn và kiểm soát truy cập</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>Thay đổi tùy chọn mạng</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Thay đổi đăng nhập tùy chọn</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>Thay đổi bí danh và đường dẫn</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>Thay đổi FTP ẩn danh</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>Thay đổi quyền tùy chọn</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Thay đổi tùy chọn linh tinh</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Áp dụng thay đổi</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Bắt đầu máy chủ FTP</value>
+  </data>
+</root>

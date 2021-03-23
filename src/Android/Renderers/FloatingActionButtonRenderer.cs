@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.Res;
 using Android.Graphics;
-using Android.OS;
-using Android.Runtime;
 using Android.Support.V4.View;
 using Android.Views;
-using Android.Widget;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Xam.MonitorMyServer.Droid.Renderers;
@@ -20,14 +14,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(FloatingActionButton), typeof(FloatingActionButtonRenderer))]
+
 namespace Doods.Xam.MonitorMyServer.Droid.Renderers
 {
     public class FloatingActionButtonRenderer :
-       ViewRenderer<FloatingActionButton, Android.Support.Design.Widget.FloatingActionButton>
+        ViewRenderer<FloatingActionButton, Android.Support.Design.Widget.FloatingActionButton>
     {
         public FloatingActionButtonRenderer(Context c) : base(c)
         {
-
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<FloatingActionButton> e)
@@ -77,7 +71,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Renderers
 
         private void UpdateControlForSize()
         {
-            var inflater = (LayoutInflater)Context.GetSystemService(Context.LayoutInflaterService);
+            var inflater = (LayoutInflater) Context.GetSystemService(Context.LayoutInflaterService);
 
             Android.Support.Design.Widget.FloatingActionButton fab = null;
 
@@ -134,10 +128,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Renderers
             Task.Run(async () =>
             {
                 var bitmap = await GetBitmapAsync(Element.Source);
-                if (bitmap != null)
-                {
-                    (Context as Activity).RunOnUiThread(() => { Control?.SetImageBitmap(bitmap); });
-                }
+                if (bitmap != null) (Context as Activity).RunOnUiThread(() => { Control?.SetImageBitmap(bitmap); });
             }).ConfigureAwait(false);
         }
 

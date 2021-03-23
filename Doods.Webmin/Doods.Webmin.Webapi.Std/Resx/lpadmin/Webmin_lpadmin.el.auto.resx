@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Διαχείριση εκτυπωτή</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Διαθέσιμοι εκτυπωτές</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Εκτυπωτής</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Εκτύπωση σε</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Οδηγός</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Ενεργοποιήθηκε;</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Αποδοχή;</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Εργασία</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Δεν υπάρχουν εγκατεστημένοι εκτυπωτές σε αυτό το σύστημα.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Λίστα ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Εργασίες ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 εργασίες ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Προσθέστε νέο εκτυπωτή.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stop Scheduler</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Κάντε κλικ σε αυτό το κουμπί για να διακόψετε τη διαδικασία χρονοδιαγράμματος εκτύπωσης που εκτελείται. Αυτό θα αποτρέψει τυχόν τοπικούς ή απομακρυσμένους χρήστες να εκτυπώσουν στο σύστημά σας.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Ξεκινήστε τον προγραμματιστή</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Κάντε κλικ σε αυτό το κουμπί για να ξεκινήσετε τη διαδικασία προγραμματισμού εκτύπωσης. Αυτό θα επιτρέψει σε τοπικούς και απομακρυσμένους χρήστες να εκτυπώσουν στο σύστημά σας.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Επανεκκινήστε τον προγραμματιστή</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Κάντε κλικ σε αυτό το κουμπί για να επανεκκινήσετε τη διαδικασία προγραμματισμού εκτύπωσης. Αυτό θα αναγκάσει την εφαρμογή της τρέχουσας διαμόρφωσης εκτύπωσης.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>λίστα εκτυπωτών</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Σύστημα εκτύπωσης: $1 </value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Διακομιστές συμπλέγματος</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Κάντε κλικ σε αυτό το κουμπί για να ρυθμίσετε επιπλέον διακομιστές Webmin, στους οποίους θα δημιουργηθούν, θα ενημερωθούν και θα διαγραφούν οι εκτυπωτές.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Διαγραφή επιλεγμένων εκτυπωτών</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Δεν επιτρέπεται η επεξεργασία αυτού του εκτυπωτή</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Δεν επιτρέπεται να προσθέσετε εκτυπωτές</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Δημιουργία εκτυπωτή</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Επεξεργασία εκτυπωτή</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Διαμόρφωση εκτυπωτή</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Ονομα</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Αποδοχή αιτημάτων;</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Όχι - Γιατί όχι</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Η εκτύπωση ενεργοποιήθηκε;</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Έλεγχος πρόσβασης</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Επιτρέψτε σε όλους</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Αρνούμαστε όλους</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Να επιτρέπεται στους καταχωρημένοι χρήστες ..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Αποκλείστε τους καταχωρημένους χρήστες ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Εκτύπωση banner;</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>Προαιρετικός</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Εκτυπωτής προεπιλεγμένος;</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Ήδη ο προεπιλεγμένος εκτυπωτής</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Μέγιστο μέγεθος εργασίας εκτύπωσης</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Απεριόριστος</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Ο οδηγός δέχεται</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Κείμενο</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>Υστερόγραφο</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>Αλλα</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Εναλλακτικά ονόματα εκτυπωτών</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Εκτύπωση προορισμού</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Τοπική συσκευή</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Τοπικό αρχείο</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Απομακρυσμένος διακομιστής Unix</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>Εκτυπωτής</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Τύπος</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Απομακρυσμένος διακομιστής Windows</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>Εκτυπωτής</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Χρήστης</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Κωδικός πρόσβασης</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Ομάδα εργασίας</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Απομακρυσμένος διακομιστής HPNP</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Λιμάνι</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Άμεση σύνδεση TCP</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Λιμάνι</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Πρόγραμμα οδήγησης εκτυπωτή</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Ελέγξτε αν ο απομακρυσμένος διακομιστής είναι ανεβασμένος</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>μπλοκ</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Αποτυχία αποθήκευσης του εκτυπωτή</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Δεν επιτρέπεται να προσθέσετε εκτυπωτές</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Δεν επιτρέπεται η επεξεργασία αυτού του εκτυπωτή</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>Το '$1' δεν είναι έγκυρο όνομα εκτυπωτή</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Ένας εκτυπωτής που ονομάζεται '$1' υπάρχει ήδη</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Κανένας χρήστης δεν επιτρέπεται να εισαχθεί</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Δεν υπάρχουν χρήστες που να αρνηθούν την εισαγωγή</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Ο χρήστης '$1' δεν υπάρχει</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Πρέπει να επιλέξετε τουλάχιστον έναν τύπο για να αποδεχθεί αυτό το πρόγραμμα οδήγησης</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Το μέγιστο μέγεθος εργασίας εκτύπωσης πρέπει να είναι ακέραιος</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' δεν υπάρχει</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Ο απομακρυσμένος κεντρικός υπολογιστής '$1' δεν υπάρχει</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Η απομακρυσμένη θύρα '$1' δεν είναι έγκυρη</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>Το '$1' δεν είναι έγκυρο όνομα απομακρυσμένης ουράς</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Οι οδηγοί δεν μπορούν να χρησιμοποιηθούν με απομακρυσμένους εκτυπωτές Unix</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Ο άμεσος κεντρικός υπολογιστής '$1' δεν υπάρχει</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Λανθασμένη ή άκυρη άμεση θύρα</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Το σύστημα εκτύπωσης δεν επέτρεψε αυτόν τον εκτυπωτή</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Ο εκτυπωτής δημιούργησε OK σε αυτό το σύστημα, αλλά τα ακόλουθα σφάλματα εμφανίστηκαν σε συστήματα συμπλέγματος : $1 </value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Δεν βρέθηκε εκτυπωτής με όνομα '$1'</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Ο εκτυπωτής διαγράφηκε OK σε αυτό το σύστημα, αλλά τα ακόλουθα σφάλματα εμφανίστηκαν σε συστήματα συμπλέγματος : $1 </value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Εκτυπώστε εργασίες</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Οι εργασίες εκτύπωσης στο $1 </value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>Αναγνωριστικό εργασίας</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Μέγεθος</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Που υποβάλλονται από</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Υποβλήθηκε στο</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Ονομα αρχείου</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Κάντε κλικ σε ένα αναγνωριστικό δουλειάς από την παραπάνω λίστα για να ακυρώσετε.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Κάντε κλικ σε ένα αναγνωριστικό δουλειάς από την παραπάνω λίστα για να ακυρώσετε ή κάντε κλικ στο μέγεθος της εργασίας για να το δείτε.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Ο εκτυπωτής $1 δεν έχει καθόλου εκκρεμείς εργασίες.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Ακυρώστε όλες τις εργασίες εκτύπωσης</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>bytes</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Εκτύπωση σελίδας δοκιμής</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Ακύρωση επιλεγμένων εργασιών</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Στον εκτυπωτή $1 </value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>λίστα εργασιών εκτύπωσης</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται η ακύρωση εργασιών εκτύπωσης</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Η εργασία εκτύπωσης απέτυχε</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Η εργασία εκτύπωσης $1 δεν υπάρχει πλέον</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Δεν μπορείτε να προβάλετε αυτήν την εργασία εκτύπωσης</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Αυτή η εργασία εκτύπωσης δεν υπάρχει πλέον</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται η εκκίνηση του χρονοπρογραμματιστή</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Δεν ήταν δυνατή η εκκίνηση του χρονοπρογραμματισμού</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται να σταματήσετε τον προγραμματιστή</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Δεν ήταν δυνατή η διακοπή του χρονοπρογραμματισμού</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται να επανεκκινήσετε τον προγραμματιστή</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Δεν ήταν δυνατή η επανεκκίνηση του χρονοπρογραμματισμού</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Δημοσίευση κειμένου ή εκτυπωτή κειμένου</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Απομακρυσμένος εκτυπωτής</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Μοντέλο</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Πρόγραμμα</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin οδηγός</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Uniprint πρόγραμμα οδήγησης</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Αποτυχία λήψης προγραμμάτων οδήγησης από το $1. Τα προγράμματα οδήγησης εκτυπωτή Webmin που χρησιμοποιούν ghostscript δεν είναι διαθέσιμα</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε. Τα προγράμματα οδήγησης εκτυπωτή Webmin που χρησιμοποιούν ghostscript δεν είναι διαθέσιμα</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' δεν υπάρχει</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Απομακρυσμένος ή πρωτογενής εκτυπωτής</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Πρόγραμμα</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS οδηγός</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Εκτυπωτής και ανάλυση</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Στείλτε EOF;</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Μέγεθος χαρτιού</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Εκτύπωση διπλής όψης;</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Πρόσθετες επιλογές GS</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Uniprint πρόγραμμα οδήγησης</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' δεν υπάρχει</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Δεν έχει επιλεγεί πρόγραμμα οδήγησης εκτυπωτή</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Δεν έχει επιλεγεί ανάλυση</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Δημοσίευση κειμένου ή εκτυπωτή κειμένου</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Πρόγραμμα</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat οδηγός</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Εκτυπωτής και ανάλυση</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Στείλτε EOF;</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Μέγεθος χαρτιού</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Σελίδες ανά σελίδα εξόδου</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Πρόσθετες επιλογές GS</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Δεξί/αριστερό περιθώριο</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Επάνω/κάτω περιθώριο</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Επιδιόρθωση κειμένου σκαλοπατιού;</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' δεν υπάρχει</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Δεν έχει επιλεγεί πρόγραμμα οδήγησης εκτυπωτή</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Λείπει ή άκυρο δεξί/αριστερό περιθώριο</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Λείπει ή άκυρο περιθώριο κορυφής/κάτω</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Δεν έχει επιλεγεί ανάλυση</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Μοντέλο εκτυπωτή και πρόγραμμα οδήγησης</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Δημοσίευση κειμένου ή εκτυπωτή κειμένου</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Πρόγραμμα</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSfilter driver</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Τύπος εκτυπωτή</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Ανάλυση στο DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Έγχρωμος εκτυπωτής;</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Μέγεθος χαρτιού</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Μέθοδος φίλτρου</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Αυτόματο</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>Ακατέργαστος</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Επιλογές επιπλέον ghostscript</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>Οδηγό YAST2</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Δεν έχει επιλεγεί τύπος εκτυπωτή</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Λείπει ή μη έγκυρη ανάλυση</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Αποτυχία κατάργησης του lpd : $1 </value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Εκτυπωτές που ο χρήστης μπορεί να ρυθμίσει</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Μπορεί να προσθέσει νέους εκτυπωτές;</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Μπορεί να ακυρώσει τις εργασίες εκτύπωσης;</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Μπορεί να σταματήσει ή να ξεκινήσει προγραμματιστής;</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Επανεκκινήστε μόνο</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Μόνο σε επιλεγμένους εκτυπωτές ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Όλοι οι εκτυπωτές</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Επιλεγμένα ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Εμφάνιση μη εκτυπώσιμων εκτυπωτών;</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Μπορεί να εκτυπώσει σελίδες ελέγχου;</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Διαχείριση εργασιών εκτύπωσης που ανήκουν</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Ολοι οι χρήστες</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Τρέχων χρήστης Webmin</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Μπορεί να διαγράψει εκτυπωτές;</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Μπορεί να διαχειριστεί το συγκρότημα εκτυπωτών;</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Σταματημένος χρονοπρογραμματιστής εκτύπωσης</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Ξεκίνησε τον προγραμματισμό εκτύπωσης</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Επανεκκίνηση χρονοπρογραμματιστή εκτύπωσης</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Έχει ακυρωθεί η εργασία εκτύπωσης $2 στο $1 </value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Ακυρώθηκαν όλες οι εργασίες εκτύπωσης στο $1 </value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Ακύρωση $2 εργασιών εκτύπωσης στο $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Δημιουργήθηκε εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Τροποποιημένος εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Διαγράφηκε ο εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Δημιουργήθηκε $3 εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Τροποποιήθηκε $3 εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Διαγράφηκε $3 εκτυπωτής $1 στο $2 </value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα $1 </value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 (COM $1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Μηδενική συσκευή</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>Εκτυπωτής USB $1 </value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι το σύστημα εκτύπωσης Linux δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Ο κατάλογος spool $1 δεν υπάρχει στο σύστημά σας, πράγμα που υποδεικνύει ότι το σύστημα εκτύπωσης Linux δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 (COM $1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που δείχνει ότι το σύστημα εκτύπωσης FreeBSD δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Ο κατάλογος spool $1 δεν υπάρχει στο σύστημά σας, πράγμα που δείχνει ότι το σύστημα εκτύπωσης FreeBSD δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 (COM $1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα $1 </value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 </value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Μηδενική συσκευή</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που δείχνει ότι το σύστημα εκτύπωσης UnixWare δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Παράλληλη $1 </value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Σειριακό $1 </value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Μηδενική συσκευή</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης HPUX.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Ο κατάλογος δέσμης ενεργειών διεπαφής $1 δεν υπάρχει στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης HPUX.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα $1 </value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 (COM $1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Μηδενική συσκευή</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης LPRng.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Ο κατάλογος spool $1 δεν υπάρχει στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης LPRng.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Παράλληλη θύρα</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 παράλληλο λιμάνι</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Σειριακή θύρα $1 </value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Μηδενική συσκευή</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης Solaris.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Εκτύπωση σελίδας δοκιμής</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται η εκτύπωση σελίδων δοκιμής</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Αυτή η φόρμα σάς επιτρέπει να εκτυπώσετε μια δοκιμαστική σελίδα για τον εκτυπωτή $1. Επιλέξτε τον τύπο σελίδας που θέλετε να εκτυπώσετε :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Ασπρόμαυρη σελίδα Postscript</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Χρώμα Postscript σελίδα</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Απλό κείμενο ASCII</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Κάθε αρχείο που ανέβηκε</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Εκτύπωση σελίδας</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Εκτύπωση δοκιμαστικής σελίδας με εντολή $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. εντολή απέτυχε!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>... εντολή ολοκληρώθηκε.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Απομακρυσμένος ή πρωτογενής εκτυπωτής</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Πρόγραμμα</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>Πρόγραμμα οδήγησης CUPS</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>Το '$1' δεν είναι έγκυρο πρόγραμμα</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Επιλογές για $1 </value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι το σύστημα εκτύπωσης CUPS δεν έχει εγκατασταθεί.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Η εντολή $1 δεν βρέθηκε στο σύστημά σας, πράγμα που σημαίνει ότι δεν έχει εγκατασταθεί το σύστημα εκτύπωσης IRIX.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Ο κατάλογος δέσμες ενεργειών διεπαφής $1 δεν υπάρχει στο σύστημά σας, πράγμα που υποδεικνύει ότι το σύστημα εκτύπωσης IRIX δεν είναι εγκατεστημένο.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Θύρα εκτυπωτή $1 </value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Μη έγκυρη περιγραφή - επιτρέπονται μόνο γράμματα και αριθμοί και δεν υπάρχουν κενά</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>Ο διακομιστής εκτυπωτή AIX $1 δεν βρέθηκε. Ίσως δεν είναι εγκατεστημένο ή χρησιμοποιείται κάποιο άλλο σύστημα εκτύπωσης.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Διακομιστές εκτυπωτών συμπλέγματος</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Δεν έχουν προστεθεί ακόμη διακομιστές στο σύμπλεγμα εκτυπωτών.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Όνομα κεντρικού υπολογιστή</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Περιγραφή</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Λειτουργικό σύστημα</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Προσθήκη διακομιστή</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Προσθήκη διακομιστών σε ομάδα</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Πρέπει να προσθέσετε διακομιστές με κωδικό πρόσβασης και κωδικό πρόσβασης στη μονάδα ευρετηρίου Webmin Servers Index, για να μπορέσετε να τις διαχειριστείτε εδώ.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>διακομιστές συμπλέγματος</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Αφαιρέστε τα επιλεγμένα</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Δεν επιτρέπεται η διαχείριση διακομιστών εκτυπωτή συμπλεγμάτων</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Προσθήκη διακομιστών</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Προσθέτοντας $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Προσθήκη διακομιστών στην ομάδα $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Αποτυχία προσθήκης διακομιστή</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Αποτυχία προσθήκης ομάδας</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Ο διακομιστής $1 δεν διαθέτει τη μονάδα διαχείρισης εκτυπωτή</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Ο διακομιστής $1 χρησιμοποιεί σε αυτό το διακομιστή ένα διαφορετικό σύστημα εκτύπωσης ($2)</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Ο διακομιστής $1 χρησιμοποιεί διαφορετικό πρόγραμμα οδήγησης εκτύπωσης ($2) σε αυτόν τον διακομιστή</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Προστέθηκε $1, με $2 εκτυπωτές.</value>
+  </data>
+</root>

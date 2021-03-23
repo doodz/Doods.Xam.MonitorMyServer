@@ -8,25 +8,23 @@
                       xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
                       xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
                       xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-                     
+
                       xmlns:models="clr-namespace:Doods.Openmediavault.Mobile.Std.Models;assembly=Doods.Openmediavault.Mobile.Std"
-                      
+
                       xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
-                      
+
                       mc:Ignorable="d"
                       x:Name="Page"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultPlugins.OpenmediavaultPluginsPage">
     <StackLayout>
         <StackLayout.Resources>
             <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter" />
-            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter" />
         </StackLayout.Resources>
         <controls:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
         <Button Text="Install/Remove" Command="{Binding InstallRemoveCmd, Mode=OneWay}" />
         <ScrollView>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Plugins,Mode=OneWay}">
                 <StackLayout.Resources>
-                    <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
                 </StackLayout.Resources>
                 <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="models:PluginInfo">
@@ -43,9 +41,9 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition  Height="Auto"/>
-                                    <RowDefinition  Height="Auto"/>
-                                    <RowDefinition  Height="Auto"/>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
                                 </Grid.RowDefinitions>
                                 <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2"
                                        Text="{Binding Description ,Mode=OneTime}" />

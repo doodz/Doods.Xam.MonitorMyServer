@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>$1 bölge yönetim komutu sisteminizde bulunamadı. Bu modülün kullanılabilmesi için önce takılması gerekir.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin, &lt;tt&gt;global&lt;/tt&gt; bölgesi yerine $1 bölgesinde çalışıyor. Bu modül yalnızca &lt;tt&gt;global&lt;/tt&gt; bölgesinde çalıştırıldığında çalışır.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Henüz hiçbir bölge tanımlanmadı.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Yeni bir bölge ekleyin.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>bölge listesi</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Mevcut Bölgeler</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Bölgeyi Düzenle</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Genel bölge yapılandırması</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Bölge adı</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Şu anki durum</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Bölge dizini</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Sistem önyüklemesinde başlasın mı?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Kaynak Havuzu</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Yeniden Başlatma</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Webmin'i yükle</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Webmin'i yükseltin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>bootup</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Sistemi Kur</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Yüklemeyi Kaldırma Sistemi</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Bölgeyi Sil</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Bölge için ağ arabirimleri</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Henüz hiçbir ağ arayüzü tanımlanmadı.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Arayüz adı</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP adresi</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Ağ Maskesi</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Yayın adresi</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Yeni bir ağ arayüzü ekleyin.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>pasif</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Bölge mevcut değil!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>bölge ayrıntıları</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Devralınan paket dizinleri</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Global bölgedeki dizin</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Henüz hiçbir paket dizini tanımlanmadı.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Yeni bir paket dizini ekleyin.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Bölge yüklendikten sonra paket dizinleri eklenemez.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Ek dosya sistemleri</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Bağlama dizini</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Monte edilmiş</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Ham cihaz</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Dosya sistemi türü</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Atlı?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Dosya Sistemini Ekle:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Henüz ek dosya sistemi tanımlanmadı.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Kaynak kontrolleri</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Kaynak adı</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Ayrıcalık türleri</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>Sınırları</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Hareketler</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Henüz hiçbir kaynak kontrolü tanımlanmadı.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Yeni bir kaynak denetimi ekleyin.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Genel bölge özellikleri</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Özellik adı</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Veri tipi</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Özellik değeri</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Henüz herhangi bir jenerik özellik tanımlanmamıştır.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Yeni bir genel özellik ekleyin.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Webmin'i aç</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Marka</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>İptal etmek</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Bölge kaydedilemedi</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Eksik veya geçersiz havuz</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin bu bölgede çalışmıyor</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Yeniden Başlatma Bölgesi</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>$1 bölgesini yeniden başlatmak istediğinizden emin misiniz? İçinde çalışan tüm işlemler yeniden başlatılır.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Bölge yeniden başlatılamadı</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Şimdi bölge yeniden başlatılıyor ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. başarısız oldu  :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. tamamlayınız.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Kapatma Bölgesi</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>$1 bölgesini kapatmak istediğinizden emin misiniz? İçinde çalışan tüm işlemler durdurulacaktır.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Kapatma bölgesi başarısız oldu</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Şimdi bölge kapatılıyor ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Açılış Bölgesi</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Açılış bölgesi başarısız oldu</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Şimdi bölge açılıyor. ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Bölgeyi Sil</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>$1 bölgesini silmek istediğinizden emin misiniz? Özel dosya sistemlerindeki tüm dosyalar kaybolacaktır.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Bölge silinemedi</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Şimdi bölge siliniyor ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Yüklemeyi Kaldırma Sistemi</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Sistem yazılımını $1 bölgesinden kaldırmak istediğinizden emin misiniz? Özel dosya sistemlerindeki tüm dosyalar kaybolacaktır.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Sistem yazılımı bölgeden kaldırılamadı</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Şimdi sistemin bölgeden kaldırılması ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Sistemi Kur</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Şimdi sistemi bölgeye kuruyor ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Ağ Arayüzü Oluştur</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Ağ Arayüzünü Düzenle</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Bölge sanal arabirim ayrıntıları</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>Arayüz IP adresi</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Gerçek ağ arayüzü</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Adres için ağ maskesi</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Mevcut yayın adresi</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Ağ arayüzü kaydedilemedi</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Geçersiz ağ maskesi</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Geçersiz IP adresi</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Arayüz artık mevcut değil!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>Bu bölgede aynı IP adresine sahip bir ağ arayüzü zaten var</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Paket Dizini Ekle</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Paket Dizinini Düzenle</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Devralınan paket dizini ayrıntıları</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Global bölgedeki dizin</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Dizin artık mevcut değil!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Paket dizini kaydedilemedi</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Geçersiz veya var olmayan dizin</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>Paket dizini bu bölgede zaten var</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Paketleri global bölgeden devral</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Evet (seyrek kök bölgesi)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Hayır (tüm kök bölgesi)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Dosya Sistemi Oluştur</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Dosya Sistemini Düzenle</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Ek dosya sistemi ayrıntıları</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Dosya sistemi türü</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Bölgedeki montaj noktası</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Şu anki durum</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Monte edilmemiş</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>takılı</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Takılı, $2 ücretsiz $1 dışında</value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Küresel bölgedeki kaynak</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Dosya sistemi bağlama seçenekleri</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Dosya sistemi kaydedilemedi</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Bağlanma noktası dizini eksik</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Dosya sistemi oluşturuldu, ancak dosya kurulurken bir hata oluştu</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Dosya sistemi kaldırıldı, ancak kaldırılırken bir hata oluştu</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Dosya sistemi güncellendi, ancak yeniden bağlanırken bir hata oluştu</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Kaynak aygıt dosyası eksik</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Geçersiz bağlama seçenekleri (ro, nosuid gibi virgülle ayrılmış bir liste olmalıdır)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Dosya sistemi artık mevcut değil!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Oluşturduktan sonra monte?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>Bu bölgede aynı dizini kullanan bir dosya sistemi zaten var</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Kaynak Kontrolü Oluşturun</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Kaynak Denetimini Düzenle</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Kaynak kontrol türü ve sınırları</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Kaynak tipi</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Uygulama sınırları</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Ayrıcalık türü</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>limit</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Aşıldığında yapılan işlem</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>Temel</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Ayrıcalıklı</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>sistem</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Hiçbir eylem</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>İsteği reddet</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Sinyal gönder ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Kaynak kontrolü kaydedilemedi</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Kaynak kontrolü artık mevcut değil!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Sayı değil</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>$1 satırında sinyal seçilmedi</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Limit girilmedi</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>Bu bölgede aynı kaynak için bir denetim zaten var</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Genel Özellik Oluştur</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Genel Özelliği Düzenle</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Genel bölge özellik ayrıntıları</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Özellik adı</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Değer için veri türü</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Özellik değeri</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Metin dizesi</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>tamsayı</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Pozitif tamsayı</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>Boole</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Genel özellik kaydedilemedi</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Eksik veya geçersiz ad</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Değer bir tamsayı değil</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Değer pozitif bir tam sayı değil</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Değer 'doğru' veya 'yanlış' değil</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Özellik artık mevcut değil!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>Bu bölgede aynı ada sahip bir özellik zaten var</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Koşu</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>Durduruldu</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Yüklü değil</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Yükleniyor</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>hazır</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Aşağı</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Kapatmak</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Bölge adı</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>Kimlik Numarası.</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Bölge dizini</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>durum</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Hareketler</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>$1 bölgesinde</value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Bölge Oluştur</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Yeni bölge ayrıntıları</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Bölge dosyaları dizini</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Seçilen dizin</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Otomatik (&lt;tt&gt;$1&lt;/tt&gt; altında)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>İlk IP adresi</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Oluşturduktan sonra yükle?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Yükledikten sonra Webmin kurulsun mu?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Evet (Paket dizinlerinin eklenmesini önler)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Şimdi oluştur</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Bölge oluşturulamadı</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Eksik veya geçersiz bölge adı</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Eksik veya geçersiz ana bilgisayar adı</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Aynı ada sahip bir bölge zaten var</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Eksik bölge dizini</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>'$1' bölge dizini zaten var</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Eksik veya geçersiz başlangıç IP adresi</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Yeni bölge oluşturuluyor ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. bitti.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. başarısız oldu! Nedeni için yukarıdaki çıktıya bakın.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>İlk ağ arabirimi ekleniyor ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Sistem yazılımı yükleniyor ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Ek paket dizinleri</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' geçerli bir paket dizini değil</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Paket dizinleri ekleniyor ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Webmin Kurulumu ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. başarısız oldu : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Yeni bölge yapılandırılsın mı?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>İlk ana bilgisayar adı</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Bölge adıyla aynı</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Evet, aşağıdaki ayarları kullanarak ..</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Hayır, konsoldan manuel olarak yapılandır</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>İlk kök parolası</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Global sistemle aynı</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>İlk saat dilimi</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Global sistemle aynı ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Başlangıç dil yerel ayarı</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Konsol için terminal tipi</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Varsayılan (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>İlk ad hizmeti</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>Yok</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS veya NIS alan adı</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>DNS veya NIS ad sunucuları</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Yerel kök kullanıcı bulunamadı!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Eksik veya geçersiz saat dilimi</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Eksik veya geçersiz dil yerel ayarı</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Eksik veya geçersiz terminal türü</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Eksik veya geçersiz DNS veya NIS alan adı</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' geçerli bir DNS veya NIS ad sunucusu ana makinesi değil</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>DNS veya NIS ad sunucusu girilmedi</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Bölgenin ana bilgisayar adı çözümlenemedi, bu da otomatik yapılandırmanın başarısız olmasına neden olacak. Bu bölgeyi oluşturmadan önce DNS'ye eklemelisiniz</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Varsayılan yönlendirici</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Eksik veya geçersiz varsayılan yönlendirici IP adresi</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>devralınan paket dizinleri kaldırılıyor. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Marka</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Marka bilinci oluşturma bölgesi</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>$1 bölgesi oluşturuldu</value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>$1 silinen bölge</value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>$1 bölgesi için değiştirilmiş yapılandırma</value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>$1 önyükleme bölgesi</value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Yeniden başlatılan bölge $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Kapatma bölgesi $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Kurulu bölge $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Yüklü olmayan bölge $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>$2 bölgesinde $1 adresiyle ağ arabirimi oluşturuldu</value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>$2 bölgesinde $1 adresine sahip ağ arabirimi silindi</value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>$2 bölgesinde $1 adresine sahip değiştirilmiş ağ arabirimi</value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>$2 bölgesinde $1 paket dizini oluşturuldu</value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>$2 bölgesinde $1 değiştirilmiş paket dizini</value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>$2 bölgesindeki $1 paket dizini silindi</value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>$2 bölgesinde $1 dosya sistemi oluşturuldu</value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>$2 bölgesinde $1 değiştirilmiş dosya sistemi</value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>$2 bölgesinde $1 dosya sistemi silindi</value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>$2 bölgesinde $1 için kaynak denetimi oluşturuldu</value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>$2 bölgesinde $1 için değiştirilmiş kaynak denetimi</value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>$2 bölgesindeki $1 için kaynak kontrolü silindi</value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>$2 bölgesinde $1 genel özniteliği oluşturuldu</value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>$2 bölgesinde $1 değiştirilmiş genel özellik</value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>$2 bölgesinde $1 genel özniteliği silindi</value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>$1 'de Perl kurulu değil</value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>$1 dizini mevcut değil veya Webmin içermiyor.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Webmin'i yükle</value>
+  </data>
+</root>

@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Registri di sistema NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Applica configurazione</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Fare clic su questo pulsante per attivare la configurazione Syslog-NG corrente.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Ferma Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Fare clic su questo pulsante per interrompere il daemon Syslog-NG in esecuzione. Una volta arrestato, i messaggi di registro di altri programmi non verranno più scritti nei file di registro.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Avviare Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Fare clic su questo pulsante per avviare il demone Syslog-NG, utilizzando la configurazione corrente.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indice del modulo</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Opzioni di registrazione</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Opzioni per tutti i file di registro</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>secondi</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>inserimenti</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Tempo di attesa prima di riaprire connessioni morte</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Tempo di attesa prima di chiudere le connessioni inattive</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Messaggi da bufferizzare prima di scrivere</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Tempo di attesa tra i messaggi statistici</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Numero di messaggi da buffer</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Utilizzare il formato del nome host incatenato?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Mantenere i nomi host originali?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Controlla i nomi host per i caratteri validi?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Espressione regolare per nomi host errati</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Creare directory per i file di registro, se necessario?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Proprietario predefinito per i file di registro</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Gruppo predefinito per i file di registro</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Autorizzazioni predefinite per i file di registro</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Proprietario predefinito per le directory create</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Gruppo predefinito per le directory create</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Autorizzazioni predefinite per le directory create</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Sono stati ricevuti i messaggi relativi all'ora del registro?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Effettuare ricerche DNS inverse?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Ricerche DNS nella cache?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Dimensione della cache DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Cache record DNS per</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Le ricerche DNS non sono riuscite nella cache</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Dimensione massima del messaggio di registro</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Accedi nomi host completi?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Sostituisci i caratteri di controllo nei nomi dei file?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Impossibile salvare le opzioni di registrazione</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Espressione regolare mancante o non valida per nomi host errati</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Dimensioni della cache DNS mancanti o non numeriche</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Tempo di cache DNS mancante o non numerico</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Tempo cache DNS non numerico mancante o non numerico</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Proprietario predefinito mancante per i file di registro</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Gruppo predefinito mancante per i file di registro</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Autorizzazioni predefinite mancanti per i file di registro</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Proprietario predefinito mancante per le directory</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Gruppo predefinito mancante per le directory</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Autorizzazioni predefinite mancanti per le directory</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Tempo mancante o non numerico per attendere connessioni morte</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Tempo mancante o non numerico per attendere le connessioni ideali</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Numero mancante o non valido di messaggi da bufferizzare prima della scrittura</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Tempo mancante o non numerico per l'attesa tra i messaggi statistici</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Numero mancante o non valido di messaggi nel buffer</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Dimensione massima del messaggio di registro mancante o non numerica</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Registra destinazioni</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Nome della destinazione</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Scrivere a</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Registra destinazione</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Utenti connessi</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Input del programma</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Pipa Unix</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>Server syslog UDP</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Server syslog TCP</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Presa per datagramma</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Presa stream</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Tutti gli utenti</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Solo utenti $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Host $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Visualizza ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Nessun file di registro di destinazione è stato ancora definito.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Elimina destinazioni selezionate</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Aggiungi una nuova destinazione del registro.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>registri destinazioni</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Registro di altri moduli</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Uscita da $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Registra le opzioni di destinazione</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Crea destinazione registro</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Modifica destinazione registro</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Registra il nome della destinazione</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Accedi a ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Nome del file</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Creare directory?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Autorizzazioni per le directory</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Sincronizzazione dopo ogni scrittura?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Gruppo per file di registro</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Proprietario per il file di registro</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Autorizzazioni per il file di registro</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Messaggi tra sincronizzazioni</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Utenti elencati</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Server Syslog</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Protocollo di rete</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Indirizzo del server</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Porta del server</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Indirizzo IP locale</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Porta locale</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Presa Unix</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>genere</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Nome del socket</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Impossibile salvare la destinazione</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Una destinazione con lo stesso nome esiste già</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>La destinazione non esiste più!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Nome file mancante o non valido</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Proprietario del file di registro mancante o non valido</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Gruppo di file di registro mancante o non valido</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Autorizzazioni per file di registro mancanti o non ottali</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Autorizzazioni di directory mancanti o non ottali</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Numero mancante o non valido di messaggi tra sincronizzazioni</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Utenti mancanti a cui inviare</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Programma mancante a cui rivolgersi</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>File pipe Unix mancante</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Numero porta mancante o non valido</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Indirizzo IP locale mancante o non valido</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Numero di porta locale mancante o non valido</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Host o indirizzo del server Syslog mancante o non valido</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Nome del socket Unix mancante</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Impossibile eliminare le destinazioni</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Nessuno selezionato</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>La destinazione $1 non può essere eliminata, poiché viene utilizzata da una destinazione del registro</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Impossibile eliminare le fonti</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Nessuno selezionato</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>L'origine registro $1 non può essere eliminata, poiché viene utilizzata da una destinazione registro</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Impossibile eliminare i filtri</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Nessuno selezionato</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Il filtro registro $1 non può essere eliminato, poiché viene utilizzato da una destinazione registro</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Impossibile eliminare le destinazioni del registro</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Nessuno selezionato</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Filtri di registro</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Nome del filtro</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>condizioni</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Nessun filtro di registro è stato ancora definito.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Elimina i filtri selezionati</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Aggiungi un nuovo filtro registro.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>filtri di registro</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>priorità &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>priorità &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 priorità</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>struttura &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 strutture</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>programma &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>corrisponde a "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>dal nome host &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>dal mittente &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Crea filtro registro</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Modifica filtro registro</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Dettagli delle specifiche del filtro registro</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Nome del filtro</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Condizioni semplici (tutte devono corrispondere)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Espressione complessa</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>A priorità ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Dal programma ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Abbina espressione ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Dalla struttura ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Dal nome host ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Dalla rete IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Impossibile salvare il filtro registro</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Nome filtro mancante o non valido</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Esiste già un filtro con lo stesso nome</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Non è stato inserito alcun filtro da filtrare</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Nessuna priorità selezionata</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Nessuna struttura selezionata</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Nome del programma mancante o non valido</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Espressione regolare mancante</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Nome host mancante o non valido</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Indirizzo IP di rete mancante o non valido</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Maschera di rete mancante o non valida</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Errore nell'espressione complessa</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Il filtro non esiste più!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Target di registro</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>fonti</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>filtri</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Destinazioni</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Aggiungi una nuova destinazione del registro.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Elimina target log selezionati</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>obiettivi di registro</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Crea target log</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Modifica destinazione registro</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Registra le selezioni di origine, filtro e destinazione</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Registra fonti</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filtri da applicare</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>File di destinazione</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Non elaborare più obiettivi</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Destinazione del registro di fallback</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Elabora tutte le fonti</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Opzioni target</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Il log target non esiste più!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Impossibile salvare la destinazione del registro</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Nessuna fonte selezionata</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Sorgenti log</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Nessuna fonte è stata ancora definita!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Aggiungi una nuova sorgente log.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Nome della fonte</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Registra origini dati</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Elimina le fonti selezionate</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Messaggi interni Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Presa stream</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Presa per datagramma</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>Server TCP</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>Server UDP</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>File di registro del kernel</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Pipa con nome</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Flusso del sole</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Server Syslog</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>fonti log</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Crea sorgente log</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Modifica sorgente log</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Opzioni di origine del registro</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Qualunque</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>La fonte non esiste più!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Nome della fonte</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Tipi di origine del registro</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Proprietario del file socket</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Gruppo di file socket</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Autorizzazioni per il file socket</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Mantenere le connessioni aperte durante il riavvio?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Numero massimo di connessioni simultanee?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Indirizzo IP locale</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Numero di porta locale</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Utilizzare i keep-alive TCP?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Prefisso per i messaggi di registro</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Dimensione del blocco messaggi</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Impossibile salvare l'origine del registro</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Nome della fonte mancante o non valido</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Esiste già un'origine log con lo stesso nome</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Proprietario del file socket mancante o non valido</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Gruppo di file socket mancante o non valido</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Autorizzazioni mancanti o non ottali sul file socket</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Numero mancante o non valido di connessioni massime</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Indirizzo IP locale mancante o non valido</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Numero di porta locale mancante o non valido</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Prefisso mancante per i messaggi di registro</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Dimensione del blocco messaggi mancante o non numerica</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Nome file socket Unix mancante o non valido</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Nome del file di registro del kernel mancante o non valido</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Nome del file di pipe denominato mancante o non valido</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Nome file della porta</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Nome file streaming Sun mancante o non valido</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Nome file porta streaming mancante o non valido</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Protocollo di rete</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Visualizza file di registro</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Ultime $1 righe di $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Il file di registro è vuoto</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>ricaricare</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Mostra solo righe con testo $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Impossibile applicare la configurazione</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Non correndo!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Impossibile avviare il server Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Impossibile arrestare il server Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Destinazione registro creata $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Destinazione registro modificata $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Destinazione registro cancellata $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1 destinazioni log cancellate</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Filtro registro creato $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Filtro registro modificato $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Filtro log cancellato $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Filtri di registro $1 eliminati</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Origine registro creata $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Origine registro modificata $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Fonte log cancellata $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Sorgenti di registro $1 eliminate</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Destinazione registro creata</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Destinazione registro modificata</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Destinazione registro cancellata</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1 destinazioni log cancellate</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Configurazione applicata</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Avviato il server Syslog-NG</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Server Syslog-NG arrestato</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Opzioni globali modificate</value>
+  </data>
+</root>

@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Xamarin.Forms.Xaml;
 
 namespace Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage

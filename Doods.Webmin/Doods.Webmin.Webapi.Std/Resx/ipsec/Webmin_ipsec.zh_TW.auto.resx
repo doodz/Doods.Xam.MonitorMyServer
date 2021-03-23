@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>IPsec VPN配置</value>
+  </data>
+  <data name="index_out" xml:space="preserve">
+    <value>$1的輸出為：</value>
+  </data>
+  <data name="index_version2" xml:space="preserve">
+    <value>$2版本 $1</value>
+  </data>
+  <data name="index_nokey" xml:space="preserve">
+    <value>沒有主機密鑰顯示在文件 $1中。必須先為系統生成一個，然後才能定義任何VPN連接。</value>
+  </data>
+  <data name="index_newkey" xml:space="preserve">
+    <value>生成主機密鑰：</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>尚未定義IPsec VPN連接。</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>添加一個新的IPsec VPN連接。</value>
+  </data>
+  <data name="index_adddef" xml:space="preserve">
+    <value>為所有連接添加默認值。</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>啟動IPsec服務器</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>單擊此按鈕以啟動FreeSWAN IPsec服務器進程。在啟動之前，您的系統將無法接受或建立連接。</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>停止IPsec服務器</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>單擊此按鈕以關閉FreeSWAN IPsec服務器進程並終止所有已建立的連接。</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>應用配置</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>單擊此按鈕可通過重新啟動正在運行的FreeSWAN IPsec服務器進程來激活當前配置。任何建立的連接將被終止。</value>
+  </data>
+  <data name="index_conn" xml:space="preserve">
+    <value>連接 $1</value>
+  </data>
+  <data name="index_defconn" xml:space="preserve">
+    <value>所有連接的默認值</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>在啟動時開始</value>
+  </data>
+  <data name="index_bootdesc" xml:space="preserve">
+    <value>更改此選項以控制IPsec服務器是否在引導時啟動。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>連接列表</value>
+  </data>
+  <data name="index_header1" xml:space="preserve">
+    <value>現有的VPN連接</value>
+  </data>
+  <data name="index_header2" xml:space="preserve">
+    <value>全球選擇和政策</value>
+  </data>
+  <data name="index_up" xml:space="preserve">
+    <value>開始連接：</value>
+  </data>
+  <data name="index_updesc" xml:space="preserve">
+    <value>從此按鈕旁邊的列表中選擇一個連接，然後單擊它以嘗試立即建立連接。</value>
+  </data>
+  <data name="index_import" xml:space="preserve">
+    <value>從文件導入連接。</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>無法停止IPsec服務器</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>無法啟動IPsec服務器</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>重新啟動IPsec服務器失敗</value>
+  </data>
+  <data name="start_elog" xml:space="preserve">
+    <value>記錄了以下錯誤： $1</value>
+  </data>
+  <data name="newkey_err" xml:space="preserve">
+    <value>生成密鑰失敗</value>
+  </data>
+  <data name="newkey_ehost" xml:space="preserve">
+    <value>主機名缺失或無效</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>建立連接</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>編輯連接</value>
+  </data>
+  <data name="edit_header" xml:space="preserve">
+    <value>IPsec VPN連接詳細信息</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>連接名稱</value>
+  </data>
+  <data name="edit_auto" xml:space="preserve">
+    <value>在IPsec啟動時</value>
+  </data>
+  <data name="edit_amode" xml:space="preserve">
+    <value>默認值（通常忽略）</value>
+  </data>
+  <data name="edit_amodeadd" xml:space="preserve">
+    <value>添加連接</value>
+  </data>
+  <data name="edit_amodestart" xml:space="preserve">
+    <value>開始連線</value>
+  </data>
+  <data name="edit_amodeignore" xml:space="preserve">
+    <value>忽視</value>
+  </data>
+  <data name="edit_comp" xml:space="preserve">
+    <value>壓縮數據？</value>
+  </data>
+  <data name="edit_cmodeyes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="edit_cmodeno" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="edit_cmode" xml:space="preserve">
+    <value>默認值（通常為否）</value>
+  </data>
+  <data name="edit_pfs" xml:space="preserve">
+    <value>完善的轉發保密性？</value>
+  </data>
+  <data name="edit_pmodeyes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="edit_pmodeno" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="edit_pmode" xml:space="preserve">
+    <value>默認值（通常是）</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>連接類型</value>
+  </data>
+  <data name="edit_tmodetunnel" xml:space="preserve">
+    <value>隧道（主機或網絡）</value>
+  </data>
+  <data name="edit_tmodetransport" xml:space="preserve">
+    <value>傳輸（僅主機到主機）</value>
+  </data>
+  <data name="edit_tmodepassthrough" xml:space="preserve">
+    <value>直通（不加密）</value>
+  </data>
+  <data name="edit_tmode" xml:space="preserve">
+    <value>默認（通常是隧道）</value>
+  </data>
+  <data name="edit_left" xml:space="preserve">
+    <value>本地或左側系統的設置</value>
+  </data>
+  <data name="edit_right" xml:space="preserve">
+    <value>遠程或右側系統的設置</value>
+  </data>
+  <data name="edit_addr" xml:space="preserve">
+    <value>公用IP地址</value>
+  </data>
+  <data name="edit_addr-1" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="edit_addr0" xml:space="preserve">
+    <value>從默認路線</value>
+  </data>
+  <data name="edit_addr1" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="edit_addr2" xml:space="preserve">
+    <value>從DNS自動</value>
+  </data>
+  <data name="edit_addr3" xml:space="preserve">
+    <value>地址或主機名 ..</value>
+  </data>
+  <data name="edit_id" xml:space="preserve">
+    <value>系統識別碼</value>
+  </data>
+  <data name="edit_id1" xml:space="preserve">
+    <value>IP地址 ..</value>
+  </data>
+  <data name="edit_id2" xml:space="preserve">
+    <value>主機名 ..</value>
+  </data>
+  <data name="edit_subnet" xml:space="preserve">
+    <value>系統後面的專用子網</value>
+  </data>
+  <data name="edit_cert" xml:space="preserve">
+    <value>證書名稱</value>
+  </data>
+  <data name="edit_hop" xml:space="preserve">
+    <value>下一跳到其他系統</value>
+  </data>
+  <data name="edit_hopdir" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="edit_hopip" xml:space="preserve">
+    <value>IP地址 ..</value>
+  </data>
+  <data name="edit_hoproute" xml:space="preserve">
+    <value>默認路線</value>
+  </data>
+  <data name="edit_key" xml:space="preserve">
+    <value>系統的公鑰</value>
+  </data>
+  <data name="edit_key0" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="edit_key1" xml:space="preserve">
+    <value>在DNS中查找</value>
+  </data>
+  <data name="edit_key2" xml:space="preserve">
+    <value>在下面輸入</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>所有連接的默認值</value>
+  </data>
+  <data name="edit_export" xml:space="preserve">
+    <value>導出配置 ..</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>連接細節</value>
+  </data>
+  <data name="edit_authby" xml:space="preserve">
+    <value>身份驗證方法</value>
+  </data>
+  <data name="edit_authbydef" xml:space="preserve">
+    <value>默認值（通常是RSA密鑰）</value>
+  </data>
+  <data name="edit_rsasig" xml:space="preserve">
+    <value>RSA密鑰</value>
+  </data>
+  <data name="edit_secret" xml:space="preserve">
+    <value>共享秘密</value>
+  </data>
+  <data name="edit_rsasigsecret" xml:space="preserve">
+    <value>RSA密鑰或共享機密</value>
+  </data>
+  <data name="edit_never" xml:space="preserve">
+    <value>永遠不允許身份驗證</value>
+  </data>
+  <data name="edit_keying" xml:space="preserve">
+    <value>按鍵重試</value>
+  </data>
+  <data name="edit_esp" xml:space="preserve">
+    <value>ESP算法</value>
+  </data>
+  <data name="edit_espdef" xml:space="preserve">
+    <value>默認值（通常是MD5）</value>
+  </data>
+  <data name="edit_espmd5" xml:space="preserve">
+    <value>MD5</value>
+  </data>
+  <data name="edit_espsha" xml:space="preserve">
+    <value>SHA1</value>
+  </data>
+  <data name="edit_esp128" xml:space="preserve">
+    <value>AES-128位-MD5</value>
+  </data>
+  <data name="edit_esponly" xml:space="preserve">
+    <value>僅接受此ESP算法嗎？</value>
+  </data>
+  <data name="edit_auth" xml:space="preserve">
+    <value>認證方式</value>
+  </data>
+  <data name="edit_authdef" xml:space="preserve">
+    <value>默認值（通常為ESP）</value>
+  </data>
+  <data name="edit_authesp" xml:space="preserve">
+    <value>靜電除塵器</value>
+  </data>
+  <data name="edit_authah" xml:space="preserve">
+    <value>啊</value>
+  </data>
+  <data name="edit_keylife" xml:space="preserve">
+    <value>連接密鑰壽命</value>
+  </data>
+  <data name="edit_ikelifetime" xml:space="preserve">
+    <value>鍵控通道壽命</value>
+  </data>
+  <data name="edit_unit_s" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="edit_unit_m" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="edit_unit_h" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="edit_unit_d" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="config_title" xml:space="preserve">
+    <value>服務器配置</value>
+  </data>
+  <data name="config_header" xml:space="preserve">
+    <value>全局VPN服務器設置</value>
+  </data>
+  <data name="config_ifaces" xml:space="preserve">
+    <value>IPsec的網絡接口</value>
+  </data>
+  <data name="config_ifaces0" xml:space="preserve">
+    <value>默認</value>
+  </data>
+  <data name="config_ifaces1" xml:space="preserve">
+    <value>沒有</value>
+  </data>
+  <data name="config_ifaces2" xml:space="preserve">
+    <value>默認路由接口</value>
+  </data>
+  <data name="config_ifaces3" xml:space="preserve">
+    <value>下面列出 ..</value>
+  </data>
+  <data name="config_riface" xml:space="preserve">
+    <value>真實界面</value>
+  </data>
+  <data name="config_iiface" xml:space="preserve">
+    <value>IPsec接口</value>
+  </data>
+  <data name="config_syslog" xml:space="preserve">
+    <value>Syslog日誌記錄級別</value>
+  </data>
+  <data name="config_fac" xml:space="preserve">
+    <value>登錄設施</value>
+  </data>
+  <data name="config_pri" xml:space="preserve">
+    <value>優先</value>
+  </data>
+  <data name="config_fwd" xml:space="preserve">
+    <value>啟用IP轉發？</value>
+  </data>
+  <data name="config_nat" xml:space="preserve">
+    <value>啟用NAT遍歷？</value>
+  </data>
+  <data name="config_err" xml:space="preserve">
+    <value>保存服務器配置失敗</value>
+  </data>
+  <data name="config_eri" xml:space="preserve">
+    <value>實際接口“$1”被多次列出</value>
+  </data>
+  <data name="config_enone" xml:space="preserve">
+    <value>未指定網絡接口</value>
+  </data>
+  <data name="showkey_title" xml:space="preserve">
+    <value>顯示公鑰</value>
+  </data>
+  <data name="showkey_desc1" xml:space="preserve">
+    <value>下面顯示的公共RSA密鑰應複製到與該主機相關的部分中與此主機連接的其他系統的配置中。</value>
+  </data>
+  <data name="showkey_desc2" xml:space="preserve">
+    <value>下面顯示的值可用於為此主機創建DNS KEY記錄，以便連接到該主機的其他系統可以查找其公鑰。</value>
+  </data>
+  <data name="showkey_flags" xml:space="preserve">
+    <value>標誌</value>
+  </data>
+  <data name="showkey_proto" xml:space="preserve">
+    <value>協議</value>
+  </data>
+  <data name="showkey_alg" xml:space="preserve">
+    <value>算法</value>
+  </data>
+  <data name="showkey_key" xml:space="preserve">
+    <value>關鍵數據</value>
+  </data>
+  <data name="policy_desc_block" xml:space="preserve">
+    <value>封鎖的網路</value>
+  </data>
+  <data name="policy_desc_clear" xml:space="preserve">
+    <value>暢通的交通網絡</value>
+  </data>
+  <data name="policy_desc_private" xml:space="preserve">
+    <value>加密網絡</value>
+  </data>
+  <data name="policy_desc_private-or-clear" xml:space="preserve">
+    <value>加密或清除網絡</value>
+  </data>
+  <data name="policy_desc_clear-or-private" xml:space="preserve">
+    <value>清晰或加密的網絡</value>
+  </data>
+  <data name="policy_desc" xml:space="preserve">
+    <value>$1個網絡</value>
+  </data>
+  <data name="policy_longdesc_block" xml:space="preserve">
+    <value>絕不允許與以下所選網絡進行通信。</value>
+  </data>
+  <data name="policy_longdesc_clear" xml:space="preserve">
+    <value>與以下所選網絡的通信將始終保持清晰。</value>
+  </data>
+  <data name="policy_longdesc_clear-or-private" xml:space="preserve">
+    <value>除非另一端啟動IPsec加密，否則將清楚地與下面選擇的網絡通信。</value>
+  </data>
+  <data name="policy_longdesc_private" xml:space="preserve">
+    <value>與以下所選網絡的通信將始終使用IPsec加密。</value>
+  </data>
+  <data name="policy_longdesc_private-or-clear" xml:space="preserve">
+    <value>如果可能，將加密與以下所選網絡的通信，否則將進行加密。如果目標主機具有DNS KEY記錄，則必須以加密方式發送數據。</value>
+  </data>
+  <data name="policy_longdesc" xml:space="preserve">
+    <value>下面選擇的網絡用於 $1策略。</value>
+  </data>
+  <data name="policy_mode0" xml:space="preserve">
+    <value>沒有網絡</value>
+  </data>
+  <data name="policy_mode1" xml:space="preserve">
+    <value>所有網絡</value>
+  </data>
+  <data name="policy_mode2" xml:space="preserve">
+    <value>列出的網絡 ..</value>
+  </data>
+  <data name="policy_net" xml:space="preserve">
+    <value>網絡地址</value>
+  </data>
+  <data name="policy_mask" xml:space="preserve">
+    <value>字首</value>
+  </data>
+  <data name="policy_err" xml:space="preserve">
+    <value>保存網絡失敗</value>
+  </data>
+  <data name="policy_enet" xml:space="preserve">
+    <value>第 $1行上的網絡IP地址無效</value>
+  </data>
+  <data name="policy_emask" xml:space="preserve">
+    <value>第 $2行的前綴長度無效</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>無法保存連接</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>缺少或無效的連接名稱</value>
+  </data>
+  <data name="save_ekeying" xml:space="preserve">
+    <value>重試次數丟失或無效</value>
+  </data>
+  <data name="save_eleft" xml:space="preserve">
+    <value>本地服務器地址或主機名缺失或無效</value>
+  </data>
+  <data name="save_eright" xml:space="preserve">
+    <value>缺少或無效的遠程服務器地址或主機名</value>
+  </data>
+  <data name="save_eleftid1" xml:space="preserve">
+    <value>缺少或無效的本地服務器標識IP地址</value>
+  </data>
+  <data name="save_erightid1" xml:space="preserve">
+    <value>缺少或無效的遠程服務器標識IP地址</value>
+  </data>
+  <data name="save_eleftid2" xml:space="preserve">
+    <value>缺少或無效的本地服務器標識主機名</value>
+  </data>
+  <data name="save_erightid2" xml:space="preserve">
+    <value>標識主機名的遠程服務器丟失或無效</value>
+  </data>
+  <data name="save_eleftsubnet" xml:space="preserve">
+    <value>本地服務器子網丟失或無效</value>
+  </data>
+  <data name="save_erightsubnet" xml:space="preserve">
+    <value>遠程服務器子網丟失或無效</value>
+  </data>
+  <data name="save_eleftkey" xml:space="preserve">
+    <value>缺少本地服務器公鑰</value>
+  </data>
+  <data name="save_erightkey" xml:space="preserve">
+    <value>缺少遠程服務器公鑰</value>
+  </data>
+  <data name="save_elefthop" xml:space="preserve">
+    <value>本地服務器下一跳網關丟失或無效</value>
+  </data>
+  <data name="save_erighthop" xml:space="preserve">
+    <value>遠程服務器下一跳網關丟失或無效</value>
+  </data>
+  <data name="save_eleftcert" xml:space="preserve">
+    <value>本地服務器證書丟失或無效</value>
+  </data>
+  <data name="save_erightcert" xml:space="preserve">
+    <value>缺少或無效的遠程服務器證書</value>
+  </data>
+  <data name="save_ekeylife" xml:space="preserve">
+    <value>缺少或無效的連接密鑰壽命</value>
+  </data>
+  <data name="save_eikelifetime" xml:space="preserve">
+    <value>缺少或無效的鍵控通道壽命</value>
+  </data>
+  <data name="log_create_conn" xml:space="preserve">
+    <value>已建立連接 $1</value>
+  </data>
+  <data name="log_delete_conn" xml:space="preserve">
+    <value>刪除的連接 $1</value>
+  </data>
+  <data name="log_modify_conn" xml:space="preserve">
+    <value>修改後的連接 $1</value>
+  </data>
+  <data name="log_import_conn" xml:space="preserve">
+    <value>導入的連接 $1</value>
+  </data>
+  <data name="log_up" xml:space="preserve">
+    <value>連接已開始 $1</value>
+  </data>
+  <data name="log_policy" xml:space="preserve">
+    <value>已保存 $1</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>啟動IPsec服務器</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>停止的IPsec服務器</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>重新啟動IPsec服務器</value>
+  </data>
+  <data name="log_boot" xml:space="preserve">
+    <value>引導時啟用IPsec</value>
+  </data>
+  <data name="log_unboot" xml:space="preserve">
+    <value>引導時禁用IPsec</value>
+  </data>
+  <data name="log_config" xml:space="preserve">
+    <value>保存的服務器配置</value>
+  </data>
+  <data name="log_create_secret" xml:space="preserve">
+    <value>為 $1創建了密鑰</value>
+  </data>
+  <data name="log_modify_secret" xml:space="preserve">
+    <value>已修改 $1的密鑰</value>
+  </data>
+  <data name="log_delete_secret" xml:space="preserve">
+    <value>已刪除 $1的密鑰</value>
+  </data>
+  <data name="log_create_secret_nn" xml:space="preserve">
+    <value>為任何主機創建密鑰</value>
+  </data>
+  <data name="log_modify_secret_nn" xml:space="preserve">
+    <value>任何主機的修改密鑰</value>
+  </data>
+  <data name="log_delete_secret_nn" xml:space="preserve">
+    <value>刪除任何主機的密鑰</value>
+  </data>
+  <data name="up_title" xml:space="preserve">
+    <value>開始連接</value>
+  </data>
+  <data name="up_cmd" xml:space="preserve">
+    <value>使用命令 $1..開始連接</value>
+  </data>
+  <data name="export_title" xml:space="preserve">
+    <value>導出配置</value>
+  </data>
+  <data name="export_desc" xml:space="preserve">
+    <value>此表單可用於導出連接 $1的配置文件部分，以便可以輕鬆地將其導入另一端的服務器上。</value>
+  </data>
+  <data name="export_print" xml:space="preserve">
+    <value>在瀏覽器中顯示配置</value>
+  </data>
+  <data name="export_save" xml:space="preserve">
+    <value>將配置寫入文件 ..</value>
+  </data>
+  <data name="export_ok" xml:space="preserve">
+    <value>立即導出</value>
+  </data>
+  <data name="export_err" xml:space="preserve">
+    <value>導出配置失敗</value>
+  </data>
+  <data name="export_efile" xml:space="preserve">
+    <value>缺少文件名</value>
+  </data>
+  <data name="export_esave" xml:space="preserve">
+    <value>無法寫入文件： $1</value>
+  </data>
+  <data name="export_done" xml:space="preserve">
+    <value>連接 $1到 $2（$3字節）的導出配置。</value>
+  </data>
+  <data name="import_title" xml:space="preserve">
+    <value>導入配置</value>
+  </data>
+  <data name="import_desc" xml:space="preserve">
+    <value>此表單可用於導入連接的配置文件部分，例如由另一個系統上模塊的導出功能創建的部分。</value>
+  </data>
+  <data name="import_upload" xml:space="preserve">
+    <value>從上傳文件導入 ..</value>
+  </data>
+  <data name="import_file" xml:space="preserve">
+    <value>從服務器端文件導入 ..</value>
+  </data>
+  <data name="import_ok" xml:space="preserve">
+    <value>立即導入</value>
+  </data>
+  <data name="import_err" xml:space="preserve">
+    <value>導入配置失敗</value>
+  </data>
+  <data name="import_eupload" xml:space="preserve">
+    <value>未選擇要上傳的文件</value>
+  </data>
+  <data name="import_efile" xml:space="preserve">
+    <value>沒有輸入服務器端文件</value>
+  </data>
+  <data name="import_eopen" xml:space="preserve">
+    <value>服務器端文件不存在</value>
+  </data>
+  <data name="import_eformat" xml:space="preserve">
+    <value>在文件中找不到IPsec連接-可能不是有效的導出文件</value>
+  </data>
+  <data name="import_eclash" xml:space="preserve">
+    <value>名為 $1的連接已存在。</value>
+  </data>
+  <data name="import_done1" xml:space="preserve">
+    <value>成功添加新的IPsec連接 $1。</value>
+  </data>
+  <data name="import_done2" xml:space="preserve">
+    <value>成功更新IPsec連接 $1。</value>
+  </data>
+  <data name="import_over" xml:space="preserve">
+    <value>覆蓋具有相同名稱的現有連接？</value>
+  </data>
+  <data name="secrets_title" xml:space="preserve">
+    <value>秘密鑰匙</value>
+  </data>
+  <data name="secrets_none" xml:space="preserve">
+    <value>找不到秘密密鑰！</value>
+  </data>
+  <data name="secrets_name" xml:space="preserve">
+    <value>的秘密</value>
+  </data>
+  <data name="secrets_type" xml:space="preserve">
+    <value>類型</value>
+  </data>
+  <data name="secrets_desc" xml:space="preserve">
+    <value>細節</value>
+  </data>
+  <data name="secrets_psk" xml:space="preserve">
+    <value>共享秘密</value>
+  </data>
+  <data name="secrets_rsa" xml:space="preserve">
+    <value>RSA公鑰</value>
+  </data>
+  <data name="secrets_any" xml:space="preserve">
+    <value>任何主機</value>
+  </data>
+  <data name="secrets_pass" xml:space="preserve">
+    <value>密碼 $1</value>
+  </data>
+  <data name="secrets_mod" xml:space="preserve">
+    <value>模數 $1</value>
+  </data>
+  <data name="secrets_newpsk" xml:space="preserve">
+    <value>創建新的共享密鑰。</value>
+  </data>
+  <data name="secrets_newrsa" xml:space="preserve">
+    <value>創建新的RSA密鑰。</value>
+  </data>
+  <data name="secrets_return" xml:space="preserve">
+    <value>秘密清單</value>
+  </data>
+  <data name="secret_title1" xml:space="preserve">
+    <value>創建密鑰</value>
+  </data>
+  <data name="secret_title2" xml:space="preserve">
+    <value>編輯密鑰</value>
+  </data>
+  <data name="secret_header" xml:space="preserve">
+    <value>密鑰細節</value>
+  </data>
+  <data name="secret_name" xml:space="preserve">
+    <value>私鑰用於</value>
+  </data>
+  <data name="secret_for" xml:space="preserve">
+    <value>主持人</value>
+  </data>
+  <data name="secret_type" xml:space="preserve">
+    <value>鑰匙類型</value>
+  </data>
+  <data name="secret_pass" xml:space="preserve">
+    <value>共享密碼</value>
+  </data>
+  <data name="secret_rsa" xml:space="preserve">
+    <value>RSA $1</value>
+  </data>
+  <data name="secret_value" xml:space="preserve">
+    <value>核心價值</value>
+  </data>
+  <data name="secret_err" xml:space="preserve">
+    <value>保存密鑰失敗</value>
+  </data>
+  <data name="secret_elast" xml:space="preserve">
+    <value>最後剩餘的密鑰無法刪除</value>
+  </data>
+  <data name="secret_ename" xml:space="preserve">
+    <value>缺少該密鑰的主機</value>
+  </data>
+  <data name="secret_epass" xml:space="preserve">
+    <value>缺少共享密碼</value>
+  </data>
+  <data name="secret_ersa" xml:space="preserve">
+    <value>RSA $1的值缺失</value>
+  </data>
+</root>

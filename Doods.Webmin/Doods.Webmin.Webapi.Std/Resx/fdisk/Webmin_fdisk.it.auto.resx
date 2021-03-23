@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Manager delle partizioni</value>
+  </data>
+  <data name="index_parted" xml:space="preserve">
+    <value>Utilizzando &lt;tt&gt;parted&lt;/tt&gt;</value>
+  </data>
+  <data name="index_fdisk" xml:space="preserve">
+    <value>Usando &lt;tt&gt;fdisk&lt;/tt&gt;</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Hai scelto di utilizzare il comando $1 per la gestione delle partizioni, ma non è installato sul tuo sistema.</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>Elenco dei dischi non riuscito</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>Disco</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>partizioni</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>cilindri</value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>Modello</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>Livello RAID</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>controllore</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>Bersaglio</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Nessuna partizione trovata</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>genere</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>Estensione</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Inizio</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>Fine</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>Aggiungi partizione primaria.</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>Aggiungi partizione logica.</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>Aggiungi partizione estesa.</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>Modifica i parametri IDE</value>
+  </data>
+  <data name="index_hdparmdesc" xml:space="preserve">
+    <value>Modifica le impostazioni per un'unità IDE, come la modalità DMA, il timeout di standby e il numero di settori letti.</value>
+  </data>
+  <data name="index_smart" xml:space="preserve">
+    <value>Mostra stato SMART</value>
+  </data>
+  <data name="index_smartdesc" xml:space="preserve">
+    <value>Visualizza lo stato segnalato da questa unità, inclusi i tassi di temperatura e di errore.</value>
+  </data>
+  <data name="index_blink" xml:space="preserve">
+    <value>Identifica l'unità</value>
+  </data>
+  <data name="index_relabel" xml:space="preserve">
+    <value>Pulisci le partizioni</value>
+  </data>
+  <data name="index_relabeldesc" xml:space="preserve">
+    <value>Elimina tutte le partizioni esistenti e crea una nuova tabella delle partizioni con un formato diverso.</value>
+  </data>
+  <data name="index_relabel2" xml:space="preserve">
+    <value>Crea tabella delle partizioni</value>
+  </data>
+  <data name="index_relabeldesc2" xml:space="preserve">
+    <value>Creare una nuova tabella delle partizioni vuota su questo disco, in modo da poter aggiungere le partizioni.</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>Uso</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>Gratuito</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>elenco dei dischi</value>
+  </data>
+  <data name="index_dname" xml:space="preserve">
+    <value>Nome del disco</value>
+  </data>
+  <data name="index_dsize" xml:space="preserve">
+    <value>Dimensione totale</value>
+  </data>
+  <data name="index_dmodel" xml:space="preserve">
+    <value>Marca e modello</value>
+  </data>
+  <data name="index_dctrl" xml:space="preserve">
+    <value>controllore</value>
+  </data>
+  <data name="index_dacts" xml:space="preserve">
+    <value>Azioni</value>
+  </data>
+  <data name="index_dhdparm" xml:space="preserve">
+    <value>Parametri IDE</value>
+  </data>
+  <data name="index_dsmart" xml:space="preserve">
+    <value>Stato SMART</value>
+  </data>
+  <data name="index_dscsi" xml:space="preserve">
+    <value>Controller SCSI $1 $2 </value>
+  </data>
+  <data name="index_draid" xml:space="preserve">
+    <value>Livello RAID $1 </value>
+  </data>
+  <data name="index_dparts" xml:space="preserve">
+    <value>partizioni</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Nessun disco trovato su questo sistema.</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>byte</value>
+  </data>
+  <data name="megabytes" xml:space="preserve">
+    <value>megabyte</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>estesa</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>Predefinito</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1' non è un $2 valido</value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>$1 comando non trovato</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>$1 dispositivo $2 </value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>$1 dispositivo $2 partizione $3 </value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>Disco floppy $1 </value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>Mylex RAID $1 drive $2 </value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>Mylex RAID $1 unità $2 partizione $3 </value>
+  </data>
+  <data name="select_cpq" xml:space="preserve">
+    <value>Compaq RAID $1 unità $2 </value>
+  </data>
+  <data name="select_cpart" xml:space="preserve">
+    <value>Compaq RAID $1 unità $2 partizione $3 </value>
+  </data>
+  <data name="select_scsi" xml:space="preserve">
+    <value>Controller SCSI $1 bus $2 target $3 LUN $4 </value>
+  </data>
+  <data name="select_spart" xml:space="preserve">
+    <value>Controller SCSI $1 bus $2 target $3 LUN $4 partizione $5 </value>
+  </data>
+  <data name="select_newide" xml:space="preserve">
+    <value>Controller IDE $1 bus $2 disco $3 </value>
+  </data>
+  <data name="select_snewide" xml:space="preserve">
+    <value>Controller IDE $1 bus $2 disco $3 partizione $5 </value>
+  </data>
+  <data name="select_smart" xml:space="preserve">
+    <value>Compaq Smart Array $1 unità $2 </value>
+  </data>
+  <data name="select_smartpart" xml:space="preserve">
+    <value>Compaq Smart Array $1 unità $2 partizione $3 </value>
+  </data>
+  <data name="select_promise" xml:space="preserve">
+    <value>Prometti unità RAID $1 </value>
+  </data>
+  <data name="select_ppart" xml:space="preserve">
+    <value>Promessa unità RAID $1 partizione $2 </value>
+  </data>
+  <data name="select_nvme" xml:space="preserve">
+    <value>Unità SSD NVME $1 unità $2 </value>
+  </data>
+  <data name="select_nvmepart" xml:space="preserve">
+    <value>SSD NVME $1 unità $2 partizione $3 </value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Modifica partizione</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Crea partizione</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a modificare questo disco</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>Impossibile trovare l'eseguibile &lt;tt&gt;hdparm&lt;/tt&gt; nel tuo sistema</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Dettagli della partizione</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>File del dispositivo</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>genere</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>Estensione</value>
+  </data>
+  <data name="edit_of" xml:space="preserve">
+    <value>di</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Stato</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>Contiene 1 partizione</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>Contiene $1 partizioni</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>Contiene $1 partizioni</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>Montato su $1 come $2 </value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>Per il montaggio su $1 come $2 </value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>Montato come memoria virtuale</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>Per il montaggio come memoria virtuale</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>Parte del dispositivo RAID $1 </value>
+  </data>
+  <data name="edit_mountlvm" xml:space="preserve">
+    <value>Parte del gruppo di volumi LVM $1 </value>
+  </data>
+  <data name="edit_mountiscsi" xml:space="preserve">
+    <value>Dispositivo condiviso iSCSI $1 </value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>Non ancora creato</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>Non in uso</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>Etichetta del filesystem</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Nome della partizione</value>
+  </data>
+  <data name="edit_volid" xml:space="preserve">
+    <value>ID volume</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 blocchi</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>Questa partizione non può essere modificata in quanto è attualmente in uso o configurata per l'uso.</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>Crea nuovo filesystem</value>
+  </data>
+  <data name="edit_mkfs2" xml:space="preserve">
+    <value>Crea filesystem:</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>Crea un nuovo filesystem $1 su questa partizione, cancellando permanentemente tutti i file esistenti. È necessario farlo dopo aver creato una nuova partizione o averne modificato una esistente.</value>
+  </data>
+  <data name="edit_mkfsmsg2" xml:space="preserve">
+    <value>Crea un nuovo filesystem del tipo selezionato su questa partizione, cancellando permanentemente tutti i file esistenti. È necessario farlo dopo aver creato una nuova partizione o averne modificato una esistente.</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>Ripara il filesystem</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>Chiama il programma $1 per riparare un filesystem in modo che possa essere montato. Ciò può essere necessario se il sistema non è stato spento correttamente.</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>Tune Filesystem</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>Ti permette di modificare vari parametri di un filesystem esistente.</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="edit_newmount" xml:space="preserve">
+    <value>Montare la partizione su:</value>
+  </data>
+  <data name="edit_newmount2" xml:space="preserve">
+    <value>Mount Partition</value>
+  </data>
+  <data name="edit_mountas" xml:space="preserve">
+    <value>come</value>
+  </data>
+  <data name="edit_mountmsg" xml:space="preserve">
+    <value>Montare questa partizione su una nuova directory sul sistema in modo che possa essere utilizzata per archiviare i file. Un file system deve essere già stato creato sulla partizione.</value>
+  </data>
+  <data name="edit_mountmsg2" xml:space="preserve">
+    <value>Montare questa partizione come memoria virtuale sul proprio sistema, per aumentare la quantità di memoria disponibile.</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Nuovo filesystem</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a creare un nuovo filesystem su questo disco</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>Facendo clic sul pulsante nella parte inferiore di questo modulo verrà creato un nuovo file system $1 sul dispositivo $2. Tutti i dati su questa partizione verranno definitivamente cancellati.</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>Questa partizione è stata montata su $1 come $2. La creazione di un nuovo filesystem cancellerà tutti i file precedentemente accessibili in questa directory.</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>Opzioni del filesystem</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>Crea filesystem</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Impossibile creare il file system</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Esecuzione del comando $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. comando fallito!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. comando completato.</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>Ripara il filesystem</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>Non è consentito eseguire questo disco su fsck</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>Facendo clic sul pulsante &lt;tt&gt;Ripara filesystem&lt;/tt&gt; si tenterà di riparare il filesystem $1 danneggiato su $2 per il montaggio su $3. Se il filesystem non è danneggiato, non verranno apportate modifiche.</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>Le riparazioni del filesystem verranno eseguite utilizzando il comando $1, che tenterà automaticamente di risolvere eventuali problemi riscontrati. Per un maggiore controllo sulle riparazioni del file system, utilizzare il comando $2 manualmente in modalità interattiva dal prompt di Unix.</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>Ripara il filesystem</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>Esecuzione del comando $1 ..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>nessun errore rilevato</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>errori trovati e corretti</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>errori trovati e corretti - riavvio necessario</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>errori trovati ma NON corretti</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>errore della riga di comando</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>codice di ritorno sconosciuto $1 </value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>Tune Filesystem</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a mettere a punto questo filesystem</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>Questo modulo consente di regolare vari parametri del filesystem $1 su $2 per il montaggio su $3. I file esistenti su questo filesystem non saranno interessati.</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>Parametri di ottimizzazione</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>Tune Filesystem</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>Divari tra i controlli</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>Azione in caso di errore</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>Continua</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>Montare in sola lettura</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>Panico</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>Utente riservato</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>Gruppo riservato</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>Blocchi riservati</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>Tempo tra i controlli</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>giorni</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>settimane</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>mesi</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>Ottimizzazione del filesystem</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>Esecuzione del comando $1 ..</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>.. comando fallito!</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>.. comando completato.</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>Riavvio ora ..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>Riavvia ora</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>Hai modificato la tabella delle partizioni su $1. Per rendere effettiva questa modifica, è necessario riavviare il sistema.</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Impossibile salvare la partizione</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a modificare questo disco</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1' non è un cilindro di partenza valido</value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1' non è un cilindro finale valido</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>Il cilindro di partenza deve essere inferiore alla fine</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>Sovrapposizione rilevata con la partizione $1 (da $2 a $3)</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>Misura del blocco</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>Dimensione del frammento</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>Byte per inode</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>Blocchi riservati</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>Blocchi per gruppo</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>Verificare la presenza di blocchi danneggiati?</value>
+  </data>
+  <data name="ext3_j" xml:space="preserve">
+    <value>Dimensione del file journal</value>
+  </data>
+  <data name="msdos_ff" xml:space="preserve">
+    <value>Numero di FAT</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>Dimensione grassa</value>
+  </data>
+  <data name="msdos_F_other" xml:space="preserve">
+    <value>Altro ..</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>ID volume</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>Nome volume</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>Voci di root</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>Dimensione del cluster</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>Verificare la presenza di blocchi danneggiati?</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>Lunghezza del nome file</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>Numero di inode</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>Numero di blocchi</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>Verificare la presenza di blocchi danneggiati?</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>Forza la creazione del filesystem</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>Funzione hash</value>
+  </data>
+  <data name="xfs_force" xml:space="preserve">
+    <value>Forza la creazione del filesystem</value>
+  </data>
+  <data name="xfs_b" xml:space="preserve">
+    <value>Misura del blocco</value>
+  </data>
+  <data name="jfs_s" xml:space="preserve">
+    <value>Dimensione del registro</value>
+  </data>
+  <data name="jfs_c" xml:space="preserve">
+    <value>Verificare la presenza di blocchi danneggiati?</value>
+  </data>
+  <data name="btrfs_l" xml:space="preserve">
+    <value>Dimensione foglia</value>
+  </data>
+  <data name="btrfs_n" xml:space="preserve">
+    <value>Dimensione del nodo</value>
+  </data>
+  <data name="btrfs_s" xml:space="preserve">
+    <value>Dimensione del settore</value>
+  </data>
+  <data name="fatx_none" xml:space="preserve">
+    <value>Nessuna opzione disponibile per i filesystem FATX.</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>Dischi che questo utente può partizionare e formattare</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>Tutti i dischi</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>Selezionato ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>È possibile visualizzare i dischi non modificabili?</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>Modifica parametri IDE</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>Su</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>via</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>Impostazioni unità IDE</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>Modalità di trasferimento</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>Modalità di default</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>Disabilita IORDY</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>Utilizzando DMA</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>Conteggio settoriale</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>Read-lookahead</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>Scrivi cache</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>Interrompi smascheramento</value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>Mantieni le impostazioni ripristinate</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>Mantieni le funzionalità ripristinate</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>Sola lettura</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>Riprogrammare il miglior PIO</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>Timeout di standby</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>Supporto I/O a 32 bit</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>Conteggio dei settori per I/O a più settori</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>disattivare</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>Abilitare</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>Abilita con sequenza di sincronizzazione speciale</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>Applica a Drive</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>Test di velocità</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>Esecuzione</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>Cache buffer:</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>Buffered:</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>Risultati del test di velocità</value>
+  </data>
+  <data name="blink_title" xml:space="preserve">
+    <value>Identifica unità</value>
+  </data>
+  <data name="blink_desc" xml:space="preserve">
+    <value>Il LED di attività dell'unità ora si illuminerà sessanta volte</value>
+  </data>
+  <data name="blink_back" xml:space="preserve">
+    <value>Torna indietro</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$1 modificato</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Creato $1 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$1 eliminato</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>File system $1 creato su $2 </value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>File system $1 ottimizzato su $2 </value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>File system $1 riparato su $2 </value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>Parametri IDE modificati per $1 </value>
+  </data>
+  <data name="fs_ext2" xml:space="preserve">
+    <value>Vecchio nativo di Linux</value>
+  </data>
+  <data name="fs_minix" xml:space="preserve">
+    <value>Minix</value>
+  </data>
+  <data name="fs_msdos" xml:space="preserve">
+    <value>MS-DOS</value>
+  </data>
+  <data name="fs_vfat" xml:space="preserve">
+    <value>finestre</value>
+  </data>
+  <data name="fs_reiserfs" xml:space="preserve">
+    <value>ReiserFS</value>
+  </data>
+  <data name="fs_ext3" xml:space="preserve">
+    <value>Linux nativo</value>
+  </data>
+  <data name="fs_ext4" xml:space="preserve">
+    <value>Nuovo nativo Linux</value>
+  </data>
+  <data name="fs_xfs" xml:space="preserve">
+    <value>SGI</value>
+  </data>
+  <data name="fs_jfs" xml:space="preserve">
+    <value>IBM Journalling</value>
+  </data>
+  <data name="fs_btrfs" xml:space="preserve">
+    <value>BTR</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Elimina partizione</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare $1 ($2)? I dati su questa partizione potrebbero andare persi per sempre.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Cancella ora</value>
+  </data>
+  <data name="disk_title" xml:space="preserve">
+    <value>Modifica partizioni del disco</value>
+  </data>
+  <data name="disk_egone" xml:space="preserve">
+    <value>Il disco non esiste più!</value>
+  </data>
+  <data name="disk_no" xml:space="preserve">
+    <value>Numero</value>
+  </data>
+  <data name="disk_type" xml:space="preserve">
+    <value>genere</value>
+  </data>
+  <data name="disk_extent" xml:space="preserve">
+    <value>Estensione</value>
+  </data>
+  <data name="disk_start" xml:space="preserve">
+    <value>Inizio</value>
+  </data>
+  <data name="disk_end" xml:space="preserve">
+    <value>Fine</value>
+  </data>
+  <data name="disk_use" xml:space="preserve">
+    <value>Usato da</value>
+  </data>
+  <data name="disk_free" xml:space="preserve">
+    <value>Spazio libero</value>
+  </data>
+  <data name="disk_vm" xml:space="preserve">
+    <value>Memoria virtuale</value>
+  </data>
+  <data name="disk_iscsi" xml:space="preserve">
+    <value>Dispositivo condiviso iSCSI $1 </value>
+  </data>
+  <data name="disk_none" xml:space="preserve">
+    <value>Questo disco non ha ancora partizioni.</value>
+  </data>
+  <data name="disk_size" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="disk_dsize" xml:space="preserve">
+    <value>&lt;b&gt;Dimensioni disco:&lt;/b&gt; $1 </value>
+  </data>
+  <data name="disk_model" xml:space="preserve">
+    <value>&lt;b&gt;Marca e modello:&lt;/b&gt; $1 </value>
+  </data>
+  <data name="disk_cylinders" xml:space="preserve">
+    <value>&lt;b&gt;Cilindri:&lt;/b&gt; $1 </value>
+  </data>
+  <data name="disk_table" xml:space="preserve">
+    <value>&lt;b&gt;Formato tabella delle partizioni:&lt;/b&gt; $1 </value>
+  </data>
+  <data name="disk_notable" xml:space="preserve">
+    <value>&lt;b&gt;Formato tabella delle partizioni:&lt;/b&gt; nessuno creato</value>
+  </data>
+  <data name="disk_needtable" xml:space="preserve">
+    <value>Non è possibile creare partizioni senza una tabella delle partizioni.</value>
+  </data>
+  <data name="disk_return" xml:space="preserve">
+    <value>elenco di partizioni</value>
+  </data>
+  <data name="relabel_title" xml:space="preserve">
+    <value>Pulisci le partizioni</value>
+  </data>
+  <data name="relabel_warn" xml:space="preserve">
+    <value>Sei sicuro di voler cancellare tutte le partizioni su $1 ($2) riscrivendo l'etichetta del disco? Tutti i dati e i filesystem esistenti andranno persi!</value>
+  </data>
+  <data name="relabel_parts" xml:space="preserve">
+    <value>Partizioni esistenti</value>
+  </data>
+  <data name="relabel_noparts" xml:space="preserve">
+    <value>Nessuno ancora creato</value>
+  </data>
+  <data name="relabel_table" xml:space="preserve">
+    <value>Formato della tabella delle partizioni</value>
+  </data>
+  <data name="relabel_ok" xml:space="preserve">
+    <value>Pulisci e ri-etichetta</value>
+  </data>
+  <data name="table_msdos" xml:space="preserve">
+    <value>MS-DOS (formato di partizione standard)</value>
+  </data>
+  <data name="table_gpt" xml:space="preserve">
+    <value>GPT (per dischi 2T o più grandi)</value>
+  </data>
+</root>

@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Správa tlačiarne</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Dostupné tlačiarne</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>tlačiareň</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>popis</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Tlačte na</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>vodič</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Povolené?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Prijímať?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>jobs</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>V tomto systéme nie sú nainštalované žiadne tlačiarne.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Zoznam ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Jobs ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 pracovných miest ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Pridajte novú tlačiareň.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Zastaviť plánovač</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo zastavíte bežiaci proces plánovania tlače. Zabráni to tým miestnym alebo vzdialeným používateľom v tlači na vašom systéme.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Spustite plánovač</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo spustíte proces plánovania tlače. To umožní miestnym a vzdialeným používateľom tlačiť na vašom systéme.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Reštartujte plánovač</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo reštartujete proces plánovania tlače. Vynúti sa použitie aktuálnej konfigurácie tlače.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>zoznam tlačiarní</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Tlačový systém: $1 </value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Clusterové servery</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo nastavíte ďalšie servery Webmin, na ktorých sa budú tlačiarne vytvárať, aktualizovať a odstraňovať.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Odstrániť vybrané tlačiarne</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Nemáte povolenie upravovať túto tlačiareň</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Nemáte povolenie pridávať tlačiarne</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Vytvorte tlačiareň</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Upravte tlačiareň</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Konfigurácia tlačiarne</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>názov</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Prijímate žiadosti?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Nie - Prečo nie</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>popis</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Tlač je povolená?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Riadenie prístupu</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Povoliť všetkým</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Odmietnite všetkých</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Povoliť registrovaných používateľov.</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Odmietnuť používateľov uvedených na zozname ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Tlačiť banner?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>voliteľný</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Predvolená tlačiareň?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Už je predvolená tlačiareň</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maximálna veľkosť tlačovej úlohy</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>neobmedzený</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Vodič prijíma</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>text</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>dovetok</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>ostatné</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Alternatívne názvy tlačiarní</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Cieľ tlače</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Lokálne zariadenie</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Lokálny súbor</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Vzdialený server Unix</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>tlačiareň</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Vzdialený server Windows</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>tlačiareň</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>užívateľ</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>heslo</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Workgroup</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Vzdialený server HPNP</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>prístav</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Priame pripojenie TCP</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>prístav</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Ovládač tlačiarne</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Skontrolujte, či je vzdialený server zapnutý?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>bloky</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Uloženie tlačiarne zlyhalo</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Nemáte povolenie pridávať tlačiarne</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Nemáte povolenie upravovať túto tlačiareň</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' nie je platný názov tlačiarne</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Tlačiareň s názvom „$1“ už existuje</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Neboli zadaní žiadni používatelia, ktorí by to mohli povoliť</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Neboli zadaní žiadni používatelia, ktorí by odmietli</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Používateľ „$1“ neexistuje</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Musíte vybrať aspoň jeden typ, aby tento ovládač prijal</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Maximálna veľkosť tlačovej úlohy musí byť celé číslo</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>$1 neexistuje</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Vzdialený hostiteľ „$1“ neexistuje</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Vzdialený port „$1“ nie je platný</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>'$1' nie je platný názov vzdialeného frontu</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Ovládače nie je možné používať so vzdialenými tlačiarňami Unix</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Priamy hostiteľ „$1“ neexistuje</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Chýba alebo je neplatný priamy port</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Tlačový systém túto tlačiareň nepovolil</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Tlačiareň vytvorila v tomto systéme OK, ale v klastrových systémoch sa vyskytli nasledujúce chyby : $1 </value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Nenašla sa žiadna tlačiareň s názvom '$1'</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Tlačiareň bola v tomto systéme odstránená, ale v klastrových systémoch sa vyskytli nasledujúce chyby : $1 </value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Tlačové úlohy</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Tlačové úlohy na $1 </value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>ID úlohy</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>veľkosť</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Predloženej</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Odoslané o</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Názov súboru</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Kliknutím na ID úlohy z vyššie uvedeného zoznamu zrušíte výber.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Kliknutím na ID úlohy z vyššie uvedeného zoznamu zrušíte, alebo kliknutím na veľkosť úlohy ju zobrazíte.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Tlačiareň $1 nemá žiadne čakajúce úlohy.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Zrušte všetky tlačové úlohy</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>bajtov</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Tlač testovacej stránky</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Zrušiť vybraté úlohy</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Na tlačiarni $1 </value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>zoznam tlačových úloh</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Nie je povolené rušiť tlačové úlohy</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Zrušenie tlačovej úlohy zlyhalo</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Tlačová úloha $1 už neexistuje</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Túto tlačovú úlohu nemôžete zobraziť</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Táto tlačová úloha už neexistuje</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Nemáte povolenie na spustenie plánovača</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Plánovač sa nepodarilo spustiť</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Nemáte povolenie zastaviť plánovač</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Nepodarilo sa zastaviť plánovač</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Nemáte povolenie na reštartovanie plánovača</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Plánovač sa nepodarilo reštartovať</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>Postskriptová alebo textová tlačiareň</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Vzdialená tlačiareň</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Webmin ovládač</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Ovládač uniprintov</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Nepodarilo sa získať ovládače z $1. Ovládače tlačiarne Webmin, ktoré používajú ghostscript, nie sú k dispozícii</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Príkaz $1 nebol nájdený. Ovládače tlačiarne Webmin, ktoré používajú ghostscript, nie sú k dispozícii</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>$1 neexistuje</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Vzdialená alebo surová tlačiareň</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>Vodič COAS</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Tlačiareň a rozlíšenie</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Poslať EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Veľkosť papiera</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Tlačiť obojstranne?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Ďalšie možnosti GS</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Ovládač uniprintov</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>$1 neexistuje</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Nie je vybratý žiadny ovládač tlačiarne</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Nie je vybraté žiadne rozlíšenie</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>Postskriptová alebo textová tlačiareň</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat vodič</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Tlačiareň a rozlíšenie</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Poslať EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Veľkosť papiera</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Počet stránok na výstupnú stránku</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Ďalšie možnosti GS</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Pravý/ľavý okraj</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Horný/dolný okraj</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Opraviť schodový krokový text?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>$1 neexistuje</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Nie je vybratý žiadny ovládač tlačiarne</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný pravý/ľavý okraj</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Chýba alebo je neplatný horný/dolný okraj</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Nie je vybraté žiadne rozlíšenie</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Model tlačiarne a ovládač</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>Postskriptová alebo textová tlačiareň</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>Ovládač filtra APS</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Typ tlačiarne</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Rozlíšenie v DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Farebná tlačiareň?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Veľkosť papiera</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Metóda filtrovania</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>automatický</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>surový</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Extra možnosti duchov</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>Ovládač YAST2</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Nie je vybratý žiadny typ tlačiarne</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné rozlíšenie</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Nepodarilo sa zastaviť lpd : $1 </value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Tlačiarne, ktoré môže tento užívateľ konfigurovať</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Môžete pridať nové tlačiarne?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Môžete zrušiť tlačové úlohy?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Môže plánovač zastaviť alebo spustiť?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Iba reštartovať</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Iba na vybraných tlačiarňach ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Všetky tlačiarne</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Vybraný ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Zobraziť nenakonfigurovateľné tlačiarne?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Môžu tlačiť testovacie stránky?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Spravujte tlačové úlohy vo vlastníctve</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Všetci používatelia</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Aktuálny užívateľ Webmin</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Môžete odstrániť tlačiarne?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Dokážete spravovať klaster tlačiarní?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Zastavený plánovač tlače</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Spustený plánovač tlače</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Reštartovaný plánovač tlače</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Zrušená tlačová úloha $2 na $1 </value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Zrušené všetky tlačové úlohy na $1 </value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Zrušené $2 tlačové úlohy na $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Vytvorená tlačiareň $1 na $2 </value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Upravená tlačiareň $1 na $2 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Odstránená tlačiareň $1 na $2 </value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Vytvorená $3 tlačiareň $1 na $2 </value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Upravená $3 tlačiareň $1 na $2 </value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Odstránená $3 tlačiareň $1 na $2 </value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Paralelný port $1 </value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Sériový port $1 (COM $1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Null Device</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB tlačiareň $1 </value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Príkaz $1 sa vo vašom systéme nenašiel, čo znamená, že tlačový systém Linux nie je nainštalovaný.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Vo vašom systéme neexistuje spoolový adresár $1, čo naznačuje, že tlačový systém Linux nie je nainštalovaný.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Paralelný port</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Sériový port $1 (COM $1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo naznačuje, že tlačový systém FreeBSD nie je nainštalovaný.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Vo vašom systéme neexistuje spoolový adresár $1, čo naznačuje, že tlačový systém FreeBSD nie je nainštalovaný.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Paralelný port</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Sériový port $1 (COM $1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Paralelný port $1 </value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Sériový port $1 </value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Null Device</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo naznačuje, že tlačový systém UnixWare nie je nainštalovaný.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Paralelné $1 </value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Sériové $1 </value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Null Device</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo znamená, že tlačový systém HPUX nie je nainštalovaný.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>Adresár skriptov rozhrania $1 vo vašom systéme neexistuje, čo naznačuje, že tlačový systém HPUX nie je nainštalovaný.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Paralelný port $1 </value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Sériový port $1 (COM $1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Null Device</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Príkaz $1 sa vo vašom systéme nenašiel, čo znamená, že tlačový systém LPRng nie je nainštalovaný.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Vo vašom systéme neexistuje spoolový adresár $1, čo naznačuje, že tlačový systém LPRng nie je nainštalovaný.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Paralelný port</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Paralelný port Ultra 5/10</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Sériový port $1 </value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Null Device</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo znamená, že tlačový systém Solaris nie je nainštalovaný.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Tlač testovacej stránky</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Nemáte dovolené tlačiť testovacie stránky</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Tento formulár umožňuje tlač skúšobnej stránky pre tlačiareň $1. Vyberte typ stránky, ktorú chcete vytlačiť :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Čiernobiela postskriptová stránka</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Farebná postskriptová stránka</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Obyčajný text ASCII</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Akýkoľvek nahraný súbor</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Vytlačiť stránku</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Tlač skúšobnej stránky príkazom $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. príkaz zlyhal!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. príkaz dokončený.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Vzdialená alebo surová tlačiareň</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>Ovládač CUPS</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>$1 nie je platný program</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Možnosti pre $1 </value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo znamená, že tlačový systém CUPS nie je nainštalovaný.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Príkaz $1 nebol vo vašom systéme nájdený, čo naznačuje, že tlačový systém IRIX nie je nainštalovaný.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Adresár skriptov rozhrania $1 vo vašom systéme neexistuje, čo naznačuje, že tlačový systém IRIX nie je nainštalovaný.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Port tlačiarne $1 </value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Neplatný popis - sú povolené iba písmená a čísla, bez medzier</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>Tlačový server AIX $1 nebol nájdený. Možno nie je nainštalovaný alebo sa používa iný tlačový systém.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Servery klastrových tlačiarní</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Do klastra tlačiarne ešte neboli pridané žiadne servery.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Meno hosťa</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>popis</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Operačný systém</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Pridať server</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Pridajte servery do skupiny</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Predtým, ako ich budete môcť spravovať, musíte do modulu Webmin Servers Index pridať servery s prihlasovacím menom a heslom.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>klastrové servery</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Vymazať označené</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Nemáte oprávnenie spravovať servery klastrových tlačiarní</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Pridať servery</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Pridáva sa $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Pridávanie serverov do skupiny $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Server sa nepodarilo pridať</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Nepodarilo sa pridať skupinu</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Server $1 nemá modul Správa tlačiarne</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Server $1 používa iný tlačový systém ($2) ako tento server</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Server $1 používa iný tlačový ovládač ($2) ako tento server</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Pridané $1, s $2 tlačiarňami.</value>
+  </data>
+</root>

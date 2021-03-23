@@ -24,34 +24,33 @@ namespace Doods.Xam.MonitorMyServer.Data
 
         public ICommand GoToLoginCmd { get; }
 
+        public string ToQuery()
+        {
+            return ToQuery(false);
+        }
+
         private void GoToLogin()
         {
             //var navigationService = App.Container.Resolve<INavigationService>();
             var navigationService = App.Container.ResolveKeyed<INavigationService>(App.NavigationServiceType);
             // navigationService.NavigateAsync(nameof(LogInPage), this);
-            navigationService.NavigateAsync(nameof(SelectSupportedServiciePage),new SynchronizedCacheItemQueryShell(this));
-           // var cache = App.Container.Resolve<ISynchronizedCache<object>>();
-           //cache.AddOrUpdate(nameof(ZeroconfHost), this);
-           //
-           // _displayName.Value = dataHost.DisplayName;
-           //_hostName.Value = dataHost.IPAddress;
-           // if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
-        }
-        public string ToQuery()
-        {
-            return ToQuery(false);
-
+            navigationService.NavigateAsync(nameof(SelectSupportedServiciePage),
+                new SynchronizedCacheItemQueryShell(this));
+            // var cache = App.Container.Resolve<ISynchronizedCache<object>>();
+            //cache.AddOrUpdate(nameof(ZeroconfHost), this);
+            //
+            // _displayName.Value = dataHost.DisplayName;
+            //_hostName.Value = dataHost.IPAddress;
+            // if (zeroconfHost.Services.TryGetValue("_ssh._tcp.local.", out var srv)) _port.Value = srv.Port.ToString();
         }
 
         public string ToQuery(bool forceHttp)
         {
             if (Services.TryGetValue("_ssh._tcp.local.", out var srv))
                 return $"DisplayNameQuery={DisplayName}&IPAddressQuery={IPAddress}&PortQuery={srv.Port}";
-            
-            if(IPAddress.StartsWith("http",true,CultureInfo.CurrentCulture))
-            {
+
+            if (IPAddress.StartsWith("http", true, CultureInfo.CurrentCulture))
                 return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString($"http://{IPAddress}")}";
-            }
             ;
             return $"DisplayNameQuery={DisplayName}&IPAddressQuery={Uri.EscapeDataString($"https://{IPAddress}")}";
         }

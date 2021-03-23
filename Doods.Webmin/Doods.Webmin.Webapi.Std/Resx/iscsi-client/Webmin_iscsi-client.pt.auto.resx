@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Cliente iSCSI</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>índice do módulo</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Iniciar na inicialização?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Altere esta opção para controlar se o cliente iSCSI é iniciado no momento da inicialização ou não. Isso é necessário para que os sistemas de arquivos montados nos servidores iSCSI sejam montados automaticamente.</value>
+  </data>
+  <data name="check_econfig" xml:space="preserve">
+    <value>O arquivo de configuração do cliente iSCSI $1 não foi encontrado no seu sistema.</value>
+  </data>
+  <data name="check_eiscsiadm" xml:space="preserve">
+    <value>O programa de administração do cliente iSCSI $1 não foi encontrado no seu sistema.</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>Opções de autenticação</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>Autenticação de cliente e servidor iSCSI</value>
+  </data>
+  <data name="auth_name" xml:space="preserve">
+    <value>Nome do iniciador do sistema local</value>
+  </data>
+  <data name="auth_newname" xml:space="preserve">
+    <value>Gere um novo nome aleatório</value>
+  </data>
+  <data name="auth_method" xml:space="preserve">
+    <value>Método de autenticação</value>
+  </data>
+  <data name="auth_method_none" xml:space="preserve">
+    <value>Não autenticar</value>
+  </data>
+  <data name="auth_userpass" xml:space="preserve">
+    <value>Faça login no servidor</value>
+  </data>
+  <data name="auth_userpass_def" xml:space="preserve">
+    <value>Não é necessário</value>
+  </data>
+  <data name="auth_userpass_user" xml:space="preserve">
+    <value>Nome do usuário</value>
+  </data>
+  <data name="auth_userpass_pass" xml:space="preserve">
+    <value>e senha</value>
+  </data>
+  <data name="auth_userpass_in" xml:space="preserve">
+    <value>Entrar no cliente</value>
+  </data>
+  <data name="auth_dmethod" xml:space="preserve">
+    <value>Método de autenticação de descoberta</value>
+  </data>
+  <data name="auth_duserpass" xml:space="preserve">
+    <value>Descoberta de login no servidor</value>
+  </data>
+  <data name="auth_duserpass_in" xml:space="preserve">
+    <value>Descoberta de logon no cliente</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>Falha ao salvar as opções de autenticação</value>
+  </data>
+  <data name="auth_eusername" xml:space="preserve">
+    <value>Nome de usuário ausente para o servidor</value>
+  </data>
+  <data name="auth_epassword" xml:space="preserve">
+    <value>Senha ausente do servidor</value>
+  </data>
+  <data name="auth_eusername_in" xml:space="preserve">
+    <value>Nome de usuário ausente para o cliente</value>
+  </data>
+  <data name="auth_epassword_in" xml:space="preserve">
+    <value>Senha ausente para o cliente</value>
+  </data>
+  <data name="auth_edusername" xml:space="preserve">
+    <value>Nome de usuário de descoberta ausente para o servidor</value>
+  </data>
+  <data name="auth_edpassword" xml:space="preserve">
+    <value>Senha de descoberta ausente para o servidor</value>
+  </data>
+  <data name="auth_edusername_in" xml:space="preserve">
+    <value>Nome de usuário de descoberta ausente para o cliente</value>
+  </data>
+  <data name="auth_edpassword_in" xml:space="preserve">
+    <value>Senha de descoberta ausente para o cliente</value>
+  </data>
+  <data name="auth_egen" xml:space="preserve">
+    <value>Falha ao gerar um novo nome!</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>Tempos limite de iSCSI</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>Opções de tempo limite do cliente iSCSI</value>
+  </data>
+  <data name="timeout_timeout" xml:space="preserve">
+    <value>Tempo para aguardar antes da falha dos comandos SCSI</value>
+  </data>
+  <data name="timeout_immediate" xml:space="preserve">
+    <value>Falhar imediatamente</value>
+  </data>
+  <data name="timeout_forever" xml:space="preserve">
+    <value>Esperar para sempre</value>
+  </data>
+  <data name="timeout_wait" xml:space="preserve">
+    <value>Esperar por</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>segundos</value>
+  </data>
+  <data name="timeout_login_timeout" xml:space="preserve">
+    <value>Tempo para aguardar o login</value>
+  </data>
+  <data name="timeout_logout_timeout" xml:space="preserve">
+    <value>Tempo para aguardar logout</value>
+  </data>
+  <data name="timeout_noop_out_interval" xml:space="preserve">
+    <value>Hora de esperar antes de executar o ping</value>
+  </data>
+  <data name="timeout_noop_out_timeout" xml:space="preserve">
+    <value>Hora de aguardar o ping antes de falhar</value>
+  </data>
+  <data name="timeout_abort_timeout" xml:space="preserve">
+    <value>Tempo para aguardar a resposta de interrupção antes de falhar</value>
+  </data>
+  <data name="timeout_lu_reset_timeout" xml:space="preserve">
+    <value>Tempo para aguardar a resposta da unidade lógica antes de falhar</value>
+  </data>
+  <data name="timeout_tgt_reset_timeout" xml:space="preserve">
+    <value>Tempo para aguardar a resposta do destino antes de falhar</value>
+  </data>
+  <data name="timeout_err" xml:space="preserve">
+    <value>Falha ao salvar tempos limite</value>
+  </data>
+  <data name="timeout_etimeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar antes da falha dos comandos SCSI</value>
+  </data>
+  <data name="timeout_elogin_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar login</value>
+  </data>
+  <data name="timeout_elogout_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar logout</value>
+  </data>
+  <data name="timeout_enoop_out_interval" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar antes de executar o ping</value>
+  </data>
+  <data name="timeout_enoop_out_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar o ping antes de falhar</value>
+  </data>
+  <data name="timeout_eabort_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar a resposta de cancelamento antes de falhar</value>
+  </data>
+  <data name="timeout_elu_reset_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar a resposta da unidade lógica antes de falhar</value>
+  </data>
+  <data name="timeout_etgt_reset_timeout" xml:space="preserve">
+    <value>Tempo ausente ou não numérico para aguardar a resposta do destino antes de falhar</value>
+  </data>
+  <data name="iscsi_title" xml:space="preserve">
+    <value>Opções iSCSI</value>
+  </data>
+  <data name="iscsi_header" xml:space="preserve">
+    <value>Outras opções iSCSI</value>
+  </data>
+  <data name="iscsi_startup" xml:space="preserve">
+    <value>Conectar sessões no momento da inicialização?</value>
+  </data>
+  <data name="iscsi_retry" xml:space="preserve">
+    <value>Número de vezes para tentar novamente o login</value>
+  </data>
+  <data name="iscsi_cmds" xml:space="preserve">
+    <value>Comandos máximos na fila por sessão</value>
+  </data>
+  <data name="iscsi_queue" xml:space="preserve">
+    <value>Comandos máximos na fila por dispositivo</value>
+  </data>
+  <data name="iscsi_err" xml:space="preserve">
+    <value>Falha ao salvar as opções iSCSI</value>
+  </data>
+  <data name="iscsi_eretry" xml:space="preserve">
+    <value>Número de vezes ausente ou não numérico para tentar novamente o login</value>
+  </data>
+  <data name="iscsi_ecmds" xml:space="preserve">
+    <value>Comandos máximos ausentes ou não numéricos na fila por sessão</value>
+  </data>
+  <data name="iscsi_equeue" xml:space="preserve">
+    <value>Comandos máximos ausentes ou não numéricos na fila por dispositivo</value>
+  </data>
+  <data name="ifaces_title" xml:space="preserve">
+    <value>Interfaces iSCSI</value>
+  </data>
+  <data name="ifaces_elist" xml:space="preserve">
+    <value>Falha ao listar interfaces : $1 </value>
+  </data>
+  <data name="ifaces_name" xml:space="preserve">
+    <value>Nome da interface</value>
+  </data>
+  <data name="ifaces_transport" xml:space="preserve">
+    <value>Transporte</value>
+  </data>
+  <data name="ifaces_uses" xml:space="preserve">
+    <value>Usado por</value>
+  </data>
+  <data name="ifaces_none" xml:space="preserve">
+    <value>Nenhuma interface iSCSI está ativa no momento.</value>
+  </data>
+  <data name="ifaces_return" xml:space="preserve">
+    <value>lista de interfaces</value>
+  </data>
+  <data name="ifaces_header" xml:space="preserve">
+    <value>Adicionar interface iSCSI</value>
+  </data>
+  <data name="ifaces_delete" xml:space="preserve">
+    <value>Remover interfaces selecionadas</value>
+  </data>
+  <data name="ifaces_on" xml:space="preserve">
+    <value>Meta $1 em $2 </value>
+  </data>
+  <data name="ifaces_nouses" xml:space="preserve">
+    <value>Sem conexões</value>
+  </data>
+  <data name="ifaces_ipaddress" xml:space="preserve">
+    <value>Endereço IP de origem</value>
+  </data>
+  <data name="ifaces_hwaddress" xml:space="preserve">
+    <value>Endereço MAC</value>
+  </data>
+  <data name="ifaces_ifacename" xml:space="preserve">
+    <value>Interface de origem</value>
+  </data>
+  <data name="ifaces_ipaddressdef" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="ifaces_notset" xml:space="preserve">
+    <value>Automático</value>
+  </data>
+  <data name="iadd_err" xml:space="preserve">
+    <value>Falha ao adicionar interface</value>
+  </data>
+  <data name="iadd_eclash" xml:space="preserve">
+    <value>Uma interface chamada $1 já existe</value>
+  </data>
+  <data name="iadd_eipaddress" xml:space="preserve">
+    <value>Endereço IP de origem ausente ou inválido</value>
+  </data>
+  <data name="iadd_ehwaddress" xml:space="preserve">
+    <value>Endereço MAC ausente ou inválido</value>
+  </data>
+  <data name="iadd_ename" xml:space="preserve">
+    <value>O nome da interface está ausente ou contém caracteres inválidos</value>
+  </data>
+  <data name="difaces_err" xml:space="preserve">
+    <value>Falha ao remover interfaces</value>
+  </data>
+  <data name="difaces_enone" xml:space="preserve">
+    <value>Nenhum selecionado</value>
+  </data>
+  <data name="difaces_edelete" xml:space="preserve">
+    <value>Falha na remoção da interface $1 : $2 </value>
+  </data>
+  <data name="difaces_title" xml:space="preserve">
+    <value>Remover interfaces iSCSI</value>
+  </data>
+  <data name="difaces_rusure" xml:space="preserve">
+    <value>Tem certeza de que deseja remover as $1 interfaces selecionadas?</value>
+  </data>
+  <data name="difaces_rusure1" xml:space="preserve">
+    <value>Tem certeza de que deseja remover a interface $1 ?</value>
+  </data>
+  <data name="difaces_confirm" xml:space="preserve">
+    <value>Remover interfaces</value>
+  </data>
+  <data name="difaces_target" xml:space="preserve">
+    <value>destino iSCSI</value>
+  </data>
+  <data name="difaces_ip" xml:space="preserve">
+    <value>servidor iSCSI</value>
+  </data>
+  <data name="difaces_users" xml:space="preserve">
+    <value>Alguma conexão usando essas interfaces está atualmente ativa e falhará ao operar quando as interfaces forem removidas :</value>
+  </data>
+  <data name="conns_title" xml:space="preserve">
+    <value>Conexões iSCSI</value>
+  </data>
+  <data name="conns_elist" xml:space="preserve">
+    <value>Falha ao listar conexões : $1 </value>
+  </data>
+  <data name="conns_ip" xml:space="preserve">
+    <value>IP do servidor</value>
+  </data>
+  <data name="conns_sport" xml:space="preserve">
+    <value>Porta do servidor</value>
+  </data>
+  <data name="conns_name" xml:space="preserve">
+    <value>Nome do servidor</value>
+  </data>
+  <data name="conns_target" xml:space="preserve">
+    <value>Nome do alvo</value>
+  </data>
+  <data name="conns_device" xml:space="preserve">
+    <value>Dispositivo local</value>
+  </data>
+  <data name="conns_username" xml:space="preserve">
+    <value>Nome de usuário de login</value>
+  </data>
+  <data name="conns_nouser" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="conns_nodevice" xml:space="preserve">
+    <value>Nenhum mapeado</value>
+  </data>
+  <data name="conns_delete" xml:space="preserve">
+    <value>Desconectar selecionado</value>
+  </data>
+  <data name="conns_none" xml:space="preserve">
+    <value>No momento, nenhuma conexão iSCSI está ativa.</value>
+  </data>
+  <data name="conns_header" xml:space="preserve">
+    <value>Adicionar conexão iSCSI</value>
+  </data>
+  <data name="conns_host" xml:space="preserve">
+    <value>IP ou nome do host do servidor iSCSI</value>
+  </data>
+  <data name="conns_port" xml:space="preserve">
+    <value>porta do servidor iSCSI</value>
+  </data>
+  <data name="conns_start" xml:space="preserve">
+    <value>Conectar ..</value>
+  </data>
+  <data name="conns_return" xml:space="preserve">
+    <value>lista de conexões</value>
+  </data>
+  <data name="conns_iface" xml:space="preserve">
+    <value>interface iSCSI</value>
+  </data>
+  <data name="conns_ifacedef" xml:space="preserve">
+    <value>Escolha automaticamente</value>
+  </data>
+  <data name="conns_ifaceerr" xml:space="preserve">
+    <value>Falha ao buscar interfaces : $1 </value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Adicionar conexão iSCSI</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Falha ao adicionar conexão iSCSI</value>
+  </data>
+  <data name="add_ehost" xml:space="preserve">
+    <value>Nome de host ausente ou não resolvível</value>
+  </data>
+  <data name="add_eport" xml:space="preserve">
+    <value>Porta ausente ou não numérica</value>
+  </data>
+  <data name="add_etargets" xml:space="preserve">
+    <value>Nenhum destino iSCSI pôde ser recuperado de $1:$2 </value>
+  </data>
+  <data name="add_etargets2" xml:space="preserve">
+    <value>Nenhum destino iSCSI foi encontrado em $1 </value>
+  </data>
+  <data name="add_target" xml:space="preserve">
+    <value>Conectar ao destino</value>
+  </data>
+  <data name="add_alltargets" xml:space="preserve">
+    <value>Todos os alvos</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Adicionar conexão</value>
+  </data>
+  <data name="add_etarget" xml:space="preserve">
+    <value>Não foi encontrado $1 alvo</value>
+  </data>
+  <data name="add_dev" xml:space="preserve">
+    <value>Conectado como $1 </value>
+  </data>
+  <data name="add_used" xml:space="preserve">
+    <value>Já conectado</value>
+  </data>
+  <data name="add_on" xml:space="preserve">
+    <value>$1 em $2 </value>
+  </data>
+  <data name="add_auth" xml:space="preserve">
+    <value>Faça login no servidor</value>
+  </data>
+  <data name="add_auth1" xml:space="preserve">
+    <value>Use o método de autenticação padrão</value>
+  </data>
+  <data name="add_auth0" xml:space="preserve">
+    <value>Faça logon como $2 com a senha $3 usando o método $1 </value>
+  </data>
+  <data name="dconns_err" xml:space="preserve">
+    <value>Falha ao desconectar conexões</value>
+  </data>
+  <data name="dconns_enone" xml:space="preserve">
+    <value>Nenhum selecionado</value>
+  </data>
+  <data name="dconns_edelete" xml:space="preserve">
+    <value>A remoção do destino $2 do host $1 falhou : $3 </value>
+  </data>
+  <data name="dconns_title" xml:space="preserve">
+    <value>Desconectar conexões iSCSI</value>
+  </data>
+  <data name="dconns_rusure" xml:space="preserve">
+    <value>Tem certeza de que deseja remover as $1 conexões selecionadas?</value>
+  </data>
+  <data name="dconns_rusure1" xml:space="preserve">
+    <value>Tem certeza de que deseja remover a conexão com $1 ?</value>
+  </data>
+  <data name="dconns_rusure2" xml:space="preserve">
+    <value>Tem certeza de que deseja remover a conexão com $1 para o dispositivo $2 ?</value>
+  </data>
+  <data name="dconns_users" xml:space="preserve">
+    <value>Algumas partições dessas conexões estão em uso no momento e não funcionarão quando as conexões forem removidas :</value>
+  </data>
+  <data name="dconns_part" xml:space="preserve">
+    <value>Partição</value>
+  </data>
+  <data name="dconns_use" xml:space="preserve">
+    <value>Usado por</value>
+  </data>
+  <data name="dconns_size" xml:space="preserve">
+    <value>Tamanho da partição</value>
+  </data>
+  <data name="dconns_confirm" xml:space="preserve">
+    <value>Remover conexões</value>
+  </data>
+  <data name="dconns_unused" xml:space="preserve">
+    <value>Não utilizado</value>
+  </data>
+  <data name="vconn_title" xml:space="preserve">
+    <value>Conexão iSCSI</value>
+  </data>
+  <data name="vconn_egone" xml:space="preserve">
+    <value>A conexão selecionada não existe mais!</value>
+  </data>
+  <data name="vconn_header" xml:space="preserve">
+    <value>Detalhes da conexão iSCSI</value>
+  </data>
+  <data name="vconn_proto" xml:space="preserve">
+    <value>Protocolo de rede</value>
+  </data>
+  <data name="vconn_init" xml:space="preserve">
+    <value>Nome do iniciador local</value>
+  </data>
+  <data name="vconn_connection" xml:space="preserve">
+    <value>Estado da conexão</value>
+  </data>
+  <data name="vconn_session" xml:space="preserve">
+    <value>Estado da sessão</value>
+  </data>
+  <data name="vconn_username" xml:space="preserve">
+    <value>Conectado com nome de usuário</value>
+  </data>
+  <data name="vconn_password" xml:space="preserve">
+    <value>Conectado com senha</value>
+  </data>
+  <data name="vconn_username_in" xml:space="preserve">
+    <value>Nome de usuário do cliente</value>
+  </data>
+  <data name="vconn_password_in" xml:space="preserve">
+    <value>Senha do cliente</value>
+  </data>
+  <data name="vconn_none" xml:space="preserve">
+    <value>Nada solicitado</value>
+  </data>
+  <data name="vconn_device" xml:space="preserve">
+    <value>Arquivo de dispositivo local</value>
+  </data>
+  <data name="vconn_device2" xml:space="preserve">
+    <value>Nome do dispositivo local</value>
+  </data>
+  <data name="vconn_device3" xml:space="preserve">
+    <value>Nome constante do dispositivo</value>
+  </data>
+  <data name="vconn_delete" xml:space="preserve">
+    <value>Desconectar conexão</value>
+  </data>
+  <data name="vconn_users" xml:space="preserve">
+    <value>Usuários atuais</value>
+  </data>
+  <data name="vconn_size" xml:space="preserve">
+    <value>Tamanho do disco</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>Falha ao ativar no momento da inicialização</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>Nenhuma ação de inicialização chamada $1 existe</value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>Opções de autenticação salvas</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>Opções de tempo limite salvas</value>
+  </data>
+  <data name="log_iscsi" xml:space="preserve">
+    <value>Opções iSCSI salvas</value>
+  </data>
+  <data name="log_add_connection" xml:space="preserve">
+    <value>Conexão adicionada a $1 para $2 </value>
+  </data>
+  <data name="log_delete_connection" xml:space="preserve">
+    <value>Conexão removida para $1 para $2 </value>
+  </data>
+  <data name="log_delete_connections" xml:space="preserve">
+    <value>$1 conexões removidas</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Cliente iSCSI ativado no momento da inicialização</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Cliente iSCSI desativado no momento da inicialização</value>
+  </data>
+  <data name="log_add_iface" xml:space="preserve">
+    <value>Adicionada interface $1 </value>
+  </data>
+  <data name="log_delete_iface" xml:space="preserve">
+    <value>Interface removida $1 </value>
+  </data>
+  <data name="log_delete_ifaces" xml:space="preserve">
+    <value>$1 interfaces removidas</value>
+  </data>
+</root>

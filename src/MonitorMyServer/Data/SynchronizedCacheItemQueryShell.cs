@@ -6,7 +6,7 @@ namespace Doods.Xam.MonitorMyServer.Data
 {
     public class SynchronizedCacheItemQueryShell : IQueryShellNavigationObject
     {
-        private string _str;
+        private readonly string _str;
 
         public SynchronizedCacheItemQueryShell(object obj)
         {

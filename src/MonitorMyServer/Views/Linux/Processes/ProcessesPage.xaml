@@ -1,64 +1,69 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
-             xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
-             
-             xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
-             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
-             xmlns:models="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Models;assembly=Doods.Framework.Mobile.Ssh.Std"
-             mc:Ignorable="d"
-             x:Name="Page"
-             x:Class="Doods.Xam.MonitorMyServer.Views.Processes2.ProcessesPage">
-   
-    <ScrollView >
-        <StackLayout>
-            <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}"/>
-            <StackLayout BindableLayout.ItemsSource="{Binding Processes,Mode=OneWay}" >
-            <BindableLayout.ItemTemplate>
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+
+                      xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:models="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Models;assembly=Doods.Framework.Mobile.Ssh.Std"
+                      mc:Ignorable="d"
+                      x:Name="Page"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.Processes2.ProcessesPage">
+
+
+    <StackLayout>
+        <controls1:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <ScrollView>
+            <StackLayout BindableLayout.ItemsSource="{Binding Processes,Mode=OneWay}">
+                <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="models:Process">
-                    <controls:TitledFrameView
-                                    Title="{Binding Command}"
-                                    SubTitle="{Binding Pid}"
-                                    SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                        <controls:TitledFrameView
+                            Title="{Binding Command,Mode=OneTime}"
+                            SubTitle="{Binding Pid,Mode=OneTime}"
+                            SubTitleStyle="{StaticResource NewSubTitleStyle}">
 
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
 
-                            </Grid.RowDefinitions>
-                            <Label Grid.Column="0" Grid.Row="1" Text="{Binding Command,Mode=OneWay}"/>
-                            <Label Grid.Column="1" Grid.Row="1"  Text="{Binding Pid,Mode=OneWay}"/>
-                            <Label Grid.Column="0" Text="{Binding Tty,Mode=OneWay}"/>
-                            <Label Grid.Column="1" Text="{Binding CpuTime,Mode=OneWay}"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Column="0" Grid.Row="1" Text="{Binding Command,Mode=OneTime}" />
+                                <Label Grid.Column="1" Grid.Row="1" Text="{Binding Pid,Mode=OneTime}" />
+                                <Label Grid.Column="0" Text="{Binding Tty,Mode=OneTime}" />
+                                <Label Grid.Column="1" Text="{Binding CpuTime,Mode=OneTime}" />
                                 <controls:DoodsSvgImage
-                                            Grid.Column="2"
-                                            Grid.Row="0"
-                                            Grid.RowSpan="2"
-                                            Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
-                                            WidthRequest="40"
-                                            HeightRequest="40"
-                                            HorizontalOptions="EndAndExpand"
-                                            VerticalOptions="Center" >
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                    Source="{Binding ResourceFile,Source={ x:Static enum:SvgIconTarget.Delete}}"
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    HorizontalOptions="EndAndExpand"
+                                    VerticalOptions="Center">
 
                                     <controls:DoodsSvgImage.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding BindingContext.StopProcessCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
-                            </controls:DoodsSvgImage.GestureRecognizers>
-                            </controls:DoodsSvgImage>
-                        </Grid>
-                    </controls:TitledFrameView>
-                </DataTemplate>
+                                        <TapGestureRecognizer
+                                            Command="{Binding BindingContext.StopProcessCommand,Mode=OneWay, Source={x:Reference Page}}"
+                                            CommandParameter="{Binding .}" />
+                                    </controls:DoodsSvgImage.GestureRecognizers>
+                                </controls:DoodsSvgImage>
+                            </Grid>
+                        </controls:TitledFrameView>
+                    </DataTemplate>
                 </BindableLayout.ItemTemplate>
-        </StackLayout>
-        </StackLayout>
-    </ScrollView>
-  
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+
 </mvvm:BaseContentPage>

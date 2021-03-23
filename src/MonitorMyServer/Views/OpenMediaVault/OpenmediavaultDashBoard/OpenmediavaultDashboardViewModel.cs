@@ -7,7 +7,6 @@ using Autofac;
 using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
-using Doods.Framework.Mobile.Std.Mvvm;
 using Doods.Framework.Std;
 using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Mobile.Std.Resources;
@@ -25,7 +24,6 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 {
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
-        
         private readonly IOmvService _sshService;
         private OMVInformations _OMVInformations;
         private string _text = string.Empty;
@@ -39,9 +37,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             ChangeHostCmd = new Command(ChangeHost);
             ShowDetailsCmd = new Command(ShowDetails);
             BannerId = configuration.AdsKey;
-           
         }
-        
+
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
         //    new ObservableRangeCollection<SystemInformation>();
         public string BannerId { get; }
@@ -149,16 +146,13 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                         UpdateHistory();
 
                         if (OMVInformations != null && OMVInformations.RebootRequired)
-                        {
                             SetLabelsStateItem("OMV", openmediavault.TheSystemMustBeRebooted_);
-                        }
                         else if (OMVInformations != null && OMVInformations.ConfigDirty)
-                        {
-                            SetLabelsStateItem("OMV", openmediavault.TheConfigurationHasBeenChanged_YouMustApplyTheChangesInOrderForThemToTakeEffect_);
-                        }
+                            SetLabelsStateItem("OMV",
+                                openmediavault
+                                    .TheConfigurationHasBeenChanged_YouMustApplyTheChangesInOrderForThemToTakeEffect_);
                         else
                             SetLabelsStateItem("OMV", openmediavault.Done___);
-                       
                     });
             }
             catch (AuthorizationException ex)
@@ -169,7 +163,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             {
                 SetLabelsStateItem(openmediavault.Error, e.Message);
             }
-            Shell.SetTabBarIsVisible(Shell.Current.CurrentItem,true);
+
+            Shell.SetTabBarIsVisible(Shell.Current.CurrentItem, true);
             await base.OnInternalAppearingAsync();
         }
 
@@ -254,7 +249,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         }
         //protected override void OnFinishLoading(LoadingContext context)
         //{
-          
+
         //}
     }
 }

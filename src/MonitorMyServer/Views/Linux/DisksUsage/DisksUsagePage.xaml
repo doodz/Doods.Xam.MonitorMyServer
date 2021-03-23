@@ -13,35 +13,33 @@
                       x:Class="Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage.DisksUsagePage">
     <StackLayout>
         <StackLayout.Resources>
-            <converters:BoolToCheckSvgResourceFileonverter x:Key="BoolToCheckSvgResourceFileonverter"/>
-            <converters:ByteCountToHumanReadableConverter x:Key="ByteCountToHumanReadableConverter"/>
         </StackLayout.Resources>
         <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
-       
+
 
         <ScrollView>
             <StackLayout>
-            <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
-                         BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}" />
-            <Label Text="{xct:Translate Filesystem}" FontSize="Title" Padding="30,10,30,10"/>
-                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Blockdevices,Mode=OneWay}"
-                            >
-                    <BindableLayout.ItemTemplate >
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding DisksUsage,Mode=OneWay}"
+                             BindableLayout.ItemTemplate="{StaticResource DiskUsageTitledFrameView}" />
+                <Label Text="{xct:Translate Filesystem}" FontSize="Title" Padding="30,10,30,10" />
+                <StackLayout Padding="8" BindableLayout.ItemsSource="{Binding Blockdevices,Mode=OneWay}">
+                    <BindableLayout.ItemTemplate>
                         <DataTemplate>
-                            <controls:TitledFrameView Title="{Binding Name,Mode=OneWay}" SubTitle="{Binding Fstype,Mode=OneWay}"
-                                                      SubTitleStyle="{StaticResource NewSubTitleStyle}"          >
+                            <controls:TitledFrameView Title="{Binding Name,Mode=OneWay}"
+                                                      SubTitle="{Binding Fstype,Mode=OneWay}"
+                                                      SubTitleStyle="{StaticResource NewSubTitleStyle}">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
 
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition  Height="Auto"/>
-                                        <RowDefinition  Height="Auto"/>
-                                        <RowDefinition  Height="Auto"/>
-                                        <RowDefinition  Height="Auto"/>
-                                        <RowDefinition  Height="Auto"/>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
                                     </Grid.RowDefinitions>
 
 
@@ -51,44 +49,54 @@
                                     <Label Grid.Row="3" Grid.Column="0" Text="{xct:Translate Content}" />
 
                                     <Label Grid.Row="0" Grid.Column="1" Text="{Binding Model,Mode=OneTime}" />
-                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Path,Mode=OneTime}"/>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Path,Mode=OneTime}" />
                                     <Label Grid.Row="2" Grid.Column="1" Text="{Binding Size,Mode=OneTime}" />
                                     <Label Grid.Row="3" Grid.Column="1" Text="{Binding Children.Count,Mode=OneTime}" />
-                                    <StackLayout Margin="10,5,5,5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BindableLayout.ItemsSource="{Binding Children,Mode=OneTime}">
-                                        <BindableLayout.ItemTemplate >
+                                    <StackLayout Margin="10,5,5,5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                                                 BindableLayout.ItemsSource="{Binding Children,Mode=OneTime}">
+                                        <BindableLayout.ItemTemplate>
                                             <DataTemplate>
                                                 <Grid>
                                                     <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition/>
-                                                        <ColumnDefinition/>
+                                                        <ColumnDefinition />
+                                                        <ColumnDefinition />
                                                     </Grid.ColumnDefinitions>
                                                     <Grid.RowDefinitions>
-                                                        <RowDefinition Height="Auto"/>
                                                         <RowDefinition Height="Auto" />
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
+                                                        <RowDefinition Height="Auto" />
                                                     </Grid.RowDefinitions>
                                                     <Label Grid.Row="0" Grid.Column="0" Text="{xct:Translate Name}" />
-                                                    <Label Grid.Row="1" Grid.Column="0" Text="{xct:Translate DeviceFile}" />
-                                                    <Label Grid.Row="2" Grid.Column="0" Text="{xct:Translate FilesystemName}" />
+                                                    <Label Grid.Row="1" Grid.Column="0"
+                                                           Text="{xct:Translate DeviceFile}" />
+                                                    <Label Grid.Row="2" Grid.Column="0"
+                                                           Text="{xct:Translate FilesystemName}" />
                                                     <Label Grid.Row="3" Grid.Column="0" Text="{xct:Translate Capacity}" />
 
                                                     <Label Grid.Row="4" Grid.Column="0" Text="{xct:Translate Size}" />
                                                     <Label Grid.Row="5" Grid.Column="0" Text="{xct:Translate Used}" />
                                                     <Label Grid.Row="6" Grid.Column="0" Text="{xct:Translate DataUsed}" />
 
-                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name,Mode=OneTime}" />
-                                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Path,Mode=OneTime}"/>
-                                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Fstype,Mode=OneTime}" />
-                                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Size,Mode=OneTime}" />
+                                                    <Label Grid.Row="0" Grid.Column="1"
+                                                           Text="{Binding Name,Mode=OneTime}" />
+                                                    <Label Grid.Row="1" Grid.Column="1"
+                                                           Text="{Binding Path,Mode=OneTime}" />
+                                                    <Label Grid.Row="2" Grid.Column="1"
+                                                           Text="{Binding Fstype,Mode=OneTime}" />
+                                                    <Label Grid.Row="3" Grid.Column="1"
+                                                           Text="{Binding Size,Mode=OneTime}" />
 
-                                                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding Fssize,Mode=OneTime}"/>
-                                                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding Fsused,Mode=OneTime}"/>
-                                                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding Fsuse,Mode=OneTime}" />
+                                                    <Label Grid.Row="4" Grid.Column="1"
+                                                           Text="{Binding Fssize,Mode=OneTime}" />
+                                                    <Label Grid.Row="5" Grid.Column="1"
+                                                           Text="{Binding Fsused,Mode=OneTime}" />
+                                                    <Label Grid.Row="6" Grid.Column="1"
+                                                           Text="{Binding Fsuse,Mode=OneTime}" />
                                                 </Grid>
                                             </DataTemplate>
                                         </BindableLayout.ItemTemplate>

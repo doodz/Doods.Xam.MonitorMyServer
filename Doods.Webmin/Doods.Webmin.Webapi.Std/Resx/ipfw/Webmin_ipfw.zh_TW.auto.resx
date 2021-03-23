@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>BSD防火牆</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>IPFW版本 $1</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>應用配置</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>單擊此按鈕可激活上面列出的防火牆配置。當前有效的所有防火牆規則都將被刷新並替換</value>
+  </data>
+  <data name="index_applydesc2" xml:space="preserve">
+    <value>單擊此按鈕可在群集中的所有服務器上激活上面列出的防火牆配置。當前有效的所有防火牆規則都將被刷新並替換</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>還原配置</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>單擊此按鈕將上面列出的配置重置為當前處於活動狀態的配置。</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>啟動時激活</value>
+  </data>
+  <data name="index_bootdesc" xml:space="preserve">
+    <value>更改此選項可控制是否在啟動時激活防火牆。</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>您的系統上尚未設置IPFW防火牆。 Webmin可以為您設置一個文件，並將其存儲在文件 $1中，其初始設置基於您在下面選擇的防火牆類型。</value>
+  </data>
+  <data name="index_rsetup" xml:space="preserve">
+    <value>您系統上的IPFW防火牆配置將被重置。 Webmin將設置新的默認規則，並將其存儲在文件 $1中，其初始設置基於您在下面選擇的防火牆類型。</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>允許所有流量</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>在外部接口上進行網絡地址轉換：</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>阻止外部接口上的所有傳入連接：</value>
+  </data>
+  <data name="index_auto3" xml:space="preserve">
+    <value>在外部接口上阻止除SSH和IDENT以外的所有內容：</value>
+  </data>
+  <data name="index_auto4" xml:space="preserve">
+    <value>阻止除接口上的SSH，IDENT，Ping和高端口以外的所有端口：</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>設置防火牆</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>在啟動時啟用防火牆？</value>
+  </data>
+  <data name="index_count1" xml:space="preserve">
+    <value>包數</value>
+  </data>
+  <data name="index_count2" xml:space="preserve">
+    <value>數據</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>重置防火牆</value>
+  </data>
+  <data name="index_resetdesc" xml:space="preserve">
+    <value>單擊此按鈕以清除所有現有的防火牆規則，並為基本的初始配置設置新規則。</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>集群服務器</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>單擊此按鈕可以設置其他Webmin服務器，防火牆配置將自動複製到這些Webmin服務器。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>防火牆規則</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>數詞</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>行動</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>條件</value>
+  </data>
+  <data name="index_cmt" xml:space="preserve">
+    <value>評論</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>添加新的防火牆規則。</value>
+  </data>
+  <data name="index_add2" xml:space="preserve">
+    <value>添加防火牆規則</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>刪除所選</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webmin檢測到當前正在使用的 $1 IPFW防火牆規則，這些規則未記錄在文件 $2中。這些規則可能是從腳本設置的，該模塊不知道如何閱讀和編輯。&lt;p&gt;如果要使用此模塊來管理IPFW防火牆，請單擊下面的按鈕將現有規則轉換為保存文件。 ，然後禁用現有的防火牆腳本。</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>保存防火牆規則</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>現有防火牆配置</value>
+  </data>
+  <data name="action_skipto" xml:space="preserve">
+    <value>跳到</value>
+  </data>
+  <data name="action_check-state" xml:space="preserve">
+    <value>檢查動態規則集</value>
+  </data>
+  <data name="action_count" xml:space="preserve">
+    <value>更新計數器</value>
+  </data>
+  <data name="action_divert" xml:space="preserve">
+    <value>轉移到港口</value>
+  </data>
+  <data name="action_fwd" xml:space="preserve">
+    <value>轉發到IP和端口</value>
+  </data>
+  <data name="action_pipe" xml:space="preserve">
+    <value>傳遞到管道</value>
+  </data>
+  <data name="action_queue" xml:space="preserve">
+    <value>傳遞到隊列</value>
+  </data>
+  <data name="action_tee" xml:space="preserve">
+    <value>發送副本到端口</value>
+  </data>
+  <data name="action_unreach" xml:space="preserve">
+    <value>返回ICMP</value>
+  </data>
+  <data name="laction_skipto" xml:space="preserve">
+    <value>跳到規則</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>建立規則</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>編輯規則 $1</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>規則動作</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>規則註釋</value>
+  </data>
+  <data name="edit_action" xml:space="preserve">
+    <value>採取的行動</value>
+  </data>
+  <data name="edit_num" xml:space="preserve">
+    <value>訂購號</value>
+  </data>
+  <data name="edit_log" xml:space="preserve">
+    <value>記錄匹配的數據包？</value>
+  </data>
+  <data name="edit_logyes" xml:space="preserve">
+    <value>是，最多 $1次（無限制地留空）</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>協議</value>
+  </data>
+  <data name="edit_proto_not" xml:space="preserve">
+    <value>除選定以外的任何協議</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>&amp;lt;任何&amp;gt;</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>僅在滿足以下&lt;b&gt;all&lt;/b&gt;條件的情況下，才能執行上面選擇的操作。</value>
+  </data>
+  <data name="edit_headerfrom" xml:space="preserve">
+    <value>數據包源條件</value>
+  </data>
+  <data name="edit_headerto" xml:space="preserve">
+    <value>數據包目的地條件</value>
+  </data>
+  <data name="edit_from" xml:space="preserve">
+    <value>源地址</value>
+  </data>
+  <data name="edit_sany" xml:space="preserve">
+    <value>任何地址</value>
+  </data>
+  <data name="edit_sme" xml:space="preserve">
+    <value>防火牆系統的地址</value>
+  </data>
+  <data name="edit_saddr" xml:space="preserve">
+    <value>地址，主機或網絡</value>
+  </data>
+  <data name="edit_snot" xml:space="preserve">
+    <value>除所選地址外的所有地址</value>
+  </data>
+  <data name="edit_to" xml:space="preserve">
+    <value>目的地址</value>
+  </data>
+  <data name="edit_portfrom" xml:space="preserve">
+    <value>源端口</value>
+  </data>
+  <data name="edit_pany" xml:space="preserve">
+    <value>任何端口</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>端口號，名稱或範圍</value>
+  </data>
+  <data name="edit_portto" xml:space="preserve">
+    <value>目的端口</value>
+  </data>
+  <data name="edit_pnot" xml:space="preserve">
+    <value>除輸入的端口外的所有端口</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>其他規則選項</value>
+  </data>
+  <data name="edit_inout" xml:space="preserve">
+    <value>包方向</value>
+  </data>
+  <data name="edit_ignored" xml:space="preserve">
+    <value>被忽略</value>
+  </data>
+  <data name="edit_inout1" xml:space="preserve">
+    <value>傳入</value>
+  </data>
+  <data name="edit_inout2" xml:space="preserve">
+    <value>外向</value>
+  </data>
+  <data name="edit_via" xml:space="preserve">
+    <value>通過接口傳遞</value>
+  </data>
+  <data name="edit_recv" xml:space="preserve">
+    <value>在接口上收到</value>
+  </data>
+  <data name="edit_xmit" xml:space="preserve">
+    <value>在界面上發送</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>其他 ..</value>
+  </data>
+  <data name="edit_orblock" xml:space="preserve">
+    <value>IPFW表達</value>
+  </data>
+  <data name="edit_established" xml:space="preserve">
+    <value>匹配已建立的TCP連接？</value>
+  </data>
+  <data name="edit_keep-state" xml:space="preserve">
+    <value>允許其餘的連接？</value>
+  </data>
+  <data name="edit_bridged" xml:space="preserve">
+    <value>匹配橋接數據包？</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>匹配分段的數據包？</value>
+  </data>
+  <data name="edit_setup" xml:space="preserve">
+    <value>匹配TCP連接設置？</value>
+  </data>
+  <data name="edit_mac1" xml:space="preserve">
+    <value>源MAC地址</value>
+  </data>
+  <data name="edit_mac2" xml:space="preserve">
+    <value>目的MAC地址</value>
+  </data>
+  <data name="edit_macaddr" xml:space="preserve">
+    <value>以太網地址</value>
+  </data>
+  <data name="edit_uid" xml:space="preserve">
+    <value>用戶發送或接收</value>
+  </data>
+  <data name="edit_gid" xml:space="preserve">
+    <value>按組發送或接收</value>
+  </data>
+  <data name="edit_dstport" xml:space="preserve">
+    <value>可選的目標端口是</value>
+  </data>
+  <data name="edit_srcport" xml:space="preserve">
+    <value>可選的源端口是</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Unix用戶或#UID</value>
+  </data>
+  <data name="edit_group" xml:space="preserve">
+    <value>Unix組或#GID</value>
+  </data>
+  <data name="edit_header3" xml:space="preserve">
+    <value>規則條件</value>
+  </data>
+  <data name="edit_icmptypes" xml:space="preserve">
+    <value>匹配ICMP類型</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>如果設置了TCP標誌則匹配</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>不是 $1</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>最大匹配連接數</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>無限</value>
+  </data>
+  <data name="edit_src-addr" xml:space="preserve">
+    <value>來自源地址</value>
+  </data>
+  <data name="edit_src-port" xml:space="preserve">
+    <value>從源端口</value>
+  </data>
+  <data name="edit_dst-addr" xml:space="preserve">
+    <value>到目的地地址</value>
+  </data>
+  <data name="edit_dst-port" xml:space="preserve">
+    <value>到目標端口</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>保存規則失敗</value>
+  </data>
+  <data name="save_enum" xml:space="preserve">
+    <value>規則編號缺失或無效</value>
+  </data>
+  <data name="save_eskipto" xml:space="preserve">
+    <value>規則編號遺漏或無效</value>
+  </data>
+  <data name="save_efwdip" xml:space="preserve">
+    <value>缺少或無效的IP地址要轉發</value>
+  </data>
+  <data name="save_efwdport" xml:space="preserve">
+    <value>無效的端口號轉發到</value>
+  </data>
+  <data name="save_eteeport" xml:space="preserve">
+    <value>正在使用的端口號缺失或無效</value>
+  </data>
+  <data name="save_efrom" xml:space="preserve">
+    <value>源地址，主機或網絡丟失或無效</value>
+  </data>
+  <data name="save_eto" xml:space="preserve">
+    <value>目的地地址，主機或網絡丟失或無效</value>
+  </data>
+  <data name="save_eportsprotofrom" xml:space="preserve">
+    <value>只能為TCP或UDP協議指定源端口</value>
+  </data>
+  <data name="save_eportsprototo" xml:space="preserve">
+    <value>只能為TCP或UDP協議指定目標端口</value>
+  </data>
+  <data name="save_eportsfrom" xml:space="preserve">
+    <value>源端口號，名稱，範圍或逗號分隔列表缺失或無效</value>
+  </data>
+  <data name="save_eportsto" xml:space="preserve">
+    <value>目的地端口號，名稱，範圍或逗號分隔列表缺失或無效</value>
+  </data>
+  <data name="save_elogamount" xml:space="preserve">
+    <value>無效的最大登錄次數</value>
+  </data>
+  <data name="save_evia" xml:space="preserve">
+    <value>通過接口傳遞的無效</value>
+  </data>
+  <data name="send_erecv" xml:space="preserve">
+    <value>無效的接收接口</value>
+  </data>
+  <data name="send_exmit" xml:space="preserve">
+    <value>傳輸接口無效</value>
+  </data>
+  <data name="save_eorblockproto" xml:space="preserve">
+    <value>協議的IPFW表達式缺失或無效</value>
+  </data>
+  <data name="save_eorblockfrom" xml:space="preserve">
+    <value>源地址IPFW表達式缺失或無效</value>
+  </data>
+  <data name="save_eorblockto" xml:space="preserve">
+    <value>目標地址缺少IPFW表達式或該表達式無效</value>
+  </data>
+  <data name="save_eorblockfrom_ports" xml:space="preserve">
+    <value>源端口的IPFW表達式缺失或無效</value>
+  </data>
+  <data name="save_eorblockto_ports" xml:space="preserve">
+    <value>目標端口缺少或無效的IPFW表達式</value>
+  </data>
+  <data name="save_emac1" xml:space="preserve">
+    <value>無效的源MAC地址</value>
+  </data>
+  <data name="save_emac2" xml:space="preserve">
+    <value>無效的目標MAC地址</value>
+  </data>
+  <data name="save_euid" xml:space="preserve">
+    <value>缺少或無效的Unix用戶名</value>
+  </data>
+  <data name="save_egid" xml:space="preserve">
+    <value>Unix組名缺失或無效</value>
+  </data>
+  <data name="save_eicmptypes" xml:space="preserve">
+    <value>僅當協議為ICMP時才能指定ICMP類型</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>僅當協議為TCP時才能指定TCP標誌</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>缺少或無效的最大限制</value>
+  </data>
+  <data name="save_edstport" xml:space="preserve">
+    <value>目標端口丟失或無效</value>
+  </data>
+  <data name="save_esrcport" xml:space="preserve">
+    <value>源端口丟失或無效</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>應用配置失敗</value>
+  </data>
+  <data name="desc_if" xml:space="preserve">
+    <value>如果是 $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>和</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>總是</value>
+  </data>
+  <data name="desc_proto" xml:space="preserve">
+    <value>協議為 $1</value>
+  </data>
+  <data name="desc_proto_not" xml:space="preserve">
+    <value>協議不是 $1</value>
+  </data>
+  <data name="desc_from" xml:space="preserve">
+    <value>來源是 $1</value>
+  </data>
+  <data name="desc_from_not" xml:space="preserve">
+    <value>來源不是</value>
+  </data>
+  <data name="desc_to" xml:space="preserve">
+    <value>目的地是 $1</value>
+  </data>
+  <data name="desc_to_not" xml:space="preserve">
+    <value>目的地不是 $1</value>
+  </data>
+  <data name="desc_me" xml:space="preserve">
+    <value>這個主人</value>
+  </data>
+  <data name="desc_from_ports" xml:space="preserve">
+    <value>源端口是 $1</value>
+  </data>
+  <data name="desc_from_ports_not" xml:space="preserve">
+    <value>源端口不是 $1</value>
+  </data>
+  <data name="desc_to_ports" xml:space="preserve">
+    <value>目標端口為 $1</value>
+  </data>
+  <data name="desc_to_ports_not" xml:space="preserve">
+    <value>目標端口不是 $1</value>
+  </data>
+  <data name="desc_established" xml:space="preserve">
+    <value>建立連接</value>
+  </data>
+  <data name="desc_established_not" xml:space="preserve">
+    <value>未建立連接</value>
+  </data>
+  <data name="desc_bridged" xml:space="preserve">
+    <value>被橋接</value>
+  </data>
+  <data name="desc_bridged_not" xml:space="preserve">
+    <value>沒有橋接</value>
+  </data>
+  <data name="desc_frag" xml:space="preserve">
+    <value>支離破碎</value>
+  </data>
+  <data name="desc_frag_not" xml:space="preserve">
+    <value>不零散</value>
+  </data>
+  <data name="desc_setup" xml:space="preserve">
+    <value>是TCP設置</value>
+  </data>
+  <data name="desc_setup_not" xml:space="preserve">
+    <value>不是TCP設置</value>
+  </data>
+  <data name="desc_xmit" xml:space="preserve">
+    <value>在 $1上傳輸</value>
+  </data>
+  <data name="desc_xmit_not" xml:space="preserve">
+    <value>未在 $1上傳輸</value>
+  </data>
+  <data name="desc_recv" xml:space="preserve">
+    <value>在 $1上收到</value>
+  </data>
+  <data name="desc_recv_not" xml:space="preserve">
+    <value>未收到 $1</value>
+  </data>
+  <data name="desc_via" xml:space="preserve">
+    <value>通過 $1</value>
+  </data>
+  <data name="desc_via_not" xml:space="preserve">
+    <value>未通過 $1</value>
+  </data>
+  <data name="desc_mac" xml:space="preserve">
+    <value>目標MAC為 $1，源MAC為 $2</value>
+  </data>
+  <data name="desc_mac1" xml:space="preserve">
+    <value>源MAC為 $1</value>
+  </data>
+  <data name="desc_mac2" xml:space="preserve">
+    <value>目標MAC為 $1</value>
+  </data>
+  <data name="desc_uid" xml:space="preserve">
+    <value>由UID $1發送</value>
+  </data>
+  <data name="desc_gid" xml:space="preserve">
+    <value>由GID $1發送</value>
+  </data>
+  <data name="desc_dstport" xml:space="preserve">
+    <value>可選目標端口為 $1</value>
+  </data>
+  <data name="desc_srcport" xml:space="preserve">
+    <value>可選的源端口為 $1</value>
+  </data>
+  <data name="desc_icmptypes" xml:space="preserve">
+    <value>ICMP類型為 $1</value>
+  </data>
+  <data name="desc_tcpflags" xml:space="preserve">
+    <value>設置了TCP標誌 $1</value>
+  </data>
+  <data name="desc_src-port" xml:space="preserve">
+    <value>源端口</value>
+  </data>
+  <data name="desc_src-addr" xml:space="preserve">
+    <value>源地址</value>
+  </data>
+  <data name="desc_dst-port" xml:space="preserve">
+    <value>目的端口</value>
+  </data>
+  <data name="desc_dst-addr" xml:space="preserve">
+    <value>目的地址</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>，其 $1限制為 $2</value>
+  </data>
+  <data name="desc_where" xml:space="preserve">
+    <value>其中 $1</value>
+  </data>
+  <data name="desc_all" xml:space="preserve">
+    <value>對於所有數據包</value>
+  </data>
+  <data name="desc_in" xml:space="preserve">
+    <value>數據包傳入</value>
+  </data>
+  <data name="desc_out" xml:space="preserve">
+    <value>數據包傳出</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>已創建 $1規則</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>已刪除 $1規則</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>修改的 $1規則</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>已移動 $1規則</value>
+  </data>
+  <data name="log_create_rule_l" xml:space="preserve">
+    <value>已創建 $1規則 $2</value>
+  </data>
+  <data name="log_delete_rule_l" xml:space="preserve">
+    <value>已刪除 $1規則 $2</value>
+  </data>
+  <data name="log_modify_rule_l" xml:space="preserve">
+    <value>修改的 $1規則 $2</value>
+  </data>
+  <data name="log_move_rule_l" xml:space="preserve">
+    <value>已移動 $1規則 $2</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>應用的防火牆配置</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>啟動時啟用防火牆</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>引導時禁用防火牆</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>轉換後的活動防火牆規則</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>執行初始防火牆設置</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>還原防火牆配置</value>
+  </data>
+  <data name="log_delsel" xml:space="preserve">
+    <value>已刪除 $1條規則</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>群集防火牆服務器</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>尚未將任何服務器添加到防火牆群集。</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>主機名</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>操作系統</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>添加服務器</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>在組中添加服務器</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>您必須先在Webmin服務器索引模塊中添加具有登錄名和密碼的服務器，然後才能在此處對其進行管理。</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>集群服務器</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>刪除選定</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>添加服務器</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>正在添加 $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>將服務器添加到組 $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>添加服務器失敗</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>添加群組失敗</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>服務器 $1沒有IPFW防火牆模塊</value>
+  </data>
+  <data name="add_emissing" xml:space="preserve">
+    <value>服務器 $1沒有IPFW防火牆設置</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>添加了 $1，其中有 $2有效的防火牆規則。</value>
+  </data>
+</root>

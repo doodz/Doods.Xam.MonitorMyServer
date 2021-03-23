@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>پیکربندی اعتبار را تأیید کنید</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>برای تأیید صحت پیکربندی سرور LDAP ، با استفاده از این گزینه ، وبمین روی این دکمه کلیک کنید تا از این طریق بتوانید با سرور ارتباط برقرار کرده و از کاربران و گروه ها استفاده کنید.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>فهرست ماژول</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>هشدار &lt;/b&gt; - Webmin دو پرونده پیکربندی جداگانه LDAP را روی سیستم شما تشخیص داده است. NSS-LDAP با استفاده از$1 پیکربندی شده است ، در حالی که PAM-LDAP از$2 استفاده می کند. این ممکن است باعث عدم سازگاری بین این دو سرویس شود.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>با پیوند دادن به فایلها برطرف شوید</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>این پیام را نشان ندهید</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>مشتری LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>توقف LDAP Client Daemon</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>دکمه محلی سرویس دهنده LDAP را که برای جستجوی سرور LDAP از راه دور مورد نیاز است ، خاموش کنید.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>LDAP Client Daemon را شروع کنید</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>راه انداز سرویس گیرنده محلی LDAP را که برای جستجوی سرور LDAP از راه دور مورد نیاز است ، راه اندازی کنید. تا زمان شروع کار ، کاربران و گروههایی در LDAP در دسترس نخواهند بود.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>راه اندازی مجدد LDAP Client Daemon</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>تنظیم مجدد تنظیمات فعلی را با راه اندازی مجدد سرویس دهنده محلی LDAP مشتری انجام دهید.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>LDAP Client at Boot را شروع کنید</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>تغییر می کند که وقتی سیستم بوت شود یا خیر ، سیستم Daemon client LDAP شروع می شود.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>پیکربندی سرور LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>گزینه های سرور و ورود به سیستم LDAP</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>نامهای سرور LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>به درگاه وصل شوید</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>نسخه پروتکل LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>محدودیت زمانی اتصال</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>برای کاربران غیر &lt;tt&gt;root&lt;/tt&gt; وارد شوید</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>گذرواژه برای کاربران غیر &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>برای کاربر &lt;tt&gt;root&lt;/tt&gt; وارد شوید</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>گذرواژه برای کاربر &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>مشابه non- &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>هیچ یک</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>ناشناس</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>از اتصال رمزگذاری شده استفاده می کنید؟</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>بله ، با استفاده از TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>گواهی LDAP SSL را تأیید کنید؟</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>پیش فرض (معمولاً$1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>پرونده گواهی CA</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>سرورهای LDAP</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>نام میزبان</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>شماره بندر</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>پروتکل</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>استاندارد</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>سوکت یونیکس</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>تنظیمات سرور LDAP ذخیره نشد</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' یک نام میزبان معتبر نیست</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>هیچ سرور LDAP وارد نشده است</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>درگاه سرور LDAP وجود ندارد یا نامعتبر است</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>ورود به سیستم برای کاربران غیر &lt;tt&gt;root&lt;/tt&gt; وجود ندارد</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>گذرواژه برای کاربران غیر &lt;tt&gt;root&lt;/tt&gt; وجود ندارد</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>ورود به سیستم برای کاربر &lt;tt&gt;root&lt;/tt&gt; وجود ندارد</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>گذرواژه برای کاربر &lt;tt&gt;root&lt;/tt&gt; وجود ندارد</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>محدودیت زمانی اتصال نامعتبر یا نامعتبر است</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>پرونده گواهی CA نامشخص یا نامعتبر است</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>پورت موجود یا نامعتبر برای سرور$1</value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>هیچ سرور LDAP وارد نشده است</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>پایگاههای جستجوی LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>مکان های جستجوی فهرست دایرکتوری LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>پایگاه جستجوی جهانی</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>عمق جستجو</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>تمام زیر درخت</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>یک سطح</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>فقط پایه</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>پایه برای کاربران یونیکس</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>پایه کلمه عبور یونیکس</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>پایه برای گروه های یونیکس</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>پایه برای نام های میزبان</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>پایه خدمات شبکه</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>پایه ای برای نام شبکه</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>پایه پروتکل ها</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>پایه ای برای نامهای netmask</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>پایه برای نام های مستعار ایمیل</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>پایه برای شبکه های گروهی</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>عمق جستجو</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>فیلتر جستجو</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>محدودیت زمانی جستجو</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>ثانیه</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>پایگاه جهانی</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>ذخیره پایگاههای جستجوی LDAP انجام نشد</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>پایگاه جستجوی جهانی وجود ندارد</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>پایه برای کاربران یونیکس وجود ندارد</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>پایه رمزهای عبور یونیکس وجود ندارد</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>پایگاه برای گروه های یونیکس وجود ندارد</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>پایگاه برای نام های میزبان وجود ندارد</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>پایگاه خدمات موجود نیست</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>پایگاه برای نام شبکه وجود ندارد</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>پایه پروتکل ها وجود ندارد</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>پایه برای نامهای netmask وجود ندارد</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>پایگاه برای نام مستعار ایمیل وجود ندارد</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>پایگاه برای گروه های موجود نیست</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>محدودیت زمانی جستجو نامعتبر یا نامعتبر است</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>گزینه های تأیید اعتبار</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>تنظیمات تأیید اعتبار و گذرواژه PAM</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>فیلتر LDAP اضافی</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>ویژگی LDAP برای نام کاربری</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>گروه LDAP به زور عضویت در</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>ویژگی LDAP برای اعضای گروه</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>روش ذخیره گذرواژه</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>پاک کردن متن</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>رمزگذاری یونیکس</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>رمزگذاری MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>خدمات دایرکتوری نوول</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>دایرکتوری فعال</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>تغییر رمز عبور OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>هیچ یک</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>نادیده گرفته شد</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>گزینه های تأیید اعتبار ذخیره نشد</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>فیلتر اضافی LDAP وجود ندارد</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>ویژگی LDAP نامعتبر یا نامعتبر است</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>از دست دادن گروه LDAP برای مجبور کردن عضویت در</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>ویژگی LDAP ناموجود یا نامعتبر برای اعضای گروه است</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>خدمات با استفاده از LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>سرویس</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>منابع داده</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>خدمات با استفاده از LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>ماژول$1 Perl مورد نیاز برای صحبت با سرور LDAP نصب نشده است.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>پرونده پیکربندی مشتری LDAP $1 در سیستم شما یافت نشد</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>اتصال به سرور LDAP $1 پورت $2 انجام نشد</value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>اتصال به سرور LDAP $1 پورت $2 : $3 انجام نشد</value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>اتصال به سرور LDAP $1 به عنوان $2 : $3 انجام نشد</value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>ناشناس</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>نمی توان URI $1 سرور LDAP را تجزیه کرد</value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>تغییر حالت TLS انجام نشد :$1</value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>مرورگر LDAP</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>مرورگر LDAP قابل استفاده نیست :$1</value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>مرور:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>نشان دادن</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>جستجوی LDAP انجام نشد :$1</value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>اشیاء کودک</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>ویژگی های شی</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>جستجوی والدین</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>هیچ یک</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>خوب</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>فایل ها</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>خدمات امنیتی سیستم</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>پرونده های DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS و پرونده ها</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>هسیود</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>چاپگرهای کاربر</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>Multicast DNS</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>Multicast DNS (حداقل)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>نام مستعار Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>نام مستعار Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>آدرس های میزبان</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>گروه های یونیکس</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>کاربران یونیکس</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>آدرس اترنت</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>اتومبیل خانه</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>نقشه های خودکار</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>اتومبیل خانه</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>نقشه های خودکار</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>خودکار محلی</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>اتومبیل خانه</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>نقشه های خودکار</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>خودکار محلی</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>نقشه های خودکار</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>شبکه های گروهی</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>شبکه های گروهی</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>خالص</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>آدرس های شبکه</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>پروتکل های شبکه</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>برنامه های RPC</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>خدمات شبکه</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>متغیرهای Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>کلیدهای عمومی</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>کلیدهای عمومی</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>پارامترهای بوت</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>رمزهای عبور سایه یونیکس</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>کلمات عبور گروه یونیکس</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>نتماسک</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>چاپگرها</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>اطلاعات اضافی کاربر</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>چاپگرها</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>گره های IP</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>محدوده های زمانی</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>محل های محلی</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>خدمات ویرایش</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>خدمات وجود ندارد!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>جزئیات خدمات</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>نام سرویس</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>منبع داده اول</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>منبع داده دوم</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>منبع داده سوم</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>منبع داده چهارم</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>منبع داده پنجم</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>منبع داده$1</value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>در موفقیت</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>اگر یافت نشد</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>اگر در دسترس نباشد</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>موقتاً در دسترس نیست</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>نتیجه بازگشت</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>ادامه جستجو</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>هیچ یک</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>ذخیره خدمات انجام نشد</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>هیچ منبع انتخاب نشده است!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>پیکربندی سرور LDAP اصلاح شده است</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>پایه های جستجوی LDAP اصلاح شده</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>گزینه های تأیید اعتبار اصلاح شده</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>سرویس$1 تغییر یافت</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Daemon مشتری LDAP را در زمان بوت فعال کنید</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Daemon مشتری LDAP در زمان بوت شدن غیرفعال شد</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Daemon مشتری LDAP را شروع کرد</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>متوقف کردن سرویس دهنده LDAP مشتری</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>راه انداز مشتری LDAP را مجدداً راه اندازی کرد</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>اعتبارسنجی پیکربندی LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>یافتن پایه LDAP برای کاربران ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. هیچ پایه ای در پیکربندی مشتری یافت نشد!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. پایه$1 یافت شد</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>اتصال به سرور LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. اتصال انجام نشد :$1</value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. به$1 وصل شد</value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>در حال جستجو برای کاربران ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. جستجو انجام نشد :$1</value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. هیچ کاربر تحت پایه$1 یافت نشد.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>..$1 کاربر یافت شد</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>در حال بررسی سرویس &lt;b&gt;کاربران یونیکس&lt;/b&gt; ..</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. خدمات برای پرس و جو LDAP تنظیم شده است.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. سرویس برای استفاده از LDAP تنظیم نشده است.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>به دنبال کاربر یونیکس$1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. کاربر وجود ندارد.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>.. کاربر با موفقیت یافت شد</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>سیستم شما با موفقیت به عنوان مشتری LDAP پیکربندی شده است!</value>
+  </data>
+</root>

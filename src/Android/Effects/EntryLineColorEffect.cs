@@ -1,18 +1,20 @@
-﻿using Android.Widget;
+﻿using System;
+using System.ComponentModel;
+using Android.Graphics;
+using Android.Widget;
 using Doods.Framework.Mobile.Std.Behaviors;
 using Doods.Framework.Mobile.Std.Effects;
-using System;
-using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ResolutionGroupName("Doods.MonitorMyServer")]
 [assembly: ExportEffect(typeof(EntryLineColorEffect), "EntryLineColorEffect")]
+
 namespace Doods.Xam.MonitorMyServer.Droid.Effects
 {
     public class EntryLineColorEffect : PlatformEffect
     {
-        EditText control;
+        private EditText control;
 
         protected override void OnAttached()
         {
@@ -34,10 +36,7 @@ namespace Doods.Xam.MonitorMyServer.Droid.Effects
 
         protected override void OnElementPropertyChanged(PropertyChangedEventArgs args)
         {
-            if (args.PropertyName == LineColorBehavior.LineColorProperty.PropertyName)
-            {
-                UpdateLineColor();
-            }
+            if (args.PropertyName == LineColorBehavior.LineColorProperty.PropertyName) UpdateLineColor();
         }
 
         private void UpdateLineColor()
@@ -45,10 +44,8 @@ namespace Doods.Xam.MonitorMyServer.Droid.Effects
             try
             {
                 if (control != null)
-                {
-
-                    control.Background.SetColorFilter(LineColorBehavior.GetLineColor(Element).ToAndroid(), Android.Graphics.PorterDuff.Mode.SrcAtop);
-                }
+                    control.Background.SetColorFilter(LineColorBehavior.GetLineColor(Element).ToAndroid(),
+                        PorterDuff.Mode.SrcAtop);
             }
             catch (Exception ex)
             {

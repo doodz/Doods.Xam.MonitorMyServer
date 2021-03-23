@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Міжмережевий екран Linux IPTables (firewall)</value>
+  </data>
+  <data name="index_ecommand" xml:space="preserve">
+    <value>Команда $1 у вашій системі не виявлена. Ця команда необхідна Webmin для настроювання IPtables.</value>
+  </data>
+  <data name="index_ekernel" xml:space="preserve">
+    <value>При перевірці поточної конфігурації IPtables відбулася помилка : $1 Це може означати, що ядро вашої системи не підтримує IPtables.</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Настроювання міжмережевого екрана від $1</value>
+  </data>
+  <data name="index_change" xml:space="preserve">
+    <value>Showing IPtable:</value>
+  </data>
+  <data name="index_chain_input" xml:space="preserve">
+    <value>Вхідні пакети (INPUT)</value>
+  </data>
+  <data name="index_chain_output" xml:space="preserve">
+    <value>Вихідні пакети (OUTPUT)</value>
+  </data>
+  <data name="index_chain_forward" xml:space="preserve">
+    <value> пакети, ЩоПеренаправляються, (FORWARD)</value>
+  </data>
+  <data name="index_chain_prerouting" xml:space="preserve">
+    <value>Пакети перед маршрутизацією (PREROUTING)</value>
+  </data>
+  <data name="index_chain_postrouting" xml:space="preserve">
+    <value>Пакети після маршрутизації (POSTROUTING)</value>
+  </data>
+  <data name="index_chain" xml:space="preserve">
+    <value>Ланцюжок $1</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Дія</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Умова</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Для цього ланцюжка не визначене жодне правила.</value>
+  </data>
+  <data name="index_policy" xml:space="preserve">
+    <value>Дія за замовчуванням:</value>
+  </data>
+  <data name="index_policy_accept" xml:space="preserve">
+    <value>Приймати</value>
+  </data>
+  <data name="index_policy_drop" xml:space="preserve">
+    <value>Відкидати</value>
+  </data>
+  <data name="index_policy_queue" xml:space="preserve">
+    <value>Userspace</value>
+  </data>
+  <data name="index_policy_return" xml:space="preserve">
+    <value>Завершити ланцюжок</value>
+  </data>
+  <data name="index_jump_return" xml:space="preserve">
+    <value>Завершити ланцюжок</value>
+  </data>
+  <data name="index_jump_masquerade" xml:space="preserve">
+    <value>Маскувати</value>
+  </data>
+  <data name="index_jump_redirect" xml:space="preserve">
+    <value>Перенаправляти</value>
+  </data>
+  <data name="index_jump_dnat" xml:space="preserve">
+    <value>NAT призначення</value>
+  </data>
+  <data name="index_jump_snat" xml:space="preserve">
+    <value>NAT джерела</value>
+  </data>
+  <data name="index_jump_" xml:space="preserve">
+    <value>Нічого не робити</value>
+  </data>
+  <data name="index_jump" xml:space="preserve">
+    <value>Перейти до ланцюжка $1</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>Додати правило</value>
+  </data>
+  <data name="index_cdelete" xml:space="preserve">
+    <value>Видалити ланцюжок</value>
+  </data>
+  <data name="index_cclear" xml:space="preserve">
+    <value>Очистити всі правила</value>
+  </data>
+  <data name="index_cadd" xml:space="preserve">
+    <value>Додати новий ланцюжок з ім'ям:</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Застосувати конфігурацію</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Натискання на цю кнопку приведе до вступу в дію вищенаведеної конфігурації міжмережевого екрана. Всі існуючі в даний момент правила будуть скинуті і замінені новими.</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>Повернути конфігурацію</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>Натискання на цю кнопку приведе до скидання вищенаведеної конфігурації до активного в даний момент.</value>
+  </data>
+  <data name="index_table_filter" xml:space="preserve">
+    <value>Фільтрування пакетів (filter)</value>
+  </data>
+  <data name="index_table_nat" xml:space="preserve">
+    <value>Перетворення мережних адрес (nat)</value>
+  </data>
+  <data name="index_table_mangle" xml:space="preserve">
+    <value>Зміна пакетів (mangle)</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webmin знайшов, що в даний момент $1 правил міжмережевого екрана IPtables використовується, але не збережено у файлі $2. Імовірно, ці правила були задані яким-небудь невідомої даному модулю образом&lt;p&gt;Якщо ви хочете використовувати цей модуль для керування вашим міжмережевим екраном IPtables, те збережете існуючі правила, натиснувши кнопку нижче, а потім відключите невідомий даному модулю спосіб завдання правил.</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>Зберегти правила міжмережевого екрана</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Включати міжмережевий екран при завантаженні системи?</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>Існуюча конфігурація міжмережевого екрана</value>
+  </data>
+  <data name="index_bootup" xml:space="preserve">
+    <value>Включати при завантаженні</value>
+  </data>
+  <data name="index_bootupdesc" xml:space="preserve">
+    <value>Визначає чи буде міжмережевий екран включений при завантаженні чи системи ні.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>списку правил</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>У даний момент міжмережевий екран IPtables на вашій машині не набудований. Webmin допоможе вам настроїти його на основі обраного вами типу. Конфігурація буде збережена у файлі $1.</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>Дозволити весь трафік</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>Перетворювати мережні адреси на зовнішньому інтерфейсі:</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>Блокувати усі вхідні з'єднання на зовнішньому інтерфейсі:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>Настроїти міжмережевий екран</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Додати</value>
+  </data>
+  <data name="desc_p" xml:space="preserve">
+    <value>протокол $1</value>
+  </data>
+  <data name="desc_p!" xml:space="preserve">
+    <value>протокол не $1</value>
+  </data>
+  <data name="desc_s" xml:space="preserve">
+    <value>джерело $1</value>
+  </data>
+  <data name="desc_s!" xml:space="preserve">
+    <value>джерело не $1</value>
+  </data>
+  <data name="desc_d" xml:space="preserve">
+    <value>призначення $1</value>
+  </data>
+  <data name="desc_d!" xml:space="preserve">
+    <value>призначення не $1</value>
+  </data>
+  <data name="desc_o" xml:space="preserve">
+    <value>вихідний інтерфейс $1</value>
+  </data>
+  <data name="desc_o!" xml:space="preserve">
+    <value>вихідний інтерфейс не $1</value>
+  </data>
+  <data name="desc_f" xml:space="preserve">
+    <value>пакет є фрагментом</value>
+  </data>
+  <data name="desc_f!" xml:space="preserve">
+    <value>пакет не є фрагментом</value>
+  </data>
+  <data name="desc_sport" xml:space="preserve">
+    <value>порт джерела $1</value>
+  </data>
+  <data name="desc_sport!" xml:space="preserve">
+    <value>порт джерела не $1</value>
+  </data>
+  <data name="desc_dport" xml:space="preserve">
+    <value>порт призначення $1</value>
+  </data>
+  <data name="desc_dport!" xml:space="preserve">
+    <value>порт призначення не $1</value>
+  </data>
+  <data name="desc_sports" xml:space="preserve">
+    <value>порти джерела $1</value>
+  </data>
+  <data name="desc_sports!" xml:space="preserve">
+    <value>порти джерела не $1</value>
+  </data>
+  <data name="desc_dports" xml:space="preserve">
+    <value>порти призначення $1</value>
+  </data>
+  <data name="desc_dports!" xml:space="preserve">
+    <value>порти призначення не $1</value>
+  </data>
+  <data name="desc_tcp-flags" xml:space="preserve">
+    <value>прапори TCP $2 (з $1) установлені</value>
+  </data>
+  <data name="desc_tcp-flags!" xml:space="preserve">
+    <value>прапори TCP $2 (з $1) не встановлені</value>
+  </data>
+  <data name="desc_tcp-option" xml:space="preserve">
+    <value>пакет з опцією TCP $1</value>
+  </data>
+  <data name="desc_tcp-option!" xml:space="preserve">
+    <value>пакет без опції TCP $1</value>
+  </data>
+  <data name="desc_icmp-type" xml:space="preserve">
+    <value>тип ICMP $1</value>
+  </data>
+  <data name="desc_icmp-type!" xml:space="preserve">
+    <value>тип ICMP не $1</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>швидкість нижче $1</value>
+  </data>
+  <data name="desc_limit!" xml:space="preserve">
+    <value>швидкість вище $1</value>
+  </data>
+  <data name="desc_limit-burst" xml:space="preserve">
+    <value>пікова швидкість нижче $1</value>
+  </data>
+  <data name="desc_limit-burst!" xml:space="preserve">
+    <value>пікова швидкість вище $1</value>
+  </data>
+  <data name="desc_ports" xml:space="preserve">
+    <value>порти джерела і призначення $1</value>
+  </data>
+  <data name="desc_ports!" xml:space="preserve">
+    <value>порти джерела і призначення не $1</value>
+  </data>
+  <data name="desc_uid-owner" xml:space="preserve">
+    <value>відправник - користувач $1</value>
+  </data>
+  <data name="desc_uid-owner!" xml:space="preserve">
+    <value>відправник - не користувач $1</value>
+  </data>
+  <data name="desc_gid-owner" xml:space="preserve">
+    <value>відправник - група $1</value>
+  </data>
+  <data name="desc_gid-owner!" xml:space="preserve">
+    <value>відправник - не група $1</value>
+  </data>
+  <data name="desc_pid-owner" xml:space="preserve">
+    <value>ID процесу відправника $1</value>
+  </data>
+  <data name="desc_pid-owner!" xml:space="preserve">
+    <value>ID процесу відправника не $1</value>
+  </data>
+  <data name="desc_sid-owner" xml:space="preserve">
+    <value>група сеансу відправника $1</value>
+  </data>
+  <data name="desc_sid-owner!" xml:space="preserve">
+    <value>група сеансу відправника не $1</value>
+  </data>
+  <data name="desc_state" xml:space="preserve">
+    <value>стан з'єднання $1</value>
+  </data>
+  <data name="desc_state!" xml:space="preserve">
+    <value>стан з'єднання не $1</value>
+  </data>
+  <data name="desc_tos" xml:space="preserve">
+    <value>поле типу служби $1</value>
+  </data>
+  <data name="desc_tos!" xml:space="preserve">
+    <value>поле типу служби не $1</value>
+  </data>
+  <data name="desc_conds" xml:space="preserve">
+    <value>Якщо $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>і</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>Завжди</value>
+  </data>
+  <data name="redhat_eoutput" xml:space="preserve">
+    <value>При одержанні стану IPtables за допомогою команди $1 відбулася помилка. Можливо ваша система набудована на використання IPchains замість IPtables.</value>
+  </data>
+  <data name="gentoo_escript" xml:space="preserve">
+    <value>Сценарій Gentoo для запуску IPtables $1 у вашій системі не виявлений.</value>
+  </data>
+  <data name="eiptables" xml:space="preserve">
+    <value>Невідомий рядок у файлі збереженої конфігурації IPtables : $1</value>
+  </data>
+  <data name="eip6tables" xml:space="preserve">
+    <value>Невідомий рядок у файлі збереженої конфігурації ip6tables : $1</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Додавання правила</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Зміна правила</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Копіювання правила</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>Настроювання ланцюжка і дій</value>
+  </data>
+  <data name="edit_chain" xml:space="preserve">
+    <value>Частина ланцюжка</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>Коментар до правила</value>
+  </data>
+  <data name="edit_jump" xml:space="preserve">
+    <value>Дія</value>
+  </data>
+  <data name="edit_jump_other" xml:space="preserve">
+    <value>Перейти до ланцюжка</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Настроювання умови</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Обране вище дія буде виконуватися тільки якщо дотримані &lt;b&gt;усі&lt;/b&gt; нижчеподані умови.</value>
+  </data>
+  <data name="edit_source" xml:space="preserve">
+    <value> чиАдреса мережа джерела</value>
+  </data>
+  <data name="edit_ignore" xml:space="preserve">
+    <value>Ігнорується</value>
+  </data>
+  <data name="edit_is" xml:space="preserve">
+    <value>Дорівнює</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>Не дорівнює</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value> чиАдреса мережа призначення</value>
+  </data>
+  <data name="edit_in" xml:space="preserve">
+    <value>Вхідний інтерфейс</value>
+  </data>
+  <data name="edit_out" xml:space="preserve">
+    <value>Вихідний інтерфейс</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>Фрагментація</value>
+  </data>
+  <data name="edit_fragis" xml:space="preserve">
+    <value>Фрагментований</value>
+  </data>
+  <data name="edit_fragnot" xml:space="preserve">
+    <value>Не фрагментований</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>Мережний протокол</value>
+  </data>
+  <data name="edit_sport" xml:space="preserve">
+    <value>Порт TCP чи UDP джерела</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Порт TCP чи UDP призначення</value>
+  </data>
+  <data name="edit_port0" xml:space="preserve">
+    <value>Порт(ы)</value>
+  </data>
+  <data name="edit_port1" xml:space="preserve">
+    <value>Діапазон портів від $1 до $2</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>Порт(ы) джерела і призначення</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>Установлені прапори TCP</value>
+  </data>
+  <data name="edit_flags" xml:space="preserve">
+    <value>$2 з&lt;br&gt; $1</value>
+  </data>
+  <data name="edit_tcpoption" xml:space="preserve">
+    <value>Встановлена опція TCP з номером</value>
+  </data>
+  <data name="edit_icmptype" xml:space="preserve">
+    <value>Тип пакета ICMP</value>
+  </data>
+  <data name="edit_mac" xml:space="preserve">
+    <value>Адреса ethernet</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>Швидкість проходження пакетів</value>
+  </data>
+  <data name="edit_below" xml:space="preserve">
+    <value>Нижче</value>
+  </data>
+  <data name="edit_above" xml:space="preserve">
+    <value>Вище</value>
+  </data>
+  <data name="edit_limitburst" xml:space="preserve">
+    <value>Пікова швидкість пакетів</value>
+  </data>
+  <data name="edit_uidowner" xml:space="preserve">
+    <value>Відправлено користувачем unix</value>
+  </data>
+  <data name="edit_gidowner" xml:space="preserve">
+    <value>Відправлено групою unix</value>
+  </data>
+  <data name="edit_pidowner" xml:space="preserve">
+    <value>Відправлено процесом з ID</value>
+  </data>
+  <data name="edit_sidowner" xml:space="preserve">
+    <value>Відправлено групою процесів</value>
+  </data>
+  <data name="edit_state" xml:space="preserve">
+    <value>Стану з'єднання</value>
+  </data>
+  <data name="edit_state_new" xml:space="preserve">
+    <value>Нове з'єднання</value>
+  </data>
+  <data name="edit_state_established" xml:space="preserve">
+    <value>Існуюче з'єднання</value>
+  </data>
+  <data name="edit_state_related" xml:space="preserve">
+    <value>Зв'язано з існуючим</value>
+  </data>
+  <data name="edit_state_invalid" xml:space="preserve">
+    <value>Не є частиною з'єднання</value>
+  </data>
+  <data name="edit_tos" xml:space="preserve">
+    <value>Тип служби</value>
+  </data>
+  <data name="edit_rtoports" xml:space="preserve">
+    <value>Порти призначення для перенапрямку</value>
+  </data>
+  <data name="edit_prange" xml:space="preserve">
+    <value>Діапазон портів від $1 до $2</value>
+  </data>
+  <data name="edit_mtoports" xml:space="preserve">
+    <value>Порти джерела для маскування</value>
+  </data>
+  <data name="edit_dnat" xml:space="preserve">
+    <value>Адреси IP і порти для DNAT</value>
+  </data>
+  <data name="edit_dnatip" xml:space="preserve">
+    <value>Діапазон адрес IP від $1 до $2</value>
+  </data>
+  <data name="edit_snat" xml:space="preserve">
+    <value>Адреси IP і порти для SNAT</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>Любою</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>Іншої..</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Скопіювати правило</value>
+  </data>
+  <data name="edit_before" xml:space="preserve">
+    <value>Перед правилом $1</value>
+  </data>
+  <data name="edit_after" xml:space="preserve">
+    <value>Після правила $1</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Не удалося зберегти правило</value>
+  </data>
+  <data name="save_echain" xml:space="preserve">
+    <value>Ланцюжок для переходу чи не зазначений зазначена невірно</value>
+  </data>
+  <data name="save_esource" xml:space="preserve">
+    <value> чиАдреса мережа джерела чи не зазначена зазначена невірно</value>
+  </data>
+  <data name="save_edest" xml:space="preserve">
+    <value> чиАдреса мережа призначення чи не зазначена зазначена невірно</value>
+  </data>
+  <data name="save_ein" xml:space="preserve">
+    <value>Вхідний інтерфейс чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_eout" xml:space="preserve">
+    <value>Вихідний інтерфейс чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_eproto" xml:space="preserve">
+    <value>Не обраний протокол</value>
+  </data>
+  <data name="save_esport" xml:space="preserve">
+    <value>Порт(ы) джерела чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_esportfrom" xml:space="preserve">
+    <value>Невірний початок діапазону для портів джерела</value>
+  </data>
+  <data name="save_esportto" xml:space="preserve">
+    <value>Невірний кінець діапазону для портів джерела</value>
+  </data>
+  <data name="save_esportrange" xml:space="preserve">
+    <value>Необхідно вказати початок і кінець діапазону портів джерела</value>
+  </data>
+  <data name="save_etcpudp" xml:space="preserve">
+    <value>Умови портів джерела і призначення можуть бути використані тільки для протоколів TCP чи UDP</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Порт(ы) призначення чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_edportfrom" xml:space="preserve">
+    <value>Невірний початок діапазону для портів призначення</value>
+  </data>
+  <data name="save_edportto" xml:space="preserve">
+    <value>Невірний кінець діапазону для портів призначення</value>
+  </data>
+  <data name="save_edportrange" xml:space="preserve">
+    <value>Необхідно вказати початок і кінець діапазону портів призначення</value>
+  </data>
+  <data name="save_eports" xml:space="preserve">
+    <value>Порти джерела і призначення чи не зазначені зазначені невірно</value>
+  </data>
+  <data name="save_etcp1" xml:space="preserve">
+    <value>Умова прапорів TCP може бути використано тільки для протоколу TCP</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>Для кожного ряду необхідно вибрати хоча б один прапор TCP</value>
+  </data>
+  <data name="save_etcp2" xml:space="preserve">
+    <value>Умова номера опції TCP може бути використано тільки з протоколом TCP</value>
+  </data>
+  <data name="save_etcpoption" xml:space="preserve">
+    <value>Номер опції TCP чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_eicmp" xml:space="preserve">
+    <value>Умова типу пакета ICMP може бути використано тільки з протоколом ICMP</value>
+  </data>
+  <data name="save_emac" xml:space="preserve">
+    <value>Адреса ethernet чи не зазначена зазначений невірно</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>Швидкість проходження пакетів чи не зазначена зазначена невірно</value>
+  </data>
+  <data name="save_elimitburst" xml:space="preserve">
+    <value>Пікова швидкість пакетів чи не зазначена зазначена невірно</value>
+  </data>
+  <data name="save_euidowner" xml:space="preserve">
+    <value>Користувач unix чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_egidowner" xml:space="preserve">
+    <value>Група unix чи не зазначена зазначена невірно</value>
+  </data>
+  <data name="save_epidowner" xml:space="preserve">
+    <value>ID процесу, що посилає, чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_esidowner" xml:space="preserve">
+    <value>ID групи процесу, що посилає, чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_ertoports" xml:space="preserve">
+    <value>Порт призначення перенапрямку чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_emtoports" xml:space="preserve">
+    <value>Порт маскування джерела чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_edipfrom" xml:space="preserve">
+    <value>Початкова адреса IP для DNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_edipto" xml:space="preserve">
+    <value>Кінцева адреса IP для DNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_edpfrom" xml:space="preserve">
+    <value>Початковий порт для DNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_edpto" xml:space="preserve">
+    <value>Кінцевий порт для DNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_esipfrom" xml:space="preserve">
+    <value>Початкова адреса IP для SNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_esipto" xml:space="preserve">
+    <value>Кінцева адреса IP для SNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_espfrom" xml:space="preserve">
+    <value>Початковий порт для SNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_espto" xml:space="preserve">
+    <value>Кінцевий порт для SNAT чи не зазначений зазначений невірно</value>
+  </data>
+  <data name="save_estates" xml:space="preserve">
+    <value>Не обрані стани з'єднання</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Видалення ланцюжка</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Видалити ланцюжок $1 ? Разом з ланцюжком буде вилучено $2 правил.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="clear_title" xml:space="preserve">
+    <value>Очищення ланцюжка</value>
+  </data>
+  <data name="clear_rusure" xml:space="preserve">
+    <value>Видалити $2 правил з ланцюжка $1 ?</value>
+  </data>
+  <data name="new_err" xml:space="preserve">
+    <value>Не удалося створити ланцюжок</value>
+  </data>
+  <data name="new_ename" xml:space="preserve">
+    <value>Назва ланцюжка чи не зазначене зазначено невірно</value>
+  </data>
+  <data name="new_etaken" xml:space="preserve">
+    <value>Ланцюжок з цим ім'ям вже існує</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Не удалося застосувати конфігурацію</value>
+  </data>
+  <data name="unapply_err" xml:space="preserve">
+    <value>Не удалося повернути конфігурацію</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>Додане правило в ланцюжок $1 таблиці $2</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>Змінене правило в  ланцюжку $1 таблиці $2</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>Вилучене правило $1 таблиці $2</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>Переміщене правило $1 у таблиці $2</value>
+  </data>
+  <data name="log_delete_chain" xml:space="preserve">
+    <value>З таблиці $2 вилучений ланцюжок $1</value>
+  </data>
+  <data name="log_clear_chain" xml:space="preserve">
+    <value>Очищений ланцюжок $1 таблиці $2</value>
+  </data>
+  <data name="log_create_chain" xml:space="preserve">
+    <value>У таблиці $2 створений ланцюжок $1</value>
+  </data>
+  <data name="log_modify_chain" xml:space="preserve">
+    <value>Для ланцюжка $1 таблиці $2 задана дія за замовчуванням</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Конфігурація застосована</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>Конфігурація скинута</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Міжмережевий екран набудований</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>Існуючий міжмережевий екран перетворений</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>Дозволене включення міжмережевий екран при завантаженні</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>Заборонене включення міжмережевий екран при завантаженні</value>
+  </data>
+  <data name="setup_eiface" xml:space="preserve">
+    <value>Не зазначений зовнішній мережний інтерфейс</value>
+  </data>
+</root>

@@ -5,10 +5,6 @@ using Newtonsoft.Json;
 
 namespace Doods.Openmediavault.Rpc.std.Data.V4
 {
-
-
-   
-
     public class ResponseError<T> where T : IOmvObject
     {
         [JsonProperty("response")] public string Response { get; set; }
@@ -16,7 +12,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         [JsonProperty("error")] public T Error { get; set; }
     }
 
-    public class ResultList<T> where  T : IOmvObject
+    public class ResultList<T> where T : IOmvObject
     {
         [JsonProperty("response")] public T[] Response { get; set; }
 
@@ -29,18 +25,19 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
         [JsonProperty("total")] public long Total { get; set; }
 
         [JsonProperty("data")] public List<T> Data { get; set; }
+
         [JsonIgnore]
         public T this[int index]
         {
             get => Data[index];
             set => Data.Insert(index, value);
         }
-      
+
         public IEnumerator<T> GetEnumerator()
         {
             return Data.GetEnumerator();
         }
-      
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
@@ -52,9 +49,6 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4
     {
         [JsonProperty("total")] public long Total { get; set; }
 
-        [JsonProperty("data")]
-        public T[] Data { get; set; }
-
-     
+        [JsonProperty("data")] public T[] Data { get; set; }
     }
 }

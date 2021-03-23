@@ -13,11 +13,6 @@
         <StackLayout VerticalOptions="FillAndExpand">
             <StackLayout.Resources>
                 <ResourceDictionary>
-                    <conveters:ZeroconfServicesToStringConverter x:Key="ZeroconfServicesToStringConverter" />
-                    <Style x:Key="NewSubTitleStyle" TargetType="Label">
-                        <Setter Property="FontAttributes" Value="None" />
-                        <Setter Property="TextColor" Value="BlueViolet" />
-                    </Style>
                 </ResourceDictionary>
             </StackLayout.Resources>
             <StackLayout VerticalOptions="FillAndExpand" Padding="4"
@@ -26,7 +21,9 @@
                     <DataTemplate x:DataType="selectService:ServiceDescription">
                         <controls1:TitledFrameView Title="{Binding Title,Mode=OneTime}">
                             <controls1:TitledFrameView.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding BindingContext.GoToLoginCommand,Mode=OneWay, Source={x:Reference Page}}" CommandParameter="{Binding .}"  />
+                                <TapGestureRecognizer
+                                    Command="{Binding BindingContext.GoToLoginCommand,Mode=OneWay, Source={x:Reference Page}}"
+                                    CommandParameter="{Binding .}" />
                             </controls1:TitledFrameView.GestureRecognizers>
                             <Label Text="{Binding Description,Mode=OneTime}" />
                         </controls1:TitledFrameView>

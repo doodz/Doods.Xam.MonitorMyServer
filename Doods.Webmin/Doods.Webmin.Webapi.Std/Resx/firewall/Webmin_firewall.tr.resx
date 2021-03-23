@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Linux IPTables Güvenlik Duvarı</value>
+  </data>
+  <data name="index_ecommand" xml:space="preserve">
+    <value>$1 komutu sisteminizde bulunamadı. Webmin bu komuta IP tablolarının yapılandırılması için gereksinim duyar.</value>
+  </data>
+  <data name="index_ekernel" xml:space="preserve">
+    <value>IP tabloları yapılandırmanızın kontrolü sırasında bir hata oluştu : $1 Bu kernelinizin IP tablolarını sağlayamadığını gösterir.</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>$1'deki güvenlik duvarı yapılandırması</value>
+  </data>
+  <data name="index_change" xml:space="preserve">
+    <value>IP tablosu gösteriliyor:</value>
+  </data>
+  <data name="index_chain_input" xml:space="preserve">
+    <value>Gelen Paketler (INPUT)</value>
+  </data>
+  <data name="index_chain_output" xml:space="preserve">
+    <value>Giden paketler (OUTPUT)</value>
+  </data>
+  <data name="index_chain_forward" xml:space="preserve">
+    <value>Yönlendirilen paketler(YFORWARD)</value>
+  </data>
+  <data name="index_chain_prerouting" xml:space="preserve">
+    <value>Yönlendirmeden önceki paketler (PREROUTING)</value>
+  </data>
+  <data name="index_chain_postrouting" xml:space="preserve">
+    <value>Yönlendirmeden sonraki paketler (POSTROUTING)</value>
+  </data>
+  <data name="index_chain" xml:space="preserve">
+    <value>$1 zinciri</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Eylem</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="index_comm" xml:space="preserve">
+    <value>Yorum</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Taşı</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Bu zincir için tanımlı kural yoktur.</value>
+  </data>
+  <data name="index_policy" xml:space="preserve">
+    <value>Varsayılan Eylemi Belirle:</value>
+  </data>
+  <data name="index_policy_accept" xml:space="preserve">
+    <value>Kabul Et</value>
+  </data>
+  <data name="index_policy_drop" xml:space="preserve">
+    <value>Düşür</value>
+  </data>
+  <data name="index_policy_queue" xml:space="preserve">
+    <value>Kullanıcı alanı</value>
+  </data>
+  <data name="index_policy_return" xml:space="preserve">
+    <value>Zincirden çık</value>
+  </data>
+  <data name="index_jump_return" xml:space="preserve">
+    <value>Zincirden çık</value>
+  </data>
+  <data name="index_jump_log" xml:space="preserve">
+    <value>Log paketi</value>
+  </data>
+  <data name="index_jump_masquerade" xml:space="preserve">
+    <value>Maskelendirme</value>
+  </data>
+  <data name="index_jump_redirect" xml:space="preserve">
+    <value>Yeniden Yönlendirme</value>
+  </data>
+  <data name="index_jump_dnat" xml:space="preserve">
+    <value>NAT Hedefi</value>
+  </data>
+  <data name="index_jump_snat" xml:space="preserve">
+    <value>Kaynak NAT</value>
+  </data>
+  <data name="index_jump_" xml:space="preserve">
+    <value>Hiçbir şey yapma</value>
+  </data>
+  <data name="index_jump" xml:space="preserve">
+    <value>$1 zincirini çalıştır</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>Kuralı Ekle</value>
+  </data>
+  <data name="index_cdelete" xml:space="preserve">
+    <value>Zinciri Sil</value>
+  </data>
+  <data name="index_cclear" xml:space="preserve">
+    <value>Bütün Kuralları Temizle</value>
+  </data>
+  <data name="index_cdeletesel" xml:space="preserve">
+    <value>Seçili Olanı Sil</value>
+  </data>
+  <data name="index_cadd" xml:space="preserve">
+    <value>İsmini yazarak yeni bir zincir ekle:</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Yapılandırmayı Uygula</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Eylemin altında listenen güvenlik duvarı yapılandırmasını aktif yapmak için bu tuşa basınız. Halen etkin olan herhangi bir güvenlik duvarı kuralının etkisi boşaltılacak ve yeri değiştirilecek</value>
+  </data>
+  <data name="index_applydesc2" xml:space="preserve">
+    <value>Eylemin altında listenen güvenlik duvarı yapılandırmasını kümedeki tüm sunucularda aktif yapmak için bu tuşa basınız. Halen etkin olan herhangi bir güvenlik duvarı kuralının etkisi boşaltılacak ve yeri değiştirilecek</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>Yapılandırmayı Geri Al</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>Yukarıda listelenen yapılandırmayı halen aktif olan yapılandırmayla değiştirmek için bu tuşa basın.</value>
+  </data>
+  <data name="index_table_filter" xml:space="preserve">
+    <value>Paket filtreleme (filtre)</value>
+  </data>
+  <data name="index_table_nat" xml:space="preserve">
+    <value>Ağ adres çevirisi (nat)</value>
+  </data>
+  <data name="index_table_mangle" xml:space="preserve">
+    <value>Paket değişikliği (mangle)</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webmin, $2 kayıt dosyasında kayıt edilmemiş $1 IP tabloları güvenlik duvarı kurallarını algıladı. Bu modülün nasıl okunduğu ve düzenlendiği bilinmeyen bir betikten bu kurallar oluşturulmuş olabilir. IP tabloları güvenlik duvarını bu modülü kullanarak yönetmek istiyorsanız, aşağıda kuralların olduğu dosyayı tıklayın ve sonra var olan güvenlik duvarı betiğini pasifleştirin.</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>Güvenlik Duvarı Kurallarını Sakla</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Önyükleme zamanında güvenlik duvarı aktif edilsin mi?</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>Varolan güvenlik duvarı yapılandırması</value>
+  </data>
+  <data name="index_bootup" xml:space="preserve">
+    <value>Önyüklemede etkinleştir</value>
+  </data>
+  <data name="index_bootupdesc" xml:space="preserve">
+    <value>Yükleme süresinde güvenlik duvarınızın aktive edilip edilmeyeceğini belirlemek için bu seçeneği değiştirebilirsiniz.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>kuralların listesi</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Sisteminizde IP tabloları güvenlik duvarı henüz kurulmadı. Altta seçeceginiz güvenlik duvarı tipine bağlı olarak başlangıç ayarlarıyla, Webmin sizin için $1 kayıt dosyasına bir tanesini ayarlayabilir..</value>
+  </data>
+  <data name="index_rsetup" xml:space="preserve">
+    <value>Sisteminizdeki IP tabloları güvenlik duvarı yapılandırması yeniden ayarlanmak üzere. Altta seçeceginiz güvenlik duvarı tipine bağlı olarak başlangıç ayarlarıyla, webmin yeni varsayılan kuralları $1 kayıt dosyasına kuracaktır..</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>Bütün trafiğe izin ver</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>Ağ adres çevrimi yapılacak dış arabirim:</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>Dış arabirimden gelen bütün bağlantıları blokla:</value>
+  </data>
+  <data name="index_auto3" xml:space="preserve">
+    <value>SSH ve IDENT haricinde tümünü bloklayacağınız dış arabirim:</value>
+  </data>
+  <data name="index_auto4" xml:space="preserve">
+    <value>SSH, IDENT, ping ve yüksek portlar haricinde tümünü bloklayacağınız arabirim:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>Güvenlik Duvarını Kur</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Güvenlik Duvarını Yeniden Başlat</value>
+  </data>
+  <data name="index_resetdesc" xml:space="preserve">
+    <value>Bütün varolan güvenlik duvarı kurallarını temizlemek ve ana başlangıç yapılandırması için yeni kuralları oluşturmak için bu tuşu tıklayınız.</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Küme Sunucuları</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Güvenlik duvarı yapılandırmasının otomatik olarak kopyalanacağı ek webmin sunucularını bu tuşa basarak kurabilirsiniz.</value>
+  </data>
+  <data name="desc_p" xml:space="preserve">
+    <value>protokol $1 dir</value>
+  </data>
+  <data name="desc_p!" xml:space="preserve">
+    <value>protokol $1 değildir</value>
+  </data>
+  <data name="desc_s" xml:space="preserve">
+    <value>kaynak $1'dir</value>
+  </data>
+  <data name="desc_s!" xml:space="preserve">
+    <value>kaynak $1 değildir</value>
+  </data>
+  <data name="desc_d" xml:space="preserve">
+    <value>hedef $1'dir</value>
+  </data>
+  <data name="desc_d!" xml:space="preserve">
+    <value>hedef $1 değildir</value>
+  </data>
+  <data name="desc_i" xml:space="preserve">
+    <value>girdi arayüzü $1'dir</value>
+  </data>
+  <data name="desc_i!" xml:space="preserve">
+    <value>girdi arayüzü $1 değildir</value>
+  </data>
+  <data name="desc_o" xml:space="preserve">
+    <value>çıktı arayüzü $1 dir</value>
+  </data>
+  <data name="desc_o!" xml:space="preserve">
+    <value>çıktı arayüzü $1 değilidir</value>
+  </data>
+  <data name="desc_f" xml:space="preserve">
+    <value>paket bir parçadır</value>
+  </data>
+  <data name="desc_f!" xml:space="preserve">
+    <value>paket bir parça değildir</value>
+  </data>
+  <data name="desc_sport" xml:space="preserve">
+    <value>kaynak portu $1'dir</value>
+  </data>
+  <data name="desc_sport!" xml:space="preserve">
+    <value>kaynak portu $1 değildir</value>
+  </data>
+  <data name="desc_dport" xml:space="preserve">
+    <value>hedef portu $1'dir</value>
+  </data>
+  <data name="desc_dport!" xml:space="preserve">
+    <value>hedef portu $1 değildir</value>
+  </data>
+  <data name="desc_sports" xml:space="preserve">
+    <value>kaynak portları $1 değildir</value>
+  </data>
+  <data name="desc_sports!" xml:space="preserve">
+    <value>kaynak portları $1 değildir</value>
+  </data>
+  <data name="desc_dports" xml:space="preserve">
+    <value>hedef portları $1'dir</value>
+  </data>
+  <data name="desc_dports!" xml:space="preserve">
+    <value>hedef portları $1 değildir</value>
+  </data>
+  <data name="desc_tcp-flags" xml:space="preserve">
+    <value>$1 TCP işaretleyicisinden $2 tanesi ayarlandı</value>
+  </data>
+  <data name="desc_tcp-flags!" xml:space="preserve">
+    <value>$1 TCP işaretleyicisinden $2 tanesi ayarlanamadı</value>
+  </data>
+  <data name="desc_tcp-option" xml:space="preserve">
+    <value>paket $1 TCP seçeneğini kullanır</value>
+  </data>
+  <data name="desc_tcp-option!" xml:space="preserve">
+    <value>paket $1 TCP seçeneğini kullanmaz</value>
+  </data>
+  <data name="desc_icmp-type" xml:space="preserve">
+    <value>ICMP tipi $1'dir</value>
+  </data>
+  <data name="desc_icmp-type!" xml:space="preserve">
+    <value>ICMP tipi $1 değildir</value>
+  </data>
+  <data name="desc_mac-source" xml:space="preserve">
+    <value>ethernet adresi $1'dir</value>
+  </data>
+  <data name="desc_mac-source!" xml:space="preserve">
+    <value>ethernet adresi $1 değildir</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>oran, $1'den daha azdır</value>
+  </data>
+  <data name="desc_limit!" xml:space="preserve">
+    <value>oran, $1'den daha fazladır</value>
+  </data>
+  <data name="desc_limit-burst" xml:space="preserve">
+    <value>maksimum oran, $1'den daha azdır</value>
+  </data>
+  <data name="desc_limit-burst!" xml:space="preserve">
+    <value>maksimum oran, $1'den daha fazladır</value>
+  </data>
+  <data name="desc_ports" xml:space="preserve">
+    <value>kaynak ve hedef portları $1'dir</value>
+  </data>
+  <data name="desc_ports!" xml:space="preserve">
+    <value>kaynak ve hedef portları $1 değildir</value>
+  </data>
+  <data name="desc_uid-owner" xml:space="preserve">
+    <value>gönderen $1 kullanıcısıdır</value>
+  </data>
+  <data name="desc_uid-owner!" xml:space="preserve">
+    <value>gönderen $1 kullanıcısı değildir</value>
+  </data>
+  <data name="desc_gid-owner" xml:space="preserve">
+    <value>gönderici grup $1'dir</value>
+  </data>
+  <data name="desc_gid-owner!" xml:space="preserve">
+    <value>gönderici grup $1 değildir</value>
+  </data>
+  <data name="desc_pid-owner" xml:space="preserve">
+    <value>gönderici ID aşaması $1 dir</value>
+  </data>
+  <data name="desc_pid-owner!" xml:space="preserve">
+    <value>gönderici ID aşaması $1 değildir</value>
+  </data>
+  <data name="desc_sid-owner" xml:space="preserve">
+    <value>gönderici oturum grubu $1'dir</value>
+  </data>
+  <data name="desc_sid-owner!" xml:space="preserve">
+    <value>gönderici oturum grubu $1 değildir</value>
+  </data>
+  <data name="desc_state" xml:space="preserve">
+    <value>bağlantının durumu $1'dir</value>
+  </data>
+  <data name="desc_state!" xml:space="preserve">
+    <value>bağlantının durumu $1 değildir</value>
+  </data>
+  <data name="desc_tos" xml:space="preserve">
+    <value>servis alanın tipi $1'dir</value>
+  </data>
+  <data name="desc_tos!" xml:space="preserve">
+    <value>servis alanın tipi $1 değildir</value>
+  </data>
+  <data name="desc_conds" xml:space="preserve">
+    <value>Eğer $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>ve</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>Her zaman</value>
+  </data>
+  <data name="redhat_eoutput" xml:space="preserve">
+    <value>$1 komutuyla IP tablo statüsüne erişimde bir hata meydana geldi. Bu, sisteminizde IP tablolarının yerine IP zincirlerinin kullanıldığına işarettir.</value>
+  </data>
+  <data name="gentoo_escript" xml:space="preserve">
+    <value>Gentoo IPtabloları başlatma betiği $1 sisteminizde bulunamadı.</value>
+  </data>
+  <data name="eiptables" xml:space="preserve">
+    <value>Bilinmeyen IP tabloları $1 satırında saklanır</value>
+  </data>
+  <data name="eip6tables" xml:space="preserve">
+    <value>Bilinmeyen IP tabloları $1 satırında saklanır</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Kural Ekle</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Kuralı Düzenle</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Klonlama Kuralı</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>Zincir ve eylem detayları</value>
+  </data>
+  <data name="edit_chain" xml:space="preserve">
+    <value>Zincirin bölümü</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>Kural yorumu</value>
+  </data>
+  <data name="edit_jump" xml:space="preserve">
+    <value>Uygulanacak Eylem</value>
+  </data>
+  <data name="edit_jump_other" xml:space="preserve">
+    <value>Zinciri çalıştır</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Durum detayları</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Yukarıda seçili olan eylem, eğer &lt;b&gt;tüm&lt;/b&gt; şartlarla uyumluysa yerine getirilecek.</value>
+  </data>
+  <data name="edit_source" xml:space="preserve">
+    <value>Kaynak adres veya ağ</value>
+  </data>
+  <data name="edit_ignore" xml:space="preserve">
+    <value>Gözardı Edildi</value>
+  </data>
+  <data name="edit_is" xml:space="preserve">
+    <value>Eşittir</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>Eşit değildir</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Hedef adresi veya ağı</value>
+  </data>
+  <data name="edit_in" xml:space="preserve">
+    <value>Gelen arabirimi</value>
+  </data>
+  <data name="edit_out" xml:space="preserve">
+    <value>Çıkış arayüzü</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>Parçalara ayırma</value>
+  </data>
+  <data name="edit_fragis" xml:space="preserve">
+    <value>Fragmante olmuş</value>
+  </data>
+  <data name="edit_fragnot" xml:space="preserve">
+    <value>Fragmante değil</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>Ağ protokolü</value>
+  </data>
+  <data name="edit_sport" xml:space="preserve">
+    <value>TCP kayanağı ya da UDP portu</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Hedef TCP ya da UDP portu</value>
+  </data>
+  <data name="edit_port0" xml:space="preserve">
+    <value>Port(lar)</value>
+  </data>
+  <data name="edit_port1" xml:space="preserve">
+    <value>$1'den $2'ye olan port değer kümesi</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>Kaynak ve hedef port(lar)</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>TCP belirteç ayarı</value>
+  </data>
+  <data name="edit_flags" xml:space="preserve">
+    <value>$2 out of&lt;br&gt; $1</value>
+  </data>
+  <data name="edit_tcpoption" xml:space="preserve">
+    <value>TCP seçeneklerinin sayısı ayarlanır</value>
+  </data>
+  <data name="edit_icmptype" xml:space="preserve">
+    <value>ICMP paket tipi</value>
+  </data>
+  <data name="edit_mac" xml:space="preserve">
+    <value>Ethernet adresi</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>Paket akış oranı</value>
+  </data>
+  <data name="edit_below" xml:space="preserve">
+    <value>Aşağıda</value>
+  </data>
+  <data name="edit_above" xml:space="preserve">
+    <value>Yukarısı</value>
+  </data>
+  <data name="edit_limitburst" xml:space="preserve">
+    <value>Paket maksimum oranı</value>
+  </data>
+  <data name="edit_uidowner" xml:space="preserve">
+    <value>Unix kullanıcısını gönderiyor</value>
+  </data>
+  <data name="edit_gidowner" xml:space="preserve">
+    <value>Unix grubunu gönderiyor</value>
+  </data>
+  <data name="edit_pidowner" xml:space="preserve">
+    <value>Aşama ID gönderiyorum</value>
+  </data>
+  <data name="edit_sidowner" xml:space="preserve">
+    <value>Aşama grubu gönderiliyor</value>
+  </data>
+  <data name="edit_state" xml:space="preserve">
+    <value>Bağlantı durumları</value>
+  </data>
+  <data name="edit_state_new" xml:space="preserve">
+    <value>Yeni bağlantı</value>
+  </data>
+  <data name="edit_state_established" xml:space="preserve">
+    <value>Varolan bağlantı</value>
+  </data>
+  <data name="edit_state_related" xml:space="preserve">
+    <value>Varolanla ilişkili</value>
+  </data>
+  <data name="edit_state_invalid" xml:space="preserve">
+    <value>Herhangi bir bağlantının parçası değildir</value>
+  </data>
+  <data name="edit_tos" xml:space="preserve">
+    <value>Servis tipi</value>
+  </data>
+  <data name="edit_rtoports" xml:space="preserve">
+    <value>Tekrar yönlendirme için hedef portlar</value>
+  </data>
+  <data name="edit_prange" xml:space="preserve">
+    <value>$1'den $2'ye olan port değer kümesi</value>
+  </data>
+  <data name="edit_mtoports" xml:space="preserve">
+    <value>Maske için kaynak portlar</value>
+  </data>
+  <data name="edit_dnat" xml:space="preserve">
+    <value>DNAT için IP'ler ve port'lar</value>
+  </data>
+  <data name="edit_dnatip" xml:space="preserve">
+    <value>$1'den $2'e IP kümesi</value>
+  </data>
+  <data name="edit_snat" xml:space="preserve">
+    <value>SNAT için IPler ve portlar</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>Herhangi</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>Diğer..</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klonlama kuralı</value>
+  </data>
+  <data name="edit_before" xml:space="preserve">
+    <value>$1 kuralından önce</value>
+  </data>
+  <data name="edit_after" xml:space="preserve">
+    <value>$1 kuralından sonra</value>
+  </data>
+  <data name="edit_args" xml:space="preserve">
+    <value>Ek parametreler</value>
+  </data>
+  <data name="edit_mods" xml:space="preserve">
+    <value>Ek IP tabloları modülleri</value>
+  </data>
+  <data name="edit_rwith" xml:space="preserve">
+    <value>ICMP tipiyle birlikte reddet</value>
+  </data>
+  <data name="edit_rwithtype" xml:space="preserve">
+    <value>$1 tipi</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Kuralı kaydederken hata oluştu</value>
+  </data>
+  <data name="save_echain" xml:space="preserve">
+    <value>Çalıştırmak için zincir eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_esource" xml:space="preserve">
+    <value>Adres ya da ağ kaynağı eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_edest" xml:space="preserve">
+    <value>Hedef adres ya da ağ geçersiz ya da eksiktir</value>
+  </data>
+  <data name="save_ein" xml:space="preserve">
+    <value>Gelen arabirimi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_eout" xml:space="preserve">
+    <value>Giden arabirimi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_eproto" xml:space="preserve">
+    <value>Protokol seçilmedi</value>
+  </data>
+  <data name="save_esport" xml:space="preserve">
+    <value>Kaynak port(lar) eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_esportfrom" xml:space="preserve">
+    <value>Kaynak portlar için başlangıç aralığı geçersizdir</value>
+  </data>
+  <data name="save_esportto" xml:space="preserve">
+    <value>Kaynak portları için bitiş aralığı geçersizdir</value>
+  </data>
+  <data name="save_esportrange" xml:space="preserve">
+    <value>Kaynak port aralığı için en az bir tane başlangıç ya da bitiş girmelisiniz</value>
+  </data>
+  <data name="save_etcpudp" xml:space="preserve">
+    <value>Kaynak ve hedef port koşulları sadece protokol TCP veya UDP ise kullanılabilir</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Hedef port(lar) eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_edportfrom" xml:space="preserve">
+    <value>Hedef portlar için başlangıç aralığı geçersizdir</value>
+  </data>
+  <data name="save_edportto" xml:space="preserve">
+    <value>Hedef port için aralık sonu geçersizdir</value>
+  </data>
+  <data name="save_edportrange" xml:space="preserve">
+    <value>Hedef port aralığı için asgari bir başlangıç yada bitiş girmelisiniz</value>
+  </data>
+  <data name="save_eports" xml:space="preserve">
+    <value>Kaynak veya hedef port(lar) eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_etcp1" xml:space="preserve">
+    <value>TCP işaretçileri koşulu sadece protokol TCP ise kullanılabilir</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>Her satırdan en az bir tane TCP işaretcisi seçmelisiniz</value>
+  </data>
+  <data name="save_etcpflags2" xml:space="preserve">
+    <value>İkinci satırdan en az bir tane tcp işaretçisi seçmelisiniz</value>
+  </data>
+  <data name="save_etcp2" xml:space="preserve">
+    <value>TCP seçenek numarası koşulu sadece protokol TCP ise kullanılabilir</value>
+  </data>
+  <data name="save_etcpoption" xml:space="preserve">
+    <value>TCP seçenek numarası eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_eicmp" xml:space="preserve">
+    <value>ICMP paket tipi koşulu sadece protokol ICMP ise kullanılabilir</value>
+  </data>
+  <data name="save_emac" xml:space="preserve">
+    <value>Ethernet adresi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>Paket akış oranı eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_elimitburst" xml:space="preserve">
+    <value>Paket boşaltma oranı eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_euidowner" xml:space="preserve">
+    <value>Eksik yada geçersiz gönderici unix kullanıcısı</value>
+  </data>
+  <data name="save_egidowner" xml:space="preserve">
+    <value>Unix grubu gönderimi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_epidowner" xml:space="preserve">
+    <value>Gönderici süreç ID'si geçersiz veya eksik</value>
+  </data>
+  <data name="save_esidowner" xml:space="preserve">
+    <value>Gönderim sureci grup ID'si eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_ertoports" xml:space="preserve">
+    <value>Yeniden yönlendirme hedef portu eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_emtoports" xml:space="preserve">
+    <value>Maske kaynak portu eksik ya da geçersizdir </value>
+  </data>
+  <data name="save_edipfrom" xml:space="preserve">
+    <value>DNAT için başlangıç IP adresi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_edipto" xml:space="preserve">
+    <value>DNAT için bitiş IP adresi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_edpfrom" xml:space="preserve">
+    <value>DNAT için başlama portu geçersizdir</value>
+  </data>
+  <data name="save_edpto" xml:space="preserve">
+    <value>DNAT için bitiş portu eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_esipfrom" xml:space="preserve">
+    <value>SNAT için başlangıç IP adresi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_esipto" xml:space="preserve">
+    <value>SNAT için bitiş IP adresi eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_espfrom" xml:space="preserve">
+    <value>SNAT için başlangıç portu geçersizdir</value>
+  </data>
+  <data name="save_espto" xml:space="preserve">
+    <value>SNAT için bitiş portu eksik ya da geçersizdir</value>
+  </data>
+  <data name="save_estates" xml:space="preserve">
+    <value>Bağlantı durumu seçilmedi</value>
+  </data>
+  <data name="save_ecanjump" xml:space="preserve">
+    <value>Bu eylemi kullanmaya izniniz yoktur</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Zinciri Sil</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>$1 zincirini silmek istediğinizden emin misiniz? bununla beraber $2 kuralları da silinecektir.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Şimdi Sil</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Zincirleri silmeye izinli değilsiniz</value>
+  </data>
+  <data name="clear_title" xml:space="preserve">
+    <value>Zinciri Temizle</value>
+  </data>
+  <data name="clear_rusure" xml:space="preserve">
+    <value>$1 zincirinden bütün $2 kurallarını silmek istediğinizden emin misiniz ?</value>
+  </data>
+  <data name="clear_ecannot" xml:space="preserve">
+    <value>Zincirleri silmenize izin verilmiyor</value>
+  </data>
+  <data name="new_err" xml:space="preserve">
+    <value>Zincir oluşturulurken hata oluştu</value>
+  </data>
+  <data name="new_ename" xml:space="preserve">
+    <value>Zincir adı geçersiz ya da eksiktir</value>
+  </data>
+  <data name="new_etaken" xml:space="preserve">
+    <value>Bu isimde bir zincir zaten mevcuttur</value>
+  </data>
+  <data name="new_ecannot" xml:space="preserve">
+    <value>Zincir oluşturma izniniz yoktur</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Yapılandırmayı uygularken hata oluştu</value>
+  </data>
+  <data name="apply_ecannot" xml:space="preserve">
+    <value>Yapılandırmayı uygulamaya yetkiniz yoktur</value>
+  </data>
+  <data name="apply_remote" xml:space="preserve">
+    <value>$1'deki hata : $2</value>
+  </data>
+  <data name="unapply_err" xml:space="preserve">
+    <value>Yapılandırma geri alırken hata oluştug</value>
+  </data>
+  <data name="unapply_ecannot" xml:space="preserve">
+    <value>Yapılandırmayı geri almanıza izin verilmiyor</value>
+  </data>
+  <data name="bootup_ecannot" xml:space="preserve">
+    <value>Ön yüklemede güvenlik duvarını aktifleştirme ya da pasifleştirme izniniz yoktur</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>$2 tablosunda $1 zincirine kural eklendi</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>$2 tablosunun $1 zincirindeki kural değiştirildi</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>$2 tablosunun $1 zincirindeki kural silindi</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>$2 tablosunun $1 zincirindeki kural taşındı</value>
+  </data>
+  <data name="log_delete_chain" xml:space="preserve">
+    <value>$2 tablosundan $1 zinciri silindi</value>
+  </data>
+  <data name="log_clear_chain" xml:space="preserve">
+    <value>$2 tablosundaki $1 zinciri silindi</value>
+  </data>
+  <data name="log_create_chain" xml:space="preserve">
+    <value>$2 tablosunda $1 zinciri oluşturuldu</value>
+  </data>
+  <data name="log_modify_chain" xml:space="preserve">
+    <value>$2 tablosunun $1 zinciri için varsayılan eylemi ayarla</value>
+  </data>
+  <data name="log_delsel_chain" xml:space="preserve">
+    <value>$2 tablosunun $1 zincirindeki $3 kural silindi</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Yapılandırma uygulandı</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>Yapılandırma geri alındı</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Güvenlik duvarını kur</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>Var olan güvenlik duvarı dönüştürüldü</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>Ön yükleme anında güvenlik duvarı aktifleştirildi</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>Ön yükleme anında güvenlik duvarı pasifleştirildi</value>
+  </data>
+  <data name="log_add_host" xml:space="preserve">
+    <value>$1 küme sunucusu eklendi</value>
+  </data>
+  <data name="log_add_group" xml:space="preserve">
+    <value>$1 grubundan küme sunucuları eklendi</value>
+  </data>
+  <data name="log_delete_host" xml:space="preserve">
+    <value>Küme sunucusu $1 taşındı</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>$1 küme sunucusu taşındı</value>
+  </data>
+  <data name="setup_eiface" xml:space="preserve">
+    <value>Hiçbir dış ağ arabirimi girilmedi</value>
+  </data>
+  <data name="setup_ecannot" xml:space="preserve">
+    <value>Güvenlik duvarını kurmaya izniniz yoktur</value>
+  </data>
+  <data name="acl_tables" xml:space="preserve">
+    <value>İzin verilen IP tabloları</value>
+  </data>
+  <data name="acl_apply" xml:space="preserve">
+    <value>Yapılandırmayı uygulayayım mı?</value>
+  </data>
+  <data name="acl_unapply" xml:space="preserve">
+    <value>Yapılandırmayı geri alabilir miyim?</value>
+  </data>
+  <data name="acl_bootup" xml:space="preserve">
+    <value>Ön yüklemede güvenlik duvarını aktifleştireyim mi?</value>
+  </data>
+  <data name="acl_setup" xml:space="preserve">
+    <value>Başlangıçtaki güvenlik duvarı ayarlarını kurayım mı?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Güvenlik duvarı kümesini yöneteyim mi?</value>
+  </data>
+  <data name="acl_jumps" xml:space="preserve">
+    <value>İzin verilen eylemler</value>
+  </data>
+  <data name="acl_jall" xml:space="preserve">
+    <value>Hepsi</value>
+  </data>
+  <data name="acl_newchain" xml:space="preserve">
+    <value>Yeni zincirler oluşturayım mı?</value>
+  </data>
+  <data name="acl_delchain" xml:space="preserve">
+    <value>Zincirleri sileyim ya da temizleyeyim mi?</value>
+  </data>
+  <data name="acl_policy" xml:space="preserve">
+    <value>Varsayılan kuralları değiştireyim mi?</value>
+  </data>
+  <data name="etable" xml:space="preserve">
+    <value>Bu IP tablosunu düzenlemeye izniniz yoktur</value>
+  </data>
+  <data name="ejump" xml:space="preserve">
+    <value>Bu kuralı düzenlemeye izniniz yoktur</value>
+  </data>
+  <data name="ecluster" xml:space="preserve">
+    <value>Güvenlik duvarı kümesini yönetmeye izinli değilsiniz</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Küme Güvenlik Duvarı Sunucuları</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Güvenlik duvarı kümesine henüz eklenen bir sunucu yoktur.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Host adı</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Tanım</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>İşletim sistemi</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Sunucuyu ekle</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Gruptaki sunucuları ekle</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Sunucuları buradan yönetmeye başlamadan önce Webmin Sunucular Dizin modülüne, giriş ve şifresiyle beraber eklemelisiniz.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>küme sunucuları</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Seçili Olanları Kaldır</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Sunucuları Ekle</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>$1'i ekliyor ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>$1 grubundaki sunucuları ekliyor ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Sunucuyu eklerken hata oluştu</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Grubu eklerken hata oluştu</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>$1 sunucusu Linux güvenlik duvarı modülüne sahip değildir</value>
+  </data>
+  <data name="add_emissing" xml:space="preserve">
+    <value>$1 sunucusunda $2 güvenlik duvarı komutu eksiktir</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>$1, $2 aktif güvenlik duvarı kuralıyla eklendi.</value>
+  </data>
+  <data name="policy_ecannot" xml:space="preserve">
+    <value>Bu zincir için var olan kuralı değiştirme izniniz yoktur</value>
+  </data>
+</root>

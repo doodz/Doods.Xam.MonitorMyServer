@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Sistēmas žurnāli NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Lietot konfigurāciju</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Noklikšķiniet uz šīs pogas, lai aktivizētu pašreizējo Syslog-NG konfigurāciju.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Apturiet Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Noklikšķiniet uz šīs pogas, lai apturētu darbojasjošo Syslog-NG dēmonu. Pēc apturēšanas citu programmu žurnālu ziņojumi vairs netiks rakstīti žurnālfailos.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Startējiet Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Noklikšķiniet uz šīs pogas, lai palaistu Syslog-NG dēmonu, izmantojot pašreizējo konfigurāciju.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>moduļa indekss</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Mežizstrādes iespējas</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Visu žurnālfailu opcijas</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekundes</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>ieraksti</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Laiks gaidīt, pirms atkal tiek atvērti mirušie savienojumi</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Laiks gaidīt, pirms tiek slēgti dīkstāves savienojumi</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Ziņojumi buferizēšanai pirms rakstīšanas</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Laiks gaidīt starp statistikas ziņojumiem</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Buferim paredzēto ziņojumu skaits</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Vai izmantot ķēdes resursdatora formātu?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Vai saglabāt oriģinālos resursdatorus?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Vai pārbaudīt saimniekdatoru nosaukumos derīgas rakstzīmes?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Regulāra izteiksme sliktiem resursdatoriem</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Ja nepieciešams, izveidojiet direktorijus žurnālfailiem?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Reģistrācijas failu noklusējuma īpašnieks</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Noklusējuma grupa žurnālfailiem</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Noklusējuma atļaujas žurnālfailiem</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Izveidoto direktoriju noklusējuma īpašnieks</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Izveidoto direktoriju noklusējuma grupa</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Izveidoto direktoriju noklusējuma atļaujas</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Tika saņemti žurnāla laika ziņojumi?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Vai veikt DNS meklēšanu reversā veidā?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Kešatmiņas DNS meklēšana?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>DNS kešatmiņas lielums</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Kešatmiņas DNS ieraksti domēnam</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Kešatmiņā neizdevās meklēt DNS</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Maksimālais žurnāla ziņojuma lielums</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Reģistrēties pilnos saimniekdatoru nosaukumos?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Vai aizstāt vadības rakstzīmes failu nosaukumos?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Neizdevās saglabāt reģistrēšanas opcijas</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Trūkst vai nav derīga regulāru izteiksme nederīgiem saimniekdatoriem</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Trūkst vai nav skaitliska DNS kešatmiņas lieluma</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Trūkst vai nav skaitliska DNS kešatmiņas laika</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Trūkst vai nav skaitliska neveiksmīga DNS kešatmiņas laika</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Trūkst žurnālfailu noklusējuma īpašnieka</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Trūkst žurnālfailu noklusējuma grupas</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Trūkst žurnālfailu noklusējuma atļaujas</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Trūkst direktoriju noklusējuma īpašnieka</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Trūkst direktoriju noklusējuma grupas</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Trūkst direktoriju noklusējuma atļaujas</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Trūkst laika vai nav skaitļu, lai gaidītu mirušus savienojumus</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Trūkst laika vai nav skaitļu, lai gaidītu ideālus savienojumus</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Trūkst vai nav derīgs ziņojumu buferšķīdums pirms rakstīšanas</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Trūkst laika vai nav skaitļu, kas jāgaida starp statistikas ziņojumiem</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Trūkst vai nav derīgs buferim pievienoto ziņojumu skaits</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Trūkst vai nav ciparu maksimālais žurnāla ziņojuma lielums</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Žurnāla galamērķi</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Galamērķa nosaukums</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Rakstīt</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Žurnāla galamērķis</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Fails</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Pierakstījušies lietotāji</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Programmas ievade</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix caurule</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP syslog serveris</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslog serveris</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Datagramma ligzda</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Straumes ligzda</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Visi lietotāji</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Tikai lietotāji $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Saimnieks $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Skatīt ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Pagaidām nav definēti galamērķa žurnāla faili.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Dzēst atlasītos mērķus</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Pievienojiet jaunu žurnāla galamērķi.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>žurnālu adresāti</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Cita moduļa žurnāls</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Izeja no $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Žurnāla mērķa opcijas</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Izveidot žurnāla galamērķi</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Rediģēt žurnāla galamērķi</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Žurnāla mērķa nosaukums</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Piesakieties ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Faila nosaukums</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Izveidot direktorijus?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Atļaujas direktorijiem</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Sinhronizēt pēc katras rakstīšanas?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Žurnāla faila grupa</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Žurnāla faila īpašnieks</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Atļaujas žurnālfailā</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Ziņojumi starp sinhronizācijām</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Sarakstā iekļautie lietotāji</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog serveris</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Tīkla protokols</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Servera adrese</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Servera ports</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Vietējā IP adrese</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Vietējā osta</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix ligzda</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Veids</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Kontaktligzdas nosaukums</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Neizdevās saglabāt galamērķi</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Galamērķis ar tādu pašu nosaukumu jau pastāv</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Galamērķis vairs nepastāv!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Trūkst vai nav derīgs faila nosaukums</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Trūkst vai nav derīgs žurnāla faila īpašnieks</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Trūkst vai nav derīga žurnālfailu grupa</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Trūkst vai nav astoņkāju žurnālfaila atļaujas</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Trūkst direktoriju atļauju vai tās nav astoņstūrainas</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Trūkst vai nav derīgs ziņojumu skaits starp sinhronizācijām</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Trūkst lietotāju, uz kuriem sūtīt</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Trūkst programmas, ar kuru barot</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Trūkst Unix caurules faila</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Trūkst vai nav derīgs porta numurs</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Trūkst vai nav derīga vietējā IP adrese</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Trūkst vai nav derīgs vietējā porta numurs</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Trūkst vai nav derīga Syslog servera resursdators vai adrese</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Trūkst Unix ligzdas nosaukuma</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Neizdevās izdzēst mērķus</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Nav atlasīts</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Galamērķi $1 nevar izdzēst, jo to izmanto žurnāla mērķis</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Neizdevās izdzēst avotus</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Nav atlasīts</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Žurnāla avotu $1 nevar izdzēst, jo to izmanto žurnāla mērķis</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Neizdevās izdzēst filtrus</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Nav atlasīts</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Žurnāla filtru $1 nevar izdzēst, jo to izmanto žurnāla mērķis</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Neizdevās izdzēst žurnāla mērķus</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Nav atlasīts</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Žurnāla filtri</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Filtra nosaukums</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Nosacījumi</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Pagaidām nav definēti žurnālu filtri.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Dzēst atlasītos filtrus</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Pievienojiet jaunu žurnāla filtru.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>žurnālu filtri</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>prioritāte &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>prioritātes &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 prioritātes</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>objekts &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 iespējas</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>programma &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>atbilst "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>no resursdatora nosaukuma &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>no sūtītāja &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Izveidot žurnāla filtru</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Rediģēt žurnāla filtru</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Žurnāla filtru specifikāciju informācija</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Filtra nosaukums</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Vienkārši nosacījumi (visiem jāsakrīt)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Sarežģīta izteiksme</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Pēc prioritātes ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>No programmas ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Sakritības izteiksme ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>No objekta ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>No resursdatora nosaukuma ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>No IP tīkla ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Neizdevās saglabāt žurnāla filtru</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Trūkst vai nav derīgs filtra nosaukums</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Filtrs ar tādu pašu nosaukumu jau pastāv</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Ievadītajā nekas nav jāfiltrē</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Nav atlasītas prioritātes</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Nav izvēlēta neviena telpa</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Trūkst vai nav derīgs programmas nosaukums</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Trūkst regulāras izteiksmes</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Trūkst vai nav derīgs resursdatora nosaukums</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Trūkst vai nav derīga tīkla IP adrese</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Trūkst vai nav derīgs tīkla masks</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Kļūda sarežģītā izteiksmē</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filtrs vairs nepastāv!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Žurnāla mērķi</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Avoti</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Filtri</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Galamērķi</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Pievienojiet jaunu žurnāla mērķi.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Dzēst atlasītos žurnāla mērķus</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>žurnāla mērķi</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Nav</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Izveidot žurnāla mērķi</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Rediģēt žurnāla mērķi</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Žurnāla avota, filtra un mērķa izvēles</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Žurnāla avoti</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Lietojamie filtri</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Galamērķa faili</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Neapstrādājiet vairāk mērķus</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Rezerves žurnāla mērķis</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Apstrādājiet visus avotus</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Mērķa iespējas</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Žurnāla mērķis vairs nepastāv!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Neizdevās saglabāt žurnāla mērķi</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Nav izvēlēts neviens avots</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Žurnāla avoti</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Vēl nav definēti avoti!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Pievienojiet jaunu žurnāla avotu.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Avota nosaukums</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Žurnāla datu avoti</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Dzēst atlasītos avotus</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Iekšējie Syslog-NG ziņojumi</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Straumes ligzda</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Datagramma ligzda</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP serveris</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP serveris</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Kodola žurnālfails</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Nosaukta pīpe</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Saules straume</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog serveris</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>žurnālu avoti</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Nav</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Izveidot žurnāla avotu</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Rediģēt žurnāla avotu</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Žurnāla avota opcijas</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Jebkurš</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Nav</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Avots vairs nepastāv!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Avota nosaukums</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Žurnāla avotu veidi</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Socket faila īpašnieks</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Socket failu grupa</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Atļaujas ligzdas failā</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Vai saglabāt savienojumus atvērtus restartēšanas laikā?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maksimāli vienlaicīgi savienojumi?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Vietējā IP adrese</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Vietējais ostas numurs</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Vai izmantot TCP uzturēšanas līdzekļus?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Prefikss žurnālu ziņojumiem</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Ziņu bloka lielums</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Neizdevās saglabāt žurnāla avotu</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Trūkst vai nav derīgs avota nosaukums</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Žurnāla avots ar tādu pašu nosaukumu jau pastāv</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Trūkst vai nav derīgs kontaktligzdas faila īpašnieks</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Trūkst vai nav derīga kontaktligzdas failu grupa</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Trūkst vai nav astoņstūra atļaujas ligzdas failā</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Trūkst vai nav derīgs maksimālo savienojumu skaits</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Trūkst vai nav derīga vietējā IP adrese</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Trūkst vai nav derīgs vietējā porta numurs</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Trūkst žurnāla ziņojumu prefiksa</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Trūkst ziņojumu numura vai tas nav skaitlisks</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Trūkst vai nav derīgs Unix ligzdas faila nosaukums</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Trūkst vai nav derīgs kodola žurnāla faila nosaukums</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Trūkst vai nav derīgs nosauktais caurules faila nosaukums</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Durvju faila nosaukums</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Trūkst vai nav derīgs Sun straumes faila nosaukums</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Trūkst vai nav derīgs Sun straumēšanas durvju faila nosaukums</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Tīkla protokols</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Skatīt žurnālfailu</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$2 pēdējās $1 rindas</value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Žurnāla fails ir tukšs</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>atjaunot</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Rādīt tikai tās līnijas ar tekstu $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Neizdevās piemērot konfigurāciju</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Neskrien!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Neizdevās palaist Syslog-NG serveri</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Neizdevās apturēt Syslog-NG serveri</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Izveidots žurnāla galamērķis $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Modificēts žurnāla galamērķis $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Izdzēsts žurnāla galamērķis $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Izdzēsti $1 žurnāla galamērķi</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Izveidots žurnāla filtrs $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Pārveidots žurnāla filtrs $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Izdzēsts žurnāla filtrs $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Izdzēsti $1 žurnāla filtri</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Izveidots žurnāla avots $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Modificēts žurnāla avots $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Izdzēsts žurnāla avots $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Izdzēsti $1 žurnāla avoti</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Izveidots žurnāla mērķis</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Modificēts žurnāla mērķis</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Izdzēsts žurnāla mērķis</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Izdzēsti $1 žurnāla mērķi</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Lietotā konfigurācija</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Startēja Syslog-NG serveris</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Apturēts Syslog-NG serveris</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Mainītas globālās iespējas</value>
+  </data>
+</root>

@@ -5,8 +5,6 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class SynologyServiceInfo
     {
-        [JsonProperty("service")]
-        public List<Service> Services { get; set; }
-      
+        [JsonProperty("service")] public List<Service> Services { get; set; }
     }
 }

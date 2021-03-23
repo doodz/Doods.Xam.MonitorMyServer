@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>오징어 보고서 생성기</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>$1 명령으로 Sarg 버전을 가져 오지 못했습니다  : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Sarg 버전 $1 </value>
+  </data>
+  <data name="index_generate" xml:space="preserve">
+    <value>지금 보고서 생성</value>
+  </data>
+  <data name="index_generatedesc" xml:space="preserve">
+    <value>현재 구성을 사용하여 $1 의 Sarg 보고서를 즉시 생성하려면이 단추를 클릭하십시오.</value>
+  </data>
+  <data name="index_clear" xml:space="preserve">
+    <value>디렉토리에서 기존 보고서를 삭제 하시겠습니까?</value>
+  </data>
+  <data name="index_range" xml:space="preserve">
+    <value>기간에 대한 보고서 생성</value>
+  </data>
+  <data name="index_view" xml:space="preserve">
+    <value>생성 된 보고서보기</value>
+  </data>
+  <data name="index_viewdesc" xml:space="preserve">
+    <value>$1 디렉토리에서 가장 최근에 생성 된 보고서를보십시오.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>모듈 색인</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>로그 소스 및 보고서 대상</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>소스 오징어 로그 파일 및 생성 된 보고서 옵션</value>
+  </data>
+  <data name="log_access_log" xml:space="preserve">
+    <value>소스 오징어 로그 파일</value>
+  </data>
+  <data name="log_squid" xml:space="preserve">
+    <value>현재 오징어 서버 로그 ($1)</value>
+  </data>
+  <data name="log_other" xml:space="preserve">
+    <value>다른 파일</value>
+  </data>
+  <data name="log_output_dir" xml:space="preserve">
+    <value>대상 보고서 디렉토리</value>
+  </data>
+  <data name="log_output_email" xml:space="preserve">
+    <value>에 이메일 보고서</value>
+  </data>
+  <data name="log_nowhere" xml:space="preserve">
+    <value>아무데도</value>
+  </data>
+  <data name="log_useragent_log" xml:space="preserve">
+    <value>사용자 에이전트 로그 파일</value>
+  </data>
+  <data name="log_lastlog" xml:space="preserve">
+    <value>보관할 보고서 수</value>
+  </data>
+  <data name="log_unlimit" xml:space="preserve">
+    <value>제한 없는</value>
+  </data>
+  <data name="log_mail_utility" xml:space="preserve">
+    <value>메일 전송 명령</value>
+  </data>
+  <data name="log_remove_temp_files" xml:space="preserve">
+    <value>보고 후 임시 파일을 삭제 하시겠습니까?</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>로그 소스 옵션을 저장하지 못했습니다.</value>
+  </data>
+  <data name="log_efile" xml:space="preserve">
+    <value>파일이 없습니다</value>
+  </data>
+  <data name="log_edir" xml:space="preserve">
+    <value>디렉토리가 존재하지 않습니다</value>
+  </data>
+  <data name="log_elastlog" xml:space="preserve">
+    <value>숫자가 없거나없는</value>
+  </data>
+  <data name="log_eemail" xml:space="preserve">
+    <value>이메일 주소가 없거나 잘못 보임</value>
+  </data>
+  <data name="log_emailx" xml:space="preserve">
+    <value>없거나 존재하지 않는 메일 프로그램</value>
+  </data>
+  <data name="log_squidguard_log_path" xml:space="preserve">
+    <value>SquidGuard 로그 파일</value>
+  </data>
+  <data name="style_title" xml:space="preserve">
+    <value>보고서 스타일</value>
+  </data>
+  <data name="style_header" xml:space="preserve">
+    <value>HTML 보고서 스타일 및 색상 옵션</value>
+  </data>
+  <data name="style_title2" xml:space="preserve">
+    <value>보고서 제목</value>
+  </data>
+  <data name="style_font_face" xml:space="preserve">
+    <value>보고서 본문 글꼴</value>
+  </data>
+  <data name="style_header_color" xml:space="preserve">
+    <value>헤더 색상</value>
+  </data>
+  <data name="style_header_bgcolor" xml:space="preserve">
+    <value>헤더 배경색</value>
+  </data>
+  <data name="style_header_font_size" xml:space="preserve">
+    <value>헤더 글꼴 크기</value>
+  </data>
+  <data name="style_background_color" xml:space="preserve">
+    <value>배경색</value>
+  </data>
+  <data name="style_text_color" xml:space="preserve">
+    <value>글자 색</value>
+  </data>
+  <data name="style_text_bgcolor" xml:space="preserve">
+    <value>텍스트 배경색</value>
+  </data>
+  <data name="style_title_color" xml:space="preserve">
+    <value>타이틀 색상</value>
+  </data>
+  <data name="style_logo_image" xml:space="preserve">
+    <value>로고 이미지 참조</value>
+  </data>
+  <data name="style_image_size" xml:space="preserve">
+    <value>이미지 크기 (가로 및 세로)</value>
+  </data>
+  <data name="style_logo_text" xml:space="preserve">
+    <value>로고 텍스트</value>
+  </data>
+  <data name="style_logo_text_color" xml:space="preserve">
+    <value>로고의 텍스트 색상</value>
+  </data>
+  <data name="style_background_image" xml:space="preserve">
+    <value>배경 이미지 참조</value>
+  </data>
+  <data name="style_err" xml:space="preserve">
+    <value>보고서 스타일 옵션을 저장하지 못했습니다.</value>
+  </data>
+  <data name="style_etitle" xml:space="preserve">
+    <value>보고서 제목이 없습니다.</value>
+  </data>
+  <data name="style_ecolour" xml:space="preserve">
+    <value>누락되거나 잘못된 색상 이름 또는 RRGGBB 코드</value>
+  </data>
+  <data name="style_efontsize" xml:space="preserve">
+    <value>글꼴 크기 오프셋이 없거나 잘못되었습니다</value>
+  </data>
+  <data name="style_efont" xml:space="preserve">
+    <value>글꼴 이름이 없거나 유효하지 않습니다</value>
+  </data>
+  <data name="style_esize" xml:space="preserve">
+    <value>이미지 너비와 높이가 없거나 잘못되었습니다</value>
+  </data>
+  <data name="style_language" xml:space="preserve">
+    <value>언어 신고</value>
+  </data>
+  <data name="style_charset" xml:space="preserve">
+    <value>보고서 문자 세트</value>
+  </data>
+  <data name="report_title" xml:space="preserve">
+    <value>보고서 옵션</value>
+  </data>
+  <data name="report_header" xml:space="preserve">
+    <value>보고서 내용 및 생성 옵션</value>
+  </data>
+  <data name="report_resolve_ip" xml:space="preserve">
+    <value>IP 주소를 해결 하시겠습니까?</value>
+  </data>
+  <data name="report_user_ip" xml:space="preserve">
+    <value>사용자 ID 대신 IP 주소를 사용 하시겠습니까?</value>
+  </data>
+  <data name="report_user_sort_field" xml:space="preserve">
+    <value>사용자 보고서 주문</value>
+  </data>
+  <data name="report_topuser_sort_field" xml:space="preserve">
+    <value>최고 사용자 보고서 주문</value>
+  </data>
+  <data name="report_reverse" xml:space="preserve">
+    <value>역순으로</value>
+  </data>
+  <data name="report_forward" xml:space="preserve">
+    <value>앞으로</value>
+  </data>
+  <data name="report_by_user" xml:space="preserve">
+    <value>사용자 이름으로</value>
+  </data>
+  <data name="report_by_connect" xml:space="preserve">
+    <value>연결 시간</value>
+  </data>
+  <data name="report_by_bytes" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="report_by_time" xml:space="preserve">
+    <value>시간별</value>
+  </data>
+  <data name="report_by_site" xml:space="preserve">
+    <value>사이트 별</value>
+  </data>
+  <data name="report_exclude_users" xml:space="preserve">
+    <value>제외 할 파일 목록 사용자</value>
+  </data>
+  <data name="report_exclude_hosts" xml:space="preserve">
+    <value>제외 할 파일 목록 호스트</value>
+  </data>
+  <data name="report_index" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt; 파일을 다시 생성 하시겠습니까?</value>
+  </data>
+  <data name="report_only" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt; 만 생성</value>
+  </data>
+  <data name="report_overwrite_report" xml:space="preserve">
+    <value>날짜 보고서를 덮어 쓰시겠습니까?</value>
+  </data>
+  <data name="report_overno" xml:space="preserve">
+    <value>아니요, 이름을.1로 바꿉니다.</value>
+  </data>
+  <data name="report_records_without_userid" xml:space="preserve">
+    <value>사용자가없는 레코드에 대한 조치?</value>
+  </data>
+  <data name="report_ignore" xml:space="preserve">
+    <value>완전히 무시</value>
+  </data>
+  <data name="report_ip" xml:space="preserve">
+    <value>대신 IP 주소를 사용하십시오</value>
+  </data>
+  <data name="report_everybody" xml:space="preserve">
+    <value>&lt;tt&gt;모두&lt;/tt&gt; 사용자 이름 사용</value>
+  </data>
+  <data name="report_use_comma" xml:space="preserve">
+    <value>대신 쉼표를 사용하십시오. 숫자로?</value>
+  </data>
+  <data name="report_topsites_num" xml:space="preserve">
+    <value>표시 할 최상위 사이트 수</value>
+  </data>
+  <data name="report_topsites_sort_order" xml:space="preserve">
+    <value>상위 사이트 보고서 주문</value>
+  </data>
+  <data name="report_sorta" xml:space="preserve">
+    <value>오름차순</value>
+  </data>
+  <data name="report_sortd" xml:space="preserve">
+    <value>내림차순</value>
+  </data>
+  <data name="report_index_sort_order" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt;의 링크 주문</value>
+  </data>
+  <data name="report_exclude_codes" xml:space="preserve">
+    <value>제외 할 HTTP 코드를 나열하는 파일</value>
+  </data>
+  <data name="report_max_elapsed" xml:space="preserve">
+    <value>최대 경과 시간 (ms)</value>
+  </data>
+  <data name="report_report_type" xml:space="preserve">
+    <value>생성 할 보고서 섹션</value>
+  </data>
+  <data name="report_topsites" xml:space="preserve">
+    <value>인기 사이트</value>
+  </data>
+  <data name="report_topusers" xml:space="preserve">
+    <value>최고 사용자</value>
+  </data>
+  <data name="report_sites_users" xml:space="preserve">
+    <value>사용자 별 사이트</value>
+  </data>
+  <data name="report_users_sites" xml:space="preserve">
+    <value>사이트 별 사용자</value>
+  </data>
+  <data name="report_date_time" xml:space="preserve">
+    <value>요일별 및 시간별 사용량</value>
+  </data>
+  <data name="report_denied" xml:space="preserve">
+    <value>거부 된 사이트</value>
+  </data>
+  <data name="report_downloads" xml:space="preserve">
+    <value>다운로드</value>
+  </data>
+  <data name="report_auth_failures" xml:space="preserve">
+    <value>인증 실패</value>
+  </data>
+  <data name="report_site_user_time_date" xml:space="preserve">
+    <value>사이트, 날짜, 시간 및 바이트</value>
+  </data>
+  <data name="report_all" xml:space="preserve">
+    <value>모든 보고서</value>
+  </data>
+  <data name="report_below" xml:space="preserve">
+    <value>아래에서 선택 ..</value>
+  </data>
+  <data name="report_usertab" xml:space="preserve">
+    <value>사용자 이름 매핑 파일</value>
+  </data>
+  <data name="report_long_url" xml:space="preserve">
+    <value>보고서에 전체 URL을 표시 하시겠습니까?</value>
+  </data>
+  <data name="report_date_time_by" xml:space="preserve">
+    <value>날짜/시간 보고서를 기준으로 정렬</value>
+  </data>
+  <data name="report_bytes" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="report_elap" xml:space="preserve">
+    <value>경과 시간</value>
+  </data>
+  <data name="report_user_invalid_char" xml:space="preserve">
+    <value>사용자 이름에 유효하지 않은 문자</value>
+  </data>
+  <data name="report_privacy" xml:space="preserve">
+    <value>방문한 사이트를 숨기시겠습니까?</value>
+  </data>
+  <data name="report_privacy_string" xml:space="preserve">
+    <value>방문한 사이트의 대체 텍스트</value>
+  </data>
+  <data name="report_privacy_string_color" xml:space="preserve">
+    <value>대체 텍스트의 색상</value>
+  </data>
+  <data name="report_below2" xml:space="preserve">
+    <value>아래에 입력 ..</value>
+  </data>
+  <data name="report_include_users" xml:space="preserve">
+    <value>사용자에 대한 보고서 만 생성</value>
+  </data>
+  <data name="report_exclude_string" xml:space="preserve">
+    <value>포함하는 로그 라인 제외</value>
+  </data>
+  <data name="report_allusers" xml:space="preserve">
+    <value>모든 사용자들</value>
+  </data>
+  <data name="report_nostrings" xml:space="preserve">
+    <value>제외하지 마십시오</value>
+  </data>
+  <data name="report_topuser_num" xml:space="preserve">
+    <value>표시 할 최상위 사용자 수</value>
+  </data>
+  <data name="report_site_user_time_date_type" xml:space="preserve">
+    <value>사이트, 사용자, 날짜 및 시간 테이블 형식</value>
+  </data>
+  <data name="report_table" xml:space="preserve">
+    <value>HTML 테이블</value>
+  </data>
+  <data name="report_list" xml:space="preserve">
+    <value>텍스트리스트</value>
+  </data>
+  <data name="report_displayed_values" xml:space="preserve">
+    <value>트래픽을 다음으로 표시</value>
+  </data>
+  <data name="report_bytes2" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="report_abbrev" xml:space="preserve">
+    <value>약식 (K, M, G)</value>
+  </data>
+  <data name="report_weekdays" xml:space="preserve">
+    <value>평일 보고서에 포함</value>
+  </data>
+  <data name="report_weekdays0" xml:space="preserve">
+    <value>수</value>
+  </data>
+  <data name="report_weekdays1" xml:space="preserve">
+    <value>모</value>
+  </data>
+  <data name="report_weekdays2" xml:space="preserve">
+    <value>화</value>
+  </data>
+  <data name="report_weekdays3" xml:space="preserve">
+    <value>우리</value>
+  </data>
+  <data name="report_weekdays4" xml:space="preserve">
+    <value>Th</value>
+  </data>
+  <data name="report_weekdays5" xml:space="preserve">
+    <value>Fr</value>
+  </data>
+  <data name="report_weekdays6" xml:space="preserve">
+    <value>Sa</value>
+  </data>
+  <data name="report_hours" xml:space="preserve">
+    <value>보고서에 포함시킬 시간</value>
+  </data>
+  <data name="report_err" xml:space="preserve">
+    <value>보고서 옵션을 저장하지 못했습니다</value>
+  </data>
+  <data name="report_efile" xml:space="preserve">
+    <value>파일이 없습니다</value>
+  </data>
+  <data name="report_enum" xml:space="preserve">
+    <value>숫자가 아님</value>
+  </data>
+  <data name="report_echar" xml:space="preserve">
+    <value>공백은 허용되지 않습니다</value>
+  </data>
+  <data name="report_estring" xml:space="preserve">
+    <value>대체 텍스트가 없거나 잘못되었습니다</value>
+  </data>
+  <data name="report_eselect" xml:space="preserve">
+    <value>선택된 것이 없습니다</value>
+  </data>
+  <data name="report_eenter" xml:space="preserve">
+    <value>아무것도 입력하지 않았습니다</value>
+  </data>
+  <data name="sched_title" xml:space="preserve">
+    <value>예약 된 보고서 생성</value>
+  </data>
+  <data name="sched_header" xml:space="preserve">
+    <value>예약 된보고 옵션</value>
+  </data>
+  <data name="sched_sched" xml:space="preserve">
+    <value>예약 된 보고서가 활성화 되었습니까?</value>
+  </data>
+  <data name="sched_yes" xml:space="preserve">
+    <value>예, 아래 선택된 시간에 ..</value>
+  </data>
+  <data name="sched_clear" xml:space="preserve">
+    <value>매번 보고서 디렉토리를 지우시겠습니까?</value>
+  </data>
+  <data name="sched_dir" xml:space="preserve">
+    <value>보고서 디렉토리</value>
+  </data>
+  <data name="sched_range" xml:space="preserve">
+    <value>기간에 대한 보고서 생성</value>
+  </data>
+  <data name="sched_rall" xml:space="preserve">
+    <value>로그 파일의 모든 레코드</value>
+  </data>
+  <data name="sched_rsel" xml:space="preserve">
+    <value>$1 ~ $2 일 전</value>
+  </data>
+  <data name="sched_err" xml:space="preserve">
+    <value>예약 된 보고서 생성을 저장하지 못했습니다.</value>
+  </data>
+  <data name="sched_erfrom" xml:space="preserve">
+    <value>시작 일수가 없거나 잘못되었습니다.</value>
+  </data>
+  <data name="sched_erto" xml:space="preserve">
+    <value>결말 일이 없거나 잘못되었습니다.</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>사그 보고서</value>
+  </data>
+  <data name="view_efile" xml:space="preserve">
+    <value>잘못된 파일 이름!</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>보고서 파일을 열지 못했습니다</value>
+  </data>
+  <data name="gen_title" xml:space="preserve">
+    <value>보고서 생성</value>
+  </data>
+  <data name="gen_header" xml:space="preserve">
+    <value>이제 Squid 로그 파일 $1 및 모든 회전 된 버전에서 Sarg 보고서를 생성합니다.</value>
+  </data>
+  <data name="gen_done" xml:space="preserve">
+    <value>.. 완료</value>
+  </data>
+  <data name="gen_failed" xml:space="preserve">
+    <value>.. 사르 그는 실패했습니다! 자세한 내용은 위 출력을 참조하십시오.</value>
+  </data>
+  <data name="gen_nothing" xml:space="preserve">
+    <value>.. Sarg가 완료되었지만 보고서가 생성되지 않았습니다. 자세한 내용은 위 출력을 참조하십시오.</value>
+  </data>
+  <data name="gen_view" xml:space="preserve">
+    <value>완성 된 보고서를 봅니다.</value>
+  </data>
+  <data name="gen_err" xml:space="preserve">
+    <value>보고서를 생성하지 못했습니다</value>
+  </data>
+  <data name="gen_efrom" xml:space="preserve">
+    <value>하루가 없거나 잘못되었습니다</value>
+  </data>
+  <data name="gen_eto" xml:space="preserve">
+    <value>날짜가 없거나 잘못되었습니다</value>
+  </data>
+  <data name="webmin_log_log" xml:space="preserve">
+    <value>업데이트 된 로그 소스 및 보고서 대상 옵션</value>
+  </data>
+  <data name="webmin_log_report" xml:space="preserve">
+    <value>업데이트 된 보고서 옵션</value>
+  </data>
+  <data name="webmin_log_style" xml:space="preserve">
+    <value>업데이트 된 보고서 스타일 옵션</value>
+  </data>
+  <data name="webmin_log_sched_create" xml:space="preserve">
+    <value>예약 된보고 사용</value>
+  </data>
+  <data name="webmin_log_sched_delete" xml:space="preserve">
+    <value>비활성화 된 예약보고</value>
+  </data>
+  <data name="webmin_log_sched_update" xml:space="preserve">
+    <value>업데이트 된 예약보고</value>
+  </data>
+  <data name="webmin_log_sched_nothing" xml:space="preserve">
+    <value>예약 된 왼쪽보고 기능 사용 중지</value>
+  </data>
+  <data name="webmin_log_generate" xml:space="preserve">
+    <value>생성 된 보고서</value>
+  </data>
+</root>

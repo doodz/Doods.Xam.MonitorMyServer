@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index" xml:space="preserve">
+    <value>Kazalo</value>
+  </data>
+  <data name="error_opendir" xml:space="preserve">
+    <value>Napaka pri odpiranju imenika</value>
+  </data>
+  <data name="error_creating_conf" xml:space="preserve">
+    <value>Napaka pri ustvarjanju konfiguracijskega imenika</value>
+  </data>
+  <data name="select_all" xml:space="preserve">
+    <value>Izberi vse</value>
+  </data>
+  <data name="invert_selection" xml:space="preserve">
+    <value>Obrni izbor</value>
+  </data>
+  <data name="copy_selected" xml:space="preserve">
+    <value>Kopiraj izbrano</value>
+  </data>
+  <data name="cut_selected" xml:space="preserve">
+    <value>Izrezano izbrano</value>
+  </data>
+  <data name="paste" xml:space="preserve">
+    <value>Prilepi</value>
+  </data>
+  <data name="create_folder" xml:space="preserve">
+    <value>Ustvari imenik</value>
+  </data>
+  <data name="create_file" xml:space="preserve">
+    <value>Ustvari datoteko</value>
+  </data>
+  <data name="compress_selected" xml:space="preserve">
+    <value>Stisni izbrano</value>
+  </data>
+  <data name="chmod_selected" xml:space="preserve">
+    <value>Izbran Chmod</value>
+  </data>
+  <data name="chown_selected" xml:space="preserve">
+    <value>Izbran Chown</value>
+  </data>
+  <data name="chcon_selected" xml:space="preserve">
+    <value>Izbran Chcon</value>
+  </data>
+  <data name="chattr_selected" xml:space="preserve">
+    <value>Izbran Chattr</value>
+  </data>
+  <data name="remove_selected" xml:space="preserve">
+    <value>Odstrani izbrano</value>
+  </data>
+  <data name="browse_for_upload" xml:space="preserve">
+    <value>Poiščite Naloži</value>
+  </data>
+  <data name="upload_files" xml:space="preserve">
+    <value>Naloži datoteke</value>
+  </data>
+  <data name="get_from_url" xml:space="preserve">
+    <value>Pridobite URL</value>
+  </data>
+  <data name="bookmark_folder" xml:space="preserve">
+    <value>Zaznamek trenutni imenik</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Vtipkajte</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>Dejanja</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>Velikost</value>
+  </data>
+  <data name="owner_user" xml:space="preserve">
+    <value>Uporabnik uporabnik</value>
+  </data>
+  <data name="owner_group" xml:space="preserve">
+    <value>Lastniška skupina</value>
+  </data>
+  <data name="permissions" xml:space="preserve">
+    <value>Način</value>
+  </data>
+  <data name="selinux" xml:space="preserve">
+    <value>Varnostni kontekst</value>
+  </data>
+  <data name="attributes" xml:space="preserve">
+    <value>Lastnosti</value>
+  </data>
+  <data name="last_mod_time" xml:space="preserve">
+    <value>Spremenjeno</value>
+  </data>
+  <data name="rename" xml:space="preserve">
+    <value>Preimenujte</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Uredi</value>
+  </data>
+  <data name="extract_archive" xml:space="preserve">
+    <value>Izvleček Arhiv</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Uredi datoteko</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Shrani</value>
+  </data>
+  <data name="save_close" xml:space="preserve">
+    <value>Shranite in zaprite</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Izbriši</value>
+  </data>
+  <data name="save_file" xml:space="preserve">
+    <value>Shranite datoteko</value>
+  </data>
+  <data name="previous_page" xml:space="preserve">
+    <value>Prejšnja stran</value>
+  </data>
+  <data name="count_uploads" xml:space="preserve">
+    <value>Datoteke, izbrane za prenos</value>
+  </data>
+  <data name="error_title" xml:space="preserve">
+    <value>Napaka!</value>
+  </data>
+  <data name="warning_title" xml:space="preserve">
+    <value>Opozorilo!</value>
+  </data>
+  <data name="nothing_selected" xml:space="preserve">
+    <value>Nič izbranega</value>
+  </data>
+  <data name="error_load_template" xml:space="preserve">
+    <value>Napaka pri nalaganju datoteke predloge</value>
+  </data>
+  <data name="create" xml:space="preserve">
+    <value>Ustvari</value>
+  </data>
+  <data name="new_folder_name" xml:space="preserve">
+    <value>Novo ime imenika</value>
+  </data>
+  <data name="new_file_name" xml:space="preserve">
+    <value>Novo ime datoteke</value>
+  </data>
+  <data name="new_name" xml:space="preserve">
+    <value>Novo ime</value>
+  </data>
+  <data name="dialog_ok" xml:space="preserve">
+    <value>v redu</value>
+  </data>
+  <data name="dialog_cancel" xml:space="preserve">
+    <value>Prekliči</value>
+  </data>
+  <data name="archive_name" xml:space="preserve">
+    <value>Ime arhiva</value>
+  </data>
+  <data name="dialog_compress" xml:space="preserve">
+    <value>Stisniti</value>
+  </data>
+  <data name="about_to_delete" xml:space="preserve">
+    <value>Zbrisali boste naslednje elemente:</value>
+  </data>
+  <data name="are_you_sure" xml:space="preserve">
+    <value>Ali si prepričan?</value>
+  </data>
+  <data name="context_label" xml:space="preserve">
+    <value>Kontekst, ki se uporablja</value>
+  </data>
+  <data name="context_label_error" xml:space="preserve">
+    <value>Polje za varnost ne sme biti prazno</value>
+  </data>
+  <data name="context_label_error_proc" xml:space="preserve">
+    <value>Varnostnega konteksta ni bilo mogoče spremeniti</value>
+  </data>
+  <data name="attr_label" xml:space="preserve">
+    <value>Atributi, ki jih je treba uporabiti</value>
+  </data>
+  <data name="attr_label_error" xml:space="preserve">
+    <value>Atributi morajo biti določeni</value>
+  </data>
+  <data name="attr_label_error_proc" xml:space="preserve">
+    <value>Ni mogoče spremeniti atributov</value>
+  </data>
+  <data name="user_name" xml:space="preserve">
+    <value>Uporabniško ime</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Ime skupine</value>
+  </data>
+  <data name="dialog_change" xml:space="preserve">
+    <value>Spremeni se</value>
+  </data>
+  <data name="chmod_owner" xml:space="preserve">
+    <value>Lastnik</value>
+  </data>
+  <data name="chmod_group" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="chmod_others" xml:space="preserve">
+    <value>Drugi</value>
+  </data>
+  <data name="chmod_read" xml:space="preserve">
+    <value>Preberi</value>
+  </data>
+  <data name="chmod_write" xml:space="preserve">
+    <value>Pišite</value>
+  </data>
+  <data name="chmod_execute" xml:space="preserve">
+    <value>Izvedite</value>
+  </data>
+  <data name="chmod_sticky" xml:space="preserve">
+    <value>Lepljiv zalogaj</value>
+  </data>
+  <data name="chmod_setgid" xml:space="preserve">
+    <value>Setgid</value>
+  </data>
+  <data name="chmod_additional" xml:space="preserve">
+    <value>Dodatno</value>
+  </data>
+  <data name="chmod_apply_to" xml:space="preserve">
+    <value>Se nanaša na</value>
+  </data>
+  <data name="chmod_dir_only" xml:space="preserve">
+    <value>Samo izbrani imeniki in datoteke</value>
+  </data>
+  <data name="chmod_dir_and_its_files" xml:space="preserve">
+    <value>Izbrane datoteke in imenike ter datoteke v izbranih imenikih</value>
+  </data>
+  <data name="chmod_all" xml:space="preserve">
+    <value>Vse (rekurzivno)</value>
+  </data>
+  <data name="chmod_dir_files_and_subs_files" xml:space="preserve">
+    <value>Izbrane datoteke in datoteke v izbranih imenikih in poddirektorjih</value>
+  </data>
+  <data name="chmod_dir_and_subs" xml:space="preserve">
+    <value>Izbrani imeniki in podmape</value>
+  </data>
+  <data name="dialog_file_url" xml:space="preserve">
+    <value>URL datoteke za prenos</value>
+  </data>
+  <data name="dialog_user_name" xml:space="preserve">
+    <value>Uporabniško ime za oddaljeni strežnik (če je potrebno)</value>
+  </data>
+  <data name="dialog_user_pass" xml:space="preserve">
+    <value>Oddaljeno geslo strežnika (če je potrebno)</value>
+  </data>
+  <data name="dialog_download" xml:space="preserve">
+    <value>Prenesi</value>
+  </data>
+  <data name="error_invalid_uri" xml:space="preserve">
+    <value>Napaka: ni priložen veljaven URL!</value>
+  </data>
+  <data name="file_already_exists" xml:space="preserve">
+    <value>že obstaja v</value>
+  </data>
+  <data name="files_ready_for_upload" xml:space="preserve">
+    <value>Ogled izbranih datotek</value>
+  </data>
+  <data name="errors_occured" xml:space="preserve">
+    <value>Sledile so napake med izvajanjem operacije</value>
+  </data>
+  <data name="error_pasting_nonsence" xml:space="preserve">
+    <value>Lepljenje v isti imenik nima smisla</value>
+  </data>
+  <data name="error_exists" xml:space="preserve">
+    <value>že obstaja, preskoči</value>
+  </data>
+  <data name="error_copy" xml:space="preserve">
+    <value>kopiranje ni uspelo z napako:</value>
+  </data>
+  <data name="error_cut" xml:space="preserve">
+    <value>premik ni uspel z napako:</value>
+  </data>
+  <data name="error_create" xml:space="preserve">
+    <value>ni bilo mogoče ustvariti:</value>
+  </data>
+  <data name="error_rename" xml:space="preserve">
+    <value>Preimenovanja ni bilo mogoče</value>
+  </data>
+  <data name="error_chmod" xml:space="preserve">
+    <value>Dovoljenj ni bilo mogoče spremeniti</value>
+  </data>
+  <data name="error_chown" xml:space="preserve">
+    <value>Lastnika ni bilo mogoče spremeniti</value>
+  </data>
+  <data name="error_delete" xml:space="preserve">
+    <value>izbrisanih ni mogoče</value>
+  </data>
+  <data name="error_user_not_found" xml:space="preserve">
+    <value>uporabnika v tem sistemu ni mogoče najti</value>
+  </data>
+  <data name="error_group_not_found" xml:space="preserve">
+    <value>skupina v tem sistemu ne obstaja</value>
+  </data>
+  <data name="error_archive_type_not_supported" xml:space="preserve">
+    <value> vrsta arhiva še ni podprta</value>
+  </data>
+  <data name="error_opening_file_for_writing" xml:space="preserve">
+    <value>Datoteke za pisanje ni bilo mogoče odpreti:</value>
+  </data>
+  <data name="error_writing_file" xml:space="preserve">
+    <value>Napaka pri pisanju datoteke:</value>
+  </data>
+  <data name="error_numeric" xml:space="preserve">
+    <value>mora biti oštevilčen!</value>
+  </data>
+  <data name="error_saving_file" xml:space="preserve">
+    <value>Napaka pri shranjevanju datoteke</value>
+  </data>
+  <data name="hint_copy" xml:space="preserve">
+    <value>Kopirajte izbrane datoteke in mape v medpomnilnik</value>
+  </data>
+  <data name="hint_cut" xml:space="preserve">
+    <value>Izrežite datoteke in imenike v medpomnilnik</value>
+  </data>
+  <data name="hint_paste" xml:space="preserve">
+    <value>Prilepite datoteke in imenike iz medpomnilnika</value>
+  </data>
+  <data name="hint_create_folder" xml:space="preserve">
+    <value>Ustvari nov imenik v trenutni poti</value>
+  </data>
+  <data name="hint_create_file" xml:space="preserve">
+    <value>Ustvari novo datoteko v trenutnem imeniku</value>
+  </data>
+  <data name="hint_compress" xml:space="preserve">
+    <value>Stisnite izbrane datoteke in mape v arhiv tar.gz</value>
+  </data>
+  <data name="hint_chmod" xml:space="preserve">
+    <value>Spremenite dovoljenja za izbrane datoteke in mape</value>
+  </data>
+  <data name="hint_chown" xml:space="preserve">
+    <value>Spremenite lastnika izbranih datotek in imenikov</value>
+  </data>
+  <data name="hint_remove" xml:space="preserve">
+    <value>Odstranite izbrane datoteke in imenike</value>
+  </data>
+  <data name="hint_upload" xml:space="preserve">
+    <value>Naložite datoteke v trenutni imenik</value>
+  </data>
+  <data name="hint_from_url" xml:space="preserve">
+    <value>Pridobite datoteko z oddaljenega URL-ja</value>
+  </data>
+  <data name="provide_folder_name" xml:space="preserve">
+    <value>Navedite ime imenika</value>
+  </data>
+  <data name="provide_file_name" xml:space="preserve">
+    <value>Navedite ime datoteke</value>
+  </data>
+  <data name="provide_user_name" xml:space="preserve">
+    <value>Navedite uporabniško ime</value>
+  </data>
+  <data name="provide_group_name" xml:space="preserve">
+    <value>Navedite ime skupine</value>
+  </data>
+  <data name="provide_url" xml:space="preserve">
+    <value>Navedite URL oddaljene datoteke</value>
+  </data>
+  <data name="provide_new_file_name" xml:space="preserve">
+    <value>Navedite novo ime datoteke</value>
+  </data>
+  <data name="provide_search_query" xml:space="preserve">
+    <value>Navedite iskalno poizvedbo</value>
+  </data>
+  <data name="dialog_recursive" xml:space="preserve">
+    <value>Rekurzivno</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>Osveži</value>
+  </data>
+  <data name="http_downloading" xml:space="preserve">
+    <value>Prenašanje</value>
+  </data>
+  <data name="http_done" xml:space="preserve">
+    <value>Preneseni od $1 do $2.</value>
+  </data>
+  <data name="uploading" xml:space="preserve">
+    <value>Nalaganje, počakajte. ..</value>
+  </data>
+  <data name="acl_allowed_paths" xml:space="preserve">
+    <value>Dovoli dostop do imenikov</value>
+  </data>
+  <data name="acl_allowed_paths_explain" xml:space="preserve">
+    <value>Če je dovoljeni imenik za uporabnika s korenskim dostopom nastavljen samo na $HOME, bo enakovreden / (popoln dostop do diska)</value>
+  </data>
+  <data name="acl_allowed_for_edit" xml:space="preserve">
+    <value>Mimetipi, ki jih omogoča urejanje urejevalnika</value>
+  </data>
+  <data name="acl_work_as" xml:space="preserve">
+    <value>Do datotek dostopate kot Unixov uporabnik</value>
+  </data>
+  <data name="acl_root" xml:space="preserve">
+    <value>Root (dodelite previdno uporabnikom brez zaupanja!)</value>
+  </data>
+  <data name="acl_same" xml:space="preserve">
+    <value>Enako kot prijava v Webmin</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Specifični uporabnik Unixa</value>
+  </data>
+  <data name="acl_euser" xml:space="preserve">
+    <value>Izbrani uporabnik Unix ne obstaja!</value>
+  </data>
+  <data name="acl_epath" xml:space="preserve">
+    <value>Pot $1 ne obstaja</value>
+  </data>
+  <data name="acl_max" xml:space="preserve">
+    <value>Največja velikost za naložene datoteke</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Neomejeno</value>
+  </data>
+  <data name="acl_bytes" xml:space="preserve">
+    <value>bajti</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Iskanje</value>
+  </data>
+  <data name="search_label" xml:space="preserve">
+    <value>Iskalna poizvedba</value>
+  </data>
+  <data name="search_go" xml:space="preserve">
+    <value>Najti</value>
+  </data>
+  <data name="search_results" xml:space="preserve">
+    <value>Rezultati iskanja</value>
+  </data>
+  <data name="search_insensitive" xml:space="preserve">
+    <value>Iskanje neobčutljivo</value>
+  </data>
+  <data name="goto_folder" xml:space="preserve">
+    <value>Pojdite na imenik, ki vsebuje</value>
+  </data>
+  <data name="module_config" xml:space="preserve">
+    <value>Konfiguracija modula</value>
+  </data>
+  <data name="config_columns_to_display" xml:space="preserve">
+    <value>Stolpci za prikaz</value>
+  </data>
+  <data name="config_per_page" xml:space="preserve">
+    <value>Elementi za prikaz na strani (samo za stare teme)</value>
+  </data>
+  <data name="config_disable_pagination" xml:space="preserve">
+    <value>Onemogoči paginacijo (samo za uporabnike avtentične teme)</value>
+  </data>
+  <data name="config_toolbar_style" xml:space="preserve">
+    <value>Nastavite slog orodne vrstice na prikaz v obliki menija, &lt;br&gt; s spustnimi padajočimi mesti... in piškotki (samo za uporabnike avtentične teme)</value>
+  </data>
+  <data name="config_bookmarks" xml:space="preserve">
+    <value>Zaznamki</value>
+  </data>
+  <data name="no_bookmarks" xml:space="preserve">
+    <value>Zaznamkov še ni</value>
+  </data>
+  <data name="menu_file" xml:space="preserve">
+    <value>mapa</value>
+  </data>
+  <data name="menu_edit" xml:space="preserve">
+    <value>Uredi</value>
+  </data>
+  <data name="menu_tools" xml:space="preserve">
+    <value>Orodja</value>
+  </data>
+  <data name="menu_bookmarks" xml:space="preserve">
+    <value>Zaznamki</value>
+  </data>
+  <data name="notallowed" xml:space="preserve">
+    <value>Dostop do $1 ni dovoljen. Dovoljeni imeniki so : $2 </value>
+  </data>
+  <data name="error_upload_emax" xml:space="preserve">
+    <value>Naložena datoteka je večja od omejitve $1 </value>
+  </data>
+  <data name="extract_etype" xml:space="preserve">
+    <value>Nepodprta vrsta arhivske datoteke</value>
+  </data>
+  <data name="info_total1" xml:space="preserve">
+    <value>Skupaj: $1 datoteka in $2 imenik</value>
+  </data>
+  <data name="info_total2" xml:space="preserve">
+    <value>Skupaj: $1 datotek in $2 imenik</value>
+  </data>
+  <data name="info_total3" xml:space="preserve">
+    <value>Skupaj: $1 datoteka in $2 imeniki</value>
+  </data>
+  <data name="info_total4" xml:space="preserve">
+    <value>Skupaj: $1 datotek in $2 imenikov</value>
+  </data>
+  <data name="ownership" xml:space="preserve">
+    <value>Lastnik</value>
+  </data>
+  <data name="acls" xml:space="preserve">
+    <value>Seznam nadzora dostopa</value>
+  </data>
+  <data name="file_detect_encoding" xml:space="preserve">
+    <value>Samodejno zaznaj kodiranje datotek</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>seznam datotek</value>
+  </data>
+</root>

@@ -10,8 +10,8 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
         private bool _ntpenable;
         private string _ntptimeservers;
         private DateTime _selectedDate;
-        private string _selectedTimeZone;
         private TimeSpan _selectedTime;
+        private string _selectedTimeZone;
 
         public DateTime SelectedDate
         {
@@ -24,6 +24,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
             get => _selectedTimeZone;
             set => SetProperty(ref _selectedTimeZone, value);
         }
+
         public string Ntptimeservers
         {
             get => _ntptimeservers;
@@ -43,6 +44,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
         }
 
         public ObservableRangeCollection<string> TimeZoneList { get; } = new ObservableRangeCollection<string>();
+
         public override async Task<bool> SaveSettings()
         {
             var obj = new TimeSetting();

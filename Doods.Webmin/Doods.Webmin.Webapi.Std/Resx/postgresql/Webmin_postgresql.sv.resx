@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>PostgreSQL-databasserver</value>
+  </data>
+  <data name="index_notrun" xml:space="preserve">
+    <value>PostgreSQL körs just nu inte på systemet - databaslistan kunde inte hämtas.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Starta PostgreSQL-server</value>
+  </data>
+  <data name="index_nopass" xml:space="preserve">
+    <value>Webmin behöver få ditt PostgreSQL-administratörskonto och -lösenord för att kunna hantera databasen. Skriv in administratörskonto och -lösenord nedan.</value>
+  </data>
+  <data name="index_ltitle" xml:space="preserve">
+    <value>PostgreSQL-inloggning</value>
+  </data>
+  <data name="index_login" xml:space="preserve">
+    <value>Kontonamn</value>
+  </data>
+  <data name="index_pass" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="index_clear" xml:space="preserve">
+    <value>Rensa</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stanna PostgreSQL-servern</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Tryck på denna knapp för att stanna PostgreSQL-databasservern på ditt system. Detta hindrar användare och program i systemet från att komma åt databasen inklusive denna Webmin-modul.</value>
+  </data>
+  <data name="index_dbs" xml:space="preserve">
+    <value>PostgreSQL-databaser</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Skapa en ny databas</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>Användarinställningar</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>databaslista</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>PostgreSQL-databasen på ditt system är version $1, men Webmin stödjer bara version $2 och högre.</value>
+  </data>
+  <data name="login_err" xml:space="preserve">
+    <value>Inloggningen misslyckades</value>
+  </data>
+  <data name="login_ecannot" xml:space="preserve">
+    <value>Du får inte konfigurera databasinloggningen</value>
+  </data>
+  <data name="login_elogin" xml:space="preserve">
+    <value>Du har inte angivit något administratörskonto</value>
+  </data>
+  <data name="login_epass" xml:space="preserve">
+    <value>Felaktigt administratörskonto eller -lösenord</value>
+  </data>
+  <data name="dbase_title" xml:space="preserve">
+    <value>Ändra databas</value>
+  </data>
+  <data name="dbase_tables" xml:space="preserve">
+    <value>Databastabeller</value>
+  </data>
+  <data name="dbase_add" xml:space="preserve">
+    <value>Lägg till en tabell</value>
+  </data>
+  <data name="dbase_drop" xml:space="preserve">
+    <value>Ta bort databas</value>
+  </data>
+  <data name="dbase_exec" xml:space="preserve">
+    <value>Utför SQL</value>
+  </data>
+  <data name="dbase_none" xml:space="preserve">
+    <value>Databasen har inga tabeller.</value>
+  </data>
+  <data name="dbase_fields" xml:space="preserve">
+    <value>Fält:</value>
+  </data>
+  <data name="dbase_return" xml:space="preserve">
+    <value>tabellista</value>
+  </data>
+  <data name="dbase_ecannot" xml:space="preserve">
+    <value>Du får inte ändra i denna databas</value>
+  </data>
+  <data name="table_title" xml:space="preserve">
+    <value>Ändra tabell</value>
+  </data>
+  <data name="table_title2" xml:space="preserve">
+    <value>Lägg till tabell</value>
+  </data>
+  <data name="table_opts" xml:space="preserve">
+    <value>Fältinställningar</value>
+  </data>
+  <data name="table_header" xml:space="preserve">
+    <value>Tabell $1 i databas $2</value>
+  </data>
+  <data name="table_field" xml:space="preserve">
+    <value>Fältnamn</value>
+  </data>
+  <data name="table_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="table_null" xml:space="preserve">
+    <value>Är tomma fält tillåtna?</value>
+  </data>
+  <data name="table_arr" xml:space="preserve">
+    <value>Array?</value>
+  </data>
+  <data name="table_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="table_add" xml:space="preserve">
+    <value>Lägg till fält av typ:</value>
+  </data>
+  <data name="table_return" xml:space="preserve">
+    <value>fältlista</value>
+  </data>
+  <data name="table_data" xml:space="preserve">
+    <value>Visa data</value>
+  </data>
+  <data name="table_drop" xml:space="preserve">
+    <value>Ta bort tabell</value>
+  </data>
+  <data name="table_name" xml:space="preserve">
+    <value>Tabellnamn</value>
+  </data>
+  <data name="table_initial" xml:space="preserve">
+    <value>Startfält</value>
+  </data>
+  <data name="table_header2" xml:space="preserve">
+    <value>Inställningar för ny tabell</value>
+  </data>
+  <data name="table_err" xml:space="preserve">
+    <value>Det gick inte att lägga till tabellen</value>
+  </data>
+  <data name="table_ename" xml:space="preserve">
+    <value>Tabellnamn saknas eller är ogiltigt</value>
+  </data>
+  <data name="table_efield" xml:space="preserve">
+    <value>'$1' är inte ett giltigt fältnamn</value>
+  </data>
+  <data name="table_etype" xml:space="preserve">
+    <value>Du har inte angivit någon typ för fältet $1</value>
+  </data>
+  <data name="table_esize" xml:space="preserve">
+    <value>Du har inte angivit någon typstorlek för fältet $1</value>
+  </data>
+  <data name="table_enone" xml:space="preserve">
+    <value>Du har inte angivit något startfält</value>
+  </data>
+  <data name="field_title1" xml:space="preserve">
+    <value>Lägg till fält</value>
+  </data>
+  <data name="field_title2" xml:space="preserve">
+    <value>Ändra fält</value>
+  </data>
+  <data name="field_in" xml:space="preserve">
+    <value>I tabell $1 i databas $2</value>
+  </data>
+  <data name="field_header" xml:space="preserve">
+    <value>Fältparametrar</value>
+  </data>
+  <data name="field_name" xml:space="preserve">
+    <value>Fältnamn</value>
+  </data>
+  <data name="field_type" xml:space="preserve">
+    <value>Datatyp</value>
+  </data>
+  <data name="field_size" xml:space="preserve">
+    <value>Typlängd</value>
+  </data>
+  <data name="field_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="field_null" xml:space="preserve">
+    <value>Tillåta tomma fält?</value>
+  </data>
+  <data name="field_arr" xml:space="preserve">
+    <value>Arrayfält?</value>
+  </data>
+  <data name="field_key" xml:space="preserve">
+    <value>Primär nyckel?</value>
+  </data>
+  <data name="field_uniq" xml:space="preserve">
+    <value>Unikt?</value>
+  </data>
+  <data name="field_esize" xml:space="preserve">
+    <value>'$1' är inte en giltig fältstorlek</value>
+  </data>
+  <data name="field_eenum" xml:space="preserve">
+    <value>Du har inte angivit några uppräkningsbara värden</value>
+  </data>
+  <data name="field_efield" xml:space="preserve">
+    <value>'$1' är inte ett giltigt fältnamn</value>
+  </data>
+  <data name="field_ekey" xml:space="preserve">
+    <value>Fält som får innehålla tomma värden får inte vara en del av den primära nyckeln.</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Utföra SQL-kommandon</value>
+  </data>
+  <data name="exec_header" xml:space="preserve">
+    <value>Skriv in det SQL-kommando som ska utföras på databas $1 ...</value>
+  </data>
+  <data name="exec_exec" xml:space="preserve">
+    <value>Utför</value>
+  </data>
+  <data name="exec_err" xml:space="preserve">
+    <value>Det gick inte att utföra SQL-kommandot</value>
+  </data>
+  <data name="exec_out" xml:space="preserve">
+    <value>Utdata från SQL-kommandot $1 ...</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Inga data från körningen</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Det gick inte att stanna databasservern</value>
+  </data>
+  <data name="stop_epidfile" xml:space="preserve">
+    <value>Det gick inte att öppna PID-filen $1</value>
+  </data>
+  <data name="stop_ekill" xml:space="preserve">
+    <value>Det gick inte att slå ihjäl processen $1: $2</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Det gick inte att starta databasservern</value>
+  </data>
+  <data name="ddrop_err" xml:space="preserve">
+    <value>Det gick inte att ta bort databasen</value>
+  </data>
+  <data name="ddrop_title" xml:space="preserve">
+    <value>Ta bort databas</value>
+  </data>
+  <data name="ddrop_rusure" xml:space="preserve">
+    <value>Vill du verkligen ta bort databasen $1? $2 tabeller med $3 rader med data kommer att raderas</value>
+  </data>
+  <data name="ddrop_mysql" xml:space="preserve">
+    <value>MySQL-servern kommer troligen att bli oanvändbar om du tar bort denna databas, eftersom den är huvuddatabasen.</value>
+  </data>
+  <data name="ddrop_ok" xml:space="preserve">
+    <value>Ta bort databasen</value>
+  </data>
+  <data name="tdrop_err" xml:space="preserve">
+    <value>Det gick inte att ta bort tabellen</value>
+  </data>
+  <data name="tdrop_title" xml:space="preserve">
+    <value>Ta bort tabell</value>
+  </data>
+  <data name="tdrop_rusure" xml:space="preserve">
+    <value>Vill du verkligen ta bort tabellen $1 i databasen $2? $3 rader med data kommer att raderas.</value>
+  </data>
+  <data name="tdrop_ok" xml:space="preserve">
+    <value>Ta bort tabell</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Tabelldata</value>
+  </data>
+  <data name="view_pos" xml:space="preserve">
+    <value>Rad $1 till $2 av $3</value>
+  </data>
+  <data name="view_none" xml:space="preserve">
+    <value>Denna tabell innehåller inga data</value>
+  </data>
+  <data name="view_edit" xml:space="preserve">
+    <value>Ändra angivna rader</value>
+  </data>
+  <data name="view_new" xml:space="preserve">
+    <value>Lägg till rad</value>
+  </data>
+  <data name="view_delete" xml:space="preserve">
+    <value>Ta bort angivna rader</value>
+  </data>
+  <data name="view_nokey" xml:space="preserve">
+    <value>Datauppgifter i denna tabell kan inte ändras eftersom det inte finns någon primär nyckel.</value>
+  </data>
+  <data name="view_all" xml:space="preserve">
+    <value>Visa alla</value>
+  </data>
+  <data name="view_invert" xml:space="preserve">
+    <value>Visa uteslutna</value>
+  </data>
+  <data name="newdb_title" xml:space="preserve">
+    <value>Ny databas</value>
+  </data>
+  <data name="newdb_header" xml:space="preserve">
+    <value>Inställningar för ny databas</value>
+  </data>
+  <data name="newdb_db" xml:space="preserve">
+    <value>Databasens namn</value>
+  </data>
+  <data name="newdb_path" xml:space="preserve">
+    <value>Sökväg till databasen</value>
+  </data>
+  <data name="newdb_err" xml:space="preserve">
+    <value>Det gick inte att skapa databasen</value>
+  </data>
+  <data name="newdb_edb" xml:space="preserve">
+    <value>Databasens namn saknas eller är felaktigt</value>
+  </data>
+  <data name="newdb_ecannot" xml:space="preserve">
+    <value>Du får inte skapa databaser</value>
+  </data>
+  <data name="newdb_epath" xml:space="preserve">
+    <value>Du har inte angivit någon sökväg till databasen</value>
+  </data>
+  <data name="user_title" xml:space="preserve">
+    <value>PostgreSQL-användare</value>
+  </data>
+  <data name="user_ecannot" xml:space="preserve">
+    <value>Du får inte ändra användare</value>
+  </data>
+  <data name="user_name" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="user_db" xml:space="preserve">
+    <value>Kunna skapa databaser?</value>
+  </data>
+  <data name="user_other" xml:space="preserve">
+    <value>Kunna lägga till användare?</value>
+  </data>
+  <data name="user_until" xml:space="preserve">
+    <value>Giltig till</value>
+  </data>
+  <data name="user_add" xml:space="preserve">
+    <value>Lägg till användare</value>
+  </data>
+  <data name="user_forever" xml:space="preserve">
+    <value>Alltid</value>
+  </data>
+  <data name="user_pass" xml:space="preserve">
+    <value>Krävs lösenord?</value>
+  </data>
+  <data name="user_edit" xml:space="preserve">
+    <value>Ändra användare</value>
+  </data>
+  <data name="user_create" xml:space="preserve">
+    <value>Lägg till användare</value>
+  </data>
+  <data name="user_return" xml:space="preserve">
+    <value>användarlista</value>
+  </data>
+  <data name="user_header" xml:space="preserve">
+    <value>Uppgifter om PostgreSQL-användare</value>
+  </data>
+  <data name="user_passwd" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="user_none" xml:space="preserve">
+    <value>Inget</value>
+  </data>
+  <data name="user_err" xml:space="preserve">
+    <value>Det gick inte att spara användaren</value>
+  </data>
+  <data name="user_epass" xml:space="preserve">
+    <value>Lösenord saknas eller är ogiltigt</value>
+  </data>
+  <data name="user_ename" xml:space="preserve">
+    <value>Användarnamn saknas eller är ogiltigt</value>
+  </data>
+  <data name="host_ecannot" xml:space="preserve">
+    <value>Du får inte ändra tillåtna datorer</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Tillåtna datorer</value>
+  </data>
+  <data name="host_local" xml:space="preserve">
+    <value>Lokal uppkoppling</value>
+  </data>
+  <data name="host_address" xml:space="preserve">
+    <value>Datoradress</value>
+  </data>
+  <data name="host_db" xml:space="preserve">
+    <value>Databas</value>
+  </data>
+  <data name="host_auth" xml:space="preserve">
+    <value>Autentiseringsmod</value>
+  </data>
+  <data name="host_any" xml:space="preserve">
+    <value>Valfri dator i nätverket</value>
+  </data>
+  <data name="host_all" xml:space="preserve">
+    <value>Alla databaser</value>
+  </data>
+  <data name="host_same" xml:space="preserve">
+    <value>Samma som användarnamnet</value>
+  </data>
+  <data name="host_add" xml:space="preserve">
+    <value>Lägg till en tillåten dator</value>
+  </data>
+  <data name="host_ident" xml:space="preserve">
+    <value>Kontrollera &lt;tt&gt;ident&lt;/tt&gt;-servern på datorn</value>
+  </data>
+  <data name="host_trust" xml:space="preserve">
+    <value>Ingen autentisering krävs</value>
+  </data>
+  <data name="host_reject" xml:space="preserve">
+    <value>Spärra förbindelsen</value>
+  </data>
+  <data name="host_password" xml:space="preserve">
+    <value>Lösenord i klartext</value>
+  </data>
+  <data name="host_crypt" xml:space="preserve">
+    <value>Krypterat lösenord</value>
+  </data>
+  <data name="host_krb4" xml:space="preserve">
+    <value>Kerberos V4</value>
+  </data>
+  <data name="host_krb5" xml:space="preserve">
+    <value>Kerberos V5</value>
+  </data>
+  <data name="host_passwordarg" xml:space="preserve">
+    <value>Använd lösenordsfil</value>
+  </data>
+  <data name="host_create" xml:space="preserve">
+    <value>Lägg till tillåten dator</value>
+  </data>
+  <data name="host_edit" xml:space="preserve">
+    <value>Ändra tillåten dator</value>
+  </data>
+  <data name="host_single" xml:space="preserve">
+    <value>Enskild dator</value>
+  </data>
+  <data name="host_network" xml:space="preserve">
+    <value>Nätverk</value>
+  </data>
+  <data name="host_netmask" xml:space="preserve">
+    <value>Nätmask</value>
+  </data>
+  <data name="host_return" xml:space="preserve">
+    <value>datorlista</value>
+  </data>
+  <data name="host_err" xml:space="preserve">
+    <value>Det gick inte att spara tillåtna datorer</value>
+  </data>
+  <data name="host_eident" xml:space="preserve">
+    <value>Användaromskrivning saknas eller är ogiltig</value>
+  </data>
+  <data name="host_epassword" xml:space="preserve">
+    <value>Lösenordsfil saknas eller är ogiltig</value>
+  </data>
+  <data name="host_enetmask" xml:space="preserve">
+    <value>Nätmask saknas eller är ogiltig</value>
+  </data>
+  <data name="host_enetwork" xml:space="preserve">
+    <value>Nätverk saknas eller är ogiltigt</value>
+  </data>
+  <data name="host_ehost" xml:space="preserve">
+    <value>IP-adress för datorn saknas eller är ogiltig</value>
+  </data>
+  <data name="grant_title" xml:space="preserve">
+    <value>Utdelade rättigheter</value>
+  </data>
+  <data name="grant_tvi" xml:space="preserve">
+    <value>Objekt</value>
+  </data>
+  <data name="grant_type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="grant_db" xml:space="preserve">
+    <value>Databas</value>
+  </data>
+  <data name="grant_public" xml:space="preserve">
+    <value>Alla</value>
+  </data>
+  <data name="grant_group" xml:space="preserve">
+    <value>Grupp $1</value>
+  </data>
+  <data name="grant_add" xml:space="preserve">
+    <value>Dela ut rättigheter till databas:</value>
+  </data>
+  <data name="grant_return" xml:space="preserve">
+    <value>rättighetslista</value>
+  </data>
+  <data name="grant_ecannot" xml:space="preserve">
+    <value>Du får inte ändra rättigheter</value>
+  </data>
+  <data name="grant_create" xml:space="preserve">
+    <value>Lägg till rättighet</value>
+  </data>
+  <data name="grant_edit" xml:space="preserve">
+    <value>Ändra rättighet</value>
+  </data>
+  <data name="grant_header" xml:space="preserve">
+    <value>Rättigheter utdelade till användare</value>
+  </data>
+  <data name="grant_to" xml:space="preserve">
+    <value>Dela ut rättigheter för</value>
+  </data>
+  <data name="grant_table" xml:space="preserve">
+    <value>Tabell</value>
+  </data>
+  <data name="grant_view" xml:space="preserve">
+    <value>Vy eller index</value>
+  </data>
+  <data name="grant_users" xml:space="preserve">
+    <value>Dela ut rättigheter till</value>
+  </data>
+  <data name="grant_user" xml:space="preserve">
+    <value>Användare</value>
+  </data>
+  <data name="grant_what" xml:space="preserve">
+    <value>Rättigheter</value>
+  </data>
+  <data name="grant_r" xml:space="preserve">
+    <value>Tabell</value>
+  </data>
+  <data name="grant_v" xml:space="preserve">
+    <value>Vy</value>
+  </data>
+  <data name="grant_i" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="grant_S" xml:space="preserve">
+    <value>Sekvens</value>
+  </data>
+  <data name="grant_none" xml:space="preserve">
+    <value>Det finns inga tabeller, vyer, sekvenser eller index att dela ut rättigheter för.</value>
+  </data>
+  <data name="group_title" xml:space="preserve">
+    <value>PostgreSQL-grupper</value>
+  </data>
+  <data name="group_ecannot" xml:space="preserve">
+    <value>Du får inte ändra grupper</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Gruppnamn</value>
+  </data>
+  <data name="group_id" xml:space="preserve">
+    <value>Grupp-ID</value>
+  </data>
+  <data name="group_mems" xml:space="preserve">
+    <value>Medlemmar</value>
+  </data>
+  <data name="group_add" xml:space="preserve">
+    <value>Lägg till grupp</value>
+  </data>
+  <data name="group_edit" xml:space="preserve">
+    <value>Ändra grupp</value>
+  </data>
+  <data name="group_create" xml:space="preserve">
+    <value>Lägg till grupp</value>
+  </data>
+  <data name="group_header" xml:space="preserve">
+    <value>Uppgifter om PostgreSQL-grupp</value>
+  </data>
+  <data name="group_return" xml:space="preserve">
+    <value>grupplista</value>
+  </data>
+  <data name="group_err" xml:space="preserve">
+    <value>Det gick inte att spara gruppen</value>
+  </data>
+  <data name="group_ename" xml:space="preserve">
+    <value>Gruppens namn saknas eller är ogiltigt</value>
+  </data>
+  <data name="group_egid" xml:space="preserve">
+    <value>Grupp-ID saknas eller är ogiltigt</value>
+  </data>
+  <data name="group_etaken" xml:space="preserve">
+    <value>Gruppnamnet används redan</value>
+  </data>
+  <data name="group_none" xml:space="preserve">
+    <value>Det finns för närvarande inga PostgreSQL-grupper</value>
+  </data>
+  <data name="esql" xml:space="preserve">
+    <value>SQL $1 gick fel: $2</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Startade PostgreSQL-server</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Stannade PostgreSQL-server</value>
+  </data>
+  <data name="log_db_create" xml:space="preserve">
+    <value>Lade till databasen $1</value>
+  </data>
+  <data name="log_db_delete" xml:space="preserve">
+    <value>Tog bort databasen $1</value>
+  </data>
+  <data name="log_table_create" xml:space="preserve">
+    <value>Lade till tabellen $1 i databasen $2</value>
+  </data>
+  <data name="log_table_delete" xml:space="preserve">
+    <value>Tog bort tabellen $1 från databasen $2</value>
+  </data>
+  <data name="log_field_create" xml:space="preserve">
+    <value>Lade till fält $1 $4 till $2 i databasen $3</value>
+  </data>
+  <data name="log_field_modify" xml:space="preserve">
+    <value>Modifierade fält $1 $4 i $2 i databasen $3</value>
+  </data>
+  <data name="log_field_delete" xml:space="preserve">
+    <value>Tog bort fält $1 från $2 i databasen $3</value>
+  </data>
+  <data name="log_data_create" xml:space="preserve">
+    <value>Lade till en rad till tabell $2 i databasen $3</value>
+  </data>
+  <data name="log_data_modify" xml:space="preserve">
+    <value>Modifierade $1 rader i tabell $2 i databasen $3</value>
+  </data>
+  <data name="log_data_delete" xml:space="preserve">
+    <value>Tog bort $1 rader från tabell $2 i databasen $3</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Körde SQL i databasen $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Utförde SQL-kommando $2 i databasen $1</value>
+  </data>
+  <data name="log_create_user" xml:space="preserve">
+    <value>Lade till användaren $1</value>
+  </data>
+  <data name="log_delete_user" xml:space="preserve">
+    <value>Tog bort användaren $1</value>
+  </data>
+  <data name="log_modify_user" xml:space="preserve">
+    <value>Modifierade användaren $1</value>
+  </data>
+  <data name="log_create_group" xml:space="preserve">
+    <value>Lade till gruppen $1</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>Tog bort gruppen $1</value>
+  </data>
+  <data name="log_modify_group" xml:space="preserve">
+    <value>Modifierade gruppen $1</value>
+  </data>
+  <data name="log_create_local" xml:space="preserve">
+    <value>Lade till tillåten lokal uppkoppling</value>
+  </data>
+  <data name="log_modify_local" xml:space="preserve">
+    <value>Modifierade tillåten lokal uppkoppling</value>
+  </data>
+  <data name="log_delete_local" xml:space="preserve">
+    <value>Tog bort tillåten lokal uppkoppling</value>
+  </data>
+  <data name="log_create_all" xml:space="preserve">
+    <value>Lade till en tillåten dator</value>
+  </data>
+  <data name="log_modify_all" xml:space="preserve">
+    <value>Modifierade en tillåten dator</value>
+  </data>
+  <data name="log_delete_all" xml:space="preserve">
+    <value>Tog bort en tillåten dator</value>
+  </data>
+  <data name="log_create_hba" xml:space="preserve">
+    <value>Lade till tillåten dator $1</value>
+  </data>
+  <data name="log_modify_hba" xml:space="preserve">
+    <value>Modifierade tillåten dator $1</value>
+  </data>
+  <data name="log_delete_hba" xml:space="preserve">
+    <value>Tog bort tillåten dator $1</value>
+  </data>
+  <data name="log_grant" xml:space="preserve">
+    <value>Delade ut rättigheter för $1 i databasen $2</value>
+  </data>
+  <data name="acl_dbs" xml:space="preserve">
+    <value>Databaser som denna användare får administrera</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>Alla databaser</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>Angivna</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Kunna skapa nya databaser?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kunna ta bort databaser?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Kunna stanna och starta PostgreSQL-servern?</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Kunna ändra användare, grupper och rättigheter?</value>
+  </data>
+</root>

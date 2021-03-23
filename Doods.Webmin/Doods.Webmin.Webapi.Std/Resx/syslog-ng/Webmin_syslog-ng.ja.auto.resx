@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>システムログNG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>設定を適用</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>このボタンをクリックして、現在のSyslog-NG構成をアクティブにします。</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Syslog-NGを停止します</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>このボタンをクリックして、実行中のSyslog-NGデーモンを停止します。停止すると、他のプログラムからのログメッセージはログファイルに書き込まれなくなります。</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Syslog-NGを起動します</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>このボタンをクリックして、現在の構成を使用してSyslog-NGデーモンを起動します。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>モジュールインデックス</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1</value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>ロギングオプション</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>すべてのログファイルのオプション</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>エントリー</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>切断された接続を再度開くまで待機する時間</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>アイドル接続を閉じる前に待機する時間</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>書き込み前にバッファするメッセージ</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>統計メッセージ間の待機時間</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>バッファリングするメッセージの数</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>連鎖ホスト名形式を使用しますか？</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>元のホスト名を保持しますか？</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>有効な文字のホスト名を確認しますか？</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>不正なホスト名の正規表現</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>必要に応じてログファイルのディレクトリを作成しますか？</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>ログファイルのデフォルトの所有者</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>ログファイルのデフォルトグループ</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>ログファイルの既定のアクセス許可</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>作成されたディレクトリのデフォルト所有者</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>作成されたディレクトリのデフォルトグループ</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>作成されたディレクトリのデフォルトの許可</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>ログ時間メッセージを受信しましたか？</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>DNSルックアップを逆にしますか？</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>DNSルックアップをキャッシュしますか？</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>DNSキャッシュのサイズ</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>のDNSレコードをキャッシュする</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>失敗したDNSルックアップのキャッシュ</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>最大ログメッセージサイズ</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>完全なホスト名を記録しますか？</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>ファイル名の制御文字を置き換えますか？</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>ロギングオプションを保存できませんでした</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>不正なホスト名に対する正規表現の欠落または無効</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>DNSキャッシュサイズの欠落または非数値</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>欠落または非数値のDNSキャッシュ時間</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>DNSキャッシュ時間の欠落または非数値の失敗</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>ログファイルのデフォルトの所有者が見つかりません</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>ログファイルのデフォルトグループがありません</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>ログファイルのデフォルトの権限がありません</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>ディレクトリのデフォルト所有者がありません</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>ディレクトリのデフォルトグループがありません</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>ディレクトリのデフォルトの権限がありません</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>切断された接続を待機するための欠落した時間または非数値の時間</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>理想的な接続を待つ時間がないか、数値ではない</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>書き込み前にバッファするメッセージの数が欠落しているか無効です</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>統計メッセージ間で待機する時間がないか、数値ではありません</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>バッファリングするメッセージが欠落しているか無効です</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>ログメッセージの最大サイズの欠落または非数値</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>ログ宛先</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>宛先名</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>に書き込む</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>ログの宛先</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>ログインしているユーザー</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>プログラム入力</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unixパイプ</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP syslogサーバー</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslogサーバー</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>データグラムソケット</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>ストリームソケット</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>すべてのユーザー</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>ユーザーのみ $1</value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>ホスト $1</value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>見る ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>宛先ログファイルはまだ定義されていません。</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>選択した宛先を削除</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>新しいログ宛先を追加します。</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>ログ宛先</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>他のモジュールのログ</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>$1からの出力</value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>ログ宛先オプション</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>ログ宛先の作成</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>ログ宛先の編集</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>ログ宛先名</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>..にログインします</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>ファイル名</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>ディレクトリを作成しますか？</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>ディレクトリの権限</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>書き込みごとに同期しますか？</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>ログファイルのグループ</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>ログファイルの所有者</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>ログファイルのアクセス許可</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>同期間のメッセージ</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>リストされたユーザー</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>syslogサーバー</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>ネットワークプロトコル</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>サーバーアドレス</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>サーバポート</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>ローカルIPアドレス</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>ローカルポート</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unixソケット</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>タイプ</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>ソケット名</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>宛先を保存できませんでした</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>同じ名前の宛先がすでに存在します</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>宛先はもう存在しません！</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>ファイル名がないか無効です</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>ログファイルの所有者が見つからないか無効です</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>ログファイルグループが見つからないか無効です</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>欠落または8進数以外のログファイルアクセス許可</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>欠落している、または8進数以外のディレクトリー許可</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>同期間のメッセージの欠落または無効な数</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>行方不明のユーザー</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>フィードするプログラムがありません</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Unixパイプファイルがありません</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>ポート番号が欠落しているか無効です</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>ローカルIPアドレスが見つからないか無効です</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>ローカルポート番号が欠落しているか無効です</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Syslogサーバーのホストまたはアドレスが欠落しているか無効です</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Unixソケット名がありません</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>宛先を削除できませんでした</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>何も選択されていません</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>宛先 $1はログターゲットで使用されているため、削除できません</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>ソースを削除できませんでした</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>何も選択されていません</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>ログソース $1はログターゲットで使用されているため、削除できません</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>フィルターを削除できませんでした</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>何も選択されていません</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>ログフィルター $1はログターゲットで使用されているため、削除できません</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>ログターゲットを削除できませんでした</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>何も選択されていません</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>ログフィルター</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>フィルター名</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>条件</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>ログフィルタはまだ定義されていません。</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>選択したフィルターを削除</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>新しいログフィルターを追加します。</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>ログフィルター</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>優先度&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>優先度&lt;tt&gt;$1&lt;/tt&gt;-&lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1の優先度</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>施設&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1施設</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>プログラム&lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>「$1」に一致</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>ホスト名&lt;tt&gt;$1&lt;/tt&gt;から</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>送信者&lt;tt&gt;$1&lt;/tt&gt;から</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>ログフィルターの作成</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>ログフィルターの編集</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>ログフィルター仕様の詳細</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>フィルター名</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>単純な条件（すべてが一致する必要があります）</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>複雑な表現</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>優先的に ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>プログラムから</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>一致表現 ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>施設から ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>ホスト名から。</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>IPネットワークから</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>ログフィルターを保存できませんでした</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>フィルター名が欠落しているか無効です</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>同じ名前のフィルターが既に存在します</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>入力時にフィルタリングするものはありません</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>優先順位が選択されていません</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>施設が選択されていません</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>プログラム名が欠落しているか無効です</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>正規表現がありません</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>ホスト名が欠落しているか無効です</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>ネットワークIPアドレスが欠落しているか無効です</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>ネットマスクが欠落しているか無効です</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>複雑な式のエラー</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>フィルターはもう存在しません！</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>ログターゲット</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>ソース</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>フィルター</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>行き先</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>新しいログターゲットを追加します。</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>選択したログターゲットを削除する</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>ログターゲット</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>ログターゲットの作成</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>ログターゲットの編集</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>ログのソース、フィルター、および宛先の選択</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>ログソース</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>適用するフィルター</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>宛先ファイル</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>これ以上ターゲットを処理しない</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>フォールバックログターゲット</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>すべてのソースを処理する</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>ターゲットオプション</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>ログターゲットはもう存在しません！</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>ログターゲットを保存できませんでした</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>ソースが選択されていません</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>ログソース</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>ソースはまだ定義されていません！</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>新しいログソースを追加します。</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>ソース名</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>ログデータソース</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>選択したソースを削除</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>内部Syslog-NGメッセージ</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>ストリームソケット</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>データグラムソケット</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCPサーバー</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDPサーバー</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>カーネルログファイル</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>名前付きパイプ</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>太陽の流れ</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>syslogサーバー</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>ログソース</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>ログソースを作成する</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>ログソースの編集</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>ログソースオプション</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>どれか</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>ソースはもう存在しません！</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>ソース名</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>ログソースタイプ</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>ソケットファイルの所有者</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>ソケットファイルグループ</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>ソケットファイルのアクセス許可</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>再起動中に接続を開いたままにしますか？</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>最大同時接続数は？</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>ローカルIPアドレス</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>ローカルポート番号</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>TCPキープアライブを使用しますか？</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>ログメッセージのプレフィックス</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>メッセージブロックサイズ</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>ログソースを保存できませんでした</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>ソース名が欠落しているか無効です</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>同じ名前のログソースが既に存在します</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>ソケットファイルの所有者が見つからないか無効です</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>ソケットファイルグループが見つからないか無効です</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>ソケットファイルの権限がないか、8進数以外</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>最大接続数の欠落または無効</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>ローカルIPアドレスが見つからないか無効です</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>ローカルポート番号が欠落しているか無効です</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>ログメッセージのプレフィックスがありません</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>欠落または非数値のメッセージブロックサイズ</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Unixソケットファイル名が欠落しているか無効です</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>カーネルログファイル名が欠落しているか無効です</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>名前付きパイプファイル名が欠落しているか無効です</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>ドアのファイル名</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Sunストリームのファイル名が欠落しているか無効です</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Sunストリームドアファイル名が欠落しているか無効です</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>ネットワークプロトコル</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>ログファイルを表示</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$2の最後の $1行</value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>ログファイルが空です</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>リフレッシュ</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>テキスト $1の行のみを表示</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>構成を適用できませんでした</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>走っていない！</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Syslog-NGサーバーの起動に失敗しました</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Syslog-NGサーバーの停止に失敗しました</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>ログ宛先 $1を作成しました</value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>変更されたログの宛先 $1</value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>ログの宛先 $1を削除しました</value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1のログ宛先を削除しました</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>ログフィルター $1を作成しました</value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>変更されたログフィルター $1</value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>ログフィルター $1を削除しました</value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>$1ログフィルターを削除しました</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>ログソース $1を作成しました</value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>変更されたログソース $1</value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>ログソース $1を削除しました</value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>$1ログソースを削除しました</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>作成されたログターゲット</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>変更されたログターゲット</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>削除されたログターゲット</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1ログターゲットを削除しました</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>適用された構成</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Syslog-NGサーバーを起動しました</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Syslog-NGサーバーを停止しました</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>変更されたグローバルオプション</value>
+  </data>
+</root>

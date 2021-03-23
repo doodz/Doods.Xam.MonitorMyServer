@@ -2,11 +2,8 @@
 {
     public class RevertChangesBgRequest : OmvRequestBase
     {
-
-        public RevertChangesBgRequest() : base($"omv-rpc Config revertChangesBg")
+        public RevertChangesBgRequest() : base("omv-rpc Config revertChangesBg")
         {
-
-
         }
     }
 }

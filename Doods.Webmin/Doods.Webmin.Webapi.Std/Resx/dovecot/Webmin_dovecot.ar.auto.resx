@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_dovecot" xml:space="preserve">
+    <value>برج الحمام</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>وقف خادم Dovecot</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>قم بإيقاف تشغيل عملية خادم Dovecot IMAP / POP3 الجاري. هذا سيمنع المستخدمين من تنزيل بريدهم الإلكتروني.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>بدء تشغيل خادم Dovecot</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>ابدأ عملية خادم Dovecot IMAP / POP3 ، بحيث يمكن للمستخدمين تنزيل بريدهم الإلكتروني.</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>تطبيق التكوين</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>قم بتنشيط تكوين Dovecot الحالي عن طريق إيقاف عملية الخادم وإعادة تشغيلها.</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>البدء في التمهيد؟</value>
+  </data>
+  <data name="index_bootdesc" xml:space="preserve">
+    <value>قم بتغيير هذا الإعداد لتمكين أو تعطيل بدء تشغيل خادم Dovecot في وقت تشغيل النظام.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>مؤشر الوحدة</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Version $1</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>فشل في إيقاف Dovecot</value>
+  </data>
+  <data name="stop_erunning" xml:space="preserve">
+    <value>لم يعد يعمل</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>فشل في بدء تشغيل Dovecot</value>
+  </data>
+  <data name="start_eprotos" xml:space="preserve">
+    <value>No protocols selected on the &lt;b&gt;Networking and Protocols&lt;/b&gt; page</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>فشل في تطبيق التكوين</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>الشبكات والبروتوكولات</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Dovecot الشبكات وخيارات بروتوكول البريد</value>
+  </data>
+  <data name="net_protocols" xml:space="preserve">
+    <value>خدمة بروتوكولات البريد</value>
+  </data>
+  <data name="net_pop3" xml:space="preserve">
+    <value>POP3</value>
+  </data>
+  <data name="net_imap" xml:space="preserve">
+    <value>IMAP</value>
+  </data>
+  <data name="net_pop3s" xml:space="preserve">
+    <value>POP3 (SSL)</value>
+  </data>
+  <data name="net_imaps" xml:space="preserve">
+    <value>IMAP (SSL)</value>
+  </data>
+  <data name="net_lmtp" xml:space="preserve">
+    <value>LMTP</value>
+  </data>
+  <data name="net_ssl_disable" xml:space="preserve">
+    <value>هل تقبل اتصالات SSL؟</value>
+  </data>
+  <data name="net_imap_listen" xml:space="preserve">
+    <value>واجهات لاتصالات IMAP</value>
+  </data>
+  <data name="net_pop3_listen" xml:space="preserve">
+    <value>واجهات لاتصالات POP3</value>
+  </data>
+  <data name="net_imaps_listen" xml:space="preserve">
+    <value>واجهات لاتصالات IMAP SSL</value>
+  </data>
+  <data name="net_pop3s_listen" xml:space="preserve">
+    <value>واجهات لاتصالات POP3 SSL</value>
+  </data>
+  <data name="net_listen" xml:space="preserve">
+    <value>واجهات للاتصالات غير SSL</value>
+  </data>
+  <data name="net_ssl_listen" xml:space="preserve">
+    <value>واجهات لاتصالات SSL</value>
+  </data>
+  <data name="net_listen0" xml:space="preserve">
+    <value>إفتراضي</value>
+  </data>
+  <data name="net_listen1" xml:space="preserve">
+    <value>جميع IPv4 و IPv6</value>
+  </data>
+  <data name="net_listen2" xml:space="preserve">
+    <value>جميع IPv4</value>
+  </data>
+  <data name="net_listen3" xml:space="preserve">
+    <value>عنوان IP</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات الشبكات</value>
+  </data>
+  <data name="net_eimap_listen" xml:space="preserve">
+    <value>عنوان IP غير صالح لاتصالات IMAP</value>
+  </data>
+  <data name="net_epop3_listen" xml:space="preserve">
+    <value>عنوان IP غير صالح لاتصالات POP3</value>
+  </data>
+  <data name="net_eimaps_listen" xml:space="preserve">
+    <value>عنوان IP غير صالح لاتصالات IMAP SSL</value>
+  </data>
+  <data name="net_epop3s_listen" xml:space="preserve">
+    <value>عنوان IP غير صالح لاتصالات POP3 SSL</value>
+  </data>
+  <data name="net_elisten" xml:space="preserve">
+    <value>عنوان IP غير صالح للاتصالات غير SSL</value>
+  </data>
+  <data name="net_essl_listen" xml:space="preserve">
+    <value>عنوان IP غير صالح لاتصالات SSL</value>
+  </data>
+  <data name="imap_title" xml:space="preserve">
+    <value>خيارات IMAP</value>
+  </data>
+  <data name="pop3_title" xml:space="preserve">
+    <value>خيارات POP3</value>
+  </data>
+  <data name="ssl_title" xml:space="preserve">
+    <value>تكوين SSL</value>
+  </data>
+  <data name="ssl_header" xml:space="preserve">
+    <value>خيارات وضع IMAP و POP3 SSL</value>
+  </data>
+  <data name="ssl_key" xml:space="preserve">
+    <value>SSL ملف المفتاح الخاص</value>
+  </data>
+  <data name="ssl_cert" xml:space="preserve">
+    <value>ملف شهادة SSL</value>
+  </data>
+  <data name="ssl_ca" xml:space="preserve">
+    <value>SSL شهادة ملف العميل CA</value>
+  </data>
+  <data name="ssl_pass" xml:space="preserve">
+    <value>كلمة السر لملف المفتاح</value>
+  </data>
+  <data name="ssl_prompt" xml:space="preserve">
+    <value>لا حاجة</value>
+  </data>
+  <data name="ssl_regen" xml:space="preserve">
+    <value>الفاصل الزمني بين تجديد معلمة SSL</value>
+  </data>
+  <data name="ssl_hours" xml:space="preserve">
+    <value>ساعات</value>
+  </data>
+  <data name="ssl_none" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="ssl_plain" xml:space="preserve">
+    <value>عدم السماح مصادقة النص العادي في وضع غير SSL؟</value>
+  </data>
+  <data name="ssl_err" xml:space="preserve">
+    <value>فشل في حفظ تكوين SSL</value>
+  </data>
+  <data name="ssl_ekey" xml:space="preserve">
+    <value>ملف مفتاح خاص مفقود أو غير موجود</value>
+  </data>
+  <data name="ssl_ecert" xml:space="preserve">
+    <value>ملف الشهادة مفقود أو غير موجود</value>
+  </data>
+  <data name="ssl_eca" xml:space="preserve">
+    <value>ملف شهادة المرجع المصدق للعميل مفقود أو غير موجود</value>
+  </data>
+  <data name="ssl_eregen" xml:space="preserve">
+    <value>فاصل تجديد المعلمة مفقود أو غير رقمي</value>
+  </data>
+  <data name="ssl_epass" xml:space="preserve">
+    <value>لم يتم إدخال كلمة مرور ملف مفتاح SSL</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>خيارات أخرى</value>
+  </data>
+  <data name="login_title" xml:space="preserve">
+    <value>خيارات المستخدم وتسجيل الدخول</value>
+  </data>
+  <data name="login_header" xml:space="preserve">
+    <value>مصادقة المستخدم وخيارات تسجيل الدخول</value>
+  </data>
+  <data name="login_fuid" xml:space="preserve">
+    <value>الحد الأدنى صالح UID</value>
+  </data>
+  <data name="login_luid" xml:space="preserve">
+    <value>أقصى معرف صالح</value>
+  </data>
+  <data name="login_fgid" xml:space="preserve">
+    <value>الحد الأدنى صالح معرف المجموعة</value>
+  </data>
+  <data name="login_lgid" xml:space="preserve">
+    <value>أقصى معرف مجموعة صالح</value>
+  </data>
+  <data name="login_extra" xml:space="preserve">
+    <value>مجموعات ثانوية ممنوحة</value>
+  </data>
+  <data name="login_none" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="login_chroot" xml:space="preserve">
+    <value>دليل Chroot لعملية البريد</value>
+  </data>
+  <data name="login_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات المستخدم وتسجيل الدخول</value>
+  </data>
+  <data name="login_efuid" xml:space="preserve">
+    <value>الحد الأدنى أو غير الصحيح لمعرف UID الأدنى</value>
+  </data>
+  <data name="login_eluid" xml:space="preserve">
+    <value>مفقود أو غير صالح الحد الأقصى لمعرف UID</value>
+  </data>
+  <data name="login_efgid" xml:space="preserve">
+    <value>معرف مجموعة الحد الأدنى الرقمي مفقود أو غير صالح</value>
+  </data>
+  <data name="login_elgid" xml:space="preserve">
+    <value>معرف مجموعة الحد الأقصى الرقمي مفقود أو غير صالح</value>
+  </data>
+  <data name="login_echroot" xml:space="preserve">
+    <value>دليل chroot مفقود أو غير صالح</value>
+  </data>
+  <data name="login_realms" xml:space="preserve">
+    <value>عوالم مصادقة SASL</value>
+  </data>
+  <data name="login_realm" xml:space="preserve">
+    <value>مجال المصادقة الافتراضي</value>
+  </data>
+  <data name="login_mechs" xml:space="preserve">
+    <value>طرق المصادقة</value>
+  </data>
+  <data name="login_anonymous" xml:space="preserve">
+    <value>مجهول</value>
+  </data>
+  <data name="login_plain" xml:space="preserve">
+    <value>نص عادي</value>
+  </data>
+  <data name="login_digest-md5" xml:space="preserve">
+    <value>خلاصة-MD5</value>
+  </data>
+  <data name="login_cram-md5" xml:space="preserve">
+    <value>كرام-MD5</value>
+  </data>
+  <data name="login_apop" xml:space="preserve">
+    <value>APOP</value>
+  </data>
+  <data name="login_userdb" xml:space="preserve">
+    <value>مصدر البيانات للمستخدمين والمنازل ومعرفات</value>
+  </data>
+  <data name="login_passwd" xml:space="preserve">
+    <value>قاعدة بيانات المستخدم يونيكس القياسية</value>
+  </data>
+  <data name="login_passwdfile" xml:space="preserve">
+    <value>Custom password file $1</value>
+  </data>
+  <data name="login_static" xml:space="preserve">
+    <value>Always use UID $1, GID $2 and home $3</value>
+  </data>
+  <data name="login_vpopmail" xml:space="preserve">
+    <value>مكتبة VPOPMail</value>
+  </data>
+  <data name="login_ldap" xml:space="preserve">
+    <value>LDAP, using config file $1</value>
+  </data>
+  <data name="login_pgsql" xml:space="preserve">
+    <value>PostgreSQL, using config file $1</value>
+  </data>
+  <data name="login_sql" xml:space="preserve">
+    <value>SQL database, using config file $1</value>
+  </data>
+  <data name="login_passdb" xml:space="preserve">
+    <value>مصدر مصادقة كلمة المرور</value>
+  </data>
+  <data name="login_passwd2" xml:space="preserve">
+    <value>Unix &lt;tt&gt;passwd&lt;/tt&gt; file</value>
+  </data>
+  <data name="login_shadow" xml:space="preserve">
+    <value>Unix &lt;tt&gt;shadow&lt;/tt&gt; file</value>
+  </data>
+  <data name="login_dpam" xml:space="preserve">
+    <value>Default PAM service (&lt;tt&gt;dovecot&lt;/tt&gt;)</value>
+  </data>
+  <data name="login_pam" xml:space="preserve">
+    <value>PAM service $1</value>
+  </data>
+  <data name="login_session" xml:space="preserve">
+    <value>فتح وإغلاق جلسات PAM</value>
+  </data>
+  <data name="login_pam2" xml:space="preserve">
+    <value>PAM service $1&lt;br&gt;&amp;nbsp;&amp;nbsp;$2&lt;br&gt;&amp;nbsp;&amp;nbsp;Use cache key $3</value>
+  </data>
+  <data name="login_other" xml:space="preserve">
+    <value>Other Dovecot setting $1</value>
+  </data>
+  <data name="login_epasswdfile" xml:space="preserve">
+    <value>ملف كلمة مرور مخصص مفقود أو غير موجود</value>
+  </data>
+  <data name="login_euid" xml:space="preserve">
+    <value>معرف UID مفقود أو غير رقمي</value>
+  </data>
+  <data name="login_egid" xml:space="preserve">
+    <value>GID مفقود أو غير رقمي</value>
+  </data>
+  <data name="login_ehome" xml:space="preserve">
+    <value>مفقود الدليل الرئيسي</value>
+  </data>
+  <data name="login_eldap" xml:space="preserve">
+    <value>ملف تكوين LDAP مفقود أو غير موجود</value>
+  </data>
+  <data name="login_epgsql" xml:space="preserve">
+    <value>ملف تكوين PostgreSQL مفقود أو غير موجود</value>
+  </data>
+  <data name="login_esql" xml:space="preserve">
+    <value>ملف تكوين SQL مفقود أو غير موجود</value>
+  </data>
+  <data name="login_eppam" xml:space="preserve">
+    <value>خدمة PAM مفقودة أو غير صالحة</value>
+  </data>
+  <data name="login_bsdauth" xml:space="preserve">
+    <value>BSD authentication&lt;br&gt;&amp;nbsp;&amp;nbsp;Use cache key $1</value>
+  </data>
+  <data name="login_checkpassword" xml:space="preserve">
+    <value>External program $1</value>
+  </data>
+  <data name="login_eckey" xml:space="preserve">
+    <value>مفتاح ذاكرة التخزين المؤقت مفقود أو غير صالح</value>
+  </data>
+  <data name="login_echeckpassword" xml:space="preserve">
+    <value>برنامج فحص كلمة المرور الخارجية مفقود أو غير صالح</value>
+  </data>
+  <data name="login_procs" xml:space="preserve">
+    <value>عمليات تسجيل الدخول القصوى</value>
+  </data>
+  <data name="login_count" xml:space="preserve">
+    <value>عمليات تسجيل الدخول الأولية</value>
+  </data>
+  <data name="login_eprocs" xml:space="preserve">
+    <value>مفقود أو غير صالح أقصى عدد عمليات تسجيل الدخول</value>
+  </data>
+  <data name="login_ecount" xml:space="preserve">
+    <value>عدد أولي مفقود أو غير صالح لعمليات تسجيل الدخول</value>
+  </data>
+  <data name="mail_title" xml:space="preserve">
+    <value>ملفات البريد</value>
+  </data>
+  <data name="mail_header" xml:space="preserve">
+    <value>موقع البريد وخيارات القراءة</value>
+  </data>
+  <data name="mail_env" xml:space="preserve">
+    <value>موقع ملف البريد</value>
+  </data>
+  <data name="mail_env0" xml:space="preserve">
+    <value>كشف تلقائيا</value>
+  </data>
+  <data name="mail_env1" xml:space="preserve">
+    <value>Inbox and folders in &lt;tt&gt;~/Maildir&lt;/tt&gt;</value>
+  </data>
+  <data name="mail_env2" xml:space="preserve">
+    <value>Inbox under &lt;tt&gt;/var/mail&lt;/tt&gt;, folders in &lt;tt&gt;~/mail&lt;/tt&gt;</value>
+  </data>
+  <data name="mail_env3" xml:space="preserve">
+    <value>Inbox in &lt;tt&gt;~/Maildir&lt;/tt&gt;, folders in &lt;tt&gt;~/mail&lt;/tt&gt;</value>
+  </data>
+  <data name="mail_env4" xml:space="preserve">
+    <value>Other Dovecot location $1</value>
+  </data>
+  <data name="mail_index" xml:space="preserve">
+    <value>موقع ملفات الفهرس</value>
+  </data>
+  <data name="mail_index0" xml:space="preserve">
+    <value>الافتراضي (في دليل Maildir)</value>
+  </data>
+  <data name="mail_index1" xml:space="preserve">
+    <value>في الذاكرة فقط</value>
+  </data>
+  <data name="mail_index2" xml:space="preserve">
+    <value>Other directory $1</value>
+  </data>
+  <data name="mail_control" xml:space="preserve">
+    <value>موقع ملفات التحكم</value>
+  </data>
+  <data name="mail_check" xml:space="preserve">
+    <value>الفاصل الزمني بين الشيكات البريد</value>
+  </data>
+  <data name="mail_never" xml:space="preserve">
+    <value>لا تحقق أبدا</value>
+  </data>
+  <data name="mail_secs" xml:space="preserve">
+    <value>ثواني</value>
+  </data>
+  <data name="mail_idle" xml:space="preserve">
+    <value>الفاصل الزمني بين الشيكات البريد عندما الخمول</value>
+  </data>
+  <data name="mail_full" xml:space="preserve">
+    <value>السماح بالوصول إلى نظام الملفات بأكمله؟</value>
+  </data>
+  <data name="mail_crlf" xml:space="preserve">
+    <value>حفظ البريد الإلكتروني مع نهايات خط CRLF؟</value>
+  </data>
+  <data name="mail_change" xml:space="preserve">
+    <value>التعامل مع تغييرات البريد عن طريق البرامج الأخرى؟</value>
+  </data>
+  <data name="mail_umask" xml:space="preserve">
+    <value>أذونات umask للملفات الجديدة</value>
+  </data>
+  <data name="mail_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات ملف البريد</value>
+  </data>
+  <data name="mail_eenv" xml:space="preserve">
+    <value>موقع البريد مفقود أو غير صالح المظهر</value>
+  </data>
+  <data name="mail_echeck" xml:space="preserve">
+    <value>عدد الثواني المفقودة أو غير الرقمية بين الشيكات</value>
+  </data>
+  <data name="mail_eidle" xml:space="preserve">
+    <value>عدد الثواني المفقودة أو غير الرقمية بين الشيكات عند الخمول</value>
+  </data>
+  <data name="mail_eumask" xml:space="preserve">
+    <value>مفقود أو غير صالح umumb ثمانية أرقام ثماني</value>
+  </data>
+  <data name="mail_uidl" xml:space="preserve">
+    <value>شكل UIDL</value>
+  </data>
+  <data name="mail_uidl_other" xml:space="preserve">
+    <value>آخر ..</value>
+  </data>
+  <data name="mail_uidl_none" xml:space="preserve">
+    <value>غير مضبوط (تحذير - قد لا يبدأ تشغيل الحمامة)</value>
+  </data>
+  <data name="mail_uidl_dovecot" xml:space="preserve">
+    <value>Dovecot قديم ، سايروس الجديد</value>
+  </data>
+  <data name="mail_uidl_uw" xml:space="preserve">
+    <value>UW ipop3d</value>
+  </data>
+  <data name="mail_uidl_courier0" xml:space="preserve">
+    <value>ساعي الإصدار 0</value>
+  </data>
+  <data name="mail_uidl_courier1" xml:space="preserve">
+    <value>ساعي الإصدار 1 ، سايروس القديم</value>
+  </data>
+  <data name="mail_uidl_courier2" xml:space="preserve">
+    <value>ساعي الإصدار 2</value>
+  </data>
+  <data name="mail_uidl_tpop3d" xml:space="preserve">
+    <value>tpop3d</value>
+  </data>
+  <data name="mail_euidl" xml:space="preserve">
+    <value>تنسيق UIDL مفقود أو غير صالح</value>
+  </data>
+  <data name="mail_last" xml:space="preserve">
+    <value>هل تسمح باستخدام أمر POP3 الأخير؟</value>
+  </data>
+  <data name="mail_lock" xml:space="preserve">
+    <value>طريقة قفل ملفات الفهرس</value>
+  </data>
+  <data name="mail_fcntl" xml:space="preserve">
+    <value>وظيفة fcntl</value>
+  </data>
+  <data name="mail_flock" xml:space="preserve">
+    <value>قطيع وظيفة</value>
+  </data>
+  <data name="mail_dotlock" xml:space="preserve">
+    <value>ملفات القفل</value>
+  </data>
+  <data name="mail_lockf" xml:space="preserve">
+    <value>وظيفة قفل</value>
+  </data>
+  <data name="mail_mbox_read_locks" xml:space="preserve">
+    <value>صندوق البريد قراءة طريقة قفل</value>
+  </data>
+  <data name="mail_mbox_write_locks" xml:space="preserve">
+    <value>علبة قفل الكتابة طريقة</value>
+  </data>
+  <data name="mail_none" xml:space="preserve">
+    <value>لا شيء</value>
+  </data>
+  <data name="mail_sel" xml:space="preserve">
+    <value>مختارة أدناه ، من أجل ..</value>
+  </data>
+  <data name="mail_embox_read_locks" xml:space="preserve">
+    <value>لم يتم تحديد طرق قفل القراءة</value>
+  </data>
+  <data name="mail_embox_write_locks" xml:space="preserve">
+    <value>لم يتم تحديد طرق تأمين الكتابة</value>
+  </data>
+  <data name="mail_eindexmode" xml:space="preserve">
+    <value>لا يمكن تعيين موقع ملفات الفهرس عند اكتشاف موقع ملف البريد تلقائيًا</value>
+  </data>
+  <data name="mail_econtrolmode" xml:space="preserve">
+    <value>لا يمكن تعيين موقع ملفات التحكم عند اكتشاف موقع ملف البريد تلقائيًا</value>
+  </data>
+  <data name="mail_eindex" xml:space="preserve">
+    <value>المسار المطلق مفقود أو غير صالح لملفات الفهرس</value>
+  </data>
+  <data name="mail_econtrol" xml:space="preserve">
+    <value>المسار المطلق مفقود أو غير صالح لملفات التحكم</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>تغيير الشبكات والبروتوكولات</value>
+  </data>
+  <data name="log_login" xml:space="preserve">
+    <value>تم تغيير خيارات المستخدم وتسجيل الدخول</value>
+  </data>
+  <data name="log_mail" xml:space="preserve">
+    <value>تغيير ملفات البريد</value>
+  </data>
+  <data name="log_ssl" xml:space="preserve">
+    <value>تغيير تكوين SSL</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>التكوين التطبيقي</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>بدأت خادم Dovecot</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>توقف خادم Dovecot</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>تمكين Dovecot في وقت التمهيد</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>تعطيل Dovecot في وقت التمهيد</value>
+  </data>
+  <data name="log_manual" xml:space="preserve">
+    <value>Manually edited config file $1</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>تحرير ملفات التكوين</value>
+  </data>
+  <data name="manual_editsel" xml:space="preserve">
+    <value>تحرير ملف التكوين Dovecot</value>
+  </data>
+  <data name="manual_err" xml:space="preserve">
+    <value>فشل في حفظ ملف التكوين</value>
+  </data>
+  <data name="manual_edata" xml:space="preserve">
+    <value>لا شيء دخل!</value>
+  </data>
+  <data name="manual_efile" xml:space="preserve">
+    <value>ملف التكوين المحدد غير صالح</value>
+  </data>
+  <data name="manual_ok" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+</root>

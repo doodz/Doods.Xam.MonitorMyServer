@@ -7,13 +7,13 @@ namespace Doods.Synology.Webapi.Std
     {
         Task<SynolgySharesInfo> GetSharedFoldersInfo();
     }
+
     public class SynoShareClient : BaseSynoClient, ISynoShareClient
     {
         public SynoShareClient(ISynoWebApi client) : base(client)
         {
             Resource = "/entry.cgi";
             ServiceApiName = "SYNO.Core.Share";
-
         }
 
         public async Task<SynolgySharesInfo> GetSharedFoldersInfo()
@@ -25,7 +25,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("shareType", "all");
             loginRequest.AddParameter("sid", _client.Sid);
 
-            var response = await _client.ExecuteAsync<SynologyResponse<SynolgySharesInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynolgySharesInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
     }

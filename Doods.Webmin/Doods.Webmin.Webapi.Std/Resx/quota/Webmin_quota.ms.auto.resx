@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="quota_unlimited" xml:space="preserve">
+    <value>Tidak terhad</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>Hanya boleh melihat kuota, tidak boleh diedit?</value>
+  </data>
+  <data name="acl_quotaon" xml:space="preserve">
+    <value>Bolehkah mengaktifkan dan melumpuhkan kuota?</value>
+  </data>
+  <data name="acl_quotanew" xml:space="preserve">
+    <value>Bolehkah mengkonfigurasi kuota untuk pengguna baru?</value>
+  </data>
+  <data name="acl_ugrace" xml:space="preserve">
+    <value>Bolehkah mengedit masa rahmat pengguna?</value>
+  </data>
+  <data name="acl_uquota" xml:space="preserve">
+    <value>Pengguna pengguna ini boleh mengedit kuota untuk</value>
+  </data>
+  <data name="acl_maxblocks" xml:space="preserve">
+    <value>Kuota blok maksimum yang dibenarkan</value>
+  </data>
+  <data name="acl_maxfiles" xml:space="preserve">
+    <value>Kuota fail maksimum yang dibenarkan</value>
+  </data>
+  <data name="check_running" xml:space="preserve">
+    <value>Perintah &lt;tt&gt;quotacheck&lt;/tt&gt; kini dijalankan untuk memeriksa penggunaan blok dan fail pada &lt;tt&gt;$1&lt;/tt&gt;. Ini mungkin mengambil masa yang lama untuk sistem fail yang sangat besar. ..</value>
+  </data>
+  <data name="egroup_title" xml:space="preserve">
+    <value>Edit Kuota Kumpulan</value>
+  </data>
+  <data name="egroup_freturn" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="egroup_greturn" xml:space="preserve">
+    <value>senarai kumpulan</value>
+  </data>
+  <data name="egroup_eallowgr" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota untuk '$1'</value>
+  </data>
+  <data name="egroup_eallowfs" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="egroup_quotas" xml:space="preserve">
+    <value>Kuota untuk &lt;tt&gt;$1&lt;/tt&gt; pada &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="egroup_kused" xml:space="preserve">
+    <value>Kilobytes digunakan</value>
+  </data>
+  <data name="egroup_sblimit" xml:space="preserve">
+    <value>Had blok lembut</value>
+  </data>
+  <data name="egroup_hblimit" xml:space="preserve">
+    <value>Had blok keras</value>
+  </data>
+  <data name="egroup_sklimit" xml:space="preserve">
+    <value>Had kilobyte lembut</value>
+  </data>
+  <data name="egroup_hklimit" xml:space="preserve">
+    <value>Had kilobyte keras</value>
+  </data>
+  <data name="egroup_fused" xml:space="preserve">
+    <value>Fail digunakan</value>
+  </data>
+  <data name="egroup_sflimit" xml:space="preserve">
+    <value>Batas fail lembut</value>
+  </data>
+  <data name="egroup_hflimit" xml:space="preserve">
+    <value>Batas fail keras</value>
+  </data>
+  <data name="egroup_update" xml:space="preserve">
+    <value>Kemas kini</value>
+  </data>
+  <data name="egroup_listall" xml:space="preserve">
+    <value>Senaraikan Semua Kuota</value>
+  </data>
+  <data name="egroup_listalldesc" xml:space="preserve">
+    <value>Klik butang ini untuk memaparkan senarai semua sistem fail di mana kumpulan ini mempunyai kuota disk, dengan pautan untuk mengeditnya.</value>
+  </data>
+  <data name="euser_title" xml:space="preserve">
+    <value>Edit Kuota Pengguna</value>
+  </data>
+  <data name="euser_freturn" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="euser_ureturn" xml:space="preserve">
+    <value>senarai pengguna</value>
+  </data>
+  <data name="euser_eallowus" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota untuk '$1'</value>
+  </data>
+  <data name="euser_eallowfs" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="euser_quotas" xml:space="preserve">
+    <value>Kuota untuk &lt;tt&gt;$1&lt;/tt&gt; pada &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="euser_bused" xml:space="preserve">
+    <value>Blok digunakan</value>
+  </data>
+  <data name="euser_kused" xml:space="preserve">
+    <value>Kilobytes digunakan</value>
+  </data>
+  <data name="euser_bdisk" xml:space="preserve">
+    <value>Blok yang ada pada cakera</value>
+  </data>
+  <data name="euser_kdisk" xml:space="preserve">
+    <value>Kilobyte yang tersedia pada cakera</value>
+  </data>
+  <data name="euser_sdisk" xml:space="preserve">
+    <value>Ruang yang ada pada cakera</value>
+  </data>
+  <data name="euser_sblimit" xml:space="preserve">
+    <value>Had blok lembut</value>
+  </data>
+  <data name="euser_hblimit" xml:space="preserve">
+    <value>Had blok keras</value>
+  </data>
+  <data name="euser_sklimit" xml:space="preserve">
+    <value>Had kilobyte lembut</value>
+  </data>
+  <data name="euser_hklimit" xml:space="preserve">
+    <value>Had kilobyte keras</value>
+  </data>
+  <data name="euser_fused" xml:space="preserve">
+    <value>Fail digunakan</value>
+  </data>
+  <data name="euser_fdisk" xml:space="preserve">
+    <value>Fail yang ada pada cakera</value>
+  </data>
+  <data name="euser_sflimit" xml:space="preserve">
+    <value>Had fail lembut</value>
+  </data>
+  <data name="euser_hflimit" xml:space="preserve">
+    <value>Had fail keras</value>
+  </data>
+  <data name="euser_update" xml:space="preserve">
+    <value>Kemas kini</value>
+  </data>
+  <data name="euser_listall" xml:space="preserve">
+    <value>Senaraikan Semua Kuota</value>
+  </data>
+  <data name="euser_listalldesc" xml:space="preserve">
+    <value>Klik butang ini untuk memaparkan senarai semua sistem fail di mana pengguna ini mempunyai kuota disk, dengan pautan untuk mengeditnya.</value>
+  </data>
+  <data name="gfilesys_title" xml:space="preserve">
+    <value>Kuota Kumpulan</value>
+  </data>
+  <data name="gfilesys_return" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="gfilesys_ecannot" xml:space="preserve">
+    <value>Anda tidak boleh mengedit kuota untuk '$1'</value>
+  </data>
+  <data name="gfilesys_all" xml:space="preserve">
+    <value>Semua Kuota untuk $1 </value>
+  </data>
+  <data name="gfilesys_blocks" xml:space="preserve">
+    <value>Blok</value>
+  </data>
+  <data name="gfilesys_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="gfilesys_space" xml:space="preserve">
+    <value>Ruang cakera</value>
+  </data>
+  <data name="gfilesys_files" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="gfilesys_fs" xml:space="preserve">
+    <value>Sistem fail</value>
+  </data>
+  <data name="gfilesys_used" xml:space="preserve">
+    <value>Digunakan</value>
+  </data>
+  <data name="gfilesys_soft" xml:space="preserve">
+    <value>Had Soft</value>
+  </data>
+  <data name="gfilesys_hard" xml:space="preserve">
+    <value>Had Hard</value>
+  </data>
+  <data name="gfilesys_nogquota" xml:space="preserve">
+    <value>Kumpulan &lt;tt&gt;$1&lt;/tt&gt; tidak mempunyai kuota pada sebarang sistem fail</value>
+  </data>
+  <data name="gfilesys_edit" xml:space="preserve">
+    <value>Edit Kuota Pada:</value>
+  </data>
+  <data name="gfilesys_copy" xml:space="preserve">
+    <value>Salin Quotas</value>
+  </data>
+  <data name="gfilesys_editdesc" xml:space="preserve">
+    <value>Lihat dan edit kuota untuk kumpulan ini pada beberapa sistem fail lain yang pada masa ini tidak mempunyai kuota.</value>
+  </data>
+  <data name="gfilesys_copydesc" xml:space="preserve">
+    <value>Salin had kuota untuk kumpulan ini pada semua sistem fail kepada beberapa atau semua kumpulan lain.</value>
+  </data>
+  <data name="gfilesys_enone" xml:space="preserve">
+    <value>Tiada nama kumpulan yang dimasukkan</value>
+  </data>
+  <data name="ggracef_title" xml:space="preserve">
+    <value>Grace Times</value>
+  </data>
+  <data name="ggracef_return" xml:space="preserve">
+    <value>senarai kumpulan</value>
+  </data>
+  <data name="ggracef_ecannot" xml:space="preserve">
+    <value>Anda tidak boleh mengedit masa tanggapan pada sistem fail ini</value>
+  </data>
+  <data name="ggracef_info" xml:space="preserve">
+    <value>Setiap sistem fail mempunyai masa rahmat untuk blok dan kuota fail. Masa anugerah menentukan berapa lama kumpulan boleh kekal melebihi had lembut sebelum tidak ada lagi fail yang dibenarkan dibuat.</value>
+  </data>
+  <data name="ggracef_graces" xml:space="preserve">
+    <value>Group Grace Times untuk &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ggracef_block" xml:space="preserve">
+    <value>Untuk kuota blok</value>
+  </data>
+  <data name="ggracef_file" xml:space="preserve">
+    <value>Untuk kuota fail</value>
+  </data>
+  <data name="ggracef_update" xml:space="preserve">
+    <value>Kemas kini</value>
+  </data>
+  <data name="ggraces_esave" xml:space="preserve">
+    <value>Gagal menyimpan rahmat kali</value>
+  </data>
+  <data name="ggraces_eedit" xml:space="preserve">
+    <value>Anda tidak boleh mengedit masa tanggapan pada sistem fail ini</value>
+  </data>
+  <data name="ggraces_enumber" xml:space="preserve">
+    <value>'$1' bukan nombor</value>
+  </data>
+  <data name="index_quser" xml:space="preserve">
+    <value>Kuota pengguna</value>
+  </data>
+  <data name="index_qgroup" xml:space="preserve">
+    <value>Kuota kumpulan</value>
+  </data>
+  <data name="index_qboth" xml:space="preserve">
+    <value>Kuota pengguna dan kumpulan</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>aktif</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Lumpuhkan kuota</value>
+  </data>
+  <data name="index_inactive" xml:space="preserve">
+    <value>tidak aktif</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Dayakan kuota</value>
+  </data>
+  <data name="index_supported" xml:space="preserve">
+    <value>Kuota belum disokong</value>
+  </data>
+  <data name="index_enable2" xml:space="preserve">
+    <value>Dayakan sokongan</value>
+  </data>
+  <data name="index_mountonly" xml:space="preserve">
+    <value>Hanya boleh diaktifkan pada mount</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>Kuota Disk</value>
+  </data>
+  <data name="index_fs" xml:space="preserve">
+    <value>Sistem fail</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Taipkan</value>
+  </data>
+  <data name="index_mount" xml:space="preserve">
+    <value>Dipasang dari</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indeks</value>
+  </data>
+  <data name="index_euser" xml:space="preserve">
+    <value>Edit Kuota Pengguna:</value>
+  </data>
+  <data name="index_euserdesc" xml:space="preserve">
+    <value>Masukkan atau pilih pengguna, dan klik butang ini untuk melihat kuota pada semua sistem fail.</value>
+  </data>
+  <data name="index_egroup" xml:space="preserve">
+    <value>Edit Kuota Kumpulan:</value>
+  </data>
+  <data name="index_egroupdesc" xml:space="preserve">
+    <value>Masukkan atau pilih kumpulan, dan klik butang ini untuk melihat kuota pada semua sistem fail.</value>
+  </data>
+  <data name="index_nosupport" xml:space="preserve">
+    <value>Tiada sistem fail tempatan boleh menyokong kuota.</value>
+  </data>
+  <data name="lgroups_failed" xml:space="preserve">
+    <value>Gagal menyenaraikan kumpulan</value>
+  </data>
+  <data name="lgroups_tablist" xml:space="preserve">
+    <value>Senarai kumpulan</value>
+  </data>
+  <data name="lgroups_eallow" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="lgroups_title" xml:space="preserve">
+    <value>Quotas Filesystem</value>
+  </data>
+  <data name="lgroups_return" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="lgroups_toomany" xml:space="preserve">
+    <value>Terlalu banyak kumpulan mempunyai kuota pada &lt;tt&gt;$1&lt;/tt&gt; untuk dipaparkan pada satu halaman</value>
+  </data>
+  <data name="lgroups_quotas" xml:space="preserve">
+    <value>Semua Quota Kumpulan pada &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_blocks" xml:space="preserve">
+    <value>Blok</value>
+  </data>
+  <data name="lgroups_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="lgroups_space" xml:space="preserve">
+    <value>Ruang cakera</value>
+  </data>
+  <data name="lgroups_files" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="lgroups_group" xml:space="preserve">
+    <value>Kumpulan</value>
+  </data>
+  <data name="lgroups_used" xml:space="preserve">
+    <value>Digunakan</value>
+  </data>
+  <data name="lgroups_soft" xml:space="preserve">
+    <value>Had Soft</value>
+  </data>
+  <data name="lgroups_hard" xml:space="preserve">
+    <value>Had Hard</value>
+  </data>
+  <data name="lgroups_noquota" xml:space="preserve">
+    <value>Tiada kumpulan mempunyai kuota pada &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_equota" xml:space="preserve">
+    <value>Edit Kuota Untuk:</value>
+  </data>
+  <data name="lgroups_grace" xml:space="preserve">
+    <value>Edit Grace Times</value>
+  </data>
+  <data name="lgroups_check" xml:space="preserve">
+    <value>Semak Quotas</value>
+  </data>
+  <data name="lgroups_info" xml:space="preserve">
+    <value>Webmin boleh dikonfigurasi untuk menetapkan kuota secara automatik pada sistem fail ini apabila kumpulan Unix baru dibuat. Ini hanya akan berfungsi apabila modul $1 Webmin digunakan untuk menambah kumpulan.</value>
+  </data>
+  <data name="lgroups_newgroup" xml:space="preserve">
+    <value>Kuota Kumpulan Baru</value>
+  </data>
+  <data name="lgroups_mass" xml:space="preserve">
+    <value>Kemas kini Kumpulan Terpilih</value>
+  </data>
+  <data name="lgroups_to" xml:space="preserve">
+    <value>Destinasi e-mel</value>
+  </data>
+  <data name="lgroups_tosame" xml:space="preserve">
+    <value>Peti mel dengan nama yang sama dengan kumpulan</value>
+  </data>
+  <data name="lgroups_tofixed" xml:space="preserve">
+    <value>Alamat 1</value>
+  </data>
+  <data name="lgroups_emailheader" xml:space="preserve">
+    <value>E-mel kepada kumpulan yang menghampiri kuota</value>
+  </data>
+  <data name="lgroups_email" xml:space="preserve">
+    <value>Hantar e-mel kepada kumpulan?</value>
+  </data>
+  <data name="lgroups_tovirt" xml:space="preserve">
+    <value>Pemilik domain Virtualmin</value>
+  </data>
+  <data name="sgroup_egroup" xml:space="preserve">
+    <value>Anda tidak dibenarkan menyunting kuota untuk kumpulan ini</value>
+  </data>
+  <data name="sgroup_efs" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="ssync_ecannot" xml:space="preserve">
+    <value>Anda tidak boleh menetapkan kuota lalai untuk sistem fail ini</value>
+  </data>
+  <data name="suser_euser" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota untuk pengguna ini</value>
+  </data>
+  <data name="suser_efs" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="suser_emaxblocks" xml:space="preserve">
+    <value>Anda tidak dibenarkan memberikan had blok di atas $1 </value>
+  </data>
+  <data name="suser_emaxfiles" xml:space="preserve">
+    <value>Anda tidak dibenarkan memberikan had fail melebihi $1 </value>
+  </data>
+  <data name="ufilesys_title" xml:space="preserve">
+    <value>Kuota pengguna</value>
+  </data>
+  <data name="ufilesys_return" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="ufilesys_ecannot" xml:space="preserve">
+    <value>Anda tidak boleh mengedit kuota untuk '$1'</value>
+  </data>
+  <data name="ufilesys_all" xml:space="preserve">
+    <value>Semua Kuota untuk &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ufilesys_blocks" xml:space="preserve">
+    <value>Blok</value>
+  </data>
+  <data name="ufilesys_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="ufilesys_space" xml:space="preserve">
+    <value>Ruang cakera</value>
+  </data>
+  <data name="ufilesys_files" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="ufilesys_fs" xml:space="preserve">
+    <value>Sistem fail</value>
+  </data>
+  <data name="ufilesys_used" xml:space="preserve">
+    <value>Digunakan</value>
+  </data>
+  <data name="ufilesys_soft" xml:space="preserve">
+    <value>Had Soft</value>
+  </data>
+  <data name="ufilesys_hard" xml:space="preserve">
+    <value>Had Hard</value>
+  </data>
+  <data name="ufilesys_nouquota" xml:space="preserve">
+    <value>Pengguna &lt;tt&gt;$1&lt;/tt&gt; tidak mempunyai kuota pada sebarang sistem fail</value>
+  </data>
+  <data name="ufilesys_edit" xml:space="preserve">
+    <value>Edit Kuota Pada:</value>
+  </data>
+  <data name="ufilesys_editdesc" xml:space="preserve">
+    <value>Lihat dan edit kuota untuk pengguna ini pada beberapa sistem fail lain yang pada masa ini tidak mempunyai kuota.</value>
+  </data>
+  <data name="ufilesys_copydesc" xml:space="preserve">
+    <value>Salin had kuota untuk pengguna ini pada semua sistem fail kepada beberapa atau semua pengguna lain.</value>
+  </data>
+  <data name="ufilesys_copy" xml:space="preserve">
+    <value>Salin Quotas</value>
+  </data>
+  <data name="ufilesys_grace" xml:space="preserve">
+    <value>Grace</value>
+  </data>
+  <data name="ufilesys_enone" xml:space="preserve">
+    <value>Tiada nama pengguna yang dimasukkan</value>
+  </data>
+  <data name="ugracef_title" xml:space="preserve">
+    <value>Grace Times</value>
+  </data>
+  <data name="ugracef_return" xml:space="preserve">
+    <value>senarai pengguna</value>
+  </data>
+  <data name="ugracef_ecannot" xml:space="preserve">
+    <value>Anda tidak boleh mengedit masa tanggapan pada sistem fail ini</value>
+  </data>
+  <data name="ugracef_info" xml:space="preserve">
+    <value>Setiap sistem fail mempunyai masa rahmat untuk blok dan kuota fail. Masa anugerah menentukan berapa lama pengguna boleh tetap melebihi had lembut sebelum tidak ada lagi fail yang dibenarkan dibuat.</value>
+  </data>
+  <data name="ugracef_graces" xml:space="preserve">
+    <value>Times Grace Pengguna untuk &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ugracef_block" xml:space="preserve">
+    <value>Untuk kuota blok</value>
+  </data>
+  <data name="ugracef_file" xml:space="preserve">
+    <value>Untuk kuota fail</value>
+  </data>
+  <data name="ugracef_update" xml:space="preserve">
+    <value>Kemas kini</value>
+  </data>
+  <data name="ugraces_esave" xml:space="preserve">
+    <value>Gagal menyimpan rahmat kali</value>
+  </data>
+  <data name="ugraces_eedit" xml:space="preserve">
+    <value>Anda tidak boleh mengedit masa tanggapan pada sistem fail ini</value>
+  </data>
+  <data name="ugraces_enumber" xml:space="preserve">
+    <value>'$1' bukan nombor</value>
+  </data>
+  <data name="lusers_failed" xml:space="preserve">
+    <value>Gagal menyenaraikan pengguna</value>
+  </data>
+  <data name="lusers_tablist" xml:space="preserve">
+    <value>Senarai pengguna</value>
+  </data>
+  <data name="lusers_tabdefault" xml:space="preserve">
+    <value>Kuota lalai</value>
+  </data>
+  <data name="lusers_tabemail" xml:space="preserve">
+    <value>Pemberitahuan e-mel</value>
+  </data>
+  <data name="lusers_eallow" xml:space="preserve">
+    <value>Anda tidak dibenarkan mengedit kuota pada sistem fail ini</value>
+  </data>
+  <data name="lusers_title" xml:space="preserve">
+    <value>Quotas Filesystem</value>
+  </data>
+  <data name="lusers_return" xml:space="preserve">
+    <value>senarai fail sistem</value>
+  </data>
+  <data name="lusers_toomany" xml:space="preserve">
+    <value>Terlalu banyak pengguna mempunyai kuota pada &lt;tt&gt;$1&lt;/tt&gt; untuk dipaparkan pada satu halaman</value>
+  </data>
+  <data name="lusers_qoutas" xml:space="preserve">
+    <value>Semua Kuota Pengguna pada &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_bsize" xml:space="preserve">
+    <value>Saiz blok kuota: $1 bait</value>
+  </data>
+  <data name="lusers_blocks" xml:space="preserve">
+    <value>Blok</value>
+  </data>
+  <data name="lusers_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="lusers_space" xml:space="preserve">
+    <value>Ruang cakera</value>
+  </data>
+  <data name="lusers_files" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="lusers_user" xml:space="preserve">
+    <value>Pengguna</value>
+  </data>
+  <data name="lusers_used" xml:space="preserve">
+    <value>Digunakan</value>
+  </data>
+  <data name="lusers_soft" xml:space="preserve">
+    <value>Had Soft</value>
+  </data>
+  <data name="lusers_hard" xml:space="preserve">
+    <value>Had Hard</value>
+  </data>
+  <data name="lusers_grace" xml:space="preserve">
+    <value>Grace</value>
+  </data>
+  <data name="lusers_noquota" xml:space="preserve">
+    <value>Tiada pengguna mempunyai kuota pada &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_equota" xml:space="preserve">
+    <value>Edit Kuota Untuk:</value>
+  </data>
+  <data name="lusers_egrace" xml:space="preserve">
+    <value>Edit masa kurniaan</value>
+  </data>
+  <data name="lusers_check" xml:space="preserve">
+    <value>Semak kuota</value>
+  </data>
+  <data name="lusers_info" xml:space="preserve">
+    <value>Webmin boleh dikonfigurasikan untuk menetapkan kuota secara automatik pada sistem fail ini apabila pengguna Unix baru dibuat. Ini hanya akan berfungsi apabila modul $1 Webmin digunakan untuk menambah pengguna.</value>
+  </data>
+  <data name="lusers_useradmin" xml:space="preserve">
+    <value>Pengguna dan Kumpulan</value>
+  </data>
+  <data name="lusers_newuser" xml:space="preserve">
+    <value>Kuota Pengguna Baru</value>
+  </data>
+  <data name="lusers_sblimit" xml:space="preserve">
+    <value>Had lembut</value>
+  </data>
+  <data name="lusers_hblimit" xml:space="preserve">
+    <value>Had keras</value>
+  </data>
+  <data name="lusers_sflimit" xml:space="preserve">
+    <value>Had fail lembut</value>
+  </data>
+  <data name="lusers_hflimit" xml:space="preserve">
+    <value>Had fail keras</value>
+  </data>
+  <data name="lusers_pc_hblocks" xml:space="preserve">
+    <value>Keras %</value>
+  </data>
+  <data name="lusers_pc_sblocks" xml:space="preserve">
+    <value>Lembut %</value>
+  </data>
+  <data name="lusers_apply" xml:space="preserve">
+    <value>Sapukan</value>
+  </data>
+  <data name="lusers_emailheader" xml:space="preserve">
+    <value>E-mel kepada pengguna yang mendekati kuota</value>
+  </data>
+  <data name="lusers_email" xml:space="preserve">
+    <value>Hantar e-mel kepada pengguna?</value>
+  </data>
+  <data name="lusers_interval" xml:space="preserve">
+    <value>Selang antara mesej</value>
+  </data>
+  <data name="lusers_hours" xml:space="preserve">
+    <value>Jam</value>
+  </data>
+  <data name="lusers_ltype" xml:space="preserve">
+    <value>Jenis had</value>
+  </data>
+  <data name="lusers_percent" xml:space="preserve">
+    <value>Amaran apabila penggunaan dicapai</value>
+  </data>
+  <data name="lusers_domain" xml:space="preserve">
+    <value>Domain untuk alamat pengguna</value>
+  </data>
+  <data name="luser_virtualmin" xml:space="preserve">
+    <value>Dapatkan domain dari Virtualmin?</value>
+  </data>
+  <data name="lusers_from" xml:space="preserve">
+    <value>Daripada: alamat untuk e-mel</value>
+  </data>
+  <data name="lusers_mass" xml:space="preserve">
+    <value>Kemas kini Pengguna Terpilih</value>
+  </data>
+  <data name="lusers_cc" xml:space="preserve">
+    <value>Juga hantar e-mel ke</value>
+  </data>
+  <data name="lusers_nocc" xml:space="preserve">
+    <value>Tiada siapa</value>
+  </data>
+  <data name="grace_seconds" xml:space="preserve">
+    <value>Minit</value>
+  </data>
+  <data name="grace_minutes" xml:space="preserve">
+    <value>Minit</value>
+  </data>
+  <data name="grace_hours" xml:space="preserve">
+    <value>Jam</value>
+  </data>
+  <data name="grace_days" xml:space="preserve">
+    <value>Hari</value>
+  </data>
+  <data name="grace_weeks" xml:space="preserve">
+    <value>Minggu</value>
+  </data>
+  <data name="grace_months" xml:space="preserve">
+    <value>Bulan</value>
+  </data>
+  <data name="log_activate_u" xml:space="preserve">
+    <value>Kuota pengguna yang diaktifkan pada $1 </value>
+  </data>
+  <data name="log_activate_g" xml:space="preserve">
+    <value>Kuota kumpulan diaktifkan pada $1 </value>
+  </data>
+  <data name="log_activate_ug" xml:space="preserve">
+    <value>Didayakan kuota pengguna dan kumpulan pada $1 </value>
+  </data>
+  <data name="log_deactivate_u" xml:space="preserve">
+    <value>Kuota pengguna tidak aktif pada $1 </value>
+  </data>
+  <data name="log_deactivate_g" xml:space="preserve">
+    <value>Kuota kumpulan kurang upaya pada $1 </value>
+  </data>
+  <data name="log_deactivate_ug" xml:space="preserve">
+    <value>Pengguna pengguna dan kuota kumpulan cacat pada $1 </value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Kuasa berubah untuk $1 pada $2 </value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>Menukar kuota pengguna baru pada $1 </value>
+  </data>
+  <data name="log_email_user" xml:space="preserve">
+    <value>Tukar pilihan e-mel pengguna pada $1 </value>
+  </data>
+  <data name="log_email_group" xml:space="preserve">
+    <value>Ubah pilihan e-mel kumpulan pada $1 </value>
+  </data>
+  <data name="log_gsync" xml:space="preserve">
+    <value>Menukar kuota kumpulan baharu pada $1 </value>
+  </data>
+  <data name="log_grace_u" xml:space="preserve">
+    <value>Masa pengguna yang berubah pada $1 </value>
+  </data>
+  <data name="log_grace_g" xml:space="preserve">
+    <value>Masa tukar kumpulan berubah pada $1 </value>
+  </data>
+  <data name="log_check" xml:space="preserve">
+    <value>Kuota yang diperiksa pada $1 </value>
+  </data>
+  <data name="log_copy_u" xml:space="preserve">
+    <value>Kuota pengguna $1 disalin</value>
+  </data>
+  <data name="log_copy_g" xml:space="preserve">
+    <value>Kuota $1 disalin kumpulan</value>
+  </data>
+  <data name="log_support" xml:space="preserve">
+    <value>Sokongan kuota diaktifkan untuk $1 </value>
+  </data>
+  <data name="email_err" xml:space="preserve">
+    <value>Gagal menyimpan pilihan e-mel</value>
+  </data>
+  <data name="email_ecannot" xml:space="preserve">
+    <value>Anda tidak dibenarkan memodifikasi pilihan e-mel</value>
+  </data>
+  <data name="email_einterval" xml:space="preserve">
+    <value>Rentang yang hilang atau tidak sah</value>
+  </data>
+  <data name="email_epercent" xml:space="preserve">
+    <value>Peratusan penggunaan yang hilang atau tidak sah</value>
+  </data>
+  <data name="email_edomain" xml:space="preserve">
+    <value>Domain mel hilang atau tidak sah</value>
+  </data>
+  <data name="email_efrom" xml:space="preserve">
+    <value>Hilang atau tidak sah Daripada: alamat</value>
+  </data>
+  <data name="email_ecc" xml:space="preserve">
+    <value>Alamat Cc: tiada atau tidak sah</value>
+  </data>
+  <data name="email_msg" xml:space="preserve">
+    <value>Penggunaan cakera untuk pengguna $1 pada filesystem $2 telah mencapai $3% daripada kuota yang dibenarkan. $4 ruang cakera digunakan, daripada maksimum $5.</value>
+  </data>
+  <data name="gemail_msg" xml:space="preserve">
+    <value>Penggunaan cakera untuk kumpulan $1 pada filesystem $2 telah mencapai $3% daripada kuota yang dibenarkan. $4 ruang cakera digunakan, daripada maksimum $5.</value>
+  </data>
+  <data name="email_subject" xml:space="preserve">
+    <value>Kuota kuota melebihi</value>
+  </data>
+  <data name="gemail_subject" xml:space="preserve">
+    <value>Kuota kuota melebihi</value>
+  </data>
+  <data name="email_eto" xml:space="preserve">
+    <value>Alamat e-mel destinasi yang tiada</value>
+  </data>
+  <data name="umass_count" xml:space="preserve">
+    <value>Perubahan di bawah akan dikenakan kepada $1 pengguna terpilih ..</value>
+  </data>
+  <data name="gmass_title" xml:space="preserve">
+    <value>Kemas kini Kumpulan Quotas</value>
+  </data>
+  <data name="gmass_header" xml:space="preserve">
+    <value>Perubahan kuota untuk memohon kepada kumpulan yang dipilih</value>
+  </data>
+  <data name="gmass_count" xml:space="preserve">
+    <value>Perubahan di bawah akan dikenakan ke $1 kumpulan terpilih ..</value>
+  </data>
+  <data name="gmass_ok" xml:space="preserve">
+    <value>Kemas kini Kumpulan</value>
+  </data>
+  <data name="gmass_err" xml:space="preserve">
+    <value>Gagal mengemas kini kuota kumpulan</value>
+  </data>
+</root>

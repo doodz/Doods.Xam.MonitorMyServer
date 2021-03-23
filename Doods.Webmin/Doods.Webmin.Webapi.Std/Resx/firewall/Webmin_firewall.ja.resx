@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Linux IPTables ファイヤウォール</value>
+  </data>
+  <data name="index_ecommand" xml:space="preserve">
+    <value>コマンド $1 が見付かりません。WebminはIPtablesを設定するのにこのコマンドを必要とします。</value>
+  </data>
+  <data name="index_ekernel" xml:space="preserve">
+    <value>現在のIPtablesの設定を確認中にエラーが発生しました。: $1 これはこのシステムのカーネルがIPtablesをサポートしていないことを示唆しています。</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>$1からのファイヤウォール設定</value>
+  </data>
+  <data name="index_change" xml:space="preserve">
+    <value>IPtablesを表示中</value>
+  </data>
+  <data name="index_chain_input" xml:space="preserve">
+    <value>着信パケット(INPUT)</value>
+  </data>
+  <data name="index_chain_output" xml:space="preserve">
+    <value>発信パケット(OUTPUT)</value>
+  </data>
+  <data name="index_chain_forward" xml:space="preserve">
+    <value>転送パケット(FORWARD)</value>
+  </data>
+  <data name="index_chain_prerouting" xml:space="preserve">
+    <value>ルーティング処理前のパケット (PREROUTING)</value>
+  </data>
+  <data name="index_chain_postrouting" xml:space="preserve">
+    <value>ルーティング処理後のパケット (POSTROUTING)</value>
+  </data>
+  <data name="index_chain" xml:space="preserve">
+    <value>チェイン $1</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>アクション</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="index_comm" xml:space="preserve">
+    <value>コメント</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>移動</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>このチェインには定義されたルールがありません</value>
+  </data>
+  <data name="index_policy" xml:space="preserve">
+    <value>デフォルトのアクション:</value>
+  </data>
+  <data name="index_policy_accept" xml:space="preserve">
+    <value>許可 (ACCEPT)</value>
+  </data>
+  <data name="index_policy_drop" xml:space="preserve">
+    <value>破棄 (DROP)</value>
+  </data>
+  <data name="index_policy_queue" xml:space="preserve">
+    <value>ユーザ空間 (Userspace)</value>
+  </data>
+  <data name="index_policy_return" xml:space="preserve">
+    <value>チェインを出る</value>
+  </data>
+  <data name="index_jump_return" xml:space="preserve">
+    <value>チェインを出る</value>
+  </data>
+  <data name="index_jump_masquerade" xml:space="preserve">
+    <value>マスカレード</value>
+  </data>
+  <data name="index_jump_redirect" xml:space="preserve">
+    <value>リダイレクト</value>
+  </data>
+  <data name="index_jump_dnat" xml:space="preserve">
+    <value>宛先NAT (DNAT)</value>
+  </data>
+  <data name="index_jump_snat" xml:space="preserve">
+    <value>発信元NAT (SNAT)</value>
+  </data>
+  <data name="index_jump_" xml:space="preserve">
+    <value>何もしない</value>
+  </data>
+  <data name="index_jump" xml:space="preserve">
+    <value>チェイン $1 を実行</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>ルールを追加する</value>
+  </data>
+  <data name="index_cdelete" xml:space="preserve">
+    <value>チェインを削除する</value>
+  </data>
+  <data name="index_cclear" xml:space="preserve">
+    <value>全てのルールを削除する</value>
+  </data>
+  <data name="index_cadd" xml:space="preserve">
+    <value>チェインの新規作成 チェイン名:</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>設定を適用する</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>このボタンをクリックするとリストされた設定が有効になります。現在有効なルールは置換されます。</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>このボタンをクリックするとリストされた設定をリセットし現在有効な設定をリストします。</value>
+  </data>
+  <data name="index_table_filter" xml:space="preserve">
+    <value>パケットフィルタリング (filter)</value>
+  </data>
+  <data name="index_table_nat" xml:space="preserve">
+    <value>ネットワークアドレス変換 (nat)</value>
+  </data>
+  <data name="index_table_mangle" xml:space="preserve">
+    <value>パケット変換</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webminは現在使用中で保存ファイル $2 に記録されていない $1個 の IPtablesのルールを発見しました。おそらく、これらのルールはWebminモジュール以外の設定スクリプトによるものなので編集することができません。&lt;p&gt;全てのルールをWebminで管理するためには、下の"存在するルールをファイルに保存する"ボタンをクリックし、該当する設定スクリプトを使用不可にしてください。</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>ファイヤウォールルールを保存する</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>起動時にファイヤウォールを有効にしますか?</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>存在するファイヤウォール</value>
+  </data>
+  <data name="index_bootup" xml:space="preserve">
+    <value>起動時に有効</value>
+  </data>
+  <data name="index_bootupdesc" xml:space="preserve">
+    <value>このオプションで起動時にファイヤウォールを有効にするか否かを設定できます。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>ルールリスト</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>IPtablesファイヤウォールがまだ設定されていません。Webminは下で選択したファイヤウォールのタイプに合わせた基本的な初期設定をファイル $1 に保存することができます。</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>全てのトラフィックを許可する</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>外部インターフェースでネットワークアドレス変換をする</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>外部インターフェースに入って来る全ての接続を遮断する</value>
+  </data>
+  <data name="index_auto3" xml:space="preserve">
+    <value>SSHとIDENT以外の外部インターフェースへの接続を遮断する</value>
+  </data>
+  <data name="index_auto4" xml:space="preserve">
+    <value>SSH,IDENT,ping 1024以上のポート以外の接続を遮断する 対象インターフェース:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>ファイヤウォールを設定する</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="desc_p" xml:space="preserve">
+    <value>プロトコルが $1 である</value>
+  </data>
+  <data name="desc_p!" xml:space="preserve">
+    <value>プロトコルが $1 でない</value>
+  </data>
+  <data name="desc_s" xml:space="preserve">
+    <value>発信元が $1 である</value>
+  </data>
+  <data name="desc_s!" xml:space="preserve">
+    <value>発信元が $1 でない</value>
+  </data>
+  <data name="desc_d" xml:space="preserve">
+    <value>宛先が $1 である</value>
+  </data>
+  <data name="desc_d!" xml:space="preserve">
+    <value>宛先が $1 でない</value>
+  </data>
+  <data name="desc_i" xml:space="preserve">
+    <value>着信インターフェースが $1 である</value>
+  </data>
+  <data name="desc_i!" xml:space="preserve">
+    <value>着信インターフェースが $1 でない</value>
+  </data>
+  <data name="desc_o" xml:space="preserve">
+    <value>発信インターフェースが $1 である</value>
+  </data>
+  <data name="desc_o!" xml:space="preserve">
+    <value>発信インターフェースが $1 でない</value>
+  </data>
+  <data name="desc_f" xml:space="preserve">
+    <value>パケットが分割されている</value>
+  </data>
+  <data name="desc_f!" xml:space="preserve">
+    <value>パケットが分割されていない</value>
+  </data>
+  <data name="desc_sport" xml:space="preserve">
+    <value>発信元ポートが $1 である</value>
+  </data>
+  <data name="desc_sport!" xml:space="preserve">
+    <value>発信元ポートが $1 でない</value>
+  </data>
+  <data name="desc_dport" xml:space="preserve">
+    <value>宛先ポートが $1 である</value>
+  </data>
+  <data name="desc_dport!" xml:space="preserve">
+    <value>宛先ポートが $1 でない</value>
+  </data>
+  <data name="desc_sports" xml:space="preserve">
+    <value>発信元ポートが $1 である</value>
+  </data>
+  <data name="desc_sports!" xml:space="preserve">
+    <value>発信元ポートが $1 でない</value>
+  </data>
+  <data name="desc_dports" xml:space="preserve">
+    <value>宛先ポートが $1 である</value>
+  </data>
+  <data name="desc_dports!" xml:space="preserve">
+    <value>宛先ポートが $1 でない</value>
+  </data>
+  <data name="desc_tcp-flags" xml:space="preserve">
+    <value>TCPフラグ $1 が $2 である</value>
+  </data>
+  <data name="desc_tcp-flags!" xml:space="preserve">
+    <value>TCPフラグ $1 が $2 でない</value>
+  </data>
+  <data name="desc_tcp-option" xml:space="preserve">
+    <value>パケットが TCPオプション $1 を使用する</value>
+  </data>
+  <data name="desc_tcp-option!" xml:space="preserve">
+    <value>パケットが TCPオプション $1 を使用しない</value>
+  </data>
+  <data name="desc_icmp-type" xml:space="preserve">
+    <value>ICMPタイプが $1 である</value>
+  </data>
+  <data name="desc_icmp-type!" xml:space="preserve">
+    <value>ICMPタイプが $1 でない</value>
+  </data>
+  <data name="desc_mac-source" xml:space="preserve">
+    <value>MACアドレスが $1 である</value>
+  </data>
+  <data name="desc_mac-source!" xml:space="preserve">
+    <value>MACアドレスが $1 でない</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>マッチ回数の最大値を $1 未満にする</value>
+  </data>
+  <data name="desc_limit!" xml:space="preserve">
+    <value>マッチ回数の最大値を $1 以上にする</value>
+  </data>
+  <data name="desc_limit-burst" xml:space="preserve">
+    <value>マッチ回数の最大初期値を $1 未満にする</value>
+  </data>
+  <data name="desc_limit-burst!" xml:space="preserve">
+    <value>マッチ回数の最大初期値を $1 以上にする</value>
+  </data>
+  <data name="desc_ports" xml:space="preserve">
+    <value>発信元および宛先ポートが $1 である</value>
+  </data>
+  <data name="desc_ports!" xml:space="preserve">
+    <value>発信元及び宛先ポートが $1 でない</value>
+  </data>
+  <data name="desc_uid-owner" xml:space="preserve">
+    <value>送信者が $1 である</value>
+  </data>
+  <data name="desc_uid-owner!" xml:space="preserve">
+    <value>送信者が $1 でない</value>
+  </data>
+  <data name="desc_gid-owner" xml:space="preserve">
+    <value>送信者の所属グループが $1 である</value>
+  </data>
+  <data name="desc_gid-owner!" xml:space="preserve">
+    <value>送信者の所属グループが $1 でない</value>
+  </data>
+  <data name="desc_pid-owner" xml:space="preserve">
+    <value>送信プロセスのプロセスIDが $1 である</value>
+  </data>
+  <data name="desc_pid-owner!" xml:space="preserve">
+    <value>送信プロセスのプロセスIDが $1 でない</value>
+  </data>
+  <data name="desc_sid-owner" xml:space="preserve">
+    <value>送信プロセスのセッショングループが $1 である</value>
+  </data>
+  <data name="desc_sid-owner!" xml:space="preserve">
+    <value>送信プロセスのセッショングループが $1 でない</value>
+  </data>
+  <data name="desc_state" xml:space="preserve">
+    <value>接続の状態が $1 である</value>
+  </data>
+  <data name="desc_state!" xml:space="preserve">
+    <value>接続の状態が $1 でない</value>
+  </data>
+  <data name="desc_tos" xml:space="preserve">
+    <value>TOS(type of service)フィールドが $1 である</value>
+  </data>
+  <data name="desc_tos!" xml:space="preserve">
+    <value>TOS(type of service)フィールドが $1 でない</value>
+  </data>
+  <data name="desc_conds" xml:space="preserve">
+    <value>もし $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>且つ</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>常に</value>
+  </data>
+  <data name="redhat_eoutput" xml:space="preserve">
+    <value>コマンド $1 で IPtablesのステータスを取得する際にエラーが発生しました。システムがIPtablesの代わりにIPchainsを使用している可能性があります</value>
+  </data>
+  <data name="gentoo_escript" xml:space="preserve">
+    <value>Gentoo IPtables 起動スクリプト $1 がみつかりませんでした</value>
+  </data>
+  <data name="eiptables" xml:space="preserve">
+    <value>不明なIPtables保存ファイル 行番号: $1</value>
+  </data>
+  <data name="eip6tables" xml:space="preserve">
+    <value>不明なip6tables保存ファイル 行番号: $1</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>ルールの追加</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>ルールの編集</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>ルールの複製</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>チェインとアクションの概要</value>
+  </data>
+  <data name="edit_chain" xml:space="preserve">
+    <value>チェインの一部</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>ルールのコメント</value>
+  </data>
+  <data name="edit_jump" xml:space="preserve">
+    <value>実行するアクション</value>
+  </data>
+  <data name="edit_jump_other" xml:space="preserve">
+    <value>実行するチェイン</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>状態概要</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>選択されたアクションは上に示される &lt;b&gt;全ての&lt;/b&gt; 状態が合致した場合にのみ実行されます。</value>
+  </data>
+  <data name="edit_source" xml:space="preserve">
+    <value>発信元アドレスまたはネットワーク</value>
+  </data>
+  <data name="edit_ignore" xml:space="preserve">
+    <value>無視する</value>
+  </data>
+  <data name="edit_is" xml:space="preserve">
+    <value>等しい</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>等しくない</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>宛先アドレスまたはネットワーク</value>
+  </data>
+  <data name="edit_in" xml:space="preserve">
+    <value>着信インターフェース</value>
+  </data>
+  <data name="edit_out" xml:space="preserve">
+    <value>発信インターフェース</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>分割(フラグメンテーション)</value>
+  </data>
+  <data name="edit_fragis" xml:space="preserve">
+    <value>分割されている</value>
+  </data>
+  <data name="edit_fragnot" xml:space="preserve">
+    <value>分割されていない</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>ネットワークプロトコル</value>
+  </data>
+  <data name="edit_sport" xml:space="preserve">
+    <value>発信元のTCPまたはUDPポート</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>宛先のTCPまたはUDPポート</value>
+  </data>
+  <data name="edit_port0" xml:space="preserve">
+    <value>ポート</value>
+  </data>
+  <data name="edit_port1" xml:space="preserve">
+    <value>ポート範囲 $1 から $2</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>発信元と宛先のポート</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>TCPフラグを設定</value>
+  </data>
+  <data name="edit_flags" xml:space="preserve">
+    <value>$1 以外の&lt;br&gt; $2</value>
+  </data>
+  <data name="edit_tcpoption" xml:space="preserve">
+    <value>TCPオプションナンバーが</value>
+  </data>
+  <data name="edit_icmptype" xml:space="preserve">
+    <value>ICMPパケットタイプ</value>
+  </data>
+  <data name="edit_mac" xml:space="preserve">
+    <value>イーサネットアドレス</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>パケットフローレイト</value>
+  </data>
+  <data name="edit_below" xml:space="preserve">
+    <value>低い</value>
+  </data>
+  <data name="edit_above" xml:space="preserve">
+    <value>高い</value>
+  </data>
+  <data name="edit_limitburst" xml:space="preserve">
+    <value>パケットバーストレイト</value>
+  </data>
+  <data name="edit_uidowner" xml:space="preserve">
+    <value>送信UNIXユーザ</value>
+  </data>
+  <data name="edit_gidowner" xml:space="preserve">
+    <value>送信UNIXグループ</value>
+  </data>
+  <data name="edit_pidowner" xml:space="preserve">
+    <value>送信プロセスID</value>
+  </data>
+  <data name="edit_sidowner" xml:space="preserve">
+    <value>送信プロセスグループ</value>
+  </data>
+  <data name="edit_state" xml:space="preserve">
+    <value>接続状態</value>
+  </data>
+  <data name="edit_state_new" xml:space="preserve">
+    <value>新しい接続</value>
+  </data>
+  <data name="edit_state_established" xml:space="preserve">
+    <value>確立した接続</value>
+  </data>
+  <data name="edit_state_related" xml:space="preserve">
+    <value>既存の接続に関係している</value>
+  </data>
+  <data name="edit_state_invalid" xml:space="preserve">
+    <value>既知の接続と関係していない</value>
+  </data>
+  <data name="edit_tos" xml:space="preserve">
+    <value>サービス種類(Type of services)</value>
+  </data>
+  <data name="edit_rtoports" xml:space="preserve">
+    <value>リダイレクトの対象にする目標ポート</value>
+  </data>
+  <data name="edit_prange" xml:space="preserve">
+    <value>ポートの範囲 $1 から $2</value>
+  </data>
+  <data name="edit_mtoports" xml:space="preserve">
+    <value>マスカレーディングの対象にする発信元ポート</value>
+  </data>
+  <data name="edit_dnat" xml:space="preserve">
+    <value>宛先変換(DNAT)の対象にするIPとポート</value>
+  </data>
+  <data name="edit_dnatip" xml:space="preserve">
+    <value>IPの範囲 $1 から $2</value>
+  </data>
+  <data name="edit_snat" xml:space="preserve">
+    <value>発信元変換(SNAT)の対象にするIPとポート</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>全て</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>その他...</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>ルールを複製する</value>
+  </data>
+  <data name="edit_before" xml:space="preserve">
+    <value>ルール $1 の前</value>
+  </data>
+  <data name="edit_after" xml:space="preserve">
+    <value>ルール $1 の後</value>
+  </data>
+  <data name="edit_args" xml:space="preserve">
+    <value>追加パラメータ</value>
+  </data>
+  <data name="edit_rwith" xml:space="preserve">
+    <value>拒否するICMPタイプ</value>
+  </data>
+  <data name="edit_rwithtype" xml:space="preserve">
+    <value>$1 タイプ</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>ルールの保存に失敗しました</value>
+  </data>
+  <data name="save_echain" xml:space="preserve">
+    <value>不正な実行チェインです</value>
+  </data>
+  <data name="save_esource" xml:space="preserve">
+    <value>不正な発信元のアドレスまたはネットワークです</value>
+  </data>
+  <data name="save_edest" xml:space="preserve">
+    <value>不正な宛先のアドレスまたはネットワークです</value>
+  </data>
+  <data name="save_ein" xml:space="preserve">
+    <value>不正な着信インタフェースです</value>
+  </data>
+  <data name="save_eout" xml:space="preserve">
+    <value>不正な発信インタフェースです</value>
+  </data>
+  <data name="save_eproto" xml:space="preserve">
+    <value>プロトコルが選択されていません</value>
+  </data>
+  <data name="save_esport" xml:space="preserve">
+    <value>不正な発信元ポートです</value>
+  </data>
+  <data name="save_esportfrom" xml:space="preserve">
+    <value>発信元ポート範囲の始点が無効です</value>
+  </data>
+  <data name="save_esportto" xml:space="preserve">
+    <value>発信元ポート範囲の終点が無効です</value>
+  </data>
+  <data name="save_esportrange" xml:space="preserve">
+    <value>発信元ポート範囲の始点または終点を入力してください</value>
+  </data>
+  <data name="save_etcpudp" xml:space="preserve">
+    <value>発着信ポートの指定はTCPまたはUDPプロトコル選択時のみ使用できます</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>不正な宛先ポートです</value>
+  </data>
+  <data name="save_edportfrom" xml:space="preserve">
+    <value>宛先ポート範囲の始点が無効です</value>
+  </data>
+  <data name="save_edportto" xml:space="preserve">
+    <value>宛先ポート範囲の終点が無効です</value>
+  </data>
+  <data name="save_edportrange" xml:space="preserve">
+    <value>宛先ポート範囲の始点または終点を入力してください</value>
+  </data>
+  <data name="save_eports" xml:space="preserve">
+    <value>発着信ポートが無効です</value>
+  </data>
+  <data name="save_etcp1" xml:space="preserve">
+    <value>TCPフラグの指定はTCPプロトコル選択時のみ使用できます</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>少なくとも1列につき１つのTCPフラグを選択する必要があります</value>
+  </data>
+  <data name="save_etcpflags2" xml:space="preserve">
+    <value>２行目から少なくとも１つの TCP フラグを選択する必要があります</value>
+  </data>
+  <data name="save_etcp2" xml:space="preserve">
+    <value>TCPオプションナンバーの指定はTCPプロトコル選択時のみ使用できます</value>
+  </data>
+  <data name="save_etcpoption" xml:space="preserve">
+    <value>不正なTCPオプションナンバーです</value>
+  </data>
+  <data name="save_eicmp" xml:space="preserve">
+    <value>ICMPパケットタイプの指定はICMPプロトコル選択時のみ使用できます</value>
+  </data>
+  <data name="save_emac" xml:space="preserve">
+    <value>イーサネットアドレスが不正です</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>パケットフローレイトが不正です</value>
+  </data>
+  <data name="save_elimitburst" xml:space="preserve">
+    <value>パケットバーストレイトが不正です</value>
+  </data>
+  <data name="save_euidowner" xml:space="preserve">
+    <value>送信UNIXユーザが不正です</value>
+  </data>
+  <data name="save_egidowner" xml:space="preserve">
+    <value>送信UNIXグループが不正です</value>
+  </data>
+  <data name="save_epidowner" xml:space="preserve">
+    <value>送信プロセスIDが不正です</value>
+  </data>
+  <data name="save_esidowner" xml:space="preserve">
+    <value>送信プロセスグループIDが不正です</value>
+  </data>
+  <data name="save_ertoports" xml:space="preserve">
+    <value>リダイレクト対象の目標ポートが不正です</value>
+  </data>
+  <data name="save_emtoports" xml:space="preserve">
+    <value>マスカレード対象の発信元ポートが不正です</value>
+  </data>
+  <data name="save_edipfrom" xml:space="preserve">
+    <value>宛先変換(DNAT)対象範囲の開始IPアドレスが不正です</value>
+  </data>
+  <data name="save_edipto" xml:space="preserve">
+    <value>宛先変換(DNAT)対象範囲の終了IPアドレスが不正です</value>
+  </data>
+  <data name="save_edpfrom" xml:space="preserve">
+    <value>宛先変換(DNAT)対象範囲の開始ポートが不正です</value>
+  </data>
+  <data name="save_edpto" xml:space="preserve">
+    <value>宛先変換(DNAT)対象範囲の終了ポートが不正です</value>
+  </data>
+  <data name="save_esipfrom" xml:space="preserve">
+    <value>送信元変換(SNAT)対象範囲の開始ポートが不正です</value>
+  </data>
+  <data name="save_esipto" xml:space="preserve">
+    <value>送信元変換(SNAT)対象範囲の終了ポートが不正です</value>
+  </data>
+  <data name="save_espfrom" xml:space="preserve">
+    <value>送信元変換(SNAT)対象範囲の開始ポートが不正です</value>
+  </data>
+  <data name="save_espto" xml:space="preserve">
+    <value>送信元変換(SNAT)対象範囲の終了ポートが不正です</value>
+  </data>
+  <data name="save_estates" xml:space="preserve">
+    <value>接続状態が選択されていません</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>チェインの削除</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>チェイン $1 を削除しますか? チェインに含まれる $2 個のルールも削除されます</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="clear_title" xml:space="preserve">
+    <value>チェインをクリヤする</value>
+  </data>
+  <data name="clear_rusure" xml:space="preserve">
+    <value>チェイン $1 の $2 ルールを削除しますか？</value>
+  </data>
+  <data name="new_err" xml:space="preserve">
+    <value>チェインの作成に失敗しました</value>
+  </data>
+  <data name="new_ename" xml:space="preserve">
+    <value>不正なチェイン名です</value>
+  </data>
+  <data name="new_etaken" xml:space="preserve">
+    <value>この名前のチェインは既に存在します</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>設定の適用に失敗しました</value>
+  </data>
+  <data name="unapply_err" xml:space="preserve">
+    <value>設定を元に戻せませんでした</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>テーブル $2 の チェイン $1 にルールを追加した</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>テーブル $2 の チェイン $1 のルールを編集した</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>テーブル $2 の チェイン $1 のルールを削除した</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>チェイン $1 のルールを テーブル $2 に移動した</value>
+  </data>
+  <data name="log_delete_chain" xml:space="preserve">
+    <value>テーブル $2 から チェイン $1 を削除した</value>
+  </data>
+  <data name="log_clear_chain" xml:space="preserve">
+    <value>テーブル $2 の チェイン $1 をクリヤした</value>
+  </data>
+  <data name="log_create_chain" xml:space="preserve">
+    <value>テーブル $2 に チェイン $1 を作成した</value>
+  </data>
+  <data name="log_modify_chain" xml:space="preserve">
+    <value>テーブル $2 の チェイン $1 のデフォルトアクションを設定した</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>変更を適用した</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>変更を元に戻した</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>ファイヤウォールを設定した</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>既存のファイヤウォールを変換した</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>ファイヤウォールをシステム起動時に有効にした</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>ファイヤウォールをシステム起動時に無効した</value>
+  </data>
+  <data name="setup_eiface" xml:space="preserve">
+    <value>外部ネットワークインタフェースがありません</value>
+  </data>
+</root>

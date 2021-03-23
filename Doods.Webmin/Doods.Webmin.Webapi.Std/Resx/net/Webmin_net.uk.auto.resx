@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_apply" xml:space="preserve">
+    <value>Застосувати конфігурацію</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Натисніть цю кнопку, щоб активувати поточний інтерфейс часу завантаження та параметри маршрутизації, як це було б зазвичай після перезавантаження. &lt;b&gt;Попередження&lt;/b&gt; - це може зробити вашу систему недоступною через мережу та відключити доступ до Webmin.</value>
+  </data>
+  <data name="index_delete1" xml:space="preserve">
+    <value>Деактивація вибраних інтерфейсів</value>
+  </data>
+  <data name="index_delete2" xml:space="preserve">
+    <value>Видалити вибрані інтерфейси</value>
+  </data>
+  <data name="index_delete3" xml:space="preserve">
+    <value>Видалити та застосувати вибрані інтерфейси</value>
+  </data>
+  <data name="index_apply2" xml:space="preserve">
+    <value>Застосувати вибрані інтерфейси</value>
+  </data>
+  <data name="index_vmin" xml:space="preserve">
+    <value>Virtualmin</value>
+  </data>
+  <data name="ifcs_activedesc" xml:space="preserve">
+    <value>Інтерфейси, перелічені в цій таблиці, в даний час активні в системі. У більшості випадків слід редагувати їх на вкладці &lt;b&gt;Активовано при завантаженні&lt;/b&gt;.</value>
+  </data>
+  <data name="ifcs_bootdesc" xml:space="preserve">
+    <value>Інтерфейси, перелічені в цій таблиці, будуть активовані під час завантаження системи, і, як правило, будуть активні і зараз.</value>
+  </data>
+  <data name="ifcs_ip6" xml:space="preserve">
+    <value>IPv6-адреса</value>
+  </data>
+  <data name="ifcs_desc" xml:space="preserve">
+    <value>Опис інтерфейсу</value>
+  </data>
+  <data name="ifcs_radd" xml:space="preserve">
+    <value>Додати новий діапазон адрес.</value>
+  </data>
+  <data name="ifcs_badd" xml:space="preserve">
+    <value>Додайте новий міст.</value>
+  </data>
+  <data name="ifcs_auto6" xml:space="preserve">
+    <value>Від відкриття IPv6</value>
+  </data>
+  <data name="ifcs_all" xml:space="preserve">
+    <value>Всі інтерфейси</value>
+  </data>
+  <data name="ifcs_range" xml:space="preserve">
+    <value>Діапазон $1 </value>
+  </data>
+  <data name="ifcs_static2" xml:space="preserve">
+    <value>Статична конфігурація</value>
+  </data>
+  <data name="ifcs_static3" xml:space="preserve">
+    <value>Увімкнено IPv6</value>
+  </data>
+  <data name="ifcs_noaddress" xml:space="preserve">
+    <value>Не налаштована адреса</value>
+  </data>
+  <data name="ifcs_nonetmask" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="ifcs_mode" xml:space="preserve">
+    <value>IPv4-адреса</value>
+  </data>
+  <data name="ifcs_mode6" xml:space="preserve">
+    <value>IPv6 адреси</value>
+  </data>
+  <data name="ifcs_address6" xml:space="preserve">
+    <value>IPv6-адреса</value>
+  </data>
+  <data name="ifcs_netmask6" xml:space="preserve">
+    <value>Мережна маска</value>
+  </data>
+  <data name="ifcs_mode6a" xml:space="preserve">
+    <value>IPv6 адреси</value>
+  </data>
+  <data name="ifcs_none6" xml:space="preserve">
+    <value>IPv6 вимкнено</value>
+  </data>
+  <data name="ifcs_link" xml:space="preserve">
+    <value>Стан мережі</value>
+  </data>
+  <data name="ifcs_linkyes" xml:space="preserve">
+    <value>Підключено</value>
+  </data>
+  <data name="ifcs_linkno" xml:space="preserve">
+    <value>Відключено</value>
+  </data>
+  <data name="ifcs_speed" xml:space="preserve">
+    <value>Швидкість інтерфейсу</value>
+  </data>
+  <data name="ifcs_duplex" xml:space="preserve">
+    <value>, $1 дуплекс</value>
+  </data>
+  <data name="aifc_evirtmin" xml:space="preserve">
+    <value>Номер віртуального інтерфейсу повинен бути не менше $1 </value>
+  </data>
+  <data name="aifc_eclash" xml:space="preserve">
+    <value>Інтерфейс $1 вже використовує цю IP-адресу</value>
+  </data>
+  <data name="aifc_eaddress6" xml:space="preserve">
+    <value>Адреса IPv6 у рядку $1 недійсна</value>
+  </data>
+  <data name="aifc_enetmask6" xml:space="preserve">
+    <value>Мережа IPv6 у рядку $1 має бути цілим числом між 1 і 128</value>
+  </data>
+  <data name="aifc_eclash6" xml:space="preserve">
+    <value>IPv6-адреса в рядку $1 вже використовується інтерфейсом $2 </value>
+  </data>
+  <data name="aifc_eaddresses6" xml:space="preserve">
+    <value>Адреси IPv6 не введено</value>
+  </data>
+  <data name="bifc_act" xml:space="preserve">
+    <value>Активувати при завантаженні?</value>
+  </data>
+  <data name="bifc_dapply" xml:space="preserve">
+    <value>Видалити та застосувати</value>
+  </data>
+  <data name="bifc_err4" xml:space="preserve">
+    <value>Помилка дезактивації інтерфейсу</value>
+  </data>
+  <data name="bifc_edhcpmain" xml:space="preserve">
+    <value>DHCP можна вмикати лише в первинному мережевому інтерфейсі</value>
+  </data>
+  <data name="bifc_bridgeto" xml:space="preserve">
+    <value>Підключіть міст до інтерфейсу</value>
+  </data>
+  <data name="bifc_nobridge" xml:space="preserve">
+    <value>&amp;lt;Ніхто&amp;gt;</value>
+  </data>
+  <data name="bifc_ebridgeto" xml:space="preserve">
+    <value>Для цього мосту необхідно вибрати існуючий інтерфейс Ethernet</value>
+  </data>
+  <data name="bifc_ebridgeto2" xml:space="preserve">
+    <value>Обраному інтерфейсу для мосту не повинно бути призначено жодної адреси</value>
+  </data>
+  <data name="bifc_ebridge" xml:space="preserve">
+    <value>Інтерфейс мосту повинен бути числом</value>
+  </data>
+  <data name="bifc_bridgestp" xml:space="preserve">
+    <value>Протокол, що охоплює дерево</value>
+  </data>
+  <data name="bifc_bridgefd" xml:space="preserve">
+    <value>Затримка вперед</value>
+  </data>
+  <data name="bifc_bridgewait" xml:space="preserve">
+    <value>Затримка стане доступною</value>
+  </data>
+  <data name="bifc_ebond" xml:space="preserve">
+    <value>Інтерфейс облігації повинен бути числом</value>
+  </data>
+  <data name="bonding_add" xml:space="preserve">
+    <value>Додайте новий інтерфейс зв'язку.</value>
+  </data>
+  <data name="bonding_create" xml:space="preserve">
+    <value>Створіть інтерфейс зв'язку</value>
+  </data>
+  <data name="bonding_teamparts" xml:space="preserve">
+    <value>Партнерські групи</value>
+  </data>
+  <data name="bonding_teampartsdesc" xml:space="preserve">
+    <value>Окремі партнери з пробілами, наприклад "eth2 eth4"</value>
+  </data>
+  <data name="bonding_teammode" xml:space="preserve">
+    <value>Режим командування</value>
+  </data>
+  <data name="bonding_primary" xml:space="preserve">
+    <value>Первинний інтерфейс</value>
+  </data>
+  <data name="bonding_primarydesc" xml:space="preserve">
+    <value>Застосовується лише в режимах згуртування activebackup, balance-tlb або balance-alb</value>
+  </data>
+  <data name="bonding_miimon" xml:space="preserve">
+    <value>Інтервал моніторингу Mii</value>
+  </data>
+  <data name="bonding_miimondesc" xml:space="preserve">
+    <value>(Залиште порожнє, щоб відключити моніторинг посилань)</value>
+  </data>
+  <data name="bonding_updelay" xml:space="preserve">
+    <value>Updelay</value>
+  </data>
+  <data name="bonding_downdelay" xml:space="preserve">
+    <value>Нижня частина</value>
+  </data>
+  <data name="vlan_add" xml:space="preserve">
+    <value>Додати інтерфейс з тегами Vlan</value>
+  </data>
+  <data name="vlan_physical" xml:space="preserve">
+    <value>Фізичний пристрій</value>
+  </data>
+  <data name="vlan_id" xml:space="preserve">
+    <value>Ідентифікатор Влана</value>
+  </data>
+  <data name="vlan_create" xml:space="preserve">
+    <value>Створіть інтерфейс VLAN</value>
+  </data>
+  <data name="bridge_create" xml:space="preserve">
+    <value>Створіть мостовий інтерфейс</value>
+  </data>
+  <data name="routes_now" xml:space="preserve">
+    <value>Конфігурація маршрутизації активована зараз</value>
+  </data>
+  <data name="routes_default6" xml:space="preserve">
+    <value>Маршрутизатор IPv6 за замовчуванням</value>
+  </data>
+  <data name="routes_default2" xml:space="preserve">
+    <value>Маршрути за замовчуванням</value>
+  </data>
+  <data name="routes_gateway6" xml:space="preserve">
+    <value>Шлюз IPv6</value>
+  </data>
+  <data name="routes_edefault6" xml:space="preserve">
+    <value>'$1' не є дійсним маршрутизатором за замовчуванням IPv6</value>
+  </data>
+  <data name="routes_egateway6" xml:space="preserve">
+    <value>'$1' не є дійсним шлюзом IPv6</value>
+  </data>
+  <data name="routes_defaults6" xml:space="preserve">
+    <value>Маршрутизатори IPv6 за замовчуванням</value>
+  </data>
+  <data name="routes_any" xml:space="preserve">
+    <value>Будь-який</value>
+  </data>
+  <data name="routes_edefault2" xml:space="preserve">
+    <value>Недійсний номер шлюзу за замовчуванням $1 </value>
+  </data>
+  <data name="routes_eclash" xml:space="preserve">
+    <value>Можна визначити лише один маршрут за замовчуванням для будь-якого інтерфейсу</value>
+  </data>
+  <data name="routes_eclash6" xml:space="preserve">
+    <value>Можна визначити лише один маршрут за замовчуванням для будь-якого інтерфейсу IPv6</value>
+  </data>
+  <data name="routes_eclash2" xml:space="preserve">
+    <value>Можна визначити лише один маршрут за замовчуванням для $1 </value>
+  </data>
+  <data name="routes_none2" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="routes_auto" xml:space="preserve">
+    <value>Автоматичний</value>
+  </data>
+  <data name="routes_gwmetric" xml:space="preserve">
+    <value>Інтерфейсна метрика</value>
+  </data>
+  <data name="routes_dest" xml:space="preserve">
+    <value>Місце призначення</value>
+  </data>
+  <data name="routes_gw" xml:space="preserve">
+    <value>Шлюз</value>
+  </data>
+  <data name="routes_iface" xml:space="preserve">
+    <value>Інтерфейс</value>
+  </data>
+  <data name="routes_def" xml:space="preserve">
+    <value>Маршрут за замовчуванням</value>
+  </data>
+  <data name="routes_def6" xml:space="preserve">
+    <value>IPv6 Маршрут за замовчуванням</value>
+  </data>
+  <data name="routes_active" xml:space="preserve">
+    <value>Активні маршрути</value>
+  </data>
+  <data name="routes_nogw" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="routes_delete" xml:space="preserve">
+    <value>Видалити вибрані маршрути</value>
+  </data>
+  <data name="routes_cheader" xml:space="preserve">
+    <value>Створіть активний маршрут</value>
+  </data>
+  <data name="routes_cdest" xml:space="preserve">
+    <value>Місце призначення маршруту</value>
+  </data>
+  <data name="routes_cdef" xml:space="preserve">
+    <value>Маршрут за замовчуванням</value>
+  </data>
+  <data name="routes_cnetmask" xml:space="preserve">
+    <value>Маска для призначення</value>
+  </data>
+  <data name="routes_cvia" xml:space="preserve">
+    <value>Маршрут через</value>
+  </data>
+  <data name="routes_ciface" xml:space="preserve">
+    <value>Мережевий інтерфейс $1 </value>
+  </data>
+  <data name="routes_cgw" xml:space="preserve">
+    <value>Шлюз $1 </value>
+  </data>
+  <data name="routes_cerr" xml:space="preserve">
+    <value>Не вдалося створити активний маршрут</value>
+  </data>
+  <data name="routes_ecdest" xml:space="preserve">
+    <value>Відсутня або недійсна IP-адреса або мережа призначення</value>
+  </data>
+  <data name="routes_ecnetmask" xml:space="preserve">
+    <value>Відсутня або недійсна мережна маска</value>
+  </data>
+  <data name="routes_ecgw" xml:space="preserve">
+    <value>Відсутня або недійсна адреса шлюзу</value>
+  </data>
+  <data name="routes_derr" xml:space="preserve">
+    <value>Не вдалося видалити маршрути</value>
+  </data>
+  <data name="routes_denone" xml:space="preserve">
+    <value>Не вибрано жодного</value>
+  </data>
+  <data name="routes_ecnetmask2" xml:space="preserve">
+    <value>Неможливо вказати мережеву маску для маршруту за замовчуванням</value>
+  </data>
+  <data name="routes_ggw" xml:space="preserve">
+    <value>Використовуйте маршрутизатор $1 через інтерфейс $2 </value>
+  </data>
+  <data name="routes_tabboot" xml:space="preserve">
+    <value>Конфігурація часу завантаження</value>
+  </data>
+  <data name="routes_tabactive" xml:space="preserve">
+    <value>Активна конфігурація</value>
+  </data>
+  <data name="routes_descactive" xml:space="preserve">
+    <value>Цей розділ перераховує маршрути, налаштовані в даний час системою, і дозволяє додавати або видаляти активні маршрути в деяких системах. Будьте обережні, роблячи це, оскільки неправильні зміни можуть відрізати систему, що працює з Webmin, від решти мережі.</value>
+  </data>
+  <data name="routes_descboot" xml:space="preserve">
+    <value>У цьому розділі ви можете налаштувати маршрути, які активуються під час завантаження системи або повністю застосованих мережевих налаштувань.</value>
+  </data>
+  <data name="dns_hoststoo" xml:space="preserve">
+    <value>Оновити ім'я хоста в адресах хоста, якщо його змінено?</value>
+  </data>
+  <data name="dns_dhcp" xml:space="preserve">
+    <value>Ім'я хоста встановлюється сервером DHCP?</value>
+  </data>
+  <data name="hosts_active" xml:space="preserve">
+    <value>Увімкнено?</value>
+  </data>
+  <data name="hosts_delete" xml:space="preserve">
+    <value>Видалити вибрані адреси хоста</value>
+  </data>
+  <data name="ipnodes_title" xml:space="preserve">
+    <value>Адреси хостів IPv6</value>
+  </data>
+  <data name="ipnodes_ip" xml:space="preserve">
+    <value>Адреса IPv6</value>
+  </data>
+  <data name="ipnodes_host" xml:space="preserve">
+    <value>Імена хостів</value>
+  </data>
+  <data name="ipnodes_add" xml:space="preserve">
+    <value>Додайте нову адресу хоста IPv6.</value>
+  </data>
+  <data name="ipnodes_edit" xml:space="preserve">
+    <value>Редагувати адресу хоста IPv6</value>
+  </data>
+  <data name="ipnodes_create" xml:space="preserve">
+    <value>Створіть IP-адресу хосту IPv6</value>
+  </data>
+  <data name="ipnodes_detail" xml:space="preserve">
+    <value>Ведучий та адреси</value>
+  </data>
+  <data name="ipnodes_return" xml:space="preserve">
+    <value>Список адрес хостів IPv6</value>
+  </data>
+  <data name="ipnodes_ecannot" xml:space="preserve">
+    <value>Вам заборонено редагувати адреси хостів IPv6</value>
+  </data>
+  <data name="ipnodes_none" xml:space="preserve">
+    <value>Жодних адрес хостів IPv6 ще не визначено.</value>
+  </data>
+  <data name="ipnodes_delete" xml:space="preserve">
+    <value>Видалити вибрані адреси хостів IPv6</value>
+  </data>
+  <data name="log_create_ipnode" xml:space="preserve">
+    <value>Створено адресу хоста IPv6 $1 </value>
+  </data>
+  <data name="log_delete_ipnode" xml:space="preserve">
+    <value>Видалено адресу хоста IPv6 $1 </value>
+  </data>
+  <data name="log_modify_ipnode" xml:space="preserve">
+    <value>Змінена адреса хоста IPv6 $1 </value>
+  </data>
+  <data name="log_delete_hosts" xml:space="preserve">
+    <value>Видалено $1 хост-адреси</value>
+  </data>
+  <data name="log_delete_ipnodes" xml:space="preserve">
+    <value>Видалено $1 адреси хосту IPv6</value>
+  </data>
+  <data name="log_delete_afics" xml:space="preserve">
+    <value>Видалення активних інтерфейсів $1 </value>
+  </data>
+  <data name="log_delete_bfics" xml:space="preserve">
+    <value>Видалення інтерфейсів завантаження $1 </value>
+  </data>
+  <data name="log_apply_bfics" xml:space="preserve">
+    <value>Активовано інтерфейси завантаження $1 </value>
+  </data>
+  <data name="log_create_route" xml:space="preserve">
+    <value>Створено активний маршрут для $1 </value>
+  </data>
+  <data name="log_create_defroute" xml:space="preserve">
+    <value>Створений активний маршрут за замовчуванням</value>
+  </data>
+  <data name="log_delete_routes" xml:space="preserve">
+    <value>Видалено $1 активних маршрутів</value>
+  </data>
+  <data name="acl_ifcs_ex" xml:space="preserve">
+    <value>Інтерфейси, крім</value>
+  </data>
+  <data name="acl_apply" xml:space="preserve">
+    <value>Можна застосувати конфігурацію?</value>
+  </data>
+  <data name="acl_bootonly" xml:space="preserve">
+    <value>Чи можете редагувати активні інтерфейси?</value>
+  </data>
+  <data name="acl_netmask" xml:space="preserve">
+    <value>Можна редагувати мережну маску?</value>
+  </data>
+  <data name="acl_broadcast" xml:space="preserve">
+    <value>Чи можете редагувати трансляцію?</value>
+  </data>
+  <data name="acl_mtu" xml:space="preserve">
+    <value>Чи можете редагувати MTU?</value>
+  </data>
+  <data name="acl_up" xml:space="preserve">
+    <value>Чи можна редагувати активний стан?</value>
+  </data>
+  <data name="acl_virt" xml:space="preserve">
+    <value>Можна додати віртуальні інтерфейси?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Чи можна видалити інтерфейси?</value>
+  </data>
+  <data name="acl_hide" xml:space="preserve">
+    <value>Сховати інтерфейси, які не можна редагувати?</value>
+  </data>
+  <data name="acl_sysinfo" xml:space="preserve">
+    <value>Показати доступні мережеві інтерфейси на приладовій панелі</value>
+  </data>
+  <data name="apply_ecannot" xml:space="preserve">
+    <value>Вам заборонено застосовувати конфігурацію</value>
+  </data>
+  <data name="mod_egone" xml:space="preserve">
+    <value>Інтерфейс більше не активний!</value>
+  </data>
+  <data name="mod_title" xml:space="preserve">
+    <value>Активний інтерфейс</value>
+  </data>
+  <data name="mod_desc" xml:space="preserve">
+    <value>Інтерфейс $1 використовується для $2, тому не можна керувати цим модулем.</value>
+  </data>
+  <data name="mod_ppp" xml:space="preserve">
+    <value>комутаційне з'єднання PPP до $1 </value>
+  </data>
+  <data name="mod_adsl" xml:space="preserve">
+    <value>з'єднання ADSL PPP</value>
+  </data>
+  <data name="mod_pptps" xml:space="preserve">
+    <value>з'єднання PPTP від клієнта $1 </value>
+  </data>
+  <data name="mod_pptpc" xml:space="preserve">
+    <value>з'єднання PPTP $1 </value>
+  </data>
+  <data name="mod_zones" xml:space="preserve">
+    <value>віртуальний інтерфейс для зони &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="mod_virtualmin" xml:space="preserve">
+    <value>сервер Virtualmin &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="mod_reseller" xml:space="preserve">
+    <value>реселлер Virtualmin &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="range_edit" xml:space="preserve">
+    <value>Редагувати діапазон адрес</value>
+  </data>
+  <data name="range_create" xml:space="preserve">
+    <value>Створіть діапазон адрес</value>
+  </data>
+  <data name="range_header" xml:space="preserve">
+    <value>Параметри інтерфейсу діапазону адрес</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Початкова адреса</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>Кінцева адреса</value>
+  </data>
+  <data name="range_num" xml:space="preserve">
+    <value>Першого віртуального інтерфейсу немає.</value>
+  </data>
+  <data name="range_iface" xml:space="preserve">
+    <value>Реальний інтерфейс</value>
+  </data>
+  <data name="range_name" xml:space="preserve">
+    <value>Назва діапазону</value>
+  </data>
+  <data name="range_err" xml:space="preserve">
+    <value>Не вдалося зберегти діапазон адрес</value>
+  </data>
+  <data name="range_ename" xml:space="preserve">
+    <value>Відсутня або недійсна назва діапазону</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Відсутня або недійсна початкова IP-адреса</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Відсутня або недійсна кінцева IP-адреса</value>
+  </data>
+  <data name="range_enum" xml:space="preserve">
+    <value>Відсутній або нечисловий номер першого віртуального інтерфейсу</value>
+  </data>
+  <data name="range_eclass" xml:space="preserve">
+    <value>Початкова та кінцева адреси повинні знаходитися в одній мережі C класу</value>
+  </data>
+  <data name="range_ebefore" xml:space="preserve">
+    <value>Кінцева адреса повинна бути вищою за початкову</value>
+  </data>
+  <data name="chooser_any" xml:space="preserve">
+    <value>&amp;lt;Все&amp;gt;</value>
+  </data>
+  <data name="chooser_other" xml:space="preserve">
+    <value>Інший ..</value>
+  </data>
+  <data name="dafics_err" xml:space="preserve">
+    <value>Не вдалося деактивувати інтерфейси</value>
+  </data>
+  <data name="daifcs_enone" xml:space="preserve">
+    <value>Не вибрано жодного</value>
+  </data>
+  <data name="daifcs_egone" xml:space="preserve">
+    <value>Інтерфейс більше не існує!</value>
+  </data>
+  <data name="dbifcs_err" xml:space="preserve">
+    <value>Не вдалося видалити інтерфейси</value>
+  </data>
+  <data name="dbifcs_err2" xml:space="preserve">
+    <value>Не вдалося активувати інтерфейси</value>
+  </data>
+  <data name="hdelete_err" xml:space="preserve">
+    <value>Не вдалося видалити хост-адреси</value>
+  </data>
+  <data name="hdelete_enone" xml:space="preserve">
+    <value>Не вибрано жодного</value>
+  </data>
+  <data name="idelete_err" xml:space="preserve">
+    <value>Не вдалося видалити адреси хосту IPv6</value>
+  </data>
+</root>

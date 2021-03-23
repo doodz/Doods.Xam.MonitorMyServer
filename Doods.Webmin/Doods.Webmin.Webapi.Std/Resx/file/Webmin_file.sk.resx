@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Správca Systému Súborov</value>
+  </data>
+  <data name="index_eremote" xml:space="preserve">
+    <value>Žiadny Unixový užívateľ nezodpovedá hodnotám z Webmin prihlásečnia $1.</value>
+  </data>
+  <data name="switch_euser" xml:space="preserve">
+    <value>Tento Unixový užívateľ  nejestvuje!</value>
+  </data>
+  <data name="top_ret" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="top_down" xml:space="preserve">
+    <value>Ulož</value>
+  </data>
+  <data name="top_edit" xml:space="preserve">
+    <value>Otvor pre zmeny</value>
+  </data>
+  <data name="top_refresh" xml:space="preserve">
+    <value>Obnov</value>
+  </data>
+  <data name="top_info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="top_eacl" xml:space="preserve">
+    <value>ACL</value>
+  </data>
+  <data name="top_attr" xml:space="preserve">
+    <value>Atribúty</value>
+  </data>
+  <data name="top_ext" xml:space="preserve">
+    <value>EXT</value>
+  </data>
+  <data name="top_delete" xml:space="preserve">
+    <value>Vymaž</value>
+  </data>
+  <data name="top_new" xml:space="preserve">
+    <value>Nový(á/é)</value>
+  </data>
+  <data name="top_upload" xml:space="preserve">
+    <value>Nalož</value>
+  </data>
+  <data name="top_rename" xml:space="preserve">
+    <value>Premenuj</value>
+  </data>
+  <data name="top_copy" xml:space="preserve">
+    <value>Kópia</value>
+  </data>
+  <data name="top_cut" xml:space="preserve">
+    <value>Vyber</value>
+  </data>
+  <data name="top_paste" xml:space="preserve">
+    <value>Vlož</value>
+  </data>
+  <data name="top_share" xml:space="preserve">
+    <value>Zdieľanie</value>
+  </data>
+  <data name="top_search" xml:space="preserve">
+    <value>Nájdi</value>
+  </data>
+  <data name="right_name" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="right_size" xml:space="preserve">
+    <value>Veľkosť</value>
+  </data>
+  <data name="right_user" xml:space="preserve">
+    <value>Užívateľ</value>
+  </data>
+  <data name="right_group" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="right_date" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="edit_enormal" xml:space="preserve">
+    <value>Len normálne súbory môžu byť menené</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Zmeny na $1</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Vytvánie súboru</value>
+  </data>
+  <data name="edit_filename" xml:space="preserve">
+    <value>Meno súboru:</value>
+  </data>
+  <data name="edit_eover" xml:space="preserve">
+    <value>$1 nemôže byť prepísané</value>
+  </data>
+  <data name="edit_esave" xml:space="preserve">
+    <value>NEmoohol uložiť : $1</value>
+  </data>
+  <data name="edit_eaccess" xml:space="preserve">
+    <value>Nemáš povolenie na ukladanie '$1'</value>
+  </data>
+  <data name="info_file" xml:space="preserve">
+    <value>Súbor</value>
+  </data>
+  <data name="info_path" xml:space="preserve">
+    <value>Cesta:</value>
+  </data>
+  <data name="info_type" xml:space="preserve">
+    <value>Typ:</value>
+  </data>
+  <data name="info_size" xml:space="preserve">
+    <value>Veľkosť:</value>
+  </data>
+  <data name="info_mod" xml:space="preserve">
+    <value>Zmenené:</value>
+  </data>
+  <data name="info_link" xml:space="preserve">
+    <value>Vázba na:</value>
+  </data>
+  <data name="info_perms" xml:space="preserve">
+    <value>Povolenia</value>
+  </data>
+  <data name="info_user" xml:space="preserve">
+    <value>Užívateľ:</value>
+  </data>
+  <data name="info_group" xml:space="preserve">
+    <value>Skupina:</value>
+  </data>
+  <data name="info_other" xml:space="preserve">
+    <value>Iné:</value>
+  </data>
+  <data name="info_sticky" xml:space="preserve">
+    <value>Lepčkavé:</value>
+  </data>
+  <data name="info_sticky2" xml:space="preserve">
+    <value>Len majitelia môžu vymazať </value>
+  </data>
+  <data name="info_own" xml:space="preserve">
+    <value>Majetok</value>
+  </data>
+  <data name="info_setuid" xml:space="preserve">
+    <value>Setuid:</value>
+  </data>
+  <data name="info_setuid2" xml:space="preserve">
+    <value>Vykonaj ako užívateľ</value>
+  </data>
+  <data name="info_setgid" xml:space="preserve">
+    <value>Setgid:</value>
+  </data>
+  <data name="info_setgid2" xml:space="preserve">
+    <value>Súbory dedia skupinu</value>
+  </data>
+  <data name="info_setgid3" xml:space="preserve">
+    <value>Vykonaj ako skupina</value>
+  </data>
+  <data name="info_apply" xml:space="preserve">
+    <value>AKtivuj zmeny</value>
+  </data>
+  <data name="info_apply1" xml:space="preserve">
+    <value>Len tento adresár</value>
+  </data>
+  <data name="info_apply2" xml:space="preserve">
+    <value>Tento adresár a jeho súbory</value>
+  </data>
+  <data name="info_apply3" xml:space="preserve">
+    <value>Tento adresár a všetky jeho priradené adresáre </value>
+  </data>
+  <data name="info_efailed" xml:space="preserve">
+    <value>Porucha pri  zmene $1 : $2</value>
+  </data>
+  <data name="info_read" xml:space="preserve">
+    <value>Čítaj</value>
+  </data>
+  <data name="info_write" xml:space="preserve">
+    <value>Píš</value>
+  </data>
+  <data name="info_list" xml:space="preserve">
+    <value>Zoznam</value>
+  </data>
+  <data name="info_exec" xml:space="preserve">
+    <value>Exec</value>
+  </data>
+  <data name="eacl_eacls" xml:space="preserve">
+    <value>Načítavanie ACL súborov nebolo úspešné : $1</value>
+  </data>
+  <data name="eacl_acltype" xml:space="preserve">
+    <value>Typ ACL</value>
+  </data>
+  <data name="eacl_aclname" xml:space="preserve">
+    <value>Použi na</value>
+  </data>
+  <data name="eacl_aclperms" xml:space="preserve">
+    <value>Povolenia</value>
+  </data>
+  <data name="eacl_add" xml:space="preserve">
+    <value>Pridaj typ ACL :</value>
+  </data>
+  <data name="eacl_remove" xml:space="preserve">
+    <value>Odním ACL</value>
+  </data>
+  <data name="eacl_efs" xml:space="preserve">
+    <value>Súborový systém $1 plne nepodporuje ACLs</value>
+  </data>
+  <data name="eacl_create" xml:space="preserve">
+    <value>Vytvor ACL</value>
+  </data>
+  <data name="eacl_edit" xml:space="preserve">
+    <value>Edituj ACL</value>
+  </data>
+  <data name="eacl_user" xml:space="preserve">
+    <value>Majiteľ súboru $1</value>
+  </data>
+  <data name="eacl_group" xml:space="preserve">
+    <value>Skupina súboru $1</value>
+  </data>
+  <data name="eacl_eowner" xml:space="preserve">
+    <value>Užívateľ alebo skupina súboru neexistuje</value>
+  </data>
+  <data name="eacl_efailed" xml:space="preserve">
+    <value>Nemohol som nastaviť ACL pre $1 : $2</value>
+  </data>
+  <data name="eacl_emask" xml:space="preserve">
+    <value>Maximálne môže byť použitá jedna maskovaná ACL</value>
+  </data>
+  <data name="eacl_edefmask" xml:space="preserve">
+    <value>Maximálne môže byť použitá jedna základná maskovaná ACL</value>
+  </data>
+  <data name="eacl_title" xml:space="preserve">
+    <value>ACL pre $1</value>
+  </data>
+  <data name="eacl_owner" xml:space="preserve">
+    <value>Majiteľ súboru</value>
+  </data>
+  <data name="eacl_edefaults" xml:space="preserve">
+    <value>Ak súbor má základnú ACL, musí tiež mať základného majiteľa, skupinu a ostatné ACL.</value>
+  </data>
+  <data name="acltype_user" xml:space="preserve">
+    <value>Užívateľ</value>
+  </data>
+  <data name="acltype_group" xml:space="preserve">
+    <value>Skupina</value>
+  </data>
+  <data name="acltype_other" xml:space="preserve">
+    <value>Iné</value>
+  </data>
+  <data name="acltype_mask" xml:space="preserve">
+    <value>Maska</value>
+  </data>
+  <data name="acltype_default_user" xml:space="preserve">
+    <value>Základný užívateľ</value>
+  </data>
+  <data name="acltype_default_group" xml:space="preserve">
+    <value>Základná skupina</value>
+  </data>
+  <data name="acltype_default_other" xml:space="preserve">
+    <value>Základné Iné</value>
+  </data>
+  <data name="acltype_default_mask" xml:space="preserve">
+    <value>Základná Maska</value>
+  </data>
+  <data name="delete_mtitle" xml:space="preserve">
+    <value>Vymaž viacero súborov</value>
+  </data>
+  <data name="delete_dtitle" xml:space="preserve">
+    <value>Vymaž adresár</value>
+  </data>
+  <data name="delete_ftitle" xml:space="preserve">
+    <value>Vymaž súbor</value>
+  </data>
+  <data name="delete_ddesc" xml:space="preserve">
+    <value>Si si istý že chceš permanente vymazať adresár $1 a všetok jeho obsah?</value>
+  </data>
+  <data name="delete_fdesc" xml:space="preserve">
+    <value>Si si istý že chceš permanente vymazať súbor $1 ?</value>
+  </data>
+  <data name="delete_mdesc" xml:space="preserve">
+    <value>Si si istý že chceš permanente vymazať adresáre a súbory? :</value>
+  </data>
+  <data name="delete_efailed" xml:space="preserve">
+    <value>Nemožné vymazať $1 : $2</value>
+  </data>
+  <data name="mkdir_title" xml:space="preserve">
+    <value>Novo-vytvorený Adresár</value>
+  </data>
+  <data name="mkdir_dir" xml:space="preserve">
+    <value>Nový Adresár:</value>
+  </data>
+  <data name="mkdir_eexists" xml:space="preserve">
+    <value>$1 už jestvuje</value>
+  </data>
+  <data name="mkdir_efailed" xml:space="preserve">
+    <value>Vytvorenie Adresáru nebolo úspešné : $1</value>
+  </data>
+  <data name="mkdir_eaccess" xml:space="preserve">
+    <value>Nemáš povolenie na vytvorenie '$1'</value>
+  </data>
+  <data name="link_title" xml:space="preserve">
+    <value>Vytvor Spojenie</value>
+  </data>
+  <data name="link_from" xml:space="preserve">
+    <value>Spojenie z:</value>
+  </data>
+  <data name="link_to" xml:space="preserve">
+    <value>Spojenie na:</value>
+  </data>
+  <data name="link_eexists" xml:space="preserve">
+    <value>$1 už jestvuje</value>
+  </data>
+  <data name="link_efrom" xml:space="preserve">
+    <value>Nemáš dovolené vytvárať spojenia na '$1'</value>
+  </data>
+  <data name="link_efailed" xml:space="preserve">
+    <value>Spojenie nebolo úspešné : $1</value>
+  </data>
+  <data name="link_efollow" xml:space="preserve">
+    <value>Nemáš dostatočné povolenie na vytváranie symbolických spojení</value>
+  </data>
+  <data name="rename_title" xml:space="preserve">
+    <value>Premenuj $1</value>
+  </data>
+  <data name="rename_old" xml:space="preserve">
+    <value>Pôvodné meno:</value>
+  </data>
+  <data name="rename_new" xml:space="preserve">
+    <value>Nové meno:</value>
+  </data>
+  <data name="rename_ok" xml:space="preserve">
+    <value>Premenuj</value>
+  </data>
+  <data name="rename_eexists" xml:space="preserve">
+    <value>Súbor s menom $1 už jestvuje</value>
+  </data>
+  <data name="rename_efailed" xml:space="preserve">
+    <value>Premenovávanie nebolo úspešné : $1</value>
+  </data>
+  <data name="rename_eold" xml:space="preserve">
+    <value>Nemáš dovolené premenovávať '$1'</value>
+  </data>
+  <data name="rename_enew" xml:space="preserve">
+    <value>Nemáš dovolené premenovávať na '$1'</value>
+  </data>
+  <data name="file_type0" xml:space="preserve">
+    <value>Adresár</value>
+  </data>
+  <data name="file_type1" xml:space="preserve">
+    <value>Textový súbor</value>
+  </data>
+  <data name="file_type2" xml:space="preserve">
+    <value>Obrázok</value>
+  </data>
+  <data name="file_type3" xml:space="preserve">
+    <value>Binarny súbor</value>
+  </data>
+  <data name="file_type4" xml:space="preserve">
+    <value>Súbor</value>
+  </data>
+  <data name="file_type5" xml:space="preserve">
+    <value>Symbolické spojenie</value>
+  </data>
+  <data name="file_type6" xml:space="preserve">
+    <value>Súbor ovládača</value>
+  </data>
+  <data name="file_type7" xml:space="preserve">
+    <value>Rúrka</value>
+  </data>
+  <data name="view_enormal" xml:space="preserve">
+    <value>Len normálne súbory môžu byť prezerané</value>
+  </data>
+  <data name="view_enormal2" xml:space="preserve">
+    <value>Len normálne súbory môžu byť sťahované</value>
+  </data>
+  <data name="view_eaccess" xml:space="preserve">
+    <value>Nemáš povolený prístup k $1</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>Otvorenie nebolo úspešné $1 : $2</value>
+  </data>
+  <data name="paste_ecopy" xml:space="preserve">
+    <value>Musíš najprv vybrať alebo skopírovať ak chceš vkladať</value>
+  </data>
+  <data name="paste_egone" xml:space="preserve">
+    <value>Súbor kopírovaný $1 už neexiststuje</value>
+  </data>
+  <data name="paste_eover" xml:space="preserve">
+    <value>$1 nemôže byť prepísaný</value>
+  </data>
+  <data name="paste_eself" xml:space="preserve">
+    <value>Nemôžeš vkladať súbor do adresára so súborom s rovnakým menom</value>
+  </data>
+  <data name="paste_emfailed" xml:space="preserve">
+    <value>Premiestnenie nebolo úspešné : $1</value>
+  </data>
+  <data name="paste_ecfailed" xml:space="preserve">
+    <value>Vytváranie kópie nebolo úspešné : $1</value>
+  </data>
+  <data name="over_title" xml:space="preserve">
+    <value>Súbor už Existstuje</value>
+  </data>
+  <data name="over_msg" xml:space="preserve">
+    <value>Súbor $1 už existstuje. Použi políčko nižšie na premenovanie vkladaného súboru.</value>
+  </data>
+  <data name="over_new" xml:space="preserve">
+    <value>Nové meno súboru:</value>
+  </data>
+  <data name="over_ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="upload_efailed" xml:space="preserve">
+    <value>Naložený súbor : $1 sa nepodarilo otvoriť</value>
+  </data>
+  <data name="upload_title" xml:space="preserve">
+    <value>Nalož súbor</value>
+  </data>
+  <data name="upload_file" xml:space="preserve">
+    <value>Súbor pre nakladanie</value>
+  </data>
+  <data name="upload_dir" xml:space="preserve">
+    <value>Nalož do adresára</value>
+  </data>
+  <data name="upload_ok" xml:space="preserve">
+    <value>Nalož</value>
+  </data>
+  <data name="upload_conv" xml:space="preserve">
+    <value>Kovertuj DOS-ové symboly pre nový riadok?</value>
+  </data>
+  <data name="upload_efile" xml:space="preserve">
+    <value>Nebol vybratý žiaden súbor na nakladanie.</value>
+  </data>
+  <data name="upload_edir" xml:space="preserve">
+    <value>Adresár na nakladanie neexistuje.</value>
+  </data>
+  <data name="upload_eperm" xml:space="preserve">
+    <value>You are not allowed to create $1</value>
+  </data>
+  <data name="upload_ewrite" xml:space="preserve">
+    <value>Failed to write to $1 : $2.</value>
+  </data>
+  <data name="find_eaccess" xml:space="preserve">
+    <value>You are not allowed to access $1</value>
+  </data>
+  <data name="find_eexist" xml:space="preserve">
+    <value>$1 does not exist in $2</value>
+  </data>
+  <data name="find_edir" xml:space="preserve">
+    <value>$1 is not a directory in $2</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Zruš</value>
+  </data>
+  <data name="chmod_eaccess" xml:space="preserve">
+    <value>You are not allowed to access '$1'</value>
+  </data>
+  <data name="chmod_euser" xml:space="preserve">
+    <value>$1 : no such user</value>
+  </data>
+  <data name="chmod_egroup" xml:space="preserve">
+    <value>$1 : no such group</value>
+  </data>
+  <data name="chmod_elink" xml:space="preserve">
+    <value>symlink failed : $1</value>
+  </data>
+  <data name="chmod_echown" xml:space="preserve">
+    <value>chown failed : $1</value>
+  </data>
+  <data name="chmod_echmod" xml:space="preserve">
+    <value>chmod failed : $1</value>
+  </data>
+  <data name="chmod_efollow" xml:space="preserve">
+    <value>You are not allowed to edit symbolic links</value>
+  </data>
+  <data name="copy_efrom" xml:space="preserve">
+    <value>You are not allowed to copy from '$1'</value>
+  </data>
+  <data name="copy_eto" xml:space="preserve">
+    <value>You are not allowed to copy to '$1'</value>
+  </data>
+  <data name="copy_elink" xml:space="preserve">
+    <value>symlink failed : $1</value>
+  </data>
+  <data name="delete_eaccess" xml:space="preserve">
+    <value>You are not allowed to delete '$1'</value>
+  </data>
+  <data name="list_eaccess" xml:space="preserve">
+    <value>You are not allowed to access this directory</value>
+  </data>
+  <data name="list_edir" xml:space="preserve">
+    <value>Failed to list $1 : $2</value>
+  </data>
+  <data name="move_eto" xml:space="preserve">
+    <value>You are not allowed to move to '$1'</value>
+  </data>
+  <data name="move_afrom" xml:space="preserve">
+    <value>You are not allowed to move '$1'</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Access files on server as user</value>
+  </data>
+  <data name="acl_user_def" xml:space="preserve">
+    <value>Same as Webmin login</value>
+  </data>
+  <data name="acl_umask" xml:space="preserve">
+    <value>Umask for new files</value>
+  </data>
+  <data name="acl_follow" xml:space="preserve">
+    <value>Always follow symlinks?</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>Read-only mode?</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>Only allow access to directories</value>
+  </data>
+  <data name="acl_home" xml:space="preserve">
+    <value>Include home directory of Webmin user</value>
+  </data>
+  <data name="acl_log" xml:space="preserve">
+    <value>Log all file modifications?</value>
+  </data>
+  <data name="acl_goto" xml:space="preserve">
+    <value>Open first allowed directory?</value>
+  </data>
+  <data name="share_title" xml:space="preserve">
+    <value>Sharing</value>
+  </data>
+  <data name="share_samba" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="share_nfs" xml:space="preserve">
+    <value>NFS</value>
+  </data>
+  <data name="share_son" xml:space="preserve">
+    <value>Windows file sharing enabled</value>
+  </data>
+  <data name="share_soff" xml:space="preserve">
+    <value>Windows file sharing disabled</value>
+  </data>
+  <data name="share_writable" xml:space="preserve">
+    <value>Writable?</value>
+  </data>
+  <data name="share_available" xml:space="preserve">
+    <value>Currently active?</value>
+  </data>
+  <data name="share_sheader" xml:space="preserve">
+    <value>Sharing options</value>
+  </data>
+  <data name="share_only" xml:space="preserve">
+    <value>Only</value>
+  </data>
+  <data name="share_guest" xml:space="preserve">
+    <value>Guest access?</value>
+  </data>
+  <data name="share_comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="share_nheader" xml:space="preserve">
+    <value>NFS export options</value>
+  </data>
+  <data name="share_non" xml:space="preserve">
+    <value>NFS file sharing enabled</value>
+  </data>
+  <data name="share_noff" xml:space="preserve">
+    <value>NFS file sharing disabled</value>
+  </data>
+  <data name="share_desc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="share_ro" xml:space="preserve">
+    <value>Read-only hosts</value>
+  </data>
+  <data name="share_rw" xml:space="preserve">
+    <value>Read-write hosts</value>
+  </data>
+  <data name="share_root" xml:space="preserve">
+    <value>Root access hosts</value>
+  </data>
+  <data name="share_none" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="share_all" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="share_listed" xml:space="preserve">
+    <value>Listed..</value>
+  </data>
+  <data name="share_host" xml:space="preserve">
+    <value>Hosts</value>
+  </data>
+  <data name="share_opts" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="share_s0" xml:space="preserve">
+    <value>Trust nobody</value>
+  </data>
+  <data name="share_s1" xml:space="preserve">
+    <value>Trust non-root</value>
+  </data>
+  <data name="share_s2" xml:space="preserve">
+    <value>Trust everybody</value>
+  </data>
+  <data name="share_lro" xml:space="preserve">
+    <value>Read-only</value>
+  </data>
+  <data name="share_lrw" xml:space="preserve">
+    <value>Read-write</value>
+  </data>
+  <data name="log_create_export" xml:space="preserve">
+    <value>Created NFS export $1</value>
+  </data>
+  <data name="log_modify_export" xml:space="preserve">
+    <value>Modified NFS export $1</value>
+  </data>
+  <data name="log_delete_export" xml:space="preserve">
+    <value>Deleted NFS export $1</value>
+  </data>
+  <data name="log_create_share" xml:space="preserve">
+    <value>Created Samba share $1</value>
+  </data>
+  <data name="log_modify_share" xml:space="preserve">
+    <value>Modified Samba share $1</value>
+  </data>
+  <data name="log_delete_share" xml:space="preserve">
+    <value>Deleted Samba share $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Saved file $1</value>
+  </data>
+  <data name="log_chmod" xml:space="preserve">
+    <value>Changed permissions on file $1</value>
+  </data>
+  <data name="log_mkdir" xml:space="preserve">
+    <value>Created directory $1</value>
+  </data>
+  <data name="log_upload" xml:space="preserve">
+    <value>Uploaded file $1</value>
+  </data>
+  <data name="log_link" xml:space="preserve">
+    <value>Created symbolic link $1 to $2</value>
+  </data>
+  <data name="log_relink" xml:space="preserve">
+    <value>Modified symbolic link $1 to $2</value>
+  </data>
+  <data name="log_copy" xml:space="preserve">
+    <value>Copied file $1 to $2</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Moved file $1 to $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Deleted file $1</value>
+  </data>
+  <data name="log_attr" xml:space="preserve">
+    <value>Set attributes on file $1</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Set ACL on file $1</value>
+  </data>
+  <data name="search_eaccess" xml:space="preserve">
+    <value>You are not allowed to search this directory</value>
+  </data>
+  <data name="search_title" xml:space="preserve">
+    <value>Find files</value>
+  </data>
+  <data name="search_ok" xml:space="preserve">
+    <value>Search Now</value>
+  </data>
+  <data name="search_dir" xml:space="preserve">
+    <value>Search directory</value>
+  </data>
+  <data name="search_match" xml:space="preserve">
+    <value>For files matching</value>
+  </data>
+  <data name="search_user" xml:space="preserve">
+    <value>Owned by user</value>
+  </data>
+  <data name="search_group" xml:space="preserve">
+    <value>Owned by group</value>
+  </data>
+  <data name="search_any" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="search_type" xml:space="preserve">
+    <value>File type</value>
+  </data>
+  <data name="search_types_" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="search_types_f" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="search_types_d" xml:space="preserve">
+    <value>Directory</value>
+  </data>
+  <data name="search_types_l" xml:space="preserve">
+    <value>Symbolic link</value>
+  </data>
+  <data name="search_types_p" xml:space="preserve">
+    <value>Named pipe</value>
+  </data>
+  <data name="search_size" xml:space="preserve">
+    <value>File size</value>
+  </data>
+  <data name="search_more" xml:space="preserve">
+    <value>More than</value>
+  </data>
+  <data name="search_less" xml:space="preserve">
+    <value>Less than</value>
+  </data>
+  <data name="search_xdev" xml:space="preserve">
+    <value>Search past mounts?</value>
+  </data>
+  <data name="search_edir" xml:space="preserve">
+    <value>Missing or invalid search directory</value>
+  </data>
+  <data name="search_ematch" xml:space="preserve">
+    <value>Missing matching regexp</value>
+  </data>
+  <data name="search_euser" xml:space="preserve">
+    <value>Missing username</value>
+  </data>
+  <data name="search_egroup" xml:space="preserve">
+    <value>Missing group name</value>
+  </data>
+  <data name="search_esize" xml:space="preserve">
+    <value>File size must be an integer</value>
+  </data>
+  <data name="search_crit" xml:space="preserve">
+    <value>Search criteria</value>
+  </data>
+  <data name="search_list" xml:space="preserve">
+    <value>Search results</value>
+  </data>
+  <data name="facl_eaccess" xml:space="preserve">
+    <value>You are not allowed to set ACLs for this file</value>
+  </data>
+  <data name="attr_eattrs" xml:space="preserve">
+    <value>Failed to get attributes : $1</value>
+  </data>
+  <data name="attr_efs" xml:space="preserve">
+    <value>The filesystem $1 does not support attributes</value>
+  </data>
+  <data name="attr_add" xml:space="preserve">
+    <value>Add Attribute</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Attribute Name</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Attribute Value</value>
+  </data>
+  <data name="attr_efailed" xml:space="preserve">
+    <value>Failed to set attributes for $1 : $2</value>
+  </data>
+  <data name="attr_title" xml:space="preserve">
+    <value>File Attributes for $1</value>
+  </data>
+  <data name="attr_create" xml:space="preserve">
+    <value>Add Attribute</value>
+  </data>
+  <data name="attr_edit" xml:space="preserve">
+    <value>Edit Attribute</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Missing attribute name</value>
+  </data>
+  <data name="ext_eattrs" xml:space="preserve">
+    <value>Failed to get EXT attributes : $1</value>
+  </data>
+  <data name="ext_efs" xml:space="preserve">
+    <value>The filesystem $1 does not support EXT attributes</value>
+  </data>
+  <data name="ext_title" xml:space="preserve">
+    <value>EXT attributes for $1</value>
+  </data>
+  <data name="ext_header" xml:space="preserve">
+    <value>EXT file attributes</value>
+  </data>
+  <data name="ext_efailed" xml:space="preserve">
+    <value>Failed to set attributes for $1 : $2</value>
+  </data>
+  <data name="eattr_A" xml:space="preserve">
+    <value>Do not update access times</value>
+  </data>
+  <data name="eattr_a" xml:space="preserve">
+    <value>Can only append to file</value>
+  </data>
+  <data name="eattr_c" xml:space="preserve">
+    <value>Compress data on disk</value>
+  </data>
+  <data name="eattr_d" xml:space="preserve">
+    <value>Do not backup with dump</value>
+  </data>
+  <data name="eattr_i" xml:space="preserve">
+    <value>Do not allow modification</value>
+  </data>
+  <data name="eattr_s" xml:space="preserve">
+    <value>Zero blocks when deleting</value>
+  </data>
+  <data name="eattr_S" xml:space="preserve">
+    <value>Always sync after writing</value>
+  </data>
+  <data name="eattr_u" xml:space="preserve">
+    <value>Save contents for undeletion</value>
+  </data>
+</root>

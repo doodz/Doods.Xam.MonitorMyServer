@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Fail2Ban - detektor intruzów</value>
+  </data>
+  <data name="index_fail2ban" xml:space="preserve">
+    <value>Fail2Ban</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Uruchomić przy starcie?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Zmień tę opcję w celu kontrolowania, czy serwer Fail2Ban ma być uruchamiany przy starcie systemu, czy nie.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Zatrzymaj serwer Fail2Ban</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Kliknij na ten przycisk, aby zatrzymać uruchomiony serwer Fail2Ban. Analizy wszystkich logów zostaną natychmiast zatrzymane.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Uruchom serwer Fail2Ban</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Kliknij na ten przycisk, aby uruchomić serwer Fail2Ban. Zostanie rozpoczęta analiza logów.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Restartuj serwer Fail2Ban</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Kliknij na ten przycisk, aby zastosować aktualną konfigurację przez ponowne uruchomienie serwera Fail2Ban.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indeksu modułu</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Moduł Fail2Ban</value>
+  </data>
+  <data name="check_edir" xml:space="preserve">
+    <value>Katalog konfiguracji $1 nie istnieje</value>
+  </data>
+  <data name="check_econf" xml:space="preserve">
+    <value>Plik konfiguracji $1 nie istnieje</value>
+  </data>
+  <data name="check_eclient" xml:space="preserve">
+    <value>Polecenie klienta $1 nie zostało znalezione</value>
+  </data>
+  <data name="check_eserver" xml:space="preserve">
+    <value>Polecenie serwera $1 nie zostało znalezione</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Filtry logów</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Nazwa filtra</value>
+  </data>
+  <data name="filters_re" xml:space="preserve">
+    <value>Wyrażenie regularne</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Usuń wybrane filtry</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Dodaj nowy filtr loga</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>listy filtrów</value>
+  </data>
+  <data name="filters_derr" xml:space="preserve">
+    <value>Błąd usuwania filtrów</value>
+  </data>
+  <data name="filters_enone" xml:space="preserve">
+    <value>Noc nie wybrano</value>
+  </data>
+  <data name="filters_einuse" xml:space="preserve">
+    <value>Filtr $1 nie może zostać usunięty, ponieważ jest używany przez jails: $2</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Tworzenie filtra</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Edycja filtra</value>
+  </data>
+  <data name="filter_desc" xml:space="preserve">
+    <value>&lt;i&gt;&amp;lt;HOST&amp;gt;&lt;/i&gt; w wyrażeniu regularnym zostanie zastąpione nazwą hosta lub adresem IP</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Szczegóły filtra loga</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Nazwa filtra</value>
+  </data>
+  <data name="filter_fail" xml:space="preserve">
+    <value>Wyrażenia regularne do dopasowania</value>
+  </data>
+  <data name="filter_ignore" xml:space="preserve">
+    <value>Wyrażenia regularne do zignorowania</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filtr już nie istnieje!</value>
+  </data>
+  <data name="filter_edefgone" xml:space="preserve">
+    <value>Filtr nie zawiera sekcji Definition</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Błąd zapisywania filtra</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Brak nazwy filtra lub jest ona nieprawidłowa</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Nazwa filtra już jest w użyciu</value>
+  </data>
+  <data name="filter_efail" xml:space="preserve">
+    <value>Nie wpisano wyrażenia regularngo do dopasowania</value>
+  </data>
+  <data name="filter_einuse" xml:space="preserve">
+    <value>Filtr nie może zostać usunięty, ponieważ jest używany przez jails: $1</value>
+  </data>
+  <data name="actions_title" xml:space="preserve">
+    <value>Dopasowanie akcji</value>
+  </data>
+  <data name="actions_name" xml:space="preserve">
+    <value>Nazwa akcji</value>
+  </data>
+  <data name="actions_ban" xml:space="preserve">
+    <value>Polecenie banowania</value>
+  </data>
+  <data name="actions_delete" xml:space="preserve">
+    <value>Usuń wybrane akcje</value>
+  </data>
+  <data name="actions_add" xml:space="preserve">
+    <value>Dodaj nową akcję.</value>
+  </data>
+  <data name="actions_return" xml:space="preserve">
+    <value>listy akcji</value>
+  </data>
+  <data name="actions_derr" xml:space="preserve">
+    <value>Błąd usuwania akcji</value>
+  </data>
+  <data name="actions_enone" xml:space="preserve">
+    <value>Nic nie wybrano</value>
+  </data>
+  <data name="actions_einuse" xml:space="preserve">
+    <value>Akcja $1 nie może zostać usunięta, ponieważ jest używana przez jail : $2</value>
+  </data>
+  <data name="action_title1" xml:space="preserve">
+    <value>Tworzenie dopasowania akcji</value>
+  </data>
+  <data name="action_title2" xml:space="preserve">
+    <value>Edycja dopasowania akcji</value>
+  </data>
+  <data name="action_header" xml:space="preserve">
+    <value>Szczegóły dopasowania akcji</value>
+  </data>
+  <data name="action_name" xml:space="preserve">
+    <value>Nazwa akcji</value>
+  </data>
+  <data name="action_egone" xml:space="preserve">
+    <value>Akcja już nie istnieje!</value>
+  </data>
+  <data name="action_edefgone" xml:space="preserve">
+    <value>Akcja nie zawiera sekcji Definition</value>
+  </data>
+  <data name="action_err" xml:space="preserve">
+    <value>Błąd zapisu akcji</value>
+  </data>
+  <data name="action_ename" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa akcji</value>
+  </data>
+  <data name="action_eclash" xml:space="preserve">
+    <value>Ta nazwa akcji już jest używana</value>
+  </data>
+  <data name="action_start" xml:space="preserve">
+    <value>Polecenie do włączenia Fail2Ban</value>
+  </data>
+  <data name="action_stop" xml:space="preserve">
+    <value>Polecenie do wyłączenia Fail2Ban</value>
+  </data>
+  <data name="action_check" xml:space="preserve">
+    <value>Polecenie do uruchomienia przed banowaniem IP</value>
+  </data>
+  <data name="action_ban" xml:space="preserve">
+    <value>Polecenie do banowania IP</value>
+  </data>
+  <data name="action_unban" xml:space="preserve">
+    <value>Polecenie do odbanowania IP</value>
+  </data>
+  <data name="action_desc" xml:space="preserve">
+    <value>&lt;i&gt;&amp;lt;ip&amp;gt;&lt;/i&gt; zostanie zastąpione banowanym adresem IP.</value>
+  </data>
+  <data name="action_einuse" xml:space="preserve">
+    <value>Ta akcja nie może zostać usunięta, ponieważ jest używana przez jails : $1</value>
+  </data>
+  <data name="jails_title" xml:space="preserve">
+    <value>Jail - akcje filtra</value>
+  </data>
+  <data name="jails_add" xml:space="preserve">
+    <value>Dodaj nowe jail.</value>
+  </data>
+  <data name="jails_name" xml:space="preserve">
+    <value>Nazwa jail</value>
+  </data>
+  <data name="jails_filter" xml:space="preserve">
+    <value>Filtr loga</value>
+  </data>
+  <data name="jails_enabled" xml:space="preserve">
+    <value>Włączone</value>
+  </data>
+  <data name="jails_action" xml:space="preserve">
+    <value>Akcje</value>
+  </data>
+  <data name="jails_delete" xml:space="preserve">
+    <value>Usuń wybrane jails</value>
+  </data>
+  <data name="jails_def" xml:space="preserve">
+    <value>Edytuj domyślny jail</value>
+  </data>
+  <data name="jails_defdesc" xml:space="preserve">
+    <value>Edytuj domyślne ustawienia i limity, które zostaną zastosowane we wszystkich powyższych jail, takich jak np. wymagana liczba dopasować, czas banowania, nie banowane adresy IP itd.</value>
+  </data>
+  <data name="jails_return" xml:space="preserve">
+    <value>listy jails</value>
+  </data>
+  <data name="jails_derr" xml:space="preserve">
+    <value>Błąd usuwania jails</value>
+  </data>
+  <data name="jails_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="jail_title1" xml:space="preserve">
+    <value>Tworzenie Jail</value>
+  </data>
+  <data name="jail_title2" xml:space="preserve">
+    <value>Edycja Jail</value>
+  </data>
+  <data name="jail_header" xml:space="preserve">
+    <value>Szczegóły filtra akcji jail</value>
+  </data>
+  <data name="jail_name" xml:space="preserve">
+    <value>Nazwa jail</value>
+  </data>
+  <data name="jail_egone" xml:space="preserve">
+    <value>Jail już nie istnieje!</value>
+  </data>
+  <data name="jail_enabled" xml:space="preserve">
+    <value>Aktualnie włączone?</value>
+  </data>
+  <data name="jail_filter" xml:space="preserve">
+    <value>Filtr wyszukiwany w logu</value>
+  </data>
+  <data name="jail_logpath" xml:space="preserve">
+    <value>Ścieżki pliku loga</value>
+  </data>
+  <data name="jail_actions" xml:space="preserve">
+    <value>Akcje do zastosowania</value>
+  </data>
+  <data name="jail_action" xml:space="preserve">
+    <value>Akcja</value>
+  </data>
+  <data name="jail_aname" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="jail_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="jail_protocol" xml:space="preserve">
+    <value>Protokół</value>
+  </data>
+  <data name="jail_others" xml:space="preserve">
+    <value>Inne parametry</value>
+  </data>
+  <data name="jail_maxretry" xml:space="preserve">
+    <value>Dopasowań przed podjęciem akcji</value>
+  </data>
+  <data name="jail_findtime" xml:space="preserve">
+    <value>Maksymalne opóźnienie pomiędzy dopasowaniami</value>
+  </data>
+  <data name="jail_bantime" xml:space="preserve">
+    <value>Czas banowania IP</value>
+  </data>
+  <data name="jail_ignoreip" xml:space="preserve">
+    <value>Adresy IP nigdy nie banowane</value>
+  </data>
+  <data name="jail_err" xml:space="preserve">
+    <value>Błąd zapisu jail</value>
+  </data>
+  <data name="jail_eclash" xml:space="preserve">
+    <value>Jail o takiej nazwie już istnieje</value>
+  </data>
+  <data name="jail_ename" xml:space="preserve">
+    <value>Brakująca lub nieprawidłowa nazwa jail</value>
+  </data>
+  <data name="jail_eaname" xml:space="preserve">
+    <value>Nieprawidłowy parametr nazwy dla akcji $1</value>
+  </data>
+  <data name="jail_eport" xml:space="preserve">
+    <value>Błędny numer portu dla akcji $1</value>
+  </data>
+  <data name="jail_eactions" xml:space="preserve">
+    <value>Nie wybrano akcji!</value>
+  </data>
+  <data name="jail_elogpaths" xml:space="preserve">
+    <value>Nie wpisano ścieżek pliku loga</value>
+  </data>
+  <data name="jail_elogpath" xml:space="preserve">
+    <value>Wszystkie pliki loga muszą mieć absolutną ścieżkę lub wzory</value>
+  </data>
+  <data name="jail_emaxretry" xml:space="preserve">
+    <value>Liczba dopasowań przed zastosowaniem akcji musi być większa niż zero</value>
+  </data>
+  <data name="jail_efindtime" xml:space="preserve">
+    <value>Opóźnienie pomiędzy dopasowaniami musi być większe niż zero</value>
+  </data>
+  <data name="jail_ebantime" xml:space="preserve">
+    <value>Czas banowania IP musi być większe niż zero</value>
+  </data>
+  <data name="jail_backend" xml:space="preserve">
+    <value>Sprawdzaj aktualizacje pliku loga używając</value>
+  </data>
+  <data name="jail_auto" xml:space="preserve">
+    <value>Zdecyduj automatycznie</value>
+  </data>
+  <data name="jail_gamin" xml:space="preserve">
+    <value>Monitor zmiany pliku Gamin</value>
+  </data>
+  <data name="jail_polling" xml:space="preserve">
+    <value>Zapytanie w tle</value>
+  </data>
+  <data name="jail_destemail" xml:space="preserve">
+    <value>Domyślne powiadomienie e-mail</value>
+  </data>
+  <data name="jail_none" xml:space="preserve">
+    <value>nie ustawiono</value>
+  </data>
+  <data name="jail_banaction" xml:space="preserve">
+    <value>Domyślna akcja do zastosowania</value>
+  </data>
+  <data name="jail_defprotocol" xml:space="preserve">
+    <value>Domyślny protokół dla akcji</value>
+  </data>
+  <data name="jail_edestemail" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy domyślny adres e-mail dla powiadomień</value>
+  </data>
+  <data name="jail_eignoreip" xml:space="preserve">
+    <value>Błędny adres IP do ignorowania</value>
+  </data>
+  <data name="jaildef_title" xml:space="preserve">
+    <value>Domyślne opcje jail</value>
+  </data>
+  <data name="jaildef_header" xml:space="preserve">
+    <value>Domyślne dla wszystkich jail</value>
+  </data>
+  <data name="jaildef_err" xml:space="preserve">
+    <value>Błąd zapisu opcji domyślnego jail</value>
+  </data>
+  <data name="jaildef_egone" xml:space="preserve">
+    <value>Nie znaleziono DOMYŚLNEGO jail!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Błąd uruchamiania serwera</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Błąd zatrzymywania serwera</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Błąd restartowania serwera</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Utworzono filtr $1</value>
+  </data>
+  <data name="log_update_filter" xml:space="preserve">
+    <value>Zmodyfikowano filtr $1</value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Usunięto filtr $1</value>
+  </data>
+  <data name="log_create_action" xml:space="preserve">
+    <value>Utworzono akcje $1</value>
+  </data>
+  <data name="log_update_action" xml:space="preserve">
+    <value>Zmodyfikowano akcję $1</value>
+  </data>
+  <data name="log_delete_action" xml:space="preserve">
+    <value>Usunięto akcję $1</value>
+  </data>
+  <data name="log_create_jail" xml:space="preserve">
+    <value>Utworzono jail $1</value>
+  </data>
+  <data name="log_update_jail" xml:space="preserve">
+    <value>Zmodyfikowano jail $1</value>
+  </data>
+  <data name="log_delete_jail" xml:space="preserve">
+    <value>Usunięto jail $1</value>
+  </data>
+  <data name="log_config" xml:space="preserve">
+    <value>Zmieniono globalną konfigurację</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Zatrzymano serwer Fail2Ban</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Uruchomiono serwer Fail2Ban</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Uruchomiono ponownie serwer Fail2Ban</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Włączono Fail2Ban przy uruchamianiu</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Wyłączono Fail2Ban przy starcie</value>
+  </data>
+  <data name="log_manual" xml:space="preserve">
+    <value>Zedytowano plik konfiguracyjny $1</value>
+  </data>
+  <data name="log_jaildef" xml:space="preserve">
+    <value>Zmodyfikowano domyślne opcje jail</value>
+  </data>
+  <data name="config_title" xml:space="preserve">
+    <value>Globalna konfiguracja</value>
+  </data>
+  <data name="config_edef" xml:space="preserve">
+    <value>Nie znaleziono sekcji Definition w pliku konfiguracyjnym</value>
+  </data>
+  <data name="config_header" xml:space="preserve">
+    <value>Ustawienia konfiguracyjne dla Fail2Ban</value>
+  </data>
+  <data name="config_loglevel" xml:space="preserve">
+    <value>Minimalny poziom logowania</value>
+  </data>
+  <data name="config_logtarget" xml:space="preserve">
+    <value>Zapisz logi do</value>
+  </data>
+  <data name="config_syslog" xml:space="preserve">
+    <value>usługa Syslog</value>
+  </data>
+  <data name="config_file" xml:space="preserve">
+    <value>Plik loga</value>
+  </data>
+  <data name="config_default" xml:space="preserve">
+    <value>Domyślna lokalizacja</value>
+  </data>
+  <data name="config_socket" xml:space="preserve">
+    <value>Socket komunikacji z serwerem</value>
+  </data>
+  <data name="config_err" xml:space="preserve">
+    <value>Błąd zapisu globalnej konfiguracji</value>
+  </data>
+  <data name="config_elogtarget" xml:space="preserve">
+    <value>Plik loga musi mieć ścieżkę absolutną</value>
+  </data>
+  <data name="config_esocket" xml:space="preserve">
+    <value>Plik socket musi mieć ścieżkę absolutną</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>Edytuj pliki konfiguracyjne</value>
+  </data>
+  <data name="manual_desc" xml:space="preserve">
+    <value>Plik do edycji:</value>
+  </data>
+  <data name="manual_ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="manual_efile" xml:space="preserve">
+    <value>Wybrany plik nie jest częścią konfiguracji Fail2Ban!</value>
+  </data>
+  <data name="manual_err" xml:space="preserve">
+    <value>Błąd edycji pliku konfiguracyjnego</value>
+  </data>
+  <data name="manual_edata" xml:space="preserve">
+    <value>Nie wpisano treści pliku konfiguracyjnego</value>
+  </data>
+  <data name="syslog_logtarget" xml:space="preserve">
+    <value>Log akcji Fail2Ban</value>
+  </data>
+</root>

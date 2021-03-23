@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Journaux système NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Appliquer la configuration</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Cliquez sur ce bouton pour activer la configuration actuelle de Syslog-NG.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Arrêter Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Cliquez sur ce bouton pour arrêter le démon Syslog-NG en cours d'exécution. Une fois arrêtés, les messages de journalisation des autres programmes ne seront plus écrits dans les fichiers journaux.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Démarrez Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Cliquez sur ce bouton pour démarrer le démon Syslog-NG, en utilisant la configuration actuelle.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>index du module</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Options de journalisation</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Options pour tous les fichiers journaux</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>secondes</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>entrées</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Temps d'attente avant de rouvrir les connexions mortes</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Temps d'attente avant de fermer les connexions inactives</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Messages à tamponner avant d'écrire</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Temps d'attente entre les messages de statistiques</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Nombre de messages à mettre en mémoire tampon</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Utiliser le format de nom d'hôte chaîné?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Conserver les noms d'hôtes d'origine?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Vérifiez les noms d'hôtes pour les caractères valides?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Expression régulière pour les mauvais noms d'hôtes</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Créer des répertoires pour les fichiers journaux si nécessaire?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Propriétaire par défaut des fichiers journaux</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Groupe par défaut pour les fichiers journaux</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Autorisations par défaut pour les fichiers journaux</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Propriétaire par défaut des répertoires créés</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Groupe par défaut pour les répertoires créés</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Autorisations par défaut pour les répertoires créés</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Des messages d'heure d'enregistrement ont été reçus?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Faire des recherches DNS inversées?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Cachez les recherches DNS?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Taille du cache DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Mettre en cache les enregistrements DNS pour</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Le cache a échoué les recherches DNS pour</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Taille maximale des messages de journal</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Enregistrer les noms d'hôtes complets?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Remplacer les caractères de contrôle dans les noms de fichiers?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Échec de l'enregistrement des options de journalisation</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Expression régulière manquante ou invalide pour les mauvais noms d'hôtes</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Taille du cache DNS manquante ou non numérique</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Temps de cache DNS manquant ou non numérique</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Temps de cache DNS manquant ou non numérique ayant échoué</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Propriétaire par défaut manquant pour les fichiers journaux</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Groupe par défaut manquant pour les fichiers journaux</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Autorisations par défaut manquantes pour les fichiers journaux</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Propriétaire par défaut manquant pour les répertoires</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Groupe par défaut manquant pour les répertoires</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Autorisations par défaut manquantes pour les répertoires</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Temps manquant ou non numérique pour attendre les connexions mortes</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Temps manquant ou non numérique pour attendre les connexions idéales</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Nombre de messages manquant ou invalide à mettre en mémoire tampon avant l'écriture</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Temps manquant ou non numérique pour attendre entre les messages de statistiques</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Nombre de messages manquant ou invalide à mettre en mémoire tampon</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Taille maximale des messages de journal manquante ou non numérique</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Destinations de journal</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Nom de destination</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Écrire à</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Destination du journal</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Utilisateurs connectés</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Entrée de programme</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Pipe Unix</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>Serveur syslog UDP</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Serveur TCP Syslog</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Prise de datagramme</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Prise de flux</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Tous les utilisateurs</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Seuls les utilisateurs $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Hôte $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Vue ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Aucun fichier journal de destination n'a encore été défini.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Supprimer les destinations sélectionnées</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Ajoutez une nouvelle destination de journal.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>destinations de journal</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Journal d'un autre module</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Sortie de $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Options de destination du journal</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Créer une destination de journal</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Modifier la destination du journal</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Nom de destination du journal</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Connectez-vous à ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Nom de fichier</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Créer des répertoires?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Autorisations sur les répertoires</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Synchroniser après chaque écriture?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Groupe pour le fichier journal</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Propriétaire du fichier journal</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Autorisations sur le fichier journal</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Messages entre les synchronisations</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Utilisateurs répertoriés</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Serveur Syslog</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Protocole réseau</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Adresse du serveur</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Port de serveur</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Adresse IP locale</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Port local</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Prise Unix</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Nom du socket</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Impossible d'enregistrer la destination</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Une destination du même nom existe déjà</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>La destination n'existe plus!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Nom de fichier manquant ou invalide</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Propriétaire du fichier journal manquant ou non valide</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Groupe de fichiers journaux manquant ou non valide</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Autorisations de fichier journal manquantes ou non octales</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Autorisations de répertoire manquantes ou non octales</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Nombre de messages manquant ou invalide entre les synchronisations</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Utilisateurs manquants auxquels envoyer</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Programme manquant pour alimenter</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Fichier de canal Unix manquant</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Numéro de port manquant ou invalide</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Adresse IP locale manquante ou invalide</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Numéro de port local manquant ou invalide</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Hôte ou adresse de serveur Syslog manquant ou non valide</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Nom de socket Unix manquant</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Impossible de supprimer les destinations</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Aucune sélection</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>La destination $1 ne peut pas être supprimée, car elle est utilisée par une cible de journal</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Impossible de supprimer les sources</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Aucune sélection</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>La source de journal $1 ne peut pas être supprimée, car elle est utilisée par une cible de journal</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Impossible de supprimer les filtres</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Aucune sélection</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Le filtre de journal $1 ne peut pas être supprimé, car il est utilisé par une cible de journal</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Impossible de supprimer les cibles de journal</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Aucune sélection</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Filtres de journaux</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Nom du filtre</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Aucun filtre de journal n'a encore été défini.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Supprimer les filtres sélectionnés</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Ajoutez un nouveau filtre de journal.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>filtres de journaux</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>priorité &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>priorités &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 priorités</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>installation &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 installations</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>programme &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>correspond à "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>à partir du nom d'hôte &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>de l'expéditeur &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Créer un filtre de journal</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Modifier le filtre de journal</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Détails des spécifications du filtre de journal</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Nom du filtre</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Conditions simples (toutes doivent correspondre)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Expression complexe</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>En priorité ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Du programme ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Expression de correspondance ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>De l'établissement ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Du nom d'hôte ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Depuis le réseau IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Échec de l'enregistrement du filtre de journal</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Nom de filtre manquant ou invalide</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Un filtre du même nom existe déjà</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Rien à filtrer sur entré</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Aucune priorité sélectionnée</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Aucune installation sélectionnée</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Nom de programme manquant ou invalide</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Expression régulière manquante</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Nom d'hôte manquant ou invalide</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Adresse IP réseau manquante ou non valide</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Masque de réseau manquant ou invalide</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Erreur dans l'expression complexe</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Le filtre n'existe plus!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Cibles de journal</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Sources</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Les destinations</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Ajoutez une nouvelle cible de journal.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Supprimer les cibles de journaux sélectionnées</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>consigner les cibles</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Créer une cible de journal</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Modifier la cible du journal</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Consigner les sélections de source, de filtre et de destination</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Sources de journal</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filtres à appliquer</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Fichiers de destination</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Ne traitez plus d'objectifs</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Cible du journal de secours</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Traiter toutes les sources</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Options cibles</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>La cible de journal n'existe plus!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Échec de l'enregistrement de la cible du journal</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Aucune source sélectionnée</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Sources de journal</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Aucune source n'a encore été définie!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Ajoutez une nouvelle source de journal.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Nom de la source</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Journaliser les sources de données</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Supprimer les sources sélectionnées</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Messages internes Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Prise de flux</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Prise de datagramme</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>Serveur TCP</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>Serveur UDP</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Fichier journal du noyau</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Pipe nommée</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Flux de soleil</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Serveur Syslog</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>sources de journal</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Créer une source de journal</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Modifier la source du journal</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Options de source de journal</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Tout</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>La source n'existe plus!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Nom de la source</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Types de source de journal</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Propriétaire du fichier de socket</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Groupe de fichiers de socket</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Autorisations sur le fichier socket</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Garder les connexions ouvertes pendant le redémarrage?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Nombre maximal de connexions simultanées?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Adresse IP locale</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Numéro de port local</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Utilisez TCP keep-alives?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Préfixe des messages de journal</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Taille du bloc de messages</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Échec de l'enregistrement de la source du journal</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Nom de source manquant ou invalide</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Une source de journal portant le même nom existe déjà</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Propriétaire de fichier socket manquant ou non valide</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Groupe de fichiers socket manquant ou non valide</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Autorisations manquantes ou non octales sur le fichier socket</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Nombre de connexions maximum manquant ou invalide</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Adresse IP locale manquante ou invalide</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Numéro de port local manquant ou invalide</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Préfixe manquant pour les messages de journal</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Taille du bloc de messages manquante ou non numérique</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Nom de fichier socket Unix manquant ou invalide</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Nom de fichier journal du noyau manquant ou non valide</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Nom de fichier de canal nommé manquant ou non valide</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Nom de fichier de la porte</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Nom de fichier des flux Sun manquant ou non valide</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Nom de fichier de porte Sun streams manquant ou non valide</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Protocole réseau</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Afficher le fichier journal</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>$1 dernières lignes de $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Le fichier journal est vide</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Rafraîchir</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Afficher uniquement les lignes avec le texte $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Impossible d'appliquer la configuration</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Ne pas courrir!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Impossible de démarrer le serveur Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Impossible d'arrêter le serveur Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Destination de journal créée $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Destination de journal modifiée $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Destination de journal supprimée $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1 destinations de journal supprimées</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Filtre de journal créé $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Filtre de journal modifié $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Filtre de journal supprimé $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Filtres de journal $1 supprimés</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Source de journal créée $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Source de journal modifiée $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Source de journal supprimée $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>$1 sources de journal supprimées</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Cible de journal créée</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Cible de journal modifiée</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Cible de journal supprimée</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1 cibles de journaux supprimées</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Configuration appliquée</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Serveur Syslog-NG démarré</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Serveur Syslog-NG arrêté</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Options globales modifiées</value>
+  </data>
+</root>

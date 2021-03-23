@@ -8,6 +8,7 @@ using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage;
 using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.Login;
+using Doods.Xam.MonitorMyServer.Views.NAS.PackageUpdates;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
@@ -23,6 +24,7 @@ using Doods.Xam.MonitorMyServer.Views.Settings;
 using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
 using Doods.Xam.MonitorMyServer.Views.Tests;
+using Doods.Xam.MonitorMyServer.Views.Webmin.States;
 
 namespace Doods.Xam.MonitorMyServer.Views
 {
@@ -48,7 +50,7 @@ namespace Doods.Xam.MonitorMyServer.Views
 
             //linux
             builder.RegisterType<LogsViewmodel>().AsSelf();
-            
+
             //omv
             builder.RegisterType<OpenmediavaultDashboardViewModel>().AsSelf();
             builder.RegisterType<OpenmediavaultStatisticsViewModel>().AsSelf();
@@ -62,9 +64,10 @@ namespace Doods.Xam.MonitorMyServer.Views
             builder.RegisterType<SynologyInfoViewModel>().AsSelf();
             builder.RegisterType<SynologyStorageViewmodel>().AsSelf();
             //nas
+            builder.RegisterType<PackageUpdatesViewModel>().AsSelf();
             builder.RegisterType<SharedFoldersViewModel>().AsSelf();
-
-
+            //webmin
+            builder.RegisterType<WebminStatsViewModel>().AsSelf();
         }
     }
 }

@@ -2,13 +2,11 @@
 using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
     public class OmvFileSystemMgmtClient : OmvServiceClient
     {
-       
         public OmvFileSystemMgmtClient(IRpcClient client) : base(client)
         {
             ServiceName = "FileSystemMgmt";
@@ -17,7 +15,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         public Task<IEnumerable<OmvFilesystems>> GetFilesystems()
         {
             var request = NewRequest("enumerateFilesystems");
-           
+
             var result = RunCmd<IEnumerable<OmvFilesystems>>(request);
 
             return result;
@@ -65,7 +63,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         public Task<bool> MountFileSystem(BaseOmvFilesystems filesystem)
         {
             var request = NewRequest("mount");
-            request.Params = new { id = filesystem.Devicefile, fstab = true };
+            request.Params = new {id = filesystem.Devicefile, fstab = true};
 
             var result = RunCmd<bool>(request);
 
@@ -75,7 +73,7 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
         public Task<bool> DeleteFileSystem(OmvFilesystems filesystem)
         {
             var request = NewRequest("delete");
-            request.Params = new { id = filesystem.Uuid};
+            request.Params = new {id = filesystem.Uuid};
 
             var result = RunCmd<bool>(request);
 

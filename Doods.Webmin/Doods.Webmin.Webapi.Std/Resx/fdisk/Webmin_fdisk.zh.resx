@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>分区管理器</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>无法列出磁盘</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>磁盘</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>分区</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>柱面数</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>RAID 级别</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>控制器</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>分区不存在</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>标号</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>起点</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>终点</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>添加主分区</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>添加逻辑分区</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>添加扩展分区</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>编辑IDE参数</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>用途</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>可用</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>磁盘列表</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>字节</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>扩展</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1'不是一个有效的'$2'</value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>未找到$1命令</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>$1装置$2</value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>$1 装置 $2 分区 $3</value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>软盘$1</value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>Mylex 磁盘阵列 $1 驱动器 $2</value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>Mylex 磁盘阵列 $1 驱动器 $2 分区 $3</value>
+  </data>
+  <data name="select_cpq" xml:space="preserve">
+    <value>Compaq RAID $1 驱动器 $2</value>
+  </data>
+  <data name="select_cpart" xml:space="preserve">
+    <value>Compaq RAID $1驱动器$2分区$3</value>
+  </data>
+  <data name="select_scsi" xml:space="preserve">
+    <value>SCSI控制器$1 总线 $2 目标 $3 LUN $4</value>
+  </data>
+  <data name="select_spart" xml:space="preserve">
+    <value>SCSI 控制器 $1 总线 $2 目标 $3 LUN $4 分区 $5</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>编辑分区</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>创建分区</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>您没有编辑该分区的权限</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>在您的系统中没有找到 &lt;tt&gt;hdparm&lt;/tt&gt; 可执行命令</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>分区细节</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>装置文件</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>范围</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>包含一个分区</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>包含$1分区</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>包含$1分区</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>以$2的类型加载到$1上</value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>用于以$2的类型加载到$1上</value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>以虚拟内存加载到文件系统上</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>用于以虚拟内存加载到文件系统上</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>磁盘阵列 $1 的一部分</value>
+  </data>
+  <data name="edit_mountlvm" xml:space="preserve">
+    <value>LVM卷组$1的一部分</value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>尚未创建</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>不在使用中</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>分区标签</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 块</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>分区正在使用中或者正被配置，不能改变</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>创建新文件系统</value>
+  </data>
+  <data name="edit_mkfs2" xml:space="preserve">
+    <value>创建文件系统</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>在此分区上创建新的 $1 文件系统，永久删除现有的文件。在创建新分区或更改现有分区后，您必须创建新的 $1 文件系统。</value>
+  </data>
+  <data name="edit_mkfsmsg2" xml:space="preserve">
+    <value>在这个分区创建新的所选择的文件系统，永久地删除现有的文件。在创建新的分区或变更新的分区，您必须创建新的 $1 文件系统。</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>修复文件系统</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>调用$1程序来修复文件系统，这样它就会被系统加载。如果您的系统不是正常关闭的，这样做的是必要的。</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>调整文件系统</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>允许您修改现有的文件系统的各种参数</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>新的文件系统</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>您没有在该磁盘上创建新文件系统的权限</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>点击此表底部上的按钮，您将会在装置$2上创建新的$1文件系统。此分区上的所有数据都会被永久删除。</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>此分区已经以 $2 的身份加载到 $1上。创建新的文件系统将会删除此目录下面以前可访问的所有文件。</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>文件系统选项</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>创建文件系统</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>创建文件系统失败</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>执行命令$1...</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>..命令失败！</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>..命令结束。</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>修复文件系统</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>您没有用fsck修复该磁盘的权限</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>点击&lt;tt&gt;修复文件系统&lt;/tt&gt;按钮可尝试修复 $2 上已损坏的文件系统 $1，使之能加载到 $3 上。如果文件系统没有受到破坏，将不会有任何改变。</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>将使用命令 $1 进行文件系统修复。该命令将尝试修复所遇到的任何问题。要进一步控制文件系统的修复工作，请使用命令 $2，在 UNIX 提示符下以交互模式手工恢复。</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>修复文件系统</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>执行命令 $1..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>没有发现任何错误</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>发现错误并已改正</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>发现错误并改正 - 需要重新启动机器</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>发现错误但无法改正</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>命令行错误</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>未知的返回代码$1</value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>调整文件系统	</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>您没有调整本文件系统的权限</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>您可以在此表中调整 $2 上文件系统 $1 的各种参数，以便将其加载到 $3上。此文件系统中的任何文件都不会受到影响。</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>调整参数</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>调整文件系统</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>测试间隙</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>出错时的动作</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>以只读形式加载</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>保留的用户</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>保留的组</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>保留的块</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>测试间隔时间</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>调整文件系统失败</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>执行命令 $1...</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>..命令失败!</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>..命令完成。</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>重新启动计算机</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>现在正在重新启动..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>现在重新启动</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>您已经修改了$1上的分区表。您必须重新启动机器以使修改生效。</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>保存分区失败</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>您没有编辑此磁盘的权限</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1'不是一个有效的开始柱面</value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1'不是一个有效的结束柱面</value>
+  </data>
+  <data name="save_emin" xml:space="preserve">
+    <value>开始柱面大小必须大于或者等于$1</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>结束柱面大小必须小于或者等于$1</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>开始柱面的值必须小于结束柱面</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>检测到与分区 $1( $2 到 $3)重叠</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>块大小</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>碎片大小</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>每个节点的字节数</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>保留的块</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>每组的块数</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>是否检测已损坏的块？</value>
+  </data>
+  <data name="ext3_j" xml:space="preserve">
+    <value>日志文件大小</value>
+  </data>
+  <data name="msdos_ff" xml:space="preserve">
+    <value>FAT号</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>FAT大小</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>卷标标识号</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>卷标名称</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>根项数</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>簇大小</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>是否检测已损坏的块？</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>文件名长度</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>节点数目</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>块数目</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>是否检测损坏的块？</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>强制创建文件系统</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>哈希函数</value>
+  </data>
+  <data name="xfs_force" xml:space="preserve">
+    <value>强制创建文件系统</value>
+  </data>
+  <data name="xfs_b" xml:space="preserve">
+    <value>块大小</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>该用户能够分区和格式化的磁盘</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>所有磁盘</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>选择..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>可以浏览不可编辑的磁盘？</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>修改 IDE 参数</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>开</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>关</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>IDE 驱动器设置</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>传输模式</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>默认模式</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>关闭 IORDY</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>使用内存直接访问(DMA)	</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>扇区计数</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>向前预读</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>写入高速缓存</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>中断取消掩码</value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>复位后保留设置</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>复位后保留设置</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>只读</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>可编程的最佳 PIO</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>待命超时</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>32位 I/O 支持</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>多扇区 I/O 的扇区计算</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>以特殊的同步序列启用</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>应用于驱动器</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>测试速度</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>缓存：</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>磁盘缓冲：</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>速度测试结果</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>修改 $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>创建 $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>删除 $1</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>在 $2 上创建文件系统 $1</value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>在 $2 上调整文件系统 $1</value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>修复 $2 上的文件系统 $1</value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>修改 $1 的 IDE 参数</value>
+  </data>
+  <data name="fs_ext2" xml:space="preserve">
+    <value>Linux Native</value>
+  </data>
+  <data name="fs_minix" xml:space="preserve">
+    <value>Minix</value>
+  </data>
+  <data name="fs_msdos" xml:space="preserve">
+    <value>MS-DOS</value>
+  </data>
+  <data name="fs_vfat" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="fs_reiserfs" xml:space="preserve">
+    <value>ReiserFS</value>
+  </data>
+  <data name="fs_ext3" xml:space="preserve">
+    <value>New Linux Native</value>
+  </data>
+  <data name="fs_xfs" xml:space="preserve">
+    <value>SGI</value>
+  </data>
+</root>

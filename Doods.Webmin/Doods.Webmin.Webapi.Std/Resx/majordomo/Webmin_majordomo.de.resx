@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Majordomo Listen Verwalter</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Diese Majordomo-Version wird von Webmin nicht unterstützt. Erst die Versionen 1.94 und darüber können mit Webmin bearbeitet werden.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>Die &lt;tt&gt;$1&lt;/tt&gt; Variable in Ihrer Majordomo-Konfigurationsdatei ist auf &lt;tt&gt;$2&lt;/tt&gt; eingestellt. Dieses existiert jedoch nicht.</value>
+  </data>
+  <data name="index_esendmail3" xml:space="preserve">
+    <value>Das Sendmail Webmin Modul, welches benötigt wird um Alias zu verwalten, ist nicht installiert.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>Majordomo wurde auf Ihrem System installiert, jedoch nicht richtig in der Sendmail-Alias Datei eingetragen.</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>Mail-Adresse des Besitzers</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Einrichten von Aliasen</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Sie haben keine Mailinglisten definiert</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Neue Mailingliste</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>Neue Übersichtsliste</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Majordomo-Einstellungen</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>Bearbeiten der globalen Majordomo-Einstellungen, die auf alle Mailinglisten angewandt werden</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Mailinglisten</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Majordomo Version $1</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>Name Mailingliste</value>
+  </data>
+  <data name="index_info" xml:space="preserve">
+    <value>Kurzbescheibung</value>
+  </data>
+  <data name="index_mail" xml:space="preserve">
+    <value>Mail Adresse</value>
+  </data>
+  <data name="index_moderated" xml:space="preserve">
+    <value>Modieriert</value>
+  </data>
+  <data name="index_count" xml:space="preserve">
+    <value># Teilnehmer</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>Globale Einstellungen</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>Sie haben nicht die Berechtigung die globalen Einstellungen zu bearbeiten</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>Globale Majordomo-Einstellungen</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>Mail-Server Name (&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Majordomo Haupt Mail-Adresse</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Majordomo Eigentümer Mail-Adresse</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Sendmail-Kommandopfad</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>Speichern der globalen Einstellungen gescheitert</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>Der Mailserver-Hostname fehlt oder ist ungültig</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>Die Majordomo Mail-Adresse fehlt oder ist ungültig</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>Die Eigentümer Mail-Adresse fehlt oder ist ungültig</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>Das Sendmail-Kommando '$1' gibt es nicht</value>
+  </data>
+  <data name="global_saved" xml:space="preserve">
+    <value>(gespeichert)</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>Sie haben nicht die Berechtigung neue Listen zu erstellen</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Mailingliste erstellen</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Details der neue Liste</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Name der Liste</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>Adresse des Listenverwalters</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>Passwort des Verwalters</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>Einleitende Mitteilung</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>Fußzeile einer weitergeleiteten Mail</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>Moderierte Liste?</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>Adresse des Moderators</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Identisch mit der Adresse des Verwalters</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Das Erstellen der Mailingliste ist gescheitert</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Der Listenname fehlt oder ist ungültig</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>Eine Mailingliste mit dem Namen '$1' gibt es bereits</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>Ein Mail-Alias für '$1' gibt es bereits</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>Die Mail-Adresse des Besitzers fehlt oder ist ungültig</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>Das Administrator-Passwort fehlt oder ist ungültig</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>Mail-Adresse des Moderators fehlt oder ist ungültig</value>
+  </data>
+  <data name="create_archive" xml:space="preserve">
+    <value>Mailingliste archivieren?</value>
+  </data>
+  <data name="create_archiveyear" xml:space="preserve">
+    <value>In jährlicher Datei</value>
+  </data>
+  <data name="create_archivemonth" xml:space="preserve">
+    <value>In monatlicher Datei</value>
+  </data>
+  <data name="create_archiveday" xml:space="preserve">
+    <value>In täglicher Datei</value>
+  </data>
+  <data name="create_minimum" xml:space="preserve">
+    <value>Mindestens erforderlich Angaben</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>Sie haben keine Berechtigung eine neue Übersichtsliste zu erstellen</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>Neue Übersichtsliste</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>Details der neuen Übersichtsliste</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>Name der Liste</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>Erstellen einer Übersicht der Liste</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>Die Mail-Adresse des Verwalters der Liste</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>Passwort des Verwalters</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>Informative Mitteilung</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>Fußzeile der Übersichts Mail</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>Übermittle Übersicht wenn</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>Die älteste Nachricht ist $1 Tag alt</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>Die Nachrichten haben insgesamt $1 Zeilen</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>Erstellender Übersichtsliste ist gescheitert</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value>Die Anzahl der Tage fehlt oder ist ungültig</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value>Die Anzahl der Zeilen fehlt oder ist ungültig</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Mailingliste bearbeiten</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Sie haben nicht die Berechtigung die Mailingliste zu bearbeiten</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Lösche die Liste</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>Lösche diese Liste zusammen mit allen verbundenen Dateien und Mail-Aliasen</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>Mailingliste</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>Für die Liste $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Sie haben nicht die Berechtigung diese Mailingliste zu löschen</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>Diese Liste kann nicht gelöscht werden, da sie mit einer Übersichtsliste verbunden zu sein scheint</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Lösche die Liste</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Sind Sie sich sicher, dass Sie die Mailingliste $1 löschen möchten? Damit werden die folgenden Dateien entfernt:</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>Diese Mail-Aliase werden ebenfalls entfernt :</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Lösche die Liste</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>Mitglieder der Liste</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>Verwenden Sie das untere Textfeld um die Liste der Mail-Adressen zu bearbeiten, die die Mails erhalten sollen, die an diese Liste gesendet werden.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>Das untere Textfeld enthält alle Mail-Adressen, die die Mails erhalten sollen, die an diese Liste gesendet werden.</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>Eine Mail-Adresse zu der Liste hinzufügen</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>Entferne Mail-Adresse aus der Liste</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>Entfernen</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Unixbenutzer mit der Liste synchronisieren?</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>Domainname, der an den Usernamen angehängt wird</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>Sie haben nicht die Berechtigung die Mitglieder der Liste zu bearbeiten</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>Sie müssen ein Verwalterpasswort auswählen, bevor Sie eine Adresse der Liste hinzufügen können</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>Die Adresse die hinzugefügt werden soll, muß einen kompletten Domainnamen besitzen, z.B. &lt;tt&gt;foo@bar.de&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>Sie müssen ein Verwalterpasswort auswählen, bevor Sie Adressen aus der Liste entfernen können</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>Die Adresse, die entfernt werden soll muss einen kompletten Domainnamen besitzen, z.B. &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>Mitteilungen und Beschreibung</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>Mitteilungen und Beschreibung</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>Beschreibung der Liste. Sie wird in die Anwort auf ein &lt;tt&gt;lists&lt;/tt&gt; Kommando eingefügt</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>Informative Mitteilung. Sie wird als Antwort auf das &lt;tt&gt;info $1&lt;/tt&gt; Kommando versendet</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>Einleitende Mitteilung. Sie wird versandt, sobald sich jemand in die Liste einschreibt</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>Das Gleiche wie die informative Mitteilung</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>So wie unten eingetragen...</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>Einschreiben und Moderation</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>Einschreibens- und Moderations Einstellungen</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>Einschreibensregeln</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>Jeder darf sich selbst einschreiben</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>Jeder darf Jeden einschreiben</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>Zustimmung des Verwalters wird benötigt</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>Kündigungsregeln</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>Jeder kann sich selbst kündigen</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>Jeder kann Jeden kündigen</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>Wird eine Bestätigung beim Einschreib verlangt?</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>Soll die einleitende Mitteilung versandt werden?</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>Nur die ursprüngliche Mail-Adresse zur Liste hinzufügen?</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>Benachrichtigung an den Verwalter über Einschreibenen und Kündigungen?</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>Weiterleitung der Einschreibens-/ Kündigungsanfrage an den Verwalter?</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>Passwort des Verwalters</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>Moderierte Liste?</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>Mail-Adresse des Moderators?</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>Verwalter</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>Moderationspasswort</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>Die Mail-Adresse des Eigentümers</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>Mail-Adresse des Genehmigers</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>Die Mail-Adresse des Eigentümers fehlt</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>Die Mail-Adresse der Genehmigung fehlt</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>Die Mail-Adresse des Moderators fehlt oder ist ungültig</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>Das Passwort fehlt oder ist falsch</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>Mail-Einstellungen</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>Einstellungen zum Senden von Mail</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>"Reply-To:" Adresse der Liste </value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>Nichts</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>"Sender:" Mail-Adresse in der Mail</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>Hostname für die zurückgesandte Mail</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>"Subject:"-Zusatz der Liste</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>Priorität der zurückgesandten Mail</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>Erste Klasse</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>Spezielle Zustellung</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>Bulk</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>Junk</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>Entferne "Received:"-Kopfzeile der zurückgesandten Mail</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>Maximal erlaubte Nachrichtengröße</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>Fehlende oder ungültige "Reply-To:" Adresse</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>Fehlende oder ungültige "Absender:" Mail-Adresse</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>"Absender:" Mail-Adresse darf keinen Hostnamen enthalten</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>Fehlender oder ungültiger Hostname</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>Fehlende oder ungültige Einstellung der maximalen Nachrichtengröße</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>Zugriffskontrolle</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Zugriffskontrolle für Majordomo-Kommandos</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>Jedermann</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>Mitglieder der Liste</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>Niemand</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;get&lt;/tt&gt; Kommando</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;index&lt;/tt&gt;-Kommando</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;info&lt;/tt&gt;-Kommando</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;intro&lt;/tt&gt;-Kommando</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;which&lt;/tt&gt;-Kommando</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>Zugriff auf das &lt;tt&gt;who&lt;/tt&gt;-Kommando</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>Berücksichtige diese Liste in der Antwort auf das &lt;tt&gt;lists&lt;/tt&gt; Kommando für..</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>Jedermann</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>Adressen, die zu folgendem Ausdruck (regexps) passen..</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>Adressen, die nicht zu folgendem Ausdruck (regexps) passen..</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>Wer kann an die Liste schreiben?</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>Jedermann</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>Mitglieder der Liste</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>Adressen aus der Datei</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Ausdrücke (regexps), die im Nachrichtentext nicht erscheinen dürfen</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Ausdrücke (regexps), die in der Kopfzeile nicht erscheinen dürfen</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>Alle Ausdrücke (regexps) der Taboo-/ und der Adressen-Liste m&amp;uumlssen mit einem &lt;tt&gt;/&lt;/tt&gt; beginnen und enden. Z.B. &lt;tt&gt;/foobar.de/&lt;/tt&gt; oder &lt;tt&gt;/obscene/&lt;/tt&gt;&lt;br&gt;Zum zurückweisen von SPAM tragen sie z.B. &lt;tt&gt;/^X-Spam-Flag: YES/i&lt;/tt&gt; oder &lt;tt&gt;/^X-Spam-Level: \*\*\*\*\*/i&lt;/tt&gt; als nicht erlaubte Kopfzeile ein.</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>Kopf- und Fußzeilen</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>Kopf- und Fußzeile einer zurückgesandten Mail</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>Kopfzeile einer zurückgesandten Mail</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>Fußzeile einer zurückgesandten Mail</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>Zusätzliche SMTP-Kopfzeilen für zurückgesandte Mail</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Weitere Einstellungen</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Diverse Listen Einstellungen</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>Die Domain nur beim Vergleichen von Adressen verwenden?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>Debugmodus?</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>Einfügen des Datums der letzten Änderung in die informative Nachricht?</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>Einfügen des Datums der letzten Änderung in die einleitende Mitteilung?</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>Einstellungen der weiteren Verarbeitung</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>Allgemeine Verarbeitungs Einstellungen</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>Verarbeitungstitel</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>Maximales Nachrichtenalter vor dem Senden</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>Tage</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>Linien</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>Größte Verarbeitungsgröße vor dem Senden</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>Derzeitige Verarbeitungsgröße</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>Momentane Ausgabenummer</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>Unbegrenzt</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>Die Anzahl der Tage fehlt oder ist ungültig</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>Die Anzahl der Linien fehlt oder ist ungültig</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>Die Verarbeitungsgröße fehlt oder ist ungültig</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>Fehlende oder ungültige Ausgabenummer</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>Veränderte allgemeine Einstellungen</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>Mailingliste wurde erstellt: $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>Erstellte Verarbeitungs Einstellungen: $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>Gelöschte Mailingliste: $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>Gelöschte Verarbeitungsliste: $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>$2 eingetragen in die Liste $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>$2 gekündigt von der Liste $1</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>Aktualisierte Mitglieder der Liste $1</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>Aktualisierte Synchronisation der Liste $1</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>Aktualisierte Nachrichten und Beschreibungen der Liste $1</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>Aktualisierte Abonnements und Moderation der Liste $1</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>Aktualisierte Mail-Einstellungen der Liste $1</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>Aktualisierte Zugriffskontrolle der Liste $1</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>Aktualisierte Kopf- und Fußzeile der Liste $1</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Aktualisierte allgemeine Einstellungen der Liste $1</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>Aktualisierte Verarbeitungs Einstellungen der Liste $1</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>Mailinglisten, die dieser Benutzer verwalten darf</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>Alle Listen</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>Ausgewählte ..</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Kann allgemeine Einstellungen verändern?</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Darf neue Mailingliste erstellen?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Kann Liste der Mitglieder verändern?</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Aliase konnten nicht eingerichtet werden</value>
+  </data>
+  <data name="alias_eowner" xml:space="preserve">
+    <value>Mail-Adresse des Eigentümers fehlt</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Testen der Majordomo Konfiguration</value>
+  </data>
+  <data name="check_test" xml:space="preserve">
+    <value>Test f&amp;uumlr ...</value>
+  </data>
+  <data name="check_result" xml:space="preserve">
+    <value>Ergebnis / weitere Tests</value>
+  </data>
+  <data name="check_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="check_perm" xml:space="preserve">
+    <value>Zugriffsrechte</value>
+  </data>
+  <data name="check_exec" xml:space="preserve">
+    <value>für alle ausführbar!</value>
+  </data>
+  <data name="check_write" xml:space="preserve">
+    <value>für alle schreibbar!</value>
+  </data>
+  <data name="check_read" xml:space="preserve">
+    <value>für alle lesbar!</value>
+  </data>
+  <data name="check_possible" xml:space="preserve">
+    <value>Eventuelles Problem</value>
+  </data>
+</root>

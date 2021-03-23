@@ -5,6 +5,7 @@ namespace Doods.Openmediavault.Rpc.std.Data.V5
 {
     public class OMVInformations : IOmvObject
     {
+        [JsonIgnore] public bool LegacyMode = false;
         [JsonProperty("ts")] public long Ts { get; set; }
 
         [JsonProperty("time")] public string Time { get; set; }
@@ -36,7 +37,5 @@ namespace Doods.Openmediavault.Rpc.std.Data.V5
         [JsonProperty("rebootRequired")] public bool RebootRequired { get; set; }
 
         [JsonProperty("pkgUpdatesAvailable")] public bool PkgUpdatesAvailable { get; set; }
-
-        [JsonIgnore] public bool LegacyMode = false;
     }
 }

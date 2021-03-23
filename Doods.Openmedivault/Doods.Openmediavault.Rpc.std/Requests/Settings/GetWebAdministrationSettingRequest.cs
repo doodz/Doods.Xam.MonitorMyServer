@@ -2,7 +2,7 @@
 {
     public class GetWebAdministrationSettingRequest : OmvRequestBase
     {
-        private static string _commandText = "omv-rpc WebGui getSettings ";
+        private static readonly string _commandText = "omv-rpc WebGui getSettings ";
 
         public GetWebAdministrationSettingRequest() : base(_commandText)
         {

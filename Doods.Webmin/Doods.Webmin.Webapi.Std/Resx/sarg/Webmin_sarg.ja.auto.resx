@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>イカレポートジェネレーター</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>コマンド $1でSargのバージョンを取得できませんでした： $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Sargバージョン $1</value>
+  </data>
+  <data name="index_generate" xml:space="preserve">
+    <value>今すぐレポートを生成</value>
+  </data>
+  <data name="index_generatedesc" xml:space="preserve">
+    <value>このボタンをクリックすると、現在の構成を使用して $1のSargレポートがすぐに生成されます。</value>
+  </data>
+  <data name="index_clear" xml:space="preserve">
+    <value>ディレクトリ内の既存のレポートを削除しますか？</value>
+  </data>
+  <data name="index_range" xml:space="preserve">
+    <value>日付範囲のレポートを生成する</value>
+  </data>
+  <data name="index_view" xml:space="preserve">
+    <value>生成されたレポートを表示</value>
+  </data>
+  <data name="index_viewdesc" xml:space="preserve">
+    <value>ディレクトリ $1で最後に生成されたレポートを表示します。</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>モジュールインデックス</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>ログソースとレポート宛先</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>ソースSquidログファイルと生成されたレポートオプション</value>
+  </data>
+  <data name="log_access_log" xml:space="preserve">
+    <value>ソースSquidログファイル</value>
+  </data>
+  <data name="log_squid" xml:space="preserve">
+    <value>現在のSquidサーバーログ（$1）</value>
+  </data>
+  <data name="log_other" xml:space="preserve">
+    <value>その他のファイル</value>
+  </data>
+  <data name="log_output_dir" xml:space="preserve">
+    <value>宛先レポートディレクトリ</value>
+  </data>
+  <data name="log_output_email" xml:space="preserve">
+    <value>レポートをメールで送信</value>
+  </data>
+  <data name="log_nowhere" xml:space="preserve">
+    <value>どこにも</value>
+  </data>
+  <data name="log_useragent_log" xml:space="preserve">
+    <value>ユーザーエージェントログファイル</value>
+  </data>
+  <data name="log_lastlog" xml:space="preserve">
+    <value>保持するレポートの数</value>
+  </data>
+  <data name="log_unlimit" xml:space="preserve">
+    <value>無制限</value>
+  </data>
+  <data name="log_mail_utility" xml:space="preserve">
+    <value>メール送信コマンド</value>
+  </data>
+  <data name="log_remove_temp_files" xml:space="preserve">
+    <value>レポート後に一時ファイルを削除しますか？</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>ログソースオプションを保存できませんでした</value>
+  </data>
+  <data name="log_efile" xml:space="preserve">
+    <value>ファイルが存在しません</value>
+  </data>
+  <data name="log_edir" xml:space="preserve">
+    <value>ディレクトリが存在しません</value>
+  </data>
+  <data name="log_elastlog" xml:space="preserve">
+    <value>番号がない、またはない</value>
+  </data>
+  <data name="log_eemail" xml:space="preserve">
+    <value>メールアドレスが見つからないか、無効です</value>
+  </data>
+  <data name="log_emailx" xml:space="preserve">
+    <value>存在しないか存在しないメールプログラム</value>
+  </data>
+  <data name="log_squidguard_log_path" xml:space="preserve">
+    <value>SquidGuardログファイル</value>
+  </data>
+  <data name="style_title" xml:space="preserve">
+    <value>レポートスタイル</value>
+  </data>
+  <data name="style_header" xml:space="preserve">
+    <value>HTMLレポートのスタイルと色のオプション</value>
+  </data>
+  <data name="style_title2" xml:space="preserve">
+    <value>レポートタイトル</value>
+  </data>
+  <data name="style_font_face" xml:space="preserve">
+    <value>レポート本文のフォント</value>
+  </data>
+  <data name="style_header_color" xml:space="preserve">
+    <value>ヘッダーの色</value>
+  </data>
+  <data name="style_header_bgcolor" xml:space="preserve">
+    <value>ヘッダーの背景色</value>
+  </data>
+  <data name="style_header_font_size" xml:space="preserve">
+    <value>ヘッダーのフォントサイズ</value>
+  </data>
+  <data name="style_background_color" xml:space="preserve">
+    <value>背景色</value>
+  </data>
+  <data name="style_text_color" xml:space="preserve">
+    <value>テキストの色</value>
+  </data>
+  <data name="style_text_bgcolor" xml:space="preserve">
+    <value>テキストの背景色</value>
+  </data>
+  <data name="style_title_color" xml:space="preserve">
+    <value>タイトルの色</value>
+  </data>
+  <data name="style_logo_image" xml:space="preserve">
+    <value>ロゴの画像参照</value>
+  </data>
+  <data name="style_image_size" xml:space="preserve">
+    <value>画像のサイズ（幅と高さ）</value>
+  </data>
+  <data name="style_logo_text" xml:space="preserve">
+    <value>ロゴのテキスト</value>
+  </data>
+  <data name="style_logo_text_color" xml:space="preserve">
+    <value>ロゴのテキスト色</value>
+  </data>
+  <data name="style_background_image" xml:space="preserve">
+    <value>背景の画像参照</value>
+  </data>
+  <data name="style_err" xml:space="preserve">
+    <value>レポートスタイルオプションを保存できませんでした</value>
+  </data>
+  <data name="style_etitle" xml:space="preserve">
+    <value>レポートのタイトルがありません</value>
+  </data>
+  <data name="style_ecolour" xml:space="preserve">
+    <value>色名またはRRGGBBコードが欠落しているか無効です</value>
+  </data>
+  <data name="style_efontsize" xml:space="preserve">
+    <value>フォントサイズオフセットがないか、無効です</value>
+  </data>
+  <data name="style_efont" xml:space="preserve">
+    <value>フォント名がないか、無効です</value>
+  </data>
+  <data name="style_esize" xml:space="preserve">
+    <value>画像の幅と高さが欠落しているか無効です</value>
+  </data>
+  <data name="style_language" xml:space="preserve">
+    <value>レポート言語</value>
+  </data>
+  <data name="style_charset" xml:space="preserve">
+    <value>文字セットを報告する</value>
+  </data>
+  <data name="report_title" xml:space="preserve">
+    <value>レポートオプション</value>
+  </data>
+  <data name="report_header" xml:space="preserve">
+    <value>レポートコンテンツと生成オプション</value>
+  </data>
+  <data name="report_resolve_ip" xml:space="preserve">
+    <value>IPアドレスを解決しますか？</value>
+  </data>
+  <data name="report_user_ip" xml:space="preserve">
+    <value>ユーザーIDの代わりにIPアドレスを使用しますか？</value>
+  </data>
+  <data name="report_user_sort_field" xml:space="preserve">
+    <value>ユーザーレポートの注文</value>
+  </data>
+  <data name="report_topuser_sort_field" xml:space="preserve">
+    <value>トップユーザーレポートの注文</value>
+  </data>
+  <data name="report_reverse" xml:space="preserve">
+    <value>逆順</value>
+  </data>
+  <data name="report_forward" xml:space="preserve">
+    <value>順方向</value>
+  </data>
+  <data name="report_by_user" xml:space="preserve">
+    <value>ユーザー名で</value>
+  </data>
+  <data name="report_by_connect" xml:space="preserve">
+    <value>接続時間別</value>
+  </data>
+  <data name="report_by_bytes" xml:space="preserve">
+    <value>バイト単位</value>
+  </data>
+  <data name="report_by_time" xml:space="preserve">
+    <value>時間で</value>
+  </data>
+  <data name="report_by_site" xml:space="preserve">
+    <value>サイトごと</value>
+  </data>
+  <data name="report_exclude_users" xml:space="preserve">
+    <value>除外するユーザーをリストするファイル</value>
+  </data>
+  <data name="report_exclude_hosts" xml:space="preserve">
+    <value>除外するホストをリストするファイル</value>
+  </data>
+  <data name="report_index" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt;ファイルを再生成しますか？</value>
+  </data>
+  <data name="report_only" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt;のみを生成します</value>
+  </data>
+  <data name="report_overwrite_report" xml:space="preserve">
+    <value>日付のレポートを上書きしますか？</value>
+  </data>
+  <data name="report_overno" xml:space="preserve">
+    <value>いいえ、名前を.1に変更します</value>
+  </data>
+  <data name="report_records_without_userid" xml:space="preserve">
+    <value>ユーザーなしのレコードに対するアクション？</value>
+  </data>
+  <data name="report_ignore" xml:space="preserve">
+    <value>完全に無視</value>
+  </data>
+  <data name="report_ip" xml:space="preserve">
+    <value>代わりにIPアドレスを使用してください</value>
+  </data>
+  <data name="report_everybody" xml:space="preserve">
+    <value>ユーザー名&lt;tt&gt;everybody&lt;/tt&gt;を使用します</value>
+  </data>
+  <data name="report_use_comma" xml:space="preserve">
+    <value>の代わりにコンマを使用します。数字で？</value>
+  </data>
+  <data name="report_topsites_num" xml:space="preserve">
+    <value>表示する上位サイトの数</value>
+  </data>
+  <data name="report_topsites_sort_order" xml:space="preserve">
+    <value>トップサイトレポートの注文</value>
+  </data>
+  <data name="report_sorta" xml:space="preserve">
+    <value>上昇</value>
+  </data>
+  <data name="report_sortd" xml:space="preserve">
+    <value>降順</value>
+  </data>
+  <data name="report_index_sort_order" xml:space="preserve">
+    <value>&lt;tt&gt;index.html&lt;/tt&gt;内のリンクの注文</value>
+  </data>
+  <data name="report_exclude_codes" xml:space="preserve">
+    <value>除外するHTTPコードをリストするファイル</value>
+  </data>
+  <data name="report_max_elapsed" xml:space="preserve">
+    <value>最大経過時間（ミリ秒）</value>
+  </data>
+  <data name="report_report_type" xml:space="preserve">
+    <value>生成するレポートセクション</value>
+  </data>
+  <data name="report_topsites" xml:space="preserve">
+    <value>トップサイト</value>
+  </data>
+  <data name="report_topusers" xml:space="preserve">
+    <value>トップユーザー</value>
+  </data>
+  <data name="report_sites_users" xml:space="preserve">
+    <value>ユーザーごとのサイト</value>
+  </data>
+  <data name="report_users_sites" xml:space="preserve">
+    <value>サイトごとのユーザー</value>
+  </data>
+  <data name="report_date_time" xml:space="preserve">
+    <value>日と時間による使用</value>
+  </data>
+  <data name="report_denied" xml:space="preserve">
+    <value>拒否されたサイト</value>
+  </data>
+  <data name="report_downloads" xml:space="preserve">
+    <value>ダウンロード</value>
+  </data>
+  <data name="report_auth_failures" xml:space="preserve">
+    <value>認証失敗</value>
+  </data>
+  <data name="report_site_user_time_date" xml:space="preserve">
+    <value>サイト、日付、時刻、およびバイト</value>
+  </data>
+  <data name="report_all" xml:space="preserve">
+    <value>すべてのレポート</value>
+  </data>
+  <data name="report_below" xml:space="preserve">
+    <value>以下で選択 ..</value>
+  </data>
+  <data name="report_usertab" xml:space="preserve">
+    <value>ユーザー名マッピングファイル</value>
+  </data>
+  <data name="report_long_url" xml:space="preserve">
+    <value>レポートに完全なURLを表示しますか？</value>
+  </data>
+  <data name="report_date_time_by" xml:space="preserve">
+    <value>日付/時刻レポートを並べ替える</value>
+  </data>
+  <data name="report_bytes" xml:space="preserve">
+    <value>バイト</value>
+  </data>
+  <data name="report_elap" xml:space="preserve">
+    <value>経過時間</value>
+  </data>
+  <data name="report_user_invalid_char" xml:space="preserve">
+    <value>ユーザー名の無効な文字</value>
+  </data>
+  <data name="report_privacy" xml:space="preserve">
+    <value>訪れたサイトを隠す？</value>
+  </data>
+  <data name="report_privacy_string" xml:space="preserve">
+    <value>訪問済みサイトの置換テキスト</value>
+  </data>
+  <data name="report_privacy_string_color" xml:space="preserve">
+    <value>置換テキストの色</value>
+  </data>
+  <data name="report_below2" xml:space="preserve">
+    <value>以下に入力 ..</value>
+  </data>
+  <data name="report_include_users" xml:space="preserve">
+    <value>ユーザー向けのレポートのみを生成する</value>
+  </data>
+  <data name="report_exclude_string" xml:space="preserve">
+    <value>次を含むログ行を除外する</value>
+  </data>
+  <data name="report_allusers" xml:space="preserve">
+    <value>すべてのユーザー</value>
+  </data>
+  <data name="report_nostrings" xml:space="preserve">
+    <value>除外しないでください</value>
+  </data>
+  <data name="report_topuser_num" xml:space="preserve">
+    <value>表示する上位ユーザーの数</value>
+  </data>
+  <data name="report_site_user_time_date_type" xml:space="preserve">
+    <value>サイト、ユーザー、日付と時刻の表形式</value>
+  </data>
+  <data name="report_table" xml:space="preserve">
+    <value>HTMLテーブル</value>
+  </data>
+  <data name="report_list" xml:space="preserve">
+    <value>テキストリスト</value>
+  </data>
+  <data name="report_displayed_values" xml:space="preserve">
+    <value>トラフィックを表示</value>
+  </data>
+  <data name="report_bytes2" xml:space="preserve">
+    <value>バイト</value>
+  </data>
+  <data name="report_abbrev" xml:space="preserve">
+    <value>省略形（K、M、G）</value>
+  </data>
+  <data name="report_weekdays" xml:space="preserve">
+    <value>レポートに含める平日</value>
+  </data>
+  <data name="report_weekdays0" xml:space="preserve">
+    <value>蘇</value>
+  </data>
+  <data name="report_weekdays1" xml:space="preserve">
+    <value>Mo</value>
+  </data>
+  <data name="report_weekdays2" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="report_weekdays3" xml:space="preserve">
+    <value>私達</value>
+  </data>
+  <data name="report_weekdays4" xml:space="preserve">
+    <value>Th</value>
+  </data>
+  <data name="report_weekdays5" xml:space="preserve">
+    <value>Fr</value>
+  </data>
+  <data name="report_weekdays6" xml:space="preserve">
+    <value>さ</value>
+  </data>
+  <data name="report_hours" xml:space="preserve">
+    <value>レポートに含める時間</value>
+  </data>
+  <data name="report_err" xml:space="preserve">
+    <value>レポートオプションを保存できませんでした</value>
+  </data>
+  <data name="report_efile" xml:space="preserve">
+    <value>ファイルが存在しません</value>
+  </data>
+  <data name="report_enum" xml:space="preserve">
+    <value>数ではない</value>
+  </data>
+  <data name="report_echar" xml:space="preserve">
+    <value>スペースは使用できません</value>
+  </data>
+  <data name="report_estring" xml:space="preserve">
+    <value>置換テキストが欠落しているか無効です</value>
+  </data>
+  <data name="report_eselect" xml:space="preserve">
+    <value>何も選択されていません</value>
+  </data>
+  <data name="report_eenter" xml:space="preserve">
+    <value>何も入力されていません</value>
+  </data>
+  <data name="sched_title" xml:space="preserve">
+    <value>スケジュールされたレポート生成</value>
+  </data>
+  <data name="sched_header" xml:space="preserve">
+    <value>スケジュールされたレポートオプション</value>
+  </data>
+  <data name="sched_sched" xml:space="preserve">
+    <value>スケジュールされたレポートは有効ですか？</value>
+  </data>
+  <data name="sched_yes" xml:space="preserve">
+    <value>はい、以下で選択した時間に ..</value>
+  </data>
+  <data name="sched_clear" xml:space="preserve">
+    <value>毎回レポートディレクトリをクリアしますか？</value>
+  </data>
+  <data name="sched_dir" xml:space="preserve">
+    <value>レポートディレクトリ</value>
+  </data>
+  <data name="sched_range" xml:space="preserve">
+    <value>日付範囲のレポートを生成する</value>
+  </data>
+  <data name="sched_rall" xml:space="preserve">
+    <value>ログファイルのすべてのレコード</value>
+  </data>
+  <data name="sched_rsel" xml:space="preserve">
+    <value>$1〜 $2日前のもの</value>
+  </data>
+  <data name="sched_err" xml:space="preserve">
+    <value>スケジュールされたレポート生成を保存できませんでした</value>
+  </data>
+  <data name="sched_erfrom" xml:space="preserve">
+    <value>開始日前の欠落または無効な日数</value>
+  </data>
+  <data name="sched_erto" xml:space="preserve">
+    <value>終了日前の欠落または無効な日数</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Sargレポート</value>
+  </data>
+  <data name="view_efile" xml:space="preserve">
+    <value>無効なファイル名！</value>
+  </data>
+  <data name="view_eopen" xml:space="preserve">
+    <value>レポートファイルを開けませんでした</value>
+  </data>
+  <data name="gen_title" xml:space="preserve">
+    <value>レポートを生成</value>
+  </data>
+  <data name="gen_header" xml:space="preserve">
+    <value>現在、Squidログファイル $1およびすべてのローテーションバージョンからSargレポートを生成しています。</value>
+  </data>
+  <data name="gen_done" xml:space="preserve">
+    <value>..完了</value>
+  </data>
+  <data name="gen_failed" xml:space="preserve">
+    <value>.. Sargが失敗しました！詳細については、上記の出力を参照してください。</value>
+  </data>
+  <data name="gen_nothing" xml:space="preserve">
+    <value>.. Sargは終了しましたが、レポートは生成されませんでした。詳細については、上記の出力を参照してください。</value>
+  </data>
+  <data name="gen_view" xml:space="preserve">
+    <value>完成したレポートを表示します。</value>
+  </data>
+  <data name="gen_err" xml:space="preserve">
+    <value>レポートを生成できませんでした</value>
+  </data>
+  <data name="gen_efrom" xml:space="preserve">
+    <value>日から欠落または無効</value>
+  </data>
+  <data name="gen_eto" xml:space="preserve">
+    <value>欠品または無効</value>
+  </data>
+  <data name="webmin_log_log" xml:space="preserve">
+    <value>更新されたログソースおよびレポート宛先オプション</value>
+  </data>
+  <data name="webmin_log_report" xml:space="preserve">
+    <value>更新されたレポートオプション</value>
+  </data>
+  <data name="webmin_log_style" xml:space="preserve">
+    <value>更新されたレポートスタイルオプション</value>
+  </data>
+  <data name="webmin_log_sched_create" xml:space="preserve">
+    <value>スケジュールされたレポートを有効にしました</value>
+  </data>
+  <data name="webmin_log_sched_delete" xml:space="preserve">
+    <value>スケジュールされたレポートを無効にしました</value>
+  </data>
+  <data name="webmin_log_sched_update" xml:space="preserve">
+    <value>スケジュールされたレポートの更新</value>
+  </data>
+  <data name="webmin_log_sched_nothing" xml:space="preserve">
+    <value>スケジュールされたレポートを無効のままにしました</value>
+  </data>
+  <data name="webmin_log_generate" xml:space="preserve">
+    <value>生成されたレポート</value>
+  </data>
+</root>

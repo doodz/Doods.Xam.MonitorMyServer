@@ -13,7 +13,6 @@ using Doods.Framework.Std.Lists;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Http.Std;
 using Doods.Openmedivault.Ssh.Std;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Synology.Webapi.Std;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Resx;
@@ -25,31 +24,33 @@ using Xamarin.Forms;
 namespace Doods.Xam.MonitorMyServer.Services
 {
     /// <summary>
-    /// Idisposable ???
+    ///     Idisposable ???
     /// </summary>
     public class ConnctionService
     {
         private readonly IDataProvider _dataProvider;
+        private readonly IHistoryService _historyService = App.Container.Resolve<IHistoryService>();
         private readonly ILogger _logger = App.Container.Resolve<ILogger>();
         private readonly IMapper _mapper = App.Container.Resolve<IMapper>();
-        private readonly IHistoryService _historyService = App.Container.Resolve<IHistoryService>();
         private readonly IMessageBoxService _messageBoxService;
 
         //internal static ConnctionService ConnectionService = new ConnctionService();
         private readonly OmvServiceProvider _omvServiceProvider;
         private readonly SshServiceProvider _sshServiceProvider;
         private readonly SynoServiceProvider _synoServiceProvider;
+        private readonly WebminServiceProvider _webminServiceProvider;
         private IOmvService _omvService;
         private ISshService _sshService;
         private ISynologyCgiService _synoService;
 
         public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider,
-            SynoServiceProvider synoServiceProvider,
+            SynoServiceProvider synoServiceProvider, WebminServiceProvider webminServiceProvider,
             IMessageBoxService messageBoxService, IDataProvider dataProvider)
         {
             _omvServiceProvider = omvServiceProvider;
             _sshServiceProvider = sshServiceProvider;
             _synoServiceProvider = synoServiceProvider;
+            _webminServiceProvider = webminServiceProvider;
             _messageBoxService = messageBoxService;
             _dataProvider = dataProvider;
             MessagingCenter.Subscribe<DataProvider, TableBase>(
@@ -60,29 +61,34 @@ namespace Doods.Xam.MonitorMyServer.Services
                 });
         }
 
+
+        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
+        public Host CurrentHost { get; private set; }
+        
+        public IPackageUpdates GetPackageService()
+        {
+            if (CurrentHost == null) return default;
+
+            if (CurrentHost.IsSynoServer) return _synoServiceProvider?.Value;
+            if (CurrentHost.IsOmvServer) return _omvServiceProvider?.Value;
+            if (CurrentHost.IsSsh) return _sshServiceProvider?.Value;
+            if (CurrentHost.IsWebminServer) return _webminServiceProvider?.Value;
+
+            return default;
+        }
         public INasService GetNasService()
         {
             if (CurrentHost == null) return default;
 
-            if (CurrentHost.IsSynoServer)
-            {
-                return _synoServiceProvider?.Value;
-            }
-            if (CurrentHost.IsOmvServer)
-            {
-                return _omvServiceProvider?.Value;
-            }
+            if (CurrentHost.IsSynoServer) return _synoServiceProvider?.Value;
+            if (CurrentHost.IsOmvServer) return _omvServiceProvider?.Value;
 
 
             return default;
         }
 
-
-        public ObservableRangeCollection<Host> Hosts { get; } = new ObservableRangeCollection<Host>();
-        public Host CurrentHost { get; private set; }
-
         /// <summary>
-        /// Set host id after login
+        ///     Set host id after login
         /// </summary>
         /// <param name="host"></param>
         private void SetSelectedIdHost(Host host)
@@ -107,7 +113,6 @@ namespace Doods.Xam.MonitorMyServer.Services
                     try
                     {
                         await Login(findHost);
-                        
                     }
                     catch (Exception e)
                     {
@@ -116,14 +121,13 @@ namespace Doods.Xam.MonitorMyServer.Services
                     }
                     finally
                     {
-                        if (loginTask)
-                        {
-                            Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
-                        }
+                        if (loginTask) Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
                     }
                 }
                 else
+                {
                     Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
+                }
             }
         }
 
@@ -148,7 +152,6 @@ namespace Doods.Xam.MonitorMyServer.Services
 
                 var host = Hosts.First(h => h.Id == id);
                 await SelectHost(host);
-               
             }
         }
 
@@ -166,9 +169,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             GetClient(host);
             if (CurrentHost.IsSsh && !CurrentHost.IsOmvServer)
                 return _sshService?.ConnectAsync();
-            else if (CurrentHost.IsSynoServer && _synoService != null)
+            if (CurrentHost.IsSynoServer && _synoService != null)
                 return _synoService.LoginAsync(CurrentHost.UserName, CurrentHost.Password);
-            else if (_omvService != null)
+            if (_omvService != null)
                 return _omvService.Connect(CurrentHost.UserName, CurrentHost.Password);
             return Task.FromResult(0);
         }
@@ -258,6 +261,33 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
                 var syno = new SynologyCgiService(_logger, connection, _mapper);
                 testConnectionResult = await syno.LoginAsync(login, password);
+
+                //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                if (throwException)
+                    throw e;
+            }
+
+            return testConnectionResult;
+        }
+
+
+        public Task<bool> TestWebminConnection(string hostName, int port, string login, string password)
+        {
+            var connection = new HttpConnection(hostName, port);
+            return Webmin(connection, login, password, true);
+        }
+
+        private async Task<bool> Webmin(IConnection connection, string login, string password, bool throwException)
+        {
+            var testConnectionResult = false;
+            try
+            {
+                var webmin = new WebminCgiService(_logger, connection, _mapper);
+                testConnectionResult = await webmin.LoginAsync(login, password);
 
                 //testConnectionResult = syno.LoginAsync(login, password).GetAwaiter().GetResult();
             }

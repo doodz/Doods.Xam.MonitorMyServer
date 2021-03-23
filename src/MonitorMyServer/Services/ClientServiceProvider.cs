@@ -19,51 +19,54 @@ namespace Doods.Xam.MonitorMyServer.Services
     {
         //private volatile ISshService _value;//todo a voir
         public T Value { get; set; }
+
         public void ChangeValue(T value)
         {
             if (value == null) throw new ArgumentNullException(nameof(value));
-           
+
             if (value.Equals(Value)) return;
 
             // var oldValue = Value;
             Value = value;
             // oldValue.Dispose();
         }
+
         public void Dispose()
         {
             //this._value.Dispose();
         }
     }
 
-  
 
     public class SshServiceProvider : ClientServiceProvider<ISshService>
     {
-
         public SshServiceProvider(SshService service)
         {
             Value = service;
         }
-
     }
 
     public class OmvServiceProvider : ClientServiceProvider<IOmvService>
     {
-
         public OmvServiceProvider()
         {
             Value = new OmvRpcService(null, null, null);
         }
+    }
 
+    public class WebminServiceProvider : ClientServiceProvider<IWebminCgiService>
+    {
+        public WebminServiceProvider()
+        {
+            //Value = new WebminCgiService(null, null, null);
+        }
     }
 
     public class SynoServiceProvider : ClientServiceProvider<ISynologyCgiService>
     {
-
         public SynoServiceProvider()
         {
-            //Value = new SynologyCgiService(null,null);
+            //Value = new SynologyCgiService(null, null, null);
         }
-
     }
 }

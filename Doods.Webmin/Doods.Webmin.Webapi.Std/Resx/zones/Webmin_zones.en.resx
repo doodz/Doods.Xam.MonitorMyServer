@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>The zones administration command $1 was not found on your system. It must be installed before this module can be used.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin is running in the $1 zone, rather than the &lt;tt&gt;global&lt;/tt&gt; zone. This module will only work when run in the &lt;tt&gt;global&lt;/tt&gt; zone.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No zones have been defined yet.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Add a new zone.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>zone list</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Existing Zones</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Edit Zone</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>General zone configuration</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Zone name</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Current status</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Zone directory</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Start at system boot?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Resource pool</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Shutdown</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Install Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Upgrade Webmin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>Bootup</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Install System</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Un-Install System</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Delete Zone</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Network interfaces for zone</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>No network interfaces have been defined yet.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Interface name</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP address</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Netmask</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Broadcast address</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Add a new network interface.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Zone does not exist!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>zone details</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Inherited package directories</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Directory in global zone</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>No package directories have been defined yet.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Add a new package directory.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Package directories cannot be added after the zone is installed.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Additional filesystems</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Mount directory</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Mounted from</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Raw device</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Filesystem type</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Mounted?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Add Filesystem Of Type:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>No additional filesystems have been defined yet.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Ressource controls</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Resource name</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Privilege types</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>Limits</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>No resource controls have been defined yet.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Add a new resource control.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Generic zone attributes</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Attribute name</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Data type</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Attribute value</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>No generic attributes have been defined yet.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Add a new generic attribute.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Open Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Failed to save zone</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Missing or invalid pool</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin is not running in this zone</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Reboot Zone</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Are you sure you want to reboot the zone $1? All processes running within it will be restarted.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Failed to reboot zone</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Now rebooting zone ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. failed :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. complete.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Shutdown Zone</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Are you sure you want to shut down the zone $1? All processes running within it will be halted.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Failed to shutdown zone</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Now shutting down zone ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Bootup Zone</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Failed to bootup zone</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Now booting up zone ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Delete Zone</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Are you sure you want to delete the zone $1? All files within its private filesystems will be lost.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Failed to delete zone</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Now deleting zone ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Un-Install System</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Are you sure you want to un-install the system software from zone $1? All files within its private filesystems will be lost.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Failed to un-install system software from zone</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Now un-installing system from zone ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Install System</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Now installing system into zone ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Create Network Interface</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Edit Network Interface</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Zone virtual interface details</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>Interface IP address</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Real network interface</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Netmask for address</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Current broadcast address</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Failed to save network interface</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Invalid netmask</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Invalid IP address</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Interface no longer exists!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>A network interface with the same IP address already exists in this zone</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Add Package Directory</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Edit Package Directory</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Inherited package directory details</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Directory in global zone</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Directory no longer exists!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Failed to save package directory</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Invalid or non-existant directory</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>The package directory already exists in this zone</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Inherit packages from global zone</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Yes (sparse root zone)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>No (whole root zone)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Create Filesystem</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Edit Filesystem</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Additional filesystem details</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Filesystem type</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Mount point in zone</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Current status</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Not mounted</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>Mounted</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Mounted, with $2 free out of $1</value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Source in global zone</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Filesystem mount options</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Failed to save filesystem</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Missing mount point directory</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>The filesystem was created, but an error occurred mounting it</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>The filesystem was removed, but an error occurred un-mounting it</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>The filesystem was updated, but an error occurred re-mounting it</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Missing source device file</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Invalid mount options (must be a comma-separated list like ro,nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Filesystem no longer exists!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Mount after creating?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>A filesystem using the same directory already exists in this zone</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Create Resource Control</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Edit Resource Control</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Resource control type and limits</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Resource type</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Limits to impose</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Privilege type</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>Limit</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Action when exceeded</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Privileged</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>No action</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Deny request</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Send signal..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Failed to save resource control</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Resource control no longer exists!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Not a number</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>No signal selected in row $1</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>No limits entered</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>A control for the same resource already exists in this zone</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Create Generic Attribute</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Edit Generic Attribute</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Generic zone attribute details</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Attribute name</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Data type for value</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Attribute value</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Text string</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Positive integer</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Failed to save generic attribute</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Missing or invalid name</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Value is not an integer</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Value is not a positive integer</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Value is not 'true' or 'false'</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Attribute no longer exists!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>An attribute with the same name already exists in this zone</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>Halted</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Not Installed</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Being Installed</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Shutting down</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Zone name</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>ID No.</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Zone directory</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>In zone $1</value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Create Zone</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>New zone details</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Zone files directory</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Selected directory</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Automatic (under &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Initial IP address</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Install after creating?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Setup Webmin after installing?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Yes (Prevents addition of package directories)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Create Now</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Failed to create zone</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Missing or invalid zone name</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Missing or invalid hostname</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>A zone with the same name already exists</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Missing zone directory</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>The zone directory '$1' already exists</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Missing or invalid initial IP address</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Creating new zone ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. done.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. failed! See the output above for the reason why.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Adding initial network interface ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Installing system software ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Additional package directories</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' is not a valid package directory</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Adding package directories ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Setting up Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. failed : $1</value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Configure new zone?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Initial hostname</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Same as zone name</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Yes, using settings below ..</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>No, configure manually at console</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Initial root password</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Same as global system</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Initial time zone</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Same as global system ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Initial language locale</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Terminal type for console</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Default (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Initial name service</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS+</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS or NIS domain name</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>DNS or NIS name servers</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Failed to find local root user!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Missing or invalid timezone</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Missing or invalid language locale</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Missing or invalid terminal type</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Missing or invalid DNS or NIS domain name</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' is not a valid DNS or NIS name server host</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>No DNS or NIS name servers entered</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>The zone's hostname could not be resolved, which will cause automatic configuration to fail. You should add it to the DNS before creating this zone</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Default router</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Missing or invalid default router IP address</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>removing inherited package directories ...</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Branding zone</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Created zone $1</value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Deleted zone $1</value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Modified configuration for zone $1</value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Booted up zone $1</value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Rebooted zone $1</value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Shutdown zone $1</value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Installed zone $1</value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Un-installed zone $1</value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Created network interface with address $1 in zone $2</value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Deleted network interface with address $1 in zone $2</value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Modified network interface with address $1 in zone $2</value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Created package directory $1 in zone $2</value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Modified package directory $1 in zone $2</value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Deleted package directory $1 in zone $2</value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Created filesystem $1 in zone $2</value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Modified filesystem $1 in zone $2</value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Deleted filesystem $1 in zone $2</value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Created resource control for $1 in zone $2</value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Modified resource control for $1 in zone $2</value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>Deleted resource control for $1 in zone $2</value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Created generic attribute $1 in zone $2</value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Modified generic attribute $1 in zone $2</value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>Deleted generic attribute $1 in zone $2</value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl is not installed at $1</value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>The directory $1 does not exist or does not contain Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Install Webmin</value>
+  </data>
+  <data name="__norefs" xml:space="preserve">
+    <value>1</value>
+  </data>
+</root>

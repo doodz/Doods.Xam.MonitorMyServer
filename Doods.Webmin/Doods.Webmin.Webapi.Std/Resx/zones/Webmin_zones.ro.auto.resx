@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Comanda de administrare a zonelor $1 nu a fost găsită în sistemul dvs. Trebuie să fie instalat înainte ca acest modul să poată fi utilizat.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin rulează în zona $1, mai degrabă decât în zona &lt;tt&gt;global&lt;/tt&gt;. Acest modul va funcționa numai atunci când este rulat în zona &lt;tt&gt;global&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Nu au fost definite încă zone.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Adăugați o nouă zonă.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista zonelor</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Zonele existente</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Editează Zona</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Configurația generală a zonei</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Numele zonei</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Statusul curent</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Director de zone</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Începeți la pornirea sistemului?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Grup de resurse</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>reboot</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Închide</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Instalați Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Actualizați Webmin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>bootare</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Instalați sistemul</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Dezinstalați sistemul</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Ștergeți Zona</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Interfețe de rețea pentru zonă</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Nu au fost definite încă interfețe de rețea.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Numele interfeței</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>adresa IP</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Mască de rețea</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Adresa de difuzare</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Adăugați o nouă interfață de rețea.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>Inactiv</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Zona nu există!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>detalii zonă</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Directoare de pachete moștenite</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Director în zona globală</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Nu au fost definite încă directorii de pachete.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Adăugați un nou director de pachete.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Directoarele de pachete nu pot fi adăugate după instalarea zonei.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Sisteme de fișiere suplimentare</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Directorul de montare</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Montat din</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Dispozitiv brut</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Tip sistem de fișiere</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Montat?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Adăugați sistem de fișiere de tip:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Nu au fost definite încă sisteme de fișiere suplimentare.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Controale de resurse</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Numele resursei</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Tipuri de privilegii</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>limite</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>acţiuni</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Nu au fost încă definite controale de resurse.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Adăugați un nou control al resurselor.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Atribute generice de zonă</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Numele atributului</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Tip de date</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Valoarea atributului</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Nu s-au definit încă atribute generice.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Adăugați un nou atribut generic.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Deschideți Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Anulare</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Nu a reușit să salveze zona</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Grupul lipsește sau este nevalid</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin nu rulează în această zonă</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Reboot Zone</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Sigur doriți să reporniți zona $1 ? Toate procesele care se execută în cadrul acestuia vor fi repornite.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Nu a reușit să reporniți zona</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Acum reporniți zona ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. a eșuat  :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. complet.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Zona de închidere</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Sigur doriți să închideți zona $1 ? Toate procesele care se execută în cadrul acestuia vor fi oprite.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Nu a reușit să închidă zona</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Acum închiderea zonei ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Zona de bootare</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Nu a reușit zona de bootare</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Acum porniți zona ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Ștergeți Zona</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Sigur doriți să ștergeți zona $1 ? Toate fișierele din sistemele sale de fișiere private vor fi pierdute.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Nu a reușit ștergerea zonei</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Șterge acum zona ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Dezinstalați sistemul</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Sigur doriți să dezinstalați software-ul sistemului din zona $1 ? Toate fișierele din sistemele sale de fișiere private vor fi pierdute.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Eroare la dezinstalarea software-ului de sistem din zonă</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Acum dezinstalăm sistemul din zonă ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Instalați sistemul</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Acum instalați sistemul în zonă ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Creați interfață de rețea</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Editează interfața de rețea</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Detalii despre interfața virtuală din zonă</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>Adresa IP a interfeței</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Interfață de rețea reală</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Netmask pentru adresă</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Adresa curentă de difuzare</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Nu a reușit salvarea interfeței de rețea</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Mască netă nevalidă</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Adresa IP nevalidă</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Interfața nu mai există!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>În această zonă există deja o interfață de rețea cu aceeași adresă IP</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Adăugați pachet director</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Modificați directorul de pachete</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Detalii despre directorul pachetelor moștenite</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Director în zona globală</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Directorul nu mai există!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Nu a putut salva directorul pachetului</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Director nevalid sau inexistent</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>Directorul de pachete există deja în această zonă</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Moștenire pachete din zona globală</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Da (zona rădăcină mică)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Nu (întreaga zonă rădăcină)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Creați sistem de fișiere</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Editează Sistemul de fișiere</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Detalii suplimentare ale sistemului de fișiere</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Tip sistem de fișiere</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Punctul de montare în zonă</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Statusul curent</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Nu este montat</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>Montat</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Montat, cu $2 liber din $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Sursa în zona globală</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Opțiuni de montare a sistemelor de fișiere</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Nu a reușit să salveze sistemul de fișiere</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Lipsește directorul punctului de montare</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Sistemul de fișiere a fost creat, dar a apărut o eroare la montare</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Sistemul de fișiere a fost eliminat, dar a apărut o eroare la montare</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Sistemul de fișiere a fost actualizat, dar a apărut o eroare la montare</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Fișierul dispozitivului sursă lipsă</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Opțiuni de montare nevalide (trebuie să fie o listă separată de virgule, cum ar fi ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Sistemul de fișiere nu mai există!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Se montează după creare?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>În această zonă există deja un sistem de fișiere care utilizează același director</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Creați controlul resurselor</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Editează controlul resurselor</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Tipul și limitele controlului resurselor</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Tipul resursei</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Limite de impus</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Tipul privilegiilor</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>Limită</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Acțiune atunci când este depășit</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>De bază</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Privilegiat</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Fara actiune</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Respingeți cererea</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Trimite semnal ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Nu a reușit să salvați controlul resurselor</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Controlul resurselor nu mai există!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Nu un număr</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>Nu a fost selectat niciun semnal în rândul $1 </value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Nu au fost introduse limite</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>Există deja un control pentru aceeași resursă în această zonă</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Creați un atribut generic</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Editați atributul generic</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Detalii despre atributul zonei generice</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Numele atributului</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Tipul de date pentru valoare</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Valoarea atributului</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Șir de text</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>Întreg</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Număr întreg pozitiv</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>boolean</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Nu a reușit să salveze atributul generic</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Numele care lipsește sau este nevalid</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Valoarea nu este un număr întreg</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Valoarea nu este un număr întreg pozitiv</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Valoarea nu este „adevărată” sau „falsă”</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Atributul nu mai există!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>Un atribut cu același nume există deja în această zonă</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Alergare</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>oprit</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Nu este instalat</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Fiind instalat</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>Gata</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Jos</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Oprirea</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Numele zonei</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>Nu stiu.</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Director de zone</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>stare</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>acţiuni</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>În zona $1 </value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>Nici unul</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Creați zona</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Detalii despre zonele noi</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Director de fișiere de zonă</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Director selectat</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Automat (sub &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Adresa IP inițială</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>Nici unul</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Instalați după creare?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Configurați Webmin după instalare?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Da (Împiedică adăugarea directorilor de pachete)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Creați acum</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Crearea zonei nu a reușit</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Numele zonei lipsă sau nevalid</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Numele de gazdă lipsă sau nevalid</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Există deja o zonă cu același nume</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Lipsește directorul zonei</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>Directorul de zone „$1” există deja</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Adresa IP inițială lipsă sau nevalidă</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Crearea zonei noi ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. Terminat.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. a eșuat! Vedeți ieșirea de mai sus pentru motivul pentru care.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Adăugarea interfeței de rețea inițiale ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Instalarea software-ului de sistem ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Directoare suplimentare de pachete</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>„$1” nu este un director de pachete valabil</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Adăugarea directoarelor de pachete ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Configurarea Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. eșuat : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Configurați zona nouă?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Numele inițial de gazdă</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>La fel cu numele zonei</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Da, folosind setările de mai jos ..</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Nu, configurați manual la consolă</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Parolă rădăcină inițială</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>La fel ca sistemul global</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Fus orar inițial</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>La fel ca sistemul global ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Localizare inițială a limbii</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Tipul terminalului pentru consolă</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Implicit (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Serviciul inițial pentru nume</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>Nici unul</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS sau nume de domeniu NIS</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>Servere de nume DNS sau NIS</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Nu a reușit să găsești un utilizator root local!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Fus orar lipsă sau nevalid</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Localizare de limbă lipsă sau nevalidă</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Tip de terminal lipsit sau nevalid</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>DNS sau nume de domeniu NIS lipsă sau nevalide</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>„$1” nu este o gazdă valabilă pentru serverul de nume DNS sau NIS</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>Nu au fost introduse servere de nume DNS sau NIS</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Numele de gazdă al zonei nu a putut fi rezolvat, ceea ce va determina eșecul configurației automate. Ar trebui să îl adăugați la DNS înainte de a crea această zonă</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Router implicit</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Adresa IP a routerului implicit lipsă sau nevalidă</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>eliminarea directoarelor de pachete moștenite. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Zona de branding</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Zona creată $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Zona ștersă $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Configurație modificată pentru zona $1 </value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Zona de pornire $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Zona repornită $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Zona de închidere $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Zona instalată $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Zona neinstalată $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Interfață de rețea creată cu adresa $1 în zona $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Interfață de rețea ștersă cu adresa $1 în zona $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Interfață de rețea modificată cu adresa $1 în zona $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Directorul de pachete creat $1 în zona $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Repertoriu pachet modificat $1 în zona $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Directorul pachetelor șterse $1 din zona $2 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Sistem de fișiere creat $1 în zona $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Sistem de fișiere modificat $1 în zona $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Sistemul de fișiere șters $1 în zona $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Crearea controlului resurselor pentru $1 în zona $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Control modificat al resurselor pentru $1 în zona $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>S-a șters controlul resurselor pentru $1 în zona $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Creat atribut generic $1 în zona $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Atribut generic modificat $1 în zona $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>S-a șters atributul generic $1 în zona $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl nu este instalat la $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>Directorul $1 nu există sau nu conține Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Instalați Webmin</value>
+  </data>
+</root>

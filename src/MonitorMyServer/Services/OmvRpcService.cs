@@ -21,27 +21,28 @@ namespace Doods.Xam.MonitorMyServer.Services
 {
     public class OmvRpcService : IOmvService
     {
-        private readonly IMapper _mapper;
+        private readonly IRpcClient _client;
         private readonly ILogger _logger;
+        private readonly IMapper _mapper;
         private readonly OmvAptClient _omvAptClient;
         private readonly OmvConfigClient _omvConfigClient;
-        private readonly OmvLogFileClient _omvLogFileClient;
         private readonly OmvDiskMgmtClient _omvDiskMgmtClient;
         private readonly OmvExecClient _omvExecClient;
 
         private readonly OmvFileSystemMgmtClient _omvFileSystemMgmtClient;
+        private readonly OmvLogFileClient _omvLogFileClient;
         private readonly OmvNetworkClient _omvNetworkClient;
         private readonly OmvPluginClient _omvPluginClient;
 
         private readonly OmvPowerMgmtClient _omvPowerMgmtClient;
         private readonly OmvRrdClient _omvRrdClient;
+        private readonly OmvServicesClient _omvServicesClient;
+        private readonly OmvShareMgmtClient _omvShareMgmtClient;
 
         private readonly OmvSystemClient _omvSystemClient;
 
         private readonly OmvWebGuiClient _omvWebGuiClient;
-        private readonly OmvServicesClient _omvServicesClient;
-        private readonly OmvShareMgmtClient _omvShareMgmtClient;
-        private readonly IRpcClient _client;
+
         public OmvRpcService(IRpcClient client, ILogger logger, IMapper mapper)
         {
             _logger = logger;
@@ -60,35 +61,26 @@ namespace Doods.Xam.MonitorMyServer.Services
             _omvRrdClient = new OmvRrdClient(_client);
             _omvWebGuiClient = new OmvWebGuiClient(_client);
             _omvLogFileClient = new OmvLogFileClient(client);
-            _omvShareMgmtClient= new OmvShareMgmtClient(client);
+            _omvShareMgmtClient = new OmvShareMgmtClient(client);
         }
 
-        public async  Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile)
+        public async Task<IEnumerable<LogLine>> GetLogFile(OmvLogFileEnum logfile)
         {
-            var result =await _omvLogFileClient.GetList(logfile);
+            var result = await _omvLogFileClient.GetList(logfile);
             return result.Data;
         }
 
         public async Task<IEnumerable<SharedFolder>> GetSharedFolders()
         {
             var result = await _omvShareMgmtClient.GetSharedFolders();
-            return _mapper.Map<IEnumerable<Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder>, IEnumerable<SharedFolder>>(result.Data);
+            return _mapper
+                .Map<IEnumerable<Openmediavault.Rpc.Std.Data.V4.SharedFolders.SharedFolder>, IEnumerable<SharedFolder>>(
+                    result.Data);
         }
 
-        public void SetOMVVersion(OMVVersion version)
+        public Task<IEnumerable<Devices>> GetDevices()
         {
-            _omvSystemClient.SetOMVVersion(version);
-        }
-
-        public OMVVersion GetRpcVersion()
-        {
-            return _omvSystemClient.GetRpcVersion();
-        }
-
-        public  Task<IEnumerable<Devices>> GetDevices()
-        {
-            return  _omvNetworkClient.GetDevices();
-           
+            return _omvNetworkClient.GetDevices();
         }
 
         public Task<NetworkSetting> GetSettings()
@@ -124,7 +116,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<bool> IsRunning(string filename)
         {
-            var result =await  _omvExecClient.IsRunning(filename);
+            var result = await _omvExecClient.IsRunning(filename);
             return result.Running;
         }
 
@@ -229,9 +221,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _mapper.Map<IEnumerable<OmvPlugins>, IEnumerable<PluginInfo>>(result);
         }
 
-        public async Task<bool> Connect(string username,string password)
+        public async Task<bool> Connect(string username, string password)
         {
-           return  await _client.LoginAsync(username, password);
+            return await _client.LoginAsync(username, password);
         }
 
         public Task<PowerManagementSetting> GetPowerManagementSetting()
@@ -305,8 +297,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async Task<Output<T>> GetOutputAsync<T>(string filename)
         {
-
-            var result =await _omvExecClient.GetOutput<string>(filename, 0);
+            var result = await _omvExecClient.GetOutput<string>(filename, 0);
             if (result.Running)
             {
                 await Task.Delay(TimeSpan.FromSeconds(3));
@@ -326,7 +317,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             return toto;
         }
 
-        public async  Task<Output<string>> GetOutputAsync(string filename)
+        public async Task<Output<string>> GetOutputAsync(string filename)
         {
             var result = await _omvExecClient.GetOutput<string>(filename, 0);
             if (result.Running)
@@ -346,6 +337,23 @@ namespace Doods.Xam.MonitorMyServer.Services
             toto.Content = result.Content;
 
             return toto;
+        }
+
+        public void SetOMVVersion(OMVVersion version)
+        {
+            _omvSystemClient.SetOMVVersion(version);
+        }
+
+        public OMVVersion GetRpcVersion()
+        {
+            return _omvSystemClient.GetRpcVersion();
+        }
+
+      
+        public async Task<IEnumerable<Package>> GetPackages()
+        {
+            var result = await GetUpgraded();
+            return _mapper.Map<IEnumerable<Upgraded>, IEnumerable<Package>>(result);
         }
     }
 }

@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>تصدیق کی تصدیق کریں</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>اس بٹن پر کلک کریں کہ Webmin آپ کے ایل ڈی اے پی سرور کی تصدیق کو یقینی بنائے ، اس بات کو یقینی بناتے ہوئے کہ سرور سے رابطہ کیا جاسکے اور اس میں صارف اور گروپ شامل ہوں۔</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>ماڈیول انڈیکس</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;Warning&lt;/b&gt; - Webmin has detected two separate LDAP configuration files on your system. NSS-LDAP is configured using $1, while PAM-LDAP uses $2. This may cause in-consistencies between the two services.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>فائلوں کو لنک کرکے ٹھیک کریں</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>یہ پیغام نہ دکھائیں</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون کو روکیں</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>مقامی ایل ڈی اے پی کلائنٹ ڈیمون کو بند کردیں ، جو ریموٹ LDAP سرور سے استفسار کرنے کی ضرورت ہے۔</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون شروع کریں</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>مقامی ایل ڈی اے پی کلائنٹ ڈیمون کو شروع کریں ، جس کی ضرورت ہے دور دراز کے ایل ڈی اے پی سرور سے استفسار کرنے کے لئے۔ جب تک یہ شروع نہیں ہوتا ، ایل ڈی اے پی میں استعمال کنندہ اور گروپس قابل رسائی نہیں ہوں گے۔</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون کو دوبارہ شروع کریں</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>مقامی ایل ڈی اے پی کلائنٹ ڈیمون کو دوبارہ شروع کرکے موجودہ ترتیب کا اطلاق کریں۔</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>بوٹ میں ایل ڈی اے پی کلائنٹ شروع کریں</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>تبدیلیاں چاہے LDAP کلائنٹ ڈیمون شروع ہوتا ہے جب سسٹم بوٹ ہوجاتا ہے یا نہیں۔</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>LDAP سرور کنفیگریشن</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>LDAP سرور اور لاگ ان کے اختیارات</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>LDAP سرور ہوسٹ نام</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>بندرگاہ سے جڑیں</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>LDAP پروٹوکول ورژن</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>رابطے کی وقت کی حد</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>Login for non-&lt;tt&gt;root&lt;/tt&gt; users</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>Password for non-&lt;tt&gt;root&lt;/tt&gt; users</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>Login for &lt;tt&gt;root&lt;/tt&gt; user</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>Password for &lt;tt&gt;root&lt;/tt&gt; user</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>Same as non-&lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>کوئی نہیں</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>گمنام</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>خفیہ کنکشن استعمال کریں؟</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>ہاں ، TLS کا استعمال کرتے ہوئے</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>LDAP SSL سند کی تصدیق کریں؟</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>پہلے سے طے شدہ (عام طور پر$1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>CA سند فائل</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>ایل ڈی اے پی سرورز</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>میزبان کا نام</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>پورٹ نمبر</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>پروٹوکول</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>معیاری</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>یونکس ساکٹ</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>LDAP سرور کی تشکیل کو بچانے میں ناکام</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' درست میزبان نام نہیں ہے</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>کوئی ایل ڈی اے پی سرور داخل نہیں ہوا</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>لاپتہ یا غلط LDAP سرور پورٹ</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>Missing login for non-&lt;tt&gt;root&lt;/tt&gt; users</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>Missing password for non-&lt;tt&gt;root&lt;/tt&gt; users</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>Missing login for &lt;tt&gt;root&lt;/tt&gt; user</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>Missing password for &lt;tt&gt;root&lt;/tt&gt; user</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>کنیکشن ٹائم کی حد یا گمشدہ</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>سی اے سرٹیفکیٹ فائل غائب یا غیر موزوں ہے</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>سرور$1 کے لئے غائب یا غلط پورٹ</value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>کوئی ایل ڈی اے پی سرور داخل نہیں ہوا</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>ایل ڈی اے پی تلاش کے اڈے</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>LDAP ڈائرکٹری کی تلاش کے مقامات</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>گلوبل سرچ بیس</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>گہرائی تلاش کریں</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>مکمل ذیلی</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>ایک سطح</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>صرف بیس</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>یونکس صارفین کے لئے بیس</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>یونکس پاس ورڈ کی بنیاد</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>یونکس گروپس کی بنیاد</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>میزبان ناموں کی بنیاد</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>نیٹ ورک کی خدمات کے لئے بیس</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>نیٹ ورک کے ناموں کی بنیاد</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>پروٹوکول کی بنیاد</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>نیٹ ماسک ناموں کی بنیاد</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>ای میل عرفی نام کی بنیاد</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>نیٹ گروپس کی بنیاد</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>گہرائی تلاش کریں</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>فلٹر تلاش کریں</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>وقت کی حد تلاش کریں</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>سیکنڈ</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>عالمی بنیاد</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>ایل ڈی اے پی سرچ اڈوں کو محفوظ کرنے میں ناکام</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>گمشدہ گلوبل سرچ بیس</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>یونکس صارفین کے ل base لاپتہ بیس</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>یونیکس پاس ورڈز کیلئے بیس غائب</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>یونکس گروپس کے لئے اڈے غائب ہیں</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>میزبان ناموں کیلئے اشتہار غائب</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>نیٹ ورک کی خدمات کے لئے گمشدہ بنیاد</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>نیٹ ورک کے ناموں کے لئے گمشدہ اساس</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>پروٹوکول کیلئے بیس غائب</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>نیٹ ماسک ناموں کے لئے گمشدہ اساس</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>ای میل عرفی ناموں کے لئے گمشدہ اساس</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>نیٹ گروپس کے لئے بیس غائب ہے</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>گمشدہ یا غلط وقت کی حد</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>توثیق کے اختیارات</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>PAM کی توثیق اور پاس ورڈ کی ترتیبات</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>اضافی ایل ڈی اے پی فلٹر</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>صارف نام کے لئے LDAP وصف</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>ایل ڈی اے پی گروپ کی رکنیت پر مجبور کرنے کے لئے</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>گروپ ممبروں کے ل L LDAP وصف</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>پاس ورڈ اسٹوریج کا طریقہ</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>متن صاف کریں</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>یونکس خفیہ کاری</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>MD5 خفیہ کاری</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>ناول ڈائرکٹری خدمات</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>ایکٹو ڈائریکٹری</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>اوپن ایل ڈی اے پی پاس ورڈ کی تبدیلی</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>کوئی نہیں</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>نظرانداز کیا</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>توثیق کے اختیارات کو بچانے میں ناکام</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>لاپتہ اضافی ایل ڈی اے پی فلٹر</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>صارف نام کیلئے لاپتہ یا غلط LDAP وصف</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>کی رکنیت پر مجبور کرنے کیلئے LDAP گروپ لاپتہ ہے</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>گروپ ممبروں کے لئے لاپتہ یا غلط LDAP وصف</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>ایل ڈی اے پی کا استعمال کرتے ہوئے خدمات</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>خدمت</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>اعداد و شمار ذرائع</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>LDAP استعمال کرنے والی خدمات</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>LDAP سرور سے بات کرنے کے لئے درکار$1 پرل ماڈیول انسٹال نہیں ہے۔</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>LDAP کلائنٹ کی تشکیل فائل$1 آپ کے سسٹم پر نہیں مل سکی</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>LDAP سرور$1 پورٹ$2 سے رابطہ قائم کرنے میں ناکام</value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>LDAP سرور$1 پورٹ $2 : $3 سے رابطہ قائم کرنے میں ناکام</value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>LDAP سرور$1 کو $2 : $3 کے ساتھ پابند کرنے میں ناکام</value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>گمنام</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>LDAP سرور URI $1 کی تجزیہ نہیں کرسکا</value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>TLS وضع میں تبدیل کرنے میں ناکام :$1</value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>ایل ڈی اے پی براؤزر</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>ایل ڈی اے پی براؤزر استعمال نہیں کیا جاسکتا :$1</value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>براؤزنگ:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>دکھائیں</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>ایل ڈی اے پی تلاش ناکام ہوگئی :$1</value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>چائلڈ آبجیکٹ</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>اعتراض کی خصوصیات</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>والدین کو براؤز کریں</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>کوئی نہیں</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>ٹھیک ہے</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>ڈی این ایس</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>فائلوں</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>سسٹم سیکیورٹی کی خدمات</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>DB فائلیں</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS اور فائلیں</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>ہیسڈائڈ</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>ایل ڈی اے پی</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>صارف کے پرنٹرز</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>ایکس ایف این</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>ملٹی کاسٹ DNS</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>ملٹی کاسٹ DNS (کم سے کم)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>بھیجنے والے عرفی نام</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>بھیجنے والے عرفی نام</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>میزبان کے پتے</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>یونکس گروپس</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>یونکس صارفین</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>ایتھرنیٹ کے پتے</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>خودکار گھر</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>خودکار نقشے</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>خودکار گھر</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>خودکار نقشے</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>مقامی</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>خودکار گھر</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>خودکار نقشے</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>مقامی</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>خودکار نقشے</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>نیٹ گروپس</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>نیٹ گروپس</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>نیٹ آئی ڈیز</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>نیٹ ورک کے پتے</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>نیٹ ورک پروٹوکول</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>آر پی سی پروگرام</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>نیٹ ورک کی خدمات</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>بھیجنے والے متغیرات</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>عوامی چابیاں</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>عوامی چابیاں</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>بوٹ پیرامیٹرز</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>یونکس شیڈو پاس ورڈ</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>یونکس گروپ پاس ورڈ</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>نیٹ ماسک</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>پرنٹرز</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>صارف کی اضافی معلومات</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>پرنٹرز</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>IP نوڈس</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>ٹائم زونز</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>لوکلز</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>سروس میں ترمیم کریں</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>خدمت موجود نہیں!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>سروس کی تفصیلات</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>سروس کا نام</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>ڈیٹا کا پہلا ماخذ</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>دوسرا ڈیٹا ماخذ</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>تیسرا ڈیٹا ماخذ</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>چوتھا ڈیٹا ماخذ</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>پانچویں ڈیٹا کا ماخذ</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>ڈیٹا ماخذ$1</value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>کامیابی پر</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>اگر نہیں ملا تو</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>اگر دستیاب نہیں ہے</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>فی الوقت دستیاب نہیں ہے</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>نتیجہ لوٹائیں</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>تلاش جاری رکھیں</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>کوئی نہیں</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>سروس کو بچانے میں ناکام</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>کوئی ذرائع منتخب نہیں!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>ترمیم شدہ ایل ڈی اے پی سرور کی تشکیل</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>ترمیم شدہ ایل ڈی اے پی تلاشی اڈے</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>تصدیق شدہ اختیارات میں ترمیم</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>سروس$1 تبدیل کردی گئی</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>بوٹ وقت ایل ڈی اے پی کلائنٹ ڈیمون کو فعال کیا</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>بوٹ وقت ایل ڈی اے پی کلائنٹ ڈیمون کو غیر فعال کردیا گیا</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون شروع کیا</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون رک گیا</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>ایل ڈی اے پی کلائنٹ ڈیمون کو دوبارہ شروع کیا</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>LDAP تشکیل کی توثیق کرنا</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>صارفین کے لئے ایل ڈی اے پی کی بنیاد تلاش کرنا ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. کلائنٹ کی تشکیل میں کوئی بنیاد نہیں ملا!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. بیس$1 ملا۔</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>LDAP سرور سے منسلک ہو رہا ہے ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. کنکشن ناکام :$1</value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>..$1 سے منسلک ہے</value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>صارفین کو تلاش کررہے ہیں ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. تلاش ناکام :$1</value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. بیس$1 کے تحت کوئی صارف نہیں ملا۔</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. ملا$1 صارفین۔</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>Checking &lt;b&gt;Unix users&lt;/b&gt; service ..</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. LDAP سے استفسار کرنے کے لئے سروس سیٹ اپ ہے۔</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. LDAP استعمال کرنے کے لئے سروس سیٹ اپ نہیں ہے۔</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>یونکس صارف$1 کی تلاش ہے۔</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. صارف موجود نہیں.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>.. صارف کامیابی کے ساتھ ملا۔</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>آپ کے سسٹم کو ایل ڈی اے پی کلائنٹ کی حیثیت سے کامیابی کے ساتھ تشکیل دیا گیا ہے۔</value>
+  </data>
+</root>

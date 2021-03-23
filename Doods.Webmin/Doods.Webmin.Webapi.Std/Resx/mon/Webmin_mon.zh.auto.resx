@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>MON服务监控器</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>MON指数</value>
+  </data>
+  <data name="mon_global_title" xml:space="preserve">
+    <value>全局变量配置</value>
+  </data>
+  <data name="mon_conf_title" xml:space="preserve">
+    <value>基本配置</value>
+  </data>
+  <data name="mon_status_title" xml:space="preserve">
+    <value>运行状态</value>
+  </data>
+  <data name="hostgroups_title" xml:space="preserve">
+    <value>MON配置-主机组</value>
+  </data>
+  <data name="services_title" xml:space="preserve">
+    <value>监视组服务定义</value>
+  </data>
+  <data name="head_hostgroups" xml:space="preserve">
+    <value>主机组和服务</value>
+  </data>
+  <data name="head_groups" xml:space="preserve">
+    <value>主机组名称</value>
+  </data>
+  <data name="head_members" xml:space="preserve">
+    <value>主机组成员</value>
+  </data>
+  <data name="head_services" xml:space="preserve">
+    <value>值得关注的主机组服务</value>
+  </data>
+  <data name="head_service" xml:space="preserve">
+    <value>观看服务</value>
+  </data>
+  <data name="head_param" xml:space="preserve">
+    <value>服务参数</value>
+  </data>
+  <data name="head_watch" xml:space="preserve">
+    <value>观看小组？</value>
+  </data>
+  <data name="head_monauth" xml:space="preserve">
+    <value>为MONCMD提供身份验证</value>
+  </data>
+  <data name="head_usr" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="head_pass" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="head_mand" xml:space="preserve">
+    <value>（“红色”中的参数为必填项）</value>
+  </data>
+  <data name="err_nomon" xml:space="preserve">
+    <value>系统上未安装软件包“ mon”</value>
+  </data>
+  <data name="err_nowatch" xml:space="preserve">
+    <value>未选择监视组。选择至少一个监视组以继续。</value>
+  </data>
+  <data name="err_noserv" xml:space="preserve">
+    <value>没有为监视组选择服务</value>
+  </data>
+  <data name="err_nomemb" xml:space="preserve">
+    <value>没有为监视组选择主机/成员</value>
+  </data>
+  <data name="err_monrun" xml:space="preserve">
+    <value>MON不在主机上运行。请启动MON。</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>无法停止MON</value>
+  </data>
+  <data name="stop_epid" xml:space="preserve">
+    <value>不再运行</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>无法启动MON</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>重启MON失败</value>
+  </data>
+  <data name="restart_epid" xml:space="preserve">
+    <value>无法获取PID</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>其他（空格分隔）</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>下一个</value>
+  </data>
+  <data name="mon_stat" xml:space="preserve">
+    <value>MON状态</value>
+  </data>
+  <data name="mon_off" xml:space="preserve">
+    <value>MON服务未启动</value>
+  </data>
+  <data name="mon_start" xml:space="preserve">
+    <value>启动MON服务</value>
+  </data>
+  <data name="mon_stop" xml:space="preserve">
+    <value>停止MON服务</value>
+  </data>
+  <data name="mon_restart" xml:space="preserve">
+    <value>重新启动MON服务</value>
+  </data>
+  <data name="mon_startdesc" xml:space="preserve">
+    <value>单击此按钮以启动MON服务器。在启动之前，将不会进行任何已配置的监视。</value>
+  </data>
+  <data name="mon_stopdesc" xml:space="preserve">
+    <value>单击此按钮停止MON服务器。停止时，已配置的监视将停止。</value>
+  </data>
+  <data name="mon_restartdesc" xml:space="preserve">
+    <value>单击此按钮可通过重新启动服务器进程来应用当前的MON配置。</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>（每行一个）</value>
+  </data>
+  <data name="save_apply" xml:space="preserve">
+    <value>储存并套用</value>
+  </data>
+  <data name="watch" xml:space="preserve">
+    <value>观察组</value>
+  </data>
+  <data name="members" xml:space="preserve">
+    <value>会员</value>
+  </data>
+  <data name="def_perargs" xml:space="preserve">
+    <value>wd {Sat-Sun}</value>
+  </data>
+  <data name="def_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="def_inter" xml:space="preserve">
+    <value>间隔</value>
+  </data>
+  <data name="def_mon" xml:space="preserve">
+    <value>监控</value>
+  </data>
+  <data name="def_dep" xml:space="preserve">
+    <value>悬垂</value>
+  </data>
+  <data name="def_per" xml:space="preserve">
+    <value>期</value>
+  </data>
+  <data name="def_alert" xml:space="preserve">
+    <value>警报</value>
+  </data>
+  <data name="def_alertevr" xml:space="preserve">
+    <value>机警</value>
+  </data>
+  <data name="def_alertaft" xml:space="preserve">
+    <value>警报后</value>
+  </data>
+  <data name="def_alertstr" xml:space="preserve">
+    <value>启动警报</value>
+  </data>
+  <data name="def_allow" xml:space="preserve">
+    <value>allow_empty_group</value>
+  </data>
+  <data name="def_traptime" xml:space="preserve">
+    <value>陷阱超时</value>
+  </data>
+  <data name="def_trapdur" xml:space="preserve">
+    <value>持续时间</value>
+  </data>
+  <data name="def_rand" xml:space="preserve">
+    <value>兰斯屈</value>
+  </data>
+  <data name="def_exclhost" xml:space="preserve">
+    <value>exclude_hosts</value>
+  </data>
+  <data name="def_exclper" xml:space="preserve">
+    <value>exclude_period</value>
+  </data>
+  <data name="groups_title" xml:space="preserve">
+    <value>主机组</value>
+  </data>
+  <data name="groups_group" xml:space="preserve">
+    <value>组的名字</value>
+  </data>
+  <data name="groups_members" xml:space="preserve">
+    <value>会员主持人</value>
+  </data>
+  <data name="watches_title" xml:space="preserve">
+    <value>观察清单</value>
+  </data>
+  <data name="watches_group" xml:space="preserve">
+    <value>观察组</value>
+  </data>
+  <data name="watches_services" xml:space="preserve">
+    <value>正在监视的服务</value>
+  </data>
+  <data name="watches_sadd" xml:space="preserve">
+    <value>添加服务 ..</value>
+  </data>
+  <data name="watches_add" xml:space="preserve">
+    <value>为组添加监视列表：</value>
+  </data>
+  <data name="watches_return" xml:space="preserve">
+    <value>观察清单</value>
+  </data>
+  <data name="watches_none" xml:space="preserve">
+    <value>尚未定义监视列表。</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>全局选项</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>全局MON配置选项</value>
+  </data>
+  <data name="global_maxprocs" xml:space="preserve">
+    <value>最大MON进程</value>
+  </data>
+  <data name="global_histlength" xml:space="preserve">
+    <value>活动历史记录长度</value>
+  </data>
+  <data name="global_alertdir" xml:space="preserve">
+    <value>警报程序目录</value>
+  </data>
+  <data name="global_mondir" xml:space="preserve">
+    <value>监视程序目录</value>
+  </data>
+  <data name="global_authtype" xml:space="preserve">
+    <value>认证方式</value>
+  </data>
+  <data name="global_authtype_" xml:space="preserve">
+    <value>默认</value>
+  </data>
+  <data name="global_authtype_getpwnam" xml:space="preserve">
+    <value>系统调用</value>
+  </data>
+  <data name="global_authtype_userfile" xml:space="preserve">
+    <value>MON用户文件</value>
+  </data>
+  <data name="global_authtype_shadow" xml:space="preserve">
+    <value>影子文件</value>
+  </data>
+  <data name="global_userfile" xml:space="preserve">
+    <value>MON用户的文件</value>
+  </data>
+  <data name="global_emaxprocs" xml:space="preserve">
+    <value>MON进程数量丢失或无效</value>
+  </data>
+  <data name="global_ehistlength" xml:space="preserve">
+    <value>缺少或无效的事件历史记录长度</value>
+  </data>
+  <data name="global_ealertdir" xml:space="preserve">
+    <value>缺少或无效的警报程序目录</value>
+  </data>
+  <data name="global_emondir" xml:space="preserve">
+    <value>监视器程序目录丢失或无效</value>
+  </data>
+  <data name="global_euserfile" xml:space="preserve">
+    <value>缺少MON用户文件</value>
+  </data>
+  <data name="watch_title" xml:space="preserve">
+    <value>编辑监视列表</value>
+  </data>
+  <data name="watch_header" xml:space="preserve">
+    <value>主持人组观看详情</value>
+  </data>
+  <data name="watch_group" xml:space="preserve">
+    <value>主持人组观看</value>
+  </data>
+  <data name="watch_services" xml:space="preserve">
+    <value>正在监视的服务</value>
+  </data>
+  <data name="watch_service" xml:space="preserve">
+    <value>服务名称</value>
+  </data>
+  <data name="watch_monitor" xml:space="preserve">
+    <value>监控使用</value>
+  </data>
+  <data name="watch_interval" xml:space="preserve">
+    <value>检查每个</value>
+  </data>
+  <data name="watch_periods" xml:space="preserve">
+    <value>监测期</value>
+  </data>
+  <data name="service_title" xml:space="preserve">
+    <value>添加服务</value>
+  </data>
+  <data name="service_title2" xml:space="preserve">
+    <value>编辑服务</value>
+  </data>
+  <data name="service_header" xml:space="preserve">
+    <value>看过的服务细节</value>
+  </data>
+  <data name="service_name" xml:space="preserve">
+    <value>服务名称</value>
+  </data>
+  <data name="service_interval" xml:space="preserve">
+    <value>检查每个</value>
+  </data>
+  <data name="service_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="service_units_s" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="service_units_m" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="service_units_h" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="service_units_d" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="service_units_w" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="service_monitor" xml:space="preserve">
+    <value>使用显示器</value>
+  </data>
+  <data name="service_mon1" xml:space="preserve">
+    <value>标准显示器</value>
+  </data>
+  <data name="service_mon0" xml:space="preserve">
+    <value>其他显示器 ..</value>
+  </data>
+  <data name="service_args" xml:space="preserve">
+    <value>监控参数</value>
+  </data>
+  <data name="service_period" xml:space="preserve">
+    <value>监视期间 $1</value>
+  </data>
+  <data name="service_days" xml:space="preserve">
+    <value>检查天数</value>
+  </data>
+  <data name="service_hours" xml:space="preserve">
+    <value>检查时间</value>
+  </data>
+  <data name="service_all" xml:space="preserve">
+    <value>所有</value>
+  </data>
+  <data name="service_pstr" xml:space="preserve">
+    <value>期间规格</value>
+  </data>
+  <data name="service_new" xml:space="preserve">
+    <value>新的监测期</value>
+  </data>
+  <data name="service_alerts" xml:space="preserve">
+    <value>期间警报</value>
+  </data>
+  <data name="service_alert" xml:space="preserve">
+    <value>警报</value>
+  </data>
+  <data name="service_atype" xml:space="preserve">
+    <value>运行时间</value>
+  </data>
+  <data name="service_atype_alert" xml:space="preserve">
+    <value>服务中断</value>
+  </data>
+  <data name="service_atype_upalert" xml:space="preserve">
+    <value>服务来了</value>
+  </data>
+  <data name="service_atype_startupalert" xml:space="preserve">
+    <value>MON启动</value>
+  </data>
+  <data name="service_aargs" xml:space="preserve">
+    <value>附加参数</value>
+  </data>
+  <data name="service_every" xml:space="preserve">
+    <value>发送警报</value>
+  </data>
+  <data name="service_every_def" xml:space="preserve">
+    <value>每次运行监视器</value>
+  </data>
+  <data name="service_every_time" xml:space="preserve">
+    <value>每一个</value>
+  </data>
+  <data name="service_num" xml:space="preserve">
+    <value>发送的最大警报</value>
+  </data>
+  <data name="service_unlimited" xml:space="preserve">
+    <value>无限</value>
+  </data>
+  <data name="service_after" xml:space="preserve">
+    <value>警报前失败</value>
+  </data>
+  <data name="service_immediate" xml:space="preserve">
+    <value>立即</value>
+  </data>
+  <data name="service_after_num" xml:space="preserve">
+    <value>$1失败后</value>
+  </data>
+  <data name="service_aftertime" xml:space="preserve">
+    <value>在时间间隔内</value>
+  </data>
+  <data name="service_newperiod" xml:space="preserve">
+    <value>新增时间</value>
+  </data>
+  <data name="service_delperiod" xml:space="preserve">
+    <value>删除这个时期</value>
+  </data>
+  <data name="service_err" xml:space="preserve">
+    <value>保存服务失败</value>
+  </data>
+  <data name="service_ename" xml:space="preserve">
+    <value>服务名称缺失或无效</value>
+  </data>
+  <data name="service_einterval" xml:space="preserve">
+    <value>检查间隔缺失或无效</value>
+  </data>
+  <data name="service_eother" xml:space="preserve">
+    <value>监视器缺失或无效</value>
+  </data>
+  <data name="service_ehour" xml:space="preserve">
+    <value>时段 $1缺少或无效的小时（必须为上午9点或下午5点）</value>
+  </data>
+  <data name="service_eperiod" xml:space="preserve">
+    <value>没有为期间 $1指定天数或小时数</value>
+  </data>
+  <data name="service_eevery" xml:space="preserve">
+    <value>缺少或无效的服务警报间隔</value>
+  </data>
+  <data name="service_eafter" xml:space="preserve">
+    <value>警报前缺少或无效的故障数</value>
+  </data>
+  <data name="service_enum" xml:space="preserve">
+    <value>发送的最大警报缺失或无效</value>
+  </data>
+  <data name="service_epstr" xml:space="preserve">
+    <value>缺少期间说明</value>
+  </data>
+  <data name="service_known0" xml:space="preserve">
+    <value>&lt;tt&gt;Time::Period&lt;/tt&gt;字符串</value>
+  </data>
+  <data name="service_known1" xml:space="preserve">
+    <value>指定的日期和时间</value>
+  </data>
+  <data name="service_known2" xml:space="preserve">
+    <value>定义期间</value>
+  </data>
+  <data name="status_title" xml:space="preserve">
+    <value>MON状态</value>
+  </data>
+  <data name="users_title" xml:space="preserve">
+    <value>MON用户</value>
+  </data>
+  <data name="users_header" xml:space="preserve">
+    <value>$1中允许的MON用户</value>
+  </data>
+  <data name="users_nousers" xml:space="preserve">
+    <value>$1中没有定义MON用户。</value>
+  </data>
+  <data name="users_add" xml:space="preserve">
+    <value>创建一个新用户。</value>
+  </data>
+  <data name="users_return" xml:space="preserve">
+    <value>MON用户列表</value>
+  </data>
+  <data name="user_create" xml:space="preserve">
+    <value>创建MON用户</value>
+  </data>
+  <data name="user_edit" xml:space="preserve">
+    <value>编辑MON用户</value>
+  </data>
+  <data name="user_header" xml:space="preserve">
+    <value>MON用户详细信息</value>
+  </data>
+  <data name="user_user" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="user_pass" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="user_leave" xml:space="preserve">
+    <value>保持不变</value>
+  </data>
+  <data name="user_err" xml:space="preserve">
+    <value>保存用户失败</value>
+  </data>
+  <data name="user_euser" xml:space="preserve">
+    <value>用户名缺失或无效</value>
+  </data>
+  <data name="user_esame" xml:space="preserve">
+    <value>具有相同名称的用户已存在</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>客户端命令</value>
+  </data>
+  <data name="auth_desc" xml:space="preserve">
+    <value>使用此页面，您可以控制使用客户端程序时哪些用户可以运行哪些MON命令。</value>
+  </data>
+  <data name="auth_cmd" xml:space="preserve">
+    <value>MON命令</value>
+  </data>
+  <data name="auth_users" xml:space="preserve">
+    <value>允许的用户</value>
+  </data>
+  <data name="auth_none" xml:space="preserve">
+    <value>没有人</value>
+  </data>
+  <data name="auth_all" xml:space="preserve">
+    <value>每个人</value>
+  </data>
+  <data name="auth_sel" xml:space="preserve">
+    <value>仅用户</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>保存客户端命令失败</value>
+  </data>
+  <data name="auth_eusers" xml:space="preserve">
+    <value>没有用户输入命令 $1</value>
+  </data>
+  <data name="periods_title" xml:space="preserve">
+    <value>定义期间</value>
+  </data>
+  <data name="periods_period" xml:space="preserve">
+    <value>期间名称</value>
+  </data>
+  <data name="periods_times" xml:space="preserve">
+    <value>日子和时间</value>
+  </data>
+  <data name="periods_alldays" xml:space="preserve">
+    <value>每天</value>
+  </data>
+  <data name="periods_allhours" xml:space="preserve">
+    <value>所有时间</value>
+  </data>
+  <data name="periods_err" xml:space="preserve">
+    <value>无法保存定义的期间</value>
+  </data>
+  <data name="periods_ename" xml:space="preserve">
+    <value>'$1'不是有效的期间名称</value>
+  </data>
+  <data name="periods_ehour" xml:space="preserve">
+    <value>时段 $1缺少或无效的小时（必须为上午9点或下午5点）</value>
+  </data>
+  <data name="show_title" xml:space="preserve">
+    <value>运行状态</value>
+  </data>
+</root>

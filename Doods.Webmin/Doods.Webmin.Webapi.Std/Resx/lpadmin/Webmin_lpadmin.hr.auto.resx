@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Administracija pisača</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Dostupni pisači</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>printer</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>Ispis u</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>Vozač</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>Omogućeno?</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>Prihvaćanje?</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Posao</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Na ovom sustavu nisu instalirani pisači.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>Popis ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>Poslovi ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 poslovi ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Dodajte novi pisač.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Zaustavi Scheduler</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>Kliknite ovaj gumb za zaustavljanje pokretanja postupka rasporeda ispisa. To će spriječiti da lokalni ili udaljeni korisnici ispisuju na vašem sustavu.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Pokrenite Scheduler</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>Kliknite ovaj gumb za pokretanje postupka rasporeda ispisa. To će omogućiti lokalnim i udaljenim korisnicima ispis na vašem sustavu.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Ponovo pokrenite Scheduler</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>Kliknite ovaj gumb da biste ponovno pokrenuli postupak rasporeda ispisa. To će primorati primijeniti trenutnu konfiguraciju ispisa.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>popis pisača</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>Sustav ispisa: $1 </value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Poslužitelji klastera</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Kliknite ovaj gumb za postavljanje dodatnih Webmin poslužitelja na kojima će se pisači stvarati, ažurirati i brisati.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Izbrišite odabrane pisače</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>Solaris</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>Linux LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>CUPS</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>Nije vam dopušteno uređivanje ovog pisača</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>Ne možete dodati pisače</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>Stvorite pisač</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>Uredi pisač</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>Konfiguracija pisača</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>Prihvaćate zahtjeve?</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>Ne - zašto ne</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>Ispis je omogućen?</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>Kontrola pristupa</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Dopusti svima</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>Negirajte sve</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>Dopusti popisanim korisnicima ..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>Zabrani na popisu korisnika ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>Ispis banera?</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>neobavezan</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>Zadani pisač?</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>Već zadani pisač</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>Maksimalna veličina zadatka za ispis</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>Neograničen</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>Vozač prihvaća</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>dodatak pismu</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>drugo</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>Alternativna imena pisača</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Ispis odredišta</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>Lokalni uređaj</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>Lokalna datoteka</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>Udaljeni Unix server</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>printer</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>Udaljeni Windows poslužitelj</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>printer</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Korisnik</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Zaporka</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>Radna grupa</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>Udaljeni HPNP poslužitelj</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>Luka</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>Izravna TCP veza</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Luka</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>Upravljački program pisača</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>Provjerite je li udaljeni poslužitelj uključen?</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blokovi</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Spremanje pisača nije uspjelo</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>Ne možete dodati pisače</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>Nije vam dopušteno uređivanje ovog pisača</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' nije valjano ime pisača</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>Pisač pod nazivom "$1" već postoji</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Nema unesenih korisnika</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Korisnici ne mogu odbiti uneseni</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Korisnički '$1' ne postoji</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>Morate odabrati najmanje jednu vrstu koju će ovaj vozač prihvatiti</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>Maksimalna veličina zadatka za ispis mora biti cijeli broj</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>'$1' ne postoji</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>Daljinski host '$1' ne postoji</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>Daljinski priključak '$1' nije važeći</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>"$1" nije valjano ime udaljenog reda čekanja</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>Upravljačke programe nije moguće koristiti s udaljenim Unix pisačima</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>Izravni host '$1' ne postoji</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Nedostaje ili nije važeći izravni port</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>Sustav ispisa nije dopuštao ovaj pisač</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>Pisač je u ovom sustavu kreiran u redu, ali na slijedećim greškama na sustavima klastera : $1 </value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>Nije pronađen nijedan pisač s imenom "$1"</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>Pisač je izbrisan u redu na ovom sustavu, ali na sistemima klastera došlo je do sljedeće pogreške : $1 </value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>Poslovi ispisa</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>Ispiši zadatke na $1 </value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>ID posla</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>Veličina</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>Predložio</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>Poslano u</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>Naziv datoteke</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>Kliknite ID posla s gornjeg popisa da biste ga odustali.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>Kliknite ID posla s gornjeg popisa da biste ga odustali ili kliknite veličinu posla kako biste ga vidjeli.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>Pisač $1 nema nijednog zadanog posla.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>Otkažite sve zadatke ispisa</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>bajtova</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>Ispiši stranicu za testiranje</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>Otkaži odabrane zadatke</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>Na pisaču $1 </value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>popis poslova ispisa</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>Ne možete otkazati zadatke ispisa</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>Otkazivanje zadatka ispisa nije uspjelo</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>Zadatak ispisa $1 više ne postoji</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>Ne možete pregledavati ovaj zadatak ispisa</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>Ovaj posao ispisa više ne postoji</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno pokrenuti planer</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Nisu pokrenuli planer</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno zaustaviti planer</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Zaustavljanje planera nije uspjelo</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>Ne možete ponovno pokrenuti planer</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Ponovno pokretanje planera nije uspjelo</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>PostScript ili pisač teksta</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>Daljinski pisač</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>Vozač Webmin-a</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>Vozač Uniprint</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>Dobijanje upravljačkih programa od $1 nije uspjelo. Upravljački programi za webmin pisače koji koriste ghostscript nisu dostupni</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>Naredba $1 nije pronađena. Upravljački programi za webmin pisače koji koriste ghostscript nisu dostupni</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>'$1' ne postoji</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>Daljinski ili sirovi pisač</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>COAS vozač</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>Pisač i razlučivost</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>Pošalji EOF?</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>Veličina papira</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>Ispis dvostranog?</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>Dodatne GS opcije</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>Vozač Uniprint</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>'$1' ne postoji</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>Nije odabran nijedan upravljački program pisača</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>Nije odabrana rezolucija</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>PostScript ili pisač teksta</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>Redhat vozač</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>Pisač i razlučivost</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>Pošalji EOF?</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>Veličina papira</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>Stranice po izlaznoj stranici</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>Dodatne GS opcije</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>Desna/lijeva margina</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>Gornja/donja margina</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>Popravi tekst stepenica na stepenicama?</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>'$1' ne postoji</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>Nije odabran nijedan upravljački program pisača</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>Nedostaje ili nije valjana desna/lijeva margina</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>Nedostaje ili nevaljana gornja/donja margina</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>Nije odabrana rezolucija</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>Model pisača i upravljački program</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>PostScript ili pisač teksta</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>APSfilter vozač</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>Vrsta pisača</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>Rezolucija u DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>Pisač u boji?</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>Veličina papira</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>Metoda filtriranja</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>Automatski</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>sirov</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>Dodatne mogućnosti ghostscripta</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>YAST2 vozač</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>Nije odabrana vrsta pisača</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>Nedostaje ili nevažeća rezolucija</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>Zaustavljanje lpd-a nije uspjelo : $1 </value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>Pisači koje ovaj korisnik može konfigurirati</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>Mogu li dodati nove pisače?</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>Mogu li otkazati zadatke za ispis?</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>Može li se zaustaviti ili pokrenuti planer?</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>Ponovo pokreni</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>Samo na odabranim pisačima ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>Svi pisači</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>Odabran ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Pokazati pisače koji se ne mogu konfigurirati?</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>Mogu li ispisati testne stranice?</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>Upravljajte poslovima ispisa u vlasništvu</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>Svi korisnici</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>Trenutačni korisnik Webmina</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Mogu li izbrisati pisače?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Može li upravljati grupom pisača?</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Zaustavljen planer ispisa</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Započeo planer ispisa</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Restartirani planer ispisa</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>Otkazani zadatak ispisa $2 na $1 </value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>Otkazani su svi zadaci ispisa na $1 </value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>Otkazani su zadaci ispisa $2 na $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Izrađen pisač $1 na $2 </value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Izmijenjen pisač $1 na $2 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Izbrisan je pisač $1 na $2 </value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Izrađen $3 pisač $1 na $2 </value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Izmijenjeno $3 pisača $1 na $2 </value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>Izbrisan je pisač $3 $1 na $2 </value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>Luka paralele $1 </value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>Serijski priključak $1 (COM $1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>Nulti uređaj</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>USB pisač $1 </value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što ukazuje da Linux ispisni sustav nije instaliran.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>Imenik spool $1 ne postoji u vašem sustavu, što ukazuje da Linux ispisni sustav nije instaliran.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>Paralelni port</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>Serijski priključak $1 (COM $1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da FreeBSD sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>Imenik spool $1 ne postoji u vašem sustavu, što znači da FreeBSD sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>Paralelni port</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>Serijski priključak $1 (COM $1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>Luka paralele $1 </value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>Serijski ulaz $1 </value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>Nulti uređaj</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što pokazuje da UnixWare sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>Paralela $1 </value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>Serijski $1 </value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>Nulti uređaj</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da HPUX sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>U vašem sustavu ne postoji direktorij skripti sučelja $1, što znači da HPUX sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>Luka paralele $1 </value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>Serijski priključak $1 (COM $1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>Nulti uređaj</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da LPRng sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>Imenik spool $1 ne postoji u vašem sustavu, što znači da LPRng sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>Paralelni port</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>Ultra 5/10 paralelni port</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>Serijski ulaz $1 </value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>Nulti uređaj</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da Solaris sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>Ispiši stranicu za testiranje</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno ispisati testne stranice</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>Ovaj obrazac omogućuje vam ispis probne stranice za pisač $1. Odaberite vrstu stranice koju želite ispisati :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>Stranica crno-bijelih postscript-a</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>Stranica u boji skripti u boji</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>Običan tekst ASCII</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>Svaka prenesena datoteka</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>Ispiši stranicu</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>Ispis probne stranice sa naredbom $1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. naredba nije uspjela!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. naredba dovršena.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>Daljinski ili sirovi pisač</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>Program</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>CUPS vozač</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>'$1' nije valjan program</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>Opcije za $1 </value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da CUPS sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>Naredba $1 nije pronađena u vašem sustavu, što znači da IRIX sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>Imenik skripti sučelja $1 ne postoji u vašem sustavu, što znači da IRIX sustav ispisa nije instaliran.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>Prilaz pisača $1 </value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>Nevažeći opis - dopuštena su samo slova i brojevi i nema razmaka</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>AIX poslužitelj pisača $1 nije pronađen. Možda nije instaliran ili se koristi drugi sustav ispisa.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Poslužitelji klasterskih pisača</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Još nisu dodani poslužitelji u cluster pisača.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Ime računala</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Operacijski sustav</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Dodavanje poslužitelja</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Dodajte poslužitelje u grupi</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Prije nego što se njima ovdje može upravljati, morate dodati servere s prijavom i zaporkom u modulu Webmin Servers Index.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>poslužitelji klastera</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Ukloni odabrano</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno upravljanje poslužiteljima klastera pisača</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Dodajte poslužitelje</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Dodavanje $1.</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Dodavanje poslužitelja u grupu $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Nije uspjelo dodavanje poslužitelja</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Nije uspjelo dodavanje grupe</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Server $1 nema modul Printer Administration</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>Poslužitelj $1 koristi drugi sustav ispisa ($2) na ovom poslužitelju</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>Poslužitelj $1 koristi drugi pogonitelj ispisa ($2) na ovom poslužitelju</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Dodano $1, s pisačima $2.</value>
+  </data>
+</root>

@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>WU-FTPD сървър</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Прилага промени</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>Кликнете върху този бутон, за да приложите текущата конфигурация. Това ще спре и рестартира всички работещи FTP сървърни процеси, като по този начин ще изключите всички свързани потребители.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Стартирайте сървъра</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>Щракнете върху този бутон, за да стартирате FTP сървъра с текущата конфигурация. Можете също така да конфигурирате сървъра да се стартира автоматично, когато е необходимо, използвайки inetd или някаква еквивалентна програма.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Опции за FTP сървър</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>WU-FTPd версия $1 </value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>Потребители и класове</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>Потребителски класове и потребителски опции</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>Потребителски класове</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>Име на клас</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>Типове потребители</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>Съответстващи адреси</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>гост</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>анонимен</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>Потребителите на Unix и UID-ите, които да третират като гости</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>Unix групи и GID, за да се отнасят като гости</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>Потребителите на Unix и UID &lt;i&gt;не&lt;/i&gt; се отнасят като гости</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>Unix групи и GID &lt;i&gt;не&lt;/i&gt; за третиране като гости</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>Потребителите на Unix да отказват (от $1)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>Потребителите на Unix и UID-ите да отказват</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>Unix групи и GIDs за отказ</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>Потребителите на Unix и UID &lt;i&gt;не&lt;/i&gt; да отказват</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>Unix групи и GID &lt;i&gt;не&lt;/i&gt; за отказ</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>Неуспешно запазване на потребителски класове</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>'$ $1' не е валидно име на клас</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>Няма избрани типове за клас '$ $1'</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>Няма въведени адреси за клас '$ $1'</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>Съобщения и банери</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>Съобщения, банери и README файлове</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>Файлове със съобщения</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>път</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>Кога да се покаже</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>При влизане</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>Влизане реж</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>Влизане във всеки dir</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>Класове за показване за</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>README файлове</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>Кога да се покаже последната промяна на датата</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>Ниво на поздрав</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>Име на хост и версия</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>Име на хост</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>Нито едно</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>Предварителен вход банер</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>Нито един</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>От файл</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>Име на хоста на системата</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>Име на хост за съобщения</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>Имейл адрес на собственика</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>Неуспешно запазване на съобщения и банери</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>'$ $1' не е валиден път</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>'$ $1' не е валидна директория</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>Клас '$ $1' не съществува</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>'$ $1' не е валиден файл с банер за вход</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>Липсващо или невалидно име на хост</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>Липсващ или невалиден имейл адрес</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Ограничения и контрол на достъпа</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>Ограничения и опции за контрол на достъпа</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>Отказване на достъп от</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>Отказ от адреса</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>Файл със съобщение за грешка</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>Ограничения за прехвърляне на файлове и данни</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>Тип ограничение</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>Файлове на сесия</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>Байтове на сесия</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>Само данни?</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>Посока</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>в</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>от</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>И двете</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>максимален</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>Кандидатствайте в клас</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Всички класове</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>Паралелни ограничения на потребителите</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>Максимални потребители</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>Понякога</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>Файл със съобщение за грешка</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>неограничен</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>По всяко време</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>Ограничение за анонимна сесия</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>Ограничение за сесия за гости</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>минути</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>Максимални грешки при влизане</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>Може ли да превключвате на групи?</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>Забранявате достъп до файлове</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>Файлове за отказ</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>Относително към chroot?</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>Отказ за класове</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>Разрешаване на достъп до файлове, дори ако е отказано</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>Файлове за разрешаване</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>Относително към chroot?</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>Разрешаване за класове</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Неуспешно запазване на ограничения и контрол на достъпа</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>'$ $1' не е валиден адрес</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>'$ $1' не е валиден адресен файл</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>'$ $1' не е валиден файл за съобщение за грешка</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>'$ $1' не е валиден максимален брой потребители</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>'$ $1' не е валиден времеви диапазон в стил UUCP</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>'$ $1' не е валиден файл за съобщение за грешка</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>'$ $1' не е валиден брой файлове или байтове</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$ $1' не е валиден срок</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>'$ $1' не е валиден брой грешки при влизане</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>Работа в мрежа</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Опции за работа в мрежа</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>Размери на прозореца на TCP</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>размер</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>За клас</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>Всички класове</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>Адреси за PASV връзки</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>IP адрес</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>За клиенти от мрежата</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>Портове за PASV връзки</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>Обхват на пристанището</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Опазването на мрежовите опции не бе успешно</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>'$ $1' не е валиден размер на прозореца на TCP</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>'$ $1' не е валиден IP адрес</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>'$ $1' не е валиден мрежов адрес</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>'$ $1' не е валиден брой мрежови битове</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>'$ $1' не е валиден номер на порт</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>Влизане</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Опции за регистрация</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>Влезте всички команди за</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>Анонимни потребители</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>Потребители на гостите</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>Потребители на Unix</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>Дневни трансфери за</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>По направления</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>Входящ</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>Изходяща</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>И двете</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>Нарушения на сигурността на вход за</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>Прехвърляне на вход в</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>Системен дневник</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>XFER лог файл</value>
+  </data>
+  <data name="log_sysxfer" xml:space="preserve">
+    <value>И двете дестинации</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Неуспешно запазване на опциите за записване</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>Псевдоними и пътеки</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>Псевдоним и опции за път</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>Псевдоними на директорията на CD</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>Псевдоним име</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>Псевдоним на директория</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>Път за търсене в директорията на CD</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>Неуспешно запазване на псевдоними и пътеки</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>'$ $1' не е валидно име на псевдоним</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>'$ $1' не е валидна директория с псевдоним</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>'$ $1' не е валидна директория за търсене на CD</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>Анонимен FTP</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>Внимание - вашата система няма &lt;tt&gt;ftp&lt;/tt&gt; потребител и по този начин анонимният FTP вероятно не е конфигуриран.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>Анонимни опции за FTP</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>Unix групи за анонимни потребители</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>Превключване към група</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>За часовете</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>Anonymous FTP root директории</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>указател</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>За клас</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>който и да е</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>Анонимна проверка на парола за FTP</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>Позволете нещо</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>Трябва да съдържа @</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>Трябва да е имейл адрес RFC822</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>Отказ за влизане</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>Предупреди само</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>Анонимни FTP пароли за отказ</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>Корени директории за гости</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>За потребителите на Unix</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>Неуспешно запазване на анонимни опции за FTP</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>'$ $1' не е валидна директория</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>'$ $1' не е валидна група</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>Разрешения</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>Опции за разрешение</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>Ограничения за команда</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>команда</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>Позволява?</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>За потребителски типове</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>За часовете</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>всичко</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>анонимен</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>гост</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>По подразбиране са разрешени всички команди за всички потребители</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>Забранени файлове за качване</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>Типове потребители</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>Файл със съобщение за грешка</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>Разрешени символи</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>Файл regexps за отказ</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>Неуспешно запазване на разрешенията</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>'$ $1' не е валиден регулярно изразен набор от символи</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>Няма избрани типове потребители</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>'$ $1' не е валиден файл за съобщение за грешка</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>Контрол на достъпа на хоста</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Разни опции</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Разни опции</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>Команда за дълъг списък</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>Команда за кратко изброяване</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>Проста команда за изброяване</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>Файл за известия за изключване</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>Нито един</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>Ниво ниво на обслужване</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>Приятно ниво</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>За часовете</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>Всички класове</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>По подразбиране umask за качени файлове</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>Umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>Неуспешно запазване на различни опции</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>Липсва команда за дълъг списък</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>Липсваща команда за кратко изброяване</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>Липсва обикновена команда за изброяване</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>Липсващ известителен файл за изключване</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>'$ $1' не е валидно хубаво ниво</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>'$ $1' не е валиден umask</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>Променени потребители и класове</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>Променени съобщения и банери</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>Променени ограничения и контрол на достъпа</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>Променени опции за работа в мрежа</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>Променени опции за регистрация</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>Променени псевдоними и пътеки</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>Променен анонимен FTP</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>Променени опции за разрешения</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Променени различни опции</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Приложен променен</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Стартиран FTP сървър</value>
+  </data>
+</root>

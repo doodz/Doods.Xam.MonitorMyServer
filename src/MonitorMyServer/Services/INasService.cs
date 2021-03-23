@@ -8,5 +8,11 @@ namespace Doods.Xam.MonitorMyServer.Services
     {
         Task<IEnumerable<SharedFolder>> GetSharedFolders();
         //Task<IEnumerable<FileSystem>> GetFileSystems();
+
+    }
+
+    public interface IPackageUpdates
+    {
+        Task<IEnumerable<Package>> GetPackages();
     }
 }

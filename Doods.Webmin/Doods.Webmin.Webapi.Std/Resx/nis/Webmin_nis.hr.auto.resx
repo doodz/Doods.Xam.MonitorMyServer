@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Klijent i poslužitelj NIS-a</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Izbornik NIS</value>
+  </data>
+  <data name="index_enis" xml:space="preserve">
+    <value>Čini se da vaš uređaj nema instaliranu podršku za NIS klijent ili poslužitelj.</value>
+  </data>
+  <data name="index_enis2" xml:space="preserve">
+    <value>Upotrebljavat će se samo značajke za usluge klijenta ovog modula.</value>
+  </data>
+  <data name="client_title" xml:space="preserve">
+    <value>NIS klijent</value>
+  </data>
+  <data name="client_header" xml:space="preserve">
+    <value>Konfiguracija NIS klijenta</value>
+  </data>
+  <data name="client_domain" xml:space="preserve">
+    <value>NIS domena</value>
+  </data>
+  <data name="client_none" xml:space="preserve">
+    <value>Ništa (NIS je onemogućen)</value>
+  </data>
+  <data name="client_servers" xml:space="preserve">
+    <value>NIS poslužitelji</value>
+  </data>
+  <data name="client_broadcast" xml:space="preserve">
+    <value>Pronađi putem emisije</value>
+  </data>
+  <data name="client_listed" xml:space="preserve">
+    <value>Navedeno ispod ..</value>
+  </data>
+  <data name="client_boot" xml:space="preserve">
+    <value>Želite li omogućiti NIS klijenta?</value>
+  </data>
+  <data name="client_ok" xml:space="preserve">
+    <value>Spremite i primijenite</value>
+  </data>
+  <data name="client_err" xml:space="preserve">
+    <value>Spremanje klijenta NIS-a nije uspjelo</value>
+  </data>
+  <data name="client_edomain" xml:space="preserve">
+    <value>Nedostaje ili nevažeće ime domene</value>
+  </data>
+  <data name="client_eserver" xml:space="preserve">
+    <value>'$1' nije valjano ime poslužitelja</value>
+  </data>
+  <data name="client_eypwhich" xml:space="preserve">
+    <value>nije uspjelo vezivanje za domenu NIS</value>
+  </data>
+  <data name="client_ehosts" xml:space="preserve">
+    <value>"$1" nije u datoteci host</value>
+  </data>
+  <data name="client_enis" xml:space="preserve">
+    <value>Čini se da vaš uređaj nema instaliranu podršku za NIS klijenta.</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>Klijentske usluge</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>Servis</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>Izvori podataka</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>usluge za klijente</value>
+  </data>
+  <data name="order_" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>datoteke</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>Datoteke DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS i datoteke</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Heziod</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>Korisnički pisači</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>NIS Server</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>Opcije NIS servera</value>
+  </data>
+  <data name="server_boot" xml:space="preserve">
+    <value>Želite li omogućiti NIS poslužitelj?</value>
+  </data>
+  <data name="server_slaves" xml:space="preserve">
+    <value>Slave serveri</value>
+  </data>
+  <data name="server_domain" xml:space="preserve">
+    <value>Posluživanje NIS domene</value>
+  </data>
+  <data name="server_type" xml:space="preserve">
+    <value>Vrsta poslužitelja</value>
+  </data>
+  <data name="server_master" xml:space="preserve">
+    <value>Glavni NIS poslužitelj</value>
+  </data>
+  <data name="server_mheader" xml:space="preserve">
+    <value>Master opcije NIS poslužitelja</value>
+  </data>
+  <data name="server_fheader" xml:space="preserve">
+    <value>Master NIS datoteke</value>
+  </data>
+  <data name="server_slave" xml:space="preserve">
+    <value>Slave servera</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="server_tables" xml:space="preserve">
+    <value>NIS stolovi za posluživanje</value>
+  </data>
+  <data name="server_dns" xml:space="preserve">
+    <value>Potražite nedostajuće hostove u DNS-u?</value>
+  </data>
+  <data name="server_push" xml:space="preserve">
+    <value>Potaknuti ažuriranja robovima?</value>
+  </data>
+  <data name="server_minuid" xml:space="preserve">
+    <value>Minimalni UID za zapise u tablici 'Unix user'</value>
+  </data>
+  <data name="server_mingid" xml:space="preserve">
+    <value>Minimalni GID za zapise u „Unix grupi“</value>
+  </data>
+  <data name="server_ok" xml:space="preserve">
+    <value>Spremite i primijenite</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>Spremanje NIS poslužitelja nije uspjelo</value>
+  </data>
+  <data name="server_edomain" xml:space="preserve">
+    <value>'$1' nije valjana NIS domena</value>
+  </data>
+  <data name="server_file" xml:space="preserve">
+    <value>Datoteka za '$1'</value>
+  </data>
+  <data name="server_domain_auto" xml:space="preserve">
+    <value>Isto kao klijent</value>
+  </data>
+  <data name="server_eminuid" xml:space="preserve">
+    <value>Manjkajući ili nevažeći minimalni UID</value>
+  </data>
+  <data name="server_emingid" xml:space="preserve">
+    <value>Nedostaje ili je nevažeći minimalni GID</value>
+  </data>
+  <data name="server_efile" xml:space="preserve">
+    <value>Nedostaje naziv datoteke za '$1'</value>
+  </data>
+  <data name="server_eslave" xml:space="preserve">
+    <value>Nedostaje ili nije važeći slavenski poslužitelj</value>
+  </data>
+  <data name="server_dir" xml:space="preserve">
+    <value>Direktorijum izvornih datoteka NIS-a</value>
+  </data>
+  <data name="server_pwdir" xml:space="preserve">
+    <value>Imenik izvornih datoteka za lozinku NIS-a</value>
+  </data>
+  <data name="server_already" xml:space="preserve">
+    <value>NIS poslužitelj je već omogućen</value>
+  </data>
+  <data name="server_ebootdom" xml:space="preserve">
+    <value>Ovaj NIS poslužitelj nije moguće omogućiti ako nije postavljena domena.</value>
+  </data>
+  <data name="server_solaris" xml:space="preserve">
+    <value>Napomena - na Solarisu, domene klijenta i poslužitelja NIS uvijek su iste, a poslužitelj ne može raditi ako nije postavljena domena.</value>
+  </data>
+  <data name="server_edir" xml:space="preserve">
+    <value>Nevažeća mapa izvornih datoteka</value>
+  </data>
+  <data name="server_epwdir" xml:space="preserve">
+    <value>Nevažeća mapa izvornih datoteka zaporke</value>
+  </data>
+  <data name="server_enis" xml:space="preserve">
+    <value>Čini se da vaš uređaj nema instaliranu podršku za NIS poslužitelj.</value>
+  </data>
+  <data name="tables_title" xml:space="preserve">
+    <value>NIS tablice</value>
+  </data>
+  <data name="tables_switch" xml:space="preserve">
+    <value>Uređivanje NIS tablice :</value>
+  </data>
+  <data name="tables_header" xml:space="preserve">
+    <value>$1 NIS tablica od $2 </value>
+  </data>
+  <data name="tables_none" xml:space="preserve">
+    <value>Tablica $1 ne sadrži nijednu evidenciju.</value>
+  </data>
+  <data name="tables_add" xml:space="preserve">
+    <value>Dodajte novi zapis</value>
+  </data>
+  <data name="tables_ok" xml:space="preserve">
+    <value>Spremite i primijenite</value>
+  </data>
+  <data name="tables_file" xml:space="preserve">
+    <value>NIS bilježi u $1 </value>
+  </data>
+  <data name="tables_return" xml:space="preserve">
+    <value>NIS tablice</value>
+  </data>
+  <data name="tables_text" xml:space="preserve">
+    <value>Ručno uredite tablicu</value>
+  </data>
+  <data name="tables_emaster" xml:space="preserve">
+    <value>Ne možete uređivati NIS tablice jer vaš sustav trenutno ne radi kao glavni NIS poslužitelj.</value>
+  </data>
+  <data name="tables_eslave" xml:space="preserve">
+    <value>Ne možete uređivati NIS tablice jer je vaš sustav slave NIS koji prima sve tablice s glavnog poslužitelja.</value>
+  </data>
+  <data name="tables_find" xml:space="preserve">
+    <value>Pronađite $1 gdje se $2 podudara $3 </value>
+  </data>
+  <data name="tables_search" xml:space="preserve">
+    <value>traži</value>
+  </data>
+  <data name="tables_nomatch" xml:space="preserve">
+    <value>Nijedna evidencija ne odgovara vašoj pretraživanju</value>
+  </data>
+  <data name="tables_build" xml:space="preserve">
+    <value>Ponovno izgradite NIS tablice</value>
+  </data>
+  <data name="tables_buildmsg" xml:space="preserve">
+    <value>Kliknite ovaj gumb za ponovnu izgradnju baza podataka NIS iz podataka tablice. Ako ste napravili neke izmjene, morat ćete to učiniti kako biste ih učinili dostupnima NIS klijentima.</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>Aliasi za sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>Aliasi za sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>Adresa domaćina</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>Unix grupe</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>Korisnici Unixa</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>Ethernet adrese</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>Kućica automata</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>Automounter karte</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>Kućica automata</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>Automounter karte</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter lokalno</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>Kućica automata</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>Automounter karte</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter lokalno</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>Automounter karte</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetIDs</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>Mrežne adrese</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>Mrežni protokoli</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>RPC programi</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>Mrežne usluge</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>Sendmail varijable</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>Javni ključevi</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>Javni ključevi</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>Parametri pokretanja</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>Unix lozinke u sjeni</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>Unix grupe lozinke</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>Netmasks</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>Pisači</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>Dodatne informacije o korisniku</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>Pisači</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>IP čvorovi</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>Vremenske zone</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>lokalizacije</value>
+  </data>
+  <data name="hosts_title" xml:space="preserve">
+    <value>Adresa domaćina</value>
+  </data>
+  <data name="hosts_ip" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="hosts_name" xml:space="preserve">
+    <value>Ime računala</value>
+  </data>
+  <data name="hosts_header" xml:space="preserve">
+    <value>Opcije domaćina i adrese</value>
+  </data>
+  <data name="hosts_err" xml:space="preserve">
+    <value>Spremanje domaćina nije uspjelo</value>
+  </data>
+  <data name="hosts_eip" xml:space="preserve">
+    <value>Nedostaje ili nije važeća IP adresa</value>
+  </data>
+  <data name="hosts_ename" xml:space="preserve">
+    <value>Nedostaje ili nevaljano ime računala</value>
+  </data>
+  <data name="hosts_aliases" xml:space="preserve">
+    <value>nadimci</value>
+  </data>
+  <data name="group_name" xml:space="preserve">
+    <value>Grupno ime</value>
+  </data>
+  <data name="group_gid" xml:space="preserve">
+    <value>ID grupe</value>
+  </data>
+  <data name="group_members" xml:space="preserve">
+    <value>Članovi grupe</value>
+  </data>
+  <data name="group_title" xml:space="preserve">
+    <value>Unix grupa</value>
+  </data>
+  <data name="group_header" xml:space="preserve">
+    <value>Pojedinosti o Unix grupi</value>
+  </data>
+  <data name="group_pass" xml:space="preserve">
+    <value>Zaporka</value>
+  </data>
+  <data name="group_none" xml:space="preserve">
+    <value>Nije potrebna lozinka</value>
+  </data>
+  <data name="group_encrypted" xml:space="preserve">
+    <value>Unaprijed šifrirana lozinka</value>
+  </data>
+  <data name="group_clear" xml:space="preserve">
+    <value>Normalna lozinka</value>
+  </data>
+  <data name="group_err" xml:space="preserve">
+    <value>Spremanje grupe nije uspjelo</value>
+  </data>
+  <data name="passwd_name" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="passwd_uid" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="passwd_real" xml:space="preserve">
+    <value>Pravo ime</value>
+  </data>
+  <data name="passwd_home" xml:space="preserve">
+    <value>Domaći direktorij</value>
+  </data>
+  <data name="passwd_shell" xml:space="preserve">
+    <value>Ljuska</value>
+  </data>
+  <data name="passwd_title" xml:space="preserve">
+    <value>Korisnik Unix-a</value>
+  </data>
+  <data name="passwd_header1" xml:space="preserve">
+    <value>Podaci o korisniku</value>
+  </data>
+  <data name="passwd_other" xml:space="preserve">
+    <value>Ostali ..</value>
+  </data>
+  <data name="passwd_pass" xml:space="preserve">
+    <value>Zaporka</value>
+  </data>
+  <data name="passwd_none1" xml:space="preserve">
+    <value>Pitajte pri prvoj prijavi</value>
+  </data>
+  <data name="passwd_none2" xml:space="preserve">
+    <value>Nije potrebna lozinka</value>
+  </data>
+  <data name="passwd_nologin" xml:space="preserve">
+    <value>Nije dopuštena prijava</value>
+  </data>
+  <data name="passwd_encrypted" xml:space="preserve">
+    <value>Unaprijed šifrirana lozinka</value>
+  </data>
+  <data name="passwd_clear" xml:space="preserve">
+    <value>Normalna lozinka</value>
+  </data>
+  <data name="passwd_gid" xml:space="preserve">
+    <value>ID primarne grupe</value>
+  </data>
+  <data name="passwd_header2" xml:space="preserve">
+    <value>Opcije lozinke</value>
+  </data>
+  <data name="passwd_change" xml:space="preserve">
+    <value>Lozinka je promijenjena</value>
+  </data>
+  <data name="passwd_never" xml:space="preserve">
+    <value>Nikada</value>
+  </data>
+  <data name="passwd_unknown" xml:space="preserve">
+    <value>Nepoznata</value>
+  </data>
+  <data name="passwd_expire" xml:space="preserve">
+    <value>Datum isteka</value>
+  </data>
+  <data name="passwd_min" xml:space="preserve">
+    <value>Minimalni dani</value>
+  </data>
+  <data name="passwd_max" xml:space="preserve">
+    <value>Maksimalni dani</value>
+  </data>
+  <data name="passwd_warn" xml:space="preserve">
+    <value>Dani upozorenja</value>
+  </data>
+  <data name="passwd_inactive" xml:space="preserve">
+    <value>Neaktivni dani</value>
+  </data>
+  <data name="passwd_err" xml:space="preserve">
+    <value>Spremanje korisnika nije uspjelo</value>
+  </data>
+  <data name="passwd_ename" xml:space="preserve">
+    <value>Nedostaje ili nije valjano korisničko ime</value>
+  </data>
+  <data name="passwd_euid" xml:space="preserve">
+    <value>Nedostaje ili je nevažeći UID</value>
+  </data>
+  <data name="passwd_egid" xml:space="preserve">
+    <value>Nedostaje ili nije važeći GID</value>
+  </data>
+  <data name="passwd_ereal" xml:space="preserve">
+    <value>Nedostaje ili nije ispravno pravo ime</value>
+  </data>
+  <data name="passwd_ehome" xml:space="preserve">
+    <value>Nedostaje ili nije važeći kućni imenik</value>
+  </data>
+  <data name="passwd_eshell" xml:space="preserve">
+    <value>Nedostaje ili nije važeća ljuska</value>
+  </data>
+  <data name="passwd_epass" xml:space="preserve">
+    <value>Nevažeća unaprijed šifrirana lozinka</value>
+  </data>
+  <data name="passwd_ewarn" xml:space="preserve">
+    <value>Nevažeći broj dana upozorenja</value>
+  </data>
+  <data name="passwd_emax" xml:space="preserve">
+    <value>Nevažeći maksimalni broj dana</value>
+  </data>
+  <data name="passwd_emin" xml:space="preserve">
+    <value>Nevažeći minimalni broj dana</value>
+  </data>
+  <data name="passwd_einactive" xml:space="preserve">
+    <value>Nevažeći broj neaktivnih dana</value>
+  </data>
+  <data name="passwd_eexpiry" xml:space="preserve">
+    <value>Nevažeći datum isteka</value>
+  </data>
+  <data name="services_name" xml:space="preserve">
+    <value>Naziv usluge</value>
+  </data>
+  <data name="services_proto" xml:space="preserve">
+    <value>Protokol</value>
+  </data>
+  <data name="services_port" xml:space="preserve">
+    <value>Luka</value>
+  </data>
+  <data name="services_title" xml:space="preserve">
+    <value>Mrežna usluga</value>
+  </data>
+  <data name="services_header" xml:space="preserve">
+    <value>Opcije internetske usluge</value>
+  </data>
+  <data name="services_err" xml:space="preserve">
+    <value>Spremanje usluge nije uspjelo</value>
+  </data>
+  <data name="services_ename" xml:space="preserve">
+    <value>Nedostaje ili nevažeće ime usluge</value>
+  </data>
+  <data name="services_eport" xml:space="preserve">
+    <value>Nedostaje ili nevažeći port</value>
+  </data>
+  <data name="protocols_name" xml:space="preserve">
+    <value>Naziv protokola</value>
+  </data>
+  <data name="protocols_number" xml:space="preserve">
+    <value>Broj</value>
+  </data>
+  <data name="protocols_aliases" xml:space="preserve">
+    <value>nadimci</value>
+  </data>
+  <data name="protocols_title" xml:space="preserve">
+    <value>Mrežni protokol</value>
+  </data>
+  <data name="protocols_header" xml:space="preserve">
+    <value>Opcije mrežnog protokola</value>
+  </data>
+  <data name="protocols_err" xml:space="preserve">
+    <value>Spremanje protokola nije uspjelo</value>
+  </data>
+  <data name="protocols_ename" xml:space="preserve">
+    <value>Nedostaje ili nevaljano ime</value>
+  </data>
+  <data name="protocols_enumber" xml:space="preserve">
+    <value>Nedostaje ili nevažeći broj</value>
+  </data>
+  <data name="netgroup_name" xml:space="preserve">
+    <value>Naziv mreže</value>
+  </data>
+  <data name="netgroup_members" xml:space="preserve">
+    <value>članovi</value>
+  </data>
+  <data name="netgroup_title" xml:space="preserve">
+    <value>Mrežna grupa</value>
+  </data>
+  <data name="netgroup_header" xml:space="preserve">
+    <value>Pojedinosti o grupi domaćina</value>
+  </data>
+  <data name="netgroup_host" xml:space="preserve">
+    <value>Domaćin član</value>
+  </data>
+  <data name="netgroup_user" xml:space="preserve">
+    <value>Korisnik</value>
+  </data>
+  <data name="netgroup_domain" xml:space="preserve">
+    <value>NIS domena</value>
+  </data>
+  <data name="netgroup_any" xml:space="preserve">
+    <value>bilo koji</value>
+  </data>
+  <data name="netgroup_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="netgroup_err" xml:space="preserve">
+    <value>Spremanje mrežne grupe nije uspjelo</value>
+  </data>
+  <data name="netgroup_ename" xml:space="preserve">
+    <value>Nedostaje ili nevažeće ime mrežne grupe</value>
+  </data>
+  <data name="netgroup_ehost" xml:space="preserve">
+    <value>Nedostaje ili nije važeći domaćin u retku $1 </value>
+  </data>
+  <data name="netgroup_euser" xml:space="preserve">
+    <value>Nedostaje ili nije važeći korisnik u retku $1 </value>
+  </data>
+  <data name="netgroup_edom" xml:space="preserve">
+    <value>Nedostaje ili nije važeća NIS domena u retku $1 </value>
+  </data>
+  <data name="ethers_mac" xml:space="preserve">
+    <value>Ethernet adresa</value>
+  </data>
+  <data name="ethers_ip" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="ethers_title" xml:space="preserve">
+    <value>Ethernet adresa</value>
+  </data>
+  <data name="ethers_header" xml:space="preserve">
+    <value>Opcije Ethernet mapiranja</value>
+  </data>
+  <data name="ethers_err" xml:space="preserve">
+    <value>Spremanje ethernet adrese nije uspjelo</value>
+  </data>
+  <data name="ethers_emac" xml:space="preserve">
+    <value>Nevažeća ethernet adresa</value>
+  </data>
+  <data name="ethers_eip" xml:space="preserve">
+    <value>Nevaljana IP adresa</value>
+  </data>
+  <data name="rpc_name" xml:space="preserve">
+    <value>Naziv programa</value>
+  </data>
+  <data name="rpc_number" xml:space="preserve">
+    <value>Broj</value>
+  </data>
+  <data name="rpc_aliases" xml:space="preserve">
+    <value>nadimci</value>
+  </data>
+  <data name="rpc_title" xml:space="preserve">
+    <value>RPC program</value>
+  </data>
+  <data name="rpc_header" xml:space="preserve">
+    <value>Pojedinosti o RPC programu</value>
+  </data>
+  <data name="rpc_err" xml:space="preserve">
+    <value>Spremanje RPC programa nije uspjelo</value>
+  </data>
+  <data name="rpc_ename" xml:space="preserve">
+    <value>Nedostaje ili nevaljano ime programa</value>
+  </data>
+  <data name="rpc_enumber" xml:space="preserve">
+    <value>Nedostaje ili nevažeći broj</value>
+  </data>
+  <data name="networks_title" xml:space="preserve">
+    <value>Internet adresa</value>
+  </data>
+  <data name="networks_ip" xml:space="preserve">
+    <value>IP adresa</value>
+  </data>
+  <data name="networks_name" xml:space="preserve">
+    <value>Naziv mreže</value>
+  </data>
+  <data name="networks_header" xml:space="preserve">
+    <value>Mrežne i adrese adrese</value>
+  </data>
+  <data name="networks_err" xml:space="preserve">
+    <value>Spremanje mreže nije uspjelo</value>
+  </data>
+  <data name="networks_eip" xml:space="preserve">
+    <value>Nedostaje ili nije važeća IP adresa</value>
+  </data>
+  <data name="networks_ename" xml:space="preserve">
+    <value>Nedostaje ili nevaljano ime</value>
+  </data>
+  <data name="networks_aliases" xml:space="preserve">
+    <value>nadimci</value>
+  </data>
+  <data name="netmasks_net" xml:space="preserve">
+    <value>Internet adresa</value>
+  </data>
+  <data name="netmasks_mask" xml:space="preserve">
+    <value>Mrežna maska</value>
+  </data>
+  <data name="netmasks_title" xml:space="preserve">
+    <value>Mrežna maska</value>
+  </data>
+  <data name="netmasks_header" xml:space="preserve">
+    <value>Detalji mrežne maske</value>
+  </data>
+  <data name="netmasks_err" xml:space="preserve">
+    <value>Spremanje mrežne maske nije uspjelo</value>
+  </data>
+  <data name="netmasks_enet" xml:space="preserve">
+    <value>Nedostaje ili nije važeća mrežna adresa</value>
+  </data>
+  <data name="netmasks_emask" xml:space="preserve">
+    <value>Nedostaje ili nevažeća mrežna maska</value>
+  </data>
+  <data name="aliases_from" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="aliases_to" xml:space="preserve">
+    <value>Alias to</value>
+  </data>
+  <data name="aliases_title" xml:space="preserve">
+    <value>Sendmail Alias</value>
+  </data>
+  <data name="aliases_header" xml:space="preserve">
+    <value>Pojedinosti o pseudonimu Sendmail</value>
+  </data>
+  <data name="aliases_err" xml:space="preserve">
+    <value>Spremanje aliasa nije uspjelo</value>
+  </data>
+  <data name="aliases_efrom" xml:space="preserve">
+    <value>Nedostaje ili nije valjana adresa</value>
+  </data>
+  <data name="aliases_eto" xml:space="preserve">
+    <value>Nedostaje adrese</value>
+  </data>
+  <data name="security_title" xml:space="preserve">
+    <value>Sigurnost poslužitelja</value>
+  </data>
+  <data name="security_header" xml:space="preserve">
+    <value>Opcije sigurnosti NIS poslužitelja</value>
+  </data>
+  <data name="security_ok" xml:space="preserve">
+    <value>Spremite i primijenite</value>
+  </data>
+  <data name="security_enis" xml:space="preserve">
+    <value>Ne možete uređivati sigurnosne opcije NIS-a jer vaš uređaj trenutno ne radi kao NIS poslužitelj.</value>
+  </data>
+  <data name="security_nets" xml:space="preserve">
+    <value>Dopušteno klijentima</value>
+  </data>
+  <data name="security_net" xml:space="preserve">
+    <value>Mreža/adresa glavnog računala</value>
+  </data>
+  <data name="security_mask" xml:space="preserve">
+    <value>Mrežna maska</value>
+  </data>
+  <data name="security_single" xml:space="preserve">
+    <value>Jedan domaćin</value>
+  </data>
+  <data name="security_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="security_any" xml:space="preserve">
+    <value>Bilo koji domaćin</value>
+  </data>
+  <data name="security_domain" xml:space="preserve">
+    <value>NIS domena</value>
+  </data>
+  <data name="security_err" xml:space="preserve">
+    <value>Nije uspjelo spremanje sigurnosti poslužitelja</value>
+  </data>
+  <data name="security_enet" xml:space="preserve">
+    <value>'$1' nije valjana mrežna adresa</value>
+  </data>
+  <data name="security_emask" xml:space="preserve">
+    <value>'$1' nije važeća maska mreže</value>
+  </data>
+  <data name="security_port" xml:space="preserve">
+    <value>Klijenti moraju biti na pouzdanom pristaništu?</value>
+  </data>
+  <data name="security_maps" xml:space="preserve">
+    <value>Ograničenja karte klijenta</value>
+  </data>
+  <data name="security_hosts" xml:space="preserve">
+    <value>domaćini</value>
+  </data>
+  <data name="security_map" xml:space="preserve">
+    <value>NIS tablice</value>
+  </data>
+  <data name="security_sec" xml:space="preserve">
+    <value>Ograničenje</value>
+  </data>
+  <data name="security_mangle" xml:space="preserve">
+    <value>Sakrij polje</value>
+  </data>
+  <data name="security_tall" xml:space="preserve">
+    <value>svi</value>
+  </data>
+  <data name="security_sec_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="security_sec_port" xml:space="preserve">
+    <value>Pouzdan port</value>
+  </data>
+  <data name="security_sec_deny" xml:space="preserve">
+    <value>Odbij pristup</value>
+  </data>
+  <data name="security_sec_des" xml:space="preserve">
+    <value>Zahtijevajte DES</value>
+  </data>
+  <data name="security_ehost" xml:space="preserve">
+    <value>'$1' nije valjano ime računala</value>
+  </data>
+  <data name="security_emap" xml:space="preserve">
+    <value>'$1' nije važeća tablica NIS-a</value>
+  </data>
+  <data name="security_efield" xml:space="preserve">
+    <value>'$1' nije važeći broj polja</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>Usluga uređivanja</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>Usluga ne postoji!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>Pojedinosti o usluzi</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>Naziv usluge</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>Prvi izvor podataka</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>Drugi izvor podataka</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>Treći izvor podataka</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>Četvrti izvor podataka</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>Peti izvor podataka</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>Izvor podataka $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>Na uspjehu</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>Ako nije pronađen</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>Ako nije dostupan</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>Privremeno nedostupan</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>Povratni rezultat</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>Nastavite pretraživanje</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>nijedan</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>Spremanje usluge nije uspjelo</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>Nisu odabrani izvori!</value>
+  </data>
+</root>

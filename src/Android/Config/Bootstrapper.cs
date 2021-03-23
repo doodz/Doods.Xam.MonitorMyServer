@@ -8,7 +8,6 @@ namespace Doods.Xam.MonitorMyServer.Droid.Config
 {
     public class Bootstrapper : Module
     {
-
         public static ContainerBuilder CreateContainer()
         {
             var builder = new ContainerBuilder();
@@ -21,6 +20,5 @@ namespace Doods.Xam.MonitorMyServer.Droid.Config
 
             return builder;
         }
-
     }
 }

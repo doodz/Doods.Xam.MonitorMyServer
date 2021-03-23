@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Webmin felhasználók</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Felhasználó</value>
+  </data>
+  <data name="index_modules" xml:space="preserve">
+    <value>Modulok, melyekhez hozzáférhet</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Új Webmin felhasználó létrehozása</value>
+  </data>
+  <data name="index_convert" xml:space="preserve">
+    <value>Unix felhasaználók Webminné alakítása</value>
+  </data>
+  <data name="index_cert" xml:space="preserve">
+    <value>SSL igazolvány kérése</value>
+  </data>
+  <data name="index_certmsg" xml:space="preserve">
+    <value>Ezt a gombot nyomd meg, ha egy SSL igazolványt akarsz kérni, mely a továbbiakban lehetővé teszi, hogy a Webmin szerverre biztonságos módon, azonosító és jelszó használata nélkül léphess be.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>a felhasználók listájához</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Egyik sem</value>
+  </data>
+  <data name="index_edit" xml:space="preserve">
+    <value>A modulhoz való hozzáférés változtatása:</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Globális ACL</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>Webmin felhasználók</value>
+  </data>
+  <data name="index_groups" xml:space="preserve">
+    <value>Webmin csoport</value>
+  </data>
+  <data name="index_group" xml:space="preserve">
+    <value>Csoport</value>
+  </data>
+  <data name="index_nousers" xml:space="preserve">
+    <value>Nem lett szerkeszthető Webmin felhasználó definiálva.</value>
+  </data>
+  <data name="index_nogroups" xml:space="preserve">
+    <value>Nem lett Webmin csoport definiálva.</value>
+  </data>
+  <data name="index_gcreate" xml:space="preserve">
+    <value>Új Webmin csoport létrehozása</value>
+  </data>
+  <data name="index_members" xml:space="preserve">
+    <value>Tagok</value>
+  </data>
+  <data name="index_modgroups" xml:space="preserve">
+    <value>Modulok a $1 csoportból</value>
+  </data>
+  <data name="index_sync" xml:space="preserve">
+    <value>Unix felhasználó szinkronizálásának beállítása</value>
+  </data>
+  <data name="index_unix" xml:space="preserve">
+    <value>Unix felhasználó azonosításának a beállítása</value>
+  </data>
+  <data name="index_sessions" xml:space="preserve">
+    <value>Belépési folyamat megtekintése</value>
+  </data>
+  <data name="index_rbac" xml:space="preserve">
+    <value>RBAC beállítása</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Kiválasztott törlése</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Felhasználói profil módosítása</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Új felhasználó felvétele</value>
+  </data>
+  <data name="edit_rights" xml:space="preserve">
+    <value>A Webmin felhasználó hozzáférési jogai</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Azonosító</value>
+  </data>
+  <data name="edit_real" xml:space="preserve">
+    <value>Teljes név</value>
+  </data>
+  <data name="edit_group" xml:space="preserve">
+    <value>Csoport tagja</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>Jelszó</value>
+  </data>
+  <data name="edit_same" xml:space="preserve">
+    <value>Ugyanaz, mint az operációs rendszerhez</value>
+  </data>
+  <data name="edit_lock" xml:space="preserve">
+    <value>Nem lett a jelszó elfogadva</value>
+  </data>
+  <data name="edit_pam" xml:space="preserve">
+    <value>PAM azonosítás</value>
+  </data>
+  <data name="edit_unix" xml:space="preserve">
+    <value>Unix azonosítás</value>
+  </data>
+  <data name="edit_extauth" xml:space="preserve">
+    <value>Külső azonosító program</value>
+  </data>
+  <data name="edit_dont" xml:space="preserve">
+    <value>Változatlan</value>
+  </data>
+  <data name="edit_set" xml:space="preserve">
+    <value>Új</value>
+  </data>
+  <data name="edit_modules" xml:space="preserve">
+    <value>Modulok</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klónozás</value>
+  </data>
+  <data name="edit_lang" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
+  <data name="edit_notabs" xml:space="preserve">
+    <value>Modulok kategorizálva?</value>
+  </data>
+  <data name="edit_logout" xml:space="preserve">
+    <value>Inaktív kilépési idő</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>perc</value>
+  </data>
+  <data name="edit_cert" xml:space="preserve">
+    <value>Az SSL igazolványon szereplő név</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Nincs</value>
+  </data>
+  <data name="edit_ips" xml:space="preserve">
+    <value>IP hozzáférési lista</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Bárhonnan beléphet</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>Csak a megadott címekről</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>A felsoroltak kivételével bárhonnan</value>
+  </data>
+  <data name="edit_ipdesc" xml:space="preserve">
+    <value>A felhasználói szintű hozzáférési lista pont úgy működik, mint a "Webmin konfigurálása" nevű modulban a globális IP hozzáférési lista. A felhasználó gépének mindkét lista szerinti ellenőrzésnek meg kell felelnie.</value>
+  </data>
+  <data name="edit_skill" xml:space="preserve">
+    <value>Tudásszint</value>
+  </data>
+  <data name="edit_risk" xml:space="preserve">
+    <value>Rizikó szint</value>
+  </data>
+  <data name="edit_risk_high" xml:space="preserve">
+    <value>Szuper felhasználó</value>
+  </data>
+  <data name="edit_risk_medium" xml:space="preserve">
+    <value>Admin felhasználó</value>
+  </data>
+  <data name="edit_risk_low" xml:space="preserve">
+    <value>Normál felhasználó</value>
+  </data>
+  <data name="edit_groupmods" xml:space="preserve">
+    <value>(Kiegészítő a modulokhoz a csoporttól)</value>
+  </data>
+  <data name="edit_euser" xml:space="preserve">
+    <value>Nincs jogod felhasználói adatok módosításához</value>
+  </data>
+  <data name="edit_ecreate" xml:space="preserve">
+    <value>Nincs jogod új felhasználó felvételéhez</value>
+  </data>
+  <data name="edit_theme" xml:space="preserve">
+    <value>Személyes téma</value>
+  </data>
+  <data name="edit_themeglobal" xml:space="preserve">
+    <value>A Webmin konfigurációból</value>
+  </data>
+  <data name="edit_themedef" xml:space="preserve">
+    <value>Régi Webmin téma</value>
+  </data>
+  <data name="edit_log" xml:space="preserve">
+    <value>Napló megtekintése</value>
+  </data>
+  <data name="edit_selall" xml:space="preserve">
+    <value>Az összes kiválasztása</value>
+  </data>
+  <data name="edit_invert" xml:space="preserve">
+    <value>Kiválasztás invertálása</value>
+  </data>
+  <data name="edit_hide" xml:space="preserve">
+    <value>Nem használtak elrejtése</value>
+  </data>
+  <data name="edit_switch" xml:space="preserve">
+    <value>Átváltás más felhasználóra</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>Webmin felhasználó</value>
+  </data>
+  <data name="edit_return2" xml:space="preserve">
+    <value>Webmin csoport</value>
+  </data>
+  <data name="edit_rbacdeny" xml:space="preserve">
+    <value>RBAC hozzáférési mód</value>
+  </data>
+  <data name="edit_rbacdeny0" xml:space="preserve">
+    <value>Csak RBAC kontrolok a kiválasztott ACL-hez</value>
+  </data>
+  <data name="edit_rbacdeny1" xml:space="preserve">
+    <value>RBAC kontrollok minden modulhoz és ACL -hez</value>
+  </data>
+  <data name="edit_templock" xml:space="preserve">
+    <value>Átmenetileg zárolva</value>
+  </data>
+  <data name="edit_alldays" xml:space="preserve">
+    <value>Minden nap</value>
+  </data>
+  <data name="edit_allhours" xml:space="preserve">
+    <value>Bármikor</value>
+  </data>
+  <data name="edit_proto_mysql" xml:space="preserve">
+    <value>MySQL adatbázis</value>
+  </data>
+  <data name="edit_proto_postgresql" xml:space="preserve">
+    <value>PostgreSQL adatbázis</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Nem sikerült elmenteni</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>'$1' hibás azonosító</value>
+  </data>
+  <data name="save_enamewebmin" xml:space="preserve">
+    <value>A 'webmin' felhasználói név már le lett foglalva belső felhasználásra</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>A '$1' azonosító már foglalt</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>Nem tilthatod meg magadnak a hozzáférést a "Webmin felhasználók" modulhoz</value>
+  </data>
+  <data name="save_eos" xml:space="preserve">
+    <value>Az operációs rendszer nem engedi, hogy az ő jelszavát használd</value>
+  </data>
+  <data name="save_emd5" xml:space="preserve">
+    <value>Ha az operációs rendszer jelszava MD5 titkosítású, nem használható a Webminhez</value>
+  </data>
+  <data name="save_eunix" xml:space="preserve">
+    <value>Az operációs rendszernek nincs '$1' azonosítójú felhasználója</value>
+  </data>
+  <data name="save_emod" xml:space="preserve">
+    <value>Nem adhatsz hozzáférési jogokat a '$1' modulhoz</value>
+  </data>
+  <data name="save_ecreate" xml:space="preserve">
+    <value>Nem hozhatsz létre új felhasználókat</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Nem módosíthatod ennek a felhasználónak az adatait</value>
+  </data>
+  <data name="save_ecolon" xml:space="preserve">
+    <value>A jelszóban nem lehet kettőspont (:)</value>
+  </data>
+  <data name="save_eself" xml:space="preserve">
+    <value>Nem tilthatod le a sajat IP címedet ($1)</value>
+  </data>
+  <data name="save_epam" xml:space="preserve">
+    <value>A PAM azonosítási nem létezik, mert a &lt;tt&gt;Authen::PAM&lt;/tt&gt; PERL modul nem nem lett telepítve vagy nem jól működik.</value>
+  </data>
+  <data name="save_egroup" xml:space="preserve">
+    <value>Önnek nincs joga azt a csoporthoz rendelni</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>Nem lett megadva cím</value>
+  </data>
+  <data name="save_enet" xml:space="preserve">
+    <value>'$1' nem érvényes hálózati cím</value>
+  </data>
+  <data name="save_emask" xml:space="preserve">
+    <value>'$1' nem érvényes hálózati maszk</value>
+  </data>
+  <data name="save_eip" xml:space="preserve">
+    <value>'$1' nem egy teljes IP vagy hálózati cím</value>
+  </data>
+  <data name="save_ehost" xml:space="preserve">
+    <value>Nem sikerült megtalálni az IP címet a '$1' -hez</value>
+  </data>
+  <data name="save_elogouttime" xml:space="preserve">
+    <value>Hiányzó vagy nem mnumerikus inaktív lejárati idő</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Nem sikerült a törlés</value>
+  </data>
+  <data name="delete_eself" xml:space="preserve">
+    <value>Nem törölheted önmagadat</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Nincs jogod felhasználókat törölni</value>
+  </data>
+  <data name="delete_euser" xml:space="preserve">
+    <value>Nincs jogod törölni ezt a felhasználót</value>
+  </data>
+  <data name="cert_title" xml:space="preserve">
+    <value>Igazolvány kérése</value>
+  </data>
+  <data name="cert_issue" xml:space="preserve">
+    <value>Igazolvány kiadása</value>
+  </data>
+  <data name="cert_header" xml:space="preserve">
+    <value>Az új igazolvány tartalma</value>
+  </data>
+  <data name="cert_msg" xml:space="preserve">
+    <value>Ezen az oldalon egy SSL (Secure Socket Layer) igazolványt kérhetsz. Ennek használatával a böngésződ titkosított kommunikációt folytat a Webminnel, és egy digitális aláírással azonosítja magát ahelyett, hogy minden alkalommal (lehallgatható módon) beküldené az azonosítódat és jelszavadat. Ez biztonságosabb, de az automatikus azonosítás miatt nem tudsz felhasználót váltani.&lt;p&gt;Ha netán le van tiltva a JavaScript a böngésződben, most engedélyezd egy kicsit!</value>
+  </data>
+  <data name="cert_ebrowser" xml:space="preserve">
+    <value>A Webmin nem tudja eldönteni hogy hogyan adja ki a kliens tanusítványt az Ön böngészőjének ($1)</value>
+  </data>
+  <data name="cert_cn" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="cert_email" xml:space="preserve">
+    <value>E-mail cím</value>
+  </data>
+  <data name="cert_ou" xml:space="preserve">
+    <value>Szervezeti egység</value>
+  </data>
+  <data name="cert_o" xml:space="preserve">
+    <value>Szervezet</value>
+  </data>
+  <data name="cert_sp" xml:space="preserve">
+    <value>Ország</value>
+  </data>
+  <data name="cert_c" xml:space="preserve">
+    <value>Országkód</value>
+  </data>
+  <data name="cert_key" xml:space="preserve">
+    <value>Kulcsméret [bit]</value>
+  </data>
+  <data name="cert_done" xml:space="preserve">
+    <value>Az Ön tanusítványa a $1 -hez sikeresen elkészült.</value>
+  </data>
+  <data name="cert_install" xml:space="preserve">
+    <value>ASzz Ön tanusítványának telepítése a böngészőbe</value>
+  </data>
+  <data name="cert_ekey" xml:space="preserve">
+    <value>Az új SSL kulcsot nem sikerült átadni a böngésződnek. Talán azért, mert nem támogatja az kliensoldali SSL igazolványokat.</value>
+  </data>
+  <data name="cert_eca" xml:space="preserve">
+    <value>Nem sikerült a hitelesítő központ felállítása: $1</value>
+  </data>
+  <data name="cert_already" xml:space="preserve">
+    <value>Figyelem! Már van egy igazolványod: $1.</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>Hozzáférési jogok</value>
+  </data>
+  <data name="acl_title2" xml:space="preserve">
+    <value>$1 számára a "$2" modulhoz</value>
+  </data>
+  <data name="acl_title3" xml:space="preserve">
+    <value>A $1 csoportnak a $2 -ben</value>
+  </data>
+  <data name="acl_options" xml:space="preserve">
+    <value>A "$1" modul feletti hatáskör</value>
+  </data>
+  <data name="acl_config" xml:space="preserve">
+    <value>Megváltoztathatja a modul konfigurációját?</value>
+  </data>
+  <data name="acl_reset" xml:space="preserve">
+    <value>Beállítás teljes hozzáférésre</value>
+  </data>
+  <data name="acl_rbac" xml:space="preserve">
+    <value>Hozzáférési kontroll beállítások az RBAC -ből?</value>
+  </data>
+  <data name="acl_rbacyes" xml:space="preserve">
+    <value>Igen (felülírja a beállításokat alább)</value>
+  </data>
+  <data name="acl_uall" xml:space="preserve">
+    <value>Minden felhasználó</value>
+  </data>
+  <data name="acl_uthis" xml:space="preserve">
+    <value>Ez a felhasználó</value>
+  </data>
+  <data name="acl_usel" xml:space="preserve">
+    <value>Kiválasztott felhasználók..</value>
+  </data>
+  <data name="acl_gr" xml:space="preserve">
+    <value>Tagja a $1 -nak</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>A megváltoztatható felhasználók listája</value>
+  </data>
+  <data name="acl_mods" xml:space="preserve">
+    <value>Mihez adhat jogokat?</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Minden modulhoz</value>
+  </data>
+  <data name="acl_own" xml:space="preserve">
+    <value>Csak a saját moduljaihoz</value>
+  </data>
+  <data name="acl_sel" xml:space="preserve">
+    <value>Az alant megjelölt modulokhoz</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Létrehozhat új felhasználókat?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Törölhet felhasználókat?</value>
+  </data>
+  <data name="acl_rename" xml:space="preserve">
+    <value>Átnevezhet felhasználókat?</value>
+  </data>
+  <data name="acl_acl" xml:space="preserve">
+    <value>Megváltoztathatja a modul hozzáférési jogait?</value>
+  </data>
+  <data name="acl_lang" xml:space="preserve">
+    <value>Megváltoztathatja a nyelvet?</value>
+  </data>
+  <data name="acl_chcert" xml:space="preserve">
+    <value>Megváltoztathatja az SSL igazolványon álló nevet?</value>
+  </data>
+  <data name="acl_euser" xml:space="preserve">
+    <value>Nincs jogod ezen felhasználó hozzáférési jogait megváltoztatni</value>
+  </data>
+  <data name="acl_egroup" xml:space="preserve">
+    <value>Önnek nincs joga szerkeszteni a csoportok ACL -jét</value>
+  </data>
+  <data name="acl_emod" xml:space="preserve">
+    <value>Nincs jogod ezen modul hozzáférési jogait megváltoztatni</value>
+  </data>
+  <data name="acl_others" xml:space="preserve">
+    <value>Láthatja az elérhetetlen modulokat?</value>
+  </data>
+  <data name="acl_cert" xml:space="preserve">
+    <value>Kérhet SSL igazolványt?</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>Nem sikerült elmenteni a hozzáférési jogokat</value>
+  </data>
+  <data name="acl_groups" xml:space="preserve">
+    <value>Szerkeszthet csoportot?</value>
+  </data>
+  <data name="acl_gassign" xml:space="preserve">
+    <value>Hozzárendelhet felhasználót a csoporthoz</value>
+  </data>
+  <data name="acl_gall" xml:space="preserve">
+    <value>Minden csoport</value>
+  </data>
+  <data name="acl_gsel" xml:space="preserve">
+    <value>Kiválasztott..</value>
+  </data>
+  <data name="acl_gnone" xml:space="preserve">
+    <value>Nincs</value>
+  </data>
+  <data name="acl_perms" xml:space="preserve">
+    <value>Újonnan létrehozott felhasználók megkapják</value>
+  </data>
+  <data name="acl_perms_1" xml:space="preserve">
+    <value>Ugyanaz a modul hozzáférési kontroll, mint a készítőé</value>
+  </data>
+  <data name="acl_perms_0" xml:space="preserve">
+    <value>Alapértelmezett (nem szabályozott) modul hozzáférési kontroll</value>
+  </data>
+  <data name="acl_sync" xml:space="preserve">
+    <value>Beállíthatja a felhasználó szinkronizálást?</value>
+  </data>
+  <data name="acl_unix" xml:space="preserve">
+    <value>Beállíthat unix hitelesítést?</value>
+  </data>
+  <data name="acl_sessions" xml:space="preserve">
+    <value>Megnézheti és megszakíthatja a belépési szakaszokat?</value>
+  </data>
+  <data name="acl_cats" xml:space="preserve">
+    <value>Kategórizálást tud változtatni?</value>
+  </data>
+  <data name="acl_theme" xml:space="preserve">
+    <value>Beállíthatja a személyes témákat?</value>
+  </data>
+  <data name="acl_ips" xml:space="preserve">
+    <value>Módosíthat IP hozzáférési jogot?</value>
+  </data>
+  <data name="acl_switch" xml:space="preserve">
+    <value>Átválthat más felhaználóra?</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$1 Webmin felhasználó módosítása</value>
+  </data>
+  <data name="log_rename" xml:space="preserve">
+    <value>$1 Webmin felhasználó átnevezése $2-ra/re</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>$1 Webmin felhasználó létrehozása</value>
+  </data>
+  <data name="log_clone" xml:space="preserve">
+    <value>$1 Webmin felhasználó klónozása $2 néven</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$1 Webmin felhasználó törlése</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>$1 jogai a $2 modulhoz módosítva</value>
+  </data>
+  <data name="log_reset" xml:space="preserve">
+    <value>Hozzáférés beállítása a $1 -nak a $2-re</value>
+  </data>
+  <data name="log_cert" xml:space="preserve">
+    <value>Igazolvány kiadása $1 felhasználó számára</value>
+  </data>
+  <data name="log_modify_g" xml:space="preserve">
+    <value>Módosított webmin csoport $1</value>
+  </data>
+  <data name="log_rename_g" xml:space="preserve">
+    <value>Átnevezett Webmin csoport $1 -ről $2 -re</value>
+  </data>
+  <data name="log_create_g" xml:space="preserve">
+    <value>Létrehozott Webmin csoport $1</value>
+  </data>
+  <data name="log_delete_g" xml:space="preserve">
+    <value>Törölt Webmin csoport $1</value>
+  </data>
+  <data name="log_switch" xml:space="preserve">
+    <value>Átváltás Webmin felhasználóra $1</value>
+  </data>
+  <data name="log_delete_users" xml:space="preserve">
+    <value>Törölt Webmin felhasználó $1</value>
+  </data>
+  <data name="log_delete_groups" xml:space="preserve">
+    <value>Törölt Webmin csoport $1</value>
+  </data>
+  <data name="gedit_ecannot" xml:space="preserve">
+    <value>Önnek nincs engedélyezve a csoport szerkesztése</value>
+  </data>
+  <data name="gedit_title" xml:space="preserve">
+    <value>Webmin csoport szerkesztése</value>
+  </data>
+  <data name="gedit_title2" xml:space="preserve">
+    <value>Webmin csoport létrehozása</value>
+  </data>
+  <data name="gedit_group" xml:space="preserve">
+    <value>Csoport neve</value>
+  </data>
+  <data name="gedit_rights" xml:space="preserve">
+    <value>Webmin csoport hozzáférési jogok</value>
+  </data>
+  <data name="gedit_modules" xml:space="preserve">
+    <value>Tagok moduljai</value>
+  </data>
+  <data name="gedit_members" xml:space="preserve">
+    <value>A csoport tagjai</value>
+  </data>
+  <data name="gdelete_err" xml:space="preserve">
+    <value>Nem sikerült törölni a csoportot</value>
+  </data>
+  <data name="gdelete_ecannot" xml:space="preserve">
+    <value>Önnek nincs joga törölni a csoportot</value>
+  </data>
+  <data name="gdelete_euser" xml:space="preserve">
+    <value>Ön nem tudja a saját csoportját letörölni</value>
+  </data>
+  <data name="gdelete_esub" xml:space="preserve">
+    <value>Csoportot alcsoporttal nem lehet törölni</value>
+  </data>
+  <data name="gdelete_title" xml:space="preserve">
+    <value>Csoport törlése</value>
+  </data>
+  <data name="gdelete_desc" xml:space="preserve">
+    <value>Biztos benne, hogy a $1 csoportot törölni szeretné $2 tagokkal együtt?</value>
+  </data>
+  <data name="gdelete_ok" xml:space="preserve">
+    <value>Csoport törlése</value>
+  </data>
+  <data name="gsave_err" xml:space="preserve">
+    <value>Nem sikerült a csoport mentése</value>
+  </data>
+  <data name="gsave_ename" xml:space="preserve">
+    <value>Hiányzó vagy hibás csoportnév</value>
+  </data>
+  <data name="gsave_enamewebmin" xml:space="preserve">
+    <value>A 'webmin' csoportnév le van foglalva belső felhasználásra</value>
+  </data>
+  <data name="gsave_edup" xml:space="preserve">
+    <value>A csoportnév már létezik</value>
+  </data>
+  <data name="convert_title" xml:space="preserve">
+    <value>Felhasnálók konvertálása</value>
+  </data>
+  <data name="convert_ecannot" xml:space="preserve">
+    <value>Önnek nincs joga a Unix felhasználó konvertálására</value>
+  </data>
+  <data name="convert_nogroups" xml:space="preserve">
+    <value>Nincs webmin csoport definiálva az Ön rendszerében. Legalább egy csoportot létre kell hoznia ahhoz, hogy jogosultságokat tudjon definiálni a konvertált felhasználóknak.</value>
+  </data>
+  <data name="convert_desc" xml:space="preserve">
+    <value>Ezen a lapon át tudja konvertálni a meglévő Unix felhasználókat Webmin felhasználóvá. A jogosultságait minden egyes Webmin felhaszálónak a lentebb kiválasztott csoport fogja befolyásolni.</value>
+  </data>
+  <data name="convert_0" xml:space="preserve">
+    <value>Minden felhasználó</value>
+  </data>
+  <data name="convert_1" xml:space="preserve">
+    <value>Csak a felhasználó</value>
+  </data>
+  <data name="convert_2" xml:space="preserve">
+    <value>Mindenki, kivéve a felhasználókat</value>
+  </data>
+  <data name="convert_3" xml:space="preserve">
+    <value>Felhasználók a csoporttal</value>
+  </data>
+  <data name="convert_4" xml:space="preserve">
+    <value>Felhasználók a megadott UID határok között</value>
+  </data>
+  <data name="convert_group" xml:space="preserve">
+    <value>Új felhasználó hozzárendelése a Webmin csoporthoz</value>
+  </data>
+  <data name="convert_ok" xml:space="preserve">
+    <value>Konvertálás most</value>
+  </data>
+  <data name="convert_err" xml:space="preserve">
+    <value>Nem sikerült a felhasználók konvertálása</value>
+  </data>
+  <data name="convert_eusers" xml:space="preserve">
+    <value>Nem lett a konvertáláshoz felhasználó megadva</value>
+  </data>
+  <data name="convert_egroup" xml:space="preserve">
+    <value>A Unix csoport nem létezik</value>
+  </data>
+  <data name="convert_emin" xml:space="preserve">
+    <value>Érvénytelen minimális UID</value>
+  </data>
+  <data name="convert_emax" xml:space="preserve">
+    <value>Rvénytelen maximális UID</value>
+  </data>
+  <data name="convert_ewgroup" xml:space="preserve">
+    <value>Nemlétező Webmin csoport</value>
+  </data>
+  <data name="convert_ewgroup2" xml:space="preserve">
+    <value>Önnek nincs jogosultsága hozzárendelni új felhaználót ehhez a csoporthoz.</value>
+  </data>
+  <data name="convert_skip" xml:space="preserve">
+    <value>$1 át lett ugorva</value>
+  </data>
+  <data name="convert_exists" xml:space="preserve">
+    <value>$1 már létezik</value>
+  </data>
+  <data name="convert_invalid" xml:space="preserve">
+    <value>$1 nem érvényes Webmin felhasználó</value>
+  </data>
+  <data name="convert_added" xml:space="preserve">
+    <value>$1 hozzá lett adva</value>
+  </data>
+  <data name="convert_msg" xml:space="preserve">
+    <value>Konvertálom a Unix felhasználókat</value>
+  </data>
+  <data name="sync_title" xml:space="preserve">
+    <value>Unix felhasználó szinkronizálása</value>
+  </data>
+  <data name="sync_desc" xml:space="preserve">
+    <value>Ezen a formon Ön be tudja állírani az automatikus szinkronizációt a Unix felhasználók és webmin felhasználók létrehozásakor ebben a modulban.</value>
+  </data>
+  <data name="sync_nogroups" xml:space="preserve">
+    <value>Nem lett Webmin csoport definiálva a rendszerbe. Legalább egy csoportot definiálni kell, hogy be lehessen állítani a hozzáférési jogokat a létrehozott felhasználóknak.</value>
+  </data>
+  <data name="sync_create" xml:space="preserve">
+    <value>Webmin felhasználó létrehozása ha Unix felhasználó készül.</value>
+  </data>
+  <data name="sync_update" xml:space="preserve">
+    <value>Frissítse a kapcsolódó Webmin felhasználót, hogyha a Unix felhasználó módosul.</value>
+  </data>
+  <data name="sync_delete" xml:space="preserve">
+    <value>A kiválasztott Webmin felhasználó törlése ha az azonos Unix felhasználó törlődik.</value>
+  </data>
+  <data name="sync_group" xml:space="preserve">
+    <value>Új felhaszn áló hozzárendelése Webmin csoporthoz</value>
+  </data>
+  <data name="sync_unix" xml:space="preserve">
+    <value>Jelszó beállítása az új felhasználóknak a Unix azonosításhoz.</value>
+  </data>
+  <data name="sync_ecannot" xml:space="preserve">
+    <value>Önnek nincs joga a felhasználó szinkronizálását beállítani.</value>
+  </data>
+  <data name="unix_title" xml:space="preserve">
+    <value>Unix felhasználó azonosítás</value>
+  </data>
+  <data name="unix_desc" xml:space="preserve">
+    <value>Ezen az oldalon engedélyezni tudja a Webmin konfigurálását hogy a belépési kísérleteket a rendszer a felhasználói listából vagy PAM -ból validálja. Ez hasznos lehet, hogyha Önnek nagy számú Unix felhasználója van, akik hozzá akarnak férni a Webmin-hez.</value>
+  </data>
+  <data name="unix_def" xml:space="preserve">
+    <value>Csak a Webmin felhasználóknak engedélyezve a belépés</value>
+  </data>
+  <data name="unix_sel" xml:space="preserve">
+    <value>A listában szerplő Unix felhasználóknak engedélyezve legyen a belépés..</value>
+  </data>
+  <data name="unix_mode" xml:space="preserve">
+    <value>Engedélyezve</value>
+  </data>
+  <data name="unix_mall" xml:space="preserve">
+    <value>Minden felhasználó</value>
+  </data>
+  <data name="unix_group" xml:space="preserve">
+    <value>A csoport tagjai..</value>
+  </data>
+  <data name="unix_user" xml:space="preserve">
+    <value>Unix felhasználó..</value>
+  </data>
+  <data name="unix_who" xml:space="preserve">
+    <value>Felhasználó vagy csoport</value>
+  </data>
+  <data name="unix_to" xml:space="preserve">
+    <value>Mint Webmin felhasználó</value>
+  </data>
+  <data name="unix_ecannot" xml:space="preserve">
+    <value>Önnek nincs joga beállítani a Unix felhasználók azonosítását</value>
+  </data>
+  <data name="unix_epam" xml:space="preserve">
+    <value>Unix azonosítás nincs telepítve, vagy a &lt;tt&gt;Authen::PAM&lt;/tt&gt; Perl modul nincs installálva vagy nem működik helyesen.</value>
+  </data>
+  <data name="unix_all" xml:space="preserve">
+    <value>Minden Unix felhasználónak engedélyezve</value>
+  </data>
+  <data name="unix_allow" xml:space="preserve">
+    <value>Csak a felsorolt Unix felhasználóknak engedélyezve</value>
+  </data>
+  <data name="unix_deny" xml:space="preserve">
+    <value>Letiltva a felsorolt Unix felhasználók</value>
+  </data>
+  <data name="unix_none" xml:space="preserve">
+    <value>Nem lett felhasználó megadva</value>
+  </data>
+  <data name="unix_euser" xml:space="preserve">
+    <value>'$1' nem valós felhasználói név</value>
+  </data>
+  <data name="unix_egroup" xml:space="preserve">
+    <value>'$1' nem valós csoportnév</value>
+  </data>
+  <data name="unix_shells" xml:space="preserve">
+    <value>Unix felhasználók tiltása, akiknek a héj programjuk nem fájl</value>
+  </data>
+  <data name="unix_eshells" xml:space="preserve">
+    <value>Hiányzó vagy nem létező héj fájl</value>
+  </data>
+  <data name="unix_ewhogroup" xml:space="preserve">
+    <value>Hibás csoport lett engedélyezve a $1 sorban</value>
+  </data>
+  <data name="unix_ewhouser" xml:space="preserve">
+    <value>Hibás felhasználó lett engedélyezve a $1 sorban</value>
+  </data>
+  <data name="unix_enone" xml:space="preserve">
+    <value>Nem lett egyetlen egy Unix felhasználónak vagycsoportnak engedélyezve a belépés</value>
+  </data>
+  <data name="unix_same" xml:space="preserve">
+    <value>&amp;lt;Ugyanaz a felhasználó vagy csoport&amp;gt;</value>
+  </data>
+  <data name="sessions_title" xml:space="preserve">
+    <value>Aktuális belépési folyamatok</value>
+  </data>
+  <data name="sessions_id" xml:space="preserve">
+    <value>Folyamat azonosító</value>
+  </data>
+  <data name="sessions_user" xml:space="preserve">
+    <value>Webmin felhasználó</value>
+  </data>
+  <data name="sessions_login" xml:space="preserve">
+    <value>Belépve mint</value>
+  </data>
+  <data name="sessions_host" xml:space="preserve">
+    <value>IP cím</value>
+  </data>
+  <data name="sessions_lview" xml:space="preserve">
+    <value>Napló megtekintése</value>
+  </data>
+  <data name="hide_title" xml:space="preserve">
+    <value>Nem használt modulok elrejtése</value>
+  </data>
+  <data name="hide_desc" xml:space="preserve">
+    <value>A következő modulok el leszken távolítva a hozzáférési listából $1 mert a hozzájuk kapcsolódó szerver nem lett telepítve az Ön rendszerére</value>
+  </data>
+  <data name="hide_ok" xml:space="preserve">
+    <value>Modulok elrejtése most</value>
+  </data>
+  <data name="hide_none" xml:space="preserve">
+    <value>Nincs mit elrejteni - $1 nincs megfelelő hozzáférése bármelyik modulhoz amely a kapcsolódó szerverek közül nem lett installálva.</value>
+  </data>
+  <data name="hide_desc2" xml:space="preserve">
+    <value>Figyelem! Ezek a modulok nem lesznek automatikusan hozzárendelve, hogyha a megfelelő szerver installálva lesz. Önnek kézileg kell megadnia a jogokat ezekre a modulokra.</value>
+  </data>
+  <data name="hide_clone" xml:space="preserve">
+    <value>(Klón $1)</value>
+  </data>
+  <data name="switch_euser" xml:space="preserve">
+    <value>Önnek ninc joga átváltani erre a felhasználóra</value>
+  </data>
+  <data name="switch_eold" xml:space="preserve">
+    <value>Meglévő folyamatot nem találom!</value>
+  </data>
+  <data name="rbac_title" xml:space="preserve">
+    <value>RBAC beállítása</value>
+  </data>
+  <data name="rbac_desc" xml:space="preserve">
+    <value>A webmin RBAC integráció segítségével Ön hozzá tud kapcsolódni és fel tudja használni az RBAC (Jogosultság bázisú hozzáférési kontroll) adatbázist, ahelyett, hogy a Webmin saját ACL rendszerét használná. Miután az RBAC engedélyezve lett, bármelyik felhasználó aki &lt;b&gt;$edit_rbacdeny1&lt;/b&gt; beállítást kiváalsztotta kontrollálni tudja, hogy az RBAC -t használja a Webmin sdaját jogosultsági rendszere helyett.</value>
+  </data>
+  <data name="rbac_esolaris" xml:space="preserve">
+    <value>RBAC csak a Solaris rendszereket támogatja jelenleg, ezért az Ön rendszerében $1 nem használható.</value>
+  </data>
+  <data name="rbac_ecpan" xml:space="preserve">
+    <value>Önnek nincs joga hozzáférni a Webmin Perl modul oldalhoz, hogy a megfelelő modult $1 telepítse a RBAC integrációhoz.</value>
+  </data>
+  <data name="rbac_ok" xml:space="preserve">
+    <value>RBAC integráció létezik az Ön rendszerében, és engedélyezni lehet a per felhasználó bázisú használatát a Webmin felhasználó szerkesztése oldalon.</value>
+  </data>
+  <data name="udeletes_err" xml:space="preserve">
+    <value>Nem sikerült a felhasználó törlése.</value>
+  </data>
+  <data name="udeletes_enone" xml:space="preserve">
+    <value>Nem lett kiválasztva</value>
+  </data>
+  <data name="udeletes_title" xml:space="preserve">
+    <value>Felhasználó törlése</value>
+  </data>
+  <data name="udeletes_rusure" xml:space="preserve">
+    <value>Biztos Ön abban, hogy le akarja törölni a kiválasztott felhasználókat $1? Az összes törölt felhasználó hozzáférési jogosultsága és felhasznlói adatai el fognak veszni.</value>
+  </data>
+  <data name="udeletes_users" xml:space="preserve">
+    <value>Kiválasztott felhasználó: $1</value>
+  </data>
+  <data name="udeletes_ok" xml:space="preserve">
+    <value>Felhasználó törlése</value>
+  </data>
+  <data name="udeletes_ereadonly" xml:space="preserve">
+    <value>Valamelyik felhasználó a kiválasztottak közül nem szerkeszthetőnek lett megjelölve.</value>
+  </data>
+  <data name="gdeletes_err" xml:space="preserve">
+    <value>Sikertelen csoport törlése</value>
+  </data>
+  <data name="gdeletes_title" xml:space="preserve">
+    <value>Csoport törlése</value>
+  </data>
+  <data name="gdeletes_rusure" xml:space="preserve">
+    <value>Biztos Ön benne, hogy le akarja törölni a kiválasztott csoportot $1, és a hozzá tartozó felhasználókat $2? Minden hozzájuk tartozó hozzáférési jog és beállítás, ileltve felhasználói adat el fog veszni.</value>
+  </data>
+  <data name="gdeletes_users" xml:space="preserve">
+    <value>Kiválasztott csoport: $1</value>
+  </data>
+  <data name="gdeletes_ok" xml:space="preserve">
+    <value>Csoport törlése</value>
+  </data>
+  <data name="pass_days" xml:space="preserve">
+    <value>nap</value>
+  </data>
+  <data name="sql_host" xml:space="preserve">
+    <value>Hosztnév</value>
+  </data>
+  <data name="make_done" xml:space="preserve">
+    <value>.. kész</value>
+  </data>
+  <data name="makedn_done" xml:space="preserve">
+    <value>.. kész</value>
+  </data>
+</root>

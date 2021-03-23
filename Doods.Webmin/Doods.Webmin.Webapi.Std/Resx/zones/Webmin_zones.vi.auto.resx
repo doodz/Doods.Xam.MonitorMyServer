@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Lệnh quản trị vùng $1 không được tìm thấy trên hệ thống của bạn. Nó phải được cài đặt trước khi mô-đun này có thể được sử dụng.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin đang chạy trong vùng $1, thay vì vùng &lt;tt&gt;toàn cầu&lt;/tt&gt;. Mô-đun này sẽ chỉ hoạt động khi chạy trong vùng &lt;tt&gt;toàn cầu&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Không có khu vực đã được xác định.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Thêm một khu vực mới.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>danh sách khu vực</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Các khu hiện có</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Chỉnh sửa vùng</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Cấu hình vùng chung</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Tên khu vực</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Tình trạng hiện tại</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Thư mục vùng</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Bắt đầu lúc khởi động hệ thống?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Hồ bơi tài nguyên</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Khởi động lại</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Cài đặt Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Nâng cấp Webmin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>Khởi động</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Cài đặt hệ thống</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Hệ thống chưa cài đặt</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Xóa vùng</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Giao diện mạng cho khu vực</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Không có giao diện mạng đã được xác định.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Tên giao diện</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>địa chỉ IP</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Netmask</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Địa chỉ quảng bá</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Thêm một giao diện mạng mới.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>Không hoạt động</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Khu vực không tồn tại!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>chi tiết vùng</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Thư mục gói kế thừa</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Thư mục trong khu vực toàn cầu</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Không có thư mục gói đã được xác định.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Thêm một thư mục gói mới.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Thư mục gói không thể được thêm vào sau khi khu vực được cài đặt.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Hệ thống tập tin bổ sung</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Thư mục núi</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Gắn kết từ</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Thiết bị thô</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Kiểu hệ thống tập tin</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Gắn kết?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Thêm hệ thống tập tin loại:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Không có hệ thống tập tin bổ sung đã được xác định.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Kiểm soát nguồn</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Tên tài nguyên</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Các loại đặc quyền</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>Hạn mức</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Không có kiểm soát tài nguyên đã được xác định.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Thêm một kiểm soát tài nguyên mới.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Thuộc tính vùng chung</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Tên thuộc tính</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Loại dữ liệu</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Giá trị thuộc tính</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Không có thuộc tính chung đã được xác định.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Thêm một thuộc tính chung mới.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Mở Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Nhãn hiệu</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Không thể lưu vùng</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Hồ bơi bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin không chạy trong khu vực này</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Khu vực khởi động lại</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn khởi động lại vùng $1 không? Tất cả các quy trình chạy trong nó sẽ được khởi động lại.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Không thể khởi động lại vùng</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Bây giờ khởi động lại khu vực ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. thất bại  :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. hoàn thành.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Khu vực tắt máy</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn tắt vùng $1 không? Tất cả các quy trình chạy trong nó sẽ bị dừng lại.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Không thể tắt vùng</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Bây giờ đóng cửa khu vực ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Khu vực khởi động</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Không thể vào vùng khởi động</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Bây giờ khởi động lên vùng ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Xóa vùng</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa vùng $1 không? Tất cả các tệp trong hệ thống tệp riêng của nó sẽ bị mất.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Không thể xóa vùng</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Bây giờ xóa vùng ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Hệ thống chưa cài đặt</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn hủy cài đặt phần mềm hệ thống từ vùng $1 không? Tất cả các tệp trong hệ thống tệp riêng của nó sẽ bị mất.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Không thể cài đặt phần mềm hệ thống từ vùng</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Bây giờ hủy cài đặt hệ thống từ khu ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Cài đặt hệ thống</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Bây giờ cài đặt hệ thống vào khu vực ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Tạo giao diện mạng</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Chỉnh sửa giao diện mạng</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Chi tiết giao diện ảo</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>Giao diện địa chỉ IP</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Giao diện mạng thực</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Netmask cho địa chỉ</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Địa chỉ phát sóng hiện tại</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Không thể lưu giao diện mạng</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Netmask không hợp lệ</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>địa chỉ IP không hợp lệ</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Giao diện không còn tồn tại!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>Giao diện mạng có cùng địa chỉ IP đã tồn tại trong vùng này</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Thêm thư mục gói</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Chỉnh sửa thư mục gói</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Chi tiết thư mục gói</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Thư mục trong khu vực toàn cầu</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Thư mục không còn tồn tại!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Không thể lưu thư mục gói</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Thư mục không hợp lệ hoặc không tồn tại</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>Thư mục gói đã tồn tại trong vùng này</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Kế thừa các gói từ khu vực toàn cầu</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Có (vùng gốc thưa thớt)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Không (toàn bộ vùng gốc)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Tạo hệ thống tập tin</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Chỉnh sửa hệ thống tập tin</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Chi tiết hệ thống tập tin bổ sung</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Kiểu hệ thống tập tin</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Điểm gắn kết trong khu vực</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Tình trạng hiện tại</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Không gắn</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>Gắn kết</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Được gắn kết, với $2 miễn phí trong $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Nguồn trong khu vực toàn cầu</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Tùy chọn gắn kết hệ thống tập tin</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Không thể lưu hệ thống tập tin</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Thiếu thư mục điểm gắn kết</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Hệ thống tập tin đã được tạo, nhưng đã xảy ra lỗi khi gắn nó</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Hệ thống tập tin đã bị xóa, nhưng đã xảy ra lỗi khi không cài đặt nó</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Hệ thống tập tin đã được cập nhật, nhưng đã xảy ra lỗi khi cài đặt lại</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Thiếu tập tin thiết bị nguồn</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Tùy chọn gắn kết không hợp lệ (phải là danh sách được phân tách bằng dấu phẩy như ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Hệ thống tập tin không còn tồn tại!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Gắn kết sau khi tạo?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>Một hệ thống tập tin sử dụng cùng một thư mục đã tồn tại trong vùng này</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Tạo kiểm soát tài nguyên</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Chỉnh sửa điều khiển tài nguyên</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Loại và giới hạn kiểm soát tài nguyên</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Loại tài nguyên</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Giới hạn để áp đặt</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Loại đặc quyền</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>Giới hạn</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Hành động khi vượt quá</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>Căn bản</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Đặc quyền</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Không có hành động</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Từ chối yêu cầu</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Gửi tín hiệu ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Không thể lưu kiểm soát tài nguyên</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Kiểm soát tài nguyên không còn tồn tại!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Không phải là một con số</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>Không có tín hiệu nào được chọn trong hàng $1 </value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Không giới hạn nhập</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>Một kiểm soát cho cùng một tài nguyên đã tồn tại trong khu vực này</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Tạo thuộc tính chung</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Chỉnh sửa thuộc tính chung</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Chi tiết thuộc tính vùng chung</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Tên thuộc tính</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Kiểu dữ liệu cho giá trị</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Giá trị thuộc tính</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Chuỗi văn bản</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>Số nguyên</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Sô nguyên dương</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Không thể lưu thuộc tính chung</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Tên thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Giá trị không phải là số nguyên</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Giá trị không phải là số nguyên dương</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Giá trị không phải là 'đúng' hoặc 'sai'</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Thuộc tính không còn tồn tại!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>Một thuộc tính có cùng tên đã tồn tại trong vùng này</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Đang chạy</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>Dừng lại</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Chưa cài đặt</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Đang được cài đặt</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>Sẵn sàng</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Xuống</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Đang Tắt</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Tên khu vực</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>Số ID</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Thư mục vùng</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>Trong khu vực $1 </value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Tạo vùng</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Chi tiết khu vực mới</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Thư mục tập tin vùng</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Thư mục được chọn</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Tự động (dưới &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Địa chỉ IP ban đầu</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Cài đặt sau khi tạo?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Cài đặt Webmin sau khi cài đặt?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Có (Ngăn chặn bổ sung các thư mục gói)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Hãy tạo ngay</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Không thể tạo vùng</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Tên khu vực bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Tên máy chủ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Một khu vực có cùng tên đã tồn tại</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Thiếu thư mục vùng</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>Thư mục vùng '$1' đã tồn tại</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Địa chỉ IP ban đầu bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Tạo vùng mới ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. làm xong.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. thất bại! Xem đầu ra ở trên cho lý do tại sao.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Thêm giao diện mạng ban đầu ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Cài đặt phần mềm hệ thống ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Thư mục gói bổ sung</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' không phải là thư mục gói hợp lệ</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Thêm thư mục gói ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Thiết lập Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. thất bại : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Cấu hình vùng mới?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Tên máy chủ ban đầu</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Giống như tên khu vực</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Có, sử dụng cài đặt bên dưới ..</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Không, cấu hình thủ công tại bàn điều khiển</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Mật khẩu gốc ban đầu</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Tương tự như hệ thống toàn cầu</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Múi giờ ban đầu</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Tương tự như hệ thống toàn cầu ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Ngôn ngữ ban đầu</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Loại thiết bị đầu cuối cho giao diện điều khiển</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>Mặc định (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Dịch vụ tên ban đầu</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>không ai</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>Tên miền DNS hoặc NIS</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>Máy chủ tên DNS hoặc NIS</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Không thể tìm thấy người dùng root cục bộ!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Múi giờ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Ngôn ngữ bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Loại thiết bị đầu cuối bị thiếu hoặc không hợp lệ</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ tên miền DNS hoặc NIS</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' không phải là máy chủ lưu trữ tên DNS hoặc NIS hợp lệ</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>Không có máy chủ tên DNS hoặc NIS nào được nhập</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Tên máy chủ của khu vực không thể được giải quyết, điều này sẽ khiến cấu hình tự động không thành công. Bạn nên thêm nó vào DNS trước khi tạo vùng này</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Router mặc định</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Thiếu hoặc không hợp lệ địa chỉ IP của bộ định tuyến</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>xóa thư mục gói được kế thừa. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Nhãn hiệu</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Khu vực xây dựng thương hiệu</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Đã tạo vùng $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Đã xóa vùng $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Cấu hình đã sửa đổi cho vùng $1 </value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Đã khởi động vùng $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Vùng được khởi động lại $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Khu vực tắt máy $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Vùng đã cài đặt $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Vùng chưa cài đặt $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Giao diện mạng được tạo với địa chỉ $1 trong vùng $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Giao diện mạng đã xóa với địa chỉ $1 trong vùng $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Giao diện mạng được sửa đổi với địa chỉ $1 trong vùng $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Tạo thư mục gói $1 trong vùng $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Thư mục gói đã sửa đổi $1 trong vùng $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Đã xóa thư mục gói $1 trong vùng $2 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Đã tạo hệ thống tệp $1 trong vùng $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Hệ thống tập tin đã sửa đổi $1 trong vùng $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Đã xóa hệ thống tệp $1 trong vùng $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Tạo kiểm soát tài nguyên cho $1 trong vùng $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Kiểm soát tài nguyên đã sửa đổi cho $1 trong vùng $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>Đã xóa kiểm soát tài nguyên cho $1 trong vùng $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Đã tạo thuộc tính chung $1 trong vùng $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Thuộc tính chung được sửa đổi $1 trong vùng $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>Đã xóa thuộc tính chung $1 trong vùng $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl không được cài đặt ở $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>Thư mục $1 không tồn tại hoặc không chứa Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Cài đặt Webmin</value>
+  </data>
+</root>

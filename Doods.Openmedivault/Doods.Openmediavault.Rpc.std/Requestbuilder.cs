@@ -1,7 +1,6 @@
 ﻿using System;
 using Doods.Framework.Http.Std.Serializers;
 using Doods.Framework.Ssh.Std.Interfaces;
-using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmedivault.Ssh.Std.Requests;
 using Newtonsoft.Json;
 using RestSharp;
@@ -30,10 +29,6 @@ namespace Doods.Openmediavault.Rpc.Std
 
     public class ParamsListFilter
     {
-        [JsonProperty("start")] public int Start { get; set; } = 0;
-
-        [JsonProperty("limit")] public int Limit { get; set; } = 25;
-
         public ParamsListFilter()
         {
         }
@@ -43,6 +38,10 @@ namespace Doods.Openmediavault.Rpc.Std
             Start = start;
             Limit = limit;
         }
+
+        [JsonProperty("start")] public int Start { get; set; }
+
+        [JsonProperty("limit")] public int Limit { get; set; } = 25;
     }
 
     public class Options
@@ -72,10 +71,13 @@ namespace Doods.Openmediavault.Rpc.Std
 
         //    return default;
         //}
-        OmvSerializer serializer = new OmvSerializer();
+        private OmvSerializer serializer = new OmvSerializer();
 
 
-        public static string ToJson(object obj) => JsonConvert.SerializeObject(obj, OmvSerializer.Settings);
+        public static string ToJson(object obj)
+        {
+            return JsonConvert.SerializeObject(obj, OmvSerializer.Settings);
+        }
 
         public RestRequest ToGetRrd(string filename)
         {
@@ -97,14 +99,15 @@ namespace Doods.Openmediavault.Rpc.Std
         public ISshRequest ToSsh(IRpcRequest request)
         {
             if (request.Params != null)
-                return new DefaultSshRequest($"{Ssh} {request.Service} {request.Method} \"{ToJson(request.Params).Replace("\"","\\\"")}\"");
+                return new DefaultSshRequest(
+                    $"{Ssh} {request.Service} {request.Method} \"{ToJson(request.Params).Replace("\"", "\\\"")}\"");
 
             return new DefaultSshRequest($"{Ssh} {request.Service} {request.Method}");
         }
     }
 
     /// <summary>
-    /// todo HttpRequest  Doods.Framework.Http.Std
+    ///     todo HttpRequest  Doods.Framework.Http.Std
     /// </summary>
     internal class LocalRestRequest : RestRequest
     {

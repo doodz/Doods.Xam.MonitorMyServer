@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Logiske volumer</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>Fant ikke LVM kommandoen $1 på systemet ditt. Webmin krever LVM administrasjonskommandoer for å kunne sette opp og administrere logiske volumer.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>LVMs statuskatalog $1 finnes ikke. Dette indikerer at kjernen din ikke støtter LVM eller at kjernemodulen $2 ikke er lastet.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Volumgrupper</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Fysiske volumer</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Logiske volumer</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Fant ingen volumgrupper på systemet ditt.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Legg til en ny volumgruppe.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Dnene volumgruppen har&lt;br&gt;ingen logiske volumer enda.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Denne volumgruppen&lt;br&gt;har ingen fysiske volumer enda.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Legg til et fysisk volum i gruppen.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Legg et fysisk volum til &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Opprett et logisk volum i &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Opprett et øyeblikksbilde i &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Opprett tynn pool i &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Opprett nytt logisk volum.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Opprett nytt øyeblikksbilde.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>volumgrupper</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>fysiske volum</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>logiske volum</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin støtter bare LVM versjon 1.0 eller nyere. Output fra $1 på ditt system var : $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM versjon $1</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Volumgruppe navn</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Total størrelse</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Blokker brukt</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Størrelse brukt</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Ingen fysiske volumer har blitt lagt til noen volumgrupper enda.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Det er ikke opprettet noen logiske volumer fra noen volumgrupper enda.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Fysisk volum enhet</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>I volumgruppe</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Enhet størrelse</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Blokker brukt</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Størrelse brukt</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>En volumgruppe er et sett med disker som kan tildeles til ett eller flere logiske volumer. De fleste systemene har bare en, og det må opprettes minst en volumgruppe før du kan opprette fysiske eller logiske volumer.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Et fysisk volum er en disk partisjon eller en RAID enhet som er del av en volumgruppe. Volumets diskplass kan benyttes av en eller flere logiske volumer.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Et logisk volum er en virtuell partisjon opprettet fra den samlede diskplassen til en volumgruppe. Hver kan ha et filsystem som så monteres for å lagre filer.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Logisk volum</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Volumgruppe</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Størrelse</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Plass brukt</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Brukt til</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Øyeblikksbilde av $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>LVM tynn pool for $1 LVer</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Rediger logisk volum</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Rediger øyeblikksbilde</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Opprett logisk volum</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Opprett øyeblikksbilde</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>I volumgruppe $1</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Detaljer for logisk volum</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Volum navn</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Opprett som tynt LV i pool</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Tynt provisjonert i pool</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Ingen (opprett som vanlig LV)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Volum størrelse</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Absolutt størrelse</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Prosent av VG størrelse</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Prosent av ledig plass på VG</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Prosent av ledig plass på PV</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 av $2</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Eksakt størrelse</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Størrelse med enheter</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Bruk all ledig VG plass</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Enhetsfil</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Gjeldende status</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Montert på $1 som $2</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>For montering på $1 som $2</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Montert som virtuelt minne</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>For montering som virtuelt minne</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Del av RAID enhet $1</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Brukt av Cloudmin system $1</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>For bruk av Cloudmin system $1</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>iSCSI delt enhet $1</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Ikke i bruk</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Dette logiske volumet kan ikke omdøpes eller endre størrelse siden det for øyeblikket er i bruk.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Volum tilgang</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Les/skriv</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Kun les</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Tildelingsmetode</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Sammehengende</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Ikke-sammenhengende</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Volum striping</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Deaktivert (tildel alltid fra start)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Strip over $1 fysiske volumer</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Fysiske volumer å stripe over</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Stripe størrelse</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Readahead sektorer</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Kunne ikke lagre logisk volum</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Manglende eller ugyldig volumnavn</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Et logisk volum med samme navn finnes allerede</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Manglende eller ugyldig volumstørrelse</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Manglende eller ugyldig størrelsesprosent for volumgruppe</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Manglende eller ugyldig størrelsesprosent for ledig volumgruppe</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Manglende eller ugyldig størrelsesprosent for ledig fysisk volum</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Manglende eller ugyldig antall striper</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Slett logisk volum</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Rull tilbake Snapshot</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Er du sikker på at du ønsker å slette det logiske volumet $1 ? Alle data i eventuelle filsystem på dette logiske volumet vil gå tapt!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Er du sikker på at du ønsker å slette øyeblikksbildet $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Er du sikker på at du ønsker å rulle tilbake snapshotet $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>ADVARSEL! Dette LV er en tynn pool for $1 andre tynt provisjonerte volum, som også vil gå tapt dersom dette slettes!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Slett nå</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Rull tilbake nå</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Kunne ikke slette logisk volum</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Kunne ikke rulle tilbake snapshot</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Størrelse på tildelingsblokk</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Blokker tildelt fra volumgruppe</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 av $2</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Opprett filsystem av type:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Opprett filsystem</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Velg en filsystemtype og klikk på denne knappen for å opprette et filsystem på dette logisk volumet. Dette vil slette alle eksisterende data på volumet.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Klikk på denne knappen for å opprette et nytt $1 filsystem på dette logisk volumet. Dette vil slette alle eksisterende data på volumet.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Den nye volumstørrelsen er $1 blokker (av $2 hver), men bare $3 er ledige i volumgruppen.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Øyeblikksbilde av logiske volumer</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Kunne ikke avgjøre!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Monter LV på:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Monter dette LV på ny katalog på systemet ditt, slik at det kan brukes til å lagre filer. Du må allerede ha opprettet et filsystem på volumet.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Ledig prosent</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Ledig plass</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Fysiske volumer tildelt</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LVer i denne tynne poolen</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Tynn pool prosentvis bruk</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Tynn pool plass brukt</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Snapshot bruksprosent</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Logisk volum finnes ikke lenger!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Flytt fra fysisk volum</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Flytt blokker fra fysisk volum</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Til fysisk volum</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Flytt blokker</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>logisk volum</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Opprett filsystem</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Dette skjemaet lar deg bygge et nytt $2 ($1) filsystem på logisk volum $3. Alle eksisterende data vil bli slettet.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Innstillinger for nytt filsystem</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Kunne ikke opprette filsystem</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Utfører kommando $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. kommando feilet!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. kommando fullført.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Endre størrelse på logisk volum</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Du kan ikke endre størrelsen på $1 filsystemet på dette logiske volumet. Dersom du endrer størrelsen på dette logiske volumet må du opprette filsystemet på nytt. Alle eksisterende data vil da gå tapt.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin vet ikke hvilken type filsystem som fines på dette logisk volumet. Dersom du endrer størrelsen på volumet må du opprette filsystemet på nytt. Dette vil slette alle eksisterende data på volumet.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Det oppstod en feil ved endring av størrelse på $1 filsystemet på dette logiske volume : $2 Dersom du bare endrer størrelse på det logiske volumet, må du opprette filsystemet på nytt. Alle eksisterende data vil gå tapt.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Endre størrelse på logisk volum</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Du kan ikke endre størrelse på filsystemet på dette logiske volumet mens det er montert</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Filsystemet på dette logiske volumet kan ikke krympes mens det er montert</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Aktiver LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Kjører kommando $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Rediger fyisk volum</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Legg til fysisk volum</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>I volumgruppe $1</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Detaljer for fysisk volum</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Disk enhet</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Annen enhet..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Aktivert for tildeling?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Tving gjennom tillegging av volum?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Disk størrelse</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Blokker tildelt</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Størrelse tildelt</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Størrelse på tildelingsblokk</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Advarsel! Alle data på den valgte enheten vil bli slettet.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Legg til volumgruppe</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Fjern fra volumgruppe</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Endre størrelse til å passe med enhet</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Kunne ikke lagre fysisk volum</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Kunne ikke fjerne fysisk volum</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Kunne ikke endre størrelse på fysisk volum</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Fjern fysisk volum</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Er du sikker på at du ønsker å fjerne den fysiske volumenheten $1 fra dens volumgruppe? Dette vil medføre at data blir flyttet til andre fysiske volumer i gruppen.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Fjern volum</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Manglende eller ugyldig disk enhet</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>RAID enhet $1</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Tildeling etter logiske volumer</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Fysisk volum finnes ikke lenger!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Rediger volumgruppe</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Opprett volumgruppe</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Volumgruppe navn</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Detlajer for volumgruppe</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Total størrelse</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Tildelte blokker</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Tildelt størrelse</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Størrelse på tildelingsblokk</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Innledende fysisk enhet</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Kunne ikke lagre volumgruppe</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Kunne ikke slette volumgruppe</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Slett volumgruppe</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Er du sikker på at du ønsker å slette volumgruppen $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Denne volumgruppen kan ikke slettes siden den fortsatt har $1 logiske volumer</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Slett nå</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Manglende eller ugyldig navn på volumgruppe</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Manglende eller ugyldig størrelse på tildelingsblokk</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Volumgruppen finnes ikke lenger!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Kunne ikke flytte logisk volum</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Flytt logisk volum</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Flytter logisk volum $1 fra $2 til $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. flytting feilet!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. flytting fullført</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Opprett tynn pool</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>En tynn pool er et par LVer som kan brukes til å lage ytterligere LVer som kan være større enn de tilgjengelige omfangene. Plass brukes bare når det er nødvendig, i stedet for når LV-ene i poolen opprettes. ADVARSEL - Alle data på de valgte LV-ene vil gå tapt!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Detaljer for ny tynn pool</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>Eksisterende LV for data</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>Eksisterende LV for metadata</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Konverter LVer til tynn pool</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>Ingen LVer som ikke allerede er i bruk, ble funnet i denne VG!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Kunne ikke opprette tynn pool</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Begge valgte LVer er den samme</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Valg data LV er allerede i bruk</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Valgt metadata er allerede i bruk</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Opprettet volumgruppe $1</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Endret volumgruppe $1</value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Slettet volumgruppe $1</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Opprettet logisk volum $1 i VG $2</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Endret logisk volum $1 i VG $2</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Slettet logisk volum $1 i VG $2</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Rullet tilbake snapshot $1</value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Opprettet $1 filsystem på $2</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>La til fysisk volum $1 i VG $2</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Endret fysisk volum $1 i VG $2</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Fjernet fysisk volum $1 fra VG $2</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Endret størrelse på fysisk volum $1 i VG $2</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blokker</value>
+  </data>
+</root>

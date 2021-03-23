@@ -15,7 +15,7 @@ namespace Doods.Xam.MonitorMyServer.Views.About
     {
         //https://play.google.com/store/ereview?origin=https://play.google.com&docId=com.doods.monitormyserver
         private const string Regexp = "<PackageReference Include=\"(.*)\" Version=\"(.*)\" />";
-        public ICommand ShowTestsPageCmd { get; }
+
         private readonly Regex rx = new Regex(Regexp,
             RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
@@ -49,6 +49,8 @@ namespace Doods.Xam.MonitorMyServer.Views.About
             }
         }
 
+        public ICommand ShowTestsPageCmd { get; }
+
         public ICommand DisplaySettingsPage { get; }
 
         public string AppName => AppInfo.Name;
@@ -64,6 +66,6 @@ namespace Doods.Xam.MonitorMyServer.Views.About
 
         public IList<string> List { get; }
 
-        public ICommand TapCommand => new Command<string>((url) => Launcher.OpenAsync(new Uri(url)));
+        public ICommand TapCommand => new Command<string>(url => Launcher.OpenAsync(new Uri(url)));
     }
 }

@@ -17,7 +17,7 @@ using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface IOmvService : INasService, IRpcService
+    public interface IOmvService : INasService, IPackageUpdates,IRpcService
     {
         Task<IEnumerable<PluginInfo>> GetPlugins();
 

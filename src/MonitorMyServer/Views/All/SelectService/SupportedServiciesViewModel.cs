@@ -18,8 +18,16 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
     [QueryProperty(nameof(TypeNameQuery), nameof(TypeNameQuery))]
     internal class SelectSupportedServicieViewModel : ViewModel, IQueryShellNavigationObject
     {
+        private readonly IConfiguration _config;
+        private string _query;
         public string CacheKey;
         public Type TypeName;
+
+        public SelectSupportedServicieViewModel(IConfiguration config)
+        {
+            _config = config;
+            GoToLoginCommand = new Command(GoToLogin);
+        }
 
         public string CacheKeyQuery
         {
@@ -36,16 +44,11 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
         public ObservableRangeCollection<ServiceDescription> Items { get; } =
             new ObservableRangeCollection<ServiceDescription>();
 
-        private readonly IConfiguration _config;
-
-        public SelectSupportedServicieViewModel(IConfiguration config)
+        public string ToQuery()
         {
-            _config = config;
-            GoToLoginCommand = new Command(GoToLogin);
+            return _query;
         }
 
-
-       
 
         private void GoToLogin(object obj)
         {
@@ -57,12 +60,12 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
 
                 if (myobject is ZeroconfHost zeroHost)
                 {
-                    _query += 
-                    $"&DisplayNameQuery={Uri.EscapeDataString(zeroHost.DisplayName)}&PortQuery={item.Port}";
+                    _query +=
+                        $"&DisplayNameQuery={Uri.EscapeDataString(zeroHost.DisplayName)}&PortQuery={item.Port}";
 
                     if (item.Type == SupportedServicies.Openmediavault_HTTP)
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"http://{zeroHost.IPAddress}")}";
-                    else if(item.Type == SupportedServicies.Openmediavault_HTTPS)
+                    else if (item.Type == SupportedServicies.Openmediavault_HTTPS)
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"https://{zeroHost.IPAddress}")}";
                     else if (zeroHost.Services.ContainsKey("_http._tcp.local."))
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"http://{zeroHost.IPAddress}")}";
@@ -70,7 +73,6 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"https://{zeroHost.IPAddress}")}";
                     else
                         _query += $"&IPAddressQuery={Uri.EscapeDataString($"{zeroHost.IPAddress}")}";
-
                 }
                 else if (myobject is IQueryShellNavigationObject query)
                 {
@@ -78,7 +80,7 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                     _query += query.ToQuery();
                 }
 
-                
+
                 if (item.Type == SupportedServicies.Synology) _query += $"&PortQuery={item.Port}";
 
 
@@ -95,12 +97,12 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
             if (myobject is ZeroconfHost query)
             {
                 var item = new ServiceDescription();
-           
 
-                if (query.Services.Any(s => s.Key.Contains("_ssh",StringComparison.InvariantCultureIgnoreCase)))
+
+                if (query.Services.Any(s => s.Key.Contains("_ssh", StringComparison.InvariantCultureIgnoreCase)))
                 {
-
-                    var service = query.Services.First(s => s.Key.Contains("_ssh", StringComparison.InvariantCultureIgnoreCase));
+                    var service = query.Services.First(s =>
+                        s.Key.Contains("_ssh", StringComparison.InvariantCultureIgnoreCase));
 
                     item.Type = SupportedServicies.Unix;
                     item.Title = "Linux like Debian, Raspbian or Ubuntu";
@@ -117,9 +119,10 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                 }
 
 
-                if (query.Services.Any(s => s.Key.Contains("_http.",StringComparison.InvariantCultureIgnoreCase)))
+                if (query.Services.Any(s => s.Key.Contains("_http.", StringComparison.InvariantCultureIgnoreCase)))
                 {
-                    var service = query.Services.First(s => s.Key.Contains("_http.", StringComparison.InvariantCultureIgnoreCase));
+                    var service = query.Services.First(s =>
+                        s.Key.Contains("_http.", StringComparison.InvariantCultureIgnoreCase));
                     item = new ServiceDescription();
                     item.Type = SupportedServicies.Openmediavault_HTTP;
                     item.Title = "Openmediavault";
@@ -134,26 +137,34 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                         item.Port = service.Value.Port;
                         item.Description = "Http only";
                         Items.Add(item);
+
+                        item = new ServiceDescription();
+                        item.Type = SupportedServicies.Webmin;
+                        item.Title = "Webmin";
+                        item.Port = service.Value.Port;
+                        item.Description = "Http only";
+                        Items.Add(item);
                     }
                 }
 
 
                 if (query.Services.Any(s => s.Key.Contains("_https", StringComparison.InvariantCultureIgnoreCase)))
                 {
-                    var service = query.Services.First(s => s.Key.Contains("_https", StringComparison.InvariantCultureIgnoreCase));
+                    var service = query.Services.First(s =>
+                        s.Key.Contains("_https", StringComparison.InvariantCultureIgnoreCase));
                     item = new ServiceDescription();
                     item.Type = SupportedServicies.Openmediavault_HTTPS;
                     item.Title = "Openmediavault";
                     item.Port = service.Value.Port;
                     item.Description = "Https";
                     Items.Add(item);
-
-                    
                 }
-                
             }
             else
+            {
                 SetDefaultItems();
+            }
+
             await base.OnInternalAppearingAsync();
         }
 
@@ -183,13 +194,14 @@ namespace Doods.Xam.MonitorMyServer.Views.SelectService
                 item.Port = 5001;
                 item.Description = "Http only";
                 Items.Add(item);
-            }
-        }
-        private string _query;
 
-        public string ToQuery()
-        {
-            return _query;
+                item = new ServiceDescription();
+                item.Type = SupportedServicies.Webmin;
+                item.Title = "Webmin";
+                item.Port = 10000;
+                item.Description = "Http only";
+                Items.Add(item);
+            }
         }
     }
 }

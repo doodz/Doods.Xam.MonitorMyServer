@@ -10,7 +10,6 @@
 //   2020/11/27 at 09:37: Thibault HERVIOU aka ThibaultHERVIOU.
 // ---------------------------------------------------------------------------
 
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4;
 using Doods.Openmediavault.Rpc.Std.Data.V4.SharedFolders;
@@ -27,9 +26,8 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
         public Task<ResponseArray<SharedFolder>> GetSharedFolders()
         {
-
             var request = NewRequest("getList");
-            request.Params = new {  sortfield = "name", start = 0, limit = 50,sortdir = "DESC" };
+            request.Params = new {sortfield = "name", start = 0, limit = 50, sortdir = "DESC"};
             var result = RunCmd<ResponseArray<SharedFolder>>(request);
             return result;
         }

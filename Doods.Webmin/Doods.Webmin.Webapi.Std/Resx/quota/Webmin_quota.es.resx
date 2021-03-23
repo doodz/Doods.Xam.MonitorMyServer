@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="quota_unlimited" xml:space="preserve">
+    <value>Ilimitada</value>
+  </data>
+  <data name="acl_fss" xml:space="preserve">
+    <value>Sistemas de archivo que este usuario puede editar</value>
+  </data>
+  <data name="acl_fall" xml:space="preserve">
+    <value>Todos los sistemas de archivo</value>
+  </data>
+  <data name="acl_fsel" xml:space="preserve">
+    <value>Los seleccionados...</value>
+  </data>
+  <data name="acl_ro" xml:space="preserve">
+    <value>¿Sólo puede ver la cuota y no editarla?</value>
+  </data>
+  <data name="acl_quotaon" xml:space="preserve">
+    <value>¿Puede activar y desactivar las cuotas?</value>
+  </data>
+  <data name="acl_quotanew" xml:space="preserve">
+    <value>¿Puede configurar cuotas para nuevos usuarios?</value>
+  </data>
+  <data name="acl_ugrace" xml:space="preserve">
+    <value>¿Puede editar tiempos de gracia de usuarios?</value>
+  </data>
+  <data name="acl_vtotal" xml:space="preserve">
+    <value>¿Puede ver espacio total en disco?</value>
+  </data>
+  <data name="acl_ggrace" xml:space="preserve">
+    <value>¿Puede editar tiempos de gracia de grupos?</value>
+  </data>
+  <data name="acl_uquota" xml:space="preserve">
+    <value>Usuarios a los que este usuario puede editar cuotas</value>
+  </data>
+  <data name="acl_gquota" xml:space="preserve">
+    <value>Grupos a los que este usuario puede editar cuotas</value>
+  </data>
+  <data name="acl_uall" xml:space="preserve">
+    <value>Todos los usuarios</value>
+  </data>
+  <data name="acl_uonly" xml:space="preserve">
+    <value>Sólo los usuarios</value>
+  </data>
+  <data name="acl_uexcept" xml:space="preserve">
+    <value>Todos excepto los usuarios</value>
+  </data>
+  <data name="acl_ugroup" xml:space="preserve">
+    <value>Usuarios con grupo primario</value>
+  </data>
+  <data name="acl_gall" xml:space="preserve">
+    <value>Todos los grupos</value>
+  </data>
+  <data name="acl_gnone" xml:space="preserve">
+    <value>Ningún grupo</value>
+  </data>
+  <data name="acl_gonly" xml:space="preserve">
+    <value>Sólo los grupos</value>
+  </data>
+  <data name="acl_gexcept" xml:space="preserve">
+    <value>Todos excepto los grupos</value>
+  </data>
+  <data name="acl_uuid" xml:space="preserve">
+    <value>Usuarios con UID en el rango</value>
+  </data>
+  <data name="acl_maxblocks" xml:space="preserve">
+    <value>Máxima cuota de bloques que conceder</value>
+  </data>
+  <data name="acl_maxfiles" xml:space="preserve">
+    <value>Máxima cuota de ficheros que conceder</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>Ilimitado</value>
+  </data>
+  <data name="acl_email" xml:space="preserve">
+    <value>¿Puede configurar notificaciones por email?</value>
+  </data>
+  <data name="activate_eallow" xml:space="preserve">
+    <value>No estás autorizado a activar o desactivar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="activate_eon" xml:space="preserve">
+    <value>No pude encender las cuotas</value>
+  </data>
+  <data name="activate_eoff" xml:space="preserve">
+    <value>No pude apagar las cuotas</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Revisar Cuotas</value>
+  </data>
+  <data name="check_return" xml:space="preserve">
+    <value>lista $1</value>
+  </data>
+  <data name="check_ecannot" xml:space="preserve">
+    <value>No puedes revisar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="check_running" xml:space="preserve">
+    <value>El comando &lt;tt&gt;quotacheck&lt;/tt&gt; se está ejecutando ahora para revisar el bloque y uso de archivo en &lt;tt&gt;$1&lt;/tt&gt;. Esto puede llevar un largo tiempo si el sistema de archivos es muy grande...</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>... Hecho.</value>
+  </data>
+  <data name="check_rgroup" xml:space="preserve">
+    <value>grupo</value>
+  </data>
+  <data name="check_ruser" xml:space="preserve">
+    <value>usuario</value>
+  </data>
+  <data name="cgroup_efail" xml:space="preserve">
+    <value>No pude copiar las cuotas</value>
+  </data>
+  <data name="cgroup_ecannot" xml:space="preserve">
+    <value>No puedes copiar las cuotas</value>
+  </data>
+  <data name="cgroup_egallow" xml:space="preserve">
+    <value>No estás autorizado a copiar las cuotas de este grupo</value>
+  </data>
+  <data name="cgroup_enogroup" xml:space="preserve">
+    <value>No hay grupos a donde copiar</value>
+  </data>
+  <data name="cgroup_eallowto" xml:space="preserve">
+    <value>No estás autorizado a copiar cuotas a '$1'</value>
+  </data>
+  <data name="cgform_title" xml:space="preserve">
+    <value>Copiar Cuotas</value>
+  </data>
+  <data name="cgform_return" xml:space="preserve">
+    <value>Cuota de grupo</value>
+  </data>
+  <data name="cgform_ecannot" xml:space="preserve">
+    <value>No puedes copiar cuotas</value>
+  </data>
+  <data name="cgform_egroup" xml:space="preserve">
+    <value>No estás autorizado a copiar las cuotas de este grupo</value>
+  </data>
+  <data name="cgform_copyto" xml:space="preserve">
+    <value>Copiar cuotas para &lt;tt&gt;$1&lt;/tt&gt; en TODOS los sistemas de archivo a..</value>
+  </data>
+  <data name="cgform_all" xml:space="preserve">
+    <value>Todos los grupos en tu sistema</value>
+  </data>
+  <data name="cgform_select" xml:space="preserve">
+    <value>Grupos seleccionados</value>
+  </data>
+  <data name="cgform_contain" xml:space="preserve">
+    <value>Grupos conteniendo usuarios</value>
+  </data>
+  <data name="cgform_doit" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="cuser_efail" xml:space="preserve">
+    <value>No pude copiar cuotas</value>
+  </data>
+  <data name="cuser_ecannot" xml:space="preserve">
+    <value>No puedes copiar cuotas</value>
+  </data>
+  <data name="cuser_euallow" xml:space="preserve">
+    <value>No estás autorizado a copiar las cuotas de este usuario</value>
+  </data>
+  <data name="cuser_enouser" xml:space="preserve">
+    <value>No hay usuarios a donde copiar</value>
+  </data>
+  <data name="cuser_eallowto" xml:space="preserve">
+    <value>No esta autorizado a copiar cuotas a '$1'</value>
+  </data>
+  <data name="cuform_title" xml:space="preserve">
+    <value>Copiar Cuotas</value>
+  </data>
+  <data name="cuform_return" xml:space="preserve">
+    <value>cuota de usuario</value>
+  </data>
+  <data name="cuform_ecannot" xml:space="preserve">
+    <value>No puedes copiar cuotas</value>
+  </data>
+  <data name="cuform_euallow" xml:space="preserve">
+    <value>No estás autorizado a copiar las cuotas de este usuario</value>
+  </data>
+  <data name="cuform_copyto" xml:space="preserve">
+    <value>Copiar cuotas para &lt;tt&gt;$1&lt;/tt&gt; en TODOS los sistemas de archivo a...</value>
+  </data>
+  <data name="cuform_all" xml:space="preserve">
+    <value>Todos los usuarios en tu sistema</value>
+  </data>
+  <data name="cuform_select" xml:space="preserve">
+    <value>Usuarios seleccionados</value>
+  </data>
+  <data name="cuform_members" xml:space="preserve">
+    <value>Miembros del grupos selectos</value>
+  </data>
+  <data name="cuform_doit" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="egroup_title" xml:space="preserve">
+    <value>Editar Cuota</value>
+  </data>
+  <data name="egroup_freturn" xml:space="preserve">
+    <value>lista de sistemas de archivo</value>
+  </data>
+  <data name="egroup_greturn" xml:space="preserve">
+    <value>lista de grupos</value>
+  </data>
+  <data name="egroup_eallowgr" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas para '$1'</value>
+  </data>
+  <data name="egroup_eallowfs" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="egroup_quotas" xml:space="preserve">
+    <value>Cuota para &lt;tt&gt;$1&lt;/tt&gt; en &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="egroup_bused" xml:space="preserve">
+    <value>Bloques Usados</value>
+  </data>
+  <data name="egroup_kused" xml:space="preserve">
+    <value>Kilobytes usados</value>
+  </data>
+  <data name="egroup_sblimit" xml:space="preserve">
+    <value>Límite de Bloques por Soft</value>
+  </data>
+  <data name="egroup_hblimit" xml:space="preserve">
+    <value>Límite de Bloques por Hard</value>
+  </data>
+  <data name="egroup_sklimit" xml:space="preserve">
+    <value>Límite blando kilobyte</value>
+  </data>
+  <data name="egroup_hklimit" xml:space="preserve">
+    <value>Límite duro kilobyte</value>
+  </data>
+  <data name="egroup_fused" xml:space="preserve">
+    <value>Archivos Usados</value>
+  </data>
+  <data name="egroup_sflimit" xml:space="preserve">
+    <value>Límite de Archivos por Soft</value>
+  </data>
+  <data name="egroup_hflimit" xml:space="preserve">
+    <value>Límite de Archivos por Hard</value>
+  </data>
+  <data name="egroup_update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="egroup_listall" xml:space="preserve">
+    <value>Listar Todas las Cuotas</value>
+  </data>
+  <data name="euser_title" xml:space="preserve">
+    <value>Editar Cuota</value>
+  </data>
+  <data name="euser_freturn" xml:space="preserve">
+    <value>lista de sistemas de archivo</value>
+  </data>
+  <data name="euser_ureturn" xml:space="preserve">
+    <value>lista de usuarios</value>
+  </data>
+  <data name="euser_eallowus" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas para '$1'</value>
+  </data>
+  <data name="euser_eallowfs" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="euser_quotas" xml:space="preserve">
+    <value>Cuota para &lt;tt&gt;$1&lt;/tt&gt; en &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="euser_bused" xml:space="preserve">
+    <value>Bloques Usados</value>
+  </data>
+  <data name="euser_kused" xml:space="preserve">
+    <value>Kilobytes usados</value>
+  </data>
+  <data name="euser_bdisk" xml:space="preserve">
+    <value>Bloques Disponibles en Disco</value>
+  </data>
+  <data name="euser_kdisk" xml:space="preserve">
+    <value>Kilobytes disponibles en disco</value>
+  </data>
+  <data name="euser_sdisk" xml:space="preserve">
+    <value>Espacio disponible en disco</value>
+  </data>
+  <data name="euser_sblimit" xml:space="preserve">
+    <value>Límite de Bloques por Soft</value>
+  </data>
+  <data name="euser_hblimit" xml:space="preserve">
+    <value>Límite de Bloques por Hard</value>
+  </data>
+  <data name="euser_sklimit" xml:space="preserve">
+    <value>Límite blando kilobyte</value>
+  </data>
+  <data name="euser_hklimit" xml:space="preserve">
+    <value>Límite duro kilobyte</value>
+  </data>
+  <data name="euser_fused" xml:space="preserve">
+    <value>Archivos Usados</value>
+  </data>
+  <data name="euser_fdisk" xml:space="preserve">
+    <value>Archivos Disponibles en Disco</value>
+  </data>
+  <data name="euser_sflimit" xml:space="preserve">
+    <value>Límite de Archivos por Soft</value>
+  </data>
+  <data name="euser_hflimit" xml:space="preserve">
+    <value>Límite de Archivos por Hard</value>
+  </data>
+  <data name="euser_update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="euser_listall" xml:space="preserve">
+    <value>Listar Todas las Cuotas</value>
+  </data>
+  <data name="gfilesys_title" xml:space="preserve">
+    <value>Cuotas de Grupo</value>
+  </data>
+  <data name="gfilesys_return" xml:space="preserve">
+    <value>lista de sistemas de archivo</value>
+  </data>
+  <data name="gfilesys_ecannot" xml:space="preserve">
+    <value>No puedes editar cuotas para '$1'</value>
+  </data>
+  <data name="gfilesys_all" xml:space="preserve">
+    <value>Todas las Cuotas para</value>
+  </data>
+  <data name="gfilesys_blocks" xml:space="preserve">
+    <value>Bloques</value>
+  </data>
+  <data name="gfilesys_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="gfilesys_space" xml:space="preserve">
+    <value>Espacio en disco</value>
+  </data>
+  <data name="gfilesys_files" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="gfilesys_fs" xml:space="preserve">
+    <value>Sistema de Archivos</value>
+  </data>
+  <data name="gfilesys_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="gfilesys_soft" xml:space="preserve">
+    <value>Límite por Soft</value>
+  </data>
+  <data name="gfilesys_hard" xml:space="preserve">
+    <value>Límite por Hard</value>
+  </data>
+  <data name="gfilesys_nogquota" xml:space="preserve">
+    <value>El grupo &lt;tt&gt;$1&lt;/tt&gt; no tiene cuotas en ningún sistema de archivos</value>
+  </data>
+  <data name="gfilesys_edit" xml:space="preserve">
+    <value>Editar Cuota En:</value>
+  </data>
+  <data name="gfilesys_copy" xml:space="preserve">
+    <value>Copiar Cuotas</value>
+  </data>
+  <data name="ggracef_title" xml:space="preserve">
+    <value>Tiempos de Gracia</value>
+  </data>
+  <data name="ggracef_return" xml:space="preserve">
+    <value>lista de grupos</value>
+  </data>
+  <data name="ggracef_ecannot" xml:space="preserve">
+    <value>No puedes editar tiempos de gracia en este sistema de archivos</value>
+  </data>
+  <data name="ggracef_info" xml:space="preserve">
+    <value>Cada sistema de archivos tiene un tiempo de gracia para las cuotas de bloques y archivos. El tiempo de gracia determina cuánto puede un grupo permanecer sobre el límite de soft antes de que no se le permita crear más archivos.</value>
+  </data>
+  <data name="ggracef_graces" xml:space="preserve">
+    <value>Tiempos de Gracia de Grupo para &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ggracef_block" xml:space="preserve">
+    <value>Para cuota de bloque</value>
+  </data>
+  <data name="ggracef_file" xml:space="preserve">
+    <value>Para cuota de archivo</value>
+  </data>
+  <data name="ggracef_update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="ggraces_esave" xml:space="preserve">
+    <value>No pude salvar tiempos de gracia</value>
+  </data>
+  <data name="ggraces_eedit" xml:space="preserve">
+    <value>No puedes editar tiempos de gracia en este sistema de archivos</value>
+  </data>
+  <data name="ggraces_enumber" xml:space="preserve">
+    <value>'$1' no es un número</value>
+  </data>
+  <data name="index_quser" xml:space="preserve">
+    <value>Cuotas de Usuario</value>
+  </data>
+  <data name="index_qgroup" xml:space="preserve">
+    <value>Cuotas de Grupo</value>
+  </data>
+  <data name="index_qboth" xml:space="preserve">
+    <value>Cuotas de Usuario y Grupo</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Activa</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Desactivar Cuotas</value>
+  </data>
+  <data name="index_inactive" xml:space="preserve">
+    <value>Inactiva</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Activar Cuotas</value>
+  </data>
+  <data name="index_mountonly" xml:space="preserve">
+    <value>Sólo se puede activar durante el montaje</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>Cuotas de Disco</value>
+  </data>
+  <data name="index_fs" xml:space="preserve">
+    <value>Sistema de Archivos</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="index_mount" xml:space="preserve">
+    <value>Montado Desde</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>índice</value>
+  </data>
+  <data name="index_euser" xml:space="preserve">
+    <value>Editar Cuotas de Usuario:</value>
+  </data>
+  <data name="index_egroup" xml:space="preserve">
+    <value>Editar Cuotas de Grupo:</value>
+  </data>
+  <data name="index_nosupport" xml:space="preserve">
+    <value>No hay sistemas de archivo locales que puedan soportar cuotas</value>
+  </data>
+  <data name="lgroups_failed" xml:space="preserve">
+    <value>No pude listar grupos</value>
+  </data>
+  <data name="lgroups_eallow" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="lgroups_title" xml:space="preserve">
+    <value>Cuotas de Sistema de Archivos</value>
+  </data>
+  <data name="lgroups_return" xml:space="preserve">
+    <value>listar sistema de archivos</value>
+  </data>
+  <data name="lgroups_toomany" xml:space="preserve">
+    <value>Demasiados grupos tienen cuotas en &lt;tt&gt;$1&lt;/tt&gt; para mostrarlas en una página</value>
+  </data>
+  <data name="lgroups_quotas" xml:space="preserve">
+    <value>Todas las Cuotas de Grupo en &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_blocks" xml:space="preserve">
+    <value>Bloques</value>
+  </data>
+  <data name="lgroups_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="lgroups_space" xml:space="preserve">
+    <value>Espacio en disco</value>
+  </data>
+  <data name="lgroups_files" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="lgroups_group" xml:space="preserve">
+    <value>Grupos</value>
+  </data>
+  <data name="lgroups_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="lgroups_soft" xml:space="preserve">
+    <value>Límite por Soft</value>
+  </data>
+  <data name="lgroups_hard" xml:space="preserve">
+    <value>Límite por Hard</value>
+  </data>
+  <data name="lgroups_noquota" xml:space="preserve">
+    <value>No hay grupos que tengan cuotas en &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lgroups_equota" xml:space="preserve">
+    <value>Editar Cuota Para:</value>
+  </data>
+  <data name="lgroups_grace" xml:space="preserve">
+    <value>Editar Tiempos de Gracia</value>
+  </data>
+  <data name="lgroups_check" xml:space="preserve">
+    <value>Revisar Cuotas</value>
+  </data>
+  <data name="lgroups_info" xml:space="preserve">
+    <value>Webmin puede configurarse para que configure automáticamente las cuotas en este sistema de archivos, cuando se crea un nuevo grupo Unix. Esto sólo funcionará cuando se use para añadir los grupos el módulo Webmin $1.</value>
+  </data>
+  <data name="lgroups_newgroup" xml:space="preserve">
+    <value>Cuotas de Nuevo Grupo</value>
+  </data>
+  <data name="sgroup_egroup" xml:space="preserve">
+    <value>No estás autorizado a editar las cuotas para este grupo</value>
+  </data>
+  <data name="sgroup_efs" xml:space="preserve">
+    <value>No estás autorizado a editar las cuotas en este sistema de archivos</value>
+  </data>
+  <data name="ssync_ecannot" xml:space="preserve">
+    <value>No puedes poner la cuota por defecto para este sistema de archivos</value>
+  </data>
+  <data name="suser_euser" xml:space="preserve">
+    <value>No estás autorizado a editar las cuotas de este usuario</value>
+  </data>
+  <data name="suser_efs" xml:space="preserve">
+    <value>No estás autorizado a editar las cuotas en este sistema de archivos</value>
+  </data>
+  <data name="suser_emaxblocks" xml:space="preserve">
+    <value>No tiene permiso para conceder límites de bloques superiores a $1</value>
+  </data>
+  <data name="suser_emaxfiles" xml:space="preserve">
+    <value>No tiene permiso para conceder límites de ficheros superiores a $1</value>
+  </data>
+  <data name="ufilesys_title" xml:space="preserve">
+    <value>Cuotas de Usuario</value>
+  </data>
+  <data name="ufilesys_return" xml:space="preserve">
+    <value>lista de sistema de archivos</value>
+  </data>
+  <data name="ufilesys_ecannot" xml:space="preserve">
+    <value>No puedes editar cuotas para '$1'</value>
+  </data>
+  <data name="ufilesys_all" xml:space="preserve">
+    <value>Todas las Cuotas para &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ufilesys_blocks" xml:space="preserve">
+    <value>Bloques</value>
+  </data>
+  <data name="ufilesys_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="ufilesys_space" xml:space="preserve">
+    <value>Espacio en disco</value>
+  </data>
+  <data name="ufilesys_files" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="ufilesys_fs" xml:space="preserve">
+    <value>Sistema de Archivos</value>
+  </data>
+  <data name="ufilesys_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="ufilesys_soft" xml:space="preserve">
+    <value>Límite por Soft</value>
+  </data>
+  <data name="ufilesys_hard" xml:space="preserve">
+    <value>Límite por Hard</value>
+  </data>
+  <data name="ufilesys_nouquota" xml:space="preserve">
+    <value>El usuario &lt;tt&gt;$1&lt;/tt&gt; no tiene cuotas en este sistema de archivos</value>
+  </data>
+  <data name="ufilesys_edit" xml:space="preserve">
+    <value>Editar Cuota En:</value>
+  </data>
+  <data name="ufilesys_copy" xml:space="preserve">
+    <value>Copiar Cuotas</value>
+  </data>
+  <data name="ufilesys_grace" xml:space="preserve">
+    <value>Gracia</value>
+  </data>
+  <data name="ugracef_title" xml:space="preserve">
+    <value>Tiempos de Gracia</value>
+  </data>
+  <data name="ugracef_return" xml:space="preserve">
+    <value>lista de usuarios</value>
+  </data>
+  <data name="ugracef_ecannot" xml:space="preserve">
+    <value>No puedes editar tiempos de gracia en este sistema de archivos</value>
+  </data>
+  <data name="ugracef_info" xml:space="preserve">
+    <value>Cada sistema de archivos tiene un tiempo de gracia para las cuotas de bloque y de archivo. El tiempo de gracia determina cuánto puede permanecer un usuario sobre el límite de soft antes de que no se le permita crear más archivos.</value>
+  </data>
+  <data name="ugracef_graces" xml:space="preserve">
+    <value>Tiempos de Gracia de Usuario &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="ugracef_block" xml:space="preserve">
+    <value>Para cuota de bloque</value>
+  </data>
+  <data name="ugracef_file" xml:space="preserve">
+    <value>Para cuota de archivo</value>
+  </data>
+  <data name="ugracef_update" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="ugraces_esave" xml:space="preserve">
+    <value>No pude salvar tiempos de gracia</value>
+  </data>
+  <data name="ugraces_eedit" xml:space="preserve">
+    <value>No puedes editar tiempos de gracia en este sistema de archivos</value>
+  </data>
+  <data name="ugraces_enumber" xml:space="preserve">
+    <value>'$1' no es un número</value>
+  </data>
+  <data name="lusers_failed" xml:space="preserve">
+    <value>No pude listar usuarios</value>
+  </data>
+  <data name="lusers_eallow" xml:space="preserve">
+    <value>No estás autorizado a editar cuotas en este sistema de archivos</value>
+  </data>
+  <data name="lusers_title" xml:space="preserve">
+    <value>Cuotas de Sistema de Archivos</value>
+  </data>
+  <data name="lusers_return" xml:space="preserve">
+    <value>lista de sistemas de archivo</value>
+  </data>
+  <data name="lusers_toomany" xml:space="preserve">
+    <value>Demasiados usuarios tiene cuotas aquí &lt;tt&gt;$1&lt;/tt&gt; para ser mostradas en una página</value>
+  </data>
+  <data name="lusers_qoutas" xml:space="preserve">
+    <value>Todas las Cuotas de Usuario aquí &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="lusers_bsize" xml:space="preserve">
+    <value>Tamaño de bloque de cuota : $1 bytes</value>
+  </data>
+  <data name="lusers_blocks" xml:space="preserve">
+    <value>Bloques</value>
+  </data>
+  <data name="lusers_kbs" xml:space="preserve">
+    <value>Kilobytes</value>
+  </data>
+  <data name="lusers_space" xml:space="preserve">
+    <value>Espacio en disco</value>
+  </data>
+  <data name="lusers_files" xml:space="preserve">
+    <value>Archivos</value>
+  </data>
+  <data name="lusers_user" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="lusers_used" xml:space="preserve">
+    <value>Usado</value>
+  </data>
+  <data name="lusers_soft" xml:space="preserve">
+    <value>Límite por Soft</value>
+  </data>
+  <data name="lusers_hard" xml:space="preserve">
+    <value>Límite por Hard</value>
+  </data>
+  <data name="lusers_grace" xml:space="preserve">
+    <value>Gracia</value>
+  </data>
+  <data name="lusers_noquota" xml:space="preserve">
+    <value>No hay usuarios que tengan cuotas</value>
+  </data>
+  <data name="lusers_equota" xml:space="preserve">
+    <value>Editar Cuota Para:</value>
+  </data>
+  <data name="lusers_egrace" xml:space="preserve">
+    <value>Editar Tiempos de Gracia</value>
+  </data>
+  <data name="lusers_check" xml:space="preserve">
+    <value>Revisar Cuotas</value>
+  </data>
+  <data name="lusers_info" xml:space="preserve">
+    <value>Webmin puede ser configurado para poner automáticamente las cuotas en este sistema de archivos cada vez que un nuevo usuario de Unix sea creado. Esto sólo funcionará cuando los $1 el módulo de Webmin es utilizado para añadir usarios.</value>
+  </data>
+  <data name="lusers_useradmin" xml:space="preserve">
+    <value>Usuarios y Grupos</value>
+  </data>
+  <data name="lusers_newuser" xml:space="preserve">
+    <value>Nuevas Cuotas de Usuario</value>
+  </data>
+  <data name="lusers_sblimit" xml:space="preserve">
+    <value>Límite de Bloque por Soft</value>
+  </data>
+  <data name="lusers_hblimit" xml:space="preserve">
+    <value>Límite de Bloque por Hard</value>
+  </data>
+  <data name="lusers_sflimit" xml:space="preserve">
+    <value>Límite de Archivo por Soft</value>
+  </data>
+  <data name="lusers_hflimit" xml:space="preserve">
+    <value>Límite de Archivo por Hard</value>
+  </data>
+  <data name="lusers_pc_hblocks" xml:space="preserve">
+    <value>Duro %</value>
+  </data>
+  <data name="lusers_apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="lusers_emailheader" xml:space="preserve">
+    <value>Mandar email a los usuarios que se aproximen a su cuota</value>
+  </data>
+  <data name="lusers_email" xml:space="preserve">
+    <value>¿Mandar email a los usuarios?</value>
+  </data>
+  <data name="lusers_interval" xml:space="preserve">
+    <value>Intervalo entre mensajes</value>
+  </data>
+  <data name="lusers_hours" xml:space="preserve">
+    <value>horas</value>
+  </data>
+  <data name="lusers_ltype" xml:space="preserve">
+    <value>Tipo de límite</value>
+  </data>
+  <data name="lusers_percent" xml:space="preserve">
+    <value>Avisar cuando el uso alcanza</value>
+  </data>
+  <data name="lusers_domain" xml:space="preserve">
+    <value>Dominio para direcciones de usuario</value>
+  </data>
+  <data name="luser_virtualmin" xml:space="preserve">
+    <value>¿Tomar dominio de Virtualmin?</value>
+  </data>
+  <data name="lusers_from" xml:space="preserve">
+    <value>De: dirección para el email</value>
+  </data>
+  <data name="grace_seconds" xml:space="preserve">
+    <value>Segundos</value>
+  </data>
+  <data name="grace_minutes" xml:space="preserve">
+    <value>Minutos</value>
+  </data>
+  <data name="grace_hours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="grace_days" xml:space="preserve">
+    <value>Días</value>
+  </data>
+  <data name="grace_weeks" xml:space="preserve">
+    <value>Semanas</value>
+  </data>
+  <data name="grace_months" xml:space="preserve">
+    <value>Meses</value>
+  </data>
+  <data name="log_activate_u" xml:space="preserve">
+    <value>Cuotas de usuario activadas en $1</value>
+  </data>
+  <data name="log_activate_g" xml:space="preserve">
+    <value>Cuotas de grupo activadas en $1</value>
+  </data>
+  <data name="log_activate_ug" xml:space="preserve">
+    <value>Cuotas de usuario y grupo activadas en $1</value>
+  </data>
+  <data name="log_deactivate_u" xml:space="preserve">
+    <value>Cuotas de usuario desactivadas en $1</value>
+  </data>
+  <data name="log_deactivate_g" xml:space="preserve">
+    <value>Cuotas de grupo desactivadas en $1</value>
+  </data>
+  <data name="log_deactivate_ug" xml:space="preserve">
+    <value>Cuotas de usuario y grupo desactivadas en $1</value>
+  </data>
+  <data name="log_save" xml:space="preserve">
+    <value>Cuotas cambiadas para $1 en $2</value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>Cuotas de nuevo usuario cambiadas en $1</value>
+  </data>
+  <data name="log_gsync" xml:space="preserve">
+    <value>Cuotas de nuevos grupos cambiadas en $1</value>
+  </data>
+  <data name="log_grace_u" xml:space="preserve">
+    <value>Cambiados períodos de gracia de usuario en $1</value>
+  </data>
+  <data name="log_grace_g" xml:space="preserve">
+    <value>Cambiados períodos de gracia de grupo en $1</value>
+  </data>
+  <data name="log_check" xml:space="preserve">
+    <value>Revisadas cuotas en $1</value>
+  </data>
+  <data name="log_copy_u" xml:space="preserve">
+    <value>Copiadas cuotas de usuario $1's</value>
+  </data>
+  <data name="log_copy_g" xml:space="preserve">
+    <value>Copiadas cuotas de grupo $1's</value>
+  </data>
+  <data name="email_err" xml:space="preserve">
+    <value>Fallo al salvar opciones de email</value>
+  </data>
+  <data name="email_ecannot" xml:space="preserve">
+    <value>No está autorizado a modificar las opciones de email</value>
+  </data>
+  <data name="email_einterval" xml:space="preserve">
+    <value>Intervalo no válido o sin introducir</value>
+  </data>
+  <data name="email_epercent" xml:space="preserve">
+    <value>Porcentaje de uso no válido o sin introducir</value>
+  </data>
+  <data name="email_edomain" xml:space="preserve">
+    <value>Dominio de correo no válido o sin introducir</value>
+  </data>
+  <data name="email_efrom" xml:space="preserve">
+    <value>De: dirección no válido o sin introducir</value>
+  </data>
+  <data name="email_msg" xml:space="preserve">
+    <value>El uso de disco del usuario $1 en el sistema de archivos $2 ha alcanzado el $3% de la cuota \npermitida.\n\n$4 del espacio de disco se está usando, de un máximo de $5.</value>
+  </data>
+  <data name="email_subject" xml:space="preserve">
+    <value>Cuota de disco excedida</value>
+  </data>
+</root>

@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Usermin設定</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Usermin設定</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>停止Usermin</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>按下此按鈕來停止在您系統上正執行的Usermin伺服器，當停止後就沒有使用者可以登入usermin</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>啟動 Usermin</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>按下此按鈕來啟動在您系統的Usermin伺服器，在啟動前沒有使用者可以登入usermin</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Usermin 版本 $1</value>
+  </data>
+  <data name="index_boot" xml:space="preserve">
+    <value>開機後啟動</value>
+  </data>
+  <data name="index_bootmsg" xml:space="preserve">
+    <value>改變此選項來設定是否在開機時啟動 Usermin，如果目前沒有在開機時啟動而且選擇是"是"的話，將會產生一個新的 init script。</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>IP 存取控制</value>
+  </data>
+  <data name="access_desc" xml:space="preserve">
+    <value>Usermin 伺服器可以設定拒絕或允許使用此格式之特定 IP 位址的存取。主機名稱（例如 foo.bar.com）與 IP 網路（例如 10.254.3.0 或 10.254.1.0/255.255.255.128）都可以被輸入。您應該僅允許讓可信任的位址存取伺服器，特別是在可從 Internet 存取的情況下。否則，只要有人猜對了您的密碼，他就可以完全控制您的系統。</value>
+  </data>
+  <data name="bind_title" xml:space="preserve">
+    <value>連接埠與位址</value>
+  </data>
+  <data name="mods_title" xml:space="preserve">
+    <value>Usermin 模組</value>
+  </data>
+  <data name="mods_desc1" xml:space="preserve">
+    <value>Usermin 模組可以在安裝主程式後利用右邊的格式增加。模組通常使用 &lt;tt&gt;.wbm&lt;/tt&gt; 副檔名散佈，每個檔案都會包括至少一個或者多個模組。如果受到作業系統支援，您也可以從 RPM 檔案安裝模組。</value>
+  </data>
+  <data name="mods_install" xml:space="preserve">
+    <value>安裝模組</value>
+  </data>
+  <data name="mods_local" xml:space="preserve">
+    <value>從本機檔案</value>
+  </data>
+  <data name="mods_uploaded" xml:space="preserve">
+    <value>從上傳的檔案</value>
+  </data>
+  <data name="mods_ftp" xml:space="preserve">
+    <value>從 FTP 或 HTTP URL</value>
+  </data>
+  <data name="mods_nodeps" xml:space="preserve">
+    <value>安裝時忽略模組相依性</value>
+  </data>
+  <data name="mods_installok" xml:space="preserve">
+    <value>從檔案安裝模組</value>
+  </data>
+  <data name="mods_desc3" xml:space="preserve">
+    <value>現存的模組與複製的模組可以使用下面的格式刪除. 如果您刪除了被複製的模組，則複製出來的模組也會被刪除。模組被刪除後一定要重新安裝才能再使用。如果有其它模組依賴某個模組的話，該模組就不能被刪除的。</value>
+  </data>
+  <data name="mods_delete" xml:space="preserve">
+    <value>刪除模組</value>
+  </data>
+  <data name="mods_deleteok" xml:space="preserve">
+    <value>刪除選取的模組</value>
+  </data>
+  <data name="os_title" xml:space="preserve">
+    <value>作業系統</value>
+  </data>
+  <data name="os_desc2" xml:space="preserve">
+    <value>執行程式、以及將共用程式庫傳給任何程式時，您也可以變更 Webmin 使用的搜尋路徑。</value>
+  </data>
+  <data name="lang_title" xml:space="preserve">
+    <value>語言</value>
+  </data>
+  <data name="lang_title2" xml:space="preserve">
+    <value>Usermin 語言</value>
+  </data>
+  <data name="lang_intro" xml:space="preserve">
+    <value>這個網頁可以讓您選擇 Usermin 顯示標題、提示字元和訊息使用的語言。</value>
+  </data>
+  <data name="session_title" xml:space="preserve">
+    <value>認證</value>
+  </data>
+  <data name="session_desc1" xml:space="preserve">
+    <value>當啟用密碼逾時保護時，使您的 Usermin 伺服器免於同一使用者連續阻斷服務攻擊而使暴力破解密碼的攻擊者的入侵。</value>
+  </data>
+  <data name="session_desc2" xml:space="preserve">
+    <value>當 session 認證啟用時,Usermin可以根據使用者的session來判斷是否閒置而自動登出使用者，注意當啟用或停用 session 認證時，會迫使所有使用者要重新登入。</value>
+  </data>
+  <data name="session_remember" xml:space="preserve">
+    <value>顯示記得上次登入?</value>
+  </data>
+  <data name="session_hostname" xml:space="preserve">
+    <value>顯示主機名稱在登入畫面?</value>
+  </data>
+  <data name="themes_title" xml:space="preserve">
+    <value>Usermin佈景主題</value>
+  </data>
+  <data name="themes_desc" xml:space="preserve">
+    <value>佈景主題是用來控制Usermin使用者介面外觀, 包含圖示,顏色,背景和有些頁面的版面配置， 下方的選單可以用來選一個佈景主題在您的系統上。</value>
+  </data>
+  <data name="themes_sel" xml:space="preserve">
+    <value>目前佈景主題:</value>
+  </data>
+  <data name="themes_default" xml:space="preserve">
+    <value>預設Usermin佈景主題</value>
+  </data>
+  <data name="themes_change" xml:space="preserve">
+    <value>變更</value>
+  </data>
+  <data name="themes_installdesc" xml:space="preserve">
+    <value>使用下方的表單來安裝一個新的Usermin佈景主題在您的系統上，佈景主題套件型態可能是 &lt;tt&gt;.wbt&lt;/tt&gt;檔案，但如果您的作業系統支援的話，也可以安裝RPM檔案。</value>
+  </data>
+  <data name="themes_installok" xml:space="preserve">
+    <value>安裝佈景主題</value>
+  </data>
+  <data name="themes_err1" xml:space="preserve">
+    <value>從$1安裝佈景主題失敗</value>
+  </data>
+  <data name="themes_efile" xml:space="preserve">
+    <value>檔案不存在</value>
+  </data>
+  <data name="themes_err2" xml:space="preserve">
+    <value> 安裝上傳佈景主題失敗</value>
+  </data>
+  <data name="themes_ebrowser" xml:space="preserve">
+    <value>您的瀏覽器不支援檔案上傳</value>
+  </data>
+  <data name="themes_err3" xml:space="preserve">
+    <value>從$1安裝佈景主題失敗</value>
+  </data>
+  <data name="themes_eurl" xml:space="preserve">
+    <value>無效的 URL</value>
+  </data>
+  <data name="themes_etar" xml:space="preserve">
+    <value>不是一個有效的佈景主題檔案 : $1</value>
+  </data>
+  <data name="themes_einfo" xml:space="preserve">
+    <value>佈景主題$1缺少了theme.info檔案</value>
+  </data>
+  <data name="themes_enone" xml:space="preserve">
+    <value>檔案似乎沒有包含任何佈景主題</value>
+  </data>
+  <data name="themes_eextract" xml:space="preserve">
+    <value>解開失敗 : $1</value>
+  </data>
+  <data name="themes_done" xml:space="preserve">
+    <value>所選取的佈景主題成功的安裝在您的系統上 :</value>
+  </data>
+  <data name="themes_line" xml:space="preserve">
+    <value>$1 在 $2 ($3 kB)</value>
+  </data>
+  <data name="themes_ecomp" xml:space="preserve">
+    <value>檔案是壓縮檔，但是在您的系統上找不到指令 $1</value>
+  </data>
+  <data name="themes_ecomp2" xml:space="preserve">
+    <value>解壓縮檔案失敗 : $1</value>
+  </data>
+  <data name="themes_egzip" xml:space="preserve">
+    <value>檔案是gzip型態的，但是在您的系統上找不到指令 $1</value>
+  </data>
+  <data name="themes_egzip2" xml:space="preserve">
+    <value>gunzip檔案失敗 : $1</value>
+  </data>
+  <data name="themes_erpm" xml:space="preserve">
+    <value>不是一個Usermin佈景主題的RPM</value>
+  </data>
+  <data name="themes_eirpm" xml:space="preserve">
+    <value>安裝RPM失敗 : $1</value>
+  </data>
+  <data name="themes_ok" xml:space="preserve">
+    <value>佈景主題變更成功.. 重新導向Usermin首頁</value>
+  </data>
+  <data name="themes_delete" xml:space="preserve">
+    <value>此表單來可以用來刪除一個安裝在您的系統上的目前沒有使用佈景主題。</value>
+  </data>
+  <data name="themes_delok" xml:space="preserve">
+    <value>刪除佈景主題 :</value>
+  </data>
+  <data name="configs_title" xml:space="preserve">
+    <value>Usermin模組組態</value>
+  </data>
+  <data name="configs_uheader" xml:space="preserve">
+    <value>預設使用者$1組態</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>可用模組</value>
+  </data>
+  <data name="acl_desc" xml:space="preserve">
+    <value>使用此頁面來選擇那些已經安裝的 Usermin 模組是要讓使用者用的</value>
+  </data>
+  <data name="ssl_title" xml:space="preserve">
+    <value>SSL 加密</value>
+  </data>
+  <data name="ssl_desc1" xml:space="preserve">
+    <value>這個 Usermin 所使用的主機似乎有安裝 SSLeay Perl 模組。使用這個的話，Usermin 將支援在瀏覽器和伺服器間的 SSL 加密通訊。如果您透過 Internet 存取您的 Usermin 主機，應該要使用 SSL 以防止駭客擷取到您的 Usermin 密碼。</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>停止Usermin失敗</value>
+  </data>
+  <data name="stop_ekill" xml:space="preserve">
+    <value>殺掉程序失敗 : $1</value>
+  </data>
+  <data name="stop_efile" xml:space="preserve">
+    <value>已經停止</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>啟動 Usermin 失敗</value>
+  </data>
+  <data name="users_title" xml:space="preserve">
+    <value>允許的使用者和群組</value>
+  </data>
+  <data name="users_desc" xml:space="preserve">
+    <value>使用此表單，Usermin 可以設定限制unix上的使用者和群組那些是允許登入的. 要了解所有unix上的群組主要的成員,按此r &lt;tt&gt;@群組名稱&lt;/tt&gt; 到清單中</value>
+  </data>
+  <data name="users_header" xml:space="preserve">
+    <value>Usermin登入控制</value>
+  </data>
+  <data name="users_all" xml:space="preserve">
+    <value>允許所有使用者</value>
+  </data>
+  <data name="users_allow" xml:space="preserve">
+    <value>只允許清單中的使用者</value>
+  </data>
+  <data name="users_deny" xml:space="preserve">
+    <value>拒絕清單中的使用者</value>
+  </data>
+  <data name="users_err" xml:space="preserve">
+    <value>升級使用者清單失敗</value>
+  </data>
+  <data name="users_none" xml:space="preserve">
+    <value>沒有輸入使用者</value>
+  </data>
+  <data name="users_euser" xml:space="preserve">
+    <value>'$1' 不是個有效的使用者名稱</value>
+  </data>
+  <data name="users_egroup" xml:space="preserve">
+    <value>'$1' 不是個有效的群組名稱</value>
+  </data>
+  <data name="defacl_title" xml:space="preserve">
+    <value>進入控制選項</value>
+  </data>
+  <data name="defacl_desc" xml:space="preserve">
+    <value>此頁可讓你設定不同的進入控制來套用到Usermin 模組和使用者，此選項對使用者的權限小於在 Webmin 使用者模組中的Global ACL 。</value>
+  </data>
+  <data name="defacl_header" xml:space="preserve">
+    <value>Usermin使用者進入控制選項</value>
+  </data>
+  <data name="defacl_err" xml:space="preserve">
+    <value>儲存進入控制選項失敗</value>
+  </data>
+  <data name="install_err1" xml:space="preserve">
+    <value>無法從 $1 安裝模組</value>
+  </data>
+  <data name="install_efile" xml:space="preserve">
+    <value>檔案不存在</value>
+  </data>
+  <data name="install_err2" xml:space="preserve">
+    <value>無法安裝上傳的模組</value>
+  </data>
+  <data name="install_ebrowser" xml:space="preserve">
+    <value>您的瀏覽器不支援檔案上傳</value>
+  </data>
+  <data name="install_err3" xml:space="preserve">
+    <value>無法從 $1 安裝模組</value>
+  </data>
+  <data name="install_eurl" xml:space="preserve">
+    <value>無效的 URL</value>
+  </data>
+  <data name="install_etar" xml:space="preserve">
+    <value>不是有效的模組檔案: $1</value>
+  </data>
+  <data name="install_einfo" xml:space="preserve">
+    <value>模組 $1 缺少了 module.info 檔案</value>
+  </data>
+  <data name="install_enone" xml:space="preserve">
+    <value>檔案似乎沒有包含任何模組</value>
+  </data>
+  <data name="install_eos" xml:space="preserve">
+    <value>模組 $1 不支援這個作業系統 ($2 $3)</value>
+  </data>
+  <data name="install_eusermin" xml:space="preserve">
+    <value>模組$1 是給Webmin用的，不是Usermin</value>
+  </data>
+  <data name="install_ever" xml:space="preserve">
+    <value>模組 $1 需要 Usermin 版本 $2 或以上</value>
+  </data>
+  <data name="install_edep" xml:space="preserve">
+    <value>模組 $1 需要安裝模組 $2</value>
+  </data>
+  <data name="install_eextract" xml:space="preserve">
+    <value>解壓縮失敗: $1</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>安裝模組</value>
+  </data>
+  <data name="install_desc" xml:space="preserve">
+    <value>下列的模組已經成功的安裝並增加到您的存取控制清單中:</value>
+  </data>
+  <data name="install_line2" xml:space="preserve">
+    <value>$1 在 $2 ($3 kB)在分類$4</value>
+  </data>
+  <data name="install_ecomp" xml:space="preserve">
+    <value>檔案是壓縮檔，但是在您的系統上找不到指令 $1</value>
+  </data>
+  <data name="install_ecomp2" xml:space="preserve">
+    <value>解壓縮檔案失敗 : $1</value>
+  </data>
+  <data name="install_egzip" xml:space="preserve">
+    <value>檔案是gzip型態的，但是在您的系統上找不到指令 $1</value>
+  </data>
+  <data name="install_egzip2" xml:space="preserve">
+    <value>gunzip檔案失敗 : $1</value>
+  </data>
+  <data name="install_eirpm" xml:space="preserve">
+    <value>RPM安裝失敗 : $1</value>
+  </data>
+  <data name="install_cat" xml:space="preserve">
+    <value>Under 分類$1.</value>
+  </data>
+  <data name="install_eneither" xml:space="preserve">
+    <value>RPM裡面不包含webmin模組或佈景主題</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>無法刪除模組</value>
+  </data>
+  <data name="delete_edep" xml:space="preserve">
+    <value>模組 $1 無法被刪除，因為模組 $2 依賴它</value>
+  </data>
+  <data name="delete_desc1" xml:space="preserve">
+    <value>$1 (複製自 $2)</value>
+  </data>
+  <data name="delete_desc2" xml:space="preserve">
+    <value>$1 在 $2 ($3 kB)</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>刪除模組</value>
+  </data>
+  <data name="delete_msg" xml:space="preserve">
+    <value>下列的模組已經成功的從您的 Usermin 安裝程式刪除了:</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>您確定要刪除模組 $2 ? $1 kB 的檔案將會刪除</value>
+  </data>
+  <data name="delete_rusure2" xml:space="preserve">
+    <value>您確定要刪除佈景主題$2 ? $1 kB 的檔案將會刪除</value>
+  </data>
+  <data name="ui_title" xml:space="preserve">
+    <value>使用者介面</value>
+  </data>
+  <data name="ui_desc" xml:space="preserve">
+    <value>這個格式可以任您編輯所有模組使用的使用者介面選項。輸入顏色時，您必須使用標準 RGB 系統指定每個顏色，也就是範圍在 00 到 ff 的十六進位數字。</value>
+  </data>
+  <data name="ui_header" xml:space="preserve">
+    <value>使用者介面選項</value>
+  </data>
+  <data name="ui_default" xml:space="preserve">
+    <value>預設值</value>
+  </data>
+  <data name="cs_page" xml:space="preserve">
+    <value>網頁背景</value>
+  </data>
+  <data name="cs_text" xml:space="preserve">
+    <value>一般文字</value>
+  </data>
+  <data name="cs_table" xml:space="preserve">
+    <value>表格背景</value>
+  </data>
+  <data name="cs_header" xml:space="preserve">
+    <value>表格標題</value>
+  </data>
+  <data name="cs_link" xml:space="preserve">
+    <value>連結文字</value>
+  </data>
+  <data name="ui_texttitles" xml:space="preserve">
+    <value>是否將標題顯示成文字?</value>
+  </data>
+  <data name="ui_sysinfo" xml:space="preserve">
+    <value>顯示登入和主機名稱</value>
+  </data>
+  <data name="ui_sysinfo0" xml:space="preserve">
+    <value>在瀏覽器下方</value>
+  </data>
+  <data name="ui_sysinfo1" xml:space="preserve">
+    <value>在瀏覽器標題</value>
+  </data>
+  <data name="ui_sysinfo2" xml:space="preserve">
+    <value>在頁面標題上方</value>
+  </data>
+  <data name="ui_sysinfo3" xml:space="preserve">
+    <value>沒有地方</value>
+  </data>
+  <data name="ui_err" xml:space="preserve">
+    <value>無法儲存顏色</value>
+  </data>
+  <data name="ui_ered" xml:space="preserve">
+    <value>'$1' 的紅色值錯誤</value>
+  </data>
+  <data name="ui_egreen" xml:space="preserve">
+    <value>'$1' 的綠色值錯誤</value>
+  </data>
+  <data name="ui_eblue" xml:space="preserve">
+    <value>'$1' 的藍色值錯誤</value>
+  </data>
+  <data name="ui_feedback" xml:space="preserve">
+    <value>傳送回饋到</value>
+  </data>
+  <data name="upgrade_title" xml:space="preserve">
+    <value>升級 Usermin</value>
+  </data>
+  <data name="upgrade_local" xml:space="preserve">
+    <value>從本機檔案</value>
+  </data>
+  <data name="upgrade_uploaded" xml:space="preserve">
+    <value>從上傳的檔案</value>
+  </data>
+  <data name="upgrade_ftp" xml:space="preserve">
+    <value>從 www.usermin.com 的最新版本</value>
+  </data>
+  <data name="upgrade_delete" xml:space="preserve">
+    <value>升級後刪除舊版本目錄?</value>
+  </data>
+  <data name="upgrade_ok" xml:space="preserve">
+    <value>升級 Usermin</value>
+  </data>
+  <data name="upgrade_err1" xml:space="preserve">
+    <value>無法從 $1 升級</value>
+  </data>
+  <data name="upgrade_err2" xml:space="preserve">
+    <value>無法從上傳的檔案升級</value>
+  </data>
+  <data name="upgrade_err3" xml:space="preserve">
+    <value>無法從 www.usermin.com 升級</value>
+  </data>
+  <data name="upgrade_efile" xml:space="preserve">
+    <value>檔案不存在</value>
+  </data>
+  <data name="upgrade_ebrowser" xml:space="preserve">
+    <value>您的瀏覽器不支援上傳檔案</value>
+  </data>
+  <data name="upgrade_eversion" xml:space="preserve">
+    <value>無法降級為版本 $1</value>
+  </data>
+  <data name="upgrade_elatest" xml:space="preserve">
+    <value>您已經是最新的Usermin版本了</value>
+  </data>
+  <data name="upgrade_erpm" xml:space="preserve">
+    <value>不是一個有效的Usermin RPM檔案</value>
+  </data>
+  <data name="upgrade_egunzip" xml:space="preserve">
+    <value>您的系統沒有 &lt;tt&gt;gunzip&lt;/tt&gt; 指令</value>
+  </data>
+  <data name="upgrade_egzip" xml:space="preserve">
+    <value>gunzip檔案失敗 : $1</value>
+  </data>
+  <data name="upgrade_etar" xml:space="preserve">
+    <value>不是有效的 Usermin tar 檔案</value>
+  </data>
+  <data name="upgrade_euntar" xml:space="preserve">
+    <value>解開tar檔失敗 : $1</value>
+  </data>
+  <data name="upgrade_ewebmin" xml:space="preserve">
+    <value>檔案是Webmin 版 $1,不是Usermin的升級</value>
+  </data>
+  <data name="upgrade_setup" xml:space="preserve">
+    <value>以指令 $1升級Usermin中..</value>
+  </data>
+  <data name="upgrade_done" xml:space="preserve">
+    <value>.. 升級成功</value>
+  </data>
+  <data name="upgrade_failed" xml:space="preserve">
+    <value>.. 升級失敗!</value>
+  </data>
+  <data name="assignment_title" xml:space="preserve">
+    <value>模組配置</value>
+  </data>
+  <data name="assignment_header" xml:space="preserve">
+    <value>配置模組分類</value>
+  </data>
+  <data name="assignment_ok" xml:space="preserve">
+    <value>變更分類</value>
+  </data>
+  <data name="assignment_desc" xml:space="preserve">
+    <value>這表單可以讓您配置哪個模組的分類應顯示在Usermin首頁上</value>
+  </data>
+  <data name="categories_title" xml:space="preserve">
+    <value>編輯分類</value>
+  </data>
+  <data name="categories_header" xml:space="preserve">
+    <value>分類ID和描述</value>
+  </data>
+  <data name="categories_desc" xml:space="preserve">
+    <value>這表單可以讓您更名應存在的 Usermin 分類和新增一個分配模組， 上方的表格可以改變內建分類的描述，而下方的表格可以新增一個分類ID和描述。</value>
+  </data>
+  <data name="categories_ok" xml:space="preserve">
+    <value>儲存分類</value>
+  </data>
+  <data name="categories_err" xml:space="preserve">
+    <value>儲存分類失敗</value>
+  </data>
+  <data name="categories_edesc" xml:space="preserve">
+    <value>沒有輸入的$1套件</value>
+  </data>
+  <data name="categories_ecat" xml:space="preserve">
+    <value>分類ID $1 已經使用</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>更改IP進入控制</value>
+  </data>
+  <data name="log_bind" xml:space="preserve">
+    <value>變更連接埠和位置</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>變更紀錄選項</value>
+  </data>
+  <data name="log_proxy" xml:space="preserve">
+    <value>變更proxy 伺服器</value>
+  </data>
+  <data name="log_ui" xml:space="preserve">
+    <value>變更使用者介面選項</value>
+  </data>
+  <data name="log_install" xml:space="preserve">
+    <value>安裝模組$1</value>
+  </data>
+  <data name="log_tinstall" xml:space="preserve">
+    <value>安裝佈景主題$1</value>
+  </data>
+  <data name="log_clone" xml:space="preserve">
+    <value>Cloned 模組$1 to $2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>刪除模組$1</value>
+  </data>
+  <data name="log_os" xml:space="preserve">
+    <value>變更作業系統</value>
+  </data>
+  <data name="log_lang" xml:space="preserve">
+    <value>變更全域語言</value>
+  </data>
+  <data name="log_startpage" xml:space="preserve">
+    <value>變更首頁選項</value>
+  </data>
+  <data name="log_upgrade" xml:space="preserve">
+    <value>升級 Usermin 版本 $1</value>
+  </data>
+  <data name="log_session" xml:space="preserve">
+    <value>變更認證選項</value>
+  </data>
+  <data name="log_ssl" xml:space="preserve">
+    <value>變更SSL編碼方式</value>
+  </data>
+  <data name="log_setupca" xml:space="preserve">
+    <value>設定憑證權限</value>
+  </data>
+  <data name="log_changeca" xml:space="preserve">
+    <value>變更憑證權限</value>
+  </data>
+  <data name="log_stopca" xml:space="preserve">
+    <value>關閉憑證權限</value>
+  </data>
+  <data name="log_assignment" xml:space="preserve">
+    <value>變更模組分類</value>
+  </data>
+  <data name="log_categories" xml:space="preserve">
+    <value>變更分類名稱</value>
+  </data>
+  <data name="log_theme" xml:space="preserve">
+    <value>變更$1佈景主題</value>
+  </data>
+  <data name="log_theme_def" xml:space="preserve">
+    <value>變更Usermin預設佈景主題</value>
+  </data>
+  <data name="log_referers" xml:space="preserve">
+    <value>變更信任程級</value>
+  </data>
+  <data name="log_config" xml:space="preserve">
+    <value>變更 $1 設定</value>
+  </data>
+  <data name="log_uconfig" xml:space="preserve">
+    <value>變更使用者 $1 設定</value>
+  </data>
+  <data name="log_defacl" xml:space="preserve">
+    <value>變更進入控制選項</value>
+  </data>
+  <data name="log_users" xml:space="preserve">
+    <value>變更允許的使用者和群組</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>變更可能的使用者</value>
+  </data>
+</root>

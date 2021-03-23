@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>majordomo 목록 관리자</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin에서 지원하지 않는 majordomo 버전입니다. Webmin에서는 1.94 이상 버전만 지원합니다.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>majordomo 구성 파일의&lt;tt&gt;$1&lt;/tt&gt; 변수가 존재하지 않는 &lt;tt&gt;$2&lt;/tt&gt;(으)로 설정되어 있습니다.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>majordomo가 시스템에 설치되어 있지만 sendmail 별칭 파일에서 올바르게 설정되지 않았습니다.</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>소유자 전자 메일 주소</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>별칭 설정</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>정의된 메일 목록이 없습니다</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>새 메일 목록 추가</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>새 다이제스트 목록 추가</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>majordomo 옵션 편집</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>모든 메일 목록에 적용되는 글로벌 majordomo 옵션 편집</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>메일 목록</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>글로벌 옵션</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>글로벌 옵션을 편집할 수 없습니다</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>글로벌 majordomo 옵션</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>메일 서버 호스트 이름(&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>majordomo 마스터 주소</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>majordomo 소유자 주소</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>sendmail 명령 경로</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>글로벌 옵션을 저장하지 못했습니다</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>없거나 잘못된 메일 서버 호스트 이름</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>없거나 잘못된 majordomo 주소</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>없거나 잘못된 소유자 주소</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>sendmail 명령 '$1'이(가) 존재하지 않습니다</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>새 메일을 작성할 수 없습니다</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>메일 목록 작성</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>새 목록 정보</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>목록 이름</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>유지보수자의 주소 표시</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>유지보수 패스워드</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>소개 메시지</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>전달된 메일 바닥글</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>조정된 목록입니까?</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>조정자 주소</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>유지보수자와 동일</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>메일 목록을 작성하지 못했습니다</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>없거나 잘못된 목록 이름</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>'$1'(이)라는 메일 목록이 이미 있습니다</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>'$1'의 메일 별칭이 이미 있습니다</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>없거나 잘못된 소유자 전자 메일 주소</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>없거나 잘못된 관리 패스워드</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>없거나 잘못된 조정자 전자 메일 주소</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>새 다이제스트 목록을 작성할 수 없습니다</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>다이제스트 목록 작성</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>새 다이제스트 목록 정보</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>목록 이름</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>목록 다이제스트 만들기</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>유지보수자의 주소 표시</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>유지보수 패스워드</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>설명</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>소개 메시지</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>다이제스트 메일 바닥글</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>다이제스트를 전송할 경우</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>가장 오래된 메시지의 보관 기간이 $1일이 경과할 때</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>총 메시지 행 수가 $1에 도달할 때</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>다이제스트 목록을 작성하지 못했습니다</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value>없거나 잘못된 일 수</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value>없거나 잘못된 행 수</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>메일 목록 편집</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>이 메일 목록을 편집할 수 없습니다</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>목록 삭제</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>모든 관련 파일 및 메일 별칭과 함께 이 목록 삭제</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>메일 목록</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>목록 $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>이 메일 목록을 삭제할 수 없습니다</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>이 목록에는 관련 다이제스트 목록이 있으므로 삭제할 수 없습니다</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>목록 삭제</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>메일 목록 $1을(를) 삭제하시겠습니까? 다음 파일이 삭제됩니다:</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>또한 다음 메일 별칭도 삭제됩니다:</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>목록 삭제</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>목록 구성원</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>아래의 입력란을 사용하여 이 목록으로 전송된 메일을 받을 전자 메일 주소 목록을 편집하십시오.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>아래의 입력란에는 이 목록에 보내는 메일을 받을 전자 메일 주소가 모두 나열됩니다.</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>목록에 주소 가입</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>추가</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>목록에서 주소 제거</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>제거</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Unix 사용자를 목록에 동기화하시겠습니까?</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>사용자 이름에 추가할 도메인 이름</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>이 목록의 구성원을 편집할 수 없습니다</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>이 목록에 주소를 가입하기 전에 유지보수 패스워드를 선택해야 합니다</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>가입할 주소에는 전체 도메인 이름이 있어야 합니다(예: &lt;tt&gt;foo@bar.com&lt;/tt&gt;)</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>이 목록에서 주소를 탈퇴하기 전에 유지보수 패스워드를 선택해야 합니다.</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>탈퇴할 주소에는 전체 도메인 이름이 있어야 합니다(예: &lt;tt&gt;foo@bar.com&lt;/tt&gt;)</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>메시지 및 설명</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>메시지 및 설명</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>&lt;tt&gt;lists&lt;/tt&gt; 명령에 대한 응답에 포함시킬 설명 나열</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>&lt;tt&gt;info $1&lt;/tt&gt; 명령에 대한 응답으로 반환되는 메시지</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>목록에 가입시킬 때 전송할 소개 메시지</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>정보 제공 메시지와 동일</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>아래에 입력된 대로..</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>가입 및 조정</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>가입 및 조정 옵션</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>가입 정책</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>누구든지 자신을 가입할 수 있습니다</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>누구든지 다른 사용자를 가입할 수 있습니다</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>유지보수자 승인 필요</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>탈퇴 정책</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>누구든지 자신을 탈퇴시킬 수 있습니다</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>누구든지 모두를 탈퇴시킬 수 있습니다</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>가입 확인이 필요합니까?</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>소개 메시지를 보냅니까?</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>목록에 원시 주소만 추가합니까?</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>유지보수자에게 가입/탈퇴를 알립니까?</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>유지보수자에게 가입/탈퇴 요청을 전달합니까?</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>유지보수 패스워드</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>조정된 목록입니까?</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>조정자 주소는 무엇입니까?</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>유지보수자</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>조정 패스워드</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>소유자의 전자 메일 주소</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>승인 전자 메일 주소</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>없는 소유자 전자 메일 주소</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>없는 승인 전자 메일 주소</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>없거나 잘못된 조정자 주소</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>없거나 잘못된 패스워드</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>전자 메일 옵션</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>발신 전자 메일 옵션</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>회신자: 회신 전자 메일에 있는 주소</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value> 발신자:전자 메일에 있는 주소</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>회신 전자 메일의 호스트 이름</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>제목: 회신 전자 메일의 제목</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>회신 전자 메일 우선 순위</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>첫번째 클래스</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>특수 배달</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>목록</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>대형</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>정크</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>회신 전자 메일에서 '수신자:' 머릿글 제거</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>허용 가능한 최대 메시지 크기</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>없거나 잘못된 '회신자:' 주소</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>없거나 잘못된 '발신자:' 주소</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>'발신자:' 주소에 호스트 이름을 사용하면 안됩니다</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>없거나 잘못된 호스트 이름</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>없거나 잘못된 최대 메시지 크기</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>액세스 제어</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>majordomo 명령의 액세스 제어</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>목록 구성원</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>없음</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>&lt;tt&gt;get&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>&lt;tt&gt;index&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>&lt;tt&gt;info&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>&lt;tt&gt;intro&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>&lt;tt&gt;which&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>&lt;tt&gt;who&lt;/tt&gt; 명령에 액세스</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>&lt;tt&gt;lists&lt;/tt&gt; 명령에 대한 응답으로 포함시킬 목록..</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>모든 사용자</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>정규식과 일치하는 주소..</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>정규식과 일치하지 않는 주소..</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>목록에 게시할 수 있는 대상</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>모두</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>목록 구성원</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>파일에 있는 주소</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>taboo 본문 정규식</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>taboo 머리글 정규식</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>참고: 모든 taboo 및 주소 정규식은 &lt;tt&gt;/&lt;/tt&gt;로 시작해서 &lt;tt&gt;/&lt;/tt&gt;로 끝나야 합니다(예: &lt;tt&gt;/foobar.com/&lt;/tt&gt;, &lt;tt&gt;/obscene/&lt;/tt&gt;).</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>머리글 및 바닥글</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>회신 전자 메일 머리글 및 바닥글</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>회신 전자 메일 머리글</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>회신 전자 메일 바닥글</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>회신 전자 메일의 추가 SMTP 머리글</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>기타 옵션</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>기타 목록 옵션</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>주소를 비교할 때만 도메인을 사용합니까?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>디버그 모드를 사용합니까?</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>정보 제공 메시지에 마지막으로 수정한 날짜를 포함시킵니까?</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>소개 메시지에 마지막으로 수정한 날짜를 포함시킵니까?</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>다이제스트 옵션</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>다이제스트 생성 옵션</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>다이제스트 제목</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>전송 전 가장 오래된 메시지의 보관 기간</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>행</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>전송 전 최대 다이제스트 크기</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>현재 볼륨 번호</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>현재 발행 번호</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>제한 없음</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>없거나 잘못된 일 수</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>없거나 잘못된 행 수</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>없거나 잘못된 볼륨 번호</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>없거나 잘못된 발행 번호</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>글로벌 옵션 변경됨</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>메일 목록 $1 작성됨</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>다이제스트 목록 $1 작성됨</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>메일 목록 $1 삭제됨</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>다이제스트 목록 $1 삭제됨</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>$2이(가) 목록 $1에 가입됨</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>$2이(가) 목록 $1에서 탈퇴됨</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>목록 $1의 구성원 업데이트됨</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>목록 $1의 동기화 업데이트됨</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>목록 $1의 메시지 및 설명 업데이트됨</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>목록 $1의 가입 및 조정 업데이트됨</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>목록 $1의 전자 메일 옵션 업데이트됨</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>목록 $1의 액세스 제어 업데이트됨</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>목록 $1의 머리글 및 바닥글 업데이트됨</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>목록 $1의 기타 옵션 업데이트됨</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>목록 $1의 다이제스트 옵션 업데이트됨</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>이 사용자가 관리할 수 있는 메일 목록</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>모든 목록</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>선택한 목록..</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>글로벌 옵션을 편집할 수 있습니까?</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>새 메일 목록을 작성할 수 있습니까?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>목록 구성원을 편집할 수 있습니까?</value>
+  </data>
+</root>

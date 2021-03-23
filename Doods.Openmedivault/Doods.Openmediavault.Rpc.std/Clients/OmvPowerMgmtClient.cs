@@ -1,7 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {
@@ -14,16 +13,14 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
         public Task<PowerManagementSetting> GetSettings()
         {
-
             var request = NewRequest("get");
-         
+
             var result = RunCmd<PowerManagementSetting>(request);
             return result;
         }
 
         public Task<object> SetSettings(PowerManagementSetting settings)
         {
-
             var request = NewRequest("set");
             request.Params = settings;
 

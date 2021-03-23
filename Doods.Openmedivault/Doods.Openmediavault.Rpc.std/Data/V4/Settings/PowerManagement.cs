@@ -7,14 +7,10 @@ namespace Doods.Openmediavault.Rpc.std.Data.V4.Settings
 {
     public class PowerManagementSetting : OmvObject
     {
-        [JsonProperty("cpufreq")]
-        public bool Cpufreq { get; set; }
+        [JsonProperty("cpufreq")] public bool Cpufreq { get; set; }
 
         [JsonProperty("powerbtn")]
-        [JsonConverter(typeof(StringEnumConverter),converterParameters:typeof(SnakeCaseNamingStrategy))]
+        [JsonConverter(typeof(StringEnumConverter), typeof(SnakeCaseNamingStrategy))]
         public PowerbtnAction Powerbtn { get; set; }
-
-
-       
     }
 }

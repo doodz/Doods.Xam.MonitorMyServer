@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Esecuzione pianificata di Cron Job</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Utente</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Attivo?</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Comando</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Esegui all'ora</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Non ci sono cron job in questo sistema</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Non ci sono cron job a cui tu hai accesso.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>Non hai ancora definito Cron Job.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Nuovo cron job</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Crea una nuova variabile d'ambiente</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Definisci i diritti di accesso a Cron per gli utenti</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>lista dei Cron Job</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Variabile d'ambiente</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Sposta</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>E' in esecuzione?</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Il comando $1 per la gestione delle configurazioni degli utenti Cron non è stato trovato. Verifica  che Cron sia installato sul tuo sistema.</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>Il file $1 che contiene la lista dei Cron Job non esiste. Verifica che Cron sia installato sul tuo sistema.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Elimina il Job selezionato</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Disabilita il Job selezionato</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Abilita il Job selezionato</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Modifica Cron Job</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Crea Cron Job</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a modificare i Cron Job di questo utente</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Dettagli Job</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Esegui Cron Job come</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Attivo?</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>Comandi</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Comando</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Input al comando</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Quando eseguirlo</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Intervallo di date in cui eseguire</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>Minuti</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>Ore</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>Giorni</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>Mesi</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Giorni della settimana</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Selezionati ...</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Esegui Adesso</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clona Job</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>cron job</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Nota: Ctrl-click (o comando-click sul Mac) per selezionare o deselezionare minuti, ore, giorni e mesi.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Scegli una pianificazione dalla lista:</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Esegui nelle ore e date specificate in basso:</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>Ogni ora</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Ogni giorno (a mezzanotte)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Ogni settimana (di domenica)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Ogni mese (il primo giorno del mese)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Ogni anno (al primo gennaio)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>All'avvio del sistema</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>con cadenza oraria</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>giornalmente (a mezzanotte)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>settimanalmente (la domenica)</value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>con cadenza mensile (il primo giorno)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>annualmente (il 1° di gennaio)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>all'avvio del sistema</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Salvataggio Cron Job fallito</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>Non hai inserito il comando da eseguire</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Devi selezionare un utente</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>L'utente '$1' non esiste</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>L'utente '$1' non è autorizzato ad accedere a Cron</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato a creare o modificare Cron Job per '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>Non hai scelto nessun $1 da eseguire</value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>Non hai i permessi per creare comandi Cron</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Controllo Accesso Cron</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Questo form permette di controllare quali utenti possono creare e eseguire Cron Job.</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>Non puoi controllare l'accesso utenti a Cron</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Nega a tutti gli utenti</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Nega a tutti gli utenti tranne root</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Permetti a tutti gli utenti</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Permetti solo agli utenti elencati</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Nega solo agli utenti elencati</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Modifica variabile d'ambiente</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Crea variabile d'ambiente</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Nome Variabile</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Valore</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>Per l'utente</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Attivo?</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Dettagli sulla variabile d'ambiente</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>Salvataggio della variabile d'ambiente non riuscito</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>Nome variabile mancante o non valido</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Nota - L'impostazione di questa variabile d'ambiente sarà applicata solo ai comandi Cron che la seguono nella lista dei comandi nella pagina principale del modulo</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Aggiungi variabile d'ambiente</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Sposta variabile d'ambiente</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Dopo tutti i Cron Job per l'utente</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Dopo tutti i comandi Cron</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Posizione corrente</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Esegui Cron Job</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>Non sei autorizzato ad eseguire cron job per questo utente</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>Output dal comando $1 ...</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>Eseguo il comando $1 come processo in background.</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Nessun output generato</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Diritti di modifica dei Cron Job per</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Tutti gli utenti</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>L'utente Webmin corrente</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Solo gli utenti</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Tutti tranne gli utenti</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Può controllare i diritti di accesso a Cron degli utenti?</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Può vedere e modificare i comandi Cron?</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Utenti con UID nell'intervallo</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Utenti con gruppo primario</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Può creare Cron Job?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Può eliminare Cron Job?</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Può spostare Cron Job?</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Può terminare Cron Job?</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Cron Job per $1 modificato</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Cron Job "$2" per $1 modificato</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Cron Job per $1 creato</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Cron Job "$2" per $1 creato</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Cron Job per $1 eliminato</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Eseguito Cron Job come $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Esegui il Cron Job "$2" come $1</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>E' stato terminato un Cron Job per $1</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>E' stato terminato il Cron Job "$2" per $1</value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>Accesso utente a Cron modificato</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>E' stata creata una variabile d'ambiente per $1</value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>E' stata modificata una variabile d'ambiente per $1</value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>E' stata eliminata una variabile d'ambiente per $1</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Cron Job per $1 spostato</value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>Sono stati cancellati $1 Cron Job</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>Sono stati disabilitati $1 Cron Job</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>Sono stati abilitati $1 Cron Job</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>È stato individuato un errore nella nuova configurazione di Cron : $1 $2</value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>ogni minuto</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>ogni ora $1 minuti dopo l'inizio dell'ora</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>ogni giorno alle ore $2:$1</value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>il giorno $3 di ogni mese alle ore $2:$1</value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>ogni $3 alle ore $2:$1</value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>al Cron Time $1</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Ogni minuto</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Ogni ora $1 minuti dopo l'inizio dell'ora</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Ogni giorno alle ore $2:$1</value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>Il giorno $3 di ogni mese alle ore $2:$1</value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Ogni $3 alle ore $2:$1</value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>Al Cron Time $1</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>Non è stato possibile spostare il comando</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Questo comando non può essere spostato</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Non è stato possibile terminare il Cron Job</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Non hai i permessi per terminare questo Job</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Non più in esecuzione</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>Esecuzione di Kill fallita: $1</value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Termina il Cron Job</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Sei sicuro di voler terminare il processo $1 con PID $2?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Sei sicuro di voler terminare il processo $1 con PID $2, e tutti i suoi sotto-processi?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Esegui in qualsiasi data</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Esegui solo da $1</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>a $1</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Data di inizio dell'intervallo mancante o non valida</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Data finale dell'intervallo mancante o non valida</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Cancellazione dei Cron Job non riuscita</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Nessuna selezione</value>
+  </data>
+</root>

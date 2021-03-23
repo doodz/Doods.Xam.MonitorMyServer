@@ -5,6 +5,5 @@
         notde,
         ssh,
         http
-
     }
 }

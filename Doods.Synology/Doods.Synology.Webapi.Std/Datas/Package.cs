@@ -5,17 +5,13 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class Package
     {
-        [JsonProperty("additional")]
-        public PackageAdditional Additional { get; set; }
+        [JsonProperty("additional")] public PackageAdditional Additional { get; set; }
 
-        [JsonProperty("id")]
-        public string Id { get; set; }
+        [JsonProperty("id")] public string Id { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("version")]
-        public string Version { get; set; }
+        [JsonProperty("version")] public string Version { get; set; }
     }
 
     public class PackageAdditional
@@ -26,11 +22,9 @@ namespace Doods.Synology.Webapi.Std.Datas
         [JsonProperty("start_dependent_services")]
         public List<string> StartDependentServices { get; set; }
 
-        [JsonProperty("startable")]
-        public bool Startable { get; set; }
+        [JsonProperty("startable")] public bool Startable { get; set; }
 
-        [JsonProperty("status")]
-        public PurpleStatus Status { get; set; }
+        [JsonProperty("status")] public PurpleStatus Status { get; set; }
     }
     //public partial class DependentPackages
     //{

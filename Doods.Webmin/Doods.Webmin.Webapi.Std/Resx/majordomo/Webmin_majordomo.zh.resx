@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Majordomo 列表管理器</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin 不支持您的 Majordomo 版本,它仅支持1.94或更高版本的Majordomo。</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>您的 Majordomo 配置文件中的&lt;tt&gt;$1&lt;/tt&gt;变量设置为 &lt;tt&gt;$2&lt;/tt&gt;,但它不存&gt;在。</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>Majordomo 已经安装在您的系统上,但未在 sendmail aliase 文件中正确设置。</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>所有者 E_mail 地址</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>创建别名</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>您没有定义邮件列表</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>增加一新的邮件列表</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>增加一新的文摘列表</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>编辑 Majordomo 选项</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>编辑适用于全部邮件列表的 Majordomo 选项</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>邮件列表</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>全局选项</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>您无权编辑全局选项</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>全局 Majordomo 选项</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>邮件服务器主机名(&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Majordomo 主地址</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Majordomo 所有者地址</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Sendmail 命令路径</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>存储全局选项失败</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>丢失或无效的邮件服务器主机名</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>丢失或无效的 Majordomo 地址</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>丢失或无效的所有者地址</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>Sendmail 命令 '$1' 不存在</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>您无权创建新列表</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>创建邮件列表</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>新列表概述</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>列表名称</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>列出维护者的地址</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>维护口令</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>简介消息</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>转运邮件注脚</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>仲裁列表？</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>仲裁者的地址</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>与维护者相同</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>创建邮件列表失败</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>丢失或无效的邮件列表名</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>已有一个名为 '$1' 的邮件列表</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>'$1' 的邮件别名已经存在</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>丢失或无效的所有者的邮件地址</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>丢失或无效的管理口令</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>丢失或无效的仲裁者邮件地址</value>
+  </data>
+  <data name="cdigest_ecannot" xml:space="preserve">
+    <value>您无权创建新的文摘列表</value>
+  </data>
+  <data name="cdigest_title" xml:space="preserve">
+    <value>创建文摘列表</value>
+  </data>
+  <data name="cdigest_header" xml:space="preserve">
+    <value>新文摘列表详述</value>
+  </data>
+  <data name="cdigest_name" xml:space="preserve">
+    <value>列表名称</value>
+  </data>
+  <data name="cdigest_list" xml:space="preserve">
+    <value>进行列表的文摘</value>
+  </data>
+  <data name="cdigest_owner" xml:space="preserve">
+    <value>列出维护者的地址</value>
+  </data>
+  <data name="cdigest_password" xml:space="preserve">
+    <value>维护口令</value>
+  </data>
+  <data name="cdigest_desc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="cdigest_info" xml:space="preserve">
+    <value>简介消息</value>
+  </data>
+  <data name="cdigest_footer" xml:space="preserve">
+    <value>文摘邮件注脚</value>
+  </data>
+  <data name="cdigest_when" xml:space="preserve">
+    <value>发送文摘的时间</value>
+  </data>
+  <data name="cdigest_old" xml:space="preserve">
+    <value>最早的消息已经 $1 天</value>
+  </data>
+  <data name="cdigest_lines" xml:space="preserve">
+    <value>消息共 $1 行</value>
+  </data>
+  <data name="cdigest_err" xml:space="preserve">
+    <value>创建文摘列表失败</value>
+  </data>
+  <data name="cdigest_edays" xml:space="preserve">
+    <value>丢失或无效的的天数</value>
+  </data>
+  <data name="cdigest_elines" xml:space="preserve">
+    <value>丢失或无效的行数</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>编辑邮件列表</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>您无权编辑邮件列表</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>删除列表</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>删除这个列表,及其所包含的所有附件和邮件别名</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>邮件列表</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>为列表 $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>您无权删除该邮件列表</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>该列表不能删除,是因为它可能有相关的文摘列表</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>删除列表</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>您确信要删除邮件列表 $1? 下面文件将被删除：</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>下列邮件别名也将被删除：</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>删除列表</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>列出成员</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>利用下表编辑邮件地址列表,这些地址将能收到发送到该列表中的邮件。</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>下表列出了所有能收到发送给该列表的邮件的邮件地址。</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>预订地址至列表中</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>增加</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>从表中删除地址</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>将 Unix 用户与列表同步</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>将域名追加至用户名后</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>您无权编辑该此表中的成员</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>在预订地址至列表中之前，您必须维护口令</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>要预订的地址必须域名齐全,例如:&lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>在列表中退订地址之前,您必须选择维护口令</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>要退订的地址必须域名齐全,例如:&lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>消息和描述</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>消息和描述</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>列出要包含在&lt;tt&gt;lists&lt;/tt&gt;命令的回应中的描述</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>回应&lt;tt&gt;info $1&lt;/tt&gt;命令而返回的信息性消息</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>有人预订列表时发出的简要消息</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>与信息性消息相同</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>按照下面输入..</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>预订和仲裁</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>预订和仲裁选项</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>预订规定</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>人人均可预订自己</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>人人均可预订每个人</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>需要维护者同意</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>退订规定</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>人人均可退订自己</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>人人均可退订每个人</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>要求预订确认？</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>发送简要消息？</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>只在表中增加原始地址？</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>通知预订和退订的维护者？</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>将预订和退订请求转发给维护者？</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>维护口令</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>已仲裁的列表？</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>仲裁者的地址？</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>维护者</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>仲裁口令</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>所有者的邮件地址</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>批准邮件地址</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>丢失所有者的邮件地址</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>丢失批准邮件地址</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>丢失或无效的仲裁者地址</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>丢失或无效的口令</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>Email 选项</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>外发邮件选项</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>回复到:地址在重发的邮件中</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>发送者:地址在邮件中</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>重发邮件的主机名</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>主题: 重发邮件的前缀</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>当重发件的优先级</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>特快</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>专递</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>列表</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>大宗邮件</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>废邮件</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>删除收到的邮件: 标题来自重发邮件</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>可允许的最大邮件的大小</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>丢失或无效的回复地址</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>丢失或无效的发送者地址</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>发送者: 地址不得包括主机名</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>丢失或无效的主机名</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>丢失或无效的最大邮件的大小</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>访问控制</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>majordomo 命令的访问控制</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>任何人</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>列出成员</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>没有成员</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>访问&lt;tt&gt;get&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>访问&lt;tt&gt;index&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>访问&lt;tt&gt;info&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>访问&lt;tt&gt;intro&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>访问&lt;tt&gt;which&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>访问&lt;tt&gt;who&lt;/tt&gt;命令</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>在对&lt;tt&gt;lists&lt;/tt&gt;命令的回应中包括此列表..</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>每个人</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>地址匹配正则表达式..</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>地址不匹配正则表达式..</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>谁可以投递这个列表？</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>任何人</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>列出成员</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>文件中的地址</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Taboo正文正则表达式</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Taboo页首正则表达式</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>注意:所有Taboo的和地址正则表达式均必须以&lt;tt&gt;/&lt;/tt&gt;开头和结束,例如:&lt;tt&gt;/foobar.com/&lt;/tt&gt; 或 &lt;tt&gt;/obscene/&lt;/tt&gt;。</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>页首和注脚</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>重发邮件的页首和注脚</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>重发邮件的页首</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>重发邮件的注脚</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>重发邮件的 SMTP 额外页首</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>杂类选项</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>杂类列表选项</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>只有在比较地址时使用域名?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>调试模式？</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>在信息性消息中包括最后的更新日期？</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>在简介消息中包括最后的更新日期？</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>文摘选项</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>产生文摘的选项</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>文摘标题</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>未发送的最旧消息的时间</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>未发送的最大文摘的大小</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>当前的卷号</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>当前期号</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>不限</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>丢失或无效的天数</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>丢失或无效的行数</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>丢失或无效的卷号</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>丢失或无效的期号</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>已改变全局选项</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>创建了邮件列表 $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>创建了文摘列表 $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>删除了邮件列表 $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>删除了文摘列表 $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>预订了 $2 至列表 $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>从列表 $1 退订了 $2</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>更新了列表 $1的成员</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>更新了列表 $1 的同步</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>更新了列表 $1 的消息和描述</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>更新了列表 $1 的预订和仲裁</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>更新了列表 $1 的邮件选项</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>更新了列表 $1 的访问控制</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>更新了列表 $1 的页首和页脚</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>更新了列表 $1 的杂类</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>更新了列表 $1 的文摘选项</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>这个用户能管理的邮件</value>
+  </data>
+  <data name="acl_lall" xml:space="preserve">
+    <value>所有列表</value>
+  </data>
+  <data name="acl_lsel" xml:space="preserve">
+    <value>已选择..</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>可以编辑全局选项？</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>可以创建新的邮件列表?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>可以编辑列表的成员？</value>
+  </data>
+</root>

@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>パーティション マネージャ</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>ディスクをリストできませんでした</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>ディスク</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>パーティション</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>シリンダ</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>モデル</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>RAID レベル</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>コントローラ</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>ターゲット</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>パーティションがありませんでした</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>番号</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>エクステント</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>プライマリ パーティションを追加</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>論理パーティションを追加</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>拡張パーティションを追加</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>IDE パラメータを編集</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>使用</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>空き</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>ディスクのリスト</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>バイト</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>拡張</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>デフォルト</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1' は有効な $2 ではありません</value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>$1 コマンドはありません</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>$1 デバイス $2</value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>$1 デバイス $2 パーティション $3</value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>フロッピー ディスク $1</value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>Mylex RAID $1 ドライブ $2</value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>Mylex RAID $1 ドライブ $2 パーティション $3</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>パーティションの編集</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>パーティションの作成</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>このディスクを編集することはできません</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>システムに&lt;tt&gt;hdparm&lt;/tt&gt; 実行ファイルがありませんでした</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>パーティションの詳細</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>デバイス ファイル</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>種類</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>エクステント</value>
+  </data>
+  <data name="edit_of" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>1 つのパーティションを含んでいます</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>$1 パーティションを含んでいます</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>$1 パーティションを含んでいます</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>$1 に $2 としてマウントしました</value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>$1 に $2 としてマウント</value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>仮想メモリとしてマウントしました</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>仮想メモリとしてマウント</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>RAID デバイス $1 の一部</value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>まだ作成されていません</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>使用されていません</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>パーティション ラベル</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 ブロック</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>このパーティションは、現在使用中または使用のために設定されているため変更できません</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>新規ファイル システムの作成</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>既存のファイルを永久に消去して、このパーティションに新規の $1 ファイルを構築しました。新規のパーティションを作成後、または既存のパーティションを変更後にこの作業を実行する必要があります。</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>ファイル システムの修復</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>ファイル システムを修復するために $1 プログラムを呼び出して、修復したファイルをマウントできるようにします。システムが正常にシャットダウンしなかった場合には、この実行が必要になる場合があります。</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>ファイル システムの調整</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>既存のファイル システムの多様のパラメータを変更できるようにします。</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>なし</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>新規のファイル システム</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>このディスクで新規のファイル システムを構築することはできません</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>この画面の下のボタンをクリックすると、$1 ファイル システムをデバイス $2 に構築します。このパーティションにあるすべてのデータは永久に消去されます。</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>このパーティションは $1 に $2 としてマウントされています。新規のファイル システムを消去すると、このディレクトリで以前にアクセスできたすべてのファイルが消去されます。</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>ファイル システム オプション</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>ファイル システムを作成</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>ファイル システムを作成できませんでした</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>コマンド $1 を実行中..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. コマンドが失敗しました。</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. コマンドを完了しました。</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>ファイル システムの修復</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>このディスクは fsck できません</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>ここで&lt;tt&gt;ファイル システムの修復&lt;/tt&gt; ボタンをクリックすると、$2 上の破損した$1 ファイル システムを $3 にマウントするために破損の修復を試みます。ファイル システムが破損していない場合は、変更は行われません。</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>ファイル システムの修復は、発生した問題を自動的に修正するコマンド $1 を使用して実行されます。ファイル システムの修復を制御するには、手動でUnix プロンプトから対話モードで $2 コマンドを使用してください。</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>ファイル システムの修復</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>コマンド $1 を実行中..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>検出されたエラーはありません</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>エラーを検出し修正しました</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>エラーを検出し修正しました - リブートする必要があります</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>エラーを検出しましたが修正されませんでした</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>コマンド ライン エラー</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>不明な戻りコード $1</value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>ファイル システムの調整</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>このファイル システムを調整することはできません</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>これは$2 上の $1 ファイル システムを $3 にマウントする多様なパラメータの調整を可能にします。このファイル システムにある既存のファイルは影響されません。</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>パラメータの調整</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>ファイル システムの調整</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>検査間のギャップ</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>エラーに対するアクション</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>続行</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>読取り専用でマウント</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>パニック</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>予約されたユーザ</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>予約されたグループ</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>予約されたブロック</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>検査間の時間</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>ファイル システムを調整できませんでした</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>コマンド $1 を実行中..</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>.. コマンドが失敗しました。</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>.. コマンドを完了しました。</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>リブート</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>リブート中..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>今すぐリブート</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>$1 のパーティション テーブルを変更しました。変更を正しく有効にするには、システムをリブートする必要があります。</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>パーティションを保存できませんでした</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>このディスクを編集することはできません</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1' は有効な開始シリンダではありません</value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1' は有効な終了シリンダではありません</value>
+  </data>
+  <data name="save_emin" xml:space="preserve">
+    <value>開始シリンダは $1 以上である必要があります</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>終了シリンダは $1以下である必要があります</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>開始シリンダは終了シリンダより小さい必要があります</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>パーティション $1 ($2 から $3) に重複があります</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>ブロック サイズ</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>フラグメント サイズ</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>バイト / i ノード</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>予約されたブロック</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>ブロック / グループ</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>不正なブロックを調べますか？</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>FAT サイズ</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>ボリューム ID</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>ボリューム名</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>root エントリ</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>クラスタ サイズ</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>不正なブロックを調べますか？</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>ファイル名の長さ</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>i ノード数</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>ブロック数</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>不正なブロックを調べますか？</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>ファイル システムの作成を強制</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>ハッシュ関数</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>このユーザがパーティションを切ってフォーマットできるディスク</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>すべてのディスク</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>選択..</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>IDE パラメータの編集</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>オン</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>IDE ドライブ設定</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>転送モード</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>デフォルト モード</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>IORDY を無効にする</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>DMA の使用</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>セクタ カウント</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>先読み</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>キャッシュ書込み</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>割込みを unmask</value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>リセットに設定を保持</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>リセットに機能を保持</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>読取り専用</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>最善プロセス入出力を再プログラム</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>スタンバイ タイムアウト</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>32 ビット入出力サポート</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>複数セクタ入出力のセクタ カウント</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>無効</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>有効</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>特別な同期シーケンスで有効にする</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>ドライブに適用</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>速度テスト</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>実行中</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>バッファ キャッシュ:</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>バッファ付き:</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>速度テスト結果</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$1 を変更しました</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>$1 を作成しました</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>$1 を削除しました</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>$1 ファイル システムを $2 に作成しました</value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>$2上の $1 ファイル システムを調整しました</value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>$2上の $1 ファイル システムを修復しました</value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>$1 の IDE パラメータを変更しました</value>
+  </data>
+</root>

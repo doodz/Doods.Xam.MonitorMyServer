@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Системные журналы NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Применить конфигурацию</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Нажмите эту кнопку, чтобы активировать текущую конфигурацию Syslog-NG.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stop Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Нажмите эту кнопку, чтобы остановить работающий демон Syslog-NG. После остановки сообщения журнала из других программ больше не будут записываться в файлы журнала.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Запустить Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Нажмите эту кнопку, чтобы запустить демон Syslog-NG, используя текущую конфигурацию.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>индекс модуля</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Системный журнал-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Параметры ведения журнала</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Параметры для всех файлов журнала</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>секунд</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>записи</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Время ждать, прежде чем снова открывать мертвые соединения</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Время ждать перед закрытием незанятых соединений</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Сообщения в буфер перед записью</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Время ожидания между сообщениями статистики</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Количество сообщений в буфере</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Использовать цепочечный формат имени хоста?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Сохранить оригинальные имена хостов?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Проверить имена хостов на допустимые символы?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Регулярное выражение для плохих имен хостов</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Создать каталоги для файлов журнала, если это необходимо?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Владелец по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Группа по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Разрешения по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Владелец по умолчанию для созданных каталогов</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Группа по умолчанию для созданных каталогов</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Разрешения по умолчанию для созданных каталогов</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Журнал времени сообщения были получены?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Есть ли обратный поиск DNS?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Кэш DNS-поиска?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Размер кеша DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Кэшировать DNS записи для</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Кэш не удалось найти DNS для</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Максимальный размер сообщения журнала</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Войти полные имена хостов?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Заменить управляющие символы в именах файлов?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Не удалось сохранить параметры ведения журнала</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Отсутствует или неверное регулярное выражение для неправильных имен хостов</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Отсутствует или не числовой размер кеша DNS</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Отсутствует или не числовое время кэширования DNS</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Отсутствует или не числовой сбой времени DNS-кэша</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Отсутствует владелец по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Отсутствует группа по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Отсутствуют разрешения по умолчанию для файлов журнала</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Отсутствует владелец по умолчанию для каталогов</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Отсутствует группа по умолчанию для каталогов</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Отсутствуют разрешения по умолчанию для каталогов</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Отсутствует или не числовое время ожидания мертвых соединений</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Отсутствует или не числовое время ожидания идеальных соединений</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Отсутствует или неверное количество сообщений для буферизации перед записью</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Отсутствует или нечисловое время ожидания между сообщениями статистики</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Отсутствует или неверное количество сообщений в буфере</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Отсутствует или не числовой максимальный размер сообщения журнала</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Журнал Направления</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Название места назначения</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Написать в</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Журнал назначения</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>файл</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Зарегистрированные пользователи</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Ввод программы</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix труба</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP системный журнал</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP системный журнал</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Гнездо датаграммы</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Потоковая розетка</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Только пользователи $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Хост $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Посмотреть ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Файлы журнала назначения еще не определены.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Удалить выбранные пункты назначения</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Добавьте новое место назначения журнала.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>журнал назначения</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Журнал другого модуля</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Выход из $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Варианты назначения журнала</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Создать журнал назначения</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Изменить журнал назначения</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Имя пункта назначения журнала</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Войти в ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Создать каталоги?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Разрешения на каталоги</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Синхронизировать после каждой записи?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Группа для файла журнала</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Владелец файла журнала</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Разрешения на файл журнала</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Сообщения между синхронизациями</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Перечисленные пользователи</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Сервер системного журнала</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Сетевой протокол</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Адрес сервера</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Порт сервера</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Локальный IP-адрес</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Локальный порт</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix сокет</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Имя сокета</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Не удалось сохранить пункт назначения</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Пункт назначения с таким именем уже существует</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Пункт назначения больше не существует!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Отсутствующее или неверное имя файла</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Отсутствует или неверный владелец файла журнала</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Отсутствует или неверная группа файлов журнала</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Отсутствуют или не восьмеричные разрешения файла журнала</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Отсутствуют или не восьмеричные права доступа к каталогу</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Отсутствует или неверное количество сообщений между синхронизациями</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Отсутствующие пользователи для отправки</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Отсутствует программа для подачи в</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Отсутствует файл канала Unix</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Отсутствует или неверный номер порта</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Отсутствует или неверный локальный IP-адрес</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Отсутствует или неверный номер локального порта</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Отсутствует или неверен хост или адрес сервера Syslog</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Отсутствует имя сокета Unix</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Не удалось удалить места назначения</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Не выбрано, ничего не выбрано</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Назначение $1 не может быть удалено, так как оно используется целью журнала</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Не удалось удалить источники</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Не выбрано, ничего не выбрано</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Невозможно удалить источник журнала $1, так как он используется целью журнала</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Не удалось удалить фильтры</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Не выбрано, ничего не выбрано</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Фильтр журнала $1 не может быть удален, так как он используется целью журнала</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Не удалось удалить цели журнала</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Не выбрано, ничего не выбрано</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Фильтры журнала</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Название фильтра</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>условия</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Фильтры журналов еще не определены.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Удалить выбранные фильтры</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Добавьте новый фильтр журнала.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>фильтры журнала</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>приоритет &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>приоритеты &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 приоритеты</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>средство &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 объектов</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>программа &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>соответствует "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>от имени хоста &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>от отправителя &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Создать журнал фильтра</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Редактировать фильтр журнала</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Детали спецификации фильтра журнала</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Название фильтра</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Простые условия (все должны совпадать)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Сложное выражение</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>В приоритете ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Из программы ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Соответствие выражению ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>С объекта ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>От имени хоста ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Из IP-сети ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Не удалось сохранить фильтр журнала</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Отсутствует или неверное имя фильтра</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Фильтр с таким именем уже существует</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Нечего фильтровать по введенному</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Не выбраны приоритеты</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Услуги не выбраны</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Отсутствующее или неверное имя программы</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Отсутствует регулярное выражение</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Отсутствует или неверное имя хоста</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Отсутствует или неверный IP-адрес сети</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Отсутствует или неверная маска</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Ошибка в сложном выражении</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Фильтр больше не существует!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Цели журнала</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>источники</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>фильтры</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Направления</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Добавьте новую цель журнала.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Удалить выбранные цели журнала</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>войти цели</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Никто</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Создать цель журнала</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Изменить цель журнала</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Журнал выбора источника, фильтра и назначения</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Источники журналов</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Фильтры для применения</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Файлы назначения</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Не обрабатывайте больше целей</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Резервная цель журнала</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Обработать все источники</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Целевые параметры</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Цель входа больше не существует!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Не удалось сохранить цель журнала</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Источники не выбраны</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Источники журнала</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Источники пока не определены!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Добавьте новый источник журнала.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Имя источника</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Источники данных журнала</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Удалить выбранные источники</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Внутренние сообщения Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Потоковая розетка</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Гнездо датаграммы</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP-сервер</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP-сервер</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Файл журнала ядра</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Именованная труба</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Солнечный поток</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Сервер системного журнала</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>журналы источников</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Никто</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Создать источник журнала</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Изменить источник журнала</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Параметры источника журнала</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Любые</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Никто</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Источник больше не существует!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Имя источника</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Типы источников журналов</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Владелец файла сокета</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Группа файлов сокетов</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Разрешения на файл сокета</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Держать соединения открытыми при перезагрузке?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Максимальное количество одновременных соединений?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Локальный IP-адрес</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Номер локального порта</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Используйте TCP keep-alives?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Префикс для сообщений журнала</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Размер блока сообщения</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Не удалось сохранить источник журнала</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Отсутствует или неверное имя источника</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Источник журнала с таким именем уже существует</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Отсутствует или неверный владелец файла сокета</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Отсутствует или неверная группа файлов сокетов</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Отсутствуют или не восьмеричные разрешения для файла сокета</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Отсутствует или неверное количество максимальных соединений</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Отсутствует или неверный локальный IP-адрес</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Отсутствует или неверный номер локального порта</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Отсутствует префикс для сообщений журнала</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Отсутствует или не числовой размер блока сообщения</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Отсутствует или неверное имя файла сокета Unix</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Отсутствует или неверное имя файла журнала ядра</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Отсутствует или неверно указано имя файла именованного канала</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Имя двери</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Отсутствует или неверно указано имя файла потоков Sun</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Отсутствует или неверно указано имя файла дверей Sun Streams</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Сетевой протокол</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Просмотр лог файла</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Последние $1 строк $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Файл журнала пуст</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>обновление</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Показывать только строки с текстом $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Не удалось применить конфигурацию</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Не бегать!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Не удалось запустить сервер Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Не удалось остановить сервер Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Создан журнал назначения $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Изменено назначение журнала $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Удаленный журнал назначения $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Удалено $1 пунктов назначения журнала</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Создан фильтр журнала $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Модифицированный фильтр журнала $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Удаленный фильтр журнала $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Удалены $1 журнальные фильтры</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Создан источник журнала $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Модифицированный источник журнала $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Удаленный источник журнала $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Удалено $1 источников журнала</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Созданная цель журнала</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Модифицированная цель журнала</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Удаленная цель журнала</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Удалено $1 целей журнала</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Прикладная конфигурация</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Запущен Syslog-NG сервер</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Остановлен сервер Syslog-NG</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Изменены глобальные настройки</value>
+  </data>
+</root>

@@ -43,7 +43,7 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
 
 
         /// <summary>
-        /// Get Version object from string who contain version name 
+        ///     Get Version object from string who contain version name
         /// </summary>
         /// <param name="version">version of OMV from RPC like "version: "5.0.5-1 (Usul)"</param>
         /// <returns></returns>
@@ -70,11 +70,6 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
 
     public sealed class OMVVersion : ICloneable, IComparable, IComparable<OMVVersion?>
     {
-        private readonly int _Build = -1;
-
-        private readonly int _Major;
-        private readonly int _Minor;
-        private readonly int _Revision = -1;
         public string Name;
 
         public string Version;
@@ -94,18 +89,18 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
             if (revision < 0)
                 throw new ArgumentOutOfRangeException(nameof(revision), "ArgumentOutOfRange_Version");
 
-            _Major = major;
-            _Minor = minor;
-            _Build = build;
-            _Revision = revision;
+            Major = major;
+            Minor = minor;
+            Build = build;
+            Revision = revision;
         }
 
         private OMVVersion(OMVVersion version)
         {
-            _Major = version._Major;
-            _Minor = version._Minor;
-            _Build = version._Build;
-            _Revision = version._Revision;
+            Major = version.Major;
+            Minor = version.Minor;
+            Build = version.Build;
+            Revision = version.Revision;
         }
 
         public OMVVersion(int major, int minor, int build)
@@ -120,9 +115,9 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
                 throw new ArgumentOutOfRangeException(nameof(build), "ArgumentOutOfRange_Version");
 
 
-            _Major = major;
-            _Minor = minor;
-            _Build = build;
+            Major = major;
+            Minor = minor;
+            Build = build;
         }
 
         public OMVVersion(int major, int minor)
@@ -133,38 +128,38 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
             if (minor < 0)
                 throw new ArgumentOutOfRangeException(nameof(minor), "ArgumentOutOfRange_Version");
 
-            _Major = major;
-            _Minor = minor;
+            Major = major;
+            Minor = minor;
         }
 
         public OMVVersion(string version)
         {
             var v = Parse(version);
-            _Major = v.Major;
-            _Minor = v.Minor;
-            _Build = v.Build;
-            _Revision = v.Revision;
+            Major = v.Major;
+            Minor = v.Minor;
+            Build = v.Build;
+            Revision = v.Revision;
         }
 
         public OMVVersion()
         {
-            _Major = 0;
-            _Minor = 0;
+            Major = 0;
+            Minor = 0;
         }
 
 
-        internal OMVVersion(string version, string name):this(version)
+        internal OMVVersion(string version, string name) : this(version)
         {
             Name = name;
         }
 
-        public int Major => _Major;
+        public int Major { get; }
 
-        public int Minor => _Minor;
+        public int Minor { get; }
 
-        public int Build => _Build;
+        public int Build { get; } = -1;
 
-        public int Revision => _Revision;
+        public int Revision { get; } = -1;
 
         public object Clone()
         {
@@ -185,10 +180,10 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
             return
                 ReferenceEquals(value, this) ? 0 :
                 value is null ? 1 :
-                _Major != value._Major ? _Major > value._Major ? 1 : -1 :
-                _Minor != value._Minor ? _Minor > value._Minor ? 1 : -1 :
-                _Build != value._Build ? _Build > value._Build ? 1 : -1 :
-                _Revision != value._Revision ? _Revision > value._Revision ? 1 : -1 :
+                Major != value.Major ? Major > value.Major ? 1 : -1 :
+                Minor != value.Minor ? Minor > value.Minor ? 1 : -1 :
+                Build != value.Build ? Build > value.Build ? 1 : -1 :
+                Revision != value.Revision ? Revision > value.Revision ? 1 : -1 :
                 0;
         }
 
@@ -255,19 +250,15 @@ namespace Doods.Openmediavault.Mobile.Std.Enums
                         TryParseComponent(input.Slice(buildEnd + 1), nameof(revision), throwOnFailure, out revision)
                             ? new OMVVersion(major, minor, build, revision)
                             : null;
-                else
-                    // major.minor.build
-                    return TryParseComponent(input.Slice(minorEnd + 1), nameof(build), throwOnFailure, out build)
-                        ? new OMVVersion(major, minor, build)
-                        : null;
-            }
-            else
-            {
-                // major.minor
-                return TryParseComponent(input.Slice(majorEnd + 1), nameof(input), throwOnFailure, out minor)
-                    ? new OMVVersion(major, minor)
+                return TryParseComponent(input.Slice(minorEnd + 1), nameof(build), throwOnFailure, out build)
+                    ? new OMVVersion(major, minor, build)
                     : null;
             }
+
+            // major.minor
+            return TryParseComponent(input.Slice(majorEnd + 1), nameof(input), throwOnFailure, out minor)
+                ? new OMVVersion(major, minor)
+                : null;
         }
 
         private static bool TryParseComponent(ReadOnlySpan<char> component, string componentName, bool throwOnFailure,

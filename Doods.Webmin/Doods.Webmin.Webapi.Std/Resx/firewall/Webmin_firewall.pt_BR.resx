@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Linux IPTables Firewall</value>
+  </data>
+  <data name="index_editing" xml:space="preserve">
+    <value>Arquivo de regras $1</value>
+  </data>
+  <data name="index_ecommand" xml:space="preserve">
+    <value>O comando $1 não foi encontrado em seu sistema. Webmin precisa deste comando para configurar Iptables.</value>
+  </data>
+  <data name="index_ekernel" xml:space="preserve">
+    <value>Um erro ocorreu enquanto estava sendo checado as configurações do Iptables: $1 Isto pode indicar que o kernel não suporta Iptables.</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>Configuração do Firewall de $1</value>
+  </data>
+  <data name="index_change" xml:space="preserve">
+    <value>Mostrando Iptable:</value>
+  </data>
+  <data name="index_chain_input" xml:space="preserve">
+    <value>Pacotes de Entrada (INPUT)</value>
+  </data>
+  <data name="index_chain_output" xml:space="preserve">
+    <value>Pacotes de Saída (OUTPUT)</value>
+  </data>
+  <data name="index_chain_forward" xml:space="preserve">
+    <value>Pacotes Forward (FORWARD)</value>
+  </data>
+  <data name="index_chain_prerouting" xml:space="preserve">
+    <value>Pacotes antes de roteamento (PREROUTING)</value>
+  </data>
+  <data name="index_chain_postrouting" xml:space="preserve">
+    <value>Pacotes depois de roteamento (POSTROUTING)</value>
+  </data>
+  <data name="index_chain" xml:space="preserve">
+    <value>Chain $1</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>Condição</value>
+  </data>
+  <data name="index_comm" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Mover</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Não existe regra definida para esta Chain.</value>
+  </data>
+  <data name="index_policy" xml:space="preserve">
+    <value>Configurar ação padrão para:</value>
+  </data>
+  <data name="index_policy_accept" xml:space="preserve">
+    <value>Aceitar</value>
+  </data>
+  <data name="index_policy_drop" xml:space="preserve">
+    <value>Negar</value>
+  </data>
+  <data name="index_policy_queue" xml:space="preserve">
+    <value>Userspace</value>
+  </data>
+  <data name="index_policy_return" xml:space="preserve">
+    <value>Sair chain</value>
+  </data>
+  <data name="index_jump_return" xml:space="preserve">
+    <value>Sair chain</value>
+  </data>
+  <data name="index_jump_log" xml:space="preserve">
+    <value>Log do Pacote</value>
+  </data>
+  <data name="index_jump_masquerade" xml:space="preserve">
+    <value>Masquerade</value>
+  </data>
+  <data name="index_jump_redirect" xml:space="preserve">
+    <value>Redirect</value>
+  </data>
+  <data name="index_jump_dnat" xml:space="preserve">
+    <value>Destino NAT</value>
+  </data>
+  <data name="index_jump_snat" xml:space="preserve">
+    <value>Origem NAT</value>
+  </data>
+  <data name="index_jump_" xml:space="preserve">
+    <value>Fazer nada</value>
+  </data>
+  <data name="index_jump" xml:space="preserve">
+    <value>Rodar chain $1</value>
+  </data>
+  <data name="index_radd" xml:space="preserve">
+    <value>Adicionar Regra</value>
+  </data>
+  <data name="index_cdelete" xml:space="preserve">
+    <value>Deletar Chain</value>
+  </data>
+  <data name="index_cclear" xml:space="preserve">
+    <value>Limpar todas as regras</value>
+  </data>
+  <data name="index_cdeletesel" xml:space="preserve">
+    <value>Deletar Selecionada</value>
+  </data>
+  <data name="index_cadd" xml:space="preserve">
+    <value>Adicionar uma nova chain de nome:</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Aplicar configuração</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Clique neste botão para fazer as configurações listadas acima ativas. Qualquer regra de firewall atualmente ativas serão substituídas.</value>
+  </data>
+  <data name="index_applydesc2" xml:space="preserve">
+    <value>Clique neste botão para fazer a configuração de firewall acima ativa em todos os Servidores em Cluster. Qualquer regra de firewall atualmente ativas serão substituídas</value>
+  </data>
+  <data name="index_unapply" xml:space="preserve">
+    <value>Reverter Configuração</value>
+  </data>
+  <data name="index_unapplydesc" xml:space="preserve">
+    <value>Clique neste botão para reiniciar as configurações listadas acima para a que estiver em uso atual.</value>
+  </data>
+  <data name="index_table_filter" xml:space="preserve">
+    <value>Filtragem de pacotes (filter)</value>
+  </data>
+  <data name="index_table_nat" xml:space="preserve">
+    <value>Tradução de endereço de rede (nat)</value>
+  </data>
+  <data name="index_table_mangle" xml:space="preserve">
+    <value>Alteração de pacotes (mangle)</value>
+  </data>
+  <data name="index_existing" xml:space="preserve">
+    <value>Webmin detectou $1 regras Iptables Firewall atualmente em uso, no qual não estão gravadas no arquivo $2. Estas regras estão provavelmente configuradas de um script, no qual o módulo não sabe como ler ou editar.&lt;p&gt; Se você quiser usar este módulo para gerenciar seu Iptables Firewall, clique neste botão abaixo para converter as regras existentes para um arquivo salvo, e então desative seu script firewall.</value>
+  </data>
+  <data name="index_saveex" xml:space="preserve">
+    <value>Salvar regras de Firewall</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Ativar Firewall no boot ?</value>
+  </data>
+  <data name="index_headerex" xml:space="preserve">
+    <value>Saindo da configuração do Firewall.</value>
+  </data>
+  <data name="index_bootup" xml:space="preserve">
+    <value>Ativado na inicialização</value>
+  </data>
+  <data name="index_bootupdesc" xml:space="preserve">
+    <value>Mudar esta opção controlará se o seu firewall é ativado ou não no boot</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Lista de Regras.</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Nenhum firewall Iptables está configurado em seu sistema. Webmin pode configurar um para você e será salvo no arquivo $1, com configurações iniciais baseados no tipo de firewall abaixo..</value>
+  </data>
+  <data name="index_rsetup" xml:space="preserve">
+    <value>A configuração de Firewall em seu sistema será reiniciada. Webmin configurará novas regras, que serão salvas no arquivo $1, com as configurações iniciais baseadas em sua seleção de firewall abaixo..</value>
+  </data>
+  <data name="index_auto0" xml:space="preserve">
+    <value>Permitir todos os Tráficos</value>
+  </data>
+  <data name="index_auto1" xml:space="preserve">
+    <value>Fazer NAT na interface externa:</value>
+  </data>
+  <data name="index_auto2" xml:space="preserve">
+    <value>Bloquear todas conexões da interface externa:</value>
+  </data>
+  <data name="index_auto3" xml:space="preserve">
+    <value>Bloquear todos, exceto SSH e IDENT na interface externa:</value>
+  </data>
+  <data name="index_auto4" xml:space="preserve">
+    <value>Bloquear todos, exceto SSH, IDENT, ping e portas altas na interface:</value>
+  </data>
+  <data name="index_auto5" xml:space="preserve">
+    <value>Bloquear todas as portas exceto as utilizadas por hosts virtuais, na interface:</value>
+  </data>
+  <data name="index_auto" xml:space="preserve">
+    <value>Configurando Firewall</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Reiniciando Firewall</value>
+  </data>
+  <data name="index_resetdesc" xml:space="preserve">
+    <value>Clique neste botão para limpar todas regras de firewall existentes e configurar uma nova regra com configurações iniciais básicas.</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>Servidores Clusters</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>Clique neste botão para ativar um Servidor Webmin adicional no qual a configuração do Firewall será automaticamente copiada.</value>
+  </data>
+  <data name="desc_p" xml:space="preserve">
+    <value>protocolo é $1</value>
+  </data>
+  <data name="desc_p!" xml:space="preserve">
+    <value>protocolo não é $1</value>
+  </data>
+  <data name="desc_s" xml:space="preserve">
+    <value>origem é $1</value>
+  </data>
+  <data name="desc_s!" xml:space="preserve">
+    <value>origem não é $1</value>
+  </data>
+  <data name="desc_d" xml:space="preserve">
+    <value>destino é $1</value>
+  </data>
+  <data name="desc_d!" xml:space="preserve">
+    <value>destino não é $1</value>
+  </data>
+  <data name="desc_i" xml:space="preserve">
+    <value>Interface de Entrada é $1</value>
+  </data>
+  <data name="desc_i!" xml:space="preserve">
+    <value>Interface de Entrada não é $1</value>
+  </data>
+  <data name="desc_o" xml:space="preserve">
+    <value>Interface de saída é $1</value>
+  </data>
+  <data name="desc_o!" xml:space="preserve">
+    <value>Interface de saída não é $1</value>
+  </data>
+  <data name="desc_f" xml:space="preserve">
+    <value>pacote é um fragmento</value>
+  </data>
+  <data name="desc_f!" xml:space="preserve">
+    <value>packet não é um fragmento</value>
+  </data>
+  <data name="desc_sport" xml:space="preserve">
+    <value>origem é $1</value>
+  </data>
+  <data name="desc_sport!" xml:space="preserve">
+    <value>origem não é $1</value>
+  </data>
+  <data name="desc_dport" xml:space="preserve">
+    <value>porta de destino é $1</value>
+  </data>
+  <data name="desc_dport!" xml:space="preserve">
+    <value>porta de destino não é $1</value>
+  </data>
+  <data name="desc_sports" xml:space="preserve">
+    <value>porta de origem é $1</value>
+  </data>
+  <data name="desc_sports!" xml:space="preserve">
+    <value>porta de origem não é $1</value>
+  </data>
+  <data name="desc_dports" xml:space="preserve">
+    <value>portas de destino são $1</value>
+  </data>
+  <data name="desc_dports!" xml:space="preserve">
+    <value>portas de destino não são $1</value>
+  </data>
+  <data name="desc_tcp-flags" xml:space="preserve">
+    <value>TCP flags $2 (de $1) estão ativas</value>
+  </data>
+  <data name="desc_tcp-flags!" xml:space="preserve">
+    <value>TCP flags $2 (de $1) não estão ativas</value>
+  </data>
+  <data name="desc_tcp-option" xml:space="preserve">
+    <value>pacote usa opção TCP $1</value>
+  </data>
+  <data name="desc_tcp-option!" xml:space="preserve">
+    <value>pacote não usa opção TCP $1</value>
+  </data>
+  <data name="desc_icmp-type" xml:space="preserve">
+    <value>Tipo ICMP é $1</value>
+  </data>
+  <data name="desc_icmp-type!" xml:space="preserve">
+    <value>tipo ICMP não é $1</value>
+  </data>
+  <data name="desc_mac-source" xml:space="preserve">
+    <value>endereço ethernet é $1</value>
+  </data>
+  <data name="desc_mac-source!" xml:space="preserve">
+    <value>endereço ethernet não é  $1</value>
+  </data>
+  <data name="desc_limit" xml:space="preserve">
+    <value>taxa é menor que $1</value>
+  </data>
+  <data name="desc_limit!" xml:space="preserve">
+    <value>taxa é maior que $1</value>
+  </data>
+  <data name="desc_limit-burst" xml:space="preserve">
+    <value>taxa de rompimento é menor que $1</value>
+  </data>
+  <data name="desc_limit-burst!" xml:space="preserve">
+    <value>taxa de rompimento é maior que $1</value>
+  </data>
+  <data name="desc_ports" xml:space="preserve">
+    <value>portas de origem e destino são $1</value>
+  </data>
+  <data name="desc_ports!" xml:space="preserve">
+    <value>portas de origem e destino não são $1</value>
+  </data>
+  <data name="desc_uid-owner" xml:space="preserve">
+    <value>rementente é usuário $1</value>
+  </data>
+  <data name="desc_uid-owner!" xml:space="preserve">
+    <value>remetente não é o usuário $1</value>
+  </data>
+  <data name="desc_gid-owner" xml:space="preserve">
+    <value>remetente é o grupo $1</value>
+  </data>
+  <data name="desc_gid-owner!" xml:space="preserve">
+    <value>remetente não é o grupo $1</value>
+  </data>
+  <data name="desc_pid-owner" xml:space="preserve">
+    <value>processo ID do rementente é  $1</value>
+  </data>
+  <data name="desc_pid-owner!" xml:space="preserve">
+    <value>processo ID do rementente não é $1</value>
+  </data>
+  <data name="desc_sid-owner" xml:space="preserve">
+    <value>grupo de sessão do rementente é $1</value>
+  </data>
+  <data name="desc_sid-owner!" xml:space="preserve">
+    <value>grupo de sessão do rementente não é $1</value>
+  </data>
+  <data name="desc_state" xml:space="preserve">
+    <value>estado da conexão é $1</value>
+  </data>
+  <data name="desc_state!" xml:space="preserve">
+    <value>estado da conexão não é $1</value>
+  </data>
+  <data name="desc_tos" xml:space="preserve">
+    <value>campo tipo de serviço é $1</value>
+  </data>
+  <data name="desc_tos!" xml:space="preserve">
+    <value>campo tipo de serviço não é $1</value>
+  </data>
+  <data name="desc_conds" xml:space="preserve">
+    <value>Se $1</value>
+  </data>
+  <data name="desc_and" xml:space="preserve">
+    <value>e</value>
+  </data>
+  <data name="desc_always" xml:space="preserve">
+    <value>Sempre</value>
+  </data>
+  <data name="redhat_eoutput" xml:space="preserve">
+    <value>Um erro ocorreu obtendo o status do Iptables a partir do comando $1. Isto provavelmente indica que seu sistema está configurado para usar Ipchais ao invés de Iptables.</value>
+  </data>
+  <data name="gentoo_escript" xml:space="preserve">
+    <value>O Script Iptables do Gentoo $1 não foi encontrado em seu sistema.</value>
+  </data>
+  <data name="eiptables" xml:space="preserve">
+    <value>Linha do arquivo Iptables desconhecido : $1</value>
+  </data>
+  <data name="eip6tables" xml:space="preserve">
+    <value>Linha do arquivo ip6tables desconhecido : $1</value>
+  </data>
+  <data name="edit_title1" xml:space="preserve">
+    <value>Adiciona Regra</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Editar Regra</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Clonar Regra</value>
+  </data>
+  <data name="edit_header1" xml:space="preserve">
+    <value>Chain e detalhes da ação</value>
+  </data>
+  <data name="edit_chain" xml:space="preserve">
+    <value>Parte da chain</value>
+  </data>
+  <data name="edit_cmt" xml:space="preserve">
+    <value>Comentários da regra</value>
+  </data>
+  <data name="edit_jump" xml:space="preserve">
+    <value>Ação a ser tomada</value>
+  </data>
+  <data name="edit_jump_other" xml:space="preserve">
+    <value>Rodar chain</value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Detalhes da condiçào</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>A ação selecionada acima somente será transportada se &lt;b&gt;todas&lt;/b&gt; as condições abaixo estiverem corretas.</value>
+  </data>
+  <data name="edit_source" xml:space="preserve">
+    <value>Endereço de Origem ou rede</value>
+  </data>
+  <data name="edit_ignore" xml:space="preserve">
+    <value>Ignorado</value>
+  </data>
+  <data name="edit_is" xml:space="preserve">
+    <value>Igual</value>
+  </data>
+  <data name="edit_not" xml:space="preserve">
+    <value>Diferente</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>Endereço de Destino ou rede</value>
+  </data>
+  <data name="edit_in" xml:space="preserve">
+    <value>Interfaçe de Entrada</value>
+  </data>
+  <data name="edit_out" xml:space="preserve">
+    <value>Interfaçe de Saída</value>
+  </data>
+  <data name="edit_frag" xml:space="preserve">
+    <value>Fragmentação</value>
+  </data>
+  <data name="edit_fragis" xml:space="preserve">
+    <value>Está fragmentado</value>
+  </data>
+  <data name="edit_fragnot" xml:space="preserve">
+    <value>Não está fragmentado</value>
+  </data>
+  <data name="edit_proto" xml:space="preserve">
+    <value>Protocolo de Rede</value>
+  </data>
+  <data name="edit_sport" xml:space="preserve">
+    <value>Origem TCP ou porta UDP</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>Destino TCP ou porta UDP</value>
+  </data>
+  <data name="edit_port0" xml:space="preserve">
+    <value>Porta(s)</value>
+  </data>
+  <data name="edit_port1" xml:space="preserve">
+    <value>Range de portas $1 para $2</value>
+  </data>
+  <data name="edit_ports" xml:space="preserve">
+    <value>Porta(s) de origem e destino</value>
+  </data>
+  <data name="edit_tcpflags" xml:space="preserve">
+    <value>TCP flags ativas</value>
+  </data>
+  <data name="edit_flags" xml:space="preserve">
+    <value>$2 sai de &lt;br&gt; $1</value>
+  </data>
+  <data name="edit_tcpoption" xml:space="preserve">
+    <value>Números de opção TCP ativas</value>
+  </data>
+  <data name="edit_icmptype" xml:space="preserve">
+    <value>Tipo de pacote ICMP</value>
+  </data>
+  <data name="edit_mac" xml:space="preserve">
+    <value>Endereço ethernet</value>
+  </data>
+  <data name="edit_limit" xml:space="preserve">
+    <value>Taxa de fluxo do pacote</value>
+  </data>
+  <data name="edit_below" xml:space="preserve">
+    <value>Abaixo</value>
+  </data>
+  <data name="edit_above" xml:space="preserve">
+    <value>ACima</value>
+  </data>
+  <data name="edit_limitburst" xml:space="preserve">
+    <value>Taxa de pacotes rompidos</value>
+  </data>
+  <data name="edit_uidowner" xml:space="preserve">
+    <value>Enviando usuário unix</value>
+  </data>
+  <data name="edit_gidowner" xml:space="preserve">
+    <value>Enviando grupo unix</value>
+  </data>
+  <data name="edit_pidowner" xml:space="preserve">
+    <value>Enviando processo ID</value>
+  </data>
+  <data name="edit_sidowner" xml:space="preserve">
+    <value>Sending processo em Grupo</value>
+  </data>
+  <data name="edit_state" xml:space="preserve">
+    <value>Estado da Conexão</value>
+  </data>
+  <data name="edit_state_new" xml:space="preserve">
+    <value>Nova conexão</value>
+  </data>
+  <data name="edit_state_established" xml:space="preserve">
+    <value>Conexão existente</value>
+  </data>
+  <data name="edit_state_related" xml:space="preserve">
+    <value>Relacionado ao existente</value>
+  </data>
+  <data name="edit_state_invalid" xml:space="preserve">
+    <value>Não é parte de qualquer conexão</value>
+  </data>
+  <data name="edit_state_untracked" xml:space="preserve">
+    <value>Não rastreado</value>
+  </data>
+  <data name="edit_tos" xml:space="preserve">
+    <value>Tipo de Serviço</value>
+  </data>
+  <data name="edit_rtoports" xml:space="preserve">
+    <value>Portal alvo para redirecionar</value>
+  </data>
+  <data name="edit_prange" xml:space="preserve">
+    <value>Range de portas $1 para $2</value>
+  </data>
+  <data name="edit_mtoports" xml:space="preserve">
+    <value>Porta de origem para masquerade</value>
+  </data>
+  <data name="edit_dnat" xml:space="preserve">
+    <value>IPs e portas para DNAT</value>
+  </data>
+  <data name="edit_dnatip" xml:space="preserve">
+    <value>Range IP $1 para $2</value>
+  </data>
+  <data name="edit_snat" xml:space="preserve">
+    <value>IPs e portas para SNAT</value>
+  </data>
+  <data name="edit_any" xml:space="preserve">
+    <value>Qualquer</value>
+  </data>
+  <data name="edit_oifc" xml:space="preserve">
+    <value>Outro..</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clonar regra</value>
+  </data>
+  <data name="edit_before" xml:space="preserve">
+    <value>Regra antes $1</value>
+  </data>
+  <data name="edit_after" xml:space="preserve">
+    <value>Regra depois $1</value>
+  </data>
+  <data name="edit_args" xml:space="preserve">
+    <value>Parâmetros adicionais</value>
+  </data>
+  <data name="edit_mods" xml:space="preserve">
+    <value>Módulos adicionais Iptables</value>
+  </data>
+  <data name="edit_rwith" xml:space="preserve">
+    <value>Rejeitar com tipo ICMP</value>
+  </data>
+  <data name="edit_rwithtype" xml:space="preserve">
+    <value>Tipo $1</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Falha ao salvar regra</value>
+  </data>
+  <data name="save_echain" xml:space="preserve">
+    <value>Chain a ser executada faltando ou inválida</value>
+  </data>
+  <data name="save_esource" xml:space="preserve">
+    <value>Perdido ou inválido endereço de origem ou rede</value>
+  </data>
+  <data name="save_edest" xml:space="preserve">
+    <value>Endereço de destino ou rede faltando ou inválido</value>
+  </data>
+  <data name="save_ein" xml:space="preserve">
+    <value>Interface de entrada faltando ou inválida</value>
+  </data>
+  <data name="save_eout" xml:space="preserve">
+    <value>Interface de saída faltando ou inválida</value>
+  </data>
+  <data name="save_eproto" xml:space="preserve">
+    <value>Nenhum protocolo selecionado</value>
+  </data>
+  <data name="save_esport" xml:space="preserve">
+    <value>Perdido ou inválida porta(s) de origem</value>
+  </data>
+  <data name="save_esportfrom" xml:space="preserve">
+    <value>Inválido rangee incial de portas de origem</value>
+  </data>
+  <data name="save_esportto" xml:space="preserve">
+    <value>Inválido range final de portas de origem</value>
+  </data>
+  <data name="save_esportrange" xml:space="preserve">
+    <value>Você precisa entrar com a menor, ou a primeira ou a últim a da porta de origem</value>
+  </data>
+  <data name="save_etcpudp" xml:space="preserve">
+    <value>Portas de origem e destino somente pode ser usadas se  o protocolo é TCP ou UDP</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>Porta(s) de destino faltando ou inválida(s)</value>
+  </data>
+  <data name="save_edportfrom" xml:space="preserve">
+    <value>Faixa inicial de portas de destino inválida</value>
+  </data>
+  <data name="save_edportto" xml:space="preserve">
+    <value>Faixa final de portas de destino inválida</value>
+  </data>
+  <data name="save_edportrange" xml:space="preserve">
+    <value>Você precisa fornecer pelo menos a primeira ou a última da faixa de portas de destino</value>
+  </data>
+  <data name="save_eports" xml:space="preserve">
+    <value>Porta(s) de origem e destino faltando ou inválida(s)</value>
+  </data>
+  <data name="save_etcp1" xml:space="preserve">
+    <value>As condições das flags TCP somente pode ser usadas se o protocolo é TCP</value>
+  </data>
+  <data name="save_etcpflags" xml:space="preserve">
+    <value>Você deve selecionar no mínimo uma Flag TCP da coluna</value>
+  </data>
+  <data name="save_etcpflags2" xml:space="preserve">
+    <value>Você deve selecionar no mínimo uma Flag TCP da segunda coluna</value>
+  </data>
+  <data name="save_etcp2" xml:space="preserve">
+    <value>Os números de condições TCP somente pode ser usadas se o protocolo é TCP</value>
+  </data>
+  <data name="save_etcpoption" xml:space="preserve">
+    <value>Perdido ou inválida opção de número de TCP</value>
+  </data>
+  <data name="save_eicmp" xml:space="preserve">
+    <value>O tipo de condição do pacote ICMP somente pode ser usado se o protocolo for ICMP</value>
+  </data>
+  <data name="save_emac" xml:space="preserve">
+    <value>Endereço ethernet faltando ou inválido</value>
+  </data>
+  <data name="save_elimit" xml:space="preserve">
+    <value>Taxa de fluxo de pacotes faltando ou inválida</value>
+  </data>
+  <data name="save_elimitburst" xml:space="preserve">
+    <value>Taxa de rompimento de pacotes faltando ou inválida</value>
+  </data>
+  <data name="save_euidowner" xml:space="preserve">
+    <value>Perdido ou inválido enviando unix user a ser enviado</value>
+  </data>
+  <data name="save_egidowner" xml:space="preserve">
+    <value>Grupo Unix enviado faltando ou inválido</value>
+  </data>
+  <data name="save_epidowner" xml:space="preserve">
+    <value>Processo ID a ser enviado faltando ou inválido</value>
+  </data>
+  <data name="save_esidowner" xml:space="preserve">
+    <value>Perdido ou inválido grupo de processo ID a ser enviado</value>
+  </data>
+  <data name="save_ertoports" xml:space="preserve">
+    <value>Porta alvo de redirecionamento faltando ou inválida</value>
+  </data>
+  <data name="save_emtoports" xml:space="preserve">
+    <value>Perdido ou inválido porta de origem masquerade</value>
+  </data>
+  <data name="save_edipfrom" xml:space="preserve">
+    <value>Endereço IP inicial para DNAT faltando ou inválido</value>
+  </data>
+  <data name="save_edipto" xml:space="preserve">
+    <value>Endereço IP final para DNAT faltando ou inválido</value>
+  </data>
+  <data name="save_edpfrom" xml:space="preserve">
+    <value>Porta inicial para DNAT inválida</value>
+  </data>
+  <data name="save_edpto" xml:space="preserve">
+    <value>Porta final para DNAT faltando ou inválida</value>
+  </data>
+  <data name="save_esipfrom" xml:space="preserve">
+    <value>Perdido ou inválido endereço ip inicial para SNAT</value>
+  </data>
+  <data name="save_esipto" xml:space="preserve">
+    <value>Perdido ou inválido endereço IP final para SNAT</value>
+  </data>
+  <data name="save_espfrom" xml:space="preserve">
+    <value>Inválida porta inicial para SNAT</value>
+  </data>
+  <data name="save_espto" xml:space="preserve">
+    <value>Perdido ou inválido porta final para SNAT</value>
+  </data>
+  <data name="save_estates" xml:space="preserve">
+    <value>Nenhum status de conexão selecionado</value>
+  </data>
+  <data name="save_ecanjump" xml:space="preserve">
+    <value>Você não possui permissão para usar esta ação</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Deletar Chain</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Você tem certeza que quer deletar esta chain $1 ? $2 regras como estas serão deletadas.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Deletando Agora</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Você não está permitido deletar chains</value>
+  </data>
+  <data name="clear_title" xml:space="preserve">
+    <value>Limpar Chain</value>
+  </data>
+  <data name="clear_rusure" xml:space="preserve">
+    <value>Você tem certeza que quer deletar todas $2 regras da chain $1 ?</value>
+  </data>
+  <data name="clear_ecannot" xml:space="preserve">
+    <value>Você não está permitido limpar chains</value>
+  </data>
+  <data name="new_err" xml:space="preserve">
+    <value>Falha ao criar chain</value>
+  </data>
+  <data name="new_ename" xml:space="preserve">
+    <value>Nome da chain faltando ou inválido</value>
+  </data>
+  <data name="new_etaken" xml:space="preserve">
+    <value>Já existe uma chain com este nome</value>
+  </data>
+  <data name="new_ecannot" xml:space="preserve">
+    <value>Você não possui permissão para criar chains</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Falha ao aplicar configuração</value>
+  </data>
+  <data name="apply_ecannot" xml:space="preserve">
+    <value>Você não está permitido aplicar as configurações</value>
+  </data>
+  <data name="apply_remote" xml:space="preserve">
+    <value>Erro de $1 : $2</value>
+  </data>
+  <data name="unapply_err" xml:space="preserve">
+    <value>Falha  ao reverter configuração</value>
+  </data>
+  <data name="unapply_ecannot" xml:space="preserve">
+    <value>Você não está permitido reverter a configuração</value>
+  </data>
+  <data name="bootup_ecannot" xml:space="preserve">
+    <value>Você não está permitido ativar ou desativar o firewall na inicialização</value>
+  </data>
+  <data name="log_create_rule" xml:space="preserve">
+    <value>Adicionado regras na chain $1 na tabela $2</value>
+  </data>
+  <data name="log_modify_rule" xml:space="preserve">
+    <value>Modificada regra na chain $1 na tabela $2</value>
+  </data>
+  <data name="log_delete_rule" xml:space="preserve">
+    <value>Deletado regra na chain $1 na tabela $2</value>
+  </data>
+  <data name="log_move_rule" xml:space="preserve">
+    <value>Movida regra na chain $1 na tabela $2</value>
+  </data>
+  <data name="log_delete_chain" xml:space="preserve">
+    <value>Deletado chain $1 da tabela $2</value>
+  </data>
+  <data name="log_clear_chain" xml:space="preserve">
+    <value>Limpo chain $1 na tabela $2</value>
+  </data>
+  <data name="log_create_chain" xml:space="preserve">
+    <value>Limpo chain $1 na tabela $2</value>
+  </data>
+  <data name="log_modify_chain" xml:space="preserve">
+    <value>Configurado ação padrão para chain $1 na tabela $2</value>
+  </data>
+  <data name="log_delsel_chain" xml:space="preserve">
+    <value>Deletado $3 regras da chain $1 na tabela $2</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Configurações Aplicadas</value>
+  </data>
+  <data name="log_unapply" xml:space="preserve">
+    <value>Reverter configurações</value>
+  </data>
+  <data name="log_setup" xml:space="preserve">
+    <value>Configurar Firewall</value>
+  </data>
+  <data name="log_convert" xml:space="preserve">
+    <value>Converter firewall existente</value>
+  </data>
+  <data name="log_bootup" xml:space="preserve">
+    <value>Ativar firewall na inicialização</value>
+  </data>
+  <data name="log_bootdown" xml:space="preserve">
+    <value>Desativar firewall durante a inicialização</value>
+  </data>
+  <data name="log_add_host" xml:space="preserve">
+    <value>Adicionado servidor cluster $1</value>
+  </data>
+  <data name="log_add_group" xml:space="preserve">
+    <value>Adicionando servidores clusters do grupo $1</value>
+  </data>
+  <data name="log_delete_host" xml:space="preserve">
+    <value>Removido servidor cluster $1</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>Removido $1 servidores cluster</value>
+  </data>
+  <data name="setup_eiface" xml:space="preserve">
+    <value>Nenhuma interface externa de rede entrado</value>
+  </data>
+  <data name="setup_ecannot" xml:space="preserve">
+    <value>Você não está permitido a configurar o firewall</value>
+  </data>
+  <data name="acl_tables" xml:space="preserve">
+    <value>Iptables Permitido</value>
+  </data>
+  <data name="acl_apply" xml:space="preserve">
+    <value>Pode aplicar configuração ?</value>
+  </data>
+  <data name="acl_unapply" xml:space="preserve">
+    <value>Pode desaplicar configuraçao ?</value>
+  </data>
+  <data name="acl_bootup" xml:space="preserve">
+    <value>Pode ativar firewall na inicialização ?</value>
+  </data>
+  <data name="acl_setup" xml:space="preserve">
+    <value>Pode executar configuração inicial do firewall ?</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>Pode gerenciar cluster firewall ?</value>
+  </data>
+  <data name="acl_jumps" xml:space="preserve">
+    <value>Ações permitidas</value>
+  </data>
+  <data name="acl_jall" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="acl_newchain" xml:space="preserve">
+    <value>Pode criar novas chains ?</value>
+  </data>
+  <data name="acl_delchain" xml:space="preserve">
+    <value>Pode apagar ou limpar chains?</value>
+  </data>
+  <data name="acl_policy" xml:space="preserve">
+    <value>Pode mudar políticas padrão ?</value>
+  </data>
+  <data name="etable" xml:space="preserve">
+    <value>Você não está permitido editar este Iptable</value>
+  </data>
+  <data name="ejump" xml:space="preserve">
+    <value>Você não está permitido editar esta regra</value>
+  </data>
+  <data name="ecluster" xml:space="preserve">
+    <value>Você não está permitido gerenciar cluster firewall</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>Servidores Firewall Cluster</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>Nenhum servidores cluster foi adicionado no firewall.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>Hostname</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>Sistema Operacional</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>Adicionar Servidor</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>Adicionar os servidores no grupo</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>Você deve adicionar servidores com um login e senha nos Servidores Webmin antes de gerenciarem eles aqui.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>Servidores Clusters</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>Removido Selecionado</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Adicionar Servidores</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>Adicionando $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>Adicionando servidores no grupo $1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Falha ao adicinar servidores</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>Falha ao adicionar grupos</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>Servidor $1 não pode estar no módulo Linux Firewall</value>
+  </data>
+  <data name="add_emissing" xml:space="preserve">
+    <value>Servidor $1 está perdido no comando firewall $2</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Adicionado $1, com $2 regras de firewall ativas.</value>
+  </data>
+  <data name="policy_ecannot" xml:space="preserve">
+    <value>Você não possui permissão para alterar a política padrão para esta chain</value>
+  </data>
+</root>

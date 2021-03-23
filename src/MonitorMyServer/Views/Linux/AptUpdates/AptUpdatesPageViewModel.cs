@@ -20,10 +20,10 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
     {
         private readonly IMessageBoxService _messageBoxService;
         private readonly IRewardService _rewardService;
-       
+        private readonly ISshService _sshService;
+
         private PidStatusChecker _pidStatusChecker;
         private IEnumerable<Upgradable> _upgradables;
-        private readonly ISshService _sshService;
         private int _upgradablesCount;
 
 
@@ -80,7 +80,6 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
 
         private void Current_OnRewardedVideoAdLeftApplication(object sender, EventArgs e)
         {
-            
             SetLabelsStateItem(openmediavault.Warning, "you need to wath all video");
         }
 

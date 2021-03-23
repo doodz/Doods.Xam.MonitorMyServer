@@ -10,10 +10,10 @@ namespace Doods.tool.ResxFromPoFile
         private static void Main(string[] args)
         {
             Console.WriteLine("Hello doods!");
-            //new Class1().Process();
+            //new PackageReference().Process();
             //new UpdatePoFiles().Process();
-            new UpdatePoFiles2().Process();
-
+            //new UpdatePoFilesCockpit().Process();
+            new UpdatePoFilesWebmin().Process();
         }
 
        

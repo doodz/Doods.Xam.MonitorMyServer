@@ -1,0 +1,774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Managementul volumului logic</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>Comanda LVM $1 nu a fost găsită în sistemul tău. Webmin are nevoie de comenzile de administrare LVM pentru a configura și gestiona volumele logice.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>Directorul de stare LVM $1 nu există. Aceasta indică faptul că kernel-ul dvs. nu acceptă LVM sau că modulul $2 nu este încărcat.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Grupuri de volum</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Volumele fizice</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Volume logice</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Nu s-au găsit grupuri de volum pe sistemul dvs.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Adăugați un nou grup de volum.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Acest grup de volum nu are încă niciun volum logic.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Acest grup de volum nu are încă niciun volum fizic.</value>
+  </data>
+  <data name="i2ndex_addpv" xml:space="preserve">
+    <value>Adăugați un volum fizic grupului.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Adăugați un volum fizic la &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Creați un volum logic în &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Creați o instantanee în &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Creați un pool subțire în &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Creați un nou volum logic.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Creați o nouă imagine.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>grupuri de volum</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>volume fizice</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>volume logice</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin acceptă doar versiunile LVM 1.0 și versiuni ulterioare. Rezultatul de la $1 pe sistemul dvs. a fost : $2 </value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Versiunea LVM $1 </value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Numele grupului de volum</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Marimea totala</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Blocurile utilizate</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Dimensiunea folosită</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Nu s-au adăugat încă volume fizice la niciun grup de volume.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Deocamdată nu au fost create volume logice din grupuri de volume.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Dispozitiv de volum fizic</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>În grup de volume</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Dimensiunea dispozitivului</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Blocurile utilizate</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Dimensiunea folosită</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Un grup de volume este un set de discuri care pot fi alocate unuia sau mai multor volume logice. Majoritatea sistemelor vor avea doar unul și cel puțin unul trebuie creat înainte de adăugarea oricăror volume fizice sau logice.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Un volum fizic este o partiție pe disc sau dispozitiv RAID care face parte dintr-un grup de volume. Spațiul său pe disc poate fi apoi utilizat de unul sau mai multe volume logice.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Un volum logic este o partiție virtuală creată din spațiul de disc combinat al unui grup de volume. Fiecare poate avea un sistem de fișiere care este apoi montat pentru a stoca fișiere.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Volumul logic</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Grup de volum</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>mărimea</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Spațiu utilizat</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Folosit pentru</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Captura de imagine a $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>Piscina subțire LVM pentru $1 LVs</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Editează volumul logic</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Editează instantaneu</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Creați volum logic</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Creați instantaneu</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>În grupul de volume $1 </value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Detalii despre volumul logic</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Numele volumului</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Creați un LV subțire în bazin</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Subțire provizorie în bazin</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Niciunul (creează LV obișnuit)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Dimensiunea volumului</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Dimensiune absolută</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Procentul mărimii VG</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Procentul de spațiu liber VG</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Procentul de spațiu liber PV</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 din $2 </value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Dimensiunea exactă</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Dimensiune cu unități</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Folosiți tot spațiul gratuit VG</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Fișier dispozitiv</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Statusul curent</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Montat pe $1 ca $2 </value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Pentru montare pe $1 ca $2 </value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Montat ca memorie virtuală</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Pentru montare ca memorie virtuală</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Parte a dispozitivului RAID $1 </value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Folosit de sistemul Cloudmin $1 </value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>Pentru utilizare de către sistemul Cloudmin $1 </value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>dispozitiv partajat iSCSI $1 </value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>Nu este folosit</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Acest volum logic nu poate fi redenumit sau redimensionat, deoarece este folosit în prezent.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Acces la volum</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Citeste, scrie</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Numai citit</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Metoda de alocare</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>contiguu</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>Necontigue</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Striping de volum</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Dezactivat (alocați întotdeauna de la început)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Înfășurați volumele fizice $1 </value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Volumele fizice pentru a strivi</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Dimensiunea benzii</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Sectoare Readahead</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>Nu a reușit să salveze volumul logic</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Numele volumului lipsesc sau nevalide</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Există deja un volum logic cu același nume</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Dimensiunea volumului lipsă sau nevalidă</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Procentul dimensiunii grupului de volum lipsă sau nevalid</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Procentul dimensiunii grupului de volum liber lipsit sau nevalid</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Procentul de mărime a volumului fizic gratuit lipsit sau nevalid</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Număr de dungi lipsă sau nevalid</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Ștergeți volumul logic</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Instantaneu rollback</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Sigur doriți să ștergeți volumul logic $1 ? Orice date dintr-un sistem de fișiere pe acest volum logic vor fi șterse pentru totdeauna!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Sigur doriți să ștergeți instantaneul $1 ?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Sunteți sigur că doriți să derulați instantaneul $1 ?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>AVERTIZARE! Acest LV este un set subțire pentru alte $1 volume subțire logice provizionate, care se vor pierde și dacă se șterge!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Șterge acum</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Rollback Acum</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>Nu a reușit să ștergi volumul logic</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>Eșecul la instantaneu de redare</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Dimensiunea blocului de alocare</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Blocuri alocate din grupul de volum</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 din $2 </value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Creați sistem de fișiere de tip:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Creați sistem de fișiere</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Selectați un tip de sistem de fișiere și faceți clic pe acest buton pentru a crea un nou sistem de fișiere pe acest volum logic. Aceasta va șterge toate datele existente în prezent pe volum.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Faceți clic pe acest buton pentru a crea un nou sistem de fișiere $1 pe acest volum logic. Aceasta va șterge toate datele existente în prezent pe volum.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>Noua dimensiune a volumului este de $1 blocuri (de $2 fiecare), dar numai $3 sunt libere în grupul de volume.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Captura de volum logică</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>Nu s-a putut determina!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Mount LV pe:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Montați acest LV pe noul director din sistemul dvs., astfel încât să poată fi folosit pentru a stoca fișiere. Un sistem de fișiere trebuie să fi fost deja creat.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Procentaj gratuit</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Spatiu liber</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Volumele fizice alocate</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>LV-uri în acest bazin subțire</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Procent procentaj de utilizare a bazinului subțire</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Spațiu subțire pentru piscină utilizat</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Procent procent de utilizare</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>Volumul logic nu mai există!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Deplasați volumul fizic</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Deplasați blocurile din volumul fizic</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>La volumul fizic</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Mutați blocurile</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>volumul logic</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Creați sistem de fișiere</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Acest formular vă permite să construiți un nou sistem de fișiere $2 ($1) pe volumul logic $3. Toate datele existente vor fi șterse.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Opțiuni ale sistemului de fișiere noi</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Crearea sistemului de fișiere nu a reușit</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Executarea comenzii $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. comanda nu a reușit!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. comanda finalizată.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Redimensionați volumul logic</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>Sistemul de fișiere $1 de pe acest volum logic nu poate fi redimensionat. Dacă redimensionați volumul logic, trebuie să re-creați sistemul de fișiere, care va șterge toate datele din acesta.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin nu știe ce tip de sistem de fișiere este pe acest volum logic, dacă este cazul. Dacă redimensionați volumul logic, trebuie să re-creați sistemul de fișiere, care va șterge toate datele din acesta.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>A apărut o eroare de redimensionare a sistemului de fișiere $1 pe acest volum logic: $2 Dacă redimensionați doar volumul logic, trebuie să re-creați sistemul de fișiere, care va șterge toate datele din acesta.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Redimensionați volumul logic</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>Sistemul de fișiere de pe acest volum logic nu poate fi redimensionat în timp ce este montat</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>Sistemul de fișiere de pe acest volum logic nu poate fi redus în timp ce este montat</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Activați LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>Se execută comanda $1 ..</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Editează volumul fizic</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Adăugați volumul fizic</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>În grupul de volume $1 </value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Detalii despre volumul fizic</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Dispozitiv de disc</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Alt dispozitiv ..</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Activat pentru alocare?</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Forțați adăugarea de volum?</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Dimensiunea discului</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Blocurile alocate</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Dimensiunea alocată</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Dimensiunea blocului de alocare</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Avertizare! Toate datele de pe dispozitivul selectat vor fi șterse.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Adăugați la grupul de volum</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Scoateți din grupul de volum</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Redimensionați pentru a potrivi dispozitivul</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>Nu a reușit să salveze volumul fizic</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>Nu a reușit să elimine volumul fizic</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>Nu a reușit redimensionarea volumului fizic</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Eliminați volumul fizic</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Sigur doriți să eliminați dispozitivul cu volumul fizic $1 din grupul său de volume? Aceasta va duce la trecerea datelor la alte volume fizice din grup.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Eliminați volumul</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Dispozitiv de disc lipsă sau nevalid</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>Dispozitiv RAID $1 </value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Alocare după volume logice</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>Volumul fizic nu mai există!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Editează grupul de volume</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Creați grup de volum</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Numele grupului de volum</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Detaliile grupului de volum</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Marimea totala</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Blocurile alocate</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Dimensiunea alocată</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Dimensiunea blocului de alocare</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Dispozitiv fizic inițial</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>Nu a reușit să salveze grupul de volum</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>Nu a reușit ștergerea grupului de volum</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Ștergeți grupul de volume</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Sigur doriți să ștergeți grupul de volume $1 ?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Acest grup de volum nu poate fi șters deoarece are încă $1 volume logice.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Șterge acum</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Numele grupului de volum lipsă sau nevalid</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Dimensiunea blocului de alocare lipsă sau nevalidă</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>Grupul de volum nu mai există!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>Nu a reușit să mute volumul logic</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Mutați volumul logic</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>Deplasarea volumului logic $1 de la $2 la $3 ..</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>.. mișcare eșuată!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>.. mută-te complet</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Creați un grup subțire</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>Un bazin subțire este o pereche de LV-uri care pot fi utilizate pentru a crea LV-uri suplimentare care pot fi mai mari decât măsurile disponibile. Spațiul este consumat doar atunci când este nevoie, mai degrabă decât atunci când sunt create LV-urile din interiorul piscinei. AVERTIZARE - Toate datele de pe LV-urile selectate vor fi pierdute!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Noi detalii despre piscina subțire</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>LV existent pentru date</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>LV existent pentru metadate</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Convertiți LV-urile în pool subțire</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>Nu au fost găsite LV-uri care nu sunt deja utilizate în acest VG!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>Nu a reușit să creeze un pool subțire</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Ambele LV-uri selectate sunt aceleași</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>Datele selectate LV sunt deja utilizate</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>Metadata LV selectată este deja folosită</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>Grup de volum creat $1 </value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>Grup de volum modificat $1 </value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>Grupul de volume șters $1 </value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>Volumul logic creat $1 în VG $2 </value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>Volumul logic modificat $1 în VG $2 </value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>Volumul logic șters $1 în VG $2 </value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>Snapshot înapoi $1 </value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>Sistem de fișiere $1 creat pe $2 </value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>Volumul fizic adăugat $1 la VG $1 </value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>Volumul fizic modificat $1 în VG $2 </value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>Volumul fizic $1 a fost eliminat din VG $2 </value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>Volumul fizic redimensionat $1 în VG $2 </value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blocuri</value>
+  </data>
+</root>

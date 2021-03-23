@@ -1,0 +1,786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>خادم WU-FTPD</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>تطبيق التغييرات</value>
+  </data>
+  <data name="index_applymsg" xml:space="preserve">
+    <value>انقر فوق هذا الزر لتطبيق التكوين الحالي. سيؤدي هذا إلى إيقاف وإعادة تشغيل جميع عمليات خادم FTP قيد التشغيل ، وبالتالي فصل جميع المستخدمين المتصلين.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>ابدأ الخادم</value>
+  </data>
+  <data name="index_startmsg2" xml:space="preserve">
+    <value>انقر فوق هذا الزر لبدء خادم FTP بالتكوين الحالي. يمكنك أيضًا تهيئة الخادم ليبدأ تشغيله تلقائيًا عند الحاجة باستخدام inetd أو برنامج معادل.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>خيارات خادم FTP</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>إصدار WU-FTPd$1</value>
+  </data>
+  <data name="class_title" xml:space="preserve">
+    <value>المستخدمون والفئات</value>
+  </data>
+  <data name="class_header" xml:space="preserve">
+    <value>فئات المستخدم وخيارات المستخدم</value>
+  </data>
+  <data name="class_class" xml:space="preserve">
+    <value>فئات المستخدم</value>
+  </data>
+  <data name="class_name" xml:space="preserve">
+    <value>اسم الفصل</value>
+  </data>
+  <data name="class_types" xml:space="preserve">
+    <value>أنواع المستخدم</value>
+  </data>
+  <data name="class_addrs" xml:space="preserve">
+    <value>مطابقة العناوين</value>
+  </data>
+  <data name="class_real" xml:space="preserve">
+    <value>يونكس</value>
+  </data>
+  <data name="class_guest" xml:space="preserve">
+    <value>زائر</value>
+  </data>
+  <data name="class_anonymous" xml:space="preserve">
+    <value>مجهول</value>
+  </data>
+  <data name="class_guestuser" xml:space="preserve">
+    <value>مستخدمي Unix و UIDs للتعامل كضيوف</value>
+  </data>
+  <data name="class_guestgroup" xml:space="preserve">
+    <value>مجموعات Unix و GIDs للتعامل كضيوف</value>
+  </data>
+  <data name="class_realuser" xml:space="preserve">
+    <value>مستخدمو Unix و UIDs &lt;i&gt;لا&lt;/i&gt; يعاملون كضيوف</value>
+  </data>
+  <data name="class_realgroup" xml:space="preserve">
+    <value>مجموعات Unix و GIDs &lt;i&gt;لا&lt;/i&gt; تُعامل كضيوف</value>
+  </data>
+  <data name="class_ftpusers" xml:space="preserve">
+    <value>مستخدمو Unix للرفض (من$1)</value>
+  </data>
+  <data name="class_deny_uid" xml:space="preserve">
+    <value>مستخدمي Unix و UIDs للرفض</value>
+  </data>
+  <data name="class_deny_gid" xml:space="preserve">
+    <value>مجموعات Unix و GIDs للرفض</value>
+  </data>
+  <data name="class_allow_uid" xml:space="preserve">
+    <value>مستخدمي Unix و UIDs لا ينكرون</value>
+  </data>
+  <data name="class_allow_gid" xml:space="preserve">
+    <value>مجموعات Unix و GIDs &lt;i&gt;لا&lt;/i&gt; تنكر</value>
+  </data>
+  <data name="class_err" xml:space="preserve">
+    <value>فشل في حفظ فئات المستخدم</value>
+  </data>
+  <data name="class_eclass" xml:space="preserve">
+    <value>إن '$1' ليس اسم فئة صالحًا</value>
+  </data>
+  <data name="class_etypes" xml:space="preserve">
+    <value>لم يتم اختيار أنواع للفصل '$1'</value>
+  </data>
+  <data name="class_eaddrs" xml:space="preserve">
+    <value>لم يتم إدخال عناوين للفئة '$1'</value>
+  </data>
+  <data name="message_title" xml:space="preserve">
+    <value>الرسائل واللافتات</value>
+  </data>
+  <data name="message_header" xml:space="preserve">
+    <value>الرسائل واللافتات وملفات README</value>
+  </data>
+  <data name="message_message" xml:space="preserve">
+    <value>ملفات الرسائل</value>
+  </data>
+  <data name="message_path" xml:space="preserve">
+    <value>مسار</value>
+  </data>
+  <data name="message_when" xml:space="preserve">
+    <value>متى يتم العرض</value>
+  </data>
+  <data name="message_login" xml:space="preserve">
+    <value>عند تسجيل الدخول</value>
+  </data>
+  <data name="message_dir" xml:space="preserve">
+    <value>دخول دير</value>
+  </data>
+  <data name="message_alldir" xml:space="preserve">
+    <value>إدخال أي دير</value>
+  </data>
+  <data name="message_classes" xml:space="preserve">
+    <value>فئات لعرضها</value>
+  </data>
+  <data name="message_readme" xml:space="preserve">
+    <value>قراءة الملفات</value>
+  </data>
+  <data name="message_update" xml:space="preserve">
+    <value>متى يتم عرض تاريخ التعديل الأخير</value>
+  </data>
+  <data name="message_greeting" xml:space="preserve">
+    <value>مستوى التحية</value>
+  </data>
+  <data name="message_full" xml:space="preserve">
+    <value>اسم المضيف وإصداره</value>
+  </data>
+  <data name="message_brief" xml:space="preserve">
+    <value>اسم المضيف</value>
+  </data>
+  <data name="message_terse" xml:space="preserve">
+    <value>لا هذا ولا ذاك</value>
+  </data>
+  <data name="message_banner" xml:space="preserve">
+    <value>لافتة تسجيل الدخول المسبق</value>
+  </data>
+  <data name="message_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="message_file" xml:space="preserve">
+    <value>من - الملف</value>
+  </data>
+  <data name="message_hostdef" xml:space="preserve">
+    <value>اسم مضيف النظام</value>
+  </data>
+  <data name="message_hostname" xml:space="preserve">
+    <value>اسم المضيف للرسائل</value>
+  </data>
+  <data name="message_email" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني للمالك</value>
+  </data>
+  <data name="message_err" xml:space="preserve">
+    <value>فشل في حفظ الرسائل واللافتات</value>
+  </data>
+  <data name="message_epath" xml:space="preserve">
+    <value>إن '$1' ليس مسارًا صالحًا</value>
+  </data>
+  <data name="message_cwd" xml:space="preserve">
+    <value>إن '$1' ليس دليلاً صالحًا</value>
+  </data>
+  <data name="message_eclass" xml:space="preserve">
+    <value>الفئة '$1' غير موجودة</value>
+  </data>
+  <data name="message_ebanner" xml:space="preserve">
+    <value>إن '$1' ليس ملف بانر تسجيل دخول صالح</value>
+  </data>
+  <data name="message_ehostname" xml:space="preserve">
+    <value>اسم مضيف مفقود أو غير صالح</value>
+  </data>
+  <data name="message_eemail" xml:space="preserve">
+    <value>عنوان البريد الإلكتروني مفقود أو غير صالح</value>
+  </data>
+  <data name="acl_title" xml:space="preserve">
+    <value>الحدود والتحكم في الوصول</value>
+  </data>
+  <data name="acl_header" xml:space="preserve">
+    <value>حدود وخيارات التحكم في الوصول</value>
+  </data>
+  <data name="acl_deny" xml:space="preserve">
+    <value>رفض الوصول من</value>
+  </data>
+  <data name="acl_daddrs" xml:space="preserve">
+    <value>رفض من العنوان</value>
+  </data>
+  <data name="acl_dmsg" xml:space="preserve">
+    <value>ملف رسالة خطأ</value>
+  </data>
+  <data name="acl_file" xml:space="preserve">
+    <value>حدود نقل الملفات والبيانات</value>
+  </data>
+  <data name="acl_fblimit" xml:space="preserve">
+    <value>نوع الحد</value>
+  </data>
+  <data name="acl_flimit" xml:space="preserve">
+    <value>الملفات لكل جلسة</value>
+  </data>
+  <data name="acl_blimit" xml:space="preserve">
+    <value>بايت لكل جلسة</value>
+  </data>
+  <data name="acl_raw" xml:space="preserve">
+    <value>البيانات فقط؟</value>
+  </data>
+  <data name="acl_inout" xml:space="preserve">
+    <value>اتجاه</value>
+  </data>
+  <data name="acl_in" xml:space="preserve">
+    <value>في</value>
+  </data>
+  <data name="acl_out" xml:space="preserve">
+    <value>خارج</value>
+  </data>
+  <data name="acl_total" xml:space="preserve">
+    <value>على حد سواء</value>
+  </data>
+  <data name="acl_count" xml:space="preserve">
+    <value>أقصى</value>
+  </data>
+  <data name="acl_class" xml:space="preserve">
+    <value>تنطبق على الفصل</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>جميع الفئات</value>
+  </data>
+  <data name="acl_limit" xml:space="preserve">
+    <value>حدود المستخدم المتزامنة</value>
+  </data>
+  <data name="acl_n" xml:space="preserve">
+    <value>أقصى عدد من المستخدمين</value>
+  </data>
+  <data name="acl_times" xml:space="preserve">
+    <value>في بعض الأحيان</value>
+  </data>
+  <data name="acl_lmsg" xml:space="preserve">
+    <value>ملف رسالة خطأ</value>
+  </data>
+  <data name="acl_unlimited" xml:space="preserve">
+    <value>غير محدود</value>
+  </data>
+  <data name="acl_any" xml:space="preserve">
+    <value>في أي وقت</value>
+  </data>
+  <data name="acl_alimit" xml:space="preserve">
+    <value>حد جلسة مجهول</value>
+  </data>
+  <data name="acl_glimit" xml:space="preserve">
+    <value>حد جلسة الضيف</value>
+  </data>
+  <data name="acl_mins" xml:space="preserve">
+    <value>الدقائق</value>
+  </data>
+  <data name="acl_fails" xml:space="preserve">
+    <value>الحد الأقصى لفشل تسجيل الدخول</value>
+  </data>
+  <data name="acl_private" xml:space="preserve">
+    <value>يمكن تبديل المجموعات؟</value>
+  </data>
+  <data name="acl_noret" xml:space="preserve">
+    <value>رفض الوصول إلى الملفات</value>
+  </data>
+  <data name="acl_nfiles" xml:space="preserve">
+    <value>ملفات للرفض</value>
+  </data>
+  <data name="acl_nrel" xml:space="preserve">
+    <value>نسبة إلى chroot؟</value>
+  </data>
+  <data name="acl_nclass" xml:space="preserve">
+    <value>رفض الصفوف</value>
+  </data>
+  <data name="acl_allowret" xml:space="preserve">
+    <value>السماح بالوصول إلى الملفات حتى إذا تم رفضها</value>
+  </data>
+  <data name="acl_afiles" xml:space="preserve">
+    <value>الملفات المسموح بها</value>
+  </data>
+  <data name="acl_arel" xml:space="preserve">
+    <value>نسبة إلى chroot؟</value>
+  </data>
+  <data name="acl_aclass" xml:space="preserve">
+    <value>السماح للفصول</value>
+  </data>
+  <data name="acl_err" xml:space="preserve">
+    <value>فشل في حفظ الحدود والتحكم في الوصول</value>
+  </data>
+  <data name="acl_edaddr" xml:space="preserve">
+    <value>إن '$1' ليس عنوانًا صالحًا</value>
+  </data>
+  <data name="acl_edfile" xml:space="preserve">
+    <value>إن '$1' ليس ملف عنوان صالحًا</value>
+  </data>
+  <data name="acl_edmsg" xml:space="preserve">
+    <value>إن '$1' ليس ملف رسائل خطأ صالحًا</value>
+  </data>
+  <data name="acl_eln" xml:space="preserve">
+    <value>لا يعد '$1' الحد الأقصى الصالح لعدد المستخدمين</value>
+  </data>
+  <data name="acl_etimes" xml:space="preserve">
+    <value>لا يعد '$1' نطاقًا زمنيًا صالحًا بنمط UUCP</value>
+  </data>
+  <data name="acl_elmsg" xml:space="preserve">
+    <value>إن '$1' ليس ملف رسائل خطأ صالحًا</value>
+  </data>
+  <data name="acl_efbcount" xml:space="preserve">
+    <value>إن '$1' ليس عددًا صالحًا من الملفات أو وحدات البايت</value>
+  </data>
+  <data name="acl_elimit" xml:space="preserve">
+    <value>'$1' ليس حدًا زمنيًا صالحًا</value>
+  </data>
+  <data name="acl_efails" xml:space="preserve">
+    <value>إن '$1' ليس عددًا صحيحًا من حالات فشل تسجيل الدخول</value>
+  </data>
+  <data name="net_title" xml:space="preserve">
+    <value>التواصل</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>خيارات الشبكات</value>
+  </data>
+  <data name="net_tcp" xml:space="preserve">
+    <value>أحجام نافذة TCP</value>
+  </data>
+  <data name="net_tsize" xml:space="preserve">
+    <value>بحجم</value>
+  </data>
+  <data name="net_tclass" xml:space="preserve">
+    <value>للصف</value>
+  </data>
+  <data name="net_tall" xml:space="preserve">
+    <value>جميع الفئات</value>
+  </data>
+  <data name="net_pasvaddr" xml:space="preserve">
+    <value>عناوين لاتصالات PASV</value>
+  </data>
+  <data name="net_pip" xml:space="preserve">
+    <value>عنوان IP</value>
+  </data>
+  <data name="net_pcidr" xml:space="preserve">
+    <value>للعملاء من الشبكة</value>
+  </data>
+  <data name="net_pasvport" xml:space="preserve">
+    <value>منافذ اتصالات PASV</value>
+  </data>
+  <data name="net_prange" xml:space="preserve">
+    <value>نطاق المنفذ</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات الشبكة</value>
+  </data>
+  <data name="net_etsize" xml:space="preserve">
+    <value>إن '$1' ليس حجم نافذة TCP صالحًا</value>
+  </data>
+  <data name="net_eip" xml:space="preserve">
+    <value>إن '$1' ليس عنوان IP صالحًا</value>
+  </data>
+  <data name="net_enet" xml:space="preserve">
+    <value>إن '$1' ليس عنوان شبكة صالحًا</value>
+  </data>
+  <data name="net_ecidr" xml:space="preserve">
+    <value>إن '$1' ليس عددًا صالحًا من وحدات بت الشبكة</value>
+  </data>
+  <data name="net_eport" xml:space="preserve">
+    <value>إن '$1' ليس رقم منفذ صالحًا</value>
+  </data>
+  <data name="log_title" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>خيارات التسجيل</value>
+  </data>
+  <data name="log_commands" xml:space="preserve">
+    <value>قم بتسجيل كافة الأوامر لـ</value>
+  </data>
+  <data name="log_anonymous" xml:space="preserve">
+    <value>المستخدمون المجهولون</value>
+  </data>
+  <data name="log_guest" xml:space="preserve">
+    <value>المستخدمون الضيوف</value>
+  </data>
+  <data name="log_real" xml:space="preserve">
+    <value>مستخدمو Unix</value>
+  </data>
+  <data name="log_trans" xml:space="preserve">
+    <value>سجل التحويلات ل</value>
+  </data>
+  <data name="log_dir" xml:space="preserve">
+    <value>في الاتجاهات</value>
+  </data>
+  <data name="log_inbound" xml:space="preserve">
+    <value>وارد</value>
+  </data>
+  <data name="log_outbound" xml:space="preserve">
+    <value>صادرة</value>
+  </data>
+  <data name="log_both" xml:space="preserve">
+    <value>على حد سواء</value>
+  </data>
+  <data name="log_security" xml:space="preserve">
+    <value>تسجيل انتهاكات الأمان لـ</value>
+  </data>
+  <data name="log_to" xml:space="preserve">
+    <value>سجل التحويلات إلى</value>
+  </data>
+  <data name="log_syslog" xml:space="preserve">
+    <value>سجل النظام</value>
+  </data>
+  <data name="log_xferlog" xml:space="preserve">
+    <value>ملف سجل XFER</value>
+  </data>
+  <data name="log_sysxfer" xml:space="preserve">
+    <value>كلا الوجهتين</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات التسجيل</value>
+  </data>
+  <data name="alias_title" xml:space="preserve">
+    <value>الأسماء المستعارة والمسارات</value>
+  </data>
+  <data name="alias_header" xml:space="preserve">
+    <value>خيارات الاسم المستعار والمسار</value>
+  </data>
+  <data name="alias_alias" xml:space="preserve">
+    <value>الأسماء المستعارة لدليل القرص المضغوط</value>
+  </data>
+  <data name="alias_from" xml:space="preserve">
+    <value>اسم مستعار</value>
+  </data>
+  <data name="alias_to" xml:space="preserve">
+    <value>الاسم المستعار للدليل</value>
+  </data>
+  <data name="alias_cdpath" xml:space="preserve">
+    <value>مسار البحث في دليل القرص المضغوط</value>
+  </data>
+  <data name="alias_err" xml:space="preserve">
+    <value>فشل في حفظ الأسماء المستعارة والمسارات</value>
+  </data>
+  <data name="alias_efrom" xml:space="preserve">
+    <value>إن '$1' ليس اسمًا مستعارًا صالحًا</value>
+  </data>
+  <data name="alias_eto" xml:space="preserve">
+    <value>إن '$1' ليس دليل اسم مستعار صالح</value>
+  </data>
+  <data name="alias_ecdpath" xml:space="preserve">
+    <value>إن '$1' ليس دليل بحث صالح للقرص المضغوط</value>
+  </data>
+  <data name="anon_title" xml:space="preserve">
+    <value>FTP مجهول</value>
+  </data>
+  <data name="anon_eftp" xml:space="preserve">
+    <value>تحذير - لا يحتوي نظامك على مستخدم &lt;tt&gt;ftp&lt;/tt&gt; ، وبالتالي ربما لم يتم تكوين بروتوكول FTP مجهول.</value>
+  </data>
+  <data name="anon_header" xml:space="preserve">
+    <value>خيارات FTP مجهولة</value>
+  </data>
+  <data name="anon_auto" xml:space="preserve">
+    <value>مجموعات Unix للمستخدمين المجهولين</value>
+  </data>
+  <data name="anon_group" xml:space="preserve">
+    <value>التبديل إلى المجموعة</value>
+  </data>
+  <data name="anon_classes" xml:space="preserve">
+    <value>للصفوف</value>
+  </data>
+  <data name="anon_root" xml:space="preserve">
+    <value>دلائل جذر FTP مجهولة</value>
+  </data>
+  <data name="anon_dir" xml:space="preserve">
+    <value>الدليل</value>
+  </data>
+  <data name="anon_class" xml:space="preserve">
+    <value>للصف</value>
+  </data>
+  <data name="anon_any" xml:space="preserve">
+    <value>أي</value>
+  </data>
+  <data name="anon_passwd" xml:space="preserve">
+    <value>تدقيق كلمة مرور FTP مجهولة</value>
+  </data>
+  <data name="anon_none" xml:space="preserve">
+    <value>اسمح بأي شيء</value>
+  </data>
+  <data name="anon_trivial" xml:space="preserve">
+    <value>يجب أن تحتوي على @</value>
+  </data>
+  <data name="anon_rfc822" xml:space="preserve">
+    <value>يجب أن يكون عنوان البريد الإلكتروني RFC822</value>
+  </data>
+  <data name="anon_enforce" xml:space="preserve">
+    <value>رفض تسجيل الدخول</value>
+  </data>
+  <data name="anon_warn" xml:space="preserve">
+    <value>التحذير فقط</value>
+  </data>
+  <data name="anon_email" xml:space="preserve">
+    <value>كلمات مرور FTP مجهولة لرفضها</value>
+  </data>
+  <data name="anon_groot" xml:space="preserve">
+    <value>أدلة جذر الضيف</value>
+  </data>
+  <data name="anon_uids" xml:space="preserve">
+    <value>لمستخدمي يونكس</value>
+  </data>
+  <data name="anon_err" xml:space="preserve">
+    <value>فشل في حفظ خيارات FTP المجهولة</value>
+  </data>
+  <data name="anon_edir" xml:space="preserve">
+    <value>إن '$1' ليس دليلاً صالحًا</value>
+  </data>
+  <data name="anon_egroup" xml:space="preserve">
+    <value>إن '$1' ليست مجموعة صالحة</value>
+  </data>
+  <data name="perm_title" xml:space="preserve">
+    <value>أذونات</value>
+  </data>
+  <data name="perm_header" xml:space="preserve">
+    <value>خيارات الإذن</value>
+  </data>
+  <data name="perm_perms" xml:space="preserve">
+    <value>قيود القيادة</value>
+  </data>
+  <data name="perm_type" xml:space="preserve">
+    <value>أمر</value>
+  </data>
+  <data name="perm_can" xml:space="preserve">
+    <value>السماح؟</value>
+  </data>
+  <data name="perm_users" xml:space="preserve">
+    <value>لأنواع المستخدمين</value>
+  </data>
+  <data name="perm_classes" xml:space="preserve">
+    <value>للصفوف</value>
+  </data>
+  <data name="perm_all" xml:space="preserve">
+    <value>الكل</value>
+  </data>
+  <data name="perm_anonymous" xml:space="preserve">
+    <value>مجهول</value>
+  </data>
+  <data name="perm_guest" xml:space="preserve">
+    <value>زائر</value>
+  </data>
+  <data name="perm_real" xml:space="preserve">
+    <value>يونكس</value>
+  </data>
+  <data name="perm_note" xml:space="preserve">
+    <value>افتراضيًا ، يُسمح بجميع الأوامر لجميع المستخدمين</value>
+  </data>
+  <data name="perm_filter" xml:space="preserve">
+    <value>أسماء ملفات التحميل غير مسموح بها</value>
+  </data>
+  <data name="perm_types" xml:space="preserve">
+    <value>أنواع المستخدم</value>
+  </data>
+  <data name="perm_mesg" xml:space="preserve">
+    <value>ملف رسالة خطأ</value>
+  </data>
+  <data name="perm_char" xml:space="preserve">
+    <value>الأحرف المسموح بها</value>
+  </data>
+  <data name="perm_regexp" xml:space="preserve">
+    <value>regexps ملف للرفض</value>
+  </data>
+  <data name="perm_err" xml:space="preserve">
+    <value>فشل في حفظ الأذونات</value>
+  </data>
+  <data name="perm_echar" xml:space="preserve">
+    <value>لا يعد '$1' تعبيرًا عاديًا صالحًا لمجموعة أحرف</value>
+  </data>
+  <data name="perm_etypes" xml:space="preserve">
+    <value>لم يتم تحديد أنواع مستخدمين</value>
+  </data>
+  <data name="perm_emesg" xml:space="preserve">
+    <value>إن '$1' ليس ملف رسائل خطأ صالحًا</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>التحكم في وصول المضيف</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>الخيارات المتنوعة</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>الخيارات المتنوعة</value>
+  </data>
+  <data name="misc_lslong" xml:space="preserve">
+    <value>أمر قائمة طويلة</value>
+  </data>
+  <data name="misc_lsshort" xml:space="preserve">
+    <value>أمر قائمة قصيرة</value>
+  </data>
+  <data name="misc_lsplain" xml:space="preserve">
+    <value>أمر سرد عادي</value>
+  </data>
+  <data name="misc_shutdown" xml:space="preserve">
+    <value>إيقاف ملف الإعلام</value>
+  </data>
+  <data name="misc_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="misc_nice" xml:space="preserve">
+    <value>مستوى الخدمة عملية لطيفة</value>
+  </data>
+  <data name="misc_ndelta" xml:space="preserve">
+    <value>مستوى جميل</value>
+  </data>
+  <data name="misc_class" xml:space="preserve">
+    <value>للصفوف</value>
+  </data>
+  <data name="misc_all" xml:space="preserve">
+    <value>جميع الفئات</value>
+  </data>
+  <data name="misc_defumask" xml:space="preserve">
+    <value>umask الافتراضي للملفات التي تم تحميلها</value>
+  </data>
+  <data name="misc_umask" xml:space="preserve">
+    <value>Umask</value>
+  </data>
+  <data name="misc_err" xml:space="preserve">
+    <value>فشل في حفظ الخيارات المتنوعة</value>
+  </data>
+  <data name="misc_elslong" xml:space="preserve">
+    <value>أمر قائمة طويلة مفقود</value>
+  </data>
+  <data name="misc_elsshort" xml:space="preserve">
+    <value>أمر قائمة قصيرة مفقود</value>
+  </data>
+  <data name="misc_elsplain" xml:space="preserve">
+    <value>أمر قائمة عادي مفقود</value>
+  </data>
+  <data name="misc_eshutdown" xml:space="preserve">
+    <value>ملف إعلام إيقاف التشغيل مفقود</value>
+  </data>
+  <data name="misc_enice" xml:space="preserve">
+    <value>إن '$1' ليس مستوى لطيف صالحًا</value>
+  </data>
+  <data name="misc_eumask" xml:space="preserve">
+    <value>إن '$1' ليس Umask صالح</value>
+  </data>
+  <data name="log_class" xml:space="preserve">
+    <value>تم تغيير المستخدمين والفئات</value>
+  </data>
+  <data name="log_message" xml:space="preserve">
+    <value>الرسائل واللافتات المتغيرة</value>
+  </data>
+  <data name="log_acl" xml:space="preserve">
+    <value>تم تغيير الحدود والتحكم في الوصول</value>
+  </data>
+  <data name="log_net" xml:space="preserve">
+    <value>خيارات الشبكات المتغيرة</value>
+  </data>
+  <data name="log_log" xml:space="preserve">
+    <value>خيارات التسجيل التي تم تغييرها</value>
+  </data>
+  <data name="log_alias" xml:space="preserve">
+    <value>الأسماء المستعارة والمسارات التي تم تغييرها</value>
+  </data>
+  <data name="log_anon" xml:space="preserve">
+    <value>تغيير FTP مجهول</value>
+  </data>
+  <data name="log_perm" xml:space="preserve">
+    <value>خيارات الأذونات المتغيرة</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>تغيير خيارات متنوعة</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>تم تغيير التطبيق</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>بدأ خادم FTP</value>
+  </data>
+</root>

@@ -1,8 +1,8 @@
-﻿using Doods.Framework.Repository.Std.Interfaces;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Doods.Framework.Repository.Std.Interfaces;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Services
@@ -24,10 +24,11 @@ namespace Doods.Xam.MonitorMyServer.Services
     }
 
 
-    public class DataProvider: NotifyPropertyChangedBase, IDataProvider
+    public class DataProvider : NotifyPropertyChangedBase, IDataProvider
     {
-        private IRepository _repository;
         private readonly ITimeWatcher _timer;
+        private readonly IRepository _repository;
+
         public DataProvider(IRepository repository)
         {
             _timer = new TimeWatcher();
@@ -38,31 +39,31 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             return await _repository.GetAllAsync<Host>(_timer).ConfigureAwait(false);
         }
-        public async Task<IEnumerable<T>> GetItemsAsync<T>() where T: TableBase,new()
+
+        public async Task<IEnumerable<T>> GetItemsAsync<T>() where T : TableBase, new()
         {
             return await _repository.GetAllAsync<T>(_timer).ConfigureAwait(false);
         }
+
         public async Task<long> InsertHostAsync(Host host)
         {
             var result = await _repository.InsertAsync(_timer, host).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.AddItem, (TableBase)host);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)host);
+            MessagingCenter.Send(this, MessengerKeys.AddItem, (TableBase) host);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase) host);
             return result;
-
         }
 
         public Task<int> InsertCustomCommandAsync(CustomCommandSsh customCommandSsh)
         {
-            return  InsertItemAsync(customCommandSsh);
-           
-
+            return InsertItemAsync(customCommandSsh);
         }
-        public  Task<Host> FindHostAsync(Host host)
+
+        public Task<Host> FindHostAsync(Host host)
         {
-            return  FindHostAsync(host.Id.Value);
+            return FindHostAsync(host.Id.Value);
         }
 
-        public  Task<Host> FindHostAsync(long hostId)
+        public Task<Host> FindHostAsync(long hostId)
         {
             return _repository.FindAsync<Host>(_timer, hostId);
         }
@@ -71,45 +72,42 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             return _repository.CountAsync<Host>(_timer);
         }
+
         public async Task UpdateHostAsync(Host host)
         {
             await UpdateItemAsync(host).ConfigureAwait(false);
-
-
         }
 
         public async Task UpdateCustomCommandAsync(CustomCommandSsh customCommandSsh)
         {
             await UpdateItemAsync(customCommandSsh).ConfigureAwait(false);
-
         }
 
         public async Task DeleteHostAsync(Host host)
         {
             await DeleteItemAsync(host).ConfigureAwait(false);
-           
+        }
+
+        public async Task DeleteItemAsync(TableBase item)
+        {
+            await _repository.DeleteAsync(_timer, item).ConfigureAwait(false);
+            MessagingCenter.Send(this, MessengerKeys.RemoveItem, item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
         }
 
         public async Task<int> InsertItemAsync(TableBase item)
         {
-            var result =await _repository.InsertAsync(_timer, item).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.AddItem, (TableBase)item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
+            var result = await _repository.InsertAsync(_timer, item).ConfigureAwait(false);
+            MessagingCenter.Send(this, MessengerKeys.AddItem, item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
             return result;
         }
 
         public async Task UpdateItemAsync(TableBase item)
         {
             await _repository.UpdateAsync(_timer, item);
-            MessagingCenter.Send(this, MessengerKeys.UpdateItem, (TableBase)item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
-        }
-
-        public async Task DeleteItemAsync(TableBase item)
-        {
-            await _repository.DeleteAsync(_timer, item).ConfigureAwait(false);
-            MessagingCenter.Send(this, MessengerKeys.RemoveItem, (TableBase)item);
-            MessagingCenter.Send(this, MessengerKeys.ItemChanged, (TableBase)item);
+            MessagingCenter.Send(this, MessengerKeys.UpdateItem, item);
+            MessagingCenter.Send(this, MessengerKeys.ItemChanged, item);
         }
     }
 }

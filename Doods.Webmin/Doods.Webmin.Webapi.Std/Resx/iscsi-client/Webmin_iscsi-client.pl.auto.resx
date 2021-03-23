@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Klient iSCSI</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indeks modułu</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Zaczynasz przy starcie?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Zmień tę opcję, aby kontrolować, czy klient iSCSI ma być uruchamiany podczas rozruchu, czy nie. Jest to wymagane, aby systemy plików montowane z serwerów iSCSI były montowane automatycznie.</value>
+  </data>
+  <data name="check_econfig" xml:space="preserve">
+    <value>Plik konfiguracyjny klienta iSCSI $1 nie został znaleziony w twoim systemie.</value>
+  </data>
+  <data name="check_eiscsiadm" xml:space="preserve">
+    <value>W systemie nie znaleziono programu administracyjnego klienta iSCSI $1.</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>Opcje uwierzytelnienia</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>Uwierzytelnianie klienta i serwera iSCSI</value>
+  </data>
+  <data name="auth_name" xml:space="preserve">
+    <value>Nazwa inicjatora systemu lokalnego</value>
+  </data>
+  <data name="auth_newname" xml:space="preserve">
+    <value>Wygeneruj nową losową nazwę</value>
+  </data>
+  <data name="auth_method" xml:space="preserve">
+    <value>Metoda Uwierzytelnienia</value>
+  </data>
+  <data name="auth_method_none" xml:space="preserve">
+    <value>Nie uwierzytelniaj się</value>
+  </data>
+  <data name="auth_userpass" xml:space="preserve">
+    <value>Zaloguj się do serwera</value>
+  </data>
+  <data name="auth_userpass_def" xml:space="preserve">
+    <value>Nie potrzebne</value>
+  </data>
+  <data name="auth_userpass_user" xml:space="preserve">
+    <value>Nazwa Użytkownika</value>
+  </data>
+  <data name="auth_userpass_pass" xml:space="preserve">
+    <value>i hasło</value>
+  </data>
+  <data name="auth_userpass_in" xml:space="preserve">
+    <value>Zaloguj się do klienta</value>
+  </data>
+  <data name="auth_dmethod" xml:space="preserve">
+    <value>Metoda uwierzytelniania wykrywania</value>
+  </data>
+  <data name="auth_duserpass" xml:space="preserve">
+    <value>Zaloguj się do serwera Discovery</value>
+  </data>
+  <data name="auth_duserpass_in" xml:space="preserve">
+    <value>Logowanie do Discovery do klienta</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>Nie udało się zapisać opcji uwierzytelniania</value>
+  </data>
+  <data name="auth_eusername" xml:space="preserve">
+    <value>Brak nazwy użytkownika dla serwera</value>
+  </data>
+  <data name="auth_epassword" xml:space="preserve">
+    <value>Brakuje hasła do serwera</value>
+  </data>
+  <data name="auth_eusername_in" xml:space="preserve">
+    <value>Brak nazwy użytkownika dla klienta</value>
+  </data>
+  <data name="auth_epassword_in" xml:space="preserve">
+    <value>Brakuje hasła dla klienta</value>
+  </data>
+  <data name="auth_edusername" xml:space="preserve">
+    <value>Brak nazwy użytkownika odnajdowania dla serwera</value>
+  </data>
+  <data name="auth_edpassword" xml:space="preserve">
+    <value>Brakuje hasła odnajdowania dla serwera</value>
+  </data>
+  <data name="auth_edusername_in" xml:space="preserve">
+    <value>Brak nazwy użytkownika wykrywania dla klienta</value>
+  </data>
+  <data name="auth_edpassword_in" xml:space="preserve">
+    <value>Brak hasła odnajdywania dla klienta</value>
+  </data>
+  <data name="auth_egen" xml:space="preserve">
+    <value>Nie udało się wygenerować nowej nazwy!</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>Limit czasu iSCSI</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>Opcje limitu czasu klienta iSCSI</value>
+  </data>
+  <data name="timeout_timeout" xml:space="preserve">
+    <value>Czas czekać na niepowodzenie poleceń SCSI</value>
+  </data>
+  <data name="timeout_immediate" xml:space="preserve">
+    <value>Natychmiast zawieść</value>
+  </data>
+  <data name="timeout_forever" xml:space="preserve">
+    <value>Czekać w nieskończoność</value>
+  </data>
+  <data name="timeout_wait" xml:space="preserve">
+    <value>Poczekaj na</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>sekundy</value>
+  </data>
+  <data name="timeout_login_timeout" xml:space="preserve">
+    <value>Czas czekać na logowanie</value>
+  </data>
+  <data name="timeout_logout_timeout" xml:space="preserve">
+    <value>Czas czekać na wylogowanie</value>
+  </data>
+  <data name="timeout_noop_out_interval" xml:space="preserve">
+    <value>Czas zaczekać przed pingowaniem</value>
+  </data>
+  <data name="timeout_noop_out_timeout" xml:space="preserve">
+    <value>Czas czekać na ping przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_abort_timeout" xml:space="preserve">
+    <value>Czas czekać na przerwanie odpowiedzi przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_lu_reset_timeout" xml:space="preserve">
+    <value>Czas czekać na odpowiedź jednostki logicznej przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_tgt_reset_timeout" xml:space="preserve">
+    <value>Czas czekać na odpowiedź celu przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_err" xml:space="preserve">
+    <value>Nie udało się zaoszczędzić limitów czasu</value>
+  </data>
+  <data name="timeout_etimeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na niepowodzenie poleceń SCSI</value>
+  </data>
+  <data name="timeout_elogin_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na logowanie</value>
+  </data>
+  <data name="timeout_elogout_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na wylogowanie</value>
+  </data>
+  <data name="timeout_enoop_out_interval" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na pingowanie</value>
+  </data>
+  <data name="timeout_enoop_out_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na ping przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_eabort_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na odpowiedź przerwania przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_elu_reset_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na odpowiedź jednostki logicznej przed niepowodzeniem</value>
+  </data>
+  <data name="timeout_etgt_reset_timeout" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny czas oczekiwania na odpowiedź celu przed niepowodzeniem</value>
+  </data>
+  <data name="iscsi_title" xml:space="preserve">
+    <value>Opcje iSCSI</value>
+  </data>
+  <data name="iscsi_header" xml:space="preserve">
+    <value>Inne opcje iSCSI</value>
+  </data>
+  <data name="iscsi_startup" xml:space="preserve">
+    <value>Czy połączyć sesje podczas uruchamiania?</value>
+  </data>
+  <data name="iscsi_retry" xml:space="preserve">
+    <value>Liczba ponownych prób logowania</value>
+  </data>
+  <data name="iscsi_cmds" xml:space="preserve">
+    <value>Maksymalna liczba poleceń w kolejce na sesję</value>
+  </data>
+  <data name="iscsi_queue" xml:space="preserve">
+    <value>Maksymalna liczba poleceń w kolejce na urządzenie</value>
+  </data>
+  <data name="iscsi_err" xml:space="preserve">
+    <value>Nie udało się zapisać opcji iSCSI</value>
+  </data>
+  <data name="iscsi_eretry" xml:space="preserve">
+    <value>Brak lub nienumeryczna liczba razy, aby ponownie spróbować zalogować się</value>
+  </data>
+  <data name="iscsi_ecmds" xml:space="preserve">
+    <value>Brakujące lub nienumeryczne maksymalne polecenia w kolejce na sesję</value>
+  </data>
+  <data name="iscsi_equeue" xml:space="preserve">
+    <value>Brakujące lub nienumeryczne maksymalne polecenia w kolejce na urządzenie</value>
+  </data>
+  <data name="ifaces_title" xml:space="preserve">
+    <value>Interfejsy iSCSI</value>
+  </data>
+  <data name="ifaces_elist" xml:space="preserve">
+    <value>Nie udało się wyświetlić interfejsów : $1 </value>
+  </data>
+  <data name="ifaces_name" xml:space="preserve">
+    <value>Nazwa interfejsu</value>
+  </data>
+  <data name="ifaces_transport" xml:space="preserve">
+    <value>Transport</value>
+  </data>
+  <data name="ifaces_uses" xml:space="preserve">
+    <value>Używany przez</value>
+  </data>
+  <data name="ifaces_none" xml:space="preserve">
+    <value>Obecnie nie są aktywne żadne interfejsy iSCSI.</value>
+  </data>
+  <data name="ifaces_return" xml:space="preserve">
+    <value>lista interfejsów</value>
+  </data>
+  <data name="ifaces_header" xml:space="preserve">
+    <value>Dodaj interfejs iSCSI</value>
+  </data>
+  <data name="ifaces_delete" xml:space="preserve">
+    <value>Usuń wybrane interfejsy</value>
+  </data>
+  <data name="ifaces_on" xml:space="preserve">
+    <value>Kieruj $1 na $2 </value>
+  </data>
+  <data name="ifaces_nouses" xml:space="preserve">
+    <value>Brak połączeń</value>
+  </data>
+  <data name="ifaces_ipaddress" xml:space="preserve">
+    <value>Źródłowy adres IP</value>
+  </data>
+  <data name="ifaces_hwaddress" xml:space="preserve">
+    <value>Adres MAC</value>
+  </data>
+  <data name="ifaces_ifacename" xml:space="preserve">
+    <value>Interfejs źródłowy</value>
+  </data>
+  <data name="ifaces_ipaddressdef" xml:space="preserve">
+    <value>Automatyczny</value>
+  </data>
+  <data name="ifaces_notset" xml:space="preserve">
+    <value>Automatyczny</value>
+  </data>
+  <data name="iadd_err" xml:space="preserve">
+    <value>Nie udało się dodać interfejsu</value>
+  </data>
+  <data name="iadd_eclash" xml:space="preserve">
+    <value>Interfejs o nazwie $1 już istnieje</value>
+  </data>
+  <data name="iadd_eipaddress" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy źródłowy adres IP</value>
+  </data>
+  <data name="iadd_ehwaddress" xml:space="preserve">
+    <value>Brakujący lub nieprawidłowy adres MAC</value>
+  </data>
+  <data name="iadd_ename" xml:space="preserve">
+    <value>Brak nazwy interfejsu lub zawiera nieprawidłowe znaki</value>
+  </data>
+  <data name="difaces_err" xml:space="preserve">
+    <value>Nie udało się usunąć interfejsów</value>
+  </data>
+  <data name="difaces_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="difaces_edelete" xml:space="preserve">
+    <value>Usunięcie interfejsu $1 nie powiodło się : $2 </value>
+  </data>
+  <data name="difaces_title" xml:space="preserve">
+    <value>Usuń interfejsy iSCSI</value>
+  </data>
+  <data name="difaces_rusure" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć wybrane interfejsy $1 ?</value>
+  </data>
+  <data name="difaces_rusure1" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć interfejs $1 ?</value>
+  </data>
+  <data name="difaces_confirm" xml:space="preserve">
+    <value>Usuń interfejsy</value>
+  </data>
+  <data name="difaces_target" xml:space="preserve">
+    <value>Obiekt docelowy iSCSI</value>
+  </data>
+  <data name="difaces_ip" xml:space="preserve">
+    <value>serwer iSCSI</value>
+  </data>
+  <data name="difaces_users" xml:space="preserve">
+    <value>Niektóre połączenia korzystające z tych interfejsów są obecnie aktywne i przestaną działać po usunięciu interfejsów :</value>
+  </data>
+  <data name="conns_title" xml:space="preserve">
+    <value>Połączenia iSCSI</value>
+  </data>
+  <data name="conns_elist" xml:space="preserve">
+    <value>Nie można wyświetlić listy połączeń : $1 </value>
+  </data>
+  <data name="conns_ip" xml:space="preserve">
+    <value>IP serwera</value>
+  </data>
+  <data name="conns_sport" xml:space="preserve">
+    <value>Port serwera</value>
+  </data>
+  <data name="conns_name" xml:space="preserve">
+    <value>Nazwa serwera</value>
+  </data>
+  <data name="conns_target" xml:space="preserve">
+    <value>Nazwa docelowa</value>
+  </data>
+  <data name="conns_device" xml:space="preserve">
+    <value>Urządzenie lokalne</value>
+  </data>
+  <data name="conns_username" xml:space="preserve">
+    <value>Login nazwa użytkownika</value>
+  </data>
+  <data name="conns_nouser" xml:space="preserve">
+    <value>Żaden</value>
+  </data>
+  <data name="conns_nodevice" xml:space="preserve">
+    <value>Brak zmapowany</value>
+  </data>
+  <data name="conns_delete" xml:space="preserve">
+    <value>Rozłącz wybrane</value>
+  </data>
+  <data name="conns_none" xml:space="preserve">
+    <value>Żadne połączenia iSCSI nie są obecnie aktywne.</value>
+  </data>
+  <data name="conns_header" xml:space="preserve">
+    <value>Dodaj połączenie iSCSI</value>
+  </data>
+  <data name="conns_host" xml:space="preserve">
+    <value>Nazwa hosta lub adres IP serwera iSCSI</value>
+  </data>
+  <data name="conns_port" xml:space="preserve">
+    <value>Port serwera iSCSI</value>
+  </data>
+  <data name="conns_start" xml:space="preserve">
+    <value>Połączyć ..</value>
+  </data>
+  <data name="conns_return" xml:space="preserve">
+    <value>lista połączeń</value>
+  </data>
+  <data name="conns_iface" xml:space="preserve">
+    <value>interfejs iSCSI</value>
+  </data>
+  <data name="conns_ifacedef" xml:space="preserve">
+    <value>Wybierz automatycznie</value>
+  </data>
+  <data name="conns_ifaceerr" xml:space="preserve">
+    <value>Nie udało się pobrać interfejsów : $1 </value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>Dodaj połączenie iSCSI</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>Nie udało się dodać połączenia iSCSI</value>
+  </data>
+  <data name="add_ehost" xml:space="preserve">
+    <value>Brakująca lub niemożliwa do rozwiązania nazwa hosta</value>
+  </data>
+  <data name="add_eport" xml:space="preserve">
+    <value>Brakujący lub nienumeryczny port</value>
+  </data>
+  <data name="add_etargets" xml:space="preserve">
+    <value>Nie można pobrać celów iSCSI z $1:$2 </value>
+  </data>
+  <data name="add_etargets2" xml:space="preserve">
+    <value>Nie znaleziono celów iSCSI w $1 </value>
+  </data>
+  <data name="add_target" xml:space="preserve">
+    <value>Połącz z celem</value>
+  </data>
+  <data name="add_alltargets" xml:space="preserve">
+    <value>Wszystkie cele</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>Dodaj połączenie</value>
+  </data>
+  <data name="add_etarget" xml:space="preserve">
+    <value>Nie znaleziono celu $1 </value>
+  </data>
+  <data name="add_dev" xml:space="preserve">
+    <value>Połączono jako $1 </value>
+  </data>
+  <data name="add_used" xml:space="preserve">
+    <value>Już połączony</value>
+  </data>
+  <data name="add_on" xml:space="preserve">
+    <value>$1 na $2 </value>
+  </data>
+  <data name="add_auth" xml:space="preserve">
+    <value>Zaloguj się do serwera</value>
+  </data>
+  <data name="add_auth1" xml:space="preserve">
+    <value>Użyj domyślnej metody uwierzytelnienia</value>
+  </data>
+  <data name="add_auth0" xml:space="preserve">
+    <value>Zaloguj się jako $2 za pomocą hasła $3, używając metody $1 </value>
+  </data>
+  <data name="dconns_err" xml:space="preserve">
+    <value>Nie udało się rozłączyć połączeń</value>
+  </data>
+  <data name="dconns_enone" xml:space="preserve">
+    <value>Nie wybrano</value>
+  </data>
+  <data name="dconns_edelete" xml:space="preserve">
+    <value>Usunięcie celu $2 z hosta $1 nie powiodło się : $3 </value>
+  </data>
+  <data name="dconns_title" xml:space="preserve">
+    <value>Odłącz połączenia iSCSI</value>
+  </data>
+  <data name="dconns_rusure" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć wybrane $1 połączenia?</value>
+  </data>
+  <data name="dconns_rusure1" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć połączenie z $1 ?</value>
+  </data>
+  <data name="dconns_rusure2" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć połączenie z $1 dla urządzenia $2 ?</value>
+  </data>
+  <data name="dconns_users" xml:space="preserve">
+    <value>Niektóre partycje z tych połączeń są obecnie w użyciu i przestaną działać po usunięciu połączeń :</value>
+  </data>
+  <data name="dconns_part" xml:space="preserve">
+    <value>Przegroda</value>
+  </data>
+  <data name="dconns_use" xml:space="preserve">
+    <value>Używany przez</value>
+  </data>
+  <data name="dconns_size" xml:space="preserve">
+    <value>Rozmiar partycji</value>
+  </data>
+  <data name="dconns_confirm" xml:space="preserve">
+    <value>Usuń połączenia</value>
+  </data>
+  <data name="dconns_unused" xml:space="preserve">
+    <value>Nie używany</value>
+  </data>
+  <data name="vconn_title" xml:space="preserve">
+    <value>Połączenie iSCSI</value>
+  </data>
+  <data name="vconn_egone" xml:space="preserve">
+    <value>Wybrane połączenie już nie istnieje!</value>
+  </data>
+  <data name="vconn_header" xml:space="preserve">
+    <value>Szczegóły połączenia iSCSI</value>
+  </data>
+  <data name="vconn_proto" xml:space="preserve">
+    <value>Protokół sieciowy</value>
+  </data>
+  <data name="vconn_init" xml:space="preserve">
+    <value>Nazwa lokalnego inicjatora</value>
+  </data>
+  <data name="vconn_connection" xml:space="preserve">
+    <value>Stan połączenia</value>
+  </data>
+  <data name="vconn_session" xml:space="preserve">
+    <value>Stan sesji</value>
+  </data>
+  <data name="vconn_username" xml:space="preserve">
+    <value>Zalogowany przy użyciu nazwy użytkownika</value>
+  </data>
+  <data name="vconn_password" xml:space="preserve">
+    <value>Zalogowany hasłem</value>
+  </data>
+  <data name="vconn_username_in" xml:space="preserve">
+    <value>Nazwa użytkownika klienta</value>
+  </data>
+  <data name="vconn_password_in" xml:space="preserve">
+    <value>Hasło klienta</value>
+  </data>
+  <data name="vconn_none" xml:space="preserve">
+    <value>Nie wymagane</value>
+  </data>
+  <data name="vconn_device" xml:space="preserve">
+    <value>Plik urządzenia lokalnego</value>
+  </data>
+  <data name="vconn_device2" xml:space="preserve">
+    <value>Nazwa lokalnego urządzenia</value>
+  </data>
+  <data name="vconn_device3" xml:space="preserve">
+    <value>Stała nazwa urządzenia</value>
+  </data>
+  <data name="vconn_delete" xml:space="preserve">
+    <value>Rozłącz połączenie</value>
+  </data>
+  <data name="vconn_users" xml:space="preserve">
+    <value>Obecni użytkownicy</value>
+  </data>
+  <data name="vconn_size" xml:space="preserve">
+    <value>Rozmiar dysku</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>Nie można włączyć podczas uruchamiania</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>Brak akcji rozruchowej o nazwie $1 </value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>Zapisane opcje uwierzytelniania</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>Zapisane opcje limitu czasu</value>
+  </data>
+  <data name="log_iscsi" xml:space="preserve">
+    <value>Zapisane opcje iSCSI</value>
+  </data>
+  <data name="log_add_connection" xml:space="preserve">
+    <value>Dodano połączenie do $1 dla $2 </value>
+  </data>
+  <data name="log_delete_connection" xml:space="preserve">
+    <value>Usunięto połączenie z $1 dla $2 </value>
+  </data>
+  <data name="log_delete_connections" xml:space="preserve">
+    <value>Usunięto połączenia $1 </value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Włączono klienta iSCSI w czasie uruchamiania</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Wyłączono klienta iSCSI podczas uruchamiania</value>
+  </data>
+  <data name="log_add_iface" xml:space="preserve">
+    <value>Dodano interfejs $1 </value>
+  </data>
+  <data name="log_delete_iface" xml:space="preserve">
+    <value>Usunięto interfejs $1 </value>
+  </data>
+  <data name="log_delete_ifaces" xml:space="preserve">
+    <value>Usunięto interfejsy $1 </value>
+  </data>
+</root>

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Doods.Synology.Webapi.Std.Datas;
 using Doods.Synology.Webapi.Std.NewFolder;
 
@@ -14,9 +13,10 @@ namespace Doods.Synology.Webapi.Std
         Task<SynologyUtilizationInfo> GetUtilizationInfo();
         Task<SynologyProcessGroupInfo> GetProcessGroupInfo();
     }
-    public class SynoSystemClient: BaseSynoClient, ISynoSystemClient
+
+    public class SynoSystemClient : BaseSynoClient, ISynoSystemClient
     {
-        public SynoSystemClient(ISynoWebApi client):base(client)
+        public SynoSystemClient(ISynoWebApi client) : base(client)
         {
             ServiceApiName = "SYNO.Core.System";
         }
@@ -31,7 +31,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("sid", _client.Sid);
 
 
-            var response = await _client.ExecuteAsync<SynologyResponse<NetworkInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<NetworkInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
 
@@ -45,7 +46,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("sid", _client.Sid);
 
 
-            var response = await _client.ExecuteAsync<SynologyResponse<StorageInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<StorageInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
 
@@ -65,15 +67,16 @@ namespace Doods.Synology.Webapi.Std
         public async Task<SynologyProcessInfo> GetProcessInfo()
         {
             var loginRequest = new SynologyRestRequest(Resource);
-            loginRequest.AddParameter("api", ServiceApiName+ ".Process");
+            loginRequest.AddParameter("api", ServiceApiName + ".Process");
             loginRequest.AddParameter("version", "1");
             loginRequest.AddParameter("method", "list");
-           
 
 
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
+
         public async Task<SynologyUtilizationInfo> GetUtilizationInfo()
         {
             var loginRequest = new SynologyRestRequest(Resource);
@@ -83,9 +86,11 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("type", "current");
 
 
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUtilizationInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUtilizationInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
+
         public async Task<SynologyProcessGroupInfo> GetProcessGroupInfo()
         {
             var loginRequest = new SynologyRestRequest(Resource);
@@ -94,8 +99,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("method", "status");
 
 
-
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessGroupInfo>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyProcessGroupInfo>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
     }

@@ -11,11 +11,10 @@ namespace Doods.Openmediavault.Mobile.Std.Resources
     [ContentProperty(nameof(Text))]
     public class TranslateExtension : TranslateService, IMarkupExtension
     {
-        private readonly CultureInfo ci = null;
         private const string ResourceId = "Doods.Openmediavault.Mobile.Std.Resources";
 
-        private static IDictionary<string, ResourceManager> ResourcesManagersLst =
-            new Dictionary<string, ResourceManager>()
+        private static readonly IDictionary<string, ResourceManager> ResourcesManagersLst =
+            new Dictionary<string, ResourceManager>
             {
                 {
                     nameof(openmediavault),
@@ -71,18 +70,20 @@ namespace Doods.Openmediavault.Mobile.Std.Resources
                     nameof(openmediavault_usbbackup),
                     new ResourceManager("Doods.Openmediavault.Mobile.Std.Resources.openmediavault_usbbackup",
                         typeof(openmediavault_usbbackup).Assembly)
-                },
+                }
             };
+
+        private readonly CultureInfo ci = null;
+
+        public TranslateExtension() : base(Resource.ResourceManager)
+        {
+        }
 
 
         //static readonly Lazy<ResourceManager> ResMgr = new Lazy<ResourceManager>(
         //    () => new ResourceManager(ResourceId, IntrospectionExtensions.GetTypeInfo(typeof(TranslateExtension)).Assembly));
 
         public string Text { get; set; }
-
-        public TranslateExtension() : base(Resource.ResourceManager)
-        {
-        }
 
         public object ProvideValue(IServiceProvider serviceProvider)
         {
@@ -91,7 +92,7 @@ namespace Doods.Openmediavault.Mobile.Std.Resources
 
             if (Text.Contains(nameof(openmediavault)))
             {
-                var array = Text.Split(new string[] {"::"}, StringSplitOptions.RemoveEmptyEntries);
+                var array = Text.Split(new[] {"::"}, StringSplitOptions.RemoveEmptyEntries);
                 ResourceManager manager;
                 if (ResourcesManagersLst.TryGetValue(array[0], out manager))
                 {

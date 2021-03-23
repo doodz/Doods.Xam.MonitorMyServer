@@ -5,10 +5,8 @@ namespace Doods.Synology.Webapi.Std.Datas
 {
     public class Disks
     {
-        [JsonProperty("disk")]
-        public List<Total> DiskDisk { get; set; }
+        [JsonProperty("disk")] public List<Total> DiskDisk { get; set; }
 
-        [JsonProperty("total")]
-        public Total Total { get; set; }
+        [JsonProperty("total")] public Total Total { get; set; }
     }
 }

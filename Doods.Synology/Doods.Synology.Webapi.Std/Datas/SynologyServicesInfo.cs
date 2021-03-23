@@ -2,35 +2,27 @@
 using Doods.Synology.Webapi.Std.Classes;
 using Newtonsoft.Json;
 using RestSharp;
-using SQLite;
 
 namespace Doods.Synology.Webapi.Std.Datas
 {
     public class SynologyEntriesInfo
     {
-        [JsonProperty("has_fail")]
-        public bool HasFail { get; set; }
+        [JsonProperty("has_fail")] public bool HasFail { get; set; }
 
-        [JsonProperty("result")]
-        public List<SynoEntry> Result { get; set; }
+        [JsonProperty("result")] public List<SynoEntry> Result { get; set; }
     }
 
     public class SynoEntry
     {
-        [JsonProperty("api")]
-        public string Api { get; set; }
+        [JsonProperty("api")] public string Api { get; set; }
 
-        [JsonProperty("data")]
-        public ResultData Data { get; set; }
+        [JsonProperty("data")] public ResultData Data { get; set; }
 
-        [JsonProperty("method")]
-        public Method Method { get; set; }
+        [JsonProperty("method")] public Method Method { get; set; }
 
-        [JsonProperty("success")]
-        public bool Success { get; set; }
+        [JsonProperty("success")] public bool Success { get; set; }
 
-        [JsonProperty("version")]
-        public long Version { get; set; }
+        [JsonProperty("version")] public long Version { get; set; }
     }
 
     public class ResultData
@@ -321,8 +313,7 @@ namespace Doods.Synology.Webapi.Std.Datas
         [JsonProperty("enable_ssdp", NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableSsdp { get; set; }
 
-        [JsonProperty("fqdn")]
-        public object Fqdn { get; set; }
+        [JsonProperty("fqdn")] public object Fqdn { get; set; }
 
         [JsonProperty("http_port", NullValueHandling = NullValueHandling.Ignore)]
         public long? HttpPort { get; set; }
@@ -348,31 +339,23 @@ namespace Doods.Synology.Webapi.Std.Datas
 
     public class GatewayInfo
     {
-        [JsonProperty("ifname")]
-        public string Ifname { get; set; }
+        [JsonProperty("ifname")] public string Ifname { get; set; }
 
-        [JsonProperty("ip")]
-        public string Ip { get; set; }
+        [JsonProperty("ip")] public string Ip { get; set; }
 
-        [JsonProperty("mask")]
-        public string Mask { get; set; }
+        [JsonProperty("mask")] public string Mask { get; set; }
 
-        [JsonProperty("status")]
-        public string Status { get; set; }
+        [JsonProperty("status")] public string Status { get; set; }
 
-        [JsonProperty("type")]
-        public string Type { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
 
-        [JsonProperty("use_dhcp")]
-        public bool UseDhcp { get; set; }
+        [JsonProperty("use_dhcp")] public bool UseDhcp { get; set; }
     }
 
     public class MaxConnectionsLimit
     {
-        [JsonProperty("lower")]
-        public long Lower { get; set; }
+        [JsonProperty("lower")] public long Lower { get; set; }
 
-        [JsonProperty("upper")]
-        public long Upper { get; set; }
+        [JsonProperty("upper")] public long Upper { get; set; }
     }
 }

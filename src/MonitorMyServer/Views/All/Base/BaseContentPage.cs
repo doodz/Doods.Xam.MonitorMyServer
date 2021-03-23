@@ -7,7 +7,6 @@ using Doods.Xam.MonitorMyServer;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;
-using Xamarin.Forms.Internals;
 
 namespace Doods.Framework.Mobile.Std.Mvvm
 {
@@ -63,11 +62,6 @@ namespace Doods.Framework.Mobile.Std.Mvvm
 
     public class BaseContentPage : ContentPage
     {
-
-        public BaseContentPage()
-        {
-            BackgroundColor = (Color)App.Current.Resources["WindowBackgroundColor"];
-        }
         public static readonly BindableProperty ViewModelProperty = BindableProperty.Create(nameof(ViewModel),
             typeof(ViewModel), typeof(BaseContentPage));
 
@@ -79,6 +73,11 @@ namespace Doods.Framework.Mobile.Std.Mvvm
 
         private bool _isLoaded;
         private bool _rebind;
+
+        public BaseContentPage()
+        {
+            BackgroundColor = (Color) Application.Current.Resources["WindowBackgroundColor"];
+        }
 
         protected ListView ListView { get; set; }
 

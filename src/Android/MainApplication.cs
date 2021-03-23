@@ -1,16 +1,22 @@
-﻿using Android;
+﻿using System;
+using System.Threading.Tasks;
+using System.Xml;
+using Android;
 using Android.App;
+using Android.Gms.Ads;
 using Android.Runtime;
 using Autofac;
 using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.Droid.Config;
-using System;
-using System.Threading.Tasks;
-using System.Xml;
-using Android.Gms.Ads;
 using Doods.Xam.MonitorMyServer.Droid.Services;
 using FFImageLoading;
+using FFImageLoading.Config;
+using FFImageLoading.Forms.Platform;
+using FFImageLoading.Helpers;
+using Rg.Plugins.Popup;
+using Xamarin.Essentials;
 using Xamarin.Forms.PancakeView.Droid;
+using Xamarin.Forms.Svg.Droid;
 
 [assembly: UsesPermission(Manifest.Permission.Internet)]
 [assembly: UsesPermission(Manifest.Permission.Camera)]
@@ -38,10 +44,8 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             base.OnCreate();
 
-           
 
-            
-            Task.Run( () => {  MyMethod(); });
+            Task.Run(() => { MyMethod(); });
             //SecureStorageImplementation.StoragePassword = FormatPassword();
             //Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, bundle);
             App.SetupContainer(Bootstrapper.CreateContainer());
@@ -52,22 +56,22 @@ namespace Doods.Xam.MonitorMyServer.Droid
 
         private void MyMethod()
         {
-            Xamarin.Essentials.Platform.Init(this);
-            Xamarin.Forms.Svg.Droid.SvgImage.Init(this); //need to write here
-            Rg.Plugins.Popup.Popup.Init(this);
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
-            var config = new FFImageLoading.Config.Configuration()
+            Platform.Init(this);
+            SvgImage.Init(this); //need to write here
+            Popup.Init(this);
+            CachedImageRenderer.Init(false);
+            var config = new Configuration
             {
                 VerboseLogging = true,
                 VerbosePerformanceLogging = true,
                 VerboseMemoryCacheLogging = true,
                 VerboseLoadingCancelledLogging = true,
-                Logger = new CustomLogger(),
+                Logger = new CustomLogger()
             };
             ImageService.Instance.Initialize(config);
             PancakeViewRenderer.Init();
         }
-       
+
         private void HandleAndroidException(object sender, RaiseThrowableEventArgs e)
         {
             e.Handled = true;
@@ -81,14 +85,13 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 new LocalLogger().Error(e.Exception);
                 throw ex2;
             }
+
             //App.Container.Resolve<ITelemetryService>().Exception(new UnHandledException(e.Exception));
-            
         }
 
         private void LoadSettings()
         {
             //App.Container.Resolve<ISettings>().Initialize();
-           
         }
 
         private string FormatPassword()
@@ -101,7 +104,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
         {
             LoadDoodsConfiguration();
         }
-       
+
         private void LoadDoodsConfiguration()
         {
             var fileName = "App.config";
@@ -116,13 +119,12 @@ namespace Doods.Xam.MonitorMyServer.Droid
                 {
                     var configService = App.Container.Resolve<IConfiguration>();
                     configService.LoadConfiguration(reader);
-                    MobileAds.Initialize(ApplicationContext, configService.AppAdsKey);//
+                    MobileAds.Initialize(ApplicationContext, configService.AppAdsKey); //
                 }
             }
-           
         }
 
-        public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
+        public class CustomLogger : IMiniLogger
         {
             public void Debug(string message)
             {
@@ -136,7 +138,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
 
             public void Error(string errorMessage, Exception ex)
             {
-                Error(errorMessage + System.Environment.NewLine + ex.ToString());
+                Error(errorMessage + Environment.NewLine + ex);
             }
         }
     }

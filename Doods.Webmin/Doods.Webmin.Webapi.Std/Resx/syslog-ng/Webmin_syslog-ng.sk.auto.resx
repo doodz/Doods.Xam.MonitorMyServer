@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Systémové denníky NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Použiť konfiguráciu</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo aktivujete aktuálnu konfiguráciu Syslog-NG.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Zastavte Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo zastavíte bežiaceho démona Syslog-NG. Po zastavení sa už protokolové správy z iných programov nebudú zapisovať do protokolových súborov.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Spustite program Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Kliknutím na toto tlačidlo spustíte démona Syslog-NG pomocou aktuálnej konfigurácie.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>index modulu</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Možnosti protokolovania</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Možnosti pre všetky protokolové súbory</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekundy</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>zápisy</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Je potrebné počkať, kým znova neotvoríte mŕtve spojenia</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Je potrebné počkať pred ukončením nečinných spojení</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Správy do vyrovnávacej pamäte pred zápisom</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Čas čakať medzi štatistickými správami</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Počet správ do vyrovnávacej pamäte</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Používate formát reťazcov hostname?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Zachovať pôvodné názvy hostiteľov?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Skontrolovať platné názvy hostiteľov?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Regulárny výraz pre zlé názvy hostiteľov</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>V prípade potreby vytvorte adresáre pre protokolové súbory?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Predvolený vlastník protokolových súborov</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Predvolená skupina pre protokolové súbory</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Predvolené povolenia pre protokolové súbory</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Predvolený vlastník pre vytvorené adresáre</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Predvolená skupina pre vytvorené adresáre</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Predvolené povolenia pre vytvorené adresáre</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Časové správy denníka boli prijaté?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Uskutočňujú spätné vyhľadávanie DNS?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Vyrovnávacia pamäť DNS?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Veľkosť vyrovnávacej pamäte DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Vyrovnávacia pamäť DNS záznamov pre</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Vyrovnávacia pamäť servera DNS zlyhala</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Maximálna veľkosť denníka správy</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Zaznamenávať úplné názvy hostiteľov?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Nahradiť kontrolné znaky v názvoch súborov?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Možnosti protokolovania sa nepodarilo uložiť</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný regulárny výraz pre zlé názvy hostiteľov</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Chýbajúca alebo nečíselná veľkosť vyrovnávacej pamäte DNS</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Chýbajúci alebo nečíselný čas vyrovnávacej pamäte DNS</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Chýbajúci alebo nečíselný neúspešný čas vyrovnávacej pamäte DNS</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Chýba predvolený vlastník protokolových súborov</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Chýba predvolená skupina pre protokolové súbory</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Chýbajú predvolené povolenia pre protokolové súbory</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Chýba predvolený vlastník adresárov</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Chýba predvolená skupina adresárov</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Chýbajú predvolené povolenia pre adresáre</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Chýbajúci alebo nečíselný čas na čakanie na mŕtve spojenia</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Chýbajúci alebo nečíselný čas na dokonalé spojenie</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Pred zápisom chýba alebo je neplatný počet správ, ktoré sa majú uložiť do vyrovnávacej pamäte</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Chýbajúci alebo nečíselný čas na čakanie medzi štatistickými správami</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Chýba alebo je neplatný počet správ do vyrovnávacej pamäte</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Chýbajúca alebo nečíselná maximálna veľkosť správy v denníku</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Ciele denníka</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Názov cieľa</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Písať</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Cieľ protokolu</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>súbor</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Prihlásení užívatelia</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Vstup programu</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unixové potrubie</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>Server syslog UDP</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Server protokolu TCP syslog</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Zásuvka pre dátový záznam</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Prúdová zásuvka</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Všetci používatelia</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Iba používatelia $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Hostiteľ $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Vyhliadka ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne cieľové súbory denníka.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Odstrániť vybrané ciele</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Pridajte nový cieľ protokolu.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>ciele denníka</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Protokol iného modulu</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Výstup z $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Protokolovať možnosti určenia</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Vytvorte cieľ protokolu</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Upraviť cieľ protokolu</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Názov cieľa protokolu</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Prihláste sa do ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Názov súboru</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Vytvoriť adresáre?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Povolenia na adresáre</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Synchronizovať po každom zápise?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Skupina pre súbor denníka</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Vlastník súboru denníka</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Povolenia na súbor denníka</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Správy medzi synchronizáciami</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Zoznam používateľov</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog server</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Sieťový protokol</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Adresa servera</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Port servera</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Lokálna IP adresa</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Miestny prístav</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unixová zásuvka</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Názov zásuvky</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Cieľ sa nepodarilo uložiť</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Cieľ s rovnakým názvom už existuje</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Cieľ už neexistuje!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov súboru</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný vlastník súboru denníka</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Chýba alebo je neplatná skupina súborov denníka</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Chýbajúce alebo neoktálne povolenia pre súbor denníka</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Chýbajúce alebo neoktálne povolenia adresára</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Chýba alebo je neplatný počet správ medzi synchronizáciami</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Chýbajú používatelia na odoslanie</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Chýba program, do ktorého sa má kanál vložiť</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Chýba súbor potrubí Unix</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné číslo portu</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Chýba alebo neplatná miestna adresa IP</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné číslo miestneho portu</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný hostiteľ alebo adresa servera Syslog</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Chýba názov soketu Unix</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Vymazanie cieľov zlyhalo</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Cieľ $1 nie je možné odstrániť, pretože ho používa cieľ protokolu</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Zdroje sa nepodarilo odstrániť</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Zdroj denníka $1 nemožno odstrániť, pretože ho používa cieľ protokolu</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Filtre sa nepodarilo odstrániť</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Filter denníka $1 nemožno odstrániť, pretože ho používa cieľ protokolu</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Ciele denníka sa nepodarilo odstrániť</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Žiadne vybraté</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Filtre denníka</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Názov filtra</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>podmienky</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne filtre protokolov.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Odstrániť vybrané filtre</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Pridajte nový protokol denníka.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>denníkové filtre</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>priorita &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>priority &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>Priority $1 </value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>zariadenie &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 zariadení</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>program &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>zodpovedá „$1“</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>z hostiteľa &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>od odosielateľa &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Vytvorte filter denníkov</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Upraviť filter denníka</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Podrobnosti špecifikácie filtra denníka</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Názov filtra</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Jednoduché podmienky (všetky sa musia zhodovať)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Zložitý výraz</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Podľa priority ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Z programu ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Zápasový výraz ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Z objektu ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Z názvu hostiteľa ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Zo siete IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Filter denníka sa nepodarilo uložiť</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov filtra</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Filter s rovnakým názvom už existuje</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Zadané nie je nič na filtrovanie</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Nie sú vybrané žiadne priority</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Nie sú vybraté žiadne zariadenia</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov programu</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Chýba regulárny výraz</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov hostiteľa</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Chýbajúca alebo neplatná sieťová adresa IP</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Chýbajúca alebo neplatná sieťová maska</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Chyba v zložitom výraze</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filter už neexistuje!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Ciele denníka</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>zdroje</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>filtre</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>destinácií</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Pridajte nový cieľ protokolu.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Odstrániť vybrané protokolové ciele</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>log ciele</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Vytvorte cieľ protokolu</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Upraviť cieľ protokolu</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Výber zdroja denníka, filtra a cieľa</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Zdroje denníka</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Použiť filtre</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Cieľové súbory</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Nespracovávajte žiadne ďalšie ciele</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Záložný cieľ protokolu</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Spracovať všetky zdroje</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Cieľové možnosti</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Cieľ protokolu už neexistuje!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Cieľ protokolu sa nepodarilo uložiť</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Nie sú vybraté žiadne zdroje</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Zdroje denníka</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Zatiaľ neboli definované žiadne zdroje!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Pridajte nový zdroj denníka.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Názov zdroja</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Zdroje údajov denníka</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Odstrániť vybrané zdroje</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Interné správy Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Prúdová zásuvka</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Zásuvka pre dátový záznam</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP server</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP server</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Protokolový súbor jadra</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Pomenovaná rúra</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Slnko</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog server</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>zdroje denníka</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Vytvoriť zdroj denníka</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Upraviť zdroj denníka</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Možnosti zdroja denníka</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>akýkoľvek</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>nikto</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Zdroj už neexistuje!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Názov zdroja</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Typy zdrojov denníka</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Vlastník súboru soketu</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Skupina súborov soketov</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Povolenia na súbor soketu</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Ponechať pripojenie počas reštartu otvorené?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maximálne súčasné pripojenie?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Lokálna IP adresa</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Číslo miestneho portu</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Používate TCP keep-alives?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Predpona pre správy denníka</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Veľkosť bloku správ</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Nepodarilo sa uložiť zdroj denníka</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov zdroja</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Zdroj protokolu s rovnakým názvom už existuje</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný vlastník súboru soketu</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Chýba alebo je neplatná skupina súborov soketu</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Chýbajúce alebo neoktálne povolenia pre súbor soketu</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Chýba alebo je neplatný počet maximálnych pripojení</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Chýba alebo neplatná miestna adresa IP</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Chýbajúce alebo neplatné číslo miestneho portu</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Chýba predpona pre správy denníka</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Chýbajúca alebo nečíselná veľkosť bloku správ</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov súboru soketu Unix</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov súboru denníka jadra</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Chýba alebo je neplatný názov súboru s názvom kanálu</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Názov súboru dverí</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný názov súboru Sun streamov</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Chýbajúci alebo neplatný názov súboru Sun streams</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Sieťový protokol</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Zobraziť denník súborov</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Posledných $1 riadkov $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Súbor denníka je prázdny</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Zobraziť iba riadky s textom $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Nepodarilo sa použiť konfiguráciu</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Nie je spustený!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Nepodarilo sa spustiť server Syslog-NG</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Zastavenie servera Syslog-NG zlyhalo</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Cieľ protokolu $1 bol vytvorený</value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Cieľ upraveného protokolu $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Cieľ protokolu $1 bol odstránený</value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Odstránené ciele v denníku $1 </value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Vytvorený filter denníka $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Upravený filter denníka $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Filter protokolu bol odstránený $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Odstránené $1 protokolové filtre</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Bol vytvorený zdroj denníka $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Upravený zdroj denníka $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Bol odstránený zdroj denníka $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Odstránené zdroje denníka $1 </value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Cieľ protokolu bol vytvorený</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Upravený cieľ protokolu</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Cieľ protokolu bol odstránený</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Ciele protokolu boli odstránené</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Aplikovaná konfigurácia</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Spustený server Syslog-NG</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Zastavený server Syslog-NG</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Zmenené globálne možnosti</value>
+  </data>
+</root>

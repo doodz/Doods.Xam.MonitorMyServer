@@ -57,7 +57,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         protected virtual void DeleteItem(object obj)
         {
             if (obj == null) return;
-            
+
             if (obj is T h)
             {
                 var i = Items.IndexOf(h);
@@ -71,18 +71,15 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
         {
             await RefreshData();
             MessagingCenter.Subscribe<DataProvider, TableBase>(
-                this, MessengerKeys.ItemChanged, async (sender, arg) =>
-                {
-                    MainThread.BeginInvokeOnMainThread(() => { RefreshData(); });
-                   
-                });
+                this, MessengerKeys.ItemChanged,
+                async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { RefreshData(); }); });
             await base.OnInternalAppearingAsync();
         }
 
         protected virtual async Task RefreshData()
         {
             var items = await DataProvider.GetItemsAsync<T>();
-            Items.ReplaceRange(items); 
+            Items.ReplaceRange(items);
         }
 
         public override IEnumerable<CommandItem> GetToolBarItemDescriptions()

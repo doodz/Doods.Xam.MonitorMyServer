@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Gestor de Volums Lògics</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>No s'ha trobat al sistema l'ordre LVM $1. Webmin necessita les ordres d'administració LVM per tal de configurar i gestionar volums lògics.</value>
+  </data>
+  <data name="index_emodule" xml:space="preserve">
+    <value>El directori LVM d'estat $1 no existeix. Això vol dir que el teu nucli no suporta LVM, o bé que el mòdul $2 del nucli no està carregat.</value>
+  </data>
+  <data name="index_vgs" xml:space="preserve">
+    <value>Grups de Volums</value>
+  </data>
+  <data name="index_pvs" xml:space="preserve">
+    <value>Volums Físics</value>
+  </data>
+  <data name="index_lvs" xml:space="preserve">
+    <value>Volums Lògics</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>No s'ha trobat cap volum lògic al sistema.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Afegeix un nou grup de volums.</value>
+  </data>
+  <data name="index_nolvs" xml:space="preserve">
+    <value>Aquest grup de volums encara&lt;br&gt;no té cap volum lògic.</value>
+  </data>
+  <data name="index_nopvs" xml:space="preserve">
+    <value>Aquest grup de volums encara&lt;br&gt;no té cap volum físic.</value>
+  </data>
+  <data name="index_addpv2" xml:space="preserve">
+    <value>Afegeix un volum físic a &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2" xml:space="preserve">
+    <value>Crea un volum lògic a &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv2s" xml:space="preserve">
+    <value>Crea una instantània a &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv3" xml:space="preserve">
+    <value>Crea un pool prim a &lt;tt&gt;$1&lt;/tt&gt;.</value>
+  </data>
+  <data name="index_addlv" xml:space="preserve">
+    <value>Crea un nou volum lògic.</value>
+  </data>
+  <data name="index_addsnap" xml:space="preserve">
+    <value>Crea una nova instantània.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>als grups de volums</value>
+  </data>
+  <data name="index_return2" xml:space="preserve">
+    <value>als volums físics</value>
+  </data>
+  <data name="index_return3" xml:space="preserve">
+    <value>als volums lògics</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Webmin només suporta les versions LVM 1.0  superiors. La sortida de $1 al sistema és: $2</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>LVM versió $1</value>
+  </data>
+  <data name="index_vgname" xml:space="preserve">
+    <value>Nom del grup de volums</value>
+  </data>
+  <data name="index_vgsize" xml:space="preserve">
+    <value>Mida total</value>
+  </data>
+  <data name="index_vgtotal" xml:space="preserve">
+    <value>Blocs utilitzats</value>
+  </data>
+  <data name="index_vgtotal2" xml:space="preserve">
+    <value>Mida utilitzada</value>
+  </data>
+  <data name="index_nopvs2" xml:space="preserve">
+    <value>Encara no s'ha afegit cap volum físic a cap grup de volums.</value>
+  </data>
+  <data name="index_nolvs2" xml:space="preserve">
+    <value>Encara no s'ha creat cap volum lògic a cap grup de volums.</value>
+  </data>
+  <data name="index_pvname" xml:space="preserve">
+    <value>Dispositiu de volum físic</value>
+  </data>
+  <data name="index_pvvg" xml:space="preserve">
+    <value>Al grup de volums</value>
+  </data>
+  <data name="index_pvsize" xml:space="preserve">
+    <value>Mida del dispositiu</value>
+  </data>
+  <data name="index_pvtotal" xml:space="preserve">
+    <value>Blocs utilitzats</value>
+  </data>
+  <data name="index_pvtotal2" xml:space="preserve">
+    <value>Mida utilitzada</value>
+  </data>
+  <data name="index_vgsdesc" xml:space="preserve">
+    <value>Un grup de volums és un conjunt de discs sobre els quals es pot allotjar un o més volums lògics. La majoria de sistemes només en tindran un, i almenys se n'ha de crear un abans de poder-hi afegir volums físics o lògics.</value>
+  </data>
+  <data name="index_pvsdesc" xml:space="preserve">
+    <value>Un volum físic és una partició de disc o dispositiu RAID que és part d'un grup de volums. Llavors, l'espai del disc es pot utilitzar per a un o més volums físics.</value>
+  </data>
+  <data name="index_lvsdesc" xml:space="preserve">
+    <value>Un volum lògic és una partició virtual creada amb l'espai combinat d'un grup de volums. Cadascun pot contenir un sistema de fitxers que es munta per a emmagatzemar fitxers.</value>
+  </data>
+  <data name="index_lvname" xml:space="preserve">
+    <value>Volum lògic</value>
+  </data>
+  <data name="index_lvvg" xml:space="preserve">
+    <value>Grup de volums</value>
+  </data>
+  <data name="index_lvsize" xml:space="preserve">
+    <value>Mida</value>
+  </data>
+  <data name="index_lvused" xml:space="preserve">
+    <value>Espai utilitzat</value>
+  </data>
+  <data name="index_lvuse" xml:space="preserve">
+    <value>Utilitzat per a</value>
+  </data>
+  <data name="index_snapof" xml:space="preserve">
+    <value>(Instantània de $1)</value>
+  </data>
+  <data name="index_thin" xml:space="preserve">
+    <value>Pool prim LVM per als VLs de $1</value>
+  </data>
+  <data name="lv_edit" xml:space="preserve">
+    <value>Edita Volum Lògic</value>
+  </data>
+  <data name="lv_edit_snap" xml:space="preserve">
+    <value>Edita la instantània</value>
+  </data>
+  <data name="lv_create" xml:space="preserve">
+    <value>Crea un Volum Lògic</value>
+  </data>
+  <data name="lv_create_snap" xml:space="preserve">
+    <value>Crea una Instantània</value>
+  </data>
+  <data name="lv_vg" xml:space="preserve">
+    <value>En el grup de volums $1</value>
+  </data>
+  <data name="lv_header" xml:space="preserve">
+    <value>Detalls del volum lògic</value>
+  </data>
+  <data name="lv_name" xml:space="preserve">
+    <value>Nom del volum</value>
+  </data>
+  <data name="lv_thin" xml:space="preserve">
+    <value>Crea com a VL prim al pool</value>
+  </data>
+  <data name="lv_thin2" xml:space="preserve">
+    <value>Prims proveït al pool</value>
+  </data>
+  <data name="lv_nothin" xml:space="preserve">
+    <value>Cap (crea com a VL regular)</value>
+  </data>
+  <data name="lv_size" xml:space="preserve">
+    <value>Mida del volum</value>
+  </data>
+  <data name="lv_size0" xml:space="preserve">
+    <value>Mida absoluta</value>
+  </data>
+  <data name="lv_size1" xml:space="preserve">
+    <value>Percentatge de la mida del GV</value>
+  </data>
+  <data name="lv_size2" xml:space="preserve">
+    <value>Percentatge d'espai lliure del GV</value>
+  </data>
+  <data name="lv_size3" xml:space="preserve">
+    <value>Percentatge d'espai lliure del VF</value>
+  </data>
+  <data name="lv_size3a" xml:space="preserve">
+    <value>$1 de $2</value>
+  </data>
+  <data name="lv_sizeabs" xml:space="preserve">
+    <value>Mida exacta</value>
+  </data>
+  <data name="lv_sizesimple" xml:space="preserve">
+    <value>Mida amb unitats</value>
+  </data>
+  <data name="lv_sizeallfree" xml:space="preserve">
+    <value>Utilitza tot l'espai lliure del GV</value>
+  </data>
+  <data name="lv_device" xml:space="preserve">
+    <value>Fitxer de dispositiu</value>
+  </data>
+  <data name="lv_status" xml:space="preserve">
+    <value>Estat actual</value>
+  </data>
+  <data name="lv_mount" xml:space="preserve">
+    <value>Muntat a $1 com $2</value>
+  </data>
+  <data name="lv_umount" xml:space="preserve">
+    <value>Per muntar a $1 com $2</value>
+  </data>
+  <data name="lv_mountvm" xml:space="preserve">
+    <value>Muntat com a memòria virtual</value>
+  </data>
+  <data name="lv_umountvm" xml:space="preserve">
+    <value>Per muntar com a memòria virtual</value>
+  </data>
+  <data name="lv_mountraid" xml:space="preserve">
+    <value>Part del dispositiu RAID $1</value>
+  </data>
+  <data name="lv_mountcm" xml:space="preserve">
+    <value>Utilitzat pel sistema Cloudmin $1</value>
+  </data>
+  <data name="lv_umountcm" xml:space="preserve">
+    <value>A utilitzar per part pel sistema Cloudmin $1</value>
+  </data>
+  <data name="lv_mountiscsi" xml:space="preserve">
+    <value>Dispositiu compartit iSCSI $1</value>
+  </data>
+  <data name="lv_notused" xml:space="preserve">
+    <value>No està en ús</value>
+  </data>
+  <data name="lv_cannot" xml:space="preserve">
+    <value>Aquest volum lògic no es pot canviar de nom ni de mida, ja que actualment està en ús.</value>
+  </data>
+  <data name="lv_perm" xml:space="preserve">
+    <value>Accés al volum</value>
+  </data>
+  <data name="lv_permrw" xml:space="preserve">
+    <value>Lectura/escriptura</value>
+  </data>
+  <data name="lv_permr" xml:space="preserve">
+    <value>Només lectura</value>
+  </data>
+  <data name="lv_alloc" xml:space="preserve">
+    <value>Mètode d'allotjament</value>
+  </data>
+  <data name="lv_allocy" xml:space="preserve">
+    <value>Contigu</value>
+  </data>
+  <data name="lv_allocn" xml:space="preserve">
+    <value>No contigu</value>
+  </data>
+  <data name="lv_stripe" xml:space="preserve">
+    <value>Volum a tires</value>
+  </data>
+  <data name="lv_nostripe" xml:space="preserve">
+    <value>Desactivat (allotja sempre de bon principi)</value>
+  </data>
+  <data name="lv_stripes" xml:space="preserve">
+    <value>Fes tires a través de $1 volums físics</value>
+  </data>
+  <data name="lv_stripes2" xml:space="preserve">
+    <value>Volums físics per fer a tires</value>
+  </data>
+  <data name="lv_stripesize" xml:space="preserve">
+    <value>Mida de la tira</value>
+  </data>
+  <data name="lv_readahead" xml:space="preserve">
+    <value>Sectors llegits per endavant</value>
+  </data>
+  <data name="lv_err" xml:space="preserve">
+    <value>No s'ha pogut desar el volum lògic</value>
+  </data>
+  <data name="lv_ename" xml:space="preserve">
+    <value>Hi falta el nom del volum o bé no és vàlid</value>
+  </data>
+  <data name="lv_esame" xml:space="preserve">
+    <value>Ja existeix un volum lògic amb el mateix nom</value>
+  </data>
+  <data name="lv_esize" xml:space="preserve">
+    <value>Hi falta la mida del volum o bé no és vàlida</value>
+  </data>
+  <data name="lv_evgsize" xml:space="preserve">
+    <value>Hi falta el percentatge de la mida del grup de volums o bé és invàlid</value>
+  </data>
+  <data name="lv_efreesize" xml:space="preserve">
+    <value>Hi falta el percentatge de l'espai lliure del grup de volums o bé és invàlid</value>
+  </data>
+  <data name="lv_epvsize" xml:space="preserve">
+    <value>Hi falta el percentatge de l'espai lliure del volum físic o bé és invàlid</value>
+  </data>
+  <data name="lv_estripe" xml:space="preserve">
+    <value>Hi falta el nombre de tires o bé no és vàlid</value>
+  </data>
+  <data name="lv_delete" xml:space="preserve">
+    <value>Suprimeix el Volum Lògic</value>
+  </data>
+  <data name="lv_snaprollback" xml:space="preserve">
+    <value>Reverteix l'Instantània</value>
+  </data>
+  <data name="lv_rusure" xml:space="preserve">
+    <value>Segur que vols suprimir el volum lògic $1? Totes les dades del sistema de fitxers d'aquest volum lògic es perdran per sempre!</value>
+  </data>
+  <data name="lv_rusnap" xml:space="preserve">
+    <value>Segur que vols suprimir la instantània $1?</value>
+  </data>
+  <data name="lv_rusnaprb" xml:space="preserve">
+    <value>Segur que vols revertir la instantània $1?</value>
+  </data>
+  <data name="lv_delthin" xml:space="preserve">
+    <value>ATENCIÓ! Aquest VL és un pool prim per a $1 volums lògics proveïts prims, que també es perdran si s'esborra!</value>
+  </data>
+  <data name="lv_deleteok" xml:space="preserve">
+    <value>Suprimeix-ho Ara</value>
+  </data>
+  <data name="lv_snaprollbackok" xml:space="preserve">
+    <value>Reverteix-la Ara</value>
+  </data>
+  <data name="lv_err2" xml:space="preserve">
+    <value>No s'ha pogut suprimir el volum lògic</value>
+  </data>
+  <data name="lv_err3" xml:space="preserve">
+    <value>No s'ha pogut revertir la instantània</value>
+  </data>
+  <data name="lv_pesize" xml:space="preserve">
+    <value>Mida del bloc d'allotjament</value>
+  </data>
+  <data name="lv_petotal" xml:space="preserve">
+    <value>Blocs allotjats per al grup de volums</value>
+  </data>
+  <data name="lv_petotals" xml:space="preserve">
+    <value>$1 de $2</value>
+  </data>
+  <data name="lv_mkfs" xml:space="preserve">
+    <value>Crea un Sistema de Fitxers del Tipus:</value>
+  </data>
+  <data name="lv_mkfs2" xml:space="preserve">
+    <value>Crea Sistema de Fitxers</value>
+  </data>
+  <data name="lv_mkfsdesc" xml:space="preserve">
+    <value>Selecciona un tipus de sistema de fitxers i fes clic sobre aquest botó per crear un sistema de fitxers nou en aquest volum lògic. Això esborrarà totes les dades que actualment puguin haver-hi al volum.</value>
+  </data>
+  <data name="lv_mkfsdesc2" xml:space="preserve">
+    <value>Fes clic sobre aquest botó per crear un nou sistema de fitxers $1 en aquest volum lògic. Això esborrarà totes les dades que hi ha actualment al volum.</value>
+  </data>
+  <data name="lv_toobig" xml:space="preserve">
+    <value>La nova mida del volum és de $1 blocs (de $2 cadascun), però només en queden $3 de lliures al grup de volums.</value>
+  </data>
+  <data name="lv_snapof" xml:space="preserve">
+    <value>Instantània del volum lògic</value>
+  </data>
+  <data name="lv_nosnap" xml:space="preserve">
+    <value>No s'ha pogut determinar!</value>
+  </data>
+  <data name="lv_newmount" xml:space="preserve">
+    <value>Munta VL a:</value>
+  </data>
+  <data name="lv_mountmsg" xml:space="preserve">
+    <value>Munta aquest VL en un directori nou del sistema, de manera que es pugui utilitzar per emmagatzemar fitxers. Cal haver-hi creat abans un sistema de fitxers.</value>
+  </data>
+  <data name="lv_free" xml:space="preserve">
+    <value>Percentatge lliure</value>
+  </data>
+  <data name="lv_freedisk" xml:space="preserve">
+    <value>Espai lliure</value>
+  </data>
+  <data name="lv_pvs" xml:space="preserve">
+    <value>Volums físics allotjats</value>
+  </data>
+  <data name="lv_thincs" xml:space="preserve">
+    <value>VLs d'aquest pool prim</value>
+  </data>
+  <data name="lv_thinpercent" xml:space="preserve">
+    <value>Percentatge d'ús de pool prim</value>
+  </data>
+  <data name="lv_thinused" xml:space="preserve">
+    <value>Espai de pool prim utilitzat</value>
+  </data>
+  <data name="lv_snapusage" xml:space="preserve">
+    <value>Percentatge d'ús d'instantànies</value>
+  </data>
+  <data name="lv_egone" xml:space="preserve">
+    <value>El volum lògic ja no existeix!</value>
+  </data>
+  <data name="lv_moveheader" xml:space="preserve">
+    <value>Retira el volum físic</value>
+  </data>
+  <data name="lv_pvfrom" xml:space="preserve">
+    <value>Desplaça blocs del volum físic</value>
+  </data>
+  <data name="lv_pvto" xml:space="preserve">
+    <value>Al volum físic</value>
+  </data>
+  <data name="lv_moveok" xml:space="preserve">
+    <value>Desplaça els Blocs</value>
+  </data>
+  <data name="lv_return" xml:space="preserve">
+    <value>al volum lògic</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Creació de Sistema de Fitxers</value>
+  </data>
+  <data name="mkfs_desc" xml:space="preserve">
+    <value>Aquest formulari permet crear un nou sistema de fitxers $2 ($1) a volum lògic $3. Totes les dades existents s'esborraran.</value>
+  </data>
+  <data name="mkfs_header" xml:space="preserve">
+    <value>Opció del nou sistema de fitxers</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>No s'ha pogut crear el sistema de fitxers</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>S'està executant l'ordre $1...</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>...l'ordre ha fallat!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>...l'ordre s'ha completat.</value>
+  </data>
+  <data name="resize_title" xml:space="preserve">
+    <value>Canvi de Mida de Volum Lògic</value>
+  </data>
+  <data name="resize_mesg" xml:space="preserve">
+    <value>No es pot canviar la mida del sistema de fitxers $1 d'aquest volum lògic. Si canvies la mida del volum lògic, has de tornar a crear el sistema de fitxers, cosa que n'esborrarà totes les dades.</value>
+  </data>
+  <data name="resize_mesg2" xml:space="preserve">
+    <value>Webmin no sap quina mena de sistema de fitxers hi ha en aquest volum lògic, si és que n'hi ha. Si canvies la mida del volum lògic, has de tornar a crear el sistema de fitxers, cosa que n'esborrarà totes les dades.</value>
+  </data>
+  <data name="resize_fs" xml:space="preserve">
+    <value>Hi ha hagut un error en canviar la mida del sistema de fitxers $1 d'aquest volum lògic: $2. Si canvies només la mida del volum lògic, has de tornar a crear el sistema de fitxers, cosa que n'esborrarà totes les dades.</value>
+  </data>
+  <data name="resize_ok" xml:space="preserve">
+    <value>Canvia la Mida del Volum Lògic</value>
+  </data>
+  <data name="resize_emounted" xml:space="preserve">
+    <value>El sistema de fitxers d'aquest volum lògic no es pot canviar de mida mentre està muntat</value>
+  </data>
+  <data name="resize_emounted2" xml:space="preserve">
+    <value>El sistema de fitxers d'aquest volum lògic no es pot encongir de mida mentre està muntat</value>
+  </data>
+  <data name="init_title" xml:space="preserve">
+    <value>Activació de LVM</value>
+  </data>
+  <data name="init_cmd" xml:space="preserve">
+    <value>S'està executant l'ordre $1...</value>
+  </data>
+  <data name="pv_edit" xml:space="preserve">
+    <value>Edita el Volum Físic</value>
+  </data>
+  <data name="pv_create" xml:space="preserve">
+    <value>Afegeix un Volum Físic</value>
+  </data>
+  <data name="pv_vg" xml:space="preserve">
+    <value>Al grup de volums $1</value>
+  </data>
+  <data name="pv_header" xml:space="preserve">
+    <value>Detalls del volum físic</value>
+  </data>
+  <data name="pv_device" xml:space="preserve">
+    <value>Dispositiu de disc</value>
+  </data>
+  <data name="pv_other" xml:space="preserve">
+    <value>Altres dispositius...</value>
+  </data>
+  <data name="pv_alloc" xml:space="preserve">
+    <value>Activat per a allotjament</value>
+  </data>
+  <data name="pv_force" xml:space="preserve">
+    <value>Força l'afegit del volum</value>
+  </data>
+  <data name="pv_size" xml:space="preserve">
+    <value>Mida del disc</value>
+  </data>
+  <data name="pv_petotal" xml:space="preserve">
+    <value>Blocs allotjats</value>
+  </data>
+  <data name="pv_petotal2" xml:space="preserve">
+    <value>Mida allotjada</value>
+  </data>
+  <data name="pv_pesize" xml:space="preserve">
+    <value>Mida del bloc d'allotjament</value>
+  </data>
+  <data name="pv_warn" xml:space="preserve">
+    <value>Atenció! S'esborraran totes les dades del dispositiu seleccionat.</value>
+  </data>
+  <data name="pv_create2" xml:space="preserve">
+    <value>Afegeix al grup de volums</value>
+  </data>
+  <data name="pv_delete2" xml:space="preserve">
+    <value>Treu del grup de volums</value>
+  </data>
+  <data name="pv_resize" xml:space="preserve">
+    <value>Canvia la Mida per a Coincidir amb el Dispositiu</value>
+  </data>
+  <data name="pv_err" xml:space="preserve">
+    <value>No s'ha pogut desar el volum físic</value>
+  </data>
+  <data name="pv_err2" xml:space="preserve">
+    <value>No s'ha pogut treure el volum físic</value>
+  </data>
+  <data name="pv_err3" xml:space="preserve">
+    <value>No s'ha pogut canviar la mida del dispositiu físic</value>
+  </data>
+  <data name="pv_delete" xml:space="preserve">
+    <value>Elimina el Volum Físic</value>
+  </data>
+  <data name="pv_rusure" xml:space="preserve">
+    <value>Segur que vols treure el volum físic $1 del seu grup de volums? Això causarà que les dades contingudes es passin a altres volums físics del grup.</value>
+  </data>
+  <data name="pv_deleteok" xml:space="preserve">
+    <value>Treu el Volum</value>
+  </data>
+  <data name="pv_eother" xml:space="preserve">
+    <value>Hi falta el dispositiu e disc o bé és invàlid</value>
+  </data>
+  <data name="pv_raid" xml:space="preserve">
+    <value>Dispositiu RAID $1</value>
+  </data>
+  <data name="pv_lvs" xml:space="preserve">
+    <value>Allotjament dels volums lògics</value>
+  </data>
+  <data name="pv_egone" xml:space="preserve">
+    <value>El volum físic ja no existeix!</value>
+  </data>
+  <data name="vg_edit" xml:space="preserve">
+    <value>Edita el Grup de Volums</value>
+  </data>
+  <data name="vg_create" xml:space="preserve">
+    <value>Crea un Grup de Volums</value>
+  </data>
+  <data name="vg_name" xml:space="preserve">
+    <value>Nom del grup de volums</value>
+  </data>
+  <data name="vg_header" xml:space="preserve">
+    <value>Detalls del grup de volums</value>
+  </data>
+  <data name="vg_size" xml:space="preserve">
+    <value>Mida total</value>
+  </data>
+  <data name="vg_petotal" xml:space="preserve">
+    <value>Blocs allotjats</value>
+  </data>
+  <data name="vg_petotal2" xml:space="preserve">
+    <value>Mida allotjada</value>
+  </data>
+  <data name="vg_pesize" xml:space="preserve">
+    <value>Mida del bloc d'allotjament</value>
+  </data>
+  <data name="vg_device" xml:space="preserve">
+    <value>Dispositiu físic inicial</value>
+  </data>
+  <data name="vg_err" xml:space="preserve">
+    <value>No s'ha pogut desar el grup de volum</value>
+  </data>
+  <data name="vg_err2" xml:space="preserve">
+    <value>No s'ha pogut suprimir el grup de volums</value>
+  </data>
+  <data name="vg_delete" xml:space="preserve">
+    <value>Suprimeix el Grup de Volums</value>
+  </data>
+  <data name="vg_rusure" xml:space="preserve">
+    <value>Segur que vols suprimir el grup de volums $1?</value>
+  </data>
+  <data name="vg_cannot" xml:space="preserve">
+    <value>Aquest grup de volums no es pot suprimir perquè encara té $1 volums lògics.</value>
+  </data>
+  <data name="vg_deleteok" xml:space="preserve">
+    <value>Suprimeix-lo Ara</value>
+  </data>
+  <data name="vg_ename" xml:space="preserve">
+    <value>Hi falta el nom del grup de volums o bé és invàlid</value>
+  </data>
+  <data name="vg_epesize" xml:space="preserve">
+    <value>Hi falta la mida del bloc d'allotjament o bé és invàlid</value>
+  </data>
+  <data name="vg_egone" xml:space="preserve">
+    <value>El grup de volums ja no existeix!</value>
+  </data>
+  <data name="pvmove_err" xml:space="preserve">
+    <value>No s'ha pogut desplaçar el volum lògic</value>
+  </data>
+  <data name="pvmove_title" xml:space="preserve">
+    <value>Desplaça el Volum Lògic</value>
+  </data>
+  <data name="pvmove_start" xml:space="preserve">
+    <value>S'està desplaçant el volum lògic $1 de $2 a $3...</value>
+  </data>
+  <data name="pvmove_failed" xml:space="preserve">
+    <value>...el desplaçament ha fallat!</value>
+  </data>
+  <data name="pvmove_done" xml:space="preserve">
+    <value>...desplaçament completat</value>
+  </data>
+  <data name="thin_title" xml:space="preserve">
+    <value>Creació de Pool Prim</value>
+  </data>
+  <data name="thin_desc" xml:space="preserve">
+    <value>UN pool prim és un aparella de VLs que es pot utilitzar per crear VLs addicionals que poden ser més grans que l'espai disponible. L'espai només es consumeix quan es necessita, en lloc de fer-ho quan es creen els VLs dins del pool. ATENCIÓ - Es perdran totes les dades dels VLs seleccionats!</value>
+  </data>
+  <data name="thin_header" xml:space="preserve">
+    <value>Detalls del nou pool prim</value>
+  </data>
+  <data name="thin_datalv" xml:space="preserve">
+    <value>LV existent per a les dades</value>
+  </data>
+  <data name="thin_metadatalv" xml:space="preserve">
+    <value>LV existent per a les metadades</value>
+  </data>
+  <data name="thin_ok" xml:space="preserve">
+    <value>Converteix LVs A Pool Prim</value>
+  </data>
+  <data name="thin_elvs" xml:space="preserve">
+    <value>No s'ha trobat cap LV que encara no estigui en ús en aquest GV!</value>
+  </data>
+  <data name="thin_err" xml:space="preserve">
+    <value>No s'ha pogut crear el pool prim</value>
+  </data>
+  <data name="thin_esame" xml:space="preserve">
+    <value>Els dos LVs seleccionats són el mateix</value>
+  </data>
+  <data name="thin_edata" xml:space="preserve">
+    <value>El VL de dades seleccionat ja està en ús</value>
+  </data>
+  <data name="thin_emetadata" xml:space="preserve">
+    <value>El VL de metadades seleccionat ja està en ús</value>
+  </data>
+  <data name="log_create_vg" xml:space="preserve">
+    <value>S'ha creat el grup de volums $1</value>
+  </data>
+  <data name="log_modify_vg" xml:space="preserve">
+    <value>S'ha modificat el grup de volums $1</value>
+  </data>
+  <data name="log_delete_vg" xml:space="preserve">
+    <value>S'ha suprimit el grup de volums $1</value>
+  </data>
+  <data name="log_create_lv" xml:space="preserve">
+    <value>S'ha creat el volum lògic $1 al GV $2</value>
+  </data>
+  <data name="log_modify_lv" xml:space="preserve">
+    <value>S'ha modificat el volum lògic $1 del GV $2</value>
+  </data>
+  <data name="log_delete_lv" xml:space="preserve">
+    <value>S'ha suprimit el volum lògic $1 del GV $2</value>
+  </data>
+  <data name="log_rollback_lv" xml:space="preserve">
+    <value>S'ha revertit la instantània $1</value>
+  </data>
+  <data name="log_mkfs_lv" xml:space="preserve">
+    <value>S'ha creat el sistema de fitxers $1 a $2</value>
+  </data>
+  <data name="log_create_pv" xml:space="preserve">
+    <value>S'ha afegit el volum físic $1 al GV $1</value>
+  </data>
+  <data name="log_modify_pv" xml:space="preserve">
+    <value>S'ha modificat el volum físic $1 del GV $2</value>
+  </data>
+  <data name="log_delete_pv" xml:space="preserve">
+    <value>S'ha tret el volum físic $1 del GV $2</value>
+  </data>
+  <data name="log_resize_pv" xml:space="preserve">
+    <value>S'ha canviat la mida del volum físic $1 al GV $2</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>blocs</value>
+  </data>
+</root>

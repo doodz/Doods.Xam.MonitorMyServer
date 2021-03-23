@@ -14,7 +14,6 @@ namespace Doods.Synology.Webapi.Std
         {
             Resource = "/entry.cgi";
             ServiceApiName = "SYNO.Core.Upgrade";
-
         }
 
         public async Task<SynologyUpgradeStatus> GetUpgradeStatus()
@@ -25,7 +24,8 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("method", "status");
             loginRequest.AddParameter("sid", _client.Sid);
 
-            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUpgradeStatus>>(loginRequest).ConfigureAwait(false);
+            var response = await _client.ExecuteAsync<SynologyResponse<SynologyUpgradeStatus>>(loginRequest)
+                .ConfigureAwait(false);
             return response.Data.Data;
         }
     }

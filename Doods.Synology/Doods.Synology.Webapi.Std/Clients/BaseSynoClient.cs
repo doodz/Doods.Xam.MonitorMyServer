@@ -3,8 +3,9 @@
     public abstract class BaseSynoClient
     {
         protected readonly ISynoWebApi _client;
-        protected string ServiceApiName;
         protected string Resource = "/entry.cgi";
+        protected string ServiceApiName;
+
         public BaseSynoClient(ISynoWebApi client)
         {
             _client = client;

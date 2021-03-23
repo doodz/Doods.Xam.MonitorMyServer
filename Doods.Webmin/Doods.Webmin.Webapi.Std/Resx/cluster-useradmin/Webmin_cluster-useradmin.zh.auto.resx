@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>集群用户和组</value>
+  </data>
+  <data name="index_hosts" xml:space="preserve">
+    <value>托管服务器</value>
+  </data>
+  <data name="index_nohosts" xml:space="preserve">
+    <value>没有为用户管理注册Webmin服务器。</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>添加服务器</value>
+  </data>
+  <data name="index_gadd" xml:space="preserve">
+    <value>在组中添加服务器</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>用户和组</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>服务器列表</value>
+  </data>
+  <data name="index_refresh" xml:space="preserve">
+    <value>刷新用户和组列表</value>
+  </data>
+  <data name="index_finduser" xml:space="preserve">
+    <value>查找其用户</value>
+  </data>
+  <data name="index_findgroup" xml:space="preserve">
+    <value>查找其群组</value>
+  </data>
+  <data name="index_newuser" xml:space="preserve">
+    <value>添加用户</value>
+  </data>
+  <data name="index_newgroup" xml:space="preserve">
+    <value>新增群组</value>
+  </data>
+  <data name="index_sync" xml:space="preserve">
+    <value>同步化</value>
+  </data>
+  <data name="this_server" xml:space="preserve">
+    <value>这个服务器</value>
+  </data>
+  <data name="index_thost" xml:space="preserve">
+    <value>主机名</value>
+  </data>
+  <data name="index_tdesc" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="index_tucount" xml:space="preserve">
+    <value>用户数</value>
+  </data>
+  <data name="index_tgcount" xml:space="preserve">
+    <value>团体</value>
+  </data>
+  <data name="index_ttype" xml:space="preserve">
+    <value>操作系统类型</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>添加服务器</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>正在添加 $1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>在组 $1中添加服务器 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>添加服务器失败</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>添加群组失败</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>服务器 $1没有用户和组模块</value>
+  </data>
+  <data name="add_epft" xml:space="preserve">
+    <value>服务器 $1不使用与此主机相同的用户文件格式</value>
+  </data>
+  <data name="add_egft" xml:space="preserve">
+    <value>服务器 $1不使用与此主机相同的组文件格式</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>已向 $1添加了 $2用户和 $3组。</value>
+  </data>
+  <data name="host_title" xml:space="preserve">
+    <value>受管服务器</value>
+  </data>
+  <data name="host_header" xml:space="preserve">
+    <value>软件管理的服务器详细信息</value>
+  </data>
+  <data name="host_name" xml:space="preserve">
+    <value>主机名</value>
+  </data>
+  <data name="host_type" xml:space="preserve">
+    <value>服务器类型</value>
+  </data>
+  <data name="host_delete" xml:space="preserve">
+    <value>从托管列表中删除</value>
+  </data>
+  <data name="host_refresh" xml:space="preserve">
+    <value>刷新用户和组</value>
+  </data>
+  <data name="host_users" xml:space="preserve">
+    <value>用户数</value>
+  </data>
+  <data name="host_groups" xml:space="preserve">
+    <value>组数</value>
+  </data>
+  <data name="host_return" xml:space="preserve">
+    <value>服务器详细信息</value>
+  </data>
+  <data name="refresh_title" xml:space="preserve">
+    <value>刷新用户和组</value>
+  </data>
+  <data name="refresh_header" xml:space="preserve">
+    <value>从所有服务器重新请求用户和组列表。</value>
+  </data>
+  <data name="refresh_header5" xml:space="preserve">
+    <value>从 $2..重新请求用户和组列表</value>
+  </data>
+  <data name="refresh_header4" xml:space="preserve">
+    <value>从 $2..的成员重新请求用户和组列表</value>
+  </data>
+  <data name="refresh_host" xml:space="preserve">
+    <value>刷新 $1</value>
+  </data>
+  <data name="refresh_uadd" xml:space="preserve">
+    <value>已添加 $1个用户</value>
+  </data>
+  <data name="refresh_udel" xml:space="preserve">
+    <value>已删除 $1个用户</value>
+  </data>
+  <data name="refresh_gadd" xml:space="preserve">
+    <value>已添加 $1个组</value>
+  </data>
+  <data name="refresh_gdel" xml:space="preserve">
+    <value>删除 $1个群组</value>
+  </data>
+  <data name="refresh_done" xml:space="preserve">
+    <value>..完成</value>
+  </data>
+  <data name="refresh_del" xml:space="preserve">
+    <value>已从服务器列表中删除 $1</value>
+  </data>
+  <data name="refresh_failed" xml:space="preserve">
+    <value>无法刷新 $1 : $2</value>
+  </data>
+  <data name="uedit_host" xml:space="preserve">
+    <value>来自 $1的详细信息</value>
+  </data>
+  <data name="uedit_leave" xml:space="preserve">
+    <value>不要改变</value>
+  </data>
+  <data name="uedit_set" xml:space="preserve">
+    <value>调成</value>
+  </data>
+  <data name="uedit_none" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="uedit_addto" xml:space="preserve">
+    <value>新增至群组</value>
+  </data>
+  <data name="uedit_delfrom" xml:space="preserve">
+    <value>从群组中删除</value>
+  </data>
+  <data name="uedit_hosts" xml:space="preserve">
+    <value>存在于服务器上</value>
+  </data>
+  <data name="uedit_servs" xml:space="preserve">
+    <value>在上面执行文件操作</value>
+  </data>
+  <data name="uedit_mall" xml:space="preserve">
+    <value>所有服务器</value>
+  </data>
+  <data name="uedit_mthis" xml:space="preserve">
+    <value>一台服务器</value>
+  </data>
+  <data name="uedit_sync" xml:space="preserve">
+    <value>添加到其他服务器</value>
+  </data>
+  <data name="uedit_makehome" xml:space="preserve">
+    <value>创建主目录是否丢失？</value>
+  </data>
+  <data name="uedit_others" xml:space="preserve">
+    <value>在其他模块中创建用户？</value>
+  </data>
+  <data name="uedit_servers" xml:space="preserve">
+    <value>要在其上创建的服务器</value>
+  </data>
+  <data name="uedit_all" xml:space="preserve">
+    <value>&amp;lt;所有主机&amp;gt;</value>
+  </data>
+  <data name="uedit_donthave" xml:space="preserve">
+    <value>&amp;lt;没有他的主人&amp;gt;</value>
+  </data>
+  <data name="uedit_group" xml:space="preserve">
+    <value>$1的成员</value>
+  </data>
+  <data name="usave_einuse" xml:space="preserve">
+    <value>$1上已经存在一个具有相同名称的用户</value>
+  </data>
+  <data name="usave_esecgid" xml:space="preserve">
+    <value>辅助组 $1不存在</value>
+  </data>
+  <data name="usave_con" xml:space="preserve">
+    <value>在 $1上创建 ..</value>
+  </data>
+  <data name="usave_mkhome" xml:space="preserve">
+    <value>创建主目录 ..</value>
+  </data>
+  <data name="usave_create" xml:space="preserve">
+    <value>添加密码文件条目 ..</value>
+  </data>
+  <data name="usave_others" xml:space="preserve">
+    <value>在其他模块中创建 ..</value>
+  </data>
+  <data name="usave_copy" xml:space="preserve">
+    <value>将文件复制到主目录 ..</value>
+  </data>
+  <data name="usave_groups" xml:space="preserve">
+    <value>添加到组中 ..</value>
+  </data>
+  <data name="usave_uon" xml:space="preserve">
+    <value>正在 $1上更新 ..</value>
+  </data>
+  <data name="usave_update" xml:space="preserve">
+    <value>更新密码文件条目 ..</value>
+  </data>
+  <data name="usave_mothers" xml:space="preserve">
+    <value>更新其他模块 ..</value>
+  </data>
+  <data name="usave_move" xml:space="preserve">
+    <value>正在移动主目录 ..</value>
+  </data>
+  <data name="usave_gid" xml:space="preserve">
+    <value>更改文件上的GID ..</value>
+  </data>
+  <data name="usave_uid" xml:space="preserve">
+    <value>更改文件的UID ..</value>
+  </data>
+  <data name="usave_rgroups" xml:space="preserve">
+    <value>重命名组 ..</value>
+  </data>
+  <data name="usave_failed" xml:space="preserve">
+    <value>无法保存用户： $1</value>
+  </data>
+  <data name="usave_gone" xml:space="preserve">
+    <value>用户不再存在。</value>
+  </data>
+  <data name="usave_emaking" xml:space="preserve">
+    <value>更新命令失败之前： $1</value>
+  </data>
+  <data name="usave_header" xml:space="preserve">
+    <value>在所有主机上创建用户 $1。</value>
+  </data>
+  <data name="usave_header5" xml:space="preserve">
+    <value>在 $2上创建用户 $1 ..</value>
+  </data>
+  <data name="usave_header4" xml:space="preserve">
+    <value>在组 $2的成员上创建用户 $1 ..</value>
+  </data>
+  <data name="usave_header3" xml:space="preserve">
+    <value>在没有他的主机上创建用户 $1 ..</value>
+  </data>
+  <data name="search_hosts" xml:space="preserve">
+    <value>主持人</value>
+  </data>
+  <data name="udel_on" xml:space="preserve">
+    <value>正在从 $1..中删除</value>
+  </data>
+  <data name="udel_servs" xml:space="preserve">
+    <value>删除主目录（如果存在）</value>
+  </data>
+  <data name="udel_others" xml:space="preserve">
+    <value>删除其他模块中的用户？</value>
+  </data>
+  <data name="udel_dothers" xml:space="preserve">
+    <value>删除其他模块 ..</value>
+  </data>
+  <data name="udel_gone" xml:space="preserve">
+    <value>用户不再存在。</value>
+  </data>
+  <data name="udel_failed" xml:space="preserve">
+    <value>删除用户失败： $1</value>
+  </data>
+  <data name="gdel_on" xml:space="preserve">
+    <value>正在从 $1..中删除</value>
+  </data>
+  <data name="gdel_gone" xml:space="preserve">
+    <value>用户不再存在。</value>
+  </data>
+  <data name="gdel_failed" xml:space="preserve">
+    <value>删除组失败： $1</value>
+  </data>
+  <data name="gsave_create" xml:space="preserve">
+    <value>添加组文件条目 ..</value>
+  </data>
+  <data name="gsave_con" xml:space="preserve">
+    <value>在 $1上创建 ..</value>
+  </data>
+  <data name="gsave_euser" xml:space="preserve">
+    <value>用户 $1不存在</value>
+  </data>
+  <data name="gsave_update" xml:space="preserve">
+    <value>正在更新组文件条目。</value>
+  </data>
+  <data name="gsave_uon" xml:space="preserve">
+    <value>正在 $1上更新 ..</value>
+  </data>
+  <data name="gsave_failed" xml:space="preserve">
+    <value>无法保存组： $1</value>
+  </data>
+  <data name="gsave_gone" xml:space="preserve">
+    <value>组不再存在。</value>
+  </data>
+  <data name="gsave_nosync" xml:space="preserve">
+    <value>主机不支持其他模块组同步。</value>
+  </data>
+  <data name="gsave_header" xml:space="preserve">
+    <value>在所有主机上创建组 $1 ..</value>
+  </data>
+  <data name="gsave_header5" xml:space="preserve">
+    <value>在 $2上创建组 $1 ..</value>
+  </data>
+  <data name="gsave_header4" xml:space="preserve">
+    <value>在组 $2的成员上创建组 $1 ..</value>
+  </data>
+  <data name="gsave_header3" xml:space="preserve">
+    <value>在没有主机的主机上创建组 $1 ..</value>
+  </data>
+  <data name="gedit_host" xml:space="preserve">
+    <value>来自 $1的详细信息</value>
+  </data>
+  <data name="gedit_add" xml:space="preserve">
+    <value>新增使用者</value>
+  </data>
+  <data name="gedit_del" xml:space="preserve">
+    <value>删除用户</value>
+  </data>
+  <data name="gedit_donthave" xml:space="preserve">
+    <value>&amp;lt;没有主机的主机&amp;gt;</value>
+  </data>
+  <data name="sync_title" xml:space="preserve">
+    <value>同步服务器</value>
+  </data>
+  <data name="sync_desc" xml:space="preserve">
+    <value>通过此表单，您可以在当前没有用户和服务器的服务器上创建用户和组，以使帐户在群集中的所有服务器上同步。</value>
+  </data>
+  <data name="sync_hosts" xml:space="preserve">
+    <value>要同步的服务器</value>
+  </data>
+  <data name="sync_hall" xml:space="preserve">
+    <value>所有服务器</value>
+  </data>
+  <data name="sync_hsel" xml:space="preserve">
+    <value>选择 ..</value>
+  </data>
+  <data name="sync_users" xml:space="preserve">
+    <value>用户创建</value>
+  </data>
+  <data name="sync_uall" xml:space="preserve">
+    <value>所有丢失的用户</value>
+  </data>
+  <data name="sync_unone" xml:space="preserve">
+    <value>没有使用者</value>
+  </data>
+  <data name="sync_usel" xml:space="preserve">
+    <value>仅用户</value>
+  </data>
+  <data name="sync_unot" xml:space="preserve">
+    <value>除用户外的所有用户</value>
+  </data>
+  <data name="sync_ugid" xml:space="preserve">
+    <value>具有主要组的用户</value>
+  </data>
+  <data name="sync_uuid" xml:space="preserve">
+    <value>UID在范围内的用户</value>
+  </data>
+  <data name="sync_groups" xml:space="preserve">
+    <value>建立群组</value>
+  </data>
+  <data name="sync_gall" xml:space="preserve">
+    <value>所有失踪的团体</value>
+  </data>
+  <data name="sync_gnone" xml:space="preserve">
+    <value>没有团体</value>
+  </data>
+  <data name="sync_gsel" xml:space="preserve">
+    <value>仅团体</value>
+  </data>
+  <data name="sync_gnot" xml:space="preserve">
+    <value>除团体外的所有团体</value>
+  </data>
+  <data name="sync_ggid" xml:space="preserve">
+    <value>GID在范围内的组</value>
+  </data>
+  <data name="sync_ok" xml:space="preserve">
+    <value>创建用户和组</value>
+  </data>
+  <data name="sync_on" xml:space="preserve">
+    <value>同步 $1 ..</value>
+  </data>
+  <data name="sync_insync" xml:space="preserve">
+    <value>用户和组是同步的。</value>
+  </data>
+  <data name="sync_ucreate" xml:space="preserve">
+    <value>为 $1..添加密码文件条目</value>
+  </data>
+  <data name="sync_gcreate" xml:space="preserve">
+    <value>正在添加 $1的组文件条目。</value>
+  </data>
+  <data name="sync_test" xml:space="preserve">
+    <value>只显示会做什么？</value>
+  </data>
+  <data name="sync_makehome" xml:space="preserve">
+    <value>创建主目录？</value>
+  </data>
+  <data name="sync_copy" xml:space="preserve">
+    <value>将文件复制到主目录？</value>
+  </data>
+  <data name="sync_others" xml:space="preserve">
+    <value>在其他模块中创建用户？</value>
+  </data>
+  <data name="log_create_user" xml:space="preserve">
+    <value>已创建用户 $1</value>
+  </data>
+  <data name="log_delete_user" xml:space="preserve">
+    <value>已删除用户 $1</value>
+  </data>
+  <data name="log_modify_user" xml:space="preserve">
+    <value>修改的用户 $1</value>
+  </data>
+  <data name="log_create_group" xml:space="preserve">
+    <value>已创建组 $1</value>
+  </data>
+  <data name="log_delete_group" xml:space="preserve">
+    <value>已删除组 $1</value>
+  </data>
+  <data name="log_modify_group" xml:space="preserve">
+    <value>修改后的组 $1</value>
+  </data>
+  <data name="log_add_host" xml:space="preserve">
+    <value>从主机 $1添加了用户和组</value>
+  </data>
+  <data name="log_add_group" xml:space="preserve">
+    <value>从组 $1中的主机添加了用户和组</value>
+  </data>
+  <data name="log_refresh" xml:space="preserve">
+    <value>刷新的用户和组</value>
+  </data>
+  <data name="log_sync" xml:space="preserve">
+    <value>同步的用户和组</value>
+  </data>
+</root>

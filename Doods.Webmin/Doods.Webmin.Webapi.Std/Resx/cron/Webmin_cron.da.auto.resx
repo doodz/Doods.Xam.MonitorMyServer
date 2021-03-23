@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Planlagte Cron-job</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Bruger</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Aktiv?</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Kommando</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Kør til tider</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Der er ingen cron-job på dette system.</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Der er ingen cron-job, som du har adgang til.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>Du har ikke nogen cron-job endnu.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Opret et nyt planlagt cron-job.</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Opret en ny miljøvariabel.</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Kontroller brugeradgang til cron-job.</value>
+  </data>
+  <data name="index_manual" xml:space="preserve">
+    <value>Rediger manuelt cron-job.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>cron liste</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Miljøvariabel</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Bevæge sig</value>
+  </data>
+  <data name="index_next" xml:space="preserve">
+    <value>Næste løb</value>
+  </data>
+  <data name="index_nunknown" xml:space="preserve">
+    <value>Ukendt</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>Løb?</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Kommandoen $1 til styring af Cron-konfigurationer af brugere blev ikke fundet. Måske er Cron ikke installeret på dette system?</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>Filen $1 med Cron-job findes ikke. Måske er Cron ikke installeret på dette system?</value>
+  </data>
+  <data name="index_ecrondir" xml:space="preserve">
+    <value>Cron-jobmappen $1 findes ikke. Måske er modulets konfiguration forkert, eller er Cron ikke installeret?</value>
+  </data>
+  <data name="index_ecrondir_create" xml:space="preserve">
+    <value>Forsøg at oprette jobkatalog $1 ?</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Slet valgte job</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Deaktiver valgte job</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Aktivér valgte job</value>
+  </data>
+  <data name="index_esearch" xml:space="preserve">
+    <value>Ingen job matchede din søgning efter $1.</value>
+  </data>
+  <data name="index_toomany2" xml:space="preserve">
+    <value>Der er for mange job at vise. Brug søgeformen ovenfor til at begrænse listen.</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Find matchende Cron-job</value>
+  </data>
+  <data name="index_ok" xml:space="preserve">
+    <value>Søg</value>
+  </data>
+  <data name="index_searchres" xml:space="preserve">
+    <value>Cron job matchende $1 ..</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Nulstil søgning.</value>
+  </data>
+  <data name="index_econfigcheck" xml:space="preserve">
+    <value>Cron-job kan ikke administreres på dit system, da modulkonfigurationen ikke er gyldig : $1 </value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Rediger Cron Job</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Opret Cron Job</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Du har ikke tilladelse til at redigere cron-job for denne bruger</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Joboplysninger</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Udfør cron-job som</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Aktiv?</value>
+  </data>
+  <data name="edit_next" xml:space="preserve">
+    <value>Næste kørselstid</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>kommandoer</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Kommando</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Beskrivelse</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Input til kommando</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Hvornår skal udføres</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Datointerval, der skal udføres</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>minutter</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>timer</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>Dage</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>måneder</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Hverdage</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Valgte ..</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Kør nu</value>
+  </data>
+  <data name="edit_saverun" xml:space="preserve">
+    <value>Gem og kør nu</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klon Job</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>cron job</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Bemærk: Ctrl-klik (eller kommando-klik på Mac) for at vælge og fjerne markering af minutter, timer, dage og måneder.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Enkel tidsplan ..</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Tider og datoer valgt nedenfor ..</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>Hver time</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Dagligt (ved midnat)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Ugentlig (søndag)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Månedligt (den 1.)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Årligt (den 1. januar)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>Når systemet starter</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>hver time</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>dagligt (ved midnat)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>ugentligt (på søndag)</value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>månedligt (den 1.)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>årligt (den 1. januar)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>når systemet starter</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Kunne ikke gemme cron-job</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>Du har ikke indtastet en kommando til at udføre</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>Du skal vælge en bruger</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>Bruger '$1' findes ikke</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>Brugeren '$1' har ikke adgang til cron</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>Du har ikke tilladelse til at oprette eller redigere cron-job til '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>Du valgte ikke $1 at udføre</value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>Du har ikke lov til at oprette cron-job</value>
+  </data>
+  <data name="save_eidx" xml:space="preserve">
+    <value>Cron-job blev gemt med succes, men kan ikke køres, da det ikke blev fundet!</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Styr Cron Access</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Denne formular giver dig mulighed for at kontrollere, hvilke brugere der kan oprette og køre cron-job.</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>Du kan ikke kontrollere brugeradgang til cron</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Nægt alle brugere</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Nægt alle brugere undtagen rod</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Tillad alle brugere</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Tillad kun listede brugere</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Afvis kun listede brugere</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Rediger miljøvariabel</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Opret miljøvariabel</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Variabel navn</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Værdi</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>Til bruger</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Aktiv?</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Detaljer om miljøvariablen</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>Kunne ikke gemme miljøvariablen</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>Manglende eller ugyldigt variabelnavn</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Bemærk - Denne miljøvariabelindstilling gælder kun Cron-job efter den på listen over job på modulets hovedside.</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Tilføj miljøvariabel</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Flyt miljøvariabel</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Før alle Cron-job til bruger</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Efter alt Cron job</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Aktuelle position</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Udfør Cron Job</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>Du har ikke tilladelse til at udføre cron-job for denne bruger</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>Output fra kommando $1 ..</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>Kører kommando $1 som baggrundsproces.</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Ingen output genereret</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Kan redigere cron-job til</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Alle brugere</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>Nuværende webmin-bruger</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Kun brugere</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Alle undtagen brugere</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Kan kontrollere brugeradgang til Cron?</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Kan du se og redigere Cron-kommandoer?</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Brugere med UID inden for rækkevidde</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Brugere med den primære gruppe</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Kan oprette Cron-job?</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kan slette Cron-job?</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Kan flytte Cron job?</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Kan opsige Cron-job?</value>
+  </data>
+  <data name="acl_hourly" xml:space="preserve">
+    <value>Begrænse job til højst hver time?</value>
+  </data>
+  <data name="acl_hourlydef" xml:space="preserve">
+    <value>Som angivet i modulkonfig</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Ændret Cron-job for $1 </value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Ændret Cron-job "$2" for $1 </value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Oprettet Cron-job for $1 </value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Oprettet Cron-job "$2" for $1 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Slettet Cron-job for $1 </value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Udført Cron-job som $1 </value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Udfør Cron-job "$2" som $1 </value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Afsluttet Cron-job for $1 </value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>Afsluttet Cron-job "$2" for $1 </value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>Ændret brugeradgang til Cron</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>Oprettet miljøvariabel for $1 </value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>Ændret miljøvariabel for $1 </value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>Slettet miljøvariabel for $1 </value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Flyttede Cron-job for $1 </value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>Slet $1 Cron-job</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>Deaktiveret $1 Cron-job</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>Aktiveret $1 Cron-job</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>Der blev fundet en fejl i den nye Cron-konfiguration: $1 $2 </value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>hvert minut</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>hver time ved $1 efter timen</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>hver dag ved $2:$1 </value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>på dag $3 hver måned ved $2:$1 </value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>hver $3 ved $2:$1 </value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>ved cron-tid $1 </value>
+  </data>
+  <data name="when_interval" xml:space="preserve">
+    <value>hvert $1 sekund</value>
+  </data>
+  <data name="when_boot" xml:space="preserve">
+    <value>ved opstartstidspunktet</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Hvert minut</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Hver time på $1 efter timen</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Hver dag på $2:$1 </value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>På dag $3 hver måned ved $2:$1 </value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Hver $3 ved $2:$1 </value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>Ved cron-tid $1 </value>
+  </data>
+  <data name="ucwhen_interval" xml:space="preserve">
+    <value>Hvert $1 sekund</value>
+  </data>
+  <data name="ucwhen_boot" xml:space="preserve">
+    <value>Ved opstartstid</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>Kunne ikke flytte Cron-job</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Dette job kan ikke flyttes</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Kunne ikke afslutte Cron-job</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Du har ikke lov til at opsige dette job</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Kører ikke længere</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>Dræb mislykkedes : $1 </value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Afslut Cron Job</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Er du sikker på, at du vil afslutte processen $1 med PID $2 ?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Er du sikker på, at du vil afslutte processen $1 med PID $2 og alle dens underprocesser?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Ja, afslutt det</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Kør på enhver dato</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Kør kun fra $1 </value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>til $1 </value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Manglende eller ugyldig startdato inden for rækkevidde, der skal køres</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Manglende eller ugyldig slutdato i det interval, der skal køres</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Kunne ikke slette Cron-job</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Ingen valgt</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>Rediger manuelt Cron Jobs</value>
+  </data>
+  <data name="manual_edit" xml:space="preserve">
+    <value>Cron-fil til redigering:</value>
+  </data>
+  <data name="manual_ok" xml:space="preserve">
+    <value>Redigere</value>
+  </data>
+  <data name="manual_editing" xml:space="preserve">
+    <value>Brug tekstboksen nedenfor til at redigere Cron-job i $1. Vær forsigtig, da der ikke foretages nogen validering af Webmin!</value>
+  </data>
+  <data name="manual_efile" xml:space="preserve">
+    <value>Den valgte fil er ikke gyldig!</value>
+  </data>
+  <data name="manual_ecannot" xml:space="preserve">
+    <value>Du har ikke tilladelse til manuelt at redigere cron-job</value>
+  </data>
+</root>

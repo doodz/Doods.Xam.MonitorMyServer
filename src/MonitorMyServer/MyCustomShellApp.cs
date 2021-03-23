@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using Autofac;
 using Doods.Framework.Repository.Std.Tables;
@@ -8,9 +7,11 @@ using Doods.Framework.Std;
 using Doods.Framework.Std.Extensions;
 using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Comtrols;
+using Doods.Xam.MonitorMyServer.Resx.Webmin.package_updates;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.About;
 using Doods.Xam.MonitorMyServer.Views.CustomCommandList;
+using Doods.Xam.MonitorMyServer.Views.Linux.DisksUsage;
 using Doods.Xam.MonitorMyServer.Views.Linux.Logs;
 using Doods.Xam.MonitorMyServer.Views.NAS.SharedFolders;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
@@ -21,6 +22,7 @@ using Doods.Xam.MonitorMyServer.Views.OpenmediavaultSystemLogs;
 using Doods.Xam.MonitorMyServer.Views.Settings;
 using Doods.Xam.MonitorMyServer.Views.Synology.SynoStorage;
 using Doods.Xam.MonitorMyServer.Views.SynologyInfo;
+using Doods.Xam.MonitorMyServer.Views.Webmin.States;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -47,7 +49,6 @@ namespace Doods.Xam.MonitorMyServer
 
 
         /// <summary>
-        /// 
         /// </summary>
         public MyCustomShellApp()
         {
@@ -55,23 +56,19 @@ namespace Doods.Xam.MonitorMyServer
                 this, MessengerKeys.HostChanged,
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 
-            
+
             var config =
                 App.Container.Resolve<IConfiguration>();
 
             if (!config.ModeOmvOnlyKey)
-            {
                 FlyoutHeader = new FlyoutHeader("MMS_graphic.png");
-            }
             else
-            {
                 FlyoutHeader = new FlyoutHeader("OMV_graphic.png");
-            }
 
 
             var homeItem = new FlyoutItem
             {
-                Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                Title = Title = openmediavault.Homepage,
                 Items =
                 {
                     new ShellSection
@@ -80,7 +77,7 @@ namespace Doods.Xam.MonitorMyServer
                         {
                             new ShellContent
                             {
-                                Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                                Title = openmediavault.Homepage,
                                 ContentTemplate = new DataTemplate(typeof(MainPage))
                             }
                         }
@@ -120,8 +117,8 @@ namespace Doods.Xam.MonitorMyServer
         //    //var current = Application.Current?.MainPage as Shell;
         //    //var current2 = Application.Current?.MainPage as IShellController;
         //    //var current3 = Application.Current?.MainPage as IPropertyPropagationController;
-            
-            
+
+
         //    // Shell Current => Application.Current?.MainPage as Shell;
 
         //    if (e.PropertyName == nameof(CurrentItem))
@@ -138,12 +135,11 @@ namespace Doods.Xam.MonitorMyServer
         //    }
         //}
 
-       
 
         //protected override void OnNavigating(ShellNavigatingEventArgs args)
         //{
 
-            
+
         //    base.OnNavigating(args);
         //}
 
@@ -171,10 +167,23 @@ namespace Doods.Xam.MonitorMyServer
         //}
 
 
+        private IEnumerable<FlyoutItem> GetWebminPages()
+        {
+            yield return CreateFlyoutItem("Webmin",
+                typeof(WebminStatsPage));
+        }
+        private IEnumerable<FlyoutItem> GetPackageUpdatesPages()
+        {
+           
+            yield return CreateFlyoutItem(Webmin_package_updates.view_software,
+                typeof(Views.NAS.PackageUpdates.PackageUpdatesPage));
+        }
+
         private IEnumerable<FlyoutItem> GetNasPages()
         {
             yield return CreateFlyoutItem(openmediavault.SharedFolders,
                 typeof(SharedFoldersPage));
+           
         }
 
         private IEnumerable<FlyoutItem> GetSynoPages()
@@ -188,11 +197,11 @@ namespace Doods.Xam.MonitorMyServer
         private IEnumerable<FlyoutItem> GetLinuxPages()
         {
             yield return CreateFlyoutItem(openmediavault.FileSystems,
-                typeof(Views.Linux.DisksUsage.DisksUsagePage));
+                typeof(DisksUsagePage));
             yield return CreateFlyoutItem(openmediavault.SystemLogs,
                 typeof(LogsPage));
-            
         }
+
         private IEnumerable<FlyoutItem> GetOmvPages()
         {
             yield return new FlyoutItem
@@ -203,7 +212,7 @@ namespace Doods.Xam.MonitorMyServer
                     CreateTabItem("OMV", typeof(OpenmediavaultDashboardPage)),
                     CreateTabItem(openmediavault.PerformanceStatistics,
                         typeof(OpenmediavaultStatisticsPage))
-                },
+                }
             };
 
 
@@ -222,7 +231,7 @@ namespace Doods.Xam.MonitorMyServer
             {
                 var homeItem = new FlyoutItem
                 {
-                    Title = Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                    Title = Title = openmediavault.Homepage,
                     Items =
                     {
                         new ShellSection
@@ -231,7 +240,7 @@ namespace Doods.Xam.MonitorMyServer
                             {
                                 new ShellContent
                                 {
-                                    Title = Openmediavault.Mobile.Std.Resources.openmediavault.Homepage,
+                                    Title = openmediavault.Homepage,
                                     ContentTemplate = new DataTemplate(typeof(MainPage))
                                 }
                             }
@@ -242,15 +251,16 @@ namespace Doods.Xam.MonitorMyServer
                 Items.AddRange(homeItem);
             }
 
-            if (!host.IsOmvServer && !host.IsSynoServer && host.IsSsh)
-            {
-                Items.AddRange(GetLinuxPages());
-                
-            }
+            if (!host.IsOmvServer && !host.IsSynoServer && host.IsSsh) Items.AddRange(GetLinuxPages());
+
+            if (host.IsWebminServer) Items.AddRange(GetWebminPages());
             if (host.IsOmvServer) Items.AddRange(GetOmvPages());
             if (host.IsSynoServer) Items.AddRange(GetSynoPages());
             if (host.IsOmvServer) Items.AddRange(GetNasPages());
             if (host.IsSynoServer) Items.AddRange(GetNasPages());
+
+            if (host.IsSynoServer || host.IsOmvServer || host.IsWebminServer || host.IsSsh) 
+                Items.AddRange(GetPackageUpdatesPages());
 
             if (host.IsSsh)
             {
@@ -272,7 +282,7 @@ namespace Doods.Xam.MonitorMyServer
 
         private static FlyoutItem CreateFlyoutItem(string title, Type page)
         {
-            return new FlyoutItem
+            return new FlyoutItem()
             {
                 Title = title,
                 Items =
@@ -284,7 +294,7 @@ namespace Doods.Xam.MonitorMyServer
 
         private static Tab CreateTabItem(string title, Type page)
         {
-            return new Tab
+            return new Tab()
             {
                 Title = title,
 

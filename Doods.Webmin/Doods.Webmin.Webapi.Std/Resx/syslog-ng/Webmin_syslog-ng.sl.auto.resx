@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Sistemski dnevniki NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Uporabi konfiguracijo</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Kliknite ta gumb, da aktivirate trenutno konfiguracijo Syslog-NG.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Ustavite Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Kliknite ta gumb, da ustavite teče demon Syslog-NG. Ko se ustavi, dnevniška sporočila drugih programov ne bodo več zapisana v dnevniške datoteke.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Zaženite Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Kliknite ta gumb in zaženite demon Syslog-NG s trenutno konfiguracijo.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>kazalo modula</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1 </value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Možnosti beleženja</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Možnosti za vse datoteke dnevnika</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>sekund</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>vnosi</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Čas je počakati pred ponovnim odpiranjem mrtvih povezav</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Čas za čakanje pred zapiranjem prostih povezav</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Sporočila za shranjevanje pred pisanjem</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Čas za čakanje med statističnimi sporočili</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Število sporočil v medpomnilniku</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Uporabite priklenjeno obliko imena gostitelja?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Obdržati izvirna imena gostiteljev?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Preverite imena gostiteljev za veljavne znake?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Redno izražanje za slaba imena gostiteljev</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Ali po potrebi ustvarite imenike za dnevniške datoteke?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Privzeti lastnik datotek dnevnika</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Privzeta skupina za datoteke dnevnika</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Privzeta dovoljenja za datoteke dnevnika</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Privzeti lastnik za ustvarjene imenike</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Privzeta skupina za ustvarjene imenike</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Privzeta dovoljenja za ustvarjene imenike</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Prejeta sporočila o dnevniku?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Ali povratne iskanje DNS?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Iskanje predpomnilnika DNS?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Velikost predpomnilnika DNS</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Predpomni DNS zapise za</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Predpomnilnik DNS za iskanje ni uspel</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Največja velikost dnevnika</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Ali se prijavite polna imena gostiteljev?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Ali lahko nadzorne znake zamenjate z imeni?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Možnosti beleženja ni bilo mogoče shraniti</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Manjkajoči ali neveljaven regularni izraz za slaba imena gostiteljev</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Manjkajoča ali neštevilčna velikost predpomnilnika DNS</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Manjkajoči ali neštevilčni čas predpomnilnika DNS</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Manjkajoči ali neštevilčni napačni čas predpomnilnika DNS</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Manjka privzeti lastnik datotek dnevnika</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Manjka privzeta skupina za datoteke dnevnika</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Manjkajo privzeta dovoljenja za datoteke dnevnika</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Manjka privzeti lastnik za imenike</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Manjka privzeta skupina za mape</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Manjkajo privzeta dovoljenja za imenike</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Manjkajoč ali neštevilčen čas za čakanje na mrtve povezave</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Manjkajoč ali neštevilčen čas za čakanje na idealne povezave</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno število sporočil, ki jih želite shraniti pred pisanjem</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Manjka ali neštevilčen čas za čakanje med statističnimi sporočili</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno število sporočil v medpomnilniku</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Največja ali neštevilčna največja velikost dnevnika sporočila</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Dnevniški cilji</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Ime cilja</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Pišite na</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Prijava cilja</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>mapa</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Prijavljeni uporabniki</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Vnos programa</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix cev</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP strežnik syslog</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>Syslog strežnik TCP</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Podatkovna vtičnica</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Vtičnica za tok</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Vsi uporabniki</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Samo uporabniki $1 </value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Gostitelj $1 </value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Prikaži ..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Nobene datoteke dnevnega dnevnika še niso definirane.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Izbriši izbrane cilje</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Dodajte nov cilj dnevnika.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>prijavite cilje</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Dnevnik drugega modula</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Izhod iz $1 </value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Prijavite se ciljne možnosti</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Ustvari dnevnik cilja</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Uredi cilj dnevnika</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Prijavite se ime cilja</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Prijavite se v ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Ime datoteke</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Ustvarite imenike?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Dovoljenja v imenikih</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Ali se sinhronizira po vsakem pisanju?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Skupina za datoteko dnevnika</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Lastnik za datoteko dnevnika</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Dovoljenja v dnevniški datoteki</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Sporočila med sinhronizacijami</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Uporabniki na seznamu</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog strežnik</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Omrežni protokol</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Naslov strežnika</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Pristanišče strežnika</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Lokalni IP naslov</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Lokalno pristanišče</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix vtičnica</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Vtipkajte</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Ime vtičnice</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Cilja ni bilo mogoče shraniti</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Destinacija z istim imenom že obstaja</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Destinacija ne obstaja več!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime datoteke</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Manjkajoči ali neveljaven lastnik datoteke dnevnika</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna skupina datotek dnevnika</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Manjkajoča ali neoktalna dovoljenja datotek dnevnika</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Manjkajoča ali neoktalna dovoljenja za imenik</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno število sporočil med sinhronizacijami</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Manjkajoči uporabniki, ki bi jih lahko poslali</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Manjka program za hranjenje</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Manjka datoteka cevi Unix</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna številka vrat</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Manjkajoč ali neveljaven lokalni IP naslov</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna številka lokalnega pristanišča</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Manjkajoči ali neveljavni gostitelj ali naslov strežnika Syslog</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Manjka ime vtičnice Unix</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Brisanje ciljev ni uspelo</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Izbrana ni nobena</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Cilja $1 ni mogoče izbrisati, saj ga uporablja cilj dnevnika</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Brisanja virov ni bilo mogoče</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Izbrana ni nobena</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Vira dnevnika $1 ni mogoče izbrisati, saj ga uporablja cilj dnevnika</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Izbris filtrov ni uspel</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Izbrana ni nobena</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Filtra dnevnika $1 ni mogoče izbrisati, ker ga uporablja cilj dnevnika</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Brisanje ciljev dnevnika ni uspelo</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Izbrana ni nobena</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Dnevni filtri</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Ime filtra</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Pogoji</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Filtri dnevnika še niso definirani.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Izbrišite izbrane filtre</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Dodajte nov filter dnevnika.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>dnevniki filtri</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>prednost &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>prioritete &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 prioritete</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>objekt &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 objektov</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>program &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>ujema z "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>od imena gostitelja &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>od pošiljatelja &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Ustvari filter dnevnika</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Uredi filter dnevnika</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Podrobnosti o specifikaciji filtra dnevnika</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Ime filtra</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Enostavni pogoji (vsi se morajo ujemati)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Kompleksno izražanje</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Prednostno ..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Iz programa ..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Ujemanje izraza ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Od objekta ..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Od imena gostitelja ..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Iz omrežja IP ..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Filtra dnevnika ni bilo mogoče shraniti</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime filtra</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Filter z istim imenom že obstaja</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Vnešeno ni ničesar za filtriranje</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Ni izbranih prioritet</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Ni izbranih objektov</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime programa</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Manjka redni izraz</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime gostitelja</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Manjkajoč ali neveljaven omrežni naslov IP</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna mreža</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Napaka v zapletenem izražanju</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filter ne obstaja več!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Dnevniški cilji</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Viri</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Filtri</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Destinacije</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Dodajte nov cilj dnevnika.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Izbrišite izbrane cilje dnevnika</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>dnevni cilji</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Noben</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Ustvari ciljni dnevnik</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Uredi cilje dnevnika</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Izbira vira, filtra in cilja</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Viri dnevnikov</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filtri za uporabo</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Namenske datoteke</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Ne obdelujte več ciljev</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Cilj povratnega dnevnika</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Obdelajte vse vire</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Možnosti cilja</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Cilj dnevnika ne obstaja več!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Cilja dnevnika ni bilo mogoče shraniti</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Izbran ni noben vir</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Viri dnevnika</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Viri še niso definirani!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Dodajte nov vir dnevnika.</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Ime vira</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Zabeležite vire podatkov</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Izbrišite izbrane vire</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Notranja sporočila Syslog-NG</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Vtičnica za tok</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Podatkovna vtičnica</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP strežnik</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>Strežnik UDP</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Datoteka dnevnika jedra</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Imenovana cev</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Sončni tok</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog strežnik</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>viri dnevnikov</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Noben</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Ustvari vir dnevnika</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Urejanje vira dnevnika</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Možnosti vira dnevnika</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Kaj</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Noben</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Vir ne obstaja več!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Ime vira</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Vrste virov dnevnika</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Lastnik datoteke vtičnic</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Skupina datotek vtičnic</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Dovoljenja v datoteki z vtičnicami</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Ali bodo povezave med ponovnim zagonom odprte?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Največ sočasnih povezav?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Lokalni IP naslov</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Lokalna številka vrat</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Ali želite uporabljati TCP-ov?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Predpona za sporočila dnevnika</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Velikost bloka sporočil</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Shranjevanja vira dnevnika ni bilo mogoče</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime vira</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Izvor dnevnika z istim imenom že obstaja</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Manjka ali neveljaven lastnik datoteke vtičnic</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna skupina datotek vtičnic</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Manjkajoča ali neoktalna dovoljenja v datoteki vtičnic</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno število največjih povezav</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Manjkajoč ali neveljaven lokalni IP naslov</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Manjkajoča ali neveljavna številka lokalnega pristanišča</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Manjka predpona za sporočila dnevnika</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Manjkajoča ali neštevilčna velikost bloka sporočil</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime datoteke vtičnice Unix</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime datoteke dnevnika jedra</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno imenovano ime datoteke pipe</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Ime datoteke vrat</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime datoteke datoteke Sun stream</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Manjkajoče ali neveljavno ime datoteke strežnika vrat</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Omrežni protokol</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Ogled dnevnika</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Zadnje $1 vrstice $2 </value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Datoteka dnevnika je prazna</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Osveži</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Pokaži samo vrstice z besedilom $1 </value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Konfiguracije ni bilo mogoče uporabiti</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Ne teče!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Zagon strežnika Syslog-NG ni uspel</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Ni uspelo ustaviti strežnika Syslog-NG</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Ustvarjen cilj dnevnika $1 </value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Spremenjen cilj dnevnika $1 </value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Izbrisan cilj dnevnika $1 </value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>Izbrisani so $1 cilji dnevnika</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Ustvarjen filter dnevnika $1 </value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Spremenjen filter dnevnika $1 </value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Izbrisan filter dnevnika $1 </value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>Izbrisani so filtri dnevnika $1 </value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Ustvaren vir dnevnika $1 </value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Spremenjen vir dnevnika $1 </value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Izbrisan vir dnevnika $1 </value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>Izbrisani viri dnevnika $1 </value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Ustvarjen cilj dnevnika</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Spremenjen cilj dnevnika</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Izbrisan cilj dnevnika</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>Izbrisani so cilji dnevnika $1 </value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Uporabljena konfiguracija</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Zagnani strežnik Syslog-NG</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Ustavljen strežnik Syslog-NG</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Spremenjene globalne možnosti</value>
+  </data>
+</root>

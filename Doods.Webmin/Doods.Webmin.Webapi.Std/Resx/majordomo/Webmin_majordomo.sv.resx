@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Majordomos listhanterare</value>
+  </data>
+  <data name="index_eversion" xml:space="preserve">
+    <value>Din version av majordomo stöds inte av Webmin. Endast versionerna 1.94 och högre stöds.</value>
+  </data>
+  <data name="index_emdomdir" xml:space="preserve">
+    <value>Variabeln &lt;tt&gt;$1&lt;/tt&gt; i din konfigurationsfil för majordomo är satt till &lt;tt&gt;$2&lt;/tt&gt;, som inte finns.</value>
+  </data>
+  <data name="index_setupdesc" xml:space="preserve">
+    <value>Majordomo är installerat på systemet, men har inte satts upp ordentligt i sendmails aliasfil.</value>
+  </data>
+  <data name="index_owner" xml:space="preserve">
+    <value>E-postadress till ägaren</value>
+  </data>
+  <data name="index_setup" xml:space="preserve">
+    <value>Sätt upp alias</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Inga e-postlistor har definierats</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Lägg till en e-postlista</value>
+  </data>
+  <data name="index_digest" xml:space="preserve">
+    <value>Lägg till en sammanfattande e-postlista</value>
+  </data>
+  <data name="index_global" xml:space="preserve">
+    <value>Ändra inställningar för Majordomo</value>
+  </data>
+  <data name="index_globaldesc" xml:space="preserve">
+    <value>Ändra globala Majordomo-inställningar som gäller för alla malilinglistor</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>e-postlistor</value>
+  </data>
+  <data name="global_title" xml:space="preserve">
+    <value>Globala inställningar</value>
+  </data>
+  <data name="global_ecannot" xml:space="preserve">
+    <value>Du får inte ändra globala inställningar</value>
+  </data>
+  <data name="global_header" xml:space="preserve">
+    <value>Globala inställningar för Majordomo</value>
+  </data>
+  <data name="global_whereami" xml:space="preserve">
+    <value>Namn på e-postserver (&lt;tt&gt;$whereami&lt;/tt&gt;)</value>
+  </data>
+  <data name="global_whoami" xml:space="preserve">
+    <value>Adress till Majordomo-master</value>
+  </data>
+  <data name="global_owner" xml:space="preserve">
+    <value>Adress till Majordomo-ägaren</value>
+  </data>
+  <data name="global_sendmail" xml:space="preserve">
+    <value>Sökväg till sendmail-kommando</value>
+  </data>
+  <data name="global_err" xml:space="preserve">
+    <value>Det gick inte att spara globala inställningar</value>
+  </data>
+  <data name="global_ewhereami" xml:space="preserve">
+    <value>Namn på e-postservern saknas eller är ogiltigt</value>
+  </data>
+  <data name="global_ewhoami" xml:space="preserve">
+    <value>Majordomo-adress saknas eller är ogiltig</value>
+  </data>
+  <data name="global_eowner" xml:space="preserve">
+    <value>Ägaradress saknas eller är ogiltig</value>
+  </data>
+  <data name="global_esendmail" xml:space="preserve">
+    <value>Sendmail-kommandot '$1' finns inte</value>
+  </data>
+  <data name="create_ecannot" xml:space="preserve">
+    <value>Du får inte skapa nya listor</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Skapa e-postlista</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Uppgifter om ny lista</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Namn på listan</value>
+  </data>
+  <data name="create_owner" xml:space="preserve">
+    <value>Adress till listans administratör</value>
+  </data>
+  <data name="create_password" xml:space="preserve">
+    <value>Lösenord för administration</value>
+  </data>
+  <data name="create_desc" xml:space="preserve">
+    <value>Beskrivning</value>
+  </data>
+  <data name="create_info" xml:space="preserve">
+    <value>Introduktionsmeddelande</value>
+  </data>
+  <data name="create_footer" xml:space="preserve">
+    <value>Sidfot för eftersänt e-postmeddelande</value>
+  </data>
+  <data name="create_moderate" xml:space="preserve">
+    <value>Modererad lista?</value>
+  </data>
+  <data name="create_moderator" xml:space="preserve">
+    <value>Moderatorns adress</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Samma som administratören</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Det gick inte att skapa e-postlistan</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Listnamn saknas eller är ogiltigt</value>
+  </data>
+  <data name="create_eexists" xml:space="preserve">
+    <value>Det finns redan en e-postlista som heter '$1'</value>
+  </data>
+  <data name="create_ealias" xml:space="preserve">
+    <value>Det finns redan ett mailalias för '$1'</value>
+  </data>
+  <data name="create_eowner" xml:space="preserve">
+    <value>Ägaradress saknas eller är ogiltig</value>
+  </data>
+  <data name="create_epassword" xml:space="preserve">
+    <value>Administrationslösenord saknas eller är ogiltigt</value>
+  </data>
+  <data name="create_emoderator" xml:space="preserve">
+    <value>Moderatorns adress saknas eller är ogiltig</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Ändra e-postlista</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>Du får inte ändra denna e-postlista</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Ta bort lista</value>
+  </data>
+  <data name="edit_deletemsg" xml:space="preserve">
+    <value>Tar bort denna lista inklusive tillhörande filer och mailalias</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>e-postlista</value>
+  </data>
+  <data name="edit_for" xml:space="preserve">
+    <value>För lista $1</value>
+  </data>
+  <data name="delete_ecannot" xml:space="preserve">
+    <value>Du får inte ta bort denna e-postlista</value>
+  </data>
+  <data name="delete_edigest" xml:space="preserve">
+    <value>Det går inte att ta bort denna lista eftersom den verkar ha en sammanfattande e-postlista kopplad till sig</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Ta bort listan</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Vill du verkligen ta bort e-postlistan $1? Följande filer kommer att tas bort:</value>
+  </data>
+  <data name="delete_aliases" xml:space="preserve">
+    <value>Följande mailalias kommer också att tas bort:</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Ta bort listan</value>
+  </data>
+  <data name="members_title" xml:space="preserve">
+    <value>Listmedlemmar</value>
+  </data>
+  <data name="members_desc" xml:space="preserve">
+    <value>Använd textrutan nedan för att ändra i listan över de e-postadresser som ska få e-post som skickas till denna lista.</value>
+  </data>
+  <data name="members_rodesc" xml:space="preserve">
+    <value>I textrutan nedan visas alla e-postadresser som får e-post skickad till denna lista.</value>
+  </data>
+  <data name="members_sub" xml:space="preserve">
+    <value>Lägg till en adress till listan</value>
+  </data>
+  <data name="members_add" xml:space="preserve">
+    <value>Lägg till</value>
+  </data>
+  <data name="members_unsub" xml:space="preserve">
+    <value>Ta bort en adress från listan</value>
+  </data>
+  <data name="members_rem" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="members_sync" xml:space="preserve">
+    <value>Synkronisera Unix-användare med listan?</value>
+  </data>
+  <data name="members_dom" xml:space="preserve">
+    <value>Domännamn som ska läggas till användarnamnen</value>
+  </data>
+  <data name="members_eedit" xml:space="preserve">
+    <value>Du får inte ändra några uppgifter om medlemmarna på listan</value>
+  </data>
+  <data name="members_esub" xml:space="preserve">
+    <value>Du måste ange ett administrationslösenord innan du lägger till adresser till listan</value>
+  </data>
+  <data name="members_esubaddr" xml:space="preserve">
+    <value>Adressen som ska läggas till måste ha ett fullständigt domännamn, t ex &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="members_eunsub" xml:space="preserve">
+    <value>Du måste ange ett administratörslösenord innan du tar bort adresser från listan</value>
+  </data>
+  <data name="members_eunsubaddr" xml:space="preserve">
+    <value>Adressen som ska tas bort måste ha ett fullständigt domännamn, t ex &lt;tt&gt;foo@bar.com&lt;/tt&gt;</value>
+  </data>
+  <data name="info_title" xml:space="preserve">
+    <value>Meddelanden och beskrivning</value>
+  </data>
+  <data name="info_header" xml:space="preserve">
+    <value>Meddelanden och beskrivning</value>
+  </data>
+  <data name="info_desc" xml:space="preserve">
+    <value>Listbeskrivning som ska bifogas i svaret till kommandot &lt;tt&gt;lists&lt;/tt&gt;</value>
+  </data>
+  <data name="info_info" xml:space="preserve">
+    <value>Informativt meddelande som ska skickas som svar på kommandot &lt;tt&gt;info $1&lt;/tt&gt;</value>
+  </data>
+  <data name="info_intro" xml:space="preserve">
+    <value>Introduktionsmeddelande som skickas när någon läggs till listan</value>
+  </data>
+  <data name="info_same" xml:space="preserve">
+    <value>Samma som det informativa meddelandet</value>
+  </data>
+  <data name="info_below" xml:space="preserve">
+    <value>Angivet nedan</value>
+  </data>
+  <data name="subs_title" xml:space="preserve">
+    <value>Tillägg och moderering</value>
+  </data>
+  <data name="subs_header" xml:space="preserve">
+    <value>Inställningar för tillägg och moderering</value>
+  </data>
+  <data name="subs_sub" xml:space="preserve">
+    <value>Tilläggspolicy</value>
+  </data>
+  <data name="subs_sopen" xml:space="preserve">
+    <value>Vem som helst kan lägga till sig själv</value>
+  </data>
+  <data name="subs_sauto" xml:space="preserve">
+    <value>Vem som helst kan lägga till vem som helst</value>
+  </data>
+  <data name="subs_closed" xml:space="preserve">
+    <value>Administratörens godkännande krävs</value>
+  </data>
+  <data name="subs_unsub" xml:space="preserve">
+    <value>Borttagningspolicy</value>
+  </data>
+  <data name="subs_uopen" xml:space="preserve">
+    <value>Vem som helst kan ta bort sig själv</value>
+  </data>
+  <data name="subs_uauto" xml:space="preserve">
+    <value>Vem som helst kan ta bort vem som helst</value>
+  </data>
+  <data name="subs_confirm" xml:space="preserve">
+    <value>Kräva bekräftelse för tillägg?</value>
+  </data>
+  <data name="subs_welcome" xml:space="preserve">
+    <value>Skicka introduktionsmeddelande?</value>
+  </data>
+  <data name="subs_strip" xml:space="preserve">
+    <value>Endast lägga till adressen till listan?</value>
+  </data>
+  <data name="subs_announcements" xml:space="preserve">
+    <value>Meddela administratören om tillägg och borttagningar?</value>
+  </data>
+  <data name="subs_administrivia" xml:space="preserve">
+    <value>Skicka vidare begäran om tillägg/borttagning till administratören?</value>
+  </data>
+  <data name="subs_passwd" xml:space="preserve">
+    <value>Administrationslösenord</value>
+  </data>
+  <data name="subs_moderate" xml:space="preserve">
+    <value>Modererad lista?</value>
+  </data>
+  <data name="subs_moderator" xml:space="preserve">
+    <value>Moderatorns adress?</value>
+  </data>
+  <data name="subs_maint" xml:space="preserve">
+    <value>Administratören</value>
+  </data>
+  <data name="subs_mpasswd" xml:space="preserve">
+    <value>Moderationslösenord</value>
+  </data>
+  <data name="subs_owner" xml:space="preserve">
+    <value>Ägarens e-postadress</value>
+  </data>
+  <data name="subs_approval" xml:space="preserve">
+    <value>E-postadress för godkännande</value>
+  </data>
+  <data name="subs_eowner" xml:space="preserve">
+    <value>Ägarens e-postadress saknas</value>
+  </data>
+  <data name="subs_eapproval" xml:space="preserve">
+    <value>E-postadress för godkännande saknas</value>
+  </data>
+  <data name="subs_emoderator" xml:space="preserve">
+    <value>Moderatorns adress saknas eller är ogiltig</value>
+  </data>
+  <data name="subs_epasswd" xml:space="preserve">
+    <value>Lösenord saknas eller är ogiltigt</value>
+  </data>
+  <data name="mesg_title" xml:space="preserve">
+    <value>E-postinställningar</value>
+  </data>
+  <data name="mesg_header" xml:space="preserve">
+    <value>Inställningar för utgående e-post</value>
+  </data>
+  <data name="mesg_reply" xml:space="preserve">
+    <value>Reply-To:-adress i vidareskickad e-post</value>
+  </data>
+  <data name="mesg_none" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="mesg_sender" xml:space="preserve">
+    <value>Sender:-adress i e-postmeddelandet</value>
+  </data>
+  <data name="mesg_host" xml:space="preserve">
+    <value>Datornamn för återsänd e-post</value>
+  </data>
+  <data name="mesg_subject" xml:space="preserve">
+    <value>Subject:-prefix för återsänd e-post</value>
+  </data>
+  <data name="mesg_precedence" xml:space="preserve">
+    <value>Prioritet för återsänd e-post</value>
+  </data>
+  <data name="mesg_first" xml:space="preserve">
+    <value>Första klass</value>
+  </data>
+  <data name="mesg_special" xml:space="preserve">
+    <value>Specialleverans</value>
+  </data>
+  <data name="mesg_list" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="mesg_bulk" xml:space="preserve">
+    <value>Bulk</value>
+  </data>
+  <data name="mesg_junk" xml:space="preserve">
+    <value>Skräp</value>
+  </data>
+  <data name="mesg_purge" xml:space="preserve">
+    <value>Ta bort Recieved:-huvud från återsänd e-post</value>
+  </data>
+  <data name="mesg_maxlength" xml:space="preserve">
+    <value>Maximal storlek för meddelanden</value>
+  </data>
+  <data name="mesg_ereply" xml:space="preserve">
+    <value>Reply-To:-adress saknas eller är ogiltig</value>
+  </data>
+  <data name="mesg_esender" xml:space="preserve">
+    <value>Sender:-adress saknas eller är ogiltig</value>
+  </data>
+  <data name="mesg_esender2" xml:space="preserve">
+    <value>Sender:-adressen får inte innehålla ett datornamn</value>
+  </data>
+  <data name="mesg_ehost" xml:space="preserve">
+    <value>Datornamn saknas eller är ogiltigt</value>
+  </data>
+  <data name="mesg_emaxlength" xml:space="preserve">
+    <value>Maximal meddelandestorlek saknas eller är ogiltig</value>
+  </data>
+  <data name="access_title" xml:space="preserve">
+    <value>Kontroll</value>
+  </data>
+  <data name="access_header" xml:space="preserve">
+    <value>Kontroll av tillgång till majordomo-kommandon</value>
+  </data>
+  <data name="access_open" xml:space="preserve">
+    <value>Vem som helst</value>
+  </data>
+  <data name="access_list" xml:space="preserve">
+    <value>Listmedlemmar</value>
+  </data>
+  <data name="access_closed" xml:space="preserve">
+    <value>Ingen</value>
+  </data>
+  <data name="access_get" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;get&lt;/tt&gt;</value>
+  </data>
+  <data name="access_index" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;index&lt;/tt&gt;</value>
+  </data>
+  <data name="access_info" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;info&lt;/tt&gt;</value>
+  </data>
+  <data name="access_intro" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;intro&lt;/tt&gt;</value>
+  </data>
+  <data name="access_which" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;which&lt;/tt&gt;</value>
+  </data>
+  <data name="access_who" xml:space="preserve">
+    <value>Tillgång till kommandot &lt;tt&gt;who&lt;/tt&gt;</value>
+  </data>
+  <data name="access_adv" xml:space="preserve">
+    <value>Bifoga denna lista i svaret på kommandot &lt;tt&gt;lists&lt;/tt&gt; för ...</value>
+  </data>
+  <data name="access_adv0" xml:space="preserve">
+    <value>Alla</value>
+  </data>
+  <data name="access_adv1" xml:space="preserve">
+    <value>Adresser som matchar reguljärt uttryck</value>
+  </data>
+  <data name="access_adv2" xml:space="preserve">
+    <value>Adresser som inte matchar reguljärt uttryck</value>
+  </data>
+  <data name="access_res" xml:space="preserve">
+    <value>Vem kan posta på listan?</value>
+  </data>
+  <data name="access_res0" xml:space="preserve">
+    <value>Vem som helst</value>
+  </data>
+  <data name="access_res1" xml:space="preserve">
+    <value>Listmedlemmar</value>
+  </data>
+  <data name="access_res2" xml:space="preserve">
+    <value>Adresser i filen</value>
+  </data>
+  <data name="access_tbody" xml:space="preserve">
+    <value>Reguljära uttryck för tabubelagda saker i meddelandekroppen</value>
+  </data>
+  <data name="access_theader" xml:space="preserve">
+    <value>Reguljära uttryck för tabubelagda saker i meddelandehuvudet</value>
+  </data>
+  <data name="access_taboo" xml:space="preserve">
+    <value>Obs: alla tabu- och adressuttryck (reguljära) måste börja och sluta med &lt;tt&gt;/&lt;/tt&gt;, t ex &lt;tt&gt;/foobar.com/&lt;/tt&gt; eller &lt;tt&gt;/obscene/&lt;/tt&gt;.</value>
+  </data>
+  <data name="head_title" xml:space="preserve">
+    <value>Huvuden och sidfötter</value>
+  </data>
+  <data name="head_header" xml:space="preserve">
+    <value>E-posthuvuden och -fötter för återsänd e-post</value>
+  </data>
+  <data name="head_fronter" xml:space="preserve">
+    <value>Huvud för återsänd e-post</value>
+  </data>
+  <data name="head_footer" xml:space="preserve">
+    <value>Sidfot för återsänd e-post</value>
+  </data>
+  <data name="head_headers" xml:space="preserve">
+    <value>Extra SMTP-huvuden för återsänd e-post</value>
+  </data>
+  <data name="misc_title" xml:space="preserve">
+    <value>Blandade inställningar</value>
+  </data>
+  <data name="misc_header" xml:space="preserve">
+    <value>Blandade inställningar för listor</value>
+  </data>
+  <data name="misc_munge" xml:space="preserve">
+    <value>Endast använda domänen när adresser jämförs?</value>
+  </data>
+  <data name="misc_debug" xml:space="preserve">
+    <value>Debugmod?</value>
+  </data>
+  <data name="misc_info" xml:space="preserve">
+    <value>Sätta in "ändrad senast"-datum i det informativa meddelandet?</value>
+  </data>
+  <data name="misc_intro" xml:space="preserve">
+    <value>Sätta in "ändrad senast"-datum i introduktionsmeddelandet?</value>
+  </data>
+  <data name="digest_title" xml:space="preserve">
+    <value>Inställningar för sammanfattningar</value>
+  </data>
+  <data name="digest_header" xml:space="preserve">
+    <value>Inställningar för generering av sammanfattningar</value>
+  </data>
+  <data name="digest_name" xml:space="preserve">
+    <value>Namn på sammanfattning</value>
+  </data>
+  <data name="digest_maxdays" xml:space="preserve">
+    <value>Äldsta meddelandets ålder innan sändning sker</value>
+  </data>
+  <data name="digest_days" xml:space="preserve">
+    <value>dagar</value>
+  </data>
+  <data name="digest_lines" xml:space="preserve">
+    <value>rader</value>
+  </data>
+  <data name="digest_maxlines" xml:space="preserve">
+    <value>Maximal sammanfattningsstorlek innan sändning sker</value>
+  </data>
+  <data name="digest_volume" xml:space="preserve">
+    <value>Aktuellt nummer på volymen</value>
+  </data>
+  <data name="digest_issue" xml:space="preserve">
+    <value>Aktuellt nummer på utgåvan</value>
+  </data>
+  <data name="digest_unlimited" xml:space="preserve">
+    <value>Obegränsat</value>
+  </data>
+  <data name="digest_edays" xml:space="preserve">
+    <value>Antalet dagar saknas eller är ogiltigt</value>
+  </data>
+  <data name="digest_elines" xml:space="preserve">
+    <value>Antalet rader saknas eller är ogiltigt</value>
+  </data>
+  <data name="digest_evolume" xml:space="preserve">
+    <value>Volymnummer saknas eller är ogiltigt</value>
+  </data>
+  <data name="digest_eissue" xml:space="preserve">
+    <value>Utgåvenummer saknas eller är ogiltigt</value>
+  </data>
+  <data name="log_global" xml:space="preserve">
+    <value>Ändrade globala inställningar</value>
+  </data>
+  <data name="log_create_list" xml:space="preserve">
+    <value>Skapade e-postlista $1</value>
+  </data>
+  <data name="log_create_digest" xml:space="preserve">
+    <value>Skapade sammanfattande lista $1</value>
+  </data>
+  <data name="log_delete_list" xml:space="preserve">
+    <value>Tog bort e-postlista $1</value>
+  </data>
+  <data name="log_delete_digest" xml:space="preserve">
+    <value>Tog bort sammanfattande lista $1</value>
+  </data>
+  <data name="log_subscribe" xml:space="preserve">
+    <value>Lade till $2 till lista $1</value>
+  </data>
+  <data name="log_unsubscribe" xml:space="preserve">
+    <value>Tog bort $2 från lista $1</value>
+  </data>
+  <data name="log_members" xml:space="preserve">
+    <value>Uppdaterade medlemmarna på lista $1</value>
+  </data>
+  <data name="log_auto" xml:space="preserve">
+    <value>Uppdaterade synkroniseringen för lista $1</value>
+  </data>
+  <data name="log_info" xml:space="preserve">
+    <value>Uppdaterade meddelanden och beskrivning för lista $1</value>
+  </data>
+  <data name="log_subs" xml:space="preserve">
+    <value>Uppdaterade tillägg och moderering för lista $1</value>
+  </data>
+  <data name="log_mesg" xml:space="preserve">
+    <value>Uppdaterade e-postinställningar för lista $1</value>
+  </data>
+  <data name="log_access" xml:space="preserve">
+    <value>Uppdaterade kommandotillgångskontroll för lista $1</value>
+  </data>
+  <data name="log_head" xml:space="preserve">
+    <value>Uppdaterade huvuden och sidfötter för lista $1</value>
+  </data>
+  <data name="log_misc" xml:space="preserve">
+    <value>Uppdaterade blandade inställningar för lista $1</value>
+  </data>
+  <data name="log_digest" xml:space="preserve">
+    <value>Uppdaterade sammanfattningsinställningar för lista $1</value>
+  </data>
+  <data name="acl_lists" xml:space="preserve">
+    <value>E-postlistor som denna användare får råda över</value>
+  </data>
+  <data name="acl_global" xml:space="preserve">
+    <value>Kunna ändra globala inställningar?</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Kunna skapa nya e-postlistor?</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Kunna redigera listmedlemskap?</value>
+  </data>
+</root>

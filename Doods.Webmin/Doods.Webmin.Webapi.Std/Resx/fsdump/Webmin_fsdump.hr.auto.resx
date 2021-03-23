@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Izrada sigurnosne kopije</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Dodajte novu sigurnosnu kopiju direktorija:</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Još nije stvorena sigurnosna kopija konfiguracija datotečnog sustava.</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Ne postoji sigurnosna kopija sigurnosnih kopija konfiguracija za koje imate pristup.</value>
+  </data>
+  <data name="index_restore" xml:space="preserve">
+    <value>Vratite sigurnosne kopije tipa datotečnog sustava:</value>
+  </data>
+  <data name="index_restoremsg" xml:space="preserve">
+    <value>Odaberite vrstu datotečnog sustava i kliknite ovaj gumb kako biste započeli postupak odabira sigurnosne kopije datotečnog sustava za vraćanje.</value>
+  </data>
+  <data name="index_restore2" xml:space="preserve">
+    <value>Vratite sigurnosnu kopiju datotečnog sustava</value>
+  </data>
+  <data name="index_restoremsg2" xml:space="preserve">
+    <value>Kliknite ovaj gumb kako biste započeli postupak odabira sigurnosne kopije datotečnog sustava za vraćanje.</value>
+  </data>
+  <data name="index_ecommands" xml:space="preserve">
+    <value>U vašem sustavu nisu pronađene nijedne naredbe sigurnosnog kopiranja datotečnog sustava (poput $1) potrebne ovom modulu. Možda trenutno nisu instalirani.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>sigurnosna kopija popis</value>
+  </data>
+  <data name="index_running" xml:space="preserve">
+    <value>Izvođenje sigurnosnih kopija</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>Planirane sigurnosne kopije</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Započeo u</value>
+  </data>
+  <data name="index_status" xml:space="preserve">
+    <value>Trenutni status</value>
+  </data>
+  <data name="index_status_running" xml:space="preserve">
+    <value>Trčanje</value>
+  </data>
+  <data name="index_status_tape" xml:space="preserve">
+    <value>Čeka se vrpca</value>
+  </data>
+  <data name="index_action" xml:space="preserve">
+    <value>Radnja</value>
+  </data>
+  <data name="index_kill" xml:space="preserve">
+    <value>okončati</value>
+  </data>
+  <data name="index_newtape" xml:space="preserve">
+    <value>Traka je učitana</value>
+  </data>
+  <data name="index_noact" xml:space="preserve">
+    <value>Nijedna nije dostupna</value>
+  </data>
+  <data name="index_now" xml:space="preserve">
+    <value>Sigurnosna kopija ..</value>
+  </data>
+  <data name="index_follow" xml:space="preserve">
+    <value>Nakon $1 </value>
+  </data>
+  <data name="index_forcetar" xml:space="preserve">
+    <value>U TAR formatu</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Izbrišite odabrane sigurnosne kopije</value>
+  </data>
+  <data name="index_nostrftime" xml:space="preserve">
+    <value>Upozorenje - neki rezervni poslovi koriste % u svojim imenima, ali zamjena strlue-a nije omogućena na stranici Konfiguracija modula.</value>
+  </data>
+  <data name="dump_dir" xml:space="preserve">
+    <value>Imenik za sigurnosnu kopiju</value>
+  </data>
+  <data name="dump_dirs" xml:space="preserve">
+    <value>Katalozi za izradu sigurnosnih kopija</value>
+  </data>
+  <data name="dump_fs" xml:space="preserve">
+    <value>Sustav datoteka</value>
+  </data>
+  <data name="dump_sched" xml:space="preserve">
+    <value>Planirano?</value>
+  </data>
+  <data name="dump_when" xml:space="preserve">
+    <value>Ponekad</value>
+  </data>
+  <data name="dump_dest" xml:space="preserve">
+    <value>Izrada sigurnosne kopije</value>
+  </data>
+  <data name="dump_file" xml:space="preserve">
+    <value>Uređaj za datoteke ili vrpce</value>
+  </data>
+  <data name="dump_host" xml:space="preserve">
+    <value>Domaćin $1 kao korisnik $2 u datoteci ili uređaju $3 </value>
+  </data>
+  <data name="dump_level" xml:space="preserve">
+    <value>Razina smeća</value>
+  </data>
+  <data name="dump_level_0" xml:space="preserve">
+    <value>0 (potpuna izrada sigurnosne kopije)</value>
+  </data>
+  <data name="dump_label" xml:space="preserve">
+    <value>Rezervna naljepnica</value>
+  </data>
+  <data name="dump_multi" xml:space="preserve">
+    <value>Podijeliti na više datoteka?</value>
+  </data>
+  <data name="dump_update" xml:space="preserve">
+    <value>Ažurirati datoteku &lt;tt&gt;/etc/dumpdates&lt;/tt&gt;?</value>
+  </data>
+  <data name="dump_exclude" xml:space="preserve">
+    <value>Datoteke i mape koje je preskočiti</value>
+  </data>
+  <data name="dump_edir" xml:space="preserve">
+    <value>Nedostaje ili nije važeći direktorij za izradu sigurnosnih kopija</value>
+  </data>
+  <data name="dump_efile" xml:space="preserve">
+    <value>Nedostaje datoteka ili uređaj za sigurnosno kopiranje</value>
+  </data>
+  <data name="dump_ehost" xml:space="preserve">
+    <value>Nedostaje ili je nevažeći domaćin za sigurnosno kopiranje</value>
+  </data>
+  <data name="dump_ehuser" xml:space="preserve">
+    <value>Nevažeće korisničko ime na host za rezervaciju</value>
+  </data>
+  <data name="dump_ehuser2" xml:space="preserve">
+    <value>Korisničko ime ne može sadržavati znak @</value>
+  </data>
+  <data name="dump_ehfile" xml:space="preserve">
+    <value>Nedostaje ili neispravna datoteka ili uređaj na host za pohranu</value>
+  </data>
+  <data name="dump_elabel" xml:space="preserve">
+    <value>Nevažeća sigurnosna kopija naljepnice (može biti najviše 15 znakova)</value>
+  </data>
+  <data name="dump_elabel2" xml:space="preserve">
+    <value>Nevažeća sigurnosna kopija naljepnice (može imati najviše 255 znakova)</value>
+  </data>
+  <data name="dump_eblocks" xml:space="preserve">
+    <value>Nedostaje ili nije važeća veličina trake</value>
+  </data>
+  <data name="dump_ebsize" xml:space="preserve">
+    <value>Nedostaje ili je neispravna veličina bloka zapisa dump</value>
+  </data>
+  <data name="dump_max" xml:space="preserve">
+    <value>Maksimalna veličina datoteke koju treba uključiti</value>
+  </data>
+  <data name="dump_unlimited" xml:space="preserve">
+    <value>Neograničen</value>
+  </data>
+  <data name="dump_attribs" xml:space="preserve">
+    <value>Uključiti atribute datoteka?</value>
+  </data>
+  <data name="dump_over" xml:space="preserve">
+    <value>Pitajte prije prepisivanja vrpce?</value>
+  </data>
+  <data name="dump_overwrite" xml:space="preserve">
+    <value>Uvijek prepisati sigurnosnu kopiju?</value>
+  </data>
+  <data name="dump_invent" xml:space="preserve">
+    <value>Snimiti sigurnosne kopije u oglasnom prostoru?</value>
+  </data>
+  <data name="dump_emax" xml:space="preserve">
+    <value>Nedostaje ili neispravna maksimalna veličina datoteke</value>
+  </data>
+  <data name="dump_emp" xml:space="preserve">
+    <value>Imenik za sigurnosno kopiranje mora biti točka montiranja datotečnog sustava</value>
+  </data>
+  <data name="dump_erase" xml:space="preserve">
+    <value>Želite li izbrisati datoteku / izbrisati traku prije izrade sigurnosne kopije?</value>
+  </data>
+  <data name="dump_verify" xml:space="preserve">
+    <value>Potvrdite podatke nakon izrade sigurnosne kopije?</value>
+  </data>
+  <data name="dump_offline" xml:space="preserve">
+    <value>Izvadite vrpcu nakon sigurnosne kopije?</value>
+  </data>
+  <data name="dump_blocks" xml:space="preserve">
+    <value>Veličina trake</value>
+  </data>
+  <data name="dump_bsize" xml:space="preserve">
+    <value>Veličina bloka zapisa dump</value>
+  </data>
+  <data name="dump_auto" xml:space="preserve">
+    <value>Vježbajte automatski</value>
+  </data>
+  <data name="dump_honour" xml:space="preserve">
+    <value>Uvijek izuzeti označene datoteke?</value>
+  </data>
+  <data name="dump_comp" xml:space="preserve">
+    <value>Stisnuti podatke?</value>
+  </data>
+  <data name="dump_complvl" xml:space="preserve">
+    <value>Da, s razinom</value>
+  </data>
+  <data name="dump_ecomp" xml:space="preserve">
+    <value>Nedostaje ili nije važeća razina kompresije</value>
+  </data>
+  <data name="dump_before" xml:space="preserve">
+    <value>Naredba za pokretanje prije sigurnosne kopije</value>
+  </data>
+  <data name="dump_after" xml:space="preserve">
+    <value>Naredba za pokretanje nakon sigurnosne kopije</value>
+  </data>
+  <data name="dump_fok" xml:space="preserve">
+    <value>Zaustavi se ako naredba ne uspije</value>
+  </data>
+  <data name="dump_fok2" xml:space="preserve">
+    <value>Prijavi neuspjeh ako naredba ne uspije</value>
+  </data>
+  <data name="dump_aok" xml:space="preserve">
+    <value>Preskočite naredbu čak i ako sigurnosna kopija ne uspije</value>
+  </data>
+  <data name="dump_extra" xml:space="preserve">
+    <value>Dodatni parametri naredbenog retka</value>
+  </data>
+  <data name="dump_rsh" xml:space="preserve">
+    <value>Naredba za udaljeno sigurnosno kopiranje</value>
+  </data>
+  <data name="dump_rsh0" xml:space="preserve">
+    <value>Zadano (RSH)</value>
+  </data>
+  <data name="dump_rsh1" xml:space="preserve">
+    <value>SSH</value>
+  </data>
+  <data name="dump_rsh3" xml:space="preserve">
+    <value>FTP</value>
+  </data>
+  <data name="dump_rsh2" xml:space="preserve">
+    <value>Druga naredba ..</value>
+  </data>
+  <data name="dump_pass" xml:space="preserve">
+    <value>Lozinka za SSH prijavu</value>
+  </data>
+  <data name="dump_pass2" xml:space="preserve">
+    <value>Lozinka za SSH/FTP prijavu</value>
+  </data>
+  <data name="dump_ersh" xml:space="preserve">
+    <value>Nedostaje ili nije važeća naredba daljinskog sigurnosnog kopiranja</value>
+  </data>
+  <data name="dump_essh" xml:space="preserve">
+    <value>SSH se ne može koristiti za daljinsko sigurnosno kopiranje ako na vašem sustavu nije instalirana naredba &lt;tt&gt;ssh&lt;/tt&gt;</value>
+  </data>
+  <data name="dump_ecannot1" xml:space="preserve">
+    <value>Ne smijete stvarati sigurnosne kopije</value>
+  </data>
+  <data name="dump_ecannot2" xml:space="preserve">
+    <value>Nije vam dopušteno uređivanje ove sigurnosne kopije</value>
+  </data>
+  <data name="dump_ecannot3" xml:space="preserve">
+    <value>Nije vam dopušteno sigurnosno kopiranje ovog direktorija</value>
+  </data>
+  <data name="dump_format" xml:space="preserve">
+    <value>Rezervni format</value>
+  </data>
+  <data name="dump_tar" xml:space="preserve">
+    <value>Unix TAR</value>
+  </data>
+  <data name="dump_dumpfs" xml:space="preserve">
+    <value>$1 izvatkom datotečnog sustava</value>
+  </data>
+  <data name="dump_gzip" xml:space="preserve">
+    <value>Stisnuti arhivu?</value>
+  </data>
+  <data name="dump_gzip1" xml:space="preserve">
+    <value>Da, s gzipom</value>
+  </data>
+  <data name="dump_gzip2" xml:space="preserve">
+    <value>Da, s bzip2</value>
+  </data>
+  <data name="dump_gzip3" xml:space="preserve">
+    <value>Da, s XZ-om</value>
+  </data>
+  <data name="dump_bcomp" xml:space="preserve">
+    <value>Podaci sažimanja međuspremnika u blokove?</value>
+  </data>
+  <data name="dump_xdev" xml:space="preserve">
+    <value>Ograničite sigurnosnu kopiju na jedan datotečni sustav?</value>
+  </data>
+  <data name="dump_update2" xml:space="preserve">
+    <value>Samo dodajte nove datoteke u arhivu?</value>
+  </data>
+  <data name="dump_ignoreread" xml:space="preserve">
+    <value>Zanemarite pogreške u čitanju datoteka?</value>
+  </data>
+  <data name="dump_notape" xml:space="preserve">
+    <value>Zatraži novu traku ako je potrebno?</value>
+  </data>
+  <data name="dump_rmt" xml:space="preserve">
+    <value>Put do &lt;tt&gt;rmt&lt;/tt&gt; na udaljenom sustavu</value>
+  </data>
+  <data name="dump_links" xml:space="preserve">
+    <value>Slijedite simboličke veze?</value>
+  </data>
+  <data name="dump_egzip" xml:space="preserve">
+    <value>Opcija kompresije gzipa nije kompatibilna s opcijom veličine trake</value>
+  </data>
+  <data name="dump_egzip2" xml:space="preserve">
+    <value>Opcija kompresije gzipa nije kompatibilna s opcijom sigurnosne kopije s više datoteka</value>
+  </data>
+  <data name="dump_egzip3" xml:space="preserve">
+    <value>Opcija kompresije gzipa nije kompatibilna s opcijom samo dodavanja novih datoteka u arhivu</value>
+  </data>
+  <data name="dump_emulti" xml:space="preserve">
+    <value>Izrada sigurnosnih kopija s više datoteka ne može se napraviti na kasetofonu</value>
+  </data>
+  <data name="dump_emulti2" xml:space="preserve">
+    <value>Izrada sigurnosnih kopija s više datoteka ne može se napraviti na udaljenom poslužitelju</value>
+  </data>
+  <data name="dump_ermt" xml:space="preserve">
+    <value>Nedostaje ili nije važeći put do &lt;tt&gt;rmt&lt;/tt&gt; programa</value>
+  </data>
+  <data name="dump_reverify" xml:space="preserve">
+    <value>Pokušaj vraćanja testa nakon izrade sigurnosne kopije za provjeru?</value>
+  </data>
+  <data name="dump_remount" xml:space="preserve">
+    <value>Ponovno upotrijebite opciju &lt;tt&gt;noatime&lt;/tt&gt; tijekom sigurnosne kopije?</value>
+  </data>
+  <data name="dump_eftpupdate" xml:space="preserve">
+    <value>Dodavanje datoteka u postojeću arhivu nije moguće kada koristite FTP.</value>
+  </data>
+  <data name="dump_eleveldir" xml:space="preserve">
+    <value>Dopuštene su samo sigurnosne kopije razine 0 za mape koje nisu točke montiranja datotečnog sustava</value>
+  </data>
+  <data name="dump_eupdatedir" xml:space="preserve">
+    <value>Datoteka &lt;tt&gt;/etc/dumpdates&lt;/tt&gt; može se ažurirati samo za direktorije koje su točke montiranja datotečnog sustava</value>
+  </data>
+  <data name="edit_err" xml:space="preserve">
+    <value>Izrada sigurnosne kopije nije uspjela</value>
+  </data>
+  <data name="edit_edir" xml:space="preserve">
+    <value>Nedostaje direktorij sigurnosne kopije</value>
+  </data>
+  <data name="edit_efs" xml:space="preserve">
+    <value>Filesni sustavi tipa $1 ne mogu sigurnosno kopirati ovaj modul</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Dodajte novu sigurnosnu kopiju</value>
+  </data>
+  <data name="edit_title2" xml:space="preserve">
+    <value>Uređivanje sigurnosne kopije</value>
+  </data>
+  <data name="edit_title3" xml:space="preserve">
+    <value>Klon sigurnosna kopija</value>
+  </data>
+  <data name="edit_header" xml:space="preserve">
+    <value>Pojedinosti o sigurnosnoj kopiji datoteke $1 </value>
+  </data>
+  <data name="edit_header2" xml:space="preserve">
+    <value>Rezervni raspored</value>
+  </data>
+  <data name="edit_header3" xml:space="preserve">
+    <value>Opcije sigurnosne kopije</value>
+  </data>
+  <data name="edit_enabled" xml:space="preserve">
+    <value>Omogućeno je planirano sigurnosno kopiranje?</value>
+  </data>
+  <data name="edit_enabled_no" xml:space="preserve">
+    <value>Onemogućeno</value>
+  </data>
+  <data name="edit_enabled_yes" xml:space="preserve">
+    <value>Omogućeno, ponekad odabrano.</value>
+  </data>
+  <data name="edit_enabled_af" xml:space="preserve">
+    <value>Omogućeno, nakon:</value>
+  </data>
+  <data name="edit_savenow" xml:space="preserve">
+    <value>Spremi i sigurnosno kopiraj sada</value>
+  </data>
+  <data name="edit_createnow" xml:space="preserve">
+    <value>Kreirajte i sigurnosno kopirajte odmah</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>rezerva</value>
+  </data>
+  <data name="edit_email" xml:space="preserve">
+    <value>Zakazani izlaz e-poštom pošaljite na</value>
+  </data>
+  <data name="edit_subject" xml:space="preserve">
+    <value>Predmet poruke e-pošte</value>
+  </data>
+  <data name="edit_restore" xml:space="preserve">
+    <value>Vrati ..</value>
+  </data>
+  <data name="edit_to" xml:space="preserve">
+    <value>$1 do $2 </value>
+  </data>
+  <data name="edit_tolevel" xml:space="preserve">
+    <value>$1 do $2 (razina $3)</value>
+  </data>
+  <data name="edit_special" xml:space="preserve">
+    <value>Rezervni raspored</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Kada napraviti sigurnosnu kopiju</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Klon</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Spremanje sigurnosne kopije nije uspjelo</value>
+  </data>
+  <data name="save_edir" xml:space="preserve">
+    <value>Nedostaje ili je nevažeći direktorij sigurnosne kopije</value>
+  </data>
+  <data name="save_efs" xml:space="preserve">
+    <value>Rezervna mapa ne može se promijeniti u drugi datotečni sustav</value>
+  </data>
+  <data name="backup_title" xml:space="preserve">
+    <value>Rezervno sada</value>
+  </data>
+  <data name="backup_desc" xml:space="preserve">
+    <value>Izvođenje sigurnosne kopije od $1 do $2.</value>
+  </data>
+  <data name="backup_reverify" xml:space="preserve">
+    <value>.. kompletna. Sada provjeravanje sigurnosne kopije ..</value>
+  </data>
+  <data name="backup_beforefailed" xml:space="preserve">
+    <value>.. prije nego što naredba sigurnosnog kopiranja nije uspjela!</value>
+  </data>
+  <data name="backup_afterfailed" xml:space="preserve">
+    <value>.. nakon što naredba sigurnosnog kopiranja nije uspjela!</value>
+  </data>
+  <data name="backup_done" xml:space="preserve">
+    <value>.. sigurnosna kopija dovršena.</value>
+  </data>
+  <data name="backup_failed" xml:space="preserve">
+    <value>.. sigurnosna kopija nije uspjela!</value>
+  </data>
+  <data name="backup_noverify" xml:space="preserve">
+    <value>.. provjera nije uspjela!</value>
+  </data>
+  <data name="backup_notape" xml:space="preserve">
+    <value>.. sigurnosna kopija premašila je kapacitet jedne trake. Promjena vrpce podržana je samo ako se sigurnosne kopije pokreću kao pozadinski procesi.</value>
+  </data>
+  <data name="backup_egone" xml:space="preserve">
+    <value>Rezervna kopija ne postoji!</value>
+  </data>
+  <data name="backup_bg" xml:space="preserve">
+    <value>Pokretanje postupka izrade sigurnosne kopije u pozadini. Možete pratiti njegov napredak u odjeljku &lt;b&gt;Pokretanje sigurnosnih kopija&lt;/b&gt; na glavnoj stranici modula, a o svom konačnom stanju bit ćete obaviješteni e-poštom.</value>
+  </data>
+  <data name="backup_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno sigurnosno kopiranje ovog direktorija</value>
+  </data>
+  <data name="restore_title" xml:space="preserve">
+    <value>Obnoviti povrat</value>
+  </data>
+  <data name="restore_err" xml:space="preserve">
+    <value>Vraćanje sigurnosne kopije nije uspjelo</value>
+  </data>
+  <data name="restore_ecommand" xml:space="preserve">
+    <value>Naredba $1 potrebna za vraćanje sigurnosnih kopija sigurnosnog kopiranja $2 nije pronađena u vašem sustavu. Možda trenutno nije instaliran.</value>
+  </data>
+  <data name="restore_theader" xml:space="preserve">
+    <value>Vratite sigurnosne kopije iz Unix TAR datoteke</value>
+  </data>
+  <data name="restore_header" xml:space="preserve">
+    <value>Vrati sigurnosnu kopiju datotečnog sustava $1 </value>
+  </data>
+  <data name="restore_src" xml:space="preserve">
+    <value>Vrati iz datoteke ili uređaja</value>
+  </data>
+  <data name="restore_dir" xml:space="preserve">
+    <value>Vrati u imenik</value>
+  </data>
+  <data name="restore_ok" xml:space="preserve">
+    <value>Vratite sigurnosnu kopiju sada</value>
+  </data>
+  <data name="restore_over" xml:space="preserve">
+    <value>Prepisati postojeće datoteke?</value>
+  </data>
+  <data name="restore_over0" xml:space="preserve">
+    <value>Stalno</value>
+  </data>
+  <data name="restore_over1" xml:space="preserve">
+    <value>Osim ako je noviji od sigurnosne kopije</value>
+  </data>
+  <data name="restore_over2" xml:space="preserve">
+    <value>Nikada</value>
+  </data>
+  <data name="restore_noattribs" xml:space="preserve">
+    <value>Želite li vratiti atribute datoteka?</value>
+  </data>
+  <data name="restore_label" xml:space="preserve">
+    <value>Vratite sigurnosnu kopiju samo s naljepnicom</value>
+  </data>
+  <data name="restore_files" xml:space="preserve">
+    <value>Datoteke za vraćanje</value>
+  </data>
+  <data name="restore_all" xml:space="preserve">
+    <value>Sve u rezervama</value>
+  </data>
+  <data name="restore_sel" xml:space="preserve">
+    <value>Popisane datoteke ..</value>
+  </data>
+  <data name="restore_multi" xml:space="preserve">
+    <value>Sigurnosna kopija je podijeljena na više datoteka?</value>
+  </data>
+  <data name="restore_efile" xml:space="preserve">
+    <value>Nedostaje datoteka ili uređaj za vraćanje</value>
+  </data>
+  <data name="restore_ehost" xml:space="preserve">
+    <value>Nedostaje ili nevažeći domaćin za vraćanje s njega</value>
+  </data>
+  <data name="restore_ehuser" xml:space="preserve">
+    <value>Nevažeće korisničko ime za domaćin s kojeg se treba vratiti</value>
+  </data>
+  <data name="restore_ehfile" xml:space="preserve">
+    <value>Nedostaje ili nevažeća datoteka ili uređaj na host za vraćanje s računala</value>
+  </data>
+  <data name="restore_now" xml:space="preserve">
+    <value>Vraćanje sigurnosne kopije naredbom $1 ..</value>
+  </data>
+  <data name="restore_desc" xml:space="preserve">
+    <value>Ova vam stranica omogućuje vraćanje sigurnosne kopije prethodnog datotečnog sustava. Budite oprezni pri vraćanju jer su datoteke izmijenjene jer je sigurnosna kopija možda prebrisana!</value>
+  </data>
+  <data name="restore_efiles" xml:space="preserve">
+    <value>Nedostaju datoteke za vraćanje</value>
+  </data>
+  <data name="restore_evolume" xml:space="preserve">
+    <value>Višenamjenska obnavljanja nisu podržana.</value>
+  </data>
+  <data name="restore_equestion" xml:space="preserve">
+    <value>Nepoznato pitanje iz obnavljanja : $1 </value>
+  </data>
+  <data name="restore_edir" xml:space="preserve">
+    <value>Nedostaje ili nevažeći imenik za vraćanje</value>
+  </data>
+  <data name="restore_failed" xml:space="preserve">
+    <value>Vraćanje nije uspjelo : $1 </value>
+  </data>
+  <data name="restore_failed2" xml:space="preserve">
+    <value>Vraćanje nije uspjelo! Pogledajte izlaz gore.</value>
+  </data>
+  <data name="restore_complete" xml:space="preserve">
+    <value>Vraćanje je uspješno završeno.</value>
+  </data>
+  <data name="restore_test" xml:space="preserve">
+    <value>Pokaži samo datoteke sigurnosne kopije?</value>
+  </data>
+  <data name="restore_nothing" xml:space="preserve">
+    <value>Samo testirajte sigurnosnu kopiju?</value>
+  </data>
+  <data name="restore_extra" xml:space="preserve">
+    <value>Dodatne mogućnosti naredbenog retka</value>
+  </data>
+  <data name="restore_rsh" xml:space="preserve">
+    <value>Naredba za udaljeno vraćanje</value>
+  </data>
+  <data name="restore_ersh" xml:space="preserve">
+    <value>Nedostaje ili nije važeća naredba za daljinsko vraćanje</value>
+  </data>
+  <data name="restore_essh" xml:space="preserve">
+    <value>SSH se ne može koristiti za daljinsko vraćanje ako na vašem sustavu nije instalirana naredba &lt;tt&gt;ssh&lt;/tt&gt;</value>
+  </data>
+  <data name="restore_ecannot" xml:space="preserve">
+    <value>Ne možete obnoviti sigurnosne kopije</value>
+  </data>
+  <data name="restore_perms" xml:space="preserve">
+    <value>Želite li vratiti dopuštenja za datoteke?</value>
+  </data>
+  <data name="restore_gzip" xml:space="preserve">
+    <value>Poništi arhivu arhive?</value>
+  </data>
+  <data name="restore_keep" xml:space="preserve">
+    <value>Ne prepisati datoteke?</value>
+  </data>
+  <data name="restore_emulti" xml:space="preserve">
+    <value>Obnavljanje s više datoteka ne može se obaviti s vrpce</value>
+  </data>
+  <data name="restore_emulti2" xml:space="preserve">
+    <value>Obnavljanje više datoteka ne može se izvršiti s udaljenog poslužitelja</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Napravljena konfiguracija sigurnosne kopije za $1 </value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Izmijenjena konfiguracija sigurnosne kopije za $1 </value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Izbrisana sigurnosna kopija za $1 </value>
+  </data>
+  <data name="log_backup" xml:space="preserve">
+    <value>Sigurnosno kopiranje $1 do $2 </value>
+  </data>
+  <data name="log_bgbackup" xml:space="preserve">
+    <value>Započeta sigurnosna kopija od $1 do $2 </value>
+  </data>
+  <data name="log_restore" xml:space="preserve">
+    <value>Vraćena sigurnosna kopija iz $1 </value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Završeno sigurnosno kopiranje za $1 </value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Zaustavljanje sigurnosne kopije nije uspjelo</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Nema više trčanja!</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno prekinuti ovu izradu sigurnosnih kopija</value>
+  </data>
+  <data name="newtape_err" xml:space="preserve">
+    <value>Nije uspjelo signaliziranje nove vrpce</value>
+  </data>
+  <data name="newtape_egone" xml:space="preserve">
+    <value>Rezervna kopija više ne radi!</value>
+  </data>
+  <data name="newtape_estatus" xml:space="preserve">
+    <value>Izrada sigurnosne kopije više ne čeka novu vrpcu</value>
+  </data>
+  <data name="newtape_ecannot" xml:space="preserve">
+    <value>Nije vam dopušteno upravljanje ovom sigurnosnom kopijom</value>
+  </data>
+  <data name="acl_edit" xml:space="preserve">
+    <value>Mogu li stvarati i uređivati sigurnosne kopije?</value>
+  </data>
+  <data name="acl_restore" xml:space="preserve">
+    <value>Mogu li vratiti sigurnosne kopije?</value>
+  </data>
+  <data name="acl_cmds" xml:space="preserve">
+    <value>Može li se uređivati prije i poslije naredbi?</value>
+  </data>
+  <data name="acl_extra" xml:space="preserve">
+    <value>Mogu li uređivati dodatne parametre naredbenog retka?</value>
+  </data>
+  <data name="acl_dirs" xml:space="preserve">
+    <value>Dopuštene direktorije za izradu sigurnosnih kopija</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Svi imenici</value>
+  </data>
+  <data name="acl_list" xml:space="preserve">
+    <value>Samo na popisu ..</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Brisanje sigurnosnih kopija nije uspjelo</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Nijedna nije odabrana</value>
+  </data>
+  <data name="email_already" xml:space="preserve">
+    <value>Rezervna kopija već radi s PID $1.</value>
+  </data>
+  <data name="email_ebefore" xml:space="preserve">
+    <value>Naredba prije sigurnosne kopije nije uspjela!</value>
+  </data>
+  <data name="email_verify" xml:space="preserve">
+    <value>Provjera sigurnosne kopije ..</value>
+  </data>
+  <data name="email_eafter" xml:space="preserve">
+    <value>Naredba nakon sigurnosnog kopiranja nije uspjela!</value>
+  </data>
+  <data name="email_subject" xml:space="preserve">
+    <value>Sigurnosna kopija $1 na $2 </value>
+  </data>
+  <data name="email_ok" xml:space="preserve">
+    <value>Backup je uspio</value>
+  </data>
+  <data name="email_failed" xml:space="preserve">
+    <value>Rezervna kopija nije uspjela!</value>
+  </data>
+  <data name="newtape_subject" xml:space="preserve">
+    <value>Promjena trake $1 za izradu sigurnosne kopije $2 na $3 </value>
+  </data>
+  <data name="newtape_body" xml:space="preserve">
+    <value>Sigurnosna kopija $2 na $3 dosegla je maksimalnu količinu podataka dopuštenih na vrpci $1. Morat ćete umetnuti novu vrpcu i pritisnuti vezu 'Tape Loaded' u Webmin's Filesystem Backup modulu za nastavak izrade sigurnosnih kopija.</value>
+  </data>
+</root>

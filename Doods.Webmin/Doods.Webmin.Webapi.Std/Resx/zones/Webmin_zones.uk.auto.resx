@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>У вашій системі не знайдено команди адміністрування зон $1. Він повинен бути встановлений до використання цього модуля.</value>
+  </data>
+  <data name="index_eglobal" xml:space="preserve">
+    <value>Webmin працює в зоні $1, а не в &lt;tt&gt;глобальній&lt;/tt&gt; зоні. Цей модуль буде працювати лише при запуску в &lt;tt&gt;глобальній&lt;/tt&gt; зоні.</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Жодна зона ще не визначена.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Додати нову зону.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>перелік зон</value>
+  </data>
+  <data name="index_zones" xml:space="preserve">
+    <value>Існуючі зони</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Редагування зони</value>
+  </data>
+  <data name="edit_common" xml:space="preserve">
+    <value>Загальна конфігурація зони</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Назва зони</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Поточний статус</value>
+  </data>
+  <data name="edit_zonepath" xml:space="preserve">
+    <value>Каталог зон</value>
+  </data>
+  <data name="edit_autoboot" xml:space="preserve">
+    <value>Почати з завантаження системи?</value>
+  </data>
+  <data name="edit_pool" xml:space="preserve">
+    <value>Пул ресурсів</value>
+  </data>
+  <data name="edit_reboot" xml:space="preserve">
+    <value>Перезавантажте</value>
+  </data>
+  <data name="edit_halt" xml:space="preserve">
+    <value>Закрити</value>
+  </data>
+  <data name="edit_winstall" xml:space="preserve">
+    <value>Встановити Webmin</value>
+  </data>
+  <data name="edit_wupgrade" xml:space="preserve">
+    <value>Оновлення Webmin</value>
+  </data>
+  <data name="edit_boot" xml:space="preserve">
+    <value>Завантаження</value>
+  </data>
+  <data name="edit_install" xml:space="preserve">
+    <value>Встановити систему</value>
+  </data>
+  <data name="edit_uninstall" xml:space="preserve">
+    <value>Видалити систему</value>
+  </data>
+  <data name="edit_delete" xml:space="preserve">
+    <value>Видалити зону</value>
+  </data>
+  <data name="edit_net" xml:space="preserve">
+    <value>Мережеві інтерфейси для зони</value>
+  </data>
+  <data name="edit_netnone" xml:space="preserve">
+    <value>Ще не визначено мережевих інтерфейсів.</value>
+  </data>
+  <data name="edit_netname" xml:space="preserve">
+    <value>Назва інтерфейсу</value>
+  </data>
+  <data name="edit_netaddress" xml:space="preserve">
+    <value>IP-адреса</value>
+  </data>
+  <data name="edit_netmask" xml:space="preserve">
+    <value>Мережна маска</value>
+  </data>
+  <data name="edit_netbroad" xml:space="preserve">
+    <value>Трансляція адреси</value>
+  </data>
+  <data name="edit_netadd" xml:space="preserve">
+    <value>Додайте новий мережевий інтерфейс.</value>
+  </data>
+  <data name="edit_netdown" xml:space="preserve">
+    <value>Неактивний</value>
+  </data>
+  <data name="edit_egone" xml:space="preserve">
+    <value>Зони не існує!</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>деталі зони</value>
+  </data>
+  <data name="edit_pkg" xml:space="preserve">
+    <value>Спадкові каталоги пакетів</value>
+  </data>
+  <data name="edit_pkgdir" xml:space="preserve">
+    <value>Каталог в глобальній зоні</value>
+  </data>
+  <data name="edit_pkgnone" xml:space="preserve">
+    <value>Жодних каталогів пакетів ще не визначено.</value>
+  </data>
+  <data name="edit_pkgadd" xml:space="preserve">
+    <value>Додати новий каталог пакунків.</value>
+  </data>
+  <data name="edit_pkgcannot" xml:space="preserve">
+    <value>Каталоги пакунків не можна додавати після встановлення зони.</value>
+  </data>
+  <data name="edit_fs" xml:space="preserve">
+    <value>Додаткові файлові системи</value>
+  </data>
+  <data name="edit_fsdir" xml:space="preserve">
+    <value>Монтувати каталог</value>
+  </data>
+  <data name="edit_fsspecial" xml:space="preserve">
+    <value>Монтується з</value>
+  </data>
+  <data name="edit_fsraw" xml:space="preserve">
+    <value>Сирий пристрій</value>
+  </data>
+  <data name="edit_fstype" xml:space="preserve">
+    <value>Тип файлової системи</value>
+  </data>
+  <data name="edit_fsmounted" xml:space="preserve">
+    <value>Змонтований?</value>
+  </data>
+  <data name="edit_fsadd" xml:space="preserve">
+    <value>Додати файлову систему типу:</value>
+  </data>
+  <data name="edit_fsnone" xml:space="preserve">
+    <value>Додаткові файлові системи ще не визначені.</value>
+  </data>
+  <data name="edit_rctl" xml:space="preserve">
+    <value>Контроль ресурсів</value>
+  </data>
+  <data name="edit_rctlname" xml:space="preserve">
+    <value>Назва ресурсу</value>
+  </data>
+  <data name="edit_rctlpriv" xml:space="preserve">
+    <value>Типи пільг</value>
+  </data>
+  <data name="edit_rctllimit" xml:space="preserve">
+    <value>Обмеження</value>
+  </data>
+  <data name="edit_rctlaction" xml:space="preserve">
+    <value>Дії</value>
+  </data>
+  <data name="edit_rctlnone" xml:space="preserve">
+    <value>Контроль ресурсів ще не визначений.</value>
+  </data>
+  <data name="edit_rctladd" xml:space="preserve">
+    <value>Додайте новий елемент управління ресурсом.</value>
+  </data>
+  <data name="edit_attr" xml:space="preserve">
+    <value>Загальні атрибути зони</value>
+  </data>
+  <data name="edit_attrname" xml:space="preserve">
+    <value>Назва атрибута</value>
+  </data>
+  <data name="edit_attrtype" xml:space="preserve">
+    <value>Тип даних</value>
+  </data>
+  <data name="edit_attrvalue" xml:space="preserve">
+    <value>Значення атрибута</value>
+  </data>
+  <data name="edit_attrnone" xml:space="preserve">
+    <value>Ще не визначені загальні атрибути.</value>
+  </data>
+  <data name="edit_attradd" xml:space="preserve">
+    <value>Додайте новий загальний атрибут.</value>
+  </data>
+  <data name="edit_webmin" xml:space="preserve">
+    <value>Відкрийте Webmin</value>
+  </data>
+  <data name="edit_brand" xml:space="preserve">
+    <value>Бренд</value>
+  </data>
+  <data name="ui_cancel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Не вдалося зберегти зону</value>
+  </data>
+  <data name="save_epool" xml:space="preserve">
+    <value>Відсутній або недійсний пул</value>
+  </data>
+  <data name="save_ewebmin" xml:space="preserve">
+    <value>Webmin не працює в цій зоні</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Перезавантажте зону</value>
+  </data>
+  <data name="reboot_rusure" xml:space="preserve">
+    <value>Ви впевнені, що хочете перезавантажити зону $1 ? Усі процеси, що працюють в ньому, будуть перезапущені.</value>
+  </data>
+  <data name="reboot_err" xml:space="preserve">
+    <value>Помилка перезавантаження зони</value>
+  </data>
+  <data name="reboot_doing" xml:space="preserve">
+    <value>Зараз перезавантажте зону ..</value>
+  </data>
+  <data name="reboot_failed" xml:space="preserve">
+    <value>.. не вдалося :</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>.. завершено.</value>
+  </data>
+  <data name="halt_title" xml:space="preserve">
+    <value>Зона вимкнення</value>
+  </data>
+  <data name="halt_rusure" xml:space="preserve">
+    <value>Ви впевнені, що хочете вимкнути зону $1 ? Усі процеси, що працюють в ньому, будуть припинені.</value>
+  </data>
+  <data name="halt_err" xml:space="preserve">
+    <value>Не вдалося зупинити зону</value>
+  </data>
+  <data name="halt_doing" xml:space="preserve">
+    <value>Зараз зона закриття ..</value>
+  </data>
+  <data name="boot_title" xml:space="preserve">
+    <value>Зона завантаження</value>
+  </data>
+  <data name="boot_err" xml:space="preserve">
+    <value>Помилка завантаження зони</value>
+  </data>
+  <data name="boot_doing" xml:space="preserve">
+    <value>Зараз завантажуємо зону ..</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Видалити зону</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Ви впевнені, що хочете видалити зону $1 ? Усі файли в його приватних файлових системах будуть втрачені.</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Не вдалося видалити зону</value>
+  </data>
+  <data name="delete_doing" xml:space="preserve">
+    <value>Тепер видаляється зона ..</value>
+  </data>
+  <data name="uninstall_title" xml:space="preserve">
+    <value>Видалити систему</value>
+  </data>
+  <data name="uninstall_rusure" xml:space="preserve">
+    <value>Ви впевнені, що хочете видалити системне програмне забезпечення із зони $1 ? Усі файли в його приватних файлових системах будуть втрачені.</value>
+  </data>
+  <data name="uninstall_err" xml:space="preserve">
+    <value>Не вдалося встановити системне програмне забезпечення із зони</value>
+  </data>
+  <data name="uninstall_doing" xml:space="preserve">
+    <value>Тепер видалення системи із зони ..</value>
+  </data>
+  <data name="install_title" xml:space="preserve">
+    <value>Встановити систему</value>
+  </data>
+  <data name="install_doing" xml:space="preserve">
+    <value>Тепер установка системи в зону ..</value>
+  </data>
+  <data name="net_title1" xml:space="preserve">
+    <value>Створіть мережевий інтерфейс</value>
+  </data>
+  <data name="net_title2" xml:space="preserve">
+    <value>Редагувати мережевий інтерфейс</value>
+  </data>
+  <data name="net_header" xml:space="preserve">
+    <value>Відомості про віртуальний інтерфейс зони</value>
+  </data>
+  <data name="net_address" xml:space="preserve">
+    <value>IP-адреса інтерфейсу</value>
+  </data>
+  <data name="net_physical" xml:space="preserve">
+    <value>Справжній мережевий інтерфейс</value>
+  </data>
+  <data name="net_netmask" xml:space="preserve">
+    <value>Маска для адреси</value>
+  </data>
+  <data name="net_broadcast" xml:space="preserve">
+    <value>Поточна адреса трансляції</value>
+  </data>
+  <data name="net_err" xml:space="preserve">
+    <value>Не вдалося зберегти мережевий інтерфейс</value>
+  </data>
+  <data name="net_enetmask" xml:space="preserve">
+    <value>Недійсна мережна маска</value>
+  </data>
+  <data name="net_eaddress" xml:space="preserve">
+    <value>Недійсна IP-адреса</value>
+  </data>
+  <data name="net_egone" xml:space="preserve">
+    <value>Інтерфейс більше не існує!</value>
+  </data>
+  <data name="net_eclash" xml:space="preserve">
+    <value>Мережевий інтерфейс з тією ж IP-адресою вже існує в цій зоні</value>
+  </data>
+  <data name="pkg_title1" xml:space="preserve">
+    <value>Додати каталог пакунків</value>
+  </data>
+  <data name="pkg_title2" xml:space="preserve">
+    <value>Редагувати каталог пакунків</value>
+  </data>
+  <data name="pkg_header" xml:space="preserve">
+    <value>Інформація про спадковий каталог пакунків</value>
+  </data>
+  <data name="pkg_dir" xml:space="preserve">
+    <value>Каталог в глобальній зоні</value>
+  </data>
+  <data name="pkg_egone" xml:space="preserve">
+    <value>Каталог більше не існує!</value>
+  </data>
+  <data name="pkg_err" xml:space="preserve">
+    <value>Не вдалося зберегти каталог пакунків</value>
+  </data>
+  <data name="pkg_edir" xml:space="preserve">
+    <value>Недійсний або неіснуючий каталог</value>
+  </data>
+  <data name="pkg_eclash" xml:space="preserve">
+    <value>У цій зоні вже існує каталог пакунків</value>
+  </data>
+  <data name="pkg_inherit" xml:space="preserve">
+    <value>Спадкові пакети з глобальної зони</value>
+  </data>
+  <data name="pkg_inherit_yes" xml:space="preserve">
+    <value>Так (розріджена коренева зона)</value>
+  </data>
+  <data name="pkg_inherit_no" xml:space="preserve">
+    <value>Ні (вся коренева зона)</value>
+  </data>
+  <data name="fs_title1" xml:space="preserve">
+    <value>Створення файлової системи</value>
+  </data>
+  <data name="fs_title2" xml:space="preserve">
+    <value>Редагувати файлову систему</value>
+  </data>
+  <data name="fs_header" xml:space="preserve">
+    <value>Додаткові дані файлової системи</value>
+  </data>
+  <data name="fs_type" xml:space="preserve">
+    <value>Тип файлової системи</value>
+  </data>
+  <data name="fs_dir" xml:space="preserve">
+    <value>Точка кріплення в зоні</value>
+  </data>
+  <data name="fs_status" xml:space="preserve">
+    <value>Поточний статус</value>
+  </data>
+  <data name="fs_unmounted" xml:space="preserve">
+    <value>Не монтується</value>
+  </data>
+  <data name="fs_mounted" xml:space="preserve">
+    <value>Змонтований</value>
+  </data>
+  <data name="fs_mountedsp" xml:space="preserve">
+    <value>Встановлено, з $2 вільним від $1 </value>
+  </data>
+  <data name="fs_special" xml:space="preserve">
+    <value>Джерело в глобальній зоні</value>
+  </data>
+  <data name="fs_options" xml:space="preserve">
+    <value>Параметри кріплення файлової системи</value>
+  </data>
+  <data name="fs_err" xml:space="preserve">
+    <value>Не вдалося зберегти файлову систему</value>
+  </data>
+  <data name="fs_edir" xml:space="preserve">
+    <value>Відсутній каталог точки монтажу</value>
+  </data>
+  <data name="fs_err2" xml:space="preserve">
+    <value>Файлову систему було створено, але при її встановленні сталася помилка</value>
+  </data>
+  <data name="fs_err3" xml:space="preserve">
+    <value>Файлову систему було видалено, але під час її встановлення сталася помилка</value>
+  </data>
+  <data name="fs_err4" xml:space="preserve">
+    <value>Файлову систему було оновлено, але сталася помилка при її повторному встановленні</value>
+  </data>
+  <data name="fs_especial" xml:space="preserve">
+    <value>Відсутній файл вихідного пристрою</value>
+  </data>
+  <data name="fs_eoptions" xml:space="preserve">
+    <value>Недійсні параметри кріплення (має бути розділений комою список, наприклад, ro, nosuid)</value>
+  </data>
+  <data name="fs_egone" xml:space="preserve">
+    <value>Файлової системи більше не існує!</value>
+  </data>
+  <data name="fs_mount" xml:space="preserve">
+    <value>Монтувати після створення?</value>
+  </data>
+  <data name="fs_eclash" xml:space="preserve">
+    <value>У цій зоні вже існує файлова система, що використовує той самий каталог</value>
+  </data>
+  <data name="rctl_title1" xml:space="preserve">
+    <value>Створення контролю над ресурсами</value>
+  </data>
+  <data name="rctl_title2" xml:space="preserve">
+    <value>Редагування управління ресурсами</value>
+  </data>
+  <data name="rctl_header" xml:space="preserve">
+    <value>Тип та обмеження управління ресурсом</value>
+  </data>
+  <data name="rctl_name" xml:space="preserve">
+    <value>Тип ресурсу</value>
+  </data>
+  <data name="rctl_value" xml:space="preserve">
+    <value>Обмеження для накладення</value>
+  </data>
+  <data name="rctl_priv" xml:space="preserve">
+    <value>Привілейований тип</value>
+  </data>
+  <data name="rctl_limit" xml:space="preserve">
+    <value>Обмеження</value>
+  </data>
+  <data name="rctl_action" xml:space="preserve">
+    <value>Дія при перевищенні</value>
+  </data>
+  <data name="rctl_basic" xml:space="preserve">
+    <value>Основні</value>
+  </data>
+  <data name="rctl_privileged" xml:space="preserve">
+    <value>Привілейований</value>
+  </data>
+  <data name="rctl_system" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="rctl_none" xml:space="preserve">
+    <value>Ніяких дій</value>
+  </data>
+  <data name="rctl_deny" xml:space="preserve">
+    <value>Заборона відхилити</value>
+  </data>
+  <data name="rctl_signal" xml:space="preserve">
+    <value>Надіслати сигнал ..</value>
+  </data>
+  <data name="rctl_err" xml:space="preserve">
+    <value>Не вдалося зберегти контроль над ресурсами</value>
+  </data>
+  <data name="rctl_egone" xml:space="preserve">
+    <value>Контроль над ресурсами вже не існує!</value>
+  </data>
+  <data name="rctl_elimit" xml:space="preserve">
+    <value>Не число</value>
+  </data>
+  <data name="rctl_eaction" xml:space="preserve">
+    <value>У рядку $1 не вибрано сигнал</value>
+  </data>
+  <data name="rctl_evalues" xml:space="preserve">
+    <value>Не введено обмежень</value>
+  </data>
+  <data name="rctl_eclash" xml:space="preserve">
+    <value>У цій зоні вже існує контроль за тим же ресурсом</value>
+  </data>
+  <data name="attr_title1" xml:space="preserve">
+    <value>Створіть загальний атрибут</value>
+  </data>
+  <data name="attr_title2" xml:space="preserve">
+    <value>Редагувати загальний атрибут</value>
+  </data>
+  <data name="attr_header" xml:space="preserve">
+    <value>Деталі атрибутів загальної зони</value>
+  </data>
+  <data name="attr_name" xml:space="preserve">
+    <value>Назва атрибута</value>
+  </data>
+  <data name="attr_type" xml:space="preserve">
+    <value>Тип даних для значення</value>
+  </data>
+  <data name="attr_value" xml:space="preserve">
+    <value>Значення атрибута</value>
+  </data>
+  <data name="attr_string" xml:space="preserve">
+    <value>Текстовий рядок</value>
+  </data>
+  <data name="attr_int" xml:space="preserve">
+    <value>Цілий</value>
+  </data>
+  <data name="attr_uint" xml:space="preserve">
+    <value>Позитивне ціле число</value>
+  </data>
+  <data name="attr_boolean" xml:space="preserve">
+    <value>Булева</value>
+  </data>
+  <data name="attr_err" xml:space="preserve">
+    <value>Не вдалося зберегти загальний атрибут</value>
+  </data>
+  <data name="attr_ename" xml:space="preserve">
+    <value>Відсутнє або недійсне ім’я</value>
+  </data>
+  <data name="attr_eint" xml:space="preserve">
+    <value>Значення не є цілим числом</value>
+  </data>
+  <data name="attr_euint" xml:space="preserve">
+    <value>Значення не є додатним цілим числом</value>
+  </data>
+  <data name="attr_eboolean" xml:space="preserve">
+    <value>Значення не є "істинним" або "хибним"</value>
+  </data>
+  <data name="attr_egone" xml:space="preserve">
+    <value>Атрибут більше не існує!</value>
+  </data>
+  <data name="attr_eclash" xml:space="preserve">
+    <value>Атрибут з тим самим іменем вже існує в цій зоні</value>
+  </data>
+  <data name="status_running" xml:space="preserve">
+    <value>Біг</value>
+  </data>
+  <data name="status_installed" xml:space="preserve">
+    <value>Припинено</value>
+  </data>
+  <data name="status_configured" xml:space="preserve">
+    <value>Не встановлено</value>
+  </data>
+  <data name="status_incomplete" xml:space="preserve">
+    <value>Встановлюється</value>
+  </data>
+  <data name="status_ready" xml:space="preserve">
+    <value>Готовий</value>
+  </data>
+  <data name="status_down" xml:space="preserve">
+    <value>Вниз</value>
+  </data>
+  <data name="status_shutting_down" xml:space="preserve">
+    <value>Закриття</value>
+  </data>
+  <data name="list_name" xml:space="preserve">
+    <value>Назва зони</value>
+  </data>
+  <data name="list_id" xml:space="preserve">
+    <value>Ідентифікаційний номер</value>
+  </data>
+  <data name="list_path" xml:space="preserve">
+    <value>Каталог зон</value>
+  </data>
+  <data name="list_status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="list_actions" xml:space="preserve">
+    <value>Дії</value>
+  </data>
+  <data name="zone_in" xml:space="preserve">
+    <value>У зоні $1 </value>
+  </data>
+  <data name="pool_none" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Створити зону</value>
+  </data>
+  <data name="create_header" xml:space="preserve">
+    <value>Нові деталі зони</value>
+  </data>
+  <data name="create_path" xml:space="preserve">
+    <value>Каталог файлів зон</value>
+  </data>
+  <data name="create_sel" xml:space="preserve">
+    <value>Вибраний каталог</value>
+  </data>
+  <data name="create_auto" xml:space="preserve">
+    <value>Автоматично (під &lt;tt&gt;$1&lt;/tt&gt;)</value>
+  </data>
+  <data name="create_address" xml:space="preserve">
+    <value>Початкова IP-адреса</value>
+  </data>
+  <data name="create_noaddress" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="create_install" xml:space="preserve">
+    <value>Встановити після створення?</value>
+  </data>
+  <data name="create_webmin" xml:space="preserve">
+    <value>Налаштувати Webmin після встановлення?</value>
+  </data>
+  <data name="create_yes" xml:space="preserve">
+    <value>Так (запобігає доданню каталогів пакетів)</value>
+  </data>
+  <data name="create_ok" xml:space="preserve">
+    <value>Створити зараз</value>
+  </data>
+  <data name="create_err" xml:space="preserve">
+    <value>Не вдалося створити зону</value>
+  </data>
+  <data name="create_ename" xml:space="preserve">
+    <value>Відсутня або недійсна назва зони</value>
+  </data>
+  <data name="create_ehostname" xml:space="preserve">
+    <value>Відсутнє або недійсне ім’я хоста</value>
+  </data>
+  <data name="create_eclash" xml:space="preserve">
+    <value>Зона з такою ж назвою вже існує</value>
+  </data>
+  <data name="create_epath" xml:space="preserve">
+    <value>Каталог зниклих зон</value>
+  </data>
+  <data name="create_epath2" xml:space="preserve">
+    <value>Каталог зон '$1' вже існує</value>
+  </data>
+  <data name="create_eaddress" xml:space="preserve">
+    <value>Відсутня або недійсна початкова IP-адреса</value>
+  </data>
+  <data name="create_adding" xml:space="preserve">
+    <value>Створення нової зони ..</value>
+  </data>
+  <data name="create_done" xml:space="preserve">
+    <value>.. зроблено.</value>
+  </data>
+  <data name="create_failed" xml:space="preserve">
+    <value>.. не вдалося! Дивіться вихід вище для причини.</value>
+  </data>
+  <data name="create_addingnet" xml:space="preserve">
+    <value>Додавання початкового мережевого інтерфейсу ..</value>
+  </data>
+  <data name="create_installing" xml:space="preserve">
+    <value>Встановлення системного програмного забезпечення ..</value>
+  </data>
+  <data name="create_pkgs" xml:space="preserve">
+    <value>Додаткові каталоги пакетів</value>
+  </data>
+  <data name="create_epkg" xml:space="preserve">
+    <value>'$1' не є дійсною каталогом пакунків</value>
+  </data>
+  <data name="create_addingpkgs" xml:space="preserve">
+    <value>Додавання каталогів пакетів ..</value>
+  </data>
+  <data name="create_webmining" xml:space="preserve">
+    <value>Налаштування Webmin ..</value>
+  </data>
+  <data name="created_wfailed" xml:space="preserve">
+    <value>.. не вдалося : $1 </value>
+  </data>
+  <data name="create_cfg" xml:space="preserve">
+    <value>Налаштувати нову зону?</value>
+  </data>
+  <data name="create_hostname" xml:space="preserve">
+    <value>Початкове ім'я хоста</value>
+  </data>
+  <data name="create_samehost" xml:space="preserve">
+    <value>Те саме, що назва зони</value>
+  </data>
+  <data name="create_cfgyes" xml:space="preserve">
+    <value>Так, користуючись налаштуваннями нижче.</value>
+  </data>
+  <data name="create_cfgno" xml:space="preserve">
+    <value>Ні, конфігуруйте вручну на консолі</value>
+  </data>
+  <data name="create_root" xml:space="preserve">
+    <value>Початковий пароль root</value>
+  </data>
+  <data name="create_same" xml:space="preserve">
+    <value>Те саме, що глобальна система</value>
+  </data>
+  <data name="create_timezone" xml:space="preserve">
+    <value>Початковий часовий пояс</value>
+  </data>
+  <data name="create_same2" xml:space="preserve">
+    <value>Те саме, що глобальна система ($1)</value>
+  </data>
+  <data name="create_locale" xml:space="preserve">
+    <value>Початкова мова мови</value>
+  </data>
+  <data name="create_terminal" xml:space="preserve">
+    <value>Тип клеми для консолі</value>
+  </data>
+  <data name="create_vt100" xml:space="preserve">
+    <value>За замовчуванням (VT100)</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>Початкова послуга імен</value>
+  </data>
+  <data name="create_none" xml:space="preserve">
+    <value>Жоден</value>
+  </data>
+  <data name="create_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="create_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="create_nis+" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="create_domain" xml:space="preserve">
+    <value>DNS або NIS доменне ім'я</value>
+  </data>
+  <data name="create_server" xml:space="preserve">
+    <value>DNS або NIS-сервери імен</value>
+  </data>
+  <data name="create_eroot" xml:space="preserve">
+    <value>Не вдалося знайти локального кореневого користувача!</value>
+  </data>
+  <data name="create_etimezone" xml:space="preserve">
+    <value>Відсутній або недійсний часовий пояс</value>
+  </data>
+  <data name="create_elocale" xml:space="preserve">
+    <value>Відсутня або недійсна мова мови</value>
+  </data>
+  <data name="create_eterminal" xml:space="preserve">
+    <value>Відсутній або недійсний тип терміналу</value>
+  </data>
+  <data name="create_edomain" xml:space="preserve">
+    <value>Відсутнє або недійсне доменне ім’я DNS або NIS</value>
+  </data>
+  <data name="create_eserver" xml:space="preserve">
+    <value>'$1' не є дійсним хостом сервера DNS або NIS</value>
+  </data>
+  <data name="create_eservers" xml:space="preserve">
+    <value>Не введено серверів імен DNS або NIS</value>
+  </data>
+  <data name="create_eresolvname" xml:space="preserve">
+    <value>Ім'я хоста зони не вдалося вирішити, що призведе до відмови автоматичної конфігурації. Ви повинні додати його до DNS перед створенням цієї зони</value>
+  </data>
+  <data name="create_router" xml:space="preserve">
+    <value>Маршрутизатор за замовчуванням</value>
+  </data>
+  <data name="create_erouter" xml:space="preserve">
+    <value>Відсутня або недійсна IP-адреса маршрутизатора за замовчуванням</value>
+  </data>
+  <data name="create_removingpkgs" xml:space="preserve">
+    <value>видалення успадкованих каталогів пакетів. ..</value>
+  </data>
+  <data name="create_brand" xml:space="preserve">
+    <value>Бренд</value>
+  </data>
+  <data name="create_brandmsg" xml:space="preserve">
+    <value>Зона брендингу</value>
+  </data>
+  <data name="log_create_zone" xml:space="preserve">
+    <value>Створена зона $1 </value>
+  </data>
+  <data name="log_delete_zone" xml:space="preserve">
+    <value>Видалена зона $1 </value>
+  </data>
+  <data name="log_save_zone" xml:space="preserve">
+    <value>Змінена конфігурація для зони $1 </value>
+  </data>
+  <data name="log_boot_zone" xml:space="preserve">
+    <value>Збудована зона $1 </value>
+  </data>
+  <data name="log_reboot_zone" xml:space="preserve">
+    <value>Перезавантажена зона $1 </value>
+  </data>
+  <data name="log_halt_zone" xml:space="preserve">
+    <value>Зона вимкнення $1 </value>
+  </data>
+  <data name="log_install_zone" xml:space="preserve">
+    <value>Встановлена зона $1 </value>
+  </data>
+  <data name="log_uninstall_zone" xml:space="preserve">
+    <value>Невстановлена зона $1 </value>
+  </data>
+  <data name="log_create_net" xml:space="preserve">
+    <value>Створено мережевий інтерфейс з адресою $1 у зоні $2 </value>
+  </data>
+  <data name="log_delete_net" xml:space="preserve">
+    <value>Видалений мережевий інтерфейс з адресою $1 у зоні $2 </value>
+  </data>
+  <data name="log_modify_net" xml:space="preserve">
+    <value>Модифікований мережевий інтерфейс з адресою $1 у зоні $2 </value>
+  </data>
+  <data name="log_create_pkg" xml:space="preserve">
+    <value>Створено каталог пакунків $1 у зоні $2 </value>
+  </data>
+  <data name="log_modify_pkg" xml:space="preserve">
+    <value>Змінений каталог пакунків $1 у зоні $2 </value>
+  </data>
+  <data name="log_delete_pkg" xml:space="preserve">
+    <value>Видалений каталог пакунків $1 у зоні $2 </value>
+  </data>
+  <data name="log_create_fs" xml:space="preserve">
+    <value>Створена файлова система $1 у зоні $2 </value>
+  </data>
+  <data name="log_modify_fs" xml:space="preserve">
+    <value>Модифікована файлова система $1 у зоні $2 </value>
+  </data>
+  <data name="log_delete_fs" xml:space="preserve">
+    <value>Видалена файлова система $1 у зоні $2 </value>
+  </data>
+  <data name="log_create_rctl" xml:space="preserve">
+    <value>Створено контроль ресурсів для $1 у зоні $2 </value>
+  </data>
+  <data name="log_modify_rctl" xml:space="preserve">
+    <value>Модифікований контроль ресурсів для $1 у зоні $2 </value>
+  </data>
+  <data name="log_delete_rctl" xml:space="preserve">
+    <value>Видалено керування ресурсами для $1 у зоні $2 </value>
+  </data>
+  <data name="log_create_attr" xml:space="preserve">
+    <value>Створено загальний атрибут $1 у зоні $2 </value>
+  </data>
+  <data name="log_modify_attr" xml:space="preserve">
+    <value>Змінений загальний атрибут $1 у зоні $2 </value>
+  </data>
+  <data name="log_delete_attr" xml:space="preserve">
+    <value>Видалений загальний атрибут $1 у зоні $2 </value>
+  </data>
+  <data name="webmin_eperl" xml:space="preserve">
+    <value>Perl не встановлено на $1 </value>
+  </data>
+  <data name="webmin_eroot" xml:space="preserve">
+    <value>Каталог $1 не існує або не містить Webmin.</value>
+  </data>
+  <data name="webmin_title" xml:space="preserve">
+    <value>Встановити Webmin</value>
+  </data>
+</root>

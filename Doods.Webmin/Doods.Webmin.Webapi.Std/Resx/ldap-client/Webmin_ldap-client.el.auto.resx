@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>Επικύρωση διαμόρφωσης</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>Κάντε κλικ σε αυτό το κουμπί για να επιβεβαιώσετε ότι το Webmin επικυρώνει τη διαμόρφωση του διακομιστή LDAP, διασφαλίζοντας ότι μπορεί να επικοινωνήσει με το διακομιστή και ότι περιέχει χρήστες και ομάδες.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>δείκτη μονάδας</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;Προειδοποίηση&lt;/b&gt; - Το Webmin ανίχνευσε δύο χωριστά αρχεία ρυθμίσεων LDAP στο σύστημά σας. Το NSS-LDAP έχει ρυθμιστεί χρησιμοποιώντας το $1, ενώ το PAM-LDAP χρησιμοποιεί $2. Αυτό μπορεί να προκαλέσει ασυνέπεια μεταξύ των δύο υπηρεσιών.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>Επιδιόρθωση συνδέοντας αρχεία</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>Μην εμφανίσετε αυτό το μήνυμα</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>Πελάτη LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Διακοπή Daemon πελάτη LDAP</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Τερματίστε τον τοπικό δαίμονα πελάτη LDAP, ο οποίος απαιτείται για την αναζήτηση στον απομακρυσμένο διακομιστή LDAP.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Ξεκινήστε τον "Δαίμονας πελάτη LDAP"</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Ξεκινήστε τον τοπικό δαίμονα πελάτη LDAP, ο οποίος απαιτείται για την αναζήτηση στον απομακρυσμένο διακομιστή LDAP. Μέχρι να ξεκινήσει, οι χρήστες και οι ομάδες στο LDAP δεν θα είναι προσβάσιμες.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Κάντε επανεκκίνηση του Daemon του προγράμματος-πελάτη LDAP</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Εφαρμόστε την τρέχουσα ρύθμιση παραμέτρων επανεκκινώντας τον τοπικό δαίμονα πελάτη LDAP.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Ξεκινήστε το πρόγραμμα-πελάτη LDAP κατά την εκκίνηση</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Αλλάζει εάν ο δαίμονας πελάτη LDAP ξεκινά όταν το σύστημα εκκινήσει ή όχι.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>Διαμόρφωση διακομιστή LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>LDAP server και επιλογές σύνδεσης</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>Τα ονόματα κεντρικών υπολογιστών διακομιστή LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>Συνδεθείτε στη θύρα</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>Έκδοση πρωτοκόλλου LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>Χρονικό όριο σύνδεσης</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>Συνδεθείτε για μη χρήστες &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>Κωδικός πρόσβασης για μη χρήστες &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>Είσοδος για χρήστη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>Κωδικός πρόσβασης για χρήστη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>Ίδιο με το μη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>Ανώνυμος</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>Χρησιμοποιήστε κρυπτογραφημένη σύνδεση;</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>Ναι, χρησιμοποιώντας το TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>Επιβεβαιώστε το πιστοποιητικό SSL του LDAP;</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>Προεπιλογή (συνήθως $1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>Αρχείο πιστοποιητικού CA</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>LDAP servers</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>Όνομα κεντρικού υπολογιστή</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>Αριθμός θύρας</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>Πρωτόκολλο</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>Πρότυπο</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>Υποδοχή Unix</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>Αποτυχία αποθήκευσης διαμόρφωσης διακομιστή LDAP</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>Το '$1' δεν είναι έγκυρο όνομα κεντρικού υπολογιστή</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>Δεν έχουν εισαχθεί διακομιστές LDAP</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>Λανθασμένη ή μη έγκυρη θύρα διακομιστή LDAP</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>Λείπει η είσοδος για τους χρήστες μη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>Λείπει ο κωδικός πρόσβασης για μη χρήστες &lt;/tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>Δεν υπάρχει σύνδεση για τον χρήστη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>Λείπει ο κωδικός πρόσβασης για τον χρήστη &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>Λείπει ή μη έγκυρο χρονικό όριο σύνδεσης</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>Έλλειμμα ή άκυρο αρχείο πιστοποιητικού CA</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>Λείπει ή μη έγκυρη θύρα για τον διακομιστή $1 </value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>Δεν έχουν εισαχθεί διακομιστές LDAP</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>Βάσεις αναζήτησης LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>Θέσεις αναζήτησης καταλόγου LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>Παγκόσμια βάση αναζήτησης</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>Βάθος αναζήτησης</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>Ολόκληρο το δευτερεύον τμήμα</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>Ένα επίπεδο</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>Μόνο βάση</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>Βάση για χρήστες Unix</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>Βάση για τους κωδικούς πρόσβασης Unix</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>Βάση για τις ομάδες Unix</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>Βάση για ονόματα κεντρικών υπολογιστών</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>Βάση για υπηρεσίες δικτύου</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>Βάση για ονόματα δικτύου</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>Βάση για πρωτόκολλα</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>Βάση για ονόματα δικτύου</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>Βάση για ψευδώνυμα ηλεκτρονικού ταχυδρομείου</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>Βάση για netgroups</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>Βάθος αναζήτησης</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>Φίλτρο αναζήτησης</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>Όριο χρόνου αναζήτησης</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>δευτερολέπτων</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>Παγκόσμια βάση</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>Αποτυχία αποθήκευσης βάσεων αναζήτησης LDAP</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>Λείπει παγκόσμια βάση αναζήτησης</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>Λείπει βάση για τους χρήστες του Unix</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>Λείπει βάση για τους κωδικούς πρόσβασης Unix</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>Λείπει βάση για ομάδες Unix</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>Λείπει βάση για ονόματα κεντρικών υπολογιστών</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>Λείπει βάση για υπηρεσίες δικτύου</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>Λείπει βάση για ονόματα δικτύου</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>Λείπει βάση για πρωτόκολλα</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>Λείπει βάση για ονόματα δικτυώματος μάσκας</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>Λείπει βάση για ψευδώνυμα ηλεκτρονικού ταχυδρομείου</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>Λείπει βάση για netgroups</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>Λανθασμένο ή μη έγκυρο όριο χρόνου αναζήτησης</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>Επιλογές ελέγχου ταυτότητας</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>Ρυθμίσεις ελέγχου ταυτότητας PAM και κωδικού πρόσβασης</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>Πρόσθετο φίλτρο LDAP</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>Το χαρακτηριστικό LDAP για όνομα χρήστη</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>Ομάδα LDAP για να αναγκάσει την ιδιότητα του μέλους</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>Χαρακτηριστικό LDAP για τα μέλη της ομάδας</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>Μέθοδος αποθήκευσης κωδικού πρόσβασης</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>Καθαρό κείμενο</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>Κρυπτογράφηση Unix</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>Κρυπτογράφηση MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>Υπηρεσίες Novell Directory</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>Ενεργό αρχείο</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>Αλλαγή κωδικού πρόσβασης OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>Αγνοείται</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>Αποτυχία αποθήκευσης των επιλογών ελέγχου ταυτότητας</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>Λείπει επιπλέον φίλτρο LDAP</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>Λείπει ή μη έγκυρο χαρακτηριστικό LDAP για το όνομα χρήστη</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>Λείπει η ομάδα LDAP για να εξαναγκάσει την ιδιότητα του μέλους</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>Λείπει ή μη έγκυρο χαρακτηριστικό LDAP για τα μέλη της ομάδας</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>Υπηρεσίες Χρήση του LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>Υπηρεσία</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>Πηγές δεδομένων</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>υπηρεσιών που χρησιμοποιούν το LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>Δεν είναι εγκατεστημένη η μονάδα $1 Perl που απαιτείται για να μιλήσετε με το διακομιστή LDAP.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>Το αρχείο διαμόρφωσης πελάτη LDAP $1 δεν βρέθηκε στο σύστημά σας</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>Αποτυχία σύνδεσης στο διακομιστή LDAP $1 θύρα $2 </value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>Αποτυχία σύνδεσης με διακομιστή LDAP $1 θύρα $2 : $3 </value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>Αποτυχία δέσμευσης του διακομιστή LDAP $1 ως $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>Ανώνυμος</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>Δεν ήταν δυνατή η ανάλυση του διακομιστή LDAP URI $1 </value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>Αποτυχία μετάβασης στη λειτουργία TLS : $1 </value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>LDAP Browser</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>Δεν είναι δυνατή η χρήση του προγράμματος περιήγησης LDAP : $1 </value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>Περιήγηση:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>προβολή</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>Η αναζήτηση LDAP απέτυχε : $1 </value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>Παιδικά αντικείμενα</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>Χαρακτηριστικά αντικειμένου</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>Περιηγηθείτε στον γονέα</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>Εντάξει</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>Αρχεία</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>Υπηρεσίες Ασφαλείας Συστήματος</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>Αρχεία DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS &amp; Αρχεία</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Ησιόδος</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>Εκτυπωτές χρηστών</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>DNS πολυεκπομπής</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>DNS πολλαπλής διανομής (ελάχιστο)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>Τα ψευδώνυμα Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>Τα ψευδώνυμα Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>Διευθύνσεις κεντρικού υπολογιστή</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>Ομάδες Unix</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>Unix χρήστες</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>Διευθύνσεις Ethernet</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>Automounter σπίτι</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>Χάρτες Automounter</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>Automounter σπίτι</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>Χάρτες Automounter</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter τοπικό</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>Automounter σπίτι</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>Χάρτες Automounter</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter τοπικό</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>Χάρτες Automounter</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>Netgroups</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetIDs</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>Διευθύνσεις δικτύου</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>Πρωτόκολλα δικτύου</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>RPC προγράμματα</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>Υπηρεσίες δικτύου</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>Μεταβλητές Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>Δημόσια κλειδιά</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>Δημόσια κλειδιά</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>Παράμετροι εκκίνησης</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>Unix κωδικούς πρόσβασης σκιά</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>Κωδικοί πρόσβασης ομάδας Unix</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>Netmasks</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>Εκτυπωτές</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>Επιπλέον πληροφορίες για τον χρήστη</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>Εκτυπωτές</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>IP κόμβους</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>Ζώνες ώρας</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>Locales</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>Επεξεργασία υπηρεσίας</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>Δεν υπάρχει υπηρεσία!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>Λεπτομέρειες υπηρεσίας</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>Ονομα Υπηρεσίας</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>Πρώτη πηγή δεδομένων</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>Δεύτερη πηγή δεδομένων</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>Τρίτη πηγή δεδομένων</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>Τέταρτη πηγή δεδομένων</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>Πέμπτη πηγή δεδομένων</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>Πηγή δεδομένων $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>Με την επιτυχία</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>Αν δεν βρεθεί</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>Εάν δεν είναι διαθέσιμο</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>προσωρινά μη διαθέσιμο</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>Επιστροφή αποτέλεσμα</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>Συνεχίστε την αναζήτηση</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>Αποτυχία αποθήκευσης υπηρεσίας</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>Δεν έχουν επιλεγεί πηγές!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>Τροποποιημένη διαμόρφωση διακομιστή LDAP</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>Τροποποιημένες βάσεις αναζήτησης LDAP</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>Τροποποιημένες επιλογές ελέγχου ταυτότητας</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>Αλλαγή υπηρεσίας $1 </value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Έχει ενεργοποιηθεί ο δαίμονας πελάτη LDAP κατά την εκκίνηση</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Απενεργοποιημένος δαίμονας πελάτη LDAP κατά την εκκίνηση</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Ξεκίνησε ο δαίμονας πελάτη LDAP</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Σταμάτησε τον δαίμονα πελάτη LDAP</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Επανεκκίνηση του daemon πελάτη LDAP</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Επαλήθευση της ρύθμισης LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>Εύρεση βάσης LDAP για χρήστες ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. καμία βάση δεν βρέθηκε σε διαμόρφωση πελάτη!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. βρέθηκε βάση $1.</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>Σύνδεση με διακομιστή LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>..η σύνδεση απέτυχε : $1 </value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. συνδεδεμένος στο $1 </value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>Αναζήτηση χρηστών ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. η αναζήτηση απέτυχε : $1 </value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. δεν βρέθηκαν χρήστες κάτω από τη βάση $1.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. βρέθηκαν $1 χρήστες.</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>Έλεγχος υπηρεσίας &lt;b&gt;χρηστών Unix&lt;/b&gt;.</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. η υπηρεσία είναι ρυθμισμένη στο ερώτημα LDAP.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. η υπηρεσία δεν είναι ρυθμισμένη να χρησιμοποιεί το LDAP.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>Αναζήτηση χρήστη Unix $1 </value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. Ο χρήστης δεν υπάρχει.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>Ο χρήστης βρέθηκε με επιτυχία.</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>Το σύστημά σας έχει ρυθμιστεί με επιτυχία ως πελάτης LDAP!</value>
+  </data>
+</root>

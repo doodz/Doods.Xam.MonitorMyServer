@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Doods.tool.ResxFromPoFile
 {
-    public class Class1
+    public class PackageReference
     {
 
         private readonly string Expression = @"<PackageReference Include=""(.*)"" Version=""(.*)"" />";

@@ -8,7 +8,62 @@ using System.Text.RegularExpressions;
 
 namespace Doods.tool.ResxFromPoFile
 {
-    class UpdatePoFiles2
+    class UpdatePoFilesWebmin
+    {
+        //C:\GitHub\webmin\*\lang
+        private readonly string Expression = @"msgid ""(.*)""\w*\s*msgstr ""(.*)""";
+
+        private readonly string Expression2 =
+            "msgid \"(.*)\"\\w*\\s*msgid_plural \"(.*)\"\\w*\\s*msgstr\\[0\\] \"(.*)\"\\w*\\s*msgstr\\[1\\] \"(.*)\"";
+
+        private readonly string From = @"C:\GitHub\webmin\";
+        private readonly string To = @"C:\GitHub\Doods.Xam.MonitorMyServer\Doods.Webmin\Doods.Webmin.Webapi.Std\Resx\";
+
+        public void Process()
+        {
+           var dirs = Directory.GetDirectories(From, "lang", SearchOption.AllDirectories);
+           foreach (var dir in dirs)
+           {
+               var dirName =Path.GetDirectoryName(dir).Split(Path.DirectorySeparatorChar).Last();
+               var files = Directory.EnumerateFiles(dir);
+               foreach (var file in files)
+               {
+                   var n = Path.GetFileName(file);
+                   var resname = "Webmin_" + dirName + "." + n+ ".resx";
+                   Directory.CreateDirectory(To + "\\" + dirName);
+                   var resourceWriter = new ResXResourceWriter(To+ "\\"+dirName+"\\" + resname);
+                    var info = new FileInfo(file);
+                  
+                   var dico = new Dictionary<string, string>();
+                   var str = File.ReadAllLines(file).Where(r=> !string.IsNullOrWhiteSpace(r) && !r.Trim().StartsWith("#"));
+
+                   foreach (var s in str)
+                   {
+                       var split =s.Split('=');
+                        if(split.Count()<2)
+                            continue;
+                        if (split.Count() > 2)
+                        {
+                            continue;
+                        }
+
+                        if (!dico.ContainsKey(split[0]))
+                       {
+                           dico.Add(split[0], split[1]);
+                       }
+                   }
+
+                   foreach (var lst in dico) resourceWriter.AddResource(lst.Key, lst.Value);
+
+                  
+                   resourceWriter.Generate();
+                   resourceWriter.Close();
+
+                }
+           }
+        }
+    }
+    class UpdatePoFilesCockpit
     {
         //C:\GitHub\openmediavault\deb\openmediavault\usr\share\openmediavault\locale
         private readonly string Expression = @"msgid ""(.*)""\w*\s*msgstr ""(.*)""";

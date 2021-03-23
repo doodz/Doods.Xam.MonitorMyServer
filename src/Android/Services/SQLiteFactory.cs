@@ -1,6 +1,6 @@
-﻿using Doods.Framework.Repository.Std.Interfaces;
-using System;
+﻿using System;
 using System.IO;
+using Doods.Framework.Repository.Std.Interfaces;
 
 namespace Doods.Xam.MonitorMyServer.Droid.Services
 {
@@ -26,4 +26,3 @@ namespace Doods.Xam.MonitorMyServer.Droid.Services
         }
     }
 }
-

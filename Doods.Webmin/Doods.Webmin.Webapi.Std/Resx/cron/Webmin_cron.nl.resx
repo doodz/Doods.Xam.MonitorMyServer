@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Geplande Cron Opdrachten</value>
+  </data>
+  <data name="index_user" xml:space="preserve">
+    <value>Gebruiker</value>
+  </data>
+  <data name="index_active" xml:space="preserve">
+    <value>Actief?</value>
+  </data>
+  <data name="index_command" xml:space="preserve">
+    <value>Opdracht</value>
+  </data>
+  <data name="index_when" xml:space="preserve">
+    <value>Uitvoeren op tijden</value>
+  </data>
+  <data name="index_comment" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Er zijn geen cron opdrachten op dit systeem</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Er zijn geen crontaken waar u toegang toe heeft.</value>
+  </data>
+  <data name="index_none3" xml:space="preserve">
+    <value>U heeft nog geen crontaken.</value>
+  </data>
+  <data name="index_create" xml:space="preserve">
+    <value>Nieuwe geplande cron opdracht aanmaken</value>
+  </data>
+  <data name="index_ecreate" xml:space="preserve">
+    <value>Een nieuwe omgevingsvariabele aanmaken.</value>
+  </data>
+  <data name="index_allow" xml:space="preserve">
+    <value>Beheer gebruikerstoegang tot cron opdrachten</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>cron lijst</value>
+  </data>
+  <data name="index_env" xml:space="preserve">
+    <value>Omgevingsvariabele</value>
+  </data>
+  <data name="index_move" xml:space="preserve">
+    <value>Verplaatsen</value>
+  </data>
+  <data name="index_run" xml:space="preserve">
+    <value>Wordt uitgevoerd?</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>Het commando $1 voor het beheer van de Cron configuratie voor gebruiker kon niet worden gevonden. Wellicht is Cron niet geinstalleerd op uw systeem.</value>
+  </data>
+  <data name="index_esingle" xml:space="preserve">
+    <value>Het bestand $1 met crontaken bestaat niet. Wellicht is Cron niet geinstalleerd op uw systeem.</value>
+  </data>
+  <data name="index_ecrondir" xml:space="preserve">
+    <value>De Cron jobs directory $1 bestaat niet. Misschien is de module configuratie niet correct, of Cron is niet geinstalleerd?</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Geselecteerde Taken Verwijderd</value>
+  </data>
+  <data name="index_disable" xml:space="preserve">
+    <value>Uitschakelen Geselecteerde Taken</value>
+  </data>
+  <data name="index_enable" xml:space="preserve">
+    <value>Aanzetten Geselecteerde Taken</value>
+  </data>
+  <data name="index_esearch" xml:space="preserve">
+    <value>Geen taken komen overeen voor de zoekopdracht naar $1</value>
+  </data>
+  <data name="index_toomany2" xml:space="preserve">
+    <value>Er zijn teveel jobs om te laten zien. Gebruik het zoek formulier hierboven om een kleinere lijst te krijgen.</value>
+  </data>
+  <data name="index_search" xml:space="preserve">
+    <value>Vind cron jobs die overeenkomen met</value>
+  </data>
+  <data name="index_ok" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="index_searchres" xml:space="preserve">
+    <value>Cron taken die overeenkomen met $1..</value>
+  </data>
+  <data name="index_reset" xml:space="preserve">
+    <value>Reset Zoeken</value>
+  </data>
+  <data name="index_econfigcheck" xml:space="preserve">
+    <value>Cron jobs kunnen niet beheerd worden op uw systeem, omdat de module configuratie niet geldig is : $1</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Bewerk Cron Opdracht</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Maak Cron Opdracht Aan</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om de cron opdrachten voor deze gebruiken</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Opdracht Details</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>Voer cron opdracht uit als</value>
+  </data>
+  <data name="edit_active" xml:space="preserve">
+    <value>Actief?</value>
+  </data>
+  <data name="edit_commands" xml:space="preserve">
+    <value>Opdrachten</value>
+  </data>
+  <data name="edit_command" xml:space="preserve">
+    <value>Opdracht</value>
+  </data>
+  <data name="edit_comment" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="edit_input" xml:space="preserve">
+    <value>Invoer voor commando</value>
+  </data>
+  <data name="edit_when" xml:space="preserve">
+    <value>Wanneer uitvoeren</value>
+  </data>
+  <data name="edit_range" xml:space="preserve">
+    <value>Datum bereik</value>
+  </data>
+  <data name="edit_mins" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="edit_hours" xml:space="preserve">
+    <value>Uren</value>
+  </data>
+  <data name="edit_days" xml:space="preserve">
+    <value>Dagen</value>
+  </data>
+  <data name="edit_months" xml:space="preserve">
+    <value>Maanden</value>
+  </data>
+  <data name="edit_weekdays" xml:space="preserve">
+    <value>Weekdagen</value>
+  </data>
+  <data name="edit_all" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="edit_selected" xml:space="preserve">
+    <value>Geselecteerd ..</value>
+  </data>
+  <data name="edit_run" xml:space="preserve">
+    <value>Voer Nu Uit</value>
+  </data>
+  <data name="edit_clone" xml:space="preserve">
+    <value>Clone de Taken</value>
+  </data>
+  <data name="edit_return" xml:space="preserve">
+    <value>cron taak</value>
+  </data>
+  <data name="edit_ctrl" xml:space="preserve">
+    <value>Opmerking: gebruik Ctrl-klik (of command-klik op de Mac) om minuten, uren, dagen en maanden te selecteren en te de-selecteren.</value>
+  </data>
+  <data name="edit_special1" xml:space="preserve">
+    <value>Simpel schema ..</value>
+  </data>
+  <data name="edit_special0" xml:space="preserve">
+    <value>Hieronder geselecteerde tijden en data</value>
+  </data>
+  <data name="edit_special_hourly" xml:space="preserve">
+    <value>Ieder uur</value>
+  </data>
+  <data name="edit_special_daily" xml:space="preserve">
+    <value>Dagelijks (om middernacht)</value>
+  </data>
+  <data name="edit_special_weekly" xml:space="preserve">
+    <value>Wekelijks (op zondag)</value>
+  </data>
+  <data name="edit_special_monthly" xml:space="preserve">
+    <value>Maandelijks (op de 1e)</value>
+  </data>
+  <data name="edit_special_yearly" xml:space="preserve">
+    <value>Jaarlijks (op 1 januari)</value>
+  </data>
+  <data name="edit_special_reboot" xml:space="preserve">
+    <value>Wanneer systeem boot</value>
+  </data>
+  <data name="lcedit_special_hourly" xml:space="preserve">
+    <value>ieder uur</value>
+  </data>
+  <data name="lcedit_special_daily" xml:space="preserve">
+    <value>dagelijks (om middernacht)</value>
+  </data>
+  <data name="lcedit_special_weekly" xml:space="preserve">
+    <value>wekelijks (op zondag)</value>
+  </data>
+  <data name="lcedit_special_monthly" xml:space="preserve">
+    <value>maandelijks (op de 1e)</value>
+  </data>
+  <data name="lcedit_special_yearly" xml:space="preserve">
+    <value>jaarlijks (op 1 jan)</value>
+  </data>
+  <data name="lcedit_special_reboot" xml:space="preserve">
+    <value>wanneer systeem boot</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Fout bij het opslaan van cron opdrachten</value>
+  </data>
+  <data name="save_ecmd" xml:space="preserve">
+    <value>U heeft geen uit te voeren commando ingevuld</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>U moet een gebruiker selecteren</value>
+  </data>
+  <data name="save_euser2" xml:space="preserve">
+    <value>Gebruiker '$1' bestaat niet</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>De gebruiker '$1' is niet bevoegd om cron te benaderen</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om cron opdrachten aan te maken of te bewerken voor '$1'</value>
+  </data>
+  <data name="save_enone" xml:space="preserve">
+    <value>U heeft geen $1 gekozen om uit te voeren</value>
+  </data>
+  <data name="save_ecannot2" xml:space="preserve">
+    <value>U bent niet bevoegd om cron taken aan te maken</value>
+  </data>
+  <data name="allow_title" xml:space="preserve">
+    <value>Control Cron Toegang</value>
+  </data>
+  <data name="allow_desc" xml:space="preserve">
+    <value>Dit formulier stelt u in staat om aan te geven welke gebruikers cron opdrachten aanmaken uitvoeren.</value>
+  </data>
+  <data name="allow_ecannot" xml:space="preserve">
+    <value>U kunt niet de gebruikers toegang tot cron beheren</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Weiger alle gebruikers</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Weiger alle gebruikers behalve root</value>
+  </data>
+  <data name="allow_all3" xml:space="preserve">
+    <value>Accepteer alle gebruikers</value>
+  </data>
+  <data name="allow_allow" xml:space="preserve">
+    <value>Accepteer alleen gebruikers in de lijst</value>
+  </data>
+  <data name="allow_deny" xml:space="preserve">
+    <value>Weiger alleen de gebruikers in de lijst</value>
+  </data>
+  <data name="env_title1" xml:space="preserve">
+    <value>Bewerk Omgevingsvariabele</value>
+  </data>
+  <data name="env_title2" xml:space="preserve">
+    <value>Omgevingsvariabele Aanmaken</value>
+  </data>
+  <data name="env_name" xml:space="preserve">
+    <value>Variabel naam</value>
+  </data>
+  <data name="env_value" xml:space="preserve">
+    <value>Waarde</value>
+  </data>
+  <data name="env_user" xml:space="preserve">
+    <value>Voor gebruiker</value>
+  </data>
+  <data name="env_active" xml:space="preserve">
+    <value>Actief?</value>
+  </data>
+  <data name="env_details" xml:space="preserve">
+    <value>Details omgevingsvariabele</value>
+  </data>
+  <data name="env_err" xml:space="preserve">
+    <value>Fout bij het opslaan van omgevingsvariabele</value>
+  </data>
+  <data name="env_ename" xml:space="preserve">
+    <value>'$1' is geen geldige variabele naam</value>
+  </data>
+  <data name="env_order" xml:space="preserve">
+    <value>Opmerking - Deze omgevingsvariabele is alleen van toepassing op Crontaken lager in de lijst van taken op de hoofdpagina van deze module.</value>
+  </data>
+  <data name="env_where" xml:space="preserve">
+    <value>Omgevingsvariabele toevoegen</value>
+  </data>
+  <data name="env_where2" xml:space="preserve">
+    <value>Omgevingsvariabele verplaatsen</value>
+  </data>
+  <data name="env_top" xml:space="preserve">
+    <value>Voor alle Crontaken voor gebruiker</value>
+  </data>
+  <data name="env_bot" xml:space="preserve">
+    <value>Na alle Crontaken</value>
+  </data>
+  <data name="env_leave" xml:space="preserve">
+    <value>Huidige positie</value>
+  </data>
+  <data name="exec_title" xml:space="preserve">
+    <value>Cron Opdracht Uitvoeren</value>
+  </data>
+  <data name="exec_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om cron opdrachten voor deze gebruiker uit te voeren</value>
+  </data>
+  <data name="exec_cmd" xml:space="preserve">
+    <value>Uitvoer van opdracht $1 ..</value>
+  </data>
+  <data name="exec_cmdbg" xml:space="preserve">
+    <value>Uitvoeren van opdracht $1 als een achtergrond proces</value>
+  </data>
+  <data name="exec_none" xml:space="preserve">
+    <value>Geen uitvoer gegenereerd</value>
+  </data>
+  <data name="acl_users" xml:space="preserve">
+    <value>Kan cron opdrachten bewerken voor</value>
+  </data>
+  <data name="acl_all" xml:space="preserve">
+    <value>Alle gebruikers</value>
+  </data>
+  <data name="acl_this" xml:space="preserve">
+    <value>Huidige Webmin gebruiker</value>
+  </data>
+  <data name="acl_only" xml:space="preserve">
+    <value>Alleen gebruikers</value>
+  </data>
+  <data name="acl_except" xml:space="preserve">
+    <value>Alle behalve de gebruikers</value>
+  </data>
+  <data name="acl_control" xml:space="preserve">
+    <value>Kan gebruikers toegang tot cron beheren?</value>
+  </data>
+  <data name="acl_command" xml:space="preserve">
+    <value>Kan Cron opdrachten weergeven en bewerken?</value>
+  </data>
+  <data name="acl_uid" xml:space="preserve">
+    <value>Gebruikers met UID in bereik</value>
+  </data>
+  <data name="acl_gid" xml:space="preserve">
+    <value>Gebruikers met primaire groep</value>
+  </data>
+  <data name="acl_create" xml:space="preserve">
+    <value>Kan crontaken aanmaken</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>Kan crontaken verwijderen?</value>
+  </data>
+  <data name="acl_move" xml:space="preserve">
+    <value>Kan Crontaken verplaatsen?</value>
+  </data>
+  <data name="acl_kill" xml:space="preserve">
+    <value>Kan Crontaken stoppen?</value>
+  </data>
+  <data name="acl_hourly" xml:space="preserve">
+    <value>Limiet voor aantal jobs per uur?</value>
+  </data>
+  <data name="acl_hourlydef" xml:space="preserve">
+    <value>Zoals gezet in de Module Config</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>Gewijzigde cron opdracht voor $1</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>Gewijzigde cron opdracht "$2" voor $1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Aangemaakt cron opdracht voor $1</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>Aangemaakt cron opdracht "$2" voor $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Verwijderd cron opdracht voor $1</value>
+  </data>
+  <data name="log_exec" xml:space="preserve">
+    <value>Uitgevoerd cron opdracht als $1</value>
+  </data>
+  <data name="log_exec_l" xml:space="preserve">
+    <value>Uitvoeren van cron opdracht "$2" als $1</value>
+  </data>
+  <data name="log_kill" xml:space="preserve">
+    <value>Cron taak beëindigd voor $1</value>
+  </data>
+  <data name="log_kill_l" xml:space="preserve">
+    <value>Cron taak "$2" beëindigd voor $1</value>
+  </data>
+  <data name="log_allow" xml:space="preserve">
+    <value>Gewijzigd gebruikers toegang naar cron</value>
+  </data>
+  <data name="log_env_create" xml:space="preserve">
+    <value>Omgevingsvariabele aangemaakt voor $1</value>
+  </data>
+  <data name="log_env_modify" xml:space="preserve">
+    <value>Omgevingsvariabele gewijzigd voor $1</value>
+  </data>
+  <data name="log_env_delete" xml:space="preserve">
+    <value>Omgevingsvariabele verwijderd voor $1</value>
+  </data>
+  <data name="log_move" xml:space="preserve">
+    <value>Cron taak verplaatst voor $1</value>
+  </data>
+  <data name="log_crons_delete" xml:space="preserve">
+    <value>$1 Cron taken verwijderd</value>
+  </data>
+  <data name="log_crons_disable" xml:space="preserve">
+    <value>Uitschakelen $1 Cron taken</value>
+  </data>
+  <data name="log_crons_enable" xml:space="preserve">
+    <value>Aanzetten $1 Cron taken</value>
+  </data>
+  <data name="ecopy" xml:space="preserve">
+    <value>Er is een fout gevonden in de nieuwe Cron configuratie: $1 $2</value>
+  </data>
+  <data name="when_min" xml:space="preserve">
+    <value>iedere minuut</value>
+  </data>
+  <data name="when_hour" xml:space="preserve">
+    <value>Ieder uur om $1 over het hele uur</value>
+  </data>
+  <data name="when_day" xml:space="preserve">
+    <value>iedere dag om $2:$1</value>
+  </data>
+  <data name="when_month" xml:space="preserve">
+    <value>iedere maand op de $3e dag om $2:$1</value>
+  </data>
+  <data name="when_weekday" xml:space="preserve">
+    <value>iedere $3 om $2:$1</value>
+  </data>
+  <data name="when_cron" xml:space="preserve">
+    <value>op cron tijd $1</value>
+  </data>
+  <data name="ucwhen_min" xml:space="preserve">
+    <value>Iedere minuut</value>
+  </data>
+  <data name="ucwhen_hour" xml:space="preserve">
+    <value>Ieder uur om $1 over het hele uur</value>
+  </data>
+  <data name="ucwhen_day" xml:space="preserve">
+    <value>Iedere dag om $2:$1</value>
+  </data>
+  <data name="ucwhen_month" xml:space="preserve">
+    <value>Iedere maand op de $3e dag om $2:$1</value>
+  </data>
+  <data name="ucwhen_weekday" xml:space="preserve">
+    <value>Iedere $3 om $2:$1</value>
+  </data>
+  <data name="ucwhen_cron" xml:space="preserve">
+    <value>Op cron tijd $1</value>
+  </data>
+  <data name="move_err" xml:space="preserve">
+    <value>Fout bij het verplaatsen van Cron taak</value>
+  </data>
+  <data name="move_etype" xml:space="preserve">
+    <value>Deze taak kan niet worden verplaatst</value>
+  </data>
+  <data name="kill_err" xml:space="preserve">
+    <value>Fout bij het beëindigen van Cron taak</value>
+  </data>
+  <data name="kill_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om deze taak te beëindigen</value>
+  </data>
+  <data name="kill_egone" xml:space="preserve">
+    <value>Wordt niet meer uitgevoerd</value>
+  </data>
+  <data name="kill_ekill" xml:space="preserve">
+    <value>Kill mislukt: $1</value>
+  </data>
+  <data name="kill_title" xml:space="preserve">
+    <value>Beëindig Cron Taak</value>
+  </data>
+  <data name="kill_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u het proces $1 met PID $2 wilt beëindigen?</value>
+  </data>
+  <data name="kill_rusure2" xml:space="preserve">
+    <value>Weet u zeker dat u het proces $1 met PID $2 en alle subprocessen, wilt beëindigen?</value>
+  </data>
+  <data name="kill_ok" xml:space="preserve">
+    <value>Ja, Beëindig Het</value>
+  </data>
+  <data name="range_all" xml:space="preserve">
+    <value>Uitvoeren op alle dagen</value>
+  </data>
+  <data name="range_start" xml:space="preserve">
+    <value>Alleen uitvoeren van $1</value>
+  </data>
+  <data name="range_end" xml:space="preserve">
+    <value>tot $1</value>
+  </data>
+  <data name="range_estart" xml:space="preserve">
+    <value>Ontbrekende of ongeldige start datum in uitvoerbereik</value>
+  </data>
+  <data name="range_eend" xml:space="preserve">
+    <value>Ontbrekende of ongeldige einddatum in uitvoerbereik</value>
+  </data>
+  <data name="delete_err" xml:space="preserve">
+    <value>Fout bij het verwijderen van Cron taken</value>
+  </data>
+  <data name="delete_enone" xml:space="preserve">
+    <value>Niet geselecteerd</value>
+  </data>
+</root>

@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="check_econfig" xml:space="preserve">
+    <value>Файл канфігурацыі iSCSI мэтавай $1 не быў знойдзены ў вашай сістэме.</value>
+  </data>
+  <data name="check_eietadm" xml:space="preserve">
+    <value>Каманда вашай мэтавай адміністрацыі iSCSI не знойдзена ў вашай сістэме.</value>
+  </data>
+  <data name="check_einit" xml:space="preserve">
+    <value>Дзеянне загрузкі $1 не існуе</value>
+  </data>
+  <data name="index_title" xml:space="preserve">
+    <value>Мэта iSCSI</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Спыніць мэтавай iSCSI</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Націсніце гэтую кнопку, каб спыніць выкананне мэты iSCSI. Усе агульныя прылады больш не будуць даступныя кліентам.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Запусціце iSCSI Target</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Націсніце гэтую кнопку, каб пачаць мэта iSCSI, каб агульныя прылады былі даступныя кліентам.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Перазапусціце iSCSI Target</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Націсніце гэтую кнопку, каб прымяніць бягучую канфігурацыю, перазапусціўшы мэта iSCSI.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Пачаць з загрузкі?</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Змяніце гэтую опцыю, каб кантраляваць, запускаецца Ці мэта iSCSI падчас загрузкі. Калі ён не запушчаны падчас загрузкі і абраны Так, будзе створаны новы сцэнар init.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>спіс мэт</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Пакуль не вызначаны мэты экспарту iSCSI.</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>Дадайце новую мэтавую iSCSI.</value>
+  </data>
+  <data name="index_target" xml:space="preserve">
+    <value>Назва мэты</value>
+  </data>
+  <data name="index_lun" xml:space="preserve">
+    <value>Дыскавыя прылады</value>
+  </data>
+  <data name="index_users" xml:space="preserve">
+    <value>Дазволена карыстальнікам</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>Выдаліць выбраныя мэты</value>
+  </data>
+  <data name="index_noluns" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="index_nousers" xml:space="preserve">
+    <value>Любы</value>
+  </data>
+  <data name="index_nullio" xml:space="preserve">
+    <value>Дыск аператыўнай памяці з сектарамі $1 </value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>Агульны памер</value>
+  </data>
+  <data name="dtargets_err" xml:space="preserve">
+    <value>Не атрымалася выдаліць мэты</value>
+  </data>
+  <data name="dtargets_enone" xml:space="preserve">
+    <value>Ні адзін не абраны!</value>
+  </data>
+  <data name="target_title1" xml:space="preserve">
+    <value>Стварэнне мэты iSCSI</value>
+  </data>
+  <data name="target_title2" xml:space="preserve">
+    <value>Рэдагаванне мэты iSCSI</value>
+  </data>
+  <data name="target_header" xml:space="preserve">
+    <value>Параметры прылад агульнага карыстання iSCSI</value>
+  </data>
+  <data name="target_part" xml:space="preserve">
+    <value>Раздзел лакальнага дыска</value>
+  </data>
+  <data name="target_raid" xml:space="preserve">
+    <value>Прылада RAID</value>
+  </data>
+  <data name="target_md" xml:space="preserve">
+    <value>Прылада RAID $1 </value>
+  </data>
+  <data name="target_lvm" xml:space="preserve">
+    <value>Лагічны аб'ём LVM</value>
+  </data>
+  <data name="target_lv" xml:space="preserve">
+    <value>ННМ VG $1, НН $2 </value>
+  </data>
+  <data name="target_other" xml:space="preserve">
+    <value>Іншы файл ці прылада</value>
+  </data>
+  <data name="target_lun" xml:space="preserve">
+    <value>Прылада для сумеснага выкарыстання $1 </value>
+  </data>
+  <data name="target_name" xml:space="preserve">
+    <value>Назва мэты</value>
+  </data>
+  <data name="target_egone" xml:space="preserve">
+    <value>Выбраная мэта больш не існуе!</value>
+  </data>
+  <data name="target_none" xml:space="preserve">
+    <value>Нічога</value>
+  </data>
+  <data name="target_null" xml:space="preserve">
+    <value>Часовы дыск памеру аператыўнай памяці</value>
+  </data>
+  <data name="target_sectors" xml:space="preserve">
+    <value>сектараў</value>
+  </data>
+  <data name="target_type" xml:space="preserve">
+    <value>Тып IO</value>
+  </data>
+  <data name="target_fileio" xml:space="preserve">
+    <value>Файл заснаваны</value>
+  </data>
+  <data name="target_blockio" xml:space="preserve">
+    <value>На аснове блокаў (без кэшавання, толькі для прылад)</value>
+  </data>
+  <data name="target_iomode" xml:space="preserve">
+    <value>Рэжым IO</value>
+  </data>
+  <data name="target_wt" xml:space="preserve">
+    <value>Кэшаванне запісу</value>
+  </data>
+  <data name="target_wb" xml:space="preserve">
+    <value>Кэшаванне назад</value>
+  </data>
+  <data name="target_ro" xml:space="preserve">
+    <value>Толькі для чытання</value>
+  </data>
+  <data name="target_iuser" xml:space="preserve">
+    <value>Аўтэнтыфікацыя кліентаў</value>
+  </data>
+  <data name="target_iuserall" xml:space="preserve">
+    <value>Аўтэнтыфікацыя не патрэбная</value>
+  </data>
+  <data name="target_iuserbelow" xml:space="preserve">
+    <value>Дазволіць увайсці ніжэй.</value>
+  </data>
+  <data name="target_uname" xml:space="preserve">
+    <value>Імя карыстальніка</value>
+  </data>
+  <data name="target_upass" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="target_ouser" xml:space="preserve">
+    <value>Аўтэнтыфікацыя кліентаў</value>
+  </data>
+  <data name="target_ousernone" xml:space="preserve">
+    <value>Не праверце сапраўднасць</value>
+  </data>
+  <data name="target_ousername" xml:space="preserve">
+    <value>Уваход з імем карыстальніка</value>
+  </data>
+  <data name="target_ouserpass" xml:space="preserve">
+    <value>і пароль</value>
+  </data>
+  <data name="target_err" xml:space="preserve">
+    <value>Не ўдалося захаваць мэта</value>
+  </data>
+  <data name="target_esectors" xml:space="preserve">
+    <value>Прапушчаная ці ненумарная колькасць сектараў для прылады $1 </value>
+  </data>
+  <data name="target_eother" xml:space="preserve">
+    <value>Адсутнічае альбо недапушчальны файл для прылады $1 </value>
+  </data>
+  <data name="target_eiuser" xml:space="preserve">
+    <value>Несапраўднае імя для карыстальніка $1 - прабелы не дапускаюцца</value>
+  </data>
+  <data name="target_eipass" xml:space="preserve">
+    <value>Несапраўдны пароль для карыстальніка $1 - прабелы не дапускаюцца</value>
+  </data>
+  <data name="target_eouser" xml:space="preserve">
+    <value>Адсутнічае альбо недапушчальнае імя карыстальніка для аўтэнтыфікацыі кліентаў - прабелы не дапускаюцца</value>
+  </data>
+  <data name="target_eopass" xml:space="preserve">
+    <value>Адсутнічае альбо недапушчальны пароль для аўтэнтыфікацыі кліентаў - прабелы не дапускаюцца</value>
+  </data>
+  <data name="target_eiusernone" xml:space="preserve">
+    <value>Імя карыстальніка не ўводзіцца</value>
+  </data>
+  <data name="target_alias" xml:space="preserve">
+    <value>Псеўданім імя для мэты</value>
+  </data>
+  <data name="target_noalias" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="target_hdigest" xml:space="preserve">
+    <value>Загаловак кантрольнай сумы</value>
+  </data>
+  <data name="target_ddigest" xml:space="preserve">
+    <value>Контрольная сума дадзеных</value>
+  </data>
+  <data name="target_nodigest" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="auth_title" xml:space="preserve">
+    <value>Налады праверкі сапраўднасці</value>
+  </data>
+  <data name="auth_header" xml:space="preserve">
+    <value>Параметры аўтэнтыфікацыі па змаўчанні для ўсіх мэтаў</value>
+  </data>
+  <data name="auth_iuser" xml:space="preserve">
+    <value>Аўтэнтыфікацыя кліентаў</value>
+  </data>
+  <data name="auth_ouser" xml:space="preserve">
+    <value>Аўтэнтыфікацыя кліентаў</value>
+  </data>
+  <data name="auth_err" xml:space="preserve">
+    <value>Не атрымалася захаваць налады аўтэнтыфікацыі</value>
+  </data>
+  <data name="conn_title" xml:space="preserve">
+    <value>Налады злучэння</value>
+  </data>
+  <data name="conn_header" xml:space="preserve">
+    <value>Параметры злучэння па змаўчанні для ўсіх мэтаў</value>
+  </data>
+  <data name="conn_sessions" xml:space="preserve">
+    <value>Максімум адначасовых заняткаў</value>
+  </data>
+  <data name="conn_sessions1" xml:space="preserve">
+    <value>Неабмежаваны</value>
+  </data>
+  <data name="conn_sessions0" xml:space="preserve">
+    <value>Па крайняй меры</value>
+  </data>
+  <data name="conn_initial" xml:space="preserve">
+    <value>Дазволіць кліентам адпраўляць дадзеныя пасля каманд?</value>
+  </data>
+  <data name="conn_immediate" xml:space="preserve">
+    <value>Дазволіць кліентам дадаваць дадзеныя да каманд?</value>
+  </data>
+  <data name="conn_maxrecv" xml:space="preserve">
+    <value>Максімальная даўжыня сегмента</value>
+  </data>
+  <data name="conn_maxxmit" xml:space="preserve">
+    <value>Максімальная даўжыня сегмента перадачы</value>
+  </data>
+  <data name="conn_maxburst" xml:space="preserve">
+    <value>Максімальны памер кліента</value>
+  </data>
+  <data name="conn_firstburst" xml:space="preserve">
+    <value>Максімальны памер кліента непажадана</value>
+  </data>
+  <data name="conn_bytes" xml:space="preserve">
+    <value>байт</value>
+  </data>
+  <data name="conn_err" xml:space="preserve">
+    <value>Не атрымалася захаваць налады злучэння</value>
+  </data>
+  <data name="conn_esessions" xml:space="preserve">
+    <value>Максімум адначасовых заняткаў павінен быць лік</value>
+  </data>
+  <data name="conn_emaxrecv" xml:space="preserve">
+    <value>Максімальная даўжыня адрэзка або адсутнасць лічбы прыёму адрэзка</value>
+  </data>
+  <data name="conn_emaxxmit" xml:space="preserve">
+    <value>Максімальная даўжыня сегмента перадачы адсутнічае або не лічбавая</value>
+  </data>
+  <data name="conn_emaxburst" xml:space="preserve">
+    <value>Максімальны або ненумарны максімальны памер кліента</value>
+  </data>
+  <data name="conn_efirstburst" xml:space="preserve">
+    <value>Максімальны максімальны памер клімату, які не патрабуецца, альбо адсутнічае</value>
+  </data>
+  <data name="timeout_title" xml:space="preserve">
+    <value>Налады тайм-аўта</value>
+  </data>
+  <data name="timeout_header" xml:space="preserve">
+    <value>Варыянты таймаўту кліента</value>
+  </data>
+  <data name="timeout_nopi" xml:space="preserve">
+    <value>Інтэрвал паміж пінгамі, калі прастойвае</value>
+  </data>
+  <data name="timeout_nopinone" xml:space="preserve">
+    <value>Ніколі не пінг</value>
+  </data>
+  <data name="timeout_secs" xml:space="preserve">
+    <value>секунд</value>
+  </data>
+  <data name="timeout_nopt" xml:space="preserve">
+    <value>Час чакаць адказу пінга</value>
+  </data>
+  <data name="timeout_noptnone" xml:space="preserve">
+    <value>Гэтак жа, як час пінг</value>
+  </data>
+  <data name="addr_title" xml:space="preserve">
+    <value>Адрас і порт сервера</value>
+  </data>
+  <data name="addr_header" xml:space="preserve">
+    <value>Параметры сеткі сервера iSCSI</value>
+  </data>
+  <data name="addr_addr" xml:space="preserve">
+    <value>Слухайце на IP-адрас</value>
+  </data>
+  <data name="addr_any" xml:space="preserve">
+    <value>Любы адрас</value>
+  </data>
+  <data name="addr_ip" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="addr_port" xml:space="preserve">
+    <value>Слухайце ў порт</value>
+  </data>
+  <data name="addr_debug" xml:space="preserve">
+    <value>Узровень адладкі</value>
+  </data>
+  <data name="addr_debugnone" xml:space="preserve">
+    <value>Адладка адключана</value>
+  </data>
+  <data name="addr_err" xml:space="preserve">
+    <value>Не атрымалася захаваць адрас сервера</value>
+  </data>
+  <data name="addr_eaddr" xml:space="preserve">
+    <value>Адрас для праслухоўвання павінен быць IP-адрасам</value>
+  </data>
+  <data name="addr_eport" xml:space="preserve">
+    <value>Порт для праслухоўвання павінен быць нумарам</value>
+  </data>
+  <data name="addr_edebug" xml:space="preserve">
+    <value>Узровень адладкі павінен быць лік</value>
+  </data>
+  <data name="initiators_title" xml:space="preserve">
+    <value>Дазволеныя адрасы кліентаў</value>
+  </data>
+  <data name="initiators_none" xml:space="preserve">
+    <value>Пакуль не вызначаны дазволены адрас кліента. Ні адзін кліент не зможа падключыцца.</value>
+  </data>
+  <data name="initiators_ips" xml:space="preserve">
+    <value>Дазволена кліентам</value>
+  </data>
+  <data name="initiators_title1" xml:space="preserve">
+    <value>Дадаць дазволеныя адрасы кліента</value>
+  </data>
+  <data name="initiators_title2" xml:space="preserve">
+    <value>Рэдагаванне дазволеных адрасоў кліента</value>
+  </data>
+  <data name="initiators_header" xml:space="preserve">
+    <value>Дазволена кліентам iSCSI для мэты</value>
+  </data>
+  <data name="targets_title" xml:space="preserve">
+    <value>Дазволеныя адрасы сервера</value>
+  </data>
+  <data name="targets_none" xml:space="preserve">
+    <value>Пакуль не вызначаны дазволены адрас сервера. Ні адзін кліент не зможа падключыцца.</value>
+  </data>
+  <data name="targets_ips" xml:space="preserve">
+    <value>Дазволены інтэрфейс сервера</value>
+  </data>
+  <data name="targets_title1" xml:space="preserve">
+    <value>Дадаць дазволеныя серверы</value>
+  </data>
+  <data name="targets_title2" xml:space="preserve">
+    <value>Рэдагаванне дазволеных адрасоў сервера</value>
+  </data>
+  <data name="targets_header" xml:space="preserve">
+    <value>Дазволены інтэрфейс сервера iSCSI для мэты</value>
+  </data>
+  <data name="allow_target" xml:space="preserve">
+    <value>Назва мэты</value>
+  </data>
+  <data name="allow_move" xml:space="preserve">
+    <value>Рухайцеся</value>
+  </data>
+  <data name="allow_delete" xml:space="preserve">
+    <value>Выдаліць выбранае</value>
+  </data>
+  <data name="allow_all1" xml:space="preserve">
+    <value>Усе мэты</value>
+  </data>
+  <data name="allow_all2" xml:space="preserve">
+    <value>Усе адрасы</value>
+  </data>
+  <data name="allow_add" xml:space="preserve">
+    <value>Дадайце новую мэта і адрасы, каб дазволіць.</value>
+  </data>
+  <data name="allow_below" xml:space="preserve">
+    <value>Ніжэй прыведзены ..</value>
+  </data>
+  <data name="allow_return" xml:space="preserve">
+    <value>Дазволеныя мэты і адрасы</value>
+  </data>
+  <data name="allow_err" xml:space="preserve">
+    <value>Не атрымалася захаваць дазволеныя адрасы</value>
+  </data>
+  <data name="allow_eaddr" xml:space="preserve">
+    <value>Адрас $1 несапраўдны. Гэта павінен быць альбо адрас IPv4, сетка/маска IPv4, альбо адрас IPv6 у квадратных дужках.</value>
+  </data>
+  <data name="allow_eaddrs" xml:space="preserve">
+    <value>Адрас, які дазваляецца ўвесці</value>
+  </data>
+  <data name="dallow_err" xml:space="preserve">
+    <value>Не атрымалася выдаліць дазволеныя адрасы</value>
+  </data>
+  <data name="dallow_enone" xml:space="preserve">
+    <value>Ні адзін не абраны</value>
+  </data>
+  <data name="manual_title" xml:space="preserve">
+    <value>Рэдагаванне файла канфігурацыі</value>
+  </data>
+  <data name="manual_desc" xml:space="preserve">
+    <value>Выкарыстоўвайце тэкставае поле ніжэй, каб адрэдагаваць файл канфігурацыі сервера iSCSI $1. Будзьце ўважлівыя, бо ніякая праверка не будзе праведзена!</value>
+  </data>
+  <data name="manual_err" xml:space="preserve">
+    <value>Не атрымалася захаваць файл канфігурацыі</value>
+  </data>
+  <data name="manual_edata" xml:space="preserve">
+    <value>Змесціва не ўводзіцца!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Не атрымалася запусціць сервер iSCSI</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Не атрымалася спыніць сервер iSCSI</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>Не атрымалася перазапусціць сервер iSCSI</value>
+  </data>
+  <data name="atboot_err" xml:space="preserve">
+    <value>Не атрымалася ўключыць пры загрузцы</value>
+  </data>
+  <data name="atboot_einit" xml:space="preserve">
+    <value>Скрыпт Init $1 не існуе</value>
+  </data>
+  <data name="log_create_target" xml:space="preserve">
+    <value>Створаны мэтавы $1 </value>
+  </data>
+  <data name="log_delete_target" xml:space="preserve">
+    <value>Выдалена мэта $1 </value>
+  </data>
+  <data name="log_modify_target" xml:space="preserve">
+    <value>Зменены мэта $1 </value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Запушчаны сервер iSCSI</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Спынены сервер iSCSI</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Перазагружаны сервер iSCSI</value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Уключаны сервер iSCSI падчас загрузкі</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Адключаны сервер iSCSI падчас загрузкі</value>
+  </data>
+  <data name="log_manual" xml:space="preserve">
+    <value>Канфігурацыйны файл уручную адрэдагаваны</value>
+  </data>
+  <data name="log_auth" xml:space="preserve">
+    <value>Зменены глабальныя налады аўтэнтыфікацыі</value>
+  </data>
+  <data name="log_conn" xml:space="preserve">
+    <value>Зменены налады глабальнага злучэння</value>
+  </data>
+  <data name="log_timeout" xml:space="preserve">
+    <value>Зменены глабальныя налады тайм-аўта</value>
+  </data>
+  <data name="log_addr" xml:space="preserve">
+    <value>Зменены адрас сервера</value>
+  </data>
+  <data name="log_create_targets" xml:space="preserve">
+    <value>Створаны дазволены адрас сервера $1 </value>
+  </data>
+  <data name="log_delete_targets" xml:space="preserve">
+    <value>Выдалены дазволены адрас сервера $1 </value>
+  </data>
+  <data name="log_modify_targets" xml:space="preserve">
+    <value>Дададзены дазволены адрас сервера $1 </value>
+  </data>
+  <data name="log_move_targets" xml:space="preserve">
+    <value>Перамешчаны дазволены адрас сервера $1 </value>
+  </data>
+  <data name="log_multidelete_targets" xml:space="preserve">
+    <value>Выдалены $1 дазволены адрасы сервера</value>
+  </data>
+  <data name="log_create_initiators" xml:space="preserve">
+    <value>Створаны дазволены адрас кліента $1 </value>
+  </data>
+  <data name="log_delete_initiators" xml:space="preserve">
+    <value>Выдалены дазволены адрас кліента $1 </value>
+  </data>
+  <data name="log_modify_initiators" xml:space="preserve">
+    <value>Дазволены дазволены адрас кліента $1 </value>
+  </data>
+  <data name="log_move_initiators" xml:space="preserve">
+    <value>Перанесены дазволены адрас кліента $1 </value>
+  </data>
+  <data name="log_multidelete_initiators" xml:space="preserve">
+    <value>Выдалены $1 дазволены адрас кліента</value>
+  </data>
+</root>

@@ -7,26 +7,22 @@ using Doods.Framework.ApiClientBase.Std.Classes;
 using Doods.Framework.Mobile.Std.controls;
 using Doods.Framework.Mobile.Std.Enum;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Framework.Mobile.Std.Servicies;
 using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Std.Lists;
 using Doods.Xam.MonitorMyServer.Data;
+using Doods.Xam.MonitorMyServer.Resx;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts;
 using Doods.Xam.MonitorMyServer.Views.Login;
 using Xamarin.Forms;
-using Resource = Doods.Xam.MonitorMyServer.Resx.Resource;
 
 namespace Doods.Xam.MonitorMyServer.Views.HostManager
 {
     public class HostManagerPageViewModel : DataTableItemsViewModel<Host>
     {
-        public ObservableRangeCollection<HostViewModel> ItemsView { get; } =
-            new ObservableRangeCollection<HostViewModel>();
+        private readonly ICommand FindItemCommand;
 
-        private ICommand FindItemCommand;
-        public ICommand SelectItemCommand { get; }
         public HostManagerPageViewModel()
         {
             Title = Resource.Hosts;
@@ -34,6 +30,11 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
                 NavigationService.NavigateAsync(nameof(EnumerateAllServicesFromAllHostsPage)));
             SelectItemCommand = new Command(SelectItem);
         }
+
+        public ObservableRangeCollection<HostViewModel> ItemsView { get; } =
+            new ObservableRangeCollection<HostViewModel>();
+
+        public ICommand SelectItemCommand { get; }
 
 
         protected override void AddItem(object obj)
@@ -52,16 +53,17 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             if (obj is HostViewModel h)
                 connctionService.SelectHost(h.Host).ConfigureAwait(false);
         }
+
         protected override void EditItem(object obj)
         {
             if (obj == null) return;
             if (obj is HostViewModel h)
             {
-               var t =  NavigationService.NavigateAsync(nameof(LogInPage), new DataHostWrapper(h.Host));
-               if (t.IsFaulted)
-               {
-                   var msg = t.Exception?.Message;
-               }
+                var t = NavigationService.NavigateAsync(nameof(LogInPage), new DataHostWrapper(h.Host));
+                if (t.IsFaulted)
+                {
+                    var msg = t.Exception?.Message;
+                }
             }
         }
 
@@ -71,6 +73,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             if (obj is HostViewModel h)
                 base.DeleteItem(h.Host);
         }
+
         protected override void OnFinishLoading(LoadingContext context)
         {
             if (!Items.Any())
@@ -83,7 +86,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
             var image1 = SvgIconTarget.CheckCircle.ResourceFile;
             var image3 = new FileImageSource();
             image3.File = image1;
-           
+
             var cmd = new CommandItem(CommandId.AnalyseThematique)
             {
                 Text = "Find",

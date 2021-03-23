@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -8,38 +9,38 @@
                       mc:Ignorable="d"
                       xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
                       x:Class="Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.OpenmediavaultAddFileSystem.OpenmediavaultAddFileSystemsPage">
-  
-        <ScrollView>
-            <StackLayout>
+
+    <ScrollView>
+        <StackLayout>
             <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
 
                 <Label Grid.Row="1" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Device'}" />
-            <Picker Grid.Row="1" Grid.Column="1" SelectedItem="{Binding SelectedCandidate,Mode=TwoWay}"
-                    ItemsSource="{Binding LstCandidateFileSystem,Mode=OneWay}" />
-                <Label Grid.Row="2" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Label'}"  />
-            <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Label,Mode=OneWayToSource}" />
-                <Label Grid.Row="3" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::FileSystem'}"  />
-            <Picker Grid.Row="3" Grid.Column="1" SelectedItem="{Binding SelectedFileSystem,Mode=TwoWay}"
-                    ItemsSource="{Binding LstFileSystem,Mode=OneWay}" />
-            <Button Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="0" Text="Save"
-                    Command="{Binding SaveCmd,Mode=OneWay}" />
+                <Picker Grid.Row="1" Grid.Column="1" SelectedItem="{Binding SelectedCandidate,Mode=TwoWay}"
+                        ItemsSource="{Binding LstCandidateFileSystem,Mode=OneWay}" />
+                <Label Grid.Row="2" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::Label'}" />
+                <Entry Grid.Row="2" Grid.Column="1" Text="{Binding Label,Mode=OneWayToSource}" />
+                <Label Grid.Row="3" Grid.Column="0" Text="{resources1:Translate Text='openmediavault::FileSystem'}" />
+                <Picker Grid.Row="3" Grid.Column="1" SelectedItem="{Binding SelectedFileSystem,Mode=TwoWay}"
+                        ItemsSource="{Binding LstFileSystem,Mode=OneWay}" />
+                <Button Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="0" Text="Save"
+                        Command="{Binding SaveCmd,Mode=OneWay}" />
 
-        </Grid>
-                <controls:NotificationView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
-                                            BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+            </Grid>
+            <controls:NotificationView
+                BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
             <Label VerticalOptions="FillAndExpand" Text="{Binding Result,Mode=OneWay}" />
-       
-    </StackLayout>
-        </ScrollView>
+
+        </StackLayout>
+    </ScrollView>
 </mvvm:BaseContentPage>

@@ -4,7 +4,7 @@ using Doods.Openmediavault.Rpc.std.Data.V4;
 
 namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultSettings
 {
-    public interface IOmvSettingsViewModel<T> where T: OmvObject
+    public interface IOmvSettingsViewModel<T> where T : OmvObject
     {
         T Settings { get; }
         ICommand SaveSettingsCmd { get; }

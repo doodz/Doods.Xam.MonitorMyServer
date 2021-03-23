@@ -18,9 +18,9 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<byte[]> GetRrdFile(string filePath);
         Task<IEnumerable<string>> ListRdd();
     }
+
     public interface IRpcService : IOMVSettingsService, IOMVSshBackgroundService, IRrdService, IOmvNetworkClient
     {
-       
         Task<IEnumerable<OmvFilesystems>> GetFilesystems();
 
         Task<IEnumerable<ServicesStatus>> GetServicesStatus();
@@ -33,9 +33,10 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<string> UpdateAptList();
         Task<string> UpgradeAptList(IEnumerable<string> lst);
         Task<Output<T>> GetOutput<T>(string filename, int pos);
+
         ScpClient GetScpClient();
         //Task<IEnumerable<PluginInfo>> GetPlugins();
-      
+
         Task<string> GetDisksBackground();
         Task<string> GetListCandidatesFileSystemBackground();
         Task<string> CreateFileSystemBackground(BaseOmvFilesystems newFilesystems);
@@ -43,7 +44,7 @@ namespace Doods.Openmedivault.Ssh.Std.Requests
         Task<bool> UmountFileSystem(OmvFilesystems filesystem);
         Task<bool> DeleteFileSystem(OmvFilesystems filesystem);
         Task<bool> MountFileSystem(OmvFilesystems filesystem);
-       
+
 
         Task<string> ApplyChanges();
 

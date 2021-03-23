@@ -7,33 +7,33 @@ namespace Doods.Xam.MonitorMyServer.Services
 {
     public enum PidStatusCheckerState
     {
-
         Running,
         Cancelled,
-        Finished,
-
+        Finished
     }
 
 
     public class PidStatusChecker
     {
+        private readonly Func<bool, Task> _callbackAction;
         private readonly CancellationToken _cancelToken;
         private readonly int _interval;
-        private readonly int _pid;
-        private readonly Func<bool, Task> _callbackAction;
-        private readonly Timer _stateTimer;
 
         //private ISshService ssh = new Lazy<ISshService>(s=> App.Container.Resolve<ILogger>());
         private readonly Lazy<ISshService> _lazySsh = new Lazy<ISshService>(() => App.Container.Resolve<ISshService>());
+        private readonly int _pid;
+        private readonly Timer _stateTimer;
+
+        private readonly int maxCount = 20;
 
         private int _invokeCount;
 
         public bool IsRunning = true;
 
-        private readonly int maxCount = 20;
-
         public PidStatusCheckerState State = PidStatusCheckerState.Running;
-        public PidStatusChecker(int pid,Func<bool,Task> callbackAction, CancellationToken cancelToken, int interval = 5000)
+
+        public PidStatusChecker(int pid, Func<bool, Task> callbackAction, CancellationToken cancelToken,
+            int interval = 5000)
         {
             _cancelToken = cancelToken;
             _callbackAction = callbackAction;
@@ -49,7 +49,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public async void CheckStatus(object stateInfo)
         {
-            var autoEvent = (AutoResetEvent)stateInfo;
+            var autoEvent = (AutoResetEvent) stateInfo;
             if (_cancelToken.IsCancellationRequested)
             {
                 State = PidStatusCheckerState.Cancelled;
@@ -58,22 +58,20 @@ namespace Doods.Xam.MonitorMyServer.Services
                 await _callbackAction(IsRunning).ConfigureAwait(false);
                 return;
             }
+
             if (_invokeCount++ != maxCount)
             {
                 IsRunning = await _lazySsh.Value.IsRunning(_pid);
                 if (!IsRunning)
                 {
-                    
                     State = PidStatusCheckerState.Finished;
                     _stateTimer.Dispose();
                     //autoEvent.Set();
                     await _callbackAction(IsRunning).ConfigureAwait(false);
                 }
-
             }
             else
             {
-                
                 State = PidStatusCheckerState.Finished;
                 _stateTimer.Dispose();
                 //autoEvent.Set();

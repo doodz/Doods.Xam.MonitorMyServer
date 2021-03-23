@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.Ssh.Std.Enums;
@@ -145,8 +144,8 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public Task<bool> Connect(string username, string password)
         {
-           var b = Connect();
-           return Task.FromResult(b);
+            var b = Connect();
+            return Task.FromResult(b);
         }
 
         public Task<string> GenerateRdd()
@@ -343,11 +342,15 @@ namespace Doods.Xam.MonitorMyServer.Services
             throw new NotImplementedException();
         }
 
-      
 
         public Task<Output<T>> GetOutput<T>(string filename, int pos)
         {
             return RunCmd<Output<T>>(new GetOutputRequest(filename, pos));
+        }
+
+        public Task<IEnumerable<SharedFolder>> GetSharedFolders()
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -401,11 +404,6 @@ namespace Doods.Xam.MonitorMyServer.Services
                     Logger.Error(apiResponse.Request.CommandText + Environment.NewLine +
                                  Environment.NewLine + apiResponse.ErrorMessage);
             }
-        }
-
-        public Task<IEnumerable<SharedFolder>> GetSharedFolders()
-        {
-            throw new NotImplementedException();
         }
     }
 }

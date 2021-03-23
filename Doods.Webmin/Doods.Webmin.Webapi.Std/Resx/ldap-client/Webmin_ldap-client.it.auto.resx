@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_check" xml:space="preserve">
+    <value>Convalida configurazione</value>
+  </data>
+  <data name="index_checkdesc" xml:space="preserve">
+    <value>Fare clic su questo pulsante per consentire a Webmin di convalidare la configurazione del server LDAP, garantendo che il server possa essere contattato e che contenga utenti e gruppi.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>indice del modulo</value>
+  </data>
+  <data name="index_fixpam" xml:space="preserve">
+    <value>&lt;b&gt;Avviso&lt;/b&gt; - Webmin ha rilevato due file di configurazione LDAP separati sul sistema. NSS-LDAP è configurato utilizzando $1, mentre PAM-LDAP utilizza $2. Ciò può causare incoerenze tra i due servizi.</value>
+  </data>
+  <data name="index_fix" xml:space="preserve">
+    <value>Risolto collegando i file</value>
+  </data>
+  <data name="index_ignore" xml:space="preserve">
+    <value>Non mostrare questo messaggio</value>
+  </data>
+  <data name="index_ldapmod" xml:space="preserve">
+    <value>Client LDAP</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Arresta il demone client LDAP</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Arrestare il demone client LDAP locale, necessario per eseguire una query sul server LDAP remoto.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Avviare il demone client LDAP</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Avviare il demone client LDAP locale, necessario per interrogare il server LDAP remoto. Fino all'avvio, gli utenti e i gruppi in LDAP non saranno accessibili.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>Riavvia il demone client LDAP</value>
+  </data>
+  <data name="index_restartdesc" xml:space="preserve">
+    <value>Applicare la configurazione corrente riavviando il demone client LDAP locale.</value>
+  </data>
+  <data name="index_atboot" xml:space="preserve">
+    <value>Avviare il client LDAP all'avvio</value>
+  </data>
+  <data name="index_atbootdesc" xml:space="preserve">
+    <value>Modifica se il daemon client LDAP viene avviato all'avvio del sistema o meno.</value>
+  </data>
+  <data name="server_title" xml:space="preserve">
+    <value>Configurazione del server LDAP</value>
+  </data>
+  <data name="server_header" xml:space="preserve">
+    <value>Server LDAP e opzioni di accesso</value>
+  </data>
+  <data name="server_host" xml:space="preserve">
+    <value>Nomi host del server LDAP</value>
+  </data>
+  <data name="server_port" xml:space="preserve">
+    <value>Connetti alla porta</value>
+  </data>
+  <data name="server_version" xml:space="preserve">
+    <value>Versione protocollo LDAP</value>
+  </data>
+  <data name="server_timelimit" xml:space="preserve">
+    <value>Limite di tempo di connessione</value>
+  </data>
+  <data name="server_binddn" xml:space="preserve">
+    <value>Accedi per utenti non &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_bindpw" xml:space="preserve">
+    <value>Password per utenti non &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbinddn" xml:space="preserve">
+    <value>Accedi per l'utente &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_rootbindpw" xml:space="preserve">
+    <value>Password per l'utente &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_same" xml:space="preserve">
+    <value>Come per non &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="server_anon" xml:space="preserve">
+    <value>Anonimo</value>
+  </data>
+  <data name="server_ssl" xml:space="preserve">
+    <value>Utilizzare una connessione crittografata?</value>
+  </data>
+  <data name="server_tls" xml:space="preserve">
+    <value>Sì, usando TLS</value>
+  </data>
+  <data name="server_peer" xml:space="preserve">
+    <value>Verifica del certificato SSL LDAP?</value>
+  </data>
+  <data name="server_def" xml:space="preserve">
+    <value>Predefinito (in genere $1)</value>
+  </data>
+  <data name="server_cacert" xml:space="preserve">
+    <value>File del certificato CA.</value>
+  </data>
+  <data name="server_uri" xml:space="preserve">
+    <value>Server LDAP</value>
+  </data>
+  <data name="server_uhost" xml:space="preserve">
+    <value>Nome host</value>
+  </data>
+  <data name="server_uport" xml:space="preserve">
+    <value>Numero di porta</value>
+  </data>
+  <data name="server_uproto" xml:space="preserve">
+    <value>Protocollo</value>
+  </data>
+  <data name="server_ldap" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="server_ldaps" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="server_ldapi" xml:space="preserve">
+    <value>Presa Unix</value>
+  </data>
+  <data name="server_err" xml:space="preserve">
+    <value>Impossibile salvare la configurazione del server LDAP</value>
+  </data>
+  <data name="server_ehost" xml:space="preserve">
+    <value>'$1' non è un nome host valido</value>
+  </data>
+  <data name="server_ehosts" xml:space="preserve">
+    <value>Nessun server LDAP inserito</value>
+  </data>
+  <data name="server_eport" xml:space="preserve">
+    <value>Porta del server LDAP mancante o non valida</value>
+  </data>
+  <data name="server_ebinddn" xml:space="preserve">
+    <value>Accesso mancante per utenti non &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_ebindpw" xml:space="preserve">
+    <value>Password mancante per utenti non &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbinddn" xml:space="preserve">
+    <value>Accesso mancante per l'utente &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_erootbindpw" xml:space="preserve">
+    <value>Password mancante per l'utente &lt;tt&gt;root&lt;/tt&gt;</value>
+  </data>
+  <data name="server_etimelimit" xml:space="preserve">
+    <value>Termine di connessione mancante o non valido</value>
+  </data>
+  <data name="server_ecacert" xml:space="preserve">
+    <value>File di certificato CA mancante o non valido</value>
+  </data>
+  <data name="server_euport" xml:space="preserve">
+    <value>Porta mancante o non valida per il server $1 </value>
+  </data>
+  <data name="server_euri" xml:space="preserve">
+    <value>Nessun server LDAP inserito</value>
+  </data>
+  <data name="base_title" xml:space="preserve">
+    <value>Basi di ricerca LDAP</value>
+  </data>
+  <data name="base_header" xml:space="preserve">
+    <value>Posizioni di ricerca directory LDAP</value>
+  </data>
+  <data name="base_base" xml:space="preserve">
+    <value>Base di ricerca globale</value>
+  </data>
+  <data name="base_scope" xml:space="preserve">
+    <value>Profondità di ricerca</value>
+  </data>
+  <data name="base_ssub" xml:space="preserve">
+    <value>Intera sottostruttura</value>
+  </data>
+  <data name="base_sone" xml:space="preserve">
+    <value>Un livello</value>
+  </data>
+  <data name="base_sbase" xml:space="preserve">
+    <value>Solo base</value>
+  </data>
+  <data name="base_passwd" xml:space="preserve">
+    <value>Base per utenti Unix</value>
+  </data>
+  <data name="base_shadow" xml:space="preserve">
+    <value>Base per password Unix</value>
+  </data>
+  <data name="base_group" xml:space="preserve">
+    <value>Base per gruppi Unix</value>
+  </data>
+  <data name="base_hosts" xml:space="preserve">
+    <value>Base per nomi host</value>
+  </data>
+  <data name="base_services" xml:space="preserve">
+    <value>Base per servizi di rete</value>
+  </data>
+  <data name="base_networks" xml:space="preserve">
+    <value>Base per nomi di rete</value>
+  </data>
+  <data name="base_protocols" xml:space="preserve">
+    <value>Base per protocolli</value>
+  </data>
+  <data name="base_netmasks" xml:space="preserve">
+    <value>Base per nomi di maschere di rete</value>
+  </data>
+  <data name="base_aliases" xml:space="preserve">
+    <value>Base per alias email</value>
+  </data>
+  <data name="base_netgroup" xml:space="preserve">
+    <value>Base per netgroup</value>
+  </data>
+  <data name="base_bscope" xml:space="preserve">
+    <value>Profondità di ricerca</value>
+  </data>
+  <data name="base_bfilter" xml:space="preserve">
+    <value>Filtro di ricerca</value>
+  </data>
+  <data name="base_timelimit" xml:space="preserve">
+    <value>Limite di tempo di ricerca</value>
+  </data>
+  <data name="base_secs" xml:space="preserve">
+    <value>secondi</value>
+  </data>
+  <data name="base_global" xml:space="preserve">
+    <value>Base globale</value>
+  </data>
+  <data name="base_err" xml:space="preserve">
+    <value>Impossibile salvare le basi di ricerca LDAP</value>
+  </data>
+  <data name="base_ebase" xml:space="preserve">
+    <value>Base di ricerca globale mancante</value>
+  </data>
+  <data name="base_epasswd" xml:space="preserve">
+    <value>Base mancante per utenti Unix</value>
+  </data>
+  <data name="base_eshadow" xml:space="preserve">
+    <value>Base mancante per le password Unix</value>
+  </data>
+  <data name="base_egroup" xml:space="preserve">
+    <value>Base mancante per gruppi Unix</value>
+  </data>
+  <data name="base_ehosts" xml:space="preserve">
+    <value>Base mancante per i nomi host</value>
+  </data>
+  <data name="base_eservices" xml:space="preserve">
+    <value>Base mancante per i servizi di rete</value>
+  </data>
+  <data name="base_enetworks" xml:space="preserve">
+    <value>Base mancante per i nomi di rete</value>
+  </data>
+  <data name="base_eprotocols" xml:space="preserve">
+    <value>Base mancante per i protocolli</value>
+  </data>
+  <data name="base_enetmasks" xml:space="preserve">
+    <value>Base mancante per i nomi delle maschere di rete</value>
+  </data>
+  <data name="base_ealiases" xml:space="preserve">
+    <value>Base mancante per gli alias email</value>
+  </data>
+  <data name="base_enetgroup" xml:space="preserve">
+    <value>Base mancante per netgroup</value>
+  </data>
+  <data name="base_etimelimit" xml:space="preserve">
+    <value>Termine di ricerca mancante o non valido</value>
+  </data>
+  <data name="pam_title" xml:space="preserve">
+    <value>Opzioni di autenticazione</value>
+  </data>
+  <data name="pam_header" xml:space="preserve">
+    <value>Autenticazione PAM e impostazioni della password</value>
+  </data>
+  <data name="pam_filter" xml:space="preserve">
+    <value>Filtro LDAP aggiuntivo</value>
+  </data>
+  <data name="pam_login" xml:space="preserve">
+    <value>Attributo LDAP per nome utente</value>
+  </data>
+  <data name="pam_groupdn" xml:space="preserve">
+    <value>Gruppo LDAP per forzare l'appartenenza a</value>
+  </data>
+  <data name="pam_member" xml:space="preserve">
+    <value>Attributo LDAP per i membri del gruppo</value>
+  </data>
+  <data name="pam_password" xml:space="preserve">
+    <value>Metodo di memorizzazione della password</value>
+  </data>
+  <data name="pam_clear" xml:space="preserve">
+    <value>Testo chiaro</value>
+  </data>
+  <data name="pam_crypt" xml:space="preserve">
+    <value>Crittografia Unix</value>
+  </data>
+  <data name="pam_md5" xml:space="preserve">
+    <value>Crittografia MD5</value>
+  </data>
+  <data name="pam_nds" xml:space="preserve">
+    <value>Novell Directory Services</value>
+  </data>
+  <data name="pam_ad" xml:space="preserve">
+    <value>Active Directory</value>
+  </data>
+  <data name="pam_exop" xml:space="preserve">
+    <value>Modifica password OpenLDAP</value>
+  </data>
+  <data name="pam_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="pam_ignored" xml:space="preserve">
+    <value>ignorato</value>
+  </data>
+  <data name="pam_err" xml:space="preserve">
+    <value>Impossibile salvare le opzioni di autenticazione</value>
+  </data>
+  <data name="pam_efilter" xml:space="preserve">
+    <value>Filtro LDAP aggiuntivo mancante</value>
+  </data>
+  <data name="pam_elogin" xml:space="preserve">
+    <value>Attributo LDAP mancante o non valido per il nome utente</value>
+  </data>
+  <data name="pam_egroupdn" xml:space="preserve">
+    <value>Gruppo LDAP mancante per forzare l'appartenenza a</value>
+  </data>
+  <data name="pam_emember" xml:space="preserve">
+    <value>Attributo LDAP mancante o non valido per i membri del gruppo</value>
+  </data>
+  <data name="switch_title" xml:space="preserve">
+    <value>Servizi tramite LDAP</value>
+  </data>
+  <data name="switch_service" xml:space="preserve">
+    <value>Servizio</value>
+  </data>
+  <data name="switch_srcs" xml:space="preserve">
+    <value>Origine dei dati</value>
+  </data>
+  <data name="switch_return" xml:space="preserve">
+    <value>servizi tramite LDAP</value>
+  </data>
+  <data name="ldap_emodule2" xml:space="preserve">
+    <value>Il modulo $1 Perl necessario per comunicare con il server LDAP non è installato.</value>
+  </data>
+  <data name="ldap_econf" xml:space="preserve">
+    <value>Il file di configurazione del client LDAP $1 non è stato trovato sul tuo sistema</value>
+  </data>
+  <data name="ldap_econn" xml:space="preserve">
+    <value>Connessione al server LDAP $1 $2 non riuscita</value>
+  </data>
+  <data name="ldap_econn2" xml:space="preserve">
+    <value>Connessione al server LDAP $1 $2 : $3 non riuscita</value>
+  </data>
+  <data name="ldap_elogin" xml:space="preserve">
+    <value>Impossibile eseguire il bind al server LDAP $1 come $2 : $3 </value>
+  </data>
+  <data name="ldap_anon" xml:space="preserve">
+    <value>anonimo</value>
+  </data>
+  <data name="ldap_eparse" xml:space="preserve">
+    <value>Impossibile analizzare l'URI $1 del server LDAP</value>
+  </data>
+  <data name="ldap_etls" xml:space="preserve">
+    <value>Impossibile passare alla modalità TLS : $1 </value>
+  </data>
+  <data name="browser_title" xml:space="preserve">
+    <value>Browser LDAP</value>
+  </data>
+  <data name="browser_econn" xml:space="preserve">
+    <value>Non è possibile utilizzare il browser LDAP : $1 </value>
+  </data>
+  <data name="browser_base" xml:space="preserve">
+    <value>Navigando:</value>
+  </data>
+  <data name="browser_ok" xml:space="preserve">
+    <value>Mostrare</value>
+  </data>
+  <data name="browser_esearch" xml:space="preserve">
+    <value>Ricerca LDAP non riuscita : $1 </value>
+  </data>
+  <data name="browser_subs" xml:space="preserve">
+    <value>Oggetti figlio</value>
+  </data>
+  <data name="browser_attrs" xml:space="preserve">
+    <value>Attributi dell'oggetto</value>
+  </data>
+  <data name="browser_parent" xml:space="preserve">
+    <value>Sfoglia genitori</value>
+  </data>
+  <data name="browser_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="browser_sel" xml:space="preserve">
+    <value>ok</value>
+  </data>
+  <data name="order_nisplus" xml:space="preserve">
+    <value>NIS +</value>
+  </data>
+  <data name="order_nis" xml:space="preserve">
+    <value>NIS</value>
+  </data>
+  <data name="order_dns" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="order_files" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="order_sss" xml:space="preserve">
+    <value>Servizi di sicurezza del sistema</value>
+  </data>
+  <data name="order_db" xml:space="preserve">
+    <value>File DB</value>
+  </data>
+  <data name="order_compat" xml:space="preserve">
+    <value>NIS e file</value>
+  </data>
+  <data name="order_hesiod" xml:space="preserve">
+    <value>Esiodo</value>
+  </data>
+  <data name="order_ldap" xml:space="preserve">
+    <value>LDAP</value>
+  </data>
+  <data name="order_user" xml:space="preserve">
+    <value>Stampanti utente</value>
+  </data>
+  <data name="order_xfn" xml:space="preserve">
+    <value>XFN</value>
+  </data>
+  <data name="order_mdns4" xml:space="preserve">
+    <value>DNS multicast</value>
+  </data>
+  <data name="order_mdns4_minimal" xml:space="preserve">
+    <value>DNS multicast (minimo)</value>
+  </data>
+  <data name="desc_aliases" xml:space="preserve">
+    <value>Alias di Sendmail</value>
+  </data>
+  <data name="desc_mail" xml:space="preserve">
+    <value>Alias di Sendmail</value>
+  </data>
+  <data name="desc_hosts" xml:space="preserve">
+    <value>Indirizzi host</value>
+  </data>
+  <data name="desc_group" xml:space="preserve">
+    <value>Gruppi Unix</value>
+  </data>
+  <data name="desc_passwd" xml:space="preserve">
+    <value>Utenti Unix</value>
+  </data>
+  <data name="desc_ethers" xml:space="preserve">
+    <value>Indirizzi Ethernet</value>
+  </data>
+  <data name="desc_amd.home" xml:space="preserve">
+    <value>Automounter home</value>
+  </data>
+  <data name="desc_amd.master" xml:space="preserve">
+    <value>Mappe di automounter</value>
+  </data>
+  <data name="desc_auto_home" xml:space="preserve">
+    <value>Automounter home</value>
+  </data>
+  <data name="desc_auto_master" xml:space="preserve">
+    <value>Mappe di automounter</value>
+  </data>
+  <data name="desc_auto_local" xml:space="preserve">
+    <value>Automounter locale</value>
+  </data>
+  <data name="desc_auto.home" xml:space="preserve">
+    <value>Automounter home</value>
+  </data>
+  <data name="desc_auto.master" xml:space="preserve">
+    <value>Mappe di automounter</value>
+  </data>
+  <data name="desc_auto.local" xml:space="preserve">
+    <value>Automounter locale</value>
+  </data>
+  <data name="desc_automount" xml:space="preserve">
+    <value>Mappe di automounter</value>
+  </data>
+  <data name="desc_netgroup" xml:space="preserve">
+    <value>netgroup</value>
+  </data>
+  <data name="desc_netgrp" xml:space="preserve">
+    <value>netgroup</value>
+  </data>
+  <data name="desc_netid" xml:space="preserve">
+    <value>NetID</value>
+  </data>
+  <data name="desc_networks" xml:space="preserve">
+    <value>Indirizzi di rete</value>
+  </data>
+  <data name="desc_protocols" xml:space="preserve">
+    <value>Protocolli di rete</value>
+  </data>
+  <data name="desc_rpc" xml:space="preserve">
+    <value>Programmi RPC</value>
+  </data>
+  <data name="desc_services" xml:space="preserve">
+    <value>Servizi di rete</value>
+  </data>
+  <data name="desc_sendmailvars" xml:space="preserve">
+    <value>Variabili di Sendmail</value>
+  </data>
+  <data name="desc_publickey" xml:space="preserve">
+    <value>Chiavi pubbliche</value>
+  </data>
+  <data name="desc_publickeys" xml:space="preserve">
+    <value>Chiavi pubbliche</value>
+  </data>
+  <data name="desc_bootparams" xml:space="preserve">
+    <value>Parametri di avvio</value>
+  </data>
+  <data name="desc_shadow" xml:space="preserve">
+    <value>Password shadow Unix</value>
+  </data>
+  <data name="desc_gshadow" xml:space="preserve">
+    <value>Password di gruppo Unix</value>
+  </data>
+  <data name="desc_netmasks" xml:space="preserve">
+    <value>maschere di rete</value>
+  </data>
+  <data name="desc_printcap" xml:space="preserve">
+    <value>stampanti</value>
+  </data>
+  <data name="desc_adjunct" xml:space="preserve">
+    <value>Informazioni extra per l'utente</value>
+  </data>
+  <data name="desc_printers" xml:space="preserve">
+    <value>stampanti</value>
+  </data>
+  <data name="desc_ipnodes" xml:space="preserve">
+    <value>Nodi IP</value>
+  </data>
+  <data name="desc_timezone" xml:space="preserve">
+    <value>Fusi orari</value>
+  </data>
+  <data name="desc_locale" xml:space="preserve">
+    <value>locali</value>
+  </data>
+  <data name="eswitch_title" xml:space="preserve">
+    <value>Modifica servizio</value>
+  </data>
+  <data name="eswitch_egone" xml:space="preserve">
+    <value>Il servizio non esiste!</value>
+  </data>
+  <data name="eswitch_header" xml:space="preserve">
+    <value>Dettagli del servizio</value>
+  </data>
+  <data name="eswitch_name" xml:space="preserve">
+    <value>Nome di Servizio</value>
+  </data>
+  <data name="eswitch_0" xml:space="preserve">
+    <value>Prima fonte di dati</value>
+  </data>
+  <data name="eswitch_1" xml:space="preserve">
+    <value>Seconda fonte di dati</value>
+  </data>
+  <data name="eswitch_2" xml:space="preserve">
+    <value>Terza fonte di dati</value>
+  </data>
+  <data name="eswitch_3" xml:space="preserve">
+    <value>Quarta fonte di dati</value>
+  </data>
+  <data name="eswitch_4" xml:space="preserve">
+    <value>Quinta fonte di dati</value>
+  </data>
+  <data name="eswitch_nth" xml:space="preserve">
+    <value>Origine dati $1 </value>
+  </data>
+  <data name="eswitch_success" xml:space="preserve">
+    <value>Al successo</value>
+  </data>
+  <data name="eswitch_notfound" xml:space="preserve">
+    <value>Se non trovato</value>
+  </data>
+  <data name="eswitch_unavail" xml:space="preserve">
+    <value>Se non disponibile</value>
+  </data>
+  <data name="eswitch_tryagain" xml:space="preserve">
+    <value>temporaneamente non disponibile</value>
+  </data>
+  <data name="eswitch_return" xml:space="preserve">
+    <value>Risultato di ritorno</value>
+  </data>
+  <data name="eswitch_continue" xml:space="preserve">
+    <value>Continua la ricerca</value>
+  </data>
+  <data name="eswitch_none" xml:space="preserve">
+    <value>Nessuna</value>
+  </data>
+  <data name="eswitch_err" xml:space="preserve">
+    <value>Impossibile salvare il servizio</value>
+  </data>
+  <data name="eswitch_enone" xml:space="preserve">
+    <value>Nessuna fonte selezionata!</value>
+  </data>
+  <data name="log_server" xml:space="preserve">
+    <value>Configurazione del server LDAP modificata</value>
+  </data>
+  <data name="log_base" xml:space="preserve">
+    <value>Basi di ricerca LDAP modificate</value>
+  </data>
+  <data name="log_pam" xml:space="preserve">
+    <value>Opzioni di autenticazione modificate</value>
+  </data>
+  <data name="log_modify_switch" xml:space="preserve">
+    <value>Servizio modificato $1 </value>
+  </data>
+  <data name="log_atboot" xml:space="preserve">
+    <value>Demone client LDAP abilitato all'avvio</value>
+  </data>
+  <data name="log_delboot" xml:space="preserve">
+    <value>Demone client LDAP disabilitato all'avvio</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Demone client LDAP avviato</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Demone client LDAP arrestato</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>Demone client LDAP riavviato</value>
+  </data>
+  <data name="check_title" xml:space="preserve">
+    <value>Convalida della configurazione LDAP</value>
+  </data>
+  <data name="check_base" xml:space="preserve">
+    <value>Trovare la base LDAP per gli utenti ..</value>
+  </data>
+  <data name="check_ebase" xml:space="preserve">
+    <value>.. nessuna base trovata nella configurazione client!</value>
+  </data>
+  <data name="check_based" xml:space="preserve">
+    <value>.. trovata base $1.</value>
+  </data>
+  <data name="check_connect" xml:space="preserve">
+    <value>Connessione al server LDAP ..</value>
+  </data>
+  <data name="check_econnect" xml:space="preserve">
+    <value>.. connessione non riuscita : $1 </value>
+  </data>
+  <data name="check_connected" xml:space="preserve">
+    <value>.. connesso a $1 </value>
+  </data>
+  <data name="check_search" xml:space="preserve">
+    <value>Ricerca utenti ..</value>
+  </data>
+  <data name="check_esearch" xml:space="preserve">
+    <value>.. ricerca non riuscita : $1 </value>
+  </data>
+  <data name="check_eusers" xml:space="preserve">
+    <value>.. nessun utente trovato nella base $1.</value>
+  </data>
+  <data name="check_found" xml:space="preserve">
+    <value>.. trovati $1 utenti.</value>
+  </data>
+  <data name="check_nss" xml:space="preserve">
+    <value>Verifica del servizio &lt;b&gt;Utenti Unix&lt;/b&gt;.</value>
+  </data>
+  <data name="check_nssok" xml:space="preserve">
+    <value>.. il servizio è impostato per eseguire query su LDAP.</value>
+  </data>
+  <data name="check_enss" xml:space="preserve">
+    <value>.. il servizio non è configurato per utilizzare LDAP.</value>
+  </data>
+  <data name="check_match" xml:space="preserve">
+    <value>In cerca dell'utente Unix $1 ..</value>
+  </data>
+  <data name="check_ematch" xml:space="preserve">
+    <value>.. l'utente non esiste.</value>
+  </data>
+  <data name="check_matched" xml:space="preserve">
+    <value>.. utente trovato correttamente.</value>
+  </data>
+  <data name="check_done" xml:space="preserve">
+    <value>Il tuo sistema è stato configurato con successo come client LDAP!</value>
+  </data>
+</root>

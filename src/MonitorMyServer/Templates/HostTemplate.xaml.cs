@@ -15,17 +15,17 @@ namespace Doods.Xam.MonitorMyServer.Templates
             InitializeComponent();
         }
 
+        public ICommand CommandAction
+        {
+            get => (ICommand) GetValue(CommandActionProperty);
+            set => SetValue(CommandActionProperty, value);
+        }
+
 
         protected override void OnBindingContextChanged()
         {
             var toto = BindingContext;
             base.OnBindingContextChanged();
-        }
-
-        public ICommand CommandAction
-        {
-            get => (ICommand) GetValue(CommandActionProperty);
-            set => SetValue(CommandActionProperty, value);
         }
     }
 }

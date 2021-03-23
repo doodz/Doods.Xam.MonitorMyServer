@@ -9,9 +9,9 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
         public DataTemplate OmvTemplate { get; set; }
         public DataTemplate SynoTemplate { get; set; }
         public DataTemplate RpiTemplate { get; set; }
+
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-
             //if (item is HostViewModel host)
             //{
             //    if (host.IsOmvServer)

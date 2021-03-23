@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>إدارة الطابعة</value>
+  </data>
+  <data name="index_header" xml:space="preserve">
+    <value>الطابعات المتاحة</value>
+  </data>
+  <data name="index_name" xml:space="preserve">
+    <value>طابعة</value>
+  </data>
+  <data name="index_desc" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="index_to" xml:space="preserve">
+    <value>طباعة إلى</value>
+  </data>
+  <data name="index_driver" xml:space="preserve">
+    <value>سائق</value>
+  </data>
+  <data name="index_enabled" xml:space="preserve">
+    <value>ممكن؟</value>
+  </data>
+  <data name="index_accepting" xml:space="preserve">
+    <value>قبول؟</value>
+  </data>
+  <data name="index_jobs" xml:space="preserve">
+    <value>وظائف</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>لا توجد طابعات مثبتة على هذا النظام.</value>
+  </data>
+  <data name="index_list" xml:space="preserve">
+    <value>قائمة ..</value>
+  </data>
+  <data name="index_jlist" xml:space="preserve">
+    <value>وظائف ..</value>
+  </data>
+  <data name="index_jcount" xml:space="preserve">
+    <value>$1 وظائف ..</value>
+  </data>
+  <data name="index_add" xml:space="preserve">
+    <value>أضف طابعة جديدة.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>إيقاف جدولة</value>
+  </data>
+  <data name="index_stopmsg" xml:space="preserve">
+    <value>انقر فوق هذا الزر لإيقاف عملية جدولة الطباعة الجارية. سيمنع هذا أي مستخدمين محليين أو عن بعد من الطباعة على نظامك.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>بدء المجدول</value>
+  </data>
+  <data name="index_startmsg" xml:space="preserve">
+    <value>انقر فوق هذا الزر لبدء عملية جدولة الطباعة. سيسمح ذلك للمستخدمين المحليين والبعيدين بالطباعة على نظامك.</value>
+  </data>
+  <data name="index_restart" xml:space="preserve">
+    <value>إعادة تشغيل المجدول</value>
+  </data>
+  <data name="index_restartmsg" xml:space="preserve">
+    <value>انقر فوق هذا الزر لإعادة تشغيل عملية جدولة الطباعة. سيؤدي ذلك إلى فرض تكوين الطباعة الحالي ليتم تطبيقه.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>قائمة الطابعات</value>
+  </data>
+  <data name="index_style" xml:space="preserve">
+    <value>نظام الطباعة:$1</value>
+  </data>
+  <data name="index_cluster" xml:space="preserve">
+    <value>خوادم الكتلة</value>
+  </data>
+  <data name="index_clusterdesc" xml:space="preserve">
+    <value>انقر فوق هذا الزر لإعداد خوادم Webmin إضافية سيتم إنشاء الطابعات وتحديثها وحذفها عليها.</value>
+  </data>
+  <data name="index_delete" xml:space="preserve">
+    <value>حذف الطابعات المحددة</value>
+  </data>
+  <data name="style_solaris" xml:space="preserve">
+    <value>سولاريس</value>
+  </data>
+  <data name="style_linux" xml:space="preserve">
+    <value>لينكس LPR</value>
+  </data>
+  <data name="style_freebsd" xml:space="preserve">
+    <value>FreeBSD LPR</value>
+  </data>
+  <data name="style_hpux" xml:space="preserve">
+    <value>HPUX</value>
+  </data>
+  <data name="style_lprng" xml:space="preserve">
+    <value>LPRng</value>
+  </data>
+  <data name="style_unixware" xml:space="preserve">
+    <value>UnixWare</value>
+  </data>
+  <data name="style_cups" xml:space="preserve">
+    <value>كؤوس</value>
+  </data>
+  <data name="style_irix" xml:space="preserve">
+    <value>IRIX</value>
+  </data>
+  <data name="style_aix" xml:space="preserve">
+    <value>AIX</value>
+  </data>
+  <data name="edit_eedit" xml:space="preserve">
+    <value>لا يسمح لك بتحرير هذه الطابعة</value>
+  </data>
+  <data name="edit_eadd" xml:space="preserve">
+    <value>لا يسمح لك بإضافة طابعات</value>
+  </data>
+  <data name="edit_add" xml:space="preserve">
+    <value>إنشاء طابعة</value>
+  </data>
+  <data name="edit_edit" xml:space="preserve">
+    <value>تحرير الطابعة</value>
+  </data>
+  <data name="edit_conf" xml:space="preserve">
+    <value>تكوين الطابعة</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="edit_acc" xml:space="preserve">
+    <value>قبول الطلبات؟</value>
+  </data>
+  <data name="edit_why" xml:space="preserve">
+    <value>لا لماذا لا</value>
+  </data>
+  <data name="edit_desc" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="edit_ena" xml:space="preserve">
+    <value>تمكين الطباعة؟</value>
+  </data>
+  <data name="edit_acl" xml:space="preserve">
+    <value>صلاحية التحكم صلاحية الدخول</value>
+  </data>
+  <data name="edit_allow" xml:space="preserve">
+    <value>اسمح للجميع</value>
+  </data>
+  <data name="edit_deny" xml:space="preserve">
+    <value>حرمان الجميع</value>
+  </data>
+  <data name="edit_allowu" xml:space="preserve">
+    <value>السماح للمستخدمين المدرجين ..</value>
+  </data>
+  <data name="edit_denyu" xml:space="preserve">
+    <value>رفض المستخدمين المدرجين ..</value>
+  </data>
+  <data name="edit_banner" xml:space="preserve">
+    <value>طباعة الشعار؟</value>
+  </data>
+  <data name="edit_opt" xml:space="preserve">
+    <value>اختياري</value>
+  </data>
+  <data name="edit_default" xml:space="preserve">
+    <value>الطابعة الافتراضية؟</value>
+  </data>
+  <data name="edit_already" xml:space="preserve">
+    <value>بالفعل الطابعة الافتراضية</value>
+  </data>
+  <data name="edit_max" xml:space="preserve">
+    <value>الحد الأقصى لحجم مهمة الطباعة</value>
+  </data>
+  <data name="edit_unlimited" xml:space="preserve">
+    <value>غير محدود</value>
+  </data>
+  <data name="edit_dacc" xml:space="preserve">
+    <value>يقبل السائق</value>
+  </data>
+  <data name="edit_dtext" xml:space="preserve">
+    <value>نص</value>
+  </data>
+  <data name="edit_dpost" xml:space="preserve">
+    <value>بوستسكريبت</value>
+  </data>
+  <data name="edit_dother" xml:space="preserve">
+    <value>آخر</value>
+  </data>
+  <data name="edit_alt" xml:space="preserve">
+    <value>أسماء طابعة بديلة</value>
+  </data>
+  <data name="edit_dest" xml:space="preserve">
+    <value>وجهة الطباعة</value>
+  </data>
+  <data name="edit_dev" xml:space="preserve">
+    <value>الجهاز المحلي</value>
+  </data>
+  <data name="edit_file" xml:space="preserve">
+    <value>ملف محلي</value>
+  </data>
+  <data name="edit_remote" xml:space="preserve">
+    <value>خادم Unix البعيد</value>
+  </data>
+  <data name="edit_rqueue" xml:space="preserve">
+    <value>طابعة</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>اكتب</value>
+  </data>
+  <data name="edit_smb" xml:space="preserve">
+    <value>خادم Windows البعيد</value>
+  </data>
+  <data name="edit_share" xml:space="preserve">
+    <value>طابعة</value>
+  </data>
+  <data name="edit_user" xml:space="preserve">
+    <value>المستعمل</value>
+  </data>
+  <data name="edit_pass" xml:space="preserve">
+    <value>كلمه السر</value>
+  </data>
+  <data name="edit_wgroup" xml:space="preserve">
+    <value>مجموعة العمل</value>
+  </data>
+  <data name="edit_hpnp" xml:space="preserve">
+    <value>خادم HPNP البعيد</value>
+  </data>
+  <data name="edit_port" xml:space="preserve">
+    <value>ميناء</value>
+  </data>
+  <data name="edit_direct" xml:space="preserve">
+    <value>اتصال TCP مباشر</value>
+  </data>
+  <data name="edit_dport" xml:space="preserve">
+    <value>ميناء</value>
+  </data>
+  <data name="edit_driver" xml:space="preserve">
+    <value>برنامج تشغيل الطابعة</value>
+  </data>
+  <data name="edit_check" xml:space="preserve">
+    <value>تحقق ما إذا كان الخادم البعيد قيد التشغيل؟</value>
+  </data>
+  <data name="blocks" xml:space="preserve">
+    <value>الكتل</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>فشل في حفظ الطابعة</value>
+  </data>
+  <data name="save_eadd" xml:space="preserve">
+    <value>لا يسمح لك بإضافة طابعات</value>
+  </data>
+  <data name="save_eedit" xml:space="preserve">
+    <value>لا يسمح لك بتحرير هذه الطابعة</value>
+  </data>
+  <data name="save_ename" xml:space="preserve">
+    <value>إن '$1' ليس اسم طابعة صالحًا</value>
+  </data>
+  <data name="save_edup" xml:space="preserve">
+    <value>توجد طابعة تسمى "$1" بالفعل</value>
+  </data>
+  <data name="save_eallow" xml:space="preserve">
+    <value>لم يتم إدخال مستخدمين للسماح</value>
+  </data>
+  <data name="save_edeny" xml:space="preserve">
+    <value>لم يتم إدخال أي مستخدمين للرفض</value>
+  </data>
+  <data name="save_euser" xml:space="preserve">
+    <value>المستخدم '$1' غير موجود</value>
+  </data>
+  <data name="save_etype" xml:space="preserve">
+    <value>يجب تحديد نوع واحد على الأقل ليقبله برنامج التشغيل هذا</value>
+  </data>
+  <data name="save_emax" xml:space="preserve">
+    <value>يجب أن يكون الحد الأقصى لحجم مهمة الطباعة عددًا صحيحًا</value>
+  </data>
+  <data name="save_efile" xml:space="preserve">
+    <value>"$1" غير موجود</value>
+  </data>
+  <data name="save_erhost" xml:space="preserve">
+    <value>المضيف البعيد '$1' غير موجود</value>
+  </data>
+  <data name="save_erport" xml:space="preserve">
+    <value>المنفذ البعيد '$1' غير صالح</value>
+  </data>
+  <data name="save_erqueue" xml:space="preserve">
+    <value>إن '$1' ليس اسم قائمة انتظار بعيد صالح</value>
+  </data>
+  <data name="save_eremote" xml:space="preserve">
+    <value>لا يمكن استخدام برامج التشغيل مع طابعات Unix البعيدة</value>
+  </data>
+  <data name="save_edhost" xml:space="preserve">
+    <value>المضيف المباشر '$1' غير موجود</value>
+  </data>
+  <data name="save_edport" xml:space="preserve">
+    <value>منفذ مباشر مفقود أو غير صالح</value>
+  </data>
+  <data name="save_evalid" xml:space="preserve">
+    <value>لم يسمح نظام الطباعة بهذه الطابعة</value>
+  </data>
+  <data name="save_errslave" xml:space="preserve">
+    <value>أنشأت الطابعة "موافق" على هذا النظام ، ولكن حدثت الأخطاء التالية في أنظمة المجموعة :$1</value>
+  </data>
+  <data name="save_egone" xml:space="preserve">
+    <value>لم يتم العثور على طابعة باسم '$1'</value>
+  </data>
+  <data name="save_errdelslave" xml:space="preserve">
+    <value>حذفت الطابعة موافق على هذا النظام ، ولكن حدثت الأخطاء التالية في أنظمة المجموعة :$1</value>
+  </data>
+  <data name="jobs_title" xml:space="preserve">
+    <value>مهام الطباعة</value>
+  </data>
+  <data name="jobs_header" xml:space="preserve">
+    <value>مهام الطباعة على$1</value>
+  </data>
+  <data name="jobs_id" xml:space="preserve">
+    <value>معرف الوظيفة</value>
+  </data>
+  <data name="jobs_size" xml:space="preserve">
+    <value>بحجم</value>
+  </data>
+  <data name="jobs_by" xml:space="preserve">
+    <value>مقدم من</value>
+  </data>
+  <data name="jobs_when" xml:space="preserve">
+    <value>تم الإرسال في</value>
+  </data>
+  <data name="jobs_file" xml:space="preserve">
+    <value>اسم الملف</value>
+  </data>
+  <data name="jobs_cancel" xml:space="preserve">
+    <value>انقر فوق معرف وظيفة من القائمة أعلاه للإلغاء.</value>
+  </data>
+  <data name="jobs_cancelview" xml:space="preserve">
+    <value>انقر فوق معرّف وظيفة من القائمة أعلاه للإلغاء ، أو انقر فوق حجم المهمة لعرضه.</value>
+  </data>
+  <data name="jobs_none" xml:space="preserve">
+    <value>لا تحتوي الطابعة$1 على أي مهام معلقة.</value>
+  </data>
+  <data name="jobs_all" xml:space="preserve">
+    <value>قم بإلغاء جميع مهام الطباعة</value>
+  </data>
+  <data name="jobs_bytes" xml:space="preserve">
+    <value>بايت</value>
+  </data>
+  <data name="jobs_test" xml:space="preserve">
+    <value>طباعة صفحة الاختبار</value>
+  </data>
+  <data name="jobs_cancelsel" xml:space="preserve">
+    <value>إلغاء الوظائف المختارة</value>
+  </data>
+  <data name="jobs_on" xml:space="preserve">
+    <value>على الطابعة$1</value>
+  </data>
+  <data name="jobs_return" xml:space="preserve">
+    <value>قائمة مهام الطباعة</value>
+  </data>
+  <data name="cancel_ecannot" xml:space="preserve">
+    <value>لا يسمح لك بإلغاء مهام الطباعة</value>
+  </data>
+  <data name="cancel_err" xml:space="preserve">
+    <value>فشل في إلغاء مهمة الطباعة</value>
+  </data>
+  <data name="cancel_egone" xml:space="preserve">
+    <value>لم تعد مهمة الطباعة$1 موجودة</value>
+  </data>
+  <data name="view_ecannot" xml:space="preserve">
+    <value>لا يمكنك عرض مهمة الطباعة هذه</value>
+  </data>
+  <data name="view_egone" xml:space="preserve">
+    <value>لم تعد مهمة الطباعة هذه موجودة</value>
+  </data>
+  <data name="start_ecannot" xml:space="preserve">
+    <value>غير مسموح لك ببدء المجدول</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>فشل بدء المجدول</value>
+  </data>
+  <data name="stop_ecannot" xml:space="preserve">
+    <value>غير مسموح لك بإيقاف المجدول</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>فشل في إيقاف المجدول</value>
+  </data>
+  <data name="restart_ecannot" xml:space="preserve">
+    <value>غير مسموح لك بإعادة تشغيل المجدول</value>
+  </data>
+  <data name="restart_err" xml:space="preserve">
+    <value>فشل إعادة تشغيل المجدول</value>
+  </data>
+  <data name="webmin_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="webmin_nonemsg" xml:space="preserve">
+    <value>بوستسكريبت أو طابعة نصية</value>
+  </data>
+  <data name="webmin_remotemsg" xml:space="preserve">
+    <value>طابعة عن بعد</value>
+  </data>
+  <data name="webmin_model" xml:space="preserve">
+    <value>نموذج</value>
+  </data>
+  <data name="webmin_prog" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="webmin_driver" xml:space="preserve">
+    <value>برنامج تشغيل Webmin</value>
+  </data>
+  <data name="webmin_uniprint" xml:space="preserve">
+    <value>سائق يونيبرنت</value>
+  </data>
+  <data name="webmin_edrivers" xml:space="preserve">
+    <value>فشل في الحصول على برامج تشغيل من$1. برامج تشغيل الطابعة Webmin باستخدام ghostscript غير متوفرة</value>
+  </data>
+  <data name="webmin_egs" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1. برامج تشغيل الطابعة Webmin باستخدام ghostscript غير متوفرة</value>
+  </data>
+  <data name="webmin_edriver" xml:space="preserve">
+    <value>"$1" غير موجود</value>
+  </data>
+  <data name="caldera_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="caldera_nonemsg" xml:space="preserve">
+    <value>طابعة عن بعد أو الخام</value>
+  </data>
+  <data name="caldera_prog" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="caldera_coas" xml:space="preserve">
+    <value>سائق COAS</value>
+  </data>
+  <data name="caldera_printer" xml:space="preserve">
+    <value>الطابعة والدقة</value>
+  </data>
+  <data name="caldera_eof" xml:space="preserve">
+    <value>إرسال EOF؟</value>
+  </data>
+  <data name="caldera_paper" xml:space="preserve">
+    <value>حجم الورق</value>
+  </data>
+  <data name="caldera_double" xml:space="preserve">
+    <value>طباعة على الوجهين؟</value>
+  </data>
+  <data name="caldera_gsopts" xml:space="preserve">
+    <value>خيارات GS إضافية</value>
+  </data>
+  <data name="caldera_uniprint" xml:space="preserve">
+    <value>سائق يونيبرنت</value>
+  </data>
+  <data name="caldera_eprog" xml:space="preserve">
+    <value>"$1" غير موجود</value>
+  </data>
+  <data name="caldera_edriver" xml:space="preserve">
+    <value>لم يتم تحديد برنامج تشغيل الطابعة</value>
+  </data>
+  <data name="caldera_eres" xml:space="preserve">
+    <value>لم يتم تحديد قرار</value>
+  </data>
+  <data name="redhat_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="redhat_nonemsg" xml:space="preserve">
+    <value>بوستسكريبت أو طابعة نصية</value>
+  </data>
+  <data name="redhat_prog" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="redhat_driver" xml:space="preserve">
+    <value>سائق Redhat</value>
+  </data>
+  <data name="redhat_printer" xml:space="preserve">
+    <value>الطابعة والدقة</value>
+  </data>
+  <data name="redhat_eof" xml:space="preserve">
+    <value>إرسال EOF؟</value>
+  </data>
+  <data name="redhat_paper" xml:space="preserve">
+    <value>حجم الورق</value>
+  </data>
+  <data name="redhat_pages" xml:space="preserve">
+    <value>الصفحات لكل صفحة الإخراج</value>
+  </data>
+  <data name="redhat_gsopts" xml:space="preserve">
+    <value>خيارات GS إضافية</value>
+  </data>
+  <data name="redhat_hmargin" xml:space="preserve">
+    <value>الهامش الأيمن/الأيسر</value>
+  </data>
+  <data name="redhat_vmargin" xml:space="preserve">
+    <value>الهامش العلوي/السفلي</value>
+  </data>
+  <data name="redhat_crlf" xml:space="preserve">
+    <value>هل تريد إصلاح نص يخطو الدرج؟</value>
+  </data>
+  <data name="redhat_eprog" xml:space="preserve">
+    <value>"$1" غير موجود</value>
+  </data>
+  <data name="redhat_edriver" xml:space="preserve">
+    <value>لم يتم تحديد برنامج تشغيل الطابعة</value>
+  </data>
+  <data name="redhat_ehmargin" xml:space="preserve">
+    <value>الهامش الأيمن/الأيسر مفقود أو غير صالح</value>
+  </data>
+  <data name="redhat_evmargin" xml:space="preserve">
+    <value>الهامش العلوي/السفلي مفقود أو غير صالح</value>
+  </data>
+  <data name="redhat_eres" xml:space="preserve">
+    <value>لم يتم تحديد قرار</value>
+  </data>
+  <data name="redhat_printer2" xml:space="preserve">
+    <value>طراز الطابعة وبرنامج التشغيل</value>
+  </data>
+  <data name="suse_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="suse_nonemsg" xml:space="preserve">
+    <value>بوستسكريبت أو طابعة نصية</value>
+  </data>
+  <data name="suse_prog" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="suse_driver" xml:space="preserve">
+    <value>سائق APSfilter</value>
+  </data>
+  <data name="suse_printer" xml:space="preserve">
+    <value>نوع الطابعة</value>
+  </data>
+  <data name="suse_res" xml:space="preserve">
+    <value>القرار في DPI</value>
+  </data>
+  <data name="suse_colour" xml:space="preserve">
+    <value>طابعة ملونة؟</value>
+  </data>
+  <data name="suse_paper" xml:space="preserve">
+    <value>حجم الورق</value>
+  </data>
+  <data name="suse_method" xml:space="preserve">
+    <value>طريقة التصفية</value>
+  </data>
+  <data name="suse_auto" xml:space="preserve">
+    <value>تلقائي</value>
+  </data>
+  <data name="suse_ascii" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="suse_raw" xml:space="preserve">
+    <value>الخام</value>
+  </data>
+  <data name="suse_extra" xml:space="preserve">
+    <value>خيارات إضافية ghostscript</value>
+  </data>
+  <data name="suse_yast2" xml:space="preserve">
+    <value>سائق YAST2</value>
+  </data>
+  <data name="suse_edriver" xml:space="preserve">
+    <value>لم يتم تحديد نوع طابعة</value>
+  </data>
+  <data name="suse_eres" xml:space="preserve">
+    <value>قرار مفقود أو غير صالح</value>
+  </data>
+  <data name="estop" xml:space="preserve">
+    <value>فشل إيقاف lpd :$1</value>
+  </data>
+  <data name="acl_printers" xml:space="preserve">
+    <value>الطابعات التي يمكن لهذا المستخدم تكوينها</value>
+  </data>
+  <data name="acl_add" xml:space="preserve">
+    <value>يمكن إضافة طابعات جديدة؟</value>
+  </data>
+  <data name="acl_cancel" xml:space="preserve">
+    <value>يمكن إلغاء مهام الطباعة؟</value>
+  </data>
+  <data name="acl_stop" xml:space="preserve">
+    <value>يمكن التوقف أو بدء جدولة؟</value>
+  </data>
+  <data name="acl_restart" xml:space="preserve">
+    <value>إعادة التشغيل فقط</value>
+  </data>
+  <data name="acl_listed" xml:space="preserve">
+    <value>فقط على طابعات مختارة ..</value>
+  </data>
+  <data name="acl_pall" xml:space="preserve">
+    <value>جميع الطابعات</value>
+  </data>
+  <data name="acl_psel" xml:space="preserve">
+    <value>المحدد ..</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>هل تريد إظهار الطابعات غير القابلة للتكوين؟</value>
+  </data>
+  <data name="acl_test" xml:space="preserve">
+    <value>يمكن طباعة صفحات الاختبار؟</value>
+  </data>
+  <data name="acl_user" xml:space="preserve">
+    <value>إدارة مهام الطباعة التي يملكها</value>
+  </data>
+  <data name="acl_user_all" xml:space="preserve">
+    <value>جميع المستخدمين</value>
+  </data>
+  <data name="acl_user_this" xml:space="preserve">
+    <value>مستخدم Webmin الحالي</value>
+  </data>
+  <data name="acl_delete" xml:space="preserve">
+    <value>يمكن حذف الطابعات؟</value>
+  </data>
+  <data name="acl_cluster" xml:space="preserve">
+    <value>يمكن إدارة مجموعة الطابعة؟</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>توقف جدولة الطباعة</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>بدأ جدولة الطباعة</value>
+  </data>
+  <data name="log_restart" xml:space="preserve">
+    <value>إعادة جدولة الطباعة</value>
+  </data>
+  <data name="log_cancel_job" xml:space="preserve">
+    <value>تم إلغاء مهمة الطباعة$2 على$1</value>
+  </data>
+  <data name="log_cancel_all" xml:space="preserve">
+    <value>تم إلغاء كافة مهام الطباعة في$1</value>
+  </data>
+  <data name="log_cancel_sel" xml:space="preserve">
+    <value>تم إلغاء مهام طباعة$2 على$1</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>تم إنشاء الطابعة$1 على$2</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>طابعة معدلة$1 على$2</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>الطابعة المحذوفة$1 على$2</value>
+  </data>
+  <data name="log_create_l" xml:space="preserve">
+    <value>تم إنشاء طابعة$3 $1 على$2</value>
+  </data>
+  <data name="log_modify_l" xml:space="preserve">
+    <value>طابعة$3 معدلة$1 على$2</value>
+  </data>
+  <data name="log_delete_l" xml:space="preserve">
+    <value>تم حذف طابعة$3 $1 على$2</value>
+  </data>
+  <data name="linux_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي$1</value>
+  </data>
+  <data name="linux_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1 (COM$1)</value>
+  </data>
+  <data name="linux_null" xml:space="preserve">
+    <value>جهاز فارغ</value>
+  </data>
+  <data name="linux_usb" xml:space="preserve">
+    <value>طابعة USB$1</value>
+  </data>
+  <data name="linux_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على نظامك ، مما يشير إلى أن نظام طباعة Linux غير مثبت.</value>
+  </data>
+  <data name="linux_espool" xml:space="preserve">
+    <value>دليل التخزين المؤقت $1 غير موجود على نظامك ، مما يشير إلى أن نظام طباعة Linux غير مثبت.</value>
+  </data>
+  <data name="freebsd_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي</value>
+  </data>
+  <data name="freebsd_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1 (COM$1)</value>
+  </data>
+  <data name="freebsd_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على النظام الخاص بك ، مما يشير إلى أن نظام الطباعة FreeBSD غير مثبت.</value>
+  </data>
+  <data name="freebsd_espool" xml:space="preserve">
+    <value>دليل التخزين المؤقت $1 غير موجود على نظامك ، مما يشير إلى أن نظام طباعة FreeBSD غير مثبت.</value>
+  </data>
+  <data name="openbsd_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي</value>
+  </data>
+  <data name="openbsd_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1 (COM$1)</value>
+  </data>
+  <data name="unixware_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي$1</value>
+  </data>
+  <data name="unixware_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1</value>
+  </data>
+  <data name="unixware_null" xml:space="preserve">
+    <value>جهاز فارغ</value>
+  </data>
+  <data name="unixware_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على النظام الخاص بك ، مما يشير إلى أن نظام الطباعة UnixWare غير مثبت.</value>
+  </data>
+  <data name="hpux_paralel" xml:space="preserve">
+    <value>$1 الموازي</value>
+  </data>
+  <data name="hpux_serial" xml:space="preserve">
+    <value>المسلسل$1</value>
+  </data>
+  <data name="hpux_null" xml:space="preserve">
+    <value>جهاز فارغ</value>
+  </data>
+  <data name="hpux_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على نظامك ، مما يشير إلى أن نظام طباعة HPUX غير مثبت.</value>
+  </data>
+  <data name="hpux_eiface" xml:space="preserve">
+    <value>دليل البرامج النصية للواجهة$1 غير موجود على نظامك ، مما يشير إلى أن نظام طباعة HPUX غير مثبت.</value>
+  </data>
+  <data name="lprng_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي$1</value>
+  </data>
+  <data name="lprng_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1 (COM$1)</value>
+  </data>
+  <data name="lprng_null" xml:space="preserve">
+    <value>جهاز فارغ</value>
+  </data>
+  <data name="lprng_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على النظام الخاص بك ، مما يشير إلى أن نظام طباعة LPRng غير مثبت.</value>
+  </data>
+  <data name="lprng_espool" xml:space="preserve">
+    <value>دليل التخزين المؤقت $1 غير موجود على نظامك ، مما يشير إلى أن نظام طباعة LPRng غير مثبت.</value>
+  </data>
+  <data name="solaris_paralel" xml:space="preserve">
+    <value>المنفذ المتوازي</value>
+  </data>
+  <data name="solaris_uparalel" xml:space="preserve">
+    <value>منفذ Ultra 5/10 الموازي</value>
+  </data>
+  <data name="solaris_serial" xml:space="preserve">
+    <value>المنفذ التسلسلي$1</value>
+  </data>
+  <data name="solaris_null" xml:space="preserve">
+    <value>جهاز فارغ</value>
+  </data>
+  <data name="solaris_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على نظامك ، مما يشير إلى أن نظام طباعة Solaris غير مثبت.</value>
+  </data>
+  <data name="test_title" xml:space="preserve">
+    <value>طباعة صفحة الاختبار</value>
+  </data>
+  <data name="test_ecannot" xml:space="preserve">
+    <value>لا يسمح لك بطباعة صفحات الاختبار</value>
+  </data>
+  <data name="test_desc" xml:space="preserve">
+    <value>يسمح لك هذا النموذج بطباعة صفحة اختبار للطابعة$1. حدد نوع الصفحة التي تريد طباعتها :</value>
+  </data>
+  <data name="test_0" xml:space="preserve">
+    <value>صفحة بوستسكريبت أبيض وأسود</value>
+  </data>
+  <data name="test_1" xml:space="preserve">
+    <value>صفحة بوستسكريبت ملونة</value>
+  </data>
+  <data name="test_2" xml:space="preserve">
+    <value>نص ASCII عادي</value>
+  </data>
+  <data name="test_3" xml:space="preserve">
+    <value>أي ملف تم تحميله</value>
+  </data>
+  <data name="test_print" xml:space="preserve">
+    <value>طباعة الصفحة</value>
+  </data>
+  <data name="test_exec" xml:space="preserve">
+    <value>طباعة صفحة الاختبار بالأمر$1 ..</value>
+  </data>
+  <data name="test_failed" xml:space="preserve">
+    <value>.. فشل الأمر!</value>
+  </data>
+  <data name="test_ok" xml:space="preserve">
+    <value>.. اكتمل الأمر.</value>
+  </data>
+  <data name="cups_none" xml:space="preserve">
+    <value>لا يوجد</value>
+  </data>
+  <data name="cups_nonemsg" xml:space="preserve">
+    <value>طابعة عن بعد أو الخام</value>
+  </data>
+  <data name="cups_prog" xml:space="preserve">
+    <value>برنامج</value>
+  </data>
+  <data name="cups_driver" xml:space="preserve">
+    <value>سائق CUPS</value>
+  </data>
+  <data name="cups_eprog" xml:space="preserve">
+    <value>إن '$1' ليس برنامجًا صالحًا</value>
+  </data>
+  <data name="cups_opts" xml:space="preserve">
+    <value>خيارات$1</value>
+  </data>
+  <data name="cups_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على نظامك ، مما يشير إلى أن نظام طباعة CUPS غير مثبت.</value>
+  </data>
+  <data name="irix_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على الأمر$1 على النظام الخاص بك ، مما يشير إلى أن نظام طباعة IRIX غير مثبت.</value>
+  </data>
+  <data name="irix_eiface" xml:space="preserve">
+    <value>دليل البرامج النصية للواجهة$1 غير موجود على نظامك ، مما يشير إلى أن نظام طباعة IRIX غير مثبت.</value>
+  </data>
+  <data name="aix_port" xml:space="preserve">
+    <value>منفذ الطابعة$1</value>
+  </data>
+  <data name="aix_edesc" xml:space="preserve">
+    <value>وصف غير صالح - يسمح فقط باستخدام الأحرف والأرقام ، ولا توجد مسافات</value>
+  </data>
+  <data name="aix_ecmd" xml:space="preserve">
+    <value>لم يتم العثور على ملقم طابعة AIX$1. ربما لم يتم تثبيته أو أن هناك نظام طباعة آخر قيد الاستخدام.</value>
+  </data>
+  <data name="cluster_title" xml:space="preserve">
+    <value>خوادم الطابعة العنقودية</value>
+  </data>
+  <data name="cluster_none" xml:space="preserve">
+    <value>لم تتم إضافة أي خوادم إلى مجموعة الطابعة حتى الآن.</value>
+  </data>
+  <data name="cluster_host" xml:space="preserve">
+    <value>اسم المضيف</value>
+  </data>
+  <data name="cluster_desc" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="cluster_os" xml:space="preserve">
+    <value>نظام التشغيل</value>
+  </data>
+  <data name="cluster_add" xml:space="preserve">
+    <value>إضافة خادم</value>
+  </data>
+  <data name="cluster_gadd" xml:space="preserve">
+    <value>أضف خوادم في المجموعة</value>
+  </data>
+  <data name="cluster_need" xml:space="preserve">
+    <value>يجب عليك إضافة خوادم باسم تسجيل الدخول وكلمة المرور في وحدة Webmin Servers Index النمطية قبل أن تتم إدارتها هنا.</value>
+  </data>
+  <data name="cluster_return" xml:space="preserve">
+    <value>خوادم الكتلة</value>
+  </data>
+  <data name="cluster_delete" xml:space="preserve">
+    <value>ازل المحدد</value>
+  </data>
+  <data name="cluster_ecannot" xml:space="preserve">
+    <value>غير مسموح لك بإدارة خوادم طابعة الكتلة</value>
+  </data>
+  <data name="add_title" xml:space="preserve">
+    <value>إضافة خوادم</value>
+  </data>
+  <data name="add_msg" xml:space="preserve">
+    <value>جاري إضافة$1 ..</value>
+  </data>
+  <data name="add_gmsg" xml:space="preserve">
+    <value>جاري إضافة خوادم في المجموعة$1 ..</value>
+  </data>
+  <data name="add_err" xml:space="preserve">
+    <value>فشلت إضافة الخادم</value>
+  </data>
+  <data name="add_gerr" xml:space="preserve">
+    <value>فشل في إضافة مجموعة</value>
+  </data>
+  <data name="add_echeck" xml:space="preserve">
+    <value>لا يحتوي الخادم$1 على وحدة إدارة الطابعة</value>
+  </data>
+  <data name="add_ediff" xml:space="preserve">
+    <value>يستخدم الخادم$1 نظام طباعة مختلف ($2) لهذا الخادم</value>
+  </data>
+  <data name="add_ediff2" xml:space="preserve">
+    <value>يستخدم الخادم$1 برنامج تشغيل طباعة مختلف ($2) لهذا الخادم</value>
+  </data>
+  <data name="add_ok" xml:space="preserve">
+    <value>تمت إضافة$1 ، مع طابعات$2.</value>
+  </data>
+</root>

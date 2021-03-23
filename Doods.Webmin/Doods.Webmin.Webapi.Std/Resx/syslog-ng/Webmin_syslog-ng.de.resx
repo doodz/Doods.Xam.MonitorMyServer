@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Systemlogs NG</value>
+  </data>
+  <data name="index_apply" xml:space="preserve">
+    <value>Konfiguration anwenden</value>
+  </data>
+  <data name="index_applydesc" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um die aktuellen Syslog-NG Konfiguration zu aktivieren.</value>
+  </data>
+  <data name="index_stop" xml:space="preserve">
+    <value>Stoppe Syslog-NG</value>
+  </data>
+  <data name="index_stopdesc" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um den laufenden Syslog-NG-Daemon zu stoppen. Einmal eingestellt, werden Log-Meldungen aus anderen Programmen nicht mehr in Protokolldateien geschrieben werden.</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Starte Syslog-NG</value>
+  </data>
+  <data name="index_startdesc" xml:space="preserve">
+    <value>Klicken Sie auf diese Schaltfläche, um die Syslog-NG-Daemon mit der aktuellen Konfiguration zu starten.</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>Modulindex</value>
+  </data>
+  <data name="index_version" xml:space="preserve">
+    <value>Syslog-NG $1</value>
+  </data>
+  <data name="options_title" xml:space="preserve">
+    <value>Logging Optionen</value>
+  </data>
+  <data name="options_header" xml:space="preserve">
+    <value>Optionen für alle Log Dateien</value>
+  </data>
+  <data name="options_secs" xml:space="preserve">
+    <value>Sekunden</value>
+  </data>
+  <data name="options_entries" xml:space="preserve">
+    <value>Einträge</value>
+  </data>
+  <data name="options_time_reopen" xml:space="preserve">
+    <value>Zeit zu warten, bevor tote Verbindungen wiedergeöffnet werden</value>
+  </data>
+  <data name="options_time_reap" xml:space="preserve">
+    <value>Zeit zu warten vor dem Schließen von Leerlauf-Verbindungen</value>
+  </data>
+  <data name="options_sync" xml:space="preserve">
+    <value>Nachrichten zum puffern vor dem Schreiben</value>
+  </data>
+  <data name="options_stats" xml:space="preserve">
+    <value>Zeit zu warten zwischen Statistik-Nachrichten</value>
+  </data>
+  <data name="options_log_fifo_size" xml:space="preserve">
+    <value>Anzahl der Meldungen zum puffern</value>
+  </data>
+  <data name="options_chain_hostnames" xml:space="preserve">
+    <value>Verwende gekettetes Hostname-Format?</value>
+  </data>
+  <data name="options_keep_hostname" xml:space="preserve">
+    <value>Behalte original Hostnamen?</value>
+  </data>
+  <data name="options_check_hostname" xml:space="preserve">
+    <value>Überprüfe Hostnamen für gültige Zeichen?</value>
+  </data>
+  <data name="options_bad_hostname" xml:space="preserve">
+    <value>Regulärer Ausdruck für schlechte Hostnamen</value>
+  </data>
+  <data name="options_create_dirs" xml:space="preserve">
+    <value>Erstelle Verzeichnisse für Protokolldateien, wenn nötig?</value>
+  </data>
+  <data name="options_owner" xml:space="preserve">
+    <value>Standard Besitzer für Log-Dateien</value>
+  </data>
+  <data name="options_group" xml:space="preserve">
+    <value>Standard Gruppe für Log Dateien</value>
+  </data>
+  <data name="options_perm" xml:space="preserve">
+    <value>Standard-Rechte für Log-Dateien</value>
+  </data>
+  <data name="options_dir_owner" xml:space="preserve">
+    <value>Standard Besitzer für erstellte Verzeichnisse</value>
+  </data>
+  <data name="options_dir_group" xml:space="preserve">
+    <value>Standard Gruppe für erstellte Verzeichnisse</value>
+  </data>
+  <data name="options_dir_perm" xml:space="preserve">
+    <value>Standard Rechte für erstellte Verzeichnisse</value>
+  </data>
+  <data name="options_use_time_recvd" xml:space="preserve">
+    <value>Log Zeit Nachrichten wurden empfangen?</value>
+  </data>
+  <data name="options_use_dns" xml:space="preserve">
+    <value>Reverse-DNS-Lookups?</value>
+  </data>
+  <data name="options_dns_cache" xml:space="preserve">
+    <value>Cache DNS lookups?</value>
+  </data>
+  <data name="options_dns_cache_size" xml:space="preserve">
+    <value>Größe des DNS Cache</value>
+  </data>
+  <data name="options_dns_cache_expire" xml:space="preserve">
+    <value>Cache DNS Einträge für</value>
+  </data>
+  <data name="options_dns_cache_expire_failed" xml:space="preserve">
+    <value>Cache fehlgeschlagen DNS lookups für</value>
+  </data>
+  <data name="options_log_msg_size" xml:space="preserve">
+    <value>Maximale Log-Nachrichten-Größe</value>
+  </data>
+  <data name="options_use_fqdn" xml:space="preserve">
+    <value>Logge volle Hostnamen?</value>
+  </data>
+  <data name="options_sanitize_filenames" xml:space="preserve">
+    <value>Ersetze Kontrollzeichen in Dateinamen?</value>
+  </data>
+  <data name="options_err" xml:space="preserve">
+    <value>Fehlgeschlagen Log-Optionen zu speichern</value>
+  </data>
+  <data name="options_ebad_hostname" xml:space="preserve">
+    <value>Fehlender oder ungültiger regulären Ausdruck für schlechte Hostnamen</value>
+  </data>
+  <data name="options_edns_cache_size" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische DNS-Cache-Größe</value>
+  </data>
+  <data name="options_edns_cache_expire" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische DNS-Cache-Zeit</value>
+  </data>
+  <data name="options_edns_cache_expire_failed" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische fehlgeschlagene DNS-Cache-Zeit</value>
+  </data>
+  <data name="options_eowner" xml:space="preserve">
+    <value>Fehlender Standard-Benutzer für Log-Dateien</value>
+  </data>
+  <data name="options_egroup" xml:space="preserve">
+    <value>Fehlende Standard-Gruppe für Log-Dateien</value>
+  </data>
+  <data name="options_eperm" xml:space="preserve">
+    <value>Fehlende Standard-Rechte für Log-Dateien</value>
+  </data>
+  <data name="options_edir_owner" xml:space="preserve">
+    <value>Fehlende Standardbesitzer für Verzeichnisse</value>
+  </data>
+  <data name="options_edir_group" xml:space="preserve">
+    <value>Fehlende Standardgruppe für Verzeichnisse</value>
+  </data>
+  <data name="options_edir_perm" xml:space="preserve">
+    <value>Fehlende Standardrechte für Verzeichnisse</value>
+  </data>
+  <data name="options_etime_reopen" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische Zeit zu warten für tote Verbindungen</value>
+  </data>
+  <data name="options_etime_reap" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische Zeit für ideale Anbindung zu warten</value>
+  </data>
+  <data name="options_esync" xml:space="preserve">
+    <value>Fehlende oder ungültige Anzahl von Nachrichten zu puffern vor dem Schreiben</value>
+  </data>
+  <data name="options_estats" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische Zeit zu warten zwischen Statistik-Nachrichten</value>
+  </data>
+  <data name="options_elog_fifo_size" xml:space="preserve">
+    <value>Fehlende oder ungültige Anzahl von Nachrichten zu puffern</value>
+  </data>
+  <data name="options_elog_msg_size" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische maximale Protokollnachrichtengröße</value>
+  </data>
+  <data name="destinations_title" xml:space="preserve">
+    <value>Log Ziele</value>
+  </data>
+  <data name="destinations_name" xml:space="preserve">
+    <value>Ziel Name</value>
+  </data>
+  <data name="destinations_type" xml:space="preserve">
+    <value>Schreibe nach</value>
+  </data>
+  <data name="destinations_file" xml:space="preserve">
+    <value>Log Ziel</value>
+  </data>
+  <data name="destinations_typef" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="destinations_typeu" xml:space="preserve">
+    <value>Eingeloggte Benutzer</value>
+  </data>
+  <data name="destinations_typep" xml:space="preserve">
+    <value>Programm Input</value>
+  </data>
+  <data name="destinations_typei" xml:space="preserve">
+    <value>Unix pipe</value>
+  </data>
+  <data name="destinations_typed" xml:space="preserve">
+    <value>UDP Syslog-Server</value>
+  </data>
+  <data name="destinations_typet" xml:space="preserve">
+    <value>TCP syslog Server</value>
+  </data>
+  <data name="destinations_typeg" xml:space="preserve">
+    <value>Datagram Socket</value>
+  </data>
+  <data name="destinations_types" xml:space="preserve">
+    <value>Stream Socket</value>
+  </data>
+  <data name="destinations_allusers" xml:space="preserve">
+    <value>Alle Benutzer</value>
+  </data>
+  <data name="destinations_users" xml:space="preserve">
+    <value>Nur Benutzer $1</value>
+  </data>
+  <data name="destinations_host" xml:space="preserve">
+    <value>Host $1</value>
+  </data>
+  <data name="destinations_view" xml:space="preserve">
+    <value>Anzeigen..</value>
+  </data>
+  <data name="destinations_none" xml:space="preserve">
+    <value>Keine Ziel-Log Dateien wurden bisher definiert.</value>
+  </data>
+  <data name="destinations_delete" xml:space="preserve">
+    <value>Ausgewählte Ziele gelöscht</value>
+  </data>
+  <data name="destinations_add" xml:space="preserve">
+    <value>Ein neues Log-Ziel hinzufügen.</value>
+  </data>
+  <data name="destinations_return" xml:space="preserve">
+    <value>Log Ziele</value>
+  </data>
+  <data name="destinations_desc" xml:space="preserve">
+    <value>Andere Module Log</value>
+  </data>
+  <data name="destinations_cmd" xml:space="preserve">
+    <value>Output von $1</value>
+  </data>
+  <data name="destination_header" xml:space="preserve">
+    <value>Log Zieloptionen</value>
+  </data>
+  <data name="destination_title1" xml:space="preserve">
+    <value>Erstelle Log-Ziele</value>
+  </data>
+  <data name="destination_title2" xml:space="preserve">
+    <value>Editiere Log-Ziele</value>
+  </data>
+  <data name="destination_name" xml:space="preserve">
+    <value>Log Zielname</value>
+  </data>
+  <data name="destination_type" xml:space="preserve">
+    <value>Logge auf ..</value>
+  </data>
+  <data name="destination_file" xml:space="preserve">
+    <value>Dateiname</value>
+  </data>
+  <data name="destination_create_dirs" xml:space="preserve">
+    <value>Ertelle Verzeichnisse?</value>
+  </data>
+  <data name="destination_dir_perm" xml:space="preserve">
+    <value>Rechte auf Verzeichnisse</value>
+  </data>
+  <data name="destination_fsync" xml:space="preserve">
+    <value>Sync nach jedem Schreiben?</value>
+  </data>
+  <data name="destination_group" xml:space="preserve">
+    <value>Gruppen für Log-Datei</value>
+  </data>
+  <data name="destination_owner" xml:space="preserve">
+    <value>Besitzer für Logdatei</value>
+  </data>
+  <data name="destination_perm" xml:space="preserve">
+    <value>Rechte für Logdatei</value>
+  </data>
+  <data name="destination_sync_freq" xml:space="preserve">
+    <value>Nachrichten zwischen Synchronisationen</value>
+  </data>
+  <data name="destination_users" xml:space="preserve">
+    <value>Aufgelistete Benutzer</value>
+  </data>
+  <data name="destination_net" xml:space="preserve">
+    <value>Syslog Server</value>
+  </data>
+  <data name="destination_proto" xml:space="preserve">
+    <value>Netzwerk Protokoll</value>
+  </data>
+  <data name="destination_host" xml:space="preserve">
+    <value>Server Adresse</value>
+  </data>
+  <data name="destination_port" xml:space="preserve">
+    <value>Serverport</value>
+  </data>
+  <data name="destination_localip" xml:space="preserve">
+    <value>Lokale IP-Adresse</value>
+  </data>
+  <data name="destination_localport" xml:space="preserve">
+    <value>Lokaler Port</value>
+  </data>
+  <data name="destination_unix" xml:space="preserve">
+    <value>Unix Socket</value>
+  </data>
+  <data name="destination_utype" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="destination_socket" xml:space="preserve">
+    <value>Socket Name</value>
+  </data>
+  <data name="destination_err" xml:space="preserve">
+    <value>Fehlgeschlagen Ziel zu speichern</value>
+  </data>
+  <data name="destination_eclash" xml:space="preserve">
+    <value>Ein Ziel mit dem gleichen Namen existiert bereits</value>
+  </data>
+  <data name="destination_egone" xml:space="preserve">
+    <value>Das Ziel existiert nicht länger!</value>
+  </data>
+  <data name="destination_efile_name" xml:space="preserve">
+    <value>Fehlender oder ungültiger Dateiname</value>
+  </data>
+  <data name="destination_eowner" xml:space="preserve">
+    <value>Fehler oder ungültiger Log Datei Besitzer</value>
+  </data>
+  <data name="destination_egroup" xml:space="preserve">
+    <value>Fehlender oder ungültiger Log Datei Gruppe</value>
+  </data>
+  <data name="destination_eperm" xml:space="preserve">
+    <value>Fehlende oder nicht-oktale Log-Dateien Rechte</value>
+  </data>
+  <data name="destination_edir_perm" xml:space="preserve">
+    <value>Fehlende oder nicht-oktale Verzeichnisberechtigungen</value>
+  </data>
+  <data name="destination_esync_freq" xml:space="preserve">
+    <value>Fehlendes oder ungültige Anzahl von Nachrichten zwischen Synchronisationen</value>
+  </data>
+  <data name="destination_euser" xml:space="preserve">
+    <value>Fehlender Benutzer zum Senden an</value>
+  </data>
+  <data name="destination_eprogram" xml:space="preserve">
+    <value>Fehlendes Programm zum füttern</value>
+  </data>
+  <data name="destination_epipe" xml:space="preserve">
+    <value>Fehlende Unix Pipe Datei</value>
+  </data>
+  <data name="destination_enet_port" xml:space="preserve">
+    <value>Fehlende oder ungültige Portnummer</value>
+  </data>
+  <data name="destination_enet_localip" xml:space="preserve">
+    <value>Fehlende oder ungültige lokale IP Adresse</value>
+  </data>
+  <data name="destination_enet_localport" xml:space="preserve">
+    <value>Fehlende oder ungültige lokale Portnummer</value>
+  </data>
+  <data name="destination_enet_host" xml:space="preserve">
+    <value>Fehlende(r) oder ungültige(r) Syslog Server Host oder Adresse</value>
+  </data>
+  <data name="destination_eunix" xml:space="preserve">
+    <value>Fehlender Unix Socket Name</value>
+  </data>
+  <data name="ddelete_err" xml:space="preserve">
+    <value>Fehlgeschlagen Zile zu löschen</value>
+  </data>
+  <data name="ddelete_enone" xml:space="preserve">
+    <value>Nichts ausgewählt</value>
+  </data>
+  <data name="ddelete_eused" xml:space="preserve">
+    <value>Das Ziel $1 kann nicht gelöscht werden, da es durch eine Log-Ziel verwendet wird</value>
+  </data>
+  <data name="sdelete_err" xml:space="preserve">
+    <value>Fehlgeschlagen Quellen zu löschen</value>
+  </data>
+  <data name="sdelete_enone" xml:space="preserve">
+    <value>Keine ausgewählt</value>
+  </data>
+  <data name="sdelete_eused" xml:space="preserve">
+    <value>Die Log-Quelle $1 kann nicht gelöscht werden, da es von einem Protokollziel verwendet wird</value>
+  </data>
+  <data name="fdelete_err" xml:space="preserve">
+    <value>Fehlgeschlagen Filter zu löschen</value>
+  </data>
+  <data name="fdelete_enone" xml:space="preserve">
+    <value>Keine ausgewählt</value>
+  </data>
+  <data name="fdelete_eused" xml:space="preserve">
+    <value>Das Log-Filter $1 kann nicht gelöscht werden, da es durch eine Log-Ziel verwendet wird</value>
+  </data>
+  <data name="ldelete_err" xml:space="preserve">
+    <value>Fehlgeschlagen Log-Ziel zu löschen</value>
+  </data>
+  <data name="ldelete_enone" xml:space="preserve">
+    <value>Nichts ausgewählt</value>
+  </data>
+  <data name="filters_title" xml:space="preserve">
+    <value>Log Filter</value>
+  </data>
+  <data name="filters_name" xml:space="preserve">
+    <value>Filtername</value>
+  </data>
+  <data name="filters_desc" xml:space="preserve">
+    <value>Bedingungen</value>
+  </data>
+  <data name="filters_none" xml:space="preserve">
+    <value>Keine Log-Filter wurden bisher definiert.</value>
+  </data>
+  <data name="filters_delete" xml:space="preserve">
+    <value>Lösche ausgewählte Filter</value>
+  </data>
+  <data name="filters_add" xml:space="preserve">
+    <value>Füge einen neuen Log-Filter hinzu.</value>
+  </data>
+  <data name="filters_return" xml:space="preserve">
+    <value>Log Filter</value>
+  </data>
+  <data name="filters_priority" xml:space="preserve">
+    <value>Priorität &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities" xml:space="preserve">
+    <value>Prioritäten &lt;tt&gt;$1&lt;/tt&gt; - &lt;tt&gt;$2&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_priorities2" xml:space="preserve">
+    <value>$1 Prioritäten</value>
+  </data>
+  <data name="filters_facility" xml:space="preserve">
+    <value>Einrichtungen &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_facilities" xml:space="preserve">
+    <value>$1 Einrichtungen</value>
+  </data>
+  <data name="filters_program" xml:space="preserve">
+    <value>Programm &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_match" xml:space="preserve">
+    <value>entspricht "$1"</value>
+  </data>
+  <data name="filters_host" xml:space="preserve">
+    <value>Von Hostname &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filters_netmask" xml:space="preserve">
+    <value>von Sender &lt;tt&gt;$1&lt;/tt&gt;</value>
+  </data>
+  <data name="filter_title1" xml:space="preserve">
+    <value>Erstelle Log-Filter</value>
+  </data>
+  <data name="filter_title2" xml:space="preserve">
+    <value>Editiere Log-Filter</value>
+  </data>
+  <data name="filter_header" xml:space="preserve">
+    <value>Log-Filter Spezifikationsdetails</value>
+  </data>
+  <data name="filter_name" xml:space="preserve">
+    <value>Filtername</value>
+  </data>
+  <data name="filter_mode0" xml:space="preserve">
+    <value>Einfache Bedingungen (alle müssen zusammenpassen)</value>
+  </data>
+  <data name="filter_mode1" xml:space="preserve">
+    <value>Komplexer Ausdruck</value>
+  </data>
+  <data name="filter_priority" xml:space="preserve">
+    <value>Bei Priorität..</value>
+  </data>
+  <data name="filter_program" xml:space="preserve">
+    <value>Von Programm..</value>
+  </data>
+  <data name="filter_match" xml:space="preserve">
+    <value>Übereinstimmung des Ausdrucks ..</value>
+  </data>
+  <data name="filter_facility" xml:space="preserve">
+    <value>Von Einrichtung..</value>
+  </data>
+  <data name="filter_host" xml:space="preserve">
+    <value>Von Hostname..</value>
+  </data>
+  <data name="filter_netmask" xml:space="preserve">
+    <value>Von IP Netzwerk..</value>
+  </data>
+  <data name="filter_err" xml:space="preserve">
+    <value>Fehler beim Speichern des Log-Filters</value>
+  </data>
+  <data name="filter_ename" xml:space="preserve">
+    <value>Fehlender oder ungültiger Filtername</value>
+  </data>
+  <data name="filter_eclash" xml:space="preserve">
+    <value>Ein Filter mit dem selben Namen existiert bereits</value>
+  </data>
+  <data name="filter_enone" xml:space="preserve">
+    <value>Nichts zu filtern eingegeben</value>
+  </data>
+  <data name="filter_epris" xml:space="preserve">
+    <value>Keine Prioritäten ausgewählt</value>
+  </data>
+  <data name="filter_efacs" xml:space="preserve">
+    <value>Keine Einrichtungen ausgewählt</value>
+  </data>
+  <data name="filter_eprog" xml:space="preserve">
+    <value>Fehlender oder ungültiger Programmname</value>
+  </data>
+  <data name="filter_ematch" xml:space="preserve">
+    <value>Fehlender regulären Ausdruck</value>
+  </data>
+  <data name="filter_ehost" xml:space="preserve">
+    <value>Fehlender oder ungültiger Hostname</value>
+  </data>
+  <data name="filter_enet" xml:space="preserve">
+    <value>Fehlende oder ungültige Netzwerk IP-Adresse</value>
+  </data>
+  <data name="filter_emask" xml:space="preserve">
+    <value>Fehlender oder ungültiger Netzmaske</value>
+  </data>
+  <data name="filter_ebool" xml:space="preserve">
+    <value>Fehler im komplexen Ausdruck</value>
+  </data>
+  <data name="filter_egone" xml:space="preserve">
+    <value>Filter existiert nicht länger!</value>
+  </data>
+  <data name="logs_title" xml:space="preserve">
+    <value>Log-Ziel</value>
+  </data>
+  <data name="logs_source" xml:space="preserve">
+    <value>Quellen</value>
+  </data>
+  <data name="logs_filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="logs_destination" xml:space="preserve">
+    <value>Ziele</value>
+  </data>
+  <data name="logs_add" xml:space="preserve">
+    <value>Ein neues Log-ZIel erstellt.</value>
+  </data>
+  <data name="logs_delete" xml:space="preserve">
+    <value>Lösche ausgewählte Log-Ziele</value>
+  </data>
+  <data name="logs_return" xml:space="preserve">
+    <value>Logge Ziele</value>
+  </data>
+  <data name="logs_none" xml:space="preserve">
+    <value>Nichts</value>
+  </data>
+  <data name="log_title1" xml:space="preserve">
+    <value>Log-Ziel erstellt</value>
+  </data>
+  <data name="log_title2" xml:space="preserve">
+    <value>Log-Ziel erstellt</value>
+  </data>
+  <data name="log_header" xml:space="preserve">
+    <value>Log-Quelle, Filter und Ziel-Auswahl</value>
+  </data>
+  <data name="log_source" xml:space="preserve">
+    <value>Log Quellen</value>
+  </data>
+  <data name="log_filter" xml:space="preserve">
+    <value>Filter zum anwenden</value>
+  </data>
+  <data name="log_destination" xml:space="preserve">
+    <value>Ziel-Filter</value>
+  </data>
+  <data name="log_final" xml:space="preserve">
+    <value>Keine weiteren Ziele nicht verarbeiten</value>
+  </data>
+  <data name="log_fallback" xml:space="preserve">
+    <value>Fallback Log-Ziel</value>
+  </data>
+  <data name="log_catchall" xml:space="preserve">
+    <value>Prozesse alle Quellen</value>
+  </data>
+  <data name="log_flags" xml:space="preserve">
+    <value>Ziel Optionen</value>
+  </data>
+  <data name="log_egone" xml:space="preserve">
+    <value>Log-Ziel existiert nicht länger!</value>
+  </data>
+  <data name="log_err" xml:space="preserve">
+    <value>Fehlgeschlagen Log-Ziel zu speichern</value>
+  </data>
+  <data name="log_esource" xml:space="preserve">
+    <value>Keine Quellen ausgewählt</value>
+  </data>
+  <data name="sources_title" xml:space="preserve">
+    <value>Log Quellen</value>
+  </data>
+  <data name="sources_none" xml:space="preserve">
+    <value>Keine Quellen wurden bisher definiert!</value>
+  </data>
+  <data name="sources_add" xml:space="preserve">
+    <value>Füge eine neue Log-Quelle hinzu</value>
+  </data>
+  <data name="sources_source" xml:space="preserve">
+    <value>Quellen Name</value>
+  </data>
+  <data name="sources_desc" xml:space="preserve">
+    <value>Log Datenquellen</value>
+  </data>
+  <data name="sources_delete" xml:space="preserve">
+    <value>Lösche ausgewählte Quellen</value>
+  </data>
+  <data name="sources_typei" xml:space="preserve">
+    <value>Interne Syslog-NG Nachrichten</value>
+  </data>
+  <data name="sources_types" xml:space="preserve">
+    <value>Stream Socket</value>
+  </data>
+  <data name="sources_typed" xml:space="preserve">
+    <value>Datagram Socket</value>
+  </data>
+  <data name="sources_typet" xml:space="preserve">
+    <value>TCP Server</value>
+  </data>
+  <data name="sources_typeu" xml:space="preserve">
+    <value>UDP Server</value>
+  </data>
+  <data name="sources_typef" xml:space="preserve">
+    <value>Kernel Log Datei</value>
+  </data>
+  <data name="sources_typep" xml:space="preserve">
+    <value>Name Pipe</value>
+  </data>
+  <data name="sources_typen" xml:space="preserve">
+    <value>Sun stream</value>
+  </data>
+  <data name="sources_typenw" xml:space="preserve">
+    <value>Syslog-Server</value>
+  </data>
+  <data name="sources_return" xml:space="preserve">
+    <value>Log Quellen</value>
+  </data>
+  <data name="sources_none2" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="source_title1" xml:space="preserve">
+    <value>Erstelle Log Quelle</value>
+  </data>
+  <data name="source_title2" xml:space="preserve">
+    <value>Editiere Log Quelle</value>
+  </data>
+  <data name="source_header" xml:space="preserve">
+    <value>Log-Quellen-Optionen</value>
+  </data>
+  <data name="source_any" xml:space="preserve">
+    <value>Jede</value>
+  </data>
+  <data name="source_none" xml:space="preserve">
+    <value>Nichts</value>
+  </data>
+  <data name="source_egone" xml:space="preserve">
+    <value>Quelle existiert nicht länger!</value>
+  </data>
+  <data name="source_name" xml:space="preserve">
+    <value>Quellname</value>
+  </data>
+  <data name="source_type" xml:space="preserve">
+    <value>Log-Quelle Typen</value>
+  </data>
+  <data name="source_owner" xml:space="preserve">
+    <value>Socket Dateibesitzer</value>
+  </data>
+  <data name="source_group" xml:space="preserve">
+    <value>Socket Dateigruppen</value>
+  </data>
+  <data name="source_perm" xml:space="preserve">
+    <value>Rechte der Socket-Datei</value>
+  </data>
+  <data name="source_keep" xml:space="preserve">
+    <value>Haltet die Verbindung beim Neustart offen?</value>
+  </data>
+  <data name="source_max" xml:space="preserve">
+    <value>Maximale gleichzeitige Verbindungen?</value>
+  </data>
+  <data name="source_ip" xml:space="preserve">
+    <value>Lokale IP-Adresse</value>
+  </data>
+  <data name="source_port" xml:space="preserve">
+    <value>Lokale Portnummer</value>
+  </data>
+  <data name="source_tkeep" xml:space="preserve">
+    <value>Benutze TCP keep-alives?</value>
+  </data>
+  <data name="source_prefix" xml:space="preserve">
+    <value>Präfix für Log-Nachrichten</value>
+  </data>
+  <data name="source_pad" xml:space="preserve">
+    <value>Nachrichten Blockgröße</value>
+  </data>
+  <data name="source_err" xml:space="preserve">
+    <value>Fehlgeschlagen Log-Quellen zu speichern</value>
+  </data>
+  <data name="source_ename" xml:space="preserve">
+    <value>Fehlender oder ungültiger Quellen Namen</value>
+  </data>
+  <data name="source_eclash" xml:space="preserve">
+    <value>Eine Log-Quelle mit demselben Namen existiert bereits</value>
+  </data>
+  <data name="source_eowner" xml:space="preserve">
+    <value>Fehlender oder ungültiger Socket-Datei Eigentümer</value>
+  </data>
+  <data name="source_egroup" xml:space="preserve">
+    <value>Fehlendes oder ungültiger Socket Dateigruppe</value>
+  </data>
+  <data name="source_eperm" xml:space="preserve">
+    <value>Fehlende oder nicht-oktale Berechtigungen auf Socket-Datei</value>
+  </data>
+  <data name="source_emax" xml:space="preserve">
+    <value>Fehlende oder ungültige maximale Anzahl der Verbindungen</value>
+  </data>
+  <data name="source_eip" xml:space="preserve">
+    <value>Fehlende oder ungültige lokale IP-Adresse</value>
+  </data>
+  <data name="source_eport" xml:space="preserve">
+    <value>Fehlende oder ungültige lokale Portnummer</value>
+  </data>
+  <data name="source_eprefix" xml:space="preserve">
+    <value>Fehlendes Präfix für Log-Dateien</value>
+  </data>
+  <data name="source_epad" xml:space="preserve">
+    <value>Fehlende oder nicht-numerische Nachricht-Blockgröße</value>
+  </data>
+  <data name="source_eunix_name" xml:space="preserve">
+    <value>Fehlende oder ungültiges Unix Socket Dateiname</value>
+  </data>
+  <data name="source_efile_name" xml:space="preserve">
+    <value>Fehlender oder ungülger Kernel Log-Datei-Name</value>
+  </data>
+  <data name="source_epipe_name" xml:space="preserve">
+    <value>Fehlende oder ungültige benannte Pipe-Dateinamen</value>
+  </data>
+  <data name="source_door" xml:space="preserve">
+    <value>Door Dateiname</value>
+  </data>
+  <data name="source_esun_streams_name" xml:space="preserve">
+    <value>Fehlender oder ungültiger Sun streams Dateiname</value>
+  </data>
+  <data name="source_edoor" xml:space="preserve">
+    <value>Fehlender oder ungültiger Sun-streams door Dateinamen</value>
+  </data>
+  <data name="source_transport" xml:space="preserve">
+    <value>Netzwerkprotokoll</value>
+  </data>
+  <data name="view_title" xml:space="preserve">
+    <value>Zeige Logdatei</value>
+  </data>
+  <data name="view_header" xml:space="preserve">
+    <value>Letzten $1 Zeilen von $2</value>
+  </data>
+  <data name="view_empty" xml:space="preserve">
+    <value>Log Datei ist leer</value>
+  </data>
+  <data name="view_refresh" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="view_filter" xml:space="preserve">
+    <value>Zeige nur Zeilen mit Text $1</value>
+  </data>
+  <data name="apply_err" xml:space="preserve">
+    <value>Fehlgeschlagen die Konfiguration anzuwenden</value>
+  </data>
+  <data name="apply_egone" xml:space="preserve">
+    <value>Läuft nicht!</value>
+  </data>
+  <data name="start_err" xml:space="preserve">
+    <value>Fehlgeschlagen Syslog-NG Server zu starten</value>
+  </data>
+  <data name="stop_err" xml:space="preserve">
+    <value>Fehlgeschlagen Syslog-NG Server zu stoppen</value>
+  </data>
+  <data name="log_create_destination" xml:space="preserve">
+    <value>Log-Ziele $1 erstellt</value>
+  </data>
+  <data name="log_modify_destination" xml:space="preserve">
+    <value>Log-Ziel $1 modifiziert</value>
+  </data>
+  <data name="log_delete_destination" xml:space="preserve">
+    <value>Log-Ziel $1 gelöscht</value>
+  </data>
+  <data name="log_delete_destinations" xml:space="preserve">
+    <value>$1 Log-Ziel gelöscht</value>
+  </data>
+  <data name="log_create_filter" xml:space="preserve">
+    <value>Log-Filter $1 erstellt</value>
+  </data>
+  <data name="log_modify_filter" xml:space="preserve">
+    <value>Log-Filter $1 modifiziert</value>
+  </data>
+  <data name="log_delete_filter" xml:space="preserve">
+    <value>Log-Filter $1 gelöscht</value>
+  </data>
+  <data name="log_delete_filters" xml:space="preserve">
+    <value>$1 Log-Filter gelöscht</value>
+  </data>
+  <data name="log_create_source" xml:space="preserve">
+    <value>Log-Quellen $1 erstellt</value>
+  </data>
+  <data name="log_modify_source" xml:space="preserve">
+    <value>Log-Quellen $1 modifiziert</value>
+  </data>
+  <data name="log_delete_source" xml:space="preserve">
+    <value>Log Quelle $1 gelöscht</value>
+  </data>
+  <data name="log_delete_sources" xml:space="preserve">
+    <value>$1 Log Quellen gelöscht</value>
+  </data>
+  <data name="log_create_log" xml:space="preserve">
+    <value>Log-Ziel erstellt</value>
+  </data>
+  <data name="log_modify_log" xml:space="preserve">
+    <value>Log-Ziel modifiziert</value>
+  </data>
+  <data name="log_delete_log" xml:space="preserve">
+    <value>Log-Ziel gelöscht</value>
+  </data>
+  <data name="log_delete_logs" xml:space="preserve">
+    <value>$1 Log-Ziele gelöscht</value>
+  </data>
+  <data name="log_apply" xml:space="preserve">
+    <value>Angewandte Konfiguration</value>
+  </data>
+  <data name="log_start" xml:space="preserve">
+    <value>Syslog-NG Server gestartet</value>
+  </data>
+  <data name="log_stop" xml:space="preserve">
+    <value>Syslog-NG Server gestoppt</value>
+  </data>
+  <data name="log_options" xml:space="preserve">
+    <value>Globale Optionen geändernt</value>
+  </data>
+</root>

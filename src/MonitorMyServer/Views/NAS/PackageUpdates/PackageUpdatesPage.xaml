@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:mvvm="clr-namespace:Doods.Framework.Mobile.Std.Mvvm;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:controls2="clr-namespace:Doods.Framework.Mobile.Std.controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:datas="clr-namespace:Doods.Xam.MonitorMyServer.Data.Nas;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                      xmlns:resources="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Openmediavault.Mobile.Std"
+                      xmlns:resources1="clr-namespace:Doods.Openmediavault.Mobile.Std.Resources;assembly=Doods.Xam.MonitorMyServer"
+                      xmlns:testfont="clr-namespace:Doods.Framework.Mobile.Std.Helpers.Styles;assembly=Doods.Framework.Mobile.Std"
+                      mc:Ignorable="d"
+                      x:Class="Doods.Xam.MonitorMyServer.Views.NAS.PackageUpdates.PackageUpdatesPage">
+    <StackLayout>
+        <controls2:NotificationView BindingContext="{Binding ViewModelStateItem,Mode=OneWay}" />
+        <!--<Label
+               Text="{resources1:WebminTranslate Text='Webmin_package_updates::view_install'}" />
+        <Label 
+               Text="{resources1:WebminTranslate Text='Webmin_package_updates::index_name'}" />
+        <Label 
+               Text="{resources1:WebminTranslate Text='Webmin_package_updates::index_desc'}" />
+        <Label 
+            Text="{resources1:WebminTranslate Text='Webmin_package_updates::index_status'}" />
+        <Label 
+            Text="{resources1:WebminTranslate Text='Webmin_package_updates::index_source'}" />-->
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+            <StackLayout Grid.Column="0"    HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.CheckDouble}, Color=#323130}" />
+                <Label FontSize="Small" Text="{resources1:WebminTranslate Text='Webmin_software::search_selall'}" TextColor="#323130" />
+            </StackLayout>
+            <StackLayout  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.UndoAlt}, Color=#323130}" />
+                <Label FontSize="Small" Text="{resources1:WebminTranslate Text='Webmin_software::search_invert'}" TextColor="#323130" />
+            </StackLayout>
+        </Grid>
+        <ScrollView>
+            <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Packages,Mode=OneWay}">
+                <StackLayout.Resources>
+                </StackLayout.Resources>
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="datas:Package">
+                        <controls:TitledFrameView Title="{Binding Name,Mode=OneTime}"
+                                                  SubTitle="{Binding Desc,Mode=OneTime}"
+                                                  SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                            <StackLayout>
+                                <Label Text="{Binding Source,Mode=OneTime}" />
+                                <Label Text="{Binding Status,Mode=OneTime}" />
+                                <Switch IsToggled="{Binding Mode=TwoWay,Path=IsSelected}"/>
+                            </StackLayout>
+                        </controls:TitledFrameView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</mvvm:BaseContentPage>

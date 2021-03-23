@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="index_title" xml:space="preserve">
+    <value>Partitie Manager</value>
+  </data>
+  <data name="index_parted" xml:space="preserve">
+    <value>Met gebruik van &lt;tt&gt;parted&lt;/tt&gt;</value>
+  </data>
+  <data name="index_fdisk" xml:space="preserve">
+    <value>Met gebruik van &lt;tt&gt;fdisk&lt;/tt&gt;</value>
+  </data>
+  <data name="index_ecmd" xml:space="preserve">
+    <value>U heeft de $1 opdracht geselecteerd voor partitie management, echter dit is niet geinstalleerd op uw systeem.</value>
+  </data>
+  <data name="index_err" xml:space="preserve">
+    <value>Mislukt om harddisk op de lijst te zetten</value>
+  </data>
+  <data name="index_disk" xml:space="preserve">
+    <value>Harddisk</value>
+  </data>
+  <data name="index_parts" xml:space="preserve">
+    <value>Partities</value>
+  </data>
+  <data name="index_location" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="index_cylinders" xml:space="preserve">
+    <value>Cilinders</value>
+  </data>
+  <data name="index_size" xml:space="preserve">
+    <value>Grote</value>
+  </data>
+  <data name="index_model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="index_raid" xml:space="preserve">
+    <value>RAID niveau</value>
+  </data>
+  <data name="index_controller" xml:space="preserve">
+    <value>Controller</value>
+  </data>
+  <data name="index_scsiid" xml:space="preserve">
+    <value>Doel</value>
+  </data>
+  <data name="index_none" xml:space="preserve">
+    <value>Geen partities gevonden</value>
+  </data>
+  <data name="index_num" xml:space="preserve">
+    <value>Nee.</value>
+  </data>
+  <data name="index_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="index_extent" xml:space="preserve">
+    <value>Uitgebreid</value>
+  </data>
+  <data name="index_start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="index_end" xml:space="preserve">
+    <value>Einde</value>
+  </data>
+  <data name="index_addpri" xml:space="preserve">
+    <value>Primaire partitie toevoegen.</value>
+  </data>
+  <data name="index_addlog" xml:space="preserve">
+    <value>Logische partitie toevoegen.</value>
+  </data>
+  <data name="index_addext" xml:space="preserve">
+    <value>Uitgebreide partitie toevoegen.</value>
+  </data>
+  <data name="index_hdparm" xml:space="preserve">
+    <value>Bewerk IDE parameters</value>
+  </data>
+  <data name="index_hdparmdesc" xml:space="preserve">
+    <value>Verander instellingen voor een IDE drive, zoals de DMA mode, standby time-out en aantal te lezen sectoren.</value>
+  </data>
+  <data name="index_smart" xml:space="preserve">
+    <value>Laat SMART status zien</value>
+  </data>
+  <data name="index_smartdesc" xml:space="preserve">
+    <value>Laat het status rapport zien van deze schijf, inclusief de temperatuur en de fouten.</value>
+  </data>
+  <data name="index_blink" xml:space="preserve">
+    <value>Identificeer Harddisk</value>
+  </data>
+  <data name="index_relabel" xml:space="preserve">
+    <value>Wis Partities</value>
+  </data>
+  <data name="index_relabeldesc" xml:space="preserve">
+    <value>Verwijder alle bestaande partities en maak een nieuwe partitie tabel aan in een ander formaat.</value>
+  </data>
+  <data name="index_use" xml:space="preserve">
+    <value>Gebruik</value>
+  </data>
+  <data name="index_free" xml:space="preserve">
+    <value>Vrij</value>
+  </data>
+  <data name="index_return" xml:space="preserve">
+    <value>harddisk lijst</value>
+  </data>
+  <data name="index_dname" xml:space="preserve">
+    <value>Harddisk naam</value>
+  </data>
+  <data name="index_dsize" xml:space="preserve">
+    <value>Totale grote</value>
+  </data>
+  <data name="index_dmodel" xml:space="preserve">
+    <value>Merk en model</value>
+  </data>
+  <data name="index_dctrl" xml:space="preserve">
+    <value>Controller</value>
+  </data>
+  <data name="index_dacts" xml:space="preserve">
+    <value>Acties</value>
+  </data>
+  <data name="index_dhdparm" xml:space="preserve">
+    <value>IDE parameters</value>
+  </data>
+  <data name="index_dsmart" xml:space="preserve">
+    <value>SMART status</value>
+  </data>
+  <data name="index_dscsi" xml:space="preserve">
+    <value>SCSI apparaat $1 controller $2</value>
+  </data>
+  <data name="index_draid" xml:space="preserve">
+    <value>RAID niveau $1</value>
+  </data>
+  <data name="index_dparts" xml:space="preserve">
+    <value>Partities</value>
+  </data>
+  <data name="index_none2" xml:space="preserve">
+    <value>Er zijn geen harddisken gevonden op uw systeem.</value>
+  </data>
+  <data name="bytes" xml:space="preserve">
+    <value>bytes</value>
+  </data>
+  <data name="megabytes" xml:space="preserve">
+    <value>megabytes</value>
+  </data>
+  <data name="extended" xml:space="preserve">
+    <value>Uitgebreide</value>
+  </data>
+  <data name="opt_default" xml:space="preserve">
+    <value>Standaard</value>
+  </data>
+  <data name="opt_error" xml:space="preserve">
+    <value>'$1' is niet een geldig $2</value>
+  </data>
+  <data name="open_error" xml:space="preserve">
+    <value>$1 opdracht niet gevonden</value>
+  </data>
+  <data name="select_device" xml:space="preserve">
+    <value>$1 apparaat $2</value>
+  </data>
+  <data name="select_part" xml:space="preserve">
+    <value>$1 apparaat $2 partitie $3</value>
+  </data>
+  <data name="select_fd" xml:space="preserve">
+    <value>Floppy disk $1</value>
+  </data>
+  <data name="select_mylex" xml:space="preserve">
+    <value>Mylex RAID $1 schijf $2</value>
+  </data>
+  <data name="select_mpart" xml:space="preserve">
+    <value>Mylex RAID $1 schijf $2 partitie $3</value>
+  </data>
+  <data name="select_cpq" xml:space="preserve">
+    <value>Compaq RAID $1 schijf $2</value>
+  </data>
+  <data name="select_cpart" xml:space="preserve">
+    <value>Compaq RAID $1 schijf $2 partitie $3</value>
+  </data>
+  <data name="select_scsi" xml:space="preserve">
+    <value>SCSI controller $1 bus $2 target $3 LUN $4</value>
+  </data>
+  <data name="select_spart" xml:space="preserve">
+    <value>SCSI controller $1 bus $2 target $3 LUN $4 partitie $5</value>
+  </data>
+  <data name="select_newide" xml:space="preserve">
+    <value>IDE controller $1 bus $2 harddisk $3</value>
+  </data>
+  <data name="select_snewide" xml:space="preserve">
+    <value>IDE controller $1 bus $2 harddisk $3 partitie $5</value>
+  </data>
+  <data name="select_smart" xml:space="preserve">
+    <value>Compaq Smart Array $1 schijf $2</value>
+  </data>
+  <data name="select_smartpart" xml:space="preserve">
+    <value>Compaq Smart Array $1 schijf $2 partitie $3</value>
+  </data>
+  <data name="select_promise" xml:space="preserve">
+    <value>Promise RAID schijf $1</value>
+  </data>
+  <data name="select_ppart" xml:space="preserve">
+    <value>Promise RAID schijf $1 partitie $2</value>
+  </data>
+  <data name="edit_title" xml:space="preserve">
+    <value>Bewerk Partitie</value>
+  </data>
+  <data name="create_title" xml:space="preserve">
+    <value>Maak Partitie</value>
+  </data>
+  <data name="edit_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd deze harddisk te bewerken</value>
+  </data>
+  <data name="edit_ehdparm" xml:space="preserve">
+    <value>De &lt;tt&gt;hdparm&lt;/tt&gt; uitvoerbestand werd niet gevonden op uw systeem</value>
+  </data>
+  <data name="edit_details" xml:space="preserve">
+    <value>Partitie Details</value>
+  </data>
+  <data name="edit_location" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="edit_device" xml:space="preserve">
+    <value>Apparaat file</value>
+  </data>
+  <data name="edit_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="edit_extent" xml:space="preserve">
+    <value>Vergroot</value>
+  </data>
+  <data name="edit_of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="edit_status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="edit_cont1" xml:space="preserve">
+    <value>Bevat 1 partitie</value>
+  </data>
+  <data name="edit_cont234" xml:space="preserve">
+    <value>Bevat $1 partities</value>
+  </data>
+  <data name="edit_cont5" xml:space="preserve">
+    <value>Bevat $1 partities</value>
+  </data>
+  <data name="edit_mount" xml:space="preserve">
+    <value>Ge-mount op $1 als $2</value>
+  </data>
+  <data name="edit_umount" xml:space="preserve">
+    <value>Deze mounten op $1 als $2</value>
+  </data>
+  <data name="edit_mountvm" xml:space="preserve">
+    <value>Ge-mount als virtueel geheugen</value>
+  </data>
+  <data name="edit_umountvm" xml:space="preserve">
+    <value>Deze mounten als virtueel geheugen</value>
+  </data>
+  <data name="edit_mountraid" xml:space="preserve">
+    <value>Deel van het RAID apparaat $1</value>
+  </data>
+  <data name="edit_mountlvm" xml:space="preserve">
+    <value>Deel van de LVM volume groep $1</value>
+  </data>
+  <data name="edit_notexist" xml:space="preserve">
+    <value>Nog niet gemaakt</value>
+  </data>
+  <data name="edit_notused" xml:space="preserve">
+    <value>Niet in gebruik</value>
+  </data>
+  <data name="edit_size" xml:space="preserve">
+    <value>Grote</value>
+  </data>
+  <data name="edit_label" xml:space="preserve">
+    <value>Filesysteem label</value>
+  </data>
+  <data name="edit_name" xml:space="preserve">
+    <value>Partitie naam</value>
+  </data>
+  <data name="edit_volid" xml:space="preserve">
+    <value>Volume ID</value>
+  </data>
+  <data name="edit_blocks" xml:space="preserve">
+    <value>$1 blokken</value>
+  </data>
+  <data name="edit_inuse" xml:space="preserve">
+    <value>Deze partitie kan niet worden veranderd omdat het op dit moment in gebruik is of geconfigureerd voor gebruik.</value>
+  </data>
+  <data name="edit_mkfs" xml:space="preserve">
+    <value>Maak Nieuw Filesysteem</value>
+  </data>
+  <data name="edit_mkfs2" xml:space="preserve">
+    <value>Maak Filesysteem :</value>
+  </data>
+  <data name="edit_mkfsmsg" xml:space="preserve">
+    <value>Maakt een nieuw $1 filesysteem op deze partitie, wat alle bestaande files permanent wist. U moet dit doen nadat u een nieuwe partitie gemaakt heeft of een bestaande partitie heeft verandert.</value>
+  </data>
+  <data name="edit_mkfsmsg2" xml:space="preserve">
+    <value>Maakt een nieuw filesysteem van het geselecteerde type op deze partitie, wat alle bestaande files permanent wist. U moet dit doen nadat u een nieuwe partitie gemaakt heeft of een bestaande partitie heeft verandert.</value>
+  </data>
+  <data name="edit_fsck" xml:space="preserve">
+    <value>Repareer Filesysteem</value>
+  </data>
+  <data name="edit_fsckmsg" xml:space="preserve">
+    <value>Vraag het $1 programma om het filesysteem te repareren zodat het gemound kan worden. Dit is waarschijnlijk nodig omdat het systeem niet juist is uitgezet.</value>
+  </data>
+  <data name="edit_tune" xml:space="preserve">
+    <value>Tune Filesysteem</value>
+  </data>
+  <data name="edit_tunemsg" xml:space="preserve">
+    <value>Modificeren van bestaande parameters toestaan op een bestaand filesysteem.</value>
+  </data>
+  <data name="edit_none" xml:space="preserve">
+    <value>Niets</value>
+  </data>
+  <data name="edit_newmount" xml:space="preserve">
+    <value>Mount Partitie Op:</value>
+  </data>
+  <data name="edit_newmount2" xml:space="preserve">
+    <value>Mount Partitie</value>
+  </data>
+  <data name="edit_mountas" xml:space="preserve">
+    <value>als</value>
+  </data>
+  <data name="edit_mountmsg" xml:space="preserve">
+    <value>Mount deze partitie aan een nieuwe directory op uw systeem, zodat het gebruikt kan worden om data in op te slaan. Een filesysteem moet al gemaakt zijn op de partitie.</value>
+  </data>
+  <data name="edit_mountmsg2" xml:space="preserve">
+    <value>Mount deze partitie als virtueel geheugen op uw systeem, om de hoeveelheid geheugen te vergroten.</value>
+  </data>
+  <data name="mkfs_title" xml:space="preserve">
+    <value>Nieuw Filesysteem</value>
+  </data>
+  <data name="mkfs_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om een nieuw filesysteem te maken op deze harddisk.</value>
+  </data>
+  <data name="mkfs_desc1" xml:space="preserve">
+    <value>Indien u klikt op de knop onderaan dit formulier zal er een nieuw $1 filesysteem gemaakt worden op apparaat $2. Alle data op deze partitie zal permanent gewist worden.</value>
+  </data>
+  <data name="mkfs_desc2" xml:space="preserve">
+    <value>Deze partitie is gemount op $1 als $2. Een nieuw filesysteem maken zal alle files wissen die toegankelijk waren in deze directory.</value>
+  </data>
+  <data name="mkfs_options" xml:space="preserve">
+    <value>Filesysteem Opties</value>
+  </data>
+  <data name="mkfs_create" xml:space="preserve">
+    <value>Gemaakt Filesysteem</value>
+  </data>
+  <data name="mkfs_err" xml:space="preserve">
+    <value>Mislukt om filesysteem te maken</value>
+  </data>
+  <data name="mkfs_exec" xml:space="preserve">
+    <value>Uitvoeren opdracht $1 ..</value>
+  </data>
+  <data name="mkfs_failed" xml:space="preserve">
+    <value>.. opdracht mislukt!</value>
+  </data>
+  <data name="mkfs_ok" xml:space="preserve">
+    <value>.. opdracht voltooid.</value>
+  </data>
+  <data name="fsck_title" xml:space="preserve">
+    <value>Repareer Filesysteem</value>
+  </data>
+  <data name="fsck_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om fsck op deze harddisk uit te voeren</value>
+  </data>
+  <data name="fsck_desc1" xml:space="preserve">
+    <value>Als u klikt op de &lt;tt&gt;Repareer Filesysteem&lt;/tt&gt; knop zal er een poging gedaan worden op het beschadigde $1 filesysteem op $2 te mounten op $3 en te repareren. Als er niets beschadigt is zullen er geen veranderingen gemaakt worden.</value>
+  </data>
+  <data name="fsck_desc2" xml:space="preserve">
+    <value>Het repareren van uw filesysteem zal gedaan worden met de opdracht $1, wat automatisch alle problemen zal verhelpen die worden gevonden. Om meer controle te hebben over het repareren van uw filesysteem kunt u beter de opdracht $2 gebruiken in de Unix prompt.</value>
+  </data>
+  <data name="fsck_repair" xml:space="preserve">
+    <value>Repareer Filesysteem</value>
+  </data>
+  <data name="fsck_exec" xml:space="preserve">
+    <value>Uitvoeren van opdracht $1 ..</value>
+  </data>
+  <data name="fsck_err0" xml:space="preserve">
+    <value>Geen fouten gevonden</value>
+  </data>
+  <data name="fsck_err1" xml:space="preserve">
+    <value>Fouten gevonden en gecorrigeerd</value>
+  </data>
+  <data name="fsck_err3" xml:space="preserve">
+    <value>Fouten gevonden en gecorrigeerd - rebooten nodig</value>
+  </data>
+  <data name="fsck_err4" xml:space="preserve">
+    <value>Fouten gevonden en NIET gecorrigeerd</value>
+  </data>
+  <data name="fsck_err16" xml:space="preserve">
+    <value>Opdracht regel fout</value>
+  </data>
+  <data name="fsck_unknown" xml:space="preserve">
+    <value>Onbekende code $1 terug gekregen</value>
+  </data>
+  <data name="tunefs_title" xml:space="preserve">
+    <value>Tune Filesysteem</value>
+  </data>
+  <data name="tunefs_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om dit filesysteem te tunen</value>
+  </data>
+  <data name="tunefs_desc" xml:space="preserve">
+    <value>Dit formulier staat u toe om diverse parameters te veranderen van het $1 filesysteem op $2 om te mounten op $3.</value>
+  </data>
+  <data name="tunefs_params" xml:space="preserve">
+    <value>Tuning Parameters</value>
+  </data>
+  <data name="tunefs_tune" xml:space="preserve">
+    <value>Tune Filesysteem</value>
+  </data>
+  <data name="tunefs_c" xml:space="preserve">
+    <value>Ruimten tussen controle</value>
+  </data>
+  <data name="tunefs_e" xml:space="preserve">
+    <value>Actie bij fout</value>
+  </data>
+  <data name="tunefs_continue" xml:space="preserve">
+    <value>Continu</value>
+  </data>
+  <data name="tunefs_remount" xml:space="preserve">
+    <value>Mount alleen-lezen</value>
+  </data>
+  <data name="tunefs_panic" xml:space="preserve">
+    <value>Paniek</value>
+  </data>
+  <data name="tunefs_u" xml:space="preserve">
+    <value>Gereserveerde gebruiker</value>
+  </data>
+  <data name="tunefs_g" xml:space="preserve">
+    <value>Gereserveerde groep</value>
+  </data>
+  <data name="tunefs_m" xml:space="preserve">
+    <value>Gereserveerde blokken</value>
+  </data>
+  <data name="tunefs_i" xml:space="preserve">
+    <value>Tijd tussen controle</value>
+  </data>
+  <data name="tunefs_days" xml:space="preserve">
+    <value>Dagen</value>
+  </data>
+  <data name="tunefs_weeks" xml:space="preserve">
+    <value>Weken</value>
+  </data>
+  <data name="tunefs_months" xml:space="preserve">
+    <value>Maanden</value>
+  </data>
+  <data name="tunefs_err" xml:space="preserve">
+    <value>Mislukt om filesysteem te tunen</value>
+  </data>
+  <data name="tunefs_exec" xml:space="preserve">
+    <value>Uitvoeren van opdracht $1 ..</value>
+  </data>
+  <data name="tunefs_failed" xml:space="preserve">
+    <value>.. opdracht mislukt!</value>
+  </data>
+  <data name="tunefs_ok" xml:space="preserve">
+    <value>.. opdracht voltooid</value>
+  </data>
+  <data name="reboot_title" xml:space="preserve">
+    <value>Reboot</value>
+  </data>
+  <data name="reboot_msg" xml:space="preserve">
+    <value>Nu aan het rebooten ..</value>
+  </data>
+  <data name="reboot_ok" xml:space="preserve">
+    <value>Reboot Nu</value>
+  </data>
+  <data name="reboot_why" xml:space="preserve">
+    <value>U heeft de partitie tafel op $1 verandert. Deze veranderingen zullen pas in werking treden nadat u het systeem ge-reboot heeft.</value>
+  </data>
+  <data name="save_err" xml:space="preserve">
+    <value>Mislukt om partitie op te slaan</value>
+  </data>
+  <data name="save_ecannot" xml:space="preserve">
+    <value>U bent niet bevoegd om deze harddisk te bewerken</value>
+  </data>
+  <data name="save_estart" xml:space="preserve">
+    <value>'$1' is geen geldige cilinder start</value>
+  </data>
+  <data name="save_eend" xml:space="preserve">
+    <value>'$1' is geen geldig cilinder einde</value>
+  </data>
+  <data name="save_eminmax" xml:space="preserve">
+    <value>Het getal waarop de cilinder start moet lager zijn dan waarop hij eindigt</value>
+  </data>
+  <data name="save_eoverlap" xml:space="preserve">
+    <value>Overlap gedetecteerde met partitie $1 ($2 to $3)</value>
+  </data>
+  <data name="ext2_b" xml:space="preserve">
+    <value>Blok Grote</value>
+  </data>
+  <data name="ext2_f" xml:space="preserve">
+    <value>Gefragmenteerde grote</value>
+  </data>
+  <data name="ext2_i" xml:space="preserve">
+    <value>Bytes per inode</value>
+  </data>
+  <data name="ext2_m" xml:space="preserve">
+    <value>Gereserveerde blokken</value>
+  </data>
+  <data name="ext2_g" xml:space="preserve">
+    <value>Blokken per groep</value>
+  </data>
+  <data name="ext2_c" xml:space="preserve">
+    <value>Controleer op slechte blokken?</value>
+  </data>
+  <data name="ext3_j" xml:space="preserve">
+    <value>Journaal file grote</value>
+  </data>
+  <data name="msdos_ff" xml:space="preserve">
+    <value>Aantal FAT's</value>
+  </data>
+  <data name="msdos_F" xml:space="preserve">
+    <value>FAT grote</value>
+  </data>
+  <data name="msdos_F_other" xml:space="preserve">
+    <value>Andere..</value>
+  </data>
+  <data name="msdos_i" xml:space="preserve">
+    <value>Volume ID</value>
+  </data>
+  <data name="msdos_n" xml:space="preserve">
+    <value>Volume naam</value>
+  </data>
+  <data name="msdos_r" xml:space="preserve">
+    <value>Root ingangen</value>
+  </data>
+  <data name="msdos_s" xml:space="preserve">
+    <value>Cluster grote</value>
+  </data>
+  <data name="msdos_c" xml:space="preserve">
+    <value>Controleren op slechte blokken?</value>
+  </data>
+  <data name="minix_n" xml:space="preserve">
+    <value>Filenaam lengte</value>
+  </data>
+  <data name="minix_i" xml:space="preserve">
+    <value>Aantal inodes</value>
+  </data>
+  <data name="minix_b" xml:space="preserve">
+    <value>Aantal blokken</value>
+  </data>
+  <data name="minix_c" xml:space="preserve">
+    <value>Controleer op slechte blokken?</value>
+  </data>
+  <data name="reiserfs_force" xml:space="preserve">
+    <value>Forceer aanmaken filesysteem</value>
+  </data>
+  <data name="reiserfs_hash" xml:space="preserve">
+    <value>Hash functie</value>
+  </data>
+  <data name="xfs_force" xml:space="preserve">
+    <value>Forceer aanmaken filesysteem</value>
+  </data>
+  <data name="xfs_b" xml:space="preserve">
+    <value>Blok grote</value>
+  </data>
+  <data name="jfs_s" xml:space="preserve">
+    <value>Log grote</value>
+  </data>
+  <data name="jfs_c" xml:space="preserve">
+    <value>Controleren op slechte blokken?</value>
+  </data>
+  <data name="fatx_none" xml:space="preserve">
+    <value>Er zijn geen opties beschikbaar voor de FATX file systemen.</value>
+  </data>
+  <data name="acl_disks" xml:space="preserve">
+    <value>Deze gebruiker mag schijven partitioneren en formatteren</value>
+  </data>
+  <data name="acl_dall" xml:space="preserve">
+    <value>Alle schijven</value>
+  </data>
+  <data name="acl_dsel" xml:space="preserve">
+    <value>Geselecteerd.</value>
+  </data>
+  <data name="acl_view" xml:space="preserve">
+    <value>Mag niet bewerkbare schijven bekijken?</value>
+  </data>
+  <data name="hdparm_title" xml:space="preserve">
+    <value>Bewerk IDE Parameters</value>
+  </data>
+  <data name="hdparm_on" xml:space="preserve">
+    <value>Aan</value>
+  </data>
+  <data name="hdparm_off" xml:space="preserve">
+    <value>Uit</value>
+  </data>
+  <data name="hdparm_label" xml:space="preserve">
+    <value>IDE Drive Settings</value>
+  </data>
+  <data name="hdparm_conf_X" xml:space="preserve">
+    <value>Transfer mode</value>
+  </data>
+  <data name="hdparm_conf_X_defaut" xml:space="preserve">
+    <value>Standaard mode</value>
+  </data>
+  <data name="hdparm_conf_X_disable" xml:space="preserve">
+    <value>Uitschakelen IORDY</value>
+  </data>
+  <data name="hdparm_conf_d" xml:space="preserve">
+    <value>Gebruik DMA</value>
+  </data>
+  <data name="hdparm_conf_a" xml:space="preserve">
+    <value>Sector tellen</value>
+  </data>
+  <data name="hdparm_conf_A" xml:space="preserve">
+    <value>Lees-vooruitkijkend</value>
+  </data>
+  <data name="hdparm_conf_W" xml:space="preserve">
+    <value>Schrijf caching</value>
+  </data>
+  <data name="hdparm_conf_u" xml:space="preserve">
+    <value>Onderbreek unmask</value>
+  </data>
+  <data name="hdparm_conf_k" xml:space="preserve">
+    <value>Bewaar instellingen na een reset</value>
+  </data>
+  <data name="hdparm_conf_K" xml:space="preserve">
+    <value>Behoud instellingen na een reset</value>
+  </data>
+  <data name="hdparm_conf_r" xml:space="preserve">
+    <value>Alleen lezen</value>
+  </data>
+  <data name="hdparm_conf_P" xml:space="preserve">
+    <value>Herprogrammeer beste PIO</value>
+  </data>
+  <data name="hdparm_conf_S" xml:space="preserve">
+    <value>Standby timeout</value>
+  </data>
+  <data name="hdparm_conf_c" xml:space="preserve">
+    <value>32-bit I/O support</value>
+  </data>
+  <data name="hdparm_conf_m" xml:space="preserve">
+    <value>Sector tellen voor verschillende sectoren I/O</value>
+  </data>
+  <data name="hdparm_disable" xml:space="preserve">
+    <value>Uitschakelen</value>
+  </data>
+  <data name="hdparm_enable" xml:space="preserve">
+    <value>Aanzetten</value>
+  </data>
+  <data name="hdparm_enable_special" xml:space="preserve">
+    <value>Aanzetten met speciale sync opeenvolging</value>
+  </data>
+  <data name="hdparm_apply" xml:space="preserve">
+    <value>Toevoegen aan Schijf</value>
+  </data>
+  <data name="hdparm_speed" xml:space="preserve">
+    <value>Test Snelheid</value>
+  </data>
+  <data name="hdparm_performing" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="hdparm_buf1" xml:space="preserve">
+    <value>Buffer cache:</value>
+  </data>
+  <data name="hdparm_buf2" xml:space="preserve">
+    <value>Gebufferd:</value>
+  </data>
+  <data name="hdparm_speedres" xml:space="preserve">
+    <value>Snelheid test resultaten</value>
+  </data>
+  <data name="blink_title" xml:space="preserve">
+    <value>Identificeer Harddisk</value>
+  </data>
+  <data name="blink_desc" xml:space="preserve">
+    <value>De LED van de harddisk zal nu 60 keer oplichten.</value>
+  </data>
+  <data name="blink_back" xml:space="preserve">
+    <value>Ga Terug</value>
+  </data>
+  <data name="log_modify" xml:space="preserve">
+    <value>$1 Gewijzigd</value>
+  </data>
+  <data name="log_create" xml:space="preserve">
+    <value>Gemaakt $1</value>
+  </data>
+  <data name="log_delete" xml:space="preserve">
+    <value>Verwijderd $1</value>
+  </data>
+  <data name="log_mkfs" xml:space="preserve">
+    <value>Aangemaakt $1 filesysteem op $2</value>
+  </data>
+  <data name="log_tunefs" xml:space="preserve">
+    <value>Ge-tuned $1 filesysteem op $2</value>
+  </data>
+  <data name="log_fsck" xml:space="preserve">
+    <value>Gerepareerd $1 filesysteem op $2</value>
+  </data>
+  <data name="log_hdparm" xml:space="preserve">
+    <value>Gewijzigde IDE parameters voor $1</value>
+  </data>
+  <data name="fs_ext2" xml:space="preserve">
+    <value>Linux Native</value>
+  </data>
+  <data name="fs_minix" xml:space="preserve">
+    <value>Minix</value>
+  </data>
+  <data name="fs_msdos" xml:space="preserve">
+    <value>MS-DOS</value>
+  </data>
+  <data name="fs_vfat" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="fs_reiserfs" xml:space="preserve">
+    <value>ReiserFS</value>
+  </data>
+  <data name="fs_ext3" xml:space="preserve">
+    <value>Nieuwe Linux Native</value>
+  </data>
+  <data name="fs_ext4" xml:space="preserve">
+    <value>Nieuwe Linux Native</value>
+  </data>
+  <data name="fs_xfs" xml:space="preserve">
+    <value>SGI</value>
+  </data>
+  <data name="fs_jfs" xml:space="preserve">
+    <value>IBM Journalling</value>
+  </data>
+  <data name="delete_title" xml:space="preserve">
+    <value>Verwijder Partitie</value>
+  </data>
+  <data name="delete_rusure" xml:space="preserve">
+    <value>Weet u zeker dat u $1 ( $2 ) wilt verwijderen ? De data op deze partitie gaat voorgoed verloren.</value>
+  </data>
+  <data name="delete_ok" xml:space="preserve">
+    <value>Verwijder nu</value>
+  </data>
+  <data name="disk_title" xml:space="preserve">
+    <value>Bewerk Harddisk Partities</value>
+  </data>
+  <data name="disk_egone" xml:space="preserve">
+    <value>Harddisk bestaat niet langer!</value>
+  </data>
+  <data name="disk_no" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="disk_type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="disk_extent" xml:space="preserve">
+    <value>Vergroot</value>
+  </data>
+  <data name="disk_start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="disk_end" xml:space="preserve">
+    <value>Einde</value>
+  </data>
+  <data name="disk_use" xml:space="preserve">
+    <value>Gebruikt door</value>
+  </data>
+  <data name="disk_free" xml:space="preserve">
+    <value>Vrije ruimte</value>
+  </data>
+  <data name="disk_vm" xml:space="preserve">
+    <value>Virtueel geheugen</value>
+  </data>
+  <data name="disk_none" xml:space="preserve">
+    <value>De harddisk heeft nog geen partities.</value>
+  </data>
+  <data name="disk_size" xml:space="preserve">
+    <value>Grote</value>
+  </data>
+  <data name="disk_dsize" xml:space="preserve">
+    <value>&lt;b&gt;Harddisk grote:&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_model" xml:space="preserve">
+    <value>&lt;b&gt;Merk en model:&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_cylinders" xml:space="preserve">
+    <value>&lt;b&gt;Cilinders:&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_table" xml:space="preserve">
+    <value>&lt;b&gt;Partitie formaat :&lt;/b&gt; $1</value>
+  </data>
+  <data name="disk_return" xml:space="preserve">
+    <value>Lijst met partities</value>
+  </data>
+  <data name="relabel_title" xml:space="preserve">
+    <value>Wis Partities</value>
+  </data>
+  <data name="relabel_warn" xml:space="preserve">
+    <value>Weet u zeker dat u alle partities wilt wissen op $1 ($2) door het herschrijven van de harddisk label? Alle bestaande data en filesystemen zullen word verwijdert!</value>
+  </data>
+  <data name="relabel_parts" xml:space="preserve">
+    <value>Bestaande partities</value>
+  </data>
+  <data name="relabel_noparts" xml:space="preserve">
+    <value>Nog niets aangemaakt</value>
+  </data>
+  <data name="relabel_table" xml:space="preserve">
+    <value>Partitie tabel formaat</value>
+  </data>
+  <data name="relabel_ok" xml:space="preserve">
+    <value>Wis en Her-Label</value>
+  </data>
+  <data name="table_msdos" xml:space="preserve">
+    <value>MS-DOS (Standaard partitie formaat)</value>
+  </data>
+  <data name="table_gpt" xml:space="preserve">
+    <value>GPT (Voor 2T of grotere harddisken)</value>
+  </data>
+</root>
