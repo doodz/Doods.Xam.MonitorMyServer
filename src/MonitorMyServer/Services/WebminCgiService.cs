@@ -58,6 +58,8 @@ namespace Doods.Synology.Webapi.Std
         public async Task<IEnumerable<Package>> GetPackages()
         {
            var result = await GetUpdates();
+            
+
            return new List<Package>();
         }
     }

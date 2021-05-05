@@ -23,19 +23,20 @@ namespace Doods.Xam.MonitorMyServer.Services
 
         public Task SetHistoryAsync(long id, History history)
         {
-            var cacheDir = FileSystem.AppDataDirectory;
+            //var cacheDir = FileSystem.AppDataDirectory;
 
-            var templateFileName = Path.Combine(cacheDir, id + "_history.json");
+            //var templateFileName = Path.Combine(cacheDir, id + "_history.json");
 
-            using (var stream = File.OpenWrite(templateFileName))
-            {
-                using (var writer = new StreamWriter(stream))
-                {
-                    var jsonHistory = _jsonSerializer.Serialize(history);
+            //using (var stream = File.OpenWrite(templateFileName))
+            //{
+            //    using (var writer = new StreamWriter(stream))
+            //    {
+            //        var jsonHistory = _jsonSerializer.Serialize(history);
 
-                    return writer.WriteAsync(jsonHistory);
-                }
-            }
+            //        return writer.WriteAsync(jsonHistory);
+            //    }
+            //}
+            return Task.FromResult(0);
         }
 
         public async Task UpdateLastLoginAsync(long id)
@@ -62,11 +63,12 @@ namespace Doods.Xam.MonitorMyServer.Services
                     using (var reader = new StreamReader(stream))
                     {
                         var fileContents = await reader.ReadToEndAsync();
-                        var tmp = _jsonSerializer.Deserialize<History>(fileContents);
+                        //var tmp = _jsonSerializer.Deserialize<History>(fileContents);
+                        History tmp = null;
                         if (b)
                             CurrentHistoryItem = tmp;
 
-                        return tmp;
+                        return tmp??new History();
                     }
                 }
             }

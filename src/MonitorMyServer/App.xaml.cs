@@ -60,6 +60,7 @@ namespace Doods.Xam.MonitorMyServer
 
         public App()
         {
+            
             InitializeComponent();
             LocalizationResourceManager.Current.Init(cockpit.ResourceManager);
 

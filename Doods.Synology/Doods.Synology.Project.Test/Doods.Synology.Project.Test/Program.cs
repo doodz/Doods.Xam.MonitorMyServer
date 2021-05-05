@@ -23,9 +23,10 @@ namespace Doods.Synology.Project.Test
             var auth = new SynoAuthClient(client);
             if (auth.LoginAsync(sp[0],sp[1]).GetAwaiter().GetResult())
             {
-              
 
-
+                var local = new SynoFileStationClient(client);
+                var GetSharedFolders = local.GetSharedFolders().GetAwaiter().GetResult();
+                var GetFileStationList = local.GetFileStationList().GetAwaiter().GetResult();
                 //var systemInfo = client.GetSystemInfo().GetAwaiter().GetResult();
                 //var networkInfo = client.GetNetworkInfo().GetAwaiter().GetResult();
 
