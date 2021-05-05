@@ -44,6 +44,7 @@ namespace Doods.Synology.Webapi.Std
 
             try
             {
+               
                 var response = await _client.ExecuteAsync<SynologyResponse<SynoLoginInfo>>(loginRequest);
                 //.ConfigureAwait(false);
 
