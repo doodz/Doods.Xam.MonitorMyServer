@@ -1,6 +1,6 @@
-﻿using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
+﻿using Doods.Openmediavault.Rpc.Std.Data.V4.Settings;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Requests.Settings
 {
     public class SetWebGuiSetting : OmvRequestBase
     {

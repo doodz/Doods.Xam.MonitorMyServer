@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Doods.Openmediavault.Rpc.std.Data.V4.Settings
+namespace Doods.Openmediavault.Rpc.Std.Data.V4.Settings
 {
     public class NetworkSetting : OmvObject
     {

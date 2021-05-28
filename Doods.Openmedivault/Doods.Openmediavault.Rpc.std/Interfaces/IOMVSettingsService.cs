@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
+using Doods.Openmediavault.Rpc.Std.Data.V4.Settings;
 
-namespace Doods.Openmediavault.Rpc.std.Interfaces
+namespace Doods.Openmediavault.Rpc.Std.Interfaces
 {
     public interface IOMVSettingsService
     {

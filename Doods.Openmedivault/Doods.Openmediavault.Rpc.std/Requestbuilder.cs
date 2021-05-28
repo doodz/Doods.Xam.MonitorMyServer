@@ -1,7 +1,8 @@
 ﻿using System;
 using Doods.Framework.Http.Std.Serializers;
 using Doods.Framework.Ssh.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Openmediavault.Rpc.Std.Requests;
+using Doods.Openmediavault.Rpc.Std.Seruializer;
 using Newtonsoft.Json;
 using RestSharp;
 

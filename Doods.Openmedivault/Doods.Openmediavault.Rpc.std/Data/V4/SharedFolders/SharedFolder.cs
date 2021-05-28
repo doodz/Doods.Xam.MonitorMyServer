@@ -1,5 +1,5 @@
 ﻿using System;
-using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Newtonsoft.Json;
 
 namespace Doods.Openmediavault.Rpc.Std.Data.V4.SharedFolders

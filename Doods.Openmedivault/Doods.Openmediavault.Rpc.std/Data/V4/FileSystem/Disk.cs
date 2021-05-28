@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Newtonsoft.Json;
 
-namespace Doods.Openmediavault.Rpc.std.Data.V4.FileSystem
+namespace Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem
 {
     public class Disk : IOmvObject
     {

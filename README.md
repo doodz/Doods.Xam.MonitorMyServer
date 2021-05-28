@@ -47,7 +47,8 @@ You can also use Synology cgi.
 - [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square)](https://www.paypal.me/Doodsdev)  
 
 Thanks!
-  
+  ## Termes, etc.
+  MonitorMyServer (MMS) is a voluntary project. While every effort is made to ensure that anything in this project can be installed safely, you use it AT YOUR OWN RISK. Whenever   possible, applications are created from source, and this source code is checked for possible security, privacy and other issues related to its use. This check is far from       exhaustive and there is no guarantee.
   ## Authors
 
 * **Thibault Herviou** - *Initial work* - [Doods](https://github.com/doodz)

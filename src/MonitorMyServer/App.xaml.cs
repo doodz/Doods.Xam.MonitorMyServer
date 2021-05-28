@@ -134,6 +134,7 @@ namespace Doods.Xam.MonitorMyServer
         {
             builder.RegisterModule<Bootstrapper>();
             builder.RegisterModule<Framework.Repository.Std.Config.Bootstrapper>();
+            builder.RegisterModule<Openmediavault.Mobile.Std.Config.Bootstrapper>();
             builder.RegisterModule<Views.Bootstrapper>();
             builder.RegisterModule<Services.Bootstrapper>();
 

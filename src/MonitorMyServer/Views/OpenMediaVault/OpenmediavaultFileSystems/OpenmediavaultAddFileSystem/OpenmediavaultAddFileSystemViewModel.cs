@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Std.Lists;
-using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
-using Doods.Openmediavault.Rpc.std.Interfaces;
+using Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Xamarin.Forms;

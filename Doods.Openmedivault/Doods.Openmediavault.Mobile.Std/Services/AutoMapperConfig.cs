@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using AutoMapper;
 using Doods.Openmediavault.Mobile.Std.Models;
-using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
 
 namespace Doods.Openmediavault.Mobile.Std.Services
 {

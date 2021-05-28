@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Doods.Openmedivault.Ssh.Std.Data
+namespace Doods.Openmediavault.Rpc.Std.Seruializer
 {
     internal class ParseStringConverter : JsonConverter
     {

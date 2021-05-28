@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Doods.Openmediavault.Mobile.Std.Enums
+namespace Doods.Openmediavault.Rpc.Std.Enums
 {
     public enum OMVNames
     {
