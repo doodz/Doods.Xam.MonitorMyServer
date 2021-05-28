@@ -1,0 +1,149 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\MyResourceDictionary.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\Fonts\fa-solid-900.ttf" />
+    <None Remove="Resources\Svg\Bullet.svg" />
+    <None Remove="Resources\Svg\ic_add_box_24px.svg" />
+    <None Remove="Resources\Svg\ic_add_circle_24px.svg" />
+    <None Remove="Resources\Svg\ic_check_box_24px.svg" />
+    <None Remove="Resources\Svg\ic_check_box_outline_blank_24px.svg" />
+    <None Remove="Resources\Svg\ic_chevron_right_24px.svg" />
+    <None Remove="Resources\Svg\ic_cloud_download_24px.svg" />
+    <None Remove="Resources\Svg\ic_computer_24px.svg" />
+    <None Remove="Resources\Svg\ic_delete_24px.svg" />
+    <None Remove="Resources\Svg\ic_delete_forever_24px.svg" />
+    <None Remove="Resources\Svg\ic_done_24px.svg" />
+    <None Remove="Resources\Svg\ic_eject_24px.svg" />
+    <None Remove="Resources\Svg\ic_error_24px.svg" />
+    <None Remove="Resources\Svg\ic_error_outline_24px.svg" />
+    <None Remove="Resources\Svg\ic_highlight_off_24px.svg" />
+    <None Remove="Resources\Svg\ic_input_24px.svg" />
+    <None Remove="Resources\Svg\ic_mode_edit_24px.svg" />
+    <None Remove="Resources\Svg\ic_power_24px.svg" />
+    <None Remove="Resources\Svg\ic_power_off_24px.svg" />
+    <None Remove="Resources\Svg\ic_sync_24px.svg" />
+    <None Remove="Resources\Svg\ic_system_update_alt_24px.svg" />
+    <None Remove="Resources\Svg\ic_update_24px.svg" />
+    <None Remove="Resources\Svg\IsHttp.svg" />
+    <None Remove="Resources\Svg\IsSsh.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Fonts\fa-solid-900.ttf" />
+    <EmbeddedResource Include="Resources\Svg\Bullet.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_add_box_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_add_circle_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_check_box_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_check_box_outline_blank_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_chevron_right_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_cloud_download_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_computer_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_delete_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_delete_forever_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_done_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_eject_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_error_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_error_outline_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_highlight_off_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_info_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_info_outline_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_input_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_mode_edit_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_power_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_power_off_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_sync_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_system_update_alt_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\ic_update_24px.svg" />
+    <EmbeddedResource Include="Resources\Svg\IsHttp.svg" />
+    <EmbeddedResource Include="Resources\Svg\IsSsh.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AppCenter.Analytics.Metrics" Version="1.1.0" />
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="MarcTron.Admob" Version="1.6.1" />
+    <PackageReference Include="Microsoft.AppCenter" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.2.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.11" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
+    <PackageReference Include="Xam.Plugin.DeviceInfo" Version="4.1.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Forms.Svg" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Doods.Framework.Std\Doods.Framework.Std.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\BooleanView.xaml.cs">
+      <DependentUpon>BooleanView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Common\Styles\DefaultTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\BooleanView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\NotificationView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\PopupListViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\PopupPageItemAction.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\ValidatableObjectControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\DoodsMobileDataTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\DoodsMobileColor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\DoodsMobileOnPlatform.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\MyResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Styles\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Styles\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
