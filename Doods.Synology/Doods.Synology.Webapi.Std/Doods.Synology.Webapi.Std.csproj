@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +13,15 @@
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Http.Std\Doods.Framework.Http.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Doods.Synology.TU</_Parameter1>
 
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfeces\" />
   </ItemGroup>

@@ -4,63 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Clients;
-using Doods.Openmediavault.Rpc.std.Data.V4;
-using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
-using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4.Settings;
+using Doods.Openmediavault.Rpc.Std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
 namespace Doods.Openmediavault.TU.Clients
 {
-    [TestClass]
-    public class OMVVersionsUnitTest
-    {
-        [DataTestMethod]
-        [DataRow("NotFound")]
-        [DataRow("Ix")]
-        [DataRow("Omnius")]
-        [DataRow("Fedaykin")]
-        [DataRow("Sardaukar")]
-        [DataRow("Kralizec")]
-        [DataRow("Stone burner")]
-        [DataRow("Erasmus")]
-        [DataRow("Arrakis")]
-        [DataRow("Usul")]
-        public void Create(string version)
-        {
-            var v = OMVVersions.GetVersionFromString(version);
-            Assert.IsNotNull(v);
-            Assert.AreEqual(version, v.Name);
-        }
-
-        [TestMethod]
-        public void NotFound()
-        {
-            var v = OMVVersions.GetVersionFromString("version");
-            Assert.IsNotNull(v);
-            Assert.AreEqual("NotFound", v.Name);
-        }
-
-        [TestMethod]
-        public void Version4lowerThan5()
-        {
-            var b = (OMVVersions.Version4 < OMVVersions.Version5);
-            Assert.IsTrue(b);
-        }
-        [TestMethod]
-        public void Version4UpperThan2()
-        {
-
-            var b = (OMVVersions.Version4 > OMVVersions.Version2);
-            Assert.IsTrue(b);
-        }
-    }
-
-
     [TestClass]
     public class OmvSystemClientUnitTest
     {

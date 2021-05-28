@@ -13,6 +13,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Doods.Openmediavault.Mobile.Std.Models;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Openmedivault.Ssh.Std.Requests;
 
 namespace Doods.Xam.MonitorMyServer.Services

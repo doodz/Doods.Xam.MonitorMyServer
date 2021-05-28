@@ -2,14 +2,13 @@
 using System.Threading.Tasks;
 using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Openmediavault.Rpc.Std.Clients;
-using Doods.Openmediavault.Rpc.std.Data.V4;
-using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
-using Doods.Openmediavault.Rpc.std.Data.V5;
-using Doods.Openmediavault.Rpc.std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Data;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.Std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Enums;
 using Renci.SshNet;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Interfaces
 {
     public interface IRrdService
     {

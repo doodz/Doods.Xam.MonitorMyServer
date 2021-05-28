@@ -1,7 +1,5 @@
 ﻿using Autofac;
-using Doods.Openmediavault.Rpc.std.Interfaces;
-using Doods.Openmedivault.Ssh.Std;
-using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Synology.Webapi.Std;
 
 namespace Doods.Xam.MonitorMyServer.Services
@@ -21,7 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             builder.RegisterType<SshService>().AsSelf();
             builder.RegisterType<OmvRpcService>().AsSelf();
-            builder.RegisterType<OmvSshService>().AsSelf();
+            //builder.RegisterType<OmvSshService>().AsSelf();//refact
 
             builder.RegisterType<SshServiceProvider>().SingleInstance().AsSelf();
             builder.RegisterType<OmvServiceProvider>().SingleInstance().AsSelf();

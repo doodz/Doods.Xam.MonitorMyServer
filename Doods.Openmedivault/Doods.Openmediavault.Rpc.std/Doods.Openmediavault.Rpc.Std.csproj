@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -13,6 +13,18 @@
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Http.Std\Doods.Framework.Http.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Ssh.Std\Doods.Framework.Ssh.Std.csproj" />
     <ProjectReference Include="..\..\Submodules\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Doods.Openmediavault.TU</_Parameter1>
+
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
   </ItemGroup>
 
 </Project>

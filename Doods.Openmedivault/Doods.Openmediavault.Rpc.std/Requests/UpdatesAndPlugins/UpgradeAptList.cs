@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Requests.UpdatesAndPlugins
 {
     public class UpgradeAptList : OmvRequestBase
     {

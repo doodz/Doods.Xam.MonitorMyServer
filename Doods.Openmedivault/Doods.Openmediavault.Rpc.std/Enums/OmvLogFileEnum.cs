@@ -12,7 +12,7 @@
 
 using System.ComponentModel;
 
-namespace Doods.Openmedivault.Ssh.Std.Data
+namespace Doods.Openmediavault.Rpc.Std.Enums
 {
     public enum OmvLogFileEnum
     {

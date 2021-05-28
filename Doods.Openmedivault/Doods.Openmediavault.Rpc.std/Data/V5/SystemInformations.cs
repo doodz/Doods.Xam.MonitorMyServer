@@ -1,7 +1,8 @@
-﻿using Doods.Openmedivault.Ssh.Std.Data;
+﻿using Doods.Openmediavault.Rpc.Std.Interfaces;
+using Doods.Openmediavault.Rpc.Std.Seruializer;
 using Newtonsoft.Json;
 
-namespace Doods.Openmediavault.Rpc.std.Data.V5
+namespace Doods.Openmediavault.Rpc.Std.Data.V5
 {
     public class OMVInformations : IOmvObject
     {

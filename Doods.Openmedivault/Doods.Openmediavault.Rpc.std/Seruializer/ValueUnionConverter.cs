@@ -1,8 +1,8 @@
 ﻿using System;
-using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
 using Newtonsoft.Json;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Seruializer
 {
     internal class ValueUnionConverter : JsonConverter
     {

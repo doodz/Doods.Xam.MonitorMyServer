@@ -1,4 +1,4 @@
-﻿namespace Doods.Openmedivault.Ssh.Std.Requests
+﻿namespace Doods.Openmediavault.Rpc.Std.Requests.Settings
 {
     public class GetWebAdministrationSettingRequest : OmvRequestBase
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Requests.Settings
 {
     public static class DateTimeExtensions
     {

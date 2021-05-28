@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Data;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients
 {

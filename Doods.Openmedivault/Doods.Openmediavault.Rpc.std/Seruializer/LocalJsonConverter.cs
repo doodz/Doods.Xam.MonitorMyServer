@@ -1,9 +1,8 @@
 ﻿using System.Globalization;
-using Doods.Openmedivault.Ssh.Std.Data;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Seruializer
 {
     public sealed class LocalJsonConverter : JsonSerializer
     {

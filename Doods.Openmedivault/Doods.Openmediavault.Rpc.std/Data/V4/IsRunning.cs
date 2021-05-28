@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Doods.Openmediavault.Rpc.std.Data.V4
+namespace Doods.Openmediavault.Rpc.Std.Data.V4
 {
     public class IsRunning
     {

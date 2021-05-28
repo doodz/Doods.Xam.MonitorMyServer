@@ -2,8 +2,8 @@
 using Autofac;
 using AutoMapper;
 using Doods.Framework.Mobile.Ssh.Std.Models;
-using Doods.Openmediavault.Rpc.std.Data.V4;
-using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem;
 using Doods.Synology.Webapi.Std.Datas;
 using Doods.Xam.MonitorMyServer.Data;
 using Doods.Xam.MonitorMyServer.Data.Nas;
@@ -110,7 +110,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             var map2 = CreateMap<Share, SharedFolder>();
             map2.ConvertUsing(new SynologyShareConverteur());
 
-            var map3 = CreateMap<Openmediavault.Rpc.std.Data.V4.FileSystem.Disk, Data.Nas.Disk>();
+            var map3 = CreateMap<Openmediavault.Rpc.Std.Data.V4.FileSystem.Disk, Data.Nas.Disk>();
             map3.ConvertUsing(new OpenmediavaultDiskConverteur());
             var map4 = CreateMap<Disk, Data.Nas.Disk>();
             map4.ConvertUsing(new SynologyDiskConverteur());
@@ -188,9 +188,9 @@ namespace Doods.Xam.MonitorMyServer.Services
     }
 
     public class
-        OpenmediavaultDiskConverteur : ITypeConverter<Openmediavault.Rpc.std.Data.V4.FileSystem.Disk, Data.Nas.Disk>
+        OpenmediavaultDiskConverteur : ITypeConverter<Openmediavault.Rpc.Std.Data.V4.FileSystem.Disk, Data.Nas.Disk>
     {
-        public Data.Nas.Disk Convert(Openmediavault.Rpc.std.Data.V4.FileSystem.Disk source, Data.Nas.Disk destination,
+        public Data.Nas.Disk Convert(Openmediavault.Rpc.Std.Data.V4.FileSystem.Disk source, Data.Nas.Disk destination,
             ResolutionContext context)
         {
             var test = new Data.Nas.Disk
@@ -269,7 +269,9 @@ namespace Doods.Xam.MonitorMyServer.Services
             {
               
                 Name = source.Name,
-                
+                Status = source.Version,
+                Desc = source.Name
+
             };
             return test;
         }

@@ -2,23 +2,67 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using Doods.Framework.ApiClientBase.Std.Interfaces;
+using Doods.Framework.ApiClientBase.Std.Models;
+using Doods.Framework.Repository.Std.Tables;
 using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Std;
-using Doods.Openmediavault.Mobile.Std.Enums;
 using Doods.Openmediavault.Mobile.Std.Models;
 using Doods.Openmediavault.Rpc.Std.Clients;
-using Doods.Openmediavault.Rpc.std.Data.V4;
-using Doods.Openmediavault.Rpc.std.Data.V4.FileSystem;
-using Doods.Openmediavault.Rpc.std.Data.V4.Settings;
-using Doods.Openmediavault.Rpc.std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem;
+using Doods.Openmediavault.Rpc.Std.Data.V4.Settings;
+using Doods.Openmediavault.Rpc.Std.Data.V5;
+using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
-using Doods.Openmedivault.Ssh.Std.Data;
-using Doods.Openmedivault.Ssh.Std.Requests;
+using Doods.Openmediavault.Rpc.Std.Seruializer;
+using Doods.Openmedivault.Http.Std;
+using Doods.Openmedivault.Ssh.Std;
 using Doods.Xam.MonitorMyServer.Data.Nas;
 using Renci.SshNet;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
+
+    public class OmvRpcClientBuilder
+    {
+
+
+        public IOmvService GetOmvService(Host host, ILogger logger, IMapper mapper)
+        {
+            IRpcClient service;
+            if (host.IsSsh)
+            {
+                var connection = new SshConnection(host.Url, host.Port, host.UserName, host.Password);
+                service = GetSsh(logger, connection);
+                //SshService 
+                //var service2 = new SshService(logger, mapper);
+                //service2.Init(connection, false);
+                //_sshService = service2;
+                //_sshServiceProvider.ChangeValue(_sshService);
+            }
+            else
+            {
+                var connection = new HttpConnection(host.Url, host.Port);
+                service = GetHttp(logger, connection);
+            }
+
+            return new OmvRpcService(service, logger, mapper);
+        }
+
+
+        public IRpcClient GetHttp(ILogger logger, IConnection connection)
+        {
+            return new OmvHttpService(logger, connection);
+
+        }
+
+        public IRpcClient GetSsh(ILogger logger, IConnection connection)
+        {
+            return new OmvSshService(logger, connection);
+        }
+    }
+
     public class OmvRpcService : IOmvService
     {
         private readonly IRpcClient _client;
@@ -349,7 +393,7 @@ namespace Doods.Xam.MonitorMyServer.Services
             return _omvSystemClient.GetRpcVersion();
         }
 
-      
+
         public async Task<IEnumerable<Package>> GetPackages()
         {
             var result = await GetUpgraded();

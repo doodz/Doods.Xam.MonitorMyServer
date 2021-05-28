@@ -111,6 +111,11 @@ namespace Doods.Synology.Webapi.Std
         {
             return _synoPackageClient.GetPackagesInfo();
         }
+
+        //public Task<SynologyPackageServerInfo> GetPackagesServerInfo()
+        //{
+        //    return _synoPackageClient.GetPackagesServerInfo();
+        //}
         public async Task<IEnumerable<SharedFolder>> GetSharedFolders()
         {
             var result = await GetSharedFoldersInfo();
@@ -119,6 +124,7 @@ namespace Doods.Synology.Webapi.Std
         public async Task<IEnumerable<Package>> GetPackages()
         {
             var result = await GetPackagesInfo();
+          
             return _mapper.Map<IEnumerable<Datas.Package>, IEnumerable<Package>>(result.Packages);
         }
 

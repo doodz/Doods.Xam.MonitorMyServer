@@ -1,6 +1,7 @@
 ﻿using Doods.Framework.Ssh.Std.Interfaces;
+using Doods.Openmediavault.Rpc.Std.Seruializer;
 
-namespace Doods.Openmedivault.Ssh.Std.Requests
+namespace Doods.Openmediavault.Rpc.Std.Requests
 {
     public abstract class OmvRequestBase : ISshRequest
     {

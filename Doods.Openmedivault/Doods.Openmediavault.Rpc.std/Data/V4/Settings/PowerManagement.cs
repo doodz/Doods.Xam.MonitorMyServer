@@ -1,9 +1,9 @@
-﻿using Doods.Openmedivault.Ssh.Std.Data;
+﻿using Doods.Openmediavault.Rpc.Std.Enums;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 
-namespace Doods.Openmediavault.Rpc.std.Data.V4.Settings
+namespace Doods.Openmediavault.Rpc.Std.Data.V4.Settings
 {
     public class PowerManagementSetting : OmvObject
     {

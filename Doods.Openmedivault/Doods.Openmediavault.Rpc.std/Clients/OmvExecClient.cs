@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Doods.Openmediavault.Rpc.std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
 
 namespace Doods.Openmediavault.Rpc.Std.Clients

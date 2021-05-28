@@ -1,4 +1,4 @@
-﻿namespace Doods.Openmedivault.Ssh.Std.Data
+﻿namespace Doods.Openmediavault.Rpc.Std.Interfaces
 {
     public interface IOmvObject
     {
