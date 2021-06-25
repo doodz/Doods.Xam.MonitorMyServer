@@ -43,7 +43,7 @@ namespace Doods.Xam.MonitorMyServer.Droid
         public override void OnCreate()
         {
             base.OnCreate();
-
+            //toto
 
             Task.Run(() => { MyMethod(); });
             //SecureStorageImplementation.StoragePassword = FormatPassword();
