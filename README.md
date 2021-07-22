@@ -13,8 +13,7 @@ For :
   * Run commands (with ssh connection).
   
 You can also use openmediavault rpc page over Http or Ssh.
-
-You can also use Synology cgi.
+You can also use Synology cgi over http.
 
 # Application Diagram
 
