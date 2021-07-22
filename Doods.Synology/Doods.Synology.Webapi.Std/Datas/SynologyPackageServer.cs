@@ -104,10 +104,10 @@ namespace Doods.Synology.Webapi.Std.Datas
         public string Changelog { get; set; }
 
         [JsonProperty("conflictpkgs")]
-        public string Conflictpkgs { get; set; }
+        public object Conflictpkgs { get; set; }
 
         [JsonProperty("deppkgs")]
-        public string Deppkgs { get; set; }
+        public object Deppkgs { get; set; }
 
         [JsonProperty("desc")]
         public string Desc { get; set; }
@@ -120,8 +120,6 @@ namespace Doods.Synology.Webapi.Std.Datas
 
         [JsonProperty("download_count")]
         public long DownloadCount { get; set; }
-
-      
 
         [JsonProperty("is_security_version")]
         public bool IsSecurityVersion { get; set; }
@@ -142,7 +140,7 @@ namespace Doods.Synology.Webapi.Std.Datas
         public string PackagePackage { get; set; }
 
         [JsonProperty("price")]
-        public string Price { get; set; }
+        public object Price { get; set; }
 
         [JsonProperty("qinst", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Qinst { get; set; }
@@ -238,40 +236,40 @@ namespace Doods.Synology.Webapi.Std.Datas
     public partial class Breakpkgs
     {
         [JsonProperty("Docker-Discourse", NullValueHandling = NullValueHandling.Ignore)]
-        public string DockerDiscourse { get; set; }
+        public object DockerDiscourse { get; set; }
 
         [JsonProperty("Docker-GitLab", NullValueHandling = NullValueHandling.Ignore)]
-        public string DockerGitLab { get; set; }
+        public object DockerGitLab { get; set; }
 
         [JsonProperty("Docker-LXQt", NullValueHandling = NullValueHandling.Ignore)]
-        public string DockerLxQt { get; set; }
+        public object DockerLxQt { get; set; }
 
         [JsonProperty("Docker-Redmine", NullValueHandling = NullValueHandling.Ignore)]
-        public string DockerRedmine { get; set; }
+        public object DockerRedmine { get; set; }
 
         [JsonProperty("Docker-Spree", NullValueHandling = NullValueHandling.Ignore)]
-        public string DockerSpree { get; set; }
+        public object DockerSpree { get; set; }
 
         [JsonProperty("DocumentViewer", NullValueHandling = NullValueHandling.Ignore)]
-        public string DocumentViewer { get; set; }
+        public object DocumentViewer { get; set; }
 
         [JsonProperty("MailClient", NullValueHandling = NullValueHandling.Ignore)]
-        public string MailClient { get; set; }
+        public object MailClient { get; set; }
 
         [JsonProperty("PACS", NullValueHandling = NullValueHandling.Ignore)]
-        public string Pacs { get; set; }
+        public object Pacs { get; set; }
 
         [JsonProperty("Contacts", NullValueHandling = NullValueHandling.Ignore)]
-        public string Contacts { get; set; }
+        public object Contacts { get; set; }
 
         [JsonProperty("Spreadsheet", NullValueHandling = NullValueHandling.Ignore)]
-        public string Spreadsheet { get; set; }
+        public object Spreadsheet { get; set; }
 
         [JsonProperty("SnapshotReplication", NullValueHandling = NullValueHandling.Ignore)]
-        public string SnapshotReplication { get; set; }
+        public object SnapshotReplication { get; set; }
 
         [JsonProperty("PhotoStation", NullValueHandling = NullValueHandling.Ignore)]
-        public string PhotoStation { get; set; }
+        public object PhotoStation { get; set; }
     }
     public  class Replacepkgs
     {

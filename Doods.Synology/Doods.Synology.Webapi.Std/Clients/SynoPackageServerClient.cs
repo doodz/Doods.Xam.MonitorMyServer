@@ -23,6 +23,7 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("version", "2");
             loginRequest.AddParameter("blforcereload", false);
             loginRequest.AddParameter("blloadothers", false);
+            loginRequest.AddParameter("method", "list");
             loginRequest.AddParameter("sid", _client.Sid);
 
 
