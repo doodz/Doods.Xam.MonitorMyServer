@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="Doods.Framework.Mobile.Std.controls.NotificationView"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std">
+    <ContentView.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/MyResourceDictionary.xaml" />
+                <ResourceDictionary>
+                    <converters:InverseBooleanConverter x:Key="InverseBoolean" />
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Frame Style="{StaticResource FrameTopBorderlessStyle}"
+
+               Padding="10,10,10,0">
+
+            <Grid Style="{StaticResource GridInFrameStyle}"
+                  HorizontalOptions="StartAndExpand">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowCurrentCmd,Mode=OneWay}" />
+                </Grid.GestureRecognizers>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!--<controls:RoundBoxView Grid.Row="0"
+                                       Grid.Column="0"
+                                       Grid.RowSpan="2"
+                                       WidthRequest="40"
+                                       HeightRequest="40"
+                                       IsVisible="{Binding IsRunning}"
+                                       Style="{StaticResource BoxViewIndicatorStyle}"
+                                       BackgroundColor="{Binding Color, Mode=OneWay}" />-->
+                <controls1:DoodsSvgImage
+                    Source="{Binding Icon.ResourceFile,Mode=OneWay}"
+                    Color="{DynamicResource  SystemGreen}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.RowSpan="2"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    IsVisible="{Binding IsRunning, Converter={StaticResource InverseBoolean}}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+                <ActivityIndicator Grid.Row="0"
+                                   Grid.Column="0"
+                                   Grid.RowSpan="2"
+                                   WidthRequest="40"
+                                   HeightRequest="40"
+                                   IsRunning="{Binding IsRunning}"
+                                   IsVisible="{Binding IsRunning}"
+                                   Color="{StaticResource ColorBeeOld}"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="{Binding Title, Mode=OneWay}"
+                       Style="{StaticResource DefaultSubtitleStyle}"
+                       Margin="0,5,0,0" />
+
+                <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding Description}"
+                       Margin="0,-5,0,0" />
+
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
