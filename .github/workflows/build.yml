@@ -58,7 +58,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          dotnet test  "Doods.Xam.MonitorMyServer.sln" /t:PackageForAndroid  /p:Configuration=Debug
+          dotnet test "Doods.Xam.MonitorMyServer.sln" /p:Configuration=Debug
         # dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
       - name: End Sonar scan
         shell: powershell
