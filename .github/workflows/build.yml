@@ -14,6 +14,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.11
+      - name: Setup .NET Core SDK 5.0.x
+        uses: actions/setup-dotnet@v1
+        with:
+            dotnet-version: '5.0.x'
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
@@ -44,15 +48,17 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-         
+      - name: Install dependencies
+        shell: powershell
+        run: |
+          nuget restore
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          nuget restore
-          dotnet test  "Doods.Xam.MonitorMyServer.sln" /t:Rebuild /p:Configuration=Release
+          dotnet test  "Doods.Xam.MonitorMyServer.sln" /t:PackageForAndroid  /p:Configuration=Debug
         # dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
       - name: End Sonar scan
         shell: powershell
