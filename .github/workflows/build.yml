@@ -52,7 +52,7 @@ jobs:
         shell: powershell
         run: |
           nuget restore
-          dotnet test  "Doods.Xam.MonitorMyServer.sln"
+          dotnet test  "Doods.Xam.MonitorMyServer.sln" /t:Rebuild /p:Configuration=Release
         # dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
       - name: End Sonar scan
         shell: powershell
