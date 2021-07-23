@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resources="clr-namespace:Doods.Framework.Mobile.Ssh.Std.Resources;assembly=Doods.Framework.Mobile.Ssh.Std"
+             x:Class="Doods.Framework.Mobile.Ssh.Std.Views.UcDiskUsage">
+
+    <ContentView.Resources>
+
+        <ResourceDictionary>
+            <DataTemplate x:Key="DiskUsageDataTemplate">
+                <ViewCell>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=Filesystem}" />
+                        <Label Grid.Column="0" Grid.Row="1" Text="{Binding FileSystem,Mode=OneWay}" />
+
+                        <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=MountedOn}" />
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding MountedOn,Mode=OneWay}" />
+
+
+                        <Label Grid.Column="0" Grid.Row="2" Text="{resources:Translate Text=UseSize}" />
+                        <Label Grid.Column="0" Grid.Row="3" Text="{Binding UseSize,Mode=OneWay}" />
+
+                        <Label Grid.Column="1" Grid.Row="2" Text="{resources:Translate Text=AvailableUsedPercent}" />
+                        <Label Grid.Column="1" Grid.Row="3" Text="{Binding AvailableUsedPercent,Mode=OneWay}" />
+
+
+                        <!--<ContentPresenter ... />-->
+
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="../Resources/MobileSshResourceDictionary.xaml" />
+
+                </ResourceDictionary.MergedDictionaries>
+
+            </ResourceDictionary>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <ListView ItemsSource="{Binding .,Mode=OneWay}" ItemTemplate="{StaticResource DiskUsageDataTemplate}" />
+        <!--<StackLayout BindableLayout.ItemsSource="{Binding .}"  BindableLayout.ItemTemplate="{StaticResource  DiskUsageTitledFrameView}"/>-->
+    </ContentView.Content>
+</ContentView>

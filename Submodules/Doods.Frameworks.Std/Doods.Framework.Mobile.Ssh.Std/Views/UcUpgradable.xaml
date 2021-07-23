@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls1="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+
+             x:Class="Doods.Framework.Mobile.Ssh.Std.Views.UcUpgradable">
+    <!--<ContentView.Resources>
+
+        <ResourceDictionary>
+            <DataTemplate x:Key="UpgradableDataTemplate" >
+                <ViewCell>
+                    <Label Text="{Binding ShowFormatedInfo,Mode=OneWay}"/>
+                    
+                    --><!--<Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Text="{resources:Translate Text=Name}"/>
+                        <Label Grid.Column="0" Grid.Row="1" Text="{Binding Name,Mode=OneWay}"/>
+
+                        <Label Grid.Column="1" Grid.Row="0" Text="{resources:Translate Text=Version}"/>
+                        <Label Grid.Column="1" Grid.Row="1" Text="{Binding NewVersion,Mode=OneWay}"/>
+
+
+                      
+
+
+                        --><!--<ContentPresenter ... />--><!--
+
+
+                    </Grid>--><!--
+                </ViewCell>
+            </DataTemplate>
+
+
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <ListView ItemsSource="{Binding .,Mode=OneWay}" ItemTemplate="{StaticResource UpgradableDataTemplate}"/>
+    </ContentView.Content>-->
+
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/MobileSshResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ScrollView Padding="10" VerticalOptions="FillAndExpand">
+
+
+        <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding .}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <controls1:TitledFrameView Title="{Binding Name,Mode=OneWay}"
+                                               SubTitle="{Binding FromRepo,Mode=OneWay}"
+                                               TitleStyle="{StaticResource NewTitleStyle}"
+                                               SubTitleStyle="{StaticResource NewSubTitleStyle}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*" />
+                                <ColumnDefinition Width="65*" />
+                                <ColumnDefinition Width="15*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Platform,Mode=OneWay}" />
+                            <Label Grid.Column="1" Text="{Binding NewVersion,Mode=OneWay}" />
+                            <Switch Grid.Column="2" IsToggled="{Binding IsSelected,Mode=TwoWay}" />
+                        </Grid>
+
+                    </controls1:TitledFrameView>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+
+
+    </ScrollView>
+</ContentView>

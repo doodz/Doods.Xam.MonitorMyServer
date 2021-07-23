@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+             xmlns:testfont="clr-namespace:Doods.Framework.Mobile.Std.Helpers.Styles;assembly=Doods.Framework.Mobile.Std"
+             x:Class="Doods.Framework.Mobile.Std.controls.ValidatableObjectControlVisibility">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/MyResourceDictionary.xaml" />
+                <ResourceDictionary>
+                    <Style x:Key="HeaderLabelStyle"
+                           TargetType="{x:Type Label}">
+                        <!--<Setter Property="FontFamily"
+						Value="{StaticResource MontserratRegular}" />-->
+                        <Setter Property="FontSize"
+                                Value="{StaticResource LittleSize}" />
+                        <Setter Property="TextColor"
+                                Value="{StaticResource GreenColor}" />
+                        <Setter Property="HorizontalOptions"
+                                Value="Start" />
+                    </Style>
+                    <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout>
+
+            <Label
+                Text="{Binding Title,Mode=OneTime}"
+                Style="{StaticResource HeaderLabelStyle}" />
+            <Grid>
+                <Entry Text="{Binding Value, Mode=TwoWay}" Keyboard="{Binding Keyboard,Mode=OneTime}"
+                       IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger},
+                                   Path=HidePassword}">
+                <Entry.Style>
+                    <OnPlatform x:TypeArguments="Style">
+                        <On Platform="iOS, Android" Value="{StaticResource EntryValidatableStyle}" />
+                        <On Platform="UWP, WinRT, WinPhone" Value="{StaticResource UwpEntryValidatableStyle}" />
+                    </OnPlatform>
+                </Entry.Style>
+                <Entry.Behaviors>
+                    <behaviors:EventToCommandBehavior
+                        EventName="TextChanged"
+                        Command="{Binding ValidateCommand}" />
+                    <!--<behaviors:EventToCommandBehavior
+                      EventName="Completed"
+                      Command="{Binding OnNextCommand}" />-->
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger
+                        TargetType="Entry"
+                        Binding="{Binding IsValid}"
+                        Value="False">
+                        <Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource ErrorColor}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+                <ImageButton VerticalOptions="Center"
+                             Margin="0,0,0,0"
+                             HeightRequest="30"
+                             HorizontalOptions="End"
+                             Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Cloud}, Color=#323130}">
+                    <ImageButton.Triggers>
+                        <EventTrigger Event="Clicked">
+                            <behaviors:ShowPasswordTriggerAction 
+                                ShowIcon="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Sun}, Color=#323130}"
+                                HideIcon="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.Cloud}, Color=#323130}"
+                                x:Name="ShowPasswordActualTrigger"/>
+                        </EventTrigger>
+                    </ImageButton.Triggers>
+                </ImageButton>
+            </Grid>
+            <Label
+                Text="{Binding Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="var\**" />
+    <EmbeddedResource Remove="var\**" />
+    <None Remove="var\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Doods.Frameworks.Std\Doods.Framework.ApiClientBase.Std\Doods.Framework.ApiClientBase.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Frameworks.Std\Doods.Framework.Std\Doods.Framework.Std.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Requests\Unix\" />
+    <Folder Include="Requests\Raspberry\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="SSH.NET" Version="2020.0.1" />
+  </ItemGroup>
+
+</Project>

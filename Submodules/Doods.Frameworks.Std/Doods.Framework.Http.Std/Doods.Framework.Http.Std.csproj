@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+  <ItemGroup>
+  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+    <_Parameter1>Doods.Framework.TU</_Parameter1>
+
+  </AssemblyAttribute>
+  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+    <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+  </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Doods.Framework.ApiClientBase.Std\Doods.Framework.ApiClientBase.Std.csproj" />
+    <ProjectReference Include="..\Doods.Framework.Std\Doods.Framework.Std.csproj" />
+  </ItemGroup>
+
+</Project>

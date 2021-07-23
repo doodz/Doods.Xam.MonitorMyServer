@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+             xmlns:converters="clr-namespace:Doods.Framework.Mobile.Std.Converters;assembly=Doods.Framework.Mobile.Std"
+             x:Class="Doods.Framework.Mobile.Std.controls.ValidatableObjectControl">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources/MyResourceDictionary.xaml" />
+                <ResourceDictionary>
+                    <Style x:Key="HeaderLabelStyle"
+                           TargetType="{x:Type Label}">
+                        <!--<Setter Property="FontFamily"
+						Value="{StaticResource MontserratRegular}" />-->
+                        <Setter Property="FontSize"
+                                Value="{StaticResource LittleSize}" />
+                        <Setter Property="TextColor"
+                                Value="{StaticResource GreenColor}" />
+                        <Setter Property="HorizontalOptions"
+                                Value="Start" />
+                    </Style>
+                    <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout>
+
+            <Label
+                Text="{Binding Title,Mode=OneTime}"
+                Style="{StaticResource HeaderLabelStyle}" />
+            <Entry Text="{Binding Value, Mode=TwoWay}" Keyboard="{Binding Keyboard,Mode=OneTime}">
+                <Entry.Style>
+                    <OnPlatform x:TypeArguments="Style">
+                        <On Platform="iOS, Android" Value="{StaticResource EntryValidatableStyle}" />
+                        <On Platform="UWP, WinRT, WinPhone" Value="{StaticResource UwpEntryValidatableStyle}" />
+                    </OnPlatform>
+                </Entry.Style>
+                <Entry.Behaviors>
+                    <behaviors:EventToCommandBehavior
+                        EventName="TextChanged"
+                        Command="{Binding ValidateCommand}" />
+                    <!--<behaviors:EventToCommandBehavior
+                      EventName="Completed"
+                      Command="{Binding OnNextCommand}" />-->
+                </Entry.Behaviors>
+                <Entry.Triggers>
+                    <DataTrigger
+                        TargetType="Entry"
+                        Binding="{Binding IsValid}"
+                        Value="False">
+                        <Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource ErrorColor}" />
+                    </DataTrigger>
+                </Entry.Triggers>
+            </Entry>
+            <Label
+                Text="{Binding Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Doods.Framework.Mobile.Std.controls.BooleanView">
+    <ContentView.Content>
+        <Grid MinimumHeightRequest="60"
+              Margin="0,5">
+
+            <Switch
+                x:Name="MySwitch"
+                IsToggled="{Binding Value, Mode=TwoWay}"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                Margin="0,0,10,0" />
+
+            <StackLayout VerticalOptions="Center"
+                         Margin="10,0,60,0">
+
+                <Label Text="{Binding Text}"
+                       Margin="0,-5,0,0"
+                       Style="{Binding SubtitleStyle}"
+                       TextColor="{Binding TextColor}" />
+
+                <Label Text="{Binding Description}"
+                       Margin="0,0,0,10" />
+            </StackLayout>
+
+            <BoxView BackgroundColor="Transparent"
+                     HorizontalOptions="End"
+                     WidthRequest="60"
+                     x:Name="box" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>

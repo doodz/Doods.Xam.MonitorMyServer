@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xaml-comp compile="true" ?>
+
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Doods.Framework.Mobile.Std.Resources.DoodsMobileDataTemplate">
+    <!--DataTemplate pour ListView.GroupHeaderTemplate-->
+
+    <DataTemplate x:Key="DefaultGroupHeaderStyle">
+        <ViewCell>
+            <Grid Padding="10,10,10,5">
+                <Label Text="{Binding Key.Text}"
+                       Style="{DynamicResource DefaultSubtitleStyle}"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Key.Count}"
+                       Style="{DynamicResource DefaultSubtitleStyle}"
+                       HorizontalOptions="End" />
+            </Grid>
+        </ViewCell>
+    </DataTemplate>
+
+
+    <!--DataTemplate pour ListView.ItemTemplate-->
+
+    <DataTemplate x:Key="MenuTemplate">
+        <ViewCell>
+            <ViewCell.View>
+                <Grid HeightRequest="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView BackgroundColor="{DynamicResource GrayLight}"
+                             Grid.ColumnSpan="3"
+                             IsVisible="{Binding IsSelected, Mode=TwoWay}" />
+
+                    <Image Grid.Column="0"
+                           Margin="10,0"
+                           Source="{Binding Icon}"
+                           HeightRequest="30"
+                           WidthRequest="30" />
+
+                    <Label Grid.Column="2"
+                           Text="{Binding Title}"
+                           TextColor="{DynamicResource ColorBlack}"
+                           VerticalTextAlignment="Center" />
+
+                </Grid>
+            </ViewCell.View>
+        </ViewCell>
+    </DataTemplate>
+
+</ResourceDictionary>

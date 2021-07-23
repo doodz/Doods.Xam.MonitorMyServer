@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xaml-comp compile="true" ?>
+
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:behaviors="clr-namespace:Doods.Framework.Mobile.Std.Behaviors;assembly=Doods.Framework.Mobile.Std"
+                    xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+                    xmlns:local="clr-namespace:Doods.Framework.Mobile.Std.Resources;assembly=Doods.Framework.Mobile.Std"
+                   
+                    xmlns:enum="clr-namespace:Doods.Framework.Mobile.Std.Enum;assembly=Doods.Framework.Mobile.Std"
+                    xmlns:controls="clr-namespace:Doods.Framework.Mobile.Std.Controls;assembly=Doods.Framework.Mobile.Std"
+                    xmlns:styles="clr-namespace:Doods.Framework.Mobile.Std.Common.Styles;assembly=Doods.Framework.Mobile.Std">
+    <!--<ResourceDictionary Source="pack://application:,,,/YourAssembly;component/Subfolder/YourResourceFile.xaml"/>-->
+    <ResourceDictionary.MergedDictionaries>
+        <local:DoodsMobileColor />
+        <local:DoodsMobileOnPlatform />
+        <local:DoodsMobileDataTemplate />
+        <styles:DefaultTheme/>
+    </ResourceDictionary.MergedDictionaries>
+
+
+    <Style TargetType="ContentView">
+        <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}" />
+    </Style>
+
+
+    <Style TargetType="controls:TitledFrameView" BaseResourceKey="FrameViewStyle">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}" />
+    </Style>
+
+    <Style TargetType="controls:TitleSwitchView">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Margin" Value="2" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource FrameBackgroundColor}" />
+    </Style>
+    <x:Int32 x:Key="BorderThicknessStatutConseil">3</x:Int32>
+
+
+    <!--Style pour Frame-->
+    <!--<Style TargetType="Frame">
+        <Setter Property="Margin"
+                Value="10,5" />
+        <Setter Property="HasShadow"
+                Value="True" />
+        <Setter Property="Padding"
+                Value="0,0,0,0" />
+    </Style>-->
+
+    <Style TargetType="Frame"
+           x:Key="FrameActionStyle">
+        <Setter Property="Margin"
+                Value="10,-15,10,10" />
+    </Style>
+
+    <Style TargetType="Frame"
+           x:Key="FrameTopBorderlessStyle">
+        <Setter Property="Margin"
+                Value="-10,-10,-10,0" />
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource FabBackgroundColor}" />
+    </Style>
+
+    <!--Style pour Grid-->
+
+    <Style TargetType="Grid"
+           x:Key="GridInFrameStyle">
+        <Setter Property="Margin"
+                Value="{StaticResource GridInFrameStyleOnPlatform}" />
+
+    </Style>
+
+    <Style TargetType="Grid"
+           x:Key="GridPaddingInFrameStyle">
+        <Setter Property="Padding"
+                Value="7" />
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource WindowBackgroundColor}" />
+    </Style>
+
+    <Style TargetType="Grid"
+           x:Key="GridInContexteStyle">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource WindowBackgroundColor}" />
+    </Style>
+
+
+    <!--Style pour Label-->
+
+    <Style x:Key="DefaultTitleStyle"
+           TargetType="Label"
+           BaseResourceKey="TitleStyle">
+        <Setter Property="FontSize"
+                Value="22" />
+    </Style>
+
+    <Style x:Key="DefaultSubtitleStyle"
+           TargetType="Label"
+           BaseResourceKey="SubtitleStyle">
+        <Setter Property="FontSize"
+                Value="18" />
+    </Style>
+
+    <Style TargetType="Label"
+           BaseResourceKey="BodyStyle">
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="TextColor" Value="{DynamicResource WindowForegroundColor}" />
+
+    </Style>
+
+
+    <Style x:Key="MyBodySmallStyle"
+           TargetType="Label"
+           BaseResourceKey="BodyStyle">
+        <Setter Property="FontSize"
+                Value="9" />
+    </Style>
+    <Style x:Key="MyBodyMediumStyle"
+           TargetType="Label"
+           BaseResourceKey="BodyStyle">
+        <Setter Property="FontSize"
+                Value="13" />
+    </Style>
+
+
+    <!--Style pour ListView-->
+
+    <Style TargetType="ListView">
+        <Setter Property="SeparatorVisibility"
+                Value="None" />
+        <Setter Property="HasUnevenRows"
+                Value="True" />
+        <Setter Property="SeparatorColor"
+                Value="Transparent" />
+        <Setter Property="Header">
+            <Setter.Value>
+                <BoxView HeightRequest="0"
+                         Margin="0,5,0,0" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Footer">
+            <Setter.Value>
+                <BoxView HeightRequest="0"
+                         Margin="0,0,0,5" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="ListView"
+           x:Key="ListViewFooterActionButtonStyle">
+        <Setter Property="Footer">
+            <Setter.Value>
+                <BoxView HeightRequest="0"
+                         Margin="0,0,0,90" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--Style pour BoxView-->
+
+    <Style x:Key="BoxViewIndicatorStyle"
+           TargetType="BoxView">
+        <Setter Property="WidthRequest"
+                Value="60" />
+        <Setter Property="HeightRequest"
+                Value="60" />
+        <Setter Property="VerticalOptions"
+                Value="Center" />
+        <Setter Property="HorizontalOptions"
+                Value="Center" />
+    </Style>
+
+    <Style x:Key="BoxViewSeparatorStyle"
+           TargetType="BoxView">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource ColorTextGray}" />
+        <Setter Property="HeightRequest"
+                Value="0.5" />
+    </Style>
+
+    <Style x:Key="BoxViewVerticalSeparatorStyle"
+           TargetType="BoxView">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource ColorTextGray}" />
+        <Setter Property="WidthRequest"
+                Value="0.5" />
+    </Style>
+
+
+    <!-- Style pour Entry -->
+    <Style x:Key="ValidationErrorLabelStyle"
+           TargetType="{x:Type Label}">
+        <Setter Property="TextColor"
+                Value="{DynamicResource ErrorColor}" />
+        <Setter Property="FontSize"
+                Value="{DynamicResource LittleSize}" />
+    </Style>
+
+
+    <Style x:Key="EntryValidatableStyle"
+           TargetType="{x:Type Entry}">
+
+        <Setter Property="behaviors:LineColorBehavior.ApplyLineColor"
+                Value="True" />
+        <Setter Property="behaviors:LineColorBehavior.LineColor"
+                Value="{DynamicResource BlackColor}" />
+        <Style.Triggers>
+            <Trigger TargetType="Entry"
+                     Property="IsFocused"
+                     Value="True">
+                <Setter Property="Opacity" Value="1" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+    <Style x:Key="UwpEntryValidatableStyle"
+           TargetType="{x:Type Entry}">
+        <Setter Property="behaviors:LineColorBehavior.ApplyLineColor"
+                Value="True" />
+        <Setter Property="behaviors:LineColorBehavior.LineColor"
+                Value="Gray" />
+        <Style.Triggers>
+            <Trigger TargetType="Entry"
+                     Property="IsFocused"
+                     Value="True">
+                <Setter Property="Opacity" Value="1" />
+                <Setter Property="behaviors:LineColorBehavior.LineColor"
+                        Value="{DynamicResource GreenColor}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- Style pour View -->
+
+    <Style TargetType="View"
+           x:Key="EntryViewMargin">
+        <Setter Property="Margin"
+                Value="-3,0,0,0" />
+    </Style>
+
+    <!-- Style pour StakLayout -->
+    <Style TargetType="StackLayout"
+           x:Key="StackLayoutInViewCell">
+        <Setter Property="Margin"
+                Value="10" />
+    </Style>
+
+    <!-- Style pour bouton  -->
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource MyColorButton}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <Style TargetType="forms:SvgCachedImage">
+        <Setter Property="ReplaceStringMap" Value="{x:Static enum:SvgIconTarget.ReplaceColor}" />
+    </Style>
+
+</ResourceDictionary>

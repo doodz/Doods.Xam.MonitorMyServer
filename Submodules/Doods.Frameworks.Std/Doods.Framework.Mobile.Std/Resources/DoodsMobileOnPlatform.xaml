@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xaml-comp compile="true" ?>
+
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    x:Class="Doods.Framework.Mobile.Std.Resources.DoodsMobileOnPlatform"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!-- Style OnPlatform-->
+    <OnPlatform x:Key="LittleSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="11" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="12" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="MidMediumSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="12" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="14" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="MediumSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="14" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="16" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="LargeSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="16" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="18" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="LargerSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="18" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="20" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="BigSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="20" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="24" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="ExtraBigSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="24" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="32" />
+    </OnPlatform>
+
+    <OnPlatform x:Key="HugeSize"
+                x:TypeArguments="x:Double">
+        <On Platform="iOS" Value="32" />
+        <On Platform="Android, UWP, WinRT, WinPhone" Value="48" />
+    </OnPlatform>
+    <OnPlatform x:Key="GridInFrameStyleOnPlatform"
+                x:TypeArguments="Thickness">
+        <On Platform="iOS"
+            Value="10,10,5,15" />
+        <On Platform="Android"
+            Value="10" />
+    </OnPlatform>
+
+    <!--<OnPlatform x:Key="LabelFontOnPlatform"
+                        x:TypeArguments="Font">
+                <On Platform="iOS"
+                    Value="Micro" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="LabelFontSizeOnPlatform"
+                        x:TypeArguments="FontAttributes">
+                <On Platform="Android"
+                    Value="14" />
+            </OnPlatform>-->
+
+</ResourceDictionary>
