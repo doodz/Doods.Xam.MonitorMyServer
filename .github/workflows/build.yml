@@ -44,10 +44,10 @@ jobs:
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-      - name: Build and analyze
-        shell: powershell
-        run: |
-          dotnet add package coverlet.msbuild
+      # - name: Build and analyze
+        # shell: powershell
+        # run: |
+          # dotnet add package coverlet.msbuild
       - name: begin Sonar scan
         shell: powershell
         run: |
