@@ -40,7 +40,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar-scanner
       - name: Install SonarCloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+        #shell: powershell
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
@@ -49,22 +49,22 @@ jobs:
         # run: |
           # dotnet add package coverlet.msbuild
       - name: begin Sonar scan
-        shell: powershell
+        #shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
       - name: Install dependencies
-        shell: powershell
+        #shell: powershell
         run: |
           nuget restore
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
+        #shell: powershell
         run: |
           dotnet test "Doods.Xam.MonitorMyServer.sln" /p:Configuration=Debug
         # dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
       - name: End Sonar scan
-        shell: powershell
+        #shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
