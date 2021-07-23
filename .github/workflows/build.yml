@@ -25,6 +25,9 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
             dotnet-version: '5.0.x'
+      - name: Install dependencies
+        run: |
+          dotnet restore
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
@@ -57,7 +60,7 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           nuget restore
           dotnet build "Doods.Xam.MonitorMyServer.sln" /p:Configuration=Debug
-          dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
+          dotnet test .\Doods.TU\Doods.TU.sln --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       # - name: begin Sonar scan
         # shell: powershell
