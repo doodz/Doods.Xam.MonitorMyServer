@@ -55,37 +55,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
+        shell: powershell #/d:sonar.verbose=true /d:sonar.log.level="TRACE" /d:sonar.cs.vscoveragexml.reportsPaths="*.coveragexml" /d:sonar.cs.vstest.reportsPaths="*.trx" 
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths="**\*.coveragexml" /d:sonar.cs.vstest.reportsPaths="**\*.trx" /d:sonar.verbose=true /d:sonar.log.level="TRACE"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" 
           nuget restore
-          dotnet build .\Doods.TU\Doods.TU.sln /p:Configuration=Debug
-           dotnet test .\Doods.TU\Doods.TU.sln --no-build --collect "Code Coverage" --logger trx
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet build .\Doods.TU\Doods.TU.sln
+           
       - name: Analyze 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-         
-      # - name: begin Sonar scan
-        # shell: powershell
-        # run: |
-          # .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-      # - name: Install dependencies
-        # shell: powershell
-        # run: |
-          # nuget restore
-      # - name: Build and analyze
-        # env:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        # shell: powershell
-        # run: |
-          # dotnet build "Doods.Xam.MonitorMyServer.sln" /p:Configuration=Debug
-          # dotnet test --no-build --no-restore --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=opencover
-      # - name: End Sonar scan
-        # shell: powershell
-        # run: |
-          # .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet test .\Doods.TU\Doods.TU.sln --no-build --collect "Code Coverage" --logger trx
+          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
