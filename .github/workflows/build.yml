@@ -55,10 +55,10 @@ jobs:
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-      - name: install coverlet
-        shell: powershell
-        run: |
-          dotnet add package coverlet.collector
+      # - name: install coverlet
+        # shell: powershell
+        # run: |
+          # dotnet add package coverlet.collector
       - name: sonarscanner begin 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
