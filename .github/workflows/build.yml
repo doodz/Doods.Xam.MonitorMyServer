@@ -51,7 +51,7 @@ jobs:
         # shell: powershell
         # run: |
           # dotnet add package coverlet.msbuild
-      - name: Build and analyze
+      - name: Build 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -60,6 +60,12 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths="*.coveragexml" /d:sonar.cs.vstest.reportsPaths="*.trx" /d:sonar.verbose=true /d:sonar.log.level="TRACE"
           nuget restore
           dotnet build "Doods.Xam.MonitorMyServer.sln" /p:Configuration=Debug
+      - name: Analyze 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        shell: powershell
+        run: |
           dotnet test .\Doods.TU\Doods.TU.sln --collect "Code coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
       # - name: begin Sonar scan
