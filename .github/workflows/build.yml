@@ -57,7 +57,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths="*.coveragexml" /d:sonar.cs.vstest.reportsPaths="*.trx" /d:sonar.verbose=true /d:sonar.log.level="TRACE"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"doodz_Doods.Xam.MonitorMyServer" /o:"doodsdev" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths="**\*.coveragexml" /d:sonar.cs.vstest.reportsPaths="**\*.trx" /d:sonar.verbose=true /d:sonar.log.level="TRACE"
           nuget restore
           dotnet build .\Doods.TU\Doods.TU.sln /p:Configuration=Debug
       - name: Analyze 
