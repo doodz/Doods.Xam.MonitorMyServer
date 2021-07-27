@@ -81,7 +81,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          dotnet test .\Doods.TU\Doods.TU.sln --no-build --collect:"XPlat Code Coverage" --logger trx
+          dotnet test .\Doods.TU\Doods.TU.sln --no-build --collect:"Code Coverage" --logger trx
       - name: sonarscanner end 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
