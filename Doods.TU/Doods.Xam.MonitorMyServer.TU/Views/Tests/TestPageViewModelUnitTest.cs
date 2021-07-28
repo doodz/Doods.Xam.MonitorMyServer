@@ -8,7 +8,12 @@ namespace Doods.Openmediavault.TU.Tests
         [TestMethod]
         public void Create()
         {
-            var obj = new TestPageViewModel(null,null) ;
+            TestPageViewModel obj =null;
+            Assert.ThrowsException<System.Exception>(() =>
+            {
+                obj = new TestPageViewModel(null, null);
+            });
+          
 
             Assert.IsNotNull(obj);
 
