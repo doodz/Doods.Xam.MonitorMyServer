@@ -21,6 +21,22 @@ You can also use Synology cgi over http.
 <img src="Images/Application_Diagram.png"/>
 </p>
 
+  ## Quality gates
+  
+  [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  
+  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=alert_status)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=bugs)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=code_smells)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=coverage)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=doodz_Doods.Xam.MonitorMyServer&metric=ncloc)](https://sonarcloud.io/dashboard?id=doodz_Doods.Xam.MonitorMyServer)
+  
+  
+  
+
+  
   ## Build Status
   
   | Build Server | Type         | Platform | Status                                                                                                                                                                                 |
