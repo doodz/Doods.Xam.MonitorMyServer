@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Doods.Openmediavault.TU.Tests
 {
     [TestClass]
-    class TestPageViewModelUnitTest
+    public class TestPageViewModelUnitTest
     {
         [TestMethod]
         public void Create()
