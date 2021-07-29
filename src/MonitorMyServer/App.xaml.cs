@@ -106,6 +106,11 @@ namespace Doods.Xam.MonitorMyServer
             MainPage = new MyCustomShellApp();
         }
 
+        internal static void SetContainer(IContainer container)
+        {
+            _container = container;
+        }
+
         public static IContainer Container
         {
             get
