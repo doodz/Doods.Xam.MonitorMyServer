@@ -8,8 +8,6 @@ namespace Doods.Framework.Mobile.Std
         public MyDeviceInfo()
         {
             var res = CrossDeviceInfo.Current;
-
-
             Version = res.Version;
             Build = res.AppBuild;
         }

@@ -24,7 +24,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Webmin.States
         {
             _webminService = webminService;
             ManageHostsCmd = new Command(ManageHosts);
-            ChangeHostCmd = new Command(ChangeHost);
+            ChangeHostCmd = new Command(async ()=> await ChangeHost());
             BannerId = configuration.AdsKey;
         }
 
@@ -39,10 +39,10 @@ namespace Doods.Xam.MonitorMyServer.Views.Webmin.States
             set => SetProperty(ref _stats, value);
         }
 
-        private async void ChangeHost()
+        private Task ChangeHost()
         {
             var connctionService = App.Container.Resolve<ConnctionService>();
-            await connctionService.ChangeHostTask();
+            return connctionService.ChangeHostTask();
         }
 
         private void ManageHosts()

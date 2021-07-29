@@ -31,10 +31,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         public OpenmediavaultDashboardViewModel(IOmvService sshService, IConfiguration configuration)
         {
             _sshService = sshService;
-            UpdatesCmd = new Command(Updates);
-            CheckCmd = new Command(Check);
+            UpdatesCmd = new Command(async(obj)=> await Updates(obj));
+            CheckCmd = new Command(async (obj) => await Check(obj));
             ManageHostsCmd = new Command(ManageHosts);
-            ChangeHostCmd = new Command(ChangeHost);
+            ChangeHostCmd = new Command(async (obj) => await ChangeHost());
             ShowDetailsCmd = new Command(ShowDetails);
             BannerId = configuration.AdsKey;
         }
@@ -65,10 +65,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         public ObservableRangeCollection<ServicesStatus> ServicesStatus { get; } =
             new ObservableRangeCollection<ServicesStatus>();
 
-        private async void ChangeHost()
+        private Task ChangeHost()
         {
             var connctionService = App.Container.Resolve<ConnctionService>();
-            await connctionService.ChangeHostTask();
+            return connctionService.ChangeHostTask();
         }
 
         private void ManageHosts()
@@ -76,9 +76,9 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             NavigationService.NavigateAsync(nameof(HostManagerPage));
         }
 
-        private async void Check(object obj)
+        private  Task Check(object obj)
         {
-            await ViewModelStateItem.RunActionAsync(async () =>
+            return ViewModelStateItem.RunActionAsync(async () =>
                 {
                     var filename = await _sshService.UpdateAptList();
 
@@ -115,10 +115,10 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             NavigationService.NavigateAsync(nameof(OpenmediavaultUpdatesPage));
         }
 
-        private async void Updates(object obj)
+        private Task Updates(object obj)
         {
             _text = string.Empty;
-            await ViewModelStateItem.RunActionAsync(async () =>
+            return ViewModelStateItem.RunActionAsync(async () =>
                 {
                     var filename = await _sshService.UpgradeAptList(Upgradeds.Select(u => u.Name));
 

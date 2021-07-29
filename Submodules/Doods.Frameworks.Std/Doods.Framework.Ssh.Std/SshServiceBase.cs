@@ -218,7 +218,7 @@ namespace Doods.Framework.Ssh.Std
 
         public Task<string> RunCommandAsync(SshCommand cmd, CancellationToken token)
         {
-            if (Client == null) return null;
+            if (Client == null) return Task.FromResult<string>(null);
             try
             {
                 using (CancellationTokenSource.CreateLinkedTokenSource(token))

@@ -90,7 +90,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AptUpdates
                 SetLabelsStateItem(openmediavault.Warning, "you need to wath all video");
         }
 
-        private async void SelectUnselectAllItems()
+        private void SelectUnselectAllItems()
         {
             var countSelected = _upgradables.Count(u => u.IsSelected);
             var select = countSelected < _upgradablesCount;

@@ -34,8 +34,6 @@ namespace Doods.Xam.MonitorMyServer.Views.Tests
 
         private void ExecuteRewardCmd()
         {
-            object obj = null;
-            obj.ToString();//TODO the error;
             _rewardService.ShowRewardedVideo(() => OnPropertyChanged(nameof(Isrewarded)));
         }
     }

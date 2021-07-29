@@ -48,7 +48,7 @@ namespace Doods.Xam.MonitorMyServer.Views
             SetCommandForStateView(_addHostCmd);
 
             ManageHostsCmd = new Command(ManageHosts);
-            ChangeHostCmd = new Command(ChangeHost);
+            ChangeHostCmd = new Command(async ()=> await ChangeHost());
             UpdatesCmd = new Command(Updates);
             ShowProcessesCmd = new Command(ShowProcesses);
             ShowTestsPageCmd = new Command(() => NavigationService.NavigateAsync(nameof(TestPage)));
@@ -160,10 +160,10 @@ namespace Doods.Xam.MonitorMyServer.Views
             NavigationService.NavigateAsync(nameof(AptUpdatesPage));
         }
 
-        private async void ChangeHost()
+        private  Task ChangeHost()
         {
             var connctionService = App.Container.Resolve<ConnctionService>();
-            await connctionService.ChangeHostTask();
+            return connctionService.ChangeHostTask();
         }
 
         private void Clear()

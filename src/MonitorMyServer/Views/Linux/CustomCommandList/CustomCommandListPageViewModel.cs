@@ -15,7 +15,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
     {
         private readonly IMessageBoxService _messageBoxService;
         private readonly ISshService _sshService;
-        public ShellBox _shellBox;
+        private ShellBox _shellBox;
         private ShellClient _shellClient;
 
         public CustomCommandListPageViewModel(ISshService sshService, IMessageBoxService messageBoxService)
@@ -44,7 +44,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
         private void Execute(object param)
         {
             if (param is string str)
-                toto(str);
+                Toto(str);
         }
 
         protected override void AddItem(object obj)
@@ -58,13 +58,13 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             ShellBox?.Execute(" ");
         }
 
-        private async void Run(object obj)
+        private void Run(object obj)
         {
             if (obj == null) return;
             if (obj is CustomCommandSsh item)
                 //var resutl = await _sshService.RunCommand(item.CommandString);
                 //_messageBoxService.ShowAlert("Alert", resutl);
-                toto(item.CommandString);
+                Toto(item.CommandString);
         }
 
         protected override Task OnInternalAppearingAsync()
@@ -86,7 +86,7 @@ namespace Doods.Xam.MonitorMyServer.Views.CustomCommandList
             return base.OnInternalDisappearingAsync();
         }
 
-        private void toto(string totostr)
+        private void Toto(string totostr)
         {
             ShellBox.Execute(totostr);
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Doods.Framework.Mobile.Std.Validation;
 using Doods.Framework.Repository.Std.Tables;
@@ -24,7 +25,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
             Name = new ValidatableObjectView<string>(Resource.CommandName, true);
             CommandString = new ValidatableObjectView<string>(Resource.Command, true);
             AddValidations();
-            SaveCommand = new Command(Save);
+            SaveCommand = new Command(async (obj)=>await Save(obj));
         }
 
         public ICommand SaveCommand { get; }
@@ -74,7 +75,7 @@ namespace Doods.Xam.MonitorMyServer.Views.AddCustomCommand
             return _commandString.Validate();
         }
 
-        private async void Save(object obj)
+        private async Task Save(object obj)
         {
             if (Validate())
             {

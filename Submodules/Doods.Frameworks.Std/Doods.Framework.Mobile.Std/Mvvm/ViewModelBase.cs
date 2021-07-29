@@ -28,7 +28,7 @@ namespace Doods.Framework.Mobile.Std.Mvvm
             Logger = logger;
             Telemetry = telemetryService;
             NotifyLoading = true;
-            RefreshCmd = new Command(RefreshAsync);
+            RefreshCmd = new Command(async () => await RefreshAsync());
         }
 
         /// <summary>
@@ -313,10 +313,10 @@ namespace Doods.Framework.Mobile.Std.Mvvm
             return true;
         }
 
-        private async void RefreshAsync()
+        private Task RefreshAsync()
         {
-            if (IsBusy) return;
-            await StartLoadingAsync(LoadingContext.FromUser);
+            if (IsBusy) return Task.FromResult("0");
+            return StartLoadingAsync(LoadingContext.FromUser);
         }
     }
 }

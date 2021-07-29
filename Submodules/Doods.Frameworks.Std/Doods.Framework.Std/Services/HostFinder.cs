@@ -72,7 +72,7 @@ namespace Doods.Framework.Std.Services
             foreach (var ip in host.AddressList)
                 if (ip.AddressFamily == AddressFamily.InterNetwork)
                     localIP = ip.ToString();
-
+            if (localIP == null) return;
             var ipBase = localIP;
             var ipParts = ipBase.Split('.');
 
@@ -90,7 +90,7 @@ namespace Doods.Framework.Std.Services
         private void p_PingCompleted(object sender, PingCompletedEventArgs e)
         {
             var ip = (string) e.UserState;
-            if (e.Reply != null && e.Reply.Status == IPStatus.Success)
+            if (e.Reply is {Status: IPStatus.Success})
             {
                 string name;
                 if (true)

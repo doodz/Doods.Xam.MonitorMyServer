@@ -13,7 +13,15 @@
   <ItemGroup>
     <None Remove="Resx\ThirdPartyLicenseOverview_doods.txt" />
   </ItemGroup>
+  <ItemGroup>
+  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+    <_Parameter1>Doods.Xam.MonitorMyServer.TU</_Parameter1>
 
+  </AssemblyAttribute>
+  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+    <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+  </AssemblyAttribute>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AppCenter.Analytics.Metrics" Version="1.1.0" />
     <PackageReference Include="Autofac" Version="6.2.0" />

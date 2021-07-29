@@ -56,7 +56,7 @@ namespace Doods.Framework.Mobile.Ssh.Std.Controls
             var width = e.Info.Width;
             var height = e.Info.Height;
 
-            canvas.Translate(width / 2, height / 2);
+            canvas.Translate(width / 2f, height / 2f);
 
             var Rect = new SKRect(-100, -100, 100, 100);
 

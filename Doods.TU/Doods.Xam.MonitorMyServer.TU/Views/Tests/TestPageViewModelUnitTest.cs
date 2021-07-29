@@ -1,17 +1,16 @@
 ﻿using Autofac;
 using Doods.Xam.MonitorMyServer;
+using Doods.Xam.MonitorMyServer.TU.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Doods.Openmediavault.TU.Tests
 {
     [TestClass]
-    public class TestPageViewModelUnitTest
+    public class TestPageViewModelUnitTest : ViewModelUnitTest
     {
         [TestMethod]
         public void Create()
         {
-           
-           
             TestPageViewModel obj =null;
             try
             {
@@ -25,8 +24,6 @@ namespace Doods.Openmediavault.TU.Tests
 
                 Assert.IsNotNull(obj);
             }
-
-
         }
     }
 }
