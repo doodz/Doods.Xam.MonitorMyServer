@@ -67,7 +67,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private Task ChangeHost()
         {
-            var connctionService = App.Container.Resolve<ConnctionService>();
+            var connctionService = App.Container.Resolve<IConnctionService>();
             return connctionService.ChangeHostTask();
         }
 

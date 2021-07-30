@@ -12,7 +12,7 @@ namespace Doods.Xam.MonitorMyServer.Services
 
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();
 
-            builder.RegisterType<ConnctionService>().SingleInstance().AsSelf();
+            builder.RegisterType<ConnctionService>().As<IConnctionService>().SingleInstance();
             builder.RegisterType<OmvService>().As<IRpcService>()
                 .As<IOMVSshBackgroundService>().SingleInstance();
             builder.RegisterType<RewardService>().As<IRewardService>().SingleInstance();
@@ -32,8 +32,8 @@ namespace Doods.Xam.MonitorMyServer.Services
             builder.Register(c => c.Resolve<SshServiceProvider>().Value).As<ISshService>();
             builder.Register(c => c.Resolve<OmvServiceProvider>().Value).As<IOmvService>();
             builder.Register(c => c.Resolve<SynoServiceProvider>().Value).As<ISynologyCgiService>();
-            builder.Register(c => c.Resolve<ConnctionService>().GetNasService()).As<INasService>();
-            builder.Register(c => c.Resolve<ConnctionService>().GetPackageService()).As<IPackageUpdates>();
+            builder.Register(c => c.Resolve<IConnctionService>().GetNasService()).As<INasService>();
+            builder.Register(c => c.Resolve<IConnctionService>().GetPackageService()).As<IPackageUpdates>();
             //builder.Register(c => c.Resolve<SshServiceProvider>().Value).ExternallyOwned().Keyed<ISshService>("1");
             //builder.Register(c => c.Resolve<OmvServiceProvider>().Value).ExternallyOwned().Keyed<IOmvService>("1");
         }

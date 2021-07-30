@@ -23,10 +23,24 @@ using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
+
+    public interface IConnctionService
+    {
+        Task ChangeHostTask();
+        Task Init();
+        INasService GetNasService();
+        IPackageUpdates GetPackageService();
+        Task SelectHost(Host host);
+        bool TestSshConnection(string hostName, int port, string login, string password);
+        Task<bool> TestHttpConnection(string hostName, int port, string login, string password);
+        Task<bool> TestSynoConnection(string hostName, int port, string login, string password);
+        Task<bool> TestWebminConnection(string hostName, int port, string login, string password);
+    }
+
     /// <summary>
     ///     Idisposable ???
     /// </summary>
-    public class ConnctionService
+    public class ConnctionService : IConnctionService
     {
         private readonly IDataProvider _dataProvider;
         private readonly IHistoryService _historyService = App.Container.Resolve<IHistoryService>();

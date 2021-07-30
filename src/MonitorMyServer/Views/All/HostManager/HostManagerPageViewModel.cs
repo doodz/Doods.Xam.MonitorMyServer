@@ -49,7 +49,7 @@ namespace Doods.Xam.MonitorMyServer.Views.HostManager
 
         private void SelectItem(object obj)
         {
-            var connctionService = App.Container.Resolve<ConnctionService>();
+            var connctionService = App.Container.Resolve<IConnctionService>();
             if (obj is HostViewModel h)
                 connctionService.SelectHost(h.Host).ConfigureAwait(false);
         }

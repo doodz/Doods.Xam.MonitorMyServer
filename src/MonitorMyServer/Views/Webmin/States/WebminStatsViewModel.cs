@@ -41,7 +41,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Webmin.States
 
         private Task ChangeHost()
         {
-            var connctionService = App.Container.Resolve<ConnctionService>();
+            var connctionService = App.Container.Resolve<IConnctionService>();
             return connctionService.ChangeHostTask();
         }
 

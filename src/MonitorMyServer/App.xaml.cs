@@ -197,7 +197,7 @@ namespace Doods.Xam.MonitorMyServer
                 Microsoft.AppCenter.AppCenter.Start(key, typeof(Analytics), typeof(Crashes));
 
             //ConnctionService
-            var connctionService = Container.Resolve<ConnctionService>();
+            var connctionService = Container.Resolve<IConnctionService>();
             await connctionService.Init().ConfigureAwait(false);
         }
 

@@ -7,32 +7,26 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.Base
     [TestClass]
     public class ViewModelUnitTest
     {
+        protected static AutoMock LocalAutoMock;
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
-            //var builder = new ContainerBuilder();
-
-            //var logger = new Mock<ILogger>();
-            //var telemetryService = new Mock<ITelemetryService>();
-            //builder.RegisterInstance(logger.Object).As<ILogger>();
-            //builder.RegisterInstance(telemetryService.Object).As<ITelemetryService>();
-            
-            //var container = new Mock<IContainer>();
-
-            //container.Setup(c => c.Resolve()).Returns(AutoMock.GetLoose().Create<>()
-               
-            //AutoMock.GetLoose();
-
-            var toto = AutoMock.GetLoose();
-            App.SetContainer(toto.Container);
-            
-          
-           
+            LocalAutoMock = AutoMock.GetLoose();
+            App.SetContainer(LocalAutoMock.Container);
             // Executes once before the test run. (Optional)
         }
+
+
+        protected static void SetMockContainer()
+        {
+            App.SetContainer(LocalAutoMock.Container);
+        }
+
+
         [ClassInitialize]
         public static void TestFixtureSetup(TestContext context)
         {
+           
             // Executes once for the test class. (Optional)
         }
         [TestInitialize]
