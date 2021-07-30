@@ -4,7 +4,6 @@ using Doods.Framework.Mobile.Std.Config;
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Synology.Webapi.Std;
 using Doods.Xam.MonitorMyServer.Services;
-using Doods.Xam.MonitorMyServer.TU.Views.Base;
 using Doods.Xam.MonitorMyServer.Views.HostManager;
 using Doods.Xam.MonitorMyServer.Views.Webmin.States;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

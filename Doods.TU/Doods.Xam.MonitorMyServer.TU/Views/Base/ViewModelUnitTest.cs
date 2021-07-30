@@ -1,38 +1,36 @@
 using Autofac.Extras.Moq;
+using Doods.Xam.MonitorMyServer.TU.MockForms;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Doods.Xam.MonitorMyServer.TU.Views.Base
+namespace Doods.Xam.MonitorMyServer.TU
 {
+
     [TestClass]
-    public class ViewModelUnitTest
+    public class BaselUnitTest
     {
+        public BaselUnitTest()
+        {
+            var localAutoMock = AutoMock.GetLoose();
+            App.SetContainer(localAutoMock.Container);
+            MockPlatformServices.Init();
+        }
         protected static AutoMock LocalAutoMock;
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext context)
         {
-            LocalAutoMock = AutoMock.GetLoose();
-            App.SetContainer(LocalAutoMock.Container);
             // Executes once before the test run. (Optional)
+          
         }
-
-
         protected static void SetMockContainer()
         {
             App.SetContainer(LocalAutoMock.Container);
         }
-
-
         [ClassInitialize]
         public static void TestFixtureSetup(TestContext context)
         {
-           
+            
             // Executes once for the test class. (Optional)
-        }
-        [TestInitialize]
-        public void Setup()
-        {
-            // Runs before each test. (Optional)
         }
         [AssemblyCleanup]
         public static void AssemblyCleanup()
@@ -44,7 +42,26 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.Base
         {
             // Runs once after all tests in this class are executed. (Optional)
             // Not guaranteed that it executes instantly after all tests from the class.
+            var localAutoMock = AutoMock.GetLoose();
+            App.SetContainer(localAutoMock.Container);
         }
+    }
+
+
+    [TestClass]
+    public class ViewModelUnitTest: BaselUnitTest
+    {
+      
+
+       
+
+       
+        [TestInitialize]
+        public void Setup()
+        {
+            // Runs before each test. (Optional)
+        }
+      
         [TestCleanup]
         public void TearDown()
         {
@@ -58,7 +75,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.Base
         }
 
         [TestMethod]
-        public void Create()
+        public void CreateViewModel()
         {
             var obj = (ViewModel)new ViewModelWhithState();
             Assert.IsNotNull(obj);

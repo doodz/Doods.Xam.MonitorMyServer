@@ -1,6 +1,5 @@
 ﻿
 using Doods.Xam.MonitorMyServer.Services;
-using Doods.Xam.MonitorMyServer.TU.Views.Base;
 using Doods.Xam.MonitorMyServer.Views;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;

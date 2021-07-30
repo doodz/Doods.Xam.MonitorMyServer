@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Doods.Framework.Mobile.Std.Interfaces;
-using Doods.Xam.MonitorMyServer.Services;
-using Doods.Xam.MonitorMyServer.TU.Views.Base;
-using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
+﻿using Doods.Xam.MonitorMyServer.Views.AddCustomCommand;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 
 namespace Doods.Xam.MonitorMyServer.TU.Views.Linux.CustomCommandList.AddCustomCommand
 {

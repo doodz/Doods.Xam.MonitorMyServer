@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Doods.Xam.MonitorMyServer.TU
 {
     [TestClass]
-    public class ViewModelWhithStateUnitTest
+    public class ViewModelWhithStateUnitTest : ViewModelUnitTest
     {
        [TestMethod]
         public void Create()

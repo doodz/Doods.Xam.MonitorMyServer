@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Doods.Xam.MonitorMyServer;
-using Doods.Xam.MonitorMyServer.TU.Views.Base;
+using Doods.Xam.MonitorMyServer.TU;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Doods.Openmediavault.TU.Tests
@@ -22,7 +22,7 @@ namespace Doods.Openmediavault.TU.Tests
             finally
             {
 
-                Assert.IsNotNull(obj);
+                Assert.IsNull(obj);
             }
         }
     }
