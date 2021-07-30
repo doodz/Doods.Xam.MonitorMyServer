@@ -78,7 +78,7 @@ namespace Doods.Xam.MonitorMyServer.TU.MockForms
                 case NamedSize.Large:
                     return 16;
                 default:
-                    throw new ArgumentOutOfRangeException("size");
+                    throw new ArgumentOutOfRangeException(nameof(size));
             }
         }
 
@@ -148,7 +148,7 @@ namespace Doods.Xam.MonitorMyServer.TU.MockForms
 
         public Assembly[] GetAssemblies()
         {
-            return new Assembly[0];
+            return Array.Empty<Assembly>();
         }
 
         public IIsolatedStorageFile GetUserStoreForApplication()

@@ -61,7 +61,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.All.Login
             Assert.IsFalse(obj.HostName.IsValid);
             Assert.IsFalse(obj.Login.IsValid);
             Assert.IsFalse(obj.Password.IsValid);
-            Assert.IsFalse(obj.Port.IsValid);
+            Assert.IsTrue(obj.Port.IsValid);
 
 
             

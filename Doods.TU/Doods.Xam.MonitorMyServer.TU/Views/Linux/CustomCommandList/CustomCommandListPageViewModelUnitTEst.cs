@@ -54,7 +54,8 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.Linux.CustomCommandList
 
             Assert.IsTrue(obj.ExecuteCommand.CanExecute(null));
 
-            obj.ExecuteCommand.Execute("ls -la");
+           
+            Assert.ThrowsException<NullReferenceException>(() => { obj.ExecuteCommand.Execute("ls -la"); });
         }
 
         [TestMethod]
@@ -88,7 +89,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.Linux.CustomCommandList
 
             Assert.IsTrue(obj.RunCommand.CanExecute(null));
 
-            Assert.ThrowsException<NullReferenceException>(() => { obj.RunCommand.Execute("ls -la"); });
+             obj.RunCommand.Execute("ls -la");
         }
 
         [TestMethod]
