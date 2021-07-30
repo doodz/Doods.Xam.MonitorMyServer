@@ -52,7 +52,7 @@ namespace Doods.Xam.MonitorMyServer
         /// </summary>
         public MyCustomShellApp()
         {
-            MessagingCenter.Subscribe<ConnctionService, Host>(
+            MessagingCenter.Subscribe<IConnctionService, Host>(
                 this, MessengerKeys.HostChanged,
                 async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
 

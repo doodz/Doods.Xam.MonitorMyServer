@@ -297,7 +297,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Login
                     ViewModelStateItem.Title = Resource.ConnectionTest;
                     ViewModelStateItem.Description = string.Empty;
 
-                    var connctionService = App.Container.Resolve<ConnctionService>();
+                    var connctionService = App.Container.Resolve<IConnctionService>();
 
                     bool result;
                     if (IsWebminServer)

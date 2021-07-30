@@ -39,11 +39,15 @@ namespace Doods.Framework.Mobile.Std.Mvvm
             return new LoadingContext(context._name, context.ReinitializeLists, context.NotifyUser, token, timer, true);
         }
 
+        public override int GetHashCode()
+        {
+            return _name.GetHashCode();
+        }
         public override bool Equals(object obj)
         {
             if (obj is LoadingContext context) return context._name == _name;
 
-            return base.Equals(obj);
+            return false;
         }
     }
 }

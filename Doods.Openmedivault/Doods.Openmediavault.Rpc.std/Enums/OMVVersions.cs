@@ -20,26 +20,26 @@ namespace Doods.Openmediavault.Rpc.Std.Enums
 
     public sealed class OMVVersions
     {
-        public static string Ix = "Ix";
-        public static string Omnius = "Omnius";
-        public static string Fedaykin = "Fedaykin";
-        public static string Sardaukar = "Sardaukar";
-        public static string Kralizec = "Kralizec";
-        public static string StoneBurner = "Stone burner";
-        public static string Erasmus = "Erasmus";
-        public static string Arrakis = "Arrakis";
-        public static string Usul = "Usul";
+        public const string Ix = "Ix";
+        public const string Omnius = "Omnius";
+        public const string Fedaykin = "Fedaykin";
+        public const string Sardaukar = "Sardaukar";
+        public const string Kralizec = "Kralizec";
+        public const string StoneBurner = "Stone burner";
+        public const string Erasmus = "Erasmus";
+        public const string Arrakis = "Arrakis";
+        public const string Usul = "Usul";
 
-        public static OMVVersion NotFound = new OMVVersion("0.0", "NotFound");
-        public static OMVVersion Version02 = new OMVVersion("0.2", "Ix");
-        public static OMVVersion Version03 = new OMVVersion("0.3", "Omnius");
-        public static OMVVersion Version04 = new OMVVersion("0.4", "Fedaykin");
-        public static OMVVersion Version05 = new OMVVersion("0.5", "Sardaukar");
-        public static OMVVersion Version1 = new OMVVersion("1.0", "Kralizec");
-        public static OMVVersion Version2 = new OMVVersion("2.0", "Stone burner");
-        public static OMVVersion Version3 = new OMVVersion("3.0", "Erasmus");
-        public static OMVVersion Version4 = new OMVVersion("4.0", "Arrakis");
-        public static OMVVersion Version5 = new OMVVersion("5.0", "Usul");
+        public static readonly OMVVersion NotFound = new OMVVersion("0.0", "NotFound");
+        public static readonly OMVVersion Version02 = new OMVVersion("0.2", Ix);
+        public static readonly OMVVersion Version03 = new OMVVersion("0.3", Omnius);
+        public static readonly OMVVersion Version04 = new OMVVersion("0.4", Fedaykin);
+        public static readonly OMVVersion Version05 = new OMVVersion("0.5", Sardaukar);
+        public static readonly OMVVersion Version1 = new OMVVersion("1.0", Kralizec);
+        public static readonly OMVVersion Version2 = new OMVVersion("2.0", StoneBurner);
+        public static readonly OMVVersion Version3 = new OMVVersion("3.0", Erasmus);
+        public static readonly OMVVersion Version4 = new OMVVersion("4.0", Arrakis);
+        public static readonly OMVVersion Version5 = new OMVVersion("5.0", Usul);
 
        
         /// <summary>

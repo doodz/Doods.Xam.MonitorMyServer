@@ -1,4 +1,5 @@
-﻿using Rg.Plugins.Popup.Pages;
+﻿using System.Threading.Tasks;
+using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
 
 namespace Doods.Framework.Mobile.Std.controls
@@ -8,13 +9,12 @@ namespace Doods.Framework.Mobile.Std.controls
         protected override bool OnBackgroundClicked()
         {
             CloseAllPopup();
-
             return false;
         }
 
-        protected async void CloseAllPopup()
+        protected Task CloseAllPopup()
         {
-            await PopupNavigation.Instance.PopAllAsync();
+            return PopupNavigation.Instance.PopAllAsync();
         }
     }
 }

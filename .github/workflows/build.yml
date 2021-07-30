@@ -76,6 +76,7 @@ jobs:
           dotnet build .\Doods.TU\Doods.TU.sln
            
       - name: Analyze 
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

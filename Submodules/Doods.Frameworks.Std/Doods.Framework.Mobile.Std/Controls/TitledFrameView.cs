@@ -5,24 +5,6 @@ namespace Doods.Framework.Mobile.Std.Controls
 {
     public class TitledFrameView : Frame
     {
-        public static readonly BindableProperty TitleProperty = BindableProperty.Create(nameof(Title),
-            typeof(string),
-            typeof(TitledFrameView), propertyChanged: TitlePropertyChanged);
-
-        public static readonly BindableProperty TitleStyleProperty = BindableProperty.Create(nameof(TitleStyle),
-            typeof(Style),
-            typeof(TitledFrameView),
-            DefaultTitleStyle);
-
-        public static readonly BindableProperty SubTitleProperty = BindableProperty.Create(nameof(SubTitle),
-            typeof(string),
-            typeof(TitledFrameView), propertyChanged: SubTitlePropertyChanged);
-
-        public static readonly BindableProperty SubTitleStyleProperty = BindableProperty.Create(nameof(SubTitleStyle),
-            typeof(Style),
-            typeof(TitledFrameView),
-            DefaultSubTitleStyle);
-
         private static readonly Style DefaultTitleStyle =
             new Style(typeof(Label))
             {
@@ -46,7 +28,6 @@ namespace Doods.Framework.Mobile.Std.Controls
                     }
                 }
             };
-
         private static readonly Style DefaultSubTitleStyle =
             new Style(typeof(Label))
             {
@@ -71,6 +52,27 @@ namespace Doods.Framework.Mobile.Std.Controls
                 }
             };
 
+        public static readonly BindableProperty TitleProperty = BindableProperty.Create(nameof(Title),
+            typeof(string),
+            typeof(TitledFrameView), propertyChanged: TitlePropertyChanged);
+
+        public static readonly BindableProperty TitleStyleProperty = BindableProperty.Create(nameof(TitleStyle),
+            typeof(Style),
+            typeof(TitledFrameView),
+            DefaultTitleStyle);
+
+        public static readonly BindableProperty SubTitleProperty = BindableProperty.Create(nameof(SubTitle),
+            typeof(string),
+            typeof(TitledFrameView), propertyChanged: SubTitlePropertyChanged);
+
+        public static readonly BindableProperty SubTitleStyleProperty = BindableProperty.Create(nameof(SubTitleStyle),
+            typeof(Style),
+            typeof(TitledFrameView),
+            DefaultSubTitleStyle);
+
+      
+
+       
         private readonly ControlTemplate _titleTemplate = new ControlTemplate(typeof(TitleTemplate));
 
         public TitledFrameView()

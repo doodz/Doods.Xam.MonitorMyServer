@@ -1,12 +1,10 @@
-
-
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Doods.Xam.MonitorMyServer.TU
 {
     [TestClass]
-    public class ViewModelWhithStateUnitTest
+    public class ViewModelWhithStateUnitTest : ViewModelUnitTest
     {
        [TestMethod]
         public void Create()
@@ -14,21 +12,6 @@ namespace Doods.Xam.MonitorMyServer.TU
             var obj = new ViewModelWhithState();
             Assert.IsNotNull(obj);
             Assert.IsNotNull(obj.ViewModelStateItem);
-            
-
-        }
-    }
-
-    [TestClass]
-    public class ViewModelUnitTest
-    {
-        [TestMethod]
-        public void Create()
-        {
-            var obj = (ViewModel)new ViewModelWhithState();
-            Assert.IsNotNull(obj);
-          
-
         }
     }
 }
