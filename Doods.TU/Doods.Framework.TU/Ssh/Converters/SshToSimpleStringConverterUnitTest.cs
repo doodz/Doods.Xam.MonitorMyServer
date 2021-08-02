@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
-using System.Windows.Documents;
 using Doods.Framework.Ssh.Std.Converters;
-using Microsoft.VisualBasic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Doods.Framework.TU.Ssh.Converters
@@ -45,8 +42,8 @@ namespace Doods.Framework.TU.Ssh.Converters
         [DataRow(typeof(IEnumerable<int>))]
         [DataRow(typeof(ICollection<object>))]
         [DataRow(typeof(IList<bool>))]
-        [DataRow(typeof(List))]
-        [DataRow(typeof(Collection))]
+        [DataRow(typeof(List<object>))]
+        [DataRow(typeof(Collection<object>))]
         [DataRow(typeof(char[]))]
         public void CanConvert_False(Type t)
         {

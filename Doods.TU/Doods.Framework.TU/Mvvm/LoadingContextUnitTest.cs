@@ -57,18 +57,40 @@ namespace Doods.Framework.TU.Mvvm
             Assert.IsFalse(obj.NotifyUser);
             Assert.IsFalse(obj.IsValid);
             Assert.IsNull(obj.Timer);
-            //Assert.AreEqual(nameof(LoadingContext.RefreshVisual),obj.);
 
         }
 
-        //public bool ReinitializeLists { get; }
+        //[TestMethod]
+        //public void My_GetHashCode()
+        //{
+        //    var timeWatcher = new Mock<ITimeWatcher>();
+        //    var obj1 = LoadingContext.OnAppearing;
+        //    var obj2 = LoadingContext.RefreshVisual;
+        //    var obj3 = LoadingContext.FromUser;
+        //    Assert.AreEqual(823854720, obj1.GetHashCode());
+        //    Assert.AreEqual(2, obj2.GetHashCode());
+        //    Assert.AreEqual(3, obj3.GetHashCode());
+        //}
 
-        //public bool NotifyUser { get; }
 
-        //public CancellationToken Token { get; }
+        [TestMethod]
+        public void My_Equals_false()
+        {
+            var timeWatcher = new Mock<ITimeWatcher>();
+            var obj1 = LoadingContext.OnAppearing;
+            var obj2 = LoadingContext.RefreshVisual;
+            Assert.AreNotEqual(obj1, obj2);
+        }
 
-        //public ITimeWatcher Timer { get; }
+        [TestMethod]
+        public void My_Equals_true()
+        {
+            var timeWatcher = new Mock<ITimeWatcher>();
+            var obj1 = LoadingContext.OnAppearing;
+            var obj2 = LoadingContext.OnAppearing;
+            Assert.AreEqual(obj1, obj2);
 
-        //public bool IsValid { get; }
+        }
+      
     }
 }
