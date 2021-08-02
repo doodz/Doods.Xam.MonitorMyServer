@@ -6,7 +6,6 @@
     <AssemblyName>Doods.Xam.MonitorMyServer</AssemblyName>
     <RootNamespace>Doods.Xam.MonitorMyServer</RootNamespace>
   </PropertyGroup>
-  
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -80,6 +79,9 @@
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidKeyStore>false</AndroidKeyStore>
+	<AndroidUseApkSigner>True</AndroidUseApkSigner>
+    <AndroidApkSignerAdditionalArguments>--v2-signing-enabled true</AndroidApkSignerAdditionalArguments>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
