@@ -23,6 +23,11 @@ namespace Doods.Openmedivault.Http.Std
         private readonly string[] _typeDate = new string[5] {"hour", "day", "week", "month", "year"};
         private readonly string[] _typeInfo = new string[4] {"df-root", "memory", "load", "cpu-0"};
 
+        public OmvHttpService(ILogger logger, IHttpClient client) : base(logger)
+        {
+            _client = client;
+        }
+
         public OmvHttpService(ILogger logger, IConnection connection) : base(logger)
         {
             _client = new OmvRpc(connection);

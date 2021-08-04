@@ -104,9 +104,13 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
                 return obj;
             }
 
+            if (GetRpcVersion() == OMVVersions.Version5)
+                return await RunCmd<OMVInformations>(request);
 
-            var sysInfo = await RunCmd<OMVInformations>(request);
-            return sysInfo;
+            var v6info= await RunCmd<Doods.Openmediavault.Rpc.Std.Data.V6.OMVInformations>(request);
+
+            return v6info.ToV5();
+
         }
     }
 }

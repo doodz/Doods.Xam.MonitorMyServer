@@ -14,7 +14,8 @@ namespace Doods.Openmediavault.Rpc.Std.Enums
         Stone_burner,
         Erasmus,
         Arrakis,
-        Usul
+        Usul,
+        Shaitan
     }
 
 
@@ -29,6 +30,7 @@ namespace Doods.Openmediavault.Rpc.Std.Enums
         public const string Erasmus = "Erasmus";
         public const string Arrakis = "Arrakis";
         public const string Usul = "Usul";
+        public const string Shaitan = "Shaitan";
 
         public static readonly OMVVersion NotFound = new OMVVersion("0.0", "NotFound");
         public static readonly OMVVersion Version02 = new OMVVersion("0.2", Ix);
@@ -40,8 +42,8 @@ namespace Doods.Openmediavault.Rpc.Std.Enums
         public static readonly OMVVersion Version3 = new OMVVersion("3.0", Erasmus);
         public static readonly OMVVersion Version4 = new OMVVersion("4.0", Arrakis);
         public static readonly OMVVersion Version5 = new OMVVersion("5.0", Usul);
+        public static readonly OMVVersion Version6 = new OMVVersion("6.0", Shaitan);
 
-       
         /// <summary>
         ///     Get Version object from string who contain version name
         /// </summary>
@@ -60,6 +62,7 @@ namespace Doods.Openmediavault.Rpc.Std.Enums
                 case string v when v.Contains(Version3.Name): return Version3;
                 case string v when v.Contains(Version4.Name): return Version4;
                 case string v when v.Contains(Version5.Name): return Version5;
+                case string v when v.Contains(Version6.Name): return Version6;
                 default: return NotFound;
             }
         }
