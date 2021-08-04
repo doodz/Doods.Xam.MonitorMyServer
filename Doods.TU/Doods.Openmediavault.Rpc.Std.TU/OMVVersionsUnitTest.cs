@@ -18,6 +18,7 @@ namespace Doods.Openmediavault.TU.Clients
         [DataRow("Erasmus")]
         [DataRow("Arrakis")]
         [DataRow("Usul")]
+        [DataRow("Shaitan")]
         public void Create(string version)
         {
             var v = OMVVersions.GetVersionFromString(version);

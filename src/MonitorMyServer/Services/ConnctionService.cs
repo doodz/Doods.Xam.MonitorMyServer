@@ -108,7 +108,7 @@ namespace Doods.Xam.MonitorMyServer.Services
         private void SetSelectedIdHost(Host host)
         {
             _historyService.UpdateLastLoginAsync(host.Id.GetValueOrDefault());
-            MessagingCenter.Send(this, MessengerKeys.HostChanged, host);
+            MessagingCenter.Send((IConnctionService)this, MessengerKeys.HostChanged, host);
             Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
 

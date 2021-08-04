@@ -149,7 +149,13 @@ namespace Doods.Framework.Ssh.Std
             outputStreamWriter = new StreamWriter(input) {AutoFlush = true};
         }
 
+
         public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        public void Dispose(bool disposing)
         {
             //client?.Dispose();
             shell?.Dispose();
@@ -183,13 +189,7 @@ namespace Doods.Framework.Ssh.Std
 
         public void Stop()
         {
-            shell?.Stop();
-            outputReader?.Dispose();
-            textUpdater?.Dispose();
-            extendedOuput?.Dispose();
-            //outputStreamWriter?.Dispose();
-            output?.Dispose();
-            input?.Dispose();
+           Dispose();
         }
     }
 

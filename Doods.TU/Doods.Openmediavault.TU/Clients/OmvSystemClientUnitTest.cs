@@ -17,7 +17,7 @@ using Moq;
 namespace Doods.Openmediavault.TU.Clients
 {
     [TestClass]
-    public class OmvSystemClientUnitTest
+    public class OmvSystemClient2UnitTest
     {
         [TestMethod]
         public void Create()
@@ -147,7 +147,7 @@ namespace Doods.Openmediavault.TU.Clients
             //rpcClient.Setup(c => c.ExecuteTaskAsync<IEnumerable<SystemInformation>>(It.IsAny<IRpcRequest>()))
             //    .ReturnsAsync(slt);
             rpcClient.Setup(c => c.ExecuteTaskAsync<object>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
-                .ReturnsAsync("Arrakis");
+                .ReturnsAsync(OMVVersions.Arrakis);
             rpcClient.Setup(c => c.ExecuteTaskAsync<IEnumerable<SystemInformation>> (It.IsAny<IRpcRequest>()))
                 .ReturnsAsync(slt);
 
@@ -181,7 +181,7 @@ namespace Doods.Openmediavault.TU.Clients
             //    .ReturnsAsync("Usul");
 
             rpcClient.Setup(c => c.ExecuteTaskAsync<object>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
-                .ReturnsAsync("Usul");
+                .ReturnsAsync(OMVVersions.Usul);
             rpcClient.Setup(c => c.ExecuteTaskAsync<OMVInformations>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
                 .ReturnsAsync(new OMVInformations());
             var obj = new OmvSystemClient(rpcClient.Object);
@@ -191,19 +191,20 @@ namespace Doods.Openmediavault.TU.Clients
             Assert.IsNotNull(result);
         }
 
+        [TestMethod]
+        public async Task GetSystemInformationsV6()
+        {
+            var rpcClient = new Mock<IRpcClient>();
 
-        //case "CPU usage":
-        //    obj.CpuUsage = information.Value.ValueClass.Value;
-        //    break;
-        //case "":
-        //    obj.MemTotal = long.Parse(information.Value.SimpleStringValue);
-        //    break;
-        //case "Memory usage":
-        //    obj.MemUsed = long.Parse(information.Value.ValueClass.Value.ToString());
-        //    break;
-
-
-
-
+            rpcClient.Setup(c => c.ExecuteTaskAsync<object>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
+                .ReturnsAsync(OMVVersions.Shaitan);
+            rpcClient.Setup(c => c.ExecuteTaskAsync<Doods.Openmediavault.Rpc.Std.Data.V6.OMVInformations>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
+                .ReturnsAsync(new Doods.Openmediavault.Rpc.Std.Data.V6.OMVInformations());
+            var obj = new OmvSystemClient(rpcClient.Object);
+            Assert.IsNotNull(obj);
+            obj.SetOMVVersion(OMVVersions.Version6);
+            var result = await obj.GetSystemInformations();
+            Assert.IsNotNull(result);
+        }
     }
 }

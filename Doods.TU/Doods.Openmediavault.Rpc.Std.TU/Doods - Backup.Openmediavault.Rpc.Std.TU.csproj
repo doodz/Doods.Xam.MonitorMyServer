@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -19,7 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MonitorMyServer\Doods.Xam.MonitorMyServer.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Mobile.Std\Doods.Openmediavault.Mobile.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
+    <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

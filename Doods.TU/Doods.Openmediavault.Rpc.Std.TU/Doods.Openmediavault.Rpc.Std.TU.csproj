@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -23,6 +23,18 @@
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmediavault.Rpc.std\Doods.Openmediavault.Rpc.Std.csproj" />
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Http.Std\Doods.Openmedivault.Http.Std.csproj" />
     <ProjectReference Include="..\..\Doods.Openmedivault\Doods.Openmedivault.Ssh.Std\Doods.Openmedivault.Ssh.Std.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\V6\System_getTimeSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\V6\System_getTimeZoneList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\V6\System_getInformation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
