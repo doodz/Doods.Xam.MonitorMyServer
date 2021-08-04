@@ -1,17 +1,23 @@
 ﻿using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
+using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.Http.Std;
 using Doods.Framework.Http.Std.Serializers;
+using Doods.Framework.Ssh.Std;
+using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std.Clients;
 using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmedivault.Http.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Renci.SshNet;
 using RestSharp;
 
 namespace Doods.Openmediavault.TU.Clients
 {
+
 
     internal class LocalIHttpClient : IHttpClient
     {
@@ -115,6 +121,36 @@ namespace Doods.Openmediavault.TU.Clients
             Assert.AreEqual(1628067143L, obj.Ts);
             Assert.AreEqual("Wed 04 Aug 2021 10:52:23 AM CEST", obj.Time);
 
+        }
+
+        [TestMethod]
+        public async Task GetTimeZoneList()
+        {
+            var logger = new Mock<ILogger>();
+
+            var rpc = new OmvHttpService(logger.Object, new LocalIHttpClient());
+            var systemClient = new OmvSystemClient(rpc);
+            Assert.IsNotNull(systemClient);
+            var obj = await systemClient.GetTimeZoneList();
+            Assert.IsNotNull(obj);
+
+
+
+        }
+
+        [TestMethod]
+        public async Task GetDateAndTimeSetting()
+        {
+            var logger = new Mock<ILogger>();
+
+            var rpc = new OmvHttpService(logger.Object, new LocalIHttpClient());
+            var systemClient = new OmvSystemClient(rpc);
+            Assert.IsNotNull(systemClient);
+            var obj = await systemClient.GetDateAndTimeSetting();
+            Assert.IsNotNull(obj);
+            Assert.IsTrue(obj.Ntpenable);
+            Assert.AreEqual("", obj.Timezone);
+            Assert.AreEqual("pool.ntp.org", obj.Ntptimeservers);
         }
     }
 }

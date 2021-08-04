@@ -17,7 +17,7 @@ using Moq;
 namespace Doods.Openmediavault.TU.Clients
 {
     [TestClass]
-    public class OmvSystemClientUnitTest
+    public class OmvSystemClient2UnitTest
     {
         [TestMethod]
         public void Create()
@@ -196,22 +196,15 @@ namespace Doods.Openmediavault.TU.Clients
         {
             var rpcClient = new Mock<IRpcClient>();
 
-           
-
             rpcClient.Setup(c => c.ExecuteTaskAsync<object>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
                 .ReturnsAsync(OMVVersions.Shaitan);
-            rpcClient.Setup(c => c.ExecuteTaskAsync<OMVInformations>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
-                .ReturnsAsync(new OMVInformations());
+            rpcClient.Setup(c => c.ExecuteTaskAsync<Doods.Openmediavault.Rpc.Std.Data.V6.OMVInformations>(It.Is<IRpcRequest>(t => t.Method == "getInformation")))
+                .ReturnsAsync(new Doods.Openmediavault.Rpc.Std.Data.V6.OMVInformations());
             var obj = new OmvSystemClient(rpcClient.Object);
             Assert.IsNotNull(obj);
             obj.SetOMVVersion(OMVVersions.Version6);
             var result = await obj.GetSystemInformations();
             Assert.IsNotNull(result);
         }
-       
-
-
-
-
     }
 }
