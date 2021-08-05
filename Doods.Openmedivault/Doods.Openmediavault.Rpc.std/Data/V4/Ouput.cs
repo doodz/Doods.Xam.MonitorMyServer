@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Doods.Openmediavault.Rpc.Std.Seruializer;
+using Newtonsoft.Json;
 
 namespace Doods.Openmediavault.Rpc.Std.Data.V4
 {
@@ -15,11 +16,13 @@ namespace Doods.Openmediavault.Rpc.Std.Data.V4
 
     public class Output<T> : OutputBase
     {
+        [JsonConverter(typeof(ParseEscapeStringConverter))]
         [JsonProperty("output")] public T Content { get; set; }
     }
 
     public class Output : OutputBase
     {
+        [JsonConverter(typeof(ParseEscapeStringConverter))]
         [JsonProperty("output")] public string Content { get; set; }
     }
 }

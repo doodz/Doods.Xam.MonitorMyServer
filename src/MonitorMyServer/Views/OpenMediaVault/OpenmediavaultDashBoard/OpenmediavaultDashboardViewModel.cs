@@ -164,7 +164,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
                 SetLabelsStateItem(openmediavault.Error, e.Message);
             }
 
-            Shell.SetTabBarIsVisible(Shell.Current.CurrentItem, true);
+            //Shell.SetTabBarIsVisible(Shell.Current.CurrentItem, true);
             await base.OnInternalAppearingAsync();
         }
 

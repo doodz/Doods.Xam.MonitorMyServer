@@ -28,10 +28,11 @@ namespace Doods.Framework.Mobile.Std.Models
         private SvgIconTarget _icon;
         private bool _isRunning;
         private ICommand _showCurrentCmd;
-
-        public ViewModelStateItem(IViewModel viewModel)
+        private Xamarin.Essentials.Interfaces.IMainThread _mainThread;
+        public ViewModelStateItem(IViewModel viewModel, Xamarin.Essentials.Interfaces.IMainThread mainThread)
         {
             ViewModel = viewModel;
+            _mainThread = mainThread;
             ShowCurrentCmd = ViewModel.CmdState;
             Icon = SvgIconTarget.Info;
         }
@@ -65,9 +66,12 @@ namespace Doods.Framework.Mobile.Std.Models
         public async Task RunActionAsync(Func<Task> myAction, Action before, Action after)
         {
             before?.Invoke();
-            MainThread.BeginInvokeOnMainThread(() => { IsRunning = true; });
+
+
+
+            _mainThread.BeginInvokeOnMainThread(() => { IsRunning = true; });
             await myAction.Invoke();
-            MainThread.BeginInvokeOnMainThread(() => { IsRunning = false; });
+            _mainThread.BeginInvokeOnMainThread(() => { IsRunning = false; });
             after?.Invoke();
         }
 

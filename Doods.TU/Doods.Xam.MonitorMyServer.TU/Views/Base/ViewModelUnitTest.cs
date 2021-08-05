@@ -1,7 +1,13 @@
+using System.Threading;
+using System.Threading.Tasks;
 using Autofac.Extras.Moq;
+using Doods.Framework.Mobile.Std.Interfaces;
+using Doods.Framework.Mobile.Std.Mvvm;
+using Doods.Framework.Std;
 using Doods.Xam.MonitorMyServer.TU.MockForms;
 using Doods.Xam.MonitorMyServer.Views.Base;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 
 namespace Doods.Xam.MonitorMyServer.TU
 {
@@ -79,8 +85,55 @@ namespace Doods.Xam.MonitorMyServer.TU
         {
             var obj = (ViewModel)new ViewModelWhithState();
             Assert.IsNotNull(obj);
-          
+            Assert.IsInstanceOfType(obj, typeof(IViewModel));
+            Assert.IsNotNull(obj.RefreshCmd);
+            Assert.IsFalse(obj.IsLoading);
+            Assert.IsFalse(obj.IsLoaded);
+            Assert.IsFalse(obj.IsBusy);
+            Assert.IsFalse(obj.IsVisible);
+        }
 
+        [TestMethod]
+        public void ResolveColorPalette()
+        {
+            var obj = (ViewModel)new ViewModelWhithState();
+            Assert.IsNotNull(obj);
+            Assert.IsNotNull(obj.ColorPalette);
+        }
+       
+        //[TestMethod]
+        //public void ResolveNavigationService()
+        //{
+        //    var obj = (ViewModel)new ViewModelWhithState();
+        //    Assert.IsNotNull(obj);
+        //    Assert.IsNotNull(obj.NavigationService);
+           
+               
+        //}
+
+        [TestMethod]
+        public async Task CallOnAppearingAsync()
+        {
+            var mokB = new Mock<IWatcher>();
+            mokB.SetupAllProperties();
+            var mockA = new Mock<ITimeWatcher>();
+            mockA.Setup(x => x.StartWatcher(It.IsAny<string>(),It.IsAny<bool>())).Returns(() =>
+                mokB.Object);
+            LocalAutoMock = AutoMock.GetLoose(cfg => cfg.RegisterMock(mockA));
+            SetMockContainer();
+
+            var token = new CancellationToken(false);
+            LoadingContext.FromUser = LoadingContext.Create(LoadingContext.FromUser, token, mockA.Object);
+            LoadingContext.OnAppearing = LoadingContext.Create(LoadingContext.OnAppearing, token, mockA.Object);
+            LoadingContext.RefreshVisual = LoadingContext.Create(LoadingContext.RefreshVisual, token, mockA.Object);
+
+            var obj = (ViewModel)new ViewModelWhithState();
+            Assert.IsNotNull(obj);
+            Assert.IsFalse(obj.IsVisible);
+            await obj.OnAppearingAsync();
+            Assert.IsTrue(obj.IsVisible);
+            Assert.IsFalse(obj.IsLoading);
+            mockA.Verify(x => x.StartWatcher(It.IsAny<string>(), It.IsAny<bool>()),Times.Once);
         }
     }
 }
