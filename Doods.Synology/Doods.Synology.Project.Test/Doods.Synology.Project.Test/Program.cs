@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading.Tasks;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Synology.Webapi.Std;
@@ -8,7 +9,7 @@ namespace Doods.Synology.Project.Test
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
 
             Console.WriteLine("Hello World!");
@@ -21,12 +22,12 @@ namespace Doods.Synology.Project.Test
             var client = new SynologyApi( con);
             // client.SetHandlers(new NewtonsoftJsonSerializer(LocalJsonConverter.Singleton));
             var auth = new SynoAuthClient(client);
-            if (auth.LoginAsync(sp[0],sp[1]).GetAwaiter().GetResult())
+            if (await auth.LoginAsync(sp[0],sp[1]))
             {
 
                 var local = new SynoFileStationClient(client);
-                var GetSharedFolders = local.GetSharedFolders().GetAwaiter().GetResult();
-                var GetFileStationList = local.GetFileStationList().GetAwaiter().GetResult();
+                var GetSharedFolders = await local.GetSharedFolders();
+                var GetFileStationList = await local.GetFileStationList();
                 //var systemInfo = client.GetSystemInfo().GetAwaiter().GetResult();
                 //var networkInfo = client.GetNetworkInfo().GetAwaiter().GetResult();
 

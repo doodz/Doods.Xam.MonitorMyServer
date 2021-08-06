@@ -21,7 +21,7 @@ namespace Doods.Synology.Webapi.Std
         Task<bool> LoginAsync(string username, string password);
         void LogOut();
     }
-
+  
     public class SynoAuthClient : BaseSynoClient, ISynoAuthClient
     {
         public SynoAuthClient(ISynoWebApi client) : base(client)
@@ -30,8 +30,57 @@ namespace Doods.Synology.Webapi.Std
             ServiceApiName = "SYNO.API.Auth";
         }
 
+
+
+        private async Task<bool> LoginAsyncV7(string username, string password)
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName);
+            loginRequest.AddParameter("version", "7");
+            loginRequest.AddParameter("method", "login");
+            loginRequest.AddParameter("account", username);
+            loginRequest.AddParameter("passwd", password);
+            loginRequest.AddParameter("session", "FileStation");//webui
+            loginRequest.AddParameter("format", "cookie");
+            try
+            {
+
+                var response = await _client.ExecuteAsync<SynologyResponseLoginV7<SynoLoginInfo>>(loginRequest);
+                //.ConfigureAwait(false);
+
+
+                if (response.Data.Success)
+                {
+                    //_client.Sid = response.Data.Data.Sid;
+                    _client.LoggedInTime = DateTime.Now;
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+            return false;
+        }
+
         public async Task<bool> LoginAsync(string username, string password)
         {
+
+
+            if (_client.ApiInfo == null)
+            {
+                var obj = new SynoInfoClient(_client);
+                _client.ApiInfo =await obj.GetSynologyApiServicesInfo();
+            }
+
+            var info =_client.ApiInfo[ServiceApiName];
+            if (info.MaxVersion >= 7)
+            {
+                return await LoginAsyncV7(username, password);
+            }
+
             //format=cookie
             var loginRequest = new SynologyRestRequest(Resource);
             loginRequest.AddParameter("api", ServiceApiName);
@@ -39,8 +88,13 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("method", "login");
             loginRequest.AddParameter("account", username);
             loginRequest.AddParameter("passwd", password);
-            loginRequest.AddParameter("session", "FileStation");
+            loginRequest.AddParameter("session", "FileStation");//webui
             loginRequest.AddParameter("format", "cookie");
+
+            
+
+
+
 
             try
             {

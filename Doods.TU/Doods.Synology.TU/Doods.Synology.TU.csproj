@@ -19,14 +19,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Json\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Doods.Synology\Doods.Synology.Webapi.Std\Doods.Synology.Webapi.Std.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Data\Json\SYNO.API.Info.query.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Json\SYNO.API.Auth.login.Error2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\Json\SYNO.API.Auth.login.Error.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
