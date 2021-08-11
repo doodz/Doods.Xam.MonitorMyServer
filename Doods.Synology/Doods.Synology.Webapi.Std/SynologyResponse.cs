@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using Newtonsoft.Json;
 
 namespace Doods.Synology.Webapi.Std
 {
     internal class SynologySimpleResponse<T>
     {
-        [JsonProperty("data", Required = Required.AllowNull)] public T Data { get; set; }
+        [DefaultValue(null)]
+       [JsonProperty("data", DefaultValueHandling = DefaultValueHandling.Populate)] public T Data { get; set; }
 
         [JsonProperty("success")] public bool Success { get; set; }
     }

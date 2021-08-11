@@ -9,6 +9,7 @@ namespace Doods.Synology.Webapi.Std
 {
     public interface ISynoWebApi : IHttpClient
     {
+        string Synotoken { get; set; }
         string Sid { get; set; }
         DateTime LoggedInTime { get; set; }
         IRestResponse Execute(IRestRequest request);
@@ -23,6 +24,7 @@ namespace Doods.Synology.Webapi.Std
         }
 
         public string Sid { get; set; }
+        public string Synotoken { get; set; }
         public DateTime LoggedInTime { get; set; }
         public IDictionary<string, SynologyApiServicesInfo> ApiInfo { get; set; }
 

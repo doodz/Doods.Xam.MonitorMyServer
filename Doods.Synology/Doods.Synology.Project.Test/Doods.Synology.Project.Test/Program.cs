@@ -16,7 +16,7 @@ namespace Doods.Synology.Project.Test
           
 
             var result = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            var file = File.ReadAllText(result+ "\\pass\\doc1.txt").Trim();
+            var file = File.ReadAllText(result+ "\\pass\\doc3.txt").Trim();
             var sp = file.Split(';');
             var con = GetConnection(sp);
             var client = new SynologyApi( con);
@@ -24,6 +24,9 @@ namespace Doods.Synology.Project.Test
             var auth = new SynoAuthClient(client);
             if (await auth.LoginAsync(sp[0],sp[1]))
             {
+                var desck = new SynoDesktopClient(client);
+                var services = await desck.GetUserServices();
+
 
                 var local = new SynoFileStationClient(client);
                 var GetSharedFolders = await local.GetSharedFolders();

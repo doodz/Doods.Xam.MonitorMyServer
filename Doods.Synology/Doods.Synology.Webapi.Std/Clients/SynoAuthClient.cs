@@ -11,6 +11,8 @@
 // ---------------------------------------------------------------------------
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Doods.Synology.Webapi.Std.NewFolder;
 
@@ -31,6 +33,16 @@ namespace Doods.Synology.Webapi.Std
         }
 
 
+        public async Task<SynoAuthType> GetType(string username)
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName+".Type");
+            loginRequest.AddParameter("version", "1");
+            loginRequest.AddParameter("method", "get");
+            loginRequest.AddParameter("account", username);
+            var response = await _client.ExecuteAsync<SynologySimpleResponse<List<SynoAuthType>>>(loginRequest);
+            return response.Data.Data.FirstOrDefault();
+        }
 
         private async Task<bool> LoginAsyncV7(string username, string password)
         {
@@ -41,17 +53,20 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("account", username);
             loginRequest.AddParameter("passwd", password);
             loginRequest.AddParameter("session", "FileStation");//webui
-            loginRequest.AddParameter("format", "cookie");
+            loginRequest.AddParameter("enable_syno_token", "yes");
+            loginRequest.AddParameter("enable_device_token", "no");
+            loginRequest.AddParameter("rememberme", "0");
             try
             {
 
-                var response = await _client.ExecuteAsync<SynologyResponseLoginV7<SynoLoginInfo>>(loginRequest);
+                var response = await _client.ExecuteAsync<SynologySimpleResponse<SynoLoginResult>>(loginRequest);
                 //.ConfigureAwait(false);
 
 
                 if (response.Data.Success)
                 {
-                    //_client.Sid = response.Data.Data.Sid;
+                    _client.Sid = response.Data.Data.Sid;
+                    _client.Synotoken =response.Data.Data.Synotoken;
                     _client.LoggedInTime = DateTime.Now;
                     return true;
                 }
@@ -78,6 +93,14 @@ namespace Doods.Synology.Webapi.Std
             var info =_client.ApiInfo[ServiceApiName];
             if (info.MaxVersion >= 7)
             {
+
+                var logintype = await GetType(username);
+
+                if (logintype?.Type != "passwd")
+                {
+                    throw new NotSupportedException($"login type \"{logintype?.Type}\" not supported");
+                }
+
                 return await LoginAsyncV7(username, password);
             }
 
