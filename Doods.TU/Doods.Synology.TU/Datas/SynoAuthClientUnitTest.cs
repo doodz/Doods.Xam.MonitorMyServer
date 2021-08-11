@@ -69,6 +69,7 @@ namespace Doods.Synology.TU.Datas
             return Task.FromResult(result.Object);
         }
 
+        public string Synotoken { get; set; }
         public string Sid { get; set; }
         public DateTime LoggedInTime { get; set; }
         public IRestResponse Execute(IRestRequest request)

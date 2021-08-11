@@ -38,7 +38,7 @@ namespace Doods.Openmediavault.Rpc.Std.Data.V6
         [JsonProperty("uptime")] public string Uptime { get; set; }
 
         [JsonProperty("loadAverage")]
-        public Dictionary<string, long> LoadAverageDico
+        public Dictionary<string, double> LoadAverageDico
         {
             get { return _loadAverageDico;}
             set
@@ -58,7 +58,7 @@ namespace Doods.Openmediavault.Rpc.Std.Data.V6
                     LoadAverage = null;
             } }
 
-        private Dictionary<string, long> _loadAverageDico { get; set; }
+        private Dictionary<string, double> _loadAverageDico { get; set; }
         public string LoadAverage { get; set; }
 
         [JsonProperty("configDirty")] public bool ConfigDirty { get; set; }

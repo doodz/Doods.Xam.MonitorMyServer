@@ -28,6 +28,10 @@ namespace Doods.Openmediavault.Project.Test
                 var objTest = new OmvSystemClient(client);
 
                 var result = await objTest.GetSystemInformations();
+                
+                var filesystem = new OmvFileSystemMgmtClient(client);
+                var resulrfile = await filesystem.GetFilesystems();
+
             }
 
             Console.ReadKey();
