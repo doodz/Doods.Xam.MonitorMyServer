@@ -99,8 +99,17 @@ namespace Doods.Framework.Http.Std
 
                 throw new RequestFailedException(errorMessage, friendly);
             }
+
             if (response.ErrorException != null)
+            {
+                if (response.ErrorException.GetType() == typeof(Newtonsoft.Json.JsonSerializationException))
+                {
+                    Console.WriteLine("Json ==>");
+                    Console.WriteLine(response.Content);
+                    Console.WriteLine("<== Json");
+                }
                 throw response.ErrorException;
+            }
         }
 
 

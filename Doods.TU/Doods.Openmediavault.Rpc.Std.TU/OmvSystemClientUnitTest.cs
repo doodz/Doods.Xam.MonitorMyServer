@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
@@ -12,6 +13,7 @@ using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmedivault.Http.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Newtonsoft.Json;
 using Renci.SshNet;
 using RestSharp;
 
@@ -19,8 +21,16 @@ namespace Doods.Openmediavault.TU.Clients
 {
 
 
-    internal class LocalIHttpClient : IHttpClient
+    public class LocalIHttpClient : IHttpClient
     {
+        internal  class Params
+        {
+            [JsonProperty("filename")]
+            public string Filename { get; set; }
+
+            [JsonProperty("pos")]
+            public long Pos { get; set; }
+        }
         public string OmvV = "V6";
         private NewtonsoftJsonSerializer _serializer = new NewtonsoftJsonSerializer();
         public Task<IRestResponse> ExecuteAsync(IRestRequest request)
@@ -34,6 +44,7 @@ namespace Doods.Openmediavault.TU.Clients
 
         public Task<IRestResponse<T>> ExecuteAsync<T>(IRestRequest request)
         {
+            
             var result = new Mock<IRestResponse<T>>();
 
             var b = request.Body;
@@ -43,7 +54,24 @@ namespace Doods.Openmediavault.TU.Clients
 
 
             var toto = Directory.GetCurrentDirectory();
-            var path =@$"{toto}/Data/{OmvV}/{o.Service}_{o.Method}.json";
+            var path = @$"{toto}/Data/{OmvV}/Error.json";
+            if (o.Method == "getOutput")
+            {
+                System.Type type = o.Params.GetType();
+                string filename = (string)type.GetProperty("filename").GetValue(o.Params, null);
+                if (!string.IsNullOrWhiteSpace(filename))
+                {
+                    path = @$"{toto}/Data/{OmvV}/{filename}.json";
+                }
+            }
+            else
+                path =@$"{toto}/Data/{OmvV}/{o.Service}_{o.Method}.json";
+
+            //if (!File.Exists(path))
+            //{
+            //    path = @$"{toto}/Data/V6/Error.json";
+            //}
+
             string jsonString = File.ReadAllText(path);
 
             result.Setup(c => c.Data).Returns(() =>

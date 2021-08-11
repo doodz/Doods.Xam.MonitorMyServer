@@ -16,5 +16,28 @@ namespace Doods.Synology.Webapi.Std
 
         [JsonProperty("errors", Required = Required.AllowNull)]
         public List<SynologyError> Errors { get; set; }
+
+     
+
+    }
+    public class SynologyErrorV7a
+    {
+        [JsonProperty("code", Required = Required.AllowNull)]
+        public int Code { get; set; }
+        [JsonProperty("errors", Required = Required.AllowNull)]
+        public SynologyErrorV7b Errors { get; set; }
+    }
+    public class SynologyErrorV7b
+    {
+        [JsonProperty("token")]
+        public string Token { get; set; }
+
+        [JsonProperty("types")]
+        public List<TypeElement> Types { get; set; }
+    }
+    public class TypeElement
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; }
     }
 }

@@ -17,7 +17,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object);
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object);
             Assert.IsNotNull(obj);
            
             Assert.AreEqual(viewModelMock.Object,obj.ViewModel);
@@ -36,7 +37,8 @@ namespace Doods.Framework.TU.MobileMvvm
         public void RunAction()
         {
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object);
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object);
             Assert.IsNotNull(obj);
             Action act = () =>
             {
@@ -80,7 +82,8 @@ namespace Doods.Framework.TU.MobileMvvm
         public void RunActions()
         {
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object);
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object);
             Assert.IsNotNull(obj);
             bool myActionCalled = false;
             bool BeforeCalled = false;
@@ -111,7 +114,8 @@ namespace Doods.Framework.TU.MobileMvvm
         public void RunFunc1()
         {
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object);
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object);
             Assert.IsNotNull(obj);
             bool myActionCalled = false;
           
@@ -131,7 +135,8 @@ namespace Doods.Framework.TU.MobileMvvm
         public void RunFunc2()
         {
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object);
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object);
             Assert.IsNotNull(obj);
             bool myActionCalled = false;
             bool BeforeCalled = false;

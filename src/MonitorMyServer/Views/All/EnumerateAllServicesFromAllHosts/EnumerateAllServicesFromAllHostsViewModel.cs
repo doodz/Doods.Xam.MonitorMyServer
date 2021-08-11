@@ -46,7 +46,7 @@ namespace Doods.Xam.MonitorMyServer.Views.EnumerateAllServicesFromAllHosts
 
         protected override void OnInitializeLoading(LoadingContext context)
         {
-            ViewModelStateItem = new ViewModelStateItem(this);
+            ViewModelStateItem = new ViewModelStateItem(this, App.Container.Resolve<Xamarin.Essentials.Interfaces.IMainThread>());
             ViewModelStateItem.Title = Resource.SearchingHosts;
             ViewModelStateItem.Description = Resource.ClickForSearching;
             ViewModelStateItem.IsRunning = true;

@@ -28,7 +28,7 @@ namespace Doods.Synology.Webapi.Std
 
 
             var response = await _client
-                .ExecuteAsync<SynologyResponse<Dictionary<string, SynologyApiServicesInfo>>>(loginRequest)
+                .ExecuteAsync<SynologySimpleResponse<Dictionary<string, SynologyApiServicesInfo>>>(loginRequest)
                 .ConfigureAwait(false);
             return response.Data.Data;
         }

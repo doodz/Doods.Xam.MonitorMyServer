@@ -1,8 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Autofac.Extras.Moq;
+using AutoMapper;
+using Doods.Framework.Mobile.Std.Interfaces;
+using Doods.Framework.Std;
+using Doods.Openmediavault.TU.Clients;
+using Doods.Openmedivault.Http.Std;
 using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard;
+using Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
@@ -106,7 +112,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             Assert.IsTrue(obj.CheckCmd.CanExecute(null));
 
             obj.CheckCmd.Execute(null);
-            omvService.Verify(c => c.UpdateAptList(), Times.Never);//Xamarin.Essentials exception :/
+            omvService.Verify(c => c.UpdateAptList(), Times.Once);
           
 
         }
@@ -142,9 +148,33 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             Assert.IsTrue(obj.UpdatesCmd.CanExecute(null));
 
             obj.UpdatesCmd.Execute(null);
-            omvService.Verify(x => x.UpgradeAptList(It.IsAny<IEnumerable<string>>()), Times.Never);//Xamarin.Essentials exception :/
-            
+            omvService.Verify(x => x.UpgradeAptList(It.IsAny<IEnumerable<string>>()), Times.Once);
+        }
 
+        [TestMethod]
+        public async Task CallOnAppearingAsync2()
+        {
+            var logger = new Mock<ILogger>();
+            var mapper = new Mock<IMapper>();
+            var configurationMock = new Mock<Doods.Framework.Std.IConfiguration>();
+
+            logger.SetupAllProperties();
+            mapper.SetupAllProperties();
+            configurationMock.SetupAllProperties();
+
+            var rpc = new OmvHttpService(logger.Object, new LocalIHttpClient());
+            var omvService = new OmvRpcService(rpc, logger.Object, mapper.Object);
+            var obj = new OpenmediavaultDashboardViewModel(omvService, configurationMock.Object);
+
+            Assert.IsNull(obj.Title);
+            await obj.OnAppearingAsync();
+            Assert.AreEqual(0, obj.Filesystems.Count);
+
+            Assert.IsNotNull(obj.Upgradeds);
+            Assert.IsNotNull(obj.ServicesStatus);
+            Assert.IsNotNull(obj.Filesystems);
+            Assert.IsNotNull(obj.Devices);
+            Assert.IsNotNull(obj.OMVInformations);
         }
     }
 }

@@ -16,7 +16,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object)as BaseItem;
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object) as BaseItem;
             Assert.IsNotNull(obj);
 
 
@@ -34,7 +35,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object) as BaseItem;
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object) as BaseItem;
             Assert.IsNotNull(obj);
             var propertyName = "";
            
@@ -58,7 +60,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object) as BaseItem;
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object) as BaseItem;
             Assert.IsNotNull(obj);
             var propertyName = "";
            
@@ -81,7 +84,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object) as BaseItem;
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object) as BaseItem;
             Assert.IsNotNull(obj);
             var propertyName = "";
           
@@ -104,7 +108,8 @@ namespace Doods.Framework.TU.MobileMvvm
             //var loggertMock = new Mock<ILogger>();
             //var telemetryServiceMock = new Mock<ITelemetryService>();
             var viewModelMock = new Mock<IViewModel>();
-            var obj = new ViewModelStateItem(viewModelMock.Object) as BaseItem;
+            var MainThread = new Mock<Xamarin.Essentials.Interfaces.IMainThread>();
+            var obj = new ViewModelStateItem(viewModelMock.Object, MainThread.Object) as BaseItem;
             Assert.IsNotNull(obj);
             var propertyName = "";
            

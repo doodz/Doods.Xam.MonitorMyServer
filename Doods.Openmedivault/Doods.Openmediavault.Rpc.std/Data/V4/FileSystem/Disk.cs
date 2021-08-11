@@ -11,7 +11,7 @@ namespace Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem
         [JsonProperty("devicefile")] public string Devicefile { get; set; }
 
         [JsonProperty("devicelinks")] public List<string> Devicelinks { get; set; }
-
+        
         [JsonProperty("model")] public string Model { get; set; }
 
         [JsonProperty("size")] public string Size { get; set; }

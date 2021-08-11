@@ -1,8 +1,11 @@
 ﻿using Autofac;
 using Doods.Xam.MonitorMyServer;
+using Doods.Xam.MonitorMyServer.Services;
 using Doods.Xam.MonitorMyServer.TU;
 using Doods.Xam.MonitorMyServer.Views.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+
 namespace Doods.Openmediavault.TU.Tests
 {
     [TestClass]
@@ -11,19 +14,12 @@ namespace Doods.Openmediavault.TU.Tests
         [TestMethod]
         public void Create()
         {
-            TestPageViewModel obj =null;
-            try
-            {
-                var builder = new ContainerBuilder();
-                App.SetupContainer(builder);
-                Assert.ThrowsException<System.Exception>(() => { obj = new TestPageViewModel(null, null); });
+            var rewardService = new Mock<IRewardService>();
+            var configurationMock = new Mock<Doods.Framework.Std.IConfiguration>();
+           
+            TestPageViewModel obj = new TestPageViewModel(rewardService.Object, configurationMock.Object); 
 
-            }
-            finally
-            {
-
-                Assert.IsNull(obj);
-            }
+            
         }
     }
 }

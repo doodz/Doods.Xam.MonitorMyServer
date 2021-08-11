@@ -2,7 +2,8 @@
 using Doods.Framework.Mobile.Std.Interfaces;
 using Doods.Framework.Mobile.Std.Servicies;
 using Doods.Framework.Std;
-
+using Xamarin.Essentials;
+using Xamarin.Essentials.Implementation;
 namespace Doods.Framework.Mobile.Std.Config
 {
     public enum NavigationServiceType
@@ -16,6 +17,8 @@ namespace Doods.Framework.Mobile.Std.Config
     {
         protected override void Load(ContainerBuilder builder)
         {
+          
+            builder.RegisterType<MainThreadImplementation>().As<Xamarin.Essentials.Interfaces.IMainThread>().SingleInstance();
             builder.RegisterType<MyDeviceInfo>().As<IDeviceInfo>().SingleInstance();
             builder.RegisterType<Configuration>().As<IConfiguration>().SingleInstance();
             builder.RegisterType<TelemetryService>().As<ITelemetryService>().SingleInstance();

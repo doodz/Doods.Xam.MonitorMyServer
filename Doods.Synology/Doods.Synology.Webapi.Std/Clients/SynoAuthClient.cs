@@ -11,6 +11,8 @@
 // ---------------------------------------------------------------------------
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Doods.Synology.Webapi.Std.NewFolder;
 
@@ -21,7 +23,7 @@ namespace Doods.Synology.Webapi.Std
         Task<bool> LoginAsync(string username, string password);
         void LogOut();
     }
-
+  
     public class SynoAuthClient : BaseSynoClient, ISynoAuthClient
     {
         public SynoAuthClient(ISynoWebApi client) : base(client)
@@ -30,8 +32,78 @@ namespace Doods.Synology.Webapi.Std
             ServiceApiName = "SYNO.API.Auth";
         }
 
+
+        public async Task<SynoAuthType> GetType(string username)
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName+".Type");
+            loginRequest.AddParameter("version", "1");
+            loginRequest.AddParameter("method", "get");
+            loginRequest.AddParameter("account", username);
+            var response = await _client.ExecuteAsync<SynologySimpleResponse<List<SynoAuthType>>>(loginRequest);
+            return response.Data.Data.FirstOrDefault();
+        }
+
+        private async Task<bool> LoginAsyncV7(string username, string password)
+        {
+            var loginRequest = new SynologyRestRequest(Resource);
+            loginRequest.AddParameter("api", ServiceApiName);
+            loginRequest.AddParameter("version", "7");
+            loginRequest.AddParameter("method", "login");
+            loginRequest.AddParameter("account", username);
+            loginRequest.AddParameter("passwd", password);
+            loginRequest.AddParameter("session", "FileStation");//webui
+            loginRequest.AddParameter("enable_syno_token", "yes");
+            loginRequest.AddParameter("enable_device_token", "no");
+            loginRequest.AddParameter("rememberme", "0");
+            try
+            {
+
+                var response = await _client.ExecuteAsync<SynologySimpleResponse<SynoLoginResult>>(loginRequest);
+                //.ConfigureAwait(false);
+
+
+                if (response.Data.Success)
+                {
+                    _client.Sid = response.Data.Data.Sid;
+                    _client.Synotoken =response.Data.Data.Synotoken;
+                    _client.LoggedInTime = DateTime.Now;
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+            return false;
+        }
+
         public async Task<bool> LoginAsync(string username, string password)
         {
+
+
+            if (_client.ApiInfo == null)
+            {
+                var obj = new SynoInfoClient(_client);
+                _client.ApiInfo =await obj.GetSynologyApiServicesInfo();
+            }
+
+            var info =_client.ApiInfo[ServiceApiName];
+            if (info.MaxVersion >= 7)
+            {
+
+                var logintype = await GetType(username);
+
+                if (logintype?.Type != "passwd")
+                {
+                    throw new NotSupportedException($"login type \"{logintype?.Type}\" not supported");
+                }
+
+                return await LoginAsyncV7(username, password);
+            }
+
             //format=cookie
             var loginRequest = new SynologyRestRequest(Resource);
             loginRequest.AddParameter("api", ServiceApiName);
@@ -39,8 +111,13 @@ namespace Doods.Synology.Webapi.Std
             loginRequest.AddParameter("method", "login");
             loginRequest.AddParameter("account", username);
             loginRequest.AddParameter("passwd", password);
-            loginRequest.AddParameter("session", "FileStation");
+            loginRequest.AddParameter("session", "FileStation");//webui
             loginRequest.AddParameter("format", "cookie");
+
+            
+
+
+
 
             try
             {

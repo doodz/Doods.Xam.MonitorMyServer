@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using Doods.Framework.Mobile.Std.Models;
 using Doods.Framework.Mobile.Std.Mvvm;
 
@@ -18,7 +19,7 @@ namespace Doods.Xam.MonitorMyServer.Views.Base
 
         public ViewModelWhithState()
         {
-            _viewModelStateItem = new ViewModelStateItem(this);
+            _viewModelStateItem = new ViewModelStateItem(this, App.Container.Resolve<Xamarin.Essentials.Interfaces.IMainThread>());
         }
 
         public ViewModelStateItem ViewModelStateItem
