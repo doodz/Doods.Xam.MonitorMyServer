@@ -32,7 +32,7 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
             var stringValue = serializer.Deserialize<string>(reader);
 
             if(string.IsNullOrWhiteSpace(stringValue))
-                throw new Exception($"Cannot unmarshal type Output.content {t}");
+                throw new JsonSerializationException($"Cannot unmarshal type Output.content {t}");
             stringValue = stringValue.Replace(@"\\\", string.Empty);
             stringValue = stringValue.Replace(@"\""", "\"");
             var readertest = new JsonTextReader(new StringReader(stringValue));

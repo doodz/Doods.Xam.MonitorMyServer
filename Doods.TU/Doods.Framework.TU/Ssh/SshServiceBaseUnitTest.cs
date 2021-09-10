@@ -4,6 +4,7 @@ using Doods.Framework.Ssh.Std;
 using Doods.Framework.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Renci.SshNet;
 
 namespace Doods.Framework.TU.Ssh
 {
@@ -11,6 +12,11 @@ namespace Doods.Framework.TU.Ssh
     {
         public MySshServiceBase(ILogger logger) : base(logger)
         {
+        }
+
+        protected override SshClient GetSshClient()
+        {
+            return new SshClient(new ConnectionInfo("",""));
         }
     }
 
@@ -44,6 +50,22 @@ namespace Doods.Framework.TU.Ssh
             Assert.IsNotNull(obj);
             Assert.IsNull(obj.Client);
             Assert.AreEqual(logger.Object, obj.Logger);
+            var result = await obj.RunCommandAsync(null, CancellationToken.None);
+            Assert.IsNull(result);
+
+        }
+
+        [TestMethod]
+        public async Task ConnectAsync()
+        {
+            var logger = new Mock<ILogger>();
+            var obj = (SshServiceBase)new MySshServiceBase(logger.Object);
+            Assert.IsNotNull(obj);
+            Assert.IsNull(obj.Client);
+            Assert.AreEqual(logger.Object, obj.Logger);
+            Assert.IsFalse(obj.IsConnected());
+            await obj.ConnectAsync();
+           
             var result = await obj.RunCommandAsync(null, CancellationToken.None);
             Assert.IsNull(result);
 

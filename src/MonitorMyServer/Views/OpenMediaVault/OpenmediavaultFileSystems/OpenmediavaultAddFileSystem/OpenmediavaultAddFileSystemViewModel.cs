@@ -77,16 +77,23 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
         {
             var filename = await _sshService.GetListCandidatesFileSystemBackground();
             var result = await _backgroundService.GetOutputAsync<CandidateFileSystem[]>(filename);
-            LstCandidateFileSystem.ReplaceRange(result.Content);
+            if(result?.Content != null)
+                LstCandidateFileSystem.ReplaceRange(result.Content);
+            else
+            {
+                LstCandidateFileSystem.Clear();
+            }
         }
 
 
         private async Task Save()
         {
-            var newFileSystem = new BaseOmvFilesystems();
-            newFileSystem.Label = Label;
-            newFileSystem.Type = SelectedFileSystem;
-            newFileSystem.Devicefile = SelectedCandidate.Devicefile /*.Replace("/",@"\\\/");*/;
+            var newFileSystem = new BaseOmvFilesystems
+            {
+                Label = Label, 
+                Type = SelectedFileSystem, 
+                Devicefile = SelectedCandidate.Devicefile
+            };
 
             await ViewModelStateItem.RunActionAsync(async () =>
                 {

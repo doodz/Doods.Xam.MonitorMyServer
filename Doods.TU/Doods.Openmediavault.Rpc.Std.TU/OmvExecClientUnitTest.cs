@@ -8,7 +8,7 @@ using Doods.Openmedivault.Http.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace Doods.Openmediavault.TU.Clients
+namespace Doods.Openmediavault.Rpc.Std.TU
 {
     [TestClass]
     public class OmvExecClientUnitTest

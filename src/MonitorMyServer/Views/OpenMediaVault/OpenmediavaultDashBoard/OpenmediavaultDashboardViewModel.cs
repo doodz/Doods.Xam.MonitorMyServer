@@ -24,19 +24,20 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 {
     public class OpenmediavaultDashboardViewModel : ViewModelWhithState
     {
-        private readonly IOmvService _sshService;
+        private readonly IOmvService _OmvService;
         private OMVInformations _OMVInformations;
         private string _text = string.Empty;
-
-        public OpenmediavaultDashboardViewModel(IOmvService sshService, IConfiguration configuration)
+        private IMessagingCenter _messagingCenter;
+        public OpenmediavaultDashboardViewModel(IOmvService omvService, IConfiguration configuration, IMessagingCenter messagingCenter)
         {
-            _sshService = sshService;
+            _OmvService = omvService;
             UpdatesCmd = new Command(async(obj)=> await Updates(obj));
             CheckCmd = new Command(async (obj) => await Check(obj));
             ManageHostsCmd = new Command(ManageHosts);
             ChangeHostCmd = new Command(async (obj) => await ChangeHost());
             ShowDetailsCmd = new Command(ShowDetails);
             BannerId = configuration.AdsKey;
+            _messagingCenter = messagingCenter;
         }
 
         //public ObservableRangeCollection<SystemInformation> SystemInformation { get; } =
@@ -80,7 +81,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
         {
             return ViewModelStateItem.RunActionAsync(async () =>
                 {
-                    var filename = await _sshService.UpdateAptList();
+                    var filename = await _OmvService.UpdateAptList();
 
                     await Task.Delay(TimeSpan.FromSeconds(3));
                     await CheckRunningAsync(filename);
@@ -91,7 +92,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async Task<bool> CheckRunningAsync(string filename)
         {
-            if (!await _sshService.IsRunning(filename)) return false;
+            if (!await _OmvService.IsRunning(filename)) return false;
 
             await Task.Delay(TimeSpan.FromSeconds(3));
             return await CheckRunningAsync(filename);
@@ -99,7 +100,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async Task<bool> GetOutputAsync(string filename, int pos)
         {
-            var result = await _sshService.GetOutput<string>(filename, pos);
+            var result = await _OmvService.GetOutput<string>(filename, pos);
             if (result.Running)
             {
                 _text += result.Content;
@@ -120,7 +121,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             _text = string.Empty;
             return ViewModelStateItem.RunActionAsync(async () =>
                 {
-                    var filename = await _sshService.UpgradeAptList(Upgradeds.Select(u => u.Name));
+                    var filename = await _OmvService.UpgradeAptList(Upgradeds.Select(u => u.Name));
 
                     await Task.Delay(TimeSpan.FromSeconds(3));
                     await GetOutputAsync(filename, 0);
@@ -135,6 +136,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             return base.OnInternalDisappearingAsync();
         }
 
+        private bool retry = true;
         protected override async Task OnInternalAppearingAsync()
         {
             try
@@ -157,7 +159,17 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
             }
             catch (AuthorizationException ex)
             {
-                SetLabelsStateItem(openmediavault.Error, ex.Message);
+                if (!retry)
+                {
+                    SetLabelsStateItem(openmediavault.Error, ex.Message);
+                    _messagingCenter.Send("this", MessengerKeys.SessionExpired, "item");
+                }
+                else
+                {
+                    retry = false;
+                    await Task.Delay(100);
+                    await OnInternalAppearingAsync();
+                }
             }
             catch (Exception e)
             {
@@ -166,6 +178,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
             //Shell.SetTabBarIsVisible(Shell.Current.CurrentItem, true);
             await base.OnInternalAppearingAsync();
+            retry = true;
         }
 
         protected Task RefreshData()
@@ -176,32 +189,32 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultDashBoard
 
         private async Task GetUpgraded()
         {
-            var result = await _sshService.GetUpgraded();
+            var result = await _OmvService.GetUpgraded();
             Upgradeds.ReplaceRange(result);
         }
 
         private async Task GetServicesStatus()
         {
-            var result = await _sshService.GetServicesStatus();
+            var result = await _OmvService.GetServicesStatus();
             ServicesStatus.ReplaceRange(result);
         }
 
         private async Task GetFilesystems()
         {
-            var result = await _sshService.GetFilesystems();
+            var result = await _OmvService.GetFilesystems();
             Filesystems.ReplaceRange(result);
         }
 
         private async Task GetDevices()
         {
-            var result = await _sshService.GetDevices();
+            var result = await _OmvService.GetDevices();
             Devices.ReplaceRange(result);
         }
 
 
         private async Task GetSystemInformation()
         {
-            var result = await _sshService.GetSystemInformations();
+            var result = await _OmvService.GetSystemInformations();
             OMVInformations = result;
             //SystemInformation.ReplaceRange(result);
         }

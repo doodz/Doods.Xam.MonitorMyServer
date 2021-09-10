@@ -1,12 +1,7 @@
 ﻿using System.IO;
-using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
-using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.Http.Std;
 using Doods.Framework.Http.Std.Serializers;
-using Doods.Framework.Ssh.Std;
-using Doods.Framework.Ssh.Std.Interfaces;
 using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std.Clients;
 using Doods.Openmediavault.Rpc.Std.Enums;
@@ -14,10 +9,9 @@ using Doods.Openmedivault.Http.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Newtonsoft.Json;
-using Renci.SshNet;
 using RestSharp;
 
-namespace Doods.Openmediavault.TU.Clients
+namespace Doods.Openmediavault.Rpc.Std.TU
 {
 
 

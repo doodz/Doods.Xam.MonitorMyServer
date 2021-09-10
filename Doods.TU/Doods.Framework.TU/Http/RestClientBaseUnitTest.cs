@@ -75,5 +75,12 @@ namespace Doods.Framework.TU.Http
             //Assert.IsInstanceOfType(obj.JsonSerializer, typeof(Doods.Framework.Http.Std.Serializers.NewtonsoftJsonSerializer));
 
         }
+
+        [TestMethod]
+        public void DeserializeError()
+        {
+
+        }
+        
     }
 }

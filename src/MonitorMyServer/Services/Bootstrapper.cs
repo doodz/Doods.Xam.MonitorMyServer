@@ -1,6 +1,10 @@
 ﻿using Autofac;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
 using Doods.Synology.Webapi.Std;
+using Xamarin.Essentials.Implementation;
+
+using Xamarin.Essentials.Implementation;
+using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
@@ -8,6 +12,9 @@ namespace Doods.Xam.MonitorMyServer.Services
     {
         protected override void Load(ContainerBuilder builder)
         {
+
+            builder.RegisterType<PreferencesImplementation>().As<Xamarin.Essentials.Interfaces.IPreferences>().SingleInstance();
+            builder.RegisterType<MessagingCenter>().As<IMessagingCenter>().SingleInstance();
             builder.RegisterType<HistoryService>().As<IHistoryService>().SingleInstance();
 
             builder.RegisterType<DataProvider>().As<IDataProvider>().SingleInstance();

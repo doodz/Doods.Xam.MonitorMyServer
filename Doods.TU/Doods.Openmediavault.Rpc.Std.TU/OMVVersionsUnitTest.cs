@@ -2,7 +2,7 @@
 using Doods.Openmediavault.Rpc.Std.Enums;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Doods.Openmediavault.TU.Clients
+namespace Doods.Openmediavault.Rpc.Std.TU
 {
     [TestClass]
     public class OMVVersionsUnitTest

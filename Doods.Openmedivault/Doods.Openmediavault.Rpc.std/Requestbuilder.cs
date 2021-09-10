@@ -72,7 +72,7 @@ namespace Doods.Openmediavault.Rpc.Std
 
         //    return default;
         //}
-        private OmvSerializer serializer = new OmvSerializer();
+        private OmvSerializer _serializer = new OmvSerializer();
 
 
         public static string ToJson(object obj)
