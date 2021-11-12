@@ -40,7 +40,7 @@ namespace Doods.Synology.Webapi.Std.NewFolder
             {
                 return b;
             }
-            throw new Exception("Cannot unmarshal type bool");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type bool");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
@@ -73,7 +73,7 @@ namespace Doods.Synology.Webapi.Std.NewFolder
                 return l;
             }
 
-            throw new Exception("Cannot unmarshal type long");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type long");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)

@@ -77,21 +77,21 @@ namespace Doods.Synology.TU.Datas
             Assert.IsNotNull(result);
         }
 
-        [TestMethod]
-        public async Task GetPackagesServerInfoJson()
-        {
-            var client = new Mock<ISynoWebApi>();
-            var toto = Directory.GetCurrentDirectory();
-            client.Setup(c => c.ExecuteAsync<SynologyResponse<SynologyPackageServer>>(It.IsAny<IRestRequest>()))
-                .ReturnsAsync(new RestResponse<SynologyResponse<SynologyPackageServer>>()
-                {
-                    Data = GetResult<SynologyResponse<SynologyPackageServer>>(@$"{toto}/Data/Json/SYNO.Core.Package.Server_list.json")
-                });
+        //[TestMethod]
+        //public async Task GetPackagesServerInfoJson()
+        //{
+        //    var client = new Mock<ISynoWebApi>();
+        //    var toto = Directory.GetCurrentDirectory();
+        //    client.Setup(c => c.ExecuteAsync<SynologyResponse<SynologyPackageServer>>(It.IsAny<IRestRequest>()))
+        //        .ReturnsAsync(new RestResponse<SynologyResponse<SynologyPackageServer>>()
+        //        {
+        //            Data = GetResult<SynologyResponse<SynologyPackageServer>>(@$"{toto}/Data/Json/SYNO.Core.Package.Server_list.json")
+        //        });
 
-            var c = new SynoPackageServerClient(client.Object);
-            var result = await c.GetPackagesServerInfo();
-            Assert.IsNotNull(result);
-        }
+        //    var c = new SynoPackageServerClient(client.Object);
+        //    var result = await c.GetPackagesServerInfo();
+        //    Assert.IsNotNull(result);
+        //}
 
         private T GetResult<T>(string jsonFile)
         {

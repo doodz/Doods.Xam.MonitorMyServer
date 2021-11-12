@@ -26,7 +26,10 @@ namespace Doods.Xam.MonitorMyServer.TU
         public static void AssemblyInit(TestContext context)
         {
             // Executes once before the test run. (Optional)
-          
+            //var localAutoMock = AutoMock.GetLoose();
+            //App.SetContainer(localAutoMock.Container);
+            //MockPlatformServices.Init();
+
         }
         protected static void SetMockContainer()
         {
@@ -48,8 +51,8 @@ namespace Doods.Xam.MonitorMyServer.TU
         {
             // Runs once after all tests in this class are executed. (Optional)
             // Not guaranteed that it executes instantly after all tests from the class.
-            var localAutoMock = AutoMock.GetLoose();
-            App.SetContainer(localAutoMock.Container);
+            //var localAutoMock = AutoMock.GetLoose();
+            //App.SetContainer(localAutoMock.Container);
         }
     }
 

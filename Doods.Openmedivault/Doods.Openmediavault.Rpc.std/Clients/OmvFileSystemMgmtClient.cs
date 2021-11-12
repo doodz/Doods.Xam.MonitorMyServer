@@ -40,6 +40,16 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
             return result;
         }
 
+
+        public Task<IEnumerable<OmvFilesystems>> GetMountCandidates()
+        {
+            var request = NewRequest("getMountCandidates");
+
+            var result = RunCmd<IEnumerable<OmvFilesystems>>(request);
+
+            return result;
+        }
+
         public Task<string> GetListFileSystemBackground()
         {
             var request = NewRequest("getListBg");

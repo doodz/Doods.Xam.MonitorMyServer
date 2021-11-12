@@ -33,19 +33,41 @@ namespace Doods.Openmediavault.TU.Clients
             Assert.AreEqual(0, v.Major);
             Assert.AreEqual(-1, v.Build);
             Assert.AreEqual(-1, v.Revision);
-            
+
         }
         [TestMethod]
         public void OMVVersion_Parse_NullException()
         {
-          
+
 
             Assert.ThrowsException<ArgumentNullException>(() =>
             {
                 var v = OMVVersion.Parse(null);
             });
         }
-       
+
+        [DataTestMethod]
+        [DataRow("null")]
+
+        public void OMVVersion_Parse_Exception(string val)
+        {
+
+
+            Assert.ThrowsException<ArgumentException>(() =>
+            {
+                var v = OMVVersion.Parse(val);
+            });
+        }
+
+        [TestMethod]
+        public void OMVVersion_Parse()
+        {
+            var v = OMVVersion.Parse("1.2.3");
+            Assert.IsNotNull(v);
+            Assert.AreEqual(1,v.Major);
+            Assert.AreEqual(2, v.Minor);
+            Assert.AreEqual(3, v.Build);
+        }
         [TestMethod]
         public void NotFound()
         {
@@ -115,7 +137,7 @@ namespace Doods.Openmediavault.TU.Clients
         {
 
             var clone = (OMVVersion)OMVVersions.Version4.Clone();
-           // var b = clone == OMVVersions.Version4;
+            // var b = clone == OMVVersions.Version4;
 
             Assert.IsNotNull(clone);
         }
@@ -146,7 +168,7 @@ namespace Doods.Openmediavault.TU.Clients
             var clone = OMVVersions.Version4.CompareTo(null);
             // var b = clone == OMVVersions.Version4;
 
-            Assert.AreEqual(1,clone);
+            Assert.AreEqual(1, clone);
         }
 
         [TestMethod]
@@ -175,7 +197,7 @@ namespace Doods.Openmediavault.TU.Clients
             {
                 var clone = OMVVersions.Version4.CompareTo("null");
             });
-           
+
         }
         [TestMethod]
         public void VersionNotEqual_true()
@@ -193,28 +215,28 @@ namespace Doods.Openmediavault.TU.Clients
         }
 
         [DataTestMethod]
-        [DataRow(1, 2, 3,4)]
-        [DataRow(0, 0, 0,0)]
-        [DataRow(int.MaxValue, int.MaxValue, default(int),default(int))]
-        public void constructor_4(int major, int minor, int build,int revision)
+        [DataRow(1, 2, 3, 4)]
+        [DataRow(0, 0, 0, 0)]
+        [DataRow(int.MaxValue, int.MaxValue, default(int), default(int))]
+        public void constructor_4(int major, int minor, int build, int revision)
         {
             var obj = new OMVVersion(major, minor, build, revision);
             Assert.IsNotNull(obj);
             Assert.AreEqual(major, obj.Major);
             Assert.AreEqual(minor, obj.Minor);
             Assert.AreEqual(build, obj.Build);
-            Assert.AreEqual(revision , obj.Revision);
+            Assert.AreEqual(revision, obj.Revision);
         }
 
         [DataTestMethod]
-        [DataRow(1,2,3)]
+        [DataRow(1, 2, 3)]
         [DataRow(0, 0, 0)]
         [DataRow(int.MaxValue, int.MaxValue, default(int))]
         public void constructor_3(int major, int minor, int build)
         {
-            var obj = new OMVVersion( major,  minor,  build);
+            var obj = new OMVVersion(major, minor, build);
             Assert.IsNotNull(obj);
-            Assert.AreEqual(major,obj.Major);
+            Assert.AreEqual(major, obj.Major);
             Assert.AreEqual(minor, obj.Minor);
             Assert.AreEqual(build, obj.Build);
         }
@@ -242,9 +264,9 @@ namespace Doods.Openmediavault.TU.Clients
             {
                 var obj = new OMVVersion(major, minor);
             });
-          
-           
-           
+
+
+
         }
 
         [DataTestMethod]
@@ -263,10 +285,10 @@ namespace Doods.Openmediavault.TU.Clients
         }
 
         [DataTestMethod]
-        [DataRow(-1, 0,0)]
-        [DataRow(0, -1,0)]
+        [DataRow(-1, 0, 0)]
+        [DataRow(0, -1, 0)]
         [DataRow(0, 0, -1)]
-        [DataRow(-1, -1,-1)]
+        [DataRow(-1, -1, -1)]
         public void constructor_Build_exception(int major, int minor, int build)
         {
             Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
@@ -279,12 +301,12 @@ namespace Doods.Openmediavault.TU.Clients
         }
 
         [DataTestMethod]
-        [DataRow(-1, 0, 0,0)]
-        [DataRow(0, -1, 0,0)]
-        [DataRow(0, 0, -1,0)]
+        [DataRow(-1, 0, 0, 0)]
+        [DataRow(0, -1, 0, 0)]
+        [DataRow(0, 0, -1, 0)]
         [DataRow(0, 0, 0, -1)]
-        [DataRow(-1, -1, -1,-1)]
-        public void constructor_Revision_exception(int major, int minor, int build,int revision)
+        [DataRow(-1, -1, -1, -1)]
+        public void constructor_Revision_exception(int major, int minor, int build, int revision)
         {
             Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
             {
