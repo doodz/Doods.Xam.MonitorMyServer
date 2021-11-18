@@ -28,14 +28,20 @@
             Text="{resources1:WebminTranslate Text='Webmin_package_updates::index_source'}" />-->
         <Grid ColumnDefinitions="*,*" ColumnSpacing="10" RowDefinitions="auto">
             <StackLayout Grid.Column="0"    HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.CheckDouble}, Color=#323130}" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SelectAllCmd,Mode=OneWay}" />
+                </StackLayout.GestureRecognizers>
+                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.CheckDouble}, Color=#5AC8FA}" />
                 <Label FontSize="Small" Text="{resources1:WebminTranslate Text='Webmin_software::search_selall'}" TextColor="#323130" />
             </StackLayout>
             <StackLayout  Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
-                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.UndoAlt}, Color=#323130}" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding InvertSelectCmd,Mode=OneWay}" />
+                </StackLayout.GestureRecognizers>
+                <Image Scale="0.75" Source="{FontImage FontFamily=FontAwesome, Glyph={x:Static testfont:IconFont.UndoAlt}, Color=#5AC8FA}" />
                 <Label FontSize="Small" Text="{resources1:WebminTranslate Text='Webmin_software::search_invert'}" TextColor="#323130" />
             </StackLayout>
-        </Grid>
+        </Grid> 
         <ScrollView>
             <StackLayout Padding="4" BindableLayout.ItemsSource="{Binding Packages,Mode=OneWay}">
                 <StackLayout.Resources>

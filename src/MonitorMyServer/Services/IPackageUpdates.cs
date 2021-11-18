@@ -4,10 +4,9 @@ using Doods.Xam.MonitorMyServer.Data.Nas;
 
 namespace Doods.Xam.MonitorMyServer.Services
 {
-    public interface INasService
+    public interface IPackageUpdates
     {
-        Task<IEnumerable<SharedFolder>> GetSharedFolders();
-        //Task<IEnumerable<FileSystem>> GetFileSystems();
-
+        Task<IEnumerable<Package>> GetPackages();
+        Task UpdatePackages(IEnumerable<Package> packages);
     }
 }

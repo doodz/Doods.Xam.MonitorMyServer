@@ -128,6 +128,11 @@ namespace Doods.Synology.Webapi.Std
             return _mapper.Map<IEnumerable<Datas.Package>, IEnumerable<Package>>(result.Packages);
         }
 
+        public Task UpdatePackages(IEnumerable<Package> packages)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public Task<SynologyPackageServer> GetPackagesServerInfo()
         {
             return _synoPackageServerClient.GetPackagesServerInfo();

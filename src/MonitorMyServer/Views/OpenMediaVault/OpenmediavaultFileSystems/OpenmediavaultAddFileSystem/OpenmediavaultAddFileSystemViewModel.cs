@@ -12,7 +12,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
     public class OpenmediavaultAddFileSystemViewModel : ViewModelWhithState
     {
         private readonly IOMVSshBackgroundService _backgroundService;
-        private readonly IOmvService _sshService;
+        private readonly IOmvService _omvService;
 
         private string _label;
 
@@ -23,7 +23,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
         public OpenmediavaultAddFileSystemViewModel(IOmvService sshService,
             IOMVSshBackgroundService backgroundService)
         {
-            _sshService = sshService;
+            _omvService = sshService;
             _backgroundService = backgroundService;
             SaveCmd = new Command(async () => await Save());
         }
@@ -75,7 +75,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
 
         private async Task GetListFileSystem()
         {
-            var filename = await _sshService.GetListCandidatesFileSystemBackground();
+            var filename = await _omvService.GetListCandidatesFileSystemBackground();
             var result = await _backgroundService.GetOutputAsync<CandidateFileSystem[]>(filename);
             LstCandidateFileSystem.ReplaceRange(result.Content);
         }
@@ -90,7 +90,7 @@ namespace Doods.Xam.MonitorMyServer.Views.OpenmediavaultFileSystems.Openmediavau
 
             await ViewModelStateItem.RunActionAsync(async () =>
                 {
-                    var filename = await _sshService.CreateFileSystemBackground(newFileSystem);
+                    var filename = await _omvService.CreateFileSystemBackground(newFileSystem);
                     var result = await _backgroundService.GetOutputAsync(filename);
                     Result = result.Content;
                 },

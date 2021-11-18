@@ -39,6 +39,14 @@ namespace Doods.Openmediavault.Rpc.Std.Clients
 
             return result;
         }
+        public Task<OmvFilesystems> SetMountPoint()
+        {
+            var request = NewRequest("setMountPoint");
+
+            var result = RunCmd<OmvFilesystems>(request);
+
+            return result;
+        }
 
 
         public Task<IEnumerable<OmvFilesystems>> GetMountCandidates()

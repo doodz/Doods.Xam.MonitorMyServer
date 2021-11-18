@@ -12,8 +12,8 @@ using Moq;
 namespace Doods.Xam.MonitorMyServer.TU
 {
 
-    [TestClass]
-    public class BaselUnitTest
+    
+    public abstract class BaselUnitTest
     {
         public BaselUnitTest()
         {
@@ -22,66 +22,66 @@ namespace Doods.Xam.MonitorMyServer.TU
             MockPlatformServices.Init();
         }
         protected static AutoMock LocalAutoMock;
-        [AssemblyInitialize]
-        public static void AssemblyInit(TestContext context)
-        {
-            // Executes once before the test run. (Optional)
-            //var localAutoMock = AutoMock.GetLoose();
-            //App.SetContainer(localAutoMock.Container);
-            //MockPlatformServices.Init();
+        //[AssemblyInitialize]
+        //public static void AssemblyInit(TestContext context)
+        //{
+        //    // Executes once before the test run. (Optional)
+        //    //var localAutoMock = AutoMock.GetLoose();
+        //    //App.SetContainer(localAutoMock.Container);
+        //    //MockPlatformServices.Init();
 
-        }
+        //}
         protected static void SetMockContainer()
         {
             App.SetContainer(LocalAutoMock.Container);
         }
-        [ClassInitialize]
-        public static void TestFixtureSetup(TestContext context)
-        {
+        //[ClassInitialize]
+        //public static void TestFixtureSetup(TestContext context)
+        //{
             
-            // Executes once for the test class. (Optional)
-        }
-        [AssemblyCleanup]
-        public static void AssemblyCleanup()
-        {
-            // Executes once after the test run. (Optional)
-        }
-        [ClassCleanup]
-        public static void TestFixtureTearDown()
-        {
-            // Runs once after all tests in this class are executed. (Optional)
-            // Not guaranteed that it executes instantly after all tests from the class.
-            //var localAutoMock = AutoMock.GetLoose();
-            //App.SetContainer(localAutoMock.Container);
-        }
+        //    // Executes once for the test class. (Optional)
+        //}
+        //[AssemblyCleanup]
+        //public static void AssemblyCleanup()
+        //{
+        //    // Executes once after the test run. (Optional)
+        //}
+        //[ClassCleanup]
+        //public static void TestFixtureTearDown()
+        //{
+        //    // Runs once after all tests in this class are executed. (Optional)
+        //    // Not guaranteed that it executes instantly after all tests from the class.
+        //    //var localAutoMock = AutoMock.GetLoose();
+        //    //App.SetContainer(localAutoMock.Container);
+        //}
     }
 
 
-    [TestClass]
-    public class ViewModelUnitTest: BaselUnitTest
+   
+    public abstract class ViewModelUnitTest: BaselUnitTest
     {
       
 
        
 
        
-        [TestInitialize]
-        public void Setup()
-        {
-            // Runs before each test. (Optional)
-        }
+        //[TestInitialize]
+        //public void Setup()
+        //{
+        //    // Runs before each test. (Optional)
+        //}
       
-        [TestCleanup]
-        public void TearDown()
-        {
-            // Runs after each test. (Optional)
-        }
-        // Mark that this is a unit test method. (Required)
-        [TestMethod]
-        public void YouTestMethod()
-        {
-            // Your test code goes here.
-        }
+        //[TestCleanup]
+        //public void TearDown()
+        //{
+        //    // Runs after each test. (Optional)
+        //}
+        //// Mark that this is a unit test method. (Required)
+        //[TestMethod]
+        //public void YouTestMethod()
+        //{
+        //    // Your test code goes here.
+        //}
 
         [TestMethod]
         public void CreateViewModel()
