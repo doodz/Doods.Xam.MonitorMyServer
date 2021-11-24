@@ -62,5 +62,10 @@ namespace Doods.Synology.Webapi.Std
 
            return new List<Package>();
         }
+
+        public Task UpdatePackages(IEnumerable<Package> packages)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

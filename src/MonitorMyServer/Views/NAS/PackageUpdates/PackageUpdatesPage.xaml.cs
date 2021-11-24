@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using Doods.Framework.Mobile.Std.Mvvm;
-using Doods.Openmediavault.Mobile.Std.Resources;
 using Doods.Xam.MonitorMyServer.Resx.Webmin.package_updates;
 using Xamarin.Forms.Xaml;
 

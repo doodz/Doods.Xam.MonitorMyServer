@@ -6,7 +6,7 @@ namespace Doods.Framework.Ssh.Std.Beans
 {
     public class OsMemoryBean : NotifyPropertyChangedBase
     {
-        public readonly Dictionary<string, long> MemoryDataValues;
+        public readonly IReadOnlyDictionary<string, long> MemoryDataValues;
         private string _errorMessage;
         private float _percentageUsed;
         private MemoryBean _totalFree;

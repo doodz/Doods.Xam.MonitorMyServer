@@ -31,8 +31,11 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
             if (reader.TokenType == JsonToken.Null) return null;
             var stringValue = serializer.Deserialize<string>(reader);
 
-            if(string.IsNullOrWhiteSpace(stringValue))
-                throw new JsonSerializationException($"Cannot unmarshal type Output.content {t}");
+
+            if(stringValue ==null)
+                throw new Newtonsoft.Json.JsonSerializationException($"Cannot unmarshal type Output.content {t}");
+            if (string.IsNullOrWhiteSpace(stringValue))
+                return stringValue;
             stringValue = stringValue.Replace(@"\\\", string.Empty);
             stringValue = stringValue.Replace(@"\""", "\"");
             var readertest = new JsonTextReader(new StringReader(stringValue));
@@ -44,7 +47,6 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
             catch (Exception e)
             {
                 Console.WriteLine(e);
-               
             }
 
             if (token == JsonToken.String)

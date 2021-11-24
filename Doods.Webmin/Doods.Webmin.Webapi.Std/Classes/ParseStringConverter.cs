@@ -18,7 +18,7 @@ namespace Doods.Webmin.Webapi.Std.Classes
             var value = serializer.Deserialize<string>(reader);
             long l;
             if (long.TryParse(value, out l)) return l;
-            throw new Exception("Cannot unmarshal type long");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type long");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)

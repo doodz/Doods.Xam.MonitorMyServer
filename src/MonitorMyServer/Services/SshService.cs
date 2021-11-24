@@ -99,6 +99,12 @@ namespace Doods.Xam.MonitorMyServer.Services
             var result = await GetUpgradables();
             return _mapper.Map<IEnumerable<Upgradable>, IEnumerable<Package>>(result);
         }
+
+        public Task UpdatePackages(IEnumerable<Package> packages)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Upgradable>> GetUpgradables()
         {
             var upgradableRequest = new UpgradableRequest();

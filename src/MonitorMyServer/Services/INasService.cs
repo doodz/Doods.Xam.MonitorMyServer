@@ -10,9 +10,4 @@ namespace Doods.Xam.MonitorMyServer.Services
         //Task<IEnumerable<FileSystem>> GetFileSystems();
 
     }
-
-    public interface IPackageUpdates
-    {
-        Task<IEnumerable<Package>> GetPackages();
-    }
 }

@@ -17,7 +17,6 @@ using Doods.Openmediavault.Rpc.Std.Requests.Settings;
 using Doods.Openmediavault.Rpc.Std.Requests.System;
 using Doods.Openmediavault.Rpc.Std.Requests.UpdatesAndPlugins;
 using Doods.Openmediavault.Rpc.Std.Seruializer;
-using Doods.Openmedivault.Ssh.Std.Requests;
 using Doods.Xam.MonitorMyServer.Data.Nas;
 
 namespace Doods.Xam.MonitorMyServer.Services

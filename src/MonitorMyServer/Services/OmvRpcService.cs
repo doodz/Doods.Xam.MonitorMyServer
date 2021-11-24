@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
@@ -398,6 +399,12 @@ namespace Doods.Xam.MonitorMyServer.Services
         {
             var result = await GetUpgraded();
             return _mapper.Map<IEnumerable<Upgraded>, IEnumerable<Package>>(result);
+        }
+
+        public Task UpdatePackages(IEnumerable<Package> packages)
+        {
+            if (packages == null) throw new ArgumentNullException(nameof(packages));
+            return UpgradeAptList(packages.Select(p => p.Name));
         }
     }
 }

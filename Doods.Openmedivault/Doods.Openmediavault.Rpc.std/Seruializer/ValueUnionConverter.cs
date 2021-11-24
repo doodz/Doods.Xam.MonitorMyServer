@@ -26,7 +26,7 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
                     return new ValueUnion {ValueClass = objectValue};
             }
 
-            throw new Exception("Cannot unmarshal type ValueUnion");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type ValueUnion");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)

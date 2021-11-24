@@ -25,7 +25,7 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
                     return new Prefix {Bool = boolValue};
             }
 
-            throw new Exception("Cannot unmarshal type Prefix");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type Prefix");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)

@@ -26,7 +26,7 @@ namespace Doods.Webmin.Webapi.Std.Classes
                     return new DiskElement {String = stringValue};
             }
 
-            throw new Exception("Cannot unmarshal type DiskElement");
+            throw new Newtonsoft.Json.JsonSerializationException("Cannot unmarshal type DiskElement");
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)

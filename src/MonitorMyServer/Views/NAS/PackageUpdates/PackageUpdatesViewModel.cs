@@ -18,13 +18,14 @@ namespace Doods.Xam.MonitorMyServer.Views.NAS.PackageUpdates
         private readonly IPackageUpdates _packageUpdates;
         private IList<Package> _packages;
         public ICommand SelectAllCmd { get; }
+        public ICommand UpdatePackagesCmd { get; }
         public ICommand InvertSelectCmd { get; }
-
         public PackageUpdatesViewModel(IPackageUpdates packageUpdates)
         {
             _packageUpdates = packageUpdates;
             SelectAllCmd = new Command(_ => SelectAll());
             InvertSelectCmd = new Command(_ => InvertSelect());
+            UpdatePackagesCmd = new Command(async _ => await UpdatePackages());
         }
 
         public IList<Package> Packages
@@ -62,14 +63,20 @@ namespace Doods.Xam.MonitorMyServer.Views.NAS.PackageUpdates
 
         protected Task RefreshData()
         {
-            return Task.WhenAll(GetSharedFolders());
+            return Task.WhenAll(GetPackages());
         }
 
-        private async Task GetSharedFolders()
+        private async Task GetPackages()
         {
             var result = await _packageUpdates.GetPackages();
             Packages = result?.ToList();
             //Packages = new List<Package>();
+        }
+
+
+        private async Task UpdatePackages()
+        {
+           await _packageUpdates.UpdatePackages(Packages.Where(p=>p.IsSelected));
         }
     }
 }

@@ -94,15 +94,15 @@ namespace Doods.Synology.TU.Datas
 
         }
 
-        [TestMethod]
-        public async Task LoginAsync_Error2()
-        {
-            var client = new LocalISynoWebApi();
-            client.ExtendJsonFileName = "SYNO.API.Auth.login.Error2";
-            var c = new SynoAuthClient(client);
-            var result = await c.LoginAsync("toto", "tata");
-            Assert.IsNotNull(result);
-        }
+        //[TestMethod]
+        //public async Task LoginAsync_Error2()
+        //{
+        //    var client = new LocalISynoWebApi();
+        //    client.ExtendJsonFileName = "SYNO.API.Auth.login.Error2";
+        //    var c = new SynoAuthClient(client);
+        //    var result = await c.LoginAsync("toto", "tata");
+        //    Assert.IsNotNull(result);
+        //}
 
     }
 }
