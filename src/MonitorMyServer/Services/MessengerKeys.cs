@@ -7,5 +7,6 @@
         public const string UpdateItem = "UpdateItem";
         public const string ItemChanged = "ItemChanged";
         public const string HostChanged = "HostChanged";
+        public const string SessionExpired = "SessionExpired";
     }
 }

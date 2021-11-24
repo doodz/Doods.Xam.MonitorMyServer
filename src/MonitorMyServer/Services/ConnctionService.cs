@@ -19,6 +19,7 @@ using Doods.Xam.MonitorMyServer.Resx;
 using Renci.SshNet;
 using Renci.SshNet.Common;
 using Xamarin.Essentials;
+using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
 
 namespace Doods.Xam.MonitorMyServer.Services
@@ -56,10 +57,11 @@ namespace Doods.Xam.MonitorMyServer.Services
         private IOmvService _omvService;
         private ISshService _sshService;
         private ISynologyCgiService _synoService;
-
+        private IMessagingCenter _messagingCenter;
+        private IPreferences _preferences;
         public ConnctionService(OmvServiceProvider omvServiceProvider, SshServiceProvider sshServiceProvider,
             SynoServiceProvider synoServiceProvider, WebminServiceProvider webminServiceProvider,
-            IMessageBoxService messageBoxService, IDataProvider dataProvider)
+            IMessageBoxService messageBoxService, IDataProvider dataProvider, IMessagingCenter messagingCenter, IPreferences preferences)
         {
             _omvServiceProvider = omvServiceProvider;
             _sshServiceProvider = sshServiceProvider;
@@ -67,12 +69,23 @@ namespace Doods.Xam.MonitorMyServer.Services
             _webminServiceProvider = webminServiceProvider;
             _messageBoxService = messageBoxService;
             _dataProvider = dataProvider;
-            MessagingCenter.Subscribe<DataProvider, TableBase>(
+            _messagingCenter = messagingCenter;
+            _preferences = preferences;
+
+
+            _messagingCenter.Subscribe<string,string>(
+                this, MessengerKeys.SessionExpired, async (sender, arg) =>
+                {
+                    
+                        await Init();
+                });
+            _messagingCenter.Subscribe<DataProvider, TableBase>(
                 this, MessengerKeys.ItemChanged, async (sender, arg) =>
                 {
                     if (arg is Host)
                         await Init();
                 });
+            
         }
 
 
@@ -108,15 +121,15 @@ namespace Doods.Xam.MonitorMyServer.Services
         private void SetSelectedIdHost(Host host)
         {
             _historyService.UpdateLastLoginAsync(host.Id.GetValueOrDefault());
-            MessagingCenter.Send((IConnctionService)this, MessengerKeys.HostChanged, host);
-            Preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
+            _messagingCenter.Send((IConnctionService)this, MessengerKeys.HostChanged, host);
+            _preferences.Set(PreferencesKeys.SelectedHostIdKey, host.Id.GetValueOrDefault());
         }
 
         public async Task Init()
         {
             await GetHosts().ConfigureAwait(false);
 
-            var l = Preferences.Get(PreferencesKeys.SelectedHostIdKey, 0L);
+            var l = _preferences.Get(PreferencesKeys.SelectedHostIdKey, 0L);
 
             if (l > 0)
             {
@@ -135,12 +148,12 @@ namespace Doods.Xam.MonitorMyServer.Services
                     }
                     finally
                     {
-                        if (loginTask) Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
+                        if (loginTask) _preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
                     }
                 }
                 else
                 {
-                    Preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
+                    _preferences.Set(PreferencesKeys.SelectedHostIdKey, 0L);
                 }
             }
         }

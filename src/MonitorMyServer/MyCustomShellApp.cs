@@ -52,14 +52,13 @@ namespace Doods.Xam.MonitorMyServer
         /// </summary>
         public MyCustomShellApp()
         {
-            MessagingCenter.Subscribe<IConnctionService, Host>(
-                this, MessengerKeys.HostChanged,
-                async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
-
-
             var config =
                 App.Container.Resolve<IConfiguration>();
-
+            var messagingCenter =
+                App.Container.Resolve<IMessagingCenter>();
+            messagingCenter.Subscribe<IConnctionService, Host>(
+                this, MessengerKeys.HostChanged,
+                async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
             if (!config.ModeOmvOnlyKey)
                 FlyoutHeader = new FlyoutHeader("MMS_graphic.png");
             else

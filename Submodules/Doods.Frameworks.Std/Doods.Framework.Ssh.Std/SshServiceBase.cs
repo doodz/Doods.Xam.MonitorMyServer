@@ -500,7 +500,7 @@ namespace Doods.Framework.Ssh.Std
             var test =
                 new PasswordConnectionInfo(Connection.Host, Connection.Port, Connection.Credentials.Login,
                     Connection.Credentials.Password) {Timeout = TimeSpan.FromSeconds(10)};
-            return Client ?? (Client = new SshClient(test));
+            return Client ??= new SshClient(test);
         }
 
         public SshRequestAsyncHandle ExecuteAsync<T>(ISshRequest request,

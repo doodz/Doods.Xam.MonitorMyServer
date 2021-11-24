@@ -3,7 +3,7 @@ using Doods.Framework.Std;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 
-namespace Doods.Openmediavault.TU.Clients
+namespace Doods.Openmediavault.Rpc.Std.TU
 {
     [TestClass]
     public class SshServiceBaseUnitTest

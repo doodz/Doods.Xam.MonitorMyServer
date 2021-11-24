@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Doods.Framework.ApiClientBase.Std.Exceptions;
 using Doods.Framework.ApiClientBase.Std.Interfaces;
 using Doods.Framework.Http.Std;
 using Doods.Framework.Http.Std.Serializers;
@@ -8,6 +10,7 @@ using Doods.Framework.Std;
 using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Enums;
 using Doods.Openmediavault.Rpc.Std.Interfaces;
+using RestSharp;
 
 namespace Doods.Openmedivault.Http.Std
 {
@@ -123,10 +126,31 @@ namespace Doods.Openmedivault.Http.Std
             tmp.AddHandler("*+json", () => serializer);
         }
 
+        //private async Task<IRestResponse<T>> ExecuteAsync<T>(RestRequest request, bool b)
+        //{
+           
+        //    try
+        //    {
+        //        var response = await _client.ExecuteAsync<T>(request).ConfigureAwait(false);
+        //        return response;
+        //    }
+        //    catch (AuthorizationException e)
+        //    {
+        //        if (b)
+        //        {
+        //            await ExecuteAsync<T>(request, false);
+        //        }
+        //        else
+        //            return null;
+        //    }
+
+           
+        //}
+
         public async Task<T> ExecuteRequestAsync<T>(IRpcRequest rpcrequest)
         {
             var request = _requestbuilder.ToHttp(rpcrequest);
-
+           
             var response = await _client.ExecuteAsync<T>(request).ConfigureAwait(false);
             return response.Data;
         }

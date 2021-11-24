@@ -31,6 +31,7 @@ namespace Doods.Openmediavault.Rpc.Std.Seruializer
             if (reader.TokenType == JsonToken.Null) return null;
             var stringValue = serializer.Deserialize<string>(reader);
 
+
             if(stringValue ==null)
                 throw new Newtonsoft.Json.JsonSerializationException($"Cannot unmarshal type Output.content {t}");
             if (string.IsNullOrWhiteSpace(stringValue))

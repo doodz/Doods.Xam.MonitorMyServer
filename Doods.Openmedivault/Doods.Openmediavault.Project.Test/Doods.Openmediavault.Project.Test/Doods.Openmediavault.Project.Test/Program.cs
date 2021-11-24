@@ -6,6 +6,8 @@ using Doods.Framework.ApiClientBase.Std.Models;
 using Doods.Framework.Http.Std.Serializers;
 using Doods.Openmediavault.Rpc.Std;
 using Doods.Openmediavault.Rpc.Std.Clients;
+using Doods.Openmediavault.Rpc.Std.Data.V4;
+using Doods.Openmediavault.Rpc.Std.Data.V4.FileSystem;
 using Doods.Openmediavault.Rpc.Std.Seruializer;
 using Doods.Openmedivault.Http.Std;
 using Doods.Openmedivault.Ssh.Std.Requests;
@@ -31,6 +33,16 @@ namespace Doods.Openmediavault.Project.Test
                 
                 var filesystem = new OmvFileSystemMgmtClient(client);
                 var resultfile = await filesystem.GetFilesystems();
+                var omvExecClient = new OmvExecClient(client);
+                var GetCandidatesBgstring = await filesystem.GetCandidatesBg();
+                var output = new Output<string>();
+                do
+                {
+                    await Task.Delay(TimeSpan.FromSeconds(3));
+                    output = await omvExecClient.GetOutput<string>(GetCandidatesBgstring,0);
+                    
+                } while (output.Running);
+
 
             }
 
