@@ -58,7 +58,7 @@ namespace Doods.Xam.MonitorMyServer
                 App.Container.Resolve<IMessagingCenter>();
             messagingCenter.Subscribe<IConnctionService, Host>(
                 this, MessengerKeys.HostChanged,
-                async (sender, arg) => { MainThread.BeginInvokeOnMainThread(() => { InitList(arg); }); });
+                async (sender, arg) => { Device.BeginInvokeOnMainThread(() => { InitList(arg); }); });
             if (!config.ModeOmvOnlyKey)
                 FlyoutHeader = new FlyoutHeader("MMS_graphic.png");
             else
