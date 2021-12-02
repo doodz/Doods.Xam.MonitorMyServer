@@ -254,13 +254,6 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             logger.SetupAllProperties();
             mapper.SetupAllProperties();
             configurationMock.SetupAllProperties();
-
-          
-
-
-            
-
-           
             //Doods.Framework.Repository.Std.Tables.Host
             var mockB = new Mock<IOmvService>();
             
