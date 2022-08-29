@@ -87,7 +87,7 @@ namespace Doods.tool.ResxFromPoFile
         private  string ToCamelCase(string str)
         {
             var titlecase = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
-            var camelcase = titlecase.Replace("_", string.Empty).Replace(" ", string.Empty);
+            var camelcase = titlecase.Replace("_", string.Empty).Replace(" ", string.Empty).Replace(".","_Dot_");
             return camelcase;
         }
 
