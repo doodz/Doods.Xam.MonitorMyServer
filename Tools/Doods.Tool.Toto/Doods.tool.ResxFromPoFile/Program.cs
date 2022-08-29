@@ -11,9 +11,9 @@ namespace Doods.tool.ResxFromPoFile
         {
             Console.WriteLine("Hello doods!");
             //new PackageReference().Process();
-            //new UpdatePoFiles().Process();
+            new UpdatePoFiles().Process();
             //new UpdatePoFilesCockpit().Process();
-            new UpdatePoFilesWebmin().Process();
+            //new UpdatePoFilesWebmin().Process();
         }
 
        

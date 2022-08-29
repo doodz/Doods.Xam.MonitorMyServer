@@ -120,29 +120,26 @@
   <data name="Active" xml:space="preserve">
     <value>アクティブ</value>
   </data>
-  <data name="AddPhysicalVolume" xml:space="preserve">
-    <value>物理ボリュームの追加</value>
-  </data>
-  <data name="AfterTheLogicalVolumeHasBeenExtendedYouCanResizeTheContainingFilesystem." xml:space="preserve">
-    <value>論理ボリュームが拡張された後、ファイルシステムをリサイズできます。</value>
-  </data>
   <data name="Available" xml:space="preserve">
     <value>利用可能</value>
   </data>
   <data name="Capacity" xml:space="preserve">
     <value>容量</value>
   </data>
-  <data name="Confirmation" xml:space="preserve">
-    <value>確認</value>
+  <data name="Create" xml:space="preserve">
+    <value>作成</value>
   </data>
-  <data name="CreateLogicalVolume" xml:space="preserve">
-    <value>論理ボリュームの作成</value>
+  <data name="CreatedLogicalVolume'{{Name}}'_Dot_" xml:space="preserve">
+    <value>論理ボリューム '{{ name }}' を作成しました。</value>
   </data>
-  <data name="CreateVolumeGroup" xml:space="preserve">
-    <value>ボリュームグループの作成</value>
+  <data name="CreatedPhysicalVolume{{Devicefile}}_Dot_" xml:space="preserve">
+    <value>物理ボリューム {{ devicefile }} を作成しました。</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>説明</value>
+  <data name="CreatedSnapshotOfLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>論理ボリューム '{{ devicefile }}' のスナップショットを作成しました。</value>
+  </data>
+  <data name="CreatedVolumeGroup'{{Name}}'_Dot_" xml:space="preserve">
+    <value>ボリュームグループ '{{ name }}' を作成しました。</value>
   </data>
   <data name="Device" xml:space="preserve">
     <value>デバイス</value>
@@ -150,32 +147,23 @@
   <data name="Devices" xml:space="preserve">
     <value>デバイス</value>
   </data>
-  <data name="DoYouReallyWantToCreateTheLogicalVolume?" xml:space="preserve">
-    <value>論理ボリュームを作成してもよろしいですか？</value>
-  </data>
-  <data name="DoYouReallyWantToCreateThePhysicalVolume?" xml:space="preserve">
-    <value>物理ボリュームを作成してもよろしいですか？</value>
-  </data>
-  <data name="DoYouReallyWantToCreateTheVolumeGroup?" xml:space="preserve">
-    <value>ボリュームグループを作成してもよろしいですか？</value>
+  <data name="DoYouReallyWantToCreateAPhysicalVolumeOn'{{Devicefile}}'?" xml:space="preserve">
+    <value>'{{devicefile}}'に物理ボリュームを作成しますか？</value>
   </data>
   <data name="DoYouReallyWantToResizeTheSelectedPhysicalVolume?" xml:space="preserve">
     <value>選択した物理ボリュームをリサイズしてもよろしいですか？</value>
   </data>
-  <data name="EditLogicalVolume" xml:space="preserve">
-    <value>論理ボリュームの編集</value>
-  </data>
-  <data name="EditVolumeGroup" xml:space="preserve">
-    <value>ボリュームグループの編集</value>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
   </data>
   <data name="Extend" xml:space="preserve">
     <value>拡張</value>
   </data>
-  <data name="ExtendLogicalVolume" xml:space="preserve">
-    <value>論理ボリュームの拡張</value>
+  <data name="ExtendedLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>拡張論理ボリューム '{{devicefile}}'。</value>
   </data>
-  <data name="ExtendVolumeGroup" xml:space="preserve">
-    <value>ボリュームグループの拡張</value>
+  <data name="ExtendedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>拡張ボリュームグループ '{{devicefile}}'。</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>空き</value>
@@ -192,35 +180,56 @@
   <data name="Name" xml:space="preserve">
     <value>名前</value>
   </data>
-  <data name="NoFreeSpaceAvailableToCreateALogicalVolume." xml:space="preserve">
-    <value>論理ボリュームを作成するために利用可能な空きスペースがありません。</value>
-  </data>
-  <data name="NoFreeSpaceAvailableToExtendTheLogicalVolume." xml:space="preserve">
-    <value>論理ボリュームを拡張するために利用可能な空きスペースがありません。</value>
-  </data>
   <data name="PhysicalVolumes" xml:space="preserve">
     <value>物理ボリューム</value>
   </data>
   <data name="Reduce" xml:space="preserve">
     <value>縮小</value>
   </data>
-  <data name="ReduceVolumeGroup" xml:space="preserve">
-    <value>ボリュームグループの縮小</value>
+  <data name="ReducedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>削減されたボリュームグループ '{{devicefile}}'。</value>
   </data>
   <data name="Resize" xml:space="preserve">
     <value>リサイズ</value>
   </data>
-  <data name="SelectAVolumeGroup..." xml:space="preserve">
+  <data name="SelectADevice_Dot__Dot__Dot_" xml:space="preserve">
+    <value>デバイスを選択 ...</value>
+  </data>
+  <data name="SelectAVolumeGroup_Dot__Dot__Dot_" xml:space="preserve">
     <value>ボリュームグループの選択 ...</value>
   </data>
-  <data name="SelectAnDevice..." xml:space="preserve">
-    <value>デバイスの選択 ...</value>
+  <data name="SelectDevices_Dot__Dot__Dot_" xml:space="preserve">
+    <value>デバイスを選択 ...</value>
+  </data>
+  <data name="SelectTheDevicesUsedToExtendTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>ボリュームグループの拡張に使用するデバイスを選択します。</value>
+  </data>
+  <data name="SelectTheDevicesUsedToReduceFromTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>ボリュームグループから削除するデバイスを選択します。</value>
   </data>
   <data name="Size" xml:space="preserve">
     <value>サイズ</value>
   </data>
   <data name="Snapshot" xml:space="preserve">
     <value>スナップショット</value>
+  </data>
+  <data name="TheNameOfTheLogicalVolume_Dot_" xml:space="preserve">
+    <value>論理ボリュームの名前。</value>
+  </data>
+  <data name="TheNameOfTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>ボリュームグループの名前。</value>
+  </data>
+  <data name="ThePercentageOfTheTotalSpaceInTheVolumeGroupToAllocateForTheNewLogicalVolume_Dot_" xml:space="preserve">
+    <value>新しい論理ボリュームに割り当てるボリュームグループ内の空き領域の割合。</value>
+  </data>
+  <data name="ThePercentageOfTheTotalSpaceInTheVolumeGroupToUseByTheLogicalVolume_Dot_" xml:space="preserve">
+    <value>論理ボリュームが使用する、ボリュームグループ内の空き領域の割合。</value>
+  </data>
+  <data name="UpdatedLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>論理ボリューム '{{ devicefile }}' を更新しました。</value>
+  </data>
+  <data name="UpdatedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>ボリュームグループ '{{ devicefile }}' を更新しました。</value>
   </data>
   <data name="Used" xml:space="preserve">
     <value>使用済み</value>

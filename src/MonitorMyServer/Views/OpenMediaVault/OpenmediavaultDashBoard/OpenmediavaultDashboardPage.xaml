@@ -59,7 +59,14 @@
 
 
                 </controls:TitledFrameView>-->
-                <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
+                <controls:TitledFrameView Title="toto"
+                                          IsVisible="{Binding OMVInformations.ConfigDirty}"
+                                          TitleStyle="{StaticResource NewTitleStyle}"
+                                          >
+                    <Label Text="dansing" 
+                           />
+                </controls:TitledFrameView>
+                    <controls:TitledFrameView Title="{resources1:Translate Text='openmediavault::SystemInformation'}"
                                           TitleStyle="{StaticResource NewTitleStyle}"
                                           BindingContext="{Binding OMVInformations,Mode=OneWay}">
                     <Grid>

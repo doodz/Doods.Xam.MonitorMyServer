@@ -42,6 +42,8 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             {
                 
                 cfg.RegisterMock(mockB);
+                cfg.RegisterMock(messagingCenterMock);
+                cfg.RegisterMock(configurationMock);
             });
             SetMockContainer();
 
@@ -50,7 +52,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             //var rpc = new OmvHttpService(logger.Object, new LocalIHttpClient());
             //var omvService = new OmvRpcService(rpc, logger.Object, mapper.Object);
             //var obj = new OpenmediavaultDashboardViewModel(omvService, configurationMock.Object);
-            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object, messagingCenterMock.Object);
             //var obj = new OpenmediavaultDashboardViewModel(synologyCgiService.Object, configurationMock.Object);
 
             Assert.IsNotNull(obj);
@@ -88,9 +90,10 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             {
 
                 cfg.RegisterMock(mockB);
+                cfg.RegisterMock(messagingCenterMock);
             });
             SetMockContainer();
-            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object, messagingCenterMock.Object);
             //var obj = new OpenmediavaultDashboardViewModel(synologyCgiService.Object, configurationMock.Object);
 
             Assert.IsNotNull(obj);
@@ -111,9 +114,9 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             );
 
 
-           
 
 
+            var messagingCenterMock = new Mock<IMessagingCenter>();
             var webminServiceMock = new Mock<IOmvService>();
             var configurationMock = new Mock<Doods.Framework.Std.IConfiguration>();
             configurationMock.Setup(m => m.AdsKey).Returns("MyAdd"); //Doods.Framework.Repository.Std.Tables.Host
@@ -130,9 +133,10 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             {
                 cfg.RegisterMock(mockA);
                 cfg.RegisterMock(mockB);
+                cfg.RegisterMock(messagingCenterMock);
             });
             SetMockContainer();
-            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object, messagingCenterMock.Object);
             //var obj = new OpenmediavaultDashboardViewModel(synologyCgiService.Object, configurationMock.Object);
 
             Assert.IsNotNull(obj);
@@ -150,7 +154,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
         public void CheckCmd()
         {
             var called = false;
-
+            var messagingCenterMock = new Mock<IMessagingCenter>();
             var mockA = new Mock<IConnctionService>();
             mockA.Setup(x => x.ChangeHostTask()).Returns(() =>
                 {
@@ -176,9 +180,10 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             {
 
                 cfg.RegisterMock(omvService);
+                cfg.RegisterMock(messagingCenterMock);
             });
             SetMockContainer();
-            var obj = new OpenmediavaultDashboardViewModel(omvService.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(omvService.Object, configurationMock.Object, messagingCenterMock.Object);
             //var obj = new OpenmediavaultDashboardViewModel(synologyCgiService.Object, configurationMock.Object);
 
             Assert.IsNotNull(obj);
@@ -188,14 +193,14 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             Assert.IsTrue(obj.CheckCmd.CanExecute(null));
 
             obj.CheckCmd.Execute(null);
-            omvServiceMock.Verify(c => c.UpdateAptList(), Times.Once);
+            omvService.Verify(c => c.UpdateAptList(), Times.Once);
         }
 
         [TestMethod]
         public void UpdatesCmd()
         {
             var called = false;
-
+            var messagingCenterMock = new Mock<IMessagingCenter>();
             var mockA = new Mock<IConnctionService>();
             mockA.Setup(x => x.ChangeHostTask()).Returns(() =>
                 {
@@ -221,11 +226,12 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
 
             LocalAutoMock = AutoMock.GetLoose(cfg =>
             {
+                cfg.RegisterMock(messagingCenterMock);
                 cfg.RegisterMock(omvService);
                 
             });
             SetMockContainer();
-            var obj = new OpenmediavaultDashboardViewModel(omvService.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(omvService.Object, configurationMock.Object, messagingCenterMock.Object);
             //var obj = new OpenmediavaultDashboardViewModel(synologyCgiService.Object, configurationMock.Object);
 
             Assert.IsNotNull(obj);
@@ -235,7 +241,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             Assert.IsTrue(obj.UpdatesCmd.CanExecute(null));
 
             obj.UpdatesCmd.Execute(null);
-            omvServiceMock.Verify(x => x.UpgradeAptList(It.IsAny<IEnumerable<string>>()), Times.Once);
+            omvService.Verify(x => x.UpgradeAptList(It.IsAny<IEnumerable<string>>()), Times.Once);
         }
 
         [TestMethod]
@@ -248,13 +254,6 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             logger.SetupAllProperties();
             mapper.SetupAllProperties();
             configurationMock.SetupAllProperties();
-
-          
-
-
-            
-
-           
             //Doods.Framework.Repository.Std.Tables.Host
             var mockB = new Mock<IOmvService>();
             
@@ -267,8 +266,9 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
 
             LocalAutoMock = AutoMock.GetLoose(cfg =>
             {
-                
+                cfg.RegisterMock(messagingCenterMock);
                 cfg.RegisterMock(mockB);
+                cfg.RegisterMock(configurationMock);
             });
             SetMockContainer();
 
@@ -277,7 +277,7 @@ namespace Doods.Xam.MonitorMyServer.TU.Views.OpenMediaVault
             //var rpc = new OmvHttpService(logger.Object, new LocalIHttpClient());
             //var omvService = new OmvRpcService(rpc, logger.Object, mapper.Object);
             //var obj = new OpenmediavaultDashboardViewModel(omvService, configurationMock.Object);
-            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object);
+            var obj = new OpenmediavaultDashboardViewModel(mockB.Object, configurationMock.Object, messagingCenterMock.Object);
             Assert.IsNull(obj.Title);
             await obj.OnAppearingAsync();
             Assert.AreEqual(0, obj.Filesystems.Count);

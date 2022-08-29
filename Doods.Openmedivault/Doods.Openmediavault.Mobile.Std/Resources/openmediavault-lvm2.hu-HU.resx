@@ -120,29 +120,26 @@
   <data name="Active" xml:space="preserve">
     <value>Aktív</value>
   </data>
-  <data name="AddPhysicalVolume" xml:space="preserve">
-    <value>Fizikai kötet hozzáadása</value>
-  </data>
-  <data name="AfterTheLogicalVolumeHasBeenExtendedYouCanResizeTheContainingFilesystem." xml:space="preserve">
-    <value>A logikai kötet kiterjesztése után átméretezhető a fájlrendszer.</value>
-  </data>
   <data name="Available" xml:space="preserve">
     <value>Elérhető</value>
   </data>
   <data name="Capacity" xml:space="preserve">
     <value>Kapacitás</value>
   </data>
-  <data name="Confirmation" xml:space="preserve">
-    <value>Megerősítés</value>
+  <data name="Create" xml:space="preserve">
+    <value>Létrehozás</value>
   </data>
-  <data name="CreateLogicalVolume" xml:space="preserve">
-    <value>Logikai kötet létrehozása</value>
+  <data name="CreatedLogicalVolume'{{Name}}'_Dot_" xml:space="preserve">
+    <value>'{{ name }}' logikai kötet létrehozva.</value>
   </data>
-  <data name="CreateVolumeGroup" xml:space="preserve">
-    <value>Kötetcsoport létrehozása</value>
+  <data name="CreatedPhysicalVolume{{Devicefile}}_Dot_" xml:space="preserve">
+    <value>'{{ name }}' fizikai kötet létrehozva.</value>
   </data>
-  <data name="Description" xml:space="preserve">
-    <value>Leírás</value>
+  <data name="CreatedSnapshotOfLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>Pillanatkép a '{{ devicefile }}' logikai kötetről létrehozva.</value>
+  </data>
+  <data name="CreatedVolumeGroup'{{Name}}'_Dot_" xml:space="preserve">
+    <value>'{{ name }}' kötetcsoport létrehozva.</value>
   </data>
   <data name="Device" xml:space="preserve">
     <value>Meghajtó</value>
@@ -150,32 +147,23 @@
   <data name="Devices" xml:space="preserve">
     <value>Meghajtók</value>
   </data>
-  <data name="DoYouReallyWantToCreateTheLogicalVolume?" xml:space="preserve">
-    <value>Valóban létre szeretné hozni a logikai kötetet?</value>
-  </data>
-  <data name="DoYouReallyWantToCreateThePhysicalVolume?" xml:space="preserve">
-    <value>Valóban létre szeretné hozni a fizikai kötetet?</value>
-  </data>
-  <data name="DoYouReallyWantToCreateTheVolumeGroup?" xml:space="preserve">
-    <value>Valóban létre szeretné hozni a kötetcsoportot?</value>
+  <data name="DoYouReallyWantToCreateAPhysicalVolumeOn'{{Devicefile}}'?" xml:space="preserve">
+    <value>Valóban létre akarja hozni a  '{{ devicefile }}' fizikai kötetet?</value>
   </data>
   <data name="DoYouReallyWantToResizeTheSelectedPhysicalVolume?" xml:space="preserve">
     <value>Valóban át szeretné méretezni a kiválasztott fizikai kötetet?</value>
   </data>
-  <data name="EditLogicalVolume" xml:space="preserve">
-    <value>Logikai kötet szerkesztése</value>
-  </data>
-  <data name="EditVolumeGroup" xml:space="preserve">
-    <value>Kötetcsoport szerkesztése</value>
+  <data name="Edit" xml:space="preserve">
+    <value>Szerkesztés</value>
   </data>
   <data name="Extend" xml:space="preserve">
     <value>Kiterjesztés</value>
   </data>
-  <data name="ExtendLogicalVolume" xml:space="preserve">
-    <value>Logikai kötet kiterjesztése</value>
+  <data name="ExtendedLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>'{{ devicefile }}' kiterjesztett logikai kötet.</value>
   </data>
-  <data name="ExtendVolumeGroup" xml:space="preserve">
-    <value>Kötetcsoport kiterjesztése</value>
+  <data name="ExtendedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>'{{ devicefile }}' kiterjesztett kötetcsoport.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Szabad</value>
@@ -192,35 +180,56 @@
   <data name="Name" xml:space="preserve">
     <value>Név</value>
   </data>
-  <data name="NoFreeSpaceAvailableToCreateALogicalVolume." xml:space="preserve">
-    <value>Nincs elég szabad terület a logikai meghajtón a létrehozáshoz. </value>
-  </data>
-  <data name="NoFreeSpaceAvailableToExtendTheLogicalVolume." xml:space="preserve">
-    <value>Nincs elég szabad terület a logikai meghajtón a kiterjesztéshez. </value>
-  </data>
   <data name="PhysicalVolumes" xml:space="preserve">
     <value>Fizikai kötetek</value>
   </data>
   <data name="Reduce" xml:space="preserve">
     <value>Csökkentés</value>
   </data>
-  <data name="ReduceVolumeGroup" xml:space="preserve">
-    <value>Kötetcsoport csökkentése</value>
+  <data name="ReducedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>'{{ devicefile }}' kötetcsoport csökkentése.</value>
   </data>
   <data name="Resize" xml:space="preserve">
     <value>Átméretezés</value>
   </data>
-  <data name="SelectAVolumeGroup..." xml:space="preserve">
+  <data name="SelectADevice_Dot__Dot__Dot_" xml:space="preserve">
+    <value>Válasszon ki egy meghajtót ...</value>
+  </data>
+  <data name="SelectAVolumeGroup_Dot__Dot__Dot_" xml:space="preserve">
     <value>Válasszon ki egy kötetcsoportot...</value>
   </data>
-  <data name="SelectAnDevice..." xml:space="preserve">
-    <value>Válasszon ki egy meghajtót...</value>
+  <data name="SelectDevices_Dot__Dot__Dot_" xml:space="preserve">
+    <value>Eszközök kivála \nSelect devic</value>
+  </data>
+  <data name="SelectTheDevicesUsedToExtendTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>Válassza ki a kötetcsoport kiterjesztéséhez használt eszközöket.</value>
+  </data>
+  <data name="SelectTheDevicesUsedToReduceFromTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>A kötetcsoportból válassza ki a csökkenteni kívánt eszközöket. </value>
   </data>
   <data name="Size" xml:space="preserve">
     <value>Méret</value>
   </data>
   <data name="Snapshot" xml:space="preserve">
     <value>Pillanatkép</value>
+  </data>
+  <data name="TheNameOfTheLogicalVolume_Dot_" xml:space="preserve">
+    <value>A logikai kötet neve.</value>
+  </data>
+  <data name="TheNameOfTheVolumeGroup_Dot_" xml:space="preserve">
+    <value>A kötetcsoport neve.</value>
+  </data>
+  <data name="ThePercentageOfTheTotalSpaceInTheVolumeGroupToAllocateForTheNewLogicalVolume_Dot_" xml:space="preserve">
+    <value>A kötetcsoport teljes területének százalékos aránya az új logikai kötet számára. </value>
+  </data>
+  <data name="ThePercentageOfTheTotalSpaceInTheVolumeGroupToUseByTheLogicalVolume_Dot_" xml:space="preserve">
+    <value>A kötetcsoport teljes méretének százalékos aránya, amelyet a logikai kötet használ. </value>
+  </data>
+  <data name="UpdatedLogicalVolume'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>'{{ devicefile }}' logikai kötet frissítve.</value>
+  </data>
+  <data name="UpdatedVolumeGroup'{{Devicefile}}'_Dot_" xml:space="preserve">
+    <value>'{{ devicefile }}' kötetcsoport frissítve.</value>
   </data>
   <data name="Used" xml:space="preserve">
     <value>Foglalt</value>
